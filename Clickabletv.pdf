@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2012 Adobe Systems Incorporated. All rights reserved. -->
+<html>
+    <head>
+        
+
+<title>Shared Files - Acrobat.com</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,
+      maximum-scale=1.0, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+
+<!-- Use base tag rather than STATIC_URL references in relative paths so that
+     template image references work. -->
+<base href="https://files.acrobat.com/static/">
+
+<!-- App CSS. -->
+<link rel="stylesheet" href="css/viewer/app/main.css">
+
+<!-- Core CSS. -->
+<link rel="stylesheet" href="css/viewer/core/main.css">
+
+<!-- CSS for Files app. -->
+<link rel="stylesheet" href="css/viewer/files/main.css">
+
+<!-- CSS for IE9 and older versions. -->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/viewer/core/ie/lte-ie9/main.css">
+    <link rel="stylesheet" href="css/viewer/files/ie/lte-ie9/main.css">
+<![endif]-->
+
+<!-- CSS for IE8 and older versions. -->
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/viewer/core/ie/lte-ie8/main.css">
+    <link rel="stylesheet" href="css/viewer/files/ie/lte-ie8/main.css">
+<![endif]-->
+
+<!--[if !IE]>-->
+<!-- Skybox CSS for iPad and other tablets, all imported by 'main.css' to enable
+     RequireJS optimization. -->
+<link rel="stylesheet" media="only screen and (device-width: 768px),
+      (device-width: 600px), (device-width: 800px)" href="css/viewer/core/ipad/main.css">
+<link rel="stylesheet" media="only screen and (device-width: 768px),
+      (device-width: 600px), (device-width: 800px)" href="css/viewer/files/ipad/main.css">
+
+<!-- Skybox CSS for iPhone, all imported by 'main.css' to enable RequireJS
+     optimization. -->
+<link rel="stylesheet" media="only screen and (max-device-width: 480px)"
+      href="css/viewer/core/iphone/main.css">
+<link rel="stylesheet" media="only screen and (max-device-width: 480px)"
+      href="css/viewer/files/iphone/main.css">
+<!--<![endif]-->
+
+<link rel="icon" type="image/vnd.microsoft.icon"
+      href="https://files.acrobat.com/static/images/favicon.ico?v=2">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon"
+      href="https://files.acrobat.com/static/images/favicon.ico?v=2">
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="images/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114"
+      href="images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon"
+      href="static/images/apple-touch-icon-144x144-precomposed.png">
+
+
+<!-- Add DTM header -->
+<script src="https://assets.adobedtm.com/659ec8ada5450db95675e43beaaae92399591a11/satelliteLib-46e65db5bb0c375f8f64619be31cc9b29acf4867.js"></script>
+
+
+
+    </head>
+    <body>
+        
+
+<!-- Page which contains full preview for viewer app. -->
+<!-- We render the metadata into the DOM using HTML5 data attributes -->
+<div id="viewer" class="viewer-page"></div>
+<div id="invitation_id" data-invitation-id="b933a88b-e733-4f7a-a1f7-f50422919a35"></div>
+<div id="report_abuse" data-report-abuse="False"></div>
+<iframe name="download_frame" style="display:none;"></iframe>
+<form name='track_form' id='track_form' method="POST" action="https://files.acrobat.com/a/track" target="download_frame">
+    <input type="hidden" name='csrftoken' value="None">
+    <input type="hidden" id='file_id' name='file_id' value="0">
+    <input type="hidden" id='invitation_id' name='invitation_id' value="b933a88b-e733-4f7a-a1f7-f50422919a35">
+    <input type="hidden" id='parcel_id' name='parcel_id' value="GIvi8I9fQZKr9zfwfPo0Xw">
+    <input type="hidden" id='action_id' name='action_id' value="5b22643b-d349-42fe-983c-6e44ed478ccc">
+</form>
+
+<!-- Mask for main UI when displaying modal dialog or spinner. -->
+<div id="modal-mask"></div>
+
+<!-- Container for dialog, whether modal or not. -->
+<div id="dialog-container" class="dialog-container dialog-container-common"></div>
+
+<!-- Load Typekit kit for Skybox. -->
+<script src="js/misc/load-typekit.js"></script>
+
+<!-- Define 'Ac' namespace from which we hang the rest. -->
+<script src="/ac.js"></script>
+
+<!-- JavaScript for discerning locale from 'Accept-Language' value in request
+     header. -->
+<script src="/locale.js"></script>
+
+<!-- JavaScript which manages feature flippers. -->
+<script src="/features.js"></script>
+
+<!-- Configuration info for supported App API versions. -->
+<script src="/app_apis.js"></script>
+
+<!-- Configuration info for dynamically loaded plugins. -->
+<script src="js/viewer.plugins.js"></script>
+
+<!-- Misc initialization prior to loading viewer.main. -->
+<script src="js/viewer/init.js"></script>
+
+
+
+<!-- All JavaScript is loaded via either directly in main.js or indirectly via
+     dependencies in each module, as specified with RequireJS 'define' syntax. -->
+<script data-main="js/viewer.main"
+        src="js/libs/require/2.1.15/require.min.js">
+</script>
+
+
+<!-- Add DTM footer -->
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+
+
+    </body>
+</html>
