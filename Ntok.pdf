@@ -1,0 +1,2419 @@
+<!DOCTYPE html>
+<html lang=NTOK White Paper.pdf>
+<head>
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name=“description” content="NTOK - p2p online education platform based on blockchain. NTOK platform as a key in building new standards of education and creating online peer to peer ecosystem in education. Token Pre-Sale is LIVE. ICO start March 1st, 2018"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#7B00FF">
+	<meta name="csrf-token" content="UD9jucZVtnhSvnUGnHSXKIIKd2vPpMgkiob0WK3b"/>
+	<link rel="stylesheet" href="/styles/css/style.css">
+	<link rel="stylesheet" href="/styles/css/laravel.css">
+	<link rel="stylesheet" href="/fa/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/swiper.css">
+	<title>NTOK ICO - Blockchain in Education</title>
+	<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WJ55R27');
+</script>	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110614386-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110614386-1');
+</script>
+
+<!-- Google Analytics -->
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-110614386-1', 'auto');
+ga('send', 'pageview');</script>
+<!-- End Google Analytics -->		<link rel="canonical" href="https://ntok.io"/>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ55R27"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="win-language" class="modal">
+	<div class="overlay"></div>
+	<div class="modal-content">
+		<span class="close"></span>
+		<div class="section__form modal-form modal-form--language">
+			<h1 class="modal-form__header">Choose your region</h1>
+			<p class="modal-form__info">Selecting a region changes the language on ntok.io</p>
+			<div class="modal-form__desc">
+				<ul class="language-list">
+																	                    					<li class="language-item">
+                        <a href="/en" class="language-country ">
+                            <i class="i-icon"><img src="/styles/img/icons/flags/i-en2.svg" alt="" class="svg-pic"></i>
+                            <span class="language-name selected-language">English</span>
+                        </a>
+					</li>
+					<li class="language-item">
+						<a href="/es" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-es.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">Spanish</span>
+						</a>
+					</li>
+					<li class="language-item">
+						<a href="/it" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-it.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">Italian</span>
+						</a>
+					</li>
+					<li class="language-item">
+						<a href="/pl" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-pl.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">Polish</span>
+						</a>
+					</li>
+					<li class="language-item">
+						<a href="/fr" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-fr.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">French</span>
+						</a>
+					</li>
+					<li class="language-item">
+						<a href="/tr" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-tr.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">Turkish</span>
+						</a>
+					</li>
+					<li class="language-item">
+						<a href="/de" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-de.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">German</span>
+						</a>
+					</li>
+					<li class="language-item">
+						<a href="/ru" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-ru.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">Russian</span>
+						</a>
+					</li>
+					<li class="language-item">
+						<a href="/vi" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-vi.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">Vietnamese</span>
+						</a>
+					</li>
+                    <li class="language-item">
+                        <a href="/hi" class="language-country">
+                            <i class="i-icon"><img src="/styles/img/icons/flags/i-hi.svg" alt="" class="svg-pic"></i>
+                            <span class="language-name">Hindi</span>
+                        </a>
+                    </li>
+                    <li class="language-item">
+                        <a href="/ch" class="language-country">
+                            <i class="i-icon"><img src="/styles/img/icons/flags/i-ch.svg" alt="" class="svg-pic"></i>
+                            <span class="language-name">Chinese</span>
+                        </a>
+                    </li>
+                    <li class="language-item">
+                        <a href="/phi" class="language-country">
+                            <i class="i-icon"><img src="/styles/img/icons/flags/i-phi.svg" alt="" class="svg-pic"></i>
+                            <span class="language-name">Philippine</span>
+                        </a>
+                    </li>
+					<li class="language-item">
+						<a href="/ko" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-ko.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">Korean</span>
+						</a>
+					</li>
+					<li class="language-item">
+						<a href="/nl" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-nl.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">Dutch</span>
+						</a>
+					</li>
+					<li class="language-item">
+						<a href="/pt" class="language-country">
+							<i class="i-icon"><img src="/styles/img/icons/flags/i-pt.svg" alt="" class="svg-pic"></i>
+							<span class="language-name">Portuguese</span>
+						</a>
+					</li>
+                    <li class="language-item">
+                        <a href="/ar" class="language-country">
+                            <i class="i-icon"><img src="/styles/img/icons/flags/i-ar.svg" alt="" class="svg-pic"></i>
+                            <span class="language-name">Arabic</span>
+                        </a>
+                    </li>
+						<li class="language-item">
+							<a href="/ja" class="language-country">
+								<i class="i-icon"><img src="/styles/img/icons/flags/i-ja.svg" alt="" class="svg-pic"></i>
+								<span class="language-name">Japanese</span>
+							</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="wrapper-offset">
+		<div class="wrapp-cover" id="top" winscroll-target="top">
+			<div id="win" class="modal">
+    <div class="overlay"></div>
+    <div class="modal-content">
+        <span class="close"></span>
+        <div class="section__form modal-form">
+            <h1 class="modal-form__header">Subscribe</h1>
+            <div class="modal-form__desc">
+                Stay tuned and receive latest information about NTOK ICO, product development updates and special offers            </div>
+            <div class="register js-register">
+	<div class="register__inpbox">
+		<form class="js-register__form" action="https://redirect.ntok.proscom.tech/save.php" method="POST">
+			<input type="email" name="email" autocomplete="email" class="register__inp js-register__email" placeholder="E-mail">
+			<button class="btn _rose register__btn js-register__btn">
+				<div class="btn__wrapp _form _active">
+					<span class="btn__text">Subscribe</span>
+					<i><img src="/styles/img/icons/i-btn-arr.svg" alt="" class="svg-pic"></i>
+				</div>
+				<div class="btn__wrapp _form-loading">
+					<div class="loader"></div>
+				</div>
+				<div class="btn__wrapp _sent">
+					<i><img src="/styles/img/icons/i-btn-ok.svg" alt="" class=""></i>
+					<span class="btn__text">Confirmation email has been sent to your inbox</span>
+				</div>
+				<div class="btn__wrapp _registered">
+					<i><img src="/styles/img/icons/i-btn-ok.svg" alt="" class=""></i>
+					<span class="btn__text">Congratulations! You are in the whitelist.<br/>We will inform you when you can get 10% bonuses.</span>
+				</div>
+			</button>
+		</form>
+	</div>
+</div>        </div>
+    </div>
+</div>			<div id="header">
+	<div class="top-popup">
+		<a class="top-popup__close fa fa-close js-close-popup"></a>
+		<a class="top-popup__link" href="https://tokensale.ntok.io/">
+			<span class="top-popup__line1">SPECIAL OFFER</span>
+			<span class="top-popup__line2">Minimum purchase $50</span>
+			<span class="top-popup__line3">
+									<span class="__line1">with</span>
+									<span class="__line2">17.5%</span>
+									<span class="__line3">bonus</span>
+							</span>
+		</a>
+	</div>
+	<div class="head-box js-mobile-menu">
+		<div class="head__logo">
+			<a href="/#top" class="logo" winscroll-data="top">
+				
+				<span class="logo__text">NTOK</span>
+			</a>
+		</div>
+		<div class="head__nav js-nav">
+			<div class="head__bg">
+				<div class="head__dots">
+					<div class="dots"><img src="/styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+				</div>
+				<div class="head__bg-pic js-imgbox">
+					<img src="/styles/img/content/head-circ.png" alt="" class="js-img">
+				</div>
+			</div>
+			<div id="nav">
+				<div class="nav__box">
+					<ul class="nav__list">
+						<li class="nav__item _register">
+								<a href="https://tokensale.ntok.io/" class="nav__link _reg">
+								<i class="_reg"><img src="/styles/img/icons/i-reg.svg" alt="" class="svg-pic"></i>
+								<span class="link__text">Buy tokens</span>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="/NTOK White Paper.pdf/#solutions" class="nav__link" winscroll-data="solutions">
+								<span class="link__text">Platform</span>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="/NTOK White Paper.pdf/#features" class="nav__link" winscroll-data="features">
+								<span class="link__text">Token</span>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="/NTOK White Paper.pdf/#ico" class="nav__link" winscroll-data="ico">
+								<span class="link__text">ICO</span>
+							</a>
+						</li>
+                        <li class="nav__item">
+                            <a href="/NTOK White Paper.pdf/#team" class="nav__link" winscroll-data="team">
+                                <span class="link__text">Team</span>
+                            </a>
+                        </li>
+						<li class="nav__item">
+							<a href="/NTOK White Paper.pdf/media" class="nav__link" winscroll-data="articles">
+								<span class="link__text">News</span>
+							</a>
+						</li>
+						<li class="nav__item _file">
+														<a href="https://ntok.io/docs/en/NTOK Presentation.pdf" class="nav__link _file _load _onepage" target="_blank">
+								<i class="_pdf"><img src="/styles/img/icons/i-pdf.svg" alt="" class="svg-pic"></i>
+								<i class="_load"><img src="/styles/img/icons/i-download.svg" alt="" class="svg-pic"></i>
+								<span class="link__text">Presentation</span>
+							</a>
+						</li>
+						<li class="nav__item _file">
+                            							<a href="https://ntok.io/docs/en/NTOK White Paper.pdf" class="nav__link _file _load _whitepaper" target="_blank">
+								<i class="_pdf"><img src="/styles/img/icons/i-pdf.svg" alt="" class="svg-pic"></i>
+								<i class="_load"><img src="/styles/img/icons/i-download.svg" alt="" class="svg-pic"></i>
+								<span class="link__text">White Paper</span>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="/NTOK White Paper.pdf/faq" class="nav__link">
+								<span class="link__text">FAQ</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav__ext">
+					<ul class="nav__list">
+						<li class="nav__item _file">
+							
+							<a href="https://ntok.io/docs/en/NTOK Presentation.pdf" class="nav__link _file _load _onepage" target="_blank">
+								<i class="_pdf"><img src="/styles/img/icons/i-pdf.svg" alt="" class="svg-pic"></i>
+								<i class="_load"><img src="/styles/img/icons/i-download.svg" alt="" class="svg-pic"></i>
+								<span class="link__text">Presentation</span>
+							</a>
+						</li>
+						<li class="nav__item _file">
+							<a href="https://ntok.io/docs/en/NTOK White Paper.pdf" class="nav__link _file _load _whitepaper" target="_blank">
+								<i class="_pdf"><img src="/styles/img/icons/i-pdf.svg" alt="" class="svg-pic"></i>
+								<i class="_load"><img src="/styles/img/icons/i-download.svg" alt="" class="svg-pic"></i>
+								<span class="link__text">White Paper</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="head__socials">
+				<div class="socials">
+					<ul class="socials__list">
+						
+							
+								
+							
+						
+						<li class="socials__item">
+							<a href="http://t.me/ntokio" target="_blank" class="social__link _tl" title="Telegram">
+								<i class="i-icon"><img src="/styles/img/icons/socials/i-tl.svg" alt="" class="svg-pic"></i>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="https://twitter.com/ntok_io" target="_blank" class="social__link _tw" title="Twitter">
+								<i class="i-icon"><img src="/styles/img/icons/socials/i-tw.svg" alt="" class="svg-pic"></i>
+							</a>
+						</li>
+						<li class="socials__item _bitcointalk" title="Bitcoin Forum thread">
+							<a href="https://bitcointalk.org/index.php?topic=2496624" class="social__link _btct">
+								<i><img src="/styles/img/icons/socials/i-btc.png" alt=""></i>
+							</a>
+						</li>
+						<li class="socials__item _lang">
+							<a id="lang-link" class="social__link _lang _NTOK White Paper.pdf" title="Change language">
+								<div class="social__link-flag" style="background-image: url(/styles/img/icons/flags/i-NTOK White Paper.pdf.svg)"></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="head__sign">
+				<a href="https://tokensale.ntok.io/" class="head-sign-link">
+					<span class="link__text">Buy tokens</span>
+				</a>
+			</div>
+		</div>
+		<div class="head__menu js-header-menu">
+			<a class="head__menu-button js-header-menu-button _open">
+				<img src="/styles/img/icons/i-menu.svg" alt="" class="svg-pic"/>
+			</a>
+			<a class="head__menu-button js-header-menu-button _close">
+				<img src="/styles/img/icons/i-close.svg" alt="" class="svg-pic">
+			</a>
+		</div>
+		<div class="head__socials">
+			<div class="socials">
+				<ul class="socials__list">
+					
+						
+							
+						
+					
+					<li class="socials__item">
+						<a href="https://t.me/ntokio" target="_blank" class="social__link _tl" title="Telegram">
+							<i class="i-icon"><img src="/styles/img/icons/socials/i-tl.svg" alt="our telegram" class="svg-pic"></i>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="https://twitter.com/ntok_io" target="_blank" class="social__link _tw" title="Twitter">
+							<i class="i-icon"><img src="/styles/img/icons/socials/i-tw.svg" alt="" class="svg-pic"></i>
+						</a>
+					</li>
+					<li class="socials__item _bitcointalk">
+						<a href="https://bitcointalk.org/index.php?topic=2496624.20" class="social__link _btct" title="Bitcoin Forum thread">
+							<i><img src="/styles/img/icons/socials/i-btc.png" alt="btc-talk"></i>
+						</a>
+					</li>
+					<li class="socials__item _lang">
+						<a id="lang-link-mobile" class="social__link _lang _NTOK White Paper.pdf" title="Change language">
+							<i><img src="/styles/img/icons/flags/i-NTOK White Paper.pdf.svg" alt="NTOK White Paper.pdf" /></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+			<div id="wrapper">
+				<div class="wrapp-box">
+					<div class="section _enter">
+						<div class="section__wrapp">
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										Blockchain<br/>online education<br/>platform									</h1>
+									<div class="section__desc">
+										<p>
+											Education is&nbsp;out of&nbsp;date in&nbsp;technology adoption with only a&nbsp;tiny
+        share of&nbsp;the industry online. Our mission is&nbsp;to&nbsp;facilitate learning,
+        in&nbsp;particular of&nbsp;foreign languages, through a&nbsp;peer-to-peer
+        technology platform connecting tutors and&nbsp;students online										</p>
+									</div>
+								</div>
+								<div class="ico">
+									<p>Join our pre-sale and get 17.5% bonus right now!</p>
+									<a class="btn _rose _big" href="https://tokensale.ntok.io/">
+										Buy tokens									</a>
+								</div>
+								<div class="section__form">
+									<div class="upper-timer__feature">
+																				<a class="for-icon" href="https://ntok.io/docs/en/NTOK White Paper.pdf">
+											<i class="i-icon _get"><img src="/styles/img/icons/i-link-white.svg" alt="" class="svg-pic"></i>
+											<p>Read our White Paper</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section__dots">
+							<div class="dots"><img src="/styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+						</div>
+						<div class="section__pic js-imgbox">
+							<img class="js-img" src="/styles/img/content/enter-bg.svg" alt="">
+						</div>
+						<div class="section__shadow"></div>
+					</div>
+					<div class="section _solutions" id="solutions" winscroll-target="solutions">
+						<div class="section__video">
+							<div class="section__video-wrapp">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div id="slide_one" class="swiper-slide">
+												<iframe src="https://www.youtube.com/embed/4SHXLoAXXmo?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+											</div>
+
+											<div class="swiper-slide">
+												<iframe src="https://www.youtube.com/embed/PDAwKHgvezs?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+											</div>
+
+											<div class="swiper-slide">
+												<iframe src="https://www.youtube.com/embed/dyIFmTOg2UE?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+											</div>
+
+											<div class="swiper-slide">
+												<iframe src="https://www.youtube.com/embed/L_sMhUpKewY?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+											</div>
+
+											<div class="swiper-slide">
+												<iframe src="https://www.youtube.com/embed/LFymCl-F0Qc?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+											</div>
+
+											<div class="swiper-slide">
+												<iframe src="https://www.youtube.com/embed/-yqNDS3oIqk?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+											</div>
+
+											<div class="swiper-slide">
+												<iframe src="https://www.youtube.com/embed/6WrnlG2wfg8?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+											</div>
+
+											<div class="swiper-slide">
+												<iframe src="https://www.youtube.com/embed/ycvZbqlkpvI?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								<div class="swiper-button-next swiper-button-black">
+									<img src="/styles/img/icons/i-btn-arr.svg" alt="" class="svg-pic svg-arrow svg-next">
+								</div>
+								<div class="swiper-button-prev swiper-button-black">
+									<img src="/styles/img/icons/i-btn-arr-left.svg" alt="" class="svg-pic svg-arrow svg-prev">
+								</div>
+							</div>
+						</div>
+						<div class="section__wrapp">
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										Our solution provides:									</h1>
+								</div>
+							</div>
+							<div class="section__dots">
+								<div class="dots"><img src="/styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+							</div>
+							<div class="section__bg js-imgbox">
+								<img src="/styles/img/icons/solutions/i-circ-group.png" alt="" class="js-img">
+							</div>
+							<div class="section__solutions">
+								<div class="solutions">
+									<div class="solution">
+										<div class="solution__circ js-imgbox">
+											<i><img src="/styles/img/icons/solutions/i-circ1.png" alt="" class="js-img"></i>
+										</div>
+										<div class="solution__cont">
+											<div class="solution__title">
+												<h3>
+													Peer to peer<br/>learning platform												</h3>
+											</div>
+											<div class="solution__desc js-more">
+												<p class="js-more__short">
+													Online platform eliminating geographical borders between tutors and students through 
+        a cutting-edge technology with...												</p>
+												<p class="js-more__expanded">
+													Online platform eliminating geographical borders between tutors and students through
+        a cutting-edge technology with high quality video and audio
+        as well as education-specific functionality, such as white boards, lesson scheduling, payments
+        and interactive learning methods.
+        The core platform has been developed as a centralized,
+        non peer-to-peer version at tutor-ninja.com. Our task is to leverage the existing centralized
+        platform to develop a true peer-to-peer solution												</p>
+												<a href="#" class="solution__more js-more__link">
+													<i><img src="/styles/img/icons/i-arrow-down.svg" alt="" class="js-img"></i>
+													<span class="__text-more">More</span>
+													<span class="__text-less">Less</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="solution">
+										<div class="solution__circ js-imgbox">
+											<i><img src="/styles/img/icons/solutions/i-circ2.png" alt="" class="js-img"></i>
+										</div>
+										<div class="solution__cont">
+											<div class="solution__title">
+												<h3>
+													Impossible<br/>to fake ratings												</h3>
+											</div>
+											<div class="solution__desc">
+												<p>
+													Transparent and secure information
+        on&nbsp;the&nbsp;experience and&nbsp;quality
+        of&nbsp;tutors through ranking
+        and&nbsp;review system built on&nbsp;Blockchain												</p>
+											</div>
+										</div>
+									</div>
+									<div class="solution">
+										<div class="solution__circ js-imgbox">
+											<i><img src="/styles/img/icons/solutions/i-circ3.png" alt="" class="js-img"></i>
+										</div>
+										<div class="solution__cont">
+											<div class="solution__title">
+												<h3>
+													No intermediaries												</h3>
+											</div>
+											<div class="solution__desc">
+												<p>
+													Elimination of intermediaries between tutors and students,
+        such&nbsp;as&nbsp;schools, and therefore significantly reducing the cost
+        of&nbsp;lessons												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section _features" id="features" winscroll-target="features" winscroll-offset="80">
+						<div class="section__edge _top minw-box">
+							<img src="/styles/img/icons/features/bg-top-edge.png" alt="">
+						</div>
+						<div class="section__edge _bottom minw-box">
+							<img src="/styles/img/icons/features/bg-bott-edge.png" alt="">
+						</div>
+						<div class="section__wrapp">
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										NTOK token<br/>features									</h1>
+								</div>
+							</div>
+							<div class="section__dots">
+								<div class="dots"><img src="/styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+							</div>
+							<div class="section__bg js-imgbox">
+								<img src="/styles/img/icons/features/i-circ-group.png" alt="" class="js-img">
+							</div>
+							<div class="section__token">
+								<div class="features">
+									<div class="token">
+										<i><img src="/styles/img/icons/i-token.svg" alt="" class="svg-pic"></i>
+										<div class="token__wrapp-bg">
+											<img src="/styles/img/icons/features/i-token-wrapp-circs.svg" alt="" class="svg-pic">
+										</div>
+										<div class="token__dot">
+											<i><img src="/styles/img/icons/i-dot.png" alt=""></i>
+										</div>
+									</div>
+									<div class="token__line"></div>
+									<div class="features__list">
+										<div class="feature">
+											<div class="token__dot">
+												<i><img src="/styles/img/icons/i-dot.png" alt=""></i>
+											</div>
+											<div class="feature__desc">
+												<p>
+													<b>Study directly with a teacher</b><br/>
+        without paying any intermediary fees<br/>
+        (only the teacher’s fee)												</p>
+											</div>
+										</div>
+										<div class="feature">
+											<div class="token__dot">
+												<i><img src="/styles/img/icons/i-dot.png" alt=""></i>
+											</div>
+											<div class="feature__desc">
+												<p>
+													<b>Full functionality<br/>
+        of an online school platform,</b><br/>
+        including video, voice, whiteboard,<br/>
+        online scheduling and payment<br/>
+        without any additional fee												</p>
+											</div>
+										</div>
+										<div class="feature">
+											<div class="token__dot">
+												<i><img src="/styles/img/icons/i-dot.png" alt=""></i>
+											</div>
+											<div class="feature__desc">
+												<p>
+													<b>Access to the database of tutors</b><br/>
+        on a blockchain with decentralized<br/>
+        and secure reviews and rankings.<br/>
+        Ability to rank and publish tutor<br/>
+        reviews stored on the blockchain												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section__economics">
+								<div class="economics">
+									<div class="economics__title">
+										<h1>Token economics</h1>
+									</div>
+									<div class="economics__token">
+										<div class="section__dots _economics">
+											<div class="dots"><img src="/styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+										</div>
+										<div class="token _economics">
+											<i><img src="/styles/img/icons/i-token_purple.svg" alt="" class="svg-pic"></i>
+										</div>
+										<div class="token__cards js-token-cards">
+											<div class="token__card _active js-token-card">
+												<div class="token__card-wrapp">
+													<div class="token__card-title">
+														<p>
+															Growing online education market														</p>
+													</div>
+													<div class="token__card-pic js-imgbox">
+														<img src="styles/img/icons/features/cards_chart.png" alt="" class="js-img">
+													</div>
+												</div>
+											</div>
+											<div class="token__card js-token-card">
+												
+													
+														
+															
+														
+													
+													
+														
+															
+															
+															
+															
+														
+													
+												
+											</div>
+											<div class="token__card js-token-card">
+												
+													
+														
+															
+														
+													
+													
+														
+															
+															
+														
+													
+												
+											</div>
+											<div class="token__card js-token-card">
+												
+													
+														
+															
+														
+													
+													
+														
+															
+														
+													
+												
+											</div>
+										</div>
+										
+											
+												
+											
+											
+												
+											
+										
+									</div>
+								</div>
+								<div class="economics__desc">
+									<div class="economics__desc__oval-1"></div>
+									<div class="economics__desc__oval-2"></div>
+									<div class="economics__desc__oval-3"></div>
+									<div class="economics__desc__tooltips">
+										<div class="economics__desc__tt _demand">
+											<div class="economics__desc__float-item__title">
+												<span>Demand</span>
+												<div class="economics__desc__shine-dot-1"></div>
+											</div>
+											<div class="economics__desc__float-item__article">
+												<p>
+													Platform participants,<br />
+        both tutors and students,<br />
+        need NTOK tokens to<br />
+        use the platform												</p>
+											</div>
+										</div>
+										<div class="economics__desc__tt _supply">
+											<div class="economics__desc__float-item__title">
+												<span>Supply</span>
+												<div class="economics__desc__shine-dot-2"></div>
+											</div>
+											<div class="economics__desc__float-item__article">
+												<p>
+													Limited number<br />of NTOK tokens												</p>
+											</div>
+										</div>
+									</div>
+									<div class="economics__desc__line-1">
+										<div class="economics__desc__article">
+											<p>
+												Demand increases due to the growth
+        <br />
+        in platform participants
+        <br />
+        (students, tutors, partners)											</p>
+										</div>
+										<div class="economics__desc-line-img economics__desc-line-img-1">
+											<img src="/styles/img/content/desc/img-line-1.png" />
+											<div class="economics__desc-line-img__dot"></div>
+										</div>
+									</div>
+									<div class="economics__desc__line-2">
+										<div class="economics__desc__article">
+											<p>
+												Increase in token usage due to the
+        <br />
+        introduction of&nbsp;new token features											</p>
+										</div>
+										<div class="economics__desc-line-img economics__desc-line-img-2">
+											<img src="/styles/img/content/desc/img-line-2.png" />
+											<div class="economics__desc-line-img__dot"></div>
+										</div>
+									</div>
+									<div class="economics__desc__line-3">
+										<div class="economics__desc__article">
+											<p>
+												Gradual redemption<br />of&nbsp;tokens											</p>
+										</div>
+										<div class="economics__desc-line-img economics__desc-line-img-3">
+											<img src="/styles/img/content/desc/img-line-3.png" />
+											<div class="economics__desc-line-img__dot"></div>
+										</div>
+									</div>
+									<div class="economics__desc__line-4">
+										<div class="economics__desc__article">
+											<p>
+												Incentives for platform<br/>
+        participants to accumulate<br/>
+        and hold tokens											</p>
+										</div>
+										<div class="economics__desc-line-img economics__desc-line-img-4">
+											<img src="/styles/img/content/desc/img-line-4.png" />
+											<div class="economics__desc-line-img__dot"></div>
+										</div>
+									</div>
+									
+										
+											
+												
+												
+											
+											
+												
+												
+												
+											
+										
+									
+								</div>
+							</div>
+						</div>
+						<div class="section__shadow"></div>
+					</div>
+					<div class="section _offer" id="offer">
+						<div class="section__wrapp">
+							<h1 class="offer-header">Public Pre–sale is Live!</h1>
+							<div class="section__offer-timers">
+								<ul class="timers-list">
+									<li class="timers-item timers-item__active">
+										<div class="info-wrapper">
+											<div class="timer-bonuses">
+												<span class="percent-value">17.5</span>
+												<span class="percent">%</span>
+												<div class="bonus-text">bonuses</div>
+											</div>
+											<div class="timer-scale">
+												<div class="scale-text">
+													<span class="tokens-bought">Limited quantity</span>
+													
+												</div>
+												<div class="scale-summary">
+													<div class="scale-filled"></div>
+												</div>
+											</div>
+										</div>
+										<div class="timer-wrapper">
+											<a class="btn _rose _big timer-btn" href="https://tokensale.ntok.io/">
+												Buy tokens											</a>
+										</div>
+									</li>
+									<li class="timers-item">
+										<div class="info-wrapper">
+											<div class="timer-bonuses">
+												<span class="percent-value">10</span>
+												<span class="percent">%</span>
+												<span class="bonus-text">bonuses</span>
+											</div>
+											<div class="timer-scale">
+												<div class="scale-text">
+													<span class="tokens-bought">Limited quantity</span>
+													
+												</div>
+												<div class="scale-summary">
+													<div class="scale-filled"></div>
+												</div>
+											</div>
+										</div>
+										<div class="timer-wrapper timer">
+											<div class="timer js-timer-2">
+												<div class="timer__node _days">
+													<span class="timer__number">00</span>
+													<span class="timer__type">days</span>
+												</div>
+												<div class="timer__node _colon">
+													:
+												</div>
+												<div class="timer__node _hours">
+													<span class="timer__number">00</span>
+													<span class="timer__type">hours</span>
+												</div>
+												<div class="timer__node _colon">
+													:
+												</div>
+												<div class="timer__node _mins">
+													<span class="timer__number">00</span>
+													<span class="timer__type">minutes</span>
+												</div>
+												<div class="timer__node _colon">
+													:
+												</div>
+												<div class="timer__node _secs">
+													<span class="timer__number">00</span>
+													<span class="timer__type">seconds</span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="timers-item">
+										<div class="info-wrapper">
+											<div class="timer-bonuses">
+												<span class="percent-value">5</span>
+												<span class="percent">%</span>
+												<div class="bonus-text">bonuses</div>
+											</div>
+											<div class="timer-scale">
+												<div class="scale-text">
+													<span class="tokens-bought">Limited quantity</span>
+													
+												</div>
+												<div class="scale-summary">
+													<div class="scale-filled"></div>
+												</div>
+											</div>
+										</div>
+										<div class="timer-wrapper timer">
+											<div class="timer js-timer-3">
+												<div class="timer__node _days">
+													<span class="timer__number">00</span>
+													<span class="timer__type">days</span>
+												</div>
+												<div class="timer__node _colon">
+													:
+												</div>
+												<div class="timer__node _hours">
+													<span class="timer__number">00</span>
+													<span class="timer__type">hours</span>
+												</div>
+												<div class="timer__node _colon">
+													:
+												</div>
+												<div class="timer__node _mins">
+													<span class="timer__number">00</span>
+													<span class="timer__type">minutes</span>
+												</div>
+												<div class="timer__node _colon">
+													:
+												</div>
+												<div class="timer__node _secs">
+													<span class="timer__number">00</span>
+													<span class="timer__type">seconds</span>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										Countdown to the ICO start									</h1>
+								</div>
+								<div class="section__text timer-text">
+									<p>
+										During the ICO price of NTOK tokens<br/>
+        will grow every week, starting after<br/>
+        special conditions end									</p>
+								</div>
+								<div class="section__timer">
+									<div class="timer js-timer">
+										<div class="timer__node _days">
+											<span class="timer__number">00</span>
+											<span class="timer__type">days</span>
+										</div>
+										<div class="timer__node _colon">
+											:
+										</div>
+										<div class="timer__node _hours">
+											<span class="timer__number">00</span>
+											<span class="timer__type">hours</span>
+										</div>
+										<div class="timer__node _colon">
+											:
+										</div>
+										<div class="timer__node _mins">
+											<span class="timer__number">00</span>
+											<span class="timer__type">minutes</span>
+										</div>
+										<div class="timer__node _colon">
+											:
+										</div>
+										<div class="timer__node _secs">
+											<span class="timer__number">00</span>
+											<span class="timer__type">seconds</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section__token">
+								<div class="token-text">
+									<p>
+										You can wait for ICO or<br/>
+        buy at that price right now									</p>
+								</div>
+								<div class="token-wrapper">
+									<div class="token">
+										<i class="js-imgbox"><img src="/styles/img/icons/offer/i-token.png" alt="" class="js-img"></i>
+									</div>
+									<div class="token-price">
+										<div class="token-price__price">
+											<p>= $1.00</p>
+										</div>
+										<div class="token-price__desc">
+											<p>
+												17.5% bonus, minimum<br/>purchase of $50											</p>
+										</div>
+										<div class="token-price__register">
+											<div class="register js-register">
+												<a href="https://tokensale.ntok.io" class="btn _rose register__btn" winscroll-data="contacts">
+													<div class="btn__wrapp _form _active">
+														<span class="btn__text">Buy Tokens. 17.5% Bonus</span>
+														<i><img src="/styles/img/icons/i-btn-arr.svg" alt="" class="svg-pic"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="token-register">
+										<div class="register js-register">
+											<a href="https://tokensale.ntok.io" class="btn _rose register__btn" winscroll-data="contacts">
+												<div class="btn__wrapp _form _active">
+													<span class="btn__text">Buy Tokens. 17.5% Bonus</span>
+													<i><img src="/styles/img/icons/i-btn-arr.svg" alt="" class="svg-pic"></i>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section__dots">
+								<div class="dots"><img src="/styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+							</div>
+							<div class="section__bg js-imgbox">
+								<img src="/styles/img/icons/offer/i-circ-group.png" alt="" class="js-img">
+							</div>
+						</div>
+					</div>
+					<div class="section _crowdfunding" id="ico" winscroll-target="ico">
+						<div class="section__edge _top minw-box">
+							<img src="/styles/img/icons/crowd/bg-top-edge.png" alt="">
+						</div>
+						<div class="section__wrapp">
+							<div class="section__bg js-imgbox">
+								<img src="styles/img/icons/crowd/i-circ-group.png" alt="" class="js-img">
+							</div>
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										ICO details									</h1>
+								</div>
+							</div>
+							<div class="section__dots-text">
+								<div class="section__dots-desc">
+									<p>Underlying platform launched already</p>
+								</div>
+								<div class="section__dots-title">
+									<h5><a href="https://tutor-ninja.com/">tutor-ninja.com</a></h5>
+								</div>
+							</div>
+							<div class="section__chart">
+								<div class="chart minw-box">
+									<div class="chart__wrapp-bg js-imgbox">
+										<img src="/styles/img/icons/crowd/i-chart.png" alt="" class="js-img">
+									</div>
+									<div class="chart__values">
+										<div class="chart__values-wrapp">
+											<div class="chart__values-subs">
+												<div class="chart__subval">
+													<div class="chart__val">
+														<p>3%</p>
+													</div>
+													<div class="chart__val-desc">
+														<p>
+															Bounty														</p>
+													</div>
+												</div>
+												<div class="chart__subval">
+													<div class="chart__val">
+														<p>7%</p>
+													</div>
+													<div class="chart__val-desc">
+														<p>
+															NTOK platform reserve														</p>
+													</div>
+												</div>
+												<div class="chart__subval">
+													<div class="chart__val">
+														<p>20%</p>
+													</div>
+													<div class="chart__val-desc">
+														<p>
+															Management<br/>& Advisors														</p>
+													</div>
+												</div>
+											</div>
+											<div class="chart__values-main">
+												<div class="chart__mainval">
+													<div class="chart__val">
+														<p>70%</p>
+													</div>
+													<div class="chart__val-desc">
+														<p>
+															Public														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="chart__tl-date _left">
+										<div class="chart__tl-date__title">
+											<p>ICO period</p>
+										</div>
+										<div class="chart__tl-date__cont">
+											<div class="chart__tl-date__month">
+												<p>Mar 1</p>
+											</div>
+											<div class="chart__tl-date__year">
+												<p>2018</p>
+											</div>
+										</div>
+									</div>
+									<div class="chart__tl-date _right">
+										<div class="chart__tl-date__cont">
+											<div class="chart__tl-date__month">
+												<p>Mar 31</p>
+											</div>
+											<div class="chart__tl-date__year">
+												<p>2018</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section__dots">
+								<div class="dots"><img src="styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+							</div>
+							<div class="section__cards">
+								<div class="cf-cards">
+									<ul class="cards__list">
+										<li class="cards__item">
+											<div class="card">
+												<div class="card__wrapp">
+													<div class="card__title">
+														<p>
+															Cap on Proceeds at ICO														</p>
+													</div>
+													<div class="card__desc">
+														<p>
+															$15m
+														</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="cards__item">
+											<div class="card">
+												<div class="card__wrapp">
+													<div class="card__title">
+														<p>
+															Token Standard														</p>
+													</div>
+													<div class="card__desc">
+														<p>
+															ERC20
+														</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="cards__item">
+											<div class="card">
+												<div class="card__wrapp">
+													<div class="card__title">
+														<p>
+															ICO Period, Start														</p>
+													</div>
+													<div class="card__desc">
+														<p>
+															March 01, 2018														</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="cards__item">
+											<div class="card">
+												<div class="card__wrapp">
+													<div class="card__title">
+														<p>
+															ICO Period, Finish														</p>
+													</div>
+													<div class="card__desc">
+														<p>
+															March 31, 2018														</p>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section _proceed" id="proceed" winscroll-target="proceed" winscroll-offset="80">
+						<div class="section__edge _top minw-box">
+							<img src="/styles/img/icons/proceed/bg-top-edge.png" alt="">
+						</div>
+						<div class="section__edge _bottom minw-box">
+							<img src="/styles/img/icons/proceed/bg-bottom-edge.png" alt="">
+						</div>
+						<div class="section__wrapp">
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										Use of proceeds									</h1>
+								</div>
+							</div>
+							<div class="section__proceeds">
+								<div class="proceeds">
+									<div class="proceeds-list">
+										<div class="proceed">
+											<div class="proceed__bar">
+												<div class="proceed__bar-percent">
+													<p>
+														25 %
+													</p>
+												</div>
+												<div class="proceed__bar-bottom-bg js-imgbox">
+													<img src="/styles/img/icons/proceed/i-proceed-bar-bg.png" alt="" class="js-img">
+												</div>
+												<div class="proceed__bar-pieces">
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+												</div>
+											</div>
+											<div class="proceed__info">
+												<div class="proceed__info-wrapp">
+													<div class="proceed__info-title">
+														<div class="proceed__info-dot">
+															<i><img src="/styles/img/icons/i-dot.png" alt=""></i>
+														</div>
+														<p>
+															Operations														</p>
+													</div>
+													<div class="proceed__info-desc">
+														<p>
+															Reserves, refinancing,<br/>bolt-on M&A and&nbsp;other														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="proceed">
+											<div class="proceed__bar">
+												<div class="proceed__bar-percent">
+													<p>
+														40 %
+													</p>
+												</div>
+												<div class="proceed__bar-bottom-bg js-imgbox">
+													<img src="/styles/img/icons/proceed/i-proceed-bar-bg.png" alt="" class="js-img">
+												</div>
+												<div class="proceed__bar-pieces">
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+												</div>
+											</div>
+											<div class="proceed__info">
+												<div class="proceed__info-wrapp">
+													<div class="proceed__info-title">
+														<div class="proceed__info-dot">
+															<i><img src="/styles/img/icons/i-dot.png" alt=""></i>
+														</div>
+														<p>
+															Marketing & Sales														</p>
+													</div>
+													<div class="proceed__info-desc">
+														<p>
+															Including expansion<br/>in various countries<br/>and courses														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="proceed">
+											<div class="proceed__bar">
+												<div class="proceed__bar-percent">
+													<p>
+														35 %
+													</p>
+												</div>
+												<div class="proceed__bar-bottom-bg js-imgbox">
+													<img src="/styles/img/icons/proceed/i-proceed-bar-bg.png" alt="" class="js-img">
+												</div>
+												<div class="proceed__bar-pieces">
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+													<div class="proceed__bar-piece">
+														<img src="/styles/img/icons/proceed/i-proceed-bar-piece.svg" alt="" class="svg-pic">
+													</div>
+												</div>
+											</div>
+											<div class="proceed__info">
+												<div class="proceed__info-wrapp">
+													<div class="proceed__info-title">
+														<div class="proceed__info-dot">
+															<i><img src="/styles/img/icons/i-dot.png" alt=""></i>
+														</div>
+														<p>
+															Product														</p>
+													</div>
+													<div class="proceed__info-desc">
+														<p>
+															Including platform development, <br/>
+        blockchain implementation,<br/>
+        introduction of new courses <br/>
+        and localization for various <br/>
+        languages & countries														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section__bg js-imgbox">
+								<img src="/styles/img/icons/proceed/i-circ-group.png" alt="" class="js-img">
+							</div>
+						</div>
+					</div>
+					<div class="section _team" id="team" winscroll-target="team">
+						<div class="section__wrapp">
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										Team									</h1>
+								</div>
+							</div>
+							<div class="section__dots">
+								<div class="dots"><img src="/styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+							</div>
+							<div class="section__team">
+								<div class="team">
+									<div class="team__title">
+										<p>
+											Advisors										</p>
+									</div>
+																												<ul class="team__list ">
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Goldsmith.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/USA.png" alt="">
+																		</span>
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/Hong.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	David Goldsmith
+																																			<a href="https://www.goldsmithorganization.com/david-goldsmith" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	President and Co-founder<br/>of the Goldsmith Organization<br/>(New York and Hong Kong)
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Morgan.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/USA.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Susanne Morgan
+																																			<a href="https://faculty.ithaca.edu/morgan/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Ph.D., Academic Writing Club Coach<br/>Professor Emerita of Sociology
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Buckle.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/UK.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	David Buckle
+																																			<a href="https://www.linkedin.com/in/daviddmblaw/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	International Corporate<br/>Governance Director
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Raitsyn.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/UK.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Mike Raitsyn
+																																			<a href="https://www.linkedin.com/in/mike-raitsyn-05b5b9b4/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Founder of ICOBox
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																					</ul>
+																			<ul class="team__list _under">
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Frankstein.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/USA.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Ilia Frankstein
+																																			<a href="https://www.linkedin.com/in/iliaf/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Tetha Crypto,<br/>CEO
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Batalov.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/USA.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Leo Batalov
+																																			<a href="https://www.dlapiper.com/en/russia/people/b/batalov-leo/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	DLA Piper, Co-Head<br/>Emerging Growth Companies
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Rogalsky.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/UK.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Mike Rogalsky
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Founder of Auto.ru<br/>(sold to Yandex)
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Virovets.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/Swiss.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Yura Virovets
+																																			<a href="https://www.linkedin.com/in/virovets" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Founder of Headhunter.ru<br/>(sold to Mail.ru)
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																					</ul>
+																			<ul class="team__list _under">
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Tatsiy.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/UK.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Vitaliy Tatsiy
+																																			<a href="https://www.linkedin.com/in/vitaliy-tatsiy-15969835/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Co-founder of Kinopoisk.ru<br/>(sold to Yandex)
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Filatov.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/UK.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Alex Filatov
+																																			<a href="https://www.linkedin.com/in/alex-filatov-986774/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	IoD Chartered<br/>Director (UK)
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Pekshuev.png" alt="" class="js-img">
+																															<div class="person__countries">
+																																			<span class="person__country">
+																			<img src="/styles/img/icons/miniflags/Russia.png" alt="">
+																		</span>
+																																	</div>
+																													</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Igor Pekshuev
+																																			<a href="https://www.linkedin.com/in/igor-pekshuev-77027735/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Chrysler Russia,<br/>CFO
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																					</ul>
+																	</div>
+								<div class="team">
+									<div class="team__title">
+										<p>
+											Management										</p>
+									</div>
+									
+																			<ul class="team__list ">
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Kravets.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Andrew Kravets
+																																			<a href="https://www.linkedin.com/in/andrey-kravets-b8008755/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	CEO, Co-founder<br/>(ex. McKinsey, Alfa-Bank)
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Shekhovtsov.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Max Shekhovtsov
+																																			<a href="https://www.linkedin.com/in/shekhovtsov/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	CFO, Co-founder<br/>(Genezis Capital)
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Borisov.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Alexey Borisov
+																																			<a href="https://www.linkedin.com/in/alexey-borisov-857a28152/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	CTO
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Asenova.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Natalya Asenova
+																																			<a href="https://www.linkedin.com/in/natalia-asenova-489459153/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Head of Sales & Marketing
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																					</ul>
+																			<ul class="team__list _under">
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Mishin.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Anton Mishin
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Product Leader
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Cooney.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Mary Cooney
+																																			<a href="https://www.linkedin.com/in/mpcooney/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Advisor - Tutor development
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Mnatsakanyan.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Mikael Mnatsakanyan
+																																			<a href="https://www.linkedin.com/in/mikael-mnatsakanyan-03a5552/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Head of IR
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Rink.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Olga Rink
+																																			<a href="https://www.linkedin.com/in/olgarink/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Marketing communications<br/>for Asia and Europe, advisor
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																					</ul>
+																			<ul class="team__list _under">
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Bryzgalov.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Victor Bryzgalov
+																																			<a href="https://www.linkedin.com/in/viktor-bryzgalov-a923337a/" class="person__linkedin" target="_blank">
+																			<img src="/styles/img/icons/socials/i-ln.svg">
+																		</a>
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Director of Blockchain
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Kim.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	John Kim
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Senior Blockchain<br/>Developer
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																							<li class="team__item">
+													<div class="person">
+														<div class="person__pic js-imgbox">
+															<img src="/styles/img/content/team/Sarangov.png" alt="" class="js-img">
+
+														</div>
+														<div class="person__cont">
+															<div class="person__name">
+																<p>
+																	Ulyumdzhi Sarangov
+																																	</p>
+															</div>
+															<div class="person__prof">
+																<p>
+																	Design Manager
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+																					</ul>
+																	</div>
+							</div>
+						</div>
+					</div>
+					<div class="section _timeline" id="timeline" winscroll-target="timeline" winscroll-offset="100">
+						<div class="section__edge _top minw-box">
+							<img src="/styles/img/icons/timeline/bg-top-edge.png" alt="">
+						</div>
+						<div class="section__wrapp">
+							<div class="section__bg js-imgbox">
+								<img src="/styles/img/icons/timeline/i-circ-group.png" alt="" class="js-img">
+							</div>
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										Timeline									</h1>
+								</div>
+							</div>
+							<div class="section__dots">
+								<div class="dots"><img src="/styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+							</div>
+							<div class="section__timeline">
+								<div class="timeline">
+									<div class="timeline__bar js-imgbox">
+										<img src="/styles/img/icons/timeline/i-timeline-2.svg" alt="" class="js-img">
+									</div>
+									<div class="timeline__dot js-imgbox">
+										<img src="/styles/img/icons/timeline/i-timeline-dot.svg" alt="" class="js-img">
+									</div>
+									<div class="timeline__items">
+																					<div class="timeline__item">
+												<div class="timeline__item-line">
+													<div class="timeline__item-line__dot js-imgbox">
+														<img src="/styles/img/icons/i-dot.png" alt="" class="js-img">
+													</div>
+												</div>
+												<div class="timeline__item-tt">
+													<div class="timeline__item-tt__bg js-imgbox">
+														<i></i>
+													</div>
+													<div class="timeline__item-cont">
+														<div class="timeline__item-desc">
+															<p>
+																The Alpha version<br>
+                of the platform was launched,<br>
+                and it is currently being tested<br>
+                in an online school format
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="timeline__item-date">
+													<div class="__month">May</div>
+													<div class="__year">2017</div>
+												</div>
+											</div>
+																					<div class="timeline__item">
+												<div class="timeline__item-line">
+													<div class="timeline__item-line__dot js-imgbox">
+														<img src="/styles/img/icons/i-dot.png" alt="" class="js-img">
+													</div>
+												</div>
+												<div class="timeline__item-tt">
+													<div class="timeline__item-tt__bg js-imgbox">
+														<i></i>
+													</div>
+													<div class="timeline__item-cont">
+														<div class="timeline__item-desc">
+															<p>
+																ICO ends
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="timeline__item-date">
+													<div class="__month">April</div>
+													<div class="__year">2018</div>
+												</div>
+											</div>
+																					<div class="timeline__item">
+												<div class="timeline__item-line">
+													<div class="timeline__item-line__dot js-imgbox">
+														<img src="/styles/img/icons/i-dot.png" alt="" class="js-img">
+													</div>
+												</div>
+												<div class="timeline__item-tt">
+													<div class="timeline__item-tt__bg js-imgbox">
+														<i></i>
+													</div>
+													<div class="timeline__item-cont">
+														<div class="timeline__item-desc">
+															<p>
+																Launch of Beta version,<br>
+                tutors start teaching<br>
+                students on NTOK
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="timeline__item-date">
+													<div class="__month">June</div>
+													<div class="__year">2018</div>
+												</div>
+											</div>
+																					<div class="timeline__item">
+												<div class="timeline__item-line">
+													<div class="timeline__item-line__dot js-imgbox">
+														<img src="/styles/img/icons/i-dot.png" alt="" class="js-img">
+													</div>
+												</div>
+												<div class="timeline__item-tt">
+													<div class="timeline__item-tt__bg js-imgbox">
+														<i></i>
+													</div>
+													<div class="timeline__item-cont">
+														<div class="timeline__item-desc">
+															<p>
+																Attracting content <br>
+                providers, refining<br>
+                the platform, marketing<br>
+                in additional countries
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="timeline__item-date">
+													<div class="__month">January</div>
+													<div class="__year">2019</div>
+												</div>
+											</div>
+																					<div class="timeline__item">
+												<div class="timeline__item-line">
+													<div class="timeline__item-line__dot js-imgbox">
+														<img src="/styles/img/icons/i-dot.png" alt="" class="js-img">
+													</div>
+												</div>
+												<div class="timeline__item-tt">
+													<div class="timeline__item-tt__bg js-imgbox">
+														<i></i>
+													</div>
+													<div class="timeline__item-cont">
+														<div class="timeline__item-desc">
+															<p>
+																Complete integration <br>
+                of providers' content <br>
+                into the NTOK ecosystem, <br>
+                full platform functionality <br>
+                achieved
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="timeline__item-date">
+													<div class="__month">July</div>
+													<div class="__year">2019</div>
+												</div>
+											</div>
+																					<div class="timeline__item">
+												<div class="timeline__item-line">
+													<div class="timeline__item-line__dot js-imgbox">
+														<img src="/styles/img/icons/i-dot.png" alt="" class="js-img">
+													</div>
+												</div>
+												<div class="timeline__item-tt">
+													<div class="timeline__item-tt__bg js-imgbox">
+														<i></i>
+													</div>
+													<div class="timeline__item-cont">
+														<div class="timeline__item-desc">
+															<p>
+																Coverage of major in-demand<br>
+                languages, preschool education,<br>
+                and supplementary education<br>
+                for school students
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="timeline__item-date">
+													<div class="__month">January</div>
+													<div class="__year">2020</div>
+												</div>
+											</div>
+																			</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section _articles" id="articles" winscroll-target="articles" winscroll-offset="100">
+						<div class="section__edge _bottom minw-box">
+							<img src="/styles/img/icons/proceed/bg-bottom-edge.png" alt="">
+						</div>
+						<div class="section__scroll">
+							<div class="section__bg js-imgbox">
+								<img src="/styles/img/icons/timeline/i-circ-group.png" alt="" class="js-img">
+							</div>
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										Media									</h1>
+								</div>
+							</div>
+							<div class="section__dots">
+								<div class="dots"><img src="/styles/img/icons/i-dots.svg" alt="" class="svg-pic"></div>
+							</div>
+							<ul class="articles-list">
+																										<li class="articles-item">
+										<div class="articles-item__date">
+											<span>Posted on </span>
+											<span>16.01.2018</span>
+										</div>
+										<p class="articles-item__title">EdTech Pioneers Offer 10% Bonus Tokens</p>
+										<p class="articles-item__promotext">NTOK.io has created a new platform for delivering education opportunities across the globe. Why is that worth mentioning? 
+            The brand-new model, based on ...</p>
+										<a href="http://www.livebitcoinnews.com/ntok-offers-10percent-bonus/" class="articles-item__ref" target="_blank">
+											<span>Read more</span>
+											<i><img src="/styles/img/icons/i-btn-arr.svg" alt="" class="svg-pic"></i>
+										</a>
+									</li>
+																										<li class="articles-item">
+										<div class="articles-item__date">
+											<span>Posted on </span>
+											<span>06.01.2018</span>
+										</div>
+										<p class="articles-item__title">5 Reasons Blockchain-powered EdTech is a Powerful Investment</p>
+										<p class="articles-item__promotext">Education isn’t democratic. Not under the existing model anyway. Think about it for a moment. The richest families ...</p>
+										<a href="https://thebitcoinnews.com/5-reasons-blockchain-powered-edtech-powerful-investment/" class="articles-item__ref" target="_blank">
+											<span>Read more</span>
+											<i><img src="/styles/img/icons/i-btn-arr.svg" alt="" class="svg-pic"></i>
+										</a>
+									</li>
+																										<li class="articles-item">
+										<div class="articles-item__date">
+											<span>Posted on </span>
+											<span>02.01.2018</span>
+										</div>
+										<p class="articles-item__title">Vitaliy Tatsiy joins NTOK.io as Advisor</p>
+										<p class="articles-item__promotext">Peer to peer online education platform, NTOK.io  announces the appointment of Vitaliy Tatsiy as an advisor.
+            Vitaliy Tatsiy is a co-founder of ...</p>
+										<a href="https://thebitcoinnews.com/5-reasons-blockchain-powered-edtech-powerful-investment/" class="articles-item__ref" target="_blank">
+											<span>Read more</span>
+											<i><img src="/styles/img/icons/i-btn-arr.svg" alt="" class="svg-pic"></i>
+										</a>
+									</li>
+																																		</ul>
+							<a href="/NTOK White Paper.pdf/media" class="articles__more js-more__link">
+								<i><img src="/styles/img/icons/i-btn-arr.svg" alt="" class="svg-pic"></i>
+								<span>Show more posts</span>
+							</a>
+						</div>
+					</div>
+					<div class="section _join" id="contacts" winscroll-target="contacts">
+						<div class="section__wrapp">
+							<div class="section__textbox">
+								<div class="section__title">
+									<h1>
+										Join us									</h1>
+								</div>
+								<div class="section__desc">
+									<p>Join our pre-sale and get 17.5% bonus right now!</p>
+								</div>
+								<div class="foot__form">
+									<a class="btn _rose _big" href="https://tokensale.ntok.io/">
+										Buy tokens									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+	<div class="foot-box">
+		<div class="foot__item _disclaimer">
+			<div class="foot__item-cont">
+				<div class="foot__item-title">
+					<p>
+						Legal Disclaimer					</p>
+				</div>
+				<div class="foot__item-desc">
+					<p>
+						This website does not give personal legal or financial advice. You are strongly encouraged to seek your own professional legal and financial advice					</p>
+					<a href="/NTOK White Paper.pdf/legal" class="foot__item-desc-more">
+						<i class="fa fa-arrow-circle-right"></i>
+						<span class="__text-more">Read more</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="foot__item _partners">
+			<div class="foot__item-cont">
+				<div class="foot__item-title">
+					<p>
+						Our partners					</p>
+				</div>
+				<div class="foot__item-desc">
+					<div class="foot__logo">
+						<a href="https://icobox.io/" title="ICOBOX">
+							<img src="/styles/img/footer-logo.svg" alt="Icobox">
+						</a>
+					</div>
+				</div>
+				<div class="foot__item-desc">
+					<div class="foot__logo">
+						<a href="https://www.dlapiper.com/en/russia/" title="DLA Piper">
+							<img src="/styles/img/footer-logo-2.png" alt="DLA Piper">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot__item _contacts">
+			<div class="foot__item-cont">
+				<div class="foot__item-title">
+					<p>
+						Contact Us					</p>
+				</div>
+				<div class="foot__item-desc">
+					<p>
+						<a href="http://t.me/ntokio" target="_blank" class="foot__link">
+							<span class="link__text">t.me/ntokio</span>
+						</a>
+					</p>
+					<p>
+						<a href="https://twitter.com/ntok_io" target="_blank" class="foot__link">
+							<span class="link__text">twitter.com/ntok_io</span>
+						</a>
+					</p>
+					<p>
+						<a href="https://bitcointalk.org/index.php?topic=2496624.20" target="_blank" class="foot__link">
+							<span class="link__text">bitcointalk.org</span>
+						</a>
+					</p>
+					<p>
+						<a href="mailto:support@ntok.io" class="foot__link">
+							<span class="link__text">support@ntok.io</span>
+						</a>
+					</p>
+					<p>
+						<a href="https://www.facebook.com/ntok.token/posts/771932493007915" target="_blank" class="foot__link">
+							<span class="link__text">facebook.com/ntok.token</span>
+						</a>
+					</p>
+					<p>
+						<a href="https://www.reddit.com/user/ntok_io/" target="_blank" class="foot__link">
+							<span class="link__text">reddit.com/ntok_io</span>
+						</a>
+					</p>
+					<p>
+						<a href="https://medium.com/@ntokio" target="_blank" class="foot__link">
+							<span class="link__text">medium.com/@ntokio</span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="foot__item _quests">
+			<div class="foot__item-cont">
+				<div class="foot__item-title">
+					<p>
+						Subscribe					</p>
+				</div>
+				<div class="foot__form">
+					<div class="register js-register">
+	<div class="register__inpbox">
+		<form class="js-register__form" action="https://redirect.ntok.proscom.tech/save.php" method="POST">
+			<input type="email" name="email" autocomplete="email" class="register__inp js-register__email" placeholder="E-mail">
+			<button class="btn _rose register__btn js-register__btn">
+				<div class="btn__wrapp _form _active">
+					<span class="btn__text">Subscribe</span>
+					<i><img src="/styles/img/icons/i-btn-arr.svg" alt="" class="svg-pic"></i>
+				</div>
+				<div class="btn__wrapp _form-loading">
+					<div class="loader"></div>
+				</div>
+				<div class="btn__wrapp _sent">
+					<i><img src="/styles/img/icons/i-btn-ok.svg" alt="" class=""></i>
+					<span class="btn__text">Confirmation email has been sent to your inbox</span>
+				</div>
+				<div class="btn__wrapp _registered">
+					<i><img src="/styles/img/icons/i-btn-ok.svg" alt="" class=""></i>
+					<span class="btn__text">Congratulations! You are in the whitelist.<br/>We will inform you when you can get 10% bonuses.</span>
+				</div>
+			</button>
+		</form>
+	</div>
+</div>				</div>
+				
+					
+						
+							
+								
+									
+									
+								
+							
+						
+					
+				
+			</div>
+		</div>
+	</div>
+	<div class="foot__copy">
+		<p>© 2017-2018 NTOK. All rights reserved</p>
+		<p class="__right"><a href="https://proscom.ru">Made by Proscom</a></p>
+	</div>
+</div>
+		</div>
+		<div class="telegram-fab">
+			<a href="http://t.me/ntokio" target="_blank"></a>
+		</div>
+		<div class="weechat-fab">
+			<button></button>
+		</div>
+	</div>
+<script src="/js/jquery-2.1.3.min.js"></script>
+<script src="/js/jquery-migrate_1.2.1.js"></script>
+<script src="/js/jquery.iframetracker.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--<script src="/js/helpers.js"></script>-->
+<script src="/js/svg/svg-injector.min.js"></script>
+<script src="/js/mobile-detect/mobile-detect.min.js"></script>
+<script src="/js/fakeAJAX.js"></script>
+<script src="/js/helpers.min.js"></script>
+<script src="/js/snippets.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/main2.js"></script>
+<script src="/js/swiper.js"></script>
+<script src="/js/googleAnalytics.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        on: {
+            slideChange: function(){
+                function playVideo(frame) {
+                    frame.each( function() {
+                        this.contentWindow.postMessage(JSON.stringify({"event": "command",
+                            "func": "pauseVideo"}), '*');
+                    });
+                }
+                $(".swiper-container .swiper-slide").each(function( index ) {
+                    var element = $(this).find("iframe");
+                    playVideo(element);
+                });
+            }
+        }
+    });
+    $(window).resize(function(){
+        var ww = $(window).width();
+        if (ww>1000) {mySwiper.params.slidesPerView = 3;}
+        if (ww<=650) {mySwiper.params.slidesPerView = 1; mySwiper.params.spaceBetween = 0;}
+        mySwiper.update();
+    })
+    $(window).trigger('resize')
+</script>
+
+<!-- Yandex.Metrika counter proscom -->
+<script type="text/javascript" >
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter46208034 = new Ya.Metrika({
+					id:46208034,
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true,
+					webvisor:true
+				});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46208034" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3b3e649089","applicationID":"110517007","transactionName":"NFcDYRdWDERUBkZaVg0dIFYRXg1ZGh5eUlcETw==","queueTime":21,"applicationTime":28,"atts":"GBAAF19MH0o=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
