@@ -1,0 +1,672 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-521cbf980c80.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-f75b395c95ee.css" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-e1e1bc98a53e.css" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Documentation/BIGwhitepaperEN.md at master · bigfoundation/Documentation · GitHub</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars1.githubusercontent.com/u/32710200?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="bigfoundation/Documentation" property="og:title" /><meta content="https://github.com/bigfoundation/Documentation" property="og:url" /><meta content="Contribute to Documentation development by creating an account on GitHub." property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="E314:0B70:5F4017:A5DF43:5A70BEB8" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="E314:0B70:5F4017:A5DF43:5A70BEB8" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="https://github.com/hydro_browser_events" name="hydro-events-url" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="MTA1MjYxZTI5ZDIxOGVmOGRhODRiZmQ4ZWVmYWIyOTcxMGUzZTE0M2MzODhjODE5OWU5OGEzNGRiYzk4YmI4MXx7InJlbW90ZV9hZGRyZXNzIjoiOTYuMjMxLjE4LjE1NCIsInJlcXVlc3RfaWQiOiJFMzE0OjBCNzA6NUY0MDE3OkE1REY0Mzo1QTcwQkVCOCIsInRpbWVzdGFtcCI6MTUxNzMzODI5NiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_HERO_CARD_UPLOADER">
+
+  <meta name="html-safe-nonce" content="d429477cd51345e674b0e0a5acf7b57cbe533797">
+
+  <meta http-equiv="x-pjax-version" content="2ec2e5bba9c4872d5bfe40441b87cd01">
+  
+
+      <link href="https://github.com/bigfoundation/Documentation/commits/master.atom" rel="alternate" title="Recent Commits to Documentation:master" type="application/atom+xml">
+
+  <meta name="description" content="Contribute to Documentation development by creating an account on GitHub.">
+  <meta name="go-import" content="github.com/bigfoundation/Documentation git https://github.com/bigfoundation/Documentation.git">
+
+  <meta content="32710200" name="octolytics-dimension-user_id" /><meta content="bigfoundation" name="octolytics-dimension-user_login" /><meta content="106564369" name="octolytics-dimension-repository_id" /><meta content="bigfoundation/Documentation" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="106564369" name="octolytics-dimension-repository_network_root_id" /><meta content="bigfoundation/Documentation" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+    <link rel="canonical" href="https://github.com/bigfoundation/Documentation/blob/master/BIGwhitepaperEN.md" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  </head>
+
+  <body class="logged-out env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/bigfoundation/Documentation/search" class="js-site-search-form" data-scoped-search-url="/bigfoundation/Documentation/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/bigfoundation/Documentation/blob/master/BIGwhitepaperEN.md" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2Fbigfoundation%2FDocumentation%2Fblob%2Fmaster%2FBIGwhitepaperEN.md" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2Fbigfoundation%2FDocumentation"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/bigfoundation/Documentation/watchers"
+     aria-label="2 users are watching this repository">
+    2
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fbigfoundation%2FDocumentation"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/bigfoundation/Documentation/stargazers"
+      aria-label="2 users starred this repository">
+      2
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fbigfoundation%2FDocumentation"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/bigfoundation/Documentation/network" class="social-count"
+       aria-label="0 users forked this repository">
+      0
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/bigfoundation" class="url fn" rel="author">bigfoundation</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/bigfoundation/Documentation" data-pjax="#js-repo-pjax-container">Documentation</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/bigfoundation/Documentation" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /bigfoundation/Documentation" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/bigfoundation/Documentation/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /bigfoundation/Documentation/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/bigfoundation/Documentation/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /bigfoundation/Documentation/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/bigfoundation/Documentation/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /bigfoundation/Documentation/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+  <a href="/bigfoundation/Documentation/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /bigfoundation/Documentation/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <a href="/bigfoundation/Documentation/blob/0258c8d9dac6c6aee90ef2bd029195159cacd13a/BIGwhitepaperEN.md" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:8d5e552bbd790cc7990dcd080c8deb6c -->
+
+  <div class="file-navigation js-zeroclipboard-container">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/bigfoundation/Documentation/blob/master/BIGwhitepaperEN.md"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="/bigfoundation/Documentation/find/master"
+            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+            data-pjax
+            data-hotkey="t">
+        Find file
+      </a>
+      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+    </div>
+    <div class="breadcrumb js-zeroclipboard-target">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/bigfoundation/Documentation" data-pjax="true"><span>Documentation</span></a></span></span><span class="separator">/</span><strong class="final-path">BIGwhitepaperEN.md</strong>
+    </div>
+  </div>
+
+
+  <include-fragment class="commit-tease" src="/bigfoundation/Documentation/contributors/master/BIGwhitepaperEN.md">
+    <div>
+      Fetching contributors&hellip;
+    </div>
+
+    <div class="commit-tease-contributors">
+      <img alt="" class="loader-loading float-left" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" />
+      <span class="loader-error">Cannot retrieve contributors at this time</span>
+    </div>
+</include-fragment>
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/bigfoundation/Documentation/raw/master/BIGwhitepaperEN.md" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/bigfoundation/Documentation/blame/master/BIGwhitepaperEN.md" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/bigfoundation/Documentation/commits/master/BIGwhitepaperEN.md" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      167 lines (110 sloc)
+      <span class="file-info-divider"></span>
+    18.8 KB
+  </div>
+</div>
+
+    
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><h2><a href="#basic-income-guarantee-protocol" aria-hidden="true" class="anchor" id="user-content-basic-income-guarantee-protocol"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic Income Guarantee Protocol</h2>
+<p>BIG (Basic Income Guarantee) is a concept of unconditional basic income implemented using blockchain technology.</p>
+<h3><a href="#content" aria-hidden="true" class="anchor" id="user-content-content"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Content</h3>
+<ul>
+<li><strong><a href="#unconditional-basic-income-concept">Unconditional Basic Income concept</a></strong>
+<ul>
+<li><a href="#background">Background</a></li>
+</ul>
+<ul>
+<li><a href="#basics-concept">Basics Concept</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><a href="#blockchain-and-basic-income-guarantee">Blockchain and Basic Income Guarantee</a></strong>
+<ul>
+<li><a href="#the-goal-of-big">The Goal of BIG</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><a href="#economic-model-of-big">Economic model of BIG</a></strong>
+<ul>
+<li><a href="#blockchain">Blockchain</a></li>
+</ul>
+<ul>
+<li><a href="#currency-and-issue">Currency and Issue</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><a href="#roadmap">Roadmap</a></strong></li>
+<li><strong><a href="#conclusion">Conclusion</a></strong></li>
+<li><strong><a href="#references">References</a></strong></li>
+</ul>
+<h3><a href="#unconditional-basic-income-concept" aria-hidden="true" class="anchor" id="user-content-unconditional-basic-income-concept"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unconditional Basic Income concept</h3>
+<p>A basic income (also called basic income guarantee, Citizen's Income, unconditional basic income, universal basic income (UBI), or universal demogrant) is a form of social security in which all citizens or residents of a country receive a regular, unconditional sum of money, either from a government or some other public institution, independent of any other income.<a href="#references"><sup>[1]</sup></a><a href="#references"><sup>[2]</sup></a><a href="#references"><sup>[3]</sup></a> An unconditional income transfer that is considered insufficient to meet a person's basic needs (or below the poverty line), is sometimes called a <em>partial basic income</em>, while one at or greater than that level is sometimes called a <em>full</em> basic income.</p>
+<p>A basic income is an income unconditionally paid by the government to every individual regardless of whether they work and irrespective of any other sources of income. It replaces other social security payments and is high enough to cover all basic needs (food, housing etc.).</p>
+<p>Basic income systems that are financed by the profits of publicly owned enterprises (often called social dividend, also known as citizen's dividend) are major components in many proposed models of market socialism.<a href="#references"><sup>[4]</sup></a> Basic income schemes have also been promoted within the context of capitalist systems, where they would be financed through various forms of taxation.<a href="#references"><sup>[5]</sup></a></p>
+<p>Similar proposals for "capital grants provided at the age of majority" date to Thomas Paine's <em>Agrarian Justice</em> of 1795, there paired with asset-based egalitarianism. The phrase "social dividend" was commonly used as a synonym for basic income in the English-speaking world before 1986, after which the phrase "basic income" gained widespread currency.<a href="#references"><sup>[6]</sup></a></p>
+<p>Prominent advocates of the concept include André Gorz, Ailsa McKay,<a href="#references"><sup>[7]</sup></a> Guy Standing, Karl Widerquist, Hillel Steiner, Peter Vallentyne and Philippe Van Parijs.<a href="#references"><sup>[8]</sup></a><a href="#references"><sup>[9]</sup></a></p>
+<p>What do Europeans think about basic income?
+Key insights from the basic income survey took place in March and April 2016 (10,000 Europeans across 28 EU countries):</p>
+<ul>
+<li>A majority of Europeans (58%) reported to have at least some familiarity with the concept of basic income;</li>
+<li>64% of Europeans said they would vote in favour of basic income;</li>
+<li>23% of Europeans said they understand it fully;</li>
+<li>Europeans who said they were aware of basic income were also more likely to report that they would vote for it;</li>
+<li>The biggest hopes associated with introducing basic income: less financial anxiety and more equality of opportunity;</li>
+<li>The biggest fears associated with introducing basic income: people would stop working and foreigners would come to their country to take advantage;</li>
+<li>Only 4% of Europeans reported that the most likely effect of basic income on their work choices would be to stop working.<a href="#references"><sup>[10]</sup></a></li>
+</ul>
+<h4><a href="#background" aria-hidden="true" class="anchor" id="user-content-background"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Background</h4>
+<p>The idea of a basic income guaranteed by the government dates back to the 16th century: we see it in "Utopia" by Thomas More<a href="#references"><sup>[11]</sup></a>. For the first time in the modern history the idea of unconditional income was expounded at the end of the 18th century in Thomas Paine's works and the Marquis de Condorcet<a href="#references"><sup>[12]</sup></a>. So, in his treatise "Agrarian Justice" (written in 1795-1796, published 1797) Th. Paine considered the possibility of a one-time payment of minimum income to all people over 21 years of age from taxes on landowners.</p>
+<p>The concept of citizen’s dividends received broad support after the idea presented by British Major Clifford Douglas that each citizen owns a share of national wealth (social credit). During the crisis and unemployment of the 1930s, the idea developed into a national movement that participated in elections in many countries. The party received the greatest support in Canada (see the British Columbia Social Credit Party). The idea of an unconditional basic income was buried by the supporters of Keynesianism, which strengthened the role of the state.</p>
+<p>The closest to the implementation was the proposal of the liberal politician Juliette Ris-Williams in the UK in 1943. But in the end, the British system of social support was built on the ideas of William Beveridge, providing for certain conditions (experience, salary, etc.). Similar models were implemented in most developed Western countries. Some well-known economists, such as Milton Friedman and Friedrich von Hayek, considered unconditional basic income to be the best way to fight poverty<a href="#references"><sup>[13]</sup></a>.</p>
+<p>In Canada in 1985, the liberal government proposed to introduce a negative tax, but the conservatives who came to power considered the proposal too expensive, and it remained unfulfilled. British economists Guy Standing and Hermione Parker developed various models for the implementation of unconditional basic income. Specific calculations of Parker influenced the existing models in Europe. These models are proposed for adoption in the UK, but have not received political support<a href="#references"><sup>[14]</sup></a>.</p>
+<p>At the moment, politicians, economists and sociologists in different countries discuss the possibility of various models of guaranteed minimum. Suzanne Wiest, for example, suggests an automatic monthly increase of the bank account of every German citizen by 1500 euros for every adult and 1000 euros for every child.<a href="#references"><sup>[15]</sup></a> Professor at the Vienna University of Economics Franz Hörmann, considers unconditional income to be also necessary in the form of a minimum set of goods and services<a href="#references"><sup>[16]</sup></a>.</p>
+<h4><a href="#basics-concept" aria-hidden="true" class="anchor" id="user-content-basics-concept"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basics Concept</h4>
+<p>Unconditional basic income is intended to more equitably allocate resources and provide greater opportunities for development, regardless of social status, age, gender. In its essence, this model allows a person to do what he wants in life, having the necessary and sufficient income for existence.</p>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>the problem of poverty will be solved;</li>
+<li>the problem of technological unemployment will be solved;</li>
+<li>the reduction of income inequality;</li>
+<li>reduces the costs of administering social programs;</li>
+<li>allow people to do what they want, not what the market requires.</li>
+</ul>
+<p><strong>Disadvantages</strong>
+Criticism of the concept of unconditional basic income is based on economic and legal arguments.</p>
+<ul>
+<li>it is difficult to implement in the current political situation;</li>
+<li>the costs to implement such system are too high;</li>
+<li>it would cause a vast increase in immigration;</li>
+<li>it would cause a rise in the shadow economy.
+Some scientists (M. Fulzak, for example) defend the point of view on the utilitarian need to provide BIG not only to their fellow citizens, but also to people in the border areas in order to minimize the costs of fighting against illegal migrants.</li>
+</ul>
+<p>Basic income would cause a significant decrease in the motivation to work among citizens, with unpredictable consequences for the national economy. However, the survey before the referendum in Switzerland showed that only 2% of Swiss would quit their job, and another 8% of respondents are ready to think about this possibility.</p>
+<h3><a href="#blockchain-and-basic-income-guarantee" aria-hidden="true" class="anchor" id="user-content-blockchain-and-basic-income-guarantee"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Blockchain and Basic Income Guarantee</h3>
+<p>In our opinion, it is blockchain that allows us to realize the idea of an unconditional basic income.</p>
+<p>This is a totally open system that does not require centralized issuance and distribution of funds among the population. This reduces the cost of its implementation and does not require additional bureaucratic costs, which inevitably arise when introducing such income from the state. Blockchain will allow it to be implemented globally among all citizens of the whole world. This in turn will avoid another serious drawback - migration. There will be no wish to leave native places in search for better life. Developed online trade allows people to provide everything they need anywhere in the world. Moreover, it can allow people to live and work where, for example, housing and food is cheaper and ecological situation is better.</p>
+<p>In order to introduce basic income, any state should completely change the taxation system, social policy, the country's budget, migration policy and so on. This will become a huge expense item for any country. In addition, only financially stable states can think about such serious changes in their country. The need of its introduction has already arisen and many states have been seriously considering this possibility since the 80s of the 20th century. Today, about 50% of the British are in favor of introducing an unconditional basic income. States with low income per capita can only dream of such changes. But it is the provision of low-income people with such basic income that will give the most significant development spurt for the entire economy of the planet in general. That's why the blockchain technology allows to ensure the implementation of such a system with minimal costs and maximum effect.</p>
+<p>Before the advent of the blockchain technology, the implementation of BIG had been almost impossible, since there were a lot of complex problems that had to be solved. The implementation of the idea of the BIG on the blockchain technology brings about all the positive aspects and, at the same time, does not have negative ones:</p>
+<ul>
+<li>easy to implement;</li>
+<li>does not depend on a political situation in the world;</li>
+<li>implementation will not require large expenditures, thanks to the nature of cryptocurrencies;</li>
+<li>does not threaten the influx of migrants, because it is not connected to any country.</li>
+</ul>
+<h4><a href="#the-goal-of-big" aria-hidden="true" class="anchor" id="user-content-the-goal-of-big"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Goal of BIG</h4>
+<p>The goal of BIG is to create a system that provides all participants of the system with unconditional basic income and at the same time allows to produce, buy and sell any goods and services within the system.</p>
+<h3><a href="#economic-model-of-big" aria-hidden="true" class="anchor" id="user-content-economic-model-of-big"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Economic model of BIG</h3>
+<p>The BIG system is based on the theory of unconditional basic income, according to which every user of the system receives income without any conditions (for free). Since the development of the economy depends entirely on the purchasing power of the population, the introduction of basic income is aimed at increasing consumer demand and stimulating the growth of the economy in general.</p>
+<p>The issue of BIG tokens is connected with the number of user's wallets and takes place on a daily basis. That is, every day the system issue 1 token per registered wallet. Each new wallet increases daily emissions by 1 token. The emission is distributed among the participants of the system evenly.</p>
+<p>Any user will be able to sell and purchase goods and services using BIG tokens. At the same time, with each transaction, a commission is charged, which helps to maintain the system. Commission from each transaction (10%, so called consumption tax) pays for the work of miners, and is also distributed among all users of the system in equal shares. This distribution reduces the size of daily emissions. If the volume of commissions from transactions reaches the level of emission, then the wallets of users will be topped up exclusively at the expense of these fees. If the amount of commissions starts to exceed daily payments by wallets, then the surplus will also be distributed among all participants of the system and, thereby, increase the unconditional basic income.</p>
+<h4><a href="#blockchain" aria-hidden="true" class="anchor" id="user-content-blockchain"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Blockchain</h4>
+<p>We need to distinguish 2 stages:</p>
+<ol>
+<li>Implementation of BIG on the Ethereum blockchain. Initially, a BIGemission smart contract will be implemented in the Ethereum blockchain, it will contain an array of addresses-participants of the system, as well as information on the issue of BIG tokens (ERC-20 token).</li>
+<li>Implementation of a BIG blockchain. In the future, a BIG blockchain system will be implemented to fulfill the full-featured BIG concept.</li>
+</ol>
+<h4><a href="#currency-and-issue" aria-hidden="true" class="anchor" id="user-content-currency-and-issue"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Currency and Issue</h4>
+<p>At the first stage, Ethereum will be used as a blockchain to implement BIG, and the BIG token will be a ERC-20 token. There is the BIGemission smart contract for that purpose in the Ethereum blockchain. The issue will be implemented as follows, every Ethereum block next number of tokens will be issued for one wallet: maximum(K, E)/N, where K is the sum of all commissions from transactions in current block, E is emission in the current block according that daily emission is approximately 1 token per 1 wallet (which is equal to 1 divided by number of blocks in the Ethereum blockchain in one day, currently it’s 3000 blocks per day), and N is the number of wallets in the system for the current block timestamp. For registration in the system, it is necessary to transfer a minimum 0.01 ETH to the address of the BIGemission smart contract, right after that you will start to receive tokens each block regarding mechanism described above.</p>
+<p>Purchase of BIG tokens in the Ethereum network: at the first stage it will be possible to purchase BIG tokens at a price of 0.01 ETH for 1 token.
+There are bonuses for purchase BIG tokens:</p>
+<ul>
+<li>Bonus of 10% for sum from 100 ETH;</li>
+<li>Bonus of 20% for sum from 500 ETH;</li>
+<li>Bonus of 30% for sum from 1,000 ETH;</li>
+<li>Bonus of 40% for sum from 5,000 ETH;</li>
+<li>Bonus of 50% for sum from 10,000 ETH.</li>
+</ul>
+<p>At the second stage BIG blockchain will be implemented, that will have its own built-in currency, BIG. BIG blockchain is necessary to be independent of Ethereum blockchain and then it will no need to buy ETH.</p>
+<p>After the implementation of the BIG blockchain, ERC-20 BIG tokens will be exchanged for new BIG tokens 1 to 1.</p>
+<p>At this stage, the issue algorithm will be the same as in the first stage.</p>
+<h3><a href="#roadmap" aria-hidden="true" class="anchor" id="user-content-roadmap"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Roadmap</h3>
+<p>Today: BIGemission smart contract on the Ethereum blockchain.<br>
+Condition: -.</p>
+<p>Tomorrow: BIGemission smart contract on the Ethereum blockchain and BIG wallet with possibility to buy and sell goods and services.<br>
+Condition: 1,000 eth in the BIGemission smart-contract.</p>
+<p>Future: BIG blockchain implementation, creation of the foundation for the development and promotion of the project.<br>
+Condition: 50,000 eth.</p>
+<h3><a href="#conclusion" aria-hidden="true" class="anchor" id="user-content-conclusion"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conclusion</h3>
+<p>The BIG protocol was originally conceived as an enhanced version of the crypto currency, providing advanced functions for the concept of unconditional basic income.</p>
+<p>The concept of unconditional basic income, implemented in the BIG protocol, gives the platform a unique potential. BIG is an open general-purpose protocol, and we believe that it is very well suited for use as a fundamental layer for the concept of unconditional basic income.</p>
+<h3><a href="#references" aria-hidden="true" class="anchor" id="user-content-references"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>References</h3>
+<ol>
+<li><a href="http://www.canadiansocialresearch.net/ssrgai.htm" rel="nofollow">"Improving Social Security in Canada Guaranteed Annual Income: A Supplementary Paper"</a>. Government of Canada. 1994.</li>
+<li><a href="https://web.archive.org/web/20080621140909/http://www.basicincome.org/bien/aboutbasicincome.html" rel="nofollow">"History of Basic Income"</a>. Basic Income Earth Network (BIEN). Archived from the original on 21 June 2008.</li>
+<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3013634" rel="nofollow">Universal Basic Income: A Review</a>, Social Science Research Network (SSRN).</li>
+<li>Marangos, John (2003). "Social Dividend versus Basic Income Guarantee in Market Socialism". International Journal of Political Economy. 34 (3). <a href="https://www.jstor.org/stable/40470892?seq=1#page_scan_tab_contents" rel="nofollow">JSTOR 40470892</a>.</li>
+<li>Arneson, Richard J. (April 1992). Is Socialism Dead? A Comment on Market Socialism and Basic Income Capitalism. 102. Ethics. pp. 485–511. <a href="https://www.jstor.org/stable/2381836?seq=1#page_scan_tab_contents" rel="nofollow">JSTOR 2381836</a>.</li>
+<li>van Trier, Walter (1 April 1989). <a href="https://econpapers.repec.org/paper/antsesowp/1989006.htm" rel="nofollow">"Who framed social dividend? A tale of the unexpected"</a>. University of Antwerp, Faculty of Applied Economics. Retrieved 28 July 2016.</li>
+<li>McKay, Ailsa (2001). "Rethinking Work and Income Maintenance Policy: Promoting Gender Equality Through a Citizens' Basic Income". Feminist Economics. 7 (1): 97–118. doi:<a href="http://www.tandfonline.com/doi/abs/10.1080/13545700010022721" rel="nofollow">10.1080/13545700010022721</a>.</li>
+<li>Ralph Nader Radio Hour, KPFK 90.7 FM, Los Angeles, California. Aired Saturday, June 4th, 2016.</li>
+<li>Jimmy Dore Show, KPFK 90.7 FM, Los Angeles, California, Aired Friday, April 10th, 2017.</li>
+<li><a href="http://www.basicincome.org/wp-content/uploads/2016/05/EU_Basic-Income-Poll_Results.pdf" rel="nofollow">http://www.basicincome.org/wp-content/uploads/2016/05/EU_Basic-Income-Poll_Results.pdf</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Utopia" rel="nofollow">https://en.wikipedia.org/wiki/Utopia</a></li>
+<li><a href="https://www.economist.com/news/briefing/21699910-arguments-state-stipend-payable-all-citizens-are-being-heard-more-widely-sighing" rel="nofollow">«Sighing for paradise to come»</a>, The Economist, 4 June 2016</li>
+<li><a href="http://www.vestifinance.ru/articles/81501" rel="nofollow">Unconditional basic income: experiments and practice</a>.</li>
+<li>Honkanen, Pertti. Soininvaara, Osmo. Ylikarhi, Ville: Perustulo. Kohti toimivaa perusturvaa. Helsinki: Vihreä Sivistysliitto ry, 2007.</li>
+<li><a href="http://grundeinkommenimbundestag.blogspot.com/" rel="nofollow">GrundeinkommenImBundestag.blogspot.com</a>.</li>
+<li><a href="http://derstandard.at/1285200656759/derStandardat-Interview-Banken-erfinden-Geld-aus-Luft" rel="nofollow">Banken erfinden Geld aus Luft</a> // 13.10.2010</li>
+</ol>
+<p><strong>Disclaimer:</strong> This draft of the BIG technical white paper is published solely for information purposes. BIG does not guarantee the accuracy or conclusions made in this document, and this document is provided "as is". BIG does not guarantee the accuracy of the conclusions made in this paper, issues it "as is", without warranties of completeness of coverage and explicit or implicit guarantee of the conditions listed (but not limited to): (i) commercial suitability, possibility of specific use, naming or non-compliance rights); (ii) the absence of errors in the text, the possibility of using for a specific purpose; and (iii) non-infringement of rights of third parties by the contents of this paper . BIG and any affiliated entities waive any liabilities and possible damages that may arise from the use, mention or reliance on the information contained in this paper, as well as any advice on the possibility of such consequences. In no event shall BIG or its affiliates be liable to any persons or organizations for any damage, loss, liability, cost or expense of any kind, whether direct or indirect, consequential, compensatory, incidental, factual, exemplary, or the costs incurred due to justification or work planning on the basis of this white paper or any content of this document, including without limitation, any loss of business, income, profit, data, accessibility, goodwill or other intangible losses.</p>
+</article>
+  </div>
+
+  </div>
+
+  <button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+  <div id="jump-to-line" style="display:none">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+      <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+      <button type="submit" class="btn">Go</button>
+</form>  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.13226s from unicorn-3433674174-26x8d">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-137851324479.js"></script>
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-ad86efb96de1.js"></script>
+    
+    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-53d5033e4efa.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+

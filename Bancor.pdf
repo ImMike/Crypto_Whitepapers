@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+        <!-- Sentry JS error tracking -->
+        <script async src="https://cdn.ravenjs.com/3.22.1/raven.min.js" crossorigin id="raven"></script>
+        <script>
+            (function(b,e,c,d){b.onerror=function(a,b,d,f,g){c||e.push([a,b,d,f,g])};b.onunhandledrejection=function(a){c||e.push([a.reason.reason||a.reason.message,a.type,JSON.stringify(a.reason)])};d.onreadystatechange=d.onload=function(){c||(c=!0,
+            Raven.config("https://6dab516edfe4491185d507dcdb22a422@sentry.io/274061").install(),
+            b.onunhandledrejection=function(a){Raven.captureException(Error(a.reason.reason||a.reason.message),{extra:{type:a.type,reason:JSON.stringify(a.reason)}})},e.forEach(function(a){Raven.captureException(a[4]||Error(a[0]),{extra:{file:a[1],line:a[2],col:a[3]}})}))}})(window,[],!1,document.getElementById("raven"));
+        </script>
+
+        <link rel="preconnect" href="https://sentry.io">
+    
+
+    <script>
+        window.ENV = "production";
+        window.DISABLE_CREATE_BUTTON = true;
+        window.DISABLE_SHOP_TYPE = true;
+        window.DISABLE_DISPLAY_CURRENCY = true;
+        window.FACEBOOK_APP_ID = 328331604180725;
+        window.ENABLE_WECHAT = true;
+        window.WECHAT_QR_CODE_IMAGE_NAME = "wechat_qr_code_image.jpeg";
+        window.WITHDRAW_WHITE_LIST_PROFILES = "5906508c3cb15100014c0763,590778363cb15100014c076b,59078650d0c055000198c747,59258a2ac206840001b775b9";
+        window.WITHDRAW_WHITE_LIST_CURRENCIES  = "5907235ab1b4330001842f4c,59072c66b1b4330001842f4d,59072a82d726c80001ce82f1,59072b55f8fe2200012da080,59072d1ef8fe2200012da081,5981c5214a933736e3b7b892,598316f04a933736e3b7b897,598317a74a93372697b7b88e,59831ba64a9337220fb7b88e";
+        window.WITHDRAW_WHITE_LIST_SRN_CURRENCIES  = "5a0813408393360001a32d4b,5a01efc808849f0001097d28,5a01bddd78658d0001ffdab7,5a01b6ff78658d0001ffdab5";
+        window.GA_TRACKING_CODE = "UA-91929308-2";
+        window.BUY_SELL_BLACK_LIST_CURRENCIES = "59d745ff90509add31e9db14";
+        window.IS_SMART_CONTRACT_UNDER_MAINTENANCE = false;
+        window.WIDGET_CONVERT_PAIR_CURRENCY_ID = "5937d635231e97001f744267";
+        window.WIDGET_CONVERT_BASE_CURRENCY_ID = "594bb7e468a95e00203b048d";
+    </script>
+
+    <title>Bancor protocol</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Bancor Protocol is a standard for a new generation of cryptocurrencies called Smart Tokens">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/ico" href="/static/images/favicon.ico" />
+    <meta property="og:type" content="profile" /><meta property="fb:app_id" content="328331604180725" /><meta property="og:image" content="/static/images/og_image.jpg" /><meta property="og:image:width" content=1200 /><meta property="og:image:height" content=630 /><meta property="og:title" content="Bancor Protocol" /><meta property="og:description" content="Bancor Protocol is a standard for a new generation of cryptocurrencies called Smart Tokens" />
+    
+</head>
+
+<body>
+    <div id="app"></div>
+<script type="text/javascript" src="/static/js/vendors_d9a88f5a06d162bc4143.js"></script><script type="text/javascript" src="/static/js/main_62981e3ee520b46397bd.js"></script><script type="text/javascript">
+//<![CDATA[
+(function() {
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=198383629';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr, _analytics_elem);
+})();
+// ]]>
+</script></body>
+
+</html>

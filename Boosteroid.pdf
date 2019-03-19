@@ -1,0 +1,528 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>White Paper</title>
+    	    	    <link rel="stylesheet"  href="/css/compiled/white_en.css">
+	        	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5DQ58W2');</script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DQ58W2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+	<section class="header">
+		<h1><a href="/" class="logo"><img src="/img/white_paper_en/boosteroid.svg" alt="boosteroid"></a></h1>
+		<p>Personal cloud computer available for everyone</p>
+		<a href="/">Boosteroid.com</a>
+	</section>
+
+	<section class="about">
+		<img src="/img/white_paper_en/boosteroid_black.svg" alt="">
+		<p class="version_main">V.2.0</p>
+		<p>Personal cloud computer available for everyone</p>		
+		<p><span class="about_bold">ICO</span><br/>January 15 - February 15, 2018</p>
+		<p class="version">Version 2.0. This version of the document is in the active development phase, significant adjustments are possible</p>
+	</section>
+
+
+	<section class="contents">
+		<h2>Content</h2>
+		<ol>
+			<li class="main_nav">
+				<p><a href="#introduction">Introduction</a></p>
+				<ol>
+					<li><a href="#tendencies">Tendencies and problems in the development of the world cloud computing market</a></li>
+					<li><a href="#decision">Solutions</a></li>
+				</ol>
+			</li>
+			<li class="main_nav">
+					<p><a href="#what_is_boosteroid">What is Boosteroid</a></p>
+					<ol>
+						<li><a href="#realisation">Boosteroid project implementation</a></li>
+						<li><a href="#free_for_startup">10% of computing power for AI-startups</a></li>
+					</ol>
+			</li>
+			<li class="main_nav">
+					<p><a href="#tokens_boosteroid">Boosteroid tokens</a></p>
+					<ol>
+						<li><a href="#btr_distribution">Distribution of BTR tokens</a></li>
+					</ol>
+			</li>
+			<li class="main_nav">
+					<p><a href="#selling_tokens">Sale of BTR tokens in ICO</a></p>
+					<ol>
+						<li><a href="#tokens_ico">ICO of BTR tokens</a></li>
+					</ol>
+			</li>
+			<li class="main_nav"><p><a href="#facilities_distribution">Distribution of collected funds</a></p></li>
+			<li class="main_nav"><p><a href="#financial_model">Boosteroid financial model</a></p></li>
+			<li class="main_nav"><p><a href="#market_value">Value on the market</a></p></li>
+			<li class="main_nav"><p><a href="#mechanism_description">Payment (exchange) service description</a></p></li>
+			<li class="main_nav"><p><a href="#road_map">Road map</a></p></li>
+			<li class="main_nav"><p><a href="#team">Team</a></p></li>
+		</ol>
+	</section>
+
+
+	<section class="introduction" id="introduction">
+		<h2>1. Introduction</h2>
+		<p>People of the 21st century live in an insane rhythm and are forced to solve many difficult tasks as fast as possible. Not long ago it was impossible to fulfill them, but now, thanks to the development of the Internet and cloud technologies, the future becomes our reality.<br/><br/>Today, the most urgent issue is the permanent access to modern technologies that will facilitate and accelerate solutions of global problems, will allow them to be carried out worldwide and online. Cloud computing can be a perfect solution and that is why it is becoming more and more popular every day.</p>
+		<div class="img"><img src="/img/white_paper_en/cloud_computing.jpg" alt="cloud_computing"></div>
+		<p>Cloud computing is a model where all applications and their data are located on a remote server on the Internet and a user can access them from their PC or a tablet. Computers that carry out these operations are called a "computing cloud".<br/><br/>There are two main types of a cloud - public and private. Public cloud is intended for free access of a wide audience while private is used by one organization that includes several consumers.</p>
+	</section>
+
+
+	<section class="tendencies" id="tendencies">
+		<h3>1.1. Tendencies and problems in the development of the world cloud computing market</h3>
+		<p>According to the American consulting firm Gartner, total expenses of users working in the “cloud” reached $209,2 billion in 2016, whereas in 2015 the number was $175 billion. Thus, users’ expenses increased by $35 billion within a year. Considering analysts' forecasts expenses for a cloud are to reach approximately $246,8 billion in 2017 and will exceed $380 billion by 2020.<br/><br/>Such a high demand for these services is caused by an active transition of IT-industry data into cloud. Respectively, information technologies increasingly require high-performance resources to solve a number of tasks from artificial intelligence research to gaming, VR or analytics (Big Data analytics).</p>
+		<p class="tendencies_companies">Top cloud computing providers in 2017</p>
+		<div class="img"><img src="/img/white_paper_en/rate.jpg" alt=""></div>
+		<p>Today more than 70% of cloud computing market is occupied by leading providers. Amazon Web Services dominates (around 34％), much smaller share is taken by Microsoft (11%), IBM (8%), Google (5%) and others.<br/><br/>An average one hour rental of a computation node on the basis of eight NVIDIA GeForce GTX 1080 Ti graphics cards, two Intel Xeon E5 2680v4 processors, RAM 256Gb, SSD 960Gb (or their equivalent) offered by market leaders for European countries is:</p>
+		<div class="table_wrap">
+			<table class="equipment" border='1px'>
+				<tr>
+					<td></td>
+					<td>Company name</td>
+					<td>Equipment</td>
+					<td>Price, dollar/hour</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Amazon Web Services</td>
+					<td>Station p2.8xlarge.
+							<br/>- 8 x GPU NVIDIA Tesla K80,
+							<br/>- vCPU 32 cores (2.3 GHz Intel Xeon® E5-2686 v4
+							(Broadwell) processors or 2.4 GHz
+							<br/>Intel Xeon® E5-2676 v3 (Haswell),
+							<br/>- RAM 488Gb,
+							<br/>- SSD 1Tb,
+							<br/>- 10Gbit/s</td>
+					<td>10,6</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Microsoft Azure</td>
+					<td>Station NC24r
+							<br/>- 8 x GPU NVIDIA Tesla K80,
+							<br/>- vCPU 24 cores ( 2.4 GHz Intel Xeon® E5-2676 v3
+							(Haswell),
+							<br/>- RAM 224GB,
+							<br/>- SSD 1.440 GB,
+							<br/>- 10 Gbit/s</td>
+					<td>10,26</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Google Cloud</td>
+					<td>Custom configuration
+							<br/>- 8 x GPU NVIDIA Tesla K80,
+							<br/>- vCPU 32 cores processors or 2.4 GHz
+							Intel Xeon® E5 2676 v3 (Haswell),
+							<br/>- RAM 256Gb (up to 455 GB of RAM),
+							<br/>- SSD space 3x375 GB,
+							<br/>- 10 Gbit/s</td>
+					<td>6,5</td>
+				</tr>
+			</table>
+		</div>
+		<p class="comment">* IBM provides cloud services in the private cloud so the cost is calculated individually.</p>
+		<p>New market players cannot offer significantly lower prices, as they develop only software products - add-ins for combining of already existing computing resources - and do not have their own hardware.<br/><br/>Not only face users high prices of computing power rent offered by market leaders but also difficulties in getting access to computing resources. Today users have to to spend a lot of time on registration and the procedure includes complex settings and information not always clear even for an advanced user.</p>
+	</section>
+
+	
+	<section class="decision" id="decision">
+		<h3>1.2. Solutions</h3>
+		<p>In October, 2016 we started working on the Boosteroid project to make cloud computing as affordable as possible.<br/><br/>Our team consists of information technology and artificial intelligence professionals. Initially, we were engaged in building computational nodes based on 6/8 NVIDIA graphics cards and Intel Xeon processors, which we used to conduct complex calculations for artificial intelligence. To ensure that high-performance equipment does not stand idle, we leased it out and were engaged in cryptocurrency mining.<br/><br/>We gained our experience and found out that thanks to our own software architecture and full operating capacity, the cost of cloud computing is significantly reduced. Therefore, we will be able to provide the service at a price much lower than leading market players offer. Budget-friendly rent will make Boosteroid available to every user of the World Wide Web.</p>
+	</section>
+
+
+	<section class="what_is_boosteroid" id="what_is_boosteroid">
+		<h2>2. What is Boosteroid</h2>
+		<p>Boosteroid is a cloud services platform that provides convenient access to computing power, storages and software products.</p>
+		<img src="/img/project_mechanism.jpg" alt="project mechanism">
+		<p>Cloud computer will allow to process video, create 3D-graphics, play games requiring high computer performance or carry out machine learning even on the device with the lowest performance. The only thing that user needs is a stable connection to the high-speed Internet.<br/><br/>It will be possible to access computing power both via browser and a desktop app that will have a single account on mobile devices and PCs.</p>
+		<img src="/img/sequence.jpg" alt="sequence">
+		<p>Users will be able to choose programs they need and launch them immediately: the system will choose necessary computing power. Advanced users will be able to change the settings of their cloud computer themselves. Users will pay for the service with BTR tokens, as well as USD, BTC and ETH.</p>
+	</section>
+
+
+	<section class="realisation" id="realisation">
+		<h3>2.1. Boosteroid project implementation</h3>
+		<p>Technical implementation of the Boosteroid project consists of software and hardware parts.<br/><br/>Hardware part will include a lot of heterogeneous computing systems, combined into a single high-speed infrastructure:</p>
+		<ul>
+			<li>- servers based on modern general-purpose Intel or AMD processors;</li>
+			<li>- servers, which include NVIDIA or AMD graphics accelerators and graphics cards;</li>
+			<li>- servers, which include Intel graphics accelerators;</li>
+			<li>- high-speed switching equipment.</li>
+		</ul>
+		<p>Server architecture will be based on:</p>
+		<ul>
+			<li>- Intel Xeon E5, E7 v4 or 5 processors;</li>
+			<li>- AMD EPYC 7000 series processors;</li>
+			<li>- NVIDIA GeForce GTX 1080 Ti graphics cards;</li>
+			<li>- NVIDIA Tesla P100, Tesla V100 and AMD Radeon Instinct graphics accelerators;</li>
+			<li>- Intel Xeon Phi 7000 series accelerators.</li>
+		</ul>
+
+		<p class="scheme">High Performance Computing Cloud Structure</p>
+		<img src="/img/white_paper_en/scheme.jpg" alt="scheme">
+		<p>A fault-tolerant, distributed, redundant storage system will be used in the Boosteroid project. Also, block-level stores are provided. In addition to the main data stores, a long-term storage with a large amount of memory will be built. <br/><br/>10Gb and 100Gb Ethernet switches will be used as communication equipment. They support the operation of the system infrastructure, high-speed computing network and data warehouse replication.<br/><br/>Software part will be based on software products, designed for server, storage and network virtualization, as well as IT-infrastructure transformation into stable automated computing environment.<br/><br/>This concept will allow to create many virtual computers within a computing cloud based on Intel Xeon processors and graphics accelerators (cards) NVIDIA with minimal capacity losses.</p>
+		<img src="/img/white_paper_en/network.jpg" alt="network">
+		<p>It will be possible to use the service both on PCs and mobile devices as the access to Boosteroid will be provided via browser, regardless of the operation system.<br/><br/>We will develop user-friendly interface to provide convenient work in the cloud and ensure quick access to Boosteroid services. Users will be able to connect to a cloud computer via VPN and use particular apps, models and games.<br/><br/>To start using the service a user should sign up on the website or in the app, providing their email or their login and password.<br/>Then the user will receive an email with a link to activate an account.</p>
+		<img src="/img/white_paper_en/step1.png" alt="try out">
+		<p>After that the system will offer to choose needed rental time (hours) and several payment options for a configured cloud computer. It will be possible to skip this step and complete it later.</p>
+		<img src="/img/white_paper_en/step2.png" alt="hours">
+		<img src="/img/white_paper_en/step3.png" alt="payment method">
+		<p>There will be several payment options:
+			<br/>- with BTR tokens purchased earlier;
+			<br/>- with BTR tokens purchased via Boosteroid exchange service;
+			<br/>- with a credit card. Any currency converted to USD is accepted;
+			<br/>- with cryptocurrency.
+		</p>
+		<img src="/img/white_paper_en/step4.png" alt="platform">
+		<p>Then the user will see a main screen where icons of the most commonly used apps, settings, cloud storage and Boostore application store will be displayed. It will be possible to change the location of icons and move them. <br/><br/>There will be both paid and free apps in BooStore. In the application store the user can choose software products and cloud computer rental time if it has not been done earlier. The user will select needed time and add apps to the cart where a final cost is calculated. The system will offer to pay for selected apps. To make a payment users should connect their credit card providing card holder’s first name and last name, type of the card - Mastercard or Visa, card expiration date and card verification value (CVV number).</p>
+		<img src="/img/white_paper_en/step5.png" alt="success">
+		<p>Users will see their reserved rental time and selected apps in the personal account when the payment is made.</p>
+		<img src="/img/white_paper_en/step6.png" alt="account">
+		<p>Then the user can choose the needed app and start it. Each app is launched in a separate window. It is possible to launch several apps available in the personal account at the same time. When users access Boosteroid services via browser they will receive a notification that they can enjoy maximum performance if they download BoostApp desktop application. It will be possible to play games or use apps that require high resolution video stream only via BoostApp desktop application. 15 minutes before the end of the session the user will see a pop up message with a timer and an offer to pay for additional time so that the user will be able to keep unsaved changes and prolong the session.<br/><br/>For casual users cloud computer performance and processing power will be selected automatically (considering the required performance of software products that a user needs).<br/><br/>Experienced users will have an opportunity to select the needed features of their cloud computer on their own.</p>
+	</section>
+
+
+	<section class="free_for_startup" id="free_for_startup">
+		<h3>2.2. 10% of computing power for AI-startups</h3>
+		<p>We would be glad to support ideas that can create a better life for humanity so we decided to provide 10% free Boosteroid computing power for artificial intelligence in aging research projects after we launch our service.</p>
+		
+		<p class="subtitle">Guiding principles of AI-startups selection</p>
+		<p>1. Everybody who is engaged in AI in aging research can apply.<br/>2. The idea of a project should be unique and there should be a demand for this idea on the market.<br/>3. A team should provide clearly defined roadmap.<br/>4. We focus on teams, not individual founders.<br/>6. A team should be hungry for success, seek to solve the problems humankind faces today and pay attention to details.<br/>7. We will guide and support startups in cloud computing issues but not in their implementation and development process.<br/>8. Besides, startups engaged in the following researches can apply:<br/>
+		<br/>- Artificial Intelligence
+		<br/>- Analytics & Big Data
+		<br/>- Virtual reality
+		<br/>- Augmented reality
+		<br/>- Biotechnologies
+		<br/>- Healthcare
+		<br/>- Medical technologies and pharmacy
+		<br/>- Robotics</p>
+
+		<p class="subtitle">General criteria</p>
+		<p>The following aspects are taken into account:<br/>
+		<br/>- full-time team and founders;
+		<br/>- team focus;
+		<br/>- open-mindedness;
+		<br/>- social contribution.</p>
+
+		<p class="subtitle">Selection process</p>
+		<p>Startups selection process includes three stages.
+		<br/>1. Online application:<br/>
+		<br/>- Application form
+		<br/>- Project/team/company name?
+		<br/>- Why do you need Boosteroid computing power?
+		<br/>- How it all started: How you decided to start your project?
+		<br/>- Mission: what is the mission of your project?
+		<br/>- Goals: what do you want to achieve by implementing your project?
+		<br/>- Challenges: what risks do you face?
+		<br/>- Team: information about your team members, their background and expertise
+		<br/>- Business model: how are you going to run your business?
+		<br/><br/>2. Shortlisting<br/><br/>
+		Selection Committee will chose 30 candidates. Shortlisting is based on five crucial criteria:</p>
+		<div class="table_wrap">
+			<table>
+				<tr>
+					<td>1</td>
+					<td>Team capacity</td>
+					<td>10 points</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Project scalability</td>
+					<td>10 points</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Business model</td>
+					<td>10 points</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Marketing approach</td>
+					<td>10 points</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Uniqueness of the idea</td>
+					<td>10 points</td>
+				</tr>
+			</table>
+		</div>
+
+		<p><br/>3. Face-to-Face Interview
+		<br/><br/>Selection Committee will choose top 10 startups. Considering the results of the previous stage, there can be different types of interviews:
+		<br/><br/>1. Personal interview
+		<br/>2. Phone or Skype interview
+		<br/>3. Capability test interview
+		<br/>4. Panel interview
+		<br/><br/>Application forms should be sent to <a href="mailto:support@boosteroid.com">support@boosteroid.com</a></p>
+	</section>
+
+
+	<section class="tokens_boosteroid" id="tokens_boosteroid">
+		<h2>3. Boosteroid tokens</h2>
+		<p>A total of 1 billion tokens was released and called BTR.</p>
+		<div class="img"><img src="/img/white_paper_en/btr.jpg" alt=""></div>
+		<p>BTR tokens are created on Ethereum blockchain-platform under the ERC20 token standard.<br/>There is no reissue of tokens after the financing is completed.<br/>Tokens accepted as a payment for services will expire.<br/>All undigested and undistributed tokens will be destroyed after the ICO.</p>
+	</section>
+
+
+	<section class="btr_distribution" id="btr_distribution">
+		<h3>3.1. BTR tokens distribution</h3>
+		<p>Tokens will be distributed in the following way:</p>
+		<div class="img"><img src="/img/white_paper_en/distribution.png" alt=""></div>
+		<p>Boosteroid fund will be formed proportional to the number of sold tokens.</p>
+	</section>
+
+
+	<section class="selling_tokens" id="selling_tokens">
+		<h2>4. Sale of BTR tokens in ICO</h2>
+		<p>1 BTR corresponds to the cost of one hour computing power on the basis of eight NVIDIA GeForce GTX 1080 Ti graphics cards; two processors Intel Xeon E5 2680v4; RAM 256Gb; SSD 960Gb.</p>
+		<div class="img"><img src="/img/white_paper_en/selling.jpg" alt=""></div>
+		<p>It is possible to buy BTR tokens on the <a href="https://boosteroid.com/" target="_blank">Boosteroid.com</a> website during pre-ICO and at all ICO stages.<br/><br/>All undigested and undistributed tokens will be destroyed after the ICO is completed.<br/><b></b></p>
+	</section>
+
+
+
+	<section class="tokens_ico" id="tokens_ico">
+		<h3>4.1. ICO of BTR tokens</h3>
+
+		<h4>ICO</h4>
+		<p>Date: January 15th - February 15th 2018.<br/>Total number of BTR tokens: 400,000,000<br/>The starting price of 1 BTR token is $ 1.88, the final price is $ 2.78.</p>
+		<div class="table_wrap">
+			<table>
+				<tr>
+					<td>Round</td>
+					<td>1 BTR token price</td>
+					<td>Number of BTR tokens</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1.88</td>
+					<td>100 000 000</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>2.18</td>
+					<td>100 000 000</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>2.48</td>
+					<td>100 000 000</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>2.78</td>
+					<td>100 000 000</td>
+				</tr>
+			</table>
+		</div>
+		<p class="comment">** All stages of the ICO can be completed ahead of schedule in case the necessary investments are attracted.</p>
+		<p>FAQ and all necessary information about the project is available on Boosteroid.com and in all Boosteroid social networks:</p>
+		<div class="soc_nav">
+			<ul>
+				<li><a href="https://twitter.com/infoboosteroid" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://t.me/boosteroid" target="_blank"><i class="fa fa-telegram"></i></a></li>
+				<li><a href="https://medium.com/@Boosteroid" target="_blank"><i class="fa fa-medium"></i></a></li>
+				<li><a href="https://www.facebook.com/boosteroid.info/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			</ul>
+		</div> 
+	</section>
+
+
+	<section class="facilities_distribution" id="facilities_distribution">
+		<h2>5.  Distribution of collected funds</h2>
+		<p>Total amount of attracted investments - $ 1 359 000 000. They will be distributed in the following way:</p>
+		<div class="img"><img src="/img/white_paper_en/tokens_distribution.jpg" alt=""></div>
+		<p><br/>*Boosteroid became interesting for large investors who are ready to support us and help create the service.<br/>Considering this we decided to limit a total amount of funds that we want to attract — now the hard cap is $100 million.</p>
+	</section>
+
+
+	<section class="financial_model" id="financial_model">
+		<h2>6. Boosteroid financial model</h3>
+		<p>Expansion of computing facilities, purchase of equipment and the number of accepted BTR tokens dependson the amount of investments attracted during the ICO.<br/><br/>The table shows total number of computational nodes together with 189 already available and operating nodes.<br/><br/>One computational node costs approximately $15 000.</p>
+		<div class="table_wrap">
+			<table>
+				<tr>
+					<td>Investments collected at the ICO, $</td>
+					<td>BTR average cost, $</td>
+					<td>Number of BTR sold at the ICO</td>
+					<td>Number of purchased computational nodes</td>
+					<td>Total number of computational nodes</td>
+					<td>Number of accepted BTR per month</td>
+					<td>Time when BTR accepted as a payment will expire (month)</td>
+				</tr>
+				<tr>
+					<td>3 000 000</td>
+					<td>0,45</td>
+					<td>6666667</td>
+					<td>200</td>
+					<td>389</td>
+					<td>289416</td>
+					<td>23</td>
+				</tr>
+				<tr>
+					<td>5 000 000</td>
+					<td>0,46</td>
+					<td>10869565</td>
+					<td>333</td>
+					<td>522</td>
+					<td>388616</td>
+					<td>28</td>
+				</tr>
+				<tr>
+					<td>10 000 000</td>
+					<td>0,49</td>
+					<td>20408163</td>
+					<td>667</td>
+					<td>856</td>
+					<td>636616</td>
+					<td>32</td>
+				</tr>
+				<tr>
+					<td>30 000 000</td>
+					<td>0,55</td>
+					<td>54545455</td>
+					<td>2000</td>
+					<td>2189</td>
+					<td>1628616</td>
+					<td>33</td>
+				</tr>
+				<tr>
+					<td>50 000 000</td>
+					<td>0,65</td>
+					<td>76923077</td>
+					<td>3333</td>
+					<td>3522</td>
+					<td>2620616</td>
+					<td>29</td>
+				</tr>
+				<tr>
+					<td>100 000 000</td>
+					<td>0,8</td>
+					<td>125000000</td>
+					<td>6667</td>
+					<td>6856</td>
+					<td>5100616</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>300 000 000</td>
+					<td>1,1</td>
+					<td>272727273</td>
+					<td>20000</td>
+					<td>20189</td>
+					<td>15020616</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<td>500 000 000</td>
+					<td>1,15</td>
+					<td>434782609</td>
+					<td>33333</td>
+					<td>33522</td>
+					<td>24940616</td>
+					<td>17</td>
+				</tr>
+				<tr>
+					<td>1 000 000 000</td>
+					<td>1,2</td>
+					<td>833333333</td>
+					<td>66667</td>
+					<td>66856</td>
+					<td>49740616</td>
+					<td>17</td>
+				</tr>
+			</table>
+	</section>
+
+	
+	<section class="market_value" id="market_value">
+		<h2>7. Value on the market</h2>
+		<p>Considering the large number of users and limited number of released tokens, BTR exchange rate will increase and investors will get maximum return and gain profit.<br/><br/>Every BTR corresponds to a real service - 1 token = 1 hour computing power rent. Currently the lowest cost of 1 hour cloud computing rent is $6,5, thus the token rate will increase up to more than $6.</p>
+		<img src="/img/white_paper_en/market_value.jpg" alt="market_value">
+		<p>After the service is launched we will start BTR buyback on the exchange, so the number of tokens available on the market will reduce.</p>
+	</section>
+
+
+	<section class="mechanism_description" id="mechanism_description">
+		<h2>8. Payment (exchange) mechanism description</h2>
+		<p>We will develop the exchange service that will allow to make fast exchange between USD, BTC, ETH and BTR without registering and trading on external exchanges. Users will be able to pay with USD, BTC, ETH and BTR tokens.<br/><br/>The exchange service will be integrated into the web interface, where the payment for computing power rent will be made.</p>
+		<img src="/img/white_paper_en/mechanism_description.png" alt="mechanism_description">
+		<p>Exchange rate and payment details will also be displayed there. The exchange rate will be close to that on the cryptocurrency exchanges and will update within particular periods of time. There will be a small charge for the exchange operations.<br/><br/>The exchange service will have reserves of USD, BTC, ETH and BTR. Exchange requests will be processed immediately. If the reserves of a particular currency end, the exchange service will automatically order it on external digital currency exchanges.<br/><br/>The exchange service will be launched on a separate server and connected to external exchanges, traditional payment systems and cryptocurrency wallets modules. The service will have a public API to accept exchange requests and inform about the current exchange rate and status of eserves.</p>
+	</section>
+	
+	
+	<section class="road_map" id="road_map">
+		<h2>9. Road map</h2>
+		<img src="/img/white_paper_en/roadmap.jpg" alt="road_map">
+	</section>
+
+
+	<section class="team" id="team">
+		<h2>10. Team</h2>
+		<div class="team_wrap clearfix">
+			<div class="person">
+				<div class="photo puzich"></div>
+				<p>Dejan Puzich<br/><span class="prof">Advisor</span></p>
+			</div>
+			<div class="person">
+				<div class="photo captain"></div>
+				<p>Cengiz Kaptan<br/><span class="prof">Advisor, Investor</span></p>
+			</div>
+			<div class="person">
+				<div class="photo shvaychenko"></div>
+				<p>Ivan Shvaichenko<br/><span class="prof">CEO, Founder</span></p>
+			</div>
+			<div class="person">
+				<div class="photo znakhur"></div>
+				<p>Sergey Znakhur<br/><span class="prof">AI Developer</span></p>
+			</div>
+			<div class="person">
+				<div class="photo skryabin"></div>
+				<p>Bogdan Skryabin<br/><span class="prof">Blockchain Specialist</span></p>
+			</div>
+			<div class="person">
+				<div class="photo savin"></div>
+				<p>Yuriy Savin<br/><span class="prof">Infrastructure Architect</span></p>
+			</div>
+			<div class="person">
+				<div class="photo chepel"></div>
+				<p>Larisa Сhepel<br/><span class="prof">PR & Communications</span></p>
+			</div>
+			<div class="person">
+				<div class="photo biriukov"></div>
+				<p>Vitaliy Biriukov<br/><span class="prof">CTO</span></p>
+			</div>
+			<div class="person">
+				<div class="photo nikitenkov"></div>
+				<p>Vladislav Nikitenkov<br/><span class="prof">Marketing</span></p>
+			</div>
+			<div class="person">
+				<div class="photo podrezova"></div>
+				<p>Olga Podrezova<br/><span class="prof">Lead designer</span></p>
+			</div>
+			<div class="person">
+				<div class="photo zykova"></div>
+				<p>Svetlana Zykova<br/><span class="prof">Web Development</span></p>
+			</div>
+			<div class="person">
+				<div class="photo kovalenko"></div>
+				<p>Nataliya Kovalenko<br/><span class="prof">Lawyer</span></p>
+			</div>
+					</div>
+	</section>
+</body>
+</html>

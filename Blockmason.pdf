@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>The Credit Protocol Whitepaper</title>
+
+<link rel="icon" href="../../assets/images/favicon.png">
+
+<meta name="description" content="Credit Protocol Whitepaper">
+
+<meta name="author" content="Blockmason Team">
+
+
+<link rel="stylesheet" href="/cp-whitepaper/css/styles.css">
+
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-104142244-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '369319106836468');
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1"
+src="https://www.facebook.com/tr?id=369319106836468&ev=PageView
+&noscript=1"/>
+</noscript>
+
+</head>
+<body>
+<div class="container-fluid navbar-container m-sm-5">
+
+<nav class="header">
+<a href="/cp-whitepaper/"><h5>The Credit Protocol Whitepaper <small>v1.1.5</small></h5></a>
+<a href="https://blockmason.io"><h6>Blockmason Team</h6></a>
+2017-12-14
+</nav>
+<div class="row">
+<script>
+  window.location = "/cp-whitepaper/introduction-and-features/";
+</script>
+<div class="index-toc row col">
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/introduction-and-features/">
+1. <strong>Introduction & Features</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/introduction-and-features/#the-credit-protocol">The Credit Protocol</a><li>
+<li class=""><a class="" href="/cp-whitepaper/introduction-and-features/#use-case-authority-contracts">Use Case Authority Contracts</a><li>
+<li class=""><a class="" href="/cp-whitepaper/introduction-and-features/#bounty-program-for-ucacs">Bounty Program for UCACs</a><li>
+<li class=""><a class="" href="/cp-whitepaper/introduction-and-features/#free-ucac-depository">Free UCAC Depository</a><li>
+<li class=""><a class="" href="/cp-whitepaper/introduction-and-features/#enforcing-debt-repayment">Enforcing Debt Repayment</a><li>
+<li class=""><a class="" href="/cp-whitepaper/introduction-and-features/#the-ethereum-conundrum">The Ethereum Conundrum</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/credit-protocol-usage-examples/">
+2. <strong>Credit Protocol Usage Examples</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/credit-protocol-usage-examples/#university-meal-vouchers">University Meal Vouchers</a><li>
+<li class=""><a class="" href="/cp-whitepaper/credit-protocol-usage-examples/#microfinancing">Microfinancing</a><li>
+<li class=""><a class="" href="/cp-whitepaper/credit-protocol-usage-examples/#retail-gift-cards">Retail Gift Cards</a><li>
+<li class=""><a class="" href="/cp-whitepaper/credit-protocol-usage-examples/#consumer-loans">Consumer Loans</a><li>
+<li class=""><a class="" href="/cp-whitepaper/credit-protocol-usage-examples/#airline-miles-vendor-loyalty-credit-card-points">Airline Miles Vendor Loyalty Credit Card Points</a><li>
+<li class=""><a class="" href="/cp-whitepaper/credit-protocol-usage-examples/#friend-in-debt">Friend In Debt</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/why-cp/">
+3. <strong>Why CP</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/why-cp/#security">Security</a><li>
+<li class=""><a class="" href="/cp-whitepaper/why-cp/#ease">Ease</a><li>
+<li class=""><a class="" href="/cp-whitepaper/why-cp/#scale">Scale</a><li>
+<li class=""><a class="" href="/cp-whitepaper/why-cp/#support">Support</a><li>
+<li class=""><a class="" href="/cp-whitepaper/why-cp/#urgency">Urgency</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/cp-technical/">
+4. <strong>CP Technical</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#credit-protocol-data-smart-contract">Credit Protocol Data Smart Contract</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#credit-protocol-smart-contract">Credit Protocol Smart Contract</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#flux-capacitor-smart-contract">Flux Capacitor Smart Contract</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#use-case-authority-contracts">Use Case Authority Contracts</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#multiple-users-and-bidding">Multiple Users and Bidding</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#staking-smart-contract">Staking Smart Contract</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#tech-considerations">Tech Considerations</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#nameprep-for-foundationids">Nameprep for FoundationIDs</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#storage-costs">Storage Costs</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cp-technical/#expandability">Expandability</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/cost-and-economics/">
+5. <strong>Cost & Economics</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/cost-and-economics/#plasma-and-off-chain-transactions">Plasma and Off Chain Transactions</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cost-and-economics/#ucacs-transaction-costs-and-monopolies">UCACs Transaction Costs and Monopolies</a><li>
+<li class=""><a class="" href="/cp-whitepaper/cost-and-economics/#transaction-capacity-setting">Transaction Capacity Setting</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/lndr-our-first-demonstration-of-the-credit-protocol/">
+6. <strong>Lndr - Our First Demonstration of the Credit Protocol</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/lndr-our-first-demonstration-of-the-credit-protocol/#like-venmo-on-the-blockchain-but-better">Like Venmo on the Blockchain but Better</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-our-first-demonstration-of-the-credit-protocol/#more-than-a-wallet-creating-and-settling-social-debts">More than a Wallet Creating and Settling Social Debts</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-our-first-demonstration-of-the-credit-protocol/#unified-login-across-devices">Unified Login Across Devices</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-our-first-demonstration-of-the-credit-protocol/#lowering-the-technical-barrier">Lowering the Technical Barrier</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-our-first-demonstration-of-the-credit-protocol/#better-security">Better Security</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-our-first-demonstration-of-the-credit-protocol/#lndr-beta">Lndr Beta</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-our-first-demonstration-of-the-credit-protocol/#future-versions">Future Versions</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/lndr-market-opportunity/">
+7. <strong>Lndr - Market Opportunity</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/lndr-market-opportunity/#democratizing-the-role-of-a-lender">Democratizing the Role of a Lender</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-market-opportunity/#banking-the-unbanked">Banking the Unbanked</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-market-opportunity/#getting-crypto-into-your-mom-s-hands">Getting Crypto into Your Mom's Hands</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/lndr-technical/">
+8. <strong>Lndr Technical</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/lndr-technical/#credit-protocol-smart-contracts">Credit Protocol Smart Contracts</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-technical/#lndr-use-case-authority-contract">Lndr Use Case Authority Contract</a><li>
+<li class=""><a class="" href="/cp-whitepaper/lndr-technical/#front-end">Front End</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/token-sale/">
+9. <strong>Token Sale</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/token-sale/#pre-sale-period-50-token-bonus">Pre Sale Period 50 Token Bonus</a><li>
+<li class=""><a class="" href="/cp-whitepaper/token-sale/#sale-bonus-tiers">Sale Bonus Tiers</a><li>
+<li class=""><a class="" href="/cp-whitepaper/token-sale/#developers-token-pool">Developers Token Pool</a><li>
+<li class=""><a class="" href="/cp-whitepaper/token-sale/#friend-in-debt">Friend in Debt</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/use-of-funds-and-roadmap/">
+10. <strong>Use of Funds & Roadmap</strong>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/credit-protocol-lndr-roadmap/">
+11. <strong>Credit Protocol and Lndr Roadmap</strong>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/security-general/">
+12. <strong>Security</strong>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/faq/">
+13. <strong>FAQ</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/faq/#q-all-transactions-are-visible-on-the-blockchain-how-can-i-keep-my-transaction-history-private">Q: All transactions are visible on the blockchain How can I keep my transaction history private</a><li>
+<li class=""><a class="" href="/cp-whitepaper/faq/#q-isn-t-it-expensive-to-send-transactions-on-the-blockchain">Q: Isn't it Expensive to Send Transactions on the Blockchain</a><li>
+<li class=""><a class="" href="/cp-whitepaper/faq/#q-isn-t-the-ethereum-network-slow">Q: Isn't the Ethereum Network Slow</a><li>
+<li class=""><a class="" href="/cp-whitepaper/faq/#q-what-happens-on-cp-and-fid-if-a-user-s-address-is-hacked">Q: What Happens on CP and FiD If a User's Address is Hacked</a><li>
+<li class=""><a class="" href="/cp-whitepaper/faq/#q-what-happens-with-remaining-tokens-not-purchased-through-the-token-offering">Q: What Happens with Remaining Tokens Not Purchased Through the Token Offering</a><li>
+<li class=""><a class="" href="/cp-whitepaper/faq/#q-what-happens-with-friends-who-don-t-pay-their-debts">Q: What Happens With Friends Who Don't Pay Their Debts</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/founders-profiles/">
+14. <strong>Founders Profiles</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/founders-profiles/#timothy-galebach">Timothy Galebach</a><li>
+<li class=""><a class="" href="/cp-whitepaper/founders-profiles/#jared-bowie">Jared Bowie</a><li>
+<li class=""><a class="" href="/cp-whitepaper/founders-profiles/#michael-chin">Michael Chin</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/conclusion/">
+15. <strong>Conclusion</strong>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/advisories/">
+16. <strong>Advisories</strong>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/the-credit-protocol-built-on-ethereum/">
+17. <strong>The Credit Protocol, Built on Ethereum</strong>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/korean/">
+18. <strong>크레딧 프로토콜(The Credit Protocol)</strong>
+<ul class="list-unstyled">
+<li class=""><a class="" href="/cp-whitepaper/korean/#cp-technical">CP Technical</a><li>
+<li class=""><a class="" href="/cp-whitepaper/korean/#friend-in-debt">Friend in Debt</a><li>
+<li class=""><a class="" href="/cp-whitepaper/korean/#faq">FAQ</a><li>
+</ul>
+</a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="index-item">
+<a href="/cp-whitepaper/chinese-simplified/">
+19. <strong>信用协定白皮书</strong>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js" integrity="sha256-VNbX9NjQNRW+Bk02G/RO6WiTKuhncWI4Ey7LkSbE+5s=" crossorigin="anonymous"></script>
+<script src="/cp-whitepaper/js/main.js"></script>
+</body>
+</html>
