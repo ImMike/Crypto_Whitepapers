@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <title>ZenGold 臻金</title>
+  <meta charset="utf-8">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="keywords" content="ZenGold官网, 臻金，ZENGOLD，黄金，金价，金块，金条，投资理财，区块链黄金，ZNG，ZGC，现货黄金交易">
+  <meta name="description" content="ZenGold官网,臻金（ZENGOLD）是世界首款应用区块链技术来管理和交易黄金现货的软件应用，通过去中心化、安全可追溯、不可篡改等技术特性，可为你的数字资产提供更高的安全保障。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!--[if lt IE 9]>
+  <script src="./js/assets/html5shiv.min.js"></script>
+  <script src="./js/assets/respond.min.js"></script>
+  <script src="./js/assets/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+
+</head>
+
+
+<body>
+  <!--[if lt IE 9]>
+<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+  <!-- wrappers content begin -->
+  <div id="canvas">
+    <div id="box_wrapper">
+
+      <!-- template sections -->
+
+      <header class="page_header header_darkgrey table_section table_section_md toggler_right">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <a href="index.html" class="logo top_logo">
+                <h1 class="zengoldlogo">
+                  <img src="./imgs/logo.png" alt="zengold" title="zengold">
+                </h1>
+              </a>
+              <!-- header toggler -->
+              <span class="toggle_menu">
+                <span></span>
+                <i class="fa fa-close"></i>
+              </span>
+            </div>
+            <div class="col-md-8 text-right">
+              <!-- main nav start -->
+              <nav class="mainmenu_wrapper">
+                <ul class="mainmenu nav sf-menu">
+                  <li class="active">
+                    <a href="#product" data-scroll>产品</a>
+                  </li>
+                  <li>
+                    <a href="#feature" data-scroll>特色</a>
+                  </li>
+                  <li>
+                    <a href="#tech" data-scroll>技术</a>
+                  </li>
+                  <li>
+                    <a href="#development" data-scroll>发展</a>
+                  </li>
+                  <!--<li>-->
+                  <!--<a href="#cooperation" data-scroll>合作</a>-->
+                  <!--</li>-->
+                  <li>
+                    <a href="#community" data-scroll>社区</a>
+                  </li>
+                  <!-- <li>
+                  <a href="./white-paper/ZenGold-white-paper-CN.pdf" target="_blank" data-scroll>白皮书</a>
+                </li> -->
+                  <li>
+                    <a href="./en/index.html">
+                      <img src="./imgs/en.png" alt="language" class="language">
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- eof main nav -->
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--important info -->
+      <div class="box-centent top-01 clearfix">
+        <!--first screen -->
+        <div class="z-bannerbox clearfix" id="product"></div>
+        <!--data begin-->
+        <div class="container ft-contentbox">
+          <div class="row">
+            <!--phone slide begin-->
+            <div class="phone_panel col-md-3 fl">
+              <div class="p-index main phoneBox" id="con">
+                <img src="./imgs/xiaojinku2.png" alt="zengoldapp" title="zengoldapp" class="app-phimg">
+              </div>
+            </div>
+            <!--phone slide end-->
+
+            <!--right data begin-->
+            <div class="right-imbox col-md-9 center-auto">
+              <div class="right-sslidebox">
+                <!--goldprice info data begin-->
+                <div class="count-block">
+                  <div class="clearfix">
+                    <div class="fl text-left">
+                      <p class="price-newtitle">实时金价</p>
+                      <p class="price-new" id="latest-price">加载中</p>元/克
+                      <p>Au99.99</p>
+                    </div>
+                    <div class="fr">
+                      <p class="price-item">
+                        <span class="p-title">开盘价</span>
+                        <span id="openprice" class="item">加载中</span>
+                      </p>
+                      <p class="price-item">
+                        <span class="p-title">涨跌幅</span>
+                        <span class="price-fluctuation item">
+                          <span class="z-symbol"></span>
+                          <span id="price-fluctuation" class="price-fluctuation">加载中</span>
+                          <!--<span class="dw">%</span>-->
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <img src="./imgs/kline.png" alt="" class="slim">
+                </div>
+                <!--goldprice info data end-->
+              </div>
+
+              <!--download btns-->
+              <ul class="download-app fadeInUp animated">
+                <li class="">
+                  <!--<a href="##" class="android dl-btns"><i class="fa fa-android"></i>开发中</a>-->
+                  <a href="https://www.pgyer.com/dGqa" target="_blank" class="android dl-btns">
+                    <i class="fa fa-android"></i>下载公测版</a>
+                  <!--<a href="##" class="android dl-btns"><div class="text-id9999"><i class="fa fa-android"></i>Android版</div></a>-->
+                </li>
+                <li>
+                  <a href="https://itunes.apple.com/cn/app/%E8%87%BB%E9%87%91/id1297908397?mt=8" target="_blank" class="ios dl-btns">
+                    <i class="fa fa-apple"></i>下载</a>
+                </li>
+              </ul>
+              <!--download btns end-->
+            </div>
+            <!--right data end-->
+          </div>
+        </div>
+        <!--data end-->
+        <!--first screen end-->
+
+        <!--APP begin-->
+        <div class="app-box graybg mar100 clearfix">
+          <div class="container text-center">
+            <h2 class="c-h2 app-h2">带来黄金交易新体验</h2>
+            <div class="app-info">
+              <div class="item">
+                <p class="info01 infopoint">实时金价 随手掌握</p>
+                <p class="info03 infopoint">黄金交易 随时随地</p>
+              </div>
+              <div class="item mditem">
+                <img src="./imgs/zapp.jpg" class="appimg">
+              </div>
+              <div class="item">
+                <p class="info02 infopoint">超低门槛 1元起购</p>
+                <p class="info04 infopoint">价格透明 零手续费</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--APP end-->
+      </div>
+      <!--important end-->
+
+
+      <!--feature begin-->
+      <div class="box-centent top-02 clearfix">
+        <div class="featurebox mar100" id="feature">
+          <div class="container text-center">
+            <h2 class="c-h2 to_animate animated pullDown fadeInUp">臻金特色</h2>
+            <h3 class="f-ftitel to_animate animated pullDown fadeInUp">
+              <i class="cj-c-i"></i>全新的黄金零售方式</h3>
+            <ul class="ts-wrap">
+              <li class="col-sm-3 col-sm-6 col-sm-12 to_animate animated pullDown">
+                <div class="con-swrap">
+                  <div class="licon">
+                    <strong class="ts-title">
+                      <i class="cicle-p"></i>新黄金</strong>
+                    <p class="ts-des">黄金资产固变活</p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-3 col-sm-6 col-sm-12 to_animate animated pullDown">
+                <div class="con-swrap">
+                  <div class="licon">
+                    <strong class="ts-title">
+                      <i class="cicle-p"></i>新零售</strong>
+                    <p class="ts-des">资产交易场景化</p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-3 col-sm-6 col-sm-12 to_animate animated pullDown">
+                <div class="con-swrap">
+                  <div class="licon">
+                    <strong class="ts-title">
+                      <i class="cicle-p"></i>新服务</strong>
+                    <p class="ts-des">加工、回收、定制</p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-3 col-sm-6 col-sm-12 to_animate animated pullDown">
+                <div class="con-swrap">
+                  <div class="licon">
+                    <strong class="ts-title">
+                      <i class="cicle-p"></i>真保障</strong>
+                    <p class="ts-des">保险公司承保</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--feature end-->
+
+
+      <!--blockchainbox-->
+      <div class="box-centent top-03 clearfix">
+        <div class="blockchainbox mar100" id="tech">
+          <div class="container  text-center">
+            <div class="">
+              <h2 class="blockchain-title c-h2 to_animate animated pullDown fadeInUp">区块链</h2>
+              <h3 class="h3-htitle to_animate animated pullDown fadeInUp">
+                <i class="sj-i"></i>全新技术为黄金资产提供安全保障</h3>
+              <ul class="blockchainlists">
+                <li class="col-md-4 col-sm-6 to_animate animated pullDown col-xs-12 margin-bottom-large fadeInUp animated">
+                  <div class="cc-cont">
+                    <div class="iconimg dis-tablecell">
+                      <img src="./imgs/gongyoulian.png">
+                    </div>
+                    <strong class="bctitle">国内第一条公有链</strong>
+                    <em class="bcinfo">元界提供技术支持</em>
+                  </div>
+                </li>
+                <li class="col-md-4 col-sm-6 to_animate animated pullDown col-xs-12 margin-bottom-large fadeInUp animated">
+                  <div class="cc-cont">
+                    <div class="iconimg dis-tablecell">
+                      <img src="./imgs/quzhongxinhua.png">
+                    </div>
+                    <strong class="bctitle">去中心化交易</strong>
+                    <em class="bcinfo">安全、透明、可追溯</em>
+                  </div>
+                </li>
+                <li class="col-md-4 col-sm-6 to_animate animated pullDown col-xs-12 margin-bottom-large fadeInUp animated">
+                  <div class="cc-cont">
+                    <div class="iconimg dis-tablecell">
+                      <img src="./imgs/shuzishenfen.png">
+                    </div>
+                    <strong class="bctitle">数字身份</strong>
+                    <em class="bcinfo">强化链上的信用体系</em>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--blockchainbox end-->
+
+
+      <!--Developmentbox-->
+      <div class="box-centent top-04 clearfix">
+        <div class="timetreebox mar100" id="development">
+          <div class="timetree container  text-center">
+            <div class="">
+              <h2 class="animated pullDown c-h2  animated pullDown fadeInUp">发展历程</h2>
+              <div class="dev-history">
+                <div class="tree-datebox left-time fl">
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2016 前</dt>
+                    <dd class="tr-things">项目立项</dd>
+                    <dd class="tt-i">
+                      <img src="./imgs/ccll.png">
+                    </dd>
+                  </dl>
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2017.05</dt>
+                    <dd class="tr-things">项目筹备</dd>
+                    <dd class="tt-i">
+                      <img src="./imgs/ccll.png">
+                    </dd>
+                  </dl>
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2017.07</dt>
+                    <dd class="tr-things">完成生态闭环设计，场景功能设计
+                      <br> 同行异业合作计划
+                    </dd>
+                    <dd class="tt-i">
+                      <img src="./imgs/ccll.png">
+                    </dd>
+                  </dl>
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2017.09</dt>
+                    <dd class="tr-things">臻金管理系统开发，APP开发
+                      <br> 调整国内合作方案
+                    </dd>
+                    <dd class="tt-i">
+                      <img src="./imgs/ccll.png">
+                    </dd>
+                  </dl>
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2017.11</dt>
+                    <dd class="tr-things">安卓公测版0.3.2发布</dd>
+                    <dd class="tt-i">
+                      <img src="./imgs/ccll.png">
+                    </dd>
+                  </dl>
+                  <!--<dl class="to_animate animated pullDown">-->
+                  <!--<dt class="tr-date">2017.11</dt>-->
+                  <!--<dd class="tr-things">软件测试和线下业务运营测试<br>-->
+                  <!--合作单位培训</dd>-->
+                  <!--<dd class="tt-i"><img src="../imgs/ccll.png"></dd>-->
+                  <!--</dl>-->
+                </div>
+                <div class="tree-datebox right-time">
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2016.05-2017.4</dt>
+                    <dd class="tr-things">确定落实区块链主网 及技术文档
+                    </dd>
+                  </dl>
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2017.06</dt>
+                    <dd class="tr-things">修整商业模式，品牌产品定位和落地方案</dd>
+                  </dl>
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2017.08</dt>
+                    <dd class="tr-things">完成APP界面设计，交互设计，系统框架设计， 数据库设计
+                    </dd>
+                  </dl>
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2017.10</dt>
+                    <dd class="tr-things">安卓内测版0.1.0 - 0.2.5发布，测试活动结束</dd>
+                  </dl>
+                  <dl class="to_animate animated pullDown">
+                    <dt class="tr-date">2017.12</dt>
+                    <dd class="tr-things">iOS版正式上架</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Developmentbox end-->
+
+      <!--Community box-->
+      <div class="box-centent top-06 clearfix">
+        <div class="communitybox mar100" id="community">
+          <div class="container  text-center">
+            <div class=" ">
+              <h2 class="hz-h2 c-h2 to_animate">互动社区</h2>
+              <div class="joinus to_animate">
+                <span class="welcome-zg">
+                  <i class="cj-c-i"></i>欢迎加入社区与其他用户一起掘金</span>
+                <a class="join-cmbtn" href="http://bbs.viewfin.com/forum.php?mod=forumdisplay&fid=68" target="_blank">立即进入</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Communitybox end-->
+
+      <!--footer begin-->
+      <div w3-include-html="footer.html"></div>
+      <!--footer end-->
+
+    </div>
+    <!-- eof #box_wrapper -->
+  </div>
+  <!-- wrappers content end -->
+
+
+  <script src="./js/assets/jquery-1.12.4.min.js"></script>
+  <script src="./js/navjs/nav.js"></script>
+  <script src="./js/navjs/compressed.js"></script>
+  <script src="./js/navjs/main.js"></script>
+  <script src="./js/w3.js"></script>
+  <script src="./js/goldprice.js"></script>
+  <script>
+    //    footer
+    w3.includeHTML();
+  </script>
+</body>
+
+</html>
