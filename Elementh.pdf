@@ -1,0 +1,861 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-521cbf980c80.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-f75b395c95ee.css" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-e1e1bc98a53e.css" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Documentation/ElementhWhitepaperEN.md at master · ElementhFoundation/Documentation · GitHub</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars1.githubusercontent.com/u/32837999?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="ElementhFoundation/Documentation" property="og:title" /><meta content="https://github.com/ElementhFoundation/Documentation" property="og:url" /><meta content="Contribute to Documentation development by creating an account on GitHub." property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="D7F2:0B72:77D6E2:DE2885:5A70A51D" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="D7F2:0B72:77D6E2:DE2885:5A70A51D" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="https://github.com/hydro_browser_events" name="hydro-events-url" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NjQxZWRjNTVjYjliZWY0N2VjZjgyYjA4OTM2MGUyNmNkNTAwYmQ4ZTcxZjQ1ZDgyMmFiOWZlMWI2YmE5NTZkN3x7InJlbW90ZV9hZGRyZXNzIjoiOTYuMjMxLjE4LjE1NCIsInJlcXVlc3RfaWQiOiJEN0YyOjBCNzI6NzdENkUyOkRFMjg4NTo1QTcwQTUxRCIsInRpbWVzdGFtcCI6MTUxNzMzMTc0MSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_HERO_CARD_UPLOADER">
+
+  <meta name="html-safe-nonce" content="223ffca5bd565d478de23d054e1aa753a8d1375d">
+
+  <meta http-equiv="x-pjax-version" content="2ec2e5bba9c4872d5bfe40441b87cd01">
+  
+
+      <link href="https://github.com/ElementhFoundation/Documentation/commits/master.atom" rel="alternate" title="Recent Commits to Documentation:master" type="application/atom+xml">
+
+  <meta name="description" content="Contribute to Documentation development by creating an account on GitHub.">
+  <meta name="go-import" content="github.com/ElementhFoundation/Documentation git https://github.com/ElementhFoundation/Documentation.git">
+
+  <meta content="32837999" name="octolytics-dimension-user_id" /><meta content="ElementhFoundation" name="octolytics-dimension-user_login" /><meta content="107115280" name="octolytics-dimension-repository_id" /><meta content="ElementhFoundation/Documentation" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="107115280" name="octolytics-dimension-repository_network_root_id" /><meta content="ElementhFoundation/Documentation" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+    <link rel="canonical" href="https://github.com/ElementhFoundation/Documentation/blob/master/ElementhWhitepaperEN.md" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  </head>
+
+  <body class="logged-out env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/ElementhFoundation/Documentation/search" class="js-site-search-form" data-scoped-search-url="/ElementhFoundation/Documentation/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/ElementhFoundation/Documentation/blob/master/ElementhWhitepaperEN.md" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2FElementhFoundation%2FDocumentation%2Fblob%2Fmaster%2FElementhWhitepaperEN.md" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2FElementhFoundation%2FDocumentation"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/ElementhFoundation/Documentation/watchers"
+     aria-label="3 users are watching this repository">
+    3
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FElementhFoundation%2FDocumentation"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/ElementhFoundation/Documentation/stargazers"
+      aria-label="2 users starred this repository">
+      2
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FElementhFoundation%2FDocumentation"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/ElementhFoundation/Documentation/network" class="social-count"
+       aria-label="2 users forked this repository">
+      2
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/ElementhFoundation" class="url fn" rel="author">ElementhFoundation</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/ElementhFoundation/Documentation" data-pjax="#js-repo-pjax-container">Documentation</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/ElementhFoundation/Documentation" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /ElementhFoundation/Documentation" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/ElementhFoundation/Documentation/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /ElementhFoundation/Documentation/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/ElementhFoundation/Documentation/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /ElementhFoundation/Documentation/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/ElementhFoundation/Documentation/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /ElementhFoundation/Documentation/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+  <a href="/ElementhFoundation/Documentation/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /ElementhFoundation/Documentation/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <a href="/ElementhFoundation/Documentation/blob/38252a223022d43f0dae91335d911c73d36d3378/ElementhWhitepaperEN.md" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:d279980a7584e34434be2914a83d4acc -->
+
+  <div class="file-navigation js-zeroclipboard-container">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/ElementhFoundation/Documentation/blob/master/ElementhWhitepaperEN.md"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="/ElementhFoundation/Documentation/find/master"
+            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+            data-pjax
+            data-hotkey="t">
+        Find file
+      </a>
+      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+    </div>
+    <div class="breadcrumb js-zeroclipboard-target">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/ElementhFoundation/Documentation" data-pjax="true"><span>Documentation</span></a></span></span><span class="separator">/</span><strong class="final-path">ElementhWhitepaperEN.md</strong>
+    </div>
+  </div>
+
+
+  
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/ElementhFoundation/Documentation/commit/38252a223022d43f0dae91335d911c73d36d3378" data-pjax>
+          38252a2
+        </a>
+        <relative-time datetime="2018-01-30T08:00:22Z">Jan 30, 2018</relative-time>
+      </span>
+      <div>
+        <img alt="@anotherpriest" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/7830850?s=40&amp;v=4" width="20" />
+        <a href="/anotherpriest" class="user-mention" rel="contributor">anotherpriest</a>
+          <a href="/ElementhFoundation/Documentation/commit/38252a223022d43f0dae91335d911c73d36d3378" class="message" data-pjax="true" title="Update ElementhWhitepaperEN.md">Update ElementhWhitepaperEN.md</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>1</strong>
+         contributor
+      </button>
+      
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@anotherpriest" height="24" src="https://avatars0.githubusercontent.com/u/7830850?s=48&amp;v=4" width="24" />
+            <a href="/anotherpriest">anotherpriest</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/ElementhFoundation/Documentation/raw/master/ElementhWhitepaperEN.md" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/ElementhFoundation/Documentation/blame/master/ElementhWhitepaperEN.md" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/ElementhFoundation/Documentation/commits/master/ElementhWhitepaperEN.md" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      373 lines (244 sloc)
+      <span class="file-info-divider"></span>
+    42.4 KB
+  </div>
+</div>
+
+    
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><p align="center">
+  <a href="/ElementhFoundation/Documentation/blob/master/images/logotype.png" target="_blank"><img width="388" height="388" src="/ElementhFoundation/Documentation/raw/master/images/logotype.png" style="max-width:100%;"></a>
+</p>
+<h2><a href="#blockchain-for-e-commerce" aria-hidden="true" class="anchor" id="user-content-blockchain-for-e-commerce"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Blockchain for E-commerce</h2>
+<p>Since 2008, when Bitcoin was created by Satoshi Nakamoto, crypto-currencies and blockchain technology have been increasingly settling down in our world. Limitations of Bitcoin's blockchain resulted in the appearance of a large number of blockchains such as Ethereum <a href="#references"><sup>[2]</sup></a>, which allows to create smart contracts in the Turing-complete programming language, EOS <a href="#references"><sup>[3]</sup></a>, using the dPoS protocol, increasing the throughput of the blockchain technology hundreds and thousands times. Blockchain technology is coming closer to the real sector of the economy and more and more people are talking about the possible use of blockchain not only in the financial sector.</p>
+<p>Elementh has absorbed the best achievements of recent years in the field of blockchain, aiming at solving the problems of the modern world of e-commerce. Elementh is a blockchain for e-commerce, which is a register of ownership of goods with the ability to write specialized smart contracts and use of the nomenclature standard to quickly create various decentralized and centralized applications for e-commerce.</p>
+<h3><a href="#content" aria-hidden="true" class="anchor" id="user-content-content"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Content</h3>
+<ul>
+<li><strong><a href="#introduction-to-bitcoin-and-existing-concepts">Introduction to Bitcoin and Existing Concepts</a></strong>
+<ul>
+<li><a href="#background">Background</a></li>
+</ul>
+<ul>
+<li><a href="#alternative-blockchain-applications">Alternative Blockchain Applications</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><a href="#blockchain-and-e-commerce">Blockchain and E-commerce</a></strong>
+<ul>
+<li><a href="#decentralized-marketplaces">Decentralized Marketplaces</a></li>
+</ul>
+<ul>
+<li><a href="#e-commerce-issues">E-commerce Issues</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><a href="#elementh">Elementh</a></strong>
+<ul>
+<li><a href="#system-of-goods">System of Goods</a></li>
+</ul>
+<ul>
+<li><a href="#unified-nomenclature-of-goods">Unified Nomenclature of Goods</a></li>
+</ul>
+<ul>
+<li><a href="#the-originality-of-goods">The originality of Goods</a></li>
+</ul>
+<ul>
+<li><a href="#accounts">Accounts</a></li>
+</ul>
+<ul>
+<li><a href="#transactions-and-messages">Transactions and messages</a></li>
+</ul>
+<ul>
+<li><a href="#blockchain">Blockchain</a></li>
+</ul>
+<ul>
+<li><a href="#dpos-protocol">DPOS Protocol</a></li>
+</ul>
+<ul>
+<li><a href="#reward-for-the-block">Reward for the Block</a></li>
+</ul>
+<ul>
+<li><a href="#the-system-of-tokens">The System of Tokens</a></li>
+</ul>
+<ul>
+<li><a href="#decentralized-goods-data-storage">Decentralized Goods Data Storage</a></li>
+</ul>
+<ul>
+<li><a href="#case-study">Case Study</a></li>
+</ul>
+<ul>
+<li><a href="#partners">Partners</a></li>
+</ul>
+<ul>
+<li><a href="#team">Team</a></li>
+</ul>
+<ul>
+<li><a href="#advisors">Advisors</a></li>
+</ul>
+<ul>
+<li><a href="#market">Market</a></li>
+</ul>
+<ul>
+<li><a href="#competitors">Competitors</a></li>
+</ul>
+<ul>
+<li><a href="#product">Product</a></li>
+</ul>
+</li>
+<li><strong><a href="#applications">Applications</a></strong>
+<ul>
+<li><a href="#currency-and-issue">Currency and Issue</a></li>
+</ul>
+</li>
+<li><strong><a href="#conclusion">Conclusion</a></strong>
+<ul>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+<h3><a href="#introduction-to-bitcoin-and-existing-concepts" aria-hidden="true" class="anchor" id="user-content-introduction-to-bitcoin-and-existing-concepts"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction to Bitcoin and Existing Concepts</h3>
+<h4><a href="#background" aria-hidden="true" class="anchor" id="user-content-background"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Background</h4>
+<p>The concept of a decentralized digital currency, as well as alternative applications, such as property registers, have existed for several decades. The anonymous electronic money protocols of the 1980s and 1990s mostly depended on a cryptographic primitive known as the Chaumian Blinding <a href="#references"><sup>[4]</sup></a>. Chaumian Blinding allowed the creation of new currencies with a high degree of confidentiality, but their main protocols could not be widely spread because of their dependence on a centralized agent. In 1998, b-money by Wei Dai <a href="#references"><sup>[5]</sup></a> was the first proposal to introduce the idea of creating money by solving computational tasks, as well as to offer decentralized consensus, but in this proposal there was little information about how to actually implement it. In 2005, Hal Finney introduced the concept of reusable proofs of work, a system that uses ideas from b-money along with puzzles of the difficulty computable Adam Hackcash Hashcash <a href="#references"><sup>[6]</sup></a> to create a concept of crypto currency, but once again it did not become popular, relying on centralized computing as a backend. In 2009, the decentralized currency was first implemented in practice by Satoshi Nakamoto <a href="#references"><sup>[1]</sup></a>, it combined established primitives to confirm ownership through public key cryptography with a consensus algorithm to track who owns the coins, known as "proof of work".</p>
+<h4><a href="#alternative-blockchain-applications" aria-hidden="true" class="anchor" id="user-content-alternative-blockchain-applications"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Alternative Blockchain Applications</h4>
+<p>The idea to take the basic blockchain technology and apply it to other concepts also has a long history. In 2005, Nick Szabo proposed a concept of proprietary rights protection with owner authorization <a href="#references"><sup>[7]</sup></a>, which describes how "new advances in replicated database technology" will allow the use of a block-based system to store the registry of someone who owns some land, creating a complex structure that includes concepts such as a manor, unfavorable possession and land tax. Unfortunately, at that time there was no effective replicated database system, so the protocol was not actually implemented in practice. However, after 2009, as soon as Bitcoin's decentralized consensus was developed, a number of alternative applications quickly emerged.</p>
+<p>Disadvantages of Bitcoin's smart contracts, first of all, the absence of the Turing-complete programming language, led to the appearance of the Ethereum blockchain, a specialized blockchain that allows to write Turing-complete smart contracts. Ethereum plans to switch to the PoS protocol in the future, but currently it is still working on the PoW protocol, which affects the speed and cost of transactions in the system. A promising alternative will be the EOS blockchain, which is currently being developed. It provides the ability to write smart contracts, works on the dPoS protocol and makes it easy to create various decentralized dApps applications based on its own blockchain.</p>
+<h3><a href="#blockchain-and-e-commerce" aria-hidden="true" class="anchor" id="user-content-blockchain-and-e-commerce"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Blockchain and E-commerce</h3>
+<p>Since the advent of blocking technology, many people have been trying to link it to commerce, mainly in two formats: the creation of decentralized marketplaces, such as OpenBazaar, Syscoin, Particl, etc .; and payment systems using crypto-currencies in stores, such as Monetha, TenX, Plutus, and others. While the second group, basically, makes a replacement for PayPal and rather refers to the financial sector, decentralized marketplaces try to combine blockchain and e-commerce.</p>
+<h4><a href="#decentralized-marketplaces" aria-hidden="true" class="anchor" id="user-content-decentralized-marketplaces"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Decentralized Marketplaces</h4>
+<p>OpenBazaar was founded in 2014 and at the moment you can find 1259 products there. It works on the Bitcoin basis using IPFS for data storage.</p>
+<p>Syscoin is being currently tested and is based on Bitcoin too.</p>
+<p>Particl is still being developed and at the moment it's just a wallet for storing and transferring their tokens.</p>
+<p>All existing decentralized marketplaces inherit the shortcomings of the usual online stores and online marketplaces, i.e. lack of a standard of nomenclature, lack of information on different product in a single card and of guarantees that the seller does have the goods presented on the online storefront.</p>
+<p>It is important to note that all decentralized marketplaces are not potential competitors, but partners of Elementh blockchain.</p>
+<h4><a href="#e-commerce-issues" aria-hidden="true" class="anchor" id="user-content-e-commerce-issues"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>E-commerce Issues</h4>
+<p>Historically, the EAN / UPC code is most commonly used in commerce <a href="#references"><sup>[8]</sup></a>. Originally, the American UPC system was developed, containing 12 digits for the encoding goods and it gained such popularity that European countries focused on it. However, the entire range of codes was already involved in encoding goods of the USA and Canada while the goods and firms were exclusively registered in the USA. The developers of the European encoding EAN-13 faced a serious task - to extend the range of codes and organize an independent US registration system ensuring maximum compatibility with UPC encoding. The solution was to add the thirteenth digit to the leftmost position (it is usually indicated by the Arabic digit to the left of the barcode) using 12 digital templates like in the UPC. At the same time, it was possible to maintain the backward compatibility of EAN-13 with the UPC coding - the latter became a subset of the EAN-13 coding with the first 0 digit.</p>
+<p>UPC codes were standardized and registered by the UCC (Uniform Code Council, Inc.) in the United States and the Electronic Commerce Council of Canada (ECCC) in Canada. In 2005, these organizations merged with the European Association of EAN and formed the global standardization organization GS1 <a href="#references"><sup>[9]</sup></a>.</p>
+<p>This code was primarily created to automate the trade of goods produced by a great number of enterprises, so the issue of internal content was also important for standardization and regulation in order that different enterprises could not assign the same code to the product. Each newly produced type of goods was supposed to have its own unique code, and this was the main idea of the entire system. That means that if, for example, a manufacturer produces jeans, then jeans of different colors, sizes, cuts, should have different codes. Thus, if we have, for example, 10 colors, 50 models, 20 sizes, then we need 10,000 codes to encode them.</p>
+<p>In its turn, same goods by different manufacturers, also had to have a different coding. All this was important for the automation of accounting in trade, automatic control of stock balances in warehouses, store shelves and so on.
+The theoretical maximum of the GS1 code is 100 billion different types of goods (11 digits). It would seem like a huge number, but theory does not always correspond to practice, and the current situation shows that during more than 30 years of the system's existence these codes have not been sufficient. This is due to their unbalanced and wasteful spending.
+Initially, 11 digits of code were distributed as follows:</p>
+<ol>
+<li>digit for the prefix;</li>
+<li>digits for the manufacturer's code;</li>
+<li>digits for the item of goods code.</li>
+</ol>
+<p>That means that theoretically the system implied up to six hundred thousand enterprises (one hundred thousand per prefix), each being able to code up to one hundred thousand items of goods produced by it.</p>
+<p>Thus, to date, situations where different goods can have the same barcodes or the same item can have different barcodes are not uncommon. The situation is being made even worse by the fact that retailers often simply print their own barcodes for a variety of goods sold by weight, thereby completely destroying the whole meaning of unique bar codes.</p>
+<p>In addition, one should understand that a barcode identifies a product, not a specific SKU (Stock Keeping Unit). To understand the latter additional parameters such as serial number, excise and other types of unique identification of a specific SKU are needed.</p>
+<p>Finally, barcodes are often not entered in the ERP system of wholesale companies, and each participant in the sales chain uses his own unique articles for different types of goods.</p>
+<h3><a href="#elementh" aria-hidden="true" class="anchor" id="user-content-elementh"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Elementh</h3>
+<p align="center">
+  <a href="/ElementhFoundation/Documentation/blob/master/images/img_elementh.png" target="_blank"><img width="602" height="601" src="/ElementhFoundation/Documentation/raw/master/images/img_elementh.png" style="max-width:100%;"></a>
+</p>
+Elementh's goal is to create an alternative protocol for the development of decentralized applications used by e-commerce, providing a standard quality nomenclature, guaranteeing ownership of a particular product and the ability to create specialized smart contracts for e-commerce. Elementh will achieve this by creating a blockchain with a built-in Turing-complete programming language, allowing everyone to write smart contracts and decentralized applications, enabling the use of unified product cards, e-commerce transactions and the transfer of ownership.
+<h4><a href="#system-of-goods" aria-hidden="true" class="anchor" id="user-content-system-of-goods"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>System of Goods</h4>
+<p align="center">
+  <a href="/ElementhFoundation/Documentation/blob/master/images/img_systemofgoods.png" target="_blank"><img width="602" height="439" src="/ElementhFoundation/Documentation/raw/master/images/img_systemofgoods.png" style="max-width:100%;"></a>
+</p>
+Along with the system of tokens, Elementh has a system of goods, which can also be used in a large number of applications, such as tracking the movement of a particular item from its creation to the current owner, tracking original goods and detecting counterfeit goods. Unlike the system of tokens, the system of goods also provides for the ability to "issue" a particular product at a particular address, indicating all possible item's data (such as name, manufacturer, bar code, etc.). And if identical goods are already present in the blockchain, the issuer will receive a message about it, and he will have the opportunity to indicate how many items of goods he wants to "issue".
+<p>If an item has a serial number, it is possible to specify it when the transfer operation is being performed. To provide protection against data forging, only the hash of the serial number is fixed in the system, therefore only the person who knows the initial number has the ability to make a valid transaction.
+In the absence of a serial number at the moment of "issuing" goods, the system generates it randomly and the holder is able to use it to identify a particular item of goods by printing out the QR code on the package, writing it in an RFID tag or in any other convenient way.</p>
+<h4><a href="#unified-nomenclature-of-goods" aria-hidden="true" class="anchor" id="user-content-unified-nomenclature-of-goods"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unified Nomenclature of Goods</h4>
+<p>Each supplier / distributor / seller in the world has its own data format for goods, and, more importantly, its own nomenclature. Their number is huge and growing every day. For example, let's have a look at the search output in google.shopping for "iphone 7 256gb red":</p>
+<p align="center">
+  <a href="/ElementhFoundation/Documentation/blob/master/images/img_unifiednomenclatureofgoods_1.png" target="_blank"><img width="602" height="88" src="/ElementhFoundation/Documentation/raw/master/images/img_unifiednomenclatureofgoods_1.png" style="max-width:100%;"></a><br>
+  <a href="/ElementhFoundation/Documentation/blob/master/images/img_unifiednomenclatureofgoods_2.png" target="_blank"><img width="454" height="393" src="/ElementhFoundation/Documentation/raw/master/images/img_unifiednomenclatureofgoods_2.png" style="max-width:100%;"></a>
+</p>
+<p>As you can see, each store has a different name for the product, while the search results also present another iPhone model, followed by the iPhone 7 256gb of other colors and so on. An obvious solution to this problem is the creation of a unified nomenclature of goods that will allow users to see offers on the product of interest on one merchandise card and stores to choose suppliers that are most beneficial to them.</p>
+<p>One of the key features of Elementh is the availability of a unified nomenclature. To ensure that the merchandise cards are as complete and accurate as possible, and to reduce the likelihood of creating duplicate cards, the cost of creating and using the card will be different. To create a merchandise card a participant will have to pay, for example, 1 EEE (the price will be set by voting of delegates). At the moment when the owner adds the item to the system, he is offered to use an existing card or create a new one. The use of an existing card costs 100 times less than the creation of a new one (for example, 0,01 EEE). The cardholder receives a reward for each owner of goods that uses his card, as well as for making a transaction using this card. Any participant in the system can supplement information in existing cards, and the cardholder can accept or reject the proposed changes.</p>
+<h4><a href="#the-originality-of-goods" aria-hidden="true" class="anchor" id="user-content-the-originality-of-goods"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The originality of Goods</h4>
+<p>Goods in the system exist in a single copy and if an item with the same serial number is added to the system, any dApp can notify the buyer that the origin of the goods is unknown. If the chain of ownership comes from the manufacturer, the confirmation of the originality of the goods will be throughout the entire network.</p>
+<h4><a href="#accounts" aria-hidden="true" class="anchor" id="user-content-accounts"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Accounts</h4>
+<p>Account is one of the basic objects in Elementh, it is used as identity of participants of the network. Each account has:</p>
+<ul>
+<li>account balance of the internal cryptocurrency EEE;</li>
+<li>information about ownership of goods.</li>
+</ul>
+<p>All transactions in the blockchain is made by accounts.</p>
+<h4><a href="#transactions-and-messages" aria-hidden="true" class="anchor" id="user-content-transactions-and-messages"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Transactions and messages</h4>
+<p>Any action in the Elementh blockchain is called transaction. The most simple transactions is a transfer of EEE value between accounts and a define ownership for goods. Transaction can include structured message for receiver. Accounts may define scripts to handle messages when they are received. The combination of messages and automated scripts is a smart contract subsystem in Elementh.</p>
+<h4><a href="#blockchain" aria-hidden="true" class="anchor" id="user-content-blockchain"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Blockchain</h4>
+<p>Transactions in the chain of blocks must be safe, unambiguous and irreversible, and be carried out as quickly as possible to facilitate the reliability and decentralization of the system. In practice, the difficulties arise in two different aspects of this process: selecting a unique node for the production of the block and making the record irreversible.</p>
+<h4><a href="#dpos-protocol" aria-hidden="true" class="anchor" id="user-content-dpos-protocol"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DPOS Protocol</h4>
+<p>According to the concept of decentralized autonomous DAC companies, decentralization means that each shareholder has an influence proportional to the number of his shares and that the decision taken by voting of 51% of shareholders is irreversible and mandatory. The challenge is how to achieve 51% of the approving threshold in a timely and efficient manner.</p>
+<p>To achieve this goal, each shareholder can delegate his right to vote to a delegate. 100 delegate with the largest number of votes delegated generate blocks according to a certain schedule. Each delegate is allocated a time frame for the production of the block. If he does not produce a block, then their turn is skipped, and the next delegate produces a block according to the list. All delegates receive a payment equal to 10% of the average size of the transaction commission. If the middle block contains a fee of 100 shares, the delegate will receive 1 share as payment.</p>
+<p>It is possible that a delay in the network can lead to the fact that some delegates will not be able to generate their block in a timely manner, and this will lead to a split of the chain of blocks. However, in practice this is unlikely to happen, because a delegate can establish direct connections with other delegates preceding and following him in the chain. With this model, new blocks can be generated every 10-30 seconds and under normal network conditions, the splits of the chain of blocks are unlikely or can be corrected within a few minutes.</p>
+<h4><a href="#reward-for-the-block" aria-hidden="true" class="anchor" id="user-content-reward-for-the-block"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reward for the Block</h4>
+<p>The blockchain that will use the Elementh software will be awarded with new tokens of the block manufacturer every time the unit is created. The Elementh software can be configured in such a way as to ensure that payment of the block manufacturers is restricted so that the total annual increase in the number of tokens does not exceed 5%.</p>
+<h4><a href="#the-system-of-tokens" aria-hidden="true" class="anchor" id="user-content-the-system-of-tokens"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The System of Tokens</h4>
+<p>The system of tokens can be used in a huge number of applications from binding to assets such as USD or gold to company shares. The system of tokens is easy to implement in the Elementh blockchain. In order to better understand what a token system is, you can imagine a database with only one operation: take X units from A and transfer them to B, under the following conditions, 1) A has at least X units before the transaction is made and 2) the transaction is confirmed by A. What is necessary to implement this system is the implementation of a smart contract with the above logic.</p>
+<h4><a href="#decentralized-goods-data-storage" aria-hidden="true" class="anchor" id="user-content-decentralized-goods-data-storage"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Decentralized Goods Data Storage</h4>
+<p>To store goods data, such as specifications, photos, EAN codes, serial numbers, and others, Elementh uses the IPFS protocol.
+IPFS (the InterPlanetary File System) is a content-addressable, peer-to-peer, hypermedia communication protocol. IPFS allows you to create fully distributed applications. It is aimed at making the World Wide Web faster, safer, and more open.</p>
+<p>IPFS is a peer-to-peer distributed file system that connects all computing devices to a single file system. In a sense IPFS is similar to the World Wide Web. IPFS can be represented as a single bittorrent-swarm, which exchanges files of a single Git-repository <a href="#references"><sup>[10]</sup></a>.
+IPFS is becoming a new important subsystem of the World Wide Web. Constructed correctly, it is able to complement or completely replace HTTP. It can also supplement or replace other systems.</p>
+<h4><a href="#case-study" aria-hidden="true" class="anchor" id="user-content-case-study"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Case Study</h4>
+<p>Jack, the owner of a small store, was told about the Elementh blockchain and the opportunities it provides. Jack had not sold anything on the Internet before. Having learned about the new possibilities, he decided that it was time to try selling their shoes via the Elementh blockchain, using special applications for sellers. Setting up a store turned out to be quite simple and took several minutes.</p>
+<p align="center">
+  <a href="/ElementhFoundation/Documentation/blob/master/images/img_casestudy.png" target="_blank"><img width="460" height="650" src="/ElementhFoundation/Documentation/raw/master/images/img_casestudy.png" style="max-width:100%;"></a>
+</p>
+<p>Having connected his accounting program to the application, Jack managed to recognize stock balance and bind it to a single nomenclature with fine merchandise cards and complete data of the product features. Information about Jack's goods immediately became available to all members of the Elementh network. Steve saw the store with the boots he needed, immediately made the order, and Jack received a notification that Steve wanted to buy his shoes. Customer's money is immediately transferred to a smart contract, which means that the order is real. Having arranged the delivery of the goods to Steve, Jack began his usual work in the store. As soon as the goods were delivered, the money transferred to Jack's account, which means that he didn't have to wait for a long time and immediately invest the profit in a new product.</p>
+<p>One day Jack decided to expand the product range and to sell branded bags, along with footwear. Without hesitation, he opened the b2b application for finding suppliers and manufacturers working in the Elementh blockchain and found the bag manufacturer LOUIS VUITTON. He placed the order, transferring crypto currency to the smart contract. The supplier, having received information about Jack's order, immediately formed a dispatch and transferred data on serial numbers to the smart contract. Now that the transaction is underway, everyone will be able to verify that Jack has authentic LOUIS VUITTON bags in his store and not a fake. This is because in the Elementh network each manufacturer can track the movement of goods and if several owners of the same serial number of one product appear, it means counterfeit and its origin is very easy to track and take necessary measures to notify customers about its existence.</p>
+<p>Steve has long been using applications for finding the lowest price for the product he needs. Today he decided that it was time to order new shoes and just in a few minutes he found the couple he needed in Jack's store and placed the order, sending money to the smart contract. Steve has not been afraid to make purchases online and send money to unknown sellers for a long time. If Steve does not receive the goods, he will simply indicate it in a smart contract and the money will return to him. This time his order was processed almost instantly and the courier arrived an hour later. Making sure that the shoes are of the right quality Steve completed the smart contract and the money went to Jack while Steve became the owner of a new pair of shoes. He can easily sell this pair of shoes in the secondary market as soon as he gets bored with them because Elementh network knows that he has authentic items not counterfeit ones. Just in two clicks he will be able to put them up for sale.</p>
+<h3><a href="#applications" aria-hidden="true" class="anchor" id="user-content-applications"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Applications</h3>
+<p>In general, there are two types of applications built on top of Elementh. The first category is financial applications that provide users with great opportunities to manage and participate in contracts using cash, including buying and selling products and content online and offline, as well as tokens built on the Elementh software. The second category is non-financial applications, such as identifying fake / counterfeit goods in the supply chain, etc.</p>
+<ol>
+<li><strong>Decentralized marketplaces based on Elementh</strong>. Based on Elementh's blockchain any marketplace will be able to allow sellers to use existing merchandise cards without creating new ones. Data on the ownership of the product will allow you to get rid of counterfeit products sold through the marketplace. Unified merchandise cards will allow you to easily find the lowest price for any products. At the same time, it becomes possible to pay using any crypto currency.</li>
+<li><strong>Tracking the movement of goods</strong>. The complete producer - distributor - seller - buyer chain, stored in the Elementh blockchain, will allow to find suppliers for any volume of products, up to direct order of goods from the manufacturer. We see it as the future of e-commerce.</li>
+<li><strong>Search for goods by geolocation</strong>. Seller information available in the Elementh blockchain allows you to find the most convenient places of purchase for any item.</li>
+<li><strong>Decentralized sending of messages</strong>. The ability to send messages allows you to contact directly with any participant in the transaction. This will allow setting up exchange systems, bidding, obtaining individual purchase conditions and so on.</li>
+<li><strong>Store designer</strong>. Having all the necessary data to set up a store, the system allows you to create individual decentralized showcases for any vendor in the system.</li>
+<li><strong>Fakes search</strong>. Data on all participants of the chain will allow to track the appearance of counterfeit products at any stage of the transfer of ownership of goods.</li>
+<li><strong>Banking scoring</strong>. Access to data on all transactions of any participant of the system will allow instantaneous scoring of the seller, which makes it possible to build credit and overdraft systems by the banking institutions.</li>
+<li><strong>Different verticals</strong>. Elementh blockchain can be used by any service provider, for example, hotels or airlines with ticket, coupon or voucher entity to store information and track ownership.</li>
+</ol>
+<h4><a href="#currency-and-issue" aria-hidden="true" class="anchor" id="user-content-currency-and-issue"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Currency and Issue</h4>
+<p>Elementh blockchain has its own built-in currency, elementh (EEE), which serves two purposes, firstly, it is to provide a primary level of liquidity, which in turn ensures an efficient exchange between different types of digital assets, and, secondly, more importantly, for payment of transaction fees.</p>
+<p>Token and ICO information: EEE, ERC-20 standard<br>
+Total supply: 303 000 000 EEE<br>
+Token distribution:<br>
+217 500 000 (71,78%) EEE - investors<br>
+45 000 000 (14,85%) EEE - team<br>
+40 500 000 (13,37%) EEE - partners and advisors<br>
+<br>
+Private Pre-Sale start date: 15 January 2018 00:00 UTC<br>
+Private Pre-Sale end date: 31 January 2018 23:59 UTC<br>
+Private Pre-Sale soft cap: -<br>
+Private Pre-Sale hard cap: 1 500 ETH<br>
+Private Pre-Sale price: 1 EEE = 0.0001 ETH<br>
+Private Pre-Sale bonuses scheme: 50% Tokens<br>
+<br>
+Pre-ICO start date: 1 February 2018 00:00 UTC<br>
+Pre-ICO end date: 14 February 2018 23:59 UTC<br>
+Pre-ICO soft cap: -<br>
+Pre-ICO hard cap: 1 500 ETH minus received in Private Pre-Sale stage<br>
+Pre-ICO price: 1 EEE = 0.0001 ETH<br>
+Pre-ICO bonus scheme: 1st day: 30% Tokens,  2nd day: 15% Tokens<br>
+<br>
+ICO start date: 1 March 2018 00:00 UTC<br>
+ICO end date: 31 March 2018 23:59 UTC<br>
+ICO soft cap: 10 000 ETH<br>
+ICO hard cap: 30 000 ETH<br>
+ICO price: 1 EEE = 0.0002 ETH<br>
+ICO bonus scheme: 1st day: 30% Tokens,  2nd day: 15% Tokens<br></p>
+<h3><a href="#partners" aria-hidden="true" class="anchor" id="user-content-partners"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Partners</h3>
+<p>Since 2012 we have a working business in Russia called <a href="http://miiix.org/" rel="nofollow">Miiix</a>. It's working right now, we have more than 200 online stores and marketplaces working with us. One of these stores was Ulmart and we made a connector to SAP Hybris, so that they can use the matched nomenclature of goods for their marketplace. As soon as Ulmart has business problems right now, this connector was not implemented fully in their business. We also discussed with SAP and SAP Hybris in Russia the opportunity to PR this solution to other SAP customers worldwide. In 2018 we're going to participate in SAP COIL program to test everything and use this solution at SAP store.</p>
+<p>One of Miiix customers is Sberbank AST - biggest tender platform in Russia. They need to match goods from different suppliers there. We process about 2,000,000 SKUs in a month for them right now.</p>
+<p>We also have 200+ small and medium online stores and marketplaces as a customers at Miiix product.</p>
+<h3><a href="#team" aria-hidden="true" class="anchor" id="user-content-team"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Team</h3>
+<p>Team of the project consist of 10 members of which three are founders, they worked with each other for years, which is a big positive moment for the project. Founders have great experience in the field of e-commerce which is the target field of Elementh project, their experience is not limited to <a href="http://miiix.org/" rel="nofollow">Miiix</a>, they also developed a platform for selling non-liquid stocks of retailers <a href="http://smallhorse.ru/" rel="nofollow">Smallhorse</a> and some other products earlier.</p>
+<p><a href="https://www.linkedin.com/in/sergey-ryabov-20108765/" rel="nofollow">Sergey Ryabov</a>, CEO<br>
+Since 2001, he has been creating online projects. Created and launched a number of online projects, among them the context advertising system, domain registrar, recommendation start-up and web-studio. All these products have been successfully sold to partners and other larger companies. After that, several online stores, <a href="https://prestigewheels.ru/" rel="nofollow">Prestigewheels</a> and <a href="http://sportmanya.ru/" rel="nofollow">Sportmanya</a> were launched, where the founders faced the problem of actuality of surplus and solved it by creating the project service <a href="http://miiix.org/" rel="nofollow">Miiix</a>.<br>
+He sold his stores and focused on the Miiix project. The project received the Startup of the Year 2013 Award in Russia and still exists. In 2017, the project is integrated with SAP Hybris to use the algorithms for product matching in major global marketplaces and retailers. In 2016, together with Dmitry Kostygin, the main shareholder of Ulmart, he created a platform for selling non-liquid surplus of retailers - <a href="http://smallhorse.ru/" rel="nofollow">Smallhorse</a>.</p>
+<p><a href="https://www.linkedin.com/in/bdmitry/" rel="nofollow">Dmitriy Bereznitskiy</a>, CTO<br>
+Technical director and partner in projects <a href="http://miiix.org/" rel="nofollow">Miiix</a> and <a href="http://smallhorse.ru/" rel="nofollow">Smallhorse</a>. Since 2006, he has been developing a system of affiliated stores to attract traffic to major marketplaces such as Amazon. Experience in commercial web development for more than 15 years, experience in e-commerce for more than 10 years. Managing development teams for more than 7 years. Evangelist of Agile methodology, Lean Startup and Theory of Constraints.</p>
+<p><a href="https://www.linkedin.com/in/vitalii-mengeshev-aba47a14b/" rel="nofollow">Vitaliy Mengeshev</a>, COO<br>
+Executive Director and Partner in Miiix and Smallhorse projects. One of the lecturers in IdealMachine and Skolkovo startup acceleration programs. From 2002 to 2012, he created and was actively developing his own clothing brand. Starting in 2013, he joined the Miiix team and took over operational management and business development.</p>
+<p><a href="https://www.linkedin.com/in/aleksandr-vasilev-4bab3425/" rel="nofollow">Aleksandr Vasilev</a>, Data Scientist<br>
+Aleksandr has extensive experience in developing systems for predictive analytics and data analysis in such areas as insurance, banking and e-commerce. In the company, Aleksandr successfully solves the problem of product matching from various data sources using the latest world developments in the field of machine learning.</p>
+<p><a href="https://www.linkedin.com/in/sergey-morozov-aba83b80/" rel="nofollow">Sergey Morozov</a>, Backend Developer<br>
+Sergey has more than 7 years of experience in development. System architect and database administrator of various types. Experience in building highly loaded systems. Participated in the development of SAAS service for 800k + users. He was engaged in the development of a large number of systems for data processing: from systems for the work of copywriters to financial accounting systems. A longtime fan of blockchain technology.</p>
+<p><a href="https://www.linkedin.com/in/evgeniy-prigornitskiy-67566077/" rel="nofollow">Eugene Prigornitskiy</a>, Backend Developer<br>
+10 years of commercial development. Participated in the development of payment systems, ERP, mobile applications (iOS, Android, Windows Phone). Experience in building highly loaded real-time systems. Has extensive experience in database
+development.</p>
+<p><a href="https://www.linkedin.com/in/travnikovrn/" rel="nofollow">Roman Travnikov</a>, Frontend Developer<br>
+More than 6 years of commercial development. A rich list of implemented projects: from corporate sites, to portals of state corporations, ministries and large banks. The last year and a half has been working on projects Miiix and SmallHorse. Uses
+advanced technologies in development for maximum performance of services.</p>
+<p><a href="https://www.linkedin.com/in/sergey-mikheev-54168a62/" rel="nofollow">Sergey Miheev</a>, System Administration<br>
+Started working with crypto-currencies and blockchain in 2016. Prior to that, Sergey worked as a technical expert on the implementation and support of ERP and databases on large production sites.</p>
+<p><a href="https://www.linkedin.com/in/peter-gashitsky-b08553157/" rel="nofollow">Peter Gashnitsky</a>, UX/UI Designer<br>
+Experienced web and graphic designer and illustrator. His statement is «clean projects, clean design» Talks a lot and draws a lot. Prefers coffee.</p>
+<p><a href="https://www.linkedin.com/in/ni-moc-nideknil-www/" rel="nofollow">Alexander Kholodnykh</a>, Backend Developer<br>
+Specialising in web crawling, processes automation, server tasks solving. As a member of the team is responsible for searching spider development and finding information about goods and prices. 9 years of commercial development background.</p>
+<h3><a href="#advisors" aria-hidden="true" class="anchor" id="user-content-advisors"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advisors</h3>
+<p>Elementh Project has advisors, which have huge experience as enterpreneurs and IT-business experts. The availability of such advisors will undoubtedly benefit the project.</p>
+<p><a href="https://www.linkedin.com/in/naveen-yannam-1553a91/" rel="nofollow">Naveen Yannam</a>, Tech advisor and early contributor<br>
+Naveen is a Certified Hybris 5 Core and Commerce Developer. He has extensive experience in using various frameworks and libraries to implement enterprise class applications. He’s also a keen proponent of Agile methodologies and has successfully exercised agile techniques into the projects which he was involved. Naveen feels comfortable in working as a Hybris Technical Lead, ideally in a project team developing large scale ecommerce systems with practising Continuous Integration and Delivery methodologies.</p>
+<p><a href="https://www.linkedin.com/in/aurelp" rel="nofollow">Proorocu Aurel George</a>, Marketing advisor<br>
+Aurel was in 2016 one of Financial Times "100 Faces of Innovation" due to his contribution to the development of the Internet market in Romania. He has over 14 years experience in the IT and Digital marketing field, working for Companies like Google Enterprise, Orange and Keyence. Aurel is also the youngest graduate of the Executive MBA program of Telecom Ecole de Management Paris (Institut Mines Telecom).</p>
+<p><a href="https://www.linkedin.com/in/michael-averbach-40720b/" rel="nofollow">Michael Averbach</a>, Financial advisor<br>
+20+ years in IT-business, serial enterpreneur, investor. Key expertise: creation of business structures, marketing and sales strategies, creation of mobile applications and mobile devices, electronic commerce and corporate software, as well as management of software development process. Co-founded Ectaco, Inc., (USA) – a leading developer of electronic translators and linguistic solutions, where was managing the sales network, comprised of 13 foreign sales offices and dozens of independent distributors around the world. Was the founder of MobiDealer, Inc, (USA), where managed creation of distributed ERP system software package. After successful launch of the system, the company was sold to a strategic investor.
+Co-founded DynoPlex, Inc., (USA). Grew the company from ground up to one of the largest developers of mobile applications. Successfully sold the company and transitioned to manage offshore development for the purchaser, Quickoffice, Inc. (USA), where managed work of two offshore centers for mobile application development, totalling 140 engineers. Company was subsequent sold to Google in 2012. After sale of Quickoffice, started a venture fund RSV Venture Partners and serves as a managing partner of startup-accelerator iDealMachine, where invests in companies at the very early stage.</p>
+<p><a href="https://www.linkedin.com/in/sfradkov/" rel="nofollow">Sergey Fradkov</a>, Legal advisor<br>
+Sergey Fradkov is an experienced software visionary and investor with extensive technical and business backgrounds. Mr. Fradkov is a founder of iDealMachine – an early stage venture fund and startup accelerator that operates in St. Petersburg, Russia and currently is expanding nationally and internationally. Prior to that, Mr. Fradkov was a founder of several high-tech startups. His most recent venture, DynoPlex, was sold to a competitor, Quickoffice, in 2008 and Quickoffice itself was acquired by Google in 2012. Prior to that Mr. Fradkov co-founded w-Trade, a pioneering Wireless Applications company, where he raised over $40Mln and built the product that was sold to large financial institutions, such as Merrill Lynch, Fidelity, Morgan Stanley and others. Overall, he has over 25 years of experience developing and designing distributed, wireless and ecommerce systems and managing large product development teams. Mr. Fradkov graduated from Jerusalem University.</p>
+<h3><a href="#market" aria-hidden="true" class="anchor" id="user-content-market"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Market</h3>
+<p>In 2016, the global retail e-commerce sales amounted to $1.915 trillion. They are
+expected to increase to $ 4.058 trillion.</p>
+<p align="center">
+  <a href="/ElementhFoundation/Documentation/blob/master/images/worldwide_retail_e_commerce_sales.png" target="_blank"><img width="550" height="388" src="/ElementhFoundation/Documentation/raw/master/images/worldwide_retail_e_commerce_sales.png" style="max-width:100%;"></a>
+</p>
+<p>The largest marketplace in the world is Amazon. Its revenue exceeded $125 billion in
+2016.</p>
+<p align="center">
+  <a href="/ElementhFoundation/Documentation/blob/master/images/amazons_consolidated_net_revenue_by_segment.png" target="_blank"><img width="550" height="388" src="/ElementhFoundation/Documentation/raw/master/images/amazons_consolidated_net_revenue_by_segment.png" style="max-width:100%;"></a>
+</p>
+<p>The largest holding company in China is Alibaba Group.</p>
+<p align="center">
+  <a href="/ElementhFoundation/Documentation/blob/master/images/net_revenue_of_alibaba.png" target="_blank"><img width="550" height="388" src="/ElementhFoundation/Documentation/raw/master/images/net_revenue_of_alibaba.png" style="max-width:100%;"></a>
+</p>
+<p>Elementh Blockchain can be used by any marketplace and online store in the world for nomenclature standard and their system of goods. Ecommerce is a growing market in all countries and the popularity of decentralized marketplaces is a benefit for Elementh Foundation. If we'll partner with all new marketplaces, our blockchain can become a standard in ecommerce market.</p>
+<h3><a href="#competitors" aria-hidden="true" class="anchor" id="user-content-competitors"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Competitors</h3>
+<p>The direct competitors of the project are the existing online B2B e-commerce projects, such as Indix. In this segment, the Elementh project is innovative use Blockchain and can be used by decentralized marketplaces that use cryptocurrencies for internal payments.
+Also there are some Blockchain platforms for Ecommerce as competitors for Elementh, for example the VeChain, INS Ecosystem, Connectius, Flipz, StopTheFakes etc. It’s interesting, that some of them are niche products, and all are not really infrastructure platforms but just something like applications for smart contracts for e-commerce.
+We think that Elementh is more infrastructure project and can be used by different marketplaces and platforms. Also, an important advantage for Elementh is a huge experience in B2B Ecommerce market since 2012 and working business with real customers already.
+Different marketplaces are also some kind of competitors for Elementh project, because they can be developed without Elementh and in this case they will work in the same market. It’s very important for Elementh team to get partnership with all current decentralized marketplaces that are already working or going to start soon.</p>
+<h3><a href="#product" aria-hidden="true" class="anchor" id="user-content-product"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Product</h3>
+<p>The Elementh project has grown from <a href="http://miiix.org/" rel="nofollow">Miiix</a> product which is being developed since 2012. As we found out Miiix is fully working business in Russia which have investments from RSV Venture Partners and business angels and solid partnerships, for example, with Sberbank AST and SAP Hybris and 200+ small and medium online stores and marketplaces.</p>
+<p>Miiix have several rewards:</p>
+<ul>
+<li>Winner of Startup of the Year 2013 from Higher School of Economics</li>
+<li>Winner of IT-startup Eurasia</li>
+<li>Winner of CloudsNN</li>
+<li>2nd place of StartupCup</li>
+<li>Finalist of Bootcamp Ventures Innovation Xchange (iX), Tel Aviv</li>
+<li>Finalist of WebReady</li>
+<li>Finalist of MABA</li>
+<li>Finalist of VC Day Ingria</li>
+<li>Finalist of Zvorykin Prize</li>
+<li>Semifinalist of Startup World Barcelona</li>
+<li>Demifinalist of Mind the Bridge Trenro, Italy</li>
+</ul>
+<h3><a href="#conclusion" aria-hidden="true" class="anchor" id="user-content-conclusion"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conclusion</h3>
+<p>The Elementh protocol was originally conceived as an enhanced version of the crypto currency, providing advanced functions for e-commerce such as ownership of the product, financial contracts, etc. The Elementh protocol will not support any of the applications directly, but the presence of the Turing-complete programming language means that theoretically arbitrary contracts can be created for any type of transactions and applications. Even more interesting is that Elementh protocol has gone much further than the usual crypto-currency. The protocol that can be used to create decentralized marketplaces, identify counterfeit products, and much more, has a huge potential to significantly improve the efficiency of the e-commerce industry and can give a huge boost to the development of other peer-to-peer protocols by adding the first economic layer.</p>
+<p>The concept of an arbitrary state transition function, as well as the ownership of goods, implemented in the Elementh protocol, gives the platform a unique potential. Instead of being a closed, purpose-oriented protocol for a specific set of applications in the field of data storage, gambling or finance, Elementh is an open general-purpose protocol. We strongly believe that it is very well suited for use as a base layer for a very large number of financial and non-financial protocols in the nearest future.</p>
+<h3><a href="#references" aria-hidden="true" class="anchor" id="user-content-references"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>References</h3>
+<ol>
+<li>Nakamoto, S. 31 October 2008. "Bitcoin: A Peer-to-Peer Electronic Cash System". Also known as the Bitcoin whitepaper. <a href="http://nakamotoinstitute.org/bitcoin/" rel="nofollow">http://nakamotoinstitute.org/bitcoin/</a>. <a href="http://bitcoin.org/bitcoin.pdf" rel="nofollow">http://bitcoin.org/bitcoin.pdf</a>. <a href="https://github.com/saivann/bitcoinwhitepaper">https://github.com/saivann/bitcoinwhitepaper</a>.</li>
+<li>Buterin, V. 01 September 2014. Ethereum whitepaper. <a href="https://github.com/ethereum/wiki/wiki/White-Paper">https://github.com/ethereum/wiki/wiki/White-Paper</a>.</li>
+<li>Larimer D. 06 June 2017. EOS.io whitepaper. <a href="https://github.com/EOSIO/Documentation">https://github.com/EOSIO/Documentation</a>.</li>
+<li>"Blind signature". Last modified 29 March 2017. Wikipedia. <a href="https://en.wikipedia.org/wiki/Blind_signature" rel="nofollow">https://en.wikipedia.org/wiki/Blind_signature</a>.</li>
+<li>Dai, W. U.d. "B-money". <a href="http://www.weidai.com/bmoney.txt" rel="nofollow">http://www.weidai.com/bmoney.txt</a>.</li>
+<li>Back, A. U.d. Hashcash. <a href="http://www.hashcash.org/" rel="nofollow">http://www.hashcash.org/</a>.</li>
+<li>Szabo, N. 1998. "Secure property titles with owner authority". <a href="http://szabo.best.vwh.net/securetitle.html" rel="nofollow">http://szabo.best.vwh.net/securetitle.html</a>. Unable to access 20 September 2017. Alternative link here: <a href="http://nakamotoinstitute.org/secure-property-titles/" rel="nofollow">http://nakamotoinstitute.org/secure-property-titles/</a>.</li>
+<li>"Universal Product Code". Last modified 02 November 2016. Wikipedia. <a href="https://ru.wikipedia.org/wiki/Universal_Product_Code" rel="nofollow">https://ru.wikipedia.org/wiki/Universal_Product_Code</a>.</li>
+<li>"GS1". Last modified 26 March 2015. Wikipedia. <a href="https://ru.wikipedia.org/wiki/GS1" rel="nofollow">https://ru.wikipedia.org/wiki/GS1</a> .</li>
+<li>InterPlanetary File System - <a href="https://en.wikipedia.org/wiki/InterPlanetary_File_System" rel="nofollow">https://en.wikipedia.org/wiki/InterPlanetary_File_System</a></li>
+</ol>
+<p><strong>Disclaimer:</strong> This draft of the Elementh technical white paper is published solely for information purposes. Elementh does not guarantee the accuracy or conclusions made in this document, and this document is provided "as is". Elementh does not guarantee the accuracy of the conclusions made in this paper, issues it "as is", without warranties of completeness of coverage and explicit or implicit guarantee of the conditions listed (but not limited to): (i) commercial suitability, possibility of specific use, naming or non-compliance rights); (ii) the absence of errors in the text, the possibility of using for a specific purpose; and (iii) non-infringement of rights of third parties by the contents of this paper . Elementh and any affiliated entities waive any liabilities and possible damages that may arise from the use, mention or reliance on the information contained in this paper, as well as any advice on the possibility of such consequences. In no event shall Elementh or its affiliates be liable to any persons or organizations for any damage, loss, liability, cost or expense of any kind, whether direct or indirect, consequential, compensatory, incidental, factual, exemplary, or the costs incurred due to justification or work planning on the basis of this white paper or any content of this document, including without limitation, any loss of business, income, profit, data, accessibility, goodwill or other intangible losses.</p>
+</article>
+  </div>
+
+  </div>
+
+  <button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+  <div id="jump-to-line" style="display:none">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+      <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+      <button type="submit" class="btn">Go</button>
+</form>  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.15291s from unicorn-3762928256-546tx">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-137851324479.js"></script>
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-ad86efb96de1.js"></script>
+    
+    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-53d5033e4efa.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+

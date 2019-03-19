@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112105375-1"></script>
+                <script>
+                        window.dataLayer = window.dataLayer || [];
+
+                        function gtag(){
+                                dataLayer.push(arguments);
+                        }
+
+                        gtag('js', new Date());
+                        gtag('config', 'UA-112105375-1');
+                </script>
+        
+		<title>eSports</title>
+
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<link rel="shortcut icon" type="image/png" href="/desktop/images/favicon.png"/>
+		<link rel="stylesheet" type="text/css" href="/desktop/css/styles.css?v=2.0"/>
+        <link rel="stylesheet" type="text/css" href="/desktop/css/style.css?v=2.0"/>
+        <link rel="stylesheet" type="text/css" href="/desktop/css/style_new.css?v=2.0"/>
+        <link rel="stylesheet" type="text/css" href="/desktop/css/welcome.css?v=2.0"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/vendors/slick-1.8.0/slick.css"/>
+        <!--Add the new slick-theme.css if you want the default styling-->
+        <link rel="stylesheet" type="text/css" href="/vendors/slick-1.8.0/slick-theme.css"/>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        
+	</head>
+	<body>
+		<header>
+							<div class="small-header menu_top clearfix">
+					<a href="/">
+						<img src="/desktop/images/logo.png" alt="logo icon"/>
+					</a>
+					
+<nav>
+    
+        
+    
+    <a href="/articles.html">
+        News
+        
+    </a>
+
+    
+        
+        
+    
+    
+        
+            
+            
+        
+    
+    
+        
+            
+            
+        
+    
+    
+        
+            
+            
+        
+    
+    
+        
+            
+            
+        
+    
+        <a href="/videos.html">
+            Video
+            
+        </a>
+        
+        <a href="/videos.html">
+            Stream
+        </a>
+        
+        <a href="/masterplan.html">
+            Masterplan
+            
+        </a>
+        
+        
+        
+        
+        <a href="/contact.html">
+            Contact us
+        </a>
+    
+        
+            
+            
+        
+    
+    
+        
+            
+            
+        
+    
+</nav>
+
+					<a href="#" class="btn-language dropdown-toggle" data-toggle="dropdown">
+    en
+</a>
+<ul class="dropdown-menu language">
+	<li>
+		<a href="/">EN</a>
+	</li>
+	<li>
+		<a href="/de">DE</a>
+	</li>
+</ul>
+					
+    
+        
+        
+        
+    
+
+
+
+    <button type="button" class="btn-modal" data-toggle="modal" data-target="#modal">
+        <img src="/desktop/images/user-icon.png" alt="user icon" />
+        Login / Sign up
+    </button>
+
+				</div>
+					</header>
+
+					<!-- Modal -->
+<div id="modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="container_log">
+            <div class="container_header clearfix">
+                <a href="/" class="close" data-dismiss="modal">&times;</a>
+                <div class="col-xs-12">
+                    <ul class="nav nav-pills setup-panel">
+                        <li class="active">
+                            <a href="#step-1"><h4 class="list-group-item-heading">Login</h4></a>
+                        </li>
+                        <li class="inactive">
+                            <a href="#step-2"><h4 class="list-group-item-heading">Sign up</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+			<div class="container_body clearfix">
+	<div class="row setup-content" id="step-1">
+		<div class="col-xs-12">
+			<div class="col-md-12">
+				<form id="form-login">
+    <div class="form-group">
+        <input type="text" class="form-control" id="login_user" placeholder="Username" name="user"/>
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" id="login_pwd" placeholder="Password" name="pwd"/>
+        <div class="form-error" id="login-error"></div>
+        <div class="form-error" id="login-error2"></div>
+    </div>
+    <div class="checkbox">
+        <label for="checkboxFourInput"> Keep me logged in</label>
+        <div class="checkbox_check">
+            <input type="checkbox" value="1" id="checkboxFourInput">
+            <label for="checkboxFourInput"></label>
+        </div>
+        <label class="btn_resetpass">
+            <a href="/password-recovery.html">
+				Forgot your password?
+			</a>
+        </label>
+    </div>
+    <input type="button" class="btn btn-default login" value="Login" id="btn-submit-login"/>
+</form>
+
+<script>
+    $(document).ready(function() {
+
+        $('#login_user, #login_pwd').keypress(function (e) {
+            if (e.keyCode == 13) {
+                $('#btn-submit-login').click();
+            }
+        });
+
+        $('#btn-submit-login').click(function () {
+
+            var formData = $('#form-login').serialize();
+
+            $.post('/login.html', formData).done(function (data) {
+
+                if (data.status == 'success') {
+
+                    window.location.href = "/profile.html";
+                }
+                else {
+                    
+                    if(data.errors != undefined){
+                        var html = '';
+                        $('#login-error').html('');
+                        $.each(data.errors, function(i,v){
+                            html += '<div class="form-error">'+v+'</div>';
+                        });
+                        
+                        $('#login-error').html(html);
+                        
+                    }else{
+                        $('#login-error').html('');
+                        $('#login-error2').text(data.message);                
+                    }
+                      
+                }
+            });
+        });
+    });
+</script>
+			</div>
+            <!--
+                            nop
+                        
+            -->
+            
+			<div class="container_footer clearfix">
+
+							
+								
+								
+							
+						
+						
+							
+								
+								
+							
+						
+					</ul>
+				</div>*}
+			</div>
+		</div>
+	</div>
+
+	<div class="row setup-content" id="step-2">
+		<div class="col-xs-12">
+			<div class="col-md-12">
+				<form id="form-register">
+	<div class="form-group">
+        <input type="text" class="form-control" id="register_user" placeholder="Username" name="user" pattern="[aA-zZ0-9_/-]">
+	</div>
+	<p id="register_user-error"></p>
+
+	<div class="form-group">
+		<input type="email" class="form-control" id="register_email" placeholder="Email" name="email">
+	</div>
+	<p id="register_email-error"></p>
+
+	<div class="form-group">
+		<input type="email" class="form-control" id="register_confemail" placeholder="Confirm email">
+	</div>
+	<p id="register_confemail-error"></p>
+
+	<div class="form-group">
+		<input type="password" class="form-control" id="register_pwd" placeholder="Password" name="pwd">
+	</div>
+	<p id="register_pwd-error"></p>
+
+	<div class="form-group">
+		<input type="password" class="form-control" id="register_confpwd" placeholder="Confirm password">
+	</div>
+	<p id="register_confpwd-error"></p>
+
+	<div class="form-group two-float clearfix">
+		<input type="text" class="form-control" id="register_fname" placeholder="First Name" name="fname">
+		<input type="text" class="form-control" id="register_lname" placeholder="Last Name" name="lname">
+	</div>
+	<p id="register_fname-error"></p>
+	<p id="register_lname-error"></p>
+
+
+
+    <div class="form-group">
+        <input type="text" class="form-control" id="register_bday" placeholder="Birthday" name="bday" readonly='true'>
+        <p id="register_bday-error"></p>
+    </div>
+
+
+	
+        <p id="register_bday-error"></p>
+
+	<div class="form-group country">
+		<div class="country_select">
+			<div id="signup_country">
+				<select class="selectBox scrollbar-vista" name="country">
+                                           <option value="af">Afganistan</option>
+                                           <option value="al">Albania</option>
+                                           <option value="ad">Andorra</option>
+                                           <option value="ai">Anguilla</option>
+                                           <option value="aq">Antarctica</option>
+                                           <option value="ag">Antigua and Barbuda</option>
+                                           <option value="ar">Argentina</option>
+                                           <option value="am">Armenia</option>
+                                           <option value="aw">Aruba</option>
+                                           <option value="au">Australia</option>
+                                           <option value="at">Austria</option>
+                                           <option value="az">Azerbaijan</option>
+                                           <option value="bs">Bahamas</option>
+                                           <option value="bh">Bahrain</option>
+                                           <option value="bd">Bangladesh</option>
+                                           <option value="bb">Barbados</option>
+                                           <option value="by">Belarus</option>
+                                           <option value="be">Belgium</option>
+                                           <option value="bz">Belize</option>
+                                           <option value="bj">Benin</option>
+                                           <option value="bm">Bermuda</option>
+                                           <option value="bt">Bhutan</option>
+                                           <option value="bo">Bolivia</option>
+                                           <option value="ba">Bosnia and Herzegowina</option>
+                                           <option value="bw">Botswana</option>
+                                           <option value="bv">Bouvet Island</option>
+                                           <option value="br">Brazil</option>
+                                           <option value="io">British Indian Ocean Territory</option>
+                                           <option value="bn">Brunei Darussalam</option>
+                                           <option value="bg">Bulgaria</option>
+                                           <option value="bf">Burkina Faso</option>
+                                           <option value="bi">Burundi</option>
+                                           <option value="kh">Cambodia</option>
+                                           <option value="cm">Cameroon</option>
+                                           <option value="ca">Canada</option>
+                                           <option value="cv">Cape Verde</option>
+                                           <option value="ky">Cayman Islands</option>
+                                           <option value="cf">Central African Republic</option>
+                                           <option value="td">Chad</option>
+                                           <option value="cl">Chile</option>
+                                           <option value="cn">China</option>
+                                           <option value="cx">Christmas Island</option>
+                                           <option value="cc">Cocos (Keeling) Islands</option>
+                                           <option value="co">Colombia</option>
+                                           <option value="km">Comoros</option>
+                                           <option value="cg">Congo</option>
+                                           <option value="ck">Cook Islands</option>
+                                           <option value="cr">Costa Rica</option>
+                                           <option value="ci">Cote DIvoire</option>
+                                           <option value="hr">Croatia</option>
+                                           <option value="cu">Cuba</option>
+                                           <option value="cw">Curacao</option>
+                                           <option value="cy">Cyprus</option>
+                                           <option value="cz">Czech Republic</option>
+                                           <option value="dk">Denmark</option>
+                                           <option value="dj">Djibouti</option>
+                                           <option value="dm">Dominica</option>
+                                           <option value="do">Dominican Republic</option>
+                                           <option value="tp">East Timor</option>
+                                           <option value="ec">Ecuador</option>
+                                           <option value="eg">Egypt</option>
+                                           <option value="sv">El Salvador</option>
+                                           <option value="gq">Equatorial Guinea</option>
+                                           <option value="er">Eritrea</option>
+                                           <option value="ee">Estonia</option>
+                                           <option value="et">Ethiopia</option>
+                                           <option value="fk">Falkland Islands (Malvinas)</option>
+                                           <option value="fo">Faroe Islands</option>
+                                           <option value="fj">Fiji</option>
+                                           <option value="fi">Finland</option>
+                                           <option value="fr">France</option>
+                                           <option value="fx">France, Metropolitan</option>
+                                           <option value="gf">French Guiana</option>
+                                           <option value="pf">French Polynesia</option>
+                                           <option value="tf">French Southern Territories</option>
+                                           <option value="ga">Gabon</option>
+                                           <option value="gm">Gambia</option>
+                                           <option value="ge">Georgia</option>
+                                           <option value="de">Germany</option>
+                                           <option value="gh">Ghana</option>
+                                           <option value="gi">Gibraltar</option>
+                                           <option value="gr">Greece</option>
+                                           <option value="gl">Greenland</option>
+                                           <option value="gd">Grenada</option>
+                                           <option value="gp">Guadeloupe</option>
+                                           <option value="gu">Guam</option>
+                                           <option value="gt">Guatemala</option>
+                                           <option value="gn">Guinea</option>
+                                           <option value="gw">Guinea-bissau</option>
+                                           <option value="gy">Guyana</option>
+                                           <option value="ht">Haiti</option>
+                                           <option value="hm">Heard and Mc Donald Islands</option>
+                                           <option value="hn">Honduras</option>
+                                           <option value="hk">Hong Kong</option>
+                                           <option value="hu">Hungary</option>
+                                           <option value="is">Iceland</option>
+                                           <option value="in">India</option>
+                                           <option value="id">Indonesia</option>
+                                           <option value="ir">Iran (Islamic Republic of)</option>
+                                           <option value="iq">Iraq</option>
+                                           <option value="ie">Ireland</option>
+                                           <option value="im">Isle of Man</option>
+                                           <option value="il">Israel</option>
+                                           <option value="it">Italy</option>
+                                           <option value="jm">Jamaica</option>
+                                           <option value="jp">Japan</option>
+                                           <option value="je">Jersey</option>
+                                           <option value="jo">Jordan</option>
+                                           <option value="kz">Kazakhstan</option>
+                                           <option value="ke">Kenya</option>
+                                           <option value="ki">Kiribati</option>
+                                           <option value="kp">Korea, Democratic P. Rep. of</option>
+                                           <option value="kr">Korea, Republic of</option>
+                                           <option value="kw">Kuwait</option>
+                                           <option value="kg">Kyrgyzstan</option>
+                                           <option value="la">Lao Peoples Democratic Republic</option>
+                                           <option value="lv">Latvia</option>
+                                           <option value="lb">Lebanon</option>
+                                           <option value="ls">Lesotho</option>
+                                           <option value="lr">Liberia</option>
+                                           <option value="ly">Libyan Arab Jamahiriya</option>
+                                           <option value="li">Liechtenstein</option>
+                                           <option value="lt">Lithuania</option>
+                                           <option value="lu">Luxembourg</option>
+                                           <option value="mo">Macau</option>
+                                           <option value="mk">Macedonia</option>
+                                           <option value="mg">Madagascar</option>
+                                           <option value="mw">Malawi</option>
+                                           <option value="my">Malaysia</option>
+                                           <option value="mv">Maldives</option>
+                                           <option value="ml">Mali</option>
+                                           <option value="mt">Malta</option>
+                                           <option value="mh">Marshall Islands</option>
+                                           <option value="mq">Martinique</option>
+                                           <option value="mr">Mauritania</option>
+                                           <option value="mu">Mauritius</option>
+                                           <option value="yt">Mayotte</option>
+                                           <option value="mx">Mexico</option>
+                                           <option value="fm">Micronesia, Federated States of</option>
+                                           <option value="md">Moldova, Republic of</option>
+                                           <option value="mc">Monaco</option>
+                                           <option value="mn">Mongolia</option>
+                                           <option value="ms">Montserrat</option>
+                                           <option value="ma">Morocco</option>
+                                           <option value="mz">Mozambique</option>
+                                           <option value="mm">Myanmar</option>
+                                           <option value="na">Namibia</option>
+                                           <option value="nr">Nauru</option>
+                                           <option value="np">Nepal</option>
+                                           <option value="nl">Netherlands</option>
+                                           <option value="an">Netherlands Antilles</option>
+                                           <option value="nc">New Caledonia</option>
+                                           <option value="nz">New Zealand</option>
+                                           <option value="ni">Nicaragua</option>
+                                           <option value="ne">Niger</option>
+                                           <option value="ng">Nigeria</option>
+                                           <option value="nu">Niue</option>
+                                           <option value="nf">Norfolk Island</option>
+                                           <option value="mp">Northern Mariana Islands</option>
+                                           <option value="no">Norway</option>
+                                           <option value="om">Oman</option>
+                                           <option value="pk">Pakistan</option>
+                                           <option value="pw">Palau</option>
+                                           <option value="pa">Panama</option>
+                                           <option value="pg">Papua New Guinea</option>
+                                           <option value="py">Paraguay</option>
+                                           <option value="pe">Peru</option>
+                                           <option value="ph">Philippines</option>
+                                           <option value="pn">Pitcairn</option>
+                                           <option value="pl">Poland</option>
+                                           <option value="pt">Portugal</option>
+                                           <option value="pr">Puerto Rico</option>
+                                           <option value="qa">Qatar</option>
+                                           <option value="re">Reunion</option>
+                                           <option value="ro">Romania</option>
+                                           <option value="ru">Russian Federation</option>
+                                           <option value="rw">Rwanda</option>
+                                           <option value="kn">Saint Kitts and Nevis</option>
+                                           <option value="lc">Saint Lucia</option>
+                                           <option value="vc">Saint Vincent and the Grenadines</option>
+                                           <option value="ws">Samoa</option>
+                                           <option value="sm">San Marino</option>
+                                           <option value="st">Sao Tome and Principe</option>
+                                           <option value="sa">Saudi Arabia</option>
+                                           <option value="sn">Senegal</option>
+                                           <option value="sc">Seychelles</option>
+                                           <option value="sl">Sierra Leone</option>
+                                           <option value="sg">Singapore</option>
+                                           <option value="sk">Slovakia (Slovak Republic)</option>
+                                           <option value="si">Slovenia</option>
+                                           <option value="sb">Solomon Islands</option>
+                                           <option value="so">Somalia</option>
+                                           <option value="za">South Africa</option>
+                                           <option value="gs">South Georgia, South Sandwich Islands</option>
+                                           <option value="es">Spain</option>
+                                           <option value="lk">Sri Lanka</option>
+                                           <option value="sh">St. Helena</option>
+                                           <option value="pm">St. Pierre and Miquelon</option>
+                                           <option value="sd">Sudan</option>
+                                           <option value="sr">Suriname</option>
+                                           <option value="sj">Svalbard and Jan Mayen Islands</option>
+                                           <option value="sz">Swaziland</option>
+                                           <option value="se">Sweden</option>
+                                           <option value="ch">Switzerland</option>
+                                           <option value="sy">Syrian Arab Republic</option>
+                                           <option value="tw">Taiwan</option>
+                                           <option value="tj">Tajikistan</option>
+                                           <option value="tz">Tanzania, United Republic of</option>
+                                           <option value="th">Thailand</option>
+                                           <option value="tk">Tokelau</option>
+                                           <option value="tn">Tunisia</option>
+                                           <option value="tr">Turkey</option>
+                                           <option value="tc">Turks and Caicos Islands</option>
+                                           <option value="tv">Tuvalu</option>
+                                           <option value="ug">Uganda</option>
+                                           <option value="ae">United Arab Emirates</option>
+                                           <option value="gb">United Kingdom</option>
+                                           <option value="us">United States</option>
+                                           <option value="um">United States Minor Outlying Islands</option>
+                                           <option value="va">Vatican City State (Holy See)</option>
+                                           <option value="vg">Virgin Islands (British)</option>
+                                           <option value="vi">Virgin Islands (U.S.)</option>
+                                           <option value="wf">Wallis and Futuna Islands</option>
+                                           <option value="ye">Yemen</option>
+                    
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="checkbox">
+		<label for="checkboxFiveInput"> Sign up for emails and special offers</label>
+
+		<div class="checkbox_check">
+			<input type="checkbox" value="1" id="checkboxFiveInput" name="newsletter"/>
+			<label for="checkboxFiveInput"> </label>
+		</div>
+		<br/>
+		
+        <div class="accept-toup clearfix">
+            <div class="checkbox_check">
+                <input type="checkbox" value="1" id="accept-toup" name="accept-toup"/>
+                <label for="accept-toup"> </label>
+            </div>
+            <label for="accept-tc"><a href="/terms-and-conditions.html" target="blank_"> I agree to the Terms and Conditions </a></label>
+            <p id="tc-error"></p>
+            <div class="form-error" id="registration-error"></div>
+        </div>
+		<input type="button" class="btn btn-default sign-up" value="Sign up" id="btn-submit-register"/>
+        <p id="aa-error"></p>
+
+	</div>
+
+</form>
+
+<script>
+$(document).ready(function(){
+ 
+	$("#register_bday" ).datepicker({
+		dateFormat: "yy-mm-dd",
+		changeMonth: true,
+		changeYear: true,
+		yearRange: ""+(new Date().getFullYear() - 100)+":" + (new Date().getFullYear() ) +"",
+		monthNames: [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ],
+		monthNamesShort: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ],
+		dayNames: [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ],
+		dayNamesShort: [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ],
+		dayNamesMin: [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ],
+		maxDate: -4984
+	});
+
+    function testError(id){
+        var element = document.getElementById(id);
+        if(element.value.trim().length < 1) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function testMinLength(id){
+        var element = document.getElementById(id);
+        if((element.value.trim().length >= 1) && (element.value.trim().length <= 2)) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    function showError(id, message){
+        var element = document.getElementById(id);
+        var hasError = document.getElementById(id + "-error");
+        element.classList.add("has-error");
+        hasError.innerHTML = message;
+    }
+
+    function hideError(id) {
+        var element = document.getElementById(id);
+        var hasError = document.getElementById(id + "-error");
+        element.classList.remove("has-error");
+        hasError.innerHTML = '';
+    }
+
+    function validate() {
+        var errors = [];
+        
+        var usernameRegex = /^[aA-zZ0-9_/-]+$/;
+        var emailRegex = /[a-z0-9!#$%&'*+/=?^_`{ | }~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{ | }~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+        var usernameVal = document.getElementById('register_user').value;
+        var registerEmailVal = document.getElementById('register_email').value;
+
+        if(!testError('register_bday')) {
+            errors['register_bday'] = 'Birthday should not be empty!';
+            showError('register_bday', errors['register_bday']);
+        }
+        else{
+            hideError('register_bday');
+            delete errors['register_bday'];
+        }
+
+        if(!testError('register_user')) {
+            errors['register_user'] = 'Username must not be empty!';
+            showError('register_user', errors['register_user']);
+        } else if(!usernameRegex.test(usernameVal)) {
+            errors['usernameRegex'] = 'Invalid username';
+            showError('register_user', errors['usernameRegex']);   
+        } else if(!testMinLength('register_user')) {
+            errors['register_user'] = 'Minimum 3 characters required';
+            showError('register_user', errors['register_user']);
+        }
+        else {
+            hideError('register_user');
+            delete errors['register_user'];
+        }
+        
+
+        if(!testError('register_email')) {
+            errors['register_email'] = 'Email must not be empty!';
+            showError('register_email', errors['register_email']);
+        } else if(!emailRegex.test(registerEmailVal)) {
+            errors['register_email'] = 'Invalid email';
+            showError('register_email', errors['register_email']);
+        }
+        else{
+            hideError('register_email');
+            delete errors['register_email'];
+        }
+
+        if(!testError('register_confemail')) {
+            errors['register_confemail'] = 'Confirmation email must not be empty!';
+            showError('register_confemail', errors['register_confemail']);
+        }
+        else{
+            hideError('register_confemail');
+            delete errors['register_confemail'];
+        }
+
+        if(document.getElementById('register_email').value != document.getElementById('register_confemail').value) {
+            errors['register_confemail'] = 'Same email required!';
+            showError('register_confemail', errors['register_confemail']);
+            showError('register_email', '');
+        }
+
+        if(!testError('register_pwd')) {
+            errors['register_pwd'] = 'Password required';
+            showError('register_pwd', errors['register_pwd']);
+        } else if(!testMinLength('register_pwd')) {
+            errors['register_pwd'] = 'Minimum 3 characters required';
+            showError('register_pwd', errors['register_pwd']);
+        }
+        else{
+            hideError('register_pwd');
+            delete errors['register_pwd'];
+        }
+
+        if(!testError('register_confpwd')) {
+            errors['register_confpwd'] = 'Password required';
+            showError('register_confpwd', errors['register_confpwd']);
+        }
+        else{
+            hideError('register_confpwd');
+            delete errors['register_confpwd'];
+        }
+
+        if(document.getElementById('register_pwd').value != document.getElementById('register_confpwd').value) {
+            errors['register_confemail'] = 'Same password required!';
+            showError('register_confpwd', errors['register_confemail']);
+            showError('register_pwd', '');
+        }
+
+        if(!testError('register_fname')) {
+            errors['register_fname'] = 'First name required';
+            showError('register_fname', errors['register_fname']);
+        }
+        else{
+            hideError('register_fname');
+            delete errors['register_fname'];
+        }
+
+        if(!testError('register_lname')) {
+            errors['register_lname'] = 'Last name required';
+            showError('register_lname', errors['register_lname']);
+        }
+        else{
+            hideError('register_lname');
+            delete errors['register_lname'];
+        }
+
+        if(!document.getElementById('accept-toup').checked) {
+            errors['tc-error'] = 'You must agree with the Terms and Conditions';
+            document.getElementById('tc-error').innerHTML = errors['tc-error'];
+            return false;
+        }
+        else {
+            document.getElementById('tc-error').innerHTML = '';
+            delete errors['tc-error'];
+            return true;
+        }
+
+        /*
+        if(document.getElementById('register_bday').value > 31) {
+            errors['register_bday'] = 'Illegal birthday';
+            showError('register_bday', errors['register_bday']);
+        }
+
+
+        else {
+            hideError('register_bday');
+            delete errors['register_bday'];
+        }
+        */
+       if(Object.keys(errors).length > 0){
+            console.log("error");
+            return false;
+        } else {
+            console.log("error 2");
+            return true;
+        }
+    }
+
+    $("#btn-submit-register").click(function(){
+        if(validate()) {
+            console.log("merge");
+            var formData = $("#form-register").serialize();
+            $.post("/register.html", formData).done(function(data){
+
+                if(data.status == "success"){
+                    window.location.href = "/registration-confirmation.html";
+                }
+                else{
+                    if(typeof data.errors != undefined){
+                        var html = '';
+                        
+                        $.each(data.errors, function(i,v){
+                            html += '<div class="form-error">'+v+'</div>';
+                        });
+                        
+                        $('#registration-error').html(html);
+                    }
+                    
+                }
+            });
+        }
+        else {
+            console.log("nu merge");
+        }
+    });
+});
+</script>
+
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
+    </div>
+</div>
+<script>
+
+$(document).ready(function () {
+    $('.fdi-Carousel .item').each(function () {
+//        $('#myCarousel').carousel({
+//                interval: 10000
+//            })
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        if (next.next().length > 0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        } else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
+
+    var $disabledResults = $(".selectBox");
+//    $disabledResults.select2();
+
+    var navListItems = $('ul.setup-panel li a'),
+            allWells = $('.setup-content');
+
+    allWells.hide();
+
+    navListItems.click(function (e)
+    {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+                $item = $(this).closest('li');
+
+        if (!$item.hasClass('disabled')) {
+            navListItems.closest('li').removeClass('active');
+            $item.addClass('active');
+            allWells.hide();
+            $target.show();
+        }
+    });
+
+    $('ul.setup-panel li.active a').trigger('click');
+
+    $('#activate-step-2').on('click', function (e) {
+        $('ul.setup-panel li:eq(1)').removeClass('disabled');
+        $('ul.setup-panel li a[href="#step-2"]').trigger('click');
+        $(this).remove();
+    })
+});
+
+$(document).ready(function() {
+
+//    $('#btn-facebook').click(function(event){
+//
+//        event.preventDefault();
+//
+//        $.ajax({
+//            method: "POST",
+//            url: '/login.html',
+//            data: {
+//                login_api: 'facebook'
+//            },
+//            success: function (data) {
+//                console.log(data);
+//            },
+//            error: function () {
+//                // Error occurred loading language file, continue on as best we can
+//            }
+//        });
+//    });
+});
+</script>
+
+
+		
+    <div class="cookies">
+        <p>We use cookies to ensure that we give you the best experience on our website. By continuing you agree to our use of cookies. For more information visit our cookie policy. <a href="#" class="close" id="cookies-alert">×</a></p>
+        
+
+    </div>
+    
+    <script>
+        $( document ).ready(function() {
+  
+            if(verifyCookie() === false) {
+                $('.cookies').show();
+                document.cookie = "cookie=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+            
+            $("#cookies-alert").click(function() {
+                verifyCookie();
+                $('.cookies').hide();
+            });
+            
+            $("#res-cookies-alert").click(function() {
+                resetCookie();
+            });
+        });
+        
+        function verifyCookie() {
+            if (document.cookie.replace(/(?:(?:^|.*;\s*)cookie\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+                document.cookie = "cookie=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                return false;
+            } else {
+                return true;
+            }
+        }
+        
+        function resetCookie() {
+            document.cookie = "cookie=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        }
+    </script>
+    
+    
+
+<section class="error_404">
+    <div class="error_404-content">
+        <h1>
+			This page has been killed
+		</h1>
+        <a href="/">
+			[ Go Home ]
+		</a>
+    </div>
+</section>
+
+        <footer>
+            <ul class="favicons nav navbar-nav">
+                <li>
+					<a href="https://www.facebook.com/esportsdotcom/" target="_blank">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</li>
+                <li>
+					<a href="https://twitter.com/EsportsDotCom" target="_blank">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+                <li>
+					<a href="https://www.youtube.com/channel/UCFtLf5D2YA7ScebNzE1Qm1g" target="_blank">
+						<i class="fa fa-youtube" aria-hidden="true"></i>
+					</a>
+				</li>
+            </ul>
+            <ul class="links nav navbar-nav">
+                <li class="menu-item">
+					<a href="/terms-and-conditions.html">
+						Terms and conditions
+					</a>
+				</li>
+                <li class="menu-item">
+					<a href="/privacy.html">
+						Privacy policy
+					</a>
+				</li>
+                <li class="menu-item">
+					<a href="/faq.html">
+						FAQ
+					</a>
+				</li>
+                <li class="menu-item">
+					<a href="/contact.html">
+						Contact us
+					</a>
+				</li>
+                <li class="menu-item">
+                    <a href="https://www.coinexchange.io/market/ERT/BTC" target="blank_">
+                        eSportsRewardToken
+                    </a>
+                </li>
+            </ul>
+
+            <div class="copyright">
+                <p>&COPY;2018 esports.com, All rights reserved</p>
+            </div>
+            <script>
+                $(window).on('load resize scroll', function() {
+                    var f = $('footer');
+                    f.css({ position:'static' });
+                    if (f.offset().top + f.height() < $(window).height()) {
+                        f.css({ position:'fixed', bottom:'0', width:'100%' });
+                    }
+                });
+            </script>
+		</footer>
+
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/vendors/js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="/desktop/js/scripts.js?v=2.0"></script>
+        <script type="text/javascript" src="/desktop/js/esports.js?v=2.0"></script>
+        <script type="text/javascript" src="/vendors/slick-1.8.0/slick.min.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script type="text/javascript" src="/vendors/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="/vendors/jquery-validation-1.17.0/dist/additional-methods.min.js"></script>
+
+		<script>
+            
+			
+
+			!function(){
+				var a = window.VL = window.VL || {};
+				return a.instances = a.instances || {}, a.invoked ? void(window.console && console.error && console.error("VL snippet loaded twice.")) : (a.invoked = !0, void(a.load = function(b, c, d){
+					var e = {};
+					e.publicToken = b, e.config = c || {};
+					var f = document.createElement("script");
+					f.type = "text/javascript", f.id = "vrlps-js", f.defer = !0, f.src = "https://app.viral-loops.com/client/vl/vl.min.js";
+					var g = document.getElementsByTagName("script")[0];
+					return g.parentNode.insertBefore(f, g), f.onload = function(){
+						a.setup(e), a.instances[b] = e
+					}, e.identify = e.identify || function(a, b){
+						e.afterLoad = {identify: {userData: a, cb: b}}
+					}, e.pendingEvents = [], e.track = e.track || function(a, b){
+						e.pendingEvents.push({event: a, cb: b})
+					}, e.pendingHooks = [], e.addHook = e.addHook || function(a, b){
+						e.pendingHooks.push({name: a, cb: b})
+					}, e.$ = e.$ || function(a){
+						e.pendingHooks.push({name: "ready", cb: a})
+					}, e
+				}))
+			}();
+			var campaign = VL.load("Y0V4vlY2uZDm_XnWVEmWR431Jdw", {autoLoadWidgets: !0});
+			
+                
+                
+		</script>
+	</body>
+</html>
