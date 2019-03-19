@@ -1,0 +1,1145 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-521cbf980c80.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-f75b395c95ee.css" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-e1e1bc98a53e.css" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Hdac Technical Whitepaper · Hdactech/Hdac Wiki · GitHub</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars0.githubusercontent.com/u/33046025?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="Hdactech/Hdac" property="og:title" /><meta content="https://github.com/Hdactech/Hdac" property="og:url" /><meta content="Contribute to Hdac development by creating an account on GitHub." property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="B100:0B70:64B6C9:AF7F7F:5A70CBE9" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_wiki" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="B100:0B70:64B6C9:AF7F7F:5A70CBE9" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="https://github.com/hydro_browser_events" name="hydro-events-url" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/wiki/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="ODAxMThjYjQ4ZGI5OWFmYTQwOTUwNmQ1NzVmOWUzMjgzOWIzZjJlMjJmMmE4NzA2ZWQyY2ZlMWFiYTAyMjA2NHx7InJlbW90ZV9hZGRyZXNzIjoiOTYuMjMxLjE4LjE1NCIsInJlcXVlc3RfaWQiOiJCMTAwOjBCNzA6NjRCNkM5OkFGN0Y3Rjo1QTcwQ0JFOSIsInRpbWVzdGFtcCI6MTUxNzM0MTY3MywiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_HERO_CARD_UPLOADER">
+
+  <meta name="html-safe-nonce" content="1787d2fc4284903d635504af8785610ad03fad13">
+
+  <meta http-equiv="x-pjax-version" content="2ec2e5bba9c4872d5bfe40441b87cd01">
+  
+
+      <link href="https://github.com/Hdactech/Hdac/commits/master.atom" rel="alternate" title="Recent Commits to Hdac:master" type="application/atom+xml">
+
+  <meta name="description" content="Contribute to Hdac development by creating an account on GitHub.">
+  <meta name="go-import" content="github.com/Hdactech/Hdac git https://github.com/Hdactech/Hdac.git">
+
+  <meta content="33046025" name="octolytics-dimension-user_id" /><meta content="Hdactech" name="octolytics-dimension-user_login" /><meta content="108063711" name="octolytics-dimension-repository_id" /><meta content="Hdactech/Hdac" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="108063711" name="octolytics-dimension-repository_network_root_id" /><meta content="Hdactech/Hdac" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  </head>
+
+  <body class="logged-out env-production">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Hdactech/Hdac/search" class="js-site-search-form" data-scoped-search-url="/Hdactech/Hdac/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/Hdactech/Hdac/wiki/Hdac-Technical-Whitepaper" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2FHdactech%2FHdac%2Fwiki%2FHdac-Technical-Whitepaper" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2FHdactech%2FHdac"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/Hdactech/Hdac/watchers"
+     aria-label="12 users are watching this repository">
+    12
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FHdactech%2FHdac"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/Hdactech/Hdac/stargazers"
+      aria-label="29 users starred this repository">
+      29
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FHdactech%2FHdac"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/Hdactech/Hdac/network" class="social-count"
+       aria-label="0 users forked this repository">
+      0
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/Hdactech" class="url fn" rel="author">Hdactech</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/Hdactech/Hdac" data-pjax="#js-repo-pjax-container">Hdac</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/Hdactech/Hdac" class="js-selected-navigation-item reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /Hdactech/Hdac" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/Hdactech/Hdac/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /Hdactech/Hdac/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">2</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/Hdactech/Hdac/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /Hdactech/Hdac/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/Hdactech/Hdac/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /Hdactech/Hdac/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+    <a href="/Hdactech/Hdac/wiki" class="js-selected-navigation-item selected reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /Hdactech/Hdac/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+
+  <a href="/Hdactech/Hdac/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /Hdactech/Hdac/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <div id="wiki-wrapper" class="wiki-wrapper page">
+  <div class="gh-header">
+    <div class="gh-header-show">
+      <h1 class="gh-header-title instapaper_title">Hdac Technical Whitepaper</h1>
+        <div class="gh-header-meta">
+          HdacTech edited this page <relative-time datetime="2017-11-30T11:49:48Z">Nov 30, 2017</relative-time>
+          &middot;
+          <a href="/Hdactech/Hdac/wiki/Hdac-Technical-Whitepaper/_history" class="history">
+            46 revisions
+          </a>
+        </div>
+    </div>
+  </div>
+  <div id="wiki-content" class="wiki-content">
+    <div class="has-rightbar">
+
+    <div id="wiki-rightbar" class="wiki-rightbar">
+      <div class="wiki-pages-box readability-sidebar boxed-group flush js-wiki-pages-box " role="navigation">
+        
+<h3 class="js-wiki-toggle-collapse wiki-auxiliary-content">
+  <svg aria-hidden="true" class="octicon octicon-triangle-down caret-expanded" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M0 5l6 6 6-6z"/></svg>
+  <svg aria-hidden="true" class="octicon octicon-triangle-right caret-collapsed" height="16" version="1.1" viewBox="0 0 6 16" width="6"><path fill-rule="evenodd" d="M0 14l6-6-6-6z"/></svg>
+  Pages <span class="Counter">2</span>
+</h3>
+<div class="boxed-group-inner wiki-auxiliary-content wiki-auxiliary-content-no-bg">
+
+  <ul class="wiki-pages" data-filterable-for="wiki-pages-filter" data-filterable-type="substring">
+    <li>
+      <strong><a href="/Hdactech/Hdac/wiki" class="wiki-page-link">Home</a></strong>
+    </li>
+    <li>
+      <strong><a href="/Hdactech/Hdac/wiki/Hdac-Technical-Whitepaper" class="wiki-page-link">Hdac Technical Whitepaper</a></strong>
+    </li>
+  </ul>
+</div>
+
+      </div>
+
+
+      <h5 class="mt-0 mb-2">Clone this wiki locally</h5>
+      <div class="width-full input-group js-zeroclipboard-container">
+        <input type="text" class="form-control input-sm text-small text-gray input-monospace js-url-field js-zeroclipboard-target" aria-label="Clone URL for this wiki"
+               value="https://github.com/Hdactech/Hdac.wiki.git" readonly="readonly">
+        <span class="input-group-button">
+          <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg></button>
+        </span>
+      </div>
+
+
+    </div>
+
+    <div id="wiki-body" class="wiki-body gollum-markdown-content instapaper_body">
+        <div class="markdown-body">
+          <h2>
+<a id="user-content-hdac--transaction-innovation---iot-contract--m2m-transaction-platform-based-on-blockchain" class="anchor" href="#hdac--transaction-innovation---iot-contract--m2m-transaction-platform-based-on-blockchain" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Hdac : Transaction Innovation - IoT Contract &amp; M2M Transaction Platform based on Blockchain</h2>
+<p>Official Version 1.0.2 | Copyright @HdacTech.AG November 2017.</p>
+<p>Please contact the authors with questions or comments at: <a href="mailto:support@hdac.io">support@hdac.io</a></p>
+<hr>
+<ul>
+<li>
+<p><a href="#executive-summary">Executive Summary</a></p>
+</li>
+<li>
+<p><a href="#introduction">Introduction</a></p>
+</li>
+<li>
+<p><a href="#blockchain-and-iot">Blockchain and IoT</a></p>
+<ul>
+<li>
+<a href="#the-use-of-blockchains-to-support-iot-applications">The Use of Blockchains to Support IoT Applications</a>
+<ul>
+<li>Figure 1. Example of private blockchain enabling IoT usage</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#integration-between-blockchain-networks">Integration between Blockchain Networks</a></p>
+<ul>
+<li>
+<a href="#how-integration-between-public-blockchains-can-be-used">How Integration between Public Blockchains can be used?</a>
+<ul>
+<li>Figure 2. Example of Integration between public blockchains</li>
+</ul>
+</li>
+<li>
+<a href="#integration-between-public-and-private-blockchains">Integration between Public and Private Blockchains</a>
+<ul>
+<li>Figure 3. Hierarchically integrated blockchains</li>
+</ul>
+</li>
+<li><a href="#iot-and-security">IoT and Security</a></li>
+<li><a href="#transaction-innovation--m2m-transaction">Transaction Innovation &amp; M2M Transaction</a></li>
+<li>
+<a href="#securing-trust-between-iot-devices-in-the-blockchain">Securing Trust between IoT Devices in the Blockchain</a>
+<ul>
+<li>Figure 4. Comparison of network structure between IoT connection and blockchain</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#features-of-hdac">Features of Hdac</a></p>
+<ul>
+<li>
+<a href="#main-features-of-the-hdac-platform">Main Features of the Hdac Platform</a>
+<ul>
+<li>Table 1. Comparison of cryptocurrency properties</li>
+</ul>
+</li>
+<li>
+<a href="#consensus-algorithm">Consensus Algorithm</a>
+<ul>
+<li>Figure 5. ePoW consensus algorithm</li>
+<li>Figure 6. ePoW flow chart</li>
+<li>Figure 7. Block window simulation (100 years)</li>
+</ul>
+</li>
+<li>
+<a href="#enhancing-quantum-random-number-security">Enhancing Quantum Random Number Security</a>
+<ul>
+<li>Figure 8. Enhanced device security using quantum random numbers</li>
+</ul>
+</li>
+<li><a href="#dac-generating-mining-and-the-mining-result">DAC Generating, Mining and the Mining Result</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#hdac-technology-roadmap">Hdac Technology Roadmap</a></p>
+<ul>
+<li>
+<a href="#configuration-of-iot-blockchain-network">Configuration of IoT Blockchain Network</a>
+<ul>
+<li>Figure 9. Structure of the IoT blockchain network</li>
+</ul>
+</li>
+<li>
+<a href="#user-device-mapping-in-the-iot-blockchain">User-Device Mapping in the IoT Blockchain</a>
+<ul>
+<li>Figure 10. Example of mapping between user and device on the private blockchain</li>
+</ul>
+</li>
+<li>
+<a href="#iot-contract">IoT Contract</a>
+<ul>
+<li>Figure 11. Structure of the IoT Contract service</li>
+<li>Table 2. Structure of IoT Contract</li>
+</ul>
+</li>
+<li>
+<a href="#security-for-iot-blockchain">Security for IoT Blockchain</a>
+<ul>
+<li>Figure 12. Enhanced network security in a blockchain</li>
+<li>Figure 13. Threat detection in the IoT private blockchain</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#hdac-ecosystem">Hdac Ecosystem</a></p>
+<ul>
+<li>
+<a href="#strategy-of-the-hdac-ecosystem-development">Strategy of the Hdac Ecosystem Development</a>
+<ul>
+<li>Figure 14. Strategy of the Hdac Ecosystem development</li>
+</ul>
+</li>
+<li>
+<a href="#ecosystem-players--partners">Ecosystem Players &amp; Partners</a>
+<ul>
+<li>Table 3. Eco-Players</li>
+</ul>
+</li>
+<li>
+<a href="#a-timeline-of-the-development-of-the-hdac-ecosystem">A Timeline of the Development of the Hdac Ecosystem</a>
+<ul>
+<li>Table 4. Timeline of Creating the Hdac Ecosystem</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#appendix-a---examples">APPENDIX A - Examples</a></p>
+<ul>
+<li><a href="#example-of-a-smart-contract">Example of a Smart Contract</a></li>
+<li><a href="#example-of-an-iot-contract-program">Example of an IoT Contract Program</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#appendix-b---legal-disclaimer">APPENDIX B - Legal Disclaimer</a></p>
+</li>
+<li>
+<p><a href="#appendix-c---references">APPENDIX C - References</a></p>
+</li>
+</ul>
+<hr>
+<h1>
+<a id="user-content-executive-summary" class="anchor" href="#executive-summary" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>Executive Summary</b>
+</h1>
+<p>The IoT industry is on the verge of exponential growth. The Hdac platform provides the missing building blocks needed to enable IoT environments to thrive:</p>
+<ol>
+<li>Authentication - devices can be correctly identified by one other</li>
+<li>Mapping - once identified, they can connect seamlessly</li>
+<li>Machine to Machine transaction - devices can then bill each other</li>
+</ol>
+<p>Hdac will solve these three issues by combining blockchain and IoT, allowing automated, machine-to-machine, ultra-low cost transactions between IoT devices that are authenticated, mapped and verified through the blockchain.</p>
+<p>In its architecture the Hdac system uses a combination of public and private blockchains, which allows for previously unattainable transaction speeds. The technology will use quantum random number generation to secure these transactions.</p>
+<p>The Hdac system will ultimately ensure the efficiency and security of exponential growth of the IoT industry.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250591-e104e986-d374-11e7-8a07-162dd231e6c0.jpg" alt="blue_print_updated"></p>
+<h1>
+<a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>Introduction</b>
+</h1>
+<p>Society in the future will be “hyper-connected” and digital innovation will be continuously reintegrated into global economic systems. New technology will be enabled by an appropriate combination of blockchain (which has its value as a cryptocurrency) and the IoT. The market and consumers will demand more reliable and more affordable industrial transactions. This will lead to the development of Machine Currencies which can be implemented using and within hybrid blockchain technology.</p>
+<p>We believe that the future digital world will be a world where the Hdac platform operates a highly reliable blockchain network that can conveniently utilize the services of the world’s numerous IoT devices. It is said that “the currency of the new economy is trust,” and so it is paramount that new technologies be built on trust. The Hdac platform will be a key tool for implementing a more reasonable and efficient transaction system as the worlds of blockchain and IoT converge.</p>
+<p>The technological philosophy underpinning Hdac is to dramatically improve M2M transaction environments in daily: economic activities should all be seamless and easy transactions. In addition, we believe it will be possible, using our technology, to promote reasonable consumption and accurate, smart management for all communication and utility expenditures.</p>
+<p>Blockchains and cryptocurrencies are expected to serve as reliable, secure, and efficient transaction instruments for the Internet of Things [IoT] environment in the near future. Machine-to-Machine [M2M] transaction will be implemented with peer-to-peer [P2P] transaction that improves upon the high cost and low efficiency structure of the current centralized billing / deposit / settlement system used in such industries as apartment management and mobile billing.</p>
+<p>However, it is also necessary to identify (authenticate) and connect (map) to the appropriate device to ensure everything is in a connected environment with pre-approved privileges, and to provide identification functions to handle requested tasks securely. These changes enable a payment culture that allows micropayments and transparent settlement in all economic activities, such as when purchasing consumer goods or using public services in daily life. For example, consumer goods can be purchased and consumed in needed quantities only. Transactions will be immediate with low transactional cost or risk for both private and public goods such as electricity, water, cable TV, and the Internet.</p>
+<p>Society in the future will be “hyper-connected” and digital innovation will be continuously reintegrated into global economic systems. New technology will be enabled by an appropriate combination of blockchain (which has its value as a M2M transaction) and the IoT. The market and consumers will demand more reliable and more affordable various types of transactions. This will lead to the development of M2M transaction which can be implemented using and within blockchain technology.</p>
+<p>Hdac Private Blockchain [Hdac<em>T], a blockchain based smart transaction method on the Hdac platform, is designed to perform a given task under the various commanding conditions in the IoT environment. Hdac</em>T provides these M2M transaction functions and a simple transaction service environment, and with the rationality and efficiency that the Hdac platform pursues, it will be the platform of choice for use and control with IoT devices.</p>
+<p>In addition, Hdac will evolve into a hybrid blockchain platform by providing a hardware wallet for user security and transaction convenience in service of the aforementioned communication and transactions between IoT devices.</p>
+<h1>
+<a id="user-content-blockchain-and-iot" class="anchor" href="#blockchain-and-iot" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>Blockchain and IoT</b>
+</h1>
+<h2>
+<a id="user-content-the-use-of-blockchains-to-support-iot-applications" class="anchor" href="#the-use-of-blockchains-to-support-iot-applications" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Use of Blockchains to Support IoT Applications</h2>
+<p>In an environment such as a smart home or factory, various devices equipped with sensors, which are closely interconnected using a private blockchain, can be configured to operate more safely and reliably in accordance with each other’s conditions. A private blockchain is configured to perform not only user authentication but also mutual authentication between devices, generating and securely recording operation details and scenario-based IoT contracts.</p>
+<p>We are creating a reliable ecosystem in which transaction services run across the general Hdac space and the private, purpose-built objective blockchains by configuring the private and public blockchains so they are interconnected.</p>
+<p>The use of private blockchains is only practical if they are able to interact with a public blockchain which is already operating. In this regard, we provide Hdac ? a platform and cryptocurrency-enabled public blockchain that can be effectively used with multiple private blockchains. In other words, with our blockchain-by-use, transactions are possible beyond the P2P settlement of the public blockchain. In a controlled private blockchain network, we implement Hdac*T for mutual contracts and transactions between IoT devices, thereby enabling more accessible, reliable, and secure consumption and M2M transaction processes.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250592-e1313108-d374-11e7-98c6-aec1862a070b.png" alt="figure 1"></p>
+<p>Figure 1. Example of private blockchain enabling IoT usage</p>
+<p>For example, suppose that a user wants to operate a device within a specified capacity or budget. The user sets the designated value (capacity or amount; here, it refers to IoT contract value) in the control device mounted on a smartphone, a computer, a smart TV or a remote control and transfers the data to the corresponding device. Then, the measurement data processing part of the device transmits the IoT contract value to the measuring device and starts the operation. At this time, the activated device will operate until it transmits a signal indicating that the specified IoT contract value has reached the level as indicated by the measuring device. The operating device transmits data when a specified value is reached, or when the user control device requests confirmation of the current operating status so that the user can confirm the data. At this time, an authentication process is required to confirm communication processes among the user control device, the operating device, and the measuring device. If  it is not an authenticated device, it can adopt a mutual authentication scheme that cannot send or monitor the IoT contract. In addition, an authorized IoT contract can be used to make a</p>
+<p>M2M transaction and, in the case of a private blockchain, a user defined Hdac*T can be used as a transaction to activate the IoT device.</p>
+<p>User defined Hdac<em>T can be assigned attributes to make transaction only for specific purposes in an IoT contract, and can prevent the user from being diverted to unwanted devices or uses. This plays a big role in providing transparency of using costs while maintaining the security described above. For example, Hdac</em>T can be a control method for specific uses under specific conditions such as shutting down electricity and gas for safely evacuating residents when an earthquake or a fire incident occurs.</p>
+<h1>
+<a id="user-content-integration-between-blockchain-networks" class="anchor" href="#integration-between-blockchain-networks" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>Integration between Blockchain Networks</b>
+</h1>
+<h2>
+<a id="user-content-how-integration-between-public-blockchains-can-be-used" class="anchor" href="#how-integration-between-public-blockchains-can-be-used" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How Integration between Public Blockchains can be used?</h2>
+<p>As initial blockchain technology is becoming popular due to its features of decentralization, transparency, usability, and reliability, the applicability of the blockchain is expanding across industries such as cryptocurrency, attendance verification, forecast markets, and international finance. Therefore, as the amount of transactions and data increases, it is necessary to consider a case wherein public blockchains will exceed their natural capacity.</p>
+<p>Connections between public blockchains are already implemented by exchanging data through exchanges. That is, in the case of a registered blockchain in exchanges, exchange can be performed in such a way that the exchange performs relaying. The advantage of this approach is that people can easily identify and use services because they are done in the same way as exchanges between fiat currencies such as the Korean Won and the US Dollar.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250786-03a1b158-d376-11e7-968a-3fe660eaba33.png" alt="figure 2"></p>
+<p>Figure 2. Example of Integration between public blockchains</p>
+<p>Public blockchains can also can be linked hierarchically. For example, there are bottom-level blockchains that can be voted on by district or by county, and the results from these are integrated into a mid-level blockchain. In this case, the mid-level blockchain is the scale of a city/province, and can have multiple bottom-level blockchains. In other words, a summary of the transactions collected on the bottom-level blockchain is transferred to the mid-level blockchain. The upper blockchain can be regarded as a structure in which information of all bottom-level blockchains is integrated with a blockchain of a national scale. Although this is just a simple example, it can be applied in various forms on a blockchain network in the form of a tree.</p>
+<p>In this specific case, interworking between public blockchains can be interlocked through a separate service acting as an exchange. And this formation can be a chaining of the blockchain.</p>
+<h2>
+<a id="user-content-integration-between-public-and-private-blockchains" class="anchor" href="#integration-between-public-and-private-blockchains" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Integration between Public and Private Blockchains</h2>
+<p>A private blockchain network or a permissioned blockchain is a blockchain with access privileges. Its configuration means it may not be accessed by every node freely unlike a public blockchain. Therefore, to access a private blockchain from a public blockchain, a bridge node or a relaying intermediary is required. This bridge node must have all of the configuration information of the private blockchain, to allow it the same level of access as its private equivalent whilst allowing it to post to the public chain. In summary, the private blockchain can be accessed only when the administrator of the private blockchain grants access through pre-authentication and registration.</p>
+<p>Alternatively, in the case of a specific transaction, the administrator can grant a separate privilege and send it to the node or device. To use a private blockchain, fundamentally the user must be registered after the same authentication with that private blockchain.</p>
+<p>In terms of financial transactions, when there is a transaction between Bitcoin public blockchain and Hdac private blockchain that does not change the value. Hdac*T transaction may possibly be used within a specific enterprise or for a specific purpose. In this case, the exchange ratio between those two can be determined/exchanged through the exchange.</p>
+<p>In order to find out ways to effectively deal with transactions generated by large-scale IoT devices, the Hdac team have investigated IOTA's transaction processing structure/speed and Ethereum's next generation network. In our test network, making large transactions of tens of thousands, to hundreds of thousands of transactions per second, has proved that only a limited number of transactions were processed, depending on physical network speed/physical computing performance. Therefore, the best solution for managing high levels of transactions is processing with multiple, separate private blockchains and integrating the information through a separate root blockchain.</p>
+<p>In particular, public blockchains in a global environment have very limited transaction speeds (Bitcoin=about 2 tx/sec and Ethereum=about 5 tx/sec) due to network problems and block synchronization problems for many nodes. Hdac is also unable to implement the optimal speed in the global internet environment, due to the changes of the network speed over time and delays for block synchronization. Therefore, in the future, a large transaction processing blockchain may be a network of blockchains of a hierarchical or distributed structure composed of multiple private blockchains for each purpose. We will continue to research and work to implement this type of blockchain, and strive to develop an entire blockchain ecosystem by sharing it online as the results are available.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250594-e1887f58-d374-11e7-87f5-4aaa0b77a5bb.png" alt="figure 3"></p>
+<p>Figure 3. Hierarchically integrated blockchains</p>
+<h2>
+<a id="user-content-iot-and-security" class="anchor" href="#iot-and-security" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IoT and Security</h2>
+<p>ICBM (IoT, Cloud, Big Data, and Mobile) is regarded as the promising core technology of the next Industrial Revolution in the global industrial market; the IoT is expected to not only expand access to this market, but also to increase efficiency and convenience for users with various economic values.</p>
+<p>However, in order to achieve such a positive outcome, the connectivity between devices and reliability must be ensured. In other words, eliminating the distrust and security threats implied by the convenience of Internet connection is the top priority.</p>
+<p>The most attractive attributes of the IoT are that it enables devices to be both smart and connected. Devices that were not created for use on the blockchain will be neither smart nor connected, and all the threats and vulnerabilities that may occur in the existing Internet environment can be inherited. Meanwhile, apart from the security vulnerability due to external infringement, data collected in real time on an Internet-based service can lead to the invasion of privacy, and connection without security may be a social disaster. It is necessary that the basis of this hyper-connected society is able to contract and operate between a reliable P2P network system and the IoT devices we will be relying on everyday. Based on this, it has the capacity to evolve into a network that can support an ultra-advanced M2M transaction system which can function securely, reliably, and independently with customizable inputs from users.</p>
+<h2>
+<a id="user-content-transaction-innovation--m2m-transaction" class="anchor" href="#transaction-innovation--m2m-transaction" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Transaction Innovation &amp; M2M Transaction</h2>
+<p>One of the most innovative aspects of the next Industrial Revolution is the IoT, which refers to intelligent technologies and services that connect all things based on the Internet and communicate information between people and devices, as well as between different devices. However, technologies such as networking, which connects devices to one another, processing technology suitable for various services, interface technology for communication, and distributed processing technology for storing and processing large amounts of data, are essential to the IoT, and all require security technologies to prevent against hacking and information leakage.</p>
+<p>While various services based on this kind of Internet technology are emerging, many devices on the blockchain are operated by an IoT contract, and it is expected that this service will be possible in various industries. In particular, IoT contracts not only control devices, access, and help communicate between devices, but also assure anonymity, with all transactions recorded in the ledger. The recorded ledger is used as learning data for machine learning. The cost saving that this IoT big data is expected to provide through artificial intelligence [AI] is the ultimate goal of the IoT blockchain ecosystem.</p>
+<h2>
+<a id="user-content-securing-trust-between-iot-devices-in-the-blockchain" class="anchor" href="#securing-trust-between-iot-devices-in-the-blockchain" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Securing Trust between IoT Devices in the Blockchain</h2>
+<p>The connective structure of the IoT and the network structure of blockchains are very similar, as the Figure below shows.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250595-e1b51f68-d374-11e7-89cc-67a25a1bf45b.png" alt="figure 4"></p>
+<p>Figure 4. Comparison of network structure between the IoT and blockchains</p>
+<p>Integrating blockchains with the IoT makes it easy to implement confidentiality with integrity, a necessary condition for ensuring reliable connections and secure processing between devices. To do so, the connected devices respond to fabrication and modification attacks, thereby enhancing the mutual reliability of communication. In particular, the blockchain contains an ability to cope with external attacks through complex mathematical encryption of the transaction ledger contained within the block. In addition, the blockchain uses a decentralized rather than centralized method, which has the advantage of making it difficult for hackers to determine the attack target. These features minimize the impact of individual attacks on IoT devices to the entire device.</p>
+<p>Reliable services provided between IoT devices can be summarized as follows:</p>
+<ul>
+<li>
+<p>P2P and a decentralized structure distributes attack targets, making it difficult for the hacker to identify individual users as targets.</p>
+<ul>
+<li>In the case of a private blockchain, if the development of distributed computing becomes limited, the security problems can be solved by protecting the network through the “Safe IP” method, whereby the threat of external attacks is much diminished.</li>
+</ul>
+</li>
+<li>
+<p>It is possible to engrain transparency in all aspects of transactions by recording them on a distributed ledger like a blockchain, where they are readily accessible for future reference should the need arise</p>
+<ul>
+<li>This guarantees the integrity of the transaction details to respond to counterfeit and tampering attacks, minimizing dispute resolution costs as all participants prove transaction details.</li>
+</ul>
+</li>
+<li>
+<p>Authentication and authorization procedures are required for IoT devices that are the subject of transactions.</p>
+</li>
+<li>
+<p>In the case of a public blockchain, it is possible to increase the efficiency of construction and maintenance according to the distribution. In addition, the widespread decentralization of the public ledger improves efficiency by reducing the transactional costs, therefore more efficiently allocating public and private resources.</p>
+</li>
+</ul>
+<p>As a result, the network using the blockchain will provide a reliable environment for both the administrator and the user to exchange a wide variety of data and value.</p>
+<h1>
+<a id="user-content-features-of-hdac" class="anchor" href="#features-of-hdac" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>Features of Hdac</b>
+</h1>
+<h2>
+<a id="user-content-main-features-of-the-hdac-platform" class="anchor" href="#main-features-of-the-hdac-platform" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Main Features of the Hdac Platform</h2>
+<p>The main features of the Hdac blockchain are as follows.</p>
+<p>Custom DAC can be created and used without limitations, and the name of the asset will be defined or freely created and distributed by an authorized administrator. This asset can be circulated and used similarly to the existing native coin.</p>
+<p>In addition, assets that are generate for a particular business or for specific purposes may be exchanged with native coins at an appropriate ratio as needed.</p>
+<p>There are various rights management functions, and an administrator who builds the first blockchain node can grant authority to other nodes. Types of authority can be access rights, permissions to transmit and receive, mining rights, rights to generate assets, etc., and can be changed effectively during operation.</p>
+<p>The Hdac private blockchain provides convenient installation and configuration functions, and the blockchain can be easily configured as defined by the user. In addition, the new node configuration can be done simply with only a single line command to participate in the existing blockchain as a full node and all configurations are automatically copied and shared. In the case of a private blockchain, this can support mining in a more efficient way, as opposed to the relatively wasteful approach like a proof of work [PoW] system.</p>
+<p>Enhanced multi-user signatures are provided to support services such as secure P2P transaction. It also provides the ability to communicate by creating encrypted channels between two specific users. Together with this, we are also planning to provide IoT control and functions for the private blockchain specialized in various application fields and ideas and infrastructure for connecting blockchains. Details related to the IoT are specified in the “Hdac Technology Roadmap” on page 21.</p>
+<p>Hdac is based on blockchains and accommodates all the features of a typical blockchain. The limitations of the blockchain itself are evolving one by one over time. Hdac differs from other platforms based on blockchains by having modified or supplemented several functions to distinguish it in terms of capacity, security, functionality, and speed.</p>
+<p>The limited capacity of the block and extra data part of the existing blockchain was modified to be used flexibly in the data loading part. This enables various applications using blockchains.</p>
+<p>In the case of a private blockchain that is backed by the Hdac platform, security must be enhanced. By generating random numbers to create identifying keys through a quantum random number generator it is possible to eliminate the possibility of hacking through number pattern analysis, thereby greatly improving the security of the technology and associated transactions.</p>
+<p>In addition, we propose an ePoW algorithm for the consensus algorithm to develop the existing PoW scheme to induce efficient use of energy and equitable distribution. Also, by adding a permission concept that can grant administrative rights, only a specific user in a private blockchain can participate as a full node of a blockchain. If the existing platform uses common units, Hdac can construct multiple blockchains according to usage, and furthermore, provides a service model that can be used to create units.</p>
+<p>We have examined a number of blockchains that are suitable for implementing IoT environments developed for real-time processing. It is difficult to implement this with Bitcoin. Ethereum has a model more useful for IoT environments, but most devices are developed mainly in C, so we examined blockchain in C. However, it can be developed to be compatible with Ethereum in the future. IOTA has the potential to cope with large volumes of transactions, but it is not a standard blockchain technology that we are targeting, and therefore we excluded it. After reviewing many other platforms, we chose MultiChain, which can effectively implement private blockchains based on the most commonly used Bitcoin.</p>
+<p>Hdac is based on and improved from MultiChain, which is a blockchain improved from Bitcoin. Hdac has specifically explored blockchains to efficiently support IoT environments and to provide various services quickly and effectively to private blockchains. We will also set up the appropriate blockchain as MultiChain and make improvements. Therefore, Hdac has some of the characteristic of bitcoin blockchain as well as MultiChain’s optimized characteristics for private blockchains. Hdac will provide a basis for acting as a platform for the IoT. It can be applied to various service fields such as IoT, distribution, logistics, and public data management based on fast transaction processing speeds and transaction scalability.</p>
+<p>Bitcoin generates one block every 10 minutes, and Ethereum generates one block every 12 seconds. When considering the time that is shared on the network, it takes one to two minutes or more to check the outcome of the transfer transaction.</p>
+<p>Considering this, Bitcoin processes about 7 transactions per second [TPS] and Ethereum processes about 25 TPS. In particular, Bitcoin is limited to a maximum of 1MB in the current block size, and an alternative is proposed to increase the block size through SegWit2x.</p>
+<table>
+<thead>
+<tr>
+<th><b>Features</b></th>
+<th><b>Bitcoin Blockchain</b></th>
+<th><b>Hdac Blockchain</b></th>
+<th><b>Ethereum Blockchain</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Main Features</b></td>
+<td>Financial Transactions<br>(Bitcoin script)</td>
+<td>IoT friendly blockchains,<br>Public/Private blockchains</td>
+<td>Smart Contracts<br>(Solidity, Serpent etc.)</td>
+</tr>
+<tr>
+<td><b>Consensus Algorithm</b></td>
+<td>Proof of Work</td>
+<td>ePoW,<br>Trust-based</td>
+<td>Current: Proof of Work<br>Future: CASPER<br>PoS</td>
+</tr>
+<tr>
+<td><b>Transaction Speed</b></td>
+<td>7 tx/sec</td>
+<td>~160 tx/sec (public)*<br>~ 500tx/sec (private)<br>1000 tx/sec (target)</td>
+<td>25 tx/sec</td>
+</tr>
+<tr>
+<td><b>Block Time</b></td>
+<td>10 minutes</td>
+<td>3 minutes</td>
+<td>12 seconds</td>
+</tr>
+<tr>
+<td><b>Block Size</b></td>
+<td>1MB</td>
+<td>Dynamic (Max. 8 MB)</td>
+<td>Dynamic</td>
+</tr>
+<tr>
+<td><b>Extra Data</b></td>
+<td>80 Byte (OP_RETURN)</td>
+<td>Dynamic (Max. 4 Kb)</td>
+<td>Dynamic (5 gas / byte)</td>
+</tr>
+<tr>
+<td><b>Topology</b></td>
+<td>Public blockchain</td>
+<td>Private/Public blockchains,<br>Permissioned blockchains</td>
+<td>Public blockchain,<br>Permissionless blockchain</td>
+</tr>
+</tbody>
+</table>
+* This figure can vary depending on server performance and network environment.
+<p>Table 1. Comparison of cryptocurrency properties</p>
+<p>Hdac has compensated for these shortcomings and allocated the block time to three minutes, accounting for the lagged traffic speed of the Third World. The maximum block size is up to 8 MB and is variable.</p>
+<p>The reason for this figure is that the average Internet traffic speed in the Third World is only 1~2 Mbps. Therefore, if Hdac can accommodate only one fraction of this speed, it is suggested to create an environment that can operate a full node of the Hdac blockchain. Transactions through general wallets are also available in lower traffic environments. Testing in a limited internal environment has shown that stable transactions can be achieved in large transactions of about 20 times or more, which is closer to the theoretical value when compared to Bitcoin.</p>
+<p>Hdac provides a way to store large amounts of additional data in a transaction as an IoT-oriented blockchain in the future. Also, transaction size can be dynamically adapted if required for IoT security and application service expansion.</p>
+<h2>
+<a id="user-content-consensus-algorithm" class="anchor" href="#consensus-algorithm" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Consensus Algorithm</h2>
+<p>Blockchain has the necessary basic conditions for all the nodes participating in the network to agree on in the step of verifying that the block is valid for connecting a new block. All participating nodes (full node) should be able to identify the same result with the same procedure, and all verification processes must determine the same value. In addition, the determined value should be that proposed by a specific node.</p>
+<p>Hdac blockchain is based on the PoW method as a public blockchain. It also supports the mining method for a trust-based private blockchain: a trust-based consensus algorithm for a permissioned blockchain.</p>
+<p>Here, the task of creating a block is referred to as "mining,” and the nodes participating in mining are referred to as "miners" or "mining persons.” When an Hdac transaction begins, it broadcasts to the miners informing them about the transaction and encouraging participation. Miners then perform arithmetic calculations to verify the generated block. The consensus algorithm of blockchain includes PoW, proof of stake [PoS], and delegate proof of state [DPoS]. Such a consensus algorithm determines those who will generate a block through performing a calculation process that takes a certain amount of time amongst numerous participants.</p>
+<p>This consensus algorithm wastes energy by consuming hashing power to obtain one block compensation in the competitive mining process. In addition, the PoW or PoS method has the problem that the greater the hashing power, or more stake, the more the accumulation of compensation or wealth can be concentrated in one place. In fact, mining is concentrated in certain mining pool areas.</p>
+<p>Hdac uses ePoW as a consensus algorithm for creating new blocks and connecting them to the blockchain. ePoW refers to “PoW based on equitable chance and energy-saving.” The Hdac algorithm considers these two as its basic philosophy.</p>
+<p>The ePoW consensus algorithm can reduce the number of nodes participating in PoW and motivates the participation of multiple mining nodes. As a result, we intend to prevent energy waste due to excessive hashing power for mining competition and distribute equitable mining opportunities.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250596-e1e24588-d374-11e7-882f-6c44ee727326.png" alt="figure 5"></p>
+<p>Figure 5. ePoW consensus algorithm</p>
+<p>Hdac ePoW is a consensus algorithm that reduces the mining monopoly by applying the block window concept. It reduces the wasteful energy consumed in the hash calculation by avoiding spontaneous mining attempts during the block window application period once the mining is successful. If a node succeeds in mining, no new block can be mined during the block window application period. Even if a greedy node neglects this mechanism and succeeds in mining a new block, it will not be recognized as a valid block in the entire Hdac blockchain network, thus eliminating the need to try to find an invalid block.</p>
+<p>The block hash must satisfy the data specification according to the degree of difficulty and should not be within a given block window (time spacing). This block window size can be expressed in the form of a time function, Ws = f(t). “F(t)” is a function that increases in proportion to time, and therefore the window size gradually increases with time. This means that there is a great opportunity for early participants, and over time, it becomes increasingly difficult for certain mining nodes to monopolize mining and more equitable distribution can be achieved.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250597-e20c3b9a-d374-11e7-84ae-5ca1853f98b5.png" alt="figure 6"></p>
+<p>Figure 6. ePoW flow chart</p>
+<p>The ePoW block window is a system that gives certain constraints on mining attempts after succeeding in mining in a certain PoW cycle. The block window size (Ws) is defined as, f(t) = [(N*0.7) x (cumulative number of blocks currently (t))] / (cumulative block number for 10 years (tm)), and the node factor (N) is calculated from the list of recent successful mining nodes. The reason for the arrival time of the maximum block window size (Wm) being 10 years is because it is set to reach the point of more than 80% of the total block generation by that time.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250598-e236809e-d374-11e7-9431-269d15c1fe67.png" alt="figure 7"></p>
+<p>Figure 7. Block window simulation (100 years)</p>
+<p>If the block window size is simulated for 100 years with a mining node factor of 100, it is as in the above figure. The block window gradually increases from the point of time when the genesis block is started, and the size increases or decreases according to the node factor after the point (tm) when the maximum block window size is reached.</p>
+<p>We have completed the development of ePoW, and the results of ePoW’s block mining distribution and energy consumption levels will be published separately on the website later.</p>
+<p>The Hdac ePoW consensus algorithm will support a variety of technical methods for creating a healthy mining environment. A separate hardware security module [HSM] is being developed to enhance security of the mining node where this will be an available option to select.</p>
+<h2>
+<a id="user-content-enhancing-quantum-random-number-security" class="anchor" href="#enhancing-quantum-random-number-security" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enhancing Quantum Random Number Security</h2>
+<p>Blockchain-based platforms have already been verified with high security. The private key, public key, and wallet address used in blockchain based transactions are created using a pseudo random number. In recent cases, a pseudo random number security vulnerability has been found by analyzing the patterns of pseudo random numbers and creating values for specific purposes. There have been various attempts to compensate for these weaknesses, and a quantum random number method has emerged that cannot be analyzed theoretically. Hdac proposes a method to replace random number generation with quantum random numbers for a private blockchain.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250599-e2751836-d374-11e7-9941-5041ebf877b9.png" alt="figure 8"></p>
+<p>Figure 8. Enhanced device security using quantum random numbers</p>
+<h2>
+<a id="user-content-dac-generating-mining-and-the-mining-result" class="anchor" href="#dac-generating-mining-and-the-mining-result" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DAC Generating, Mining and the Mining Result</h2>
+<p>Compared with Bitcoin, Hdac’s issuance policy is as follows.</p>
+<p>The total DAC amount of the Hdac blockchain is 12 billion. The first mining result begins with 5,000DAC before DAC halving. The block generation cycle is 3 minutes, and halving is set to reduce the mining result by half for every 1,032,000 blocks. That is, the mining result is reduced by half approximately every 71 months since the Genesis block is created. 7% of the DACs will be used for creating platform, and an ecosystem to implement Hdac technology, boost its transaction, and also for liquidity management. Another 7% will be distributed to participants who donated to the Hdac Technology AG.</p>
+<p>Such a mechanism is a policy intended to maintain the intrinsic value of the DAC by reducing its supply. The total amount of DAC generated is fixed, rather than inflationary DACs where the generated asset increases to infinity and the asset value declines. It is important to see if the equilibrium price can be maintained at the point where the buyer and the seller’s stocking instincts meet.</p>
+<p>Miners who want to mine by participating in the Hdac blockchain network, will receive a mining result and a transaction cost. The Mining result, which is halved roughly for every 6 years, gradually increases the number of transactions included in a block, thereby filling up the total cost.</p>
+<h1>
+<a id="user-content-hdac-technology-roadmap" class="anchor" href="#hdac-technology-roadmap" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>Hdac Technology Roadmap</b>
+</h1>
+<h2>
+<a id="user-content-configuration-of-iot-blockchain-network" class="anchor" href="#configuration-of-iot-blockchain-network" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuration of IoT Blockchain Network</h2>
+<p>The IoT blockchain network is a permissioned private blockchain that is registered after being authenticated and can operate on a blockchain network. Therefore, it can be said that its personality is different from a public blockchain which access to the network.</p>
+<p>The components of the IoT blockchain network are as follows.</p>
+<ul>
+<li>
+<p><b>Blockchain node</b>: Records all transaction blocks as a full node. Stores setting information related to user-device, device-device control, billing, and management performed by the administrator.</p>
+</li>
+<li>
+<p><b>Administrator</b>: A person who registers users, gateways, and devices in the blockchain and grants access between them. The settings are safely stored in the full node of the blockchain and are transmitted to the following users, gateways, and devices through the network. Each user and device maintains the latest settings related to them. It can also be integrated systematically with the existing IoT operating environment.</p>
+</li>
+<li>
+<p><b>User</b>: A person or device with a program running as a simple node that does not store blocks.</p>
+</li>
+<li>
+<p><b>Gateway</b>: As it is, a unit used to control many dummy devices or sensors. It can analyze details of the IoT contract and then transmit to dummy devices or sensors. Each device or sensor is connected with an individual address.</p>
+</li>
+<li>
+<p><b>Device</b>: As it is, a device that is connected to a gateway or a simple node which does not store blocks. It corresponds to individual addresses and it can also analyze the IoT contract details and operate.</p>
+</li>
+</ul>
+<p>As illustrated in Figure 7 below, the user sends the IoT contract which is attached with a program to the gateway or a device. The device analyzes and operates the received IoT contract. The user can send transactions that access or control explicitly authorized gateways or devices.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250600-e2bc8004-d374-11e7-9840-681983017c82.png" alt="figure 9"></p>
+<p>Figure 9. Structure of the IoT blockchain network</p>
+<h2>
+<a id="user-content-user-device-mapping-in-the-iot-blockchain" class="anchor" href="#user-device-mapping-in-the-iot-blockchain" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>User-Device Mapping in the IoT Blockchain</h2>
+<p>The user on the IoT blockchain must be able to access the device according to clear access rights rules to control the device. The user should also be able to control the specific equipment according to the setting or to only read the status of the equipment, and it should be possible to make general users inaccessible to certain equipment. This allows the administrator to set access permissions by the addresses of the users, devices, or gateways. This access right setting is stored in all of the full nodes of the blockchain network, and is also shared among all nodes, gateways, and devices.</p>
+<p>Access and control of users and devices, and transaction authority, are recorded securely in the blockchain. The IoT contract can be carried out after the authority is verified compared to this record when the transaction occurs.</p>
+<p>In the general IoT operating environments, these permissions are often granted. Therefore the IoT blockchain may be useful to use in combination with the existing IoT environment.</p>
+<p>The types of authority mapping are as follows.</p>
+<ul>
+<li>
+<p>User-device/gateway mapping</p>
+</li>
+<li>
+<p>User-user mapping</p>
+</li>
+<li>
+<p>Device/gateway-device mapping The mapping rights are as follows.</p>
+</li>
+<li>
+<p><b>Access rights</b>: Indicates the right to access the equipment. Will be able to specify a minimum access rating. A user or device will have a rating, meaning only a specific rating or higher is accessible. If access is not possible, all of the rights below are not available.</p>
+</li>
+<li>
+<p><b>Right to read</b>: It is a right to read the current state, and detailed authority can be specified as a separate string, and it can be interpreted by the device to determine whether it is applicable or not.</p>
+</li>
+<li>
+<p><b>Right to control/write</b>: It is the right to control the device or to change the state. Detailed authority can be specified separately, and it can be interpreted by the device to determine whether it is applicable or not.</p>
+</li>
+<li>
+<p><b>Transaction rights</b>: Specifies configurable rights related to manual and automatic transaction. Detailed authority can be specified separately, and it can be interpreted by the device to determine whether it is applicable or not. The method of limiting the maximum transaction count and maximum one-time threshold during a specific period is effective.</p>
+</li>
+<li>
+<p><b>Other rights</b> (specifying detailed rights by device): Other detailed rights can be specified as a separate code or string, and can be interpreted by the device to determine whether they are applicable or not. Since this detail is a method of depending on the device, no specific control measures for all devices are specified here.</p>
+</li>
+</ul>
+<p>All transactions using this blockchain network are determined to be transmitted according to the access right. That is, if a user A has no access to a device B but still a transaction from A to B occurs, device B and all blockchain nodes will reject this transaction. In this case, the error can be reported to the intrusion detection node in the blockchain, and the administrator can immediately check for the details.</p>
+<p>After the administrator configures the authority between the first user-device or device-device, the rights of each user and device can be adjusted if changes are made to the blockchain network. In addition, when a device is added or deleted, a corresponding mapping must be performed. Basic rights may be specified in cases where a new device is added according to the setting.</p>
+<p>The process of access rights mapping according to device can be quite complex in some cases. Therefore, it is possible to try to group users or gateways and devices into specific groups in order to effectively handle such rights mapping, and also, may provide a user application programming interface [API] or command in the form of a script to control complex mappings. In some cases, the user-device mapping may be expressed in more complex forms with respect to the location and state of time and space. In this section, only the generic form of device mapping is presented.</p>
+<p>This user-device mapping method is already being used in the IoT industry, and it will be possible to operate the existing management system to have the maximum effect while minimizing the modification through appropriate business linkage with the blockchain.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250601-e2e3f364-d374-11e7-813b-6e2636259e5b.png" alt="figure 10"></p>
+<p>Figure 10. Example of mapping between user and device on the private blockchain</p>
+<h2>
+<a id="user-content-iot-contract" class="anchor" href="#iot-contract" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IoT Contract</h2>
+<p>IoT contract is a concept where the object of the smart contract is expanded to IoT devices. A programmer can create a program that controls the operation of the IoT device. That is, he or she creates a smart contract for the IoT, and sends an IoT contract to a specific device to perform machine-based automated work and operation. The IoT contract is a transaction that transfers control commands between user-device or device-device, and to use this transaction, user-device or device-device authentication, which will be described later, must precede.</p>
+<p>Before using this transaction, the user and the device must first be registered in the blockchain network through the authentication procedure. In the case of the user, only the authorized user through two-factor authentication should be able to access the blockchain network. As the user authentication method, an ID, a password, a one-time password or a biometric authentication (fingerprint, iris, face recognition etc.) can be added, and verification is performed through these.</p>
+<p>Since the device is difficult to register by itself, the administrator must first identify and register the associated device. Several methods are being considered to determine the unique ID of the device. First, there is no problem if the device has a unique ID (such as a security chip). However, if this is not the case, it can register the hash of unique response information, MAC address, CPU ID, disk ID, OS image, electronic wallet address, etc., so that the device can be automatically disconnected from the blockchain network and reported to the administrator whenever it is tampered with.</p>
+<p>Depending on the IoT contract, when the status of a program running on the device changes, it can manipulate the device, perform automatic transactions between devices, or transmit status information or data to a predetermined location. At this time, automatic transaction between devices is called M2M transaction, and transaction can be made only to the addresses allowed to transfer in the user-device and device-device mapping in advance. The device A, which receives the commands, can transmit status or control information to another device B according to the program contents and may be able to control the device B.</p>
+<p>Control is possible only when the setting is registered and has control rights in the blockchain network. By providing the IoT contract service through Hdac*T, state control, transaction and management between users and devices, as well as between devices, are possible. Through this, M2M transaction can be provided.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250602-e30c2c08-d374-11e7-903b-621e7a99e16b.png" alt="figure 11"></p>
+<p>Figure 11. Structure of the IoT Contract Service</p>
+<p>An automated program can be added to the IoT contract so that the device will operate for the user to control the device, be informed about the status of the device, automatically proceed with transactions if a certain condition is fulfilled, etc. This program can deliver simple JSON-formatted data according to the device’s conditions, and it can be provided with a programmable API type that can handle more complex information.</p>
+<p>In higher performance devices, more complex and sophisticated high-level programming is added to the IoT contract and delivered to the device, and it may be interpreted and processed through an interpreter or virtual machine operating within the device.</p>
+<p>The most effective and convenient way to control IoT devices in terms of speed and security is to use APIs to develop programming for the device. In terms of flexibility, an interpreter or a virtual machine can be effective. In the case of an interpreter or a virtual machine, it is not necessary to change the device only by changing the control program on the user side, so that it can be applied easily and flexibly. However, using an interpreter or virtual machine requires a relatively high level of computing power and memory, so it cannot be directly loaded into low-performance devices. For example, if there are 100 A-type devices and the policy to manage this device is changed, it is much more efficient and secure to change the user-side IoT contract, which has control rights, rather than to modify or update 100 devices.</p>
+<p>In IoT, since a transaction must be performed in real time, an appropriate number of devices are registered in the blockchain. If it is the case where the network ensures appropriate processing performance, it can process about 500 tx/sec. The amount of transactions or response time that can be handled can be highly dependent on the performance of the network and the device.</p>
+<p>In particular, where a transaction requires high security, it can be transferred to the device through a secure channel completely separate from the normal network, such as a VPN. In other words, it can be made inaccessible through the public network in-between. In the private blockchain, the device and the full node can be arranged in N:1 ratio where security devices are used to enhance security of the network segment. If necessary, the user program and the data block may be encrypted and transmitted due to device security matter.</p>
+<p>Detailed specifications of IoT contract are as follows.</p>
+<ul>
+<li>Basic blockchain transaction</li>
+<li>User-defined JSON header
+<ul>
+<li>Consists of user information, type of user, authorized contents, processing command and data, response method etc.</li>
+</ul>
+</li>
+<li>User program
+<ul>
+<li>Additional JSON data, or high-level programming language, or object information to carry out</li>
+<li>It can be processed by API, interpreter, or virtual machine</li>
+</ul>
+</li>
+<li>Data/stream to be used in the user program</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td rowspan="3">Iot<br>Contract</td>
+<td colspan="2">Default Blockchain Transaction</td>
+</tr>
+<tr>
+<td colspan="2">User Defined JSON Header<br>(User Info., UserType, Permission, OpCode, OpData, ReplyType, …)</td>
+</tr>
+<tr>
+<td>User Program (Script)</td>
+<td>User Data (Binary)</td>
+</tr>
+</tbody>
+</table>
+<p>Table 2. Structure of IoT Contract</p>
+<p>The user program is a high-level language, and the program may be interpreted through an interpreter or a virtual machine that have a syntax similar to C, which is familiar to IoT developers.</p>
+<p>In this process, we will use a specific program interpreter/virtual machine to interpret user programs, but we will keep the source code and interface as simple as possible, so that the users can easily add a new type of interpreter or virtual machine.</p>
+<h2>
+<a id="user-content-security-for-iot-blockchain" class="anchor" href="#security-for-iot-blockchain" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Security for IoT Blockchain</h2>
+<p>The primary concern of IoT is a security issue for IoT devices. The majority of these security problems can be solved by adapting IoT blockchains. However, since denial of service [DoS], distributed denial of service [DDoS], and sniffing attacks cannot be solved by the IoT blockchain, connection with other security technologies should be considered.</p>
+<p>For private blockchains, security could be improved by using a separate secure channel by separating the network between nodes and devices or between blockchain nodes and users. This method can be implemented through hardware or blockchain software, which can be mounted on a device. This method has an advantage that it is not necessary to change an existing blockchain node or device configuration. Those general devices which are not able to transfer blockchain code, can be controlled through a separate device adapter node. In this case, the transaction can be controlled by changing the signal to directly control the device.</p>
+<p>Moreover, if necessary, other various security methods should be installed inside the server to prevent threats. Recently, smart devices have built-in protocols such as Transport Layer Security [TLS] or Secure Sockets Layer [SSL]. They also have various security systems against control signals. An IoT contract, which is an encrypted transaction between users and devices, can support devices by using TLS / SSL and various protocols. An IoT Contract, an encrypted transaction between users and devices, can support devices using TLS / SSL and various protocols. In addition, low-performance devices that have difficulty performing complex encryption can selectively use IDEA (International Data Encryption Algorithm) or ARIA (Generic 23-Block Cryptographic Algorithm with Involutional SPN Structure Optimized for Lightweight Environments and Hardware Implementation) or with the AES128 to AES256 standard symmetric key encryption algorithm, depending on the device.</p>
+<p>Because the program inside the device needs to be changed, this method is difficult to apply to a device which has already been created. Therefore, these very low performance devices can be classified as dummy devices, and can be managed by gateways that operate over separate secure channels.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250603-e334c1a4-d374-11e7-9b9e-e88a179a73ae.png" alt="figure 12"></p>
+<p>Figure 12. Enhanced network security in a blockchain</p>
+<p>Even if the IoT blockchain is well integrated with existing security processes, there may still be unexpected security vulnerabilities. Therefore, it is necessary not only to constantly monitor user setting changes, device additions, setting changes, and mapping changes between user and device on the IoT blockchain, but also compare with previous settings when changing contents. This big data can be searched and analyzed by using tools equipped with machine learning.</p>
+<p>Furthermore, if the main contents change, it is necessary to enact the process of attempting secondary authentication to the administrator, and it should be able to cope with various network attacks including DoS and DDoS performed in the network.</p>
+<p>Therefore, one or more nodes should operate as watchdogs to detect abnormal transactions and generate events. In each node, the function of monitoring the status of the server may be inserted to notify the administrator, who can act before the blockchain becomes difficult to operate.</p>
+<p>The following events can be detected by the watchdog node:</p>
+<ul>
+<li>
+<b>Abnormal transactions</b>: Transactions that do not have a destination address, and that cause abnormal excessive traffic, unauthorized transactions and IoT contracts</li>
+<li>
+<b>Detecting status of each node</b>: If it is a full node, it monitors the disk capacity, server status and network status, and notifies watchdog when it reaches a certain level.</li>
+<li>
+<b>User-device, device-device mapping change monitoring</b>: Detects when contents are changed. Tracks changes when mapping changes are prohibited.</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250604-e35b0a30-d374-11e7-80aa-c095779dfe98.png" alt="figure 13"></p>
+<p>Figure 13. Threat detection in the IoT private blockchain</p>
+<h1>
+<a id="user-content-hdac-ecosystem" class="anchor" href="#hdac-ecosystem" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>Hdac Ecosystem</b>
+</h1>
+<h2>
+<a id="user-content-strategy-of-the-hdac-ecosystem-development" class="anchor" href="#strategy-of-the-hdac-ecosystem-development" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Strategy of the Hdac Ecosystem Development</h2>
+<p>In order for Hdac to evolve continuously and stably, The Hdac Technology AG will conduct marketing, and public relation activities while HDAC Technology AG implements Hdac Platform Technology, developing the next-generation Industrial platform. These teams will strive together to develop technological progress and synergy ecosystem of Hdac in order to create a virtual circle environment for global technological development as shown below.</p>
+<p><img src="https://user-images.githubusercontent.com/33046025/33250590-e0d8fe5c-d374-11e7-8b7c-be9c50290c18.png" alt="figure 14"></p>
+<p>Figure 14. Strategy of the Hdac Ecosystem development</p>
+<h2>
+<a id="user-content-ecosystem-players--partners" class="anchor" href="#ecosystem-players--partners" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ecosystem Players &amp; Partners</h2>
+<p>Hyundai BS&amp;C, Doublechain, HyundaiPay, and BLOKO have formed The Digital Transformation Community for the core technology/application development of Hdac as well as its activation. In addition, we are in the process of cooperating with various partners: such as WisBase, which specializes in large database design and tuning; PnP Secure, which is an information protection solution company; EYL, which is a developer of quantum random number chips; INTO Information, a developer of original technology and service development for various industries; logical closed network solution supplier ARAD; IOT device technology partner MODA; and Mill Corp. We are also collaborating with Intel to develop IoT and face recognition access security solutions.</p>
+<p>In December 2016, Hyundai BS&amp;C and Doublechain signed an MOU to launch a blockchain-based business. And we are pursuing a joint project to maximize the efficiency of blockchain-based platform development/operation, and developing the IoT and blockchain convergence solutions.</p>
+<p>In June 2017, HyundaiPay was launched, the specialized blockchain-based company, for the advancement of blockchain technology and early launch of various services. On 20 July, 2017, HyundaiPay and Doublechain signed a strategic alliance with Elasticsearch Korea, a large data and machine learning company, for the co-development of an Hdac-based blockchain businesses.</p>
+<table>
+<tbody>
+<tr>
+<td><b>EcoSystem</b></td>
+<td><b>Partners</b></td>
+<td><b>Agreement/Role</b></td>
+</tr>
+<tr>
+<td rowspan="4">DTC</td>
+<td>Hyundai Pay</td>
+<td>DTC Hyundai Pay Blockchain core development support,Hdac value enhancement and activation</td>
+</tr>
+<tr>
+<td>Doublechain</td>
+<td>Blockchain Core / Platform Development, Virtual account development</td>
+</tr>
+<tr>
+<td>Hyundai BS&amp;C</td>
+<td>Smart IoT (HERIOT, etc.), Smart IoT Home Technology Research Collaboration</td>
+</tr>
+<tr>
+<td>BLOKO</td>
+<td>Research Blockchain and Managing Blockchain Technical Community</td>
+</tr>
+<tr>
+<td rowspan="7">Applied technology</td>
+<td>EYL</td>
+<td>Quantum random number technology, platform support</td>
+</tr>
+<tr>
+<td>INTO Information</td>
+<td>Web Firewall, Security Compliance Support</td>
+</tr>
+<tr>
+<td>MODA</td>
+<td>IoT Gateway device development/manufacture</td>
+</tr>
+<tr>
+<td>WisBase</td>
+<td>Large capacity DB/tuning</td>
+</tr>
+<tr>
+<td>ARAD Networks</td>
+<td>Technical Support for safe IP</td>
+</tr>
+<tr>
+<td>Elasticsearch</td>
+<td>Search engine, Big data preprocessing, Technical support for machine learning</td>
+</tr>
+<tr>
+<td>Mill Corp</td>
+<td>Manufacturing IoT products and Industrial PC</td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="user-content-a-timeline-of-the-development-of-the-hdac-ecosystem" class="anchor" href="#a-timeline-of-the-development-of-the-hdac-ecosystem" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A Timeline of the Development of the Hdac Ecosystem</h2>
+<table>
+<tbody>
+<tr>
+<td><b>Year</b></td>
+<td><b>Plan</b></td>
+</tr>
+<tr>
+<td>2017</td>
+<td>- Hdac Generation Event<br>
+- Release Hdac consensus algorithm<br>
+- Completion of Hdac operating environment Field test (ASM mining pool, Wallet 1.0, Explorer, etc.)<br>
+- Release H/W Wallet (KASSE 1.0) release, ASM (Advanced Security Module) Ver 0.9<br>
+- Release Hdac apps API (ASM mining, Wallet, Explorer)
+</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>- Release Hdac operating environment (ASM 1.0 mining pool, wallet 2.0, etc.) release<br>
+- Hdac IoT Contract PoC<br>
+- IoT authentication and device control (Smart Home PoC)<br>
+- Private Blockchain PoC (Game Application, POS Hdac*T site)<br>
+- Smart IoT diffusion PoC (apartment, factory, etc.)
+</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>- Release Practical application of Hdac IoT Contract &amp; Smart Home (HerIoT)<br>
+- Release Practical application of Hdac IoT Contract &amp; Smart Factory (Mando case)<br>
+- Hdac Public-Private Hybrid Blockchain Use-case development
+</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>- IoT High Speed Transaction Distributed Processing Blockchain Development<br>
+- Release Private Blockchain Security Enhancements, Advanced Security Module Ver 2.0 release<br>
+- Hybrid (Public-Private) Blockchain Network Live Operation (M2M transaction)
+</td>
+</tr>
+</tbody>
+</table>
+<p>Table 4. Timeline for Creating the Hdac Ecosystem</p>
+<h1>
+<a id="user-content-appendix-a---examples" class="anchor" href="#appendix-a---examples" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>APPENDIX A</b> - Examples</h1>
+<h2>
+<a id="user-content-example-of-a-smart-contract" class="anchor" href="#example-of-a-smart-contract" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example of a Smart Contract</h2>
+<p>JSON header may contain the following simple control commands. JSON data can be passed to user definition function, then users can control the device by interpreting those JSON data:</p>
+<table>
+<tbody>
+<tr>
+<td>
+// Light on (if the IoT Contract comes to the address of the light)<br>
+{ “operation” : “on”, “rerurn” : “yes” }    // If the response is returned after executing the command<br>
+{ “operation” : “off” }
+</td>
+</tr>
+<tr>
+<td>
+// Turn on the air conditioner, set the temperature to 22 degrees Celsius, and set the wind to natural wind. Return temperature<br>
+{ “operation” : “on”, “temperature” : “22c”, “wind” : “natural”, “return” : “temperature” }<br>
+// Turn on the air conditioner, set the temperature to 70 degrees Fahrenheit, automatically turns off after 60 minutes<br>
+{ “operation” : “on”, “temperature” : “70f”, “timer” : “60 minute” }
+</td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="user-content-example-of-an-iot-contract-program" class="anchor" href="#example-of-an-iot-contract-program" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example of an IoT Contract Program</h2>
+<p>The following example is a simple IoT Contract program that activates the air conditioner when the user is at home, enabling them to limit the transaction automatically to cover only the amount of the service used:</p>
+<table>
+<tbody>
+<tr>
+<td>#include "hdac.h"<br>
+NodeAlias AC = "75578a276a3b2d50a1b4ddae16724185ae2d6d25";    // Air conditioner<br>
+NodeAlias TV = "1BZDfv3gjrFi2YpZ4FnPWhgRovbyM5coFmAAEA";    // TV<br>
+NodeAlias IS = “Infrared Sensor”;    // Infrared Sensor<br>
+NodeAlias MO = “Management Office”;<br>
+<br>
+hdac_t   *hdac = NULL;<br>
+time_t    PowerOnTime = 0;<br>
+<br>
+main()<br>
+{<br>
+   hdac = HdacInit();<br>
+<br>
+   IS.AddEvent(hdac, ProcessISEvent);<br>
+   ExecuteContract(hdac);    // Wait until the IoT Contract end signal<br>
+<br>
+   HdacExit(hdac);<br>
+}<br>
+<br>
+// Process Event<br>
+void    ProcessISEvent(hdac_t *hdac, NodeAlias node, NodeEvent ev)<br>
+{<br>
+   if (hdac == NULL || hdac-&gt;disabled == true)<br>
+      return;<br>
+<br>        
+   if (ev.GetStatus("motion") == 0 &amp;&amp; PowerOnTime &gt; 0)<br>
+   {<br>
+      AC.SetStatus(“power”, “off”);    // AC OFF<br>
+      TV.SetStatus(“power”, “off”);    // TV OFF<br>
+<br>        
+      int elapsed = time() - PowerOnTime;<br>
+<br>
+      if (node.balance &gt; 1)            // If the balance is sufficient, pay<br>
+         MO.Pay(0.0001 * elapsed / 60);    // Pay exact amount<br>
+      else<br>
+         node.Alert("Low Balance");    // Notify the user<br>
+      PowerOnTime = 0;<br>
+   }<br>
+   else if (ev.GetStatus("motion") == 1 &amp;&amp; PowerOnTime &lt;= 0)<br>
+   {<br>
+      AC.SetStatus(“power”, “on”);    // AC operation<br>
+      TV.SetStatus(“power”, “on”);    // TV operation<br>
+      PowerOnTime = time();<br>
+   }<br>
+}
+</td>
+</tr>
+</tbody>
+</table>
+<h1>
+<a id="user-content-appendix-b---legal-disclaimer" class="anchor" href="#appendix-b---legal-disclaimer" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>APPENDIX B</b> - Legal Disclaimer</h1>
+<p>The information in this document is subject to change or update without notice and should not be construed as a commitment by HdacTech.AG. This document is for informational purposes only and does not constitute an offer or solicitation to sell shares or securities in Hdac.io or any related or associated company. Any such offer or solicitation will be made only by means of a confidential offering memorandum and in accordance with the terms of all applicable securities and other laws.</p>
+<h1>
+<a id="user-content-appendix-c---references" class="anchor" href="#appendix-c---references" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>APPENDIX C</b> - References</h1>
+<p>Antonopoulos, Andreas, Mastering Bitcoin: Programming the Open Blockchain, O’Reilly Media Inc. (California: 2017).</p>
+<p>Arad Networks, “Why SPN Solutions?” <a href="http://www.aradnetworks.com/spn_why" rel="nofollow">http://www.aradnetworks.com/spn_why</a>, (March 2017).</p>
+<p>Banafa, Ahmed, “Internet of Things (IoT): Security, Privacy and Safety,” Datafloq, <a href="https://datafloq.com/read/internet-of-things-iot-security-privacy-safety/948" rel="nofollow">https://datafloq.com/read/internet-of-things-iot-security-privacy-safety/948</a>.</p>
+<p>Beecham Research Limited, “IoT Security Threat Map,” <a href="http://www.beechamresearch.com/download.aspx?id=43" rel="nofollow">http://www.beechamresearch.com/download.aspx?id=43</a>, (2015).</p>
+<p>Belson, David [Ed.], “The State of the Internet / Q3 2015,” Akami, <a href="https://www.akamai.com/us/en/multimedia/documents/report/q3-2015-soti-connectivity-fi" rel="nofollow">https://www.akamai.com/us/en/multimedia/documents/report/q3-2015-soti-connectivity-fi</a> nal.pdf, (December 2015).</p>
+<p>Boldt, Bill, “Without Security, is the Internet of Things Just a Toy?” Pubnub, <a href="https://www.pubnub.com/blog/2015-01-30-without-security-internet-things-just-toy/" rel="nofollow">https://www.pubnub.com/blog/2015-01-30-without-security-internet-things-just-toy/</a>, (January 2015).</p>
+<p>Buterin, Vitalik, “Ethereum: A Next-Generation Smart Contract and Decentralized Application Platform,” <a href="https://github.com/ethereum/wiki/wiki/White-Paper">https://github.com/ethereum/wiki/wiki/White-Paper</a>, (2014).</p>
+<p>Elasticsearch, “Heart of Elastic Stack,” <a href="https://www.elastic.co/kr/products/elasticsearch" rel="nofollow">https://www.elastic.co/kr/products/elasticsearch</a>, (2017).</p>
+<p>EYL Partners, “Product Overview” <a href="http://www.eylpartners.com/index.php/product-overview/" rel="nofollow">http://www.eylpartners.com/index.php/product-overview/</a>, (2017).</p>
+<p>Greenspan, Dr. Gideon, "MultiChain Private Blockchain ? White Paper,” Coin Sciences, <a href="http://www.multichain.com/download/MultiChain-White-Paper.pdf" rel="nofollow">http://www.multichain.com/download/MultiChain-White-Paper.pdf</a>, (2014).</p>
+<p>Intel Software, “Intel Realsense Camera SR300,” <a href="https://software.intel.com/en-us/realsense/sr300" rel="nofollow">https://software.intel.com/en-us/realsense/sr300</a>, (June 2016).</p>
+<p>La Marca, Daniela, “Gartner: hype in 2015 around the internet of things (iot) and wearables,” Mediabuzz,
+<a href="http://www.mediabuzz.com.sg/asian-emarketing-latest-issue/210-asian-e-marketing/digi" rel="nofollow">http://www.mediabuzz.com.sg/asian-emarketing-latest-issue/210-asian-e-marketing/digi</a> tal-marketing-trends-a-predictions-week-1/2504-gartner-hype-in-2015-around-the-intern et-of-things-iot-and-wearables, (Jan. 2015).</p>
+<p>Modacom, “Smart IoT Gateway (Hub),” <a href="http://web.modacom.co.kr/ko/product/product_view.php?cate=IoT%20Products" rel="nofollow">http://web.modacom.co.kr/ko/product/product_view.php?cate=IoT%20Products</a>, (Feb. 2017).</p>
+<p>Nakamoto, Satoshi, "Bitcoin: A Peer-to-Peer Electronic Cash System,” <a href="https://bitcoin.org/bitcoin.pdf" rel="nofollow">https://bitcoin.org/bitcoin.pdf</a>, (2008).</p>
+<p>P&amp;P Secure, “Domestic DB Security # 1 'P &amp; S Secure,'” <a href="http://www.pnpsecure.com/NEWS--NOTICE/page-4" rel="nofollow">http://www.pnpsecure.com/NEWS--NOTICE/page-4</a>, (Sept. 2017).</p>
+<p>Postscapes, “Internet-of-Things Software Guide: Find and compare the best IoT Software development tools, OS, language platforms, and frameworks,” <a href="https://www.postscapes.com/internet-of-things-software-guide/" rel="nofollow">https://www.postscapes.com/internet-of-things-software-guide/</a>, (2017).</p>
+<p>Sandoval, Kristopher, “Blockchain: Beyond Cryptocurrency,” NordicAPIs, <a href="https://nordicapis.com/the-uses-of-blockchain-beyond-cryptocurrency/" rel="nofollow">https://nordicapis.com/the-uses-of-blockchain-beyond-cryptocurrency/</a>, (May 2016).</p>
+<p>Waterman, Shaun, “Report: IoT security products face huge challenges,” Cyberscoop, <a href="https://www.cyberscoop.com/forrester-iot-security-report-q1-2017/" rel="nofollow">https://www.cyberscoop.com/forrester-iot-security-report-q1-2017/</a>, (Jan. 2017).</p>
+
+        </div>
+
+    </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.09597s from unicorn-713798234-ssx7b">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-137851324479.js"></script>
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-ad86efb96de1.js"></script>
+    
+    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-53d5033e4efa.js"></script>
+    
+    
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/wiki-1ab7b09342df.js"></script>
+
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+
