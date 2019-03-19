@@ -1,0 +1,979 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-521cbf980c80.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-f75b395c95ee.css" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-e1e1bc98a53e.css" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Whitepaper/DAO.Casino WP.md at master · DaoCasino/Whitepaper · GitHub</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars2.githubusercontent.com/u/20227512?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="DaoCasino/Whitepaper" property="og:title" /><meta content="https://github.com/DaoCasino/Whitepaper" property="og:url" /><meta content="This repo will contain the latest version of DAO.Casino Whitepaper that contains an abstract description of DAO.Casino Protocol, participant roles and interactions, PRNG methods and a release plan...." property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="B0D8:0B6F:869EC5:E73037:5A70CB75" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="B0D8:0B6F:869EC5:E73037:5A70CB75" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="https://github.com/hydro_browser_events" name="hydro-events-url" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="YWQ4NGE2NTc2MTRmOTdkMzg5ZmVjNmZhZTJhMWFjODk2M2VmNjc1Yzc3M2UyMTY1ZmVlMzFkM2E4NGRlMjAzZnx7InJlbW90ZV9hZGRyZXNzIjoiOTYuMjMxLjE4LjE1NCIsInJlcXVlc3RfaWQiOiJCMEQ4OjBCNkY6ODY5RUM1OkU3MzAzNzo1QTcwQ0I3NSIsInRpbWVzdGFtcCI6MTUxNzM0MTU1NywiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_HERO_CARD_UPLOADER">
+
+  <meta name="html-safe-nonce" content="efefd4aed4b2d4cdd025e899e6187c7e8fd38764">
+
+  <meta http-equiv="x-pjax-version" content="2ec2e5bba9c4872d5bfe40441b87cd01">
+  
+
+      <link href="https://github.com/DaoCasino/Whitepaper/commits/master.atom" rel="alternate" title="Recent Commits to Whitepaper:master" type="application/atom+xml">
+
+  <meta name="description" content="This repo will contain the latest version of DAO.Casino Whitepaper that contains an abstract description of DAO.Casino Protocol, participant roles and interactions, PRNG methods and a release plan. Detailed tech specs of the automatic reward distribution system will later be added to this repo.  Protocol design is ongoing, please make sure that you are viewing the latest version.">
+  <meta name="go-import" content="github.com/DaoCasino/Whitepaper git https://github.com/DaoCasino/Whitepaper.git">
+
+  <meta content="20227512" name="octolytics-dimension-user_id" /><meta content="DaoCasino" name="octolytics-dimension-user_login" /><meta content="90268830" name="octolytics-dimension-repository_id" /><meta content="DaoCasino/Whitepaper" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="90268830" name="octolytics-dimension-repository_network_root_id" /><meta content="DaoCasino/Whitepaper" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+    <link rel="canonical" href="https://github.com/DaoCasino/Whitepaper/blob/master/DAO.Casino%20WP.md" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  </head>
+
+  <body class="logged-out env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/DaoCasino/Whitepaper/search" class="js-site-search-form" data-scoped-search-url="/DaoCasino/Whitepaper/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/DaoCasino/Whitepaper/blob/master/DAO.Casino%20WP.md" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2FDaoCasino%2FWhitepaper%2Fblob%2Fmaster%2FDAO.Casino%2520WP.md" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2FDaoCasino%2FWhitepaper"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/DaoCasino/Whitepaper/watchers"
+     aria-label="10 users are watching this repository">
+    10
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FDaoCasino%2FWhitepaper"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/DaoCasino/Whitepaper/stargazers"
+      aria-label="29 users starred this repository">
+      29
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FDaoCasino%2FWhitepaper"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/DaoCasino/Whitepaper/network" class="social-count"
+       aria-label="20 users forked this repository">
+      20
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/DaoCasino" class="url fn" rel="author">DaoCasino</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/DaoCasino/Whitepaper" data-pjax="#js-repo-pjax-container">Whitepaper</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/DaoCasino/Whitepaper" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /DaoCasino/Whitepaper" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/DaoCasino/Whitepaper/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /DaoCasino/Whitepaper/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/DaoCasino/Whitepaper/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /DaoCasino/Whitepaper/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">1</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/DaoCasino/Whitepaper/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /DaoCasino/Whitepaper/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+  <a href="/DaoCasino/Whitepaper/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /DaoCasino/Whitepaper/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <a href="/DaoCasino/Whitepaper/blob/0fe2991d13051d06cc677be8826bc63fbcada047/DAO.Casino%20WP.md" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:79b403cb970fbec9e05f9f5de1d019cc -->
+
+  <div class="file-navigation js-zeroclipboard-container">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/DaoCasino/Whitepaper/blob/master/DAO.Casino%20WP.md"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="/DaoCasino/Whitepaper/find/master"
+            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+            data-pjax
+            data-hotkey="t">
+        Find file
+      </a>
+      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+    </div>
+    <div class="breadcrumb js-zeroclipboard-target">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/DaoCasino/Whitepaper" data-pjax="true"><span>Whitepaper</span></a></span></span><span class="separator">/</span><strong class="final-path">DAO.Casino WP.md</strong>
+    </div>
+  </div>
+
+
+  
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/DaoCasino/Whitepaper/commit/022e408d4304264de9013463e063bd9445194f32" data-pjax>
+          022e408
+        </a>
+        <relative-time datetime="2017-06-27T13:34:52Z">Jun 27, 2017</relative-time>
+      </span>
+      <div>
+        <img alt="@KsenyaSerova" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/8012399?s=40&amp;v=4" width="20" />
+        <a href="/KsenyaSerova" class="user-mention" rel="contributor">KsenyaSerova</a>
+          <a href="/DaoCasino/Whitepaper/commit/022e408d4304264de9013463e063bd9445194f32" class="message" data-pjax="true" title="Update DAO.Casino WP.md">Update DAO.Casino WP.md</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>1</strong>
+         contributor
+      </button>
+      
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@KsenyaSerova" height="24" src="https://avatars0.githubusercontent.com/u/8012399?s=48&amp;v=4" width="24" />
+            <a href="/KsenyaSerova">KsenyaSerova</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/DaoCasino/Whitepaper/raw/master/DAO.Casino%20WP.md" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/DaoCasino/Whitepaper/blame/master/DAO.Casino%20WP.md" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/DaoCasino/Whitepaper/commits/master/DAO.Casino%20WP.md" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      483 lines (241 sloc)
+      <span class="file-info-divider"></span>
+    47.5 KB
+  </div>
+</div>
+
+    
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><p>Dao.Casino</p>
+<p>Blockchain Protocol for Gambling</p>
+<p>Konstantin Lomashuk, Ilya Tarutov</p>
+<p>Draft. Last edited by Ksenya June the 24th 2017</p>
+<p><a href="https://dao.casino" rel="nofollow">https://dao.casino</a></p>
+<p>Abstract. Online gambling takes 10%  of total legal turnover in the world gambling business [1], while the trusted third party - online casinos - remain a black box for players and the market remains hard to enter for the game developers.</p>
+<p>We propose a decentralised public system for gambling industry - DAO.Casino. DAO.Casino consists of a) an automated value distribution protocol acting as an mechanism of incentives and expressed in a system of Ethereum contracts b) a system that is capable of providing equally unpredictable pseudorandom numbers for the games.</p>
+<p>We show how applying cryptoeconomics and implementing such system on Ethereum can solve some common issues in traditional online gambling industry through removing the need of trust ( i.e. automating crucial elements of online gambling industry that usually require trust reduce a risk of fraud and enable a new more sustainable business model to evolve), and also can minimise overheads for casino operators which allows higher payouts for the players and game developers to monetise their work. Auditability and cryptographic verifiability of Ethereum powered software potentially makes certification process for gambling games easier.</p>
+<p>This document discusses design and implementation of such system from social and technological perspective on the abstract level: participant’s roles and in their interactions, random number generation for deterministic virtual machine, economic incentive mechanisms for the participants, and the system components that express the logic of value transfer. We describe an MVP that will be released in Summer 2017 and further development plans. Technical specifications for reward distribution system and bankroll backing system will be published separately during spring and summer 2017.</p>
+<h1><a href="#1-introduction" aria-hidden="true" class="anchor" id="user-content-1-introduction"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Introduction</h1>
+<p>DAO.casino is a protocol defining interactions between untrusted participants in the context of online gambling industry. This includes two levels: game level - player’s trust in a particular casino operator in the context of the game (provably fair gambling) and a business model level: i.e. game developer doesn’t have to trust casino operator to get rewarded. In short: all participants that are needed for the system to function don’t have to trust each other in order to cooperate.</p>
+<p>Trusted third party that is needed in a traditional online gambling industry to function is replaced with smart contracts that act as autonomous agents that automatically reward all the key contributors: game developers, referrers and operators of independent platforms necessary for the game discovery, and those that take part in PRNG.  The fact that reward system is fully automated and transparent allows to introduce a crowdfunding element into a bankroll of every game (see section 2.1.5) and incentivise community driven security audit.</p>
+<p>Obtaining randomness necessary for gambling games  in a deterministic virtual machine is not a trivial task, so that in addition to technically obtaining pseudorandom values an economic incentive layer should be introduced. Equally unpredictable random numbers that determine outcomes in each game are provided by economically incentivised participants interacting with the PRNG contract. PRNG method implemented in DAO.Casino MVP is described in a section 3.</p>
+<p>This system can provide a P2P marketplace for game developers and support a large number of independent front-end platforms where players can discover and play gambling games fair by design.</p>
+<p>In the beginning we can expect existing licensed online casino operators can integrate with the protocol to reduce costs, while long term new forms of regulations more suitable for decentralised, transparent and automated systems can emerge. Long term goal of DAO.Casino project, apart from providing experimental software and implementing main protocol components, is to contribute to a development of new forms of online gambling certification. So far gambling games on Ethereum remain in the gray legal area, but it doesn’t have to be so, since technologies such as Ethereum open up possibilities for far better customer protection and enable fair by design gambling.</p>
+<p>BET - DAO.Casino internal token - is used as point system for incentivisation as well as a sub-currency which is used in the games. See section 2.2. BET token is a standard Ethereum ERC20 token.</p>
+<p>DAO.Casino protocol MVP will be released in Summer 2017, consequent releases (see section 2.3)</p>
+<h2><a href="#11-gambling-games" aria-hidden="true" class="anchor" id="user-content-11-gambling-games"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1 Gambling games</h2>
+<p>Legal turnover in the world gambling business reached 50bn in 2017 with projected turnover of 56bn [1]. 60% of online casinos belong to 22 leading networks. Another 30% are subsidiaries of well-known offline casinos, and the remaining 10% is owned by private individuals. Taking into account these monopoly phenomena, the developer has few chances to attract the required number of audience members to start its project in this market.</p>
+<p>Online gambling games cause distrust on the part of the players in most cases, however up until the development of technology providing a platform for automation of trust, such as Ethereum, there wasn’t a possibility to provide any alternative.</p>
+<h2><a href="#12-common-issues-in-online-gambling-industry" aria-hidden="true" class="anchor" id="user-content-12-common-issues-in-online-gambling-industry"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2. Common Issues in Online Gambling Industry</h2>
+<p>We can summarise existing issues in the online gambling industry as originating from the concentration of trust, in all the aspects of gambling industry from RNG to user balance account management, to developers access to the market as described in the introduction.</p>
+<p><strong>Common problems experienced by the players</strong></p>
+<ul>
+<li>
+<p>After transferring the money to the game account, it is not credited or it is stolen</p>
+</li>
+<li>
+<p>After  withdrawing the money from the deposit, it has not been credited to the card</p>
+</li>
+<li>
+<p>The player has not received the promised bonuses</p>
+</li>
+<li>
+<p>The player is not able to enter his game account</p>
+</li>
+<li>
+<p>Hidden fees: casinos charge a fee for the gain withdrawal</p>
+</li>
+<li>
+<p>The player can withdraw funds only on a certain day</p>
+</li>
+</ul>
+<p><strong>Some of the existing issues in the market of online gambling</strong>** that DAO.Casino protocol can solve**</p>
+<ul>
+<li>
+<p>Risk of fraud on behalf of online casinos</p>
+</li>
+<li>
+<p>Inability to check the result of the draw</p>
+</li>
+<li>
+<p>High and hidden fees</p>
+</li>
+<li>
+<p>High entry level for the game developers</p>
+</li>
+<li>
+<p>High costs of running an online casino</p>
+</li>
+<li>
+<p>Operations overheads such as integrating payment systems &amp; user account balance management</p>
+</li>
+</ul>
+<h1><a href="#2-daocasino-protocol" aria-hidden="true" class="anchor" id="user-content-2-daocasino-protocol"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. DAO.Casino Protocol</h1>
+<p>The objective of Dao.Casino protocol is to enable a sustainable model which benefits all the parties involved in the online gambling business process. (i.e it should be more profitable for the developer to use Dao.Casino protocol, rather than work on its own, and less costly for a casino operator to provide better service for the players. Players should have access to more diverse range of games from independent game developers while having a higher level of security than in traditional online casinos).</p>
+<p>Single points of failure - processes of value transfer where trusted third party would be required in a conventional online gambling business is replaced by code consistently executed by Ethereum network - a system of smart contracts. These contracts are, simply speaking, just escrows that can be triggered by particular actions performed by the participants and nothing else. These actions correspond to the value that the participants add to the ecosystem. When there is no human actors with administrator permissions that can change value distribution processes there is no risk of such actors would become corrupt and make changes in their favour. This consistency of code is a pretty useful feature in the context of gambling business.</p>
+<p>Security of the system is achieved through transparency, consistency and cryptographic verifiability of software used to automate processes otherwise involving trust, and economic incentive mechanisms for it’s human participants.</p>
+<p>DAO.Casino protocol still requires a fee system, but the distribution of fees is a hard coded reward system for all the participants described further. There is no hidden fees.</p>
+<p>Suggested Dao.Casino reward distribution distributes tokens accumulated by game contracts as follows, rewarding all participants equally, however independent platform operators can choose their own reward distribution scheme (i.e. if the platform needs to incentivise more referrals but build their own games)</p>
+<ul>
+<li>
+<p>Game Developer - 25%</p>
+</li>
+<li>
+<p>Casino Operator * - 25%</p>
+</li>
+<li>
+<p>Referrer - 25%</p>
+</li>
+<li>
+<p>Bankroll backers - 25%</p>
+</li>
+</ul>
+<p>*Casino operator / platform and a Referrer can be one entity</p>
+<p>Despite of Gas cost that is required for Ethereum powered software to run, the fees should remain lower than in traditional server based online gambling. This is because the gas is paid per operation, and only for the operations and storage that is used.</p>
+<p>Game’s front end can be stored either on the server or on the network using decentralised file storage systems such as IPFS or Ethereum’s native Swarm. Using Swarm will also allow to program the game to pay for it’s own front-end storage.</p>
+<p><strong>Dao.Casino Protocol Goals</strong></p>
+<p>Remove the need in a trusted party in all aspects of online gambling industry, therefore:</p>
+<ul>
+<li>
+<p>Reduce operational costs of online gambling therefore provide higher payouts</p>
+</li>
+<li>
+<p>Reduce a risk of fraud</p>
+</li>
+<li>
+<p>Remove the need and responsibility from online casino operators to maintain player’s account balances</p>
+</li>
+<li>
+<p>Enable game developers to monetise their work while maintaining their IP</p>
+</li>
+<li>
+<p>Enable game developers to access bankroll for their game without extra responsibility for managing it</p>
+</li>
+<li>
+<p>Enable an open ecosystem of provably fair interoperable online casinos</p>
+</li>
+</ul>
+<p>Integrate a system of replicable templates and incentivised audit to allow game developers not familiar with Solidity to benefit from a new value transfer paradigm that Ethereum offers.</p>
+<h2><a href="#21-roles" aria-hidden="true" class="anchor" id="user-content-21-roles"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1. Roles</h2>
+<p><strong>System Participants.</strong> During initial design we identified a number of roles that are needed for the system to develop and to function. Some are common roles from the traditional online gambling industry i.e. casino operators, referral, contracted game developers, other roles (bankroll backers, random providers)  have been added to the decentralised architecture.</p>
+<ol>
+<li>
+<p>Game developers</p>
+</li>
+<li>
+<p>Platform Operators</p>
+</li>
+<li>
+<p>Referrers</p>
+</li>
+<li>
+<p>Random Number Providers</p>
+</li>
+<li>
+<p>Bankroll Backers</p>
+</li>
+<li>
+<p>Players</p>
+</li>
+<li>
+<p>Autonomous Agents (contracts without superusers)</p>
+</li>
+</ol>
+<h2><a href="#211-developers" aria-hidden="true" class="anchor" id="user-content-211-developers"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1.1. Developers</h2>
+<p>Developers refers to both: game developers and contract developers. Whoever provides a functional piece of software automatically receives tokens to their EOA by the DAO.Casino system proportionally to the usage of this software. Independent game developers should be able to collaborate with platform operators easier, retain their IP rights in the game and a possibility to receive lifelong rewards for their work automatically.</p>
+<p>A front-end developer who is capable of creating a good game doesn’t have to developer a gambling game smart contract, but use existing ones. In this case automatic developer’s rewards will be split between the creator of the contract and the creator of the front-end.</p>
+<p>For the past 1.5 years we have seen growth of gaming and gambling on Ethereum. However we cannot expect that every good game creator will learn how to program for EVM, while there is a lot of talent amongst independent game devs. To leverage existing game design and development skills tested smart contract templates can be used by several game dev teams. Ethereum ecosystem allows teams to share backend without compromising security.</p>
+<h2><a href="#212-platform-operators" aria-hidden="true" class="anchor" id="user-content-212-platform-operators"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1.2. Platform Operators</h2>
+<p>DAO.Casino system can accommodate multiple front-end platforms customised for different user groups and regions. They remain independent while using the same governance and value exchange protocol. The platform layer of the system is therefore federated. Platforms receive tokens to their EOA accounts proportionate to the usage. If the platform attracts new players to the game it becomes a Referrer and receives Referrer’s reward (see 2.1.3)</p>
+<p>Front-end platforms built on top of DAO.Casino system do not have to have additional account balance systems, since the balances and the balance history is stored in Ethereum blockchain.</p>
+<p>Existing online casino operators can create front-end platforms to interface with the token system. We can estimate that as the system evolves, independent game developers teams will be able to form groups and become casino operators with appropriate authorisation.</p>
+<p>In a federated model casino operators still provide value to their customers by customising platforms for a particular user group, creating their own ranking and recommendation systems. It is up for the operator to conduct KYC procedures required in their jurisdiction and securely store sensitive user data in compliance with personal data protection laws. User accounts in the whole system are EOAs the only data which is recorded on the blockchain is their balances and tx history.</p>
+<p>Front-end platforms are, as in the traditional online gambling industry, are used for game discovery, rating and as a human interface. However, instead of the server based backend, they run on Ethereum.</p>
+<p>They might also integrate user wallets to store small amounts of BET. It is recommended not to store larger amounts of BET in browser based platforms.</p>
+<p>**Initial Test Platform. **At least one platform is needed for the system to function. DAO.Casino core team is implementing a test frontend platform with a number of games that will be integrated with DAO.Casino system on Ethereum testnet. See section 4.</p>
+<h2><a href="#213-referrers" aria-hidden="true" class="anchor" id="user-content-213-referrers"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1.3. Referrers</h2>
+<p>The Referrer  is a member of the affiliate program who brought a referral (a new player). The Referral is a participant of the affiliate program who signed up under the recommendation of another participant.</p>
+<p>If you decentralise all the things how do you know where things are? In a decentralised system discovery can be facilitated by economically incentivized participants. Affiliate programs are commonly used for promotion of products and services. The only difference in DAO.Casino system is that referrers, same as all other active participants, are rewarded automatically, and can be sure that they will get rewarded. Another difference is that the rewards depend on whether the referral in question is an active player, to make sure that the affiliate system is sybil proof and the game creator doesn’t share the funds generated by the game with the referrer for nothing.</p>
+<p>Referrers receive a percentage of the tokens generated by the game they help promoting while their referral is actively using it. If the referrer is absent, and the player came to the platform on its own through the platform’s own channels, then the platform itself is considered the referrer, which means that it receives the reward. A player willing to top up their BET balance can become a referrer. It applies to other participants.</p>
+<h2><a href="#214-random-number-providers-" aria-hidden="true" class="anchor" id="user-content-214-random-number-providers-"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1.4. Random Number Providers *</h2>
+<p>*potentially viable way to provide equally unpredictable pseudorandomnes, not included in the  first pre-token launch release.</p>
+<p>Random Number providers provide values to the contract that is then generates a value that determines and outcome of the game and receive tokens in exchange.</p>
+<p>In the implemented of PRNG contract (see section 3) for two parties games Random Provider and Bankroll Backer are the same entity. Future versions may include a hybrid system of economically incentivised oracles:</p>
+<p>Participants in incentivised oracles system: in addition to the pseudorandom algorithm, an economic algorithm is needed to ensure that the Random Number Providers cannot exploit their partial access to the data which is used in PRNG so that the outcomes of the games remain equally unpredictable for all parties. Random number provider’s system is a hybrid between generating pseudorandomness on EVM and using authenticated data feeds (oracles). Both methods and their weaknesses are described in a section 3.4.</p>
+<p>To participate as a Random Number Provider a participant is required to a) lock their token in the contract b) send data to the RNG contract from which the PRNG will be generated. Intentional or unintentional , malicious behaviour i.e. an attempt to predict the outcome of the game will result in the locked tokens to be distributed as rewards to other participants.  Because of this staking system Random Number Providers are somehow similar to miners in a PoS system.</p>
+<h2><a href="#215-bankroll-backers" aria-hidden="true" class="anchor" id="user-content-215-bankroll-backers"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1.5. Bankroll Backers</h2>
+<p>Any token holder can support any particular game by taking on a role of a bankroll backer. Bankroll Backers locks their token in a game contract of their choice and automatically receive a reward.</p>
+<p>Bankroll Backer behaviour can vary depending on the game contract and what PRNG system is used. In a first implementation Bankroll Backer provides BET tokens to the bankroll of the game and a value from which the the outcome of the game is derived.</p>
+<h2><a href="#216-players" aria-hidden="true" class="anchor" id="user-content-216-players"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1.6. Players</h2>
+<p>Players discover games through the platforms and use their tokens as an ingame currency. Player can obtain tokens by becoming an active participant such as a Random Provider or a Referrer or support a crowdfunding campaign at launch. A casino operator can also choose to exchange the tokens to and from common cryptocurrencies.</p>
+<p>For the past year we see more and more gambling games projects built for Ethereum. We can expect that early adopters will be Ethereum and decentralisation enthusiasts. Game contracts are accessible through Ethereum clients, but in the ideal situation a player doesn’t need to know anything about Ether or the technology itself to be able to play and discover games.</p>
+<h2><a href="#217-autonomous-agents" aria-hidden="true" class="anchor" id="user-content-217-autonomous-agents"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1.7. Autonomous Agents</h2>
+<p>Autonomous agents are smart contracts that run on Ethereum that perform tasks that usually would require trust.</p>
+<p>We refer to those entities as agents, because a) their role is as important as any human actors in the system (with the only difference is that they can’t cheat and don’t need to be incentivised). b) once designed and deployed they do not have a human owner capable of withdrawing the tokens from the balances of contract accounts or control the contract in other ways. Instead a contract will "decide" whether to reward an EOA in question, according to it’s rules. Rules cannot be changed by a single party. If the contract in question is proved faulty and the rules do not satisfy the needs of human participants, it will be simply abandoned by the majority of human participants or by all of them. In a similar way an entire blockchain can be abandoned by miners.</p>
+<p>All contracts that are considered a part of the protocol should be autonomous agents - controlled by fair and authorised participants behaviour. Contracts that are deployed for crowdfunding and the issuance of BET are not considered a part of the protocol, but a step to design, deploy and improve it, and in this sense are not autonomous - managed by a legal entity.</p>
+<p>For more information on how BET will be distributed see <a href="https://github.com/DaoCasino/Whitepaper/blob/master/Crowdfunding%20%26%20token%20distribution.md">Crowdfunding &amp; Token Distribution</a></p>
+<h1><a href="#22-token-system" aria-hidden="true" class="anchor" id="user-content-22-token-system"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2. Token System</h1>
+<p>DAO.Casino internal token called BET is a ERC20 token. It is used as ingame currency for all the game contracts integrated with the protocol and to power DAO.Casino reward system.  Ingame currency and a reward system are complimentary. We can assume that a reward system that allows people to collect tokens that can be used in games provides a better incentive mechanism than a purely reputational points system.</p>
+<p>Overtime BET accounts history can be used as a reputation system and for ranking the games and the players. For example most popular games would have more transaction history.</p>
+<p>Keys to the BET can be stored in platform wallets by players and in any Ethereum client or by more advanced Ethereum users, or a paper wallet. It is not recommended to store a large amount of BET in a browser, even though as a subcurrency it might be less prone to theft than widespread and more well known crypto-token such as Ether.</p>
+<p><strong>Ingame currency</strong></p>
+<p>In a traditional gaming and online gambling industry large gaming companies prefer not to have an ingame token that works across the games because it disrupts their business model. However, when it comes down to smaller independent game producers, having interoperable token makes sense, since it eliminates the need to maintain user account balances. Interoperability between games also what makes the token useful for the players, without it having inherent value.</p>
+<p>Using Ethereum based subcurrency instead of ether reduces the risk of attacks of rational kind on the system after it scales. If the system is compromised by a malicious actor, the token will become worthless, so attacking the system wouldn’t be a rational thing to do.</p>
+<p><strong>Reward system</strong></p>
+<p>As described above all the participants contributing to the ecosystem in one form or another are automatically rewarded with BET to their accounts.</p>
+<h1><a href="#23-core-components-and-releases" aria-hidden="true" class="anchor" id="user-content-23-core-components-and-releases"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.3. Core components and releases</h1>
+<h2><a href="#231-mvp-components-of-the-system-to-be-released-by-the-time-of-the-token-launch" aria-hidden="true" class="anchor" id="user-content-231-mvp-components-of-the-system-to-be-released-by-the-time-of-the-token-launch"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.3.1. MVP: Components of the system (to be released by the time of the token launch)</h2>
+<p>Contracts:</p>
+<ol>
+<li>
+<p>Random Contract 1.0  implementation of Signidice algorithm, integrated with game contracts below</p>
+</li>
+<li>
+<p>Game contract Dice integrated with ref system module</p>
+</li>
+<li>
+<p>Game contract Blackjack integrated with ref system module</p>
+</li>
+<li>
+<p>Game contract HackDAO integrated with ref system module</p>
+</li>
+<li>
+<p>Reward Distribution contract 1.0 integrated with the games above to distribute BET to: referrals, devs, platform operators.</p>
+</li>
+<li>
+<p>Registry of Referrals contract that calls Referral contract</p>
+</li>
+<li>
+<p>ERC20 integrated with 3 games</p>
+</li>
+</ol>
+<p>Other</p>
+<ol>
+<li>
+<p>Test Frontend Platform (Ethereum testnet only)</p>
+</li>
+<li>
+<p>Front end for 3 games.</p>
+</li>
+<li>
+<p>Legal infrastructure conducting further R&amp;D</p>
+</li>
+</ol>
+<p>Components listed above allow minimum functionality of the system.  However, a fully decentralised system requires additional components and other implementations of PRNG suitable for multiplayer games.</p>
+<p>To conduct the crowdfunding campaign a standard Crowdfunding contract will be used.</p>
+<h2><a href="#232-components-released-in-2017-after-the-token-launch" aria-hidden="true" class="anchor" id="user-content-232-components-released-in-2017-after-the-token-launch"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.3.2. Components released in 2017 after the token launch</h2>
+<p>After the BET is launched we will be able to test a running system with more participants. A percentage of the funds raised during the crowdfunding campaign will be used to implement, test and release following components:</p>
+<ol>
+<li>
+<p>Reward distribution contract 2.0 - added Bankroll Backers reward</p>
+</li>
+<li>
+<p>Games Certification Contract example - a registry for audited game contract addresses with a reference to IPFS hashes and it’s contract in Solidity</p>
+</li>
+<li>
+<p>DAO.Casino Browser 1.0 - a standalone desktop client that addressed Games Certification Contract and assembles the games taking their Ethereum addresses and the frontend stored in IPFS. Detailed specs of the browser will be released during the summer 2017.</p>
+</li>
+</ol>
+<p>In this release a bankroll crowsourcing aspect is completed. DAO.Casino protocol is public, and anyone can audit game contracts, but we can’t expect that every player will read the source code. For that reason a system for whitelisting audited games is useful. Platform operators can use their own Game Certification Contract for the games that they have audited. In this period research and testing of possibly better PRNG solutions continues.</p>
+<h2><a href="#233-further-developments" aria-hidden="true" class="anchor" id="user-content-233-further-developments"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.3.3. Further developments</h2>
+<p>First releases of DAO.Casino are focusing on Ethereum powered components and a client - a browser that allows to navigate games without centrally hosted UI. After those components are implemented and tested the focus of the project should shift towards onboarding new developers and making the system more appealing to traditional casino operators and more useable. Working plan for the end of 2017 beginning of 2018 and onwards:</p>
+<ul>
+<li>
+<p>Contracts Opensource Licence based on DAOFactory. Smart contracts as any software needs a licence to define the rules of it’s usage, distribution and relations to patented work. A unique thing about contracts, that it they can be their own licence and the licence is also a piece of code. In the context of gambling games integrated with reward mechanism we are planning to implement a reward based licensing. It means that anyone can replicate anyone’s contract within Ethereum to a new address, while the original contract author is still entitled to automatic rewards defined in the licence.</p>
+</li>
+<li>
+<p>Game Factory - a system for secure replication of game contracts based on DAO.Factory</p>
+</li>
+<li>
+<p>Host <a href="http://globalgamejam.org/" rel="nofollow">Global Game Jam</a> locations end of January 2018. Global Game Jam is the biggest event for independent game developers. Our plan is to release a number of contract templates and documentation allowing game developers without prior knowledge of Ethereum to create games.</p>
+</li>
+<li>
+<p>Integrate a test VR application with DAO.Casino logic. Traditional online casinos are moving into VR, and if we if want to bring decentralised fair gambling to the masses, not just decentralisation enthusiasts, we will need to release VR/3D application integrated with DAO.Casino protocol to stay up to date.</p>
+</li>
+</ul>
+<p>We expect that further research for obtaining equally unpredictable pseudorandom numbers will be needed. Some components of the system, PRNG in particular, might also benefit from such systems as Dfinity while remaining Ethereum compatible.</p>
+<h1><a href="#3-obtaining-random-numbers" aria-hidden="true" class="anchor" id="user-content-3-obtaining-random-numbers"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Obtaining random numbers</h1>
+<p>In DAO.Casino context equal unpredictability of game outcomes that is determines by PRNG is what makes the game fair.</p>
+<p>Obtaining randomness (RNG), or to be more precise pseudo-randomness (PRNG) in the context of gambling games is a complex issue. There are different approaches for obtaining such values. Mathematical proofs and high quality of the selected method is important. In simple words, pseudo-random number that determines an outcome of the game should be equally unpredictable for all parties involved. Only in this case we can say that the players and the casino are protected from fraud, and the scheme is tested and reliable.</p>
+<p>This part describes existing methods of obtaining pseudo random numbers in deterministic virtual machine that have been implemented before, and the method that DAO.Casino is implementing for two parties games.</p>
+<p>Previously implemented methods using Oraclize and internal blockchain data has been also tested by DAO.Casino team. These methods are viable, but can’t be considered sufficiently secure long term. Therefore, we DAO.Casino first release will use the Signidice algorithm, suitable for two parties games, that our team implemented in Solidity.</p>
+<h2><a href="#31-definition" aria-hidden="true" class="anchor" id="user-content-31-definition"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1. Definition</h2>
+<p>Pseudo random number generator (PRNG)[2] is an algorithm that generates a sequence of numbers, the elements of which are almost independent of each other and are subject to a given distribution (generally uniform).</p>
+<p>Random Number Generator (RNG) is an algorithm which generates absolutely random numbers.</p>
+<p>Such generators are mostly used for generating unique symmetric and asymmetric encryption keys. They are built mostly from a combination of cryptographically strong PRNG and external entropy sources (and, namely, this combination is commonly understood as RNG).</p>
+<h2><a href="#32-methods-of-generating-random-numbers-in-a-centralized-casino" aria-hidden="true" class="anchor" id="user-content-32-methods-of-generating-random-numbers-in-a-centralized-casino"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2. Methods of generating random numbers in a centralized casino</h2>
+<p>In a centralized casino (online and offline), different hardware and software compliant to certain standards is used to generate randomness.</p>
+<p>Most poker rooms get special certificates to prove the viability of their RNG and software. Cigital, one of the largest companies in this field[3], is engaged, in certification of the poker software and RNG. The largest poker rooms Full Tilt Poker and PokerStars have the certificate of this company. The basis of any RNG testing is a set of NIST tests (National Institute of Standards and Technology), based on U.S. standard FIPS 140-2 (Federal Information Processing Standard). It includes various tests - from the test on ratio of 0 and 1 in the generated sequence, to the test on LZO algorithm compression (random sequence may not be significantly compressed, because it must not have many repetitive sequences).</p>
+<p>The most common method of random number generation is called the linear congruential method. Alternatively, there is the additive congruential method. These methods generate a sequence of numbers satisfying the condition of randomness. The basis for the use of these and other methods of random number generation is the software, infinitely generating numbers, regardless of whether the participant is currently in the game or not. This eliminates the possibility of the player to independently determining the generation method used at this moment, and "guessing" the drawn numbers.</p>
+<p>For example, U.S. law requires that the random number generators in slot machines should operate all the time. In addition, the software vendors deal with this issue directly.</p>
+<p>FullTilt RNG is built on a similar principle with PokerStars, there are 3 independent generators: hardware RNG with a physical source of entropy and two independent PRNG (ISAAC and OpenSSL).</p>
+<h2><a href="#33-existing-methods-of-obtaining-randomness-in--decentralised-gambling-games-on-ethereum-blockchain" aria-hidden="true" class="anchor" id="user-content-33-existing-methods-of-obtaining-randomness-in--decentralised-gambling-games-on-ethereum-blockchain"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.3. Existing methods of obtaining randomness in  decentralised gambling games on Ethereum blockchain.</h2>
+<ol>
+<li>
+<p>Random numbers should be equally unpredictable for all parties.</p>
+</li>
+<li>
+<p>The mechanism of obtaining a random number should be maximally decentralized</p>
+</li>
+<li>
+<p>The possibility of intervention to defraud game results should be very small</p>
+</li>
+</ol>
+<h2><a href="#331-internal-method" aria-hidden="true" class="anchor" id="user-content-331-internal-method"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.3.1. Internal method</h2>
+<p>Data derived from the blockchain data itself i.e block number, timestamps.</p>
+<p>This method involves the use of current block hash values ​​or hash block.This method is not considered secure because it has a risk of manipulation on behalf of miners. See: <a href="http://martin.swende.se/blog/Breaking_the_house.html" rel="nofollow">http://martin.swende.se/blog/Breaking_the_house.html</a></p>
+<h2><a href="#332-external-method" aria-hidden="true" class="anchor" id="user-content-332-external-method"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.3.2. External method</h2>
+<p>in this case, a value is obtained from external sources. This scheme cannot be considered fully decentralized. Simply speaking, using a single source of PRNG is a bottleneck. One example of this approach is  project EtherDice[4]:</p>
+<p>The only external dependency is a random number generator because the determination of blockchains  prevents from reliably obtaining a random number in a simple manner. The idea is that the contract holds a certain amount of so-called "generations." The generation starts when one of the two sources of random numbers produces hashes of proposed values. Two sources increase the complexity of compromise, nevertheless they do not cancel that possibility completely. The hashes are saved, and the contract is waiting for some time in order that the rates are obtained in the current generation. After the first bet, the generation takes the next bet for more blocks, and then closes. The contract is waiting for a few more blocks in order to put the generation into the "value disclosure" regime. The sources of random numbers reveal random values (the hashes are verified), after which the players can receive the gains. Several generations work simultaneously and in parallel, so the system is able to accept bets at any time.</p>
+<p>**Oracles (authenticated data feed) **- Another external method. External generators of random numbers are translated into the blockchain network. This approach is used, for example, by etheroll.com[5]. The weak spot in this approach is that the oracles can also be compromised.</p>
+<p>The source of random values is Random.org, which we can get through Oraclize.it[6]. The latter allows us to increase security with the help of "TLSNotary" technology, which can prove that the number was not changed after it was requested by Random.org. Unfortunately, there is no easy way to verify it directly from a smart contract. Such a verification can be made only after a certain time.</p>
+<p><strong>Commit / Reveal</strong> - quite an advanced distributed method for producing random values. This approach is actively used in RanDAO[7], Sleth[8], Maker-Darts[9].</p>
+<p>The feature of this algorithm for finding random values is a scheme of work in two steps. In the first step, the participants send hashes of random values and deposit a pledge. In the second step, the disclosure of the values​​ takes place, from which the resulting random number is drawn.</p>
+<p>If one of the participants cheats and does not disclose a proposed number, then his pledge is lost. This motivates all participants in the generation to be honest. This method is subject to DDOS attack, resulting in the loss of pledges by honest participants.</p>
+<p><strong>Different gambling games have different requirements</strong> for the architecture and reliability of the PRNG. For a large jackpot drawings, they are higher, and at handing out cards in poker with small bets, they are significantly lower.</p>
+<p>Each of the above approaches has its own value. One of the most sophisticated, reliable, long and costly is the Commit / Reveal algorithm (RanDAO).</p>
+<p>On the other hand, the simplest one is the internal method. For example, the Rouleth project uses this method. The studies described below have shown that cheating is possible, but insignificant, if the bet does not reach high values.</p>
+<p>To fight the miners’ fraud, one must choose such parameters that it would be not economically interesting. The Rouleth conducted a simulation, the results of which are available on github[10]. The analysis showed that the attacker must possess at least 3% of the capacity of the network. In this case, the attacker should spend about 23 ETH per block. This value, however, decreases as the possession of the computation capacity by the attacker increases. If he possesses 10% of the network, then  only 2 ETH per block is needed for the attack, and 25% of capacity decreases this amount  to 1.2 ETH. The attacker will be forced to spend 0.5 ETH if he owns 51% of the network;the entire network is subject to far greater danger than a simple roulette hack.</p>
+<p>Game developer &amp; architect should intentionally keep the gain volume low so that it would be economically unprofitable for the attacker to practice deception. Please note that the cheating miner can make a lot of bets per block to increase the probability of winning. Therefore, we have set the maximum number of bets per block to 2 (but this can be changed).</p>
+<p>In the world, as of 2017 there are 7 mining pools which have a capacity of more than 3% each.</p>
+<p>EthereumLottery[11] project uses a hybrid method of random number generation: through BTCRelay. A contract receives a new block hash  from Bitcoin network. The advantage of this approach is sufficiently high reliability, the disadvantage is the low performance of the algorithm, because the Bitcoin block is generated significantly longer than in Ethereum’s. Here is what the author of the project says:</p>
+<ol>
+<li>
+<p>Casino generates a new pair of private/public keys (PrivKey and PubKey) for some deterministic signing algorithm (e.g.RSA).</p>
+</li>
+<li>
+<p>Casino creates a smart contract, which contains the public key (PubKey), maximal number of participants, and the Ether bounty. (Optionally: casino changes PubKey of the existing smart contract).</p>
+</li>
+<li>
+<p>Player chooses the number to bet on (B), and a random number (R) in certain format (e.g. 20 bytes). The player might even specify the range of numbers B, if the rules of the game allow it (odd vs. even, etc.).</p>
+</li>
+<li>
+<p>Player sends a transaction (TX) containing the Ether bet, along with the data: B and R.</p>
+</li>
+<li>
+<p>The contract checks validity and format of the numbers B and R. Invalid TX is rejected.</p>
+</li>
+<li>
+<p>Additionally, the contract checks if the number R has*Imagine that the jackpot is $5,000, and the attacker owns 5% of the capacity of the whole Bitcoin network. Imagine that the attacker buys tickets for $5,000, and now owns 50% of all tickets, and the jackpot becomes $10,000. *</p>
+</li>
+<li>
+<p><em>At this moment, the attacker has the expectation of $10,000 * 50% * 99.5% (the lottery takes a commission of 0.5%) = $4,975. In one of twenty cases (5% capacity belongs to the attacker), the attacker can replace the block, which will decide the fate of the draw.</em></p>
+</li>
+<li>
+<p><em>If he finds a block, and learns that he has not won in the lottery, he drops it (which gives him another attempt), and if he wins he sends it to the network. This increases the chances of success from 50% to 75% because only in 25% of cases 2 attempts lose.</em></p>
+</li>
+<li>
+<p><em>But when the attacker drops a block - he loses the reward for mining. The losses amount to $4218.75, taking into account the current size of the reward equal to 12.5 BTC.</em></p>
+</li>
+<li>
+<p><em>An increase in the chance to win gives an expectation equal to $10,000 * 75% * 99.5% = $7,462.50. The attacker spent $5000 for tickets, and lost $4218.75 at the unit dropping. This means that such fraud is not economically profitable. It becomes profitable only when the jackpot is more than $10,000.</em></p>
+</li>
+</ol>
+<h2><a href="#35-algorithm-implemented-in-mvp-of-daocasino-protocol" aria-hidden="true" class="anchor" id="user-content-35-algorithm-implemented-in-mvp-of-daocasino-protocol"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.5. Algorithm implemented in MVP of DAO.Casino protocol</h2>
+<p>For our first release we chose to implement and test Signidice algorithm proposed to solve PRNG in deterministic virtual machine and described by <a href="https://github.com/gluk256">Gluk256</a> who suggested a number of other solutions.</p>
+<p>Games released for testing by the time of the launch will be using this algorithm. We previously tested external method (using Oraclize) and internal method described above in the test games, but chose this particular method. Signidice has been proposed for Ethereum based games using Ether. Our implementation is adopted for the usage of BET. "Ether bounty" mentioned in the algorithm below is also replaced with BET. Bounty is essentially a staking system.</p>
+<p><em>This algorithm is suitable for those Ethereum-based games, where outcome of every round for the player depends only on the RNG and (optionally) the number, chosen by the player, but not on the action of other players. E.g. it may be suitable for roulette, slots, etc., but not for those games, where outcome depends on the other players or just their number, as may be the case in lotteries. For example, a game of roulette could be modeled as a number of rounds where a single player plays against the casino. In this case, a pseudorandom number could be generated with the following algorithm.</em></p>
+<ol>
+<li>
+<p><em>Casino generates a new pair of private/public keys (PrivKey and PubKey) for some deterministic signing algorithm (e.g.RSA).</em></p>
+</li>
+<li>
+<p><em>Casino creates a smart contract, which contains the public key (PubKey), maximal number of participants, and the Ether bounty. (Optionally: casino changes PubKey of the existing smart contract).</em></p>
+</li>
+<li>
+<p><em>Player chooses the number to bet on (B), and a random number (R) in certain format (e.g. 20 bytes). The player might even specify the range of numbers B, if the rules of the game allow it (odd vs. even, etc.).</em></p>
+</li>
+<li>
+<p><em>Player sends a transaction (TX) containing the Ether bet, along with the data: B and R.</em></p>
+</li>
+<li>
+<p><em>The contract checks validity and format of the numbers B and R. Invalid TX is rejected.</em></p>
+</li>
+<li>
+<p><em>Additionally, the contract checks if the number R has already been used by this player in previous rounds, in which case TX is rejected. (This step is necessary if the contract is reused for multiple rounds of the game).</em></p>
+</li>
+<li>
+<p><em>The contract concatenates the random number R with the public address (A) of the player's Ether account, from which TX was sent: V = A + R. The resulting value V is stored in the contract. The size of V is always the same: size(V) = size(A) + size(R). At this point the outcome of the round (win or lose) becomes deterministic.</em></p>
+</li>
+<li>
+<p><em>Casino must sign the resulting value V with its PrivKey, thus producing the digital signature S = sign(PrivKey, V), and send the corresponding TX, containing S.</em></p>
+</li>
+<li>
+<p><em>The contract recovers the actual public key (K) from the digital signature S, and verifies that it is equal to the previously published PubKey (K == PubKey). If APK does not match PubKey, or if casino fails to perform step 8 within a predefined time frame, it is tantamount to cheating. <strong>In this case the contract sends the bounty to the player along with the original bet, and the contract is closed via suicide. (In case of multiplayer game, the bounty is shared between all players)</strong>.</em></p>
+</li>
+<li>
+<p><em>The contract uses S as a seed for the predefined PRNG algorithm (e.g. SHA-3 based), which produces the lucky number (L), e.g. between 0 and 36.</em></p>
+</li>
+<li>
+<p><em>If B corresponds to L, the player wins, otherwise casino wins. The contract sends the bet to the winner.</em></p>
+</li>
+<li>
+<p><em>Now casino may close the contract and recover the bounty, or initiate a new round of the game. Alternatively, the contract might be programmed to automatically proceed to the next round, unless the casino closes it.</em></p>
+</li>
+</ol>
+<p><em>After casino has chosen the PrivKey, its actions become deterministic. The player can not predict the result of digital signature, and therefore his choice of the random number R can influence the outcome only in the same way as rolling the dice in the real life (hence the name of this algorithm). Thus, neither of the participants can manipulate the outcome in any meaningful way.</em></p>
+<p><em>The bounty that casino commits to the contract must be high enough to compensate the players for any possible opportunity loss. The time slot must be long enough to accommodate for any kind of network disruption. Although it gives the casino opportunity to postpone the outcome, it has no incentive to do so, since the outcome is still deterministic. Postponing without a valid reason will only result in reputational loss, whereas no financial gain is possible. If the casino wants to maintain good reputation, it might even intercept the player's TX before the next Ether block is mined, immediately calculate the outcome of the game, and reward the player in case he wins, even before the step 7 occurs (before corresponding TX is incorporated into the next mined block). Instant gratification will also help to prevent the reputational loss in case of long delay (e.g. due to the network disruption). It might also allow the player to start a new round without waiting for the next block to be mined.</em></p>
+<p><em>The same smart contract can be reused multiple times, provided that the player never chooses the same number R twice (otherwise he can predict the outcome). Hence, the necessity of the step 5 -- the contract should reject any TX, where the same player uses the same number R in the same contract twice. Alternatively, the casino can regularly change the pair of PrivKey/PubKey, publishing the PubKey before every new round. But it requires an additional TX, resulting in unnecessary delays and increasing TX costs.</em></p>
+<p><em>Nothing should prevent multiple players from using the same smart contract simultaneously. Different players even choose the numbers N, previously used by other players: V will be unique, since A is unique. The number of possible participants will only be limited by the bounty the casino is willing to commit.</em></p>
+<p><em>The game of roulette in online casino was used purely as an example. The Signidice algorithm can be used in any case, where transactions occur between the two participants. In this case the Signidice is better than RANDAO: the players neither have to trust the oracles (in case of external oracle use), nor can disrupt the next round of the game by refusing to reveal the committed number (in case of players being the oracles).</em></p>
+<p>As far as we’re concerned this method haven’t been yet implemented. See Gluk256 repository for this algorithm <a href="https://github.com/gluk256/misc/blob/master/rng4ethereum/signidice.md">here</a>, and our implementation in progress <a href="https://github.com/airalab/dao.casino/blob/f7a87f62bb05c7f97f6331a56cd35d8492d73d82/contracts/Signidice.sol">here</a>.</p>
+<h1><a href="#4-initial-test-platform" aria-hidden="true" class="anchor" id="user-content-4-initial-test-platform"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Initial test platform</h1>
+<p>Dao.Casino platform is an example of an online platform where the developers can showcase their contract based games and the players can discover them. It is important to emphasise again that this particular platform is not a central point of the DAO.casino project.</p>
+<p>By the time of system launch the main goal of the platform is to provide an interface. As we have mentioned before, at least one front-end platform is needed for the whole reward system to make sense.</p>
+<p>In the alpha version that we released front end is stored on a central server. The platform is open source and will be released by completion under Apache 2.0 licence</p>
+<p>Alpha platform tasks are:</p>
+<ul>
+<li>
+<p>Provide an example of a frontend platform that plugs into business logic expressed on Ethereum.</p>
+</li>
+<li>
+<p>Show a basic tool for game discovery and ranking</p>
+</li>
+<li>
+<p>Show user interface familiar to the wide range of players, not just decentralisation enthusiasts</p>
+</li>
+<li>
+<p>Provide a simple way to deposit and withdraw BET tokens on testnet</p>
+</li>
+<li>
+<p>Re-direct developers to developers documentation, wikis and code.</p>
+</li>
+</ul>
+<p>Thematic priority of alpha platform are classic gambling games: card games, slot machines. Currently Blackjack from partner’s team and Dice from DAO.Casino core team  are available for testing.</p>
+<p>Alpha platform will also play a role of information hub that aggregates developer’s resources: documentation, wikis, tutorials and examples.</p>
+<p>In the next release decentralised hosting solutions will be used i.e. IPFS, Swarm.</p>
+<h2><a href="#conclusion" aria-hidden="true" class="anchor" id="user-content-conclusion"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conclusion</h2>
+<p>Smart-contract powered gambling games are gaining traction,  we believe that gambling related use cases for Ethereum can be developed beyond a few experimental provably fair games, into a sustainable ecosystem - a backbone that caters for all aspects of gambling industry.</p>
+<p>Three issues need to be addressed for this to happen:</p>
+<ul>
+<li>
+<p>There should be a system of incentives for all parties that add value to the system. Apart from provable fairness of the game, that will drive adoption and further development.</p>
+</li>
+<li>
+<p>Reliable PRNG. Most likely different sources of randomness for different games and most likely secured by economics, not just technical aspects.</p>
+</li>
+<li>
+<p>There should be ways for the game developers to create games on Ethereum without deep knowledge of Solidity: replicable contract templates, examples and documentation.</p>
+</li>
+<li>
+<p>There should be ways for platform operators to run set up a platfrom that plugs into Ethereum and display games from independent creators without deep and detailed knowledge of Ethereum ecosystem.</p>
+</li>
+</ul>
+<h2><a href="#appendix" aria-hidden="true" class="anchor" id="user-content-appendix"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Appendix</h2>
+<h2><a href="#crowdfunding-token-and-funds-distribution-" aria-hidden="true" class="anchor" id="user-content-crowdfunding-token-and-funds-distribution-"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/DaoCasino/Whitepaper/blob/master/Crowdfunding%20%26%20token%20distribution.md">Crowdfunding, token and funds distribution </a></h2>
+<h1><a href="#references" aria-hidden="true" class="anchor" id="user-content-references"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>References</h1>
+<p>[1]Market volume of online gaming stats <a href="http://www.gbgc.com" rel="nofollow">http://www.gbgc.com</a>, <a href="https://slotegrator.com" rel="nofollow">https://slotegrator.com</a> <a href="https://www.statista.com/statistics/270728/market-volume-of-online-gaming-worldwide/" rel="nofollow">https://www.statista.com/statistics/270728/market-volume-of-online-gaming-worldwide/</a><a href="https://www.statista.com/statistics/270728/market-volume-of-online-gaming-worldwide/" rel="nofollow">
+</a>[2] Random Number Generation - <a href="https://en.wikipedia.org/wiki/Random_number_generation" rel="nofollow">https://en.wikipedia.org/wiki/Random_number_generation</a><br>
+[3] Habrahabr - The Truth about RNG of Pokerooms. <a href="https://habrahabr.ru/company/pokeroff/blog/95090/" rel="nofollow">https://habrahabr.ru/company/pokeroff/blog/95090/</a>
+[4] Etherdice - <a href="https://etherdice.io" rel="nofollow">https://etherdice.io</a>
+[5] Etheroll - Provably fair Ether gambling on the Ethereum blockchain <a href="http://etheroll.com/" rel="nofollow">http://etheroll.com/</a>
+[6] Oraclize - A reliable bridge between smart contracts and the Internet <a href="http://www.oraclize.it/" rel="nofollow">http://www.oraclize.it/</a>
+[7] RanDAO - A DAO working as RNG of Ethereum.  <a href="https://github.com/randao/randao">https://github.com/randao/randao</a>
+[8] Sleth - Ethereum Slot Machine. <a href="https://github.com/jorisbontje/sleth">https://github.com/jorisbontje/sleth</a>
+[9] Maker Darts - A Random Number Generating Game for Ethereum. <a href="https://github.com/makerdao/maker-darts">https://github.com/makerdao/maker-darts</a>
+[10] Rouleth - A provably fair roulette : note on Random Number Generation. <a href="https://github.com/Bunjin/Rouleth/blob/master/Provably_Fair_No_Cheating.md">https://github.com/Bunjin/Rouleth/blob/master/Provably_Fair_No_Cheating.md</a>
+[11] EthereumLottery - The First Ethereum Lottery in the World. <a href="https://ethereumlottery.net/" rel="nofollow">https://ethereumlottery.net/</a></p>
+</article>
+  </div>
+
+  </div>
+
+  <button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+  <div id="jump-to-line" style="display:none">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+      <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+      <button type="submit" class="btn">Go</button>
+</form>  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.19496s from unicorn-3261313626-zlxc0">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-137851324479.js"></script>
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-ad86efb96de1.js"></script>
+    
+    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-53d5033e4efa.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+
