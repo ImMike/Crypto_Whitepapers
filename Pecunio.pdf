@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html id="app" lang="{{ app.currentLanguage }}" data-ng-app="Pecun" data-ng-controller="AppController as app" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<title>Pecunio - safe and easy blockchain investments</title>
+<meta property="og:title" content="Pecunio - safe and easy blockchain investments" />
+<meta property="og:description" content="Pecunio is the safe and easy access to the future of financial markets. Easy registration; Safe transactions via only one dashboard; Safe wallets; Professionally managed crypto funds. ON PECUNIO!" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pecunio is the safe and easy access to the future of financial markets. Easy registration; Safe transactions via only one dashboard; Safe wallets; Professionally managed crypto funds. ON PECUNIO!" />
+<meta property="og:image" itemprop="image" content="https://pecun.io/wp-content/uploads/2018/01/Titelbild_FB.jpg">
+<meta property="og:url" content="https://pecun.io/">
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Pecunio - Democratizing blockchain investments">
+<link rel="shortcut icon" type="image/x-icon" href="Favicon_32x32.ico">
+<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-820840915"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','AW-820840915');</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108948630-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-108948630-1');</script>
+
+<script>!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1936867133220054');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1936867133220054&ev=PageView&noscript=1"/></noscript>
+
+<script type="text/javascript">(function(p,u,s,h){p._pcq=p._pcq||[];p._pcq.push(['_currentTime',Date.now()]);s=u.createElement('script');s.type='text/javascript';s.async=true;s.src='https://cdn.pushcrew.com/js/3d42a204ea197d5becc9f42d565d1666.js';h=u.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document);</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+<nav>
+<a href="#"><img src="assets/img/logo.png" id="menu_logo" alt="logo" /></a>
+<a href="#" data-ng-click="toggleMenu('#')" id="menu_icon"></a>
+<div id="menuleft_wrapper" data-ng-click="MenuOff()">
+<div id="menuleft" data-ng-class="{hide:!showmenu,slide:showmenu}">
+<h2 translate="SWIPEMENU_TITLE">Menu</h2>
+<ul class="text">
+<li><a translate="SWIPEMENU_LINK1" data-ng-click="toggleMenu('future_of_money')">The future of money</a></li>
+<li><a translate="SWIPEMENU_LINK2" data-ng-click="toggleMenu('on_pecun_io')">on pecun.io</a></li>
+<li><a translate="SWIPEMENU_LINK3" data-ng-click="toggleMenu('get_started')">get started</a></li>
+<li><a translate="SWIPEMENU_LINK4" data-ng-click="toggleMenu('get_involved')">get involved</a></li>
+<li><a translate="SWIPEMENU_LINK5" data-ng-click="toggleMenu('contact')">contact</a></li>
+<li><a translate="SWIPEMENU_LINK6" class="bold up" onmousedown="window.open(this.href, '_self', '/app/login');" href="/app/login" target="_self">login</a></li>
+<li><a translate="SWIPEMENU_LINK7" class="bold up" onmousedown="window.open(this.href, '_self', '/app/register');" href="/app/register" target="_self">register</a></li>
+<li>
+<a class="up" data-ng-class="{'active': app.currentLanguage === 'de'}" data-ng-click="app.chooseLanguage('de')" translate="SWIPEMENU_LINK8" target="_self">Deu</a>
+/ <a class="up" data-ng-class="{'active': app.currentLanguage === 'en'}" data-ng-click="app.chooseLanguage('en')" translate="SWIPEMENU_LINK9" target="_self">Eng</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main_menu" class="nav_inner  text">
+<h1><a href="#"><img src="assets/img/logo.png" alt="logo" /></a></h1>
+<div>
+<ul>
+<li><a translate="SWIPEMENU_LINK1" data-ng-click="gotoElement('future_of_money')" target="_self">The future of money</a></li>
+<li><a translate="SWIPEMENU_LINK2" data-ng-click="gotoElement('on_pecun_io')" target="_self">on pecun.io</a></li>
+<li><a translate="SWIPEMENU_LINK3" data-ng-click="gotoElement('get_started')" target="_self">get started</a></li>
+<li><a translate="SWIPEMENU_LINK4" data-ng-click="gotoElement('get_involved')" target="_self">get involved</a></li>
+<li><a translate="SWIPEMENU_LINK5" data-ng-click="gotoElement('contact')" target="_self">contact</a></li>
+</ul>
+</div>
+<div>
+<ul>
+<li><a translate="SWIPEMENU_LINK6" data-ng-click="gotoElement('')" target="_self" href="/app/login">login</a></li>
+<li><a translate="SWIPEMENU_LINK7" data-ng-click="gotoElement('')" target="_self" href="/app/register">register</a></li>
+<li>
+<a class="up" data-ng-class="{'active': app.currentLanguage === 'de'}" data-ng-click="app.chooseLanguage('de')" translate="SWIPEMENU_LINK8" target="_self">Ger</a>
+/ <a class="up" data-ng-class="{'active': app.currentLanguage === 'en'}" data-ng-click="app.chooseLanguage('en')" translate="SWIPEMENU_LINK9" target="_self">Eng</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main elem-ready="scrollToAnchor()" ng-view></main>
+</section>
+<footer>
+<div class="spacer_90"></div>
+<ul class="inner center m_bot">
+<li class="col3 m_bot">
+<ul id="impressum_left" class="text"><li><a href="http://pecun.io/Pecunio_White_Paper.pdf" target="_blank">Whitepaper</a></li><li><a href="#/faq">FAQ</a></li><li><a href="#/press">Press</a></li><li><a href="#/imprint">Imprint</a></li>
+</ul>
+</li>
+<li class="col3 m_bot">
+<img alt="logo_white" src="assets/img/logo_white.png" />
+</li>
+<li class="col3 m_bot">
+<p class="text">© Copyright 2017. All Rights Reserved.</p>
+</li>
+</ul>
+</footer>
+</div>
+<script src="assets/js/scriptlib.min.js"></script>
+<script src="apps/components/lang/de_DE.js"></script>
+<script src="apps/components/lang/en_US.js"></script>
+<script src="apps/app.module.js"></script>
+<script>function popupOpenClose(popup){$(popup).show();$(popup).click(function(e){if(e.target==this){if($(popup).is(':visible')){$(popup).hide();}}});$(popup).find("button[name=close]").on("click",function(){if($(".formElementError").is(':visible')){$(".formElementError").remove();}
+$(popup).hide();});}
+function showDifferentContent(open){if(open){var x=document.getElementById("content1");x.style.display="none";x=document.getElementById("content2");x.style.display="table";return false;}
+else
+{var x=document.getElementById("content2");x.style.display="none";x=document.getElementById("content1");x.style.display="table";return false;}}
+function sendNotifyForm(itm)
+{$('#messages'+itm).removeClass('alert alert-success alert-danger');var formData={'email':$('#notify_'+itm+'_email').val(),};$.ajax({type:'POST',url:'/app/register/notify',data:formData,dataType:'json',success:function(data){if(!data.success){angular.element(document.querySelector('#app')).scope().sentNotify(0,itm);$('#messages'+itm).addClass('alert alert-danger');}else{angular.element(document.querySelector('#app')).scope().sentNotify(1,itm);$('#messages'+itm).addClass('alert alert-success');gtag('event','conversion',{'send_to':'AW-820840915/2H2BCInPwXsQ05O0hwM'});}
+popupOpenClose($("#popup"+itm));}});}
+function sendContactForm()
+{$('#messages').removeClass('alert alert-success alert-danger');var formData={'name':$('#contact_name').val(),'email':$('#contact_email').val(),'subject':$('#contact_sub').val(),'text':$('#contact_msg').val()};$.ajax({type:'POST',url:'/app/contact',data:formData,dataType:'json',success:function(data){if(!data.success){angular.element(document.querySelector('#app')).scope().sentEmail(0);$('#messages').addClass('alert alert-danger');}else{angular.element(document.querySelector('#app')).scope().sentEmail(1);$('#messages').addClass('alert alert-success');}}});}</script>
+<script type="text/javascript">_linkedin_data_partner_id="211092";</script><script type="text/javascript">(function(){var s=document.getElementsByTagName("script")[0];var b=document.createElement("script");b.type="text/javascript";b.async=true;b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";s.parentNode.insertBefore(b,s);})();</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=211092&fmt=gif"/>
+</noscript>
+</body>
+</html>
