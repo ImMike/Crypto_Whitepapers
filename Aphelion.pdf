@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PDQVRCB');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aphelion-P2P Digital Trading Platform</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css?v15" rel="stylesheet">
+<link href="css/updates.css" rel="stylesheet">
+<link href="css/stacktable.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<!-- iPhone form fix -->
+<script>
+ $(function() {
+$('body').click(function(e){
+var classn=e.target.className;
+var loc = window.location.hash; 
+  if(loc === '#close' || classn == "prpl-btn" ){
+console.log("close");
+ $('body').css('margin-right', (window.innerWidth - $('body').width()) + 'px');
+    $('body').css('position', 'fixed');}
+else{
+ $('body').css('position', '');
+$('body').css('margin-right', '');}
+});
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+  var CaptchaCallback = function() {
+  grecaptcha.render('RecaptchaField1', {'sitekey' : '6LdmbDMUAAAAAGqwHGSpKXVqGNwlq4hut9B22AbC'});
+  grecaptcha.render('RecaptchaField2', {'sitekey' : '6LdmbDMUAAAAAGqwHGSpKXVqGNwlq4hut9B22AbC'});
+  };
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDQVRCB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<style>
+body,html,.main-display-area,.col-md-7 {
+   height:100%;
+}	
+	</style>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+	<script src="js/jquery-1.11.3.min.js"></script>
+	--> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<div class="container"> 
+  
+  <!-- MAIN NAVIGATION -->
+  
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbar-top">
+    <div class="container"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand" href="/"><img src="imgs/logo-small-navbar-200px.png" id="brandlogo" class="img-responsive" alt="APHELION"></a></div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      
+      <div class="collapse navbar-collapse" id="topFixedNavbar1">
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid --> 
+    
+  </nav>
+  <div class="container" id="whitepaper">
+    <div class="row container-fluid">
+      <picture> <img src="imgs/aphelion-about-logo.png" alt="Aphelion Logo" style="width:auto;max-width: 100%"> </picture>
+      <h3>P2P Digital Asset Distribution</h3>
+      <strong><a href="https://aphelion.org">aphelion.org</a></strong><br>
+      <strong><a href="mailto:support@aphelion.org">support@aphelion.org</a></strong><br>
+      <i>October 2017 v.08</i>
+      <br><br>
+      <a href="aphelion-chinese-whitepaper.pdf" target="_blank">中文版白皮书</a><br>
+      <div class="row" id="wp-1">
+        <p><strong>Abstract:</strong> Built to solve the inherent problems of the crypto exchanges and trading platforms, Aphelion advances distributed ledger technology (DLT) as an open source, peer-to-peer (P2P), decentralized asset distribution application protocol built on the NEO blockchain.  Aphelion is designed to power a tokenized transaction called a Distributed Exchange Asset Ledger or DEAL.  Aphelion DEAL transactions are facilitated through smart contracts as set forth by users and are independent of exchanges or trading platforms and the constraints they inherently create.  An Aphelion token is the Liquidity Verification Device (LVD) powering the DEAL directly between users: instantly, securely and freely.</p>
+        <p><strong>Disclaimer: </strong> This white paper does not constitute an offer or solicitation to sell securities or shares and is for informational purposes only.  The APH token is considered a utility tool built within blockchain technology.  The Aphelion token (APH) offering does not represent a stock or sale of securities; the Aphelion token does not grant equity or voting rights; the Aphelion token does not grant ownership rights directly or indirectly to the Aphelion company, it’s physical, virtual or intellectual properties;  the Aphelion token does not grant a debt security and is not an instrument of debt; the Aphelion token does not pay a distribution, disbursement or interest payment to token holders.  If any future offers become available they will be made through confidential and appropriate channels and follow all necessary legal requirements.  In compliance with recent sec announcements, Aphelion will not market to or accept contributions from any US citizen or resident.  In compliance with China Securities and Regulatory Commission (CSRC) and the People’s Bank of China (PBOC) regulations, Aphelion will not market to or accept contributions from any citizens or resident of the People’s Republic of China (PRC). In compliance with the monetary authority of Singapore, Aphelion will not market to or accept contributions from any citizens or resident of Singapore. </p>
+        <p><strong>Notice to citizens and residents of the United States of America: </strong> This website and the offering memorandum has not been filed with the Securities and Exchange 
+          Commission (SEC) as part of a registration statement.  Accordingly, this website and the offering memorandum and any other document or material in connection with the offer or sale, or invitation for subscription or purchase of the APH tokens may not be circulated or distributed, nor may the APH tokens be offered or sold, or be made the subject of an invitation for subscription or purchase, whether directly or indirectly, to persons in the United States of America.
+          For residents and citizens of the People’s Republic of China (which, for the purposes of this document and offering memorandum, does not include Hong Kong, Macau, and Taiwan):
+          APH tokens may not be marketed, offered or sold directly or indirectly to the public in China and neither this document nor the offering memorandum, which has not been submitted to the Chinese securities and regulatory commission, nor any offering material or information contained herein relating to APH tokens, may be supplied to the public in China or used in connection with any offer for the subscription or sale of APH tokens to the public in China. The information contained in this website and the offering memorandum will not constitute an offer to sell or an invitation, advertisement or solicitation of an offer to buy any APH tokens within the PRC. </p>
+        <p><strong>Notice to prospective subscribers in Singapore:</strong> This website and the offering memorandum has not been registered as a prospectus with the monetary authority of Singapore under the Securities and Futures Act (SFA) (Chapter 289). Accordingly, this website and the offering memorandum and any other document or material in connection with the offer or sale, or invitation for subscription or purchase of the APH tokens may not be circulated or distributed, nor may the APH tokens be offered or sold, or be made the subject of an invitation for subscription or purchase, whether directly or indirectly, to persons in Singapore. </p>
+      </div>
+      <div class="row" id="wp-tc"> <strong>Table of Contents</strong>
+        <ul>
+          <strong>1. Introduction</strong>
+          <li><strong>1.1</strong> Background</li>
+          <li><strong>1.2</strong> Blockchain Technology </li>
+          <p class="txtindent">What is Blockchain Technology? </p>
+          <li><strong>1.3</strong> Distributed Ledger</li>
+          <li><strong>1.4</strong> Decentralized Application (DApp) </li>
+          <li><strong>1.5</strong> PoS vs PoW and Next Gen dBFT</li>
+          <li><strong>1.6</strong> Aphelion Built on NEO dBFT</li>
+          <li><strong>1.7</strong> The Cryptocurrency Market</li>
+        </ul>
+        <ul>
+          <strong>2. The Problem</strong>
+          <li><strong>2.1</strong> Cryptocurrency Challenges</li>
+          <li><strong>2.2</strong> Centralized Exchange</li>
+          <li><strong>2.3 </strong>Decentralized Exchanges</li>
+        </ul>
+        <ul>
+          <strong>3. The Solution</strong>
+          <li><strong>3.1</strong> P2P Digital Asset Distribution DApp &amp; Protocol</li>
+          <li><strong>3.2</strong> Mission &amp; Vision</li>
+          <li><strong>3.3</strong> Aphelion Technology</li>
+          <li><strong>3.4</strong> Key Differentiators</li>
+          <li><strong>3.5</strong> Roadmap</li>
+          <li><strong>3.6</strong> Aphelion Tokens</li>
+          <li><strong>3.7</strong> Aphelion Initial Coin Offering</li>
+          <li><strong>3.8</strong> Pricing Structure &amp; Timeline</li>
+          <li><strong>3.9</strong> Moratorium</li>
+        </ul>
+        <ul>
+          <strong>4. Team and Advisors</strong>
+          <li><strong>4.1</strong> Aphelion Founders</li>
+          <li><strong>4.2</strong> Aphelion Advisors</li>
+        </ul>
+        <strong>5. Conclusion</strong><br>
+        <strong>6.  References</strong><br>
+        <strong>7.  Appendix    - DApp Pseudo Code Algorithm</strong> </div>
+      <div class="row" id="wp-1">
+        <h2>1. Introduction</h2>
+        Distributed ledgers, blockchain technology, cryptocurrencies and their smart contracts are disrupting a multitude of industries.  In fact, experts argue that it has the expectation to disrupt the world more than any other industry in history.  We are already seeing the applications especially growing in finance.   As part of this new technology, developers, at an incredible rate,  are building new tools and the race is on to find mainstream, secure solutions that the general public and its institutions will embrace.
+        <h3>1.1 Background</h3>
+        As part of the blockchain eco-system, cryptocurrencies such as Bitcoin (BTC), NEO (formerly AntShares) and Ethereum (ETH) have emerged as early leaders in digital asset distribution.  Based on blockchain technology and distributed ledgers, Satoshi Nakamoto developed the first cryptocurrency  in 2008 called Bitcoin (BTC) [1].  Since then, many cryptocurrencies have been created and the market cap is growing like nothing ever seen before (up 1000%+ in 2017).  Entrepreneurs, venture capitalists, bankers, and other experts speculate that cryptocurrencies will eventually be the new norm and a bevy of businesses are blooming as a result.   But, blockchain and distributed ledger technology behind the emerging cryptocurrencies could prove much more significant.
+        <h3>1.2 Blockchain Technology</h3>
+        Cryptocurrency is made possible by blockchain technology.
+        “The blockchain is an incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value.”[2]
+        What is Blockchain Technology?
+        </h3>
+        “Blockchain as a historical fabric underneath recording everything that happens exactly as it occurs. Then the chain stitches that data into encrypted blocks that can never be modified and scatters the pieces across a worldwide network of distributed computers or "nodes."
+        Blockchain always has an immutable "ledger" that you can see, verify, and control. At the same time, it has no single point of failure from which records or digital assets can be hacked or corrupted. Because of its distributed-ledger technology, blockchain has applications across every kind of digital record and transaction, and we're already beginning to see major industries leaning into the shift.”[3]
+        <h3>1.3 Distributed Ledger Technology</h3>
+        “A distributed ledger is a type of database spread across multiple sites, regions, or participants.  As one would expect, a distributed ledger has to be decentralized, otherwise it would resemble a centralized database like most companies use today.  Removing the intermediary party from the equation is what makes the concept of distributed ledger technology so appealing.
+        Moreover, enterprises use distributed ledger technology to process, validate or authenticate transactions or other types of data exchanges.  Records are stored in the ledger once consensus is achieved by the majority of parties.  Every record stored in the distributed ledger is timestamped and has its very own cryptographic signature.
+        All of the participants on the distributed ledger can view all of the records in question.  The technology provides a verifiable and auditable history of all information stored on that particular dataset. Distributed ledger technology will often to be referred to as DLT in financial and government circles.”[4]
+        Leveraging DLT, Aphelion will decentralize the P2P transactions in a safe, secure and truly decentralized manner powering the process through its token rather than an exchange.  Bypassing the exchanges and allowing the DEAL to happen on a distributed ledger on the NEO blockchain is a giant step forward in the future of crypto trades.
+        <h3>1.4 Decentralized Application (DApp)</h3>
+        A decentralized application or DApp, as it is abbreviated, has its backend code running on a decentralized peer-to-peer network.
+        A DApp can have frontend code and user interfaces written in any language (just like an app) that can make calls to its backend. Furthermore, its front end can be hosted on decentralized storage such as Swarm or IPFS.
+        As illustrated in the graphic below, if an app=frontend+server, then DApp = frontend + community + contracts. Aphelion contracts are code that runs on the global Aphelion decentralized peer-to-peer protocol. </div>
+      <picture> <img src="imgs/graph_DApp-wp.png" alt="dApp" style="width:auto;max-width: 100%"> </picture>
+      <div class="row" id="wp-1"> By design, Aphelion is a DApp and by decentralizing the application it becomes: peer-to-peer, open source, operated autonomously and cannot be controlled by a single operator or entity.  The Aphelion (APH) cryptographic token will be stored in a public decentralized blockchain.  Consensus Node installation ultimately derives value for the application. <br>
+        <h3>1.5 PoW, PoS and Next Generation dBFT</h3>
+        <strong>From PoW to PoS</strong> “Proof-of-Work (PoW), Bitcoin’s consensus algorithm responsible for the network’s high energy demand, renders the system’s bookkeeping mechanism artificially resource intensive. Bitcoin nodes, mining blocks and verifying transactions, have to proof the performance of cryptographic tasks in order to be eligible for the sought-after block reward.
+        As a result, anyone trying to forge BTC transactions, or otherwise compromise the blockchain records, would have to outcompete all other miners and the energy they’re investing in keeping bitcoin nice and clean.  According to the energy estimates stated above, this means that thanks to PoW, an attacker would have to invest the aggregated energy consumption of a small North-American city, just to enforce their will on the Bitcoin blockchain.
+        The most popular alternative to PoW, used by most alternative cryptocurrency systems, is called Proof-of-Stake, or PoS. PoS is highly promising in the sense that it doesn’t require blockchain nodes to perform arduous, and otherwise useless, cryptographic tasks in order to render potential attacks costly and infeasible. Hence, this algorithm cuts the power requirements of PoS blockchains down to sane and manageable amounts, allowing them to be more scalable without guzzling up the planet's energy reserves.
+        PoS is a viable alternative to PoW, which although highly energy inefficient, has proven itself as trustworthy during the last eight years. However, both systems have a crucial flaw, rarely addressed in the still somewhat countercultural crypto community. PoS, as well as PoW, simply allows the blockchain to fork into two alternative versions if for some reason consensus breaks. In fact, most blockchains fork most of the time, only to converge back to a single source of truth a short while afterwards, as it is depicted in the image above.
+        By many crypto enthusiasts, this obvious bug is very often regarded as a feature, allowing several versions of the truth to survive and compete for public adoption until a resolution is generated. This sounds nice in theory, but if we want to see blockchain technology seriously disrupt and/or augment the financial sector, this ever lurking possibility of the blockchain splitting into two alternative versions cannot be tolerated.
+        Byzantine Fault Tolerance and dBFT
+        The term Byzantine Fault Tolerance (BFT) derives its name from the Byzantine Generals problem in Game Theory and Computer Science, describing the problematic nature of achieving consensus in a distributed system with suboptimal communication between agents which do not necessarily trust each other.
+        The BFT algorithm arranges the relationship between blockchain nodes in such a way that the network becomes as good as resilient to the Byzantine Generals problem, and allows the system to remain consensus even if some nodes bare malicious intentions or simply malfunction.
+        To achieve this, NEO’s version of the delegated BFT (or dBFT) algorithm acknowledges two kinds of players in the blockchain space: professional node operators, called bookkeeping nodes, who run nodes as a source of income, and users who are interested in accessing blockchain advantages. Theoretically, this differentiation does not exist in PoW and most PoS environments, practically, however, most Bitcoin users do not operate miners, which are mostly located in specialized venues run by professionals.
+        Accordingly, block verification is achieved through a consensus game held between specialized bookkeeping nodes, which are appointed by ordinary nodes through a form of delegated voting process. In every verification round one of the bookkeeping nodes is pseudo-randomly appointed to broadcast its version of the blockchain to the rest of the network. If ⅔ of the remaining nodes agree with this version, consensus is secured and the blockchain marches on. If less than ⅔ of the network agrees, a different node is appointed to broadcast its version of the truth to the rest of the system, and so forth until consensus is established.
+        In this way, successful system attacks are almost impossible to execute unless the overwhelming majority of the network is interested in committing financial suicide. Additionally, the system is fork proof, and at every given moment only one version of the truth exists. Without complicated cryptographic puzzles to solve, nodes operate much faster and are able to compete with centralized transaction methods.”[5]
+        <h3>1.6 Aphelion Built on NEO dBFT</h3>
+        Because dBFT solves for the challenges identified and outlined above in Bitcoin PoW and subsequent alternative PoS technologies Aphelion will be built on NEO as an eco-friendly, open source, completely decentralized digital asset application creating the most secure and decentralized application for digital asset distribution.  This will allow users to transact a DEAL P2P and independent of the exchanges, trading platforms and the limitations/challenges they bring.  Aphelion is a tokenized DApp protocol. <strong>Why NEO?</strong> “NEO supports faster development and deployment of smart contracts and projects, as it enables developers to build on programming languages already familiar with them. We provide various advanced languages in the form of compiler,” says Da Hongfei (founder). “Besides .Net and Java, we will support Python and Go in the future which can cover more than 90 percent of developers. Compared with Ethereum, development has more smooth learning curve and shorter learning cycle, allowing for fast introduction of projects.”[6] <br>
+        <table id="card-table" class="table">
+          <thead>
+            <tr>
+              <th width="14%">&nbsp;</th>
+              <th width="20%"><img src="imgs/bitcoin-logo-wp.png" alt="Bitcoin" class="img-responsive center-block"> </th>
+              <th width="20%"><img src="imgs/ethereum-logo-wp.png" alt="Ethereum" class="img-responsive center-block"> </th>
+              <th width="20%"><img src="imgs/neo-logo-sm.png" alt="Neo" class="img-responsive center-block"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><h4>Efficiency</h4></td>
+              <td> POW on ASIC machines uses vast amounts of energy </td>
+              <td> GPU miners collectively using more energy than an entire country* </td>
+              <td>dBFT ensures finality through highly efficient method </td>
+            </tr>
+            <tr>
+              <td><h4>Secure Contracts</h4></td>
+              <td>Pseudo-anonymity creates lack of integrity in transactions </td>
+              <td> Vulnerable contract code prone to hacker attacks** </td>
+              <td>Integrated digital identity allows for real world applications </td>
+            </tr>
+            <tr>
+              <td><h4>Dev Languages</h4></td>
+              <td>C++</td>
+              <td align-middle>Solidity</td>
+              <td> C#, .Net, Java, Python and Go coming which can cover 90% of developers </td>
+            </tr>
+            <tr>
+              <td><h4>Scalability</h4></td>
+              <td>Peak transaction per second is limited to 3-4 </td>
+              <td>Current peak transaction per second is 20 </td>
+              <td>Up to 10,000 transactions per second </td>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table>
+        <h3>1.7 The Cryptocurrency Market</h3>
+        “As of April 2017, the combined market value of all cryptocurrencies is $27 billion, which represents a level of value creation on the order of Silicon Valley success stories like AirBnB.”[9]
+        In late August  2017, the Market cap surpassed $180 billion, meaning the cryptocurrency total market cap has risen nearly 1000% this year, according to bitcoin.com.[12. The Problem
+        Blockchain technology and subsequent cryptocurrencies are so new that many crippling challenges exist across trading platforms and exchanges.  Currently, digital currencies do not connect to each other in the same way that information networks do. The current exchange model for currencies has a critical barrier to linking small-scale currencies to other popular currencies using a market-determined exchange rate.  Also, the exchanges and trading platforms are in essence acting as a centralized system that inherently brings associated faults and defeats the purpose of decentralization.
+        Challenges facing crypto-exchanges and trading platforms today:
+        Centralization: Rules, fees, non-liquid assets, exchanges control private keys to user wallets allowing the exchange to have full custodial rights of the funds.
+        Complexities: Trading platforms &amp; exchanges lack any cross-consistency in virtually every aspect of their technology.
+        Barriers to Entry: There are different rules to join each platform, delays in approval, traditional currency deposits vs. digital only deposits, lack of instant deposits.
+        Challenges of Use: Trades blocked without explanation, daily limits, poor UI, buggy software, not user-friendly.
+        Latency: Incessant lack of speed and performance issues.
+        Lack of Support: There is a complete lack of customer support and inability to respond across most big-name platforms; It is not uncommon to wait weeks or months for a reply.
+        Lack of Security: Multiple hacks, lost funds, privacy breaches, shut down sites.
+        Lack of Privacy: Required verification, credit card, driver’s license scans, passports.
+        <h1>2. The Problem</h1>
+        <h3>2.1 Cryptocurrency Challenges</h3>
+        Because Bitcoin is a relatively lite blockchain system, it requires additional development protocols to make it functional for transactional exchanges. NEO is also compatible with several coding languages, whereas ETH is only compatible with Solidity.
+        “For instance, while you might think that the current proof-of-work (POW) consensus mechanism used by Bitcoin and Ethereum is a benefit, it actually comes with a cost. There is an issue with the lack of finality.
+        Bitcoin transactions are final, you say? Not really. The protocol favors availability over finality — this means forks and lone blocks are a possibility, and we have previously observed how Bitcoin projects tend to “fork” whenever there are serious security concerns or when developers have disagreements regarding the standard.
+        POW is also very energy-intensive, which means nodes spend a lot of money on electrical bills.”[6]
+        <h3>2.2 Centralized Exchanges</h3>
+        There is widespread use of several cryptocurrency trading platforms and exchanges.  They are the clear mechanism for P2P trading, but they are not decentralized.   They act as intermediaries between traders initiating trades and this poses a number of inherent challenges.  First, exchanges set the rules for who can trade, what can be traded and when.  There are countless stories of user’s accounts and even initiated trades being deleted or frozen without explanation.   We’ve also had numerous security breaches resulting in hundreds of millions (USD) being stolen.  On top of these inherent challenges the exchanges are facing there is a complete lack of support facing many users today.  These so-called decentralized exchanges are not decentralized at all, in fact quite the opposite.
+        “P2P exchanges aren’t better than the regular ones in every regard - longer trade times, less intuitive use cases and lower liquidity are some of their comparative disadvantages.
+        Most flaws of decentralized exchanges are caused simply by the fact that they are a relatively new kind of service. For example, Bitsquare, arguably one of the oldest of such exchanges, has been around for just three years and most of that was the development period.
+        As such, these exchanges have to deal with a number of problems. For example, most of them are currently aimed at small, specific audiences of crypto enthusiasts and haven’t had the need to cater to newcomers - because of that, they tend to be less intuitive to use.
+        For the same reasons - small audience and early stage of existence, decentralized exchanges usually have much lower trading volumes than the regular ones.
+        Longer trade times, on the other hand, are likely a disadvantage that will take a while to fix, if ever. They are caused by the manner in which the trades are conducted - with traders having to wait for actual Bitcoin and fiat transactions to complete before a trade is concluded.
+        This last issue, coupled with the lower liquidity, means that P2P exchanges are not at all in demand with, for example, professional traders, who need fast transactions to make timely deals. In their current state, these exchanges can only be useful to people interested in the specific advantages they offer - the increased resilience, privacy, security and freedom of payments.” [11] 
+        <!-- Comparison Chart -->
+        <table style="width:100%; margin: 10px 0;">
+          <tr>
+            <th></th>
+            <th>Decentralized Exchanges</th>
+            <th>Centralized Exchanges</th>
+          </tr>
+          <tr>
+            <td>Equanimity between buyer &amp; seller </td>
+            <td><picture> <img src="imgs/check-box.png" alt="Check Box" style="width:auto;"> </picture></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Loss of funds from exchange shutdown</td>
+            <td></td>
+            <td><picture> <img src="imgs/check-box.png" alt="Check Box" style="width:auto;"> </picture></td>
+          </tr>
+          <tr>
+            <td>Potential of frozen accounts</td>
+            <td></td>
+            <td><picture> <img src="imgs/check-box.png" alt="Check Box" style="width:auto;"> </picture></td>
+          </tr>
+          <tr>
+            <td>Income for exchange from transaction</td>
+            <td></td>
+            <td><picture> <img src="imgs/check-box.png" alt="Check Box" style="width:auto;"> </picture></td>
+          </tr>
+          <tr>
+            <td>Trading security risks</td>
+            <td></td>
+            <td><picture> <img src="imgs/check-box.png" alt="Check Box" style="width:auto;"> </picture></td>
+          </tr>
+          <tr>
+            <td>Deposits required</td>
+            <td></td>
+            <td><picture> <img src="imgs/check-box.png" alt="Check Box" style="width:auto;"> </picture></td>
+          </tr>
+        </table>
+        <h3>2.3 Decentralized Exchanges</h3>
+        Several projects make the claim of being a P2P Decentralized Exchange (DEX). However there are very few built as dApps, completely within a blockchain. Some are centralized client to server operations that rely on an organization's hardware and proprietary software and others are simply a protocol that requires integration into existing centralized exchanges to function properly.  Aphelion aims to be one of the pioneers of DEX residing completely within the blockchain as dApp, requiring only an open source user interface to access data and control smart contracts to trade digital assets.<br>
+        <strong>Areas of concern:</strong><br>
+        <strong>Ripple</strong><br>
+        Ripple[12] is a protocol that offers a real-time, settlement system, currency exchange, and remittance network. It requires an existing network to plug into and by design is programed to work within the central banking system.  Ripple’s protocol could help revolutionize the banking industry by bringing blockchain technology to the world’s largest financial institutions.  However, it does not offer a P2P decentralized exchange system.<br>
+        <strong>Shapeshift</strong><br>
+        Shapeshift[13] is a server based operation that is highly dependant on corporate hardware and software to remain functional.  Shapeshift makes a remarkable promise to trade peer to peer, instantly without having to deposit funds to an exchange platform.  A quick search will reveal that the centralized server infrastructure of shapeshift can leave users with missing coins and lost transactions without support to remedy tough situations.<br>
+        <strong>Loopring</strong><br>
+        Loopring[14] is an exchange protocol that is currently in development (as of Sept 2017). The loopring protocol requires existing cryptocurrency exchanges to plug into, including user authorization and corporate integration between the exchange and loopring.  If loopring can overcome the challenges of integrating with existing exchanges, it could prove to be a promising intermediary.<br>
+        <strong>Bitshares</strong><br>
+        Bitshares[15], [16] is an industrial grade financial blockchain smart contract platform. It is an excellent example of a truly decentralized technology.  Some nuances that one might point out on the Bitshares DEX is the fact that as deposits are made, your assets are stored as collateral by Bitshares while you are issued Bitshares’ own version of the currencies you might know in the real world, called smart tokens.  Users must trade derivative tokens that replicate real world currencies and assets.  Some examples are bitUSD, Bitshares version of the US Dollar or bitGold, Bitshares version of gold.<br>
+        <strong>OpenLedger</strong><br>
+        OpenLedger[17] Dex is a cryptocurrency exchange. Much like Bitshares, it allows users to exchange real world assets into derivative tokens, also known as smart tokens which reside in the OpenLedger network.  For example, with Openledger, users trade Open.BTC and Open.ETH which are OpenLedger’s own version of Bitcoin and Ethereum, respectively.<br>
+        <strong>Bancor</strong><br>
+        Bancor [18] protocol enables built-in price discovery and a liquidity mechanism for tokens on smart contract blockchains. Like Bitshares and Openledger, Bancor uses “smart tokens” to hold one or more real world tokens in reserve to enable any party to instantly purchase or liquidate the smart token
+        in exchange for any of its reserve tokens.  This is done directly through the smart token’s
+        contract, at a continuously calculated price according to a formula which balances buy and
+        sell volumes.<br>
+        <strong>0x</strong><br>
+        0x[19] (Zero X) is a protocol that facilitates peer-to-peer exchange of ERC20 tokens
+        on the Ethereum blockchain. The protocol is intended to be used within an existing dApp to facilitate Ethereum based token trading.
+        <h3>3. The Solution</h3>
+        Aphelion’s breakthrough token-driven DApp allows for peer-to-peer asset distributions and smart contracts via a DEAL and solves the issues plaguing current exchanges and platforms.  The solution is to eliminate the centralization of those mechanisms by allowing users to freely set their own smart contracts and exchange digital assets on their terms in a open source, secure, fast and truly decentralized process directly on the blockchain.  The Aphelion DApp and protocol token will solve for latency, frozen or stolen assets and finally free crypto trading forever.
+        <h3>3.1 P2P Digital Asset Distribution and Protocol</h3>
+        Aphelion is a next generation DApp and token protocol that will integrate with any other DApp.  Aphelion is truly open source, owned or controlled by no entity, organization or agent.  By leveraging the smart contract technology as a protocol with its own tokenized systems of escrow or building blocks, Aphelion users can finally eliminate the barriers and controls of the cryptocurrency exchanges and trading platforms.  Aphelion empowers users to trade directly between themselves on the contract terms they choose.  It delivers an innovative, tokenized escrow solution for users to instantly trade, transfer, send and receive Aphelion approved currencies to anyone they want and anywhere they want.
+        <h3>3.2 Mission &amp; Vision Statement</h3>
+        Mission:  To build collaborative, open source blockchain technology that truly decentralizes asset distribution.
+        Vision:  A world powered by decentralized applications.
+        <h3>3.3 Aphelion Technology</h3>
+        NEO Technology: Through technologies such as P2P networking, dBFT consensus, digital certificates, Superconducting Transactions, and cross-chain interoperability the blockchain enables management of smart assets in an efficient, safe and legally binding manner.
+        Digital Assets: Digital assets are programmable assets that exist in the form of electronic data. With blockchain technology, the digitization of assets can be decentralized, trustful, traceable, highly transparent, and free of intermediaries. On the blockchain, users can register, trade, and circulate multiple types of assets such as BTC, ETH, XRP, LTC and NEO to name a few.
+        <h3>3.4 Key Differentiators</h3>
+        True Decentralization:  Aphelion trades are transacted P2P and node-based without third-party control or influence.  Users can set their own rules in the truest definition of decentralization.  It’s impossible to take the site down, because there is no site. The transactions only complete when both sides enter into the DEAL (Distributed Exchange Asset Ledger) and the ledger logs it across potentially millions of machines.
+        Cross-Language Scalability:  Completely unlike other tokens, Aphelion will be open and buildable across languages such as Python, .Net, C#, F#, Go &amp; Java;  making it highly scaleable and conducive to onboarding diverse coding talent.
+        Next Gen DApp:  A NEO tokenized system using the DEAL protocol to power a true P2P exchange totally decentralized from the exchanges.
+        Ease of Entry: Aphelion only requires access to an open source Aphelion portal built in-browser, in-app and on desktop.
+        Security:  Because the data is truly decentralized across the distributed blockchain ledger it cannot be stolen or corrupted.
+        Control:  Aphelion users initiate the DEAL transactions and have total control over the conditions of their individual smart contracts, freeing the transactions from fees and rules.
+        
+        <div class="row">
+			<h3>3.5 Roadmap</h3>
+          <ul>
+            <strong>Q1 2017</strong> - Concept &amp; Research
+            <li>R&amp;D blockchain options</li>
+            <li>Identified industry leaders</li>
+            <li>Cryptocurrency market research</li>
+            <li>Cryptocurrency exchange platform comparison analysis</li>
+          </ul>
+          <ul>
+            <strong>Q2 2017</strong> - Strategy &amp; Design
+            <li>Retained Legal Council</li>
+            <li>Created Concept</li>
+            <li>Coined Aphelion name and messaging</li>
+            <li>Design mockups</li>
+            <li>SWOT Analysis</li>
+            <li>Crafted our mission</li>
+            <li>Vetted concept with blockchain developers</li>
+          </ul>
+          <ul>
+            <strong>Q3 2017</strong> - Initial Business Rollout &amp; Pre-Marketing
+            <li>Incorporated business unit</li>
+            <li>Identified markets</li>
+            <li>Built partnership networks</li>
+            <li>Launched Landing Website</li>
+            <li>Compliance framework</li>
+            <li>NEO is the One</li>
+            <li>Formed Founders alliance agreement</li>
+            <li>Recruited and vetted advisers</li>
+            <li>Q4 2017 - Marketing &amp; ICO</li>
+            <li>Dev kickoff</li>
+            <li>Rollout Marketing Efforts</li>
+            <li>Develop influencer network</li>
+            <li>Build relationships with liquidity providers</li>
+            <li>Deploy Testnet</li>
+            <li>Manage GitHub repo</li>
+            <li>Website enhancements &amp; backend</li>
+            <li>KYC verification entity integration</li>
+            <li>Finalize and release white paper</li>
+            <li>Open private offer</li>
+            <li>Decstack channel</li>
+            <li>Smart contract testing &amp; auditing</li>
+            <li>ICO transaction testing</li>
+            <li>Inital dApp development</li>
+          </ul>
+          <ul>
+            <strong>Q4 2017</strong> - Marketing &amp; ICO (continued)
+            <li>Dev kickoff</li>
+            <li>Rollout Marketing Efforts</li>
+            <li>Develop influencer network</li>
+            <li>Build relationships with liquidity providers</li>
+            <li>Initial NEO access</li>
+            <li>Deploy Testnet</li>
+            <li>Manage GitHub repo</li>
+            <li>Website enhancements &amp; backend</li>
+            <li>KYC verification entity integration</li>
+            <li>Finalize and release white paper</li>
+            <li>Open private offer</li>
+            <li>Telegram channel</li>
+            <li>Smart contract testing &amp; auditing</li>
+            <li>ICO transaction testing</li>
+            <li>Inital dApp development</li>
+            <li>KYC audits completed</li>
+            <li>ICO kicks-off</li>
+            <li>ICO closes</li>
+            <li>Tokens distributed</li>
+            <li>PR begins</li>
+            <li>Regulatory compliance updates </li>
+          </ul>
+          <ul>
+            <strong>Q1 2018</strong> - A NEO Year Begins
+            <li>Full dApp development commences</li>
+            <li>Cross blockchain transactions</li>
+            <li>Solve for liquidity verification</li>
+            <li>Marketing continues</li>
+            <li>Exchange registrations begin</li>
+            <li>Audits</li>
+            <li>APH traded on exchanges</li>
+            <li>Launch initial version Aphelion DApp</li>
+            <li>Aphelion dApp community development &amp; growth</li>
+            <li>Continued market analysis</li>
+            <li>Champion advancement of the NEO smart economy</li>
+          </ul>
+          <ul>
+            <strong>2018 and into the future</strong> - 2018 and into the future [tbd]
+            <li>Continue to build dev team</li>
+            <li>Build brand loyalty &amp; create raving fans</li>
+            <li>Expand market reach to all continents</li>
+            <li>Leverage partnerships to promote innovation and integration</li>
+            <li>Achieve preeminence </li>
+          </ul>
+          <h3>3.6 Aphelion Tokens - How It Works...</h3>
+          APH tokens represent a new breed of digital asset distribution.  Acting as a digital escrow or Liquidity Verification Device (LVD), the Aphelion token simultaneously captures terms from buyer and seller, reconciles the proposed smart contract,  instantly verifies liquidity and settles the DEAL.  Aphelion’s Distributed Exchange Asset Ledger (or DEAL) is advancing P2P by bypassing the exchanges into a direct and truly node-based decentralized ledger.  The APH tokenized DEAL is a protocol DApp residing directly on the blockchain, thus bypassing exchanges and allowing APH to be the Liquidity Verification Device and ultimately unlocking the promises of instant, secure and total decentralization.<br>
+          Let’s consider two peers who wish to exchange digital assets that exist on separate blockchains. Peer A, we’ll call Alex, is willing to trade some of his assets on Blockchain A (B.A) for some minimum amount of assets on Blockchain B (B.B). Peer B, we’ll call Bob, is willing to trade some of his assets on B.B for some minimum amount of B.A. Both peers already have addresses on both blockchains and either side can initiate the exchange contract. This distributed cross-chain transaction is executed in multiple phases but is treated as a single unit of work. In the end, the exchange succeeds on both sides or everything reverts back to its original state.<br>
+          1.  Here it will be Alex who initiates the cross-chain digital asset exchange using an Aphelion token. This creates a contract transaction containing the contract, secret code (often just called the secret) and a hash of that secret code. This also locks down Alex’s necessary assets on B.A and provides the address on B.B to where he wishes to receive assets. <br>
+          2.  Next, Bob takes a look at the contract (called auditing) and liking the terms decides to participate. He agrees by making another contract transaction, which uses the secret hash from Alex’s contract transaction. This also locks down Bob’s required assets on B.B. and provides the address on B.A to where Alex shall send assets to Bob.<br>
+          3.  Alex has a look (audit) at what Bob has sent and decides to close the DEAL. Alex collects Bob’s payment by creating a redeeming transaction. This automatically releases Alex’s secret to Bob and triggers a second redeeming transaction (4.) that allows Bob to receive Alex’s payment. The dual redeeming transactions are similar to a traditional relational database two phase commit where if any part of the meta transaction fails the individual transactions fail and rollback.
+		  <picture> <img src="imgs/transaction-diagram.png" alt="transaction-diagram" style="width:auto;max-width: 100%"> </picture>
+		  </div>
+        <div class="row" id="wp-tc"> A key element that is not being shown in this simplified diagram is that assets can also be refunded, or returned to the original wallet, at certain points during the exchange. Alex’s contract transaction will contain a locktime that expires after the transaction has been mined but has not yet been redeemed. Bob’s contract transaction will also contain a locktime, which will be half the time of Alex’s locktime. If these locktimes expire then the given party can initiate a refund and all relevant assets will be returned.<br>
+          <strong>Whats Next?</strong> Aphelion is only just beginning on the NEO blockchain.  The ultimate vision is a decentralized node-based bridge connecting communities across blockchains.  Aphelion begins on NEO for the intrinsic values of that blockchain and aims to spread its protocol and reach to ETH, BTC and other future  blockchains for the eventual utility of the token:  complete blockchain agnostic, direct, P2P, cross-dimensional, decentralized exchange, finally bringing the promise of blockchain into its full potential.   By building the bridge as a truly decentralized DApp any one point becomes irrelevant in the strength and utility of the DApp and Aphelion token protocol; The whole will exceed the sum of its parts.
+          <h3>3.7 Aphelion Initial Coin Offering</h3>
+          Aphelion ICO is in pre-sale.  Early contributors, advisors, and owners have been allotted tokens.  The countdown to the official ICO is scheduled for November 15, 2017.  Deposits can be made with NEO, BTC and ETH directly at Aphelion.org   100 million total token supply, there will be 50M APH tokens for sale available through the ICO, plus bonus tokens available through purchase and referral program.<br>
+          <strong>Allotment Breakdown</strong>
+          <ul>
+            <li>45% Sold ICO</li>
+            <li>5% Incentive Program</li>
+            <li>5% Pre-ICO Contributors</li>
+            <li>15% Advisors</li>
+            <li>30% Organization</li>
+          </ul>
+          <h3>3.8 Pricing Structure &amp; Timeline</h3>
+          Aphelion ICO Token price is $0.20<br>
+          The NEO exchange rate will be determined on Nov 13, 2017 based on a 3 day moving average.<br>
+          The moving average is determined using the SMA method derived from coinmarketcap.com historical data.<br>
+          <strong>Stage one starts on the first block of November 15, 2017</strong><br>
+          <strong>The ICO Ends on the last block of December 7, 2017</strong><br>
+          The entire 50M ICO token allocation is available through each round. It is possible that all ICO tokens are sold in round 1. <br>
+          Any tokens that are unsold through the end of round 3 will be burned.<br>
+          <strong>Example exchange rate at $30 NEO:</strong><br>
+          Round 1:         1 NEO = 150 APH + 75 APH  [225 APH total]<br>
+          Round 2:         1 NEO = 150 APH + 38 APH  [188 APH total]<br>
+          No Bonus:         1 NEO = 150 APH<br>
+          <br>
+          <div dir="ltr">
+            <table class="table">
+              <colgroup>
+                <col width="71">
+                <col width="108">
+                <col width="133">
+                <col width="85">
+                <col width="94">
+                <col width="133">
+              </colgroup>
+              <tr>
+               <strong> <td><p dir="ltr">Round</p></td>
+                <td><p dir="ltr">Start Date</p></td>
+                <td><p dir="ltr">End Date</p></td>
+                <td><p dir="ltr">Duration</p></td>
+                <td><p dir="ltr">Bonus</p></td>
+                <td><p dir="ltr">Effective Price</p></td></strong>
+              </tr>
+              <tr>
+                <td><p dir="ltr">1</p></td>
+                <td><p dir="ltr">Nov 15 2017<br>
+                  First Block </p></td>
+                <td><p dir="ltr">Nov 15 2017<br>
+                  Last Block</p></td>
+                <td><p dir="ltr">24hrs</p></td>
+                <td><p dir="ltr">50%</p></td>
+                <td><p dir="ltr">$0.13</p></td>
+              </tr>
+              <tr>
+                <td><p dir="ltr">2</p></td>
+                <td><p dir="ltr">Nov 16 2017<br>
+                  First Block</p></td>
+                <td><p dir="ltr">Nov 22 2017<br>
+                  Last Block</p></td>
+                <td><p dir="ltr">7 Days</p></td>
+                <td><p dir="ltr">25%</p></td>
+                <td><p dir="ltr">$0.16</p></td>
+              </tr>
+              <tr>
+                <td><p dir="ltr">3</p></td>
+                <td><p dir="ltr">Nov 23 2017<br>
+                  First Block</p></td>
+                <td><p dir="ltr">Dec 7 2017<br>
+                  Last Block</p></td>
+                <td><p dir="ltr">14 Days</p></td>
+                <td><p dir="ltr">No Bonus</p></td>
+                <td><p dir="ltr">$0.20</p>
+                  <br></td>
+              </tr>
+            </table>
+          </div>
+          <br>
+			 <strong>Use of Proceeds:</strong>
+          <ul>
+            <li>65% Blockchain &amp; DApp Development</li>
+            <li>10% Marketing</li>
+            <li>15% Operations</li>
+            <li>10% R&amp;D</li>
+          </ul>
+          <h3>3.9 Aphelion Smart Contract Moratorium</h3>
+          To preserve the project and protect ICO contributors there will be a mandatory 6 month moratorium on selling Aphelion tokens for all founders and advisors.  This policy will be built into the blockchain smart contract for total transparency.
+          <h3>4. Aphelion Team</h3>
+          The Aphelion Team is made up of a global network of successful entrepreneurs, experts, and visionaries with a successful track record in blockchain technology, finance, economics, marketing, security, software engineering and development.<br>
+        </div>
+      </div>
+      <!-- Team -->
+      <section id="wp-team" class="text-center section">
+        <div class="container">
+          <h2><span class="highlight_secondary">Team</span></h2>
+          <div class="row">
+            <div class="col-12 team-wrapper">
+              <div class="team">
+                <div class="team-image"><img src="imgs/adi-benari.png" class="img-circle img-responsive">
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/adibenari/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Adi Benari</h5>
+                  </div>
+                  <div class="team-role">Technical Advisor</div>
+                  <div class="team-description">Applied Blockchain</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/andrew-morrell.png" class="img-circle img-responsive">
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/andrew-morrell-8577611/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Andrew Morrell</h5>
+                  </div>
+                  <div class="team-role">Lead Software Engineer</div>
+                  <div class="team-description">Charles Schwab Developer</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/colan-sewell.png" class="img-circle img-responsive">
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/colansewell/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Colan Sewell</h5>
+                  </div>
+                  <div class="team-role">Lead Analyst</div>
+                  <div class="team-description">US Lead HTC Vive</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/aaron-levin.png" class="img-circle img-responsive">
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/aaronlevindenvercybersecurity/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Aaron Levin</h5>
+                  </div>
+                  <div class="team-role">Web &amp; App Security</div>
+                  <div class="team-description">Security Advisor</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"> <a href="https://www.linkedin.com/in/joelgarcia/"><img src="imgs/joel-garcia.jpg" class="img-circle img-responsive"></a>
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/joelgarcia/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Joel Garcia</h5>
+                  </div>
+                  <div class="team-role">Blockchain Developer</div>
+                  <div class="team-description">All Code</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/broz.png" class="img-circle img-responsive"> </a>
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/brozknows/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Matt Brozovich</h5>
+                  </div>
+                  <div class="team-role">Web Developer</div>
+                  <div class="team-description">Founder BrozKnows</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/josh-finkleman.png" class="img-circle img-responsive">
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/joshuafinkleman/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Joshua Finkleman</h5>
+                  </div>
+                  <div class="team-role">ICO Advisor</div>
+                  <div class="team-description">Co Blockchain Capital</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/astrid-baldissera.png" class="img-circle img-responsive">
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/astrid-baldissera-805b4b20/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Astrid Baldissera</h5>
+                  </div>
+                  <div class="team-role">Legal Counsel</div>
+                  <div class="team-description">CEO Starting Legal</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/natalie-wilcox.png" class="img-circle img-responsive">
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/natalie-wilcox-10591415/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Natalie Wilcox</h5>
+                  </div>
+                  <div class="team-role">Social Media Marketing</div>
+                  <div class="team-description">Century Link</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/eric-liss.png" class="img-circle img-responsive"> </a>
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/eric-liss-34376866/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Eric Liss</h5>
+                  </div>
+                  <div class="team-role">Motion Graphics/UI</div>
+                  <div class="team-description">Freelance Global Lead<br>
+                  </div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"> <a href="https://www.linkedin.com/in/debuzna/"><img src="imgs/joe-debinza.png" class="img-circle img-responsive"></a>
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/debuzna/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Joe Debuzna</h5>
+                  </div>
+                  <div class="team-role">Software Architect</div>
+                  <div class="team-description">VP Engineering<br>
+                    HVR Software</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/mike-jaltuch.png" class="img-circle img-responsive">
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/mikejaltuch/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Michael Jaltuch</h5>
+                  </div>
+                  <div class="team-role">Founding Member</div>
+                  <div class="team-description">Founder Orion Technologies,<br>
+                    Linear Method Software</div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image"><img src="imgs/ian-holtz.jpg" class="img-circle img-responsive">
+                  <div class="team-links">
+                    <div class="team-links-list"> <a href="https://www.linkedin.com/in/ianholtz/" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a> </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <div class="team-name">
+                    <h5>Ian Holtz</h5>
+                  </div>
+                  <div class="team-role">Founding Member</div>
+                  <div class="team-description">Founder Orion Technologies</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="row" id="wp-1">
+      <h2>5. Conclusion</h2>
+      Aphelion is building a next generation, tokenized and blockchain built mechanism to solve for the challenges plaguing the centralized cryptocurrency exchanges and trading platforms.   This protocol will allow for a truly peer-to-peer smart contract called a Distributed Exchange Asset Ledger (DEAL).  An Aphelion DEAL is a new breed of DApp built on the NEO blockchain that is open source, available across programming languages, transits instantly and frees DEAL makers from:  rules, latency and security breaches.  Join in our mission to build a collaborative, open source, P2P blockchain technology that finally decentralizes asset distribution and brings blockchain into the future.
+      <h2>6. References</h2>
+      <div id="ref"> [1] Satoshi Nakamoto. Bitcoin: A peer-to-peer electronic cash system (2008) <a href="https://www.google.com/url?q=https://bitcoin.org/bitcoin.pdf&sa=D&ust=1510266235701000&usg=AFQjCNEiQVZPEeD_3rJMEsYoQeAZ_QSvBA">https://bitcoin.org/bitcoin.pdf</a><br>
+        [2] Don &amp; Alex Tapscott, authors Blockchain Revolution (2016)<br>
+        [3] Rob Marvin, Blockchain: The Invisible Technology That's Changing the World (2017)<br>
+        [4] JP Buntinx, Distributed Ledger Technology Vs Blockchain Technology (March 25, 2017) <a href="https://www.google.com/url?q=https://themerkle.com/distributed-ledger-technology-vs-blockchain-technology/&sa=D&ust=1510266235701000&usg=AFQjCNE-UzDDl7la_wXWsiiHTel4iaAU0Q">https://themerkle.com/distributed-ledger-technology-vs-blockchain-technology/</a><br>
+        [5] Blockchain project Antshares explains reasons for choosing dBFT over PoW and PoS (July 17, 2017) <a href="https://www.google.com/url?q=https://www.econotimes.com/Blockchain-project-Antshares-explains-reasons-for-choosing-dBFT-over-PoW-and-PoS-659275&sa=D&ust=1510266235702000&usg=AFQjCNFpHPbaTg1YdZhUjpxWHtU5cvGqRw">https://www.econotimes.com/Blockchain-project-Antshares-explains-reasons-for-choosing-dBFT-over-PoW-and-PoS-659275</a><br>
+        [6] Daan Pepijn, Here&rsquo;s how NEO plans to top Ethereum and Bitcoin (August 11, 2017) <a href="https://www.google.com/url?q=https://thenextweb.com/contributors/2017/08/17/heres-neo-plans-top-ethereum-bitcoin/&sa=D&ust=1510266235702000&usg=AFQjCNH3cyITIkBP2gT1qK15WwW4X18vWQ">https://thenextweb.com/contributors/2017/08/17/heres-neo-plans-top-ethereum-bitcoin/</a><br>
+        [7] Christopher Malmo, Ethereum Is Already Using a Small Country&rsquo;s Worth of Electricity (June 26, 2017)<a href="https://www.google.com/url?q=https://motherboard.vice.com/en_us/article/d3zn9a/ethereum-mining-transaction-electricity-consumption-bitcoin&sa=D&ust=1510266235703000&usg=AFQjCNH0QrLuvoOOBwJaGPiwTM5VVXllNA">https://motherboard.vice.com/en_us/article/d3zn9a/ethereum-mining-transaction-electricity-consumption-bitcoin</a><br>
+        [8] Haseeb Qureshi, A hacker stole $31M of Ether  (July 20, 2017) <a href="https://www.google.com/url?q=https://medium.freecodecamp.org/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce&sa=D&ust=1510266235703000&usg=AFQjCNF0jtCXpRFVLHxCha2XlNVy1GatNA">https://medium.freecodecamp.org/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce</a><br>
+        [9] Dr Garrick Hileman &amp; Michel Rauchs, Global Cryptocurrency Benchmarking Study, The Cambridge Centre for Alternative Finance (2017) <a href="https://www.google.com/url?q=https://www.jbs.cam.ac.uk/fileadmin/user_upload/research/centres/alternative-finance/downloads/2017-global-cryptocurrency-benchmarking-study.pdf&sa=D&ust=1510266235704000&usg=AFQjCNE3kblf0PLR9aMhV9Em1i6JSfXI4w">https://www.jbs.cam.ac.uk/fileadmin/user_upload/research/centres/alternative-finance/downloads/2017-global-cryptocurrency-benchmarking-study.pdf</a><br>
+        [10] Jamie Redman, Another All Time High – Bitcoin Breaks Through 5,000 USD on Asian Exchanges (September 2, 2017) <a href="https://www.google.com/url?q=https://news.bitcoin.com/bitcoin-hits-5000-usd-new-all-time-high/&sa=D&ust=1510266235704000&usg=AFQjCNGigzEFiHCQwd1Wif0L9Pc1eoknsw">https://news.bitcoin.com/bitcoin-hits-5000-usd-new-all-time-high/</a><br>
+        [11] Andrew Marshall, P2P Cryptocurrency Exchanges, Explained (APR 07, 2017)<br>
+        <a href="https://www.google.com/url?q=https://cointelegraph.com/explained/p2p-cryptocurrency-exchanges-explained&sa=D&ust=1510266235704000&usg=AFQjCNE004dy19MpdLnZQALzoUUm-PhjvQ">https://cointelegraph.com/explained/p2p-cryptocurrency-exchanges-explained</a><br>
+        [12] Peter Todd, The ripple protocol consensus algorithm Review. Ripple Labs Inc White Paper (May, 2015) <a href="https://www.google.com/url?q=https://raw.githubusercontent.com/petertodd/ripple-consensus-analysis-paper/master/paper.pdf&sa=D&ust=1510266235705000&usg=AFQjCNE2uJFFxXkNNphPnrHWynZ4K1QRiw">https://raw.githubusercontent.com/petertodd/ripple-consensus-analysis-paper/master/paper.pdf</a><br>
+        [13] Shapeshift Reviews <a href="https://www.google.com/url?q=http://bittrust.org/shapeshift&sa=D&ust=1510266235705000&usg=AFQjCNGC7EMEjw81J6g8mRD98kB5rqNyaQ">http://bittrust.org/shapeshift</a><br>
+        [14] Loopring Project Ltd., LOOPRING Decentralized Token Exchange Protocol (Sept 26, 2017) <a href="https://www.google.com/url?q=https://github.com/Loopring/whitepaper/raw/master/en_whitepaper.pdf&sa=D&ust=1510266235705000&usg=AFQjCNH4_RUu_NP7evkF3QP5iqtOiLzjtg">https://github.com/Loopring/whitepaper/raw/master/en_whitepaper.pdf</a><br>
+        [15] Fabian Schuh and Daniel Larimer. Bitshares 2.0: Financial smart contract platform (Nov 12, 2015)<br>
+        <a href="https://www.google.com/url?q=http://docs.bitshares.org/_downloads/bitshares-financial-platform.pdf&sa=D&ust=1510266235706000&usg=AFQjCNE5b9MKIyTL7pJxaX15FYfKSkwehA">http://docs.bitshares.org/_downloads/bitshares-financial-platform.pdf</a><br>
+        [16] Fabian Schuh and Daniel Larimer. Bitshares 2.0: General overview (2015)<br>
+        <a href="https://www.google.com/url?q=http://docs.bitshares.org/_downloads/bitshares-general.pdf&sa=D&ust=1510266235706000&usg=AFQjCNFknVE6YOcPcJfmlf6eJso5GAE8Bw">http://docs.bitshares.org/_downloads/bitshares-general.pdf</a><br>
+        [17] Open ledger (2017)
+         <a href="https://www.google.com/url?q=https://openledger.io/&sa=D&ust=1510266235706000&usg=AFQjCNGyEJMyuGJRR974G9ZmG8NgZ9sZTQ">https://openledger.io/</a><br>
+        [18] Eyal Hertzog, Guy Benartzi &amp; Galia Benartzi, Bancor Protocol Continuous Liquidity and Asynchronous Price Discovery for Tokens through their Smart Contracts; aka &ldquo;Smart Tokens&rdquo; <br>
+        (March 30, 2017) <a href="https://www.google.com/url?q=https://www.bancor.network/static/bancor_protocol_whitepaper_en.pdf&sa=D&ust=1510266235707000&usg=AFQjCNGWIFYigBoN0wtC83KrRZAv2HVs_g">https://www.bancor.network/static/bancor_protocol_whitepaper_en.pdf</a><br>
+        [19] Amir Bandeali. Introducing 0x -An Open Protocol For Decentralized Exchange On The Ethereum Blockchain (February 22, 2017) <a href="https://www.google.com/url?q=https://blog.0xproject.com/introducing-0x-d51d5231ba53&sa=D&ust=1510266235707000&usg=AFQjCNGA5IWANa8C8-MXRBuVbCj3SOqI8A">https://blog.0xproject.com/introducing-0x-d51d5231ba53</a><br>
+        [20] Binance GAS(was Antcoin), (July 2017) <a href="https://www.google.com/url?q=https://binance.zendesk.com/hc/en-us/articles/115000967291-GAS-was-Antcoin-&sa=D&ust=1510266235708000&usg=AFQjCNEYG2p0zRHwUZ_7a65UMFvbHyVOgQ">https://binance.zendesk.com/hc/en-us/articles/115000967291-GAS-was-Antcoin-</a> <br>
+      </div>
+      <h2>7. Appendix</h2>
+      Aphelion DApp Pseudo-Code Algorithm <br>
+      Parties<br>
+      <code> •        {COIN_A} holder<br>
+      •        {COIN_B} holder<br>
+      </code> Process<br>
+      <code> •        The 'superconducting transaction' (also 'on-chain atomic swap') proceeds through two transactions, one on the {COIN_A} blockchain, the other on the {COIN_B} blockchain.<br>
+      ◦        [1]:{COIN_A} holder has an unspent amount, A, of {COIN_A} in an address recorded in a transaction on the {COIN_A} blockchain. <br>
+      {COIN_A} holder will pay this unspent amount into a {COIN_A} address controlled by {COIN_B} holder through a transaction on the {COIN_A} blockchain.<br>
+      ◦        [2]:{COIN_B} holder has an unspent amount, B, of {COIN_B} in an address recorded in a transaction on the {COIN_B} blockchain. <br>
+      {COIN_B} holder will pay this unspent amount into a {COIN_B} address controlled by {COIN_A} holder through a transaction on the {COIN_B} blockchain.<br>
+      </code> Steps<br>
+      <code> ◦        {COIN_A} holder 'initiates'.<br>
+      ▪        Obtains following information from {COIN_B} holder:<br>
+      •        {COIN_B} holder's address on {COIN_A} blockchain, into which {COIN_A} payment will be made.<br>
+      ▪        Creates and publishes contract transaction on {COIN_A} blockchain, with a locktime set by the seller sometime in the future (user set expiry date/time).<br>
+      ▪        This step returns the secret, the secret hash, the contract script, the contract transaction, and a refund transaction that can be sent after (user set expiry date/time) if necessary.<br>
+      <br>
+      ◦        {COIN_B} holder 'audits contract'.<br>
+      ▪        Obtains following information from {COIN_A} holder:<br>
+      •        Swap-script, the output script that may be redeemed on the {COIN_A} blockchain by one of two signature scripts.<br>
+      •        Trans, superconducting transaction for {COIN_A} blockchain.<br>
+      ▪        Inspects {COIN_A} blockchain superconducting transaction contract script to review addresses that may claim the output, the locktime, and the secret hash. Also validates that contract transaction pays to the contract and reports the contract output amount.<br>
+      <br>
+      ◦        {COIN_B} holder 'participates'.<br>
+      ▪        Obtains following information from {COIN_A} holder:<br>
+      •        {COIN_A} holder's address on {COIN_B} blockchain, into which {COIN_B} payment will be made.<br>
+      •        Secret-hash, the hash of the secret key for the {COIN_A} blockchain contract transaction.<br>
+      ▪        Creates and publishes contract transaction on {COIN_B} blockchain, incorporating also the secret hash from the {COIN_A} blockchain contract transaction 'initiated', above, and with a locktime of (user set expiry date/time).<br>
+      ▪        This step returns the the contract script, the contract transaction, and a refund transaction that can be sent after (user set expiry date/time) if necessary.<br>
+      <br>
+      ◦        {COIN_A} holder 'audits contract'.<br>
+      ▪        Obtains following information from {COIN_B} holder:<br>
+      •        Swap-script, the output script that may be redeemed on the {COIN_B} blockchain by one of two signature scripts.<br>
+      •        Trans, superconducting transaction for {COIN_B} blockchain.<br>
+      ▪        Inspects {COIN_B} blockchain superconducting transaction contract script to review addresses that may claim the output, the locktime, and the secret hash. Also validates that contract transaction pays to the contract and reports the contract output amount.<br>
+      <br>
+      ◦        {COIN_A} holder 'redeems'.<br>
+      ▪        Will already have obtained (see prior step) the following information from {COIN_B} holder:<br>
+      •        Swap-script, the output script that may be redeemed on the {COIN_B} blockchain by either of two signature scripts.<br>
+      •        Trans, the superconducting transaction for the {COIN_B} blockchain.<br>
+      ▪        Redeems {COIN_B} coins paid into the contract in {COIN_B} blockchain by {COIN_B} holder. Redeeming requires the secret, known only to the {COIN_A} holder up to this point.<br>
+      <br>
+      ◦        {COIN_B} holder 'extracts secret'.<br>
+      ▪        Extracts secret from {COIN_A} holder's redemption transaction. With the secret known, the {COIN_B} holder may claim the {COIN_A} coins paid into the contract in the {COIN_A} blockchain by {COIN_A} holder.<br>
+      <br>
+      ◦        {COIN_B} holder 'redeems'.<br>
+      ▪        Will already have obtained (see 'audit contract' step) the following information from {COIN_A} holder:<br>
+      •        Swap-script, the output script that may be redeemed on the {COIN_A} blockchain by either of two signature scripts.<br>
+      •        Trans, the superconducting transaction for the {COIN_A} blockchain.<br>
+      ▪        Redeems {COIN_A} coins paid into the contract in {COIN_A} blockchain by {COIN_A} holder. </code> <br>
+      <br>
+      <br>
+      <code> Refunds<br>
+      ◦        If a period of time equal to the time-lock (i.e. (user set expiry date/time), in the case of the {COIN_A} blockchain superconducting transaction, and (user set expiry date/time), in the {COIN_B} case) expires after the transaction has been mined but has not been redeemed, the contract output can be redeemed back to the holder's wallet.<br>
+      </code><br>
+      <strong>Pseudo-code</strong><br>
+      <code> 'initiate', by {COIN_A} holder<br>
+      {COIN_A} holder runs:<br>
+      $ 'initiate', with parameters<br>
+      –        [{COIN_A} blockchain, i.e. the blockchain on which {COIN_A} holder's payment will be made]<br>
+      –        [string representing {COIN_B} holder's address on {COIN_A} blockchain, into which {COIN_A} payment will be made]<br>
+      –        [string representing A, amount of {COIN_A} to be paid to this address]<br>
+      {<br>
+      Decode parameter [string representing {COIN_B} holder's address on {COIN_A} blockchain, into which {COIN_A} payment will be made]. If it conforms with a valid address for the {COIN_A} blockchain, return this address, their-address.<br>
+      Decode [string representing A, amount of {COIN_A} to be paid to this address]. If it conforms to a valid double-precision floating-point number (i.e. binary64), and is not NaN or +/- infinity, return this number, amount.<br>
+      Open JSON-RPC connection with the {COIN_A} blockchain.<br>
+      Generate [secret], a new secret key for the {COIN_A} blockchain.<br>
+      Calculate [secret-hash], the hash of [secret]. <br>
+      Calculate [lock-time], a locktime (user set expiry date/time) from current time.<br>
+      Calculate [refund-address], a {COIN_A} address for the refund transaction.<br>
+      <br>
+      Build the superconducting contract on the {COIN_A} blockchain, with parameters:<br>
+      –        [their-address]<br>
+      –        [lock-time]<br>
+      –        [secret-hash]<br>
+      –        [refund-address]<br>
+      Return [swap-script], the output script that may be redeemed on the {COIN_A} blockchain by one of two signature scripts:<br>
+      –        [{COIN_B} holder's sig] [{COIN_B} holder's pub key] [{COIN_A} holder's secret], or<br>
+      –        [{COIN_A} holder's sig] [{COIN_A} holder's pub key]<br>
+      Calculate [swap-address-script-hash], a new address script hash of [swap-script]. <br>
+      Calculate [tx-script], a new script to pay the transaction output to [swap-address-script-hash].<br>
+      Calculate [fee], the fees associated with the transaction. <br>
+      Calculate [trans], superconducting transaction for {COIN_A} blockchain, with parameters:<br>
+      –        [A, amount]<br>
+      –        [tx-script]<br>
+      –        [refund-address]<br>
+      –        [fee]<br>
+      –        [lock-time] <br>
+      Sign [trans].<br>
+      Calculate:<br>
+      –        [refund trans], the refund transaction<br>
+      –        [refund fee], the fee associated with the refund transaction.<br>
+      <br>
+      Return and Display:<br>
+      –        [secret]<br>
+      –        [secret-hash]<br>
+      –        [swap-script]<br>
+      –        [trans]<br>
+      –        [refund-trans]<br>
+      –        [lock-time]<br>
+      Publish transaction.<br>
+      }<br>
+      <br>
+      'audit contract', by {COIN_B} holder<br>
+      {COIN_B} holder runs:<br>
+      $ 'auditcontract', with parameters<br>
+      –        [{COIN_B} blockchain, i.e. the blockchain on which {COIN_B} holder's payment will be made]<br>
+      –        [string representing swap-script, output script that may be redeemed on the {COIN_A} blockchain by one of two signature scripts]<br>
+      –        [string<br>
+      representing trans, superconducting transaction for {COIN_A} blockchain]<br>
+      {<br>
+      Decode parameter [string representing swap-script, output script that may be redeemed on the {COIN_A} blockchain by one of two signature scripts]. If it conforms to a valid hexadecimal string of the right length, return the bytes, swap-script.<br>
+      Decode parameter [string representing trans, superconducting transaction for {COIN_A} blockchain]. If it conforms to a valid hexadecimal string of the right length, return the bytes, swap-script.<br>
+      <br>
+      Open JSON-RPC connection with the {COIN_A} blockchain.<br>
+      <br>
+      <br>
+      Calculate superconducting transaction data pushes, with parameters:<br>
+      –        [swap-script], the output script that may be redeemed on the {COIN_B} blockchain by either of two signature scripts<br>
+      Return<br>
+      –        [address], {COIN_B} holder's address on {COIN_A} blockchain, into which {COIN_A} payment will be made<br>
+      –        [secret-hash], the hash of the secret key for the {COIN_A} blockchain contract transaction<br>
+      –        [lock-time]<br>
+      Calculate pay to address, with parameters:<br>
+      - [trans], the superconducting transaction for
+      the {COIN_A} blockchain<br>
+      <br>
+      <strong>Return</strong><br>
+      –        [PubKeyTx], address on {COIN_A} blockchain into which {COIN_A} holder will make payment<br>
+      <br>
+      Display<br>
+      –        [swap-script-hash], address on {COIN_A} blockchain of superconducting contract<br>
+      –        [amount], value of {COIN_A} to be paid into {COIN_B} holder's address on {COIN_A} blockchain<br>
+      –        [address], {COIN_B} holder's address on {COIN_A} blockchain, into which {COIN_A} will be paid<br>
+      –        [refund-address], {COIN_A} holder's address on {COIN_A} blockchain for payment of refund of {COIN_A}<br>
+      –        [lock-time]<br>
+      }<br>
+      <br>
+      <br>
+      <strong>'participate', by {COIN_B} holder</strong><br>
+      <strong>{COIN_B} holder runs:</strong><br>
+      $ 'participate', with parameters<br>
+      –        [{COIN_B} blockchain, i.e. the blockchain on which {COIN_B} holder's payment will be made]<br>
+      –        [string representing {COIN_A} holder's address on {COIN_B} blockchain, into which {COIN_B} payment will be made]<br>
+      –        [string representing B, amount of {COIN_B} to be paid to this address]<br>
+      –        [string representing secret-hash, the hash of the secret key for the {COIN_A} blockchain contract transaction]<br>
+      {<br>
+      Decode parameter [string representing {COIN_A} holder's address on {COIN_B} blockchain, into which {COIN_B} payment will be made] . If it conforms with a valid address for the {COIN_B} blockchain, return this address, their-address.<br>
+      Decode [string representing B, amount of {COIN_B} to be paid to this address]. If it conforms to a valid double-precision floating-point number (i.e. binary64), and is not NaN or +/- infinity, return this number, amount. <br>
+      Decode [string representing secret-hash, the hash of the new secret key for the {COIN_A} blockchain contract transaction]. If it conforms to a valid hexadecimal string of the right length, return the bytes, their-secret-hash.<br>
+      Open JSON-RPC connection with the {COIN_B} blockchain.<br>
+      Calculate [lock-time], a locktime (user set expiry date/time) from current time.<br>
+      Calculate [refund-address], a {COIN_B} address for the refund transaction.<br>
+      Build the superconducting contract on the {COIN_B} blockchain, with parameters:<br>
+      –        [their-address]<br>
+      –        [lock-time]<br>
+      –        [their-secret-hash]<br>
+      –        [refund-address]<br>
+      Return [swap-script], the output script that may be redeemed on the {COIN_B} blockchain by one of two signature scripts:<br>
+      –        [{COIN_A} holder's sig] [{COIN_A} holder's pub key] [{COIN_A} holder's secret], or<br>
+      –        [{COIN_B} holder's sig] [{COIN_B} holder's pub key]<br>
+      Calculate [swap-address-script-hash], a new address script hash of [swap-script].<br>
+      Calculate [tx-script], a new script to pay the transaction output to [swap-address-script-hash].<br>
+      Calculate [fee], the fees associated with the transaction.<br>
+      Calculate [trans], superconducting transaction for {COIN_B} blockchain, with parameters:<br>
+      –        [B, amount]<br>
+      –        [tx-script]<br>
+      –        [refund-address]<br>
+      –        [fee]<br>
+      –        [lock-time]<br>
+      Sign [trans].<br>
+      <br>
+      <strong> Calculate:</strong> –        [refund trans], the refund transaction<br>
+      –        [refund fee], the fee associated with the refund transaction.<br>
+      <br>
+      <strong>Return and Display:</strong><br>
+      –        [secret]<br>
+      –        [secret-hash]<br>
+      –        [swap-script]<br>
+      –        [trans]<br>
+      –        [refund-trans]<br>
+      –        [lock-time]<br>
+      <br>
+      Publish transaction.<br>
+      }<br>
+      <br>
+      <strong>'audit contract', by {COIN_A} holder</strong><br>
+      {COIN_A} holder runs:<br>
+      $ 'auditcontract', with parameters<br>
+      –        [{COIN_B} blockchain, i.e. the blockchain on which {COIN_B} holder's payment will be made]<br>
+      –        [string representing swap-script, output script that may be redeemed on the {COIN_B} blockchain by one of two signature scripts]<br>
+      –        [string representing trans, superconducting transaction for {COIN_B} blockchain]<br>
+      {<br>
+      Decode parameter [string representing swap-script, output script that may be redeemed on the {COIN_B} blockchain by one of two signature scripts]. If it conforms to a valid hexadecimal string of the right length, return the bytes, swap-script.<br>
+      Decode parameter [string representing trans, superconducting transaction for {COIN_B} blockchain]. If it conforms to a valid hexadecimal string of the right length, return the bytes, swap-script.<br>
+      Open JSON-RPC connection with the {COIN_B} blockchain.<br>
+      Calculate superconducting transaction data pushes, with parameters:<br>
+      –        [swap-script],  the output script that may be redeemed on the {COIN_B} blockchain by either of two signature scripts<br>
+      <br>
+      <strong>Return</strong><br>
+      –        [address],   {COIN_A} holder's address on {COIN_B} blockchain, into which {COIN_B} payment will be made<br>
+      –        [secret-hash], the hash of the secret key for the {COIN_B} blockchain contract transaction<br>
+      –        [lock-time]<br>
+      <br>
+      Calculate pay to address, with parameters:<br>
+      - [trans],  the superconducting transaction for the {COIN_B} blockchain<br>
+      Return<br>
+      –        [PubKeyTy], address on {COIN_B} blockchain into which {COIN_B} holder will make payment<br>
+      <br>
+      Display<br>
+      –        [swap-script], address on {COIN_B} blockchain of superconducting contract<br>
+      –        [amount], value of {COIN_B} to be paid into {COIN_A} holder's address on {COIN_B} blockchain<br>
+      –        [address], {COIN_A} holder's address on {COIN_B} blockchain, into which {COIN_B} will be paid<br>
+      –        [refund-address], {COIN_B} holder's address on {COIN_B} blockchain for payment of refund of {COIN_B}<br>
+      –        [lock-time]<br>
+      }<br>
+      <br>
+      <strong>'redeem', by {COIN_A} holder</strong><br>
+      {COIN_A} holder runs:<br>
+      $ 'redeem', with parameters<br>
+      –        [{COIN_B} blockchain, i.e. the blockchain on which {COIN_B} holder's payment will be made]<br>
+      –        [string representing  swap-script, the output script that may be redeemed on the {COIN_B} blockchain by either of two signature scripts:<br>
+      –        [{COIN_A} holder's sig] [{COIN_A} holder's pub key] [{COIN_A} holder's secret], or<br>
+      –        [{COIN_B} holder's sig] [{COIN_B} holder's pub key]]<br>
+      –        [string representing  trans, the superconducting transaction for the {COIN_B} blockchain]<br>
+      –        [string representing  secret, the secret key for the {COIN_A} blockchain]<br>
+      {<br>
+      Decode parameter [string representing  swap-script, the output script that may be redeemed on the {COIN_B} blockchain by either of two signature scripts]. If it conforms to a valid hexadecimal string of the right length, return the bytes, swap-script.<br>
+      Decode [string representing  trans, the superconducting transaction for the {COIN_B} blockchain]. If it conforms to a valid hexadecimal string of the right length, return the bytes, trans.<br>
+      Decode [string representing  secret, the secret key for the {COIN_A} blockchain]. If it conforms to a valid hexadecimal string of the right length, return the bytes, secret.<br>
+      Open JSON-RPC connection with the {COIN_B} blockchain.<br>
+      <strong>Calculate superconducting transaction data pushes, with parameters:</strong><br>
+      –        [swap-script],  the output script that may be redeemed on the {COIN_B} blockchain by either of two signature scripts<br>
+      <br>
+      <br>
+      <strong>Return</strong><br>
+      –        [address],   {COIN_A} holder's address on {COIN_B} blockchain, into which {COIN_B} payment will be made<br>
+      –        [secret-hash], the hash of the secret key for the {COIN_A} blockchain contract transaction<br>
+      Calculate pay to address, with parameters:<br>
+      - [trans],  the superconducting transaction for the {COIN_B} blockchain<br>
+      <br>
+      <strong>Return</strong><br>
+      –        [PubKeyTy], address on {COIN_B} blockchain into which {COIN_B} holder will make payment<br>
+      Verify [address] and [PubKeyTy] are equal.<br>
+      Calculate [pay-script], script to pay a transaction output to [PubKeyTy]. <br>
+      Create [redeemTx], redeem transaction.<br>
+      Sign [redeemTx].<br>
+      Publish [redeemTx]<br>
+      } <br>
+      <br>
+      <strong>'extract secret', by {COIN_B} holder</strong><br>
+      <strong>{COIN_B} holder runs:</strong><br>
+      $ 'extractsecret', with parameters:<br>
+      –        [string representing redeemTx, the redeem transaction published by {COIN_A} holder on the {COIN_B} blockchain]<br>
+      –        [string representing secret-hash, the hash of the secret key for the {COIN_A} blockchain contract transaction]<br>
+      { <br>
+      Decode [string representing redeemTx, the redeem transaction published by {COIN_A} holder on the {COIN_B} blockchain]. If it conforms to a valid hexadecimal string of the right length, return the bytes,  redeemTx.<br>
+      Decode [string representing secret-hash, the hash of the new secret key for the {COIN_A} blockchain contract transaction]. If it conforms to a valid hexadecimal string of the right length, return the bytes,  their-secret-hash.<br>
+      Open JSON-RPC connection with the {COIN_B} blockchain.<br>
+      Loop over all pushed data, searching for one that hashes to the expected hash. Return [secret].<br>
+      Display [secret].<br>
+      }<br>
+      <br>
+      <strong>'redeem', by {COIN_B} holder<br>
+      {COIN_B} holder runs:</strong><br>
+      $ 'redeem', with parameters<br>
+      –        [{COIN_A} blockchain, i.e. the blockchain on which {COIN_A} holder's payment will be made]<br>
+      –        [string representing  swap-script, the output script that may be redeemed on the {COIN_A} blockchain by either of two signature scripts:<br>
+      –        [{COIN_B} holder's sig] [{COIN_B} holder's pub key] [{COIN_A} holder's secret], or<br>
+      –        [{COIN_A} holder's sig] [{COIN_A} holder's pub key]]<br>
+      –        [string representing  trans, the superconducting transaction for the {COIN_Aa} blockchain]<br>
+      –        [string representing  secret, the secret key for the {COIN_A} blockchain]<br>
+      {<br>
+      Decode parameter [string representing  swap-script, the output script that may be redeemed on the {COIN_A} blockchain by either of two signature scripts]. If it conforms to a valid hexadecimal string of the right length, return the bytes, swap-script.<br>
+      Decode [string representing  trans, the superconducting transaction for the {COIN_A} blockchain]. If it conforms to a valid hexadecimal string of the right length, return the bytes, trans.<br>
+      Decode [string representing  secret, the secret key for the {COIN_A} blockchain]. If it conforms to a valid hexadecimal string of the right length, return the bytes, secret.<br>
+      Open JSON-RPC connection with the {COIN_A} blockchain.<br>
+      <strong>Calculate superconducting transaction data pushes, with parameters:</strong><br>
+      –        [swap-script],  the output script that may be redeemed on the {COIN_A} blockchain by either of two signature scripts<br>
+      <br>
+      <strong>Return</strong><br>
+      –        [address],   {COIN_B} holder's address on {COIN_A} blockchain, into which {COIN_A} payment will be made<br>
+      –        [secret-hash], the hash of the secret key for the {COIN_A} blockchain contract transaction<br>
+      Calculate pay to address, with parameters:<br>
+      - [trans],  the superconducting transaction for the {COIN_A} blockchain <br>
+      <br>
+      <strong>Return</strong><br>
+      –        [PubKeyTy], address on {COIN_A} blockchain into which {COIN_A} holder will make payment <br>
+      Verify [address] and [PubKeyTy] are equal.<br>
+      Calculate [pay-script], script to pay a transaction output to [PubKeyTy].<br>
+      Create [redeemTx], redeem transaction.<br>
+      Sign [redeemTx].<br>
+      Publish [redeemTx]<br>
+      }<br>
+      <br>
+      <strong>'refund', by either holder<br>
+      Either holder runs:</strong><br>
+      $ 'refund', with parameters<br>
+      –        [B, blockchain, i.e. the blockchain on which refund will be made]<br>
+      –        [string representing  swap-script, for the superconducting transaction to be refunded]<br>
+      –        [string representing  trans, the superconducting transaction to be refunded]<br>
+      {<br>
+      Decode [string representing  swap-script, for the superconducting transaction to be refunded]. If it conforms to a valid hexadecimal string of the right length, return the bytes,  redeemTx.<br>
+      Decode [string representing  swap-script, for the superconducting transaction to be refunded]. If it conforms to a valid hexadecimal string of the right length, return the bytes,  their-secret-hash.<br>
+      Open JSON-RPC connection with the blockchain, B.<br>
+      Calculate superconducting transaction data pushes, with parameters:<br>
+      –        [swap-script],  the output script that may be redeemed on the {COIN_A} blockchain by either of two signature scripts<br>
+      Return<br>
+      –        [amount], value to be refunded on blockchain, B<br>
+      –        [fees],  fees associated with the transaction<br>
+      –        [refund-address], the address on blockchain, B, into which refund will be made<br>
+      Calculate [pay-script], script to pay a transaction output to [refund-address].<br>
+      Create [refundTx], refund transaction.<br>
+      Sign [refundx].<br>
+      Publish [refundTx]<br>
+      }<br>
+      </code> </div>
+  </div>
+</div>
+</body>
+</html>

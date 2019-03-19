@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head style="color: transparent;">
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  <title>Blockchain scalability by blockchain clustering</title>
+	  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport">
+	  <meta property="og:title" content="Blockchain scalability by blockchain clustering">
+	  <meta property="og:description" content="Blockchains do not scale. But cluster of blockchains will. Lets use cluster of blockchains with Ethereum">
+	  <meta property="og:image" content="img/og-image.png">
+	  <meta name="description" content="Blockchains do not scale. But cluster of blockchains will. Lets use cluster of blockchains with Ethereum">
+	  <meta name="keywords" content="AfterEther,cryptocurrency,blockchain,ethereum,etc,eth,aet">
+	  <meta http-equiv="Cache-Control" content="no-cache">
+	  <meta http-equiv="Pragma" content="no-cache">
+	  <meta http-equiv="Expires" content="0">    
+	  <link rel="stylesheet" href="main.css"/>
+      <style>
+        .menu_opacity {
+            opacity: 1;
+        }
+      </style>
+  </head>
+ <body>
+	  <div id="menu" class="menu_opacity">
+		 <div id="logo_container">
+			 <div id="logo_elts">
+			   <a href="/index.html"><img id="simplelogo" alt="AfterEther logo" src="img/small-logo2.png"></a>
+			   <span id="simplelogo_txt">a new way to<br/>scale Ethereum</span>
+			 </div>
+		 </div>
+		 <div id="menu_opts">
+			<a href="https://www.facebook.com/AfterEther-1613635718659447/"><img class="reach_us" alt="Facebook" src="img/facebook-menuicon.png"></a>
+			<a href="https://twitter.com/afterether"><img class="reach_us" alt="Twitter" src="img/twitter-menuicon.png"></a>
+			<a href="mailto:contact@afterether.org"><img class="reach_us" alt="Email" src="img/email-menuicon.png"></a>
+			
+			 <div class="dd_menu">			   
+			   <img class="menuicon" alt="Menu" src="img/menuicon.png">			   
+		 	   <div class="dd_menu_items">
+			      <a class="dd_menu_item" href="/index.html">Main page</a>
+			      <!--<a class="dd_menu_item" href="/buy-invest.html">Buy/Invest</a>-->
+			      <a class="dd_menu_item" href="/mining.html">Mining</a>
+				  <a class="dd_menu_item" href="http://explorer.afterether.org">Block explorer</a>
+				  <!--<a class="dd_menu_item" href="#">Network stats</a>-->
+				  <a class="dd_menu_item" href="https://github.com/afterether/go-afterether/releases">Downloads</a>
+				  <a class="dd_menu_item" href="/wallet.html">Wallet</a>
+			   </div>
+			</div>
+		 </div>
+	  </div>
+
+<div class="content">
+<div class="scalability">
+<h3 clasds="scalability">BLOCKCHAIN SCALABILITY BY BLOCKCHAIN CLUSTERING</h3>
+
+8 Nov 2017. <br/> AfterEther Foundation.
+<h3>Summary:</h3>
+<h4>Blockchains do not scale, however, a cluster of blockchains will. Let's use a cluster of blockchains with Ethereum.</h4>
+
+<h3>The problem</h3>
+<p>
+Since its invention, blockchain technology was subjected to numerous tests, before it finally became adopted.
+With the adoption, however, came a new problem for Bitcoin, Ethereum and other high demand currencies.
+When large volumes of people began to use cryptocurrencies in their daily life, and build businesses on top of them, transaction fees during peak hours skyrocketed.
+For instance, an investor in the BAT ICO <a rel=nofollow href="https://www.cryptocoinsnews.com/ethereum-struggling-scaling-despite-lack-actual-user-base">included a $2,220 transaction fee in order to secure his investment in a project</a>. <br/>
+This is a very serious problem. If we don't find the solution to blockchain scaling, cryptocurrencies will not be able to replace fiat money.
+</p>
+<p>In Ethereum , solving the scalability problem has been proposed in many different ways:
+<ul>
+<li>Increase gas limit</li>
+<li>Proof of Stake</li>
+<li>Sharding</li>
+<li>Plasma, etc...</li>
+</ul>
+</p>
+ 
+ <p>
+    However, all these proposals either delay of the inevitable congestion, or are a work in progress. By the time these proposals are functioning enough to solve the problem,
+    our businesses (based entirely on cryptocurrencies) are going to be contained by the transaction limits
+    of the current Ethereum's network. Obviously, we don't want this.
+ </p>
+ 
+ <p>
+    Here, we are going to explain how Ethereum can be scaled to true infinity, with minimal effort. But, first,  let's  explain 
+    why blockchains do not scale, why the ideas to scale them, are not going to be as successful as the idea of the blockchain
+    itself. You will then understand, that the only way to go (at least for now), is the method we are proposing.
+ </p>
+ 
+  <p>
+    How does blockchain work?<br/> We have the ledger which is called <b>blockchain</b>, and in this ledger each page is a block. We also
+    have a lot of people (nodes), who are trying to gain permission to write transactions on the current page of the ledger.
+    According to the rules, one person (miner) is elected. This person obtains permission to feed
+    transactions into the blockchain, blockchain executes them, and rewards the miner with some coins.  
+ </p>
+  <p>
+    So, what is the problem with this process, and why can't it be scaled?
+    The problem is, that the algorithm  to create the chain of blocks requires that only one page of the ledger (block) is
+    written at a time. It doesn't matter how many nodes the network contains, 1 million or 10, only one can write.
+  </p>
+  <p>
+    Imagine a person, (Mr. Blockchain), sitting at desk writing transactions. Then, imagine a line of
+    one million people, wanting to make a transaction. This is what Ethereum's scalability problem looks like, in layman terms.
+    Now, Mr. Blockchain, is the only one who can write transactions, and distribute the money between
+    accounts. His position is permanent and he cannot be fired. If you dismiss Mr. Blockchain (i.e. replace it with
+    another technology), you risk losing your money, because the person who replaces him, is
+    not yet known as reliable.
+    </p>
+  <p>
+    Even if those millions of people make private agreements on how they are going to distribute their money
+    (i.e. Lightning network, Raiden or Plasma),
+    they will have to join the other people standing in line, to be attended by the Mr. Blokchain at some point in time. So,
+    no, you can't escape from Mr. Blockchain's monopoly, he is the only one who can touch our money, and he always works alone.
+    You can improve Mr. Blockhain's strength, give him superabilities to write more transactions per second, and you can
+    accelerate his work by fine tuning the process, but this won't be enough to
+    scale infinitely. Mr. Blockchain is already working at the speed of light, but even this is not enough to attend
+    everyone's request.
+    If you were able to create multiple Mr. Blockhchains to write ledger pages, then you would have scaled blockchain technology,
+    infinitely, but since each subsequent page depends upon the previous one, there is no way to speed it up.
+  </p>
+  <p>
+   In computing science, sometimes we use the term "bottleneck", to describe the problem, and this is how it
+   looks, graphically:
+   
+   <img style="margin: 1.5em" alt="blockhain algorithm bottleneck" src="img/blockchain-algorithm-bottleneck.png">
+   
+  </p>
+  <p>
+    The process of creating the blockchain is serial by design, and it can't be parallelized without
+    destroying the integrity of the system. 
+    This is why blockchains can't be scaled. Anyone, who is saying that he is going to create a scalable
+    blockchain algorithm is going to be severely judged if he doesn't deliver. Anyone who is saying that
+    he is going to scale blockchain by off-chain transfers, is taking on a big responsibility by experimenting
+    with user's money on an unknown and yet untested technology which, by the way, cannot call itself
+    <a rel=nofollow href="https://en.wikipedia.org/wiki/Blockchain"><u><b>blockchain</b></u></a> anymore.
+    
+  </p>
+  <p>
+    In this article, we are not going to enter the
+    debate about proposed solutions to scale Ethereum. We just wanted to point out, that scaling
+    blockchains is a huge problem, and it is not as easy as it appears. If you want to review 
+    how this debate is developing, check the <i>References</i> section at
+    the bottom of this article. Some of the authors have even posted mathematical proof, as to why scaling
+    transactions with and off-chain network won't work as a peer to peer network, but, this subject is outside of the scope of this article.
+  </p>
+  <div class=separator></div>
+  <h3>The solution</h3>
+  <p>
+    So, now that we know that blockchain's scalability is limited by the algorithm itself, how are we going to solve this problem?
+    The same way it was solved back in the 90s when desktop computers started spreading around the world.
+    Those computers were 16, 32, 100 Mhz in speed, and they were very slow, pretty much like Ethereum's Virtual Machine
+    right now. So, how did people at that time increase computing capacity? They invented <span class="hilited"> computer clustering</span>! 
+  </p>
+ <p>
+    The first cluster was built by employees of NASA, and  was called the <a rel=nofollow href="https://en.wikipedia.org/wiki/Beowulf_cluster">Beowulf Cluster</a>. They 
+    connected commodity-grade computers to a network, and provided software to execute tasks in parallel. This
+    idea evolved into something, that today we call HPC (High Performance Computing) and it is now being used to create supercomputers
+    , systems composed of many commercial grade computers connected together and executing different tasks, usually for scientific research.
+ </p>
+ <p>
+    So, how exactly will AfterEther solve the blockchain scalability problem by clustering?
+ </p>
+ <p>
+    This is how:<br/><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<b><u>We are going to run multiple networks of Ethereum</u></b>.
+ </p>
+ <p>
+    We're going to call this method, <span class="hilited">Blockchain Clustering</span>,
+    or <span class="hilited">Currency Clustering</span>, as an alternative non-technical term.
+  </p>
+  <p>
+     A peer to peer network working with a single blockchain will be called <span class="hilited">currency-node</span> in our cluster.<br/>
+     <br/>
+     <div class="scalability_img_container">
+        <img class="scalability" alt="scaling Ethereum networks" src="img/scaling_fig1.png">
+        <div class="scalability_title">Ethereum networks</div>
+     </div>
+  
+     <br/>
+Right now, the instance #1 of our currency has been already set up, it is called AfterEther (or AfterEther currency-node #1). As the network
+is not yet congested, no action is required. The current execution of transactions is fast. But, as soon as users begin to complain about transaction fees,
+we are going to launch a totally new blockchain, and it is going to be the currency-node AfterEther #2.
+
+
+ </p>
+ <p>
+     <div class="scalability_img_container">
+        <img class="scalability" alt="blockchain phases" src="img/scaling_fig2.png">
+       <div class="scalability_title">Blockhain phases</div>
+     </div>
+      
+Immediately after its creation , this blockchain (the #2) will have low usage, but as soon as
+miners begin to join the network, and start mining it, the chain will become computationally strong, and it will be possible
+to use it without any fear of attack. This is what we call the <i>preparation phase</i>.
+After preparation, exploitation of the blockchain will begin (<i>Operation phase</i>), and then we will gradually
+stop using it and migrate to another blockchain (<i>Migration phase</i>).
+<br/>
+<br/>
+    <div class="scalability_img_container">
+        <img class="scalability" alt="Blockchain price behavious" src="img/scaling_fig3.png"><br/>
+        <div class="scalability_title">Expected price behavior</div>
+    </div>
+    
+Price of the currency for this currency-node will also rise over time. When
+the node achieves its maximum usage, the rice of the currency will also reach its maximum. 
+Every blockchain is going to have a cycle of 3 years (TBD), and then it will be "shut down". 
+ </p>
+ <p>
+Why do we have to put <span class="hilited">end of life</span> on the blockchain? Because blockchains become larger and larger over time and
+thus, difficult for new peers to join. We will be discontinuing AfterEther #1
+and archiving it. Now, AfterEther #2 will be the current version of the currency, and it will be actively used to execute transactions.<br/>
+<br/>
+    <div class="scalability_img_container">
+        <img class="scalability" alt="Scaling by periodic blockchain creation" src="img/scaling_fig4.png"><br/>
+        <div class="scalability_title">Scaling by periodic blockchain creation</div>
+    </div>
+
+This is how contract futures work at the exchanges and it has been working for them long time. So, why
+can't we apply the same method for cryptocurrencies? Blockchains don't scale? Not a big deal. We will put a life
+time on a blockchain and create many instances of them in parallel. Problem solved. Now we can research blockchain
+scalability and conduct experiments on new technology, with peace of mind , knowing that our systems will be working tomorrow.
+ </p>
+ <p>
+To those who don't know how future contracts operate, we will explain. A crop of wheat is going to be produced
+in 2020, so the farmer goes to the Exchange and creates a contract to deliver 5,000 bushels of wheat.
+This contract is priced lower because the delivery is going to happen far into the future and nobody needs this wheat right now,
+low demand - low price.
+As the delivery date approaches the contract increases in price.
+ </p>
+ <p>Something similar is going to happen with our
+blockchains. The current blockchain will be priced at premium, future blockchains will have a lower value because simply there is not enough
+volume to drive the price higher. So, to migrate from one blockchain to another, you just sell the currency of
+the current blockchain, and buy the currency of the next blockchain. You don't even have to create
+a wallet, because the addresses are going to be the same. If you do this with anticipation, you
+will even profit from the rise of the currency before it becomes the active blockchain. 
+ </p>
+<p>
+    This mechanics
+is called <span class="hilited">contract rotation</span> , it is very well known and used at trading exchanges,
+so, we are not inventing anything new. Blockchains will work perfectly, handling
+them in a manner of a futures contract. And voila, we have just solved the problem of blockchain scalability
+without writing a single line of code!
+</p>
+ <p>
+    <div class="scalability_img_container">
+        <img alt="Multiple blockchains per cycle" src="img/scaling_fig5.png">
+        <div class="scalability_title"> Multiple blockchains per cycle</div>
+    </div>
+   <br/><br/>
+    Now, if one blockchain over a certain period of time wouldn't be enough to cover user demand, we could
+    launch multiple blockchains in one cycle, so there would be 2,3,4...  networks running in parallel,
+    If, each network delivers 6 transactions per second, 2 networks are going to deliver 12 transactions
+    per second and so on. To manage Visa volume of transactions, which is around 56,000 transactions per second
+    at peak hours (2,000 on average), we would need to set up 9,333 networks of Ethereum. Yes, it looks scary, but in supercomputing, clusters
+    with such volumes of nodes is normal. Such clusters can be created simply by putting online two Ethereum's networks, every
+    day during the next 13 years. It would be our maximum, and it looks realistic. 
+    <br/><br/>
+    As a DApp developer, you would install your smart contract on the currency-node that has the
+    lowest transaction rate. If the transaction capacity reaches its limit on that node, you would migrate 
+    to another node. Each node will have different price, so you would only have to adjust the value of your token and that's it.
+    If your DApp needs large amount of transactions you just use multiple clusters, and tell users to pick one of them to make the payment.
+    Think of AfterEther as a server hosting company, where each currency network would be your "server" to run DApps.
+    Picking the network with the lowest load average will be possible with dashboard software, like the ones used for monitoring.
+    <br/><br/>
+    And if you don't like the idea of having different prices per blockchain, we can create a single index for all the blockchains
+     by averaging the price, something similar to US Dollar Index, where it is measured as a
+     function of another 5 pairs. But, this is a discussion for a later date.
+
+</p>
+ <div class="separator"> </div>
+ <h3>Comments</h3>
+ <p>
+     At first, our solution appears to be patched. Having one currency for everybody seems to be the ideal way. But note that
+ clustering is a common technology in computing and it is now widely used. There is simply no hardware capable of
+ writing 56,000 transactions per second on a single node. When the problem can't be solved on a single
+ computer (and Ethereum is a computer, but virtual), it has to be distributed between many computers.
+ Dividing has been known as a successful strategy for ages, and it is not going to fail us.
+ </p>
+ <p>
+  In our opinion, inventing a scalable solution for a single blockchain is as impossible, as inventing a perpetual motion machine in the
+  17th century, which was confirmed by physicists later, as indeed impossible. It seems that for now, blockchain technology is in a similar situation. You can try
+ one algorithm after another, but after conducting your experiments, you will discover that it doesn't work.
+  The road to blockchain scalability through scaling a single blockchain is closed. Multiple parallel blockchains is the way to go.
+ It is simple, it is reliable, it is easy to implement, it is just the pill that we have to swallow right now. 
+ </p>
+ <p>
+     Then, why wasn't  our solution implemented earlier if it is so easy to do? Because of inflation. By splitting  Ethereum,  into 2 networks,
+ you will lose the value on the first blockchain, and its currency would depreciate. On the other (new) blockchain, it would
+ start appreciating. It is like you instantly apply a 100% inflation. People would sell Ethers off the first network,
+ and buy Ethers on the second network expecting to make profits on the rise in price. Nobody wants to lose
+ money, so this solution is a no-no for a currency that already has high valuation. But for us, it is not an issue.
+ We are a (yet) unknown project, that was born two weeks ago, and we have nothing to lose. Instead, we have
+ a lot to win when Ethereum's users start seeking cheaper transaction fees. This is why neither Bitcoin nor Ethereum are going to use this strategy to scale their chains.</br>
+ But you should not see our project as a threat to Ethereum's price trend. Because it has already limited itself by
+ the scalability problem. How can the price go higher if there is no room to grow? You would probably see a price increase
+ (if any) on the linear scale, but not on the logarithmical.
+ 
+ </p>
+ <p>
+    Now, just for clarity. We are not saying that we are going to create copies of Ethereum, one after another,
+    and flood the market with cheap copies of an Ether-like currency. We have a commitment right now,
+to grow our first network until it is widely accepted and reaches considerable transaction level.
+If no transaction bottleneck exists, neither are we interested in devaluing our network #1 by creating network #2.
+But, eventually network #1 will become congested, and we will have
+to create a network for the cycle 2. Whether you like it or not,  there is no other way to scale right now.
+ </p>
+ <p>
+    Another important point, about speculative money, which can flow into our nodes of networks of Ethereum copies.
+    
+ The presence of speculators is not a bad sign for currency, but a good one. It shows that the currency
+ is valuable and that it has potential for appreciation. The speculators also add liquidity to  financial
+ instruments. Thanks to speculators, you can sell or buy the instrument at any time and you don't have to pay
+ large spreads. The speculators also add stability to the price, by reducing volatility. When the price of the
+ instrument drops, they buy dips, when the price rises, they sell and the price falls. The speculators, sort of,
+ smooth the curve of fluctuation of the currency in times of low or high demand. Speculative money
+ is healthy for any financial instrument, and it is always welcomed in financial markets.
+ </p>
+ <p>This is why we believe that speculative money is not going to do harm to our network-nodes, on the contrary,
+ it is a big help. This
+ money will prepare the blockchain in the beginning, making it computationally stronger , rise the price and
+ this way, make the network ready to be used by users.
+ </p>
+ 
+<p>
+    This is basically all about our strategy to scale Ethereum in the future. 
+    While all the proposals to do this are only promises on paper, our solution is real ,  it has been already implemented
+ and can be used right now!
+ 
+</p>
+ <p>
+    Thank you for taking the time to read, and have a nice day!
+ </p> 
+
+<h4> References:</h4>
+<ul>
+    <li><a rel=nofollow href="https://blockgeeks.com/guides/blockchain-scalability/">https://blockgeeks.com/guides/blockchain-scalability/</a></li>
+    <li><a rel=nofollow href="https://medium.com/@jonaldfyookball/mathematical-proof-that-the-lightning-network-cannot-be-a-decentralized-bitcoin-scaling-solution-1b8147650800">https://medium.com/@jonaldfyookball/mathematical-proof-that-the-lightning-network-cannot-be-a-decentralized-bitcoin-scaling-solution-1b8147650800</a></li>
+    <li><a rel=nofollow href="https://medium.com/@FEhrsam/scaling-ethereum-to-billions-of-users-f37d9f487db1">https://medium.com/@FEhrsam/scaling-ethereum-to-billions-of-users-f37d9f487db1</a></li>
+    <li><a rel=nofollow href="https://www.reddit.com/r/ethereum/comments/5ydyzd/is_it_possible_that_ethereum_can_have_the_same/">https://www.reddit.com/r/ethereum/comments/5ydyzd/is_it_possible_that_ethereum_can_have_the_same/</a></li>
+    <li><a rel=nofollow href="https://hackernoon.com/blockchains-dont-scale-not-today-at-least-but-there-s-hope-2cb43946551a">https://hackernoon.com/blockchains-dont-scale-not-today-at-least-but-there-s-hope-2cb43946551a</a></li>
+    <li><a rel=nofollow href="https://hackernoon.com/blockchains-are-hard-to-scale-ca7dc80e9d8">https://hackernoon.com/blockchains-are-hard-to-scale-ca7dc80e9d8</a></li>
+    <li><a rel=nofollow href="https://due.com/blog/can-the-blockchain-scale/">https://due.com/blog/can-the-blockchain-scale/</a></li>
+    <li><a rel=nofollow href="https://www.coindesk.com/28-billion-challenge-can-ethereum-scale-meet-demand/">https://www.coindesk.com/28-billion-challenge-can-ethereum-scale-meet-demand/</a></li>
+    <li><a rel=nofollow href="https://www.tik.ee.ethz.ch/file/74bc987e6ab4a8478c04950616612f69/main.pdf">https://www.tik.ee.ethz.ch/file/74bc987e6ab4a8478c04950616612f69/main.pdf</a></li>    
+    <li><a rel=nofollow href="https://en.wikipedia.org/wiki/Bitcoin_scalability_problem">https://en.wikipedia.org/wiki/Bitcoin_scalability_problem</a></li>
+    <li><a rel=nofollow href="https://www.reddit.com/r/Bitcoin/comments/6gteaf/smart_scaling_or_why_onchain_scaling_does_not/">https://www.reddit.com/r/Bitcoin/comments/6gteaf/smart_scaling_or_why_onchain_scaling_does_not/</a></li>
+    <li><a rel=nofollow href="https://www.oreilly.com/ideas/blockchain-scalability">https://www.oreilly.com/ideas/blockchain-scalability</a></li>
+    <li><a rel=nofollow href="https://news.ycombinator.com/item?id=14652273">https://news.ycombinator.com/item?id=14652273</a></li>
+    <li><a rel=nofollow href="http://www.nasdaq.com/article/media-blockchains-and-the-scaling-debate-cm828721">http://www.nasdaq.com/article/media-blockchains-and-the-scaling-debate-cm828721</a></li>
+    <li><a rel=nofollow href="https://www.reddit.com/r/btc/comments/54cv0h/preventing_doublespends_is_an_embarrassingly/">https://www.reddit.com/r/btc/comments/54cv0h/preventing_doublespends_is_an_embarrassingly/</a></li>
+    <li><a rel=nofollow href="http://www.nasdaq.com/article/media-blockchains-and-the-scaling-debate-cm828721">http://www.nasdaq.com/article/media-blockchains-and-the-scaling-debate-cm828721</a></li>
+    <li><a rel=nofollow href="https://steemit.com/blockchain/@moodleman/no-you-don-t-understand-the-blockchain-the-cap-theorem-limitation">https://steemit.com/blockchain/@moodleman/no-you-don-t-understand-the-blockchain-the-cap-theorem-limitation</a></li>
+    <li><a rel=nofollow href="https://www.gitbook.com/book/vugranam/cap-theorem-and-blockchain/details">https://www.gitbook.com/book/vugranam/cap-theorem-and-blockchain/details</a></li>       
+    <li><a rel=nofollow href="https://medium.com/@jonaldfyookball/continued-discussion-on-why-lightning-network-cannot-scale-883c17b2ef5b">https://medium.com/@jonaldfyookball/continued-discussion-on-why-lightning-network-cannot-scale-883c17b2ef5b</a></li>
+    <li><a rel=nofollow href="https://medium.com/@yobanjo/ethereum-wont-scale-like-you-ve-been-told-cae445bef539">https://medium.com/@yobanjo/ethereum-wont-scale-like-you-ve-been-told-cae445bef539</a></li>
+    <li><a rel=nofollow href="https://www.cryptocoinsnews.com/ethereum-struggling-scaling-despite-lack-actual-user-base/">https://www.cryptocoinsnews.com/ethereum-struggling-scaling-despite-lack-actual-user-base/</a></li>
+    <li><a rel=nofollow href="https://medium.com/@FEhrsam/scaling-ethereum-to-billions-of-users-f37d9f487db1">https://medium.com/@FEhrsam/scaling-ethereum-to-billions-of-users-f37d9f487db1</a></li>       
+    <li><a rel=nofollow href="https://www.reddit.com/r/ethereum/comments/48ajyf/to_hw_manny_transactions_can_etherum_scale_at/">https://www.reddit.com/r/ethereum/comments/48ajyf/to_how_manny_transactions_can_etherum_scale_at/</a></li>
+    <li><a rel=nofollow href="https://www.reddit.com/r/btc/comments/70mxyh/7_reasons_bitcoin_cash_is_superior_to_the/">https://www.reddit.com/r/btc/comments/70mxyh/7_reasons_bitcoin_cash_is_superior_to_the/</a></li>
+</ul>
+<br/>
+<br/>
+</div>
+</div>
+	
+
+	</body>
+</html>

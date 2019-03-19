@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+			
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.aicoin.io/xmlrpc.php" />
+
+		<!--[if lt IE 9]>
+	<script src="https://www.aicoin.io/wp-content/themes/Divi/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<title>WHITEPAPER - Ai-coin</title>
+<link rel="alternate" hreflang="en" href="https://www.aicoin.io/whitepaper/" />
+<link rel="alternate" hreflang="hi" href="https://www.aicoin.io/whitepaper/?lang=hi" />
+<link rel="alternate" hreflang="ru" href="https://www.aicoin.io/whitepaper/?lang=ru" />
+<link rel="alternate" hreflang="pt-pt" href="https://www.aicoin.io/papel-branco/?lang=pt-pt" />
+<link rel="alternate" hreflang="es" href="https://www.aicoin.io/whitepaper/?lang=es" />
+
+<!-- This site is optimized with the Yoast SEO plugin v6.1.1 - https://yoa.st/1yg?utm_content=6.1.1 -->
+<link rel="canonical" href="https://www.aicoin.io/whitepaper/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="WHITEPAPER - Ai-coin" />
+<meta property="og:url" content="https://www.aicoin.io/whitepaper/" />
+<meta property="og:site_name" content="Ai-coin" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="WHITEPAPER - Ai-coin" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.aicoin.io\/","name":"AICoin.io","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.aicoin.io\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.aicoin.io\/whitepaper\/","sameAs":[],"@id":"#organization","name":"AICoin","logo":""}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Ai-coin &raquo; Feed" href="https://www.aicoin.io/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ai-coin &raquo; Comments Feed" href="https://www.aicoin.io/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.aicoin.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="Divi v.3.0.45" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='display-medium-posts-css'  href='https://www.aicoin.io/wp-content/plugins/display-medium-posts/public/css/display-medium-posts-public.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ace-owl-carousel-css'  href='https://www.aicoin.io/wp-content/plugins/display-medium-posts/public/vendors/owl-carousel/owl.carousel.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ace-owl-theme-css'  href='https://www.aicoin.io/wp-content/plugins/display-medium-posts/public/vendors/owl-carousel/owl.theme.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='team-style-css'  href='https://www.aicoin.io/wp-content/plugins/team/assets/front/css/style.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='single-team-member-css'  href='https://www.aicoin.io/wp-content/plugins/team/assets/front/css/single-team-member.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='team-style.skins-css'  href='https://www.aicoin.io/wp-content/plugins/team/assets/global/css/style.skins.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='team-style.layout-css'  href='https://www.aicoin.io/wp-content/plugins/team/assets/global/css/style.layout.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='SFSImainCss-css'  href='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/css/sfsi-style.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='visualizer-handsontable-css'  href='https://www.aicoin.io/wp-content/plugins/visualizer-pro/vendor/handsontable/dist/handsontable.full.min.css?ver=1.7.21517343887' type='text/css' media='all' />
+<link rel='stylesheet' id='visualizer-magnific-css'  href='//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css?ver=1.7.21517343887' type='text/css' media='all' />
+<link rel='stylesheet' id='visualizer-pro-front-css'  href='https://www.aicoin.io/wp-content/plugins/visualizer-pro/inc/css/front.css?ver=1.7.21517343887' type='text/css' media='all' />
+<link rel='stylesheet' id='wpt-twitter-feed-css'  href='https://www.aicoin.io/wp-content/plugins/wp-to-twitter/css/twitter-feed.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-horizontal-list-0-css'  href='https://www.aicoin.io/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='et-gf-lato-css'  href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css'  href='https://www.aicoin.io/wp-content/themes/Divi/style.css?ver=3.0.45' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://www.aicoin.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-css-css'  href='https://www.aicoin.io/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes.css?ver=3.0.45' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://www.aicoin.io/wp-content/themes/Divi/includes/builder/styles/magnific_popup.css?ver=3.0.45' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.aicoin.io/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/display-medium-posts/public/vendors/owl-carousel/owl.carousel.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var team_ajax = {"team_ajaxurl":"https:\/\/www.aicoin.io\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/team/assets/front/js/scripts.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/team/assets/front/js/masonry.pkgd.min.js?ver=4.9.2'></script>
+<link rel='https://api.w.org/' href='https://www.aicoin.io/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.aicoin.io/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.aicoin.io/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.2" />
+<link rel='shortlink' href='https://www.aicoin.io/?p=48' />
+<link rel="alternate" type="application/json+oembed" href="https://www.aicoin.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.aicoin.io%2Fwhitepaper%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.aicoin.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.aicoin.io%2Fwhitepaper%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:3.7.1 stt:1,3,21,42,46,2;" />
+<meta name="specificfeeds-verification-code-R1Ftd01FL1N4T09mU1BqcFlYU2VuNnI5eXcrSWZZZUd5UjgzZkFUMjVMY3lxN2syRTE5UVp1RDhoNklXajU2Y1ZEVlNndTBiVVYwdk5OZFZQLy9JR0tXVjJyV0xqaTZqdnBVcjZzZmVSNVd3ZjJvbkdQR1pEYXB3V08rbnhGTWF8djZlcVFaaWVoNDQ5NS9PSlNqMWgvV3Nva0ZWN3NzRThObGxKbmdxRmh0Zz0=" content="EaJxdz2XQxszDcYwRG97"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />		<style id="theme-customizer-css">
+							body { color: #727272; }
+								h1, h2, h3, h4, h5, h6 { color: ; }
+								body { line-height: 1.8em; }
+																																	#top-menu li a { font-size: 12px; }
+			body.et_vertical_nav .container.et_search_form_container .et-search-form input { font-size: 12px !important; }
+		
+		
+																.bottom-nav, .bottom-nav a { font-size: 10px ; }										
+						h1, h2, h3, h4, h5, h6, .et_quote_content blockquote p, .et_pb_slide_description .et_pb_slide_title {
+										
+											line-height: 1.5em;
+									}
+		
+																														
+		@media only screen and ( min-width: 981px ) {
+																																																										.et-fixed-header #top-menu li a { font-size: 12px; }
+												
+					}
+					@media only screen and ( min-width: 1350px) {
+				.et_pb_row { padding: 27px 0; }
+				.et_pb_section { padding: 54px 0; }
+				.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper { padding-top: 81px; }
+				.et_pb_section.et_pb_section_first { padding-top: inherit; }
+				.et_pb_fullwidth_section { padding: 0; }
+			}
+		
+		@media only screen and ( max-width: 980px ) {
+																				}
+		@media only screen and ( max-width: 767px ) {
+														}
+	</style>
+
+	
+					<style class="et_heading_font">
+				h1, h2, h3, h4, h5, h6 {
+					font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;				}
+				</style>
+							<style class="et_body_font">
+				body, input, textarea, select {
+					font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;				}
+				</style>
+			
+	
+	<style id="module-customizer-css">
+			</style>
+
+			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css" id="wp-custom-css">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+.mobilelanguageswitcher{display:none;}
+.et_pb_section_video_bg{margin-top:-300px;}
+h1{
+color:#ff0000 !important;
+font-weight:bold !important;
+}
+
+.form-submit #submit{
+    width: auto !important;
+    margin-right: 35px;
+margin-left:0px !important;
+color:#fff !important;
+}
+.page-id-1947 div.wpcf7-mail-sent-ok{
+color:#000 !important;
+}
+.page-id-1947 div.wpcf7-response-output{
+margin:0px !important;
+padding:0px !Important; 
+}
+.page-id-1947 input[type=submit]{ margin-bottom:0px;}
+.page-id-1947 .wpcf7-form p{padding-bottom:0px;}
+.page-id-1947 span.wpcf7-not-valid-tip{clear:both;}
+.page-id-1947 #main-footer{padding:4px 0 !important;}
+.page-id-1947 .wpcf7-form-control-wrap  input,.page-id-1947 .wpcf7-form-control-wrap  textarea{
+padding:4px 8px !important;
+}
+
+.fp-viewing-secondPage #main-header #logo,.fp-viewing-3rdPage #main-header #logo,.fp-viewing-4thpage #main-header #logo,.fp-viewing-5thPage #main-header #logo{
+margin-top:-17px !important;
+}
+.topdownbutton{position:fixed;top:40%;right:1.5%;
+background-color: rgba(255, 255, 255, 0.8);
+background: rgba(255, 255, 255, 0.8);
+color: rgba(255, 255, 255, 0.8);
+}
+.topdownbutton img{
+width:40px;
+height:40px;
+
+display:block;
+}
+.movedownssection1{margin-top:15px;display:block;}
+.form-submit #submit:hover{
+    background: red;
+padding: 15px;
+}
+
+.fp-viewing-secondPage  #et-top-navigation,.fp-viewing-3rdPage #et-top-navigation,.fp-viewing-4thpage  #et-top-navigation,.fp-viewing-5thPage #et-top-navigation{padding-top:20px !important;}
+#footer-bottom{display:none !important;padding:0px !important;}
+#content-area{
+padding-top:40px;
+padding-bottom:125px;
+}
+.widget_search #searchsubmit{
+    width: 70px !important;
+}
+#Keypoints
+.et-fixed-header{background:#fff !important;}
+.page-id-1947 .et-fixed-header #top-menu li {
+    border-right: 1px solid #000 !important;
+}
+.page-id-1947 .et-fixed-header #top-menu li a{
+color:#000 !Important;
+}
+.page-id-1947 .et_pb_slider .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_title{font-size:46px !important;line-height:1.6em !important;}
+
+.page-id-83 .et_pb_column_0 {
+    padding-top: 0px !important;
+}
+#top-menu li{padding-right:0px;}
+.pbc-unit {width:70px !important;}
+.pbc-unit-content span{    line-height: 50px !Important;}
+.pbc-unit-content{    height: 50px !important;color:#000 !important;background:#fff !important;border-radius:15px !important;}
+#smallchart div > div{margin:0 auto;}
+#counterclass,#smallchart {margin-top:68px;}
+#counterclass section,#smallchart section{padding:0px !Important;}
+h2,h3{color:black !Important;}
+*{font-family:Lato, Helvetica, Arial, Lucida, sans-serif !important;}
+.socialleft{float:left;width:30%;}
+.buttoncenterlogin {float:left;width:30%;margin-left:95px;}
+.chatbutton{
+bottom:80px;
+    width: 10%;
+    position: absolute;
+    right: -55px;
+    background: red;
+ -webkit-transform: rotate(2700deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+
+}
+.homeredid a{width:322px;margin:0 auto;display:block;}
+#lhnContainerDone{right:0px !important;}
+#main-footer{padding:25px 0px;}
+#footer-info{float:none;text-align:center;
+ text-shadow: 0px 0px 7px rgba(255, 249, 249, 0.75);
+}
+#lhnChatButton a:after{
+content:"Let's Chat";
+position:relative;
+}
+
+.buttoncenterlogin.redline a{margin-top: 8px;
+    display: inline-block;
+    width: 220px;
+    
+    margin: 15px auto;margin-left:5px;}
+.clearfix{clear:both;}
+
+p{
+    font-weight: bold;
+    font-size: 17px !important;
+    line-height: 40px;
+color:#053093;
+}
+.et_pb_text ul li{
+color: #053093;
+}
+.et_pb_text_0{
+margin:0px 50px;
+font-size:17px;
+font-family: Lato, Arial, Helvetica, Arial, Lucida, sans-serif !important;
+color:#053093;}
+.home .et_pb_text_0{
+margin:0px;
+}
+div.wpcf7-validation-errors{
+    width: 50%;
+    margin: 0 auto;
+}
+p{
+line-height:1.2 !important;
+font-weight:normal !important;
+}
+ strong{
+color:#999;
+font-weight:normal;
+
+}
+ul{
+padding:0px;
+}
+.listitems  {
+margin:0px !Important;
+}
+.listitems li{display:inline-block;width:40%;
+vertical-align:top;
+font-size:14px;
+margin-bottom:10px;
+
+}
+.listitems strong{
+font-weight:bold;
+font-size:17px;
+}
+.normaltext li{
+font-weight:normal;
+}
+#et_top_search{
+display:none;
+}
+
+.home-content .et_pb_bg_layout_dark  {
+    background-color: transparent !important;
+}
+
+#main-footer, #footer-bottom {
+    background-color: transparent;
+}
+.sfsi_wicons.shuffeldiv a{opacity:1 !important;}
+#et-footer-nav {
+    background-color: rgba(255, 255, 255, 0);
+}
+.entry-content tr td, body.et-pb-preview #main-content .container tr td{color:#999 !important;}
+.bottom-nav a {
+    color: white;
+}
+
+#footer-info { 
+    color: black;
+font-weight:bold;
+    margin-top: 25px;
+}
+
+a:hover{
+color:#11b2ea;
+text-decoration:underline;
+}
+#et-main-area {
+    margin-top: -80px;
+}
+
+#main-header {
+background:transparent;
+
+}
+
+.et_header_style_left #et-top-navigation nav > ul > li > a{
+color:white;
+    color: #000;
+
+}
+.home  #top-menu  a,.page-id-87 #top-menu  a,.page-id-1947 #top-menu  a,.page-id-87 #top-menu  a{
+
+    color: #fff !important;
+
+}
+
+#top-menu li  { 
+    border-right: 1px solid #000;
+}
+.home #top-menu li , .page-id-87 #top-menu li ,.page-id-1947 #top-menu  li{
+  border-right: 1px solid #fff;
+}
+#top-menu-nav a{
+   padding: 5px 15px;
+}
+
+.page-id-1947 #top-menu-nav a{
+padding:5px 13px;
+}
+
+#top-menu a{
+padding-bottom:0px !important;
+}
+#main-content ul li{font-size:17px;}
+p,#main-content ul li{
+font-family:Lato, Helvetica, Arial, Lucida, sans-serif !important;
+line-height:1.4 !important;
+color:#999999 !important;
+}
+
+#logo {
+    display: block;
+    float: none;
+    max-height: 100%;
+    margin-bottom: auto;
+    vertical-align: middle;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    text-align: center;
+    top: 0;
+    bottom: 0;
+}
+#main-footer {
+   
+   
+ position: fixed;
+    bottom: 0px;
+    width: 100%;
+z-index:99999999999;
+}
+.home  #main-content{
+margin-bottom:0px !important
+}
+.home #main-footer{
+/* position: relative !important;
+    bottom: 0px !important;
+    width: 100% !important;
+z-index:99999999999;*/
+}
+.page.et_pb_pagebuilder_layout #main-content{margin-bottom:65px;}
+.socialleft .sfsi_widget{padding-left:20px;}
+#lhnContainerDone{    text-align: center;
+    width: auto;
+    bottom: 0 !important;
+    right: 0px !important;
+  
+    position: relative !important;
+    z-index: 9999999;}
+#lhnChatButton a{
+
+    font-size: 25px;
+    color: #fff !important;
+    display: block;
+   
+    padding: 10px;
+}
+#lhnchatimg{display:none !important;}
+.et_fixed_nav #et-top-navigation {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    width: 69.3%;
+    float: right;
+    padding-left: 0px !important;
+}
+
+.et_header_style_left .logo_container {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+
+.home-content h2{
+    font-weight: bold !important;
+    color: #dbdbdb !important;
+}
+
+.redline a{
+color: white;
+    background: red;
+    padding: 10px 0px;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.redline {
+  background: transparent;
+    background-color: transparent !important;
+    padding: 0px;
+    margin-top: -150px;
+    border-bottom: 6px solid red;
+}
+
+.bottom-nav li:last-child ,
+#top-menu > li:last-child {
+    border-right: 0px;
+}
+.bottom-nav li {
+    display: inline-block;
+    padding-right: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-right: 1px solid white;
+    padding: 0px 14px;
+}
+.bottom-nav li  a{
+    font-size: 18px;
+}
+.redline .et_pb_row_0{
+padding-bottom:0px;
+}
+
+.sfsi_wicons.shuffeldiv a {
+background:transparent;
+}
+
+.norm_row.sfsi_wDiv{
+width:100% !important;
+}
+
+.redline{
+    z-index: 999999;
+    position: relative;
+}
+
+.et_pb_slides .et_pb_slider_container_inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px 0px;
+}
+
+
+#timeline img.nomobile{display:none;}
+.page-id-44 #top-menu li,
+.page-id-79 #top-menu li,
+.page-id-50 #top-menu li,
+.page-id-48 #top-menu li,
+.page-id-75 #top-menu li,
+.page-id-77 #top-menu li,
+.page-id-81 #top-menu li,
+.page-id-83 #top-menu li,
+.page-id-85 #top-menu li,
+.page-id-73 #top-menu li
+ {
+    border-right: 1px solid black;
+}
+
+.bottom-nav li:last-child ,
+#top-menu > li:last-child {
+    border-right: 0px;
+}
+
+.page-id-44 #et-top-navigation nav > ul > li > a ,
+
+.page-id-79 #et-top-navigation nav > ul > li > a, 
+
+.page-id-50 #et-top-navigation nav > ul > li > a, 
+
+.page-id-48 #et-top-navigation nav > ul > li > a, 
+
+.page-id-83 #et-top-navigation nav > ul > li > a, 
+
+.page-id-75 #et-top-navigation nav > ul > li > a, 
+
+.page-id-77 #et-top-navigation nav > ul > li > a, 
+
+.page-id-81 #et-top-navigation nav > ul > li > a, 
+
+.page-id-85 #et-top-navigation nav > ul > li > a, 
+
+
+.page-id-73 #et-top-navigation nav > ul > li > a 
+
+{ 
+    color: black;
+}
+
+
+.page-id-44 #et-main-area ,
+.page-id-73 #et-main-area ,
+.page-id-50 #et-main-area ,
+.page-id-48 #et-main-area ,
+.page-id-85 #et-main-area ,
+.page-id-83 #et-main-area ,
+.page-id-81 #et-main-area ,
+.page-id-77 #et-main-area ,
+.page-id-75 #et-main-area ,
+.page-id-79 #et-main-area 
+{
+    margin-top: 0px;
+}
+
+.page-id-44 .redline,
+.page-id-73 .redline,
+.page-id-50 .redline,
+.page-id-48 .redline,
+.page-id-79 .redline
+
+ { 
+     margin-top: 0px; 
+}
+
+#main-header {
+    box-shadow: 0 0px 0 rgba(0, 0, 0, 0.1);
+}
+
+.details h1 {
+    font-size: 36px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.details h2 {
+font-size: 22px;
+color: #cc0000;
+padding: 20px 0px;
+}
+
+.details p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+#team-312 .team-title{
+text-align:center;
+}
+
+.page-id-48 .buttoncenterlogin.redline a{margin-left:auto !important;
+display:block;
+width: 297px;
+}
+.page-id-48 .buttoncenterlogin{
+margin-left:75px;
+}
+.team-container .team-social { 
+    text-align: center;
+}
+
+#team-312 .team-item {
+    width: 250px !important;
+    display: inline-block;
+}
+
+
+.team-container #team-312 {
+    text-align: center;
+}
+
+.mblimg{
+display:none;
+}
+
+
+.roadmap .et_pb_row_0{
+text-align:center;
+}
+.deskimg {
+text-align:center;
+}
+
+
+
+.page-id-46 .redline .et_pb_row {
+    padding: 0px;
+}
+
+.page-id-46 .redline { 
+    margin-top: -172px; 
+}
+
+.wpcf7 label{
+    display: block;
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+}
+
+
+.wpcf7-form-control-wrap  input,
+.wpcf7-form-control-wrap  textarea
+{
+    width: 40% !important;
+    border: 1px solid #000000 !important;
+    border-radius: 3px;
+    background-color: #ffffff !important;
+    padding: 8px;
+    color: #999;
+    background-color: #eee;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    float: left;
+}
+
+input[type=text], input[type=password], input[type=tel], input[type=email], input.text, input.title, textarea, select{
+    border: 0px solid #bbb;
+}
+
+
+input[type=submit]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 15% !important;
+    clear: both;
+    background: red;
+    color: blue;
+
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin-left: 40%;
+    border-radius: 5px;
+border:0px;
+}
+
+.bottom-nav li.current-menu-item > a{
+
+    color: red;
+}
+
+input[type=text], input[type=password], input[type=tel], input[type=email], input.text, input.title, textarea, select {
+    width: 100%;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #398f14;
+    color: white;
+}
+div.wpcf7-validation-errors {
+    border: 2px solid #f7e700;
+    color: white;
+}
+
+
+.wpcf7-form>.wpcf7-form-control-wrap {
+ float: right;
+    width: 60%;
+    margin: 10px 0px;
+}
+
+
+#team-312 .team-item:first-child{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.team-flat .team-thumb img { 
+    height: 239px !important;
+}
+
+
+#main-header {
+     background: white; 
+}
+
+
+.home #main-header,
+.page-id-46 #main-header ,
+.page-id-87 #main-header ,.page-id-1947  #main-header
+ {
+     background: transparent; 
+}
+.fp-viewing-secondPage #main-header,.fp-viewing-3rdPage #main-header,.fp-viewing-4thpage #main-header,.fp-viewing-5thPage #main-header{
+background-color:#fff;
+border-bottom:1px solid #ccc;
+}
+
+ .fp-viewing-secondPage #main-header li,.fp-viewing-3rdPage #main-header li,.fp-viewing-4thpage #main-header li,.fp-viewing-5thPage #main-header li{
+    border-right: 1px solid #000;
+}
+ .fp-viewing-secondPage #main-header li a,.fp-viewing-3rdPage #main-header li a,.fp-viewing-4thpage #main-header li a,.fp-viewing-5thPage #main-header li a{
+    color: #000 !important;
+}
+
+.page-id-87 p {
+    font-weight: normal;
+    font-size: 17px !important;
+    line-height: inherit;
+}
+
+
+
+.page-id-48 .wpcf7-form-control-wrap input, .wpcf7-form-control-wrap textarea,.page-id-240 .wpcf7-form-control-wrap input {
+    width: 100% !important;
+}
+
+.page-id-48 input[type=submit],.page-id-240 input[type=submit]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 15% !important;
+    clear: both;
+    background: red;
+    color: blue;
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin-left: 0px;
+    border-radius: 5px;
+    border: 0px;
+    float: left;
+}
+
+
+
+.page-id-48 div.wpcf7-mail-sent-ok ,.page-id-240 div.wpcf7-mail-sent-ok{
+    border: 2px solid #398f14;
+    color: green;
+    float: left;
+}
+
+.page-id-48 div.wpcf7-validation-errors ,.page-id-240 div.wpcf7-mail-sent-ok{
+    border: 0px solid #f7e700;
+ 
+}
+
+.page-id-48 span.wpcf7-not-valid-tip,.page-id-240 div.wpcf7-mail-sent-ok {
+    color: #f00;
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+    float: left;
+    border: 0px;
+}
+/*
+.page-id-48 .wpcf7 label {
+    display: block;
+    width: 40%;
+    float: none;
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+    margin: 0 auto;
+}
+
+
+*/
+
+#Keypoints ul{clear:both;display:table}
+
+#Keypoints ul li{list-style:none;
+display:inline-table;color:#000 !important;
+float:none;
+border-bottom:1px solid #000;
+padding:2px;
+font-size:12px;
+padding-top:4px;
+padding-bottom:4px;
+vertical-align:top !important;
+}
+#Keypoints ul li:nth-child(odd){
+width:18%;
+}
+#Keypoints ul li:nth-child(even){
+width:80%;
+    border-left: 1px solid #000;
+    padding-left: 32px;
+}
+#Keypoints ul ul{margin-left:0px;padding-left:0px;}
+#Keypoints ul ul li{
+width:100% !Important;
+float:none !important;
+display:block;
+border-top:1px solid #000;
+padding-left:0px;
+border-bottom:0px !important
+}
+
+.page-id-1947 #main-header.et-fixed-header{background-color:#fff !important;}
+.page-id-1947 .wpcf7 label{
+color:#000 !important;
+width:31% !important;
+}
+.page-id-1947 .wpcf7-form-control-wrap  input,.page-id-1947 .wpcf7-form-control-wrap textarea{width:65% !important;}
+@media only screen and (max-width: 1300px) {
+.page-id-1947 .et_pb_slider .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_title{
+font-size:39px !important;
+}
+}
+@media only screen and (max-width: 980px) {
+#timeline img{display:none;}
+
+#timeline img.nomobile{display:block;width:105px;}
+
+.mobilelanguageswitcher{display:none !important;}
+.topdownbutton{display:none;}
+.page-id-1947 .et_pb_slider .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_title{
+font-size:30px !important;
+}
+p,h1,h2,h3,h4,strong{
+text-align:left;
+}
+.buttoncenterlogin.redline a{
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+}
+#main-footer{position:relative;bottom:0;}
+
+.home  #et-main-area,.page-id-1947 #et-main-area {margin-top:-150px !important;}
+.page.et_pb_pagebuilder_layout #main-content{margin-bottom:180px;}
+.mobilelanguageswitcher{display:block;clear: both;
+    text-align: center;}
+.team-flat .team-thumb img { 
+    height: auto !important;
+}
+.buttoncenterlogin.redline a{text-align:center;width:100%;}
+#counterclass {
+   /* margin-top: -60px;
+*/}
+
+#counterclass, #smallchart {
+    margin-top: 50px;
+
+    position: relative;
+z-index:9999999999;
+}
+.et_pb_bg_layout_dark .et_pb_slide_description{padding-top:25% !important;padding-bottom:25% !important;}
+#et_mobile_nav_menu li.wpml-ls-item {display:none !important;}
+.home-content .et_pb_slide_title{text-align:center;font-size:28px;}
+.details h2{
+padding:5px 0px;
+}
+
+.page-id-46  .et_pb_section_0.et_pb_section {
+    padding-bottom: 125px;
+}
+
+.roadmap .et_pb_row.et_pb_row_0{
+padding:0px;
+}
+
+.roadmap{
+padding:0px;
+}
+
+
+.mblimg{
+display:block;
+}
+    
+.deskimg{
+display:none;
+}
+
+.et_header_style_left #logo{
+    max-width: 100%;
+}
+
+
+.redline .et_pb_text.et_pb_module.et_pb_bg_layout_light.et_pb_text_align_left.et_pb_text_0,
+.redline .et_pb_text_1,
+
+.details .et_pb_text_0
+{
+    text-align: center;
+}
+
+
+.redline  .norm_row.sfsi_wDiv,
+.redline  .et_pb_text_2
+
+ {
+text-align:center !important;
+}
+
+.et_header_style_left .logo_container { 
+    width: 55%; 
+}
+
+
+.et_fixed_nav #et-top-navigation {
+     width: 40%; 
+}
+
+.home-content.et_pb_fullwidth_section {
+    height: 600px;
+}
+
+
+.bottom-nav li { 
+    line-height: 30px;
+    display: block;
+    border-right: 0px;
+}
+
+
+.et-pb-controllers{
+display:none;
+}
+
+
+.et_pb_slides .et_pb_slider_container_inner {
+    display: block;
+    vertical-align: middle;
+    padding: 20px 0px;
+padding-bottom:40px;
+}
+
+
+.redline a {   
+    padding: 10px 20px;
+   
+}
+
+.about .et_pb_text_0, 
+.about .et_pb_text_1
+{
+text-align:center;
+}
+
+
+
+}
+@media only screen and (max-width: 800px) {
+.page-id-1947 .et_pb_slider .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_title{font-size:24px !important;margin-top: 52px;}
+#Keypoints ul li{height:57px;border:0px !important;}
+}
+@media only screen and (max-width: 750px) {
+iframe{width:100% !important;height:100% !important;}
+.page-id-1947 .et_pb_slider .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_title{font-size:20px !important;margin-top:60px;}
+.home h1{font-size:20px;}
+#Keypoints ul li{border:0px !important;}
+
+}
+@media only screen and (max-width: 600px) {
+.buttoncenterlogin.redline a{
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+}
+.wpcf7-form{
+text-align:center;
+}
+
+.wpcf7 label {
+    display: block;
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding-right: 0px;
+    color: white;
+}
+
+.wpcf7-form-control-wrap input, .wpcf7-form-control-wrap textarea {
+    width: 100% !important;
+    border: 1px solid #000000 !important;
+    border-radius: 3px;
+    background-color: #ffffff !important;
+    padding: 8px;
+    color: #999;
+    background-color: #eee;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    float: none;
+    margin-top: 10px;
+}
+
+
+input[type=submit] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 50% !important;
+    clear: both;
+    background: red;
+    color: blue;
+
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin-left: 0px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+border:0px;
+    margin-bottom: 15px;
+margin-top: 15px;
+
+}
+
+.wpcf7-form>.wpcf7-form-control-wrap {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.page-id-1947 .wpcf7-form-control-wrap  input, .page-id-1947 .wpcf7-form-control-wrap textarea,.page-id-1947 .wpcf7 label{width:100% !important;}
+.home .et_pb_slider .et_pb_container{width:100% !important;}
+.page-id-1947 .et_pb_slider .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_title{font-size:18px !important;}
+#Keypoints ul li:nth-child(odd) {
+    width: 20%;
+}
+#Keypoints ul li:nth-child(even) {
+    width: 79%;
+}
+}
+
+@media only screen and (max-width: 770px) {
+.listitems ul{
+padding:0px;
+}
+#counterclass ,.smallchart {
+    margin-top: 30px;
+}
+.socialleft{float:none;width:100%;margin:15px auto;}
+.buttoncenterlogin {float:none;width:80%;margin:15px auto;text-align:center;}
+.chatbutton{
+float: none;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    -webkit-transform: rotate(2700deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(0deg);
+    bottom: 0;
+    right: 0;
+}
+.sfsi_widget .norm_row{    text-align: center !Important;
+    float: none !important;
+    position: relative !important;}
+.sfsi_widget  #sfsi_holder{display:none !important;}
+.listitems li {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+margin:10px 0px;
+text-align:left;
+}
+.listitems li{
+font-size:12px;
+}
+.et_pb_section{
+padding:0px !important;
+}
+}
+@media only screen and (max-width: 530px) {
+.et_pb_bg_layout_dark .et_pb_slide_description{padding-top:35% !important;}
+.et_pb_slider .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_title{font-size:15px !important;}
+.pbc-unit{width:50px;}
+p, #main-content ul li{
+    font-size: 13px !important;
+line-height:20px !important;
+}
+.home-content h2 {
+    font-weight: bold !important;
+    color: #dbdbdb !important;
+    font-size: 20px;
+    text-align: center;
+}
+}
+@media only screen and (max-width: 480px) {
+#Keypoints ul li:nth-child(odd) {
+    width: 23%;
+}
+#Keypoints ul li:nth-child(even) {
+    width: 75%;
+}
+.redline a {   
+    padding: 10px 5px;   
+}
+.home-content .et_pb_slide_title{text-align:center;font-size:23px !important;}
+.page-id-1947 .et_pb_slider .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_title{    font-size: 17px !important;
+    line-height: 35px !important;}
+
+.pbc-unit{width:50px !important;}
+
+
+
+}
+@media only screen and (max-width: 395px) {
+#Keypoints ul li:nth-child(odd) {
+    width: 27%;
+}
+#Keypoints ul li:nth-child(even) {
+    width: 65%;
+}
+}		</style>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+<body data-rsssl=1 class="page-template-default page page-id-48 et_pb_button_helper_class et_fixed_nav et_show_nav et_cover_background et_pb_gutter et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_pb_pagebuilder_layout et_right_sidebar et_divi_theme unknown">
+	<div id="page-container">
+
+	
+	
+		<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.aicoin.io/">
+						<img src="https://www.aicoin.io/wp-content/uploads/2017/07/unnamed.png" alt="Ai-coin" id="logo" data-height-percentage="50" />
+					</a>
+				</div>
+				<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-739"><a href="https://www.aicoin.io/about-ai-coin/">ABOUT</a>
+<ul class="sub-menu">
+	<li id="menu-item-3315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3315"><a href="https://www.aicoin.io/ico-pool/">ICO Investment Pool Details</a></li>
+</ul>
+</li>
+<li id="menu-item-2763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2763"><a href="https://www.aicoin.io/aicoin_fund_performance/">PERFORMANCE</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-48 current_page_item menu-item-53"><a href="https://www.aicoin.io/whitepaper/">WHITEPAPER</a></li>
+<li id="menu-item-929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-929"><a href="https://www.aicoin.io/news-2/">NEWS</a>
+<ul class="sub-menu">
+	<li id="menu-item-3412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3412"><a href="https://www.aicoin.io/startup-event-calendar/">Start-up Event Calendar</a></li>
+</ul>
+</li>
+<li id="menu-item-2717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2717"><a href="https://www.aicoin.io/voting/">VOTING</a>
+<ul class="sub-menu">
+	<li id="menu-item-2874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2874"><a href="https://www.aicoin.io/voting-library/">Voting Library</a></li>
+</ul>
+</li>
+<li id="menu-item-1517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1517"><a href="https://www.aicoin.io/legal/">LEGAL</a></li>
+<li id="menu-item-1611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1611"><a href="https://www.aicoin.io/blog/">BLOG</a></li>
+<li id="menu-item-2591" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2591"><a href="https://account.aicoin.io/User/Login?ReturnUrl=%2f">ACCOUNT LOGIN</a></li>
+</ul>						</nav>
+					
+					
+					
+										<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+<div class="mobilelanguageswitcher">
+<div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal">
+	<ul><li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
+				<a href="https://www.aicoin.io/whitepaper/"><img class="wpml-ls-flag" src="https://www.aicoin.io/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt="en" title="English"><span class="wpml-ls-native">English</span></a>
+			</li><li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-hi wpml-ls-item-legacy-list-horizontal">
+				<a href="https://www.aicoin.io/whitepaper/?lang=hi"><img class="wpml-ls-flag" src="https://www.aicoin.io/wp-content/plugins/sitepress-multilingual-cms/res/flags/hi.png" alt="hi" title="हिन्दी"><span class="wpml-ls-display">Hindi</span></a>
+			</li><li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-ru wpml-ls-item-legacy-list-horizontal">
+				<a href="https://www.aicoin.io/whitepaper/?lang=ru"><img class="wpml-ls-flag" src="https://www.aicoin.io/wp-content/plugins/sitepress-multilingual-cms/res/flags/ru.png" alt="ru" title="Русский"><span class="wpml-ls-display">Russian</span></a>
+			</li><li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-pt-pt wpml-ls-item-legacy-list-horizontal">
+				<a href="https://www.aicoin.io/papel-branco/?lang=pt-pt"><img class="wpml-ls-flag" src="https://www.aicoin.io/wp-content/plugins/sitepress-multilingual-cms/res/flags/pt-pt.png" alt="pt-pt" title="Português"><span class="wpml-ls-display">Portuguese (Portugal)</span></a>
+			</li><li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-de wpml-ls-item-legacy-list-horizontal">
+				<a href="https://www.aicoin.io/?lang=de"><img class="wpml-ls-flag" src="https://www.aicoin.io/wp-content/plugins/sitepress-multilingual-cms/res/flags/de.png" alt="de" title="Deutsch"><span class="wpml-ls-display">German</span></a>
+			</li><li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-es wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
+				<a href="https://www.aicoin.io/whitepaper/?lang=es"><img class="wpml-ls-flag" src="https://www.aicoin.io/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.png" alt="es" title="Español"><span class="wpml-ls-display">Spanish</span></a>
+			</li></ul>
+</div></div>
+
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.aicoin.io/">
+					<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+
+		<div id="et-main-area">
+<div id="main-content">
+
+
+			
+				<article id="post-48" class="post-48 page type-page status-publish hentry">
+
+				
+					<div class="entry-content">
+					<div class="et_pb_section  et_pb_section_0 et_section_regular">
+				
+				
+					
+					<div class=" et_pb_row et_pb_row_0">
+				
+				
+				<div class="et_pb_column et_pb_column_4_4  et_pb_column_0">
+				
+				<div class="et_pb_module et-waypoint et_pb_image et_pb_animation_off et_pb_image_0 et_always_center_on_mobile et_pb_image_sticky">
+				<img src="https://www.aicoin.io/wp-content/uploads/2017/07/Yin.Yang_.png" alt="" />
+			
+			</div>
+			</div> <!-- .et_pb_column -->
+			</div> <!-- .et_pb_row --><div class=" et_pb_row et_pb_row_1">
+				
+				
+				<div class="et_pb_column et_pb_column_4_4  et_pb_column_1">
+				
+				<div class="et_pb_promo et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_cta_0 et_pb_no_bg">
+				<div class="et_pb_promo_description">
+					<h2>AICOIN Whitepaper PDF Download</h2>
+					
+<p>AICOIN is a tokenized investment fund that combines the pinpoint accuracy of Artificial Intelligence trading with the “Wisdom of the Crowd” to create substantial wealth for coin holders.</p>
+
+				</div>
+				<a class="et_pb_promo_button et_pb_button et_pb_custom_button_icon" href="https://www.aicoin.io/wp-content/uploads/2017/09/AICOIN.Whitepaper.08.09.17.pdf" target="_blank" data-icon="&#x47;">Download Whitepaper Now</a>
+			</div>
+			</div> <!-- .et_pb_column -->
+			</div> <!-- .et_pb_row -->
+				
+			</div> <!-- .et_pb_section -->
+					</div> <!-- .entry-content -->
+
+				
+				</article> <!-- .et_pb_post -->
+
+			
+
+</div> <!-- #main-content -->
+
+
+			<footer id="main-footer">
+				
+
+
+
+				<div id="et-footer-nav">
+					
+						<div class="socialleft"><div class="sfsi_widget"><div id="sfsi_wDiv"></div><div class="norm_row sfsi_wDiv"  style="width:225px;text-align:left;position:absolute;"><div style='width:40px; height:40px;margin-left:5px;margin-bottom:5px;' class='sfsi_wicons shuffeldiv '><div class='inerCnt'><a class=' sficn' effect='fade_in' target='_blank'  href='https://www.facebook.com/aicoinfb-1847270038857638/' id='sfsiid_facebook' alt='Facebook' style='opacity:0.6' ><img alt='Facebook' title='Facebook' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/images/icons_theme/flat/flat_facebook.png' width='40' height='40' style='' class='sfcm sfsi_wicon' effect='fade_in'   /></a><div class="sfsi_tool_tip_2 fb_tool_bdr sfsiTlleft" style="width:62px ;opacity:0;z-index:-1;margin-left:-47.5px;" id="sfsiid_facebook"><span class="bot_arow bot_fb_arow"></span><div class="sfsi_inside"><div  class='icon1'><a href='https://www.facebook.com/aicoinfb-1847270038857638/' target='_blank'><img alt='Facebook' title='Facebook' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/images/visit_icons/facebook.png'  /></a></div><div  class='icon2'><div class="fb-like" data-href="https://www.aicoin.io/whitepaper" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div></div><div  class='icon3'><div class="fb-share-button" data-href="https://www.aicoin.io/whitepaper" data-layout="button"></div></div></div></div></div></div><div style='width:40px; height:40px;margin-left:5px;margin-bottom:5px;' class='sfsi_wicons shuffeldiv '><div class='inerCnt'><a class=' sficn' effect='fade_in' target='_blank'  href='https://twitter.com/aicoinico' id='sfsiid_twitter' alt='Twitter' style='opacity:0.6' ><img alt='Twitter' title='Twitter' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/images/icons_theme/flat/flat_twitter.png' width='40' height='40' style='' class='sfcm sfsi_wicon' effect='fade_in'   /></a><div class="sfsi_tool_tip_2 twt_tool_bdr sfsiTlleft" style="width:59px ;opacity:0;z-index:-1;margin-left:-46px;" id="sfsiid_twitter"><span class="bot_arow bot_twt_arow"></span><div class="sfsi_inside"><div  class='cstmicon1'><a href='https://twitter.com/aicoinico' target='_blank'><img alt='Visit Us' title='Visit Us' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/images/visit_icons/twitter.png'  /></a></div><div  class='icon1'><a href="https://twitter.com/@aicoinico" class="twitter-follow-button"  data-show-count="false" data-show-screen-name="false">Follow </a></div></div></div></div></div><div style='width:40px; height:40px;margin-left:5px;margin-bottom:5px;' class='sfsi_wicons shuffeldiv '><div class='inerCnt'><a class=' sficn' effect='fade_in' target='_blank'  href='https://www.youtube.com/channel/UC226_O-ZpKEVzXebLrEBteg' id='sfsiid_youtube' alt='YOUTUBE' style='opacity:0.6' ><img alt='YOUTUBE' title='YOUTUBE' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/images/icons_theme/flat/flat_youtube.png' width='40' height='40' style='' class='sfcm sfsi_wicon' effect='fade_in'   /></a></div></div><div style='width:40px; height:40px;margin-left:5px;margin-bottom:5px;' class='sfsi_wicons shuffeldiv '><div class='inerCnt'><a class=' sficn' effect='fade_in' target='_blank'  href='https://www.linkedin.com/organization/5312889/admin/updates' id='sfsiid_linkedin' alt='LinkedIn' style='opacity:0.6' ><img alt='LinkedIn' title='LinkedIn' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/images/icons_theme/flat/flat_linkedin.png' width='40' height='40' style='' class='sfcm sfsi_wicon' effect='fade_in'   /></a><div class="sfsi_tool_tip_2 linkedin_tool_bdr sfsiTlleft" style="width:66px ;opacity:0;z-index:-1;margin-left:-49.5px;" id="sfsiid_linkedin"><span class="bot_arow bot_linkedin_arow"></span><div class="sfsi_inside"><div  class='icon4'><a href='https://www.linkedin.com/organization/5312889/admin/updates' target='_blank'><img alt='' title='' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/images/visit_icons/linkedIn.png'  /></a></div><div  class='icon1'><script type="IN/FollowCompany" data-id="5312889" data-counter="none"></script></div></div></div></div></div><div style='width:40px; height:40px;margin-left:5px;margin-bottom:5px;' class='sfsi_wicons shuffeldiv cmcls'><div class='inerCnt'><a class=' sficn' effect='fade_in' target='_blank'  href='https://aicoin.slack.com/' id='sfsiid_custom' alt='Telegram' style='opacity:0.6' ><img alt='Telegram' title='Telegram' src='https://aicoin.io/wp-content/uploads/2017/05/custom_icon1.png' width='40' height='40' style='' class='sfcm sfsi_wicon' effect='fade_in'   /></a></div></div><div style='width:40px; height:40px;margin-left:5px;margin-bottom:5px;' class='sfsi_wicons shuffeldiv cmcls'><div class='inerCnt'><a class=' sficn' effect='fade_in' target='_blank'  href='javascript:void(0);' id='sfsiid_custom' alt='Slack' style='opacity:0.6' ><img alt='Slack' title='Slack' src='https://aicoin.io/wp-content/uploads/2017/05/custom_icon2.png' width='40' height='40' style='' class='sfcm sfsi_wicon' effect='fade_in'   /></a></div></div></div ><div id="sfsi_holder" class="sfsi_holders" style="position: relative; float: left;width:100%;z-index:-1;"></div ><script>jQuery(".sfsi_widget").each(function( index ) {
+					if(jQuery(this).attr("data-position") == "widget")
+					{
+						var wdgt_hght = jQuery(this).children(".norm_row.sfsi_wDiv").height();
+						var title_hght = jQuery(this).parent(".widget.sfsi").children(".widget-title").height();
+						var totl_hght = parseInt( title_hght ) + parseInt( wdgt_hght );
+						jQuery(this).parent(".widget.sfsi").css("min-height", totl_hght+"px");
+					}
+				});</script><div style="clear: both;"></div></div> </div>
+<div class="buttoncenterlogin redline" style="margin-top:0px;border:0px;">
+
+<div id="footer-info">©2018 All rights reserved - AICoin </div></div>
+<div class="chatbutton">
+<!-- This code must be installed within the body tags -->
+<script type="text/javascript">
+    var lhnAccountN = "26659-1";
+    var lhnButtonN = 7417;
+    var lhnInviteEnabled = 1;
+    var lhnWindowN = 0;
+    var lhnInviteN = 40974;
+    var lhnDepartmentN = 30864;
+    var lhnChatPosition = 'bottomright';
+</script>
+<a href="http://www.livehelpnow.net/help-desk-software" target="_blank" style="font-size:10px;" id="lhnHelp">Lets's Chat</a>
+<script src="//www.livehelpnow.net/lhn/widgets/chatbutton/lhnchatbutton-current.min.js" type="text/javascript" id="lhnscript"></script>
+    
+
+</div>
+<div class="clearfix"></div>
+					</div>
+				</div> <!-- #et-footer-nav -->
+
+			
+
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				
+
+    
+					
+				</div>
+
+
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+<script>
+jQuery(document).ready(function($){
+$(".cmcls .sficn ").delay("2500").removeAttr('href');
+$(".sfsi_wDiv .sfsi_wicons:nth-child(5) a").attr("href","https://t.me/joinchat/AAAAAA4F-3Tvi4aX0haNQg");
+$(".sfsi_wDiv .sfsi_wicons:nth-child(6) a").attr("href","https://slackpass.io/aicoin");
+$("#lhnChatButton a#aLHNBTN").html("Let's Chat");
+});
+</script>
+
+
+
+    
+
+	</div> <!-- #page-container -->
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11345603; 
+var sc_invisible=1; 
+var sc_security="9d036861"; 
+var sc_https=1; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11345603/0/9d036861/1/" alt="web
+analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+<script>
+jQuery(document).ready(function($){
+
+$(".newtab a").attr("target","_blank");
+$("#lhnChatButton a#aLHNBTN").html("Let's Chat");
+});
+</script>
+
+<script type="text/javascript">
+    adroll_adv_id = "LQZV6OSOYZBQ7BSTI6OJ7F";
+    adroll_pix_id = "HSFQD2MM6JHKRIRB3GREWO";
+    /* OPTIONAL: provide email to improve user identification */
+    /* adroll_email = "username@example.com"; */
+    (function () {
+        var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
+    }());
+</script>
+
+	<script type='text/javascript'>function ctSetCookie(c_name, value, def_value){document.cookie = c_name + '=' + escape(value) + '; path=/';}ctSetCookie('ct_checkjs', '1146663860', '0');</script>        <!--facebook like and share js -->
+        <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+		  	if (d.getElementById(id)) return;
+		  	js = d.createElement(s); js.id = id;
+		  	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+		  	fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!--<div id="fb-root"></div>
+        <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1425108201100352&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>-->
+ 	         <!--google share and  like and e js -->
+        <script type="text/javascript">
+            window.___gcfg = {
+              lang: 'en-US'
+            };
+            (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+		
+		<!-- google share -->
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+		
+       <!-- linkedIn share and  follow js -->
+        <script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+			<!-- twitter JS End -->
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
+	     <script>
+	    jQuery( document ).scroll(function( $ )
+		{
+	    	var y = jQuery(this).scrollTop();
+	      	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+			{	 
+			   if(jQuery(window).scrollTop() + jQuery(window).height() >= jQuery(document).height()-100)
+			   {
+				  jQuery('.sfsi_outr_div').css({'z-index':'9996',opacity:1,top:jQuery(window).scrollTop()+"px",position:"absolute"});
+				  jQuery('.sfsi_outr_div').fadeIn(200);
+				  jQuery('.sfsi_FrntInner_chg').fadeIn(200);
+			   }
+			   else{
+				   jQuery('.sfsi_outr_div').fadeOut();
+				   jQuery('.sfsi_FrntInner_chg').fadeOut();
+			   }
+		  }
+		  else
+		  {
+			   if(jQuery(window).scrollTop() + jQuery(window).height() >= jQuery(document).height()-3)
+			   {
+					jQuery('.sfsi_outr_div').css({'z-index':'9996',opacity:1,top:jQuery(window).scrollTop()+200+"px",position:"absolute"});
+					jQuery('.sfsi_outr_div').fadeIn(200);
+					jQuery('.sfsi_FrntInner_chg').fadeIn(200);
+		  	   }
+	 		   else
+			   {
+				 jQuery('.sfsi_outr_div').fadeOut();
+				 jQuery('.sfsi_FrntInner_chg').fadeOut();
+			   }
+	 	  } 
+		});
+     </script>
+         	<script>
+			jQuery(document).ready(function(e) {
+                jQuery("body").addClass("sfsi_1.82")
+            });
+			function sfsi_processfurther(ref) {
+				var feed_id = 'R1Ftd01FL1N4T09mU1BqcFlYU2VuNnI5eXcrSWZZZUd5UjgzZkFUMjVMY3lxN2syRTE5UVp1RDhoNklXajU2Y1ZEVlNndTBiVVYwdk5OZFZQLy9JR0tXVjJyV0xqaTZqdnBVcjZzZmVSNVd3ZjJvbkdQR1pEYXB3V08rbnhGTWF8djZlcVFaaWVoNDQ5NS9PSlNqMWgvV3Nva0ZWN3NzRThObGxKbmdxRmh0Zz0=';
+				var feedtype = 8;
+				var email = jQuery(ref).find('input[name="data[Widget][email]"]').val();
+				var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+				if ((email != "Enter your email") && (filter.test(email))) {
+					if (feedtype == "8") {
+						var url ="https://www.specificfeeds.com/widgets/subscribeWidget/"+feed_id+"/"+feedtype;
+						window.open(url, "popupwindow", "scrollbars=yes,width=1080,height=760");
+						return true;
+					}
+				} else {
+					alert("Please enter email address");
+					jQuery(ref).find('input[name="data[Widget][email]"]').focus();
+					return false;
+				}
+			}
+		</script>
+        <style type="text/css" aria-selected="true">
+			.sfsi_subscribe_Popinner
+			{
+								width: 100% !important;
+				height: auto !important;
+												border: 1px solid #b5b5b5 !important;
+								padding: 18px 0px !important;
+				background-color: #ffffff !important;
+			}
+			.sfsi_subscribe_Popinner form
+			{
+				margin: 0 20px !important;
+			}
+			.sfsi_subscribe_Popinner h5
+			{
+				font-family: Helvetica,Arial,sans-serif !important;
+								font-weight: bold !important;
+								color: #000000 !important;
+				font-size: 16px !important;
+				text-align: center !important;
+				margin: 0 0 10px !important;
+    			padding: 0 !important;
+			}
+			.sfsi_subscription_form_field {
+				margin: 5px 0 !important;
+				width: 100% !important;
+				display: inline-flex;
+				display: -webkit-inline-flex;
+			}
+			.sfsi_subscription_form_field input {
+				width: 100% !important;
+				padding: 10px 0px !important;
+			}
+			.sfsi_subscribe_Popinner input[type=email]
+			{
+				font-family: Helvetica,Arial,sans-serif !important;
+								font-style: normal !important;
+								color:  !important;
+				font-size: 14px !important;
+				text-align: center !important;
+			}
+			.sfsi_subscribe_Popinner input[type=email]::-webkit-input-placeholder {
+			   	font-family: Helvetica,Arial,sans-serif !important;
+								font-style: normal !important;
+								color:  !important;
+				font-size: 14px !important;
+				text-align: center !important;
+			}
+			.sfsi_subscribe_Popinner input[type=email]:-moz-placeholder { /* Firefox 18- */
+			    font-family: Helvetica,Arial,sans-serif !important;
+								font-style: normal !important;
+								color:  !important;
+				font-size: 14px !important;
+				text-align: center !important;
+			}
+			.sfsi_subscribe_Popinner input[type=email]::-moz-placeholder {  /* Firefox 19+ */
+			    font-family: Helvetica,Arial,sans-serif !important;
+								font-style: normal !important;
+								color:  !important;
+				font-size: 14px !important;
+				text-align: center !important;
+			}
+			.sfsi_subscribe_Popinner input[type=email]:-ms-input-placeholder {  
+			  	font-family: Helvetica,Arial,sans-serif !important;
+								font-style: normal !important;
+								color:  !important;
+				font-size: 14px !important;
+				text-align: center !important;
+			}
+			.sfsi_subscribe_Popinner input[type=submit]
+			{
+				font-family: Helvetica,Arial,sans-serif !important;
+								font-weight: bold !important;
+								color: #000000 !important;
+				font-size: 16px !important;
+				text-align: center !important;
+				background-color: #dedede !important;
+			}
+		</style>
+	<style type="text/css" id="et-builder-advanced-style">
+				
+body #page-container .et_pb_cta_0.et_pb_promo .et_pb_button:hover { 
+					
+					
+					
+					letter-spacing:0px; }
+body #page-container .et_pb_cta_0.et_pb_promo .et_pb_button:hover:after { margin-left:.3em;
+						left: auto; margin-left: .3em; }
+body #page-container .et_pb_cta_0.et_pb_promo .et_pb_button:after { color:#ffffff;
+						line-height:1.7em;
+						font-size:20px !important;
+						opacity:1;
+						
+						margin-left: .3em; left:auto;
+						display: inline-block; }
+.et_pb_cta_0 { max-width: 1000px; margin: 0 auto; }
+body #page-container .et_pb_cta_0.et_pb_promo .et_pb_button { 
+					background:#ff0000;
+					
+					
+					
+					letter-spacing:0px;
+					font-size:20px;
+					
+					padding-left:0.7em; padding-right: 2em; }
+.et_pb_cta_0.et_pb_promo { padding-right: 50px !important; padding-bottom: 100px !important; padding-left: 50px !important; }
+.et_pb_row_0.et_pb_row { padding-top: 0px; padding-bottom: 0px; }
+.et_pb_image_0 { margin-top: 100px !important; text-align: center; }
+.et_pb_row_1.et_pb_row { padding-top: 0px; padding-bottom: 0px; }
+.et_pb_section_0.et_pb_section { padding-top: 0px; padding-bottom: 0px; }
+
+@media only screen and ( max-width: 980px ) {
+	.et_pb_cta_0 { max-width: 600px; margin: 0 auto; }
+	body #page-container .et_pb_cta_0.et_pb_promo .et_pb_button,body #page-container .et_pb_cta_0.et_pb_promo .et_pb_button:after { 
+								 }
+}
+
+@media only screen and ( max-width: 767px ) {
+	.et_pb_cta_0 { max-width: 300px; margin: 0 auto; }
+	body #page-container .et_pb_cta_0.et_pb_promo .et_pb_button,body #page-container .et_pb_cta_0.et_pb_promo .et_pb_button:after { 
+								 }
+}
+			</style><style type="text/css" id="et-builder-page-custom-style">
+				 .et_pb_bg_layout_dark { color: #ffffff !important; } .page.et_pb_pagebuilder_layout #main-content { background-color: rgba(255,255,255,0); } .et_pb_section { background-color: #ffffff; }
+			</style><script type='text/javascript' src='https://www.aicoin.io/wp-content/themes/Divi/includes/builder/scripts/frontend-builder-global-functions.js?ver=3.0.45'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ctNocache = {"ajaxurl":"https:\/\/www.aicoin.io\/wp-admin\/admin-ajax.php","info_flag":"","set_cookies_flag":"1","blog_home":"https:\/\/www.aicoin.io\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/cleantalk-spam-protect/js/apbct-public.js?ver=5.85'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/display-medium-posts/public/js/display-medium-posts-public.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/js/shuffle/modernizr.custom.min.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/js/shuffle/jquery.shuffle.min.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/js/shuffle/random-shuffle-min.js?ver=4.9.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_object = {"ajax_url":"https:\/\/www.aicoin.io\/wp-admin\/admin-ajax.php"};
+var ajax_object = {"ajax_url":"https:\/\/www.aicoin.io\/wp-admin\/admin-ajax.php","plugin_url":"https:\/\/www.aicoin.io\/wp-content\/plugins\/ultimate-social-media-icons\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/ultimate-social-media-icons/js/custom.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/visualizer/js/lib/clipboardjs/clipboard.min.js?ver=3.0.5'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/visualizer-pro/vendor/handsontable/dist/handsontable.full.min.js?ver=1.7.21517343887'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js?ver=1.7.21517343887'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var visualizer2 = {"types":["string","number","boolean","date","datetime","timeofday"],"i10n":{"save":"Save","cancel":"Cancel"},"rest_url":"https:\/\/www.aicoin.io\/wp-json\/visualizer\/v1\/action\/#id#\/#type#\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/visualizer-pro/inc/js/render.js?ver=1.7.21517343887'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/themes/Divi/includes/builder/scripts/jquery.mobile.custom.min.js?ver=3.0.45'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/themes/Divi/js/custom.js?ver=3.0.45'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/themes/Divi/includes/builder/scripts/jquery.fitvids.js?ver=3.0.45'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/themes/Divi/includes/builder/scripts/waypoints.min.js?ver=3.0.45'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/themes/Divi/includes/builder/scripts/jquery.magnific-popup.js?ver=3.0.45'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_pb_custom = {"ajaxurl":"https:\/\/www.aicoin.io\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.aicoin.io\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.aicoin.io\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"6157e97e5b","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"50c47de2fc","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","is_builder_plugin_used":"","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","is_ab_testing_active":"","page_id":"48","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/themes/Divi/includes/builder/scripts/frontend-builder-scripts.js?ver=3.0.45'></script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-includes/js/wp-embed.min.js?ver=4.9.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var icl_vars = {"current_language":"en","icl_home":"https:\/\/www.aicoin.io","ajax_url":"https:\/\/www.aicoin.io\/wp-admin\/admin-ajax.php","url_type":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.aicoin.io/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=4.9.2'></script>
+</body>
+</html>
