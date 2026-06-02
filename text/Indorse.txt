@@ -1,0 +1,763 @@
+WHITE PAPER
+
+Version 1.1 08 August 2017
+
+https://indorse.io
+
+By: GAURANG TORVEKAR & DAVID MOSKOWITZ
+
+This White Paper states the current views of Indorse Pte. Ltd. concerning the Indorse platform and related matters. Indorse Pte. Ltd. may from time to time revise this White Paper in any respect without notice. The information presented in this White Paper is indicative only and is not legally binding on Indorse Pte. Ltd. or any other party.
+
+This document is for informational purposes only and does not constitute and is not intended to be an offer to sell, a solicitation of an offer to buy, or a recommendation of: (i) Indorse Tokens, (ii) an investment in the Indorse platform or any project or property of Indorse Pte. Ltd., or (iii) shares or other securities in Indorse Pte. Ltd. or any affiliated or associated company in any jurisdiction. Please read the important legal disclaimers at the end of this White Paper.
+
+
+
+Table of Contents
+
+Executive Summary
+
+Chapter 1 - Overview of the Indorse Project Taking ownership of your data The advent of a Skills Economy Enabling Crowd Economics 2.0 Growing the Cryptocurrency Ecosystem How are we solving this? Why Ethereum?
+
+Chapter 2 - Platform Model Core features Example from a member's perspective Example of a personal claim What happens to members who indorse `wrongly'? How do members receive an Indorse Score? Core Components Advertising Different forms of the Indorse dApp Anonymous Indorsement Protocol (AIP)
+
+Chapter 3 - Token Model Alignment of Incentives Tradeable Token: Internal Accounting Token: Considerations Indorse Score (SCR) - Accounting Token Converting Indorse Rewards into IND tokens - Vesting Periods Indorse Rewards to IND token Conversion - Pooled Tokens Advertising revenue with IND tokens Talent Acquisition revenue with IND tokens IND Inflation - Pooled Tokens
+
+Chapter 4 - Use Cases Companies looking to hire
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+1
+
+
+
+KYC Oracle for Prediction Markets Advertising Freelance Services Chapter 5 - Development Roadmap Challenges Chapter 6 - Token Sale Initial Token Sale - IND Summary Post Token Sale - holding of the funds Chapter 7 - Core Team and Advisors Core Team Advisors Strategic Advisors Investors Chapter 8 - Funding Usage Breakdown Chapter 9 - Legal Implications/ risks Disclaimer Appendix
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+2
+
+
+
+Executive Summary
+
+`Indorse' is a revolutionary platform using new models of tokenization and decentralization to change the shape of professional social networking. Unlike traditional platforms, we aim to give back ownership of the data to the member, and t o reward them for sharing their skills and using the platform.
+
+Indorse uses internal rewards (Indorse Rewards) and a reputation system (Indorse Score) to incentivize members to add their skills / accomplishments and indorse those of others.
+
+Through participation in the platform, members are able to earn Indorse Rewards for sharing more about themselves and for indorsing the claims of others. Advertisers in turn purchase space on the platform with cryptographic Indorse Tokens (I ND tokens). A portion of these IND tokens are shared with the members who created the content. In a nutshell, members are finally able to receive rewards due to their data, instead of watching passively as the revenue goes to companies holding their data.
+
+We envision a serverless, decentralized future, where the members will build their profiles and benefit from their reputation. This future will need a decentralized platform where others can judge the quality of a person's profile not just by where they have gone to school, but what they have actually done in their professional and personal lives.
+
+Indorse is being developed by the team at Indorse Pte. Ltd., a blockchain company based in Singapore. The founders of Indorse Pte. Ltd. are CTO Gaurang Torvekar and CEO David Moskowitz. Gaurang is the co-organiser of the Ethereum Singapore Meetup, while David is the co-organiser of the Bitcoin Singapore Meetup. In 2013 David founded a Bitcoin brokerage which serviced hundreds of clients in Singapore. David successfully exited that business in 2015. Gaurang and David are also the founders of Attores Pte. Ltd. (Attores) , a company also based in Singapore but focused on simplifying the creation, deployment and execution of smart contracts on blockchains. Although their experience with Ethereum goes back to before they founded Attores, they formally began working on Ethereum applications in January 2016, releasing open source code for swaps and forward contracts for exchanging digital assets. Attores currently has a pilot with a Polytechnic college in Singapore for their digital certificate issuance platform along with installation of an Ethereum blockchain on campus.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+3
+
+
+
+This White Paper outlines the motivation behind the platform, the internal mechanisms and the roadmap for the development process. Our vision is to build the infrastructure which gives every member an avenue to showcase their personal profiles, which could ultimately extend to several other projects. We believe Indorse might become the ultimate reputation system which can be the backbone of generations of future DAPPs. Join us in this ambitious project!
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+4
+
+
+
+Chapter 1 - Overview of the Indorse Project
+
+Taking ownership of your data
+
+"If You're Not Paying for It, You're the Product" - Unknown
+
+Social networks have proliferated over the last several years. They have become an integral part of our lives, to the point where they can control our actions or how we behave, as evidenced by Facebook's experiment with the emotions of its members [1].
+
+This is but one example of how technology has become a double-edged sword. Issues about personal privacy, data protection and ownership of information have surfaced, rightfully, over increased flows of information. These issues regarding ownership of personal information and commercialisation of such information must be fixed once and for all. This is our core focus.
+
+The average social media user might not realise it, but social networks have value. Metcalfe's law states that the value of a network is proportional to the square of the number of its users. Our information and interactions build a profile of ourselves, and our inclinations and ability to spend become valuable to advertisers. One obvious manifestation of this is the USD 3.4 billion that Snapchat raised during its IPO despite its loss-generating revenue model. The 158 million active members (and growing) of that network represented value that could be tapped by advertising [2]. In fact, Google and Amazon, some of the most ubiquitous internet platforms that we use every day, were the earliest to tap into the information of members on their platforms.
+
+We feel that the root cause of the problem that plagues social networks is the current model of centralisation. Centralisation gives rise to three problems: we call them the economic problem, the autonomy problem and the trust problem.
+
+The economic problem. Social networks are public goods that contribute significantly to the well-being of members when they are provided (we can attest to social media being a huge part of our lives) but are impossible to charge for use. Ordinarily, this would result in a market failure, as no corporation would want to provide a platform for free, and society would accordingly incur significant welfare losses. As such, providers of social networks have turned to advertising as a revenue stream, doing so by requiring members to assign rights to their content and information to the provider and selling them to advertisers and recruiters. In a sense, social media is not
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+5
+
+
+
+"free" for use, it is being paid for by micro-incursions of privacy and future revenue from the information produced by members. We feel the current model is inequitable - members should be able to reap the rewards of the information they produce; we believe that free use and equitable reward distribution are not inconsistent concepts.
+
+The autonomy problem. T he centralised nature of social media today means that the platform is almost entirely controlled by the platform providers, with members having limited say over the direction of the platform. We find it unsettling that platform providers have an almost unlimited licence; it opens the door to potential abuses. In fact, the aforementioned experiment by Facebook to influence emotions felt by members just goes to show how much control members have over something central to their daily lives. We feel that user communities should determine the course of, and contribute to, the platform, and in doing so take ownership of a platform that is uniquely theirs.
+
+The trust problem. Closely linked to the autonomy problem, the trust problem is the result of the concentration of power in the hands of the platform providers. Although we are inclined to believe that the developers are responsible and committed individuals who act in accordance with the terms of use (i.e., they do the right thing), the potential for abuse remains. For instance, Facebook's moderators censored a photograph depicting the atrocities of the Vietnam War because it contained nudity, and in so doing, missed the point about the photograph's intention [3]. As our platform deals with personal information and the authenticity of such information, it is important that no one centralised body has power to determine such facts without oversight. The real world implications would be unfathomable.
+
+To be clear, we are not against advertising, and we are most certainly not against social media. However, we are against the centralisation of social media. We believe the solution is a new model of social networks - a decentralised one that places ownership of information back in the hands of the members.
+
+The advent of a Skills Economy
+
+Where it used to be the case that a qualification was valuable as a representation of the knowledge acquired during the period of study, this is no longer true. Today, information shifts occur with increasing frequency and rapidity. What is learnt in school could become obsolete very quickly, and it is not uncommon to find individuals employed in positions with little relation to what they had studied in college. Some of these may have been the result of a consolidation of various jobs, each different in scope; other positions may not have existed before. The idea of
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+6
+
+
+
+school as an institution for the imparting of knowledge cannot account for these trends in the workforce.
+
+We have also witnessed the commodification of education. While it used to be the case that higher education was the exclusive domain of a few in the past, today higher education has seen a rapid increase in the number of students, as a result of a push to make good education (and better jobs) more accessible to everyone. Institutes of higher education have proliferated, and technology has made it possible to earn a higher qualification without being physically enrolled in school. In Singapore, the government has announced the goal of increasing the higher education participation rate to 40% of each student cohort by 2020 [4]. Some students are lamenting their bleak employment prospects upon leaving school [5]. Elsewhere in countries like China, India and South Korea, graduates are spilling out of higher education institutes in record numbers, but many are unable to find jobs after graduation [6]. The numbers game no longer works out in favour of the many university graduates who are chasing an ever smaller pool of jobs.
+
+What then is the value of qualifications, if not as representations of knowledge or scarcity? We believe that qualifications are representations of skills acquired. In this age of constant influx of information and knowledge, the only constant is change. That, and deep skills which allow us to ride the changes. The right skills allow us to adapt to situational and information changes quickly and flexibly; they are our means of navigating this increasingly complex world. So it seems the academics and governments are not that far off in their claims - our economy is the skills economy.
+
+Enabling Crowd Economics 2.0
+
+We believe that new economic models are being enabled with technologies like Ethereum. With these advances, we can enable millions of previously excluded people to participate in the next wave of economic change. Unlike past cycles where only those who owned the assets could profit from their usage, in the new decentralized model, millions and perhaps billions of people can now be direct economic beneficiaries of the businesses they are consumers of. As economic beneficiaries, users are also more likely to utilize the service and tell others about it. This creates a virtuous cycle of growth and opportunity for all.
+
+Growing the Cryptographic Token Ecosystem
+
+Throughout the eventful history of the cryptographic token market it has been rather difficult for new users to enter and access their first tokens. Typically, users must register at exchanges,
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+7
+
+
+
+clear KYC hurdles and transfer money from their bank accounts to the exchanges. This is often met with difficulties as banks have not been the most supportive institutions in the decentralization revolution.
+
+By allowing members an easy way to earn rewards for the activities that benefit them, we are lowering the barriers to entry into the cryptographic token ecosystem and so enabling a billion new people to become holders and users of cryptographic tokens.
+
+How are we solving this?
+
+Indorse is an attempt to give back ownership of data to members. A platform which is not only fun, but also rewarding to the contributors of the content. Here, the value of the content is accrued to the members who create it. We will also design in-built mechanisms and integrations with other applications like uPort to minimise the damage caused by Sybil attacks. It will also have an in-platform token system where honest contributors will be rewarded for their contributions while persons who make the wrong indorsements will be penalised.
+
+The members own their identity on the platform . The crowd economy is not only about sharing assets, it's about the crowd owning, sharing and profiting from those assets which they fund, build and use. We are giving professionals, and for that matter anyone, an avenue to put up their documents and have a choice whether to advertise their personal information, with full control over their data. What's more, instead of relying on a central authority like a notary or a University to "attest" that you indeed hold such academic credentials, we are giving that power back to the public!
+
+To be clear, validation is not a strict attestation to the factual accuracy of the claim. A validated claim can be taken to be true, on a balance of probabilities, as verified by the indorsement process of the platform. It would be ideal to achieve 100% confidence in the factual accuracy of the claim, but very often we don't require 100% confidence. Most of the time, "good enough" works out fine. This is our aim - to give any credential a certain degree of validity and vote of confidence, one that is good enough a standard to be used for most things in life.
+
+This platform can be likened to a combination of a decentralized LinkedIn and Instagram, but with "verified" claims and indorsements. It has mechanisms to reward good actors and penalise bad ones.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+8
+
+
+
+Why Ethereum?
+
+The platform needs a network effect to succeed. While existing social networks like Facebook and LinkedIn have bootstrapped the growth of their networks, new technologies like blockchain have put us in a better position to kickstart these kinds of networks. We see this as a unique opportunity to tap on the existing blockchain communities in order to create a network to begin with and incentivize the supporters themselves to use it.
+
+Among blockchains, Ethereum provides the much needed transparency needed for a crowd economy to succeed and incentivize its own growth. Hence we are using Ethereum as our compute engine, while using the Inter Planetary File System (I PFS) as the storage mechanism.
+
+While the Ethereum community is relatively young, it is one of the fastest growing, and shows no signs of slowing down. Today, t here is a growing base of developers using Ethereum, with an estimated 30,000 developers working on various projects related to the Ethereum protocol, any of whom can write smart contracts and decentralised applications that run on the Ethereum Virtual Machine. There are hundreds of decentralised applications that have been created or are in the pipelines [7], and these are only the ones we know of. To date, no other blockchain protocol, not even the market leader Bitcoin, has this level of interactivity with the core blockchain protocol. In fact, Ethereum has already surpassed Bitcoin in its own way: there are now more developers and nodes on Ethereum than there are on Bitcoin [8].
+
+The nature of Ethereum makes it a natural fit for the project that we want to create. We envision Indorse to be decentralised and transparent, with its own ecosystem of dApps that feed into and rely on the platform for information. For that, we are building Indorse on this future proof platform.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+9
+
+
+
+Chapter 2 - Platform Model
+
+Core features
+
+The core features of the Indorse platform will be implemented through the combination of a few technologies, which include Ethereum, IPFS/Swarm, and Whisper. We envision the Indorse platform to have a serverless, decentralized architecture, with the content and code on IPFS, and the Ethereum blockchain as the computational engine.
+
+Each member can take part through two main roles on the platform  Claimant  Moderator
+
+The entire process flow starts with a claimant making a "claim" associated with his profile. A "claim" can be either that of professional information / skill (forming the core part of your profile) OR a personal skill. With every claim made, the claimant needs to attach one or more proof(s) of information. The moderators verify the claims separate from the blockchain and either indorse it or flag it.
+
+We are using a mechanism similar to Proof of Stake, called an Indorse Score, wherein every claimant or moderator will stake his reputation on either the claim or indorsement. If their claim gets approved [or their indorsement is supported by other users] their reputation will increase, otherwise, it will decrease.
+
+Example from a member's perspective
+
+ Alice joins the Indorse network. Upon registration, she is issued a minimum Indorse Score (SCR token) that will enable her to post a single claim to her profile.
+
+ She starts by creating her unique profile identity, and then adds a claim. She claims that she graduated from Ngee Ann Polytechnic in 2017 with a Specialist Diploma in IT Network Systems. She provides a link to the Ngee Ann Polytechnic verification page for her certificate information. She submits the claim with that and her Indorse Score is locked. The Indorse platform randomly chooses a number of other members who can indorse the claim, and the claim enters the gestation period.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+10
+
+
+
+ Bob is an Indorse member who is chosen to indorse the claim. He receives a notification and sees that Alice has placed a link to the verification page for her certificate. He verifies that the claim is valid and indorses the claim, locking up his Indorse Score.
+
+ The gestation period ends with a consensus of indorsements. Alice's Indorse Score is increased by 1, for making a valid claim. She is also rewarded with Indorse Rewards. Bob also has his Indorse Score increased by 1 and receives an Indorse Reward.
+
+ Alice's Indorse Rewards are automatically converted to IND Tokens paid to the platform for advertising and other services on the platform which were obtained by business customers for the period.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+11
+
+
+
+*This example is for illustration purposes only. The amounts of tokens and exchange rates may be subject to change upon final launch of the platform and time of conversions. Note: BUC is Indorse Rewards
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+12
+
+
+
+Example of a personal claim
+
+ Apart from claiming educational credentials or job experiences, a member can also claim additional skills that can make his profile well-rounded. For instance, a member can claim that he can code in JavaScript, and put his Github repository as proof. The moderators can go there, verify and thereby indorse or flag the claim.
+
+ Market forces will regulate the indorsement of claims of such kind. As members are staking their Indorse Score when indorsing, they would need to be reasonably confident of their ability to determine the factual validity of claims. In other words, members will be reluctant to participate in the indorsing process if the claim is too subjective as they are scared of reducing their Indorse Score.
+
+ Suppose someone claims - "I can bake a tasty cake", then there is no way in which the indorsers can find out that a particular cake was indeed tasty (short of meeting the person and actually eating the cake).
+
+ For such highly subjective claims, not only will the indorser be unable to determine the factual validity of the claim, but also that other indorsers are similarly unable to do so. Game theory would suggest that continuing to indorse such a claim would result in a random outcome where indorsers are not at all sure that their Score would increase, and as such each indorser would, independently, choose not to indorse the claim.
+
+ The collective end result will be that no indorser will indorse the claim, and the claim will go unindorsed. Hence, we think indorsers will shy away from such claims, which will in turn discourage people from submitting claims which are too subjective.
+
+(We might give an option for members to keep "unverified" claims on their profiles. These claims won't add any Indorse Score or give them any Indorse Rewards though. But they can be used for advertising).
+
+What happens to members who indorse `wrongly'?
+
+If a member of the platform, be it a claimant or a moderator, keeps indorsing against the majority, either by way of making frivolous claims or by indorsing or flagging in a dishonest way, their Indorse Score will be reduced, until it reaches a minimum score on the platform. This member will only be eligible to earn back his Indorse Score by making `correct' indorsements, beginning one at a time, for a period of time.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+13
+
+
+
+How do members receive an Indorse Score?
+
+The early supporters in the token sale for IND tokens will receive SCR tokens along with IND tokens. New members to the platform will also start with a minimum Indorse Score, which allows them to indorse only one claim at a time. The members have to do some work and contribute to the platform to earn both a higher Indorse Score and Indorse Rewards.
+
+Core Components
+
+The platform will be integrated with the following third-party (D)apps  Indorse DE - Indorse will be building a deployment engine (D E) for profiles and content, tying them back to the tokens and Ethereum smart contracts.  Attores Certificate Issuance (CI) Platform - Attores has been working for more than a year on the certificate issuance platform, wherein a university or an institution can issue their degrees or diplomas directly on the blockchain in the form of a smart contract. Attores plans to open source this code and use that as one of the core modules of the Indorse platform.  IPFS - IPFS, which is like a decentralized Dropbox, is going to form the core of the Indorse platform. Most of the content, including documents, claims, updates to profiles and indorsements are going to be stored there. With the advent of systems like Filecoin, users of IPFS get one more chance to earn revenue from their content or storage space. This is ultimately going to help in the proliferation of the ecosystem as a whole.  uPort - uPort is a self-sovereign identity system that allows people to identify themselves and authenticate both on and off the blockchain. The Indorse platform will be integrated with uPort so that the identity of the member on the platform corresponds with his real identity. uPort is also useful for signing the blockchain transactions directly from a mobile phone.  Truffle - Truffle is a development environment for Ethereum smart contracts, which includes smart contract compilation, linking, deployment and binary management. This is the current state of the art for the Ethereum blockchain. We are going to use Truffle to write the smart contracts and integrate that with the front-end of the application.  Spectrum - Spectrum is an all-in-one wallet system for Ethereum currently under development by Digix. The Indorse platform will integrate with that since it provides ease of use for the end users and makes their life much simpler, while also providing security for the platform developers.  Status - Status is an open source messaging platform and mobile interface to interact with decentralized applications that run on the Ethereum Network. We also plan to
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+14
+
+
+
+integrate Status in one of the releases so that there can be in-platform chatting, all on the blockchain.
+
+While the aim of the team behind Indorse is to create a completely serverless, decentralized architecture, the actual development needs the application to be divided into several tiers nonetheless - namely, the service layer, the API layer and the app layer. Having said that, it's important to note that since the code for the service layer is going to be open source, any 3rd party apps can always directly interface with the service layer smart contracts to take advantage of the distributed nature of the blockchain. The description of each of those layers is as below  Service layer  T his layer will contain the core logic of the platform, which will include a suite of smart contracts and the indexing system for the file system, IPFS. This is more of a logical layer of the platform, and it will be interfacing with the API layer in order to speak with the App layer.
+
+API layer  T his layer will consist of the NodeJS + Express application, the backend of the
+
+system, which will act more like an API so that the other front end web apps / mobile apps / 3rd party apps can access the information from the Indorse platform. Since some of the data needs
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+15
+
+
+
+to be persisted in order to allow for efficient execution, without spending too much gas, we will be persisting this data in a MongoDB database. App layer  T his layer will consist of the ReactJS web application in the POC phase. Later, we may want to develop a mobile app as well using any of the technologies like React Native or even native Android and iOS apps. We also plan to leverage the mobile Ethereum OS built by Status in order to provide a decentralized version of the platform on mobile phones. Other 3rd party apps can also leverage the API of Indorse in the future in order to leverage the full-fledged reputation and profiling system that we are building.
+
+Advertising
+
+Another integral feature of the platform will be advertising. Advertisement placement and impressions will be bought by advertising agencies and marketing agencies at certain fixed rates. We will follow a model similar to Google Adwords, but with the difference that a portion of the cryptographic tokens paid for advertising on the platform goes back to the users of the platform! M ore details about how this mechanism works are discussed in the next section.
+
+Different forms of the Indorse dApp
+
+While the Indorse dApp will be in the form of a web application in the beginning, we will also be releasing it as a mobile app subsequently as part of the development milestones. You can find more information about this in the subsequent sections.
+
+Anonymous Indorsement Protocol (AIP)
+
+When a member makes a claim, he will have two options for indorsements - either choose random indorsements or get his claim verified from an influencer on the platform. In the latter case, the member will have to pay using either his SCR tokens or Indorse Rewards. If he chooses the option of getting random indorsements, the Indorse platform will choose random indorsers based on the degrees of separation from the member.
+
+Our protocol for choosing the random indorsers from the platform and keeping the indorsements anonymous is inspired from the research paper written by Patrick McCorry et. al. [9] and the random datasource on Ethereum developed by Oraclize [10]. The AIP protocol has two phases -
+
+Phase 1 - Choosing a random set of indorsers Phase 2 - Managing the anonymous indorsement process
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+16
+
+
+
+In the first phase, the platform will choose random indorsers from the Indorse platform using the following steps. Selection of the random indorsers will be done through the service layer of the platform, by accessing the member profiles from the indexed dataset from IPFS. It will follow these steps -
+
+Step 1 - Set up an indorsement program 1.1 - Find out the n most active members from the claimant's first and second degree separated set of contacts. 1.2 - Find the members who are most likely to be "similar" to the claimant's profile by `clustering' and `classification' techniques. 1.3 - Set the minimum threshold N 1.4 - Get a random sample from this set of members to indorse the claim 1.5 - Send requests to these members for indorsements
+
+Step 2 - Indorsers will register their interest and deposit their SCR tokens in an escrow smart contract. During registration, every indorser broadcasts their indorsing key gxi a nd a (non-interactive) Zero-Knowledge Proof ZKP (xi) Step 3 - In case the threshold is not met (n < N), resend the requests to a new set of indorsers by following steps 1.4 and 1.5 again Step 4 - Minimize the threshold in case the minimum number of indorsers aren't registered Step 5 - Invite the remaining indorsers for registration and depositing their SCR tokens.
+
+After the number of registered indorsers reaches the minimum threshold, the period of indorsements begins.
+
+In the second phase, the registered indorsers are given a specific time period, denoted by ti ndorse. If they fail to indorse, then they'll lose their SCR tokens, thus reducing their reputation on the platform. From the registered indorsers n, we need at least m indorsers to complete their indorsements before the computation of the consensus. Where,
+
+n-m <  denoting the variance which can be tolerated by the system,  always approaching 0. Each of the m indorsers will either "vote" yes(1) or no(0) on this claim. Out of the m indorsers who manage to finish the process, the algorithm will give out the result of the claim - either indorsed or not indorsed when the indorsers reach a consensus denoted by , where  depends on a variety of factors and will be adjusted according to the use of the platform and from previous and anticipated indorsement thresholds. There are two cases to be considered -
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+17
+
+
+
+Case 1 -
+
+
+
+Claimi ndorsed iff  m(1) > 
+
+
+
+In this case, most of the indorsers have confirmed that the claim is valid. Since,  is a high value like 70% or 80%, it is safe to assume that the remaining indorsers with m (0) are behaving in a malicious way, and they would be penalised, thus forfeiting their deposit.
+
+
+
+Case 2 -
+
+
+
+Claimunindorsed iff  m(0) > 
+
+
+
+In this case, most of the indorsers have confirmed upon reflection that the claim is invalid. Since  is a high value, it is again safe to assume that the remaining indorsers with m(1) are behaving in a malicious way, and they would be penalised, thus forfeiting their deposit.
+
+
+
+The entire process can be divided into roughly five stages -
+
+
+
+ Stage 1 - First set of requests go out  Stage 2 - If minimum threshold is not met, second set of requests goes out  Stage 3 - Registration period for indorsers  Stage 4 - Actual indorsements start.  Stage 5 - Computation of the consensus threshold and publishing the results
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+18
+
+
+
+Chapter 3 - Token Model
+
+Alignment of Incentives
+
+In order to create a reward mechanism that fairly distributes ownership and aligns the incentives of all parties, the platform has 1 tradeable token and 1 internal accounting token (based on the ERC20 interface):
+
+(a) Indorse Token (IND) [tradeable] (b) Indorse Score (SCR) [accounting of reputation]
+
+The purpose / role of each of these tokens are as follows:
+
+Tradeable Token:
+
+IND Token: T he IND token is the token that will be issued during the Token Sale. Token Sale purchasers will also receive Indorse Score (SCR) tokens in addition to their IND tokens, once the platform is released on the mainnet. This will enable them to indorse the profile postings of members on the platform. In this way, the IND token holders have a vested interest in participating in the platform and indorsing viable claims. As the IND token will be the required payment method for buying advertising space on the platform, advertisers will need to purchase IND tokens (such as through an exchange) in order to avail of advertising units on the platform.
+
+Internal Accounting Token:
+
+This token will for the most part not be known as a `token' to the member. We present it here so that the community can understand the mechanics of the system and how we are using them for the transparency of the network.
+
+SCR Token: SCR tokens (Indorse Score) are tokens that are required to post updates to the member profile, or indorse and flag claims. SCR tokens are denominated in whole units (no decimals) and are non-transferrable between members. A member may gain or lose SCR tokens as a result of his interactions with the platform, as expounded upon elsewhere in this paper. However, there is a minimum SCR token threshold built into the platform. The amount of SCR tokens that a member may hold in his wallet can never fall below 1 SCR token - the minimum required to act as an indorser. As much as we aim to encourage constructive participation in the
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+19
+
+
+
+platform, and to discourage misuse of the platform, we would not wish to exclude anyone from using the platform.
+
+SPECIAL NOTE:
+
+Please note, in the earlier versions there was an additional internal token: Indorse Buck (BUC). However, based on the community feedback, it has been decided to NOT make the BUC as a token. BUC (now called Indorse Rewards) will be an internal point based system and will be external to the blockchain.
+
+Considerations
+
+Indorse Score (SCR) - Accounting Token
+
+SCR tokens are primarily accounting tokens, and as mentioned earlier, majority of members will not be aware that they are tokens. They will not be exchangeable between members and never leave the platform. They are used to keep track of the reputation of the members. We use Ethereum tokens to allow for an element of transparency - it would be possible to see the amount of SCR a member holds, using independent platforms like Etherscan.
+
+Converting Indorse Rewards into IND tokens - Vesting Periods
+
+After an initial three month vesting period, subsequent to the platform being deployed on the mainnet, all the Indorse Rewards will be accumulated and automatically converted into IND tokens based on the amount of IND in a pool from incoming advertising and the inflation mechanism (see below). The three month period is both a security mechanism and a way to reduce gaming of the network. Please note, Indorse may choose to amend the three month vesting period.
+
+Indorse Rewards to IND token Conversion - Pooled Tokens
+
+Half of the IND tokens used to purchase advertising credits and talent acquisition services (see discussion below) will be placed into a pool (IND pool) and the other half will be put into an administrator fund to be used to pay for the operations of the platform.
+
+These funds (in the form of IND tokens) in the IND pool will be distributed for the Indorse Rewards created in the last 10 months with 10% being allocated equally to each of the months. Please note, this distribution mechanism can undergo a change as and when we implement the platform. This is an indicative distribution mechanism, and Indorse may choose to update this
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+20
+
+
+
+distribution mechanism at a later stage.
+
+During the conversion to IND tokens (that is, after the end of the entire period discussed above), the Indorse Rewards will be `consumed/burned'.
+
+IND tokens (representing the IND inflation tokens) will also be added into the IND pool.
+
+Advertising revenue with IND tokens
+
+IND tokens will be the initial revenue source for the platform members. The IND token will be the required payment method for buying advertising space on the platform. This means advertisers will need to purchase IND tokens through an exchange. If no public exchange is available, the platform administrators may accept a direct sale of IND tokens for Ether (E TH) for the media buy at no better rate than that offered to the existing IND token holders.
+
+Half of the IND tokens from the media buys will go into the IND pool and the other half will be put into an administrator fund to be used to pay for the operations of the platform. The ETH received from direct sale of IND tokens will be used to fund development and marketing for the platform.
+
+Talent Acquisition revenue with IND tokens
+
+Indorse will endeavour to engage in talent acquisition and human resource acquisition services, from Year 2. It is envisaged that the relevant data to provide such services will only be available from Year 2 onwards. Similar to advertising revenue, IND tokens will be the required payment method for seeking such services from the Indorse platform.
+
+The IND tokens earned by the Indorse platform for these services will go into the IND pool, 50% of which will be put into an administrator fund to be used to pay for the operations of the platform and the remaining 50% will be rewarded to the members in the manner similar to that of the advertising revenue.
+
+IND Token Inflation - Pooled Tokens
+
+The inflation pool will begin alongside the initial three month vesting period of the Indorse Rewards. The inflation pool will begin at 5% of the initial token supply. The inflation rate will be halved every twelve months until it reaches 0.625%. The 0.625% year will be the final year for inflation. The halving is to correspond to increasing IND in the pool from advertising buyers.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+21
+
+
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+22
+
+
+
+Chapter 4 - Use Cases
+
+We hope our platform will inspire a variety of use cases and integrations, leading to a flourishing ecosystem that adds value to our members. Here are some of the ways in which we envision the platform could be used.
+
+Companies looking to hire
+
+With a large numbers of graduates being the norm these days, companies are becoming more discerning with regards to their hiring practices. For instance, most of the tech companies today look not only at the coding chops but also the cultural fit of prospective candidates. The Indorse platform can be the perfect way to show how good you are as a human being, just beyond your Ivy League education and your job experience at Facebook or Google. If you can claim (and prove through indorsements) that you can skateboard, or that you're a swimming champion, or that you have watched the Star Wars rhapsody at Gardens by the Bay two times in the same night, then the hiring managers can get a clearer picture of you as a person, and a better idea as to your fit with the company culture.
+
+KYC
+
+KYC, or Know Your Customer has always been the Holy Grail of the blockchain community, with many companies and teams making it their mission to solve this. While projects like uPort are the first steps taken towards achieving this goal, we believe the Indorse platform will take the ecosystem significantly closer to the end goal. By attaching your identity, profile, and achievements to an Ethereum address in a decentralized manner, we are a step closer to an independent identity system.
+
+Oracle for Prediction Markets
+
+The Indorse platform can also feed into existing prediction markets like Gnosis or Augur. Claims, and the subsequent indorsement process can serve as prediction markets. So now, instead of prediction markets like `Is Hillary or Trump going to be the next President', there can be questions like `Is John able to code a Smart Contract'. Additionally, we can even start treating highly subjective claims in a manner similar to Prediction Market results, where people can vote on the outcome of a certain fact being true.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+23
+
+
+
+Advertising
+
+The most direct use of the data collected on the platform is for targeted advertising. This includes the persons viewing the profiles and the profile creators themselves. Profile creators will be able to opt-out if they do not wish to share their data, however staying in will allow them to receive rewards in the form of Indorse Rewards.
+
+Freelance Services
+
+As much as 11% of working Americans have already entered the `gig economy' [11]. Intuit further predicts that up to 40% of the population may be working as freelancers by 2020 [12]. With credentials being indorsed on the platform, contract work and other job requests can be posted and filled by members of the community. With more decentralized sites like Ethlance coming about and changing the landscape of freelancing communities, we think that Indorse will feed into this ecosystem perfectly and can be the go-to place for people to check the credentials of their freelancers, before hiring them.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+24
+
+
+
+Chapter 5 - Development Roadmap
+
+Pre-Launch  Independent review of White Paper and concept  Independent audit of the suite of smart contracts  Release of a POC which includes the ability to create decentralized profiles and a basic implementation of the Anonymous Indorsement Protocol (AIP)
+
+Feature list according to the proceeds from the token sale
+
+
+
+Milestone
+
+Turing
+
+Babbage
+
+Dijkstra Lovelace
+
+
+
+Hard Cap
+
+ Limited Alpha on testnet  Full functionality to build your profiles and post claims  State channel implementation of AIP  Integration with the Spectrum wallet
+
+ Integration with uPort  Refinement of the UI/UX  Basic advertising system  Releasing on Mainnet
+
+ Connection with the various advertising APIs and the ability to buy ad space  Integration with Status  Integration with Attores Certificate Issuance (CI) system
+
+ Token dashboard  Oraclize integration  Reality keys integration  Advertising campaign manager module
+
+
+
+Moore
+
+
+
+ Indorse Developer Toolkit  Indorse API  Machine learning integration  Refinement of the Anonymous Indorsement Protocol
+
+
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+25
+
+
+
+Nakamoto
+
+
+
+ Indorse platform mobile app
+
+
+
+Challenges
+
+We are also cognizant of the fact that there are indeed some challenges in building this platform. What we are envisioning is really ambitious, and some of the components/features are dependent on external factors. These are the challenges that we foresee at the outset.
+
+ Integration with uPort - Since uPort is one of the essential components of the system, we are somewhat dependent on it. Obviously, it can certainly work without uPort, but then it'll have to depend on centralized solutions like Gmail or Facebook for authenticating the members.
+
+ Integration with Status - messaging is an integral part of any social network. If the integration with Status is not successful, or there are delays in the launch of Status, the ability for in-platform messaging might be affected or delayed.
+
+ Uncertainty of data storage on IPFS - one of the drawbacks of IPFS is that the data stored there might not be always available, since some of the nodes or peers might stop sharing or storing the data. We can mitigate this by creating multiple IPFS nodes ourselves or encouraging the members to host their own IPFS nodes. Solutions like FileCoin might remove these risks, but since the launch dates of FileCoin aren't known, this is one variable outside our control.
+
+
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+26
+
+
+
+Chapter 6 - Token Sale
+
+Initial Token Sale - IND Tokens
+
+The initial token sale for the IND tokens to support of the development of the Indorse network will be made via a sale for ETH. A distribution of 1,000 IND tokens will be distributed to token sale participants per 1 ETH under the IND Token Sale Terms and Conditions. IND tokens sent to token sale participants will represent approximately 35% of the total supply created. Approximately 37.71% of the total supply will be reserved for future use and approximately 25% to be held by the network administrators, team, and advisors. The remaining 2.29% were issued to seed round supporters. Token sale participants will send their ETH to an account specified on the Indorse website after a specified block number. The initial token sale will end when the end block is created, or when the amount of ETH sent to the account reaches the maximum. If the token sale fails to result in a minimum number of ETH, then the token sale will be cancelled and ETH sent to purchase IND tokens will be returned. Advisors and team members will have a lockup period of 240 days before their IND tokens can be redeemed. In addition to the IND Tokens, Indorse will also be issuing SCR tokens to its token sale participants. Details in relation to issuance of the SCR will be announced once the platform is released on the mainnet.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+27
+
+
+
+Summary
+
+
+
+IND tokens per ETH Minimum raised Maximum raised IND Token Distribution % of Tokens - Seed % of Tokens - Supporters (IND Buyers) % of Tokens - Future Usage % of Tokens - Advisors % of Tokens - Founders % of Tokens - Employees % of Tokens - Marketing / Promotion % of Tokens - Bounties
+
+
+
+1,000 15,000 ETH 50,000 ETH
+
+2.29% 35% 37.71% 5% (time-locked 240 days) 8% (time-locked 240 days) 5% (time-locked 240 days) 5% 2%
+
+
+
+The above table is an approximation of final token distribution. This may vary depending on the final ETH price, amount of IND tokens sold and other factors.
+
+The token sale address will be announced at the start of the token sale through the following avenues: Website: h ttp://indorse.io Slack Invite: http://joinindorse.herokuapp.com/ Slack Direct Link: h ttps://joinindorse.slack.com/ Twitter: @ joinindorse
+
+
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+28
+
+
+
+Post Token Sale - holding of the funds
+
+In order to limit downside risk of the ETH received losing value relative to the US dollar and to help ensure we will be able to meet the financial obligations needed to complete the project, we will be hedging some of the ETH from the token sale. A portion of the funds will be sold for US and/or Singapore dollars for short and mid term operational costs and some will be exchanged for gold-backed asset tokens in US dollar terms. The remaining balance of funds in ETH will be converted to US Dollar or other currency as needed to fund the platforms development and costs. Whenever possible, expenses will be paid directly in ETH.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+29
+
+
+
+Chapter 7 - Core Team and Advisors
+
+Core Team
+
+The Indorse team consists of professionals with extensive experience in cryptocurrency markets and startups.
+
+David Moskowitz: P roject Head (Founder) - David is cofounder and CEO of Indorse and Attores (discussed below). Prior to Indorse and Attores, David founded a bitcoin brokerage `Coin Republic' in 2013 and sold it in 2015. As a co-organiser of the Bitcoin Singapore meetup he has been a vocal evangelist for cryptocurrency and decentralization. He is also a board member of ACCESS The Singapore Cryptocurrency and Blockchain Industry Association. Pre-Blockchain, he was a systems integrator, helping SME's set up subscription systems online (SaaS). He has 20 years experience in product development, marketing and sales.
+
+LinkedIn - https://www.linkedin.com/in/davidmoskowitz/ Twitter - @davidmosk
+
+Gaurang Torvekar: Project Technical Lead (Founder) - Gaurang is cofounder and CTO of Indorse and Attores. Gaurang has been involved with several startups in FinTech and AI across India and Singapore as the `tech guy'. He has a Masters from Singapore Management University in Information Systems. He is the co-organiser of the Ethereum Singapore Meetup, and helped it grow from 23 members to 1300 members. He conducts courses on Ethereum hands-on coding and has also worked on a book on Building Ethereum Dapps.
+
+LinkedIn - h ttps://www.linkedin.com/in/gaurangtorvekar/ Twitter - @gaurangtorvekar
+
+Dipesh Sukhani: Project Operations Head - Dipesh has been recently appointed as the Operations Head at Attores and Indorse. Dipesh is an Indian Chartered Accountant with 11 years of work experience in the field of international tax structuring. Dipesh was, until February 2017, working as a Tax Manager at PWC. Experienced in the field of tax and regulatory framework - he has assisted various multinational companies in bringing tax efficiencies in their operations . At Indorse, Dipesh has been mainly working on the Front-end development of the application along with the Operations. Dipesh believes that blockchain will revolutionise the
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+30
+
+
+
+world and with this vision stepped out of his consultancy world to help build blockchain ecosystem with his corporate experience. LinkedIn - h ttps://www.linkedin.com/in/dipeshsukhani/ Twitter - @dipeshsukhani
+
+Avadhoot Kulkarni: Project Marketing Head - Avadhoot is Chief Communications Officer at Attores and Indorse. Prior to Indorse, Avadhoot has served as a Marketing Consultant to FinTech and SaaS startups mainly in USA & South East Asia. After completing his Computer Engineering degree course, he worked at Siemens where he got introduced to Digital Marketing. His interest in Digital Marketing piqued when he learned how he can reach millions of people using technology and has been passionately working on it since then. He embraces growth mindset and continuous learning which eventually brought him to the Blockchain world of limitless possibilities. LinkedIn - https://www.linkedin.com/in/avadhootkulkarni16/ Twitter - @avadhoot_kulk
+
+Dave Appleton: Smart Contracts Developer - Dave is an expert in blockchain technology and has worked on a number of state of the art blockchain codebases. He specializes in Ethereum smart contracts. Dave studied at Imperial and King's Colleges in London in the 1970s, resulting in a Bachelor's degree in Electronic Engineering. After receiving his Master's degree (Management of Technology) at the National University of Singapore, he founded Calistra Research Labs developing advanced machine vision systems. LinkedIn - https://www.linkedin.com/in/dave-appleton-4893a7/ Twitter - @appletondave
+
+Harsh Nene: Senior Developer Linkedin: https://in.linkedin.com/in/harshawardhannene
+
+Kedar Vaidya: Senior Developer Linkedin: https://in.linkedin.com/in/vaidyakedar
+
+Brian Ip: Project Development Associate - Brian was a Summer Associate focusing on business development at Indorse. A newfound blockchain enthusiast, Brian finds the legal implications and issues surrounding the adoption of new technologies like blockchain fascinating, and thinks that technology will give the practice of law a new lease of life. At Indorse, Brian seeks out opportunities for strategic partnerships, reads up on relevant legal regulations and outlines business development proposals. When not researching the latest blockchain technologies or
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+31
+
+
+
+trying to wrap his head around code, Brian can be found poring over law books. Brian will be starting his undergraduate studies in Jurisprudence at the University of Oxford in October 2017.
+
+Advisors
+
+(in no particular order)
+
+KC Chng: Co-Founder and CEO of Digix Global LinkedIn https://sg.linkedin.com/in/kai-c-chng-540b339
+
+Shaun Djie: C o-Founder and Partnership Director of Digix Global LinkedIn - https://sg.linkedin.com/in/shaundjie Twitter - @shaundjie
+
+Benedict Chan: Director of Engineering at BitGo, Inc., Creator of Ether.li (first Ethereum multisig web wallet) LinkedIn - https://www.linkedin.com/in/bencxr/ Twitter - @bencxr
+
+Loi Luu: Founder and Developer for the SmartPool Project, Oyente, Developer, Ethereum Foundation Researcher, PhD Candidate in Computer Science at National University of Singapore LinkedIn - https://www.linkedin.com/in/loiluu/ Twitter - @loi_luu
+
+Matthew Tan: CEO and Founder of Etherscan LinkedIn - h ttps://www.linkedin.com/in/matthew-tan-4a3021a7/ Twitter - @etherscan
+
+Eddy Travia: CEO of Coinsilium LinkedIn: https://uk.linkedin.com/in/startupeddy/ Twitter: @startupeddy
+
+Dushyant Bhatia: Co-founder, Managing Director at GOZOOP, Social Media Marketing and Ad Agency LinkedIn: https://www.linkedin.com/in/dushyantbhatia
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+32
+
+
+
+Patrick McCorry: R esearch Associate (Blockchain), UCL LinkedIn: https://www.linkedin.com/in/patrick-mccorry-923b2254/ Twitter: @paddyncl Yacine Tera: Blockchain Investment & Corporate Business Advisor, Coinsilium LinkedIn: h ttps://www.linkedin.com/in/yacineterai/ Twitter: @yacineterai
+
+Strategic Advisors
+
+Smith & Crown: The leading source of original research, reporting and analysis for cryptofinancial markets, bitcoin, blockchain technology, and digital currencies https://www.smithandcrown.com/
+
+Wings.ai: A decentralized platform for creation, participation and management of Decentralized Autonomous Organization (DAOs) https://www.wings.ai/
+
+Investors
+
+Coinsilium: Finances and manages the development of early-stage blockchain technology companies. Coinsilium shares are traded in London on the NEX Exchange Growth Market, the primary market for unlisted securities operated by NEX Exchange. https://www.coinsilium.com/
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+33
+
+
+
+Chapter 8 - Funding Usage Breakdown
+
+Funds received from the token sale are intended to be used mostly for the development and advancement of the platform. The level of funds that are received will dictate the extent and timeline of development. An approximate breakdown of use $1 million received through token sale is as follows: Development: 65% Research and development will involve the building of the technology as described in this document. This includes: the Token App, smart contract systems, publishing system, claim voting system, advertising system, and the other relevant components. Sales and Marketing: 20% Marketing spending will be used for bringing in new members into the platform, developing partnerships, and bringing in advertising to the platform. Operations: 10% Operational costs such as office rental, accounting, and other day to day operational needs and overheads are covered here. Operational costs also include code reviews and security audits. Legal Fund: 5% We think it's a prudent idea to hold a portion of funds for any potential legal issues that may arise.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+34
+
+
+
+Please note, the above is only indicative and the actual may differ.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+35
+
+
+
+Chapter 9 - Legal Disclaimers
+
+Disclaimers
+
+THIS DOES NOT CONSTITUTE AND IS NOT INTENDED TO BE AN OFFER OF SECURITIES OR ANY OTHER FINANCIAL OR INVESTMENT INSTRUMENT IN ANY JURISDICTION
+
+INDORSE PTE. LTD. DOES NOT REPRESENT THAT THIS WHITE PAPER DISCLOSES ALL RISKS AND OTHER SIGNIFICANT ASPECTS ASSOCIATED WITH IND TOKENS, SCR TOKENS, INDORSE REWARDS, INDORSE PTE. LTD.AND/OR THE INDORSE PLATFORM
+
+INDORSE PTE. LTD. EXPRESSLY DISCLAIMS ANY AND ALL RESPONSIBILITY AND LIABILITY TO ANY PERSON FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL OR ANY OTHER KIND OF LOSS OR DAMAGE WHATSOEVER ARISING DIRECTLY OR INDIRECTLY FROM: (I) RELIANCE ON ANY INFORMATION CONTAINED IN THIS WHITE PAPER, (II) ANY ERROR, OMISSION OR INACCURACY IN ANY SUCH INFORMATION, OR (III) ANY ACTION RESULTING THEREFROM.
+
+Last Updated 25 July 2017
+
+This White Paper is for informational purposes only and does not constitute and is not intended to be an offer to sell, a solicitation of an offer to buy, or a recommendation of: (i) IND tokens, (ii) an investment in the Indorse platform or any project or property of Indorse Pte. Ltd., or (iii) shares or other securities in Indorse Pte. Ltd. or any affiliated or associated company in any jurisdiction. Indorse Pte. Ltd. does not represent that the IND tokens discussed in this White Paper are suitable for any particular buyer. You are solely responsible for determining whether IND tokens are appropriate for you based on your personal objectives, financial circumstances, and risk tolerance. You should consult your business advisor, attorney, or tax and accounting advisor regarding your specific business, legal, or tax situation.
+
+By publishing this White Paper, Indorse Pte. Ltd. does not intend to solicit, and is not soliciting, any action with respect to IND tokens or any contractual relationship with Indorse Pte. Ltd. or any affiliated or associated company. If Indorse Pte. Ltd. elects to conduct a sale of IND tokens (Token Sale), any offer to sell IND tokens will be made solely under the terms and conditions of a binding legal agreement between the buyer and Indorse Pte. Ltd., the details of which will be made available at h ttps://indorse.io separately from this White Paper.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+36
+
+
+
+Nothing in this White Paper shall be construed as imposing on any person an obligation to participate in the Token Sale. No act relating in and of itself to this White Paper, including but not limited to, requesting a copy of this White Paper or sharing this White Paper, shall constitute participation in the Token Sale.
+
+This White Paper includes forward-looking statements. Except for historical information, the matters discussed in this White Paper are forward-looking statements that involve certain risks and uncertainties, such as Indorse Pte. Ltd.'s expectations regarding the availability, functionality, and performance of the Indorse platform, use cases for the platform, future development of the platform, and the market conditions affecting the platform. Those risks and uncertainties also include, among other things, whether the proposed Token Sale is consummated at all or on the terms outlined in this White Paper. If any of those risks or uncertainties materialise, or should underlying assumptions prove incorrect, actual results or outcomes may vary materially from those expected. Indorse Pte. Ltd. disclaims any intention or obligation to update publicly or reverse such statements, whether as a result of new information, future events, or otherwise.
+
+Indorse Pte. Ltd has endeavoured to make reasonable attempts to ensure the information in this document is factually true and is a correct representation of the platform at the material time of publishing. However, as a result of development there may be changes to the platform, including but not limited to: the platform mechanism, the platform tokens, the token mechanism, proposed allocation of tokens, proposed distribution of funds raised, that may not be included in this or any other version of this White Paper. Indorse Pte. Ltd. may, but is not obligated to, give notice of any changes to this or any other version of this White Paper by publishing updates on its website. All persons are responsible for ensuring that they have the latest version of this White Paper and reading and understanding its contents..
+
+IND tokens and SCR tokens are cryptographic tokens intended to be used by the Indorse platform. IND tokens, SCR tokens and Indorse Rewards are not (and are not intended to be) any of the following:
+
+a) Currency of any kind b) Shares or interest in a collective investment scheme c) Stocks, debentures, notes, warrants, certificates or any other instrument the
+
+purpose of which is to grant a right to interest, dividend, payment or any kind of return from any person d) Any form of security e) Equity interest or evidence of ownership in any legal entity
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+37
+
+
+
+f) Any right to participate in the control, direction or decision making of any legal entity or the Indorse platform
+
+At the time of this writing, (i) with the exception of being used to place advertisements on the platform, IND tokens, SCR tokens, and Indorse Rewards cannot be exchanged for goods or services, (ii) IND tokens, SCR tokens, and Indorse Rewards have no known uses outside the Indorse platform, and (iii) IND tokens, SCR tokens, and Indorse Rewards cannot be traded on any known exchanges. There is no guarantee that any IND tokens subject of the Token Sale will increase in or retain its value. It may decrease in value. Indorse Pte. Ltd. makes no representation as to the value ascribed to the IND tokens, SCR tokens and Indorse Rewards, and expressly disclaims any and all liability that may arise as a result of the change in any value ascribed to any or all of them. Indorse Pte. Ltd, as the organiser of the proposed Token Sale, may be required under laws/regulations of the applicable jurisdictions to carry out, among others, anti-money laundering, counter-terrorism financing checks and/or any other background checks on Token Sale participants (KYC checks). By participating in the Token Sale, all participants agree to comply fully with such KYC checks, and represent that all information disclosed to Indorse Pte. Ltd. for the purpose of compliance with such KYC checks are complete and accurate to the best of their knowledge.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+38
+
+
+
+Appendix
+
+[1] G. S. McNeal, "Facebook Manipulated User News Feeds to Create Emotional Responses". Forbes, Jun. 28, 2014. [Online]. Available: https://www.forbes.com/sites/gregorymcneal/2014/06/28/facebook-manipulated-user-news-feed s-to-create-emotional-contagion/#28f8adec39dc
+
+[2] C. Huston, "Snap IPO: 6 things to know about Snapchat parent company as it goes public", Marketwatch, Mar. 9 2017. [Online]. Available: http://www.marketwatch.com/story/snap-ipo-six-things-we-now-know-about-snapchat-parent-co mpany-2017-02-02
+
+[3] M. Scott and M. Isaac, "Facebook Restores Iconic Vietnam War Photo It Censored for Nudity", The New York Times, Sep. 9, 2016. [Online]. Available: https://www.nytimes.com/2016/09/10/technology/facebook-vietnam-war-photo-nudity.html?mcu bz=2&_r=0
+
+[4] S. Davie, "40% of each cohort to get a shot at local universities", The Straits Times, Aug. 22, 2012. [Online]. Available: http://www.straitstimes.com/singapore/40-of-each-cohort-to-get-shot-at-local-universities
+
+[5] O. Ho, "Skill gap a big problem for fresh grads", T he Straits Times, Sep. 26, 2016. [Online]. Available: http://www.straitstimes.com/singapore/manpower/skill-gap-a-big-problem-for-fresh-grads
+
+[6] The Economist, "Glutted with graduates", The Economist, Banyan, Nov. 3, 2011. [Online]. Available: http://www.economist.com/blogs/banyan/2011/11/education-south-korea
+
+[7] Ethercasts, "State of the Dapps". [Online]. Available: h ttps://dapps.ethercasts.com/.
+
+[8] N. Popper, "Business Giants to Announce Creation of a Computing System Based on Ethereum", T he New York Times, Feb. 27, 2017. [Online]. Available: https://www.nytimes.com/2017/02/27/business/dealbook/Ethereum-alliance-business-banking-security.ht ml?mcubz=2&_r=0
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+39
+
+
+
+[9] P. McCorry, S. F. Shahandashti and F. Hao, "A Smart Contract for Boardroom Voting with Maximum Voter Privacy", Sch of Comp Sci, Newcastle Univ., NE, UK. [Online]. Available: https://eprint.iacr.org/2017/110.pdf [10] Oraclize, "A Scalable Architecture for On-Demand, Untrusted Delivery of Entropy", Oraclize, London, UK. [Online]. Available: h ttp://www.oraclize.it/papers/random_datasource-rev1.pdf [11] J. Manyika et. al, "Independent work: choice, necessity, and the gig economy", M cKinsey Global Institute, Oct. 2016. [Online] Available: http://www.mckinsey.com/~/media/McKinsey/Global%20Themes/Employment%20and%20Grow th/Independent%20work%20Choice%20necessity%20and%20the%20gig%20economy/Indepen dent-Work-Choice-necessity-and-the-gig-economy-Full-report.ashx [12] Intuit, "Intuit 2020 Report", I ntuit, Mountain View, CA, USA, Oct. 2010. [Online] Available: https://http-download.intuit.com/http.intuit/CMO/intuit/futureofsmallbusiness/intuit_2020_report.p df Cartoon characters used under license from Brgfx/freepik.com.
+
+Please note that this is a draft of the White Paper and is subject to change.
+
+40
+
+
+
+

@@ -1,0 +1,635 @@
+ETHACE
+
+WHITEPAPER ethace.co
+
+opyright  http://ethace.co 2017
+
+
+
+1
+
+Whitepaper Introduction
+
+Ethace is a casino Dapp operating entirely on the Ethereum network. We will be the first and only Ethereum casino to offer ERC20 wagers as well as ERC20 payouts! Our first casino game is the very popular card game, Blackjack Challenge. Players will face off against the house where each wager and payout is completely processed through our provably fair and transparent Ethereum contract. There will be absolutely no deposits required as well as no delay in payouts. Traditional online casinos as well as physical casinos are unable to match the security, anonymity, and fairness we provide. Our goal is to achieve a premier gambling experience for our customers and a steady stream of profit for our token holders.
+
+Copyright  http://ethace.co 2017
+
+
+
+2
+
+Table of Contents:
+
+Current Issues with Existing Casinos........................................................................................................3 Blackjack Challenge....................................................................................................................................3-5 Rules...............................................................................................................................................................4-5 Market Analysis...........................................................................................................................................5-7 Competitive Analysis..................................................................................................................................7-9 Random Number Generator Logic..........................................................................................................9-11 Crowd funding Token Information.........................................................................................................11-15 Ethace Contracts.......................................................................................................................................16-17 UI/UX Design...................................................................................................................................................17 Majoolr Contract Security and Development...................................................................................17-20 Roadmap....................................................................................................................................................21-22 Funding Breakdown...............................................................................................................................22-23 ERC20/ETH, ETH/ERC20 or ERC20/ERC20 Wagering and Payouts:.........................................23-28 Risks:...............................................................................................................................................................29 Our Commitment..........................................................................................................................................29
+
+Copyright  http://ethace.co 2017
+
+
+
+3
+
+Current Issues with existing Casinos
+
+We see 3 main issues with the current implementation of traditional online casino gambling. These concerns include:
+
+Transparency
+
+Current online casinos lack the transparency required by the player to correctly calculate their odds and ensure they are not being cheated. There is no game code shared between the casino operator and player to ensure the odds are exactly as advertised. At best, the code can have unknown bugs which would further reduce the player's odds of winning. At worst, the code could have been programmed to prevent the player from winning.
+
+Ethace: We will have the entire Blackjack Challenge card game contract running on the Ethereum network where it can be scrutinized to ensure provable fairness.
+
+Trust
+
+Online casinos suffer from the requirement to retain control of your funds at all times. This introduces unneeded risk to your funds as you are forced to trust the casino with your money.
+
+Ethace: You are in control of your funds at Ethace at all times and are able to come and go as you please, only ever exposing your wager amount. This ensures your funds are safely in your possession at all times.
+
+Processing Times
+
+Online casinos have very slow processing times for deposits and withdrawals. You can wait days before having access to your funds.
+
+Ethace: Our processing times will eventually be close to instantaneous for a wager to take place and a payout to occur directly into your wallet. These speeds are unmatched by traditional online casinos.
+
+Blackjack Challenge
+
+Blackjack Challenge is a blackjack variant I noticed at the Star City casino in Sydney, Australia in December, 2014. It was asked about on my Wizard of Vegas forum as early as February 2013.
+
+Copyright  http://ethace.co 2017
+
+
+
+4
+
+Gameplay 1 2
+
+The game is based on blackjack with some nice rules thrown in. The best ones are: 1) Five-card Charlie (non-busted five-card hand automatically wins). 2) 21-point hand automatically wins. 3) Blackjack pays at least 2 to 1 and up to 5 to 1. The player pays for these rules by otherwise losing on ties. Please go to the rules section for full coverage of the rules.
+
+Rules
+
+The rules of Blackjack Challenge are the same as blackjack with the following exceptions and fine points: 1) Six 52-card decks. 2) Dealer stands on soft 17. 3) Player may double on any two or three cards. 4) Player may double after splitting. 5) Player may re-split any pair, including aces, up to three hands. 6) Player may hit and double after splitting aces. 7) A ten and ace after splitting counts as a blackjack. 8) Any non-busted five-card hand is an automatic winner (known as a five-card Charlie or fivecard trick).
+
+1https://wizardofodds.com/games/blackjack-challenge/ 3https://en.wikipedia.org/wiki/Martingale (betting system)
+
+Copyright  http://ethace.co 2017
+
+
+
+5
+
+9) Any 21-point hand is an automatic winner. 10) Blackjacks are an automatic winner. 11) A blackjack against a non-blackjack pays 2 to 1. 12) If the player and dealer both have a blackjack, then the rank of the ten-point card shall be used to break the tie. The win shall pay as follows when both the player and dealer have a blackjack:
+
+ Player has higher blackjack: 5 to 1  Blackjacks are of equal value: 4 to 1  Dealer has higher blackjack: 3 to 1 13) The dealer shall not take a hole card. The player shall be paid on a total of 21 or five-card hand automatically, even if the dealer has a potential blackjack. 14) If the player is still standing with a non-blackjack and the dealer gets a blackjack, then the player shall lose an amount equal to his original wager, plus any wagers already lost due to splitting and busting (known as the 0880 rule, which stands for Original and Busted Bets Only).
+
+Strategy
+
+Key: H = Hit S = Stand D = Double P = Split House Edge According to my analysis. the house edge under the basic strategy above is 2.53
+
+Copyright  http://ethace.co 2017
+
+
+
+10
+
+X % 52 => normalization basic 52 card deck for value retrieval (for multiple decks)
+
+normalized value / 4 IFF normalized value > 4 => Card Value
+
+Modulo 11 result suite look up (for four distinct suites): 1 - Clubs 2 - Diamonds 3 - Hearts 0 - Spades
+
+We can imply the above information for each integer representation, example as follow:
+
+Ex. X = 20 X % 4 = 0 (spades) X % 52 = 20 (normalized > 4)
+
+ 20 / 4  = 5 (5)
+
+20 represents 5 of spades
+
+Our RNG seed will be from Wolfram through Random. We plan to move to ledger proof when it is available from Random which will greatly increase the speed of retrieving secure, provably fair, random number seeds. 12
+
+Wolfram Logic
+
+Ethace will be using 6 decks * 52 cards each deck = 312 cards per hand. The Wolfram function called is RandomSample[Range312],2] 13 which will grab 2 unique numbers from 1-312.
+
+The examples are numbers 311 and 157 which Wolfram has returned.
+
+X = 311 X % 4 = 3 (hearts) X % 52 = 51 (normalized > 4)
+
+ 51 / 4  = 13 (king)
+
+311 represents king of hearts
+
+11 https://en.wikipedia.org/wiki/Modulo operation
+
+13 https://reference.wolfram.com/language/ref/RandomSample.html
+
+Copyright  http://ethace.co 2017
+
+
+
+11
+
+X = 157 X % 4 = 1 (clubs) X % 52 = 1 (normalized < 4) Card value = 1 (Ace)
+
+157 represents ace of clubs Our game smart contract makes a call to the Random api which reaches outside the Ethereum block chain to retrieve our Wolfram alpha RNG seed. This seed is used to determine the player and houses card value. The process of retrieving an RNG seed will occur for every new set of cards requested in our card game.
+
+Crowd funding Token Information
+
+There will only ever be 20,000,000 ETA tokens. This includes when further casino games are released under Ethace in the future (ex: roulette). This eliminates token dilution and will gradually increase the value of ETA tokens over time due to scarcity, new games added, earnings, and deflation through lost tokens. ETA token holders are also entitled to earnings of revenue and voting rights proportional to their total ETA holdings.
+
+95% of the profit will be distributed to token holders and 5% added to the bankroll. This will occur through an automated distribution contract which will be developed in the months following the crowd fund. The contract will hold profits for a period of 1 week every 3 months. Profits will need to be claimed by token holders. Any amount not claimed will be permanently added back to the bankroll.
+
+Bankroll Design
+
+Upon launch of Ethace we will have soft launches with a smaller amount of bankroll funds. Once confident with the soft launch results, we will have all raised Eth funds in the bankroll.
+
+We also have a few unique visions in mind with the 5% of profits being added to the bankroll:
+
+A) Grow the bankroll and split this bankroll across all games offered by ethace B) Grow the bankroll initially, then switch the 5% of profits to growing a separate bankroll
+
+which will be used for our next game C) Create a main cold wallet bankroll which feeds all of our games. The 5% profit feeds this
+
+cold wallet bankroll. Each game will work as a hot wallet with plenty of funds to handle numerous maximum bet wins. When the hot wallet reaches a certain percentage of initial funds, the cold wallet will top up the hot wallets. Repeated requests in a short time span for hot wallet top ups will be flagged and notify us for immediate investigation. This will
+
+Copyright  http://ethace.co 2017
+
+
+
+12
+
+add an extra layer of security to Ethace and is the common approach used by exchanges to handle withdrawals At this point in time, are strongly leaning towards option C due to the realized security benefits. In the future when the bankroll increases excessively, we have a few ideas of what to do with the excess Ether: 1. One time buy back of ETA tokens, decreasing supply in effect increasing ETA token price. Adding new tokens to the development fund 2. One time buy back of ETA tokens and burn them, permanently decreasing supply and greatly increasing ETA token price 3. One time lump sum profit distribution equally to all token holders 4. Create a ETA token buy back wall (like Bancor) to provide a ETA token floor Through input and consideration from our token holders votes, we will decide on one of the presented options above or potentially other options at the appropriate time. Long term success of Ethace is our main priority; therefore, we will continually be analyzing the best approach to leverage the use of our growing bankroll.
+
+Copyright  http://ethace.co 2017
+
+
+
+13
+
+Total Token Distribution:
+
+1,200,000 ETA tokens distributed under our pre-ico crowd fund 12,000,000 ETA tokens distributed under our traditional crowd fund 3,800,000 ETA tokens pre-allocated to the Ethace team 2,500,000 ETA tokens reserved for future game development and unforeseen expenses Up to 500,000 ETA tokens reserved for the bounty program based on percentage of funds raised After our ICO remaining tokens will be burned.
+
+Total Supply: Only 20,000,000 ETA tokens will be created.
+
+Total fund raising valuation of approximately 10 million USD. We believe our valuation is very conservative considering the valuation of other casino Dapps. This will bring tremendous value to our investors in token appreciation and through profit sharing.
+
+As of July 6th 2017, the valuation of our competitors on www.coinmarketcap.com is:
+
+https://coinmarketcap.com/assets/funfair/ 100 million https://coinmarketcap.com/assets/vslice/ 34 million https://coinmarketcap.com/assets/etheroll/ 36 million https://coinmarketcap.com/assets/edgeless/ 58 million
+
+PRE -ICO Crowd Fund
+
+A Pre - lco Crowd Fund will be lunced and then a Traditional Crowd Fund.
+
+Total raised Pre - lco ETH: 1,000 Total Issued Pre - lco Tokens: 1,200,000
+
+Traditional Crowd Fund
+
+Total raised ETH hard cap: 11,000 Total Issued Tokens: 12,000,000
+
+Bracket 1: Lasts up to 7 days: 1 ETH = 210 ETA Bracket 2: Lasts up to 7 days: 1 ETH = 200 ETA Bracket 3: Lasts up to 7 days: 1 ETH = 190 ETA Bracket 4: Lasts up to 7 days: 1 ETH = 180 ETA
+
+Copyright  http://ethace.co 2017
+
+
+
+14
+
+Future Game Development
+
+This portion of funds will be held strictly for future game development with a 2-year lockup period. We aim to use the dividends earned from this to fuel expenses, such as hiring a support team, server costs, development changes etc. It will also allow Ethace to have the necessary means to raise more capital in the event further funds are required to develop, hire, and market our future games. This will be critical to Ethaces success as we do not have any further revenue streams to pay for ongoing operational costs. We plan on holding onto these tokens and will refrain from selling them off unless absolutely necessary. Selling these ETA tokens will dilute current ETA token holders which we will refrain from doing.
+
+Development Team
+
+A total of 5 million ETA tokens are reserved for the Development team. These ETA tokens will be handed out to the Ethace development team. Once again, we do not want to sell off these tokens and will only do so if absolutely necessary. (We will have a token lockup period of 2 years in which every 6 months 25% of our tokens are accessible) Our plan is to earn our income
+
+Copyright  http://ethace.co 2017
+
+
+
+15
+
+through our allotted share of dividends from holding these tokens. This negates the need to sell them and keeps the circulating token supply small, increasing token value.
+
+Token Challenge
+
+Ethace plans to raise funds using the first ever token distribution through gambling. We call this new token distribution method, Token Challenge. After the traditional crowd fund period of Ethace, we will be using Token Challenge to raise any remaining amount of ETA tokens. Through our Token Challenge smart contract, we allow Ether wagers to be placed to win our ETA tokens. Each loss is added to the raised Ether capital and each win results in free tokens for the player. Further details will be announced closer to the end date of the traditional crowd fund.
+
+Bounty
+
+An extensive bounty program will be created for white paper translations, bug bounty, marketing bounty etc. More information will be posted on our blog at https://medium.com/ @Ethace Casino
+
+Token holder benefits
+
+Return on Investment:
+
+95% of earnings will be held in escrow every 3 months for 1 week on all profit earned during that time period. Every token is entitled to an equal proportion of earnings based off of the total supply of ETA tokens. Earnings must be manually claimed. This is a preventative feature whereby lost ETA tokens will be unable to claim funds. An automatic approach would not distinguish between accessible and inaccessible ETA tokens. Any unclaimed funds will be added to the bankroll which will allow the house funds to gradually grow over time.
+
+There will also be token value appreciation simply due to the 5% of retained earnings which will go back into the house bankroll and/or future game bank rolls. ETA token holders are investing in an Ethereum casino with future plans to develop more games.
+
+Voting rights allow token holders to work together with the Ethace team on the direction of the casino. For example, a vote is held to determine which game the ETA token holders are most interested in being added to Ethace.
+
+Copyright  http://ethace.co 2017
+
+
+
+16
+
+Ethace Contracts
+
+We will be developing a few contracts in order to run our casino Dapp securely and automated on the Ethereum block chain. Each of these contracts will also be audited by an independent third party source to ensure bugs are discovered and contracts optimized.
+
+Game Contract:
+
+Our first game contract will be exclusively for our game. We plan to have separate third party audited contracts for each game on Ethace. This will strengthen security by isolating each game to its own smart contract. Any changes to one game will not affect the other.
+
+Erc20 Game Contract:
+
+This contract will be the very first of its kind on Ethereum. It is a game changer, enabling our players to wager any ERC20 token and even request payouts in any ERC20 token. By leveraging Kyber Networks instant DEX we are able to offer this revolutionary experience to our players. It will expand our user base by billions of additional dollars which are currently locked up in ERC20 tokens. No other Ethereum casino currently offers or has plans to offer this feature.
+
+Promotional Game Contracts:
+
+We will have promotional game contracts which we plan to deploy on special events which enhance player returns. Ex: Our game contract payout price multiplier is 1.0, and we have an oracle which feeds us the price in USD. When our Promotional Game Contract detects 1000+ USD Ether price then the payout price multiplier is for example 1.03
+
+Voting Contract:
+
+A future voting contract will be created in order to communicate securely with our token holders on issues pertaining to the development of Ethace. Our current model is a voting contract to present ideas and receive feedback on proposals we plan to go through with. Or to even decide the next game Ethace should add. We will explore any governance Ethereum Dapp which can assist us, such as Aragon.
+
+Dividend contract:
+
+Our dividend contract will be an automated approach whereby all ETH profits from the previous 3 months will be held in a reserve for token holders to claim. The contract will operate similarly to dividend paying stocks whereby a year is divided into 4 equal quarters. Every 3 months, 95% of the profit will be sent and stored in our dividend contract and held for 1 week to be claimed. Any unclaimed profit will be added to the bankroll. We will also be implementing the ability for our token holders to request their dividend payout in any ERC20 token. We will once again be leveraging the Kyber Network in order to provide this unique feature to our token holders.
+
+Copyright  http://ethace.co 2017
+
+
+
+19
+
+Executive Summary
+
+The Ethereum network is poised to become the single most revolutionary technology since the modern internet was introduced in the 1990's. In 2017, the world has seen a surge of interest in distributed ledgers which began with the launch of the Bitcoin network in 2009. Ethereum's ability to build on Bitcoin concepts with a Turing-complete computing machine inside of a blockchain network has opened up a myriad of opportunities.
+
+The countless opportunities mixed with the surge in popularity have led to hundreds of millions of dollars in resources being directed at a variety of individual projects aiming to leverage Ethereum technology. This behaviour provides tangible proof of both interest and market potential for the system, however, each project within the network has been left to manually handle the most basic of processes, leaving overall gaps in security, usability, and consistent standards.
+
+Recognizing this opportunity, Majoolr aims to build systems that close these security gaps and help facilitate mainstream adoption.
+
+Problem Overview
+
+The majority of smart contracts are deployed in a custom, fragmented fashion. For even basic functionality such as math operations, token contracts, or array iterations, every development team must either, write their own source code, copy/paste code from a variety of sources, or store code files from open repositories and deploy them. This manual handling and code deployment leaves unnecessary security gaps at the very beginning of every Ethereum development project and the problem is non-trivial.
+
+The Ethereum ecosystem is now responsible for holding and transferring assets worth billions of dollars. Majoolr aims to solve this problem starting with open source.
+
+Mission Statement
+
+"Our mission is to build secure, dependable, user-centric systems for Ethereum blockchains."
+
+Majoolr will be at the center of global distributed ledger adoption as we bring security, standards, and confidence to the many layers that make up the blockchain experience. Our system designs enforce methodologies such as modular, reusable, open source code packages, pre-deployed on the network, as well as robust unit and integration testing, clear documentation, and fluid communication amongst developers and between developers and clients. Majoolr open source code libraries are the starting point as we form the foundation for any development team to build on. Our libraries provide these teams the confidence that any base computing functionality will perform as expected and without glaring security gaps.
+
+Copyright  http://ethace.co 2017
+
+
+
+20
+
+Use Case
+
+Majoolr currently has 12 deployed libraries handling four areas of logic:  Math Operations  Array handling  Standard Tokens  Multisig Wallets
+
+These libraries are deployed on all three major Ethereum networks including Rinkeby, Ropsten, and Mainnet. The open source repository located at https://www.github.com/Majoolr also contains all documentation to incorporate our libraries throughout the entire development workflow for any distributed application from compilation to testing to deployment. These code bases have been thoroughly tested and incorporated in live smart contracts and the higher level libraries, such as those used for tokens and wallets, also leverage the lower level library deployments. More importantly, since we have focused on deployed library contracts, development teams using them do not have to touch this code base, they merely link to the code already live on the chosen network. This layering of tested, documented, and deployed immutable source code offers an unmatched level of security for contracts that use them. Development teams are left to focus on the security of their custom code built on top these libraries. The Majoolr team will continue to expand its efforts with improving security on all Ethereum networks. This expansion will include additional open source library code to handle a variety of common logic operations, standardized contracts, and user systems that leverage tested code bases. Our hope is to provide a substantial contribution to the future global economy in distributed systems.
+
+Copyright  http://ethace.co 2017
+
+
+
+21
+
+Road Map
+
+Step -1 Crowd fund launch
+
+Step -2 Official alpha launch on test net Third party security audit on game contract Develop Token contract (Only if required) Third party security audit on Token contract (Only if required)
+
+Step -3 Live Soft launch of Ethace for ETH to ETH wagering and payouts only
+
+Step -4 Complete ERC20 wagering/payout development Security audit on ERC20 smart contract ERC20 wagering/payout soft launch
+
+Step -5 Full launch of complete bankroll (tentative)
+
+Step -6 Develop dividend smart contract Security audit on dividend smart contract Go live with dividend contract after security audits passed Development on new casino game begins New game official alpha launch on test net Third party security audit on game contract
+
+Step -7 Develop new games for the Ethace platform Security audit for new games smart contracts
+
+Step -8 Soft launch of new games
+
+Step -9 Full launch of new games using full bankroll
+
+Step -10 Create voting smart contract / use Aragon or other governance platform
+
+Copyright  http://ethace.co 2017
+
+
+
+22
+
+Priorities:
+
+Upon availability we plan to implement the following: Payment Channels: Raiden implementation to greatly reduce bet processing times Update RNG Seed: Ledger proof implementation to ensure a truly random RNG seed is generated
+
+Funding Breakdown
+
+House Bankroll
+
+We will dedicate 70% of the funds raised to the bank roll. This will allow for larger bets, bigger wins and most of all higher dividend payouts to token holders.
+
+Marketing
+
+Our target market is crypto holders with an emphasis on Ethereum holders. Banners and social media bounties are just two examples. Specifics include: coinmarketcap banners, Bitcoin talk, twitter, Reddit bounties etc.
+
+Contractors
+
+This 5% allotment will be used to hire 1 more person to assist with development/support. As Ethace ramps up we will look into using the development fund dividends to support more contractors.
+
+Copyright  http://ethace.co 2017
+
+
+
+23
+
+Legal and accounting
+
+We do not want to risk ever being shut down for any reason, and believe seeking legal guidance as well as purchasing a proper gambling license will allow Ethace to grow worry free.
+
+Unforeseen Expenses/Exchanges funding
+
+Any expenses which abruptly come up and require immediate attention will be funded using this pool of funds. We will also use these funds to list Ethace ETA tokens on as many exchanges as we can. Listing fees would be covered by this pool.
+
+Employees
+
+In order to continue development of the casino Dapp, this allocation of funds will go towards the Ethace team members.
+
+ERC20/ETH, ETH/ERC20 or ERC20/ERC20 Wagering and Payouts
+
+ERC20/ETH or ETH/ERC20 Wagering: Ethace is looking to leverage the Kyber Network or 0x in
+
+order to offer ERC20 token wagering and payouts. When a player places a wager we will provide an interface with Kyber Network showing ERC20 token conversion rates with the token they wagered. (Bancor smart token contracts, as well as other alternatives may also be explored)
+
+Below are examples of Ethace using Kyber Network or 0x to perform ERC20 wagers and/or payouts.
+
+Terms:
+
+Wager: player bet amount Payout: Amount paid from Ethace Bankroll Kyber Network: Instant decentralized exchange. https://kyber.network/assets/KyberNetworkWhitepaper.pdf 0x: Decentralized open source exchange protocol. https://github.com/0xProject/whitepaper/blob/master/0x white paper.pdf
+
+Kyber Network
+
+The Kyber network is a very appealing approach to ERC20 wagering and payouts. Our house ETH pool or the players wager can easily be converted into the requested token through the use of Kybers API.
+
+Copyright  http://ethace.co 2017
+
+
+
+24
+
+The commands below can be found within Kybers Whitepaper: https://kyber.network/assets/KyberNetworkWhitepaper.pdf
+
+"2.4.1. User API User API can be called by any Ethereum account, including normal account and contract ones.
+
+Transfer( amount, source tokens, destination token name, destination address) Transfer function converts amount of source tokens (token A) to destination tokens (token B) and sends type B tokens to destination address. For example, users can call Transfer( 100, "DGD", "Melon", "0xb794f5ea0ba39494ce839613fffba74279579268") to convert 100 DigixDao tokens to Melonport tokens and transfer all converted Melonport tokens to "0xb794f5ea0ba39494ce839613fffba74279579268".
+
+GetExchangeRate( token A, token B) Returns the conversion rate between token A and token B. In the future we can support different exchange rates for different trade volumes."
+
+Scenario 1:
+
+ETH wager to ETH payout
+
+This is the standard and most common use case. The player wagers ETH and requests ETH payout. No special functionality required for such a scenario.
+
+Scenario 2:
+
+User wagers and loses 10 GNT in our casino game, which triggers our smart contract to call the command Transfer(10,GNT,ETH,ethacewallet) from Kybers api.
+
+The GNT tokens are converted into ETH and sent to our game smart contract which holds the houses pool of ETH funds.
+
+Scenario 3:
+
+User wagers 10 GNT and wins in our casino card game. They select ETH as their payout. Our smart contract calls GetExchangeRate(GNT,ETH) (Example: rate returns 0.00087930 x 10 GNT = 0.0087930 ETH)
+
+The player is paid 0.0087930 ETH from our house ETH pool for their win.
+
+Scenario 4:
+
+User wagers 10 GNT and wins in our casino card game. They select REP as their payout. Our smart contract calls Kyber with GetExchangeRate(GNT,REP) (Example: rate returns 0.1 x 10 GNT = 1 REP) Our smart contract then calls Transfer(1,REP,ETH,playerwallet)
+
+Copyright  http://ethace.co 2017
+
+
+
+25 GNT wager is converted into REP which then converts house ETH into that amount of REP and is paid out to the player.
+
+Scenario 5:
+
+User wagers 10 GNT and wins in our casino card game. They select GNT as their payout. Our smart contract calls Kyber with GetExchangeRate(GNT,ETH) (Example: rate returns 0.00087930 x 10 GNT = 0.0087930 ETH) Our smart contract then calls Transfer(0.0087930,ETH,GNT,playerwallet)
+
+Kyber Logic
+
+Copyright  http://ethace.co 2017
+
+
+
+26
+
+
+
+One example would be the wagering of GNT tokens to win ETH. If the player wagers 10 GNT, the Ethace Game Smart Contract will reach out to the 0x order book in order to determine what the correct ETH payout should be. This can be captured by determining the GNT/ETH ratio of a 10 GNT market sell order to the 0x DEX order book.
+
+
+
+Sample 0x DEX order book
+
+
+
+SUM
+
+0.0019 0.00378 0.00564 0.00748 0.00839 0.00929
+
+
+
+TOTAL ETH 0.0019 0.00188 0.00186 0.00184 0.00091 0.0009
+
+
+
+SIZE (GNT)
+
+2 2 2 2 1 1
+
+
+
+BID (ETH)
+
+0.00095 0.00094 0.00093 0.00092 0.00091 0.0009
+
+
+
+In the event of a Player win, Ethace will request a quote for a 10 GNT/ETH market sell order from 0x DEX order book. The resulting ETH payout from Ethace bankroll is 0.00929 ETH.
+
+
+
+In the event of a Player loss, Ethace will market sell 10 GNT/ETH from the 0x DEX order book. The resulting 0.00929 ETH will be added to Ethaces bankroll.
+
+
+
+Formula: 0.00929=(0.00095*(2/10))+(0.00094*(2/10))+(0.00093**(2/10))+(0.00092**(2/10))+(0.00091**(1/ 10))+(0.0009**(1/10))
+
+
+
+Scenario 3:
+
+
+
+0.00929 ETH wager to GNT payout
+
+This is the reverse of Scenario 2. Ethace game smart contract would reach out to the 0x DEX order book in order to determine the correct conversion for 0.00929 ETH/GNT market buy order.
+
+
+
+SUM
+
+0.0019 0.00378 0.00564 0.00748 0.00839 0.00929
+
+
+
+Sample 0x DEX order book
+
+
+
+TOTAL ETH 0.0019
+
+
+
+SIZE (GNT) 2
+
+
+
+0.00188
+
+
+
+2
+
+
+
+0.00186
+
+
+
+2
+
+
+
+0.00184
+
+
+
+2
+
+
+
+0.00091
+
+
+
+1
+
+
+
+0.0009
+
+
+
+1
+
+
+
+ASK (ETH)
+
+0.00095 0.00094 0.00093 0.00092 0.00091 0.0009
+
+
+
+Copyright  http://ethace.co 2017
+
+
+
+27
+
+
+
+In the event of a Player win, Ethace will market sell 0.00929 ETH/GNT on the 0x DEX order book from its bankroll. The resulting GNT payout from Ethace bankroll is 10 GNT.
+
+In the event of a Player loss, Ethace will add the 0.00929 ETH wager to its bankroll.
+
+
+
+Scenario 4:
+
+
+
+10 GNT wager to GNT payout
+
+In this scenario the user is wagering 10 GNT and requesting a 10 GNT payout. The game smart
+
+contract will reach out to 0x to determine how much house ETH to sell for10 GNT. Sample 0x DEX order book
+
+
+
+SUM
+
+0.0019 0.00378 0.00564 0.00748 0.00839 0.00929
+
+
+
+TOTAL ETH 0.0019 0.00188 0.00186 0.00184 0.00091 0.0009
+
+
+
+SIZE (GNT)
+
+2 2 2 2 1 1
+
+
+
+BID (ETH)
+
+0.00095 0.00094 0.00093 0.00092 0.00091 0.0009
+
+
+
+In the event of a Player win, Ethace will market sell 0.00929 ETH/GNT on the 0x DEX order book from its bankroll. The resulting GNT payout from Ethace bankroll is 10 GNT.
+
+In the event of a Player loss, Ethace will market sell the 10 GNT wager and add 0.00929 ETH to its bankroll.
+
+
+
+Copyright  http://ethace.co 2017
+
+
+
+Ox Logic
+
+Copyright  http://ethace.co 2017
+
+
+
+29
+
+Risks
+
+There are numerous risks running a casino on the Ethereum network, some include: Ethereum unexpectedly loses all value ERC20 tokens are hacked and funds lost Kyber is hacked and funds lost Ethace is hacked and funds lost Smart contract behave unpredictably and cause losses Read your Terms of Sale http://ethace.co/documents/terms_of_sale.pdf Please be aware of the risks above including all other apparent risks associated with such a monumental innovation such as Ethereum and the block chain. We will not be held responsible in the event of any losses.
+
+Our Commitment
+
+Our end goal is to one day have Ethace run fully decentralized with zero centralized input. We imagine an experience where all actions are dictated by smart contracts. Unfortunately at this time Ethereum is still being developed and changing rapidly. We therefore need to be vigilant and have more control than wed like during the initial stages of Ethace.
+
+Copyright  http://ethace.co 2017
+
+
+
+

@@ -1,0 +1,625 @@
+Whitepaper
+
+Version 3.33  September 8, 2017
+
+Token Sale  September 13, 2017
+
+
+
+Table of Contents
+
+OVERVIEW....................................................................................................................................... 4 About EventChain ....................................................................................................................... 4 Decentralization .......................................................................................................................... 4 Mission Statement ...................................................................................................................... 4 Interaction with the Ethereum Blockchain................................................................................. 5 Payment Processing .................................................................................................................... 5 SmartTicket Computational Costs .............................................................................................. 6 Centralized Event Industry.......................................................................................................... 6 EventBrite.................................................................................................................................... 6 Ticketmaster/Live Nation............................................................................................................ 7 StubHub ...................................................................................................................................... 7
+
+TICKET INDUSTRY ISSUES ADDRESSED............................................................................................ 8 Ticket Issues ................................................................................................................................ 8 Resale Issues ............................................................................................................................... 8 Other Issues ................................................................................................................................ 9 Website Issues ............................................................................................................................ 9
+
+EVENTCHAIN FEATURES................................................................................................................ 10 EventChain Oracle..................................................................................................................... 10 Data Analysis ............................................................................................................................. 10 Forwarding Contracts................................................................................................................ 10 SmartTicket Digital Collection................................................................................................... 10
+
+LEADERSHIP TEAM ........................................................................................................................ 11 Ashton Addison ......................................................................................................................... 11 Jesse Couch ............................................................................................................................... 12 Chong Foo Chaw ....................................................................................................................... 12 Lance Shaler .............................................................................................................................. 13 Dino Bassanese ......................................................................................................................... 13 Jay Addison ............................................................................................................................... 13 Geoffrey Spooner...................................................................................................................... 14 Sami Hassan .............................................................................................................................. 14
+
+Page 1
+
+
+
+BOARD OF ADVISORS .................................................................................................................... 15 Dr. Steven Funk ......................................................................................................................... 15 Piotr Piasecki ............................................................................................................................. 15 Jeans Tang ................................................................................................................................. 16 Dror Medalion........................................................................................................................... 16 Dr. Amir Hajbaba....................................................................................................................... 16 Amin Bohio................................................................................................................................ 17 Rob Whittle ............................................................................................................................... 17 Richard Patterson ..................................................................................................................... 17 Tanis Mercado........................................................................................................................... 18 Keith Lownie.............................................................................................................................. 18 Tony Simonovsky ...................................................................................................................... 18
+
+EVENTCHAIN TOKEN SALE ............................................................................................................ 19 Participation Terms................................................................................................................... 19 Phase-1 Token Sale ................................................................................................................... 19 Phase-2 Token Sale ................................................................................................................... 20 Phase-3 Token Sale ................................................................................................................... 20 Token Sale Period ..................................................................................................................... 20 EventCoin Distribution .............................................................................................................. 20 Funds Allocation  Years 1-3..................................................................................................... 22
+
+ROADMAP ..................................................................................................................................... 24 2017 Q4 - EventChain Professional SmartTickets..................................................................... 24 2018 Q1 - EventChain Ticket Exchange Interface ..................................................................... 24 2018 Q1 - EventChain Database ............................................................................................... 24 2018 Q1 - EventChain Oracle .................................................................................................... 24 2018 Q2 - EventChain Mobile Wallet Client ............................................................................. 25 2018 Q2 - EventChain Desktop Wallet Client ........................................................................... 25 2018 Q4 - EventChain VR SmartTickets .................................................................................... 25
+
+COMMONLY ASKED QUESTIONS .................................................................................................. 26 What is the Total Supply of EventChain Tokens? ..................................................................... 26 What are the Legal Considerations?......................................................................................... 26 How do I set up an Ethereum Wallet to Utilize my EVC Tokens?............................................. 26
+
+CONCLUSION................................................................................................................................. 27
+
+Page 2
+
+
+
+REFERENCES .................................................................................................................................. 28
+
+Page 3
+
+
+
+OVERVIEW
+
+About EventChain
+
+EventChainTM is an advanced decentralized blockchain token network that powers a unique smart contract ticketing system (SmartTicketsTM). EventChain solves many of the problems with current event ticketing systems available today while providing the additional benefits of using a blockchain as the foundation. Both the EventChain system and its tokens ("EVC Tokens") encourages everyone in the ecosystem, including all stake holders such as event managers of sport and concert events, party organizers, social clubs and ticket purchasers to sell or buy SmartTickets using EVC Tokens and other traditional payment methods.
+
+EventChain will provide a simple user interface for event managers to manage and execute SmartTicket sales globally for small to large events supported by the underlying blockchain technology and EVC Tokens, empowering a true peer-to-peer network for buying and selling tickets to events.
+
+EventChain has the opportunity of becoming the first real world blockchain application that is widely adopted by the general public without any need to understand the underlying distributed technology.
+
+Decentralization
+
+EventChain will develop a decentralized modular SmartTicketing network upheld by a peer-topeer platform. Centralized event ticketing infrastructure is vulnerable to malicious attacks and single points of failure. By selling SmartTickets and processing transactions on the decentralized EventChain token network built on the Ethereum blockchain, everything is secured by 256-bit cryptography that will protect from fraud and prevent malicious attacks against the network.
+
+Mission Statement
+
+EventChain's mission is to: 1. Solve a long list of issues for event ticket sales by providing the advanced functionality of SmartTickets using EVC Tokens. See following sections for details. 2. Provide holders of EVC Tokens with benefits such as early bird tickets, priority seating and discounted pricing. 3. Foster the utilization of EVC Tokens inside the EventChain SmartTicketing platform. Although EventChain will utilize various payment gateways that accept EVC Tokens to purchase products and services from over 205,000 vendors across 182 different countries, all significant ticketing benefits will be available only to those using EVC Tokens.
+
+Page 4
+
+
+
+Interaction with the Ethereum Blockchain
+
+EventChain's Ethereum blockchain backbone provides the necessary framework to implement scalable, fast, and cryptographically secure SmartTicket transactions. The system will utilize smart contracts as the underlying technology for the creation of SmartTickets, harnessing the functional power of EVC Tokens as a proof-of-purchase. EventChain's ticketing platform can operate with fiat currencies; however, the SmartTicket utility is optimized when using EVC Tokens.
+
+SmartTickets act as a proof-of-purchase for any event, containing enforceable pre-set conditions programmed into the ticket's underlying smart contract code using Ethereum's native programming language Solidity. These conditions can be tailored to store immutable information for any type of event imaginable.
+
+Implementing EventChain's blockchain token network for event management presents the opportunity to upgrade the current event ticketing industry to faster transactions, indisputable ticket vouchers, transparency from event hosts and fully programmable functions using EVC Tokens.
+
+The Ethereum network provides a decentralized, Turing complete, virtual machine capable of running a multitude of dapps, decentralized applications, including smart contracts, token systems, distributed file and data storage and the creation of decentralization autonomous organizations (DAOs). Anyone can implement smart contracts to solve any computational problem, implementing logic from other programming languages and translating it to enforceable contracts in Solidity [1]. Ethereum is the ideal foundation for EventChain's SmartTicket system.
+
+Payment Processing
+
+Event goers can purchase SmartTickets directly on the EventChain network through a variety of payment gateways.
+
+Ideally, EVC Tokens will be used primarily for SmartTicket purchase but other ERC20 tokens including Ether ("ETH") may also be accepted. Event managers will also have the capability to accept fiat currency for SmartTicket sales through payment gateways.
+
+EventChain will utilize various payment gateways that accept EVC Tokens to purchase products and services from over 205,000 vendors across 182 different countries. Payment gateways convert the EVC Tokens in real time to the vendor's currency.
+
+Page 5
+
+
+
+SmartTicket Computational Costs
+
+Blockchain costs are limited to a variable "gas" fee on the Ethereum network. Gas exists only inside of the Ethereum Virtual Machine and is calculated based on the amount of work being performed inside of a transaction. For larger and more complex SmartTickets (in terms of the amount of work needed to compute the programming in the underlying smart contract) the gas fee will be higher. The Ethereum blockchain currently averages only a few cents per transaction, significantly lower than credit-card and bitcoin transactions.
+
+Centralized Event Industry
+
+The major event ticketing companies today run a billion dollar industry in a monopolistic fashion. The majority of the ticket sales are facilitated by Ticketmaster, consistently driving prices higher than the original ticket price and forcing ticket purchasers to abide by their rules while offering no available alternatives. The current business practices encapsulate a capitalist mentality that adds little value to the event experience, yet hoards a disproportionate share of the profits.
+
+Countless numbers of event goers have waited for tickets to go on sale, only to have them soldout nearly instantly by scalpers or bots which resell them for outrageous mark-up prices, on top of the already ridiculous service charges. Ticket companies even sell directly on the secondary market, shifting the profits from scalpers back to themselves and extorting event goers instead of addressing and fixing the problem.
+
+Many artists have attempted to wage wars with ticket service provider giants in the past, only to fold. With the arrival of EventChain, we are putting the power back in the hands of event goers by adding a level of transparency to event ticketing that rivals current big business event management options.
+
+Three of the biggest companies in the centralized event-ticketing industry are:
+
+EventBrite
+
+Eventbrite charges a service fee of 3.5% and $0.60 per ticket sold, plus another 2.5% of the ticket price for processing payments, all in US dollars. In other currencies, the fees are up to 8% per transaction [2]. While these charges are typically less than that of Ticketmaster's infamous "convenience" fee, they are still unnecessarily high. Eventbrite's centralized platform hosts around 2 million events per year and processes an average of 4 million tickets each week.
+
+Page 6
+
+
+
+Ticketmaster/Live Nation
+
+Ticketmaster's current monopolistic domination of the ticketing industry produced $8.3 Billion in revenue in 2016 [3], with the majority coming from convenience fees, processing fees and transaction fees. In many cases, these "convenience" fees are unavoidable and there is no alternative because Ticketmaster prohibits alternative purchasing methods.
+
+StubHub
+
+StubHub is owned by eBay and went from providing a small service to buy and sell tickets for events on the resale-market, to running an international ticketing marketplace. They take a commission fee from each ticket purchase. StubHub's fourth quarter gross merchandising volume was $1.24 billion in 2016 and has grown 20-30% year-over-year [4].
+
+Page 7
+
+
+
+TICKET INDUSTRY ISSUES ADDRESSED
+
+EventChain will provide solutions for the following issues in the event ticketing industry:
+
+Ticket Issues
+
+ Counterfeit tickets are created and sold for events. o A finite amount of immutable SmartTickets will be available for each event and are tied to an event's smart contract. Each SmartTicket has a unique nonce, or unique sequence number that makes it impossible to be sold multiple times or counterfeited on the network. Proof of ownership can be verified through the Ethereum blockchain by implementing zero-knowledge proofs whereby a purchaser can prove ownership of their ticket without revealing any information besides the fact the ticket is theirs.
+
+ Tickets are often hard to resell with undeniable proof that the ticket is an authentic original ticket. o EventChain can seamlessly transmit tickets through the blockchain to anyone for gifting or reselling. SmartTickets have the ability to maintain data in the form of smart contract code and can be interpreted through the EventChain Oracle, so if a SmartTicket is resold all of the original ticket information is still embedded on EventChain's framework.
+
+Resale Issues
+
+ Allegations of event ticket vendors and resellers scalping their own tickets and then reselling them for as much as a 200% mark-up on their own subsidiary platforms are not uncommon. o SmartTickets are fully programmable, enabling smart contract code that can peg tickets at a permanent price, designate a maximum markup value, or attribute any other individual or group ticket pricing variables on both the primary and secondary markets. o To prevent massive ticket purchases from scalpers, event ticket distribution options can be tailored with any custom range on the amount of tickets available to single users or groups, and optional constraints that allow for alternative distribution methods.
+
+ Ticket scalpers deceive purchasers into buying re-sale VIP tickets at outrageous prices, but do not qualify them for VIP features because the tickets are VIP ineligible under resale terms.
+
+Page 8
+
+
+
+o EventChain will have an integrated ticket resale reputation system, allowing event ticket vendors and resellers to build and grow their reputation as they sell SmartTickets. Scalpers will be clearly identified by their SmartTicket reputation.
+
+Other Issues
+
+ Pre-sale ticket offerings are often not transparent. o Using the Ethereum blockchain as a foundation brings a higher level of transaction accountability, scalability and fungibility to the event ticketing industry than any existing centralized ticketing architecture available. The EventChain network on the blockchain brings complete transparency to all parties involved.
+
+ Event ticket services opt-in ticket purchasers into unnecessary subscriptions to media and marketing material in a deceptive manner during the ticket purchasing process. o Where EventChain will not lend themselves to deceptive tactics, SmartTickets underlying smart contract code is fully programmable and SmartTickets could be created in a fully transparent manner to incorporate add-ons like food and drink, parking, 50/50 draws, merchandise credit and any combination of products or services.
+
+Website Issues
+
+ Large volumes of ticket purchasers can simultaneously flood an event ticket sales website when tickets are released and often overload and crash a ticket system. o Because EventChain's transaction framework is decentralized, the purchasing of tickets will not be limited to EventChain's website and mobile applications. EventChain will develop a ticket purchasing interface that can be distributed on an unlimited number of websites, all selling tickets through a plugin, dispersing traffic from a centralized server, avoiding potential crashes and allowing significantly more people to buy tickets simultaneously.
+
+ Event ticket services have been affected by DDoS attacks against their Domain Name Servers, crashing their websites at the time of ticket purchasing. o The EventChain distributed platform will pull information from the Ethereum blockchain and verify it through validating nodes distributed globally. Distribution protects the network by incentivizing positive behavior and eliminating single points of attack.
+
+Page 9
+
+
+
+EVENTCHAIN FEATURES
+
+EventChain Oracle
+
+EventChain's Oracle will be set-up to push and pull data from smart contracts to alleviate computational stress from the Ethereum Virtual Machine and will communicate through an integrated EventChain plugin, distributable across the web for access to ticket purchases and interaction with the SmartTickets system. [6]
+
+Data Analysis
+
+SmartTicket meta-data about event related information can be used for statistical analysis. For example, event creators can forecast future ticket sales using variables like the quantity of SmartTickets sold for each event, how many were initially available and how quickly they sold and at what prices. This information is recorded in real-time so the amount of SmartTickets remaining to upcoming public events is transparent for everyone to see.
+
+Forwarding Contracts
+
+When an RSVP deposit or partial payment for an event is needed, EventChain will utilize "forwarding smart contracts" where transactions can be initialized and the terms are guaranteed by the SmartTicket system, enforceable until the event is completed or whenever the custom timestamp expires.
+
+SmartTicket Digital Collection
+
+Each SmartTicket purchaser will have access to a permanent record of which events they attended based on their transaction history displayed through the EventChain transaction framework on the EventChain Oracle, creating a digital collection of ticket stubs and a literal "chain of events" to recollect memories over and to share with friends and family or on social media.
+
+These extra features incentivize the adoption of the SmartTicket platform. As the network grows, so will the utility of the EVC Tokens for operation and value added features.
+
+Page 10
+
+
+
+LEADERSHIP TEAM
+
+The Leadership Team consists of top business professionals, entrepreneurs, and innovators in the fields of cryptocurrency, media and broadcasting plus many years of software development.
+
+Ashton Addison
+
+CEO, Founder Ashton acquired a BBA Business Administration, Accounting & Finance (University of the Fraser Valley) in 2016. Ashton has been a leader, entrepreneur and technology enthusiast in blockchain technology since 2013. With a decade of experience in markup languages and website development and a constant thirst for knowledge, Ashton constantly studies coding, trading cryptocurrency, and living for cutting-edge decentralized technologies with a special place for Ethereum and smart contracts. He founded the online FinTech and digital currency news broadcasting network Crypto Coin Show and has crypto communities on YouTube, Facebook, and Twitter. Ashton also founded Shed Show Productions in 2012, a production company which created and managed multiple sold-out concerts. After underestimating the processing costs of event ticket providers, he managed a team to sell tickets directly to event goers. By applying his experience from cryptocurrencies and decentralized technology to EventChain's SmartTicketing platform, he aims to make events cheaper and more accessible to everyone.
+
+Page 11
+
+
+
+Jesse Couch
+
+Core Developer
+
+Jesse is a veteran cryptocurrency trader and advocate. He is an Ethereum genesis block holder with numerous 1000x and 100x returns on top crypto projects. Jesse is a veteran in the cryptocurrency industry, with extensive knowledge and programming experience as a developer of cryptocurrencies and tokens as well as working in Linux, Apache, MySQL and PHP development languages. Being an experienced developer, affords him significant insight into the best blockchain projects to participate in. Entering the blockchain space in early 2011, he has long term experience trading bitcoin, altcoins and currently manages the Shares Per Hour Virtual Reality Business Networking blockchain platform, integrating blockchain business with virtual reality on the forefront of innovation.
+
+Chong Foo Chaw
+
+Managing Director, Zhaolim Pte. Ltd.
+
+Chong Foo has 25 years of experience in business management and start-ups across various industries and has served on multiple boards, advising and assisting in areas including strategic business planning, innovation and intellectual property management, and operations management. Mr. Chaw started his career with Goldman Sachs and Morgan Stanley from 1992 to 1996, and now serves at the Managing Director of Zhaolim Pte. Ltd., an investment holding company.
+
+Mr. Chaw is also the General and Limited Partner of Obermark AG., a Europe-based holding company focused on investing in small and medium-sized, private companies (the "Mittelstand") with leading technology and market share in the German-speaking countries. From 2011 to 2016, he served as an independent board member of CIMB-Trust Capital, which invested and managed over A$1.3 billion in prime office properties in Australia.
+
+From 2000 to 2006, Mr. Chaw served as the President for Asia at Nasdaq-listed Internet Security Systems Pte. Ltd., a leading internet security software firm, which was acquired by IBM in 2006. He also served as the Senior Independent Advisor at Deloitte & Touche Corporate Finance Limited Hong Kong SAR and People's Republic of China from 2004 to 2007, Director at Qualitas Medical Group from 2008 to 2011, and was Managing Director of Canadian Maple Leaf Holdings Ltd. from 1996 to 1999.
+
+Page 12
+
+
+
+Mr. Chaw received his MBA (1991) and BBA (Honors) (1989) from the University of Texas in Austin. During his National Service, he served as a Naval Officer in the Republic of Singapore Navy and was selected for diving training at the elite Naval Diving Unit.
+
+Lance Shaler
+
+Executive VP
+
+Lance is the CEO of Click4Time Software Inc. for 7 years with extensive booking industry knowledge  running award winning appointment booking software globally. He taught computer technology at Southern Alberta Institute of Technology in Calgary, Alberta and has over 30 years in software development experience. Lance enjoys drafting and executing legal contracts, team building, corporate finance, and strategic planning. He was also the President and CEO of Sci-Com Data Services Ltd., which following his tenure sold for $63 million.
+
+Dino Bassanese
+
+Chief Product Manager
+
+Dino is the President of Click4Time Software. He has many years of experience managing Software as a Service product development including in-depth target market research, competitor and strategic analysis, feature specifications, website design, wire framing and UI/UX, quality assurance. His project management skills include planning, executing, controlling and closing the work of his development and design team to meet specific goals under strict software project deadlines. His commitment to ensuring applications are user friendly and customer focused is unparalleled.
+
+Jay Addison
+
+President
+
+Jay is the CTO of Click4Time Software. Jay took a keen interest in Bitcoin in 2009 and in 2013 he became a regular at the Bitcoin blockchain meet-ups and began formulating many concepts of applying blockchain technology to everyday products and services. Jay has also been a professional broadcaster for over 25 years and covered the Inside Bitcoins convention in Las Vegas in 2014, interviewing 34 top CEOs and founders of blockchain based start-ups. Jay can be seen on Reuters Insider Financial Network, YouTube, DailyMotion and many other media channels.
+
+Page 13
+
+
+
+Geoffrey Spooner
+
+VP Sales Geoffrey is a founder and VP Sales of Click4Time Software. He has an extensive background delivering high-level technological solutions to enterprise clients across the globe. He has been responsible for establishing Click4Time's corporate clients, successfully bringing booking solutions to users in over 15 countries with a track record of success in developing and emerging economies like Africa. Geoffrey specializes in internal and external growth-driven marketing strategies and is fully dedicated to growing the EventChain communities uniting from around the world.
+
+Sami Hassan
+
+Growth Hacker and Business Marketer Sami is a dedicated entrepreneur accomplished in concept development, feasibility analysis and securing the funding necessary for successful business growth. His experience offers more than 8 years in successful planning, developing and marketing of new and innovative technical solutions to consumer problems. He has been a self-motivated force who proactively anticipates and identifies customer needs and implements innovative solutions effectively in marketing Software as a Service products and services.
+
+Page 14
+
+
+
+BOARD OF ADVISORS
+
+The Board of Advisors consists of people with extensive track records as innovators and specialists in finance, marketing, software and blockchain/cryptocurrency industries.
+
+Dr. Steven Funk
+
+Silicon Valley Billionaire
+
+Dr. Funk has 30 years of experience in international corporate debt, equity investment, and real estate ownership and development. Funk built the largest fund management business in Investor Category Immigrant Funds to Canada, acquired Imperial Parking and built its operations into one of the top three dominant car park management companies in North America. With Masters and Doctorate degrees, a private pilot's license, and a ticket on the upcoming Virgin Galactic space flight, he has a plethora of business expertise.
+
+Dr. Funk is a founding director of Unitus, and founding funder of Unitus Capital, now the largest boutique investment banking group in the microenterprise space which recently surpassed $1 billion in funding initiatives. Dr. Funk is one of the pivotal sponsors of TED talk's annual international event.
+
+Today, Funk manages his private investment group, Funk Partners through Funk Holdings. He engages in private financial management as well as philanthropic endeavors, with an emphasis on microfinance initiatives. His focus has been on international private equity and real estate investment, with a weighting in real estate acquisition, ownership, and development. He is also a passionate and proud member of the XPrize Foundation Innovation Board (www.xprize.org), led by Peter Diamandis.
+
+Piotr Piasecki
+
+Core Developer, Factom
+
+Piotr "ThePiachu" Piasecki is one of Factom's Core Developers and has been involved with the cryptocurrency community since 2011. Piotr wrote his master thesis on Bitcoin security in Technical University of Lodz, in Poland. He is a former moderator and top contributor to www.Bitcoin.StackExchange.com as well as a current moderator of /r/Bitcoin subreddit. Piotr runs a number of Bitcoin-focused websites, including Vanity Pool and TestNet Faucet, and has been a blogger for major cryptocurrency media outlets like Brave New Coin, Crypto Biz Magazine and CoinDesk.
+
+Page 15
+
+
+
+Jeans Tang
+
+Founder & President of Blockchain Research Institute
+
+Jeans is focused on deep learning on the Blockchain and is a Venture Capitalist, Innovator, and Preacher in the cryptocurrency sector. He started career in entrepreneurship as CEO of KST Ltd (Guangzhou), SMB Inc. in New York, and ENT Ltd. In Hong Kong and provides the most popular online classified ads in the eastern United States.
+
+Mr. Tang has worked as a senior Software Engineer/Lab Leader at Motorola Smart, Samsung SDS and led the developments of the earliest Artificial Intelligence and System Integration. Mr. Tang currently serves on the board of Blockchain courses, a non-profit organization that fosters the adoption of Blockchain training globally. He is also Vice President of The Nobel Prize Laureates Workstation, a non-profit organization connecting all the Nobel Prize Laureates and scientific and technological achievements to projects incubation of The Nobel Prize in the world. Before Bench Marking Blockchain Research, Mr. Tang was the Vice President of Olympia Investments Ltd, and led the earliest investment in the Bitcoin, Ethereum, Litecoin and more crypto currency & Blockchain start-ups.
+
+Dror Medalion
+
+CEO of Bitjob.io
+
+Dror is an Israeli blockchain entrepreneur focused on leading a dedicated team at Bitjob. His vision is to revolutionize online workplaces by applying the trust of blockchain technology to those in the labor force within and enable networking, compensation, rewards and incentives all through blockchain technology. Dror's blockchain platform can be seen at Bitjob.io. Dror also acts as the Lead Project Manager and ERP Consultant at Complete Business Solutions in Tel Aviv, Israel. His ability to manage data driven systems sets him as a distinguished Board member of EventChain.
+
+Dr. Amir Hajbaba
+
+PhD, Corporate Finance
+
+Amir obtained his PhD degree in Ireland UCC in 2011. His PhD dissertation examined the explanations of acquirer's under-performance following takeover completion. He has published and presented in both national and international journals in mergers and acquisitions. Dr. Hajbaba has worked throughout the finance industry including stock brokerage, venture capital and private equity firms. He has taught a variety of courses in Corporate Finance and Investments at a number of local and international institutions as an adjunct professor.
+
+Page 16
+
+
+
+Amin Bohio
+
+Security Researcher and Penetration Tester
+
+Amin has studied extensively in the field of Computer Science specializing in Web Application Security, Exploit Research, Server Hardening, Bash, C, Python, PHP, Linux Server Administration, Penetration Testing, and much more. His main focuses have always been digital technology focusing on network, web, and software security. His duties include formal penetration testing, probing and pinpointing vulnerabilities, employing social engineering and managing Security strategies.
+
+Rob Whittle
+
+Marketing and Advertising
+
+With over 25 years in Marketing and Advertising expertise and planning management including President of Omnicom Agency Group DDB Canada, Rob understands the full spectrum of marketing. During his tenure as President, DDB was honored with record breaking industry awards from not only the creative perspective but from a Management perspective  DDB Canada was the most awarded Agency in the history of advertising on the Canadian scene.
+
+Rob is a graduate from the Harvard School of Business Omnicom SMP Management Program, accomplished broadcaster and public speaker and an active member of the public service community. Rob was the first recipient of the Venerable Order of the Hospital of St. John of Jerusalem (St. John Ambulance) since 1926. Rob has served on numerous boards including the AAABC, Advertising Council of Canada, The Vancouver Board of Trade, The Vancouver Police Foundation, The United Way and Oceans Blue Foundation for sustainable tourism.
+
+Richard Patterson
+
+Wingfield Consultant and Serial Entrepreneur
+
+Richard is a serial entrepreneur and innovator with over 35 years of experience founding, managing and growing successful businesses. Designed, negotiated and sold multi-million pound deals to major organizations across the globe for over 25 years. Responsible for the innovation of key technologies/market positions that lead to millions of pounds of revenues and dominant niche market positions for Sun Microsystems, Apple Computer Inc. and Dell. Richard Currently assists a number of UK based Angel investors in evaluating potential investment opportunities and has close contact with the leading UK academic authorities on the impact of Venture Capital on SME's in Europe and the USA.
+
+Page 17
+
+
+
+Tanis Mercado
+
+Project Development
+
+Tanis is a partner and director of new projects for the Mercado and Associates Business Group (GEMA), a business group with 6,000 associates and has a strong presence throughout Mexico and the West Coast of the United States. GEMA's focuses primarily on transportation, housing and commercial real estate development, retirement communities and franchise restaurants. GEMA operates Mexico's leading companies in personnel and freight transportation. Tanis' responsibility is the evaluation of new ideas and opportunities with social, ecological and economical bottom lines.
+
+Keith Lownie
+
+MBA, CPA, CA
+
+Keith completed his Executive MBA in 2006 and has over thirteen years of financial industry experience, working as an auditor with KPMG, and as a Stockbroker/Financial Advisor with ScotiaMcLeod. Keith began instructing full time in 2003 and has facilitated the examinations for the Chartered Accountant School of Business (CASB) and the Chartered Professional Accountants (CPA) Professional Education Program (PEP). In addition to his professional accounting designation he has held Certified Financial Planner (CFP) and Canadian Investment Manager (CIM) designations.
+
+Tony Simonovsky
+
+ICO Focused Growth Hacker
+
+Tony is a serial entrepreneur. He started his first business in 2005, providing SEO services to clients in Moscow region. After working with SEO for 7 years, he sold his business. In 2012, he became interested in data science as applied to online marketing. Over the next 3 years, he became a well-known expert in the area and is now running a successful business, helping companies worldwide become data-driven. In 2017 he joined several ICO's, applying his 12 years of experience in digital marketing and growth hacking.
+
+Page 18
+
+
+
+EVENTCHAIN TOKEN SALE
+
+
+
+By taking part in the EventChain token sale, participants understand they are making a contribution into a Smart Contract System for the development of the EventChain SmartTickets platform as described in this whitepaper. The first event of the token sale is to create 84 million EVC Tokens which will be the total supply of EVC Tokens. The supply is capped and no further EVC Tokens can ever be created. Throughout the token sale, 54.6 million EVC Tokens will be made available to participants (65% of the total supply). Any tokens remaining at the end of the token sale will be assigned to a locked account for a period of 3 years.
+
+
+
+EVC Tokens are an Ethereum ERC20 token; following widely adopted token implementation standards and containing functional properties in the Ethereum blockchain. Tokens in the Ethereum ecosystem can represent any fungible tradable good: coins, gold certificates, IOUs, and in this case SmartTickets [5]. Since all tokens implement some fundamental features as a universal standard, the EVC Tokens will be compatible with any Ethereum wallet or other application that use the same ERC20 standards.
+
+Participation Terms
+
+To participate in the EventChain token sale contributions will be accepted to aid in the development of the EventChain platform. Contributions will only be accepted in ETH.
+
+
+
+EVC Tokens will be created during the token under the terms of this Whitepaper and the EVC Token Agreement. ETH will be exchanged for EVC Tokens as follows:
+
+
+
+Number of EVC/ETH
+
+
+
+Phase-1 Token Sale
+
+
+
+1,140
+
+
+
+Phase-2 Token Sale
+
+
+
+920
+
+
+
+Phase-3 Token Sale
+
+
+
+800
+
+
+
+When participants contribute ETH, they commit to the terms and conditions of this Whitepaper and EventChain's EVC Token Agreement.
+
+
+
+Phase-1 Token Sale
+
+Phase-1 will launch on September 13, 2017 at 4:00 pm UTC and will stay open until it is fully subscribed or EventChain decides to close the Phase-1 offering, at which time unsubscribed Phase-1 tokens will be allocated to the Phase-2. Upon the closing of Phase-1, ETH received during Phase-1 will be moved to EventChain's multisig wallet to mitigate security risks.
+
+
+
+Page 19
+
+
+
+Phase-2 Token Sale
+
+The Phase-2 starts when the Phase-1 offering completes and also includes any unsubscribed tokens from the previous Phase to give participants a second chance to acquire EVC Tokens before the contribution period ends.
+
+Phase-3 Token Sale
+
+The Phase-3 starts when the Phase-2 offering completes and also includes any unsubscribed tokens from the previous Phases to give late adopters a final chance to acquire EVC Tokens before the contribution period ends.
+
+Token Sale Period
+
+Phase-1 and Phase-2 of the token sale will be available for a maximum period of 2 weeks. Any EVC Tokens remaining after the period will be vaulted for future use of EventChain as determined by its Board of Directors.
+
+EventCoin Distribution
+
+EVC Tokens are allocated into the token sale for participants as follows:
+
+
+
+Phase-1 Token Sale Phase-2 Token Sale Phase-3 Token Sale Token Sale Cap
+
+
+
+11,000,000 21,000,000 22,600,000 54,600,000 (65% of the EVC Token supply)
+
+
+
+Page 20
+
+
+
+The total supply of EVC Tokens is allocated as follows:
+
+
+
+Participants EventChain Bounties Sponsorship Early Contributors Total
+
+
+
+54,600,000 12,600,000 1,680,000
+
+6,720,000 8,400,000 84,000,000
+
+
+
+(Social & Bug Bounties)
+
+
+
+54,600,000 (65%) of the EVC Tokens are distributed to the participants, liquid immediately after the token sale ends.
+
+
+
+12,600,000 (15%) of the EVC Tokens are distributed to EventChain's legal entity. These tokens will be vaulted for a two year vesting period whereby 25% of tokens will be unlocked each subsequent six months, beginning from the date that participants receive their EVC Tokens.
+
+
+
+1,680,000 (2%) of the EVC Tokens are reserved for a Social and Bug Bounties account. Allocated EVC Tokens will be used for translations, marketing, business bounties on a social level, bug bounties for the EventChain token sale contract and other incentives to reinforce honest conduct on the EventChain platform on an ongoing basis.
+
+
+
+6,720,000 (8%) of the EVC Tokens are reserved for an event sponsorship account. Allocated EVC Tokens will be used for accommodating and sponsoring worldwide events, hosting EventChain events and event related activities to further community involvement.
+
+
+
+8,400,000 (10%) of the EVC Tokens are reserved for early contributors. EVC Tokens allocated to advisors and corporate partners will be vaulted under the same terms as EventChain's EVC Tokens, with a two year vesting period and a six month cliff with a 25% release each subsequent six month period, beginning from the date that participants receive their EVC Tokens. Early contributors that receive EVC Tokens in lieu of wages will not be vaulted.
+
+
+
+After a period of three years, EventChain will have the option to continue to utilize the bounty, sponsorship and early contributor accounts or to assign any portion of the unused EVC Tokens remaining in the three accounts to EventChain's legal entity.
+
+
+
+Page 21
+
+
+
+Funds Allocation  Years 1-3
+
+EventChain will allocate the ETH as follows: Marketing (58.4%)  EventChain's goal is to change the global event ticketing paradigm. To accomplish this goal, marketing is crucial and will include a global marketing initiative of social media, internet marketing, traditional advertising, trade shows, events, sponsorships, etc. Keynote to our success, will be bringing awareness, education and understanding of the advantages of the SmartTicketing platform, cryptocurrency and blockchain technology to a worldwide market. Development (18.1%)  design and development of EventChain's SmartTicket system, Oracle and mobile applications. See the further development considerations below for details. Operations (12.1%)  Ethereum network, bandwidth, server, general operational overhead expenses and office space. Staffing (10.1%)  management, staffing and contractors. Legal (1.3%)  incorporation, worldwide legal assistance, trademarks and international compliance. Development considerations:
+
+ Develop an EventChain Database and Oracle.  Develop EventChain iOS and Android applications.  Hire Ethereum developers for the EVC transaction framework.  Design and develop EventChain's web application including UI/ UX.
+
+Page 22
+
+
+
+ Develop a customizable legal liability framework to incorporate into the SmartTickets purchasing process.
+
+ Integrate the EVC transaction framework into the EventChain data transformer.  Integrate additional EVC payment conversion tools.  Implement the EventChain user database and event database management system.  Implement customer support and server monitoring.
+
+Page 23
+
+
+
+ROADMAP
+
+EventChain's preliminary development roadmap is outlined below. While the initial design and development has already started, EventChain is still in alpha stage. The roadmap will be subject to strategic changes based on upcoming research and unexpected challenges in order to achieve EventChain's goals by its deadlines.
+
+Token funds will be used for the development of EventChain's SmartTicket platform including the Oracle, mobile applications, desktop client and the transaction framework. The Development of the modular web application API will give users the infrastructure for accessing the framework to buy and sell SmartTickets from any device.
+
+2017 Q4 - EventChain Professional SmartTickets
+
+EventChain.js will integrate a SmartTicketing infrastructure which harnesses exclusive benefits enabling functional programming inside of SmartTickets. Here are a few examples of variables programmable into SmartTickets:
+
+ VIP access and special amenities.  Early ticket sales and transparent pre-sale benefits.  Priority seating.  Merchandise or food & beverage credits.  Multi-day event passes & festival passes.  Digitally signed tickets, digital albums, or artwork.
+
+2018 Q1 - EventChain Ticket Exchange Interface
+
+EventChain will create a ticket exchange interface to enable users to effortlessly buy, sell and trade their authentic tickets in a matter of seconds. Users will utilize an interface that pulls available information from the EventChain database in order to exchange SmartTickets.
+
+2018 Q1 - EventChain Database
+
+The EventChain database will hold relevant information of user data, event information and ticket history. Storing excess data on the Ethereum blockchain can be very costly and ineffective at this point. By leaving the Ethereum blockchain focusing solely on completing transactions users will have a faster and smoother ticketing experience.
+
+2018 Q1 - EventChain Oracle
+
+An external Oracle will act as a communication channel between users and the Ethereum Blockchain for implementing further functionality into SmartTickets including smart contract functionality. Oracle based contract execution communicates to users with the Ethereum
+
+Page 24
+
+
+
+blockchain, verifying the validity of SmartTicket transactions in a reliable and efficient manner. The EventChain oracle will store external personal and historical data to remove excess computational stress from the blockchain.
+
+2018 Q2 - EventChain Mobile Wallet Client
+
+EventChain will develop a mobile platform for accessing the SmartTicket framework on both iOS and Android apps. With the majority of users transitioning primarily to mobile computing, these applications will likely be the principal source for buying and selling tickets conveniently. With the EventChain apps, anyone will be able to purchase a ticket for an event quickly and easily. An event goer could theoretically purchase a ticket outside of a venue and within seconds have an immutable ticket on the blockchain for attending an event.
+
+2018 Q2 - EventChain Desktop Wallet Client
+
+EventChain's standalone desktop system will enable users to access EventChain's platform from any computer or mobile device. It will also include an Ethereum ERC20 light wallet for holding and managing EventChain EVC Tokens and other ERC20 tokens, checking balances and quickly buying or selling SmartTickets with other users directly. In the case where purchasers don't have a mobile device, printing a ticket or writing down the public and private SmartTicket keys on a piece of paper can prove SmartTicket ownership entering an event with no portable technology needed.
+
+2018 Q4 - EventChain VR SmartTickets
+
+EventChain in partnership with the SPH VR Network will release a Virtual Reality based VRTicketBox to purchase tickets for VR and non VR events.
+
+Page 25
+
+
+
+COMMONLY ASKED QUESTIONS
+
+What is the Total Supply of EventChain Tokens?
+
+The total supply of EVC Tokens is a finite amount of 84,000,000. The supply is capped and no further EVC Tokens can ever be created.
+
+What are the Legal Considerations?
+
+The cryptocurrency industry may be governed by the Participants' security or exchange commission. This Whitepaper is not a prospectus, an IPO or a solicitation for the sale of securities. Anyone that owns ETH has the option to participate in the EventChain platform. EVC Tokens are designed for specific functions in the EventChain platform and at no time will EventCoin token holders have equity or a shareholding in EventChain. The value of EVC Tokens will depend on many factors beyond the control of EventChain including how well SmartTickets are adopted and the direction of the cryptocurrency industry as a whole. Participating in the token sale involves risks including that EVC Tokens will not be used within the SmartTickets system and may not be exchangeable for other tokens. In no event or circumstances will EventChain be liable or responsible for any potential damages or losses incurred as a result of participation in EventChain.
+
+How do I set up an Ethereum Wallet to Utilize my EVC Tokens?
+
+Watch the tutorials at www.EventChain.io for assistance.
+
+Page 26
+
+
+
+CONCLUSION
+
+
+
+EventChain's project will be launched to develop a SmartTicket system for events built on a peer-to-peer, decentralized blockchain platform where SmartTickets carry special properties detailed in smart contracts that are not available on any traditional event management ticket sales system. EventChain envisions an ideal world where everyone is able to attend events through the use of a more honest, transparent and accountable event ticketing system that provides additional benefits to event hosts and fans.
+
+
+
+We have long searched for a convenient method of getting a ticket for anything, even minutes before the start of an event, with little to no hassle, through a secure system accessible to the whole world. Now with the power of EventChain and Ethereum, we will have that freedom.
+
+
+
+Feel free to join the community and learn more.
+
+
+
+Website:
+
+
+
+https://eventchain.io/
+
+
+
+Telegram:
+
+
+
+https://t.me/eventchain
+
+
+
+Reddit:
+
+
+
+https://reddit.com/r/EventChain
+
+
+
+Official Twitter: https://www.twitter.com/eventchain_io
+
+
+
+Official Slack: https://eventchain.slack.com/
+
+
+
+Page 27
+
+
+
+REFERENCES
+
+[1] Ethereum Whitepaper. A Next-Generation Smart Contract and Decentralized Application Platform. https://github.com/ethereum/wiki/wiki/White-Paper [2] How much does it cost for organizers to use "Eventbrite?" https://www.eventbrite.ca/support/articles/en_CA/Troubleshooting/how-much-does-it-costfor-organizers-to-use-eventbrite?lg=en_CA [3] Live Nation 2016 Annual Report. http://investors.livenationentertainment.com/files/doc_financials/2016/annual/LYV2016.12.31-10K_FINAL_rev7_hosting-only.pdf [4] StubHub Announces Record Revenues with $279 million in Q4. http://www.billboard.com/articles/business/7669788/stubhub-announces-record-revenueswith-279-mil-in-q4 [5] ERC20: Token Standard. https://github.com/ethereum/EIPs/issues/20 [6] Vitalik Buterin, 2014. Ethereum and Oracles. https://blog.ethereum.org/2014/07/22/ethereum-and-oracles/
+
+Page 28
+
+
+
+

@@ -1,0 +1,295 @@
+A Decentralized Research Platform. Driven By Collaboration & Competition.
+
+Token Ticker - MTX Version 2.01
+
+Steve McCloskey1, Keita Funakawa2, Vincent Brunet3 Scott Morgan4, Edgardo Leija5, Adam Simon6,Kyle Lee7
+
+
+
+Abstract-- Innovation is an iterative process; scientists have mastered the art of standing on the shoulders of giants. New discoveries are the result of collaboration between mathematicians, scientists, and researchers alike, each building on thousands of years of established knowledge. In this paper we present Matryx, a platform that enables and incentivizes this type of collaboration. Matryx is composed of a bounty system and a marketplace for digital assets to be bought, sold, and remixed into new assets. Bounties are placed on solutions to specific problems. Submissions to bounty tournaments enter the collection of assets and are available to other users. In this way collaborators are incentivized to build, distribute, and expand upon each other's work in the pursuit of valuable goals. Matryx reduces friction of collaboration between strangers by providing a common framework and concrete goals.
+
+While this paper will focus on its applications within the fields of science, technology, engineering and mathematics, Matryx's approach to collaboration is applicable in a wide variety of fields.
+
+I. INTRODUCTION
+
+In 2000, the Henri Clay Institute of Mathematics selected seven difficult problems in science, technology, engineering, and mathematics (STEM) and offered a $1 million prize for a solution to any of these problems. In 2003, Russian mathematician Grigori Perelman became the first person to solve one of these "Millennium Problems": the Poincar conjecture.
+
+The Poincar Conjecture has baffled mathematicians since its formalization in 1903 by Henri Poincar, the
+
+1 Chief Executive Officer steve@matryx.ai 2 Chief Operations Officer keita@matryx.ai 3 Chief Technology Officer vincent@matryx.ai 4 Chief Cryptocurrency Officer scott@matryx.ai 5 Chief Experience Officer edgardo@matryx.ai 6 Project Development adam@matryx.ai 7 Head Mathematician kyle@matryx.ai
+
+
+
+father of topology1. Richard Hamilton, Professor of Mathematics at Columbia University and one of the most brilliant mathematical minds in history, laid the foundations for Perelman's proof. Christina Sormani, Professor of Mathematics at the City University of New York, broadly describes the novel efforts [1] of Hamilton and Perelman:
+
+"In recent years Hamilton had been investigating an approach to solve this problem using the Ricci Flow, an equation which evolves and morphs a manifold into a more understandable shape. Then in late 2002, after many years of studying Hamilton's work and investigating the concept of entropy, Perelman posted an article which combined with Hamilton's work would provide a proof of Thurston's Geometrization Conjecture and, thus, the Poincar Conjecture."
+
+After seven years of peer review, Perelman was awarded the Millennium Prize. In an unexpected turn of events, he declined the prize money, arguing that the contributions of Hamilton and other mathematicians played a significant role in developing his final solution. He believed that they deserved just as much of the award and recognition and that it would be wrong to claim the money and fame for himself. He declared his "disagreement with the organized mathematical community"[2].
+
+Many mathematicians - like Perelman - consider these lump awards to be unjust. New ideas are usually collaborative in nature and are based on other people's existing ideas. Large awards incentivize competition rather than collaboration, and fail to reward most contributors. As such, these lofty and unbalanced rewards may actually
+
+1Topology is the study of the properties that are preserved through deformations, twistings, and stretchings of objects. See Eric Weisstein's discussion on MathWorld: http://mathworld.wolfram.com/Topology.html
+
+
+
+be counterproductive. Perelman is only one of many researchers who have rebelled against common incentives. Current incentive structures do not reflect the needs of collaborative fields.
+
+Matryx provides a structure that reduces the friction of rewarding collaborators. Rather than attributing all the credit to one person or one group who proposes a solution that is built on other people's work, Matryx tracks the provenance of assets, enables collaboration, and divides rewards amongst all participants. In this way Matryx can reward each unit of progress towards the goal. Solitary research and siloed collaboration are discouraged, while open collaboration in pursuit of a shared reward is incentivized.
+
+II. PROBLEM
+
+A. Distribution & Discovery
+
+Research in STEM-related fields and academia is fragmented. Universities, corporations, institutions, and individuals host and share their resources in separate "siloed" databases, often with tightly controlled access. Even access to carefully curated private research repositories is not easily purchasable by those willing to pay. It is nearly impossible to find all current and past research on a given topic without navigating a maze of citations and licenses.
+
+Innovation in STEM is hindered by this high friction of discovery. Researchers may be attacking the same problems with no knowledge of each other's respective progress. This wastes brainpower, time, and money. Organizations like SciHub have attacked this problem by circumventing technical and legal controls on information and research, but a solution within the bounds of the law is needed. Recently, a gathering of ministers of science in the EU demanded all scientific research papers be made free and open by 2020 [3]. But this type of legal reform is time-consuming and has no guarantee of success, and doesn't provide a technical solution to the difficulty of discovery and dissemination of research.
+
+Also, many academic researchers struggle with publishing quality research because of scarce funding and pressure to move up in the academic world. In 2014, Jeffrey Beall of the University of Colorado coined the term "predatory publishers", referring to publishers who encourage researchers to publish without proper peer review[4]. As a result, researchers must publish high volumes of low-quality papers due to demands to advance their careers in their respective institutions.
+
+B. Attribution
+
+In research and creative projects it is difficult to attribute value across contributions. Contributions are rarely tracked with any degree of accuracy, and there is not always a clear path from problem to solution. As such, creators are improperly (or not at all) compensated for subsequent usage and "remixing" of their works. Without clear attribution, incentives for innovation do
+
+
+
+not accurately reflect contribution. This creates disincentives for creation and distribution of valuable works. This problem is common in STEM research, as well as 3D object creation, music (re)mixing, and a wealth of other fields. Some generalized solutions to attribution in communities have been proposed by projects like Backfeed and Mediachain, but no mature distributed attribution system has been deployed.
+
+C. 3D Object Creation and Distribution
+
+To give a concrete example: content on the modern Web is primarily 2-dimensional. Assets range from images to maps to research papers. Web design lays out information on a 2-dimensional grid that is more reflective of an interactive newspaper than a new paradigm. Because of the limits of our screens, even "3D" content is merely 2-dimensional projections of 3-dimensional objects. However, research has shown that "while 2dimensional maps afford easy interaction, 3-dimensional projections decrease information loss"[5]. As virtual and augmented reality (VR and AR) technologies become ubiquitous over the next decade, it follows that information-dense applications like STEM research and education will prefer interactive VR and AR to traditional 2-dimensional displays.
+
+Today, 3-dimensional object data are stored in standard file formats: OBJ, STL, and CAD. These formats exhaustively catalog every vertex and edge of an object, often resulting in files that are thousands, or even millions of lines long. Consequently, storing traditional high-resolution 3D data necessitates gigabytes of storage space. Alternative object formats based on generalized mathematical descriptions of objects are often easier to transmit and process, but are more difficult to create. A collaborative approach to creating and propagating these could speed development of interactive VR applications.
+
+III. Matryx: A collaboration platform
+
+A standard platform for collaboration would enable low-friction creation, distribution, and attribution of works. Matryx is composed of a smart contract system and a supporting framework of traditional applications. The smart contract system provides a public ledger of open projects and their associated payments ("Bounties") and proposed solutions ("Submissions"). This system of Bounties and Submissions is the core of the Matryx Platform.
+
+Bounties are descriptions of works for which the bounty-creator is willing to pay. Bounty requirements are posted publicly and indexed in the smart contract system. The bounty-creator determines a reward which is locked in the smart contract system for the duration of the Bounty as a show of good faith. Once the Bounty is public, users begin creating submissions in an open multi-round contest (a "Tournament").
+
+Submissions are made via an application appropriate to the work being performed. Initially the platform will
+
+
+
+target Nanome software, Calcflow and Nano-One, but a wide variety of applications may be used to develop a submission. Users create assets via these applications. When the user decides to submit an asset for consideration in an open Bounty tournament, the asset is hashed, signed, and made publicly available. Then the user submits the asset's metadata to the smart contract system, where it is permanently indexed. At the end of a tournament, authors of Submissions that contributed to the solution are rewarded.
+
+Matryx will create a common area for collaborators to share contributions and leave a digital fingerprint that verifiably proves their involvement. Individuals or organizations will be able to define their reward mechanisms for digital works, create their own licensing terms, and prove authenticity and ownership of works via a public ledger. Rewards will be distributed by contribution, which incentivizes broad collaborative creation and research, rather than siloed organizations or small teams.
+
+A. Bounties
+
+To post a Bounty, a user creates a set of requirements and registers the requirements and the necessary additional data in a smart contract. Matryx-enabled applications allow creation and registration of Bounties and poll this registry of Bounties to display open challenges. The user must set Bounty rewards and escrow a number of tokens in the smart contract sufficient to pay those rewards. Let the set of all bounties be denoted M where an individual bounty is referenced by m  M
+
+Currently Bounties registered to M are composed of the following data:
+
+1) t0 - the challenge start time. 2) t1 - the challenge duration. 3) t2 - the duration of review and winner selection
+
+time. 4) V - the reward per round. 5) N - the current round (initially 0). 6) Nmax - the maximum number of rounds in this
+
+Tournament. 7) B - participation bond to reduce spam submissions. 8) D - pointer to metadata about the contribution
+
+guidelines stored off-chain. 9) C - the Submission registries (initially empty). 10) u - an update agent (hex encoded address)
+
+Bounties may be versioned by creating updated registry contracts, so additional fields and mechanisms may be added over time. The function of the Bounty is primarily to encode the structure of the following Tournament, and inform users on both the desired content of Submissions and the rewards of participation.
+
+B. Tournaments
+
+Posting a Bounty begins a Tournament. A Tournament consists of one or more rounds of Submission collection and evaluation. Dividing Tournaments into rounds
+
+
+
+ensures that attribution is split across multiple contributing parties. The winner of each round is rewarded, whether or not they offer a complete solution. Winning Submissions are used as a base for the subsequent round, ensuring that new Submissions are channeled in a direction that Bounty-creator believes is desirable.
+
+A Tournament is a state machine that cycles through the following a max of Nmax times:
+
+1) S0 - the initial state. 2) S1 - the open submission state. 3) S2 - the round winner selection.
+
+Each round consists of t1 seconds in which users may create Submissions, and register them as elements of c  C. Contributors fill the sets of C for a given round Ni up to Nmax, or until the Bounty creator deems the Bounty requirements are satisfied.
+
+Until t0 the contract is in the initial state S0. At t0 the contract opens submissions by transitioning to state S1. During this time, Contributors may register new submissions for the current round Ni. At the conclusion of the round the contract enters state S2 in which the Bounty-creator has t2 seconds in which to evaluate the current set of Submissions C and select a round winner.
+
+The funds for the winning Submission of each round are escrowed by the contract and bound to V . During the judging period, the submitter of the bounty may only award the reward V for a given round Ni to the public keys registered to the submissions for that rounds winner c or return V to themselves in the event that c  C during any given Ni, c failed to meet their expectations.
+
+Once a winning c is chosen for a given Ni the bounty creator may choose to add more MTX tokens to Ni + 1 unless Ni + 1 = Nmax. The contract will be placed back into state S1 with the winning c submission now placed as the root of the next collaboration branch. This tree continues to branch with winning contributions selected as the root of Ni + 1. The bond Bi is returned c  C during any Ni round.
+
+C. Submissions
+
+A submission c is a data structure that contains specific information about the contribution or group collaboration that has been signed and entered into the bounty smart contract. Different problems may require different formats for these data structures. In general, a submission c is of the form:
+
+1) A - Array of contributor addresses. 2) H - The HEAD of the contribution graph.
+
+Those who register a submission c with the bounty contract  M will be given ownership of that submission. A whitelist A enforces only preselected trusted team members may be able to update the head of the contributions graph. All contributions to the final state of c in a given round Ni are recorded in the Ethereum blockchain upon updating H such that proof of individual contribution can be supplied to the winning submission.
+
+
+
+Fig. 1. Matryx Tournament Design
+
+
+
+Submissions must be accompanied by a Bond of at least B tokens. The Bond is held by the smart contract system, and refunded to the Submitter at the end of the Tournament. In this way, Contributors are incentivized to make a minimal number of Submissions. This limits the impact of Sybil and other attacks.
+
+IV. Design Constraints
+
+A. Incentives
+
+Modeling incentives in an open system is notoriously difficult. In the design of Matryx we are working towards an incentivized system that accounts for negligent and malicious behavior from all participants. Submitters are bonded to prevent or mitigate attacks. Bounty creators are bonded to prove the ability to pay for work. However, a formal exploration of the incentive model is beyond the scope of this document but will be discussed in depth in a future update.
+
+B. Trust
+
+As with any public incentivized system, trust in each participant should be minimized. The trustless version of this system operates only on easily computable problems, which is to say, problems whose solutions can be programmatically verified by a smart contract. Unfortunately, those problem classes are notoriously useless. TrueBit[6], Golem[7], and other systems attempt to
+
+
+
+generalize an on-chain structure to efficiently verify offchain computation[8]. This would allow more intensive computable problems to be verified and rewarded. However, the most useful problems that require collaborative problem solving are not necessarily computable. Most STEM Bounties will need human interaction to evaluate Submissions.
+
+In order to approach most useful problems, it is necessary to introduce some trust into the system. The question, then, is where to allocate trust, and what checks can be placed on trusted and untrusted parties. It is expected that there will be more Submissions than Bounties, and more Contributors than Bounty creators. Therefore the behavior of Bounty creators is easier to regulate with external checks. Submitters, as the recipient of monetary rewards, have more direct incentives to behave poorly. Thus in all cases, we have chosen to err towards trusting Bounty creators over Submitters.
+
+The primary way a Bounty creator can attack the system is by refusing to properly select a winning Submission for a given round or tournament. In this way the Bounty creator can receive the benefit of seeing the work, without paying the cost. The primary check on this in the first iteration of the Matryx platform is external checks on the identity and reputation of Bounty creators. It is expected that initial bounties will be posted by known entities (as opposed to anonymous entities), and that Submitters will refuse to work on Bounties if they do
+
+
+
+not know the identity of the creator. Future iterations of the platform will attempt to place
+
+additional checks on Bounty creators, by requiring the use of an identity system. Uport[9], or similar systems could be used to require the Bounty creator to select an independent review board to evaluate submissions. This would greatly lessen (but not eliminate) trust placed in the Bounty creator.
+
+C. Attacks
+
+In the design of the system several potential attack vectors were considered.
+
+1) Submitter Sybil Attack: Submitters have a strong incentive to bias the results of a tournament via any means available. One potential attack is entering the same Submission multiple times, thus making the Submission more likely to be evaluated and selected by the Bounty creator. The bonding mechanism described in Section 3.4 bounds the effects of this sort of attack by imposing a hard cost on Submissions. With an appropriately chosen bond, the Contributor's gain from making multiple Submissions does not exceed the opportunity cost of the bond.
+
+We expect that the Bounty creator selects some target number of Submissions per Contributor, n, and then selects B such that
+
+B  n  Rf > V  (Pn - P1),
+
+where Pi is the probability of selection by the Bounty creator with i submissions and Rf is a rate of riskfree returns. We should also attempt to optimize the Submission evaluation interface to minimize P , though this may be a hard problem.
+
+2) Credit Theft: Contributors may attempt to steal credit for other's work by creating a duplicate Submission. Unaltered duplicates can be spotted and discarded by simple hash-based checks, but duplicates with subtle modifications trivially evade these. Again, bonding mitigates this attack, by requiring the malicious Contributor to incur costs for each duplicate. However, as opposed to Sybil attacks, the costs are lower. Rather than making many Submissions, the attacker may make a few carefully targeted Submissions.
+
+This is a more difficult attack to address, but a less serious one. The worst outcome is that a better Submission is created and receives the reward for the round. In the near-term, the Submission evaluation interface may be tweaked to prefer earlier Submissions. Like the Sybil attack, we should attempt to make the expected gain less than the opportunity cost
+
+This attack may be mitigated entirely with a twophase commit and reveal Submission process. In this system, Contributors place their bond along with the hash of their Submission, and publish an encrypted copy of their Submission. In this way they commit to a Submission without making it publicly available. In the reveal phase, immediately before judging, Contributors
+
+
+
+must reveal the encryption key to their Submission. This keeps Submission content private until the judging phase, at the expense of significant complexity.
+
+3) Licensing: Licensing metadata may be stored directly on the Ethereum blockchain to provide authoritative ownership of assets or contributions. Each Submission can carry a license field that describes the terms of its use. However, we recognize that proof of ownership registered to a blockchain is not the only component to licensing data. Technology often moves faster than law, governance, and society, all of which will need to be updated. Matryx will provide a record of transactions, derivative works and ownership, and attribution while technology, law, and society continue working towards an updated system. It is our hope that most Submissions on Matryx will be permissively licensed. It is a requirement of the Matryx platform that all Submissions be appropriately licensed for public distribution and modification.
+
+4) Upgradability: Systems design, like research and creation, is an iterative process. Each portion of the Matryx system allows for future upgrades. Bounty and Submission formats and Tournament functionality (and thus the trust and incentive models of the system) may be upgraded by deploying a new registry smart contract. Interfaces in Matryx-enabled applications may be upgraded to use the new contracts by simple software updates. For security, updates to the core functionality will be signed by Nanome, and will have a public review period.
+
+V. Applications
+
+A. Mathematics
+
+The Calcflow software features several tools such as a 3D parametric graphing utility and a vector field grapher that is currently used in leading universities. Users of the Matryx platform can interface with the Calcflow software in order to assist them in developing mathematicallysound Submissions to a Bounty.
+
+As the theoretical foundations in numerical analysis is researched, Calcflow will be further developed for large scale projects that can contribute to a Bounty. For example, NASA[10] published a paper regarding parameterization techniques in order to create geometric models that comprise of thousands of curves to design airfoils. Calcflow can be used to analyze the smoothness qualities required in constraint-based CAD modeling. A Bounty can be defined as "Develop a set of parametric equations that is Cinf in each piecewise component to create a chair". A chair has many mathematical components and Calcflow can be used to piece parameterized expressions to create a chair.
+
+B. Bioengineering
+
+The ability to work and collaborate in a 3D environment is a perfect use case for the pharmaceutical and bioengineering industries. Current virtual reality applications allow users to work in real time. Thus,
+
+
+
+scientists across the world can look at the same protein, for example, and collaborate towards creating medicinal solutions for Bounties.
+
+C. 3D Asset Creation
+
+The Matryx platform is perfectly suited for 3D modeling, creation, and collaboration. With multiple users able to utilize the same workspace, collaboration becomes practical and geographical location becomes a non-issue. The amount of network bandwidth required to run a workspace is a fraction of that required to screen-share or video chat, meaning that a Calcflow workspace is possible even with limited connection or slow internet speeds.
+
+1) Platforms and Formats: The Calcflow platform will be upgraded to work with industry standard formats for CAD modeling, such as OBJ, DAE, BLEN, 3DS, FBX, motion graphics, and 3D printing formats.
+
+VI. Future Work
+
+A. Reputation and Peer Review
+
+Reputation is currently an auxiliary component to give contributors and bounty posters a public view of how they valued contributions. An automated system that can assign subjective value to the contribution in a bounty is a goal to be worked towards. Determining the value of a contribution given a wide range of bounties will likely take human interaction. Trusting individuals who have a monetary stake in a reward mechanism will initially require centralization in the bounty poster. The community of contributors is trusting the bounty provider to make their reward decision in a fair way based upon the supplied data in the bounty contract state. Contributors will have a public record of where awards were sent and may judge their bounty providers accordingly.
+
+Future implementation may use a voting system by the crowd to help determine contribution value. These votes may be sybil attacked (though if voting is onchain the gas cost of voting will help mitigate this). The validity of these votes must be taken into account as voters may not have the expertise needed to formulate an accurate assessment of a contribution. This leads the system into a model where curators who have gained a higher reputation in certain context-areas may facilitate the value assignments. These curators come with their own challenges of trust however. Combining financial incentives and willing collaboration to generate higher reputation will be explored.
+
+B. Marketplace
+
+The Matryx platform will also serve as a medium for the design and fluid exchange of next-generation 3D assets by serving as a marketplace where any user with MTX tokens can buy, sell, and remix assets under the licensing agreements of the asset-creator. The metadata for these objects will be stored on the blockchain while the objects themselves can be stored offchain.
+
+
+
+C. Storage and Distribution
+
+The Matryx platform plans to handle increasingly large amounts of data that are needed to represent 3D models, store output from large scale experiments, or hold volumes of journal data. Through the use of parameterized functions and with the evolution of cloud and distributed storage networks, we seek to use reduced cost storage where possible.
+
+For example, designing a Klein bottle would traditionally take megabytes of space like the following:
+
+mtllib Klein Bottle.mtl
+
+# # object Box001 #
+
+v 8.2537 28.9515 36.4677 v 12.1791 44.4224 32.5422 v 3.3040 44.4224 17.7503 v -1.6920 28.9515 19.8914
+
+Over 1000 lines later...
+
+f 1574/805/1510 1612/843/1548 1613/844/1549 1575/806/1511 f 1614/845/1550 1615/846/1551 1613/844/1549 1612/843/1548 s3 f 1608/839/1544 1611/842/1547 1613/844/1549 1615/846/1551 f 1563/794/1499 1575/806/1511 1613/844/1549 1611/842/1547 s2 f 1598/829/1534 1601/832/1537 1616/847/1552 1617/848/1553 s3 f 1596/827/1532 1609/840/1545 1616/847/1552 1601/832/1537 f 1608/839/1544 1615/846/1551 1616/847/1552 1609/840/1545 s2 f 1614/845/1550 1617/848/1553 1616/847/1552 1615/846/1551 # 448 polygons
+
+However, a parametric equation that represents a Klein bottle can be expressed as the following JSON format string:
+
+{ "Name": "Klein Bottle", "X": "-(2/15) cos(u)(3cos(v)+30 sin(u) + 90 cos(u)^4 sin(u) 60 cos(u)^5 sin(u) + 5 cos(u) cos(v) sin(u))", "Y": "-(1/15) sin(u) (3 cos(v) 3 cos(u)^2 cos(v) 48 cos(u)^4 cos(v) +
+
+
+
+48 cos(u)^6 cos(v) 60 sin(u) + 5cos(u) cos(v) sin(u) 5 cos(u)^3 cos(v) sin(u) 80 cos(u)^5 cos(v) sin(u) + 80 cos(u)^6 cos(v) sin(u)", "Z": "(2/15) (3+ 5 cos(u) sin(v)) sin(u)", "u": "0, pi", "v": "0, 2pi" }
+
+These objects like the Klein bottle above can be rendered and exported to an OBJ after being submitted and verified as a solution to a particular Bounty. If an asset is a large OBJ file or a dataset, it will be stored off-chain via either centralized solutions like AWS or Google Cloud, or storage-oriented blockchains like Filecoin, Swarm, or Sia. Off-chain storage technologies may reference metadata to authenticate licensing information before decrypting and delivering assets. Since MTX is a standard Ethereum token, it may be atomically swappable for the user's choice of blockchain coordinated file storage to pay fees.
+
+D. Geometric Solutions
+
+Given a set of points in space, a parameterized surface can be created using well-known interpolation methods such as B-splines and Bzier surfaces. Depending on the Bounty, the user can use different interpolation methods that achieve stable or smoothness conditions. Though Calcflow has been used in educational settings, Calcflow will be adapted for the Matryx platform to include much more powerful functionality such as creating these parameterized surfaces from scratch. Then, these parameterized surfaces are expressed as functions of character strings (or parameter symbols) and numbers which can be represented in as little as a few bytes. Through the use of virtual reality applications such as Calcflow which will interface with the Matryx platform, scientists and mathematicians can determine homeomorphic qualities shared among geometries in a topological space.
+
+Parameterized functions also allow us to consider topological spaces in analytical, numerical, and statistical applications. From an analytical perspective, high-level mathematics allow us to take any geometric object and parameterize it using up to four dimensions (say, an object's transformation over time as the fourth variable). Relatively lightweight compared to having a million of points stored in an OBJ file, a JSON file that holds a particular graph or a collection of pseudo-piecewise parametric surfaces is lighter. This is comparable to a 2D "vector" file (AI or SVG), but with an additional dimension in 3D referenced above.
+
+E. Access
+
+The Matryx platform provides open access to both completed and active collaborations. When an agent uploads their contribution to the platform, it passes that information to the data storage module and registers that contributions metadata to a blockchain. This provides a
+
+
+
+decentralized record of a vast wealth of scientific data. There are two ways in which users of the Matryx platform may choose to engage the databases and blockchain registry. They may participate in open access collaborations or private collaborations.
+
+By default, the Matryx database is not encrypted upon submission entry to encourage the community to come to consensus on the idea that information should be public and accessible so that others may expand upon it. The Matryx platform is considering ways in providing free storage for submissions and users that are contributing to the open database. This open access may become donation based requiring those that submit problems to maintain the storage costs so others may benefit from their findings.
+
+F. Judging Boards
+
+Rather than trusting the Bounty creator to judge a Tournament, it may be advantageous to select a group of third party judges. This group should consist of experts in the Bounty's field. Many structures could be implemented, including direct or weighted voting and an oversight board with veto power. It would be possible to reward these reviewers. Determining appropriate structures for this would require significant time and incentive analysis. As such this capability will not be implemented until later versions of Matryx.
+
+G. Private Tournaments
+
+A system can be conceived where the results of a tournament are made private, by encrypting all Submissions with the Bounty creator's public key. This would ensure that nobody but the Bounty creator could access the Submissions. The Tournament could proceed as normal, with the winning Submission from each round revealed publicly. The final iteration could be kept private, if desired by both the Contributor and the Bounty creator. The main drawback of a private Tournament is the level of Trust that must be placed in the Bounty creator. Because Submissions are private, there is no oversight over the judging process. This may be mitigated with the use of carefully structured independent judging boards.
+
+H. Alternative Incentives
+
+It may be that monetary incentives are not applicable to scientists. Often it is fame or recognition for achieving something that is sought after. Bounties are not limited to a financial reward like the Millennium Prize. Titlebased rewards registered by trusted authorities could potentially be placed as bounties.
+
+References
+
+[1] Christina Sormani. "Hamilton, Perelman and the Poincare Conjecture". In: (). url: http://comet. lehman . cuny . edu / sormani / others / perelman / introperelman.html.
+
+
+
+[2] Jeffrey Ritter. "Russian mathematician rejects $1 million prize". In: (2010). url: https : / / phys . org / news / 2010 - 07 - russian - mathematician million-prize.html.
+
+[3] Nadia Khomami. "All scientific papers to be free by 2020 under EU proposals". In: (2016). url: https: / / www . theguardian . com / science / 2016 / may / 28/eu- ministers- 2020- target- free- accessscientific-papers.
+
+[4] Elizabeth Wager. "Why we should worry less about predatory publishers and more about the quality of research and training at our academic institutions". In: 27.3 (Mar. 2017), pp. 8788. url: http://www. sciencedirect . com / science / article / pii / S0917504017300217.
+
+[5] J. Poco et al. "A Framework for Exploring Multidimensional Data with 3D Projections". In: Europgrahics 30.3 (2011). url: http://vcgl.jacobsuniversity.de/wp- content/uploads/2011/06/ PocoEtAl2011_web.pdf.
+
+[6] Jason Teutsch and Christian Reitwiener. "A scalable verification solution for blockchains". In: (Mar. 2017). url: https://people.cs.uchicago.edu/ ~teutsch/papers/truebit.pdf.
+
+[7] "The Golem Project Crowdfunding Whitepaper Draft v0.9". In: (Oct. 2016). url: http : / / golemproject . net / doc / DraftGolemProjectWhitepaper.pdf.
+
+[8] Sanjay Jain et al. "How to verify computation with a rational network". In: (June 2016). url: https: //arxiv.org/pdf/1606.05917v1.pdf.
+
+[9] Rouven Heck et al. "Uport: A Platform for SelfSovereign Identity". In: (Oct. 2016). url: https: / / whitepaper . uport . me / uPort _ whitepaper _ DRAFT20170221.pdf.
+
+[10] Jamshid Samareh. "A Survey of Shape Parameterization Techniques for High-Fidelity Multidisciplinary Shape Optimization". In: 39.5 (May 2001). url: https://arc.aiaa.org/doi/pdf/10.2514/ 2.1391.
+
+
+
+

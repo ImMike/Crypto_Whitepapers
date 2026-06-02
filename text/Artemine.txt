@@ -1,0 +1,67 @@
+Artemine: The F irst S elf M ining Smart Contract 2.0 Symbol: ARTE
+
+Type: E thereum Token www.artemine.org
+
+1. Introduction Artemine i s intended to b e the v ersion 2.0 of Minereum - T he F irst Self M ining S mart Contract. The goal i s to c ontinue t he e volution of Smart C ontract technology with t he focus o n new blockchain m ining approaches, in particular t he S mart Contract Self-Mining p rinciple. The S elf-Mining p rinciple relies on t he b asis t hat the Token w ill mine t he coins i tself f or a specific amount of t ime w ithout the d irect need of M ining Equipment o r M iners. The token s upply is automatically g enerated on t he fly by a m athematical formula. Artemine brings t he following n ew f eatures: -          Genesis A ddresses w ith d ifferent s upply -          Possibility t o Transfer Genesis Addresses -          Automatic S ale of Genesis A ddresses -          Public Mining
+
+1
+
+
+
+2. Genesis A ddresses For t he Self-Mining principle to w ork t he c oncept of "Genesis A ddresses" is i ntroduced. Genesis Addresses a re a ddresses part o f the c reation o f t he i nitial supply o f A rtemine, these a ddresses a re a ttributed w ith a  certain amount of coins t hat w ill b e self-mined for a specific amount o f time. 2.1 S elf-Mining P rinciple The availability of c oins on e ach Genesis A ddress is c alculated p urely by a  mathematical formula on t he f ly. This formula i s incorporated in t he Transfer f unction of t he S mart Contract a nd its only f unction is t o p revent t hat a  u ser is able t o transfer more f unds than w hat h e is allowed to. An e xample o f t he formula used t o c alculate the a vailable a mount of c oins f or transfer can be v isualized below:
+
+2
+
+
+
+2.2 G enesis A ddresses with Different Supply While in M inereum e ach G enesis A ddress was a ttributed 3 2,000 c oins, Artemine w ill allow the initial contributors to decide how much t hey w ant t o hold d epending on t he amount t hey c ontribute in the c reation phase. To keep t he i ntegrity o f the S elf-Mining concept, f ew restrictions a pply t o Genesis Addresses:
+
+-          Users c annot t ransfer more than the A vailable Amount -          Genesis Addresses cannot receive c oins 2.3 Genesis Addresses Self-Mining Rate The m ining r ate o f Artemine's G enesis Addresses is 0 .000001% o f the t otal a mount of ARTE a ttributed to it ( in the contribution phase) per ethereum block. The coins w ill be mined for 1 00,000,000 E thereum blocks. If we t ake into a ccount t he current average block time o f e thereum of a pproximately 2 0 seconds we c an conclude t hat t he m ining duration will b e a pproximately 6 0 y ears (20 x 100,000,000 = 2 000000000 s econds =  ~63 y ears), h owever the block time of e thereum cannot be p redicted w ith certainty, the whole Artemine's s elf-mining d uration w ill d epend on the ethereum b lock creation time over time. As a n e xample i f a  user gets a  G enesis Address with 1 000 ARTE the number o f c oins generated per e thereum block will be 0 .00001 A RTE, taking into account t hat t here a re approximately 4320 b locks p er day as per t he c urrent a verage block t ime of 20 s econds, the total a mount of c oins g enerated per day w ould be 0 .00001 x  4 320 =  0.0432 ARTE. 2.4 Possibility to Transfer Genesis A ddresses Artemine Genesis Address Holders will have the possibility to transfer their G enesis Addresses h oldings to a nother address by c alling the function TransferGenesis, t he only requirement i s that t he t arget address m ust have 0  A RTE.
+
+3
+
+
+
+2.5 Automatic S ale o f G enesis Addresses Artemine Smart Contract function SetGenesisBuyPrice a llows G enesis Holders t o set a n ETH price to their A ddress, Genesis Holders will be able to set their A ddresses f or s ale by defining the b uy price with a ny v alue >  0  ETH ( The p rice h as to b e s et i n wei, t he lowest unit of ETH). Any user w ill t hen be able t o call the function BuyGenesisAddress b y s ending the e xact ETH amount t he Genesis A ddress H older h as set as the buy price. T he s ale w ill be done automatically: t he b uyer w ill i nstantly get t he G enesis Address H oldings t ransferred t o his address and t he s eller will g et the d efined E TH in return. This process r emoves any m iddleman in t he process of selling G enesis A ddresses.
+
+4
+
+
+
+3. P ublic M ining
+
+Artemine S mart Contract f unction PublicMine will allow a nyone to m ine coins (excluding Genesis Addresses).
+
+The i nitial P ublic Mining reward i s 0.000032 ARTE, t his amount w ill b e reduced by 0.00000000000001 A RTE o n each s ubsequent c all.
+
+As a n example, the first call t o the PublicMine function w ill receive 0.000032 A RTE i n return, the s econd w ill r eceive 0.00003199999999, the third will r eceive 0.00003199999998 a nd so o n.
+
+An i llustration can b e s een b elow on the mining reward per the number of c alls:
+
+
+
+Call Number 1 2 3 4 5 6 7 8 9 10 n
+
+
+
+Reward (ARTE)
+
+0.000032 0.00003199999999 0.00003199999998 0.00003199999997 0.00003199999996 0.00003199999995 0.00003199999994 0.00003199999993 0.00003199999992 0.00003199999991 ...
+
+
+
+All calls are p ublic a nd c an b e called as many time as intended, h owever t he u ser will have t o p ay the ethereum network t ransaction f ees in o rder to s uccessfully use the PublicMine function, t he e stimated ether g as cost p er t ransaction is approximately 50,000.
+
+5
+
+
+
+4. Circulating Supply The circulating supply o f A rtemine i s defined b y t he f ormula: [GenesisAddressMining] +  [ PublicMining] [GenesisAddressMining] The i nitial c irculating supply o f A rtemine w ill b e defined b y t he amount of participants on the contribution p hase and b y the total amount o f ARTE they will hold o n e ach Genesis Address, the c irculating s upply will t hen increase o n e ach e thereum b lock b y the r ate defined previously i n t he s ection 2 .3. As a n e xample if we have a  t otal o f 5,000 Genesis A ddresses created i n the c ontribution phase a nd each of them w ith 1 0,000 ARTE the circulating s upply g enerated on e ach ethereum b lock w ill be: ( 5000 *  1 0000) *  0.00000001 =  0 .5 A RTE. Taking into account the current average block of e thereum o f 2 0 s econds t hat w ould produce the following a mount of A RTE per d ay: 0 .5 x  4320 =  2160 A RTE. [PublicMining] The Public M ining S upply is defined b y the n umber o f t imes the PublicMine f unction is called, t he number of coins generated is d efined in t he previous section 3.
+
+5. T ransaction f ees As Artemine i s a n ethereum Smart C ontract, ethereum network transaction fees apply for Artemine t ransactions.
+
+6
+
+
+
+

@@ -1,0 +1,561 @@
+Contents
+
+1 Overview of the DCX project ........................................................................................ 3 1.1 The project grand vision and goal......................................................................... 3 1.2 The problem............................................................................................................ 4 1.3 Our Solution........................................................................................................... 5
+
+2 Infrastructure................................................................................................................ 8 2.1 Global IaaS infrastructure ....................................................................................... 8 2.2 Core components ................................................................................................... 9 2.3 Blockchain............................................................................................................ 10 2.4 IT Operations & Customer support........................................................................ 10
+
+3 Market opportunity .................................................................................................... 11 3.1 Online retail ......................................................................................................... 11 3.2 Offline retail........................................................................................................... 12
+
+4 Revenue model and profit distribution .......................................................................... 13 4.1 Revenue model..................................................................................................... 13 4.2 Profit distribution ................................................................................................... 13 4.3 Business processes ............................................................................................. 14
+
+5 Project planning and roadmap .................................................................................. 16 5.1 Roadmap ............................................................................................................. 16
+
+6 DCX Token and Crowdsale information ....................................................................... 18 6.1 Token purpose..................................................................................................... 18 6.2 Crowdsale information........................................................................................ 18 6.3 Crowdsale details ................................................................................................ 19 6.3.1 Presale .......................................................................................................... 19 6.3.2 Sale stage 1 ................................................................................................... 19 6.3.3 Sale stage 2 ................................................................................................... 19 6.4 DCX token allocation overview............................................................................ 20 6.5 Project funds........................................................................................................ 21 6.6 Additional fund allocation on Hard cap .............................................................. 21
+
+7 Sales strategy.............................................................................................................. 22 7.1 Service promotion ................................................................................................. 22 7.2 Acquisition by global sales team ........................................................................... 22
+
+
+
+7.3 Strategic partners ................................................................................................. 23 8 Acknowledgements .................................................................................................... 23
+
+
+
+1 Overview of the DCX project
+
+1.1 The project grand vision and goal
+
+The primary goal of the project is to make the DCX digital currency the global standard used in any online purchase. By 2020 we want the DCX global managed semi-public blockchain to be the standard digital payment solution for high-end enterprise class retail companies which we offer the guarantees they want in the service level agreement we offer with our payment services. The DCX global payment blockchain offers a digital coin backed by monetary money. For every DCX coin minted on purchase, an actual euro/usd/bp will be deposited in country based escrow account. Consumers can exchange monetary currency at any time to digital DCX coins at zero cost. We initially are planning to release the following currency's on go-live of the platform we are building
+
+Online retailing in near future, is all about maximizing conversion based on customer needs. Today's consumers are constantly connected, more discerning and eager to save time. They expect absolute efficiency from merchants at every stage of their journey and the flexibility to purchase anytime, anywhere, from any device. A retailer must offer easy and fast payment solutions to take away the hassle which can hold an online shopper from buying at that shop at that moment.
+
+
+
+1.2 The problem
+
+Sure, we can develop a Magento plugin which will process digital currency payments, or WooCommerce, Shopify, Prestashop and all other online retail solutions that are available but we prefer to leave that task to existing projects which we eagerly want to add to our list of technology partners/Solution providers. Off-course solution much match our enterprise grade standards to become a partner and execute transactions on our managed blockchain. We are initially focusing on the top segment of the online retail market. The major barrier which is withholding enterprise graded online retail companies from accepting digital currency as an on and offline payment method is the complete lack of certainties and guarantees common currency payment gateways and cash money do offer. Million and billion-dollar retail companies operate on enterprise grade infrastructures and will only use payment solutions from vendors that can assure and give certainties regarding the solutions they offer. Recent research conducted by Google shows there are 5 key barriers which prevent merchants from accepting digital currency as a payment method
+
+The same research done by Google also states that both consumers and merchants want to use digital currency for on and offline payments.
+
+These 3 facts tell us, that the both merchant and consumer are willing to accept/use digital currency in on and offline purchases but they are simply missing proper
+
+
+
+solutions and certainties currently used payment methods and/or cash do provide that digital currency doesn't.
+
+1.3 Our Solution
+
+The DCX project takes away all these major barriers. We are aiming to make crypto currency payments for merchants just as easy as and with the same certainties that cash money offers to them.
+
+We offer various coins which are minted on purchase and burned when they are exchange to the monetary currency they are bought with. The monetary fund's backing the digital coins is straight away on purchases deposited in an escrow account for that currency. Non-automated transactions from escrow accounts cannot be initiated by a single person, these need to be validated and approved by 4 of the 8 commissioners who are responsible for monitoring and managing the funding of these accounts. Balances of total amount of currently available digital coins and the amount monetary
+
+
+
+money currently available on the escrow account for that currency are checked multiple times a day. If in any circumstance these amounts are not equal the smart contract responsible for minting new coins is put on-hold till balances are leveled and equal again. The numbers from these control processes will be made publicly available on our website.
+
+
+
+We offer a very detailed service level agreement which has hard numbers defined as KPI's. All KPI's are measured according the measurement technique stated in de SLA and will be reported on, monthly. These reports will be publicly available through our website and will contain items like
+
+
+
+ Uptime  Total amount transactions processed  Min, max and average processing time  Coins minted  Coins burned  etc.
+
+
+
+Using the latest technology regarding virtualization, containerization and orchestration we can guarantee and offer 100% uptime, merchants never miss a sale again due to unavailability of the payment processing solution used.
+
+
+
+Our infrastructure is highly scalable and fully automated. We extend and maintain our global payment network based on the IaC principles (Infrastructure as Code) which basically is a method of managing and building of infrastructures based on continuous delivery. This means everything we develop is submissive to versioning and testing before it can be deployed on the production platform. We also use a code approval process which states 4 people need to asses, test and accept new code before it can be deployed to production.
+
+
+
+We have 4 environments being we go through the 4th being production.
+
+
+
+ DEV  TST -
+
+
+
+Development usually on laptop or development servers Test environment for developers to do unit testing
+
+
+
+ ACC  PRD -
+
+
+
+Acceptance environment used for Functional and Performance testing Production environment used to process customer payments
+
+
+
+As we are processing payments, security is of utmost importance to us. To ensure safe processing of payment data, we use the PCI-DSS standard as security guideline. PCI-DSS is a globally used security standard for company's who handle payments and customer related data regarding those payments. We make sure our processes are logged, auditable and traceable at any time. We also demand al data transfer that go or come from sources outside our own infrastructure are encrypted with at least a 4096-bit encryption.
+
+
+
+More information regarding PCI standards can be found on the PCI website https://www.pcisecuritystandards.org
+
+
+
+2 Infrastructure
+
+Please note that Infrastructure and/or architecture design documents are marked by us as confidential we can and will not share any details whit the public regarding the technical implementation of our infrastructure components, as this can aid hackers in attacking and/or exploiting our payment infrastructure to get possession of the funds of our customers, company funds or funds which is entitled to token holders. As we intend to process billions in multiple currency's we are talking about considerable amounts which we don't think lightly about.
+
+Our platform is highly scalable fully automated and therefore can be deployed whit ease in any datacenter in the world. This is of great value to us as we anticipated rapid expenditure or our global infrastructure as we intend to digitalize more currency's around the globe.
+
+We have a long list of key demands which services we use from suppliers must comply to. If a service does not meet our standards, we won't use it, even if this means we are losing business over is. Be offer a service level agreement to our customers, using service that do not meet our requirements will almost certainly lead to a situation where we are not or can't deliver as stated in the SLA which ultimately can/will lead to legal charges from customers who are seeking compensation of the losses they made do to unavailability of our services.
+
+2.1 Global IaaS infrastructure
+
+The global infrastructure is based on the IaaS concept. IaaS stands for Infrastructure as a service. This basically comes down to renting the hardware our stack is running on. This includes
+
+ Servers  Network  Internet connectivity
+
+We have chosen Equinix as IaaS provider. Equinix is a global leader in datacenter solutions and has multiple datacenters around the world. They have a highly redundant core network whit huge throughput so a great company to have as a technology vendor.
+
+
+
+We can deploy our stack on Equinix hardware whit just one-mouse click in the following countries
+
+
+
+Americas
+
+United States Canada Brazil Colombia
+
+
+
+Europe & Middle East
+
+
+
+Netherlands
+
+
+
+Sweden
+
+
+
+Germany
+
+
+
+Italy
+
+
+
+U.K.
+
+
+
+Bulgaria
+
+
+
+France
+
+
+
+Poland
+
+
+
+Switzerland
+
+
+
+United Arab Emirates
+
+
+
+Ireland
+
+
+
+Turkey
+
+
+
+Finland
+
+
+
+Asia-Pacific
+
+Australia China
+
+Hong Kong Indonesia
+
+Japan Singapore
+
+
+
+Initially we are planning to deploy our core infrastructure stack and operational tools regarding monitoring and operational intelligence data collecting and processing in Equinix Amsterdam datacenter in the Netherlands. This gives us the possibility to
+
+ Reach 80% of Europe within 50 milliseconds.  Connections to 150+ network service providers, as well as to AMS-IX and NL-ix,
+
+two key Internet exchanges  Direct connectivity to all major cloud service providers
+
+Above information is taken from Equinix website, be sure to check it out if you're looking for more information go to https://www.equinix.com/
+
+
+
+2.2 Core components
+
+
+
+Our core and management stack at moment of writing consist of the following components
+
+
+
+SOFTWARE COMPONENT -        OpenStack -        Kubernetes -        Cloudify -        Zabbix - CentOS 7 & CentOS Atomic -        Elasticsearch -        Kibana -        Fluentd -        GIT/GITLab -        Selenium
+
+-        StackStorm (aka "IFTTT for Ops")
+
+
+
+PURPOSE Software based datacenter. Highly scalable Cluster based hosting of docker containers TOSCA based hybrid cloudcontroller Event monitoring and alerting Linux Operating systems and Linux based container hosting optimized OS Timeline database for operational intelligence data Visualization tool for Elasticsearch data Unified logging layer Code repository Tool to do automated testing event-driven automation commonly used for auto-remediation, security responses, facilitated troubleshooting, complex deployments, and more
+
+
+
+As you may notice all these components are open source projects. We are huge supporters of the open source concept and true prophets spreading the gospel whenever we can. We are enthusiasts, supporters and contributors of open source and community based development and encourage everyone to be a participant and not just a user.
+
+2.3 Blockchain
+
+At the time of writing this document we are testing multiple blockchain implementations to choose the solution that best fits our requirements. As we intend to deliver an enterprise graded platform we cannot use a publicly accessible blockchain but we do value the concept of decentralized transaction verification, we don't intend to become a common bank. So, we are testing several possible solutions and will use the one that best fits to our needs but doesn't make us the approving authority in any way
+
+Concepts we are thinking of
+
+- Private blockchain whit firewall based whitelisting - Public blockchain with Distributed ledgers - Private blockchain with Distributed ledgers - And a couple more
+
+Just to be clear: The DCX shareholder token will be distributed on the Ethereum mainnet. Also, all owners of these tokens will only receive payments from the project in Ether/ETH.
+
+2.4 IT Operations & Customer support
+
+We are planning to setup a 24/7 master control room which will closely monitor our systems and services and functions as customer service desk. So, our customers can contact us with any question or technical issue 24/7.
+
+We monitor on multiple levels of the stack, OS, processes and services, front and backends. We do extended analysis of operational intelligence data which results in proactive maintenance and mitigation of possible technical issues.
+
+
+
+3 Market opportunity
+
+3.1 Online retail
+
+In 2016 online retail amounted up to $ 1.9 trillion US dollar and is expected to reach the staggering amount of $ 4 trillion US dollar by 2020.
+
+In 2015 8% of all global online payments is done using digital currency. In several researches on online payments is estimated that in 2020 this will increase to 24%. This means online payment with digital currency will account for 974 billion US dollar.
+
+
+
+3.2 Offline retail
+
+Beside the online retail market, we will also focus on POS (point of sales) purchases in stores, bars and other establishments. Making digital currency available for purchases made offline will significantly increase potential revenue. In 2015 global retail was good for a total of $ 20,795 trillion US dollar. Estimates tell us that this will be around $ 26,792 trillion US dollar in 2020.
+
+Research done by the Boston Consulting group and google estimate that digital currency could take up to 40% of all retail payments in 2020. What does this mean. Well assuming 30% of all payments by 2020 are done using crypto currency, our targeted market will have a total value of $ 11,05 trillion US dollar. DCX token value if we process just 1% of all payments done with digital currency will be a staggering $ 27.500,- per token
+
+
+
+4 Revenue model and profit distribution
+
+
+
+4.1 Revenue model
+
+
+
+Primary source of revenue will be the exchange fee merchants pay to exchange their DCX coins to monetary money. Initially we intend to use a fee of 3% of transaction amount in digital currency.
+
+2% goes straight to a dividend wallet 1% will be transferred to operations wallet
+
+Second to the exchange fees, revenue will come from our mining license model. Hence mining is based on whitelisting principal, we will create a limited amount of mining tokens which will function as a license. Anybody who possesses such a token is entitled to mine on our blockchain. Whit the fixed hash rate we can ensure steady income for the miners. License Token value will rise equal with the number of transactions and will therefore will become a high value trading asset. Mining license tokens will be revalued once a year.
+
+When we are at the point a steady profit is generated from our core business, we will start investigating additional services to expand our enterprise services portfolio, we have things in mind such as BaaS blockchain as a service or industry specific managed private blockchains.
+
+4.2 Profit distribution
+
+
+
+Holders of DCX shares are entitled to a profit share. DCX has two types of profit which both have separate payout moments.
+
+
+
+Profit from exchange fee's
+
+
+
+Transferred to token holders on the last day of every month.
+
+
+
+Profit from other services
+
+
+
+Transferred to token holders within one month after the last day of our financial year.
+
+
+
+The reason we did this, is to prevent having wallets with colossal amounts of ether which would be interesting for hackers.
+
+
+
+The amount a shareholder is entitled to is calculated using the following equation
+
+
+
+      n
+
+
+
+
+
+
+
+1000000 = x
+
+
+
+    = 
+
+
+
+For example. If there is 100.000 DCX in dividend wallet, and you have 400 DCX you would receive a dividend payout this month of 40 DCX.
+
+
+
+n = 100000 y = 400
+
+
+
+100000 1000000 = 0,1   400 = 40
+
+
+
+i       = 
+
+
+
+4.3 Business processes
+
+Basically, we have 2 processes which define our core business Process 1: Converting monetary currency to our digital currency.
+
+
+
+Process 2: Converting our digital currency to monetary currency
+
+
+
+5 Project planning and roadmap
+
+Development within the DCX project is done based on the SCRUM approach. This means we define the projects "definition of done", create backlog items and will prioritize these. With this approach, the project has an agile approach which ensures we are developing and delivering at maximum pace.
+
+The length of our sprints will be 14 days. After every sprint, a review of the delivered sprint objectives will be done by the development team. Every 2 sprints a demo of the platform we are developing will be given. This demo will be given in an online webinar to which all shareholders will be invited to. During these sessions, our lead developers will be available to answer any questions from the shareholders. At the end of each demo we will spent a view minutes to give an update on project budget and expenses to give shareholders a clear view how their investments are spent.
+
+Any feedback, comments and suggestions that derive from the demo sessions are much appreciated.
+
+
+
+5.1 Roadmap
+
+
+
+The projects roadmap and targeted milestones
+
+
+
+Q1 2017
+
+
+
+-
+
+
+
+Q2 2017
+
+
+
+-
+
+
+
+Q3 2017
+
+
+
+-
+
+
+
+Q4 2017
+
+
+
+-
+
+
+
+-
+
+
+
+Q2 2018
+
+
+
+-
+
+
+
+Q4 2018
+
+
+
+-
+
+
+
+Q4 2020
+
+
+
+-
+
+
+
+Project planning and whitepaper Process whitepaper reviews and finalize document. Implement development infrastructure and start development and create architecture design documents Prepare plan and execute Crowdsale If crowd sale was successful, kick-off global marketing plan Deliver PRD infrastructure and Go-live first monthly payout to shareholders Be the standard in processing on and offline payments using digital currency, processing billions or even trillions.
+
+
+
+6 DCX Token and Crowdsale information
+
+
+
+6.1 Token purpose
+
+The DCX token represent as a kind of share and entitles the owner to a part of the profit which is covered in section 4.2 of this whitepaper.
+
+
+
+6.2 Crowdsale information
+
+The DCX Crowdsale and the corresponding token creation process will be issued By DCX Ltd, which currently is being registered at the chamber of commerce and will be finalized around the time smart contracts are running on Ethereum.
+
+Participants willing to support the development of the DCX Project can do so by sending Ether currency to the designated address. By doing so, they are purchasing DCX Tokens (DCX) at the rate of 50 DCX per 1 ETH which are sent instantly to the wallet from which the ETH deposit was made.
+
+
+
+Role of Token
+
+Symbol Supply For Sale Emission Rate Price 7Sale Period Accepted Currencies Token distribution
+
+Minimal goal Soft-cap Hard-cap
+
+
+
+The DCX token represents an entitlement to monthly payout of a percentage of profit accumulated from transaction fees and a yearly payout of a percentage of profit accumulated by other services DCX as a company offers to its customers. DCX 20.000.000 16.000.000 No additional tokens will be created 50 DCX per 1 ETH 22/12/2017 00:00 UTC to 18/01/2018 23:59 UTC ETH, BTC Payed with ETH: Distributed on purchase Payed with BTC: Within 24 hours 1000 ETH 2.000 ETH 80.000 ETH
+
+
+
+6.3 Crowdsale details
+
+We basically sell the DCX tokens in 3 stages. Any tokens not sold during one of these stages will be burned.
+
+6.3.1 Presale
+
+
+
+Start End
+
+Bonus
+
+
+
+November 25 2017 00:00 UTC
+
+- December 14 2017 00:00 UTC - When soft cap is reached
+
+50%
+
+
+
+6.3.2 Sale stage 1
+
+Start End Bonus
+
+
+
+December 22, 2017 00:00 UTC
+
+- January 04, 2018 23:59 UTC - When hard cap is reached
+
+20%
+
+
+
+6.3.3 Sale stage 2
+
+Start End Bonus
+
+
+
+January 5, 2018 00:00 UTC
+
+- January 18, 2018 23:59 UTC - When hard cap is reached
+
+NO BONUS
+
+
+
+6.4 DCX token allocation overview
+
+80% of total amount of DCX tokens will be offered for purchase to the public under the ticker symbol DCX.
+
+10% of total amount of DCX tokens will be held in by the project for community initiatives like the reward program.
+
+10% of total amount of DCX Tokens will be allocated to DCX Ltd. to ensure future revenue and long term continuous development and improvement of the infrastructure and other services and solutions. These tokens are locked for 30 months by the solidity Crowdsale contract and cannot be sold or traded. This ensure future revenue for DCX Ltd. This also ensures investors we have a long-term financial strategy covering two and a half years at the least and assures token holders that they are guaranteed to receive at least 18 monthly payouts, first payout being done in Q4 2018.
+
+As you may have noticed we don't reserve any number of tokens as reward for developers, contributors, not even for the founders like most ICO launchers intent to do. We are 100% here to stay and aiming to process billions and/or trillions in retail payments. Extracting assets in the form of money from a starting business which plans to rapidly expand isn't a strategy that will lead us or any business for that matter to success.
+
+
+
+6.5 Project funds
+
+Funds raised will be allocated as follows. To mitigate volatile cryptocurrency markets and to provide the DCX project with a runway of 24+ months, up to 60% of raised funds will be hedged in USD/EUR. A budget is outlined below assuming a scenario where the first ceiling of 2000 ETH equivalent has been reached.
+
+6.6 Additional fund allocation on Hard cap
+
+If hard cap is reached during the token sale, we will reserve $ 4.000.000 US dollar which will be converted to digital coins usable on our payment network. These will be given to the top 1000 investors based on the amount of DCX tokens they own. So, they will each receive 4000 DCX digital currency which can be used to pay for purchases. These will be send in the pre-production phase with the intention to do real live testing of the complete infrastructure before the solution is made available to the public. Some of the retailers already confirmed they are more than willing to make some great special offers for this moment only available to DCX token holders. If hard cap is not reached during token sale, we will either lower the amount top 1000 token holders will receive or we could decide to fully cancel. It all depends on the results of the DCX token sale.
+
+
+
+7 Sales strategy
+
+We are convinced our product or in better words the service we are offering is practically selling itself. Our service level agreement combined with our stable asset backed coin takes away all major barriers retailers experience now regarding accepting digital currencies as a payment method. Our service gives digital currency the same certainties commonly used payment methods do and even has some additional advantages over cash/bank payments. This basically comes down to that with our service retailers can provide an additional payment method to their customers which will increase their sales and therefore will increase revenue, with no risk what so ever, very low effort in terms of technical implementation or solution development and zero investment.
+
+7.1 Service promotion
+
+We have reserved a portion of the marketing budget for online advertisement on some of the major retail knowledge platforms and for use of google advertisement possibilities.
+
+7.2 Acquisition by global sales team
+
+First thing we are going to do upon successful completion of our crowd sale is establishing a global sales team with one or multiple senior sales executives / senior account managers responsible for contracting as much enterprise retailers as possible and gives as much exposure to our solution as possible during development and preproduction phase ensuring a flying start once actual go-live will take place. We want our sale team to cover the following regions:
+
+ Latin America  North America  Europe  MEA (Middle East and Africa)  APAC (Asia Pacific Region)
+
+
+
+7.3 Strategic partners
+
+We have no intention whatsoever to reinvent the wheel. There are allot of great projects offering great solutions. To spend time and money developing a same solution within our project doesn't make any sense to us. This is pure waste of time and money we rather spend on improvement of our service or development of new services which aren't already available on blockchain. We prefer to join forces and partner up with other projects and/or companies, contributing to each other, expanding business together, generate more revenue which in turn is beneficial to all involved investors and will increase their profit margins of their investments.
+
+8 Acknowledgements
+
+We would like to express our thanks and gratitude to the numerous people who have supported us in defining the DCX project and a special thanks to the technical architects and CISSP's for reviewing and contributing to our technical infrastructure design.
+
+
+
+

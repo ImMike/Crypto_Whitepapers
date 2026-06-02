@@ -1,0 +1,1525 @@
+Pangea Jurisdiction and Pangea Arbitration Token (PAT)
+
+The Internet of Sovereignty
+
+Susanne Tarkowski Tempelhof, Eliott Teissonniere James Fennell Tempelhof and Dana Edwards Bitnation, Planet Earth, April 2017
+
+
+
+Pangea Jurisdiction
+
+and Pangea Arbitration Token (PAT)
+
+The Internet of Sovereignty
+
+Susanne Tarkowski Tempelhof, Eliott Teissonniere, James Fennell Tempelhof and Dana Edwards Bitnation, Planet Earth, April 2017
+
+<abstract_
+
+The Pangea Software is a Decentralized Opt-In Jurisdiction where Citizens can conduct peer-to-peer arbitration and create Nations. Pangea uses the Panthalassa mesh, which is built using Secure Scuttlebutt (SSB) and Interplanetary File System (IPFS) protocols. This enables Pangea to be highly resilient and secure, conferring resistance to emergent threats such as highperformance quantum cryptography. Pangea is blockchain agnostic, but uses the Ethereum blockchain for the time being. In the future, other chains such as Bitcoin, EOS and Tezos can be integrated with Pangea.
+
+The Pangea Arbitration Token (PAT) is an ERC20 compatible in-app token for the Pangea Jurisdiction. The PAT token rewards good reputation, and is issued on Pangea when Citizens accumulate non-tradable reputation tokens through creating a contract, successfully completing a contract or resolving a dispute attached to a contract. PAT is an algorithmic reputation token; an arbitration currency based on performance, rather than purchasing power, popularity, or attention.
+
+The distribution mechanism for PAT tokens on Pangea is an autonomous agent, Lucy, which will initially launch on Ethereum as a smart contract. This mechanism is blockchain agnostic and can be ported to any viable smart contract platform. An oracle created by Bitnation will help to facilitate this (semi) autonomous distribution mechanism in a decentralized and secure fashion.
+
+Keywords: blockchain, self-governance, holacracy, panarchy, reputation, cryptographic tokens, smart contracts, bitcoin, ethereum, mesh networks, quantum computing, machine learning
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+2
+
+
+
+<Contents_
+
+
+
+Introduction
+
+I. BITNATION: A Decentralized Borderless Voluntary Nation (DBVN) II. The Pangea Jurisdiction: The Internet of Sovereignty III. Pangea Use Cases
+
+Guide to the Whitepaper
+
+1. The Internet of Sovereignty
+
+1.1 Governance 1.0: A Geographical Apartheid 1.2 Governance 2.0: Borderless, Decentralized, Voluntary 1.3 Enter Pangea
+
+2. Pangea Technology
+
+2.1 Evolution of Pangea 2.2 Under the Hood: The Mesh Network 2.3 Lucy AI and the Exocortex 2.4 The IPFS Contract Registry 2.5 Governance Services: DApps and Chatbots
+
+3. Pangea Arbitration Token (PAT)
+
+3.1 Purpose and Design 3.2 Pangea Reputation System: Proof-of-Agreement Token (PoA) 3.3 Pangea Arbitration Token (PAT): Master Token 3.4 Collective Versus Individual: Proof-of-Collective Token (PoC) 3.5 Contracts, Laws and Legal Code : Proof-of-Nomic Token (PoN)
+
+4. Organisation and Token Distribution
+
+4.1 Organization and PAT Distribution 4.2 Pangea Business Model 4.3 PAT Game Theory and Distribution 4.4 Roadmap
+
+5. Resources
+
+5.1 Install Pangea 5.2 About BITNATION 5.3 Join the Community 5.4 Documentation
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+3
+
+
+
+<Introduction_
+
+I. BITNATION Organization: A Decentralized Borderless Voluntary Nation (DBVN)
+
+
+
+FIGURE 1: THE EVOLUTION OF GOVERNANCE (JOHAN NYGREN, 2016)
+
+"Every citizen is sovereign, and has the right to self-determination and is at liberty to choose any form of expression or way to be human or posthuman and with whom to associate and cooperate" Bitnation Constitution, Article 6
+
+
+
+Bitnation's vision is a global free market for governance services. A post-Nation State world of Voluntary Nations, City States and Autonomous Communities which compete for Citizens by providing a range of opt-in governance services. In our world sovereignty shifts decisively from the State to the Citizen, and humanity reclaims freedom of choice when accessing governance services.
+
+This vision sharply contrasts with current world order, where Citizens are forced to compete with one another to receive their desired governance outcomes - a process that often leads to violence and conflict. In Bitnation's world, you can become a Citizen of any Nation through a smartphone application. Competition for Citizens drives down costs and improves the quality of services. In a Bitnation future there is little incentive for violence because every one of us is a potential customer.
+
+Bitnation is the proof-of-concept Decentralized Borderless Voluntary Nation (DBVN). We are an open source movement, and anyone can build their own DBVN on Bitnation Genesis, and already over 200 new Nations have been registered. We have over 100 Embassies, and
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+4
+
+
+
+Consulates, and over 10,000 Citizens on all five continents, a dynamic community of 2000 contributors on our Slack channel. We offer a range of services in-house or in partnership with other providers.
+
+1. The Bitnation blockchain Public Notary which is being used for a wide range of purposes marriages, wills, birth certificates, company registration, land titles, freelance agreements, loan agreements and so on;
+
+2. The Bitnation Refugee Emergency Response (BRER), which provides a blockchain ID for stateless people. BRER's software won the Grand Prix and Award for Best Idea at the UNESCO NETEXPLO 2017;
+
+3. Partnerships with third party governance service providers such as Exosphere Education Program1 SpaceChain's open source space hardware and software program, resilience.me basic income protocol, and Dragonfly's physical security service;
+
+4. Bitnation organized the world's first Blockchain Marriage and World Citizenship ID, Blockchain Land Title, Birth Certificate and Refugee Emergency ID during 2014 and 2015.
+
+5. In 2016 Bitnation recorded the world's first DBVN Constitution on the Ethereum blockchain, and has since set up a resource center for other aspiring DBVN creators.
+
+6. The Pangea Jurisdiction which has been in development since 2015, and is currently on version 0.3, built on IPFS, SSB and Ethereum. Two previous iterations have been released in the past, the first one using the Horizon chain, and the second one based on the SSB "gossip" protocol.
+
+The core function of any nation is to protect its citizens and their assets through an enforceable jurisdiction (the practical authority to administer justice within a defined area of responsibility). Security and justice ensure that our assets, including our bodies, are safe from violence and dispossession. Increasingly security and justice are merging as more of our assets become digital.
+
+
+
+1 https://exosphe.re/
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+5
+
+
+
+II. The Pangea Jurisdiction: The Internet of Sovereignty
+
+"Our operating system, as operating systems will, has become buggy, strained, and outdated. Not only are people becoming weary of a system designed to pit people against each other with a crude majoritarian calculus, but new systems are being developed to accommodate phase transition. Indeed, some of these systems don't require the permission of authorities. They arise from technologically connected people" Max Borders (2017). Director of Idea Accounts and Creative Development for Emergent Order
+
+In the Pangea Jurisdiction Citizens are able to make peer-to-peer agreements, resolve disputes, and access governance services from DBVNs, using the legal code of their preference. In addition, Pangea provides core infrastructure for other Voluntary Nations. That means Pangea serves as a decentralized jurisdiction on which Voluntary Nations can be created, joined and lived-in.
+
+The Pangea Arbitration Token (PAT) master token together with the three nontradable reputation sub-tokens forms a financial incentive network on Pangea. User reputation is calculated by the autonomous agent Lucy to remove human bias and prevent reputation scores becoming attention or popularity contests. Reputation for individual laws and whole legal codes is assessed using human feedback loops similar to Airbnb and eBay. PAT encourage contract compliance, dispute resolution and nomic evolution of digital laws.
+
+
+
+III. Pangea Use Cases
+
+<create your own nation_
+
+DBVN is derived from the term Decentralized Autonomous Organization (DAO), coined by Larimer and Buterin in 20132. The DBVN term first appeared in the original Bitnation Whitepaper of 2014. A DBVN is defined as:
+
+
+
+ Decentralized: Decentralization is the process of redistributing or dispersing functions, powers, people or things away from a central location or authority. In the realm of a DBVN, decentralization translates into both technological and human decentralization through striving for P2P (Peer-to-Peer) technology, modular interfaces, API (Applications Programming Interface) layers, and forkable (duplicated) code. This means that every user can become its own node and transform the platform to their own liking. Decentralization
+
+2 In 2013, Stan Larimer, the founder of BitShares, discussed the concept of a decentralized anonymous corporation. Vitalik Buterin, who went on to found Ethereum, cited Larimer's earlier work and used the terminology of "decentralized autonomous organization" (DAO).
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+6
+
+
+
+also benefits from not having any single point of failure in the event of an attack. Human nodes should be able to reorganize themselves in resilient nodes no matter what part of the network comes under attack - be it human or other technological factors. In practice, this means that various clusters, regional or otherwise, are entirely autonomous.
+
+ Borderless: DBVN's do not limit their services to any specific geographical area, ethnicity or other categories of populations. They have no borders or ports of entry: no land boundaries, airports, coastlines, or seaports. DBVN's provide services to all areas, regardless of where it is located. Some would claim that a DBVN is `virtual' by design. Although virtual-by-design is an intuitive assumption, it does not have to be based entirely in the virtual world, nor its services.
+
+ Voluntary: DBVN's do not use force, fraud, or coercion, nor subject their citizens to involuntary servitude, peonage, debt bondage, or slavery. Due to the fact that DBVN's are voluntary in nature, they are inherently free of persecution, intimidation, reprisals, and other forms of systematic violence. DBVN's compete in a free market where customers, the "citizens" of the platform, voluntarily choose which DBVN's they want to use-- including the option of using several DBVN's, or none at all, or if they so choose to create their own DBVN.
+
+ Nation: A nation is a large group of people who share a common language, culture, ethnicity, descent, or history. In the case of DBVN's it is likely that people would be as connected through mutual interests and goals as they would more traditional commonalities such as culture and language. A nation is a voluntary formation rather than a governing entity (i.e. a state). We provide the tools for governance but do not impose them, nor do we impose any specific code of law or regulations.
+
+
+
+<enter Pangea_
+
+
+
+<peer to peer contracts_
+
+Imagine being able to make complex legal agreements at ease from your smartphone, through a user-friendly chat interface, similar to WeChat, Signal, WhatsApp, or Facebook Messenger, but without the time, costs and bureaucracy of public notaries, lawyers and regulators. And if a dispute arises, you can select the arbitrator of your choice on a free market for arbitration, depending on your budget and preference, the same way you would choose a rental apartment on AirBnB or a vendor on eBay.
+
+
+
+Examples of Agreements and Dispute Resolution:
+
+
+
+ Business Agreements: Imagine being a freelance in Brazil, assisting a UK based Bitcoin Exchange to translate their website into Brazilian Portuguese. Until now there has not been a practical jurisdiction for these kinds of international, online agreements. Pangea provides
+
+
+
+bitnation.co
+
+
+
+7
+
+
+
+an easy way to draw up a contract peer-to-peer, resolve any disputes that may arise, and incentivize contract compliance through the reputation system.
+
+ Private Agreements and Essential Records: In Uganda, Iran, Chechnya and many other countries, being homosexual results in prosecution by the government. However, a gay or lesbian couple might still want to engage in a legal union, in order to protect their assets, by tying their union to ownership records of, for instance, their land ownership titles, mutual savings wallets, wills and child care contracts. They can do so on Pangea.
+
+ Market for Freelance Arbitrators, Smart Contracts and Laws: Anyone can sign up as an arbitrator on Pangea and offer arbitration and mediation services. You could be a Wall Street lawyer offering to arbitrate complex mergers and acquisitions cases, or a car motor dealer, offering to resolve second hand car sales disputes. Each arbitrator sets their own fee rate and availability, and describes their experience and expertise, and the code of laws and jurisdictions they know. Citizens entering into contracts can choose arbitrators based on price, reputation and expertise.
+
+
+
+FIGURE 2: USING PANGEA FOR PEER-TO-PEER CONTRACTS AND ARBITRATION
+
+At a later stage, Pangea will evolve into a marketplace for smart contracts too, and legal professionals and developers will be rewarded for creating, auditing and improving smart contracts.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+8
+
+
+
+<Guide to The Whitepaper_
+
+Our whitepaper is targeted at our current community, future users of our technology, PAT purchasers and other contributors and stakeholders. It is divided into five sections which can be read together or in isolation:
+
+1. The Internet of Sovereignty: explains why opt-in governance is necessary to enable humankind to peacefully prosper, and how Bitnation makes this possible with the Pangea software.
+
+2. The Pangea Technology: provides an overview of our Pangea Jurisdiction software architecture, technology and features.
+
+3. Pangea Arbitration Token (PAT): details the design and purpose of the Pangea Arbitration Token and describes how it powers the Pangea Jurisdiction.
+
+4. Organization and Token Distribution: describes Bitnation's holacratic structure, decision making mechanism, business model, token sale event and development roadmap.
+
+5. Resources: gives instructions for downloading and installing the Pangea pre-Alpha and links to additional resources.
+
+Following our holacratic governance structure and open source principles, our paper was drafted by Bitnation's Founder Susanne Tarkowski Tempelhof, supported by Bitnation core contributors and then shared for comments from our community for several months as a google document, via our communications channels. Our mission is urgent - to free humankind from the oppression and sanction of pooled sovereignty and geographical apartheid, and the xenophobia and violence that is nurtured by the nation state oligopoly. Our whitepaper is a living document and intended to evolve with input from our ever-growing community. Since our formation in 2014, we have undertaken extensive research into decentralized governance modalities, intentional communities and the market for online legal services. Our founder and core contributors have direct experience of the many conflicts and wars which the current governance model fosters. This research and experience informs our direction and sure purpose - to build a world in which everyone is sovereign, and in which a million voluntary nations may bloom.
+
+Bitnation is a well-developed project with substantial support and technology behind it. The Pangea software is the product of 100,000+ lines of code and over three years of design, research, testing and development.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+9
+
+
+
+1. <The Internet of Sovereignty_
+
+1.1 Governance 1.0: A Geographical Apartheid
+
+"The novelty of the coming politics is that it will no longer be a struggle for the conquest or control of the State, but a struggle between the State and humanity, an insurmountable disjunction between whatever singularity and the State organization" Giorgio Agamben, Political Philosopher3
+
+Governments with territorial monopolies have been the rule through much of human history, their borders determined largely by the reach of their weapons technology. Since people within a city state, kingdom or nation state have tended to have shared culture, history, language and values, with little means of communication outside their own communities, cohesion around narratives of shared experience or values has been relatively easy for governments to "sell" to people, to maintain power over the population.
+
+
+
+FIGURE 3: EVOLUTION OF SOCIAL ORGANISATION
+
+Governance has also historically reflected evolutions in technology. The invention of survey methods and navigable maps in Europe during the 16th century created the technology for accurately fixing territorial borders4. Soon afterwards, the Treaty of Westphalia (1648) established the nation state as the standard for governance in Europe.
+
+The concept spread globally as nationalism during the 19th Century, with catastrophic outcomes for people during the first half of the 20th Century. After World War Two, the nation state was
+
+
+
+3 Giorgio Agamben, Giorgio and Michael Hardt (Translator). Coming Community (1993). University of Minnesota Press. 4 Mercator, Frisius, Deventer et. al
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+10
+
+
+
+ossified in International Law as the only permissible sovereign governance entity, and by the end of the century had completely supplanted colonial empires and unincorporated territories, creating a global oligopoly on governance and claiming nearly every square meter of habitable space.
+
+Yet not all nations are territorial and many people are arbitrarily excluded or forced to live on the fringes of this system. A number of networked societies have retained non-territorial national identities through history, such the Jews and Romany peoples of Europe, aboriginal peoples of North America and Australia and political and economic migrants and refugees everywhere5.
+
+As the Nation State closed-in they have become ever more subject to persecution. While the defined borders and cultural cohesion of the Nation State provided some relief from the violence of imperial wars after 1945, in our own era the borders themselves continue to be a perpetual source of conflict, instability, xenophobia and exclusion, and contribute to arbitrary economic and social impediments to prosperity worldwide.
+
+Technological advances over the past 70 years have not been accompanied by matching governance evolutions towards a networked society. The Nation State oligopoly established after World War Two remains uncontested. Yet state monopolies are increasingly incompatible with our ever more interconnected lives. In the USA, for example, public trust in government has dramatically collapsed since the millennium, a trend which has global resonances6.
+
+
+
+FIGURE 4: THE COLLAPSE IN TRUST IN GOVERNMENT
+
+
+
+5 To this category could be added the Zoroastrians in Iran and south-Asia, the Coptic Christians in the Middle East, Berbers in North Africa and many others worldwide. In Africa and Southeast Asia most pre-colonial kingdoms were at best very loosely territorially bounded.
+
+6 Pew Research Center 2017 http://www.people-press.org/2017/05/03/public-trust-in-government-1958-2017/
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+11
+
+
+
+Increasingly the Nation State7 oligopoly represents an anachronistic geographical apartheid8. Recent attempts to limit freedom of movement by the US and UK governments, the EU and other states, fly in the face of a rapidly globalizing economy, upon which more and more people are dependent for their livelihoods.
+
+State monopolies on governance services are also impractical and dangerous. Nation state governments are simultaneously incapable of comprehending and addressing the complexities of a networked world and responding to the diverse and localized needs of their citizenry, and as a consequence are spectacularly failing to address both our local needs and our global challenges.
+
+Social mobility is slowing, economic inequality increasing, permanent war causing massive population displacement and climate change degrading lives and livelihoods and damaging our planet. Radical politics are often expressed as xenophobia and violent nihilism and the Nation State is becoming increasingly intrusive and using technology and regulation punitively, in a desperate attempt to regain the initiative from globalization and take control of every moment in our lives.
+
+So far, the only alternative to nation state sovereignty actively explored is global or multilateral governance, where nation states pool our sovereignty to address wider issues through institutions such as the United Nations and European Union. These processes are homogenizing, assuming that a single authority is required to make the best decisions for people as a whole.
+
+Global governance models contain within them the seeds of perpetual conflict. Even if democratically governed, a worldwide tyranny of the majority will leave many billions disaffected, and the monolithic global state will swiftly need to use coercion to enforce its policy on this vast minority of unwilling citizens.
+
+Global governance distances agency even further from the individual and reduces rather than enhances personal sovereignty, and with it the choices we can make about how we live our lives. Most importantly, global governance takes no account of humanity's vital quality - its kaleidoscopic creativity and endless ability to reinvent itself in new and innovative ways to suit specific circumstances.
+
+
+
+7 The principle of state sovereignty underlies the modern international system of states. The origins of this system are often traced in scholarly and popular literature to the Peace of Westphalia, signed in 1648, which ended the Thirty Years' War in Europe.
+
+8 Wender, Andrew Looking Beyond the Westphalian Nation-State: Challenging the Modernist Vision of History with Alternative Political Orders and Worldviews, 2015. http://www.telospress.com/looking-beyond-the-westphalian-nation-state/
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+12
+
+
+
+1.2 Governance 2.0: Borderless, Decentralised, Voluntary
+
+"Happiness and contentment, equability of mind and meaningfulness of life  these can be experienced only by the individual and not by a State, which, on the one hand, is nothing but a convention agreed to by independent individuals, and on the other, continually threatens to paralyze and suppress the individual"
+
+Carl Gustav Jung (1957), Psychologist9
+
+
+
+An alternative model of global governance has been identified within the natural world and ungoverned areas of human agency, where despite a lack of hierarchy and centralized decisionmaking order and balance emerge in complex systems. These emergent structures are highly efficient patterns that develop from the collective actions of many individuals and entities.
+
+
+
+Emergent structures flow from the interaction of each entity with its immediate surroundings causing a complex chain of processes that can lead to order- unplanned cities such as Manchester and Los Angeles demonstrate these patterns, as do natural phenomenon such as the ecology of communal insects and birds and the formation of crystalline structures like snowflakes.
+
+
+
+Out of this science has come governance models of swarm and holacratic organizations, as practiced by the Pirate Party, for example. These are not amorphous clouds of equals, where nobody gets decision-making power, but neither are they traditional hierarchical organizations where commands are issued top-down and people are expected to follow them.
+
+
+
+Like Bitnation, these organizations are set up by one or a few individuals to enable tens of thousands of people to cooperate on a common goal in their life. As such the members of these singularities are usually vastly diverse and come from all walks of life, but share one common goal. The framework allows these thousands of people to form a swarm around it and start changing the world together through action rather than voice alone.
+
+
+
+In a typical Voluntary Nation created on Pangea, for example, people inspire one another across all social and cultural milieu and geographies, with the only singularity being the overall goals of the Nation that each Citizen chooses to follow. These new forms of governance can have any legal framework, economic model or decision-making mechanism promoted by their founders or managers, the only guiding principle being that Citizens retain their personal sovereignty at all times and voluntarily join and leave the nations. Thus, anyone can opt-in or opt-out of a voluntary nation, and the nations are required to compete with one another for Citizen patronage.
+
+
+
+Yet these organizational models can only outcompete Westphalian state sovereignty10 if they can provide credible alternatives to the nation state's raison d'etre, the provision of security and
+
+
+
+9 C. G. Jung. The Undiscovered Self (1957), Routledge
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+13
+
+
+
+justice11. Voluntary Nations must provide better, more secure, faster, cheaper and peer alternatives for these services. In other words, the global Westphalian oligopoly needs competition from decentralized, borderless and voluntary jurisdictions. Through this process the nation state will become increasingly irrelevant to our everyday lives12.
+
+The time is right for every one of us to reclaim our sovereignty and built a positive future through decentralized governance. Enter Pangea.
+
+
+
+1.3 Enter Pangea: The Internet of Sovereignty
+
+"The end of law is not to abolish or restrain, but to preserve and enlarge freedom" John Locke, Philosopher
+
+After 400 years of increasingly centralized governance, the web 3.0 technological revolution is making opt-in governance a real possibility. Bitnation's DBVN is a peer alternative to territorial nation states in the same way that the Decentralized Autonomous Organization (DAO) is an alternative to conventional organizations1314.
+
+Bitnation is not only the world's first DBVN, it is also the organization building Pangea: software infrastructure for voluntary nations. Pangea is both a jurisdiction for DBVNs, and the platform on which new DBVNs can be built and joined, and governance services accessed. DBVN Citizens voluntarily opt-in to the set of rules established in each Voluntary Nation they join using Pangea. In the case of Bitnation this requires creation of an account on Pangea and adherence to our constitution.15
+
+Pangea's raison d'etre is Jurisdiction as a Service (JaaS). Free market arbitration paves the way for humanity to reclaim personal sovereignty and return to peer-to-peer transactions. Pangea increases individual autonomy and enhance collective governance service delivery systems by leveraging existing decentralized encryption tools and technologies. Wikipedia defines a jurisdiction as the practical authority granted to a legal body to administer justice within a
+
+
+
+10 https://en.wikipedia.org/wiki/Westphalian_sovereignty
+
+11 Nozick, Robert. Anarchy, State, and Utopia, Basic Books 1974
+
+12Tarkowski Tempelhof, Susanne, RT Keiser Report 2015. https://www.youtube.com/watch?v=j3Nkol6MGVo
+
+13 The term DBVN was coined by BINATION founder Susanne Tarkowski Tempelhof in 2014 and the structure and technology is elaborated in the initial Bitnation White Paper and Github repository
+
+https://docs.google.com/document/d/1r_VqWrKQw07E06XAtMv_cZnFyBZma4PFTBJpM5GuzbA/edit https://github.com/Bit-Nation/Bitnation-Constitution
+
+14 A decentralized autonomous organization (DAO), sometimes labeled a decentralized autonomous corporation (DAC), is an organization that is run through rules encoded as smart contracts. A DAO's financial transaction record and program rules are maintained on a blockchain. There are a growing number of examples of this business model.
+
+15 https://bitnation.co/
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+14
+
+
+
+defined area of responsibility16. Pangea's decentralized jurisdiction addresses all four core elements of the administration of justice:
+
+<codes of law_  On Pangea users can write smart contracts in chat which refer to an existing code of
+
+law (e.g. Common Law, Sharia Law, UNIDROIT, or Civil Code), or upload their own laws or a template smart contract containing bespoke rules to govern agreements.
+
+<mediation and arbitration_  Pangea manages the dispute resolution process for agreements made on the platform;
+
+ Users choose human Arbitrator(s) or dispute resolution DApps offering methods such as crowd juries.
+
+<incentivization, deterrent and enforcement_  The token-driven reputation system provides incentives for contract compliance (rather
+
+than the threat of prison, for instance) and to ensure nomic evolution of smart contract rulesets (digital law);
+
+ Multi-signature Escrow functions can hold mutual assets related to contract agreements (money, tokenized land titles, car assets, etc) until an agreement is successfully completed.
+
+<defined area of responsibility_  The Pangea Jurisdiction Application allows DBVNs and P2P agreements to be created
+
+with clearly defined limits on which organizations and individuals their rules apply.
+
+Digital and analog are not the same with regard to rule enforcement. In digital space, everything must be quantified in order to be computable. As a result, the Pangea jurisdiction relies on reputation (automated and human scores, ratings, collaborative filtering, and digital representations of sentiment, opinion and thought) to incentivize opt-in contractual rule compliance and decide which peers, Nations, service providers and arbitrators receives a favorable rating.
+
+The Pangea blockchain jurisdiction use an evolutionary method of rule generation. The best set of rules in the form of smart contracts developed on Pangea will rise to the top and become recommended for continued use by Citizens based on reputation scores generated by informed
+
+
+
+16 https://en.wikipedia.org/wiki/Jurisdiction
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+15
+
+
+
+users, developers and auditors. A specific PAT sub-token is created for rating smart contracts for this purpose and through the use of IPFS, an Oracle and an autonomous agent (Lucy), Pangea will be able to semi-autonomously distribute reputation to smart contracts based on performance (fitness). Through this process a body of rules (smart contracts) suited for various purposes will emerge in the Pangea jurisdiction and evolve through use to best serve Citizen's needs17 as an optional standard format for Citizens.
+
+
+
+17 This element was first developed by Bitnation contributor Dana Edwards and the full paper can be read here: https://docs.google.com/document/d/1l00egk-PyNIE4-kHZwFGA-asIB_rsIRwtbMPDZ0JYJ8/edit
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+16
+
+
+
+2. <Pangea Technology_
+
+"A phase change is coming. Virtual communities are in their ascendancy, displacing conventional notions of nationhood. Geographic proximity is no longer as important as it once was." Timothy C. May (1994), Futurist
+
+Pangea is a decentralized jurisdiction for the peer-to-peer creation of voluntary nations and making and arbitrating solemn agreements. The Pangea frontend is built as an intuitive mobile chat application, while the backend is a mesh network which can be configured to communicate with any blockchain to create and execute smart contracts. On Pangea users, arbitrator and smart contracts can build reputation and are rewarded for fulfilling contracts and resolving disputes with Pangea Arbitration Tokens (PAT).
+
+
+
+FIGURE 5: PANGEA PLATFORM VISION
+
+2.1 Evolution of Pangea
+
+Pangea 0.1 on Horizon: The very first iteration of Pangea was built on the Horizon blockchain in 2015. Horizon is a fork of NXT that allows for greater on-chain storage. After building and releasing the first version, market analysis suggested that in future peer-to-peer contracts are most likely to achieve mass adoption through chat applications. We also understood that a blockchain-based communications protocol would be too slow and expensive to use to be practicable. At that point our design focus switched to a mobile-first chat platform based on a decentralized communication protocol which could be configured to interact with blockchains.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+17
+
+
+
+Pangea 0.2 on Secure Scuttlebutt (SSB): Pangea 0.2 was built in 2016 using code from the open source mesh network communications protocol SSB. The ingenious SSB design allows the user to carry around their own data, rather than trusting it to centralized servers - as is currently the case with WhatsApp, Signal, and Facebook Messenger, for example. SSB both provides remarkable resilience and allows users to operate without access to an internet connection through mesh networks, sneakernets and gossip protocols. Imagine the possibilities for places with limited or no access to a working internet connection. Yet while 0.2 enabled us to demonstrate our chat-based concept, it was clear that we needed greater storage functionality to build Pangea.
+
+Pangea 0.3 on Panthalassa: The third iteration of Pangea has been developed in 2017 on Bitnation's own mesh network, Panthalassa. While 0.3 borrows from the philosophy of SSB's gossip protocol, it is much easier to use, no longer requiring users to create full nodes and download message chains. 0.3 also has much increased data storage and manipulation capacity as it is implemented on the Interplanetary File System (IPFS) distributed web protocol, and incorporates an Ethereum geth_node to enable smart contracts created on Pangea to be written to a blockchain. Quantum resistant encryption is being added to future proof user security. The new Pangea 0.3 frontend is a mobile first chat application with embedded Ethereum smart contract functionalities (and the ability to switch between other blockchains).
+
+
+
+2.2 Under the Hood
+
+
+
+"Our identities have no bodies, so, unlike you, we cannot obtain order by physical coercion. We believe that from ethics, enlightened self-interest, and the commonweal, our governance will emerge." John Perry Barlow, Cyberlibertarian (1996)
+
+All agreements and contracts begin with a conversation between Citizens, and smartphone chat applications such as WeChat, and WhatsApp is increasingly becoming the go-to tool for conducting business everywhere, but especially in emerging markets. For those reasons, we are convinced that our jurisdiction needs a chat interface. This is implemented through Pangea's core communications protocol backend and mobile first frontend18.
+
+Panthalassa is the mesh-network backend software developed by Bitnation. Citizens can use the Pangea application to chat with each other, share files, write and sign smart contracts, acquire reputation, trade, create new nations and
+
+
+
+18 Panthalassa is the prehistoric ocean that surrounded the Pangean landmass https://en.wikipedia.org/wiki/Panthalassa
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+18
+
+
+
+organizations and interact with nations and governance service providers. Pangea is inspired and builds on the Secure Scuttlebutt (SSB) philosophy and draws on the Interplanetary File System (IPFS) distributed web. Compared to SSB, our backend has increased decentralization and adds Pangea specific features such as smart contract functionalities and a quantum safe encryption algorithm.
+
+Unlike blockchains, Panthalassa is designed for many different yet synchronized implementations. The goal is to provide users with a secure communications mesh network from which smart contracts can be written to the Ethereum blockchain via an integral geth_node1920, a light external node which removes the requirement for users to run a full node and sync the whole message chain, further improving usability. Panthalassa is constructed as a delay tolerant network (DTN)21 to allow users to have full functionality even if their internet connection is intermittent.
+
+
+
+FIGURE 6: PANGEA SYSTEM ARCHITECTURE
+
+As emerging quantum computers will make RSA and elliptic curve encryption irrelevant, the DTN is designed as a quantum safe protocol, enabling Citizens to send ephemeral messages22 and providing them with forward secrecy.23 To build Panthalassa we have developed new code and reused some work from other open source projects:
+
+
+
+19A mesh network is a network topology in which each node relays data for the network. All mesh nodes cooperate in the distribution of data in the network. It can be applied to both wired and wireless networks. https://en.wikipedia.org/wiki/Mesh_networking
+
+20 geth is the the command line interface for running a full ethereum node implemented in Go.
+
+21 Delay-tolerant networking (DTN) is an approach to computer network architecture that seeks to address the technical issues in heterogeneous networks that may lack continuous network connectivity. Examples of such networks are those operating in mobile or extreme terrestrial environments, or planned networks in space.
+
+22 Messages which are not permanently stored by the network.
+
+23As of 2017, the development of actual quantum computers is still in its infancy, but experiments have been carried out in which quantum computational operations were executed on a very small number of quantum bits. Both practical and theoretical research continues, and many national governments and military agencies are funding quantum computing research in an effort to develop quantum computers for civilian, business, trade, environmental and national security purposes, such as cryptanalysis. https://en.wikipedia.org/wiki/Quantum_computing
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+19
+
+
+
+ The SSB network is using a gossip protocol, its main ideas have been reused. Panthalassa uses the gossip protocol to allow Citizens to communicate in an isolated network (such as a home network) and synchronize with the main network later. We intend to implement SSBs offline data replication functionalities.
+
+ SSB has been one of the first projects to let users choose which cryptographic algorithm they want to use, and to still work in an interoperable way, we have kept this idea.
+
+ The IPFS project is the most advanced file sharing network, the main foundations of its BitSwap protocol and DAG have been reused.
+
+
+
+FIGURE 7. THE PANTHALASSA MESH NETWORK
+
+While the Pangea 0.003 has been built to write smart contracts to Ethereum, the network is blockchain agnostic and will provide users with a way to choose which chain they want to use. Once Polkadot or a similar protocol is integrated, citizens will be able to use the blockchain they want, in an interoperable way. Until a better language is mainstream available, smart contracts will be written in Solidity. Bitcoin will be integrated through the Rootstock protocol, which also uses Solidity. Emerging chains such as Tezos and EOS and post-blockchain technologies like Tangle and Bitlattice are future options that might be integrated, along with other more secure alternative contract languages.
+
+The Panthalassa prototype is developed in Golang, which is a memory safe language developed by Google. Go allows us to rapidly develop a safe working implementation24. The Pangea
+
+
+
+24 https://en.wikipedia.org/wiki/Go_(programming_language)
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+20
+
+
+
+frontend uses ReactJS, which permits the development of a responsive interface, emphasizing to our mobile first approach. This choice was also driven by the size of the JS community, and that many Bitnation contributors are familiar with JS, and prefer it to other languages25. Bitnation will render the core to other languages to encourage alternative protocol implementations in JSReact, C++ and Rust - similar to the Ethereum26 approach.
+
+
+
+FIGURE 8: PANTHALASSA GOSSIP PROTOCOL
+
+2.3 Reputation: Lucy AI and the Exocortex
+
+"If you think that moral reasoning is something we do to figure out the truth, you'll be constantly frustrated by how foolish, biased, and illogical people become when they disagree with you." Jonathan Haidt, Social Psychologist
+
+Nation state jurisdictions rely upon coercion as an enforcement mechanism. Punitive measures such as dispossession and incarceration are used to ensure compliance with rules and agreements. In contrast, on Pangea dispute resolution and cooperation is incentivized. Rewards are provided in the form of reputation, scores or ratings which Citizens, arbitrators, governance services providers, Nations and smart contracts and codes of law themselves accumulate, and which can be searched by others on the platform.
+
+
+
+25 https://en.wikipedia.org/wiki/React_(JavaScript_library) 26 https://www.ethereum.org/foundation
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+21
+
+
+
+To make this work on Pangea, we require an ability to rate every component in the system through a secure (and pseudo-anonymous) feedback mechanism.
+
+Thus, Pangea ensures:
+
+1. Every smart contract has a reputation rating, a set of metrics which are community determined to represent fitness. This functions as the community standard for quality control.
+
+2. Every entity on Pangea has a reputation score, whether it is an organization, a human, AI, or something in between.
+
+3. Every Citizen will have followable lists (this enables stigmergy by producing trails). Samir follows the list of Edmund, then Edmund follows the list of Alicia, etc.
+
+Each component is rated, either by AI (against performance criteria), or by Citizens, and every Citizen can follow other Citizens, follow and rate Arbitrators, Nations or Holons and smart contracts, continuously, and in real time. Citizens, Nations, Arbitrators and Smart Contracts themselves are rewarded with non-tradable tokens based upon performance. Accumulated reputation is then rewarded with tradable Pangea Arbitration Tokens (PAT).
+
+PAT are released onto Pangea by the Bitnation DBVN. The distribution mechanism for PAT tokens on Pangea is an autonomous agent, Lucy27, which will initially launch on Ethereum as a smart contract. A computational Oracle will help to facilitate this autonomous distribution mechanism in a decentralized and secure fashion. Lucy is tasked to read contract performance information stored in .txt files on IPFS. This will inform both reputation token distribution and PAT rewards to users using a multi-signature Oracle28.
+
+This mechanism will be blockchain agnostic and can be ported to any viable smart contract platform in the future. Iterations later, Lucy intends to evolve into our Exocortex (an external "memory" for Pangea)29, in combination with the contract registry, and further empowered by distributed cloud computing platforms such as iEx.ec or Golem.
+
+Although all rewards and transaction fees on Pangea are paid or received in PAT, the Pangea wallet aims to integrate as many currencies as possible in order to let Citizens choose a conversion if they prefer to receive rewards and pay for services in other currencies. Particular
+
+
+
+27 Lucy was the name given to the hominin female fossilised skeleton discovered by Donald Johnson, Mary Leakey and Yves Coppens in Kenya in 1971. At the time, she was the earliest known human ancestor. https://en.wikipedia.org/wiki/Lucy_(Australopithecus)
+
+28 In complexity theory and computability theory, an oracle machine is an abstract machine used to study decision problems. It can be visualized as a Turing machine with a black box, called an oracle, which is able to solve certain decision problems in a single operation. https://en.wikipedia.org/wiki/Oracle_mach
+
+29 An exocortex is a hypothetical artificial external information processing system that would augment a brain's biological high-level cognitive processes. https://en.wikipedia.org/wiki/Exocortex
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+22
+
+
+
+effort will be placed on adding privacy-centric currencies, including, but not limited to, DASH, Monero and Zcash.
+
+
+
+2.4 The IPFS Contract Registry
+
+"Whatever we call reality, it is revealed to us only through the active construction in which we participate" Ilya Prigogine, Complex Systems Theorist and Nobel Laureate30
+
+
+
+Panthalassa uses IPFS to store and search smart contracts, legal codes and more. A registry specifically designed for smart contracts and codes of law has been developed which supports Pangea's ability to rate contracts with proof-of-nomic reputation sub-tokens. This process creates the context in which Nomic Laws can evolve on the platform (i.e. a set of laws that are updated on usability criteria).
+
+IPFS does not have native encryption functionality. If there are smart contracts or pending disputes which must remain confidential, Panthalassa uses another layer to automate the process of encrypting confidential documents.
+
+One method is to set a multisig for access to the documents or evidence that is shared only with the people in each voluntary jurisdiction related to the contract or dispute with a timer. In this way Pangea mimics current nation state jurisdictions where contracts are kept securely until needed, or where confidential documents are held securely by lawyers or in bank vaults. As in legacy legal systems, confidential documents are not viewable anywhere else.
+
+Public servers and boot nodes are often perceived as a centralization risk. Indeed, users usually connect to a specific node. If that node goes offline or decides to filter traffic, users might be excluded from the network. To avoid that possibility, we use the IPFS network to host its data. It allows data to be cached when accessed by other nodes, and replicated through the whole network. This system reduces the charge on Pangea's node hosting data (since they are replicated across the entire network).
+
+Although cached data is erased a fraction of a second after sending, the system prevents data "disappearing" by replicating encrypted sent files and messages. So, if Alice `follows' Bob, Alice will permanently host Bob's data. If Bob goes offline Alice still hosts his data (which therefore remains accessible by the other nodes). This quality also encourages users to have more followers, since their data will then be replicated many times and thus made more frequently available to the network.
+
+
+
+30 Ilya Prigogine, Isabelle Stengers. Order Out of Chaos: Man's New Dialogue with Nature (1984). Bantam Books.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+23
+
+
+
+2.5 Governance Services: DApps and Chatbots
+
+Pangea's API (Application Programming Interface) will allow DApp (Decentralized Applications) and chat bot developers to create third party applications as services on Pangea that Citizens or DBVNs that live on Pangea could choose to use. Examples could include applications such as:
+
+ Peer-to-Peer Financial Redistribution: For instance, Johan Nygren's work with resilience.me to build a peer-to-peer basic income protocol, as well as a redistribution scheme called Taxeme could be opted into by individual Citizens on Pangea, or adopted by DBVNs for all their Citizens
+
+ Crowd Arbitration: Pangea's native arbitration system is focused on peer-to-peer arbitration. However, for Citizens who prefer other types of arbitration, for instance that of a Crowdjury, provided via a 3rd Party DApp.
+
+ Peer-to-Peer Security: For actual physical security, a 3rd party developer could develop a DApp to for instance provide a form of `neighborhood watch' in their area - similar to the concept of for instance Cell 411 and other security applications.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+24
+
+
+
+3. <Pangea Arbitration Token (PAT)_
+
+3.1 Purpose and Structure
+
+"This is a development that turns the very logic of political action on its head.Thanks to technology and the distributed nature of networks, we are no longer beholden to the political process, majoritarian rule, and the so-called "fair" tax and fiat money regime." Carl Oberg, Foundation for Economic Education (2014)
+
+The Pangea Arbitration Token (PAT) is designed specifically to reward the successful execution of contractual agreements on the Pangea platform, and is not primarily a currency, even though the master token will be tradable on crypto currency exchanges. PAT is distributed via an Ethereum smart contract31 containing a tradable ECR20 master token which serves as a reward token on Pangea, and also governs three non-tradable reputation tokens, each with specific functions and attributes:
+
+ Proof-of-Agreement (POA): A non-tradable reputation token for Pangea users and arbitrators which is governed by performance criteria for smart contract creation and execution;
+
+ Proof-of-Collective (POC): A non-tradable reputation token for DBVNs, user groups and governance services created on Pangea, it is governed by user satisfaction with collective contract creation and execution;
+
+ Proof-of-Nomic (PON): non-tradable reputation token for contracts, laws and legal codes governed by user satisfaction.
+
+3.2 Pangea Reputation System: Proof-of-Agreement (POA)
+
+POA non-tradable tokens build an individual user's reputation on Pangea. When Citizens create and complete contracts, and resolve disputes relating to these contracts, they are rewarded with the POA portion of PAT. POAs are non-tradable to prevent user reputations being bought or sold. Making the POA portion of the PAT token non-tradable ensures that reputation can only be
+
+
+
+31 Smart contracts are computer protocols that facilitate, verify, or enforce the negotiation or performance of a contract, or that make a contractual clause unnecessary. Smart contracts often emulate the logic of contractual clauses. Proponents of smart contracts claim that many kinds of contractual clauses may thus be made partially or fully self-executing, self-enforcing, or both. Smart contracts aim to provide security superior to traditional contract law and to reduce other transaction costs associated with contracting. https://en.wikipedia.org/wiki/Smart_contract
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+25
+
+
+
+gained through successful contract creation, dispute resolution and execution, and not through monetary means or popularity.
+
+Each individual Citizen has a unique and searchable identifier, a public key32. Every smart contract created on the platform will also have a contract ID, associated public key(s), and possibly other additional IDs, addresses, or codes, as is deemed necessary to validate identities and secure. These identifiers, public keys, codes and addresses will be stored in the Bitnation contract registry on IPFS which will act as an external data source for the token distribution mechanism through the Lucy bot.
+
+When Citizens do anything on Pangea, whether sending a public message, conducting a private conversation or creating a smart contract, the individual user automatically signs the action as a consequence of being the specific person attached to that unique identifier (similar to signing each message and action with a PGP signature). In addition to the PAT reputation mechanism, Citizens could choose to add external verification methods in the future, such as social media verification, uploaded utility bills, or government-issued identification documents.
+
+
+
+FIGURE 8: DUAL KEY ENCRYPTION
+
+
+
+In the event uPort, Civic or a similar identification system becomes widely adopted by the market, we will integrate the best option as a platform login function, at minimum. Pangea is de facto sybil-attack resistance due to the time and energy it takes to create a trustworthy profile. This is not a cast-iron guarantee against bad actors, but it provides a strong disincentive. Further on, the cost of creating and executing a contract through the miners' fees makes the cost/opportunity ratio for a potential Sybil attack undesirable. Contracts between individuals (or individuals representing groups) are created through the private conversation function on
+
+
+
+32 A cryptographic system that uses two keys -- a public key known to everyone and a private or secret key known only to the recipient of the message. https://en.wikipedia.org/wiki/Public-key_cryptography
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+26
+
+
+
+Pangea, which is end-to-end encrypted. Participants, witnesses, arbitrators and escrows are added to the private conversation, which when satisfactorily agreed by participants, can be turned into contracts that are entered on blockchains.
+
+3.3 Pangea Arbitration Token (PAT): Master Token Mechanism
+
+PAT master tokens are tradable in-app tokens distributed through an Ethereum smart contract. They do not confer voting rights on holders. 34% of PAT master tokens are released on Pangea as rewards for Citizens who build up POA reputation. This portion will be used as a tradable token to reward the accumulation of individual and group reputation. Nevertheless, master token holdings are not indicative of reputation themselves and reputation cannot be traded on the platform. This portion of PAT master tokens also collects revenues generated by Pangea through small transaction fees on arbitration charges and contract timestamping on blockchains. Amongst other tokens, PAT can be used to pay for governance services on Pangea.
+
+A further 34% of PAT master tokens will be sold to external stakeholders through a two stage Token Sale Event (TSE), to generate resources for the construction of Pangea and to empower a broad stakeholder community which drives user adoption. The remaining 32% of PAT master tokens is reserved to reward Bitnation founders, contributors, advisors and current Bitnation Citizens and early Pangea adopters for developing, improving and maintaining the system (18% pre-allocated33 and 14% reserved as options and bounties for future contributors).
+
+
+
+3.4 Collective Versus Individual PAT: Proof-ofCollective (POC)
+
+
+
+33 50% is vested for 12 months after the TSE
+
+<enter Pangea_
+
+
+
+The ability of Citizens to create their own Nations in the Pangea Jurisdiction is a core feature of the platform.
+
+Pangea's software enables the creation of intentional sovereign communities - including DBVN - by choosing and applying one or several codes of law, a dispute resolution mechanism and a decision-making
+
+
+
+bitnation.co
+
+
+
+27
+
+
+
+mechanism and adding governance services as DApps.
+
+Eventually Pangea will permit DBVNs to nest into other DBVNs, allowing organic scalability when the need arises.
+
+Decentralized Borderless Voluntary Nation (DBVN) functionalities:  A DBVN relies on smart contracts to govern community interactions
+
+ Transactions and rules are maintained on a blockchain (usually Ethereum)
+
+ Creation of Constitution (governs membership including how to enter and how to leave, benefits and responsibilities, core principles, etc)
+
+ Choice of Legal Code (e.g. Common Law, Civil Law, Sharia, etc)
+
+ Choice of Economic Model (e.g. Capitalism, Socialism, Communism, Taxemes, etc)
+
+ Choice of Decision Making Model (e.g. Democracy, Holacracy, Theocracy, Futurarchy, Autocracy, etc)
+
+ Choice of Jurisdiction (e.g. Pangea, or an external nation state jurisdiction)
+
+ Definition of Governance Services (Security, Jurisdiction, Education, Healthcare, Infrastructure, etc)
+
+ A DBVN scales through people forming Holons, a self-organized system. Sometimes synonymous with `holacracy' and `swarm methodology', it has been successfully implemented in organizations such as the Pirate Party, Bitcoin, Linux and Anonymous.
+
+As with individual reputation, group reputation must be governed within strictly measurable parameters, with as narrow a scope as possible. The reputation of a group will be measured by the human members of the group, based on whether the governing entity (the DBVN, Port, Embassy etc.) fulfills its intention and promises set forth in its constitution.
+
+As with individual reputation, collective reputation tokens are also non-tradable. Should Citizens wish to have a function to `rate' interactions with groups of which they are not members, such functionality could be created as a Third-Party Application.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+28
+
+
+
+3.5 Contracts, Laws and Legal Codes PAT - Proof-ofNomic (PON)
+
+Nomic structure is a suitable architecture for rulemaking in digital space. Pangea will have chains of rules, self-enforcing smart contracts, and rules for changing rules. Blockchains provide an accounting ledger, a function for tracking time, a mechanism for developing shared consensus, and potentially a collective memory (exocortex).
+
+Each smart contract created on Pangea represents a set of rules. To provide better feedback, each smart contract will have a reputation score measured in proof-of-nomic sub-tokens. By allowing each smart contract to have a reputation (to be rated and peer reviewed) the Pangea jurisdiction will improve the quality of each set of rules as fitness is evaluated and the newest rules are optimized to become the fittest. This fitness function is critical to the contract optimization process while stigmergy is the indirect swarm34 coordination mechanism.
+
+Due to the nature of the blockchain it is possible to track everything a Bitnation Citizen chooses to publicly share through Pangea. On Pangea Citizens have the ability to create public or private lists, to follow any list, or any participant in the network35.
+
+If a particular smart contract is good, then as more participants in the swarm discover how good it is, they can follow this set of rules, which will strengthen the digital pheromone trail, to take this smart contract viral36. In this case reputation will not be automated, but be based on human judgement: peer reviewing and rating the laws, legal codes and contracts created on Pangea, based upon their utility, including but not limited to:
+
+ User Friendliness and Comprehensiveness;
+
+ Efficiency, Security, Trustworthiness and Predictability;
+
+ Openness (source code access and documentation).
+
+Rating laws, legal codes, and contract usability allows individual laws, contract templates and entire legal codes to evolve nomically, akin to how Common Law has evolved.37 We call this sub-token proof-of-nomic (PON). PON sub-tokens are non-transferable, but their value can be eliminated through downvotes. PON attribution will be handled through the IPFS contract
+
+
+
+34See Bitnation adviser Rick Falkvinge's book Swarmwise https://falkvinge.net/2013/02/14/swarmwise-the-tactical-manual-to-changing-the-world-chapter-one/
+
+35 Stigmergy is a consensus social network mechanism of indirect coordination, through the environment, between agents or actions. The principle is that the trace left in the environment by an action stimulates the performance of a next action, by the same or a different agent. In that way, subsequent actions tend to reinforce and build on each other, leading to the spontaneous emergence of coherent, apparently systematic activity.
+
+36 Initial thinking on integrating Nomic Law in the Pangea context was developed by Dana Edwards in 2016.
+
+37 Nomic is a game invented by philosopher Peter Subic in 1982. It's a game in which changing the rules is a move. The Initial Set of rules does little more than regulate the rule-changing process. The Initial Set of rules were published in Hofstadter's "Metamagical Themas" column in Scientific American in June of 1982. The evolution of Common Law through legal precedent established through case law can be viewed as a Nomic process https://en.wikipedia.org/wiki/Nomic
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+29
+
+
+
+registry (via the intermediaries of the Lucy AI running as a smart contract on Ethereum and an off-chain computational Oracle linked to Pangea's IPFS registries).
+
+The purpose of PON is to provide users with a reliable way to check that a law, code of law or contract template will execute the functions as intended before selection for use. For instance, a Citizen could provide a contract template with a flawed source code, but since other Citizens have had the opportunity to vet the source code which corresponds to the contract deployed, it should not generate many `upvotes'. That means the community can "catch" the flaw and if necessary downvote the contract, which will incentivize the contract creator to address the problem or lose reputation as a contract template creator.
+
+That example can be extended across all the different elements of a contract. Extending the rating system to Laws and Legal Codes helps Citizens to navigate the many choices of laws and legal codes that will be offered on Pangea, much as user feedback on Yelp, bookings.com and AirBnB's, user ratings and comments aid customers in making informed decisions.
+
+In order to avoid Sybil attacks38, the PON reward will be calculated based on the votes obtained by the active usage a specific contract and the reputation of voters (the amount of POAs they have). Thus, making a Sybil attack useless since accumulating a good reputation takes time.
+
+
+
+38 The Sybil attack in computer security is an attack wherein a reputation system is subverted by forging identities in peer-to-peer networks. It is named after the subject of the book Sybil, a case study of a woman diagnosed with dissociative identity disorder.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+30
+
+
+
+4. <Organization and PAT Distribution_
+
+
+
+4.1 Structure and Decision Making
+
+"Holacracy is not a governance process "of the people, by the people, for the people"; it's governance of the organization, through the people, for the purpose" Brian Robertson, Holacracyone
+
+PAT Token holders do not have voting rights, in order to avoid the tyranny of the majority problem39. Instead, Bitnation is governed by the principles of liquid holacracy. This encourages participants to form holons and execute their own ideas without requiring the consent of any other parties (such as other citizens, Bitnation Core Contributors, or other entities).
+
+DBVNs can be formed directly on Pangea and will stand or fall based upon their ability to attract Citizens or members40. Since Pangea is open source software, a group of individuals who disagree with the fundamental functions or direction of Bitnation, Pangea or PAT have the ability to fork the code, and create a version which suits them better. The original Bitnation DBVN contract was developed in 2016 by Alex Van de Sande together with Susanne Tarkowski Tempelhof in Rio de Janeiro, Brazil, based on an existing MIST wallet DAO contract.
+
+It was launched on the blockchain together with the Bitnation Constitution in early 2016. The contract was later on upgraded by Johan Nygren who added a patch against the recursive call vulnerability which led to The DAO hack in 2016. The contract has been redesigned by Eliott Teissonniere drawing upon code from the Aragon Project to make DBVNs upgradeable, which enables fixing potential vulnerabilities and extending functionalities via modules (executed with nearly full privileges in the DBVN) or applications (interacting with the DBVN, but with limited privileges). We believe that such functionalities will lead to a market of third parties' applications.
+
+The "proposal" module of a DBVN allows its members to add proposals such as:
+
+ New constitutional amendments  Spending PAT and Ether
+
+39 A scenario in which decisions made by a majority place its interests above those of an individual or minority group, constituting active oppression comparable to that of a tyrant or despot. https://en.wikipedia.org/wiki/Tyranny_of_the_majority 40 Holacracy is a specific social technology or system of organizational governance developed by HolacracyOne, LLC in which authority and decision-making are distributed throughout a holarchy of self-organizing teams rather than being vested in a management hierarchy. http://www.holacracy.org/
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+31
+
+
+
+ Executing some external contracts  Adding multisig members  Changing rules  Execute anything with the DBVN identity, the DBVN is acting as a "standard" user of
+
+Ethereum
+
+All proposals are debated and discussed thanks to an integrated function allowing members to add a "justification" to their vote. A vote is represented by the following solidity structure:
+
+struct Vote { bool inSupport; address voter; string justification;
+
+}
+
+All Bitnation DBVN members are given a "stake" and a "field of work". This allows users to have greater influence over decisions if the proposal concerns their "field of work" in the organization. The Bitnation DBVN contract has been redeployed in 2017. There are currently multiple signatories on the DBVN multisig, each of them having a specific stake in their field of work (holon). Each signatory is responsible for suggesting budgets and proposals, and reviewing proposals. Thus, each signatory operates as a cost center of its own, with greater autonomy than provided in traditional organizations.
+
+Bitnation's organizational structure consists of several elements:
+
+ Decentralized Borderless Voluntary Nation (DBVN): Bitnation. New DBVNs can be created on Pangea, or created through forking Bitnation.
+
+ Pangea: The Jurisdiction software
+
+ Holons: Groups of people within a DBVN working towards a specific end. This can mean a holon dedicated to a specific subject like marketing of Pangea, or it can be a holon totally disconnected from Bitnation's operation, let us say a holon working on organizing social events.
+
+ Genesis Holon: The core Bitnation executive holon, consisting of persons who make executive decisions on the strategic direction of the DBVN. Members of the genesis holon are selected on the basis of commitment to Bitnation, expertise in designated fields of work, and performance over time. Although membership will change, change is designed to have an inherent slowness worked into it, in order to provide long-term stability and continuity. Members of the Genesis Holon are the `Guardians of the DBVN', essentially.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+32
+
+
+
+ Core Contributors: People who contribute significantly to core functions of the DBVN (like tech, community, finance, etc) at a certain point in time.
+
+ Citizens: People who subscribe to the vision, philosophy and goals set out by the DBVN (in our case, the constitution) and subscribe to join as a Citizen, to enjoy the services the DBVN offers.
+
+ Ambassadors: People who take an active role in Bitnation on a volunteer or semi volunteer basis, with a greater level of insight and engagement than an average Citizen. There are different types of Ambassadors, some focused-on community engagement, others on diplomacy.
+
+ Embassies & Consulates: Physical places for Citizens to meet, work and occasionally live. Can be a public spaces or private homes.
+
+ Allies: Entities who have actively cooperated with the DBVN. Can be a private company (e.g. Exosphere), another DBVN, or even a Nation State (e.g. Estonia).
+
+ Ports: administrative entities, such as for-profit or nonprofit entities in different Nation State jurisdictions designed to interact with old world legacy systems such as banks and governments on behalf of Bitnation or other DBVNs.
+
+
+
+44.2 Pangea Business Model
+
+The Pangea revenue model is based on two sources of income, relating to contract creation and execution respectively:
+
+1. A small transaction fee on the amounts arbitrators, judges and juries charge for their services on Pangea (in Bitcoin, Ether or other cryptocurrencies converted on-platform into PAT);
+
+2. A small transaction fee on top of the amount miner's charge to timestamp and execute smart contracts created on Pangea on Ethereum or other integrated blockchains (also converted into PAT).
+
+Revenue is charged in PAT, convertible from other cryptocurrencies on the platform. 40% of the platform revenue is distributed to PAT token holders. 60% of the revenue will be kept in reserve for platform development and other expenses. Development priorities and budgets will be discussed through forums like consider.it and the final budget allocation will be made through the multisignature delegates.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+33
+
+
+
+The table below provides an extremely conservative estimate of Pangea revenues in dollar equivalent after five years.
+
+
+
+Projected Annual Revenues After 5 Years
+
+
+
+Revenue Streams
+
+
+
+Revenue
+
+
+
+Smart Contract Notarization
+
+
+
+$ 14,880,000
+
+
+
+Dispute Resolution Market
+
+
+
+$ 12,000,000
+
+
+
+Smart Contract Development Market
+
+
+
+$ 10,000,000
+
+
+
+Total Revenues
+
+
+
+$ 36,880,000
+
+
+
+TABLE 1: BITNATION PANGEA BUSINESS MODEL - YEAR FIVE REVENUE PROJECTIONS
+
+
+
+Revenue has been calculated from the ground up, using existing data on Bitnation market adoption from the https://bitnation.co website (use of Public Notary, World Citizen ID, Citizen adoption and Embassy and Consulate creation).
+
+User adoption statistics have been estimated from open source data on the online legal services market, mobile chat application use, mobile phone adoption in emerging markets, and the `System D' economy41. The target market for early adopters has been defined as `tech-savvy selfidentified World Citizens' in the BRICs and 'Next Eleven Markets'42, piggybacking on polling which indicates more general disillusionment with the state, as well as political unrest and increased cryptocurrency adoption (factors which extend to other markets in Europe, Asia and North America). Detailed financial projections can be provided upon request.
+
+Our business model takes transaction fees into account, but not potential increases in PAT token value, which is highly speculative, but likely to significantly impact revenues. In addition to the Pangea application, Bitnation might also develop a series of arbitrator bots and DApps that live on other chat platforms and link back to Pangea, including but not limited to: Signal, Telegram, Status.im, Firechat, Messenger, WeChat, Kik and WhatsApp. These DApps serve to drive traffic to Pangea, create additional brand awareness and potentially provide an additional revenue source.
+
+
+
+41 System D economy refers to the `black' and `grey', or unregulated global economy http://freakonomics.com/2011/11/01/the-black-market-is-the-secondlargest-economy-in-the-world/
+
+42 The Next Eleven (known also by the numeronym N-11) are the eleven countries  Bangladesh, Egypt, Indonesia, Iran, MexTSE, Nigeria, Pakistan, the Philippines, Turkey, South Korea and Vietnam  identified by Goldman Sachs investment bank and economist Jim O'Neill in a research paper as having a high potential of becoming, along with the BRICS countries, among the world's largest economies in the 21st century. https://en.wikipedia.org/wiki/Next_Eleven
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+34
+
+
+
+4.3 PAT Game Theory and Distribution
+
+As described in Part 2, PAT tokens are released from the Bitnation DBVN onto Pangea after a contract is created and executed. Our game theory requires that a portion of the tokens released become tradable PATs, used to reward Citizens for accumulating POA (non-tradable reputation tokens). Thus, the more people who use Pangea to create contracts, the more Citizens benefit. This modality incentivizes peer-to-peer promotion and adoption, creating a de-facto network effect to organically grow user adoption. It also incentivizes late adopters to get on the platform.
+
+The PAT token functions not only to provide incentives for dispute resolution, and the creation and design of smart contracts within the Pangea jurisdiction incentive network, but also to build and monetize cooperative behavior amongst participants. PAT will drive the expansion of the Pangea community of Nations and Citizens.
+
+There are 42 Billion PAT master tokens (in the spirit of the Hitchhiker's Guide to the Galaxy!). The purpose of having a large number of tokens is also to ensure there are enough to reward users who have accumulated non-tradable reputation tokens in the future. At the time of writing 5.88 Billion have been reserved (18%), primarily for Founders, contributors and early adopters. Each PAT token is divisible by 18.
+
+34% of the remaining tokens are allocated for distribution to new stakeholders during the Token Sale Event (TSE), 34% for release as incentives for Citizens on Pangea, and 14% is reserved for allocation to future contributors to Bitnation as options and bounties.
+
+In order for token-based incentives to be effective, a wide distribution of tokens is desirable. We aim to ensure the decentralization of PAT ownership not just by maximizing the number of stakeholders when tokens are sold, but also by encouraging people who believe in voluntary nations and decentralization to own tokens.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+FIGURE 11: TOTAL PAT TOKEN DISTRIBUTION
+
+35
+
+
+
+Our goal is to maximize both the quantity and orientation of token-holders to ensure decentralization and build a stakeholder community aligned with our vision. To maximize quantity, PAT tokens will be made available for purchase through a range of exchanges and wallets after the TSE.
+
+TSE Token Release: 34% of the tokens will be released during the token sale. During the presale we will sell at least 4.2 billion tokens (10%) to preferred stakeholders to enable a degree of preferential engagement by committed supporters over a two-week period. After the pre-sale, we will sell <24% during the public TSE over one month, after which the TSE is concluded. The TSE will be hard-capped at US $30 million, to maintain token value.
+
+
+
+FIGURE 12: TSE TOKEN DISTRIBUTION CURVE (34% OF TOTAL PAT TOKENS)
+
+Non-TSE Token Release: In addition to the 34% sold during the TSE, 32% of tokens will be pre-allocated to founders, present and future core contributors, and early adopters (pre-TSE Bitnation Citizens). Of this allocation, 18% will be for pre-TSE contributors, Citizens and Founders, and 14% reserved for future options and bounties. A further 34% powers our software and is reserved for Citizens to earn on Pangea.
+
+TSE Smart Contracts: The TSE code is based on two smart contracts: one represents the tokens purchased and the other one is the TSE. The token is ERC-20 compatible. Tokens are released by the DBVN through the TSE contracts for buyers. Our token and TSE contracts have been designed by our solidity coding partners and TSE contract specialists ABDK Consulting and on advice from our partner Bitcoin Suisse AG. The TSE and token contracts have been externally audited and tested to guarantee the safety of the TSE and its associated funds, and to ensure
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+36
+
+
+
+integration with purchasing and fund security services provided to our TSE by our partner Bitcoin Suisse AG.
+
+The remaining 34% of tokens will be used to power the platform by crediting users who have built up a large amount of non-tradable reputation tokens on Pangea, as outlined in section 3.
+
+Post TSE Token Conversion: All tokens will be automatically converted to the final PAT token (1:1) as per the TSE/ token contract, when PAT is released with Pangea 0.003. Existing Bitnation XBNX CounterParty tokens will be exchanged for PAT tokens at an equivalent value.
+
+TSE Funds Release: Funds are released using the Bitnation DBVN liquid holacratic decision making mechanism. The pre-agreed Milestone Based TSE Launch Funds (10% of total PAT) Release Schedule is:
+
+ 15% End of Presale TSE  15% Panthalassa implementation  10% Panthalassa Smart Contract Integration  10% Pangea UI/ UX design  10% PAT Token release  10% Lucy and Oracle release  10% IPFS Contract and Document Registry  10% Pangea 0.003 Launch  10% Pangea API
+
+Token sale funds will also be used to fund 3rd Party Governance DApp developers, local Embassies and Consulates, bug bounties, and contributor rewards. Proposals will be publicly discussed on Bitnation's project page, powered by consider.it.
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+37
+
+
+
+4.4 Roadmap
+
+
+
+Activity
+
+
+
+Date
+
+
+
+Bitnation is founded
+
+
+
+14 of July 2014
+
+
+
+Multiple blockchain pilots are undertaken, including the world's first marriage, world citizenship, birth certificate, refugee emergency ID and land titles.
+
+Ambassador Network takes off all over the world.
+
+
+
+2014 Q3/ 2015 Q3
+
+
+
+First iteration of Pangea is launched on NXT/ HZ
+
+
+
+2015 Q3
+
+
+
+New website is launched, initially including the 2015 Q4 option for users to register as Citizens, and later on as Embassies, Allies and Nations
+
+
+
+Public Notary is launched in cooperation with eEstonia, used by thousands of people for things like freelance agreements, loan agreements, marriages, wills, birth certificates, etc.
+
+
+
+2015 Q4
+
+
+
+Decision is made to build on SSB after months 2016 Q1/Q2 of researching chat protocols and user markets
+
+
+
+Additional services are added to test on market - 2016 Q2/Q3 education, security etc, through 3rd Party Providers
+
+
+
+Pangea pre-Alpha client built on SSB/ Patchwork released for Linux and Mac
+
+
+
+2016 Q4
+
+
+
+Initial design of Panthalassa Initial design of IPFS Contract Registry Won UNESCO Netexplo Award
+
+Panthalassa Release Pangea Ethereum Smart Contract integration Panthalassa API DBVN Nation Creation functions developed
+
+
+
+2017 Q1/ Q2 2017 Q3
+
+
+
+Remarks
+
+Whoop Whoop! Interesting times
+
+Scrapped due to the realization that all agreements start with a conversation, hence needs a communication protocol as code base. Ouch. An accidental proof-of-concept
+
+Not an accidental proof-of-concept
+
+And so it begins... Fun, but better to stick to core platform development! Apparently, there's not many Windows developers in the Bitnation community! A brand-new backend era...
+
+WE ARE HERE NOW
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+38
+
+
+
+Activity
+
+
+
+Date
+
+
+
+Pangea UI/ UX Release TSE and Token Release Lucy and Oracle Design
+
+
+
+2017 Q4
+
+
+
+Public Beta release, including arbitration market 2017 Q4/ 2018
+
+
+
+PAT reputation sub tokens
+
+
+
+Q1
+
+
+
+Add OTR Protocol
+
+
+
+Pangea API and Dev tools for 3rd Party Developers released
+
+
+
+2018 Q2
+
+
+
+Pangea Beta mainstream market launch
+
+
+
+2018 Q3
+
+
+
+The exocortex (fully developed AI & AR integration) ...
+
+
+
+2020
+
+
+
+Remarks
+
+A brand-new frontend era...
+
+Improved Reputation and Privacy Functions
+
+After extensive security bounties, as well as community and focus group testing ...
+
+TABLE 2: BITNATION ROADMAP
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+39
+
+
+
+5. <Resources_
+
+5.1 Install Pangea
+
+Install Pangea through following the instructions on the README in the Pangea-React repository on our GitHub here.
+
+
+
+5.2 About BITNATION
+
+Bitnation is the world's first Decentralized Borderless Voluntary Nation (DBVN). Bitnation started in July 2014 by Susanne Tarkowski Tempelhof. Bitnation hosted the world's first blockchain marriage, birth certificate, refugee emergency ID, World Citizenship, DBVN Constitution and more. Its website, including the Public Notary proof-of-concept, is used by thousands of Bitnation Citizens and Embassies around the world. Bitnation is the winner of UNESCO's Netexplo Award 2017.
+
+Wikipedia - Pre-Foundational Paper - Founding Document - Original 2014 Whitepaper - DBVN Constitution and Code - Yearly Summary 2016 - Blog
+
+
+
+5.3 Join the Community
+
+GitHub Slack Trello Dev Facebook Page Facebook Group Twitter Steemit Reddit Bitnation.co AngelList
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+40
+
+
+
+5.4 Further Reading
+
+ Bitcoin Whitepaper  Ethereum Whitepaper  Rootstock Whitepaper  SSB Resources  IPFS Whitepaper
+
+Competing legal codes and Polycentric Jurisdictions  Paul-Emile de Puydt on Panarchy  David Friedman on Polycentric Law
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+41
+
+
+
+We are the Birth of a New Virtual Nation We are a Future for Our World and Humanity We are Sentinels, Universal and Inalienable We are Creativity and Visionary We are Rights and Freedoms We are Tolerant and Accepting We are Polity and Entity We are Privacy and Security We are Openness and Transparency We are a Dream and a Reality We are Bitnation
+
+
+
+<enter Pangea_
+
+
+
+bitnation.co
+
+
+
+42
+
+
+
+

@@ -1,0 +1,443 @@
+
+
+WHITEPAPER
+
+Version 2.1 22 September 2017
+
+easymine.io
+
+
+
+Table of Contents
+
+Introduc7on .........................................................................................................................3 The Idea ................................................................................................................................4 Principles of Opera7on......................................................................................................4 PlaAorm Architecture .......................................................................................................5 The easyMINE Difference.................................................................................................6 Our Goals..............................................................................................................................7 easyMINE Tokens (EMT) ...................................................................................................8 Ini7al Coin Offering............................................................................................................9 Development Roadmap.....................................................................................................9 Future Direc7ons .............................................................................................................10 Official Channels of Communica7on ...........................................................................10 The easyMINE Team........................................................................................................11 Warnings and Disclaimers..............................................................................................12
+
+Limita7on of Liability................................................................................................................13 Taxes ............................................................................................................................................13 Revision History................................................................................................................15
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+2
+
+
+
+Introduction
+
+Despite its rapidly growing value--with total capitalization now well over the 100 billion USD mark--the cryptocurrency market is still in its infancy. While blockchain technologies have already made significant impacts in such areas as business, finance, information management, and governance, it is clear that their full disruptive/transformative potential has barely begun to be realized. Accordingly, they can be expected to play an increasingly crucial role in many areas of modern life.
+
+A number of different protocols can be employed to ensure blockchain safety. These include proof-of-work, proof-of-stake, proof-of-activity, proof-of-space, and proof-of-bandwidth, to name just a few. Of these, proof-of-work is currently the most widely used--underpinning such currencies as Bitcoin, Ethereum and Ethereum Classic, or Litecoin--and likely to remain so for the foreseeable future. It is a distributed consensus system dependent on the participation of "miners," who, through their work (or, more precisely, the work performed by their computers), guarantee the integrity and security of blockchain transactions.
+
+At the risk of oversimplification--the more miners, the more secure the network.
+
+Becoming a miner, however, is not an easy process. First, suitable hardware has to be acquired and assembled, individual components carefully selected with an eye towards performance, power consumption, and price. The equipment then needs to be properly configured. This may involve not only determining and applying appropriate settings, but also more radical interventions, such as BIOS flashing. Third, suitable mining software must be obtained and set up. It must be noted that every currency requires different software and different settings. Once operational, a mining machine has to be monitored and maintained. This includes tweaking its operating parameters, installing updates, troubleshooting problems, and so forth. On top of everything else, miners also have to worry about keeping their mines profitable. This can be quite a challenge with just a single machine--let alone with tens or hundreds of them.
+
+For the above reasons, relatively few people decide to enter the cryptocurrency mining business.
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+3
+
+
+
+The Idea
+
+The core idea behind easyMINE can be expressed in a single phrase: plug & mine.
+
+easyMINE is designed to simplify and streamline the process of setting up, expanding, and managing a cryptocurrency mine. It will provide a complete software solution for easy setup and maintenance of mining equipment.
+
+easyMINE is aimed at both complete beginners, interested in launching their first mining machine, and experienced miners, who will appreciate the increased efficiency and control our solution can bring to their mining operations.
+
+Our goal is to deliver a system that--while fully featured, versatile, and powerful-- will be intuitive and straightforward enough to be readily accessible to a layperson. We believe that with easyMINE, anyone will be able to participate in and profit from cryptocurrency mining.
+
+
+
+Principles of Operation
+
+The functionalities provided by easyMINE fall into three general areas: automatic configuration, automatic mining, and comprehensive mine management.
+
+On the first boot-up, the eMOS system will take over and automatically execute the necessary set-up and optimization routines. This may involve GPU BIOS flashing, GPU core voltage adjustment, CPU/GPU/memory clock frequency adjustment, and so on. All operating parameters will be preselected from the central "knowledge base" of configuration and performance data, and then further optimized in order to achieve maximum stability and efficiency.
+
+In the fully automatic mode, easyMINE will be capable of operating without human input or supervision. It will dynamically optimize hardware and software settings, based on the given device's own performance history, as well as on performance data obtained from other units. It will also automatically select the most profitable currency (based on current exchange rates, block difficulty, power consumption, etc.) and the best available mining pool (considering, for instance, network delays and congestion). Lastly, the system will be able to manage the mined funds, performing currency conversions and depositing the profits to appropriate wallets.
+
+For advanced users, seeking complete control over every facet of their mining business, easyMINE's manual mode will offer a full range of configuration and
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+4
+
+
+
+administration tools. Planned functionalities include: real-time hardware monitoring, inventory management, complete operating history, detailed performance analysis, profitability calculation, report generation, diagnostics, and task automation. All settings and features will be accessible through a web-based dashboard or a dedicated mobile app (available for iOS and Android). The complete software package will be available for download from the easyMINE website. The eMOS operating system distribution will be released under an OpenSource license, with core functionalities available free of charge. Access to the more advanced autoconfiguration and hardware monitoring features will be paid. The fee amount will be dependent on the output of the devices under the system's control.
+
+Platform Architecture
+
+The easyMINE platform consists of the following modules:
+
+easyMINE OS (eMOS) A custom Linux distribution optimized specifically towards cryptocurrency mining. Includes all necessary system components, GPU drivers, pre-installed mining software for a variety of currencies, and an easyMINE script package for hardware management and communication with the easyMINE server. Developed under an open source license.
+
+easyMINE Server The main module of the platform. Controls the operation of individual mining machines. Relies on AI-based performance optimization algorithms to adjust hardware settings (BIOS version, core voltage, clock frequency, etc.) and mining parameters (currency, pool, etc.). Collects performance data and makes it available to users.
+
+easyMINE Dashboard Administrative module. An online configuration and management interface, accessible via web browser. Enables remote monitoring of and control over mining machines connected to the easyMINE server.
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+5
+
+
+
+easyMINE Mobile Administrative module. A dedicated mobile application for iOS and Android devices. Allows for remote management of mining machines connected to the easyMINE server.
+
+Additional, minor modules may be developed to support additional functionalities dependent on special-purpose hardware (e.g. remote hard reset).
+
+
+
+The easyMINE Difference
+
+At the moment, no comparable mine management platforms are available. easyMINE's extensive and unique feature set places it apart from--and, we believe, ahead of--any existing solutions, commercial as well as non-commercial.
+
+Complete The easyMINE distribution package will include all the software needed to run a profitable mine: the eMOS operating system, hardware drivers, mining programs, and the eM dashboard. No additional purchases, downloads, or installations will be necessary.
+
+Easy to use For people new to the world of cryptocurrencies, the very concepts of "blockchain," "proof," or "hash" can be hard to grasp. easyMINE aims to be accessible even to complete beginners and will require no more than intermediate computer skills for successful basic operation.
+
+Comprehensive From a single remote dashboard, easyMINE will provide access to and precise control over every aspect of a mining operation: from initial set-up, to inventory management, to performance monitoring and optimization, to troubleshooting and maintenance.
+
+Near-autonomous With easyMINE, every step of the mining process can be fully or partially automated. At its most autonomous, the system will rely on an array of selfconfiguration, self-optimization, and self-management algorithms to operate with no--or minimal--user supervision.
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+6
+
+
+
+Self-learning
+
+Advanced machine learning and data mining techniques will allow easyMINE to dynamically fine-tune its operating parameters for maximum efficiency. Optimal values will be determined through analysis of performance data collected in a centrally maintained knowledge base. "Lessons" derived from any given mining machine will be applied to improve the functioning of other similarly configured units.
+
+Scalable and extensible
+
+Designed to provide a consistent level of usability and convenience regardless of the number of mining machines under its control, easyMINE is suitable for small, growing, and moderately large mines. In addition, it can be easily extended to support new currencies, mining algorithms, wallets, etc.
+
+
+
+Our Goals
+
+Within the scope of the easyMINE project, we intend to:
+
+1. Build a complete software package needed to run a mining machine. The software will be based on a dedicated operating system distribution and ready to install to a USB flash drive. It will enable remote configuration and administration of mining hardware.
+
+2. Develop a dedicated mining machine management platform. The platform will allow users to inventory their hardware, configure it, and control its operation. It will automatically select and apply optimal configuration settings (BIOS modifications, CPU/GPU/memory timings, etc.) and respond to malfunctions and errors.
+
+3. Create intuitive and easy-to-use access interfaces for hardware monitoring and control. A web-based dashboard and a dedicated mobile application (for iOS and Android devices) are planned.
+
+4. Build a hardware specification and configuration knowledge base--for the purpose of automating the performance optimization process.
+
+5. Provide configuration presets for a wide variety of mining setups and cryptocurrencies.
+
+6. Develop automatic currency and mine selection algorithms. 7. Establish new, dedicated cryptocurrency mining pools.
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+7
+
+
+
+8. Create a wallet mechanism (in order to make first steps easier for beginner miners).
+
+9. Introduce a cryptocurrency trading functionality--tracking exchange rates for different currency pairs.
+
+10. Provide a sales platform that will allow third parties to distribute hardware components as well as pre-built mining machines.
+
+At a later date, we also want to develop hardware solutions that will simplify mine management for users operating a large number of mining machines (remote restart devices, PXE servers, etc.).
+
+easyMINE Tokens (EMT)
+
+To fund the project, we will issue 33,000,000 easyMINE tokens (EMT). The tokens will be based on the Ethereum (ETH) platform and managed using existing ETH solutions, such as MyEtherWallet. The token pool will be divided as follows:
+
+ Crowdsale participants: 27,000,000 EMT (approx. 81.8%)  Pre-ICO buyer bonuses: 2,000,000 EMT (approx. 6.1%)  easyMINE development team: 1,500,000 EMT (approx. 4.6%)  Project advisors: 500,000 EMT (approx. 1.5%)  Bounty program: 1,000,000 EMT (approx. 3.0%)  easyMINE Corporation: 1,000,000 EMT (approx. 3.0%) Unsold tokens will be burned. No additional tokens will be created at any point during or after the sale. Tokens allocated to the development team, project advisors, and easyMINE Corporation will have a 180-day vesting period, after which they will be released to holders at the rate of 0.5% a day. EMT tokens will be listed on exchanges in the fourth quarter of 2017. EMT tokens will be used as the sole form of payment for easyMINE services. easyMINE users will make prepayments to their individual EMT accounts. Fees for easyMINE services will then be automatically deducted from the account balance. easyMINE Corporation will continue to burn part of EMT tokens received in payment for its services until only 3,000,000 remain in circulation.
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+8
+
+
+
+Initial Coin Offering
+
+
+
+27,000,000 EMT tokens will be offered to the public through a crowdsale. The sale will continue until one of the following conditions is met:
+
+
+
+a) 21,300 ETH is collected, or b) 27,000,000 EMT tokens are sold, or c) 200,000 blocks are added to the ETH blockchain (i.e. approx. 34 days have
+
+elapsed).
+
+
+
+Token price will change throughout the sale period depending on the total amount sold:
+
+
+
+Tier 1: up to 2,000,000 EMT sold Tier 2: 2,000,0014,000,000 EMT sold Tier 3: 4,000,00127,000,000 EMT sold
+
+
+
+1 EMT=0.0007 ETH 1 EMT=0.00075 ETH 1 EMT=0.0008 ETH
+
+
+
+Tokens will be released to buyers immediately upon purchase. Unsold tokens will be burned.
+
+
+
+The ICO smart contract code will be made publicly available on GitHub prior to the beginning of the sale.
+
+
+
+The crowdsale contract address and starting ETH block number will be announced on easyMINE's official website.
+
+
+
+Development Roadmap
+
+The timetable outlined below is very conservative. We are already working on the system and expect to meet the development goals ahead of the schedule
+
+Q3 2017 Beta version of the easyMINE operating system (eMOS), including inventory management functionalities. Web-based administration dashboard.
+
+Q4 2017 Beta version of the automatic configuration functionality.
+
+Q1 2018 Beta version of the automatic mining functionality.
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+9
+
+
+
+Q2 2018 Core-feature version of the eMOS operating system (general access, free of charge) Q3/Q4 2018 Mobile application. Full-featured version of the eMOS system. 2019 and onwards Further development of the platform according to user needs.
+
+Future Directions
+
+The potential for further development is great. For obvious reasons, we do not want to reveal too many details at this point. We would like to emphasize that we want to actively contribute to the blockchain community. We see it as part of our mission to promote the blockchain philosophy on the international arena by participating in important events.
+
+Official Channels of Communication
+
+easyMINE's official channels of communication are:  The official easyMINE newsletter  Webpage: https://easymine.io  Twitter feed: https://twitter.com/easymineio  Slack: https://slack.easymine.io  Facebook page: https://www.facebook.com/Easymine.io
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+10
+
+
+
+The easyMINE Team
+
+Lukasz eligowski CEO / Founder / Software Engineer Master's degree in Software Development. Work experience in Softbank i Bankhaus Metzler (Germany). Founder and CEO/CTO of several IT companies. Experience in development team management, blockchain, and artificial intelligence.
+
+Andrzej Belczak CFO / Founder Master's degree in Banking and Finance. 25 years of business experience. Founder and CEO/CFO of several IT companies. Blockchain enthusiast. Experience in business law, administration, and management.
+
+Andrzej Buller, Ph.D. Machine Learning Expert Internationally recognized authority on artificial intelligence, neural networks, and human-computer interfaces. Former coordinator of the Artificial Brain Project at the Advanced Telecommunications Research Institute (Kyoto, Japan). Author of numerous academic and popular publications on machine psychodynamics, dynamic-fuzzy logic, cognitive modeling, and neurocomputing.
+
+Witold Turzaski CTO / Lead Software Developer 20 years' experience in software development, web servers, and big data.
+
+Tomasz Widanka Senior Developer / Hardware Engineer Experienced software developer. Hardware specialist. Blockchain enthusiast.
+
+Dawid Gajek Product Manager 10 years in the IT industry. Experienced software analyst. Expert in reconciling business necessities with the users' best interests.
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+11
+
+
+
+Michal Jankowski Senior Graphic Designer Creative artist with a rich imagination and in-depth knowledge of technology and programming. 6 years' experience in graphic design and usability.
+
+Anna Kochaska Marketing Specialist PR, marketing, communication, and product placement specialist with 6 years of industry experience. Dynamic, energetic, and positive.
+
+Przemyslaw Budziszewski PR Liaison / Content Developer Researcher and educator by training, communication designer by passion. 13 years' background in media and cultural studies.
+
+Lukasz Gsior Smart Contract Developer Smart contract specialist, highly involved in the Ethereum platform and related technologies. Member of the Ethereum Classic Scala client development team.
+
+Piotr Kosiski Advisor Co-founder and CTO of Blockdiggers, a blockchain and cryptocurrency consultancy group. Programmer, software architect, and innovation manager with many years of experience.
+
+
+
+Warnings and Disclaimers
+
+EMT tokens are utility tokens for use on the easyMINE platform. EMT tokens are not securities. EMT tokens are not for speculative investment. No promises of future performance or value are made with respect to EMT tokens. EMT tokens are not participation and hold no rights in easyMINE. EMT tokens are nonrefundable. easyMINE reserves the right to freely spend any profits received absent any conditions.
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+12
+
+
+
+EMT tokens are intended for individuals familiar with blockchain-based technologies. Do not participate in this crowdfunding if you do not understand cryptographic tokens, crypto-currency, and blockchain-based software systems.
+
+Cryptographic tokens possessing value in public markets have repeatedly demonstrated extreme and rapid fluctuations in price, as a result of sudden changes in the balance of supply and demand. You must be prepared to accept similar fluctuations in EMT token value.
+
+Limitation of Liability
+
+No easyMINE party will be liable (whether in an action in negligence, contract or tort based on a warranty or otherwise) for any loss even if the easyMINE or its representatives, or any easyMINE party are advised of the possibility of such Loss, howsoever caused as a result, directly or indirectly, of or arising from or in connection with:
+
+a) your participation in the EMT token crowdsale, receiving and holding EMT tokens;
+
+b) any access, the use of, or inability to access or use, the easyMINE website; c) your reliance on or use or inability to use the content and information of
+
+the easyMINE website or any linked website; d) any failure of performance, error, omission, interruption, defect, delay in
+
+operation or transmission, computer virus or line or system failure of the easyMINE website or any linked website; e) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from the easyMINE website; f) unauthorized access to or alteration of your transmissions or data; g) statements or conduct of any third party on the easyMINE website; h) or any other matter relating to the easyMINE website.
+
+Taxes
+
+easyMINE does not make any promises or explanations concerning the tax implications potentially caused by the purchase, possession, and use of EMT tokens. The holder bears the sole responsibility of determining if the potential appreciation or depreciation in the value of EMT tokens over time has any tax implications in their jurisdiction. The holder agrees not to hold the easyMINE
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+13
+
+
+
+liable for any tax liability arising from the holder's purchase and ownership of EMT tokens.
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+14
+
+
+
+Revision History
+
+1.0, 7 July 2017 Initial release
+
+1.0.1, 7 July 2017 Layout and formatting changes
+
+1.1, 14 July 2017 Vestment period added for EMT tokens held by easyMINE Corporation Crowdsale price drop rate changed to 0.000001 ETC every block
+
+1.2, 25 July 2017 Pre-ICO sale information added
+
+1.2.1, 25 July 2017 Process of withdrawing EMT tokens from circula7on changed Pre-ICO and ICO contract address announcement method changed
+
+2.0, 8 August 2017 EMT tokens and ICO moved to the ETH plaAorm Terms of the ICO sale modified Pre-ICO sale informa7on removed
+
+2.1, 22 September 2017 ICO par7cipa7on condi7ons modified
+
+
+
+v. 2.1
+
+
+
+easymine.io
+
+
+
+15
+
+
+
+

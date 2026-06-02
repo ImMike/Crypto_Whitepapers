@@ -1,0 +1,965 @@
+The Fabric Token (FT) Ecosystem
+
+High-Level Development & Management of Smart Contracts
+
+Authors
+
+Nikolay Nikov, Chief Executive Officer and Co-Founder Marin Ivanov, Chief Technology Officer and Co-Founder Doncho Karaivanov, Chief Operating Officer and Co-Founder
+
+Simeon Karaivanov, Content Editor
+
+Version 1.1.4 November 25, 2017
+
+Abstract. Blockchain technology, currently the underlying architecture of most cryptocurrencies, allows the automatic processing of online operations in a decentralized non-mediated manner via smart contracts. On the grand scale, smart contracts can easily and phenomenally improve the current efficiency of online relationships in terms of speed, security, and cost, while also reducing complexity. However, adopting blockchain technology and smart contracts is currently a challenging task due to several integral problems, namely comprehensibility, resource allocation, and smart contract development, among others. The solution proposed herein is the Fabric Token ecosystem, which will allow users and businesses to easily adopt blockchain technology and smart contracts and will consist of four main components. The first component we propose is the Fabric Token itself, which will be used as a functional utility to pay for products and services within the ecosystem. The second is TokenGen, a user-friendly platform used to generate smart contracts for the token economy. The third is DApp Workbench  an all-in-one solution for businesses looking to integrate blockchain technology and smart contracts into their business process management. The last component will be the Fabric Store, a decentralized marketplace for smart contract components, which will allow third-party developers to further expand the functionality scope of the Fabric Token ecosystem. We see Fabric Token and its associated technologies as a fundamental part of the future mainstream adoption of blockchain and smart contracts, ultimately allowing people of any means and any background to play their part in building a decentralized world.
+
+
+
+Table of Contents
+
+1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.1 The Blockchain: an Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.2 Further Developments: Smart Contracts . . . . . . . . . . . . . . . . . . . . . . 4 1.3 The Current State of The Blockchain Technology . . . . . . . . . . . . . . 5
+
+2 The Challenges of Adopting Blockchain Technology & Developing Smart Contracts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 2.1 Inefficient Allocation of Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 2.2 Ethereum & Solidity Security Considerations . . . . . . . . . . . . . . . . . 10 2.3 Solidity Shortcomings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 2.4 The Current Challenges of Intra- & Inter-Organizational Business Processes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+3 Products & Solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 3.1 TokenGen: A Simple Web Application for Smart Contract Generation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 3.2 DApp Workbench: The Business Application Platform for Incorporating Smart Contracts & Blockchain into Business Process Management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 3.3 Fabric Store: A Decentralized Marketplace for Smart Contract Components . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 3.4 Roadmap . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+
+4 Competitive Landscape . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 5 Key Team Members . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 6 Fabric Token Launch . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+
+6.1 Token Launch Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 6.2 Token Distribution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 6.3 Budget Allocation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 7 Legal Considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+
+
+
+1 Introduction
+
+Blockchain technology and its newest development  smart contracts  promise a decentralized, non-mediated future, in which online relationships between people and businesses can be handled in a self-executable, non-debatable manner thus ensuring that agreements will not be breached, while also improving the efficiency and cost of current methods of transaction by eliminating central information processors and intermediaries. As a point of departure, in this paper we provide on an overview of both blockchain technology (1.1) and smart contracts (1.2).
+
+We then proceed to assess the blockchain status quo in a variety of industries (1.3) and then go into section 2  an in-depth exploration of the current challenges people and businesses face when developing smart contracts for their blockchainbased applications (2.1, 2.2, and 2.3), concluding with an overview of current issues in both intra- and inter-organizational business processes (2.4).
+
+In section 3, we propose a solution to said challenges, namely the Fabric Token ecosystem, which will consist of TokenGen (3.1), DApp Workbench (3.2), and the Fabric Store (3.3), ending the section with a roadmap for the project (3.4). We then analyze the current competitive landscape of the Fabric Token ecosystem (4) and list the key team members of this project (5). Section 6 presents the Fabric Token launch, while section 7 explores legal considerations. Lastly, we summarize in section 8.
+
+1.1 The Blockchain: an Overview
+
+The story of the blockchain begins in early 2009, when Bitcoin was released[1]. Satoshi Nakamoto (most likely a pseudonym) introduced an electronic payment system that relied on cryptography instead of trust and made it possible for any two willing parties to make a transaction that did not require any intermediaries. Bitcoin allowed users to interact using a digital currency, unbound by a central regulating body and without the need for a trusted third party, thus minimizing transaction fees and reducing processing time. In less than a decade, the technology underpinning Bitcoin  the blockchain  has become one of the most promising innovations since the advent of the Internet.
+
+Essentially, the Bitcoin blockchain is a chronological record of all the transactions that have occurred within the system. It relies on the peers themselves to process the transactions and is fully accessible to everyone on the network. Every new operation is broadcast publicly and added to the existing record, thus making sure each participant has the exact same version of the blockchain at any given time. This mechanism secures the network in two ways. One is that newer blocks of transactions push the older ones deeper into the blockchain, which makes them practically impervious to modification, due to the amount of computational power required to perform such a task.
+
+The other is that, since the blockchain is shared among all computers on the network and since there is no central governing entity, no single point of failure exists within the system, whereas current intermediaries who offer services, which could be potentially replaced by blockchain technology, have had their
+
+
+
+data breached on numerous occasions  a costly issue since losses are projected to rise to 2.1 trillion USD per year globally by 2020[2].
+
+As there is no central authority keeping track of activities on the blockchain, it relies on network consensus to establish whether a certain transaction is legitimate or not. In Bitcoin's case the network relies on a specific set of users, called miners, who have to guess a random nonce, a small random piece of data, in order to validate a block of transactions and then broadcast it to the network, where its integrity in relation to the previous records in the blockchain can be established. This validation process relegates only a small fee to the miner, requires only a few minutes to complete and operates round-the-clock. Once a block of transactions has been validated, it is broadcast to everyone on the network and appended to the blockchain.
+
+This transparency is necessarily counterbalanced by the fact that users themselves are pseudonymous and not in any way linked to a person's real identity. Unlike centralized banking systems, blockchain requires no identification and the accounts themselves are merely, in the case of Bitcoin and most other cryptocurrencies, 256-bit numbers represented in various formats e.g. hexadecimal.
+
+1.2 Further Developments: Smart Contracts
+
+As already illustrated, the blockchain technology started as a simple accounting tool applied within the Bitcoin network. The underpinning architecture, however, makes it extremely versatile in terms of application, as any asset, data or tangible property can be digitized and embedded into the blockchain. This, ultimately, led to the invention of smart contracts.
+
+Smart contracts are computer protocols that represent relationships between interested parties, though they are not legally binding, i.e. they are not agreements between legal entities. They are simply a self-enforcing piece of code which executes once the terms encoded in the agreement are met. The key feature of smart contracts is that once they are deployed, their terms and conditions are immutable i.e. they cannot be altered in any way.
+
+Furthermore, the specific properties of smart contracts offer several benefits. The first and foremost is that they require no intermediary to ensure that all parties keep their side of the bargain, since smart contracts are executed in an all-or-nothing manner. This cuts transaction time and intermediary costs significantly (reducing the transaction cost only to that necessary for the execution of the smart contract's code and transaction fee) and significantly reduces the risk of non-compliance of either party, or the possibility that a legal dispute that consumes a lot of time and resources to resolve might arise. This possibility is further reduced by the fact that computer language is very rigid therefore does not allow for interpretation of the clauses set forth in the smart contract.
+
+In short, smart contracts exploit the blockchain technology to produce a decentralized model for conducting a wide variety of online operations that is potentially more secure and more efficient than the methods currently in use.
+
+
+
+1.3 The Current State of The Blockchain Technology In just under a decade, what began as the underlying architecture for cryptocurrencies is now poised to revolutionize industries as varied as finance, healthcare, insurance, publishing and even food delivery. And this is likely only the beginning.
+
+For example, a report from last year by IBM titled "Leading the Pack in Blockchain Banking: Trailblazers Set the Pace"[3] suggested that 15% of banks worldwide expected to widely implement blockchain technology by the end of 2017 (see Fig. 1), while the number for 2020 was expected to be as high as 66%. While it is yet to be seen whether this prediction will come true, it is evident that
+
+60
+
+
+
+45
+
+
+
+30
+
+
+
+15
+
+
+
+0 Trailblazers
+
+
+
+Mass Adopters
+
+
+
+Followers
+
+
+
+Fig. 1. Percentage of banks expected to have blockchain in commercial production and at scale from "Leading the pack in blockchain banking: Trailblazers set the pace"[3].
+
+
+
+major financial institutions are actively researching ways in which to implement blockchain technology into their services  HSBC, among other banks have already successfully tested out how to use blockchain in bond transactions, while Bank of America has announced a partnership with Microsoft to experiment with the technology. Other big banks like BNP Paribas, Societe Generale, Citibank, UBS, Barclays, Goldman Sachs and Santander have also announced that they are looking into ways they can use blockchain technology to improve their efficiency. Additionally, the DTCC is working with IBM to develop a blockchain solution to process its derivatives. Naturally, there is a good cause for this.
+
+A report[4] by Accenture Consulting, conducted along with McLagan concluded that banks can save 70% of the potential cost on central finance reporting,
+
+
+
+30-50% of the potential cost on compliance, 50% of the potential cost of centralized operations and 50% of the potential cost on business operations, which can amount to initial savings of $8 billion on a cost base of $30 billion. Furthermore,
+
+90
+
+
+
+60
+
+
+
+30
+
+
+
+0
+
+
+
+eference R
+
+
+
+data etail
+
+R
+
+
+
+ents
+
+
+
+paym
+
+
+
+er
+
+
+
+onsum
+
+
+
+ending L
+
+
+
+Finance rade T
+
+
+
+ending orp. L C
+
+
+
+C
+
+
+
+ortgages M
+
+
+
+aking eposit T
+
+
+
+D
+
+
+
+ents Intl. Paym
+
+
+
+Fig. 2. Benefits of blockchain on core bank business areas (in percentage) according to trailblazers from "Leading the pack in blockchain banking: Trailblazers set the pace"[3].
+
+
+
+a World Goverments Summit Report[5] presents an even more ambitious future for blockchain technology suggesting that "the containerization of shipping, and the quality revolution in manufacturing which made mobile phones possible both came from cost and reliability breakthroughs in fundamental processes. Blockchain technologies could likely repeat this revolution for the slowest and most difficult parts of the day to day process of running an organization: compliance, regulation and the paperwork. Business, government and society will all benefit." and proposing that blockchains can lead us to a world where "computers do most of the grinding administrative work of aligning all the details" and "people make the creative decisions".
+
+The report goes on to explore the key areas where blockchain technology can be expected to have a big impact, beginning with public record keeping systems, where it can improve the efficiency of routine processes like asset transfers, while also helping bridge the problems with sharing information in an international environment, where large-scale projects that require components from around the world can get stuck, due to the fact that it is very hard for people to deal with such complexity efficiently.
+
+
+
+This, however, is something computers excel at and the report concludes that, by using blockchain, "we can bring the world of paperwork up to speed with the rest of the global economy". On the smaller scale, blockchains can ease international cooperation by reducing the need to rely on a shared legal code, since, as we mentioned earlier, smart contracts are very secure and significantly reduce the risk of non-compliance with the underlying terms of the agreement.
+
+The report also presents four case studies on how to implement blockchain technology. The first case study starts to address the main problem of establishing identity that our current systems have  the fact that most of the information about our identities is scattered out of our control in databases that frequently don't interact.
+
+It introduces an identity management platform based on blockchain technology that allows the individual to assemble the disparate strands of their identity into single whole, while maintaining the security that makes it a viable credential in the eyes of government authorities. This allows the user to control which credentials they want to share with which institutions. It also allows banks to share KYC (Know Your Client) data, thereby reducing their expenses in performing due diligence.
+
+The second case study explores the effects blockchain technology might have on the autonomous transportation industry. The key benefit in this case comes from smart contracts' ability to automatize the complex ownership and rental agreements that are bound to arise, and account for the vehicle's fuel and energy costs efficiently. This is part of what the Chinese automaking giant Wanxiang invested $30 billion in recently, aiming to securitize the batteries used in electric cars. Their aim is essentially to reduce up-front costs of electric automobiles by leasing the battery instead of selling it, which would also allow them to monitor its status and act whenever a problem seems to be imminent. But there is no reason that the vehicle itself cannot be used in a similar way to the battery.
+
+For example, an autonomous car can act as a taxi service hailed by an app and paid for all through the blockchain. The money can then be distributed to the owner's through a smart contract, thus automating the entire process. The blockchain can even be used to further the routing capabilities of autonomous vehicles. For example, if each vehicle has its own identity in a given blockchain, it would be easier for it to navigate traffic more efficiently.
+
+Finally, the report examines how blockchain technology can be used to improve healthcare services. This links back to the case study on identity, where we examined how we can construct a centralized identity, controlled by each user that contains all their information, health records included. Through the use of smart contracts, this information can be shared selectively with the proper medical institutions and eliminate the current problem of numerous health records for a single person.
+
+In the case of research, it can be used to make a shared storage of medical intervention and patient outcome records, which would be anonymized to make the data safer and help doctors choose better treatment plans. Smart contracts can also be put in place to ensure that certain procedures were followed in
+
+
+
+medical research, thereby raising trust in its validity. Finally, it can simplify and automatize much of the paperwork regarding insurance claims and government healthcare benefits by linking a patient's identity profile to the relevant services and having it automatically perform the necessary verifications.
+
+All of these facts strongly suggest that blockchain technology and smart contracts, now gaining more and more popularity since their advent with the launch of Ethereum, are here to stay. This is further confirmed by a recent Deloitte blockchain executive survey[6] which was conducted at the end of 2016 in which "an initial sample of 554 respondents" with later focus "on 308 senior executives in the U.S. at companies with $500 million or more in annual revenue", showed that 46% stated that they would "be comfortable contracting with another party using a blockchain-based smart contract" and another 40% stated that "there is value in recording existing contracts on the blockchain" (see Fig. 3). In short, blockchain technology and especially smart contracts represent a
+
+
+
+50
+
+
+
+40
+
+
+
+30
+
+
+
+20
+
+
+
+10
+
+
+
+0
+
+
+
+a
+
+
+
+b
+
+
+
+c
+
+
+
+d
+
+
+
+e
+
+
+
+a) I would be comfortable contracting with another party using blockchain-based smart contract b)There is value in recording existing contracts on the blockchain c) My organization is currently using blockchain-based smart contracts commercially d) None of the above e) I'm not sure
+
+
+
+Fig. 3. Poll results from the survey conducted by Chu et al.[6].
+
+
+
+great opportunity to simplify and improve some of the fundamental processes of operation in a wide range of industries, while making transactions faster and more secure. These decentralized architectures have wide applicability and many major companies and institutions, most notably Dubai[7], NASDAQ[8], a host of major banks[9] and stock exchanges[10], insurance companies[11] and many more, are already experimenting with the technology in order to substantially improve their products and services.
+
+
+
+2 The Challenges of Adopting Blockchain Technology & Developing Smart Contracts
+
+Smart contracts, at first glance, may seem simple enough to develop considering Solidity's syntax being very similar to that of JavaScript. A lot of issues come up, however, once contracts become more complex and especially when relationships develop between different pieces of code. Simple bugs and security flaws can slip through and adversaries may exploit them, which could potentially lead to losses of millions of dollars worth of cryptocurrencies.
+
+And while it may be extremely simple for an experienced software developer to single-handedly write, test, and deploy the code for their smart contracts, it can prove to be substantially challenging for someone with little to no programming experience to do the same thing.
+
+This forces people to look for highly expensive collaboration with specialists who have the proper technical expertise to write the algorithms needed in a computer-understandable, blockchain-supported language such as Solidity. Furthermore, even experienced developers can make mistakes but when this is coupled with the immutable nature of smart contracts, we get a very inadmissible result which cannot be reverted or fixed.
+
+This, in turn, may backfire on one of the main ideas of smart contracts  the simplification and transparency of relationships between parties engaged in any form. As a result, the expertise required to transform application logic into smart contracts may surpass current levels of competence, possibly making expert intermediaries necessary and erasing one of the key benefits of using smart contracts in the first place.
+
+2.1 Inefficient Allocation of Resources
+
+A 2014 International Data Corporation estimate[12] showed that there were around 18.5 million software developers and ICT-skilled workers worldwide  of which 7.5 million were classified as hobbyists. Another study of the software developer population in the top 30 countries in the world of that same year  Evans Data's Global Developer Population and Demographic Study  supported the results. The same report from 2016 showed global developer population had risen to 21 million and projected the same to reach 25 million by 2025[13] (see Fig. 4).
+
+While these numbers may seem big, when put in relation to the world population, estimated to have reached 7.6 billion as of October 2017[14], this amounts to just about 0.003 percent. When we combine this data with the fact that most software developers consider the current state of blockchain technology to be unstable and/or experimental, we are left with only a minority who are in a position to take advantage of this misunderstood, or rather, misinterpreted technology[15]. Naturally, this acts as a significant constraint on innovation in this emerging and potentially disruptive industry.
+
+At the same time, due to the lack of user-friendly interfaces, experts from non-technical fields, looking to harness the power of blockchain technology and
+
+
+
+25
+
+
+
+20
+
+
+
+15
+
+
+
+10
+
+
+
+5
+
+
+
+0 2011
+
+
+
+2025
+
+
+
+Fig. 4. Global developer population and projected growth (in millions) according to the annual "Evans Data's Global Developer Population and Demographic Study".
+
+
+
+the many benefits it brings to the table[16], are left with no other choice, but to hire highly-paid developers and consultants to help them apply their innovative ideas to blockchain-based applications. This puts a significant financial strain, especially on smaller startups in the industry, by forcing them to focus much of their finances on development, testing, improvement, and auditing of their smart contracts code instead of on their idea.
+
+To sum up, people with little to no experience in programming, blockchain technology, and smart contract development, looking to apply their ideas in a decentralized manner, could potentially end up spending, in the sense of overall business cash flow, the money they would potentially save to hire a team of experts to develop, implement, and deploy their decentralized application (DApp) ultimately making them question whether employing blockchain technology and smart contracts is worth their while at all.
+
+2.2 Ethereum & Solidity Security Considerations
+
+DApps, at their core, rely on carefully written and fully tested smart contracts in order to function properly, i.e. in the explicit manner that they were designed to operate in. However, a recent research[17] showed that 8,833 of the 19,336, at that time (October, 2016), total existing Ethereum smart contracts were flagged as vulnerable by a "symbolic execution tool called Oyente"[18], developed by the same team who performed the study. Out of these 8,833 potentially vulnerable
+
+
+
+smart contracts, 5,411 (27.9%) were detected to have mishandled exceptions meaning they were calling other smart contracts which could potentially throw an exception due to insufficient gas for example. The caller contracts in such
+
+5,500
+
+
+
+4,125
+
+
+
+2,750
+
+
+
+1,375
+
+
+
+0 Exception
+
+
+
+TOD
+
+
+
+Reentrancy
+
+
+
+Timestamp
+
+
+
+Fig. 5. Number of vulnerable smart contracts per each security bug from Luu et al.[17].
+
+
+
+cases should explicitly check return values from callee contracts in order to verify if the latter executed its code properly. Out of the 1,385 distinct smart contracts found to have mishandled exceptions, the researchers manually analyzed all 116 contracts that had their source code publicly available online and found 0% false positives.
+
+Furthermore, 3,056 (15.7%) of the smart contracts were found to be transactionordering dependent (TOD) meaning the code executed in them was potentially open to manipulation due to the very nature of how transactions are bundled in blocks and how new blocks are appended to the blockchain. TOD smart contracts and contracts with mishandled exceptions are only two of the security bugs documented in the case study conducted by Luu et al.[17]  with the other two being reentrancy and timestamp dependence, though there were far fewer instances of those (see Fig. 5).
+
+Moreover, Oyente reported that the 19,366 analyzed smart contracts held a total of 3,068,654 ETH, which at that time equaled around 30 million USD (currently a little over 1 billion USD). This data strongly suggests that there is no lack of incentives for malicious users to target and exploit vulnerabilities in smart contracts in order to gain profit which became obvious when the infamous
+
+
+
+The DAO bug[19], a simple reentrancy flaw, cost investors over 60 million USD back in June, 2016. Due to the severity of the problem caused, Ethereum was forced to fork into what is now the current Ethereum and Ethereum Classic.
+
+More recently, a vulnerability in the Parity Wallet library was accidentally triggered and, as a result, deleted the library code, rendering all multi-sig (multiple signature) contracts using the library unusable, and the ETH stored in them (worth roughly 280 million USD[20]) indefinitely frozen[21], further confirming the fact that even experienced developers can overlook flaws in their smart contracts.
+
+2.3 Solidity Shortcomings
+
+There are several reasons why one may hesitate to invest their time in learning Solidity for their blockchain-based application. We will not dig into the limitations of the language which stem from the fact that it is designed to work only on the Ethereum blockchain (EVM) but rather look into the general language design and platform problems that DApp developers currently face. We will start with the issue that the language has no final specification and its development takes more of a bottom-up approach, where features are added to the language and the virtual machine and are later added to the documentation.
+
+This results in frequent and sometimes backwards incompatible changes[22], for instance multiple breaking changes in 0.4.0 (September, 2016), starting deprecation of throw and adding assert, require and revert 0.4.10 (March, 2017) and 0.5.0 (upcoming, soon). There is currently no formal validation of the Solidity compiler or full code review and audit similar to the one for the Serpent compiler[23], which resulted in a project to convert all its code to Solidity. Fortunately for Solidity, due to its large user base it is well tested and were it to undergo such an audit, there are likely not going to be too many bugs.
+
+Though the language looks deceptively simple as it shares similarities with JavaScript, programming for Solidity and the Ethereum Virtual Machine differs from traditional procedural programming. Developers should approach the problems with the transaction paradigm in mind, as some risks can crop up in from using traditional approaches. The official documentation of Solidity provides a few guides and common patterns[24] that help avoid some of the common pitfalls, like rendering your contract in an unusable state. In addition to that, there are some security considerations that developers should deal with regarding the security of the data and types of bugs that could occur[25].
+
+On the testing side of Ethereum projects in Solidity, there are some rough edges that hinder the development process. At the moment there is no official framework made for testing the smart contracts, so most people are using different frameworks and test clients. One of the best testing tools available currently is truffle, which is usually combined with different test clients such as ethereumjs, geth or parity.
+
+However the test clients usually lag behind the official specification and using a newer compiler may become an issue, because the compiler cannot generate bytecode for older versions of the Ethereum client and EVM. A common issue for example is getting invalid opcode errors in the ethereumjs client when using
+
+
+
+revert. Moreover truffle does not provide the best experience out-of-the-box and requires some tweaking and additional plugins, like adding chai-biginteger, babel, and solidity-coverage for smooth testing experience.
+
+Looking over the facts portrayed in this and the previous sub-section (2.2) is by no means intended as an invective against either the Solidity programming language, or the Ethereum Virtual Machine and the underlying issues of current blockchain-based technologies but rather, as a display of a small subset of the necessary technical and computing knowledge required to safely develop, test, and deploy decentralized applications. One can easily see how a non-trained person could, or rather, will, potentially overlook these and other similar considerations and leave an opening for malicious users to later exploit fundamental flaws in the developed smart contracts which, as already mentioned, cannot be changed.
+
+2.4 The Current Challenges of Intra- & Inter-Organizational Business Processes
+
+A business process is an assortment of activities aimed at attaining a certain organizational goal i.e. producing a definitive product or service for specific customer or customers. Furthermore, the integration of business processes, e.g., along a supply chain, has been found to improve both operational and business performance[26], which leads to a strong demand in the corporate world. Moreover, business processes can be modeled using the Business Process Model and Notation (BPMN) standard, developed and maintained by the Object Management Group, which essentially allows businesses to graphically represent their business processes.
+
+When BPMN is coupled with business process management (BPM)  a discipline comprised of various methods aimed at modeling, discovering, analyzing, measuring, improving, and automating business processes  they create a powerful, accessible tool that can significantly improve both intra- and inter-business activities by standardizing company procedures, thus drastically easing crossorganizational communication. Chinosi et al.[27] report that "BPMN 2.0 is used by near 40% of the interviewed users, while almost 30% of them use BPMN 1.2 and 15% use a combination of both". Furthermore, the same survey also shows that BPMN is primarily used for documenting purposes (52%) and execution of business processes (37%) - with simulation of the latter still being crucial at 11%, though in most cases ingrained inside the business process execution environment.
+
+Additionally, a business process modeling survey conducted by BPTrends[28], showed that 93% of the 559 respondents who fully completed the survey (partial completes were excluded from the case study) used business process modeling in one way or another. However, despite their large-scale adoption, business processes, in the way they are currently modeled and managed, have their fundamental flaws i.e. the lack of trust[29] in, e.g., cross-organizational collaborative processes[30] and the increasing complexity originating from, say, various participants and intra-organizational workflows being implemented in cross-organizational business processes[31].
+
+
+
+Consider the following supply chain scenario, as depicted in the article "Change and Compliance in Collaborative Processes"[32] and further simplified by Weber et al.[30]: The process is very simple and straightforward - it starts with the
+
+Fig. 6. Simplified supply chain example from Weber et al.[30].
+
+Bulk Buyer placing an order with the Manufacturer who, in turn, calculates the demand and places an order with the Middleman who is essentially a proxy through which the Manufacturer will get the materials ordered to the Supplier and delivered by the Carrier whose transport is ordered again by the Middleman. This type of business process is called a choreography because there is no single hub in the process which sees all messages along the workflow execution. And this is where problems and inconsistencies in the current state of the business process might arise.
+
+Consider the following scenario of execution of the simplified supply chain in Fig. 6 - the Manufacturer receives the materials they ordered several days later and with less pallets than they agreed upon. In that case, both the Middleman and the Supplier might claim that the other is at fault and, since there is no party that has seen all messages along the supply chain, it can be a grueling task to determine the source of the problem. The Carrier is, in that scenario, eligible for compensation by either the Middleman or the Supplier, due to the fact that the Manufacturer refuses to accept the delivery of a wrongly executed order. This can set off a complex process of resolution that not only takes additional time to complete. but also puts a strain on the relationship between
+
+
+
+each participant organization, therefore substantially lowering the efficiency of the business process.
+
+This simplified supply chain scenario roughly portrays the lack of trust problem in cross-organizational business processes which, if left as is, may hinder both optimization and improvement of the collaborative business process. Moreover, Grassi[33] details the entire business process of a documentary letter of credit, which banks frequently offer to customers who are conducting international import/export activities. The same business process is further examined by Fridgen et al.[34], which followed the design science research approach[35] to "design, implement, and evaluate a blockchain prototype for cross-organizational workflow management" and focused solely on the central processing of all relevant documents within the business process. The document workflow of the same as depicted in the study of Fridgen et al.[34] (Fig. 7 for convenience) shows substantial lack of speed and presents several other problems. Essentially, the process
+
+Fig. 7. Schematic document workflow for a letter of credit from Fridgen et al.[34]
+
+starts with the Exporter sending trading goods to the Importer simultaneously submitting all documents to the Advising bank i.e. the seller's bank. The last audits the documents and subsequently sends them to the Issuing bank i.e. the buyer's bank, which in turn performs the same process as the Advising bank. If both banks audit the documents submitted and find no problems, the Issuing bank initiates the payment for the trading goods. Finally, the Importer can collect
+
+
+
+the trading goods from the location they or the exporter specified. It is evident that, in its current state, this business process has several underlying problems.
+
+The first is the fact that paper-based multi-versions (for security reasons) of the original documents need to travel around the world, making the process slow and inefficient. The second is the amount of manual labor required to process all documents by both the bank of the seller and the bank of the buyer, which can be delayed even further by an audit of multiple versions of the same document.
+
+Next comes the problem of tracking, which is a core problem for most interorganizational business processes, since, by their very design, they are choreographies and lack a single party that has access to all parts of the workflow. The fourth problem is the lack of overall process history, since each step of the process is recorded, if at all, only by its participant. Finally, the researchers note the two areas where the process can be improved the most  process time and cost. Both are extremely high  the first one spanning several days (sending and auditing of the documents) and the latter, being strongly dependent on the first, balancing the costs accordingly due to the long process times and manual work effort needed.
+
+It is due to note here that although both of the above scenarios explicitly depict cross-organizational business processes, some of the problems outlined, e.g., high process times and cost, resulting from overreliance on manual labor, apply to intraorganizational processes as well. Furthermore, enterprise resource planning (ERP) systems, currently the unified management system of core business processes within an organization, present, among others[36], a profound problem in the form of unforeseen costs covering implementation and maintenance[37]. This includes the renovation or complete re-engineering of the business processes already in place, as well as the development of new ones due to the inevitable interaction with the ERP system maintenance team who are the only ones capable, on a low level, to make the necessary adjustments to core organizational business processes.
+
+This lack of higher-level abstraction in the development and improvement of organizational workflows prevents individuals, who lack the necessary technical knowledge from developing new and re-engineering the existing business processes on their own, or, at the very least, from being involved. This could stifle the renovation of an organization's business operations and make the ERP system integration more susceptible to failure for a variety of reasons, namely lack of executive involvement or unrealistic expectations.
+
+The problems so far portrayed in this section, mostly concern cross-organizational business processes, however not exclusively so, as some of them apply to intraorganizational workflows as well. All of them can potentially be solved by employing blockchain technology and smart contracts. Yet, there are a few reasons why, despite this, there is a lack of both research and solution implementations[30,34].
+
+The first and most conspicuous is that most businesses still regard blockchain technology as experimental and don't really know how to apply it to their business operations, so they are waiting for more research to be conducted before coming to a decision to evaluate and attempt a potential blockchain implementation.
+
+
+
+The second is the lack of standardization in using blockchain technology and smart contracts in business processes. BPM and ERP systems have largely been adopted due to the standards, e.g., BPMN, which different corporations to consistently interact with each other. Despite Weber et al.[30] proposing an example application for both blockchain and smart contracts within a supply chain scenario, it remains mostly unclear as to the broad implementation of these architectures within various types of workflows. This is further complemented by the fact that most businesses are yet unaware of the use cases for blockchain technology.
+
+Furthermore, as already mentioned, both predicted and unforseen costs of ERP systems are a familiar cause of implementation failure. Rimba et al.[38] present a case study comparing business process execution on blockchain (the public Ethereum blockchain) with the same on cloud services (Amazon Simple Workflow Service) and the results show that the cost of the former can be two orders of magnitude higher than the latter. Naturally, this can prompt organizations to doubt blockchain's applicability in business process execution  despite the clear benefits the technology brings. This problem could be solved by executing business processes on private blockchains, e.g. using Hyperledger Fabric, due to the fact that it does not require mining (proof-of-work and similar mechanisms) in order to maintain security within the system.
+
+In summary, intra-, and especially inter-organizational business processes, are currently suffering from several basic problems that could potentially be resolved by combining the use of blockchain technology, as the execution environment for business processes, and smart contracts, as a replacement for intermediaries and naturally self-enactable application logic.
+
+
+
+3 Products & Solutions
+
+The products and solutions listed here will solve the problems portrayed in the previous section of this paper. As already established, the Fabric Token ecosystem will consist of four main components  the Fabric Token itself, TokenGen, DApp Workbench, and the Fabric Store. While there isn't much to say about the Fabric Token (its launch will be covered in section 6), due to the fact that it is a simple digital asset purposed as a payment means within the FT ecosystem, the rest of the products will be elucidated in as much detail as possible.
+
+3.1 TokenGen: A Simple Web Application for Smart Contract Generation
+
+Bridging the gap between natural human-understandable language and computerunderstandable language is by no means an easy task. However, when dealing with smart contracts, we believe that it could be done very efficiently, because of the very specific use cases, e.g., "Smart Contracts: 12 Use Cases for Business & Beyond"[39], in which smart contracts can be applied. It is possible, therefore, to design templates, which will represent the necessary online operations depicting the relationships between interested parties.
+
+Smart contracts could potentially assume large parts of certain government functions as well as specific industries e.g., in the case of government functions, replacing current voting systems with smart contracts characterizing the same process without the many vulnerabilities that come with conventional approaches. Concerning industries, for example, the financial services industry could benefit from smart contracts by automating trade clearing and settlement as well as approvals between counterparties, calculating trade settlement amounts, and transferring funds  all without the delays and potential mistakes of intermediaries[6].
+
+However, as we have already shown extensively, most people do not possess the necessary computing skills to create smart contracts on their own. TokenGen will lay the foundation for the bridge between human-understandable and computer language, by providing a straightforward, easy-to-use user web interface and pre-defined smart contract templates for tokens and fundraisers.
+
+After its initial launch, which will follow right after the FT launch ends, TokenGen will support smart contract generation using pre-defined underlying templates for standard token and fundraiser functionality. On the front-end, users will have to go through a very simple step-by-step process, selecting their smart contract functionality, providing necessary information such as token name and symbol, and then paying a small fee in FT before ultimately getting the smart contract code generated by TokenGen according to their input.
+
+The smart contract code generated by TokenGen will be fully tested and ready for deployment, and in conformity with latest Solidity programming and security standards, thus mitigating the threat of an adversary exploiting overlooked bugs and vulnerabilities in the code. Furthermore, aside from the smart contract code generated by TokenGen, the tool will also provide in-depth documentation on all
+
+
+
+smart contract templates available for use within the tool's functionality scope, allowing virtually any person to make an informed decision when selecting their templates. Additionally, it is important to note that the smart contract code generated by TokenGen can be fully edited by the user, though we strongly advise against it for people, who lack extensive knowledge of the Solidity programming language, the Ethereum Virtual Machine, and blockchain technologies in general.
+
+The main idea behind TokenGen will be to empower individuals from any background, or of any means to create the smart contracts for their token and fundraiser thus allowing them to focus their resources on their competencies. We believe this will pave the way for a lot of people, who are right now sitting silently on the sidelines, to gain the confidence and perspective needed to push their idea for a blockchain-based application one step closer to realization.
+
+Smart contracts propose a radical, yet simple solution to many fundamental problems within government institutions and multi-billion dollar industries, so it is only logical that we empower more people with this technology. We need to nurture, not hinder innovation in this, still, emerging industry, because it could potentially bring about a global change in the way people and businesses enact trust in one another.
+
+3.2 DApp Workbench: The Business Application Platform for Incorporating Smart Contracts & Blockchain into Business Process Management
+
+While TokenGen will allow users to effortlessly create of smart contracts for the most common elements of the token economy, DApp Workbench will target a more advanced development of smart contracts that facilitates designing intraand inter-organizational processes on a blockchain. It has already been discussed in section 2.4 what the challenges and areas of improvement in both internal and cross-organizational business processes are at the moment.
+
+There are many tools that can facilitate the digital transformation of businesses, however only blockchain has the ability to be a distributed single shared source of truth and to lay the foundation to develop inter-organizational business processes without the need for trusted intermediaries, where the process information is immutable, traceable and tamper-proof.
+
+The middlemen are no longer needed for their function of being an orchestrator either as it is replaced by the blockchain and its consensus protocol. DApp Workbench leverages the features of public and private blockchains to help design, manage, automate and monitor decentralized business processes and simplify them by making the traditional role of intermediary redundant. Similar to service choreography, the smart contracts published on the blockchain act as distributed services that allow faster integration of business processes, as compared to traditional orchestrated services.
+
+Other benefits of utilizing smart contracts for cross-organizational processes include a better audit trail, reduced costs, as well as the common benefits of digital transformation i.e. removing paperwork, decreased business costs, etc. In DApp Workbench, much like conventional BPM and workflow management
+
+
+
+software, processes are designed using a graphical notation that automates their execution, however, it differs from them in that the process acts as a smart contract, which is shared with the involved parties and is executed and validated by the blockchain network peers.
+
+Let us look at a simple example of an internal process in an organization that can use DApp Workbench to enhance its performance. An employee wants to make a request for funding a project within the company and in order to get it, he must procure the approval of both his supervisor and his financial director. In a very old-fashioned approach, we can organize this process using a printed form and written signatures, which the employee must collect and act as integrator of the process himself. Nowadays, a more common approach is to use email, groupware or another software system that takes care of these routine procedures.
+
+However, this approach is not very suitable for horizontal, team-based organizations where teams are self-organized and develop their own processes. Designing the process as a smart contract using DApp Workbench provides the appropriate security measures to ensure the right people have signed-off on the project and ensures that the signatures are not forged and the proposal has not been modified subsequently. Moreover the process can be easily re-engineered to fit the ever-changing requirements of the company's internal processes thus eliminating the complexity problem ERP systems bring to the table.
+
+The Fabric Token core team has already decided on multiple aspects of the DApp Workbench product, including supported blockchain technologies, modeling notation, software architecture and technology stack. Our research on contemporary blockchain technologies, their architectural differences, future projects and prospects has convinced us that we must support multiple blockchain platforms. The product will start by targeting the Ethereum blockchain and Hyperledger Fabric, prioritizing Ethereum, due to its maturity in the DApp market and its widespread usage in BaaS (Blockchain as a Service) platforms that provide private blockchains, along with the fact that some forms of the EVM (Ethereum Virtual Machine) are used in a range of other projects, most notably Hyperledger Burrow[40].
+
+The Hyperledger on the other hand is a well-known blockchain portfolio of projects to make enterprise-grade blockchains for businesses. It started as an internal IBM experiment and grew into a community effort that is backed by the Linux Foundation, Intel, SAP, J.P. Morgan, Airbus and a host of other major companies primarily from the IT and financial landscape[41]. The Hyperledger Fabric platform is where DApp Workbench will show its best features, since it will enable decentralized processes to be executed in the environment of private cross-organizational blockchains without the need for a central trust party. Since these are private and permissioned blockchain infrastructures, they have some advantages over Ethereum, e.g. there is no need for mining to establish trust between peers, therefore making transaction costs practically zero.
+
+The modeling notation for the application was decided to be the BPMN 2.0 specification for a number of reasons. We have looked into multiple notations for
+
+
+
+this task, including BPEL, workflow nets, Petri nets and even good old flow charts and while BPMN is certainly not a silver bullet in business process modeling[42], it is a high-level notation that is very expressive and already established as a standard in the industry. The specification features a graphical representation for modeling business processes, which can also be exported to a machine-readable BPMN XML format which includes the graphical representation diagram format. This will allow DApp Workbench to reuse BPMN diagrams created using different modeling software.
+
+As already mentioned, the standard is developed by OMG (Open Management Group), which is best known for UML (Unified Modeling Language) that is the de facto standard for software design and architecture. As of 2013, the BPMN 2.0 has become an ISO organization standard ISO/IEC 19510:2013[43]. Initially, the product will target a subset of the BPMN specification, since research showed that businesses already use a limited set of elements of BPMN in their process models[27] and a certain subset of the specification will enable the straightforward transformation of a BPMN model to smart contract code. The specification subset will be extended with so called "trigger components" that will facilitate the connection between the inter-organizational process implementations to Web Services and internal process implementations.
+
+The architecture of the project will feature a cross-platform stand-alone desktop application and the DApp Workbench cloud. The application will be used for modeling and testing the business processes and domain model locally, while the DApp Workbench cloud will enable optimized smart contract code compiling and deployment. The Electron framework was selected as a platform for the application as it will leverage the previous experience of the Fabric Token team members in this technology and will allow cross-platform support out-of-the box. In order to check if there are any performance considerations that may arise from the selection of the framework, we have developed a non-functional prototype rendering a large enough BPMN model which showed that the framework does not impose any significant performance issues even in slightly dated computer hardware.
+
+As a conclusion, DApp Workbench will provide an all-in-one solution to organizations, large and small, looking to integrate blockchain technology and smart contracts into their business processes therefore practically removing intermediaries, reducing process times and substantially lowering costs, among other benefits. DApp Workbench will lay the foundation for the standardization of business process execution and management on blockchains and pave the way for mainstream adoption of the technology within any industry or institution that can potentially benefit from it.
+
+3.3 Fabric Store: A Decentralized Marketplace for Smart Contract Components
+
+As our final product proposal, we present our idea for a decentralized marketplace, in which third party developers can offer extensions to the Fabric Token ecosystem.
+
+
+
+Strictly digital marketplaces for software components are a huge niche in the world outside of crypto, with the Atlassian Marketplace sales alone amassing over 120 million USD[44]. And this niche is by no means limited to this single marketplace, with the Eclipse and WordPress marketplaces facilitating a similarly impressive number of trades in turn. Envato reported a stunning profit of $33,000,000 in 2015 alone[45], with a single third-party WordPress theme generating millions of dollars in sales. The Eclipse Marketplace has recently surpassed 25 million downloads, with a sizable portion of those being downloads of plugins with a commercial licence.
+
+Since this space in blockchain development is essentially unexplored, we believe we are the first to enter a future market niche, and software engineers who help develop addons and components that complement our software will also be exposed to a lucrative and attractive opportunity, while helping us advertise and expand the Fabric Token product network.
+
+The Fabric Store will allow developers to sell individual components such as software libraries, UI addons and themes for our software solutions in a simple and decentralized manner. The marketplace will make use of the blockchain in order to ensure the immutability of the data on it, guaranteeing that no central authority, not even the creators of the Fabric Token can tamper with the reviews left by users, a common cause of critique in even the most established online marketplaces. The immutability aspect will also prevent chargeback fraud, another common problem with legacy online marketplaces[46].
+
+We believe that these advantages of decentralized marketplaces over traditional ones, combined with the niche specificity of the Fabric Store as opposed to generic decentralized exchanges that allow and incentivize the listing of a variety of products, will turn it into a success, which not only rewards talented developers for their contributions towards the improvement of our own software products, but also creates a huge network effect that benefits Fabric Token holders and helps the ecosystem around it grow organically.
+
+Another important consideration is the fact that the Fabric Store will not limit developers to publishing only DApp Workbench and TokenGen extensions. In fact, our plan for this project is to turn it into the go-to marketplace for blockchainrelated software components, and our efforts in its initial popularization will also help attract other third-party component developers by exposing them to an already active market, while in turn taking advantage of those developers' pre-acquired audience in order to promote the marketplace's further organic growth.
+
+3.4 Roadmap
+
+ September, 2017: Started development on TokenGen  currently the UI and beta functionality, featuring a total of 6 smart contract templates extending the basic token and fundraiser functionality, are both fully operational. The tool will be available to users as soon as the Fabric Token launch is finalized.
+
+
+
+ October, 2017: Started development on DApp Workbench  extensively tested and ultimately determined the software architecture, technology stack, supported blockchains, and modeling notation for the BPM.
+
+ February, 2018: Official TokenGen 1.0 is released  includes fully functioning web application for token and fundraiser smart contract generation.
+
+ April, 2018: Official TokenGen 2.0 is released  additional smart contract templates added for both token and fundraiser functionality.
+
+ July, 2018: Public beta version of DApp Workbench is released  includes the fully functioning DApp Workbench desktop application as well as cloud with a limited set of smart contract components, which will be determined and publicized prior to the beta launch.
+
+ September, 2018: The official DApp Workbench 1.0 is released  extends the beta version of the software by significantly expanding the smart contract components provided by DApp Workbench.
+
+ October, 2018: Starting development of the Farbic Store  initial code for the smart contracts of the project is written, optimized, tested, audited, and then deployed. Next, a UI to work with the smart contracts is developed.
+
+ December, 2018: Public beta release of the Fabric Store  Partly functional UI connected to the smart contracts of the Fabric Store is open to the public for testing purposes.
+
+ February, 2019: Official Fabric Store 1.0 release  the first fully operational decentralized marketplace for smart contract components is officially released, allowing third-party developers to further improve the performance of our vanilla projects and expand the adoption of the Fabric Token ecosystem.
+
+ Post-February, 2019: Further improvements to the Fabric Token ecosystem mainly focused on expanding the functionality scope covered by the smart contract components, making the products more and more accessible to an ever-growing set of users and businesses.
+
+
+
+4 Competitive Landscape
+
+Innovative solutions in technology have the tendency to create lucrative markets around them. While there are countless examples of this, the evolution of data persistence and the mobile revolution are the two that we believe are most relevant to the current situation, and we can draw many parallels between the markets that they created and the blockchain space, which is still severely underdeveloped.
+
+We have chosen those two areas in particular, because of the essence of our own products  software solutions, providing rapid application development for a novel persistence layer technology. There's real-world data available for both RAD software solutions for novel technologies (Mobile applications) and statistics on market growth of a novel persistence layer paradigm (NoSQL)  and we believe the obvious parallels that can be drawn can help us quantify the opportunities present in the blockchain space.
+
+While blockchain has been almost synonymous with Bitcoin, and, more recently, the Ethereum ecosystem of decentralized applications, from an enterprise software development perspective, it is simply a novel persistence layer and comparisons can be made between blockchain, and previous database technologies for data persistence. In particular, this section will examine the noteworthy events, which prompted the evolution in the space, and how they created billion dollar markets around them.
+
+The hegemony of relational databases started in the early 70-s and this technological paradigm remained completely unchallenged until the dawn of the 21-st century. It provided a rigid structure for the data it stores, and both the convenience and the limitations that came along with its rule set shaped the direction in which future software was envisioned and implemented. Once competing paradigms emerged, they empowered developers to think in ways which were unimaginable before, thus allowing a completely new set of software solutions, in particular those that could now take advantage of unlimited scaling capabilities, powered by the native and intuitive support for horizontal scaling provided by NoSQL databases.
+
+Despite the fact that almost all NoSQL database products were free to use, much like how blockchains are universally available, the ecosystem surrounding this innovative creation built a highly lucrative market for third party software and consultancy. Revenues for companies in the ecosystem have been growing every single year since 2011, despite the initial craze wearing off. The newly-found interest in the technology for its actual usefulness trumps the loss of interest after the novelty effect expired with both professional services for big data and analytical and transactional application revenue growing immensely in just the span of 5 years, reaching almost 25 billion USD[47].
+
+Similarly to how NoSQL became the answer to the Big Data question and provided a simple scaling solution that previous-generation database management systems were not suited for, the blockchain opens yet another world of possibilities. A distributed immutable database for inter-company data storage and programmable "smart contracts" has been in demand well before its inception and first implementation, as evident by the first use of the term "smart contract"
+
+
+
+by Nick Szabo back in 1996[48]. With the ecosystem still in its infancy and the lessons learned from the NoSQL market growth, we believe there is huge potential for an enormous market around this innovation, and this market will benefit from being catered to with a standardized rapid application development framework following familiar concepts  something that NoSQL failed to accomplish for a long time[49].
+
+Rapid application development toolkit success in the mobile space also suggests that our optimism is well-founded. Mendix, an example implementation of a similar concept for mobile applications has been showing impressive growth from the inception of mobile applications as a niche to date, with triple digit growth for 2016[50]. Its latest funding round values the company well into the tens of millions of dollars[51]. Another relevant example, BPM workflow-focused TIBCO Business Studio is one of the best sellers of TIBCO Software, and a major contributor to the company's 2 billion USD in assets as of late 2013  to May 31[52].
+
+The company was acquired for 4.3 billion USD shortly after the financial statement release[53]. And these impressive numbers are by no means a result of a monopoly or first-mover advantage  TIBCO is the preferred BPMN editor provider of roughly 18% of participants in a survey[27] where privately-owned Bizagi holds more than 30%.
+
+The numbers clearly show that corporations are heavily invested in BPMN standards and related software, and there is no current product on the market which caters to blockchain users. We intend to fill this gap and believe that our first-mover advantage in this space will ensure long-term profitability.
+
+
+
+5 Key Team Members
+
+ Nikolay Nikov, former software consultant, previously worked on the largest fraud detection system in the UK as well as the security framework of a UK Royal Institution's software suite.
+
+ Marin Ivanov, a DevOps engineer with more than 10 years of experience in projects ranging from web development, system applications and low-level embedded programming. Combined with a career encompassing both his creative side and the disciplined approach to regulatory compliance, he is a CTO any project would love to have.
+
+ Doncho Karaivanov, a successful entrepreneur in digital marketing at present, with a rich background in software development. Driven by his creativity and strive for perfection, he is the perfect fit for a technical team focused on innovation and user experience.
+
+ Dimitar Boyanov, an experienced software engineer having developed and managed the lifecycle of large-scale corporate applications in the financial sector compliant to regulatory and audit requirements on a national and international scale while working for Deutsche Bank as a Senior Business Analyst.
+
+ Krastyu Georgiev, an accomplished software expert with more than 20 years of professional experience in the architecture, design, implementation and maintenance of complex software systems for German, Swiss, Belgian and Bulgarian companies. Over the years he has played the roles of Enterprise Architect (e-Government), Technical Project Manager, Scrum Master, Software Solution Architect, and Java Enterprise Developer.
+
+ Marian Nedelchev, a seasoned Business Analysis Professional and core team player in large and mid-sized IT projects within the financial and government sectors in Germany, UK and Bulgaria.
+
+ Milen Ivanov, an experienced and successful trader with more than 4 years of experience on the NYSE exchange working for one of the top trading companies in Bulgaria - Alaric Securities.
+
+ Petya Valkova, a solution architect with broad experience in delivering multi-technology projects in high-ranked companies. Her fast-paced analytical thinking and vast technology and business knowledge help her drive projects to success.
+
+ Simeon Karaivanov, a professional reader with more than 5 years of experience, who is also an acquisitions editor at one of the leading commercial publishing houses in Bulgaria - Bard Publishers.
+
+
+
+6 Fabric Token Launch
+
+The goal of the Fabric Token launch will be to raise a maximum of 9 million USD with no minimum threshold set due to the fact that we will proceed with the development and improvement of the FT ecosystem regardless of the outcome of the fundraiser.
+
+6.1 Token Launch Summary
+
+Due to the nature of cryptocurrencies and their volatility, we cannot provide final numbers regarding some of the parameters of the Fabric Token launch. That being said, the following are best estimates as of January 22nd, 2018.
+
+ Maximum funds raised target: 8,526 ETH or approximately 9 million USD.
+
+ Token exchange rate: 1 ETH equals 9,000 Fabric Tokens or in other terms, 1 FT will be sold for exactly 0.1125 USD.
+
+ Fabric Token smart contract address: Will be known exactly 48 hours before fundraiser begins.
+
+ Launch date and time: February 15th, 2018 at 10:00:00 UTC.  Token launch completion: Either after 45 days from the beginning of the
+
+FT launch or until maximum funds raised target is reached.
+
+6.2 Token Distribution
+
+ 71.25% will be available for sale to the general public.  12% will go to the Fabric Token core team and will be released after 12
+
+months.  8.75% will go to the Fabric Token strategic advisors and will be locked until
+
+the end of the FT launch.  7% will be allocated to advisors and released after 6 months.  1% will be used for the bounty program.
+
+6.3 Budget Allocation
+
+ Product Development: 55% of the budget  allocated to the core Fabric Token team. This financing will allow the development of the DApp Workbench product, including the necessary adjustments and improvements to the already existing TokenGen tool.
+
+ Marketing: 14% of the budget  allocated for expanding awareness and adoption of the Fabric Token ecosystem.
+
+ Contractors: 11% of the budget  allocated for third-party service providers offering engineering, marketing, growth-hacking, PR, partnerships, and other necessary services.
+
+ Legal: 9% of the budget  allocated for legal costs.  Contingency: 6% of the budget  allocated for unforeseen costs.  Administration: 5% of the budget  allocated for security, accounting and
+
+other associated administration costs.
+
+
+
+7 Legal Considerations
+
+Fabric Tokens are only intended to be used as a functional utility in the Fabric Token ecosystem. Fabric Tokens are not securities and are not purposed for speculative investment as we cannot make any promises or predictions regarding their value and future performance on the cryptocurrency market.
+
+Furthermore, holding FT does not provide one with additional rights towards use of products and services in the Fabric Token ecosystem, nor does it equate to participation in our legal entity and does not grant equity, governance, or any other rights in the same. Fabric Tokens are sold as a digital asset, similar to downloadable software applications, and cannot be sold to residents of the USA, Singapore, PRC, or any other countries where the sale of such tokens may require licensing as a security from the respective government institutions.
+
+Funding received from the Fabric Token launch may be adapted as the development team deems fit in order to better mature and advance the products associated with the FT ecosystem. Additionally, while we are heavily investing in the security of this enterprise, we cannot protect users from all possible sources of error as parts of the blockchain technology stack are simply out of our control.
+
+Therefore, the user needs to be aware of risks that come with using the software provided by the Fabric Token ecosystem including, but not limited to deployment of smart contacts and potential value loss of FT in regards to the products and services it is used on. We strongly advise that one never risk anything they cannot afford to lose to any equity, Fabric Token or otherwise, and we highly advise fully researching and understanding all of the mechanics involved in the entire process before participating in any way.
+
+Fabric Tokens are meant to be used by people who have a strong understanding of cryptocurrencies and their underlying blockchain technology, only for the purpose of using products and services in the FT ecosystem. Furthermore, the Fabric Token team fully abides by the laws set within their countries of operation. Since we intend to provide our products and services in a decentralized manner, and since regulations of cryptocurrencies are still in their early stages and can change practically overnight, our legal entity must act accordingly to these volatile rules and bounds enacted by country-specific and international laws.
+
+For more information on the subject, refer to the Fabric Token sale terms and conditions.
+
+
+
+8 Summary
+
+We began this paper by making a quick overview of the most imperative aspects of both the blockchain technology  we described its architecture, which is essentially a decentralized distributed ledger shared along a peer-to-peer network  after which we gave an overview of its underlying sequentially-developed technology  smart contracts, covering their capability to self-enforce and execute the terms encoded within them as specified by the agreement between the interested parties conducting the online transaction.
+
+Furthermore, we examined several essential problems concerning the adoption of blockchain technology, e.g., the fact that most people still cannot separate the blockchain technology itself from the cryptocurrency it is applied in and assume that it is only used for speculative and risky investments; the development of smart contracts, mainly with the Solidity programming language on the Ethereum blockchain; the lack of an official testing framework for Solidity, and both intraand inter-organizational business processes.
+
+Naturally, after the problems, we presented the solutions. We proposed the Fabric Token ecosystem, consisting of the Fabric Token itself, TokenGen, DApp Workbench, and the Fabric Store as a complete solution to the aforementioned problems.
+
+We explained how the Fabric Token will be used solely as a payment for products and services within the FT ecosystem while our first product, TokenGen, will allow users to easily generate smart contracts for their tokens and fundraisers therefore shifting their focus from this unexplored and underdeveloped area to the thing that matters most, i.e. their idea.
+
+We showed how DApp Workbench will allow businesses of any size, to easily integrate blockchains and smart contracts within their company's intra- and inter-organizational business processes as well as model, manage, and improve their workflows using the intuitive drag-and-drop interface with a BPMN diagram representation for the business processes. Last but not least, we discussed how the Fabric Store will allow third-party developers to create smart contracts and components, which further expand the functionality scope of our software, while also promoting the Fabric Token ecosystem to an ever-growing group of users and businesses.
+
+We firmly believe that blockchain technology and smart contracts will play a huge role in the radical improvement of numerous multi-billion dollar industries and government institutions. This provides an imperative for creating a bundle of simplified user interfaces in order to enhance innovation in this developing industry.
+
+The Fabric Token ecosystem will empower individuals and businesses with easy access to blockchain technology and smart contracts thus allowing virtually anyone to participate, in one way or another, in building a decentralized and trustworthy world.
+
+
+
+References
+
+
+
+1. Nakamoto S. Bitcoin: A peer-to-peer electronic cash system [Internet]; 2008. [cited
+
+
+
+2017 Sep 28]. Available from: https://bitcoin.org/bitcoin.pdf.
+
+
+
+2. Wikipedia. List of data breaches [Internet]. Wikimedia Foundation; 2017. Page
+
+
+
+Version ID: 811326932, [cited 2017 Nov 4]. Available from: https://en.wikipedia.
+
+
+
+org/w/index.php?title=List_of_data_breaches&oldid=811326932.
+
+
+
+3. Leading the pack in blockchain banking: Trailblazers set the pace [Internet]. IBM;
+
+
+
+2016. [cited 2017 Nov 7]. Available from: https://www-01.ibm.com/common/ssi/
+
+
+
+cgi-bin/ssialias?htmlfid=GBP03467USEN.
+
+
+
+4. Banking on Blockchain - A Value Analysis for Investment Banks [In-
+
+
+
+ternet]. Accenture Consulting; 2017. [cited 2017 Nov 7]. Avail-
+
+
+
+able
+
+
+
+from:
+
+
+
+https://www.accenture.com/t20170120T074124Z__w__/us-
+
+
+
+en/_acnmedia/Accenture/Conversion-Assets/DotCom/Documents/Global/
+
+
+
+PDF/Consulting/Accenture-Banking-on-Blockchain.pdf.
+
+
+
+5. Gupta V, ConsenSys LLC. Building the Hyperconnected Future on Blockchains
+
+
+
+[Internet]. World Government Summit; 2017. [cited 2017 Nov 7]. Available
+
+
+
+from: https://www.worldgovernmentsummit.org/api/publications/document?
+
+
+
+id=c5717dc4-e97c-6578-b2f8-ff0000a7ddb6.
+
+
+
+6. Chu Y, Ream J, Schatsky D. Contracts Get Smarter With Blockchains [Internet].
+
+
+
+The Wall Street Journal; 2017. [cited 2017 Nov 8]. Available from: http://deloitte.
+
+
+
+wsj.com/cio/2017/03/09/contracts-get-smarter-with-blockchains/.
+
+
+
+7. Co X. Dubai Blockchain Strategy [Internet]. Smart Dubai; 2016. [cited 2017 Nov
+
+
+
+8]. Available from: http://www.smartdubai.ae/dubai_blockchain.php.
+
+
+
+8. Butts J. Forget Bitcoin, The Blockchain Revolution Is Coming [Internet].
+
+
+
+NASDAQ; 2017. [updated 2017 Oct 20; cited 2017 Nov 8]. Avail-
+
+
+
+able from: http://www.nasdaq.com/article/forget-bitcoin-the-blockchain-
+
+
+
+revolution-is-coming-cm862377.
+
+
+
+9. Kharpal A. Blockchain technology is moving into the financial mainstream with
+
+
+
+IBM and seven European banks [Internet]. NASDAQ; 2017. [updated 2017 Jun
+
+
+
+28; cited 2017 Nov 8]. Available from: https://www.cnbc.com/2017/06/26/ibm-
+
+
+
+building-blockchain-for-seven-major-banks-trade-finance.html.
+
+
+
+10. Bajpai P. How Stock Exchanges Are Experimenting With Blockchain Tech-
+
+
+
+nology [Internet]. NASDAQ; 2017. [updated 2017 Jun 12; cited 2017 Nov
+
+
+
+8]. Available from: http://www.nasdaq.com/article/how-stock-exchanges-are-
+
+
+
+experimenting-with-blockchain-technology-cm801802.
+
+
+
+11. Barlyn S. AIG teams with IBM to use blockchain for 'smart' insurance policy
+
+
+
+[Internet]. Thomson Reuters; 2017. [updated 2017 Jun 14; cited 2017 Nov
+
+
+
+8]. Available from: https://www.reuters.com/article/us-aig-blockchain-
+
+
+
+insurance/aig-teams-with-ibm-to-use-blockchain-for-smart-insurance-
+
+
+
+policy-idUSKBN1953CD.
+
+
+
+12. Framingham M. IDC Releases 2014 Worldwide Software Developer and ICT-Skilled
+
+
+
+Worker Estimates [Internet]. Business Wire; 2013. [updated 2013 Dec 17; cited 2017
+
+
+
+Nov 8]. Available from: https://www.reuters.com/article/us-aig-blockchain-
+
+
+
+insurance/aig-teams-with-ibm-to-use-blockchain-for-smart-insurance-
+
+
+
+policy-idUSKBN1953CD.
+
+
+
+13. Developer Population Growth Rate in Latin America to Top Europe and North
+
+
+
+America in 2017 [Internet]. Evans Data Corporation; 2016. [cited 2017 Nov 8].
+
+
+
+Available from: https://evansdata.com/press/viewRelease.php?pressID=250.
+
+
+
+14. Wikipedia. World population [Internet]. Wikimedia Foundation; 2017. [Page Version ID: 811454957; cited 2017 Nov 21]. Available from: https://en.wikipedia.org/ w/index.php?title=World_population&oldid=811454957.
+
+15. Ekblaw A, Barabas C, Harvey-Buschel J, Lippman A. Bitcoin and the Myth of Decentralization: Socio-technical Proposals for Restoring Network Integrity. In: Foundations and Applications of Self* Systems, IEEE International Workshops on. IEEE; 2016. p. 1823. Available from: http://ieeexplore.ieee.org/document/ 7789434/.
+
+16. Cuccuru P. Beyond bitcoin: an early overview on smart contracts. International Journal of Law and Information Technology. 2017;Available from: https://academic.oup.com/ijlit/article/25/3/179/3106217/Beyondbitcoin-an-early-overview-on-smart.
+
+17. Luu L, Chu DH, Olickel H, Saxena P, Hobor A. Making smart contracts smarter. In: Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security. ACM; 2016. p. 254269. Available from: https://dl.acm.org/citation.cfm?id=2978309.
+
+18. Oyente: An Analysis Tool for Smart Contracts [Internet]. melonproject; 2017. Original-date: 2017-03-17T14:42:38Z. Available from: https://github.com/ melonproject/oyente.
+
+19. Daian P. Analysis of the DAO exploit [Internet]. Hacking Distributed; 2016. [cited 2017 Nov 8]. Available from: http://hackingdistributed.com/2016/06/ 18/analysis-of-the-dao-exploit/.
+
+20. Browne R. 'Accidental' bug may have frozen $280 million worth of digital coin ether in a cryptocurrency wallet [Internet]. CNBC; 2017. [cited 2017 Nov 22]. Available from: https://www.cnbc.com/2017/11/08/accidental-bug-may-havefrozen-280-worth-of-ether-on-parity-wallet.html.
+
+21. Security Alert  Parity Technologies [Internet]. Parity Technologies; 2017. [cited 2017 Nov 22]. Available from: https://paritytech.io/blog/security-alert.html.
+
+22. Solidity/Changelog.md [Internet]. ethereum; 2017. Original-date: 2015-0817T12:27:26Z. Available from: https://github.com/ethereum/solidity/blob/ develop/Changelog.md.
+
+23. Zeppelin Solutions. Serpent Compiler Audit [Internet]. Zeppelin Solutions; 2017. [updated 2017 Jul 28; cited 2017 Nov 21]. Available from: https://blog.zeppelin. solutions/serpent-compiler-audit-3095d1257929.
+
+24. Common Patterns Solidity 0.4.19 documentation [Internet]. Solidity; 2017. [cited 2017 Nov 21]. Available from: https://solidity.readthedocs.io/en/latest/ common-patterns.html.
+
+25. Security Considerations Solidity 0.4.19 documentation [Internet]; 2017. [cited 2017 Nov 21]. Available from: https://solidity.readthedocs.io/en/latest/ security-considerations.html#security-considerations.
+
+26. Flynn BB, Huo B, Zhao X. The impact of supply chain integration on performance: A contingency and configuration approach. Journal of operations management. 2010;28(1):5871. Available from: http://www.sciencedirect.com/ science/article/pii/S0272696309000412.
+
+27. Chinosi M, Trombetta A. BPMN: An introduction to the standard. Computer Standards & Interfaces. 2012;34(1):124134. Available from: http://www. sciencedirect.com/science/article/pii/S0920548911000766.
+
+28. Harmon P, Wolf C. A BPTrends Report: Business Process Modeling Survey [Internet]. BPTrends; 2011. [cited 2017 Nov 21]. Available from: http://www.bptrends. com/reports/Process_Modeling_Survey-Dec_11_FINAL.pdf.
+
+
+
+29. Viriyasitavat W, Martin A. In the relation of workflow and trust characteristics, and requirements in service workflows. Informatics Engineering and Information Science. 2011;p. 492506. Available from: https://link.springer.com/chapter/ 10.1007/978-3-642-25327-0_42.
+
+30. Weber I, Xu X, Riveret R, Governatori G, Ponomarev A, Mendling J. Untrusted business process monitoring and execution using blockchain. In: International Conference on Business Process Management. Springer; 2016. p. 329347. Available from: https://link.springer.com/chapter/10.1007/978-3-319-45348-4_19.
+
+31. Xu L, Liu H, Wang S, Wang K. Modelling and analysis techniques for crossorganizational workflow systems. Systems Research and Behavioral Science. 2009;26(3):367389. Available from: http://onlinelibrary.wiley.com/doi/10. 1002/sres.978/full.
+
+32. Fdhila W, Rinderle-Ma S, Knuplesch D, Reichert M. Change and compliance in collaborative processes. In: Services Computing (SCC), 2015 IEEE International Conference on. IEEE; 2015. p. 162169. Available from: http://ieeexplore.ieee. org/document/7207349/.
+
+33. Grassi PS. Letter of Credit Transactions: The Banks' Position in Determining Documentary Compliance-A Comparative Evaluation under US, Swiss and German Law. Pace Int'l L Rev. 1995;7:81. Available from: http://digitalcommons.pace. edu/pilr/vol7/iss1/3.
+
+34. Fridgen G, Radszuwill S, Urbach N, Utz L. Cross-Organizational Workflow Management Using Blockchain TechnologyTowards Applicability, Auditability, and Automation [Internet]; 2018. Available from: https://www.researchgate.net/profile/ Nils_Urbach/publication/319876523_Cross-Organizational_Workflow_ Management_Using_Blockchain_Technology_-_Towards_Applicability_ Auditability_and_Automation/links/59bf702ea6fdcca8e56e905c/CrossOrganizational-Workflow-Management-Using-Blockchain-TechnologyTowards-Applicability-Auditability-and-Automation.pdf.
+
+35. March ST, Smith GF. Design and natural science research on information technology. Decision support systems. 1995;15(4):251266. Available from: http://citeseerx. ist.psu.edu/viewdoc/download?doi=10.1.1.826.5567&rep=rep1&type=pdf.
+
+36. Ahmad S, Ibrahim S, Garba S. Enterprise Resource Planning (ERP) Systems in Banking Industry: Implementations Approaches, Reasons for Failures and How to Avoid Them. Journal of Computer Sciences and Applications. 2015;3(2):2932. Available from: http://pubs.sciepub.com/jcsa/3/2/2/.
+
+37. Wailgum T. 15 famous ERP disasters, dustups and disappointments [Internet]. CIO Magazine 2009 and IDG Publishing: New York. 2009;Available from: https://www.cio.com/article/2429865/enterprise-resourceplanning/enterprise-resource-planning-10-famous-erp-disastersdustups-and-disappointments.html.
+
+38. Rimba P, Tran AB, Weber I, Staples M, Ponomarev A, Xu X. Comparing Blockchain and Cloud Services for Business Process Execution. In: IEEE International Conference on Software Architecture (ICSA), 2017. IEEE; 2017. p. 257260. Available from: http://ieeexplore.ieee.org/document/7930226/.
+
+39. Smart Contracts Alliance, Deloitte. Smart Contracts: 12 Use Cases for Business and Beyond [Internet]. BlockchainNews; 2016. [updated 2016 Dec, cited 2017 Nov 21]. Available from: http://www.the-blockchain.com/docs/Smart%20Contracts%20%2012%20Use%20Cases%20for%20Business%20and%20Beyond%20-%20Chamber% 20of%20Digital%20Commerce.pdf.
+
+40. Hyperledger. hyperledger/burrow [Internet]. GitHub; 2017. [cited 2017 Nov 13]. Available from: https://github.com/hyperledger/burrow.
+
+
+
+41. Members [Internet]. Hyperledger; 2017. [cited 2017 Nov 15]. Available from: https://www.hyperledger.org/members.
+
+42. Borger E. Approaches to modeling business processes: a critical analysis of BPMN, workflow patterns and YAWL. Software and Systems Modeling. 2012;11(3):305 318. Available from: https://link.springer.com/article/10.1007%2Fs10270011-0214-z.
+
+43. International Organization for Standardization. ISO/IEC 19510: 2013. Information TechnologyObject Management Group Business Process Model and Notation. 2013;Available from: https://www.iso.org/standard/62652.html.
+
+44. Atlassians Marketplace For Third-Party Devs Hits Over $120M In Sales [Internet]. TechCrunch; 2015. [cited 2017 Nov 15]. Available from: https://techcrunch.com/2015/12/15/atlassians-marketplace-for-thirdparty-devs-hits-over-120m-in-sales/.
+
+45. Envato: the most profitable start-up you haven't heard of [Internet]. Financial Review; 2016. [cited 2017 Nov 15]. Available from: http://www.afr.com/technology/envato-the-most-profitable-startupyou-havent-heard-of-20161025-gs9xm6.html.
+
+46. Chargeback fraud [Internet]. Wikipedia; 2017. [cited 2017 Nov 15]. Available from: https://en.wikipedia.org/w/index.php?title=Chargeback_fraud& oldid=807110291.
+
+47. Kelly J, Floyer D, Vellante D, Miniman S. Big Data Vendor Revenue and Market Forecast 2012-2017 [Internet]. Wikiban; 2013. [cited 2017 Nov 15]. Available from: https://articulosit.files.wordpress.com/2013/03/big-datavendor-revenue-and-market-forecast-2012.pdf.
+
+48. Szabo N. Smart Contracts: Building Blocks for Digital Markets [Internet]. Extopy Institute; 1996. [cited 2017 Nov 15]. Available from: http: //www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/ LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html.
+
+49. Tee J. Lacking standards in NoSQL cause vendor lock-in type concerns [Internet]. TheServerSide; 2013. [cited 2017 Nov 15]. Available from: http://www.theserverside.com/feature/Lacking-NoSQL-standardsmore-dangerous-than-proprietary-vendor-lock-in.
+
+50. Salbu S. Mendix Completes Record 2016, Extending Lead as Enterprise Standard for Rapid Application Development [Internet]. Mendix; 2017. [cited 2017 Nov 15]. Available from: https://www.mendix.com/press/mendix-completes-record-2016extending-lead-enterprise-standard-rapid-application-development/.
+
+51. Mendix [Internet]. Crunchbase; 2017. [cited 2017 Nov 15]. Available from: https: //www.crunchbase.com/organization/mendix.
+
+52. Tibco Software Inc. (TIBX) [Internet]. United States Securities and Exchange Commission; 2014. [cited 2017 Nov 15]. Available from: https://www.sec.gov/ Archives/edgar/data/1085280/000108528014000146/tibx531201410q.htm.
+
+53. Baker LB. Vista Equity to buy Tibco Software for $4.3 billion [Internet]. Thomson Reuters; 2014. [cited 2017 Nov 15]. Available from: https: //www.reuters.com/article/us-tibco-software-m-a-vistaequity/vistaequity-to-buy-tibco-software-for-4-3-billion-idUSKCN0HO11Y20140929.
+
+
+
+

@@ -1,0 +1,1069 @@
+Mysterium Network P roject WHITEPAPER
+
+Release 4
+
+2017 O ctober
+
+
+
+Table o f Contents
+
+
+
+1. Motivation b ehind Mysterium
+
+
+
+4
+
+
+
+1.1. Mission S tatement
+
+
+
+4
+
+
+
+1.2. Core Objectives
+
+
+
+5
+
+
+
+1.3. Mysterium S olution
+
+
+
+5
+
+
+
+1.4. M arket d riving f orces
+
+
+
+6
+
+
+
+2. Token M echanism
+
+
+
+8
+
+
+
+3. P latform layers
+
+
+
+9
+
+
+
+3.1. Decentralised S ervices I nfrastructure a nd D atabases L ayers
+
+
+
+10
+
+
+
+3.2. S ervice Providers L ayer
+
+
+
+10
+
+
+
+3.3. Service C lients L ayer
+
+
+
+10
+
+
+
+4. R oadmap
+
+
+
+10
+
+
+
+4.1. C ompetitive Analysis
+
+
+
+10
+
+
+
+4.2. F unding Breakdown
+
+
+
+11
+
+
+
+4.2.1. Core Development  4 0%
+
+
+
+11
+
+
+
+4.2.2. Operational  2 5%
+
+
+
+11
+
+
+
+4.2.3. Marketing a nd Sales   2 5%
+
+
+
+11
+
+
+
+4.2.4. L egal a nd C ompliance  1 0%
+
+
+
+11
+
+
+
+4.3. D evelopment Roadmap
+
+
+
+11
+
+
+
+4.3.1. Phase I
+
+
+
+11
+
+
+
+4.3.2. P hase II
+
+
+
+13
+
+
+
+5. T oken C reation D etails
+
+
+
+13
+
+
+
+5.1. MYST C reation R atios
+
+
+
+14
+
+
+
+5.2. A dditional MYST
+
+
+
+14
+
+
+
+5.2.1. F uture F unding
+
+
+
+14
+
+
+
+5.2.2. Founders, Foundation, B ounty p rogram a nd Advisors
+
+
+
+14
+
+
+
+5.2.3. Seed Participants
+
+
+
+14
+
+
+
+5.2.4. E xample o f Token Structure a fter C reation i s over
+
+
+
+15
+
+
+
+6. Mysterium Architecture
+
+
+
+16
+
+
+
+1
+
+
+
+6.1. Technical O verview
+
+
+
+16
+
+
+
+6.1.1. C ore c omponents
+
+
+
+17
+
+
+
+6.2. Service P rovisioning
+
+
+
+17
+
+
+
+6.3. Identity S ervice
+
+
+
+17
+
+
+
+6.3.1. Registered I dentity V alue
+
+
+
+18
+
+
+
+6.3.2. C ryptographic Mechanisms
+
+
+
+19
+
+
+
+6.4. Service Discovery
+
+
+
+19
+
+
+
+6.4.1. Outdated Service A nnouncement Handling
+
+
+
+20
+
+
+
+6.4.2. S ervice Proposal
+
+
+
+20
+
+
+
+6.4.3. Types of S ervices
+
+
+
+21
+
+
+
+6.4.4. Service Selection
+
+
+
+21
+
+
+
+6.5. Payments H andling
+
+
+
+22
+
+
+
+6.5.1. A ccounts
+
+
+
+22
+
+
+
+6.5.2. D eposits
+
+
+
+22
+
+
+
+6.5.3. I ssuing Promises
+
+
+
+23
+
+
+
+6.5.4. C learing of P romises
+
+
+
+23
+
+
+
+6.5.5. Withdrawal
+
+
+
+25
+
+
+
+6.5.6. R isk Management
+
+
+
+25
+
+
+
+6.6. M essaging B etween N odes
+
+
+
+26
+
+
+
+6.6.1. D ialogues
+
+
+
+26
+
+
+
+6.6.2. Payment Scheme
+
+
+
+27
+
+
+
+6.6.3. Service s essions
+
+
+
+29
+
+
+
+7. C ontact
+
+
+
+31
+
+
+
+2
+
+
+
+Executive Summary
+
+Privacy - most o f u s think as i f it's a  given f act o f l ife, but behind the scenes there is a r ace g oing on w ith i ts participants secretly t rying t o g et i nto as much of o ur p rivate l ives, as i s possible. Today, a s I nternet u sers, w e a re b eing r estricted i n w ays w e a re a llowed to u se s ervices a nd applications due t o c ensorship employed by v arious agenda g roups f rom all over t he w orld. I t comes to u s in many forms. Nation s tates consistently m onitor the I nternet traffic s o t hey can construct political profiles of i ts citizens. I n such a  paradigm, dissent becomes dangerous, and honest political d iscord in some places - a n impossibility. In a s imilar manner, c ontent and I nternet S ervice Providers h ave become u nhinged i n t heir objective to m onitor, track and profile every u ser a cross t he I nternet. The d aily I nternet activity, communications a nd h abits o f e very user a re c onsolidated a nd sold to advertisers a nd b asically any willing b uyers. S uch transactions occur w ith l ittle t o n o c onscious consent o f t he users a nd with a  c omplete d isregard f or any n otion o f personal p rivacy. Access to content i s b eing r estricted b y its c ontent p roviders t o certain areas d ue t o Intellectual Property l imitations o r purely because of l ow valuation of u sers from these p articular locations. Today there is still a  lack of i nvestments i nto r esearch, implementation a nd m aintenance of tools capable of restoring privacy t o the Internet u sers. T hese circumstances create t he necessity for creation of protective measures designed to preserve t he o pen and u nobstructed n ature of t he Internet. With t he i nvention a nd m aturity of powerful p eer-to-peer computing t echnologies s uch a s Ethereum and B itcoin, the capability to e mploy b lockchain technology in the d evelopment o f trustless c ensorship e vasion mechanisms becomes f easible. Mysterium team believes in and strives t o b uild a future that respects o ur privacy, w hich will result in d isrupting e xisting a nd c reating n ew industries in the near to l ong t erm. L ooking forward, we expect Mysterium N etwork p latform t o f orm the basis for a w orld of open a ccess t o content a nd applications to a ll citizens of this p lanet without f ear of censorship o r of s omeone secretly looking over our shoulder.
+
+3
+
+
+
+1. M otivation behind Mysterium
+
+1.1. Mission Statement
+
+"Our m ission is t o create distributed, trustless and sustainable network -  p roviding o pen a ccess and p rivacy to a ll Internet u sers."
+
+The Internet in i ts c urrent state is n either open nor private. At Mysterium w e b elieve c ensorship and spying i s b oth unethical and u nnecessary, which are forms of i ntimidation and social c ontrol impeding t echnological a nd social progress.
+
+It's commonly believed that if you need encryption - you must be hiding something, assuming it's something illegal. Here is a short list of 6 commonly used and very legitimate use cases where s trong encryption i s a  proven solution:
+
+1. travelers visiting places where their personal email & social media accounts are censored or blocked by t he local authorities;
+
+2. communications in your private life about your political, religious, gender / orientation, entertainment p references that could r esult i n discrimination o r r eprisals a gainst y ou;
+
+3. b usinesses n eeding p rivacy to avoid corporate e spionage;
+
+4. journalists communicating with whistleblowers, especially when the source is within the very government or c orporation that c ontrols the c ommunication n etwork being used;
+
+5. dissidents and activists needing to organize meetings and protests without being spied on by the powers t hey plan t o protest;
+
+6. citizens, protesters and journalists needing to send reports on events about human rights violations to the outside world news agencies - as they occur. To request help or to inform the outside world, while being sure that the local powers that be will actively try to suppress all kinds of c ommunication.
+
+Thus w e i ntend to d evelop the Mysterium Node N etwork, a s a n open a nd distributed peer t o peer platform embedded w ith sustainable incentivization p rotocols, while using c ontinuously evolving censorship e vasion mechanisms, d eveloped b y t he community. Once developed a nd released, Mysterium technology w ill e nable anyone around t he world to both: provide and receive a ccess to content a nd p rivacy, r emoving c ensorship imposed b y third p arties.
+
+We've s pent a lot o f time discussing t he e thics o f creating Mysterium t ools which allow the avoidance o f censorship. W e believe t he c ost o f censoring content is not worth t he s upposed benefits ( assumed l ower crime, h igher p rofits o f c ertain corporations, stronger p olitical power, etc..) a s these e nds c an be reached by other, more ethical means. M ost o f t he s olutions a re w ell known t o censors a nd e ffective filtering is used t o limit a ccess. For e xample m achine learning i s
+
+4
+
+
+
+applied by c ensors t o s tudy I nternet usage p atterns a nd detecting u nwarranted behaviours.
+
+1.2. C ore O bjectives
+
+Phase I : Building a D ecentralized N etwork o f VPN Nodes Our f irst g oal is to c ompletely d ecentralize V PN n ode n etwork, b y using t echnologies s uch as existing V PN a nd p roxy protocols, Ethereum b lockchain, smart contracts, state-channels, decentralized database solutions, privacy e nsuring c oins like M onero or Zcash a nd other solutions. This w ill be achieved t hroughout the d evelopment of P hase I, which is m ade u p of 3 different stages ( see 5 . R oadmap). At t he e nd o f t he 3 rd Stage of Phase I, a  completely decentralized and o pen source V PN n etwork w ith a ll of i ts f unctions a lso d ecentralized w ill b e r eleased. No single p oint of failure will b e p ossible f rom t his t ime forward. Phase I I: Building Mysterium Protocol -  a s standard In Phase II - our v ision is to b uild Mysterium protocol c apable of " dissolving" user data and sending it deep into the Network of Mysterium N odes without the possibility of t race or censorship. T he Network w ill t ake care o f sending this s hredded and e ncrypted d ata i n a n unrecognizable f orm t o the r eceiving end, where Mysterium Protocol will ensure t his user data to be "reassembled" again. Mysterium protocol will eventually become a c ombination of d ifferent elements u nited into a coherent s ystem. Once c omplete, this P rotocol w ill e nsure t hat user d ata cannot be o vertaken neither b y nodes nor by third p arties.
+
+1.3. M ysterium Solution
+
+Mysterium aims to be fully decentralized, peer to peer based and serverless node network, designed to provide privacy restoring techniques to its users with financial incentivization to its node operators (providers). Mysterium achieves this goal by utilizing already-existing technologies such as Ethereum blockchain, smart contracts and advancing their features with state-channels, evolving mechanisms of promises, combined with censorship-evasion protocols developed b y t he c ommunity a cting a s applications of t he network. Once P hase I Stage 1  is d eveloped a nd released -  t his Network w ill p rotect user privacy a nd data, while enabling all u sers to s hare t heir s pare b andwidth access w ith t hose w ho need t his open access in e xchange for f inancial compensation.
+
+5
+
+
+
+Mysterium network w ill a ct as a d ecentralized marketplace b etween providers and consumers participating i n b uilding and maintaining t his i nfrastructure. T he costs of providers will b e paid by consumers using c ryptographic c urrencies.
+
+The development o f t he technology, i ts c apabilities a nd f unctionality will come i n several p hases to minimise risk, l earn from early e xperience a nd to benefit from development o f complementary technologies(eg. state-channels). T he decentralisation of all f unctions maintaining the network will b e a chieved b y the end o f the Phase I , S tage 3  ( see 5. Roadmap) .
+
+Participants of the M ysterium Token Sale will g ain a ccess t o tokens w hich w ill f orm t he foundation t o a ll transactions h appening within the network. T he network we a re b uilding will have o pportunities f or various levels o f d evelopment by entrepreneurs a nd c ommunities after i t has been deployed. The N etwork w ill also b e o pen to a pplications to m ake censorship less effective, ways to m ake payments easier a nd more e fficient a nd new n etworking r elated services to b e made available by reusing infrastructure a nd p rotocols d eveloped b y M ysterium Foundation.
+
+VPN-like services o n Mysterium network will b e a vailable e arly i nto Phase I, a fter c ompletion of Ist Stage. V PN service p rovided by t he N etwork i n t his s tage will b e c omparable w ith t he a nd may e ven improve u pon existing C entralized V irtual P rivate N etworking s ervices. M ysterium market model w ill r esult in creating a VPN service w hich i s b oth c ompetitive and a lmost i nfinitely scalable, g iving o ther entities ( e.g. other V PN p roviders o r a pp developers) an o ption t o buy VPN service f rom the Network, integrating i t i nto t heir s olutions. This competitiveness comes from t he o pen nature o f the n etwork and t he e ase w ith which anyone can earn money by joining it a s a  V PN service provider. F urther improvements a nd n ew applications will f ollow i n later stages, w ith complete decentralization a chieved b y the end o f Stage 3.
+
+1.4. Market d riving forces
+
+Everyday m ore a nd m ore o f our l ives a re t ransferred onto the Net, which i nevitably c reates m ore opportunity f or our data t o be s tolen, hacked, filtered or a bused.
+
+Research s hows that i ncreased d ata v ulnerability is o ne o f t he main forces driving a n expanding market f or Internet privacy a nd s ecurity solutions:
+
+1) Government legislation
+
+There is a  v isible t rend for g overnments to intrude i nto our private l ives. A s m ore of o ur lives are on t he Internet this i ntrusion will only i ncrease.
+
+2) Western c ountries become accustomed to VPN s ervices
+
+Currently, t he main countries using V PN a re located in A sia. However, following recent c hanges in western government policies, the n umber of people l ooking for Internet p rivacy s olutions in the Western world is r apidly i ncreasing.
+
+6
+
+
+
+3) Risk o f c y ber threats g rows
+
+Every year t he n umber of cyberattacks increases followed b y a  greater awareness o f the n eed for countermeasures. C ompanies and i ndividuals t end t o i nvest a nd c hange their o nline behaviour i n response to cyberattacks, r esulting i n r apid e xpansion o f VPN market.
+
+4) Freelance workforce needs s afe connection to c orporate servers
+
+Every y ear more work is done b y freelancers. Having a  s afe c onnection to corporate s ervers becomes more u rgent. Small b usinesses also require s ecure communications, b ut c reating their own VPN can be a  financial c hallenge.
+
+Google t rends g raph for VPN days a fter U SA Congress Overturned Internet Privacy R egulation.
+
+Keeping t he c urrent world s ituation a nd visible t rends i n m ind, i ncreasingly people are growing concerned a bout t heir p rivacy. A ccording to o ne s tudy t he u se of a d b lockers has risen b y m ore than 40% (198 million m onthly a ctive u sers i n total). After r ecent F ederal Communications Commission ( FCC) change of r egulations, the s earch f or p rivacy s olution in USA has skyrocketed. According to Market Research Future p roject report: "the global VPN m arket is e xpected t o r each at USD 106 billion b y end of year 2 022 w ith compound a nnual growth rate o f 13%. VPN c an b e u sed t o provide a security l ayer to b oth p rivate and p ublic networks s uch a s WiFi Hotspots a nd t he I nternet. Organizations operating in h ealthcare, BFSI a nd telecommunication industry d eal with s ensitive information t hat needs to be p rotected constantly. Hackers a re mostly t argeting these i ndustries due to very h igh price o f data i n black market. S ame s tudy
+
+7
+
+
+
+shows that " currently, t he w orld is experiencing m ore than h alf m illion a ttacks e very m inute, which will r ise due t o h igh t echnology proliferation". Keeping these t rends in m ind (increasing demand after p rivacy policy changes i n multiple countries, i ncreasing cybercrime, I oT and growing dependence on online s ervices) the need t o restore privacy on the I nternet is becoming e ssential t o counter t he serious t hreat posed t o both personal l iberty and business s ecurity. Restoring p rivacy has become a  salient global trend worldwide. Once developed, M ysterium Network w ill h elp i t's u sers r estore p rivacy, providing freedom of speech a nd peace of mind w hile c onducting personal a nd b usiness life.
+
+2. T oken Mechanism
+
+The token issued d uring t he T oken C reation is known as the Mysterium T oken, o r MYST. T his i s the only t ime t hat t hese t okens c an b e c reated, a nd t herefore t he total supply o f M YST i s fixed. MYST w ill b e a n integral p art o f M ysterium N etwork w here V PN consumers will b e charged fees for services. The b iggest slice o f t hose f ees will go t o t he V PN n ode o wner ( service p rovider) t he leftover will be d edicated to protocol d evelopment a nd support. These f ees w ill initially b e denominated in MYST, which is a  s ubject t o c hange i n t he f uture. As a forementioned node owners who run t heir nodes will b e incentivized f or their support o f the network. I n s uch a w ay node owner will essentially a ct as a miner, w ith reward coming in M YST token form. Differently from the typical blockchains t he m iner will b e rewarded not f or h is computing p ower ( proof of work), ownership o f t he currency ( proof o f stake), b ut f or sharing t heir bandwidth. The token w ill likely r eflect growth o f Mysterium Network. Mysterium Foundation w ill p ursuit the possibility t o enable MYST holders benefit by r eceiving a c ommission f or each transaction i n the Mysterium Network with payments being c onducted i n c urrencies o ther t han MYST.
+
+8
+
+
+
+3. P latform l ayers
+
+9
+
+
+
+The Mysterium Network w ill b e composed o f f our p rimary layers: Decentralised D atabases, Decentralised S ervices Infrastructure, Service P roviders a nd S ervice C lients.
+
+3.1. Decentralised Services I nfrastructure a nd Databases Layers
+
+Mysterium D ecentralised Services Infrastructure and Databases l ayers p rovide t he f oundational smart contracts enabling M ysterium n odes to identify themselves in t he n etwork, d iscover each other a nd s end m icropayments b etween t he n odes.
+
+3.2. S ervice Providers L ayer
+
+Mysterium S ervice Providers l ayer consists of M ysterium n odes, acting as V PN service providers.
+
+3.3. Service Clients L ayer
+
+Mysterium Service Clients l ayer consists o f M ysterium n etwork client a pplications w hich will be developed by M ysterium, a nd b y 3 rd parties u sing M ysterium N etwork a s a V PN s ervice provider.
+
+4. Roadmap
+
+
+
+4.1. Competitive Analysis
+
+The f ollowing t able compares typical V PN p rovider, TOR a nd M ysterium n etworks.
+
+
+
+Centralized V PN
+
+
+
+Anonymity Decentralised t raffic routing Possibility for e nd-to-end encryption Honeypot r isk Network p articipants incentivised Open source Speed Platform a s a  Service
+
+
+
+No No No High No No High No
+
+
+
+TOR N etwork Yes Yes Yes Low No Yes Low No
+
+
+
+Mysterium Network
+
+Yes Yes
+
+Yes
+
+Low
+
+Yes
+
+Yes High/Medium
+
+Yes
+
+
+
+10
+
+
+
+4.2. F unding Breakdown
+
+Funds donated d uring t he T oken Creation will be used s olely f or t he d evelopment a nd benefit of the Mysterium n etwork. The f ollowing distribution of f unds is preliminary and c an b e a  s ubject to change.
+
+4.2.1. C ore D evelopment  4 0%
+
+Core development will i nvolve t he development o f t he technology as d escribed i n t his document. This includes: Mysterium n ode network, integration o f VPN p rotocols, smart c ontract systems, supporting p rotocols a nd services, end user a pplications, . .
+
+4.2.2. Operational  25%
+
+This covers the n ecessary costs i ncurred f or a functional s ystem. This includes: h osting a nd infrastructure costs, s taffing, outsourcing, management a nd other related expenses.
+
+4.2.3. Marketing and S ales   2 5%
+
+Marketing c osts will be u sed for p artnerships d evelopment and d irect c onsumer marketing. Sales costs w ill l argely be incurred b y d irect B 2B sales t o b usinesses s elling M ysterium as a platform s olution.
+
+4.2.4. Legal a nd Compliance  1 0%
+
+There are l egal c osts a ssociated w ith privacy protection and fighting censorship. T he legal c osts might vary f rom region to r egion.
+
+4.3. Development Roadmap
+
+The w hole development is spread out into d istinct p hases s tarting with Phase I  and P hase I I. Each p hase i s further divided i nto s everal i nternal s tages.
+
+4.3.1. P hase I
+
+Goal of t his Phase i s t o b uild a f ully d ecentralized VPN.
+
+Phase I components:
+
+ Discovery mechanism -  node a nd customer matchmaking smart contracts;  Smart contract managing M ysterium Identity;  Payment mechanism - a c ombination of state c hannels and s mart c ontracts c learing
+
+11
+
+
+
+payments;  VPN N ode p rotocol and libraries - the "workhorse" of the network, providing the actual
+
+VPN service t o customers;  Node applications - n ative n ode applications b uilt f or m ajor o perating systems, c apable
+
+of running Mysterium protocol a nd p roviding VPN s ervice to customers;  Client applications -  allowing e nd u sers to connect t o the network as VPN customers;  Interface into the N etwork for t hird party applications.
+
+Achieving t his will take 3  stages t o c omplete.
+
+Stage 1
+
+Goal of t his s tage i s to launch D ecentralized n ode network, l eaving certain elements c entralized for speed, s ecurity and learning p urposes.
+
+Development g oals f or S tage 1:
+
+ Smart c ontract for clearing payments;  Mysterium Node V 1.0 - developed for Linux;  Mysterium C lient V1.0 -  d eveloped f or 3  major operating s ystems;  Mysterium c lient o n 3 main operating systems;  Mysterium central server overseeing node D iscovery, Identity m anagement a nd Micro
+
+payment accounting processes;  Node n etwork deployment and i nitial t esting.
+
+Stage 2
+
+Goal of this stage is to i ntegrate a dditional V PN protocols into the n ode and work f urther towards d ecentralization
+
+ Mysterium N ode V 2.0 & Client V2.0 -  adding n ew protocols, d eveloped f or major operating s ystems, integrating w ith new s mart contracts;
+
+ Smart contracts f or D iscovery and Identity M anagement;  Simplified C entral server - d own t o o versight o f Micro P ayment accounting p rocesses;  Marketing.
+
+Stage 3
+
+Goal o f t his s tage i s complete decentralization, with removal of central server role as oversight and m anagement p osition, m oving t o decentralized i nfrastructure.
+
+ Removal of C entral server;  Smart c ontract p erforming Micro P ayment a ccounting;  Mysterium Node and C lient V3.0 - S tate c hannel i ntegration, removal o f all ties t o c entral
+
+server c onnection;  Interface into the n etwork for third p arty applications.  B2B Sales a nd M arketing;
+
+12
+
+
+
+Once i nitial technology is i n p lace a nd a D ecentralized n ode network i s f unctional - M ysterium will o pen up f or various third p arty s ervices t o be b uilt o n top of t his network.
+
+According to our evaluations 6MM i s enough to develop e verything p romised for t he P hase I  t o have a  f ully d ecentralized a nd o pen network, fully operational and w ithout a  s ingle p oint of failure, where e ven we as a  t eam will not pose t hat r isk anymore.
+
+4.3.2. Phase II
+
+Goal o f P hase II is t o d evelop Mysterium protocol a s s tandard, capable o f " dissolving" u ser d ata and sending i t d eep into t he Network o f Mysterium Nodes - p roviding complete end t o end encryption.
+
+If we are able t o attract a nywhere u p t o 9MM C HF d uring this t oken creation -  w e will h ave enough f unds to finish and p olish P hase I. O nce t hat is done - we w ill research, design, p lan, start d eveloping and implementing Phase I I protocols.
+
+5. Token C reation Details
+
+Mysterium T oken Creation will commence on May 30th 2017.
+
+ Primary a ccepted currency is E ther when t urning it into M YST  Other c urrencies l ike Bitcoin or F iat c urrencies can also b e contributed v ia our p artners
+
+Bitcoin Suisse and t urned into M YST.  MYST-price i s d efined in C HF. The f inal e xact E TH p rice p er M YST will b e d efined from
+
+the E TH/CHF rate on M ay 30th 2 017, 1 2:00 ( CEST) and remain fixed t hroughout t he entire contribution period.  The creation will be capped ( "Soft C ap") upon r eceipt of ETH e quivalent t o 6  m illion Swiss Franc ( CHF). This a mount i s a s ubject to c hange b efore Token Creation commences.  The T oken Creation period w ill l ast fourteen d ays max i f S oft Cap is n ot reached sooner.  If the S oft C ap i s reached b efore t he e nd of f ourteen days, a dditional d onations w ill be accepted for 72 hours i n case some contributors m issed a  very short window for M YST creation.  Minimum goal o f d onations i s 7 00.000 CHF. I f this g oal wouldn't b e r eached, all early contributors would get r efunded.  Token C reation will a lso b e h ard capped: u pon a chieving this cap, token creation w ill stop a nd n o f urther contributions w ill b e accepted. The hard c ap a mount i s s et to 14.000.000 CHF.
+
+13
+
+
+
+5.1. MYST Creation Ratios
+
+ Before Soft Cap is r eached, 1 C HF =  1.2 M YST (ETH price p er M YST will be d etermined 3 h ours before T oken Creation E vent).
+
+ After S oft Cap i s r eached (72 hours period), 1 C HF =  1 M YST.
+
+5.2. A dditional MYST
+
+Additional MYST will b e c reated, d esignating i t for t he Future Funding, F oundation operations, Bounty p rogram,  A dvisors early Seed i nvestors as f ollows.
+
+5.2.1. Future F unding
+
+Part of MYST s upply will b e reserved f or future as a n additional f undraising m echanism f or the Mysterium network project to c ontinue d evelopment o f P hase I I, but m ay never be issued, depending on circumstances in the future.
+
+The amount r eserved f or future funding will be as f ollowing:  If up t o 2 m illion CHF i s c ollected, 50% of a ll t okens w ill be reserved f or future f unding.  The p ercentage will d ecrease gradually t o 1 5% with f urther f unding u ntil 6  m illion C HF i s reached.  After 6  million C HF, the number o f tokens r eserved f or f uture f unding will b e f ixed at 15%.
+
+Tokens r eserved for future funding w ill be locked f or 1 2 months, a fter w hich they will b e s ent t o a m ultisig w allet b elonging to Mysterium Foundation.
+
+5.2.2. F ounders, F oundation, B ounty p rogram and A dvisors
+
+ Mysterium Foundation, B ounty p rogram a nd A dvisors will r eceive 9 % o f all t okens. Tokens will b e received b y t he Foundation multisig w allet, and will b e u sed t o r eward assistance from: early node o perators (mining), bounty p rogram participants, a dvisors and new e mployees v ia a  V esting program, e tc.
+
+ Founders w ill receive 10% of a ll t okens. F ounder t okens will b e l ocked f or 12 months.
+
+5.2.3. Seed P articipants
+
+Seed P articipants will be rewarded w ith the following token multipliers for their early commitments w ith E TH/CHF r atio calculated a t the c ommencement o f t he T oken C reation:
+
+14
+
+
+
+ 1x if 2  m illion CHF ( or less) is c ollected.  1x to 5 x g radually i ncreasing s eed m ultiplier i f more than 2 million C HF a nd l ess t han 6
+
+million C HF i s collected.  Multiplier will s tay at 5 x i f 6 m illion C HF ( or more) is c ollected.
+
+Seed P articipant tokens will b e separated in two parts: the 1 x m ultiplier p art will b e released to Seed P articipants r ight after t he T oken C reation ends. The s econd p art w ill be l ocked for 12 months.
+
+5.2.4. E xample of T oken S tructure a fter Creation i s o ver
+
+As c ontribution is p egged to E TH v alue i n C HF, i n t his example we a ssume that 1 E TH v alue a t the moment Token C reation w ill be at 50 CHF.
+
+
+
+Donation, in
+
+
+
+CHF
+
+
+
+2m
+
+
+
+Token Creation Contributors (instant)
+
+
+
+27.60%
+
+
+
+Foundation, Bounty, Advisors (instant)
+
+
+
+9.00%
+
+
+
+3m 34.10% 9.00%
+
+
+
+4m 40.80% 9.00%
+
+
+
+5m 47.70% 9.00%
+
+
+
+6m 54.60% 9.00%
+
+
+
+9m 57.50% 9.00%
+
+
+
+Seed P articipants
+
+
+
+(locked)
+
+
+
+3.40%
+
+
+
+II'nd P hase (locked)
+
+
+
+50.00%
+
+
+
+Founders (locked)
+
+
+
+10.00%
+
+
+
+Total
+
+
+
+100%
+
+
+
+5.70% 41.20% 10.00% 100%
+
+
+
+7.70% 32.50% 10.00% 100%
+
+
+
+9.50% 23.80% 10.00% 100%
+
+
+
+11.40% 15.00% 10.00% 100%
+
+
+
+8.50% 15.00% 10.00% 100%
+
+
+
+15
+
+
+
+6. M ysterium Architecture
+
+Mysterium i s s till undergoing intense development a nd will be f or a  while. Parts o f this s ection are subject t o change.
+
+6.1. Technical Overview
+
+VPN service consumer find and pay service providers in Mysterium network by using Mysterium built-in smart contract based Identity, Service Discovery and Payment services. The network itself works over the Internet and relies on Ethereum blockchain for censorship resilient distributed storage and transactional processing needs. The Mysterium network uses Registered Identities to enable means of creating limited trust when engaging with services and payments.
+
+Illustration: Bird's eye v iew o f t he M ysterium network Any person who has their identity registered on The Mysterium network can announce VPN services (compatible with the network's VPN service protocols) along with the payment terms these services will be available at. Other users of the network will be able to find services matching their specific needs (location, price, etc...) and use search results to establish a
+
+16
+
+
+
+connection to selected VPN service providers and use the announced services. A consumer of VPN service and VPN service providers will exchange several messages to negotiate the payment terms (e.g. service metering granularity) and technical information necessary to establish the secured VPN session. During this negotiation, a consumer of the service will make a promise to pay for some amount for services to be received in advance and this promise will be updated by the consumer every time an extension of service is desired. The VPN service provider later will use this promise to clear payment via smart contracts on the Ethereum blockchain. If the consumer's balance held in the network's deposit account is sufficient then the promised amount of MYST tokens will be transferred from the consumer's deposit account to the s ervice provider's a ccount.
+
+6.1.1. C ore components
+
+1. Ethereum allows to run decentralized code with smart contracts, enabling reliable services and p ayment handling.
+
+2. Identity service and database of registered identities ensures the proper identity acknowledgement between client and s ervice p rovider.
+
+3. Discovery service and database of available services provide means to announce VPN s ervices a vailability a nd pick t he most suitable VPN s ervice.
+
+4. Payment service and database of balances allows secure promise-based micropayments for s ervices.
+
+6.2. S ervice P rovisioning
+
+When a client (a service consumer) is in need of VPN services provided by VPN service providers on the Mysterium network, they must first choose a service matching their needs. After a service is chosen, the client's identity starts a dialogue with an identity providing this advertised service. During the course of dialogue a value transfer may be promised and VPN service sessions may be provisioned. Dialogue can be started over existing messaging channels between the nodes or a new channel is established. Dialogue ends when one peer stops l istening to t he other p arty or a ny p arty l oses connection t o the I nternet.
+
+6.3. Identity Service
+
+There are interconnected software agents (we call one instance of this an i dentity agent) representing digital identities. Each identity agent acts on behalf of a person controlling the identity. This software agent is a functional part of the application (a Mysterium network node) used to connect to the Mysterium network to provide or consume VPN services. Each agent has access to a digital identity represented by the agent's ability to electronically prove service by signing and decrypting all communications using a private key associated with the identity. A node may have access to more than one identity. The identity is created by generating public and private keys. The identity is identified by a unique identifier derived from a public key by
+
+17
+
+
+
+using the last 20 bytes of a keccak256 hash of the public key. This identity can be made publicly known to other network users by announcing its existence through invoking an identity registration smart contract on the Ethereum blockchain. The contract must be supplied with an identifier and a public key of identity as an argument. After the identity contract is successfully executed the public key of identity is appended to the Ethereum blockchain by miners. At this point the appended identity becomes a Registered Identity. All Mysterium nodes in the network follow the blockchain and read transactions of the newly registered identities and maintain a local copy of the database of all Registered Identities using data gathered from transactions. Nodes can use a local copy of the Registered Identities database to lookup public keys associated with other identities. This database is used by nodes to check if the communications received from other n odes c omes f rom valid r egistered i dentities a nd a re p roperly s igned.
+
+Illustration: Identity d ata registration and r eplication
+
+6.3.1. R egistered Identity Value
+
+Mysterium nodes must attach a predefined amount of value (MYST) to successfully invoke the identity registration contract and have the identity registered. The amount of value will be adjusted periodically automatically to reflect the value of MYST in fiat currencies. This forfeiture of value (MYST) has a purpose of making identity something of value. By attaching cost to
+
+18
+
+
+
+identity we make it unattractive to abandon. Also, because it is expensive to produce identities in large quantities the system limits exposure to several types of trust exploitation. We see Registered Identities as something to be reused to users' own benefit. By reusing an identity for payments users will have their payments history and balances made public, and their identities made more predictable and thus trustworthy for service providers. We will discuss risk and trust relationship further w hen d escribing p ayments.
+
+6.3.2. C ryptographic M echanisms
+
+Because of computation costs and limitations of running long computations on Ethereum Virtual Machine, the cryptographic mechanisms backing the registered identities technically will use EVM's built-in implementations of keccak256 hashing, ECDSA signature verification and identifier recovery functions. A key pair and an identifier used behind the identity are technically identical to the cryptologic security artifacts behind Ethereum's external account. A Mysterium key pair s hould n ot b e reused to hold v alue in Ethereum b lockchain.
+
+6.4. Service D iscovery
+
+Service providers willing to provide VPN services and be compensated for doing so can announce their services to the network. To announce the service, the provider's node prepares a service proposal. A proposal encodes the proposal format version, provider description, qualitative service definition, and a list of methods to reaching the provider's node. The provider's Identity agent then signs this proposal and the node invokes a service announcement smart contract on the Ethereum blockchain with the signed proposal as an argument. After a miner runs the contract and adds the proposal to the Ethereum blockchain the proposal becomes publicly available for anyone to read and to copy. Mysterium nodes follow the blockchain and copy transactions containing proposals from it, noting the Ethereum blockchain block number they appeared on. Nodes then extract proposals from transactions and use these extracted proposals to construct and locally store a consistent database of all services available on the network. Nodes can query a locally stored database or a database on other trusted nodes to search for services m atching user specific n eeds.
+
+19
+
+
+
+Illustration: S ervice announcement and d iscovery
+
+6.4.1. Outdated S ervice A nnouncement Handling
+
+Proposals added to the blockchain stay there forever, but the announced services may not be available for that long. In order to get rid of outdated proposals we define simple network user behaviour: users discard all proposals received before a predefined number of blocks (~60000 which is somewhat near to ten days) and service providers re-announce their services before the old proposal gets discarded. When service providers re-announce service reusing the same serial number, all network users replace old proposals stored in their local copy of the database to a the new proposal taken from the blockchain. This simple method ensures all outdated service a nnouncements w ill e xpire.
+
+6.4.2. Service P roposal
+
+As mentioned above, an instance of service proposal encodes: proposal format version, provider description, qualitative service definition and information needed to contact the provider's node. A version number is included in the proposal to allow extensions to the proposal format. Provider description includes the identifier of a provider and per provider
+
+20
+
+
+
+unique serial number of service provided. The serial number may be reused to update node contact information, but should be changed to a new unique value if any of qualitative parameters (including p rice p er unit) h as t o b e u pdated.
+
+A qualitative service definition includes: 1. Definitions of VPN service type offered 2. Approximate information on location where the service is provided from 3. Approximate information on location where the tunnelled traffic will originate from 4. Available per session bandwidth 5. Service usage metering method and the service price per unit of metering as in MB/MYST or s econds/MYST.
+
+6.4.3. T ypes o f S ervices
+
+There will be several distinct types of VPN services available on the Mysterium network. IP tunnelling and Socks proxy style services are first in the queue to be implemented. Other kinds of networking-related services may follow. Approximate location will have Internet attachment point (ip address) mapped to Internet Autonomous System number and ISO 3166 Alpha-2 country codes. Approximate location will be used to quickly search for services available on a specific Internet service provider or country level precision. Information needed to contact provider's node includes a list protocols supported by provider's node accompanied with protocol specific data. This list will contain mandatory information to implement default node to node protocol type with associated IP (v4 and v6 if available) address and port information attached.
+
+Nodes may support multiple types of VPN services. Every service type has to be advertised as a separate service. Nodes durably store all proposals they announce and still regard as valid. The valid proposal is a proposal of service the provider is willing to deliver on terms defined in the q ualitative d escription.
+
+6.4.4. S ervice Selection
+
+Every client is free to choose different services from the same or multiple providers on the Mysterium network. A consumer of VPN services uses local or trusted remote database of announced services (service proposals) to search for a service adhering to their requirements: service type, locations of where service is provided, where your traffic will appear from, metering units, maximum p rice per metered unit and committed b andwidth.
+
+All candidates matching requirements then can be sorted by ascending price, and service session establishment may be tried in an order of increasing price until a functioning dialogue is started. Users may prefer using services from providers they have successfully used before and these providers can be flagged as preferred even if the price per unit is higher than lowest available options from other providers. After the client (or automatic process) selects a preferred service to use, the following events occur: a dialogue between the client's and provider's nodes is established, some value is debited by means of issuing promises, a carrying connection is established and terminated after use. In the case where establishment of dialogue fails, an
+
+21
+
+
+
+establishment of dialogue with the next best service candidate can be tried manually or automatically.
+
+The Mysterium network clients may provide a varying degree of automation to assist the client in the service selection process. Logic and presentation can vary between client software implementations. The protocol for remote database query functions and trust model are not defined y et a nd s ubject t o f urther r esearch a nd d esign.
+
+6.5. P ayments H andling
+
+Mysterium network will implement a state channel payment method. The mechanism remotely resembles the way checks work. A bank account holder can write a check to another person (the benefiter) as a form of payment. A check has the issuer's name, payee's name and a sum of money promised. All written down and signed by the issuer. While at the bank, the payee can exchange a check for the sum of money promised in the check. The bank may refuse to pay and return the check if the issuer's account does not have enough funds left to cover the promised v alue.
+
+In the Mysterium network, all network users have an account managed by the smart contract on Ethereum blockchain. Users store some value (MYST) in their accounts. When one user wants to use VPN services provided by another user, they issue promises to give some of this stored value to the service provider in exchange for services. A service provider collects these promises by requesting a Mysterium smart contract to transfer value from the account of the issuer to their account in exchange for the collected promises. All value transfers will be netted, and the balance of each account will be stored in the contract state. Users may request a smart contract to w ithdraw some value f rom t heir account t o a ny E thereum account o f their choice.
+
+6.5.1. Accounts
+
+We will develop and deploy a smart contract on Ethereum blockchain used to manage user accounts and execute value transfer transactions. A single contract instance will hold value for all Mysterium accounts. All transactions executed by the contract will be added to the Ethereum blockchain. The transactions include deposits, payment clearing and withdrawal. Anyone with proper software can follow transactions added to the public blockchain and reconstruct the state of any account. Service providers may want to reconstruct current balances of their clients to make s ure s ufficient f unds a re l eft to pay f or s ervices p rovided.
+
+6.5.2. Deposits
+
+Any Mysterium user can transfer some MYST to an account managed by a Mysterium payments contract. To deposit some value (MYST) a user must invoke the contract and supply it with value (MYST) and provide an identifier of the provider account as an argument. A successful execution o f the c ontract will r esult i n credit  i n the a mount of value s upplied.
+
+22
+
+
+
+6.5.3. I ssuing P romises
+
+A promise is a binary representation of an issuer's promise to pay. The promise consists of an identifier of the party issuing a promise (an issuer), a serial number of the promise, an identifier of the party to receive payment (a benefiter), the sum (in MYST) promised. When users need to pay other users they issue a new payment promise (or update an existing promise) and send it to the benefiter. A unique serial number is assigned to each promise and it must be incremented each time a new promise is issued. Serial number uniqueness must be maintained on an issuer and benefiter pair basis. A promise can be updated by increasing the value promised while keeping other components of the existing promise unchanged. A benefiter of a promise may request the issuer to stop updating a promise and to issue a new promise on the next payment. Every time a promise is sent to a benefiter it is digitally signed by an issuer. After receiving a promise a user should check if it is valid. A valid promise is properly signed by the issuer, if it has a serial number higher than the last cleared promise and if it was not updated after issuer was asked t o not u pdate i t.
+
+6.5.4. Clearing of Promises
+
+To receive the value promised in a payment promise it must be cleared. Users must request the Mysterium payments contract to clear the payment promises received from other users. Promises with the lowest serial number must be cleared before other promises with the same issuer and benefiter pair. The clearing request to a contract must include: a promise received from the issuer, issuer's digital signature of the promise and the benefiters digital signature of the promise. Both signatures represent a mutual agreement between the issuer and benefiter to transfer a promised s um.
+
+23
+
+
+
+Illustration: P ayment p romise clearing
+
+When a smart c ontract is e xecuted i t checks if an encapsulated p romise i s p roperly signed b y an i ssuer and benefiter. First digital s ignatures are verified and i dentifiers o f signers e xtracted from s ignatures a nd then extracted i dentities a re compared with identifiers defined i n the body of promise. I f the promise w as not s igned b y a n i ssuer a nd a  benefiter then clearing i s cancelled. O therwise the c learing process is c ontinued a nd contract c ode c hecks i f the p romise was n ot c leared before. The payment contract uses s tate storage to s tore the l ast serial n umber of payment p romise w hich w as c leared. T his saved information is u nique for any issuer and benefiter p air. T he s imple c omparison of t wo s erial n umber is e nough to determine i f a  promise
+
+24
+
+
+
+was not cleared before.
+
+6.5.5. Withdrawal
+
+In the c ase where the p romise was cleared before, the c learing i s cancelled. In the c ase a promise was not cleared before the b alance o f the i ssuer i s checked t o m ake s ure i t h as at l east the amount promised. I f t he issuer's balance has insufficient f unds, clearing is cancelled, but i t does not mean the promised v alue i s l ost. T he b enefiter m ay choose to try to clear payment later when the i ssuer d eposits more M YST t o t heir a ccount. A nd f inally, i n case t he i ssuer's account h olds a s ufficient amount of funds t he clearing can be completed. T he value defined i n the p romise is credited f rom the i ssuer, a  small t ransaction f ee is calculated a nd debited t o the account of t he Mysterium n etwork a nd the r est of the p romised v alue i s debited to the benefiter's account. T hen a  serial n umber o f the p ayment p romise is stored in c ontract s tate s torage and clearing p rocess ends. When i nvoking a payment c ontract a  benefiter may d emand p ayment contract t o c lear promise e ven w hen t here are n o sufficient f unds left to completely honour the promise at a loss of difference in sums a vailable a nd promised.
+
+6.5.6. Risk Management
+
+Promises do not guarantee payment. The sum written in the promise is not limited to the value held in a user's account. All promises are signed by a user and are valid until cleared. This means users will not be able to safely use their identities after making false promises to other Mysterium network users. As soon as an issuer of a false promise deposits value to his/her account, anyone holding a valid promise issued by that account holder can take this value. It costs to create a Registered Identity, but it becomes worthless the moment it is abused. Loss of value of identity should deter users from issuing false promises. The proposed payment method will be limited to payment transactions worth half the value needed to create Registered Identity.
+
+All the transactions of a payment contract are stored in a public ledger based on the Ethereum blockchain and as a result they are accessible for everyone to read. Anyone can reconstruct all transactions and eventually view balances for each Registered Identity on the Network and track all promises kept and promise serial numbers used to clear payments. This means anyone can check your balance before accepting your promise and check your payments history to make an e ducated g uess of how t rustworthy you are.
+
+There is also a balancing act of risk and benefit related to costs of clearing transactions. Invocation of payments from a smart contract has costs in gas and transaction fees. Some service providers may choose to forbid users from updating promises with higher value, and clear promises as soon as possible at the higher relative cost compared to value received. Other providers may choose to take higher risk and allow promises to accumulate value to make cost of clearing negligible c ompared to value r eceived.
+
+25
+
+
+
+Promises received from clients (not signed by benefiter) can be shared with other users without fear of giving away a value associated with the promise. Sharing and matching promises received from other providers may be instrumental in mitigating risks of clients having a low balance a nd also u sing a huge number o f false promises to m any service p roviders. Our payment solution gives providers access to the information necessary to assess risks. It also gives them freedom to choose their position in the trade-off between lowering clearing risks v ersus having h igher c learing costs.
+
+6.6. M essaging Between Nodes
+
+Messaging channels enable nodes to exchange messages. There will be multiple types of messaging channels. Each channel type may employ a different carrier protocol and communication scheme (direct node to node, relay over centralised service, relay over p2p overlay). A dialogue between nodes can be started over any type of messaging channel available to both nodes participating in a dialogue. One default channel type and associated communication protocol will be defined and supported on all Mysterium network clients. Other optional to implement messaging channel types will be added as needed to exploit weaknesses in information censorship deployed in real-time networks. Messaging channel implementations will provide an unreliable datagram messaging interface. Some channels types may implement transitive message routing and thus measures to secure content of communications is required. Each message sent over a channel is signed by the sender and then encrypted using the Elliptic Curve Integrated Encryption Scheme. This way of protecting message exchange will prevent eavesdropping on content of communications, but is still vulnerable to determination of the identities o f communicating p arties.
+
+6.6.1. D ialogues
+
+Dialogues provide a structured way for two identities (peers) to exchange information needed to arrange payments for services provided and provision service sessions. Only a single instance of dialogue can exist between two identities at any one time. If a new dialogue is attempted a previous dialogue is closed and a new dialogue is established. The dialogue will provide reliable message transmission over unreliable messaging channels by implementing a simple positive acknowledgement scheme for retransmission of l ost m essages.
+
+26
+
+
+
+Illustration: L ife-cycle o f dialogue
+
+Dialogue is established when one identity asks another identity to start the dialogue and the other identity acknowledges the dialogue establishment attempt. To keep dialogue open some messages have to be exchanged regularly. If a node has nothing meaningful to send, it should send keep-alive messages instead. Identity agents monitor when the last time any message was received from a peer and may decide to close the dialogue if no message was received for a long time. An identity can stop an existing dialogue by simply ignoring any messages arriving from t he remote i dentity.
+
+6.6.2. P ayment Scheme
+
+Identity agents may store state information on the node. This state may have records on each other identity that it has established a successful dialogue with previously. Record data includes: amount of MYST received from the peer but not yet used to pay for services provided, a last promise received from the peer and a list of all not yet cleared promises it has received from the peer. Choosing to store state information will allow providers to reduce costs of clearing payment p romises r eceived from c lients. After a dialogue is established, both identities participating in dialogue try to lookup state information it has on the remote identity and each identity agent sends payment advice to the dialogue peer. Advices are sent both ways because the identity relationship is symmetrical and it is possible that both identities will use services
+
+27
+
+
+
+provided by the peer s imultaneously. The payment advice includes the leftover amount of MYST received but not used to pay for services, a payment policy describing requirements to a newly issued promise and an optional request to update a previously sent promise instead of issuing a new promise. Some providers may choose to give away some services free of charge for service testing purposes. That is accomplished by telling the peer it has higher than zero leftover the first time it uses the service. The payment policy indicates a minimum amount of MYST has to be promised by the client to be deemed a cceptable by a  remote peer. A request to update a promise contains a copy of the last not yet cleared promise received from a peer. Payment advice is sent by a node when: a) a leftover changes by more than 10 percent from previously reported amount; b) when leftover amount reaches zero; c) when service provider decides it want to clear the last promise received; d) when service provider accepts new or updated promise. Before clearing the last promise received from the peer the provider should notify his peer by sending payment advice not including the optional part of advice and making sure it was successfully received before proceeding with clearing. Notification is needed to avoid a race where a peer may send an updated promise while the previous version of the promise has  a lready b een s ent f or clearing.
+
+28
+
+
+
+Illustration: Use o f promises t o pay i n a dvance
+
+To simplify explanations a bit, let's assume only one identity is using services provided by a peer identity (provider). In order to increase leftover (balance) tracked by the provider a client must send a payment proposal. The payment proposal is a message sent to a peer and it contains a payment promise. After receiving a valid payment proposal the provider will acknowledge the proposal as valid and accepted. If payment proposal is unacceptable the negative acknowledgement will be sent. Negative acknowledgement will also signal a reason for refusal. Clients should use advice received from a provider and try to update an existing promise if the optional part was present in advice. In case an optional part of advice is not received, a new promise must be issued by the client the next time a payment proposal will be sent. A client may choose to ignore advice received and always send payment proposals containing n ew p romises with a  sufficient a mount of M YST a cceptable by t he r emote peer.
+
+6.6.3. Service s essions
+
+To be useful a VPN service must provide an interface to user applications and have a data carrying channel(s) established to provider node(s). This interface is service type specific. It may
+
+29
+
+
+
+manifest as Internet Protocol interface if IP tunnelling service is used or it may be a socket listening on the local IP address when a secured socks service is used. The data carrying channel(s) used to carry traffic generated by user application is also application specific. The Mysterium network will support many VPN service types and thus messages sent to establish service sessions need to be flexible enough to carry application specific negotiation payloads. To use an advertised service a node must have support for the advertised VPN service type. This support may come in the form of built-in node functionality or as a plug-in to the node software. One or more simultaneous sessions can be opened in a scope of one dialogue. All sessions will b e closed b y the p rovider i n case a  dialogue s tops.
+
+Illustration: Life-cycle o f service s ession To start a service session a client must request creation of a session. The request must include a service proposal used to discover a service, a correlation ID used to correlate response, and an application specific data. This application specific data should be provided by the VPN service client software. After receiving this request, the provider may respond with an acceptance or refusal. In the case that a session opening was refused, a reason of refusal is also supplied. In the case that the opening of a channel is accepted, a session id is supplied and accompanied b y application specific data s upplied b y provider. A client should then use application specific information received from a provider to try to
+
+30
+
+
+
+establish a data carrying channel(s) and report back to the node. The client node then sends a message indicating confirmation of successful opening of a session or failure to open a session to the provider. If an opening session succeeds, the provider's node starts to send periodic metering messages. Metering messages include information on total cost of the session in MYST, how much data is sent in both directions, duration of the session. If an unused amount value decreases to zero, a provider may notify a node and terminate any open session(s). A client may also request a session to be closed. Upon termination of the session a final metering message is s ent. To be compatible with dialogue semantics a specific service implementation (software) must provide functionality used by the node during setup and tear-down of sessions. When asked by a node the implementation must supply application specific information which may be needed by the provider node before it can supply the application specific data. Then implementation must accept application specific data received from the provider and try to establish its session. After successful establishment of session or failure to establish a session the implementation must notify the node with the results of session establishment. VPN service type implementation must terminate a session on request from the node and should be able to notify a node if the session was terminated b y the p rovider. Client-server type connection pattern was used, in our example the service implementations may c hoose any c ommunication p attern t o carry user application data The session parameters negotiation mechanism is limited to client-server exchange of service implementation specific data. Any additional negotiation mechanisms should be implemented in service s pecific c ode.
+
+7. C ontact
+
+To r each u s v isit our w ebsite at https://mysterium.network/
+
+31
+
+
+
+

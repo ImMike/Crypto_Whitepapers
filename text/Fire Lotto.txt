@@ -1,0 +1,843 @@
+White Paper
+
+FIRE LOTTO
+
+January 2018
+
+Page i
+
+
+
+CONTENTS
+
+INTRODUCTION............................................................................................................................. 1 Global Lottery Industry .......................................................................................................... 1 Challenges Faced by Lottery Industry .................................................................................. 2 Fairness ................................................................................................................................. 2 Regulations ........................................................................................................................... 3 Availability ............................................................................................................................ 3
+
+HOW THE BLOCK CHAIN FIRE LOTTO WORKS .......................................................................... 4 The 4/20 lottery .................................................................................................................. 7 The 5/36 lottery .................................................................................................................. 7 The 6/45 lottery .................................................................................................................. 7
+
+WHY THE FIRE LOTTO WILL BE PLAYED ALL OVER THE WORLD ........................................... 8 SALES COMMISSION DISTRIBUTION AND PAYMENT .................................................................. 9 FAQs ............................................................................................................................................. 10 RNG ALGORITHM ........................................................................................................................ 15 LEGAL ASPECTS .......................................................................................................................... 17 TEAM ............................................................................................................................................ 18 REFERENCES................................................................................................................................ 19
+
+Page ii
+
+
+
+INTRODUCTION
+
+
+
+A lottery game built on the Ethereum blockchain will be a major innovation in the global lottery industry. The lottery industry holds a 29% share of the global gambling revenue [1], and is facing challenges due to the growth of the digital economy. Worldwide demand for more transparent, fair services has grown concurrent with the advance of technologies that enable the change. The distributed, decentralized nature of blockchain technology offers tremendous opportunities for financial technology innovation, and, similarly, for gaming industry modernization.
+
+
+
+A gaming system built based on the use of the Ethereum blockchain would operate with a high degree of autonomy, and its data and records would be cryptographically stored in a public, decentralized blockchain. Available online and borderless, such a system can resolve several challenges of traditional lotteries.
+
+
+
+The proposed lottery will employ the random number generation (RNG) method, which is secure and fair and prevents manipulation and fraud. This project implements a completely secure RNG method based on the current version of the Bitcoin decentralized protocol.
+
+
+
+Global Lottery Industry The global lottery industry grew from $187.1 billion in 2004 to $294.3 billion in 2016, representing a compound annual growth rate (CAGR) of 4.3% per year. In 12 years from 2004 to 2016, lottery sales have declined only once, evidencing the stability of the business. More than 64% of global lottery sales come from Europe and North America [2].
+
+Concurrently, with growing penetration of the Internet and mobile phone adoption, online and mobile lotteries are growing everywhere. The total revenue of mobile lotteries in 2016 is estimated to be 43 billion, while 44% of the amount is generated in Europe and North America. The pace of technology adoption can be even faster in the developing markets.
+
+
+
+Global Lottery Industry
+
+From 2004 to 2016, grew from $187 billion to $294.3 billion.
+
+Mobile Lotteries
+
+In 2016, estimated revenues of $43 billion
+
+
+
+Up until recently, most lottery operators were B2C. With the advent of online and mobile lotteries, there are now more B2B companies offering online lottery platforms.
+
+
+
+Page 1
+
+
+
+Fire Lotto can operate as a global blockchain protocol, but can also be offered to governments of specific countries as a solution to challenges to ensuring a fair lottery.
+
+Globalization, economic growth in the developing world and progress in information technology are factors that will accelerate changes in the lottery industry, especially in the emerging markets. The global lottery industry is moving closer to cross-border, high-technology lotteries, and blockchain technology can be the stepping stone needed for this innovation.
+
+Challenges Faced by Lottery Industry Blockchain technology can solve trust and fairness issues faced by the lottery industry. As with all centralized services, lotteries have real and perceived trust issues. Some of the most common lottery industry problems are described below.
+
+Fairness Ensuring fairness of the game remains the biggest challenge. Lottery players may question the possibility of manipulation or fraud, e.g., several possible concerns:
+
+ Are the ticket and lottery real?  Is the money really accumulated in one pool?  Is RNG truly random and secure?  Is the jackpot winner real?  Are the prizes paid on time?
+
+The two famous cases of lottery manipulation described below illustrate the cause for concern.
+
+Hot Lotto fraud scandal (2010). Eddie Tipton, the former information security director of the U.S. Multi-State Lottery Association, installed software code that allowed him to manipulate random number generation and predict winning numbers on specific days of the year and led to his winning a $14.3 million jackpot in 2010. The manipulation was discovered, and Tipton was convicted and sentenced to 10 years imprisonment in 2015.
+
+The 1980 Pennsylvania Lottery scandal (also known as the Triple Six Fix). This was a plot to rig the Daily Number, a three-digit game offered by the Pennsylvania Lottery. All the balls in the three machines, except those numbered 4 and 6, were weighted, and as a result the numbers drawn were almost sure to be a combination of those digits. The scheme was successful in that 666 (one of the eight combinations that the
+
+Page 2
+
+
+
+conspirators were hoping for) was drawn on April 24, 1980; however, authorities were alerted by unusual betting patterns. The chief participants in the plot were sent to prison, and most of the fraudulently acquired winnings were never paid out.
+
+Regulations In some countries lotteries are not legal, and in most other countries only governments and affiliated organizations can obtain a license to operate a commercial lottery business. Corruption schemes that can affect distribution of funds may take place in different regions.
+
+Availability Users from other countries cannot easily participate in some of the biggest lotteries in the world such as Euromillions or some of the lotteries in the United States. Users are limited to playing smaller, local lotteries due to the smaller size of their domestic market, underdevelopment of the lottery industry at home, or strict regulation. New online solutions that allow such players to buy worldwide or U.S. lottery tickets have recently gained some popularity, but the service charges, as well as risks of fraud and mismanagement, remain high.
+
+Currently, lotteries are controlled by the state and regulated by law in most parts of the world. On average, no more than 50% of all funds collected from ticket sales are allocated to the prize pool. It should be noted that lottery participants have no control over how much money is collected from ticket sales, and the average value mentioned above is a rough estimate. In addition, lottery winnings are taxed, and in some countries (for example, the U.S.) as much as 60% can be withheld.
+
+The average price of a lottery ticket is about USD 2.00. Lottery machines are used to draw the winning numbers for a lottery at different intervals. It is believed that the winning numbers are drawn randomly, but there are ways to influence the results. In order to make their lottery look more credible, organizers arrange live television broadcasts and set up lottery commissions. However, it is easy to make the process non-random by putting radio frequency identification (RFID) tags on lottery balls (even a child could do this).
+
+We can draw a firm conclusion that any lottery is a source of government revenue earned at the expense of citizens through an unequal distribution of funds collected from lottery ticket sales.
+
+Many gambling industry representatives are unhappy with this system, and a few good attempts have been made to organize an honest Internet lottery. However, the
+
+Page 3
+
+
+
+traditional approach to organizing a lottery which involves the use of a centralized organizational structure (i.e., a single server that may belong to a single owner) has long been mistrusted because nobody can check the RNG (random number generator) or any other parameters of the lottery other than a narrow circle of interested parties.
+
+The blockchain technology can help us solve this problem. However, projects that use this technology are not always transparent enough. Let us take the TrueFlip project as an example. If you carefully read their project description and code published on GitHub, you will see their use of the blockchain technology is limited only to the RNG, while data on the amount of funds collected and the distribution of funds is stored on a single server.
+
+HOW THE BLOCK CHAIN FIRE LOTTO WORKS
+
+We have built a completely transparent and fully decentralized platform for organizing and conducting a lottery using the blockchain technology and ETH smart contracts for collecting and distributing funds, drawing winning numbers in a random fashion, and paying lottery tickets sales commission to token holders.
+
+The prize pool of the Fire Lotto lottery is formed from 70% of the funds collected from ticket sales. The minimum size of a guaranteed jackpot is fixed--1000 ETH (~ USD 1,000,000) for the 6/45 lottery.[*] If nobody wins the main prize in a drawing, it will be rolled over to the next drawing and increased. The jackpot will keep growing until it finds its winner.
+
+There will be five prize categories with a different prize depending on how accurately the player predicts lottery numbers. All categories starting from 2 will be calculated as percentages of the prize pool. If several winners win the jackpot in one drawing, it will be split between them.
+
+We will offer two types of lotteries: instant lotteries and draw lotteries.
+
+The Roger's Wheel instant lottery is a mix between the traditional wheel of fortune and a slot machine. In this game, players can place bets ranging from 0,003 ETH (~USD 2.00) to 1 ETH (~USD 1,000.00) [*] and choose a payout rate from 2 to 20, which will be used to multiply their winnings. Next, the player spins the wheel divided into 21 sectors with different payout rates on them. If the wheel stops at the player's chosen rate, he or she will instantly have the winnings (the bet multiplied by the payout rate) transferred to their cryptocurrency wallet. The player can turn an unlimited number of
+
+Page 4
+
+
+
+wheels in one game, which reduces the waiting time and increases the number of tickets bought by the player. The wheel rotates for 2030 seconds. The randomness of the game is ensured by ETH blockchain-based RNG. Its description will be given later in the text.
+
+On average, 5-6% of the value of bets made is kept by the system. We offer three types of draw lotteries: 4/20, 5/36, and 6/45. Our platform allows for the addition of new types of lotteries in the future. The player enters the lottery site with a traditional and user-friendly interface, where he or she can buy almost an unlimited number of lottery tickets and choose numbers for each ticket. Tickets are bought in one click through the user's cryptocurrency wallet. An Ethereum transaction goes to the smart contract of the chosen lottery, contributing to the prize pool. 70% of all lottery ticket sales are allocated to the prize pool. Table 1 shows data on the distribution of lottery funds.
+
+Page 5
+
+
+
+Table 1. Distribution of Funds Collected from Lottery Ticket Sales
+
+
+
+No.
+
+
+
+Percentage of
+
+
+
+Target
+
+
+
+Funds Distributed
+
+
+
+1.
+
+
+
+70 %
+
+
+
+Prize pool
+
+
+
+2.
+
+
+
+15%
+
+
+
+Advertising fund
+
+
+
+3.
+
+
+
+10%
+
+
+
+Commission
+
+
+
+4.
+
+
+
+5%
+
+
+
+Technical costs (gas payments for
+
+
+
+transactions)
+
+
+
+There is a drawing every six hours in each lottery. Numbers are drawn randomly with the help of the blockchain-based RNG (any four, five, or six numbers are taken from the unique code of the latest bitcoin block mined). After all the numbers in the lottery have been drawn, winnings are automatically transferred to the owners of the winning tickets through the algorithm built in the smart contract. Table 2 shows the distribution of the prize pool in the Fire Lotto.
+
+
+
+Page 6
+
+
+
+Table 2. Distribution of Fire Lotto Prize Pool
+
+
+
+The 4/20 lottery* Matching
+
+Numbers
+
+
+
+Prize Pool Distribution
+
+
+
+The 5/36 lottery*
+
+
+
+4 3 2 Ticket price Guaranteed prize pool
+
+Matching Numbers
+
+
+
+33% 33% 34% 0,003 ETH (~2.00 USD)
+
+3 ETH (~3,000 USD)
+
+Prize Pool Distribution at Jackpot of
+
+
+
+The 6/45 lottery*
+
+
+
+5 4 3 2 Ticket price Guaranteed prize pool
+
+Matching Numbers
+
+
+
+25% 25% 25% 25% 0,003 ETH (~2.00 USD)
+
+100 ETH (~100,000 USD)
+
+Prize Pool Distribution at Jackpot of
+
+
+
+6 5 4 3 2 Ticket price Guaranteed prize pool
+
+
+
+20% 20% 20% 20% 20% 0,003 ETH (~2.00 USD)
+
+1000 ETH (~1,000,000 USD)
+
+
+
+* Please check Firelotto.com for lottery rules and winnings pay out conditions.
+
+Winnings are automatically paid in full within 90 seconds of the drawing. Transfers are made to the cryptocurrency wallets that were used to buy the winning tickets. In the draw lottery, every 10th ticket wins a prize. The thing is that many lotteries have a
+
+
+
+Page 7
+
+
+
+payout rate of 1 for two matching numbers, which means that players only win back their bet. However, we should remember that there is a tax on gambling winnings, which means that the player who guessed two numbers will lose at least 30% of their bet rather than win anything. In our lottery, the minimum payout rate for two matching numbers is at least 1.6, which means that the player will get paid back price of the ticket plus half of its cost.
+
+Fire Lotto token holders will also have sales commission transferred to their cryptocurrency wallets after the drawing. The sales commission rate will be fixed in the smart contract. Commission will be paid in ETH. Token holders will be free to use their share of sales commission as they wish.
+
+All processes and distribution operations in the system will be carried out based on the mechanisms built into smart contracts, which will exclude the possibility of their being influenced by the lottery organizers. Everything will be done autonomously, honestly, and transparently.
+
+In order to substantiate what has been said, we will publish the full source code of the Fire Lotto at the beginning of our initial coin offering (ICO) so that anyone can check it and see that the system corresponds to its description in this paper.
+
+WHY THE FIRE LOTTO WILL BE PLAYED ALL OVER THE WORLD
+
+ The initial guaranteed prize pool is over USD 1.1 million.  The amount of the prize pool can grow up to dozens of millions of dollars.  A record 70% of funds collected from ticket sales will be allocated to the prize
+
+pool.  Neither winning numbers nor lottery tickets can be faked.  Distribution and payout procedures are transparent and supported by smart
+
+contracts.  The lottery is based on the ETH blockchain. All the parameters of the lottery
+
+are included in the program code, which will be open to anybody willing to check it.  This lottery cannot be banned. You only need Internet access and a cryptocurrency wallet to play it.  A comfortable and user-friendly interface. A game that is played in one click. A mobile version available.
+
+Page 8
+
+
+
+ At the date of the platform launch one ticket costs USD 2.00, a sum that millions of players around the world are accustomed to.
+
+ There is no possibility of system abuse.
+
+ The Fire Lotto is anonymous.
+
+ Winnings of any size are paid out almost instantly.
+
+ Winnings are not taxed.
+
+ The fact that the lottery platform is decentralized means that the platform will operate independently and autonomously as long as there are gambling enthusiasts, the Internet, and cryptocurrency.
+
+ Sales commission payments are secured by smart contracts and provide token holders with an almost endless source of income.
+
+ The price of Fire Lotto tokens will constantly increase.
+
+
+
+SALES COMMISSION DISTRIBUTION AND PAYMENT
+
+
+
+Fire Lotto token holders are guaranteed to get 10% of the funds collected from ticket sales. Sales commission is distributed after each and every drawing based on the smart contract, regardless of the volume of ticket sales. Yield per token is 1.60 U.S. cents from each 16 million tickets sold, which is more than 20% per annum of the amount of funds invested in Fire Lotto tokens. Considering the fact that more than 150 billion lottery tickets priced at USD 2.00 are sold globally each year, the profitability of Lotto tokens may exceed 50% per annum in the very first year.
+
+
+
+Sales commission Yield, USD (10%)
+
+
+
+32,000,000 3,200,000 0.032
+
+
+
+Sales revenue (for 16 million tickets sold per year) Sales commission (10%) Yield per token
+
+
+
+Note: According to the Ministry of Finance of the Russian Federation, 67 million lottery tickets were sold in 2016 for the 6/45 lottery alone. Our lottery will be available in all world countries, including those with a ban on lotteries. The global annual turnover of the lottery market is more than USD 300 billion. Therefore, we believe that hitting 1 billion ticket sales around the world per year is a realistic goal. When this figure is reached, yield per token will grow by more than 12 times.
+
+
+
+Page 9
+
+
+
+We should not forget that there is also the Roger's Wheel instant lottery, which is in effect a slot machine that keeps 10% of the value of bets made. The profitability of instant lotteries and slot machines is difficult to underestimate. It is also worth considering that Fire Lotto tokens will grow in value as a result of promotion activities. After the ICO is complete, and the first commission pay outs are made, one Lotto token will be traded on cryptocurrency exchanges at a price of at least USD 1.00.
+
+FAQs
+
+1. How many tokens will be sold and how they will be distributed? A total of 100 million Fire Lotto tokens distributed. The distribution of tokens is shown on the diagram below:
+
+Page 10
+
+
+
+2. How much will one token cost? During the ICO, one token will be sold for USD 0.70. For the participants in the bonus program, the minimum price per token will be USD 0.50. During the pre-ICO (private round), one token will be sold for USD 0.35. During the pre-ICO (private round), one token will be sold for USD 0.38. 3. How much will one token cost during the private round of sales? Fire Lotto tokens will be offered at a price of 0.35 USD per token. For special terms, please contact info@firelotto.com
+
+Page 11
+
+
+
+4. Why do you need the closed round?
+
+Funds raised in the closed round will be used to generate a minimum prize pool of USD 1,150,000* and finance an advertising campaign for the ICO.
+
+
+
+*Prize fund generation:
+
+
+
+Lottery type
+
+
+
+Prize pool, USD
+
+
+
+Price per ticket, USD
+
+
+
+1. 4/20 2. 5/36 3. 6/45 4. Roger's Wheel
+
+
+
+10 000 100 000 1 000 000
+
+40 000 1 150 000
+
+
+
+2 2 2 From 2 to 1,000
+
+
+
+5. How will the project be launched?
+
+Unlike other ICOs, our ICO will follow the launch of the lottery rather than precede it. The product was launched on January 01, 2018. Once we collect enough funds the lottery will be launched with a minimum prize pool of USD 1 million. The lottery source code is available on Github for inspection. The lottery is launched in the operating mode, which means that users will be able to enjoy all its features, play, and win. The moment the lottery is launched, transfers will be automatically made within the smart contract to the wallet responsible for collecting sales commission and paying them to token holders.
+
+
+
+ The pre-ICO will open on January 15, 2018 and close on February 15, 2018.  The ICO will open on March 15, 2018 and close on April 15, 2018.
+
+This means that when the ICO opens, investors will be surprised to see not only a finished product, but also a huge prize pool available to be won and sales commission distribution among token holders in real-time mode. This ICO roadmap is going to be implemented for the first time ever, and it will become a distinctive feature of this project.
+
+
+
+6. How do I get Fire Lotto tokens?
+
+Fire Lotto tokens will be transferred to the investor's account linked to his or her personal profile after the transaction has been confirmed. After the ICO is finished, the investor will be able to transfer the tokens from his or her personal profile to any ERC20 compatible Ethereum wallet.
+
+
+
+Page 12
+
+
+
+7. How are you going to pay out sales commission? Since the launch of the lottery, 10% of the funds raised in ticket sales will be transferred to the smart contract responsible for the distribution of sales commission. The first distribution of collected sales commission among token holders will take place after the ICO closes. Commission will be paid in ETH to all token holders with 2 days after tokens distribution.
+
+Afterwards, commission will be paid out after each lottery drawing.
+
+
+
+8. When will Fire Lotto tokens be listed on cryptocurrency exchanges? Our tokens will be listed within one month of the end of the ICO period.
+
+
+
+9. How much money can I invest during the private and open round?
+
+The amount of money is not limited. Tokens will be sold at a price of 0.35 USD per token (on private round) and 0.38 USD per token (on public round). Funds will be converted to ETH by the lottery organizers at a current exchange rate between ETH and the currency that the participant uses for making payments.
+
+
+
+10. What happens if all tokens are not sold out?
+
+We will freeze the unsold amount for one year. Afterwards, they will be available for investors to buy.
+
+
+
+Table 3. Lotteries in Comparison (November 2017)
+
+
+
+FireLotto
+
+
+
+SmartBillion TrueFlip
+
+
+
+Initial jackpot
+
+The percentage of funds allocated to the jackpot Reserve fund
+
+The number of lotteries Userfriendliness
+
+
+
+Minimum USD 1,150,000 70%
+
+Endowment fund 4+
+
+An intuitive interface,
+
+
+
+USD 773,000 95%
+
+No 1 A difficult interface,
+
+
+
+USD 518,000 60%
+
+No 2 A difficult interface,
+
+
+
+Powerball USD 528,000,000 50%
+
+No 1 Difficult game rules
+
+
+
+Page 13
+
+
+
+FireLotto
+
+
+
+SmartBillion TrueFlip
+
+
+
+Powerball
+
+
+
+The option of adding new lotteries Winning odds Platform
+
+Ticket price
+
+
+
+one-click buying +
+
+1:8,150,000 Fully decentralized USD 2.00
+
+
+
+Correlation between the jackpot size and the ticket price Payout speed
+
+
+
+None Instant
+
+
+
+Payout commission Influence of the RNG Tax on winnings
+
+
+
+Paid by the lottery No
+
+No
+
+
+
+users need to users need to
+
+
+
+be more skilled be more skilled
+
+
+
+-
+
+
+
+-
+
+
+
+-
+
+
+
+1:16,777,216 Fully decentralized Up to USD 300.00 Direct correlation
+
+
+
+1:49,578,984 Centralized
+
+Starts from USD 2.00 None
+
+
+
+1:292,201,338 Centralized
+
+USD 2.00
+
+None
+
+
+
+Instant
+
+Paid by the player High probability No
+
+
+
+Within a day depending on the administrator Paid by the player No
+
+
+
+From several days to 25 years
+
+Through a bank transfer Present
+
+
+
+No
+
+
+
+Up to 60%
+
+
+
+Sales commission amount State regulation Storage of funds Token payout
+
+
+
+1015% of funds raised
+
+Not regulated
+
+Smart contract After the ICO
+
+
+
+Anonymity 100%
+
+
+
+Matching numbers for winning the jackpot
+
+
+
+4 to 6 out of 45
+
+
+
+Less than 1% of the funds raised Not regulated
+
+
+
+At the organizer's discretion Is applicable
+
+
+
+Smart contract
+
+After purchasing 100%
+
+6 out of 59 plus should be in order
+
+
+
+Platform account After the ICO
+
+Not guaranteed 8 out of 49
+
+
+
+Not applicable
+
+State monopoly Bank account Not applicable No 6 out of 69
+
+
+
+Page 14
+
+
+
+The number of tickets bought per person
+
+
+
+FireLotto
+
+Almost unlimited
+
+
+
+SmartBillion 1
+
+
+
+TrueFlip 1
+
+
+
+Powerball Unlimited
+
+
+
+12. How much will your tokens cost in the future?
+
+Token prices are influenced by many different factors, including political and economic ones. We can compare our product with TrueFlip, an online lottery that is already operating. If you look at the diagram below, you will see that the average price of the TFL coin (True Flip lottery) is about USD 1.00 (USD 1.05 as of October 20, 2017), (USD 3.29 as of January 07, 2018).
+
+
+
+Page 15
+
+
+
+We believe that the price of the Lotto token will exceed USD 1.00.
+
+13. What will your marketing campaign include apart from the bounty program? Will you offer any forms of collaboration?
+
+There are several things that we will do to promote Fire Lotto.
+
+13.1. A referral campaign. The code of the interface accessible to users is open source and open access. Anyone can place a link to Fire Lotto on their webpage or integrate the lottery interface into their website. In this case, up to 15% of the funds raised in ticket sales will be automatically transferred to the referral partner's Ethereum wallet. We have already made settlements with a number of large gambling companies and payment providers, and work on integrating our platform into their resources is underway. As a result, our referral partners will be able to increase the number of entertainment products offered to their customers without creating new software and to gain good income due to the growth of Ethereum. As for the Fire Lotto platform itself, the benefits that it will enjoy from this collaboration are obvious. The structure of expenditure on advertising will be fully transparent. The target audience will be attracted by the marketing specialists working for the referral partner. There will be no need to employ a lot of staff. The advertising budget will be managed in an effective way.
+
+Page 16
+
+
+
+13.2. An email marketing campaign which will cover more than 10 million target customers worldwide.
+
+13.3. The advertising campaign for the Fire Lotto ICO will include the promotion of the lottery itself.
+
+13.4. The lottery platform will be advertised at international gambling exhibitions. The ICE Gaming Show and the London Affiliate Conference, which will be held in London in February 2018, are the first exhibitions that our team will attend.
+
+13.5. Some of the funds raised in ticket sales will be spent on placing banners and articles on various websites.
+
+14. How can I be sure that the information about winnings and the number of tickets sold is correct? Is there any tool that can be used to check this information?
+
+There is a Statistics tab in the lottery menu. This tab contains information about the number of tickets sold, numbers drawn, jackpots and winners' wallets (showing how many numbers were matched and what the payouts were). This information can be verified through Etherscan and the program code shared on GitHub.
+
+15. Where will the jackpot be stored and how will funds be transferred there?
+
+The jackpot for each lottery will be stored in a corresponding smart contract. Funds have already been transferred to the smart contracts, and anybody can win a jackpot now. After we carry out all the necessary tests, we will transfer more funds to the smart contracts. Funds can be transferred there at any time. Also, each lottery ticket sold will make our jackpots grow. The lottery is already in the operating mode.
+
+16. Have you had / are you going to have your smart contract checked by an independent auditor?
+
+No, we have not had it audited as there is no need for it. Subscribers of our Russian and English Telegram groups, who know a lot about the technology, have checked our code many times and confirmed that there are not any flaws. Anybody can go and check it themselves. If our users find any flaws in the future, they will let us know. Platform performance is monitored by the Internet community itself, which is a more transparent way than having to trust an auditor. There are too many questions that can be raised if an auditor is invited.Where was this auditor certified? How do we
+
+Page 17
+
+
+
+know that this person is impartial? How often does the auditor recheck the code? Why was this auditing company chosen? Moreover, the fact that we are planning to obtain gaming licenses means that our software will be certified.
+
+17. If your ICO is successful, will you expand the platform (for example, adding new lotteries)?
+
+Yes, we are planning to launch Bingo 37 and Keno, two very popular lottery types after the ICO is completed. If any other new lotteries appear on the market and start gaining in popularity, we can easily add them to the platform. This is what makes our product unique.
+
+18. Do you have different development scenarios depending on the amount of funds raised?
+
+Funds raised in ticket sales will be allocated to the main and reserve prize pools. The bigger the prize pool, the more interesting it is to play the lottery. We aim to allocate at least 30% of the funds raised to the prize pools.
+
+- 20% of the funds will be spent on software development and maintenance.
+
+- 15% of the funds will be spent on legalizing the product and obtaining licenses and permits (for example, Isle of Man, Gibraltar, Curaao gaming licenses) in order to be able to operate globally. We also need to obtain several licenses enabling us to conduct currency exchange operations (fiat to crypto) and give our users the opportunity to make deposits to and withdraw funds from their cryplocurrency wallets as well as play the lottery using fiat money.
+
+- 5% of the funds will be spent on having our tokens listed on no fewer than three different exchanges.
+
+- 30% of the funds will be spent on marketing and promoting the ICO and the product itself.
+
+19. Do you have a soft cap / hard cap?
+
+Yes. Soft cap: USD 2,000,000 (7,000,000 FLOT tokens). Hard cap: USD 15,000,000. In case if soft cap will not be reached all investment payments will be returned to investors wallets.
+
+Page 18
+
+
+
+20. When the first jackpot is paid out, there will be no money left in the prize pool. How are you going to make payments after that? Will you have to suspend the operation of the platform?
+
+Each lottery has its own jackpot. The chances of paying all of them out at the same time are extremely small. The probability of winning a 6/45 lottery jackpot is 1 to 8.15 million. If somebody wins a jackpot, the new one will be formed using funds from the reserve prize pool. The system is arranged in such a way that funds collected in each drawing are used only in the next drawing. This means that the system replenishes itself, has a reserve source of funding and will hardly ever have to face lack of funds. Also, as it has already been said, each jackpot has its own cryptocurrency wallet which our team can replenish with extra funds if needed.
+
+21. What do you think are the main risks to the project?
+
+21.1. A situation in which the global community stops using cryptocurrencies or they become banned and criminalized in most developed countries.
+
+21.2. The use of Ethereum, the main means of payment at the moment, as an investment tool similar to the way Bitcoin is now being used. The cost of transactions will become very high and people will prefer to keep their ETH on cold wallets, hoping the currency will start growing in the future. If this happens, we will have to switch to an alternative cryptocurrency with a commensurate level of security, accessibility, and speed of operation. However, it will take some time.
+
+21.3. We believe that the blockchain technology can solve current problems in the lottery industry like no other tool. Its implementation will bring the lottery industry to a new level of development, making it as transparent and accessible as possible.
+
+22. Will you use KYC in the sales process?
+
+Yes. In the near future, we plan to launch a tool that will make it possible to accept non-cash payments using traditional currency. This way of purchasing FLOT tokens requires that we use KYC.
+
+23. How do you plan to minimize regulatory risks, especially those related to the Howey Test?
+
+The main difference between the security token and the utility token is that the first one enables its holder to get profit without doing anything. A person can simply buy a token and get dividends. Having analyzed the current international legislation, we
+
+Page 19
+
+
+
+adopted a set of measures aimed at making it clear that our tokens should not be classified as security tokens:
+
+- Holders of our tokens will get commissions from sales rather than dividends. This system will be in essence the same as the system of referral payments discussed earlier.
+
+- In order to receive commissions, each token holder has to play the lottery. In other words, each token holder will have to buy a certain number of lottery tickets every month in order to be able to receive commissions from sales. The number of tickets and the frequency of purchases are being calculated at the moment and will be announced later. Given that one lottery ticket costs only 2 U.S. dollars, token holders will not have to spend a lot of money on buying lottery tickets, and at the same time this measure will help us solve legal issues and stimulate the lottery.
+
+-Together with lawyers and advisors from New York, we are discussing the option of inviting a professional investor to our team. This will enable us to attract funds from U.S. citizens to our ICO in accordance with the rules and requirements established by the SEC and U.S. government.
+
+RNG ALGORITHM
+
+Step 1: During a drawing, the current publicly available hash code of a bitcoin block is taken from blockchain.info. For example:
+
+000000000000000000229a9deacb0ed81b54afb92581e9b5b2e25dbd3a8069a2
+
+Step 2: An array of all the numbers that can be drawn is built. For example, an array for the 6/45 lottery will consist of 45 elements from 1 to 45 inclusive.
+
+Step 3: The last n bytes are taken from the bitcoin hash, where n is the number of balls drawn. For example, n = 6 for the 6/45 lottery.
+
+Step 4: Each byte received goes through the modulo operation and is divided by the remaining number of elements in the array of all available numbers. The remainder serves as an index of the number that has been drawn from the array of all available numbers. The number that has been drawn is transferred to a separate array of numbers drawn and is deleted from the array of all available numbers.
+
+Step 5: This iteration is repeated n times in order to get all n numbers drawn.
+
+Page 20
+
+
+
+An optimized code for a smart contract is shown below.
+
+function getWinNumbers(string randomStr, uint numberCount, uint numberCountMax) constant public returns (bytes){
+
+bytes memory random = bytes(randomStr); bytes memory allNumbers = new bytes(numbersCountMax); bytes memory winNumbers = new bytes(numbersCount); for (uint i = 0; i < numbersCountMax; i++) {
+
+allNumbers[i] = byte(i + 1); } for (i = 0; i < numbersCount; i++) {
+
+uint n = numbersCountMax - i; uint r = uint(random[random.length - 1 - i]) % n; winNumbers[i] = allNumbers[r]; allNumbers[r] = allNumbers[n - 1]; } return winNumbers; }
+
+
+
+LEGAL ASPECTS
+
+
+
+Page 21
+
+
+
+In purposes of raising trust in our lottery, increasing a number of players and a possibility to raise fiat funds we had several successful consultations with the Isle of Man Gambling Supervision Commission. As a result, we received an affirmative statement about a possibility of getting the Online Gambling Regulation Act license for creating and holding internet gambling, including crypto lotteries with the right of acceptance of crypto funds and their free converting to traditional worlds currencies. The fact of this license opens the following possibilities:
+
+ legal transparency of our business;  fiat funds acceptance from investors to our company account;  usage of the traditional payment services to sell the Fire Lotto lottery tickets
+
+(VISA, MasterCard, Qiwi, PayPal, WebMoney and etc.)  increasing numbers of Fire Lotto players in the world. Period of licensing is approximately 4-6 months.
+
+Page 22
+
+
+
+TEAM
+
+Page 23
+
+
+
+REFERENCES
+
+1. Global Gambling Report 11th edition, 2015, http://www.gbgc.com/publications/global-gambling-report/.
+
+2. Union Gaming Research, "Global Gaming Technology," 2015, http://www.uniongaming.com/wp-content/uploads/2012/07/GamingTech.pdf.
+
+Page 24
+
+
+
+

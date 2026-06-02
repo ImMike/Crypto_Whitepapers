@@ -1,0 +1,785 @@
+ALFATOKEN
+
+WHITE PAPER
+
+DECEMBER 2017
+
+Service to create smart contracts without knowledge of coding for the new way of interactions between individuals, organizations, and smart things.
+
+Version 2.0.3
+
+
+
+TABLE OF CONTENTS
+
+Contents
+
+Abstract __________________________________________________________________________________________ 1 Introduction _____________________________________________________________________________________ 2 Market Snapshot ________________________________________________________________________________ 4 Platform Specification___________________________________________________________________________ 6 Roadmap _________________________________________________________________________________________ 9 Business Model ________________________________________________________________________________ 11 Crowdsale ______________________________________________________________________________________ 12 Conclusion _____________________________________________________________________________________ 27 Appendix A_____________________________________________________________________________________ 28 Appendix B_____________________________________________________________________________________ 29 References _____________________________________________________________________________________ 31
+
+
+
+ALFATOKEN
+
+Abstract
+
+This document describes the AlfaToken platform  a service to issue tokens and create smart contract on different blockchain networks without coding skills for the new way of interactions between individuals, organizations, and things. There are 14 different use cases for our platform including ICOs, real estate rentals, p2p lending, p2p insurance, smart things sharing, hiring, e-commerce, auctions, trade finance, supply chain management, delivery by drones, smart homes, manufacturing automation, and business process management.
+
+AlfaToken was founded in 2017 by CEO Denis Farnosov. Today, it is composed of a team of thirteen people from very diverse backgrounds that will ensure a strong success in its endeavor and development.
+
+Our value proposition is to make Smart Contracts as well as ICO Crowfunding accessible to Entrepreneurs who are not familiar with coding, or that cannot afford a Software Engineer in the early stage of their development.
+
+At AlfaToken, we understand the struggle Entrepreneurs can face when trying to develop a company and transforming an idea into a profitable business. This is why we offer a complete solution to our clients that will allow them to create ICOs without having to advance costs before their ICO is complete.
+
+Thank you for reading our whitepaper! We hope that you will see the present and future potential of this project just as we do, and will choose to join us by participating in this great venture that will help the blockchain technology to evolve into a mainstream tool for today and tomorrow's businesses!
+
+Please do not hesitate to reach out to us through our website if you have any questions.
+
+
+
+Page 1
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+Introduction
+
+A smart contract is a computer protocol intended to facilitate, verify, or enforce the negotiation or performance of a contract. Smart contracts allow to perform credible transactions without third parties. These transactions are trackable and irreversible. [1] Smart contracts were first proposed by Nick Szabo in 1994. [2]
+
+Proponents of smart contracts claim that many kinds of contractual clauses may be made partially or fully self-executing, self-enforcing, or both. The aim with smart contracts is to provide security that is superior to traditional contract law and to reduce other transaction costs associated with contracting.
+
+The phrase "smart contracts" was coined by Nick Szabo in 1996, and reworked over several years. Szabo's first publication, "Smart Contracts: Building Blocks for Digital Free Markets" was published in Extropy 16, [3] and then later reworked as "Formalizing and Securing Relationships on Public Networks." [4] These documents described how it would be possible to establish contract law and related business practices through the design of electronic commerce protocols, between strangers on the Internet. In 1996 Szabo described smart contracts as follows:
+
+New institutions, and new ways to formalize the relationships that make up these institutions, are now made possible by the digital revolution. I call these new contracts "smart", because they are far more functional than their inanimate paper-based ancestors. No use of artificial intelligence is implied. A smart contract is a set of promises, specified in digital form, including protocols within which the parties perform on these promises. [2]
+
+Szabo, inspired by researchers like David Chaum, also had a broader expectation that specification through clear logic, and verification or enforcement through cryptographic protocols and other digital security mechanisms, might constitute a sharp improvement over traditional contract law, even for some traditional kinds of contractual clauses (such as automobile security interests that provide for repossession) that could be brought under the dominion of computer protocols. [4]
+
+With the present implementations, based on blockchains, [5] "smart contract" is mostly used more specifically in the sense of general purpose computation that takes place on a blockchain or distributed ledger. In this interpretation, used by AlfaToken, a smart
+
+
+
+Page 2
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+contract is not necessarily related to the classical concept of a contract, but can be any kind of computer program. With this computer program AlfaToken intends to automate fourteen kinds of relations between individuals, organizations, and things.
+
+
+
+Page 3
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+Market Snapshot
+
+OVERVIEW
+
+Crypto asset investment is a rapidly growing market. In 2017 the overall market capitalization of crypto assets grew by over 800% to $130B [6]. The number of new ICOs rose to about 70 per month and continues to grow. ICO investment into early-stage blockchain projects has now totaled more than venture capital, the primary funding source for the industry in every year before that [7]. The following diagram represents the number of Initial Coin Offerings with our forecast till the end of this year:
+
+
+
+*forecast based on data of coinmarketcap.com[8]
+
+Volume of other key target markets for the AlfaToken platform is as follows:
+
+ Real estate rentals  $2 800 000 000 [9];  P2P lending market (including mortgages)  $180 000 000 000 [10];  Insurance  $4 500 000 000 000 [11].
+
+
+
+Page 4
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+EXISTING SOLUTIONS
+
+Few startups are making attempts to build a similar solution, but there is still no service on the market that is allowing to create smart contracts without coding skills. Ethereum that has developed smart contracts concept [12] offers on its websites samples of a code for smart contracts but in order to implement it startups must have software engineers with knowledge in smart contract development:
+
+In the following section we will describe the AlfaToken platform features.
+
+
+
+Page 5
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+Platform Specification
+
+IMPLEMENTATION CONSIDERATIONS
+
+The main value proposition of AlfaToken is to provide a simple and straightforward platform for issuing tokens and creating smart contracts for different use cases without coding skills. To accomplish this, our team will build a web-based user interface and a set of audited smart contracts to securely create and deploy the smart contracts of our users' choosing. The AlfaToken platform will consist from the following services:
+
+ Service to issue tokens and create smart contracts for a Pre ICO or ICO without software engineering skills;
+
+ Service to automate the distribution of tokens to investors when the investments are collected in different cryptocurrencies;
+
+ Service helping to run and manage bounty programs;  Service to create smart contracts for p2p real estate rentals;  Service to create smart contracts for p2p lending (including mortgages);  Service to create smart contracts for p2p insurance;  Service to create smart contracts for sharing autonomous cars.
+
+The long-term goal of AlfaToken is to provide an easy-to-use service to create smart contracts for other kind of business where smart contracts can be imlemented.
+
+The main concern regarding the smart contract ecosystem is security. In the wake of many high-profile programming errors that lead to malicious theft of funds, concern about security is growing every day. AlfaToken stays on top of these issues and creates templates that mitigate the possibility of these problems.
+
+In the current implementation, our Ethereum smart contracts are built in Solidity using the most recent version of the compiler available. Solidity provides the most secure and robust interface for programming on the Ethereum network, unlike Serpent8.
+
+USE CASES
+
+Applications of smart contracts are various. To outline how AlfaToken smart contracts are able to address Initial Coin Offerings challenges, we have compiled the following industry study on how to issue a token and create a crowdsale contract.
+
+
+
+Page 6
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+ISSUE A TOKEN
+
+To issue tokens on Ethereum blockchain users are just need to fill in a form on our website with the following information:
+
+ Token Name;  Token Symbol;  Total Tokens Number;  Token Decemicals;  Re-issuance;  Wallet Address.
+
+The source code to create a new token is provided in Appendix A.
+
+CREATE A CROWDSALE SMART CONTRACT
+
+In Ethereum blockchain there is a possibility to create a smart contract that is responsible for tokens distribution among investors. On AlfaToken platform users are filling in the following information:
+
+ Start Date;  End Date;  Number of Tokens for realization during campaign;  Price for 1 token;  Minimum possible purchase;  When tokens should be allocated to investors;  Minimum amount for considering the campaign as successful, if any;  Should fund be returned to investors in case of unsuccessful campaign;  Bonus system, if any;  Escrow conditions, if any;  Wallet Address to collect investments.
+
+The further development of our platform is described in the next Section "Road Map".
+
+
+
+Page 7
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+"The long term goal of AlfaToken is to provide an easy-to-use service to create smart contracts for the new way of interactions between individuals, organizations, and things"
+
+
+
+Page 8
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+Roadmap
+
+Following is the AlfaToken roadmap: 1. Service to issue tokens and create smart contracts for ICO on Ethereum blockchain without software engineering skills  Q4'2017 Any organization will be able to issue its own tokens, create a smart contract for Pre Initial Coin Offering or Initial Coin Offering and deploy it on Ethereum blockchain. It will be as simple as filling out a form on the platform, so they will not need any additional developers for these purposes any more. 2. AlfaToken Pre- Initial Coin Offering  Q4'2017 AlfaToken Pre- Initial Coin Offering which will take place in September 2017 is described in the following Sections of this document. 3. Initial Coin Offering  Q1'2018 Please find more details on the AlfaToken ICO in Appendix B further in this document. 4. Listing of AlfaToken (ALFA) on crypto exchanges  Q2'2018 We will intent to list our ALFA token on a few popular crypto exchanges after the Initial Coin Offering. 5. Service to automate the distribution of tokens to investors in case the investments are collected in different cryptocurrencies  Q3'2018 We intent to develop a service for an automated allocation of tokens among investors if investments are made in different cryptocurrencies: Bitcoin, Ethereum, and others. 6. Service to help run and manage bounty programs  Q4'2018 Managing a bounty program in terms of distribution of tokens to participants is also a challenge for startups because it requires a lot of manual work. 7. Service to create smart contracts for p2p real estate rentals  Q2'2019 Service will allow to rent a room or an apartment without middlemen.
+
+
+
+Page 9
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+8. Service to create smart contracts for p2p lending (including mortgages)  Q3'2019 There will be different templates for p2p lending; we plan to start from mortgages. 9. Service to create smart contracts for p2p insurance  Q4'2019 Service will allow to insure each other collectively. 10. Service to create smart contracts for sharing autonomous cars  Q1'2020 Autonomous cars can be rented through smart contracts directly.
+
+
+
+Page 10
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+Business Model
+
+Our base value proposition is to create a simple turnkey solution for consumers that will allow to facilitate the creation of ICOs as well as the creation of Smart Contracts for other use cases.
+
+Our plan is to provide our customers and clients with a simple form to fill out, that will simplify the process for creating smart contracts.
+
+REVENUE MODEL
+
+We will implement flat rates to create a smart contract on our platform for different use cases. In the same time for several use cases a fee in percent from a deal can be implemented as well. Contracts will require ALFA, the platform's native validation token in order to be executed. Because the price of ALFA may fluctuate, we will peg contracts to a fixed amount of USD, and adjust the amount of ALFA required to execute the smart contract based on this fixed price. Although the current beta application works through filling out web forms, we have plans to implement an API, a drag and drop interface for users, as well as creation of smart contracts through natural language processing. The public API will initially be aimed at enterprise customers. The API will allow businesses to keep their existing contracts and processes in place but transform them into smart contracts, enabling these processes to be backed by blockchain technology.
+
+
+
+Page 11
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+Crowdsale
+
+TERMS AND CONDITIONS
+
+PLEASE READ THE FOLLOWING CROWDSALE TERMS AND CONDITIONS CAREFULLY. NOTE THAT SECTION "DISPUTE RESOLUTION. ARBITRATION" CONTAINS A BINDING ARBITRATION CLAUSE AND CLASS ACTION WAIVER, WHICH AFFECT YOUR LEGAL RIGHTS. IF YOU DO NOT AGREE TO THESE CROWDSALE TERMS AND CONDITIONS, DO NOT PURCHASE TOKENS FROM ALFATOKEN LTD.
+
+Your purchase of AlfaToken tokens (each, a "Token") during the Crowdsale (as defined below) is subject to these terms and conditions of sale (the "Terms"). Each of you and AlfaToken is a "Party" and, together, the "Parties" to these Terms.
+
+By purchasing Tokens from AlfaToken during the Crowdsale, you will be bound by these Terms and any terms incorporated by reference. If you have any questions regarding these Terms, please contact AlfaToken team at info@alfatoken.com. You and AlfaToken agree as follows.
+
+ALFA TOKENS
+
+ALFA Tokens are the key to using the AlfaToken platform, they manage the contract creation, security testing, network fees, monitoring, and management of the entire smart contract process. ALFA is a transferable ERC-20 compliant digital token deployed on the Ethereum network, and is the in-app currency that powers the AlfaToken platform. The ALFA token serves as a method of validating the user's interactions with AlfaToken and will allow users to buy, execute, or barter for other smart contracts in the platform. In the future, ALFA will serve as access for smart contracts on multiple blockchains, integrating these disparate blockchains into one unified view within the AlfaToken platform. The total supply will be 3.5 million ALFA tokens and will never be increased beyond this cap. Tokens that are used on the platform will go back into the platform supply. We will provide a service for users to purchase ALFA from this supply.
+
+AlfaToken intends to create a total of 3.5 million Tokens. 70% of those, 2,450,000, will be made available for sale in the Token Sale, as defined below (the "Sale Tokens"). Further information is contained in Appendix B of this document. AlfaToken hold the right to
+
+
+
+Page 12
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+burn 1% (or bigger amount) of all its profit in tokens each day or to buy them from exchanges.
+
+START AND DURATION OF ICO
+
+The ICO will begin at 11:00 am GMT (UTC +0) on January 22, 2018 and end at 11:00 am GMT (UTC +0) on April 22, 20187 (the "ICO End Date"), or when all of the Sale Tokens have been sold, whichever is earlier.
+
+ELIGIBILITY
+
+In order to be eligible to participate in the Crowdsale you must comply with all the terms and conditions set forth in these Terms and also have an Ethereum wallet that supports the ERC-20 token standard in order to receive any Tokens purchased from AlfaToken (the "Token Receipt Address"). AlfaToken reserves the right to prescribe additional guidance regarding specific wallet requirements. In the Crowdsale all major cryptocurrencies as well as wire transfers will be the accepted payment currencies. The list of accepted cryptocurrencies is available on our website.
+
+SALE OF TOKENS
+
+Price. Payment Currencies. Exchange Rates. The price per Token in the ICO is 0,002 ETH ("Price Per Token"). Your purchase is not guaranteed until AlfaToken receives the full amount of the Purchase Price. Reference Appendix B in this document.
+
+Delivery of Tokens. AlfaToken intends to deliver the quantity of Tokens you purchase in the ICO within one day after the purchase. If by chance there is some delay AlfaToken reserves the right to deliver the tokens later. For the avoidance of doubt, any such extension will not affect the obligation of AlfaToken and you to make and take delivery, respectively, of Tokens purchased. AlfaToken may also deliver the tokens sooner at their sole discretion.
+
+
+
+Page 13
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+PURPOSE AND USE OF TOKENS IN THE ECOSYSTEM. POSSIBLE MIGRATION OF TOKENS
+
+The purpose of the Tokens is to fuel the smart contract automation (the "Services") within the ecosystem (the "Ecosystem"). Additional information regarding the Ecosystem, the Services and AlfaToken is summarized in this document.
+
+While AlfaToken is developing certain applications and software for use in the Ecosystem, AlfaToken does not operate or control the Ecosystem. AlfaToken is not responsible or liable for the Ecosystem or any third-party uses of the Ecosystem.
+
+Purchase, ownership, receipt or possession of Tokens carries no rights, express or implied, other than the right to use Tokens as a means to enable usage of and interaction with Services enabled by the Ecosystem, if successfully completed and deployed. In particular, you understand and accept that Tokens do not represent or confer any ownership right or stake, share, security, or equivalent rights, or any right to receive future revenue shares, intellectual property rights or any other form of participation in or relating to the Ecosystem and/or AlfaToken and its corporate affiliates, other than any rights relating to the provision and receipt of Services in the Ecosystem, subject to limitations and conditions in these Terms. The Tokens are not intended to be a digital currency, security, commodity or any kind of financial instrument.
+
+AlfaToken reserves the right to migrate the ERC-20 Tokens to another protocol in the future should AlfaToken determine, in its reasonable discretion, that doing so is necessary or useful to the operation of the Ecosystem.
+
+SCOPE
+
+Unless otherwise stated herein, these Terms only govern your purchase of Tokens from AlfaToken during the Crowdsale.
+
+Any use of Tokens in connection with providing or receiving Services in the Ecosystem may be governed by other applicable terms and conditions and policies.
+
+
+
+Page 14
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+CANCELLATION. REFUSAL OF PURCHASE REQUESTS
+
+All Token purchases from AlfaToken are final, and there are no refunds or cancellations, except as may be required by applicable law or regulation. AlfaToken reserves the right to refuse or cancel Token purchase requests at any time in its sole discretion.
+
+TOKEN ALLOCATION
+
+Important information about AlfaToken's creation and intended use of the Tokens is provided in Appendix B to these Terms. By purchasing Tokens, you acknowledge that you have read and understood Appendix B to these Terms.
+
+ACKNOWLEDGMENT AND ASSUMPTION OF RISKS
+
+You acknowledge and agree that there are risks associated with purchasing Tokens, owning Tokens and using Tokens for the provision or receipt of Services in the Ecosystem, as disclosed and explained in Section "Certain risk relating to purchase, sale and use of tokens" of these Terms. BY PURCHASING TOKENS, PURCHASER EXPRESSLY ACKNOWLEDGES AND ASSUMES THESE RISKS.
+
+SECURITY
+
+You are responsible for implementing reasonable measures for securing the wallet, vault or other storage mechanism you use to receive and hold Tokens purchased from AlfaToken, including any requisite private key(s) or other credentials necessary to access such storage mechanism(s). If your private key(s) or other access credentials are lost, you may lose access to your Tokens. AlfaToken is not responsible for any losses, costs or expenses relating to lost access credentials.
+
+PERSONAL INFORMATION
+
+AlfaToken may determine, in its sole discretion, that it is necessary to obtain certain information about you in order to comply with applicable laws or regulations in connection with selling Tokens to you. You agree to provide AlfaToken such information promptly upon request. You acknowledge that AlfaToken may refuse to sell Tokens to you until you provide such requested information and AlfaToken has determined that it is permissible to sell you Tokens under applicable laws or regulations.
+
+
+
+Page 15
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+TAXES
+
+Any amounts that you pay for Tokens are exclusive of all applicable taxes. You are responsible for determining what, if any, taxes apply to your purchase of Tokens, including, for example, sales, use, value added, and similar taxes. It is also your responsibility to withhold, collect, report and remit the correct taxes to the appropriate tax authorities. AlfaToken is not responsible for withholding, collecting, reporting, or remitting any sales, use, value added, or similar tax arising from your purchase of Tokens.
+
+PURCHASER REPRESENTATIONS AND WARRANTIES
+
+By sending ETH to purchase Tokens from AlfaToken, you represent and warrant that:
+
+ you have read and understood these Terms (including all Appendixes);  YOU ACKNOWLEDGE AND AGREE THAT THERE ARE RISKS ASSOCIATED WITH
+
+PURCHASING TOKENS, OWNING TOKENS AND USING TOKENS FOR THE PROVISION OR RECEIPT OF SERVICES IN THE ECOSYSTEM INCLUDING (BUT NOT NECESSARILY LIMITED TO) THE RISKS DESCRIBED IN SECTION "CERTAIN RISK RELATING TO PURCHASE, SALE AND USE OF TOKENS" OF THESE TERMS;  you have a sufficient understanding of technical and business matters (including those that relate to the Services and Ecosystem), cryptographic tokens, token storage mechanisms (such as token wallets), and blockchain technology to understand these Terms and to appreciate the risks and implications of purchasing the Tokens;  you understand the restrictions and risks associated with the creation of Tokens as set forth herein, and acknowledges and assumes all such risks;  you have obtained sufficient information about the Tokens, the Services and the Ecosystem to make an informed decision to purchase the Tokens;  you understand that the Tokens confer only the right to provide and receive Services in the Ecosystem (and potentially contribute to the technical development of the Ecosystem), and confer no other rights of any form with respect to the Ecosystem or AlfaToken, including, but not limited to, any ownership, distribution, redemption, liquidation, proprietary (including all forms of intellectual property), or other financial or legal rights;  you are purchasing Tokens solely for the purpose of receiving Services, participating in the Ecosystem, and supporting the development, testing, deployment and
+
+
+
+Page 16
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+operation of the Ecosystem, being aware of the commercial risks associated with AlfaToken and the Ecosystem;  your purchase of Tokens complies with applicable laws and regulations in your jurisdiction, including, but not limited to: (i) legal capacity and any other threshold requirements in your jurisdiction for the purchase of the Tokens and entering into contracts with AlfaToken; (ii) any foreign exchange or regulatory restrictions applicable to such purchase; and (iii) any governmental or other consents that may need to be obtained;  you will comply with any applicable tax obligations in your jurisdiction arising from your purchase of Tokens;  if you are purchasing Tokens on behalf of any entity, you are authorized to accept these Terms on such entity's behalf and that such entity will be responsible for breach of these Terms by you or any other employee or agent of such entity (references to "you" in these Terms refer to you and such entity, jointly);  you have obtained independent legal advice with respect to same before accepting these Terms, and, in accepting these Terms, you further represent and warrant to AlfaToken that you have been so advised to obtain independent legal advice, and that prior to accepting these Terms you have obtained independent legal advice, or have, in your discretion, knowingly and willingly elected not to do so;  you are not a citizen or resident of a geographic area in which access to or use of the Services or the acceptance of delivery of the Tokens is prohibited by applicable law, decree, regulation, treaty or administrative act, and if your country of residence or other circumstances change such that the above representations are no longer accurate, you will immediately cease using the Services;  if you are registering to use the Services on behalf of a legal entity, you further represent and warrant that: (i) such legal entity is duly organized and validly existing under the applicable laws of the jurisdiction of its organization; and (ii) you are duly authorized by such legal entity to act on its behalf; and  none of the funds being used to purchase the Tokens are to the your knowledge proceeds obtained or derived directly or indirectly as a result of illegal activities, and the funds being used to purchase the Tokens which will be advanced by you under these Terms will not represent proceeds of crime and/or money laundering and you acknowledge that AlfaToken may in the future be required by law to disclose your name and other information relating to these Terms, on a confidential basis, and to
+
+
+
+Page 17
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+the best of the your knowledge, none of the funds to be provided by you to AlfaToken are being tendered on behalf of a person or entity who has not been identified to you, and you will promptly notify AlfaToken if you discover that any of such representations cease to be true, and will promptly provide AlfaToken with all necessary information in connection therewith.
+
+INDEMNIFICATION
+
+To the fullest extent permitted by applicable law, you will indemnify, defend and hold harmless AlfaToken and its respective past, present and future employees, officers, directors, contractors, consultants, equity holders, suppliers, vendors, service providers, parent companies, subsidiaries, affiliates, agents, representatives, predecessors, successors and assigns (the "AlfaToken Parties") from and against all claims, demands, actions, damages, losses, costs and expenses (including attorneys' fees) that arise from or relate to: (i) your purchase or use of Tokens; (ii) your responsibilities or obligations under these Terms; (iii) your violation of these Terms; or (iv) your violation of any rights of any other person or entity.
+
+AlfaToken reserves the right to exercise sole control over the defense, at your expense, of any claim subject to indemnification under this Section. This indemnity is in addition to, and not instead of, any other indemnities set forth in a written agreement between you and AlfaToken.
+
+DISCLAIMERS
+
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW AND EXCEPT AS OTHERWISE SPECIFIED IN A WRITING BY ALFATOKEN: (i) THE TOKENS ARE SOLD ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, AND ALFATOKEN EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES AS TO THE TOKENS, INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT; (ii) ALFATOKEN DOES NOT REPRESENT OR WARRANT THAT THE TOKENS ARE RELIABLE, CURRENT OR ERROR-FREE, MEET YOUR REQUIREMENTS, OR THAT DEFECTS IN THE TOKENS WILL BE CORRECTED; AND (iii) ALFATOKEN CANNOT AND DOES NOT REPRESENT OR WARRANT THAT THE TOKENS OR THE DELIVERY MECHANISM FOR TOKENS ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+
+
+
+Page 18
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+Some jurisdictions do not allow the exclusion of certain warranties or disclaimer of implied terms in contracts with consumers, so some or all of the exclusions of warranties and disclaimers in this Section may not apply to you.
+
+LIMITATION OF LIABILITY
+
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW: (i) IN NO EVENT WILL ALFATOKEN OR ANY OF ALFATOKEN PARTIES BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES OF ANY KIND (INCLUDING, BUT NOT LIMITED TO, WHERE RELATED TO LOSS OF REVENUE, INCOME OR PROFITS, LOSS OF USE OR DATA, OR DAMAGES FOR BUSINESS INTERRUPTION) ARISING OUT OF OR IN ANY WAY RELATED TO THE SALE OR USE OF THE TOKENS OR OTHERWISE RELATED TO THESE TERMS, REGARDLESS OF THE FORM OF ACTION, WHETHER BASED IN CONTRACT, TORT (INCLUDING, BUT NOT LIMITED TO, SIMPLE NEGLIGENCE, WHETHER ACTIVE, PASSIVE OR IMPUTED), OR ANY OTHER LEGAL OR EQUITABLE THEORY (EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND REGARDLESS OF WHETHER SUCH DAMAGES WERE FORESEEABLE); AND (ii) IN NO EVENT WILL THE AGGREGATE LIABILITY OF ALFATOKEN AND ALFATOKEN PARTIES (JOINTLY), WHETHER IN CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE, WHETHER ACTIVE, PASSIVE OR IMPUTED), OR OTHER THEORY, ARISING OUT OF OR RELATING TO THESE TERMS OR THE USE OF OR INABILITY TO USE THE TOKENS, EXCEED THE AMOUNT YOU PAID TO ALFATOKEN FOR THE TOKENS.
+
+THE LIMITATIONS SET FORTH IN THESE SECTION WILL NOT LIMIT OR EXCLUDE LIABILITY FOR THE GROSS NEGLIGENCE, FRAUD OR INTENTIONAL, WILLFUL OR RECKLESS MISCONDUCT OF ALFATOKEN.
+
+Some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential damages. Accordingly, some of the limitations of this Section may not apply to you.
+
+RELEASE
+
+To the fullest extent permitted by applicable law, you release AlfaToken and the other AlfaToken Parties from responsibility, liability, claims, demands and/or damages (actual
+
+
+
+Page 19
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+and consequential) of every kind and nature, known and unknown (including, but not limited to, claims of negligence), arising out of or related to disputes between users and the acts or omissions of third parties. You expressly waive any rights you may have under any other statute or common law principles that would otherwise limit the coverage of this release to include only those claims which you may know or suspect to exist in your favor at the time of agreeing to this release.
+
+DISPUTE RESOLUTION. ARBITRATION
+
+Arbitration. Except for any disputes, claims, suits, actions, causes of action, demands or proceedings (collectively, "Disputes" ) in which either you or AlfaToken seeks to bring an individual action in small claims court or seeks injunctive or other equitable relief for the alleged unlawful use of intellectual property, including, without limitation, copyrights, trademarks, trade names, logos, trade secrets or patents, all Disputes arising out of or in connection with these Terms, or in respect of any legal relationship associated therewith or derived therefrom, will be referred to and finally resolved by arbitration administered by the Singapore International Commercial Court. The place of arbitration will be Singapore.
+
+No Class Arbitrations, Class Actions or Representative Actions. Any Dispute arising out of or related to these Terms is personal to you and AlfaToken and will be resolved solely through individual arbitration and will not be brought as a class arbitration, class action or any other type of representative proceeding. There will be no class arbitration or arbitration in which an individual attempts to resolve a Dispute as a representative of another individual or group of individuals. Further, a Dispute cannot be brought as a class or other type of representative action, whether within or outside of arbitration, or on behalf of any other individual or group of individuals.
+
+Notice. Informal Dispute Resolution. Each of you and AlfaToken will notify the other party in writing of any arbitrable or small claims Dispute within 30 days of the date it arises, so that each of you and AlfaToken can attempt in good faith to resolve the Dispute informally. Notice to AlfaToken will be sent by e-mail to AlfaToken at info@alfatoken.com. Notice to you will be by email to the email address provided to AlfaToken. Your notice must include: (i) your name, postal address, email address and telephone number; (ii) a description in reasonable detail of the nature or basis of the Dispute; and (iii) the specific relief that you are seeking. If you and AlfaToken cannot agree how to resolve the Dispute
+
+
+
+Page 20
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+within 30 days after the date notice is received by the applicable party, then either you or AlfaToken may, as appropriate and in accordance with this Section, commence an arbitration proceeding or, to the extent specifically provided for in Section (a), file a claim in court.
+
+Governing Law and Venue. These Terms will be governed by and construed and enforced in accordance with the laws of Singapore, without regard to conflict of law rules or principles that would cause the application of the laws of any other jurisdiction. Any Dispute between the Parties arising out or relating to these Terms that is not subject to arbitration will be resolved and governed through the courts of Singapore, with the venue being Singapore.
+
+SEVERABILITY
+
+If any term, clause or provision of these Terms is held unlawful, void or unenforceable, then that term, clause or provision will be severable from these Terms and will not affect the validity or enforceability of any remaining part of that term, clause or provision, or any other term, clause or provision of these Terms.
+
+MISCELLANEOUS
+
+These Terms constitute the entire agreement between you and AlfaToken relating to your purchase of Tokens from AlfaToken. AlfaToken may assign AlfaToken's rights and obligations under these Terms. AlfaToken's failure to exercise or enforce any right or provision of these Terms will not operate as a waiver of such right or provision. AlfaToken will not be liable for any delay or failure to perform any obligation under these Terms where the delay or failure results from any cause beyond AlfaToken's reasonable control. Purchasing Tokens from AlfaToken does not create any form of partnership, joint venture, or any other similar relationship between you and AlfaToken. Except as otherwise provided in herein, these Terms are intended solely for the benefit of you and AlfaToken and are not intended to confer third-party beneficiary rights upon any other person or entity. You agree and acknowledge that all agreements, notices, disclosures, and other communications that AlfaToken provides to you, including these Terms, will be provided in electronic form.
+
+
+
+Page 21
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+CERTAIN RISK RELATING TO PURCHASE, SALE AND USE OF TOKENS
+
+Important Note: As noted elsewhere in these Terms, the Tokens are not being structured or sold as securities or any other form of investment product. Accordingly, none of the information presented in the following Sections is intended to form the basis for any investment decision, and no specific recommendations are intended. AlfaToken expressly disclaims any and all responsibility for any direct or consequential loss or damage of any kind whatsoever arising directly or indirectly from: (i) reliance on any information contained in the following Sections; (ii) any error, omission or inaccuracy in any such information; or (iii) any action resulting from such information.
+
+By purchasing, owning, and using Tokens, you expressly acknowledge and assume the following risks.
+
+RISK OF LOSING ACCESS TO TOKENS DUE TO LOSS OF PRIVATE KEY(S), CUSTODIAL ERROR OR PURCHASER ERROR
+
+A private key, or a combination of private keys, is necessary to control and dispose of Tokens stored in your digital wallet or vault. Accordingly, loss of requisite private key(s) associated with your digital wallet or vault storing Tokens will result in loss of such Tokens. Moreover, any third party that gains access to such private key(s), including by gaining access to login credentials of a hosted wallet service you use, may be able to misappropriate your Tokens. Any errors or malfunctions caused by or otherwise related to the digital wallet or vault you choose to receive and store Tokens in, including your own failure to properly maintain or use such digital wallet or vault, may also result in the loss of your Tokens. Additionally, your failure to follow precisely the procedures set forth in for buying and receiving Tokens.
+
+RISKS ASSOCIATED WITH THE ETHEREUM PROTOCOL
+
+Because Tokens and the platform are based on the Ethereum protocol, any malfunction, breakdown or abandonment of the Ethereum protocol may have a material adverse effect on the platform or Tokens. Moreover, advances in cryptography, or technical advances such as the development of quantum computing, could present risks to the Tokens and the platform, including the utility of the Tokens for obtaining Services, by rendering ineffective the cryptographic consensus mechanism that underpins the Ethereum protocol.
+
+
+
+Page 22
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+RISK OF MINING ATTACKS
+
+As with other decentralized cryptographic tokens based on the Ethereum protocol, the Tokens are susceptible to attacks by miners in the course of validating Token transactions on the Ethereum blockchain, including, but not limited, to double-spend attacks, majority mining power attacks, and selfish-mining attacks. Any successful attacks present a risk to the platform and the Tokens, including, but not limited to, accurate execution and recording of transactions involving Tokens.
+
+RISK OF HACKING AND SECURITY WEAKNESSES
+
+Hackers or other malicious groups or organizations may attempt to interfere with the platform or the Tokens in a variety of ways, including, but not limited to, malware attacks, denial of service attacks, consensus-based attacks, Sybil attacks, smurfing and spoofing. Furthermore, because the platform is based on open-source software, there is a risk that a third party or a member of the AlfaToken team may intentionally or unintentionally introduce weaknesses into the core infrastructure of the platform, which could negatively affect the platform and the Tokens, including the utility of the Tokens for obtaining Services.
+
+RISKS ASSOCIATED WITH MARKETS FOR TOKENS
+
+The Tokens are intended to be used solely within the platform, and AlfaToken will not support or otherwise facilitate any secondary trading or external valuation of Tokens. This restricts the contemplated avenues for using Tokens to the provision or receipt of Services, and could therefore create illiquidity risk with respect to the Tokens you own. Even if secondary trading of Tokens is facilitated by third party exchanges, such exchanges may be relatively new and subject to little or no regulatory oversight, making them more susceptible to fraud or manipulation. Furthermore, to the extent that thirdparties do ascribe an external exchange value to Tokens (e.g., as denominated in a digital or fiat currency), such value may be extremely volatile and diminish to zero.
+
+RISK OF UNINSURED LOSSES
+
+Unlike bank accounts or accounts at some other financial institutions, Tokens are uninsured unless you specifically obtain private insurance to insure them. Thus, in the
+
+
+
+Page 23
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+event of loss or loss of utility value, there is no insurer arranged by AlfaToken, to offer recourse to you.
+
+RISKS ASSOCIATED WITH UNCERTAIN REGULATIONS AND ENFORCEMENT ACTIONS
+
+The regulatory status of the Tokens and distributed ledger technology is unclear or unsettled in many jurisdictions. It is difficult to predict how or whether regulatory agencies may apply existing regulation with respect to such technology and its applications, including the platform and the Tokens. It is likewise difficult to predict how or whether legislatures or regulatory agencies may implement changes to law and regulation affecting distributed ledger technology and its applications, including the platform and the Tokens. Regulatory actions could negatively impact the platform and the Tokens in various ways, including, for purposes of illustration only, through a determination that the purchase, sale and delivery of the Tokens constitutes unlawful activity or that the Tokens are a regulated instrument that require registration or licensing of those instruments or some or all of the parties involved in the purchase, sale and delivery thereof. AlfaToken may cease operations in a jurisdiction in the event that regulatory actions, or changes to law or regulation, make it illegal to operate in such jurisdiction, or commercially undesirable to obtain the necessary regulatory approval(s) to operate in such jurisdiction.
+
+RISKS ARISING FROM TAXATION
+
+The tax characterization of Tokens is uncertain. You must seek your own tax advice in connection with purchasing Tokens, which may result in adverse tax consequences to you, including withholding taxes, income taxes and tax reporting requirements.
+
+RISK OF COMPETING PLATFORMS
+
+It is possible that alternative platforms could be established that utilize the same open source code and protocol underlying the platform and attempt to facilitate services that are materially similar to the Services. The platform may compete with these alternatives, which could negatively impact the platform and Tokens, including the utility of the Tokens for obtaining Services.
+
+
+
+Page 24
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+RISK OF INSUFFICIENT INTEREST IN THE PLATFORM OR DISTRIBUTED APPLICATIONS
+
+It is possible that the platform will not be used by a large number of individuals, companies and other entities or that there will be limited public interest in the creation and development of distributed platforms (such as the platform) more generally. Such a lack of use or interest could negatively impact the development of the platform and therefore the potential utility of the Tokens, including the utility of the Tokens for obtaining Services.
+
+RISKS ASSOCIATED WITH THE DEVELOPMENT AND MAINTENANCE OF THE PLATFORM
+
+The platform is still under development and may undergo significant changes over time. Although AlfaToken intends for the Tokens and platform to function as described in the Whitepaper, and intends to take commercially reasonable steps toward those ends, AlfaToken may have to make changes to the specifications of the Tokens or platform for any number of legitimate reasons. Moreover, AlfaToken has no control over how other participants will use the platform, what products or services will be offered through the platform by third parties, or how third-party products and services will utilize Tokens (if at all). This could create the risk that the Tokens or platform, as further developed and maintained, may not you're your expectations at the time of purchase. Furthermore, despite AlfaToken's good faith efforts to develop and participate in the platform, it is still possible that the platform will experience malfunctions or otherwise fail to be adequately developed or maintained, which may negatively impact the platform and Tokens, and the potential utility of the Tokens, including the utility of the Tokens for obtaining Services.
+
+RISK OF AN UNFAVORABLE FLUCTUATION OF ETHER VALUE
+
+If the value of ETH fluctuates unfavorably during or after the Crowdsale, the AlfaToken team may not be able to fund development, or may not be able to develop or maintain the platform in the manner that it intended. In addition to the usual market forces, there are several potential events which could exacerbate the risk of unfavorable fluctuation in the value of ETH, including another DAO-like attack on the Ethereum network; or significant security incidents or market irregularities at one or more of the major cryptocurrency exchanges.
+
+
+
+Page 25
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+RISK OF DISSOLUTION OF THE ALFATOKEN OR PLATFORM
+
+It is possible that, due to any number of reasons, including, but not limited to, an unfavorable fluctuation in the value of ETH (or other cryptographic and fiat currencies), decrease in the Tokens' utility (including their utility for obtaining Services), the failure of commercial relationships, or intellectual property ownership challenges, the platform may no longer be viable to operate or AlfaToken may dissolve.
+
+RISKS ARISING FROM LACK OF GOVERNANCE RIGHTS
+
+Because Tokens confer no governance rights of any kind with respect to the platform or AlfaToken, all decisions involving AlfaToken's products or services within the platform or AlfaToken itself will be made by AlfaToken at its sole discretion, including, but not limited to, decisions to discontinue its products or services in the platform, to create and sell more Tokens for use in the platform, or to sell or liquidate AlfaToken. These decisions could adversely affect the platform and the utility of any Tokens you own, including their utility for obtaining Services.
+
+UNANTICIPATED RISKS
+
+Cryptographic tokens such as the Tokens are a new and untested technology. In addition to the risks included in Section "Certain risk relating to purchase, sale and use of tokens" of these Terms, there are other risks associated with your purchase, possession and use of the Tokens, including unanticipated risks. Such risks may further materialize as unanticipated variations or combinations of the risks discussed in in Section "Certain risk relating to purchase, sale and use of tokens" of these Terms.
+
+
+
+Page 26
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+Conclusion
+
+The AlfaToken platform is being built to make it easy a creation of tokens and smart contracts on different blockchains with a user friendly interface in order to reach a mass market and spread distributed ledger technology worldwide. We are already testing our beta that will be available for closed public tests in the end of September. And in October 2017 there will be a platform release where anyone can issue tokens and create smart contract for Pre ICO / ICO on Ethereum blockchain. Unlike 99% of ICO campaigns, we don't just create another cryptocurrency in an already crowded market. ALFA tokens are a tool and a method, and not the basis of future profit.
+
+
+
+Page 27
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+Appendix A
+
+EXAMPLE OF SOURCE CODE
+
+Here is the example of source code to create a new token contract MyToken { mapping (address => uint256) public balanceOf; function MyToken( uint256 initialSupply ){ balanceOf[msg.sender] = initialSupply; } function transfer(address _to, uint256 _value) { require(balanceOf[msg.sender] >= _value); require(balanceOf[_to] + _value >= balanceOf[_to]); balanceOf[msg.sender] -= _value; balanceOf[_to] += _value; } }
+
+
+
+Page 28
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+Appendix B
+
+DATES
+
+ICO is starting on January 22, 2018 11:00 am GMT (UTC +0) and ending on April 22, 2018 11:00 am CET (UTC +0) or when sold out whichever comes first.
+
+ALLOCATION OF TOKENS
+
+Only 3.5 million ALFA tokens will ever be created. The ALFA tokens are intended to be allocated as follows:  70% (2,450,000) to be sold by the AlfaToken to ICO purchasers;  20% (700,000) to be held by the AlfaToken team;  5% (175,000) are reserved for advisors;  5% (175,000) are reserved for the bounty program. All unsold tokens from the ICO will be burned.
+
+PRICE
+
+ALFA Price during the ICO will be as follows:  1 ALFA = 0,002 ETH;  1 ETH = 500 ALFA.
+
+BONUSES
+
+During the ICO the following discount on a wholesale basis for larger volume purchasers will be applied:  $5,000+ receives a 1.5% bonus;  $25,000+ receives a 10% bonus;  $100,000+ receives a 45% bonus.
+
+
+
+Page 29
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+FUNDS DISTRIBUTION
+
+Received funds will be distributed as follows:  20%  R&D;  20%  community & partnership;  50%  marketing;  10%  sales. For more information regarding our ICO please contact us at info@alfatoken.com.
+
+
+
+Page 30
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+References
+
+1. Smart Contracts, Explained. Cointelegraph. Oct. 31, 2017. https://cointelegraph.com/explained/smart-contracts-explained
+
+2. Nick Szabo  Smart Contracts: Building Blocks for Digital Markets http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literatu Li/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html
+
+3. Extropy Institute Resourceshttps://archive.is/zWbhL#selection-607.412-607.469 4. Nick Szabo  Formalizing and Securing Relationships on Public Networks
+
+http://firstmonday.org/ojs/index.php/fm/article/view/548 5. Philip Stafford, Hannah Murphy  Has the blockchain hype finally peaked?
+
+https://www.ft.com/content/5e48f9ec-b651-11e6-ba85-95d1533d9a62 6. Cryptocurrency Market Capitalizations
+
+https://coinmarketcap.com/ 7. State of Blockchain Q2 2017 Research by CoinDesk
+
+https://www.coindesk.com/ico-investments-pass-vc-funding-in-blockchainmarket-first/ 8. Blockchain Reserches https://www.coindesk.com/ 9. Tom Mikey  Airbnb expects $2.8B in 2017 revenue, $8.5B by 2020. PitchBook https://pitchbook.com/news/articles/airbnb-expects-28b-in-2017-revenue-85bby-2020 10. Jim Probasco  P2P Mortgage Loans - A Growing Trend. Investopedia https://www.investopedia.com/articles/personal-finance/071515/p2pmortgage-loans-growing-trend.asp 11. Institute of International Finance  Innovation in Insurance: How Technology is Changing the Industry https://www.iif.com/system/files/32370132_insurance_innovation_report_2016. pdf 12. Vitalik Buterin "Ethereum  a next generation smart contract & decentralized application platform" https://github.com/ethereum/wiki/wiki/White-Paper
+
+
+
+Page 31
+
+
+
+www.alfatoken.com
+
+
+
+ALFATOKEN
+
+
+
+ALFATOKEN
+
+
+
+info@alfatoken.com
+
+
+
+ 2017 AlfaToken
+
+Page 32
+
+
+
+www.alfatoken.com
+
+
+
+

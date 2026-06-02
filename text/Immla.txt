@@ -1,0 +1,3423 @@
+WHITE PAPER
+
+INTERNATIONAL MULTIMODAL LOGISTIC APPLICATION
+
+
+
+1
+
+
+
+Whitepaper IMMLA
+
+
+
+Contents
+
+SUMMARY.............................................................................................................................................................................................................................3 PROBLEM .............................................................................................................................................................................................................................4
+
+Identified problems...................................................................................................................................................................................................5 IMMLA SOLUTION ...................................................................................................................................................................................................7 IMMLA's MARKET ......................................................................................................................................................................................................8
+
+Stakeholders....................................................................................................................................................................................................................8 Target market share.................................................................................................................................................................................................9 Starting point.................................................................................................................................................................................................................9 BUSINESS MODEL.....................................................................................................................................................................................................10 Revenue ............................................................................................................................................................................................................................10 Motivation of IML tokenholder.....................................................................................................................................................................12 CROWDFUNDING STRUCTURE..................................................................................................................................................................12 IMMLA IMPLEMENTATION..............................................................................................................................................................................13 Terms & Definitions...................................................................................................................................................................................................13 Business processes.....................................................................................................................................................................................................14 Components Models (public Blockchain).............................................................................................................................................14 Blockchain Data Model........................................................................................................................................................................................16 Blockchain data analysis......................................................................................................................................................................................19 System landscape......................................................................................................................................................................................................20 Component model diagram.............................................................................................................................................................................21 TIMELINE..............................................................................................................................................................................................................................21 OUR TEAM IS OUR STRENGTH!..................................................................................................................................................................23 CONCLUSION..................................................................................................................................................................................................................29 Appendix 1. Description of the main services...........................................................................................................................................30 Appendix 2. List of paid services.........................................................................................................................................................................33 Appendix 3. List of basic services.......................................................................................................................................................................39 Appendix 4. SWOT-analysis of IMMLA......................................................................................................................................................42 Appendix 5. Model of the optimal proposal selection.....................................................................................................................45 Appendix 7. Cargo delivery flow.........................................................................................................................................................................50 Appendix 8. Blockchain data model relationships...............................................................................................................................55
+
+
+
+2
+
+
+
+Whitepaper IMMLA
+
+
+
+SUMMARY
+
+Although modern logistic market is IT-intensive, it is blinkered and misspendly clustered by information barriers. This usually leads to low volumes and high prices. Recent estimate indicates that just under 80% of companies perform inefficient. The rough setting of perfect competition implies that logistic market could have been 5 times bigger without these losses. IMMLA's mission is to make it faster, safely and cheaper for a cargo owner and freighters to conclude deals for transportation of cargo. IMMLA involves blockchain and smart contract technologies to eliminate the problem of trust, information barriers and legal costs. In logistics, many nuances are difficult to take into account in one universal IT solution. Therefore, IMMLA assembled a consortium of experts from industry leaders to avoid shortcomings of potential competitors when creating IMMLA multimodal transportation service. IMMLA is founded on the basis of SoftBusinessSolutions - IT-company with logistics focus, Global Transport Investments and Hellmann Worldwide Logistics - industry leaders by market share.
+
+
+
+3
+
+
+
+Whitepaper IMMLA
+
+
+
+PROBLEM
+
+
+
+Our team conducted a series of studies to identify the most significant problems in logistics. Key observations are as follows:
+
+
+
+1. There are no full-featured online transportation services that work with all types of transport
+
+
+
+80% of all transport exchanges that we analyzed (more than 50) started and ended with only one type of transport.
+
+
+
+Our study showed that the main reason for this situation is the risk that exists at the intersection of the transfer of the Cargo from one participant to another.
+
+
+
+The transport exchanges do not want to be responsible to the Cargo Owners at all stages, and organizing a full-fledged system is a big expenses and big labor costs.
+
+
+
+If we take the transportation from point A to point B, then today we need to use several transport exchanges. For example: Trucker Path - for delivery by land to the port, Freightos - for delivery by sea, Transporeon - from port to warehouse. As a result, it is easier for Cargo Owners to hire one freight forwarder who will perform the functions of all of three transport exchanges for a fee.
+
+
+
+2. There are very few real Cargo Owners in the transportation service transport exchanges.
+
+
+
+Our research showed that 68% of participants in all transportation service transport exchanges are carriers and forwarders themselves who resell services to each other.
+
+
+
+The poll Why don't cargo owners trust the transport exchanges? showed: at the transport exchange, carriers do not provide the best prices. Competitive price is provided on request because it require considering many factors. The main factor is the risk of working without knowing the direct customer.
+
+
+
+Then we conducted a survey Are you ready to work via the transport exchange if its mechanism guarantees the security and obligations of both parties? (based on the blockchain technology with the use of smart contract)
+
+
+
+The result showed that 43% of respondents are ready to change their attitude.
+
+
+
+3. There is no professional IT solution in Logistics, which could become the standard.
+
+
+
+We spent many hours searching for an application for the Logistics market participants, which could be compared to AutoCAD for engineers or Photoshop for designers.
+
+
+
+The conclusion was this: all the applications that were ever made in logistics business came from a large or small transport company. Such companies earned money not because of the quality of its IT product, but on its logistics services. Their software has always been a means of automating their own processes. Therefore, 90% of such products failed to enter the market. They were only designed for the company in which they were created.
+
+
+
+4. There are few new IT solutions in Logistics.
+
+
+
+Studies have shown that in terms of new technologies Logistics is one of the most conservative areas.
+
+
+
+This is because the competitiveness of all participants in this market has always been based on their unique knowledge, and no one wanted to share it.
+
+
+
+4
+
+
+
+Whitepaper IMMLA
+
+
+
+Therefore, any innovation remained within the company and didn't develop by the forces of the entire market.
+
+5. Customers do not stay for long on one transportation exchange.
+
+Studies have shown that many users do not work on transportation exchanges because it causes additional software installed on the computer.
+
+That is, in addition to working with mail, tables and documents, they still have to turn to the transport exchange to check the status of their request, cargo or other documents.
+
+This leads to the rejection of such offers and to the loss of popularity of the transport exchange, which cannot replace the standard working tools for the user.
+
+6. Transportation exchange lifetime is in average 3.5 years.
+
+The study of most of the projects known to us showed that they could not get to the proper level because they could not attract the Cargo. The average lifetime is 3.5 years.
+
+Therefore, it is especially important to solve this problem from the first days of the business launch. The success of any transport exchange is the availability of offers.
+
+7. Transportation service exchanges turn with time into a closed club.
+
+Research have shown that than the larger and more serious the transport exchange, the harder it is to get there and to start work.
+
+This trend is because the wishes of customers are always increasing, the transport exchanges embody them in real tools, but at the same time, they forget that it is getting heavier and heavier for new participants to master the entire set of such functionality.
+
+This leads to the fact that the further dynamics of the transport exchange stops on a limited list of participants.
+
+Conclusion: most of the online logistics projects either close without gaining sufficient volume of Orders, or turn into large and closed online services with access for large participants of the logistics market. This highlights IMMLA from the total number of such projects.
+
+
+
+IDENTIFIED PROBLEMS
+
+
+
+Problem of trust.
+
+
+
+According to US-based research, the overall losses from economic crime in the transport & logistic sector varies from 8 to 30 billion of USD. Industry is challenged to design contracts with partners and clients in a legally and fiscally correct way to avoid losses of $140 billion per year, while 20% of cargo is yet completely uninsured.
+
+
+
+Trust issues entail certain risks of opportunistic behavior that are already included in the price of cargo transportation.
+
+
+
+Risk of insolvency of cargo owner.
+
+
+
+Final payment for service is usually executed after the moment when a cargo owner accepts an object
+
+
+
+5
+
+
+
+Whitepaper IMMLA
+
+
+
+from a freighter. This forces freighters to run due diligence of cargo owners and charge premium for risk of possible default on their liabilities. Logistic companies vary their fees in range of 30% and even back down on the deal depending on the reputation of a counterparty.
+
+Risk of hidden damage.
+
+A freighter may damage a cargo and succeed in hiding it (even without knowing it) from a forwarder or next actor in transportation chain. If a cargo owner (or the last nexus of supply chain) receives defected goods, sometimes it is not possible for company to demand a compensation in a court, since it does not know who exactly is responsible for a damage.
+
+Tax evasion risk.
+
+If tax regulator suspects at least one party of supply chain in tax evasion, a cargo gets withdrawn or frozen.
+
+Currency risk.
+
+Freighters and forwarders may set prices in currency which is different from operating currency. In that case, Logistic company is forced to complement contract with overcharging fees in order to eliminate risk of currency devaluation. It makes logistic services more expensive.
+
+Underinsurance & risk of undercompensating.
+
+Most of the forwarding companies practice to insure only transportation losses, but not compensation of cargo damage.
+
+Problem of information barriers and thus high price.
+
+The costs of finding information about the carrier's tariff and transaction costs are critically high - due to market fragmentation and lacking of standardization for payment schemes, document flow, availability of additional services and taxation. It makes market less competitive and seller-driven. Thus, a cargo owner challenges to know in advance and compare the price of transportation and make some timecostly due diligence. The problem impacts both cargo owners and freighters. For instance, absence of common information space causes efficiency loss and delays due to lacking data on empty containers.
+
+Problem of idle runs.
+
+Pendulum runs denote up to 50% efficiency losses in logistic sector. The problem is that export/import balance is skewed in subregions. For instance, truck driver delivers a beverage from Parma to shiny Cosenza and returns empty because there is nothing to export out of Cosenza. Thus freighters tend to just double its fees.
+
+Conclusion: Most of the risks in the Logistics industry are associated with finances and deficiencies in the transmission of information, which may be false or incomplete. Cryptography can solve these problems and we see positive examples in those projects that are based on their own tokens and the use of blockchain technologies
+
+
+
+6
+
+
+
+Whitepaper IMMLA
+
+
+
+IMMLA SOLUTION
+
+
+
+There was a long way before we came up with logistic blockchain solution. First, hefty forwarders integrated tariffs in their ERP systems in order to make faster replies on delivery requests. Then they went online, but small freighters started to use forums and informational dashboards for advertising its services. Finally, Uber-like cargo services emerged. Usually they offer transportation by truck, so multimodal delivery is yet inaccessible. Overall, centralized platforms cannot manage damage-tolerant, in-time and competitively-priced transportation, but new technologies may change the wind. Business strategy of IMMLA solution provides customers with a fundamentally new way of interacting with logistics market.
+
+
+
+Problem of trust solution.
+
+
+
+Cargo transportation is monitored until the successful closing of the deal. All actions are recorded in the blockchain, which omits trust issues between parties; Smart contract, which will be approved at the beginning of shipment, will automatically execute mutual settlement according to data stored in blockchain.
+
+
+
+Moreover, IMMLA has commercial interest in the successful completion of cargo transportation for all parties. (Unlike the current web portals, where the main revenue is generated from subscriber payment/ connection fees, and the service is not responsible for the successful outcome).
+
+
+
+Risk of hidden damage.
+
+
+
+Online GPS/AIS/Satellite tracking of cargo location, and the status of its damage with the use of blockchain technology; On the early stages IMMLA will integrate with existing tracking providers over their protocols (https, mqtt and other). Data will be aggregated, unified and shown to end user.
+
+
+
+Risk of insolvency of cargo owner solution.
+
+
+
+Authorization of verified suppliers and solvent cargo owners increases overall degree of responsibility; IMMLA will issue personal licenses for suppliers through the modern DLT technology. Other entities are able to get and verify this data.
+
+
+
+Currency and tax risk solution.
+
+
+
+All payments through IMMLA service will be performed in a single currency - IMMLA token.
+
+
+
+Underinsurance & risk of undercompensating solution. Automatic cargo insurance covers not only the risk that evolves through possible opportunistic behavior of counterparties, but also the damage risk caused by compelling force;
+
+
+
+Problem of information barriers, idle runs and high price solution.
+
+
+
+Common infospace indicates idle equipment and enable to implement data mining. That leads to significant delay rate decrease and overall higher efficiency. In particular, forecasts help to lower ports load, lengthening planning horizon and dodging bottlenecks;
+
+
+
+Dutch auction means cheaper transportation - the principles of cost reduction due to competition using. The customer herself chooses an option of delivery that fits her in terms of price, terms and additional services. Relatively low fee for services (1%(by default) vs. 8-15% for conventional forwarders and 10-25% for brokers) distinguishes IMMLA from sector competitors;
+
+
+
+Strengths and weaknesses of the IMMLA solution look here: Appendix 4. SWOT-analysis of IMMLA  
+
+
+
+7
+
+
+
+Whitepaper IMMLA
+
+
+
+IMMLA's MARKET
+
+The logistics sector, according to experts' estimates, is up to 6% of world GDP with a turnover of $ 14 trillion a year in 2015. The freight market will retain its significant share in the global economy for a long time with the CAGR of 3%. Sustainable growth drivers tighten sector risks: global and regional division of labor and the population growth.
+
+IT solution for automating the process for choosing an effective transportation option is in demand by both freighters and customers of forwarding companies. This is indirectly evidenced by the following facts:
+
+Appetite for investment. During previous three years, the amount of venture capital investments in IT-aggregators for freighting had achieved $ 150 million. More than 10 private equity deals were placed in the US, two in China, and several in Western Europe. Two IT-based forwarders (Cargomatic and Freightera) had achieved revenue of $ 10 million per year each*;
+
+IT-impact on the market is significant (IoT, communications, etc), but until recently this potential had not been used for the integration of IT platforms of standalone participants.
+
+
+
+STAKEHOLDERS
+
+
+
+A large number of participants are involved in the transportation of goods, which have obligations, information flows, financial flows and transfer of property rights for cargo liabilities. Here is the main list of potential IMMLA project participants:
+
+
+
+Sphere
+
+
+
+Description
+
+
+
+Abbreviation
+
+
+
+CONSUMERS OF THE SERVICE
+
+
+
+Shipper
+
+
+
+Cargo sender, supplier's representative
+
+
+
+SH
+
+
+
+Enterprise logistic manager The manager of supply chain management
+
+
+
+SC
+
+
+
+(SCM manager) in the customer's interests of the
+
+
+
+transportation
+
+
+
+Logistic operator
+
+
+
+A logistics service provider that needs non-core
+
+
+
+LO
+
+
+
+services contractors (of transportation stages) for
+
+
+
+its own service.
+
+
+
+Retail supplier
+
+
+
+Retail network supplier, which determines the
+
+
+
+RS
+
+
+
+contractor of transportation of its own deliveries
+
+
+
+Robots
+
+
+
+Automatic applications associated with other
+
+
+
+DE
+
+
+
+trading platforms
+
+
+
+SERVICE PROVIDERS
+
+
+
+Truck Carrier
+
+
+
+Automobile Carrier
+
+
+
+TR
+
+
+
+*
+
+
+
+Estimates: https://www.owler.com
+
+
+
+8
+
+
+
+Whitepaper IMMLA
+
+
+
+Sphere Ocean Carrier Forwarder Insurance company Customs agent Consignee's agent
+
+3PL
+
+Robots
+
+
+
+Description
+
+
+
+Abbreviation
+
+
+
+Ocean carrier, NVOCC, multimodal carrier
+
+
+
+CA
+
+
+
+Export forwarder, which organizes transportation
+
+
+
+FW
+
+
+
+and jointing of stages
+
+
+
+Insurance company
+
+
+
+IC
+
+
+
+Provides customs clearance service
+
+
+
+CB
+
+
+
+The port forwarder, the forwarder in import -
+
+
+
+EX
+
+
+
+performing the jointing of stages and delivery in
+
+
+
+ports, etc.
+
+
+
+Operators of warehouse facilities providing
+
+
+
+3P
+
+
+
+services of responsible storage, completion of
+
+
+
+cargo, delivery and distribution.
+
+
+
+Automatic applications associated with other
+
+
+
+DE
+
+
+
+trading platforms
+
+
+
+TARGET MARKET SHARE
+
+
+
+An expert analysis of the factors for estimating the potential market share was performed. There are applicable conditions for IMMLA to gain a 1-2% share of the global market of forwarding services. IMMLA team expects to reach this figure after the widescale launch of the project.
+
+STARTING POINT
+
+
+
+IMMLA plans to start testing the solution in the region of best fit, compared to other countries and regions by criteria of market capacity, legal issues, operation costs, infrastructure and available expertise.
+
+
+
+We have chosen to start providing service on the Russian logistics market because of:
+
+
+
+Market capacity. Logistics industry in Russia produces 5.6% of GDP (the same figure for the US - 2.7%, China - 2%). Russian forwarding services market is estimated at $1B per year and 5% of logistics market turnover* . Sprawling truck network, a large number of ports and the dominant role of international trade will allow to have a good start the decentralized service IMMLA.
+
+
+
+No special licensing. Unlike the legislation of other countries, in Russia, there is no license for forwarding activities. This will allow IMMLA team to avoid additional costs and to begin searching for customers for beta testing and localize in the market in the tightest deadlines.
+
+
+
+Developed IT-infrastructure. In 2015 devices with GLONASS were installed into the 100% of Russian truck fleet and a data collection system for the location of trucks was introduced. This will allow developers to implement ubiquitous online geo-tracking of cargo with the recording of ownership transfers to the blockchain.
+
+
+
+Close partnership. We have an agreement with Formag (GTI). It is a holding of 30 companies located
+
+
+
+*
+
+
+
+Fisenko, Andrey I. Status, problems and challenges of Russian transport and logistics complex development.
+
+
+
+Asia-Pacific Journal of Marine Science & Education 1.1 (2011): 31-42.
+
+
+
+9
+
+
+
+Whitepaper IMMLA
+
+
+
+in Europe and Asia. For 2 decades, it has the largest market share in the Ukrainian logistic market and one of the first in Russian one. Company will provide pioneer users from its client base in Russia for testing the application.
+
+Legal status of cryptocurrencies. As to legal status of cryptocurrencies, is accurate to say about decriminalization of cryptocurrencies in Russia than about their total legalization. The Federal Tax Service considers operations with cryptocurrencies as currency operations, and no real measures aimed at suppression of turnover are currently being enforced by law enforcement agencies
+
+
+
+BUSINESS MODEL
+
+
+
+REVENUE
+
+IMMLA revenue consist of 1% (by default) from any financial transaction inside IMMLA:
+
+- Delivery transactions;
+
+By 2023, IMMLA plans to occupy at least 1% of global cargo transportation services. Thus, financial transactions via IMMLA will be at the level of 1% * 1 trillion $ = $ 10 billion per year. Revenue: 1% of these transactions = $ 100 million per year.
+
+- Other third-party and built-in paid services: advertising, analytics, banking services, accounting services, arbitration, insurance, customs clearance, etc.
+
+Full list of IMMLA services that generate revenue described here: Appendix 2. List of paid services.  
+
+
+
+Table 1. What payment goes for what service
+
+
+
+"Price" of the Service
+
+REGISTRATION BY: - Consignor - Consignee
+
+
+
+Features provided
+
+Assessment of the transportation cost based on input data.
+
+
+
+REGISTRATION BY: - Freighter, - Warehouse logistics, - Freight Forwarding company, - Custom broker
+
+
+
+Provision of requests for the organization of a freight/ storage service with a limited response time. Search for applications for selected destinations.
+
+
+
+PASSING THE RATING PROCEDURE
+
+PAYMENT
+
+
+
+Underwriting of a transportation credit
+
+Cargo insurance GPS-tracking of a cargo Tracking damage of a cargo Carrying out of payment of services of freighters Uploading the workflow to the customer's ERP system Offline customer support
+
+
+
+10
+
+
+
+Whitepaper IMMLA
+
+
+
+IMMLA revenue aims are driven by both new modules development (1) and expansion strategy (2).
+
+1. The development plan includes the phased development and implementation of modules in the service. IMMLA will be gradually connected to the forwarding, air, railway, sea-cargo, custom, and warehouse modules.
+
+Firstly, is 2018 auto and sea-cargo modules will be launched because they represent best fit of high demand for multimodal contracting and low implementation complexity.
+
+In 2019 the company plans to expand the range of services provided and to introduce the possibility of organizing air transportation and customs services.
+
+In 2020, forwarding and warehouse modules will be implemented.
+
+In 2021, IMMLA Railway module will be added.
+
+2. Regional expansion strategy
+
+In 2018, IMMLA service will be launched on the Russian trucking and sea container market.
+
+In 2019 the service will expand to the China.
+
+In 2020 the service will expand to Western Europe.
+
+By 2021 it is planned that IMMLA will spread the same way to the Asian region.
+
+After 2023 it is planned to use the service worldwide.
+
+For more details: TIMELINE  
+
+The first aim is to launch IMMLA and make $1M of revenue by the end of 2018.
+
+The second aim is to localize in Eastern Europe countries and China, enhance application with air and custom modules and make $10M of revenue by the end of 2019.
+
+The third aim is to localize in Europe, add warehouse and forwarding modules application and make at least $25M of revenue by the end of 2020.
+
+The fourth and fifth aim is to make $50M and $100M in 2021 and 2022 respectively by adding railway module, which is heavy to get into, but promising to share turnover of which.
+
+IMMLA REVENUE AIMS
+
+
+
+11
+
+
+
+Whitepaper IMMLA
+
+
+
+MOTIVATION OF IML TOKENHOLDER
+
+36% of IMMLA revenue is spend to redeem an burn of IML tokens based on a smart contract function. THE MODEL OF THE TOKEN PRICE GROWTH
+
+
+
+CROWDFUNDING STRUCTURE
+
+SYMBOL: IML
+
+IMMLA issues 445,122,735 IML tokens in two tiers: pre-ICO and ICO. After completion of ICO, additional tokens will be automatically issued for Founders, Team and Bounty participants, they amount to 18.5% of total tokens.
+
+Motivation of tokenholders:
+
+IML tokens will grow because of:
+
+ IMMLA buy back IML tokens at the expense of 36% of IMMLA's revenue at a IML token's market price;
+
+ IMMLA burns redeemed tokens*;
+
+Pre-ICO tier is complete 30 July 2017 with following results: Issued: 10,645,558.026103 IML tokens Raised: 2,047.222697 ETH Pre-ICO tokens will be transferred into the ICO token contract through a special safe migration function
+
+ICO Offering Details
+
+IMMLA will issue 434,477,177 IML tokens.
+
+The amount of funds raised (ETH, USD) 122,888 ETH (~36,866,400 USD at a rate 300 USD/ETH)
+
+Dates of the ICO from 15.09.2017 to 15.10.2017
+
+
+
+*
+
+
+
+Both actions are done by automatic smart contract function through integration with DEX.
+
+
+
+12
+
+
+
+Whitepaper IMMLA
+
+
+
+ICO Pricing Mechanism Successive stages of ICO and the price of tokens sold for these stages
+
+
+
+1 stage 2 stage 3 stage 4 stage
+
+
+
+Share of total IML tokens
+
+
+
+IML tokens
+
+
+
+39.1%
+
+
+
+170053520 1 ETH =3640 IML 1 IML = 0.0002747252747 ETH
+
+
+
+23.9%
+
+
+
+103725856 1 ETH =3549 IML 1 IML = 0.0002817695125 ETH
+
+
+
+23.1%
+
+
+
+100319718 1 ETH =3458 IML 1 IML = 0.0002891844997 ETH
+
+
+
+13.9%
+
+
+
+60378083 1 ETH =3367 IML 1 IML = 0.000297000297 ETH
+
+
+
+Secure Offer
+
+ ICO funds will be held in smart-contract escrow: The minimum capital required for development and release of IMMLA platform will be raised during issuing of first 18,000,000 IML tokens. ICO tier will be secured through an automatic smart contract function. If less than 18,000,000 IML are raised in ICO round, then collected Eth will be automatically returned to contributors.
+
+ Multi-signature wallet;
+
+ Tokens of Founders are non-transferable upon ICO completion -- locked for 5 months through a smart contract function.
+
+
+
+IMMLA IMPLEMENTATION
+
+
+
+Terms & Definitions
+
+
+
+Entity - person who obtains permissions in IMMLA system. Entity is an active system user, (s)he initiates new actions and interacts with other users and subsystems. Each entity has public and private keys to create new transactions in Blockchain and to sign sensitive data.
+
+
+
+Oracle - legal entity that has a keypair, and signs transactions on request when a user-provided expression evaluates to true.
+
+
+
+Terms of Services (ToS) - list of offers are provided by entities. Offer consists of prices, conditions, restrictions, etc.
+
+
+
+Auction - IMMLA's market place to get best terms for Cargo Owner and to get new order for Carrier. Service loads data from Blockchain where Cargo Owner pushes orders and Carrier ToS. Carrier can change their offers during auction.
+
+
+
+Cargo Owner - entity who passes IMMLA verification as delivery request initiator.
+
+
+
+Carrier - entity responsibles for cargo delivery. Carrier provides term of services, takes a participation in auction and delivers cargo to Cargo Owner. (S)he is responsible for full delivery process.
+
+
+
+Delivery Analysis Service (DAS) - third party submodule. Service collects history of the deliveries by
+
+
+
+13
+
+
+
+Whitepaper IMMLA
+
+
+
+different providers, gets IMMLA's requests for new delivery, analyses the suggested terms of service, does corrections based on the user's requirements and ranking the final results. DAS also responsible for auctions and for Cargo Owner recommendations, such as the best prices and conditions.
+
+Document Management Service (DMS) - third party submodule. Service operates with contracts between agents. Participants select comfortable delivery and payment terms, fill generic forms and pul
+
+Delivery Tracking Service (DTS) - IMMLA tracking service communicates with third party data providers. DTS aggregates incoming data belongs to the cargo delivery process.
+
+
+
+BUSINESS PROCESSES
+
+IMMLA have taken the model of Buy-Ship-Pay developed by UN CEFACT for international trade and transport as a basis for designing of IMMLA business processes.
+
+Main advantages of Buy-Ship-Pay model are:
+
+ implements a full cycle of relations in the supply chain management (SCM),
+
+ relies on the generally accepted standards of digital workflow for the retail industry EANCOM 2002 ed 2016 and the multimodal transport ITIGG 2.0,
+
+ has developed legal models, including samples of digital interconnection agreements EDI Agreement: UN CEFACT Recommendation No. 26 Commercial Use Of Interchange Agreements For Electronic Data Interchange, UN CEFACT Recommendation No. 31 Electronic Commerce Agreement,
+
+ harmonized with the legislation of most target countries,
+
+ includes mechanisms for encoding electronic documents UN EDIFACT Directory.
+
+
+
+COMPONENTS MODELS (PUBLIC BLOCKCHAIN)
+
+IMMLA provides convenient instrument to manage and deliver cargo using different transports from ferry to cars. Platform is based on a microservice architecture. Some services can be provided by 3rd parties.
+
+There are following modules that exist in the system:
+
+ Web Services & Frontend
+
+ Delivery Analysis Service (DAS)
+
+ Document Management Service (DMS)
+
+ Delivery Tracking Service (DTS)
+
+ Blockchain
+
+There are such entities that exist in the system as Carrier, Cargo owner, Customs, Insurance and other. Service provides user identity mechanism where third parties are involved. IMMLA is a trusted
+
+
+
+14
+
+
+
+Whitepaper IMMLA
+
+
+
+platform which verifies incoming user's information, signs and transmits to the Oracle. Oracle is a legal entity that checks and signs the private data. When checks are done IMMLA publishes data hash and signatures to the public Blockchain
+
+
+
+Each layer responsible for different business processes. IMMLA joins existing products together and provides unified tool to initiate, track and release cargo delivery. IMMLA are going to use common modern standards of identity because of DMS and DAS services are self-sufficient. With modern and innovative identity practices IMMLA reduces costs and economic inefficiency when all parties have to collect, store and protect the same sort of personal data. Moreover, this approach makes us flexible and open for integration with many other subsystems to ensure robust and reliable service.
+
+
+
+IMMLA suggest to use Sovrin identity system as a trusted and sharable ledger. This technology allows us to prevent lack of security and improve product transparency, reliability and portability. Sovrin is a distributed ledger hence no single entity who keeps Client's information. Also Clients control their private data and can share IMMLA's verifications status with anyone without requests to IMMLA system.
+
+
+
+Sovrin operates with Claims which are easy integrable with IMMLA's business processes. A Claim is a digital assertion made by a Sovrin entity about itself or another Sovrin entity. Initially IMMLA's Claims for Clients will include their verification status. For non Clients such as Carrier, Insurance IMMLA will provide personal license. IMMLA are able to revoke licenses which it has issued.
+
+
+
+Another area of interest is Cargo delivery. To improve cargo delivery relationships blockchain will be used on all major steps:
+
+
+
+ delivery request and offer confirmation
+
+
+
+ tracking delivery state
+
+
+
+ automatic calculation of total delivery price, including issues, delivery date terms and etc.
+
+
+
+ payment confirmation
+
+
+
+ participants scoring
+
+
+
+ big data analysis to analyze market and make recommendations
+
+15
+
+
+
+Whitepaper IMMLA
+
+
+
+This technology will allow us to provide such features as transparency, authorization and reduce middle man influence on the process. Blockchain is used as trusted data exchange layer between untrusted parties. Project will use Ethereum platform in private mode, as one of the most well-known, commonly used, long living blockchain solution with Smart Contract support on the market.
+
+PoA network consensus is selected to reduce delays and operation costs. It will be possible to snapshot private network state to public network to ensure immutability.
+
+"Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third party interference."
+
+Quote from https://ethereum.org/
+
+IMMLA will allow to use multiple suppliers, carriers. In order to make smooth integration among all IOT devices (containers, transports, etc) used in delivery platform will require unified registry. Open Registry suggested by Chronicled.org seems appropriate solution, using standardized implementation will allow smooth integration with other services of IOT market. With this registry our customer may use even more detailed contracts, that will lead to more automation of process.
+
+"With a blockchain-hosted Open Registry for Internet of Things, we envision a future where everything  from your car, to a work of art, to the glass of wine you drink at the end of a long day--can have a unique and unforgeable identity, life, and history on the Internet. This identity is created with a microchip embedded in the product and registered to a blockchain."
+
+Quote from http://chronicled.org/whitepaper.pdf
+
+
+
+BLOCKCHAIN DATA MODEL
+
+
+
+IMMLA is a decentralized system which is consists of multiple Smart Contracts to track the deal. There are some basic ones exist: Identity, Offer, Order and Deal.
+
+After passing verification from IMMLA side, the company becomes a partner of the network. Partners can also host the private Blockchain/DLT instances on their own environment and operates with the transactions belongs to the system. Normally partners are segregated by their functions and roles in the system. Partners' enrollment happens in two steps: Sovrin licenses and Ethereum User's Key registration within Identity contract. Identity Contact needs to authorize the incoming requests and to provide required level of the write operations.
+
+Each registered party has hierarchy of managers who can serve the contract. When new request is received the contracts check the authority by public key and get UID, role of the partner and proceed the requested process.
+
+
+
+Smart Contract: IDENTITY pub_key role
+
+data_hash
+
+
+
+User's public key
+
+User role (client, delivery, custom, insurance, etc.)
+
+Hash of user identity data, to keep it private (name, documents id, address, etc.)
+
+
+
+16
+
+
+
+Whitepaper IMMLA
+
+
+
+data_sign_immla data_sign_oracle
+
+
+
+Sign of user identity data, verified by IMMLA Sign of user identity data, verified by 3rd party Oracle
+
+
+
+All basic contracts like Offer, Deal and Order are managed by specific regulator contracts: <Name> Register, where <Name> is any of basics. Registers are entry points of new actions. Moreover, they are used to control the integrity of the data updates. IMMLA provides opportunity to change the contract's owner by request. Using the Registries allows to monitor all clients' dependencies such as list of deals and offers. To be more flexible management rules and states of the contracts are designed. Some of them provide opportunity to change the state manually by privileged users, other ones can be changed only by special events. General states are:
+
+ Running
+
+ Paused
+
+ Closed
+
+ Interrupted
+
+Logistic market assumes different matching mechanism to get the deal. There are Soft and Hard Offers may be issued. IMMLA implements service to support multiple matching mechanisms where guarantees of immutability and transparency are integrated on a core level. Reasonable question is system scalability. To process a lot of Offers different approaches can be used, e.g. one of them is an additional Blockchain per Carrier to hold the Offers. In this case the newest Ethereum Whisper communication protocol can be used. Currently scale question is out of the scope, but they can be handled on demand.
+
+
+
+Smart Contract: OFFER from start_date to end_date details
+
+
+
+Starting point coordinates Date when transfer begins End point coordinates Date when transfer should be complete List of offer's details
+
+
+
+Deal is a contract between two or more parties that guarantees Cargo delivery. Contact sets unchangeable relationships at least between Cargo Owner and Carrier. However, the additional IMMLA's Partners may be involved, such as Insurance Companies.
+
+In terms of deal the state may be change only automatically. Each deal depends on the payment model. Ripple API is used to decentralized payment ecosystem. Details may be found in the "Payment Details" section.
+
+Contract execution can be interrupted due some external events are emitted by granted users. Such events are generated by centralized services like Tracing systems & Customs. They change the flow of the contact and either can't or can be rollback.
+
+
+
+Smart Contract: DEAL offer customer recallClaim
+
+17
+
+
+
+Carrier's offer Cargo Owner Reason why Deal was interrupted
+
+Whitepaper IMMLA
+
+
+
+Claim contract controls process of resolving claims, it can be created manually by privileged users or automatically based on the external system events. Every deal has predefined set of claims. According to claim the participants may get refunds or documented confirmation of term violation and penalties that should apply. Claim is generated according to:
+
+Absence or non-compliance of the cargo (place of loading, equipment) to the terms of the contract. Includes any non-compliance with the terms of the contract by the Customer, identified before its performance
+
+Absence or non-compliance of the service (transport, storage, etc.) with the terms of the contract. Includes any non-compliance with the contractual terms of the Contractor identified before or during its performance.
+
+The customer did not accept the service or accepted it partially. Full or partial refusal to accept cargo at the end of the service provision.
+
+Lack of information about the performance of the service after the expiration of the objective timeout.
+
+Deal may be interrupted with Claim by different privileged participants:
+
+Appeal of the transaction participant. Either party has the right to provide an evaluation that affects the partner's rating, IMMLA automatically requests clarification from the opposite party and commits it. IMMLA gives (paid) pre-trial conclusion on the basis of blockchain data, including the assessment of the balance of the transaction.
+
+Appeal of the insurance carrier. IMMLA automatically provides a key for decoding contract data, tracking and damage (free of charge)
+
+Appeal of authorities. IMMLA officially provides a certificate on the contract data, tracking, damages, details of the partners (free of charge)
+
+Expiration of the transaction's timeout. IMMLA sends a warning to partners, and in the case of absence of an answer from both sides, closes the contract as unfulfilled, charges a penalty and reduces the rating of partners
+
+
+
+Smart Contract: CLAIMS [DAMAGECLAIM, ETC.]
+
+
+
+owner
+
+
+
+Claim creator
+
+
+
+details
+
+
+
+Reason details
+
+
+
+type
+
+
+
+Type of the Claim
+
+
+
+As mentioned above there are different matching mechanism exists. To manage it special type of contract is designed. Order is a public request of transfer, includes applicable transfer's features. Cargo Owner can search suitable routes based on the loaded Offers or create the new request for transfer. To handle the best routes in case of custom request, special partners integrated with IMMLA Core - Delivery Analysis Services. They are official Partners and have the licenses. The partners provide matching services. Cargo Owners use suggested routes provided by services and create the new deal.
+
+Partners get access to the private Blockchain network and use Offers (Soft & Hard), History of Deals and Orders to build optimal route for Cargo Owner. Blockchain here is used as a trusted layer where no way to cancel the Deal without justification. If Carrier submits the Offer and Deal was created than no chance to modify contract if no other special rules are defined.
+
+
+
+18
+
+
+
+Whitepaper IMMLA
+
+
+
+Smart Contract: ORDER cargo_owner possible_transfers
+
+
+
+Identity of cargo owner List of possible transfers
+
+
+
+Each deal assumes participation of documents processing systems. Blockchain confirms use proof of existence. IMMLA stores a cryptographic digest of the file, linked to the time in which Cargo Owner and Carriers submitted the document. In this way, participants can later certify that the data existed at that time. For that reasons special contract is designed  RoutingSheet. The RoutingSheet stores all necessary confirmations for Cargo transferring.
+
+IMMLA's document management system is related to the 2 important market standards: EANCOM 2002 ed 201 and ITIGG 2.0. It allows to exchange the criteria, prices, negotiate the deals and to create the worldwide deal.
+
+
+
+Smart Contract: TRANSFER OFFERING transfer_request carrier transfers
+
+
+
+Targeted transfer request Identity of carrier List of offered transfers
+
+
+
+Smart Contract: ROUTINGSHEET terms_as_smart_contract cargo_owner_sign carrier_sign documents
+
+
+
+Terms of described as Smart contract Signature of cargo owner Signature of carrier List of provided documents, with required formal details and hash of whole document
+
+
+
+BLOCKCHAIN DATA ANALYSIS
+
+
+
+In order to provide data for analytic software (shipping analytics, parties ratings, insurance calculation) we will need to export data from blockchain. Several approaches exist:
+
+
+
+Real-time data analytics.
+
+
+
+Software can listen for interesting events or transactions with every new block. This approach requires appropriate architecture of blockchain contracts. IMMLA will provide this design for core contracts, but it cannot control client contracts. It will allow users to use light clients and response in real time for events they are interested in. Drawback of this approach is data duplication, because every event contains data that is stored somewhere else. Queries capabilities are limited.
+
+
+
+Possible data quires\tracked events:
+
+
+
+ Published transfer requests\offerings of specific clients
+
+
+
+ Change in state of delivery contract
+
+
+
+ History of contract states
+
+
+
+ Claim creation
+
+
+
+19
+
+
+
+Whitepaper IMMLA
+
+
+
+ Claim history Full Blockchain analytics. Software can parse every new block and update its own database, which stores it in more appropriate way for analytic queries. But in order to analyze smart contract transaction software will need to know their interfaces or use decompilation tools. All core IMMLA contracts will be open sourced and interfaces will be available (client contracts are out of scope). Currently there is no wide adopted ways of doing this analyses. IMMLA plans to deliver software for comprehensive research and use it as part of its own analytic platform. Possible data quires\tracked events:
+
+ Transfers with best cost\delivery time ration  Companies with best customer satisfaction ratio  Best routes for every possible direction  Average prices for each type of cargo\shipping methods  Common shipping contracts  Typical delivery problems and their costs
+
+SYSTEM LANDSCAPE
+
+
+
+20
+
+
+
+Whitepaper IMMLA
+
+
+
+COMPONENT MODEL DIAGRAM
+
+
+
+TIMELINE
+
+2016-2Q2017 pre-ICO 3Q 2017 ICO Period 4Q 2017
+
+21
+
+
+
+ Team building and prototype development  Development of an end-to-end business process  White Paper is completed  Establishing agreements with potential freighters
+
+ Development of smart contract scheme  Start of an ICO  Prototype of the platform is ready  Beginning of pre-alpha testing
+
+ Development of infrastructure and involvement of participants
+
+ Organization and equipment of workplaces  Until the end of 2017 the first blocks (IMMLA
+
+Autotruck and Sea) of the system are developed:  Registration module;  Module of applications and auctions
+
+Whitepaper IMMLA
+
+
+
+1Q 2018 Release
+
+2Q 2018
+
+3-4Q 2018 2019 China 2020 Europe 2021 Asia 2022 North Africa 2023 Worldwide
+
+
+
+ Sales start  Release of the beta version of the platform  Until the end of 1Q2018 the next blocks (IMMLA
+
+Autotruck and Sea) of the system are developed:  Module of guarantees and additional services;  Tracking module  Sales are started in Eastern Europe
+
+ By the beginning of 3Q2018 the last blocks (IMMLA Autotruck and Sea) of the system are developed:
+
+ Electronic Documentation Module  Compliance module  Billing module
+
+ Marketing campaign & Involvement of market participants on the platform
+
+ China market will be fully covered.
+
+ IMMLA will connect the railway module. The latter will make the application fully international. Customer support services will open on the newly formed key logistic clusters.
+
+ By 2021 IMMLA will expand in Asia.
+
+ After coverage of markets in Asia IMMLA plans to develop in North Africa.
+
+ By 2023 the platform will be used globally.
+
+
+
+22
+
+
+
+Whitepaper IMMLA
+
+
+
+OUR TEAM IS OUR STRENGTH!
+
+
+
+We believe that having an excellent idea is only a part of the success of any project.
+
+Without a team of highly qualified specialists, even the most unique and promising project can remain ink on paper.
+
+Therefore, we have collected those specialists who have knowledge in all areas affected by IMMLA. We also want to note that our team has a rich experience in launching projects and bringing them to a successful outcome.
+
+
+
+KIRILL TULENEV
+
+EXECUTIVE DIRECTOR
+
+Kirill within ten years worked in sphere of the international agency service of navigable lines (container transportations), starting as an operative specialist of representative office at K-Line/Kess (Kawasaki Kisen Kaisha, Japan) to the managing director of UASC (United Arab Shipping Company, U.A.E.) in Russia.
+
+Before becoming a part of IMMLA team, Kirill headed division of Rosstandart, being responsible for standardization of the navigation sphere.
+
+The graduate of ITMO University in Saint Petersburg on specialties "Economy" and "Management of the Organizations".
+
+Now the applicant of PhD at the Admiral Makarov State University of Maritime and Inland Shipping.
+
+Kirill coordinates actions of all IMMLA divisions and performance of the tasks facing team in the terms established by the business plan. Kirill leads meetings of expert groups and the board of directors of the company.
+
+
+
+VYACHESLAV NEUNYVAKIN
+
+
+
+IT-DIRECTOR, CO-FOUNDER
+
+
+
+The author and the developer of system of automation of transport and logistic and customs activity Logismart TM, established more than on 2000 workplaces of 60 industry enterprises.
+
+
+
+Since 2007 Vyacheslav directs the Software of Business Solution company developing and servicing the high-loaded databases (including customs) with the WEB INTERFACE, and also more 20th terabyte is an application developer for fast search in unstructured archives volume. "Software of Business solution" is industry leader of sales of 2015 and 2016.
+
+
+
+23
+
+
+
+Whitepaper IMMLA
+
+
+
+In the project Vyacheslav heads the block of development and coordinates activity of the group of programming consisting of specialists of all IT companies participating in IMMLA.
+
+
+
+VITALIY SOSNOVSKIY
+
+SENIOR DEVELOPER
+
+Specialist on cataloguing of big information arrays. Author of the application of processing and recognition documentary scan copies.
+
+Graduated with distinction from Faculty of computer technologies and management of ITMO. Since 2007 Vitaliy is cofounder "Software of Business solutions".
+
+In the project Vitaliy is responsible for development of the transportforwarding module and interface to the periphery.
+
+
+
+VITALIY STEPANOV
+
+DEVELOPMENT DIRECTOR
+
+More than 15 years of experience, from them 6 years  on executive positions in the customs and logistic companies and IT.
+
+The highest legal education.
+
+Additional education:
+
+ 2013: course "Chief executive" by Russian School of Management
+
+ 2015: The professional Certificate in management (Management of the organization and personnel, Management of marketing and finance, Integration in management) by the International
+
+Institute of Management Link and business school of Open university of Great Britain.
+
+
+
+ALEXANDER GROMOV
+
+
+
+LOGISTIC ADVISOR
+
+
+
+Director of Business Process Management, Hellmann East Europe.
+
+
+
+Alexander started his career at Hellmann in 2010 and currently builds, introduces, optimizes and controls Hellmann's business processes in Russia and CIS countries, and heads the Information Technology Department.
+
+
+
+Graduate of the Moscow Financial-Industrial Academy of the Faculty
+
+
+
+Information Systems and Technologies, specializing in the protection
+
+
+
+of information data. Currently is MBA program participant.
+
+
+
+24
+
+
+
+Whitepaper IMMLA
+
+
+
+Responsible for logistic expertise in IMMLA.
+
+PAVEL DROBINTSEV
+
+TECHNICAL ADVISOR
+
+PHD IN TECHNICAL SCIENCE
+
+Pavel has more than 15 years of experience in the field of programming. 9 years from them I worked in JSC Motorola, starting as the trainee to the high quality engineer. Then selected scientific operation within department of the Information and Controlling Systems of Institute of Computer Sciences and Technologies, the St. Petersburg Polytechnical University. Has experience in following areas:
+
+ verification of the software on the basis of use of the formal methods
+
+ object oriented programming and design
+
+ web programming
+
+ configuration management of a software
+
+ test automation
+
+ carrying out scientific research and implementation activities in different development areas of a software
+
+PhD in Technical Science, author of over 100 publications including 7 publications in Scopus.
+
+MIKHAIL ASTAKHOV
+
+FOUNDER
+
+For more than ten years Mikhail is engaged in the international logistics. He was executive vice-president for strategy and staff in the international transport holding Global Transport Investments, where his team developed and implemented staff management system, having increased productivity by 65%, and also carried out the restructuring of the Russian branch of The company. Then Mikhail became a partner and was responsible for the development of the Aistlog group.
+
+Since 2016 Mikhail is concentrated on the creation and startup of IMMLA. He carries out the selection of the main participants of the consortium, also he is responsible for the interaction of the command managers, the strategy of the project development in the five-year horizon and implementation of professional expertise.
+
+
+
+25
+
+
+
+Whitepaper IMMLA
+
+
+
+IGOR RAMAZANOV
+
+LOGISTIC & RETAIL EDI EXPERT
+
+EDI expertise in transport and logistics since 1992.
+
+Graduated with distinction from Faculty of Computer Cybernetics Dep of State Technical University in St. Petersburg.
+
+Realized EDI projects for Russia key branch players like Airport Pulkovo - major airport of Nord-West region of Russia, Container Terminal Petrolesport - in top 5 Russia terminals , Heineken RUS, X5 Retail Group - the leader in Russia retail.
+
+Experienced in AFTN, WMO, EANCOM, ITIGG and others EDI standards.
+
+In the IMMLA project responsible for EDI human less data interchange between parties, including solutions for cross border document flow and national law data interchange restrictions issues.
+
+
+
+VALERIA RASULOVA
+
+ICO PROJECT MANAGER
+
+Valeria has built a career in the investment-banking sector (Top TValeria has built a career in the investment-banking sector (Top Trader, Smart broker, etc.). Where she has got experience in a corporate finance project management. She independently conducted projects of private and public placement of bonds for construction and industrial companies.
+
+She has perfect skills of PMBOK, Agile, ability of team&process building and going forward breaking the walls.
+
+In IMMLA she manages the pre-ICO and ICO projects.
+
+
+
+MICHAEL HESS
+
+
+
+LOGISTIC ADVISOR
+
+
+
+Michael has profound experience in international logistics for Michael has profound experience in international logistics for over 15 years. He started his career at logistic sector in 2001, implementing Supply Net Solution to Schenker Germany AG and leading other automotive logistics projects in Thailand, China and Switzerland. Now works as Member of the Board Hellmann East Europe, branch of Hellmann Worldwide Logistics.
+
+
+
+Michael studied industrial engineering and business economics at the University of Rostock, diploma thesis "Innovative Logistics Solutions and marketing possibilities  demonstrated by the Schenker product
+
+
+
+26
+
+
+
+Whitepaper IMMLA
+
+
+
+Supply Net Solution (SNS)".
+
+Responsibility in IMMLA is international logistic expertise and implementation consulting.
+
+
+
+DENIS SMIRNOV
+
+BLOCKCHAIN ADVISOR
+
+Denis has over eight years of experience in mobile app development, UX/UI design, and digital marketing.
+
+While heading the department of new media in Sanoma Russia, he was actively engaged in research and promotion of the solutions which are changing the face of publishing industry now.
+
+Being passionate about disruptive technologies he was very excited by the blockchain and cryptocurrencies, so now he devotes all his time to the development of the crypto-community in Russia.
+
+
+
+SOFT BUSINESS SOLUTIONS
+
+SOFTWARE PARTNER
+
+As an IT company specializing in solutions for logistics business, the company offers expertise and software support for the development of the application.
+
+The company has experience in implementing Internet services for access to payment and tracking information on cargo, bills of lading, bookings, and customs declarations for its customers.
+
+Soft Business Solutions uses advanced technological solutions in the field of user interface, storage systems, analysis and display tools, information security systems.
+
+
+
+FORMAG FORWARDING
+
+
+
+INTERNATIONAL LOGISTIC ADVISOR/PARTNER
+
+
+
+Formag is Russian branch of the international group Global Transport Investments (GTI), forwarding leader within the territory of the Eastern Europe and Black Sea basin countries. GTI has been successfully operating with transport services market since 1992.
+
+
+
+The company provides liner agency services; port agency and chartering brokerage services to container, Ro-Ro, bulkers, general cargo, cruise and navy vessels; and freight forwarding and multimodal shipments, including ocean freight and airfreight, as well as landside services.
+
+
+
+Company's role is to provide pioneer users from its client base in
+
+
+
+27
+
+
+
+Whitepaper IMMLA
+
+
+
+Russia for testing the application. formag.com / gtinvestments.net
+
+The team lists 5 experts in blockchain, p2p networks, skilled in Java, ++, #, PHP, node.js, Solidity Haskell, Idris, Rust The list of our specialists and partners shows that the team is competent in all matters related to logistics, IT, finance and development. It will be able to equally and qualitatively develop IMMLA in all directions.
+
+
+
+28
+
+
+
+Whitepaper IMMLA
+
+
+
+CONCLUSION
+
+In this WP, we showed how versatile the logistics market is today. It inevitably leads it to the need to switch to more modern management tools. Our team believes that IMMLA project will be very popular as it is:
+
+ It makes all the participants in the supply chain interact more transparent and easier to verify, which eliminates the need for paper documents;
+
+ IMMLA is a project, which should improve the ecological situation in regions with large cargo turnover
+
+ IMMLA is the first project in the world that brings the cryptocurrency into the real economy sector  IMMLA is a project that complies with all ethical norms  IMMLA provides an API for creating new additional value tools We attach a more detailed description of all our materials to this document, so that every expert interested in the project could answer to himself all the questions and make sure that our team has seriously approached not only to marketing but also to questions like how IMMLA should earn money and like how IMMLA should attract its likely customers. So there you will find: Appendix 1.  discloses the mechanism of some basic IMMLA services and shows that the functionality
+
+of our project is based on international standards and the rules of transportation, insurance and the transfer of electronic documents. Appendix 2.  describes a list of subsidiary services that enable additional earnings and the involvement of as many participants in the logistics market as possible to the project. At this stage it is a list of services that we consider to be the most popular and real. The order of their launching will be determined after the results of the ICO. Appendix 3.  reveals a list of all those services, which we consider basic for attracting key participants and solving their problems. The remaining applications disclose details of the use of Blockchain in our project.
+
+Respectively submitted, IMMLA team
+
+
+
+29
+
+
+
+Whitepaper IMMLA
+
+
+
+Appendix 1. Description of the main services
+
+
+
+Document preparation of business transaction
+
+
+
+The standard of document circulation for the retail industry EANCOM 2002 ed 2016, allowing to exchange terms and prices, to encode information about the partner and to agree on the terms of the business transaction, including the conflict-free implementation of electronic and printed documents:
+
+
+
+ PARTIN (Party Information)  description of the partner
+
+
+
+ PRICAT (Price/Sales Catalogue)  products and services catalogue
+
+
+
+ PRODAT (Product Data Message)  extended product and service description
+
+
+
+ PROINQ (Product Inquiry Message)  request of extended product and service description
+
+
+
+ CNTCND (The Contractual Conditions Message)  conditions for contracting
+
+
+
+ QUOTES (Quotation)  quote, firm quotation
+
+
+
+ REQOTE (Request for Quotation)  request for quotation
+
+
+
+Transport documentation management
+
+
+
+The standard of document circulation for the international transport industry ITIGG 2.0 - allowing to reserve, receive documents, track the status of multimodal transportations, as part of electronic and printed documents:
+
+
+
+ IFTMBF (Booking request) - booking request (reservation)
+
+
+
+ IFTMBC (Booking confirmation)  confirmation of booking
+
+
+
+ IFTMCS (Bill of lading | CMR data) - data of the transport document (contract)
+
+
+
+ IFSTA (Transport & Customs status)  change of transportation status or customs status (event)
+
+
+
+Trace and Tracking service of the logistics platform
+
+
+
+- EDI and online GSM\AIS\RFID Tracking for planning cargo handling at the point of receiving responsibility.
+
+
+
+- Blockchain trace data as evidence basis for claims arbitration.
+
+
+
+Main advantages:
+
+
+
+ Access of participants to tracking data of 3d party GSM|AIS and EDI tracking services.
+
+
+
+ Controlling access to status data (tracing) at the level of the transport contract, including delegation of rights.
+
+
+
+ Online status via open API and EDI in ITIGG IFSTA format.
+
+
+
+ Keeping a history data status change (trace) in the base of the blockchain in a closed form makes it easier to arbitrate claims.
+
+
+
+Encoding for embedding in client systems
+
+
+
+Regardless of the data source, status messages are uniquely encoded based on international standards. Including:
+
+
+
+ Transport status UN CEFACT Recommendation No. 24 (Trade and Transport status codes)
+
+
+
+30
+
+
+
+Whitepaper IMMLA
+
+
+
+ Transport locations UN CEFACT Recommendation No. 16 (LOCODE - Code for Trade and Transport Locations), integrated with cartographic service
+
+
+
+ Logistics sublocations: codes of sea container terminals SMDG Terminal Master List, etc. integrated with cartographic service
+
+
+
+ ISO 6346:1995 equipment codes, BIC and SCAC Carries' codes, etc.
+
+
+
+EDI tracking
+
+
+
+Processing of incoming ITIGG IFTSTA messages from the INTTRA, GT Nexus, Cargosmart portals on the status of transportation and the status of customs clearance
+
+
+
+ Blockchain entry of a routing table with key access restriction, different for each business transaction.
+
+
+
+ Combining the status data with the planned routing table of LOC-DTM format.
+
+
+
+Online tracking
+
+
+
+Processing of online tracking of key aggregators, for different tracking technologies:
+
+
+
+ AIS: position data from ship transponders transmitted via shore and satellite repeaters - from MarineTraffic, VesselTracker, ELANE integrators.
+
+
+
+ GSM: data of GPS trackers on vehicles transmitted via mobile networks - from the VIALATM integrator.
+
+
+
+ RFID - radio activated tags, used for private solutions
+
+
+
+IMMLA combines the tracking data with the route table of the Transport Contract providing an assessment of the status of the contract and deviations from the plan  it is available online and in the blockchain.
+
+
+
+Informing about cargo damage
+
+
+
+This service allows you to track the place of detection and the type of damage to the cargo, providing access to data based on the transport contract to interested parties.
+
+
+
+Main advantages:
+
+
+
+ Access to contract data for 3PL cargo reception services.
+
+
+
+ Controlling access to damage data at the transport contract level, including delegation of rights.
+
+
+
+ Online status via the open API and EDI in ITIGG IFSTA format.
+
+
+
+ Storage of data (trace) in the base of the blockchain in a closed form makes it easier to arbitrate claims.
+
+
+
+Encoding for embedding in customer systems
+
+
+
+Regardless of the data source, fault messages are uniquely encoded based on international standards:
+
+
+
+ Transport status UN CEFACT Recommendation No. 24 (Trade and Transport status codes)
+
+
+
+ Objective express conclusion of the 3PL operator on the possibility of continuing transportation
+
+
+
+ Transport locations UN CEFACT Recommendation No. 16 (LOCODE - Code for Trade and Transport Locations), integrated with cartographic service
+
+
+
+ Logistics sublocations: codes of sea container terminals SMDG Terminal Master List, etc. -
+
+
+
+31
+
+
+
+Whitepaper IMMLA
+
+
+
+integrated with cartographic service
+
+ Equipment codes ISO 6346:1995
+
+Processing and storage of cargo damage data
+
+The centralized service processes messages of Carriers via INTTRA, GT Nexus, Cargosmart and 3PL operators via their ROLIS and other services. Automatic processing converts the damage codes to the UN CEFACT Recommendation No. 24 format, preserving the original details and coding system, including national ones: GOST R ISO 9897-2012. Containers for freight. Changes of container equipment data (CEDEX).
+
+Data on damages are available to the parties of the transport contract online on the portal and via EDI messages of ITIGG IFTSTA, and also as part of the routing table in the blockchain.
+
+ Blockchain entry of a routing table with key access restriction, different for each business transaction.
+
+ Combining the status data with the planned routing table of LOC-DTM format.
+
+ The chronological table of the route in the blockchain indicates the stage of damage occurrence.
+
+Insurance service
+
+Implements Institute Cargo Clauses (ICC) - Clauses of the London Insurers Institute for Cargo Insurance
+
+Main advantages:
+
+ Unified list of insured risks
+
+ Clarification of the procedure for covering expenses in the occurrence of an insured event
+
+ They are the basis for the world's largest insurance institutions
+
+Service execution algorithm
+
+ Automatic insurance based on the data of the digital contract on cargo and conditions of transportation. Data on insurance conditions are stored together with data on the logistics service in a digital contract in a blockchain.
+
+ IMMLA implements verification of the documents scanned by the parties, that allows to eliminate the risk of their substitution.
+
+ All contract events are stored in the database of the blockchain, including data from 3rd parties: traces (change of status) and damage.
+
+ The interested party addresses to the insurer via IMMLA with the message about the occurrence of the insured event, the claim is registered in the blockchain - on an equal basis with other events.
+
+ The decision of the insurer is registered in the blockchain.
+
+ On the basis of the decision, calculations are performed, including IMMLA clearing service - if this is stipulated by the insurance conditions.
+
+
+
+32
+
+
+
+Whitepaper IMMLA
+
+
+
+Appendix 2. List of paid services.
+
+
+
+Archive of documents
+
+
+
+What problem does it solve?
+
+Complex search of documents on past orders, lack of possibility to work together with common documents.
+
+
+
+Description of IMMLA service
+
+IMMLA users can connect cloud storage to their profile and then all of its documents will be:
+
+ Stored there for the required period;
+
+ Available for the whole team.
+
+Paid requests
+
+
+
+Significance of service for business
+
+This will make it easier to work with your own archive of documents and will provide access to the 24/7 documents database from any place where there is an Internet.
+
+
+
+What problem does it solve?
+
+Most of these exchanges cease to be of interest to professional Contractors because the posted public offers remain only a request without finalizing the final order, even with a favorable offer.
+
+
+
+Description of IMMLA service
+
+The customer pays for each request or subscription. The funds paid for this subscription are accounted for in the customer's Orders. It means that if the customer paid the request and the request was set to work, then the funds paid for the request will partially cover the cost of the order.
+
+Paid subscriptions
+
+
+
+Significance of service for business
+
+This will motivate all IMMLA project participants to place only real requests and exclude idle ones.
+
+
+
+What problem does it solve?
+
+If the cargo owner has a constant flow of goods in a certain direction and trusted Carriers, then he often learns about falling prices from his competitors when they have already brought cargoes cheaper and thus were able to lure customers.
+
+This forces not only to seek these cheap prices urgently, but also to return lost customers.
+
+
+
+Description of IMMLA service
+
+Any member of the exchange can subscribe to periodic mailing (free transport or cargo in a radius)
+
+
+
+Significance of service for business
+
+This will allow all participants of our platform to be aware of all trends, changes and news on the areas of interest to them.
+
+Such a service will help to avoid the risks of being out of the information field about the current trends in the market.
+
+
+
+33
+
+
+
+Whitepaper IMMLA
+
+
+
+Verification of documents
+
+
+
+What problem does it solve?
+
+
+
+At each stage of
+
+
+
+transportation,
+
+
+
+the
+
+
+
+Contractor
+
+
+
+needs
+
+
+
+documents that he
+
+
+
+considers original and
+
+
+
+will provide to the
+
+
+
+Bank, Border Guard
+
+
+
+Services,
+
+
+
+Customs
+
+
+
+authorities, Transport
+
+
+
+Supervisors and others.
+
+
+
+Since responsibility for
+
+
+
+the legality of these
+
+
+
+documents in most cases
+
+
+
+rests with those who
+
+
+
+provide them to the
+
+
+
+supervising authorities,
+
+
+
+these
+
+
+
+participants
+
+
+
+require all documents
+
+
+
+in their original form.
+
+
+
+As a result, with one
+
+
+
+standard multimodal
+
+
+
+transportation,
+
+
+
+the
+
+
+
+recipient and the sender
+
+
+
+use the services of postal
+
+
+
+operators on average
+
+
+
+2 times only to send
+
+
+
+the original versions
+
+
+
+of contracts, accounts,
+
+
+
+extra
+
+
+
+agreements,
+
+
+
+transport and cargo
+
+
+
+documents, etc.
+
+
+
+Description of IMMLA service
+
+Working with documents in IMMLA:  Any of the parties uploads documents
+
+in attachment to the order  IMMLA forms a license for these
+
+documents  These documents can then be verified
+
+by other participants  So for every document that a
+
+participant of the transportation has, there are marks by which participants of the site it was confirmed (each of these confirmers = certifying center)  Verification takes place for each type of service  Sovrin based can provide a tool of the certifying center Technically:  IMMLA is the root certifying center of ROOT  Other Nodes can verify the validity of the identity of any participant via the identity service  In the same way will be verified:  Type of counterparty (each separately)  Types of services of the counterparty (each separately)  Next, the competitor is given the Node status
+
+
+
+Significance of service for business
+
+This will eliminate the use of paper documents and ensure that the documents attached to the order in IMMLA are not counterfeit.
+
+
+
+EDI
+
+
+
+What problem does it solve?
+
+The presence of a large number of paper documents in supply chains leads to the risk of their falsification, discrepancy and lack of common standards.
+
+
+
+Description of IMMLA service
+
+IMMLA will create, issue and accept electronic documents in accordance with UN/EDIFACT standards.
+
+
+
+Significance of service for business
+
+Standardized exchange of transactional digital information provides the possibility of programmatic interaction of computer systems of all IMMLA participants on the principles of electronic commerce.
+
+
+
+34
+
+
+
+Whitepaper IMMLA
+
+
+
+Paper service
+
+
+
+What problem does it solve?
+
+Most operations in logistics require paper documents that are used only for reporting to customs, tax and other fiscal authorities
+
+
+
+Description of IMMLA service
+
+IMMLA will issue all the required accounting documents in each country IMMLA will conclude agreements on accounting and legal services on the basis of an agency agreement for this purpose
+
+Professional logistic tools
+
+
+
+Significance of service for business
+
+It will allow reporting to the supervisory authorities in a simplified mode
+
+
+
+What problem does it solve?
+
+For the solution of a number of Logistical tasks there are basic services, which need to be purchased on different resources by now.
+
+
+
+Description of IMMLA service
+
+In the cost of the subscription IMMLA will include access to the following services:  Reference book of ship
+
+calls to ports  Schedules on the main
+
+transport routes  Calculator for loading
+
+vehicles or transport units  Calculator of local fees
+
+in Logistically significant points
+
+Paid analytics
+
+
+
+Significance of service for business
+
+This will allow the participants of IMMLA website to perform all their tasks in one information system
+
+
+
+Description of IMMLA service
+
+Provision of the following analytical data:  Analytics of trades in the past periods;  Analysis of seasonality;  Analysis of volumes;  Cargo analysis;  Logistics activity analytics.
+
+
+
+Significance of service for business
+
+It will allow to obtain at low cost the most accurate market research of goods' markets, rates, trends and to make the most accurate forecasts.
+
+
+
+35
+
+
+
+Whitepaper IMMLA
+
+
+
+Adding IMMLA services to Carriers' websites
+
+
+
+What problem does it solve?
+
+Most of the Contractors require to fill out their request form for the request of price proposals. They are all different and not always simple, the customer can refuse this requirement and the likely business transaction may not take place.
+
+If the Customer's request corresponds to the existing tariffs of the Contractor, it is still necessary to issue an official price request, which consumes a lot of time and does not allow to quickly find out the price level for the calculation of logistics costs.
+
+
+
+Description of IMMLA service
+
+Any authorized user of our site can install on his website:
+
+ Tracking
+
+ Service for calculating the loading of a vehicle or transport unit
+
+ Request for a rate
+
+On the website of this client appears a block to fill information with a request for rates.
+
+In this window the standard form of the commercial offer of this forwarder/ freighter is displayed.
+
+After the site visitor has filled in the data, the request is sent to IMMLA
+
+The request goes only to one company from whose website it was formed
+
+In the personal account of IMMLA this forwarder/freighter will receive a notice in his user' account that is repeated by e-mail too
+
+The request appears in the Request tab
+
+All requests from the website are labeled (the icon indicates that the request was made via the website)
+
+The contacts of the requester are automatically saved in the contact list in the profile of this forwarder/freighter
+
+If IMMLA database contains parameters for these request and this forwarder/ freighter already has rates for it, then IMMLA automatically sends a response to the request in the established form
+
+If there are no rates in the tariff database, then the forwarder/freighter adds them to IMMLA and responds from it to the customer's address with their printed form of the commercial offer.
+
+
+
+Significance of service for business
+
+This allows:
+
+ not to skip requests
+
+ to obtain a professional request form on the website that takes into account all the ins and outs of the logistics business
+
+ to keep all requests in one place
+
+ to output analytics on requests (both form the website and via IMMLA)
+
+ to be always available for clients
+
+ to respond as quickly as possible with the help of already downloaded rates
+
+ store the entire request-response history in one place
+
+
+
+36
+
+
+
+Whitepaper IMMLA
+
+
+
+Empty equipment map
+
+
+
+What problem does it solve?
+
+
+
+Description of IMMLA service
+
+
+
+Significance of service for business
+
+
+
+When exporting in containers, the customer is forced to pay for the route not only from his warehouse to the port, but also the rate for delivering this equipment from the owner's stock of equipment to the warehouse.
+
+Also for import deliveries, when the final consignee's warehouse is standoff from the place of storage of empty equipment (in most cases it is the port of arrival), the recipient of the freight pays two rates (from port to storage and back to port)
+
+
+
+IMMLA will contain the following information:
+
+ Location with the nearest empty equipment;
+
+ Specificatin of containers that will be delivered to various empty equipment stocks in the nearest future.
+
+IMMLA itself will search for the most favorable conditions to pick the equipment's owner, taking into account the delivery from the warehouse and the cost of the main Carrier.
+
+
+
+This will allow:
+
+ To understand where it is better to take empty equipment
+
+ To understand from where it'll be cheaper to receive empty equipment
+
+ To save money on flights with empty equipment (import containers just from the wheels will be given to send for export)
+
+
+
+Integration with the most popular messengers
+
+
+
+What problem does it solve?
+
+Studies have shown that specialists from the logistics sector solve a part of the operational work with the majority of their counterparties by the means of messengers.
+
+Working in an additional software for interaction with counterparties is an uncomfortable burden for them.
+
+
+
+Description of IMMLA service
+
+We integrate with all the best-known messengers;
+
+Users will be able to write, for example, via WhatsApp, and it'll be shown in IMMLA;
+
+When a user receives a message in IMMLA, it will be sent into WhatsApp too.
+
+IMMLA user card will specify the preferred type of connection
+
+
+
+Significance of service for business
+
+It will combine all the convenient communication channels into a single information center
+
+
+
+37
+
+
+
+Whitepaper IMMLA
+
+
+
+Warehouse reservation service
+
+
+
+What problem does it solve?
+
+Logistic schemes often require transshipment or short-term storage of goods
+
+For such operations, customers have no time to search for warehouses that can perform these operations and then the customer uses options of forwarder that are not always the most profitable
+
+
+
+Description of IMMLA service
+
+IMLLA will collect information about all warehouses, their services and free space along with their cost. A warehouse sends the information about available free space to IMMLA IMMLA sends a request to a warehouse The client reserves a free space
+
+Extrajudicial proceedings
+
+
+
+Significance of service for business
+
+It will close the chain of logistics services in one IMMLA transport platform and will give an opportunity to choose the most favorable conditions for transshipment of goods, and select the most efficient storage areas.
+
+
+
+What problem does it solve?
+
+
+
+Description of IMMLA service
+
+
+
+There are situations that each of the parties of the contract in the supply chain interprets issues at their own discretion. To resolve the disputed issues, the parties turn to the court and only there their question is resolved.
+
+It takes a considerable amount of time and expenses.
+
+
+
+We can offer a pretrial proceeding service.
+
+IMMLA will provide its opinion in disputable situations
+
+
+
+Electronic declaration of goods
+
+
+
+Significance of service for business
+
+It will allow to solve the disputed issues more quickly and cheaper.
+
+
+
+What problem does it solve?
+
+In the case of international transportations, cargo owners or consignees are forced to hire third-party customs clearance agents in the country where this service is required.
+
+With a wide geography of supply, it is not always possible to sell goods on the door-to-door conditions because of the lack of customs competence in the country of delivery.
+
+
+
+Description of IMMLA service
+
+Based on the available functions of the LogiSmart program IMMLA will be able to implement the functionality of filing electronic declarations with the customs authorities of the country of destination according to the regulatory requirements of the country.
+
+
+
+Significance of service for business
+
+It will allow all stakeholders to reduce their labor costs to study customs regulations in other states and to reduce the costs of attracting third parties.
+
+
+
+38
+
+
+
+Whitepaper IMMLA
+
+
+
+Appendix 3. List of basic services.
+
+
+
+Automatic cargo insurance
+
+
+
+What problem does it solve?
+
+
+
+Description of IMMLA service
+
+
+
+In most cases of transportation, the carrier or the freight forwarder is not obligated to insure the Cargo.
+
+More often, the insurance is not more than the amount that is prescribed by the norms of the customs authorities.
+
+In case of loss of cargo transported by road, the cargo owner will be paid a fixed cost in accordance with the provisions of the Convention on the Contract for the International Carriage of Goods by Road.
+
+If someone decides to insure the cargo (Carrier, freight forwarder, cargo owner), then upon the occurrence of the insurance event, the premium payment of the insurance will be extended for a period of 3 months to several years.
+
+
+
+IMMLA will attract the main stakeholders of the international insurance business on the terms of the conclusion of smart contracts.
+
+When the Customer signs the transportation via IMMLA, his commercial documents will pass mandatory verification, which will automatically include the insurance premium in the total freight rate.
+
+
+
+Automatic liability insurance
+
+
+
+Significance of service for business
+
+It will reduce the insurance expenses and eliminate the risks of cargo's loss or damage
+
+
+
+What problem does it solve?
+
+To date, in the practice of cargo transportation the liability insurance of freight forwarders can be hardly found.
+
+Therefore, all the consequences of poor services provision come to the field of arbitration claims and this leads to a long process of proof that the transportation losses occurred due to the fault of the contractor.
+
+
+
+Description of IMMLA service
+
+We plan to insure not only the cargo but also the responsibility of the contractors for the risks associated with their unscrupulous services provision. A contractor will be given a certain status and preferential insurance rate depending on its rating. Carriers who have issued such insurance will be marked with a special IMMLA quality mark We plan to make TT CLUB one of our key insurance companies.
+
+
+
+Significance of service for business
+
+It will reduce the risks occurred due to the fault of unscrupulous contractors and cover with insurance payments the additional costs, that have arisen because of unscrupulous performers.
+
+
+
+39
+
+
+
+Whitepaper IMMLA
+
+
+
+Quality assessment system
+
+
+
+What problem does it solve?
+
+In most cases, low-quality contractors attract new customers with low prices and a large set of cheap services.
+
+
+
+Description of IMMLA service
+
+To divide the Contractors into those who have poor service and that are engaged in price dumping and those who thanks to their highquality work have received large volumes of orders that they are allowed to offer more favorable terms - we introduce a mandatory rating system for both Contractors and Customers The rating will take into account: 1. Volumes transported via IMMLA 2. Number of denials 3. Request to transportation ratio 4. Payment terms 5. Number of accidents insured
+
+Open API
+
+
+
+Significance of service for business
+
+It will allow all participants to make informed decisions when choosing a counterparty and to monitor the quality of own obligations.
+
+
+
+What problem does it solve?
+
+
+
+Description of IMMLA service
+
+
+
+Significance of service for business
+
+
+
+Many of the freight forwarders we interviewed complained about the fact that there are so many exchanges, but they do not have time to place cargos, tariffs and trace them everywhere.
+
+
+
+IMMLA will allow you to integrate with the largest number of known ERP and CRM systems
+
+To this end, in the first half of the year a large study is planned, which should select the most frequently used software solutions and the most popular functions.
+
+
+
+It will allow each IMMLA participant to conduct their work in the program that is familiar to each of them, and the information relevant for IMMLA will be automatically received (rates, documents, terms and so on).
+
+
+
+Agreement on digital accession to the trading area
+
+
+
+What problem does it solve?
+
+To date, in order to be able to conduct a complaint management, participants of all transportation platforms are forced to conclude paper contracts and applications at the same time.
+
+
+
+Description of IMMLA service
+
+IMMLA participants will be invited to sign a memorandum (Agreement on digital accession). It will state that the parties accept interactions via IMMLA as legally significant for use in arbitration.
+
+
+
+40
+
+
+
+Whitepaper IMMLA
+
+
+
+Search for cargos and Carriers on the map
+
+
+
+What problem does it solve?
+
+In each exchange or transport platform, cargo owners place their cargos with a fixed point of loading
+
+Similarly, Carriers indicate where they will be unloaded in the near future
+
+And the opportunity to provide the Carrier with the load will occur in the case when the parameters of the Customer and the Contractor will accurately match = the same settlement
+
+In this case, the Carrier will be ready to load not only in the place of the last unloading, but also within a radius, for example, 30 km.
+
+
+
+Description of IMMLA service
+
+
+
+In IMMLA you can specify:
+
+
+
+1.
+
+
+
+Radius of
+
+
+
+probable load
+
+
+
+2.
+
+
+
+Search by
+
+
+
+the selected triangle
+
+
+
+(quadrangle)
+
+
+
+3. You can specify a time range, and the application will show all those who appear there in that time.
+
+
+
+Significance of service for business
+
+This will allow Carriers to always find the closest loads for carrying out return runs with cargo. In addition, it will allow the Customers to save money on the transportation tariff, since it will not include the cost of empty return.
+
+
+
+41
+
+
+
+Whitepaper IMMLA
+
+
+
+Appendix 4. SWOT-analysis of IMMLA
+
+The given SWOT-analysis is created with a view of definition of the further marketing strategy of IMMLA team. We understand that it is solely a reflection of the overall picture of IMMLA from the point of view of the marketing situation.
+
+
+
+Strengths  strong points of our project Weaknesses  weak points of our project Opportunities  external factors favorable for the project Threats  external factors unfavorable for the project
+
+42
+
+
+
+Whitepaper IMMLA
+
+
+
+STRENGTHS
+
+LogiSmart - using LogiSmart software as a fundamental solution allows you to take advantage of the ready-to-use solution and the experience that has been generated over the past 10 years. It significantly reduces the costs of the project and the time for its launch.
+
+Expert group - the project involves experts from all areas (business analysis, finance, logistics, blockchain, marketing, development.
+
+Ready-to-use base of Cargo - willingness of major retailers to place their goods in the exchange from the first days of its launch.
+
+EDI - this technology allows all participants to build their workflow without printed documents that will have full legal force.
+
+Soverin - verification system of users and their documents that allows all project participants to work with verified data.
+
+Blockchain - transparency of the work of all IMMLA participants allows to exclude the majority of disputable situations.
+
+Smart contract - allows to formalize the interaction of all participants, which increases the speed of decision-making, the transfer of work from one participant to another without delays, and excludes the possibility to interpret the obligations of each participant as in its discretion it may think fit.
+
+Partners - a wide range of partners from IT and Logistics allows you to be sure that IMMLA will have a sufficient number of goods and companies ready to transfer them from the very beginning. This guarantees a quick start of work and a reduction in marketing costs for attracting the first participants.
+
+Multimodality - this allows you to work with the widest possible range of consumers of logistics services and organize a door-to-door service.
+
+Cargo insurance - IMMLA will automatically insure all placed goods, which will avoid the fear of all participants to work not directly with customers.
+
+TT club - IMMLA plans to insure the liability of all participants of this project in order to eliminate the risks of unfair performance of obligations by Contractors. This will eliminate concerns of Customers.
+
+Own tokens - they will preserve services' prices inside IMMLA, regardless of all other currencies exchange rates.
+
+WEAKNESSES
+
+Short terms - to keep the leading position in the market that we create, we must always be the first and release new features in a short time.
+
+Risk of new technologies - since some of the technologies we are using are only beginning to be used in the field of logistics, there is a risk that not all the results can be known to us today.
+
+Staff shortage - there is a limited number of specialists on the labor market that possess the knowledge about the technologies we use.
+
+A wide range of different technologies - the basic number of selected technologies requires a lot of work to develop the right architecture, which will link everything into a single system while
+
+
+
+43
+
+
+
+Whitepaper IMMLA
+
+
+
+preserving the advantages of each technology used.
+
+New brand - IMMLA should attract large participants of the logistics market, but a little-known or new brand causes doubts of major stakeholders.
+
+OPPORTUNITIES
+
+Popularization of blockchain technology - many experts in logistics recognize that this technology is necessary for logistics.
+
+Absence of competitors - IMMLA creates a new market where there is not yet a competitive environment. To date all existing projects include only a part of probable customers and a small part of the technologies chosen by us.
+
+A broad regulatory environment in the field of logistics - this makes it possible to implement tools of smart contracts based on legal conditions for contracts.
+
+Revolutionary technology effect - many international experts believe that smart contract will replace the existing need for a large amount of paper work.
+
+Ecological factor - this project allows to reduce the amount of paper work, to reduce unnecessary transport runs and to reduce the number of superfluous participants in the supply chains, which will positively affect the environment.
+
+Economic factor - reduction of participants in the supply chain and increasing the efficiency of the resources used will positively affect the cost of products transported via IMMLA.
+
+THREATS
+
+Legal status of cryptocurrency - not all the countries recognize cryptocurrency as a legal way of payment.
+
+Conservatism of the market - participants of logistics and transport spheres are very cautious about new IT solutions.
+
+How do we plan neutralize the risk: launching a series of videos and other marketing efforts that will reveal the essence of the benefits of Technology and demonstrate successful cases that have already yielded positive results with this technology.
+
+Exchange rate fluctuations - transactions conducted via IMMLA can be carried out for several months, which leads to the risk of a difference in the currency rate between the date of ordering the purchase of the service and the moment of its payment.
+
+How do we plan to neutralize the risk (in case it will be required): creation of internal payment cryptocurrency, which can be emitted and redeemed, with the launch of the exchange robots with the task of maintaining exchange rate at a calculated level.
+
+Conclusion: this analysis shows that our project forms a new market in the field of logistics, which will make it possible to become a leader and pioneer in the industry of high-tech logistics.
+
+
+
+
+
+44
+
+
+
+Whitepaper IMMLA
+
+
+
+Appendix 5. Model of the optimal proposal selection
+
+
+
+Requests and offers on IMMLA platform
+
+
+
+Request/offer type
+
+A firm offer or request with FG
+
+Publishing a service or request without FG
+
+
+
+Contractor Bid
+
+Price-Catalog (PC)
+
+
+
+Client Ask
+
+Request to quote (RTQ)
+
+
+
+IMMLA implements all of the listed models and requests types. Firm offers and requests: Ask & Bids  are traded in separate Trade Zone
+
+
+
+Service Customer
+
+
+
+Ask
+
+
+
+RTQ
+
+
+
+Service Supplier Bid Price-Catalog (PC)
+
+
+
+Auto deal Supplier's choose
+
+
+
+Client's choose Analytics
+
+
+
+Legend: Trade Zone on a green background.
+
+
+
+Trusted parties only allowed to entry into Trade Zone. Service customers & suppliers requested their credentials and IMMLA token pocket. IMMLA Trade Zone Secure & Safety based on cascaded trust verification for each node of blockchain. IMMLA is the root node. Only confirmed by IMMLA nodes can issue service offers, other nodes check independently service supplier credentials before add a transaction to the blockchain.
+
+
+
+Model Auto Deal
+
+Robots
+
+Client's choose Supplier's choose Analytics
+
+
+
+Description
+
+The customer of the service issues a request for the service (Ask) and the suppliers respond with response offers (Bid) Log in is allowed after signing Electronic Connection to TZ Agreement The stand-alone program compares the Ask & Bid offers of different trading platforms and concludes counter transactions at the expense of the finances of its owner. Choose by the customer / supplier of the offer / request via selection based on the specified criteria.
+
+There are no conclusions of transactions here, but there are market analysis tools
+
+
+
+IMMLA provides Formalization and encoding of the service, API Access in the Trade Zone.
+
+Formalization of the service, the mechanism for finding the optimal offer or request
+
+
+
+Market Regular routes, standard service
+
+Irregular routes, nonstandard service
+
+
+
+45
+
+
+
+Whitepaper IMMLA
+
+
+
+Appendix 6. Payment details
+
+To integrate with external decentralized payment systems, the Payment Message Queuing Protocol is used. It is specialized query tool in IMMLA platform, implemented as a specialized smart contract that manages the queue of requests. The technological implementation of the Protocol for managing the queues of requests to payment systems is stated below. Using an external payment system allows:
+
+ Not to develop own payment system and not to take additional development risks
+
+ Not to use IMMLA platform as an intermediary for transactions
+
+The first stage involves the use of the decentralized protocol RIPPLE API as a payment system. When choosing the payment system protocol, IMMLA focused on open solutions with the following advantages:
+
+ The availability of proven and deployed infrastructure in an industrial mode
+
+ Open source code
+
+ A high level of community confidence in the consensus protocols and the decentralized network of independent nodes.
+
+
+
+The figure above shows General scheme of the platform with integration with an external decentralized payment system, main flows of data exchange between its functional components. The integration architecture of IMMLA with a payment system with the RIPPLE API is shown in the figure below. On the internal logic of a smart delivery contract, from the point of view of integration with external payment systems, the following tasks can be assigned:
+
+
+
+Ensuring following the matrix of statuses that determine the status of the smart contract, which form the events that provide interaction with payment.
+
+
+
+Control over the date of the limitation of the period within which payments can be made.
+
+
+
+Processing of the occurrence of events coming from the Query Queue Management Software.
+
+
+
+When passing to a certain status, a smart contract can send a certain request to the Query Queue Management Software for an expected external event, in particular, from an external payment system. When the external events requested by the smart contract occur, the Query Queue Management Software sends a transaction with the event information to it. Based on the results of processing this transaction, the smart contract can switch to a new state or remain in the previous state, in anticipation of subsequent events. When processing transactions, the smart delivery contract can use the information
+
+
+
+46
+
+
+
+Whitepaper IMMLA
+
+
+
+of the broadcast-oracles. The program for managing queues of queries consists of:
+
+the core;
+
+Monitoring subsystem, designed to collect information on the status of the contract, cargo, external conditions;
+
+Templates subsystem, designed to create and store templates of contract components;
+
+subsystems of interaction with external resources and data resources, designed to convert queries coming from the core into queries to external systems such as calendars, the exchanges, etc.
+
+The main payment process in multimodal transportations with the use of the queue management protocol
+
+Participants of the delivery contract, contractors - the Cargo Owner, Carriers, transshipment and related organizations conclude a transportation contract. Further operational support for the transaction is provided via IMMLA Platform.
+
+The considered part of IMMLA platform deals exclusively with the process of payment between counterparties.
+
+The main smart delivery contract (see smart contract Deal) contains a list of counterparties (with the appropriate requisites and account numbers), terms of transportation and payment terms. The terms of the contract (see smart contract RoutingSheet) are the conditions under which the delivery contract is deemed to be fulfilled or not fulfilled (in whole or in part), the implementation of the delivery conditions is the trigger of launching the orders for payments (distribution, sending, reservation of money) between counterparties, payment terms is a form of payment process, currency, cost, terms, commission fees. IMMLA platform in this case assumes the function of delivery conditions monitoring, and the Ripple API protocol is to ensure payment according to the technical conditions of payment.
+
+
+
+The main process of payment and interaction with the payment system is presented below:
+
+
+
+Cargo Owner creates a limited order (see smart contract Order) with the New limit on open (LOO) parameter for the smart transportation contract, which is assigned the status Paused/Running. The address of the limited order is placed on IMMLA platform.
+
+
+
+The Cargo Owner determines payment terms for settlements under the smart contract. (see smart contract RoutingSheet)
+
+
+
+After the formation of all conditions, the Cargo Owner transfers the Order to the status inImmla to ripple (ItoR).
+
+
+
+IMMLA platform automatically checks the transaction for delivery conditions and makes a request in the Ripple API protocol for the possibility of payment terms execution (client requisites in the client data directory, confirmation of the account balance and reservation of funds, other checks, for example, for compliance, etc.).
+
+
+
+47
+
+
+
+Whitepaper IMMLA
+
+
+
+If IMMLA platform reveals any claims regarding the contents of the smart transaction contract (see smart contract Claims), then IMMLA platform rejects the admission and sets its status to Interrupted/ Canceled.
+
+
+
+If IMMLA agrees to accept a limited order for execution, then it is set to Confirmed status.
+
+
+
+Based on the terms of payment described in the transaction, the Ripple API performs the necessary preparations for the payment (reservation of the transaction amount for the terms under the smart contract (holding). IMMLA platform forms a smart contract of delivery (see smart contract Deal) with the parameter Payment on open (POO), which receives the status Paused/Running. The address of the smart delivery contract is placed in IMMLA Platform. To monitor the transaction status of counterparties in the smart delivery contract, the address of the limited order is saved.
+
+
+
+IMMLA platform automatically adds to the smart contract the delivery of formalized payment terms from the conditions of the limited order with the description of the details of the transaction, and other necessary conditions and establishes the status Released to it. The delivery status of the limited order related to a smart contract with the New limit on open parameter is switched to Released. When switching to the Released status, the smart delivery contract automatically sends in Query Queue Management Software the following two requests:
+
+
+
+Request to control the expiration of the smart delivery contract (triggered when the current date exceeds the validity period of the smart delivery contract)
+
+
+
+Request for expectation of contract fulfillment
+
+
+
+If the expiration event of the smart delivery contract is the first to trigger, then it receives the status Overdue with the parameter limit on close (LOC) and further manipulations with it will take place according to the terms of the delivery contract. The delivery status of the limited order related to a smart contract is also switched to Overdue.
+
+
+
+If the event of contract fulfillment is the first to trigger, then the smart delivery contract is switched to the inImmla status. When changing to in Immla status, the smart delivery contract automatically sends to Query Queue Management Software a standby request for execution of the payment and calls API of Ripple protocol, removing the expiration control query from the queue.
+
+
+
+The Ripple API protocol based on the payment terms of the smart delivery contract performs a payment in favor of the Carrier.
+
+
+
+After triggering the payment execution event with the Payment on close (POC) parameter, it switches to the Closed status. The status of the Order related to the smart contract is also switched to Closed.
+
+
+
+Transaction completed.
+
+
+
+The protocol for managing the queues of requests to payment systems (Payment Message Queuing Protocol)
+
+
+
+Payment Message Queuing Protocol is a specialized query tool in IMMLA platform, that is implemented as a specialized smart contract that manages the queue of requests. To use the queue management protocol, the smart contract must support a special interface consisting of the following methods: GetRequestPaymentMessage, SetResponsePaymentMessage, and CheckResponsePaymentMessage.
+
+
+
+The interaction of smart delivery contracts with Query Queue Management Software is carried out using the following protocol:
+
+
+
+The smart contract adds the request to the queue via the AddRequest method by passing the
+
+
+
+48
+
+
+
+Whitepaper IMMLA
+
+
+
+request ID to the Request queue smart contract, address of which is fixed. The Request queue MessageQueuing smart contract contains the sources of queue requests, in the form of a managed address list, which must be the source addresses of the transactions that put the request in the queue.
+
+The query queue management protocol at regular intervals polls the Request queue MessageQueuing smart contract via GetRequests method, issuing a list of request IDs from the queue. It receives the current list of execution requests in response.
+
+When a new request is received via GetRequestPaymentMessage method, it issues query parameters by referring to the smart contract, and by query ID receives query parameters:
+
+ Frequency of execution of the request
+
+ Request template ID
+
+ Additional parameters if they are needed
+
+Query Queue Management Software with the frequency specified for this query polls the resources of payment systems in accordance with the query template and certain parameters.
+
+If, based on the logic embedded in the template, the response to the request is received - Query Queue Management Software transfers it as a transaction to the smart delivery contract via SetResponsePaymentMessage method in relation to the request and response identifier. At that, the smart delivery contract performs processing of the received response and fixes the response identifier.
+
+Next, Query Queue Management Software requests from the smart delivery contract via CheckResponsePaymentMessage method whether the response was received and processed.
+
+A smart contract offers one of the following options: FAIL - the answer is not received, is not processed or is incorrect - it is necessary to repeat the request and send the response; REPEAT - the answer is accepted, it is necessary to continue the execution of the corresponding query with the previous parameters; DELETE - the answer is accepted, the request must be removed from the queue; DELETE_ ALL - the answer is accepted, you need to remove from the queue all requests received from this Contract
+
+In the event that the smart contract sent a DELETE response - Query Queue Management Software via DeleteRequest method removes requests from the Request Queue MessageQueuing smart contract.
+
+
+
+49
+
+
+
+Whitepaper IMMLA
+
+
+
+Appendix 7. Cargo delivery flow
+
+1. Cargo delivery request registration. (Front end) Registered user sends request to service. Service handles request and stores it in the local database. Service sends request for "delivery analysis".
+
+2. Automatic route search. a. Data query. (Delivery analysis) Service searches suitable providers (carriers, insurance companies, custom restrictions, etc.) inside blockchain according to location, stated ToS and history. Calculates all associated costs (insurance, custom). Add recommendations (evaluate results as single metric). Returns result. b. Present found results to user. (Front end) Displays found results. Wait for user to add more details on delivery. Sends refined transfer request signed by user to the blockchain. c. Publishing transfer request. (Blockchain) Blockchain receives tx request. Smart contract does formal verification. Transfer request is published to the blockchain.
+
+3. Auction participants publish their offerings for the delivery request. a. New delivery request notification. (Blockchain) Service will send notification about new request, based on it stagged details. b. Participants receive notification. (Front end) Service display received information. Participants can send their offerings for the request. c. Offering is published. (Blockchain) Blockchain receives tx request. Smart contract does formal verification. Offering is published to the blockchain.
+
+4. Automatic full cost calculation. a. New offering notification. (Blockchain)
+
+
+
+50
+
+
+
+Whitepaper IMMLA
+
+
+
+b. Data query. (Delivery analysis)
+
+
+
+Calculates all associated costs (insurance, custom).
+
+
+
+Add recommendations (evaluate results as single metric).
+
+
+
+Sends result to user.
+
+
+
+c. Display offering to the user. (Front end)
+
+
+
+5. Define auction winner.
+
+
+
+a. Winner selection. (Front end)
+
+
+
+Service displays all offerings to the user, with filtering capabilities.
+
+
+
+Get auction winner based on Client choice.
+
+
+
+Sends auction result signed by user to the blockchain.
+
+
+
+b. Publish result. (Blockchain)
+
+
+
+Blockchain get tx requests.
+
+
+
+Smart contract does formal verification.
+
+
+
+Result is added.
+
+
+
+c. Notify winner. (Blockchain)
+
+
+
+d. Get confirmation from the winner. (Front end)
+
+
+
+Display information.
+
+
+
+Wait for user confirmation or decline.
+
+
+
+User response is sent to the blockchain.
+
+
+
+e. Process response. (Blockchain)
+
+
+
+If it is declined, then he gets delisted from list of participants of auction and flow goes to point a.
+
+
+
+If it is confirmation, then system creates delivery contract with appropriate details.
+
+
+
+6. Document Management System: open new route
+
+
+
+a. New delivery contract notification. (Blockchain)
+
+
+
+b. New routing sheet (Blockchain)
+
+
+
+Gathering base fields of the selected routing from the DMS
+
+
+
+Create new Smart Contract as a routing sheet
+
+
+
+Import detailed route from delivery contract (with list of intermediate points)
+
+
+
+Push list of auction winners (participants) to the routing sheet
+
+
+
+c. Collect confirmations (Blockchain)
+
+
+
+Notify Participants about the created routing sheet
+
+
+
+Participants sign the routing sheet
+
+
+
+51
+
+
+
+Whitepaper IMMLA
+
+
+
+Participants submit signatures to the routing sheet
+
+
+
+After getting all confirmations Blockchain emit event for all participants including the Client
+
+
+
+IMMLA initiate request that confirmations collected to the Document Management Subsystem
+
+
+
+d. Participants negotiations (Front end)
+
+
+
+Participants log-in to the DMS
+
+
+
+Participants upload documents, select additional details
+
+
+
+Participants select payment model
+
+
+
+Updates of the routing sheet is submitted
+
+
+
+e. Document Management Subsystem
+
+
+
+Service receives request with routing sheet Blockchain address
+
+
+
+DMS creates new contract between participants
+
+
+
+Contract details are stored into the local storage
+
+
+
+Payment details and each step deadlines are added to the routing sheet
+
+
+
+Fee and risk values are added to the routing sheet
+
+
+
+Hash of the contract submits to the routing sheet
+
+
+
+7. Initial payment processing.
+
+
+
+Depending on agreement this step may be skipped, if parties trust each other.
+
+
+
+a. Token acquiring. (Payment processor, Blockchain)
+
+
+
+Cargo owner purchases\borrows IMMLA tokens equivalent to costs of delivery.
+
+
+
+IMMLA issues required amount and transfer to cargo owner`s account.
+
+
+
+b. Collateral for a deal (Frontend, Blockchain)
+
+
+
+Cargo owner uses his token to send payment tx for a contract.
+
+
+
+Smart contract receives this tx, check that payment is enough and emits event of successful payment.
+
+
+
+8. Currency risks hedging. (Front end, blockchain)
+
+
+
+Gather information of obligations to hedge and show it to interested parties
+
+
+
+According to contract and their own preference parties hedge risk at 3rd party sites.
+
+
+
+In case there were requirements in contract, parties will provide proof of hedging actions, that will be put to blockchain.
+
+
+
+9. TODO: insurance
+
+
+
+10. Delivery Tracking
+
+
+
+a. Cargo monitoring (Backend)
+
+
+
+Tracking providers collects coordinations
+
+52
+
+
+
+Whitepaper IMMLA
+
+
+
+Tracking providers provide API to get details where the cargo IMMLA gets cargo coordinations from Tracking Provider. Tracking Provider signs data by private keys b. Cargo Status (Blockchain) Cargo coordination publishes to the Blockchain with specified routing sheet Smart Contract does formal verification. Coordinates are stored in Blockchain 11. Document management System: Close the route a. Cargo is delivered (Front End) Carrier log-in to IMMLA Carrier sets rating and closes the routing sheet Documents are uploaded to the DMS Update of the routing sheet is submitted to the Blockchain b. Cargo is received (Front End) Client gets the cargo Client log-in to IMMLA Client sets rating of delivery quality and closes the routing sheet Update of the routing sheet is submitted to the Blockchain c. Closing The routing sheet (Blockchain) Smart Contract receives signed confirmation from Carrier Smart Contract receives signed confirmation from Client Smart Contract does formal verification. Smart Contract close the routing sheet Delivery is completed 12. Feedback. a. Scoring. (Front end) Parties leave feedback and can start issues. Issue will include cause, amount of refund. b. Information is stored. (Blockchain) 13. Issue resolving. (Front end, Blockchain) a. Getting issue information. b. Their negotiation happens using Front end.
+
+
+
+53
+
+
+
+Whitepaper IMMLA
+
+
+
+c. Getting other party response.
+
+Other sends confirmation\declines over blockchain.
+
+If declined, then 3rd party will get blockchain notification, analyze and tells his decision over blockchain.
+
+14. Final payment processing
+
+a. Smart contract side (Blockchain)
+
+Smart contract does calculation of total delivery cost, taking into account ToS, shipping details and issues.
+
+Smart contract distributes funds, if there was collateral or just notifies sides about financial obligations that they have.
+
+b. Cashout request (Front end)
+
+If parties used IMMLA tokens, they make request for exchange for fiat, by sending tokens to specified IMMLA`s address.
+
+IMMLA makes payout, and destroys tokens.
+
+
+
+54
+
+
+
+Whitepaper IMMLA
+
+
+
+Appendix 8. Blockchain data model relationships.
+
+
+
+55
+
+
+
+Whitepaper IMMLA
+
+
+
+

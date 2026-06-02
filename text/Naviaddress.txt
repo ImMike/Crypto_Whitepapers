@@ -1,0 +1,1767 @@
+The new universal digital address platform powered by blockchain
+
+White Paper
+
+November 2017
+
+Naviaddress.com
+
+
+
+DISCLAIMER
+
+This draft white paper is for discussion and information purposes only. The information contained herein is subject to change. No part of this draft document is legally binding or enforceable. There is no guarantee as to the accuracy of or the conclusions reached in this white paper, and this white paper is provided "as is". Naviaddress Limited does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: (i) warranties of merchantability, fitness for a particular purpose, suitability, usage, title or noninfringement; (ii) that the contents of this white paper are free from error; and (iii) that such contents will not infringe third-party rights. Naviaddress Limited and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will Naviaddress Limited or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses. You will find important legal information in section 6 of this White Paper. Please do not copy or disseminate any part of this document without including this disclaimer.
+
+2
+
+
+
+TABLE OF CONTENTS
+
+
+
+1. WHY NAVIADDRESS?
+
+
+
+5
+
+
+
+1.1 The need for comprehensive addressing
+
+
+
+6
+
+
+
+1.1.1 Geographical coordinates
+
+
+
+6
+
+
+
+1.1.2 Postal addresses
+
+
+
+8
+
+
+
+1.2 Naviaddress idea creation
+
+
+
+11
+
+
+
+1.3 Our vision
+
+
+
+12
+
+
+
+2. THE NAVIADDRESS SYSTEM
+
+
+
+14
+
+
+
+2.1 Core principles
+
+
+
+15
+
+
+
+2.2 Naviaddress types and address protocol (containers)
+
+
+
+15
+
+
+
+2.3 Custom Naviaddress
+
+
+
+17
+
+
+
+2.4 Postal Naviaddress
+
+
+
+17
+
+
+
+2.4.1 Federal Naviaddresses
+
+
+
+18
+
+
+
+2.4.2 Regional Naviaddresses
+
+
+
+20
+
+
+
+2.4.3 Global Naviaddresses
+
+
+
+22
+
+
+
+2.5 Total Naviaddress pool
+
+
+
+23
+
+
+
+2.6 Premium Naviaddress
+
+
+
+24
+
+
+
+3. NAVIADDRESS PLATFORM AND TRANSACTIONS
+
+
+
+26
+
+
+
+3.1 Introduction
+
+
+
+27
+
+
+
+3.2 Main actors
+
+
+
+27
+
+
+
+3.3 NaviTokenSTM
+
+
+
+28
+
+
+
+3.4 Tokenomics
+
+
+
+29
+
+
+
+3.5 The Right to a Naviaddress
+
+
+
+31
+
+
+
+3.6 Transfer of rights to a Naviaddress
+
+
+
+32
+
+
+
+3.7 Safeguards - Blockchain
+
+
+
+33
+
+
+
+3.8 Metadata and content storage
+
+
+
+34
+
+
+
+3.9 Platform main modules (Proof of concept)
+
+
+
+36
+
+
+
+4. BENEFITS OF NAVIADDRESS
+
+
+
+37
+
+
+
+3
+
+
+
+5. ENDLESS POSSIBILITIES
+
+
+
+41
+
+
+
+5.1 Development roadmap
+
+
+
+42
+
+
+
+5.2 Possibilities Through Partnerships
+
+
+
+43
+
+
+
+5.2.1 Legal/Corporate Documents Storage
+
+
+
+43
+
+
+
+5.2.2 Real Estate
+
+
+
+44
+
+
+
+5.5 R&D to determine the best long-term solution
+
+
+
+44
+
+
+
+6. LEGAL DISCLAIMER
+
+
+
+46
+
+
+
+6.2 General warning
+
+
+
+49
+
+
+
+6.3 Warnings on the risks inherent to the ICO
+
+
+
+51
+
+
+
+6.4 Warnings on the risks inherent to the ICO
+
+
+
+52
+
+
+
+6.5 Recent regulatory actions
+
+
+
+57
+
+
+
+6.6 Know your customer procedure (KYC) and OECD
+
+
+
+complaisance
+
+
+
+59
+
+
+
+4
+
+
+
+1
+
+WHY NAVIADDRESS?
+
+
+
+1.1 The Need for Comprehensive Addressing
+
+Addresses serve a wide spectrum of fundamental functions that include:
+
+ Representation of a location (addresses are the most widely used means of doing so);
+
+ Representation of a well-defined space where human or business activities take place and which has an economic value and a social role;
+
+ Provision of a physical building location, particularly for cities with a complex structure;
+
+ Building identification as endpoints of a postal system;  Third dimension representation;  Parameterization of data for statistics collection (census-
+
+taking, insurance and more);  And even social status signalling; Considering their importance, accessibility to and reliability of information relating to such addresses are key. Moreover, in today's connected, globalized world, the need for a comprehensive, functional and universal addressing system has become even more pressing. Many attempts have been made throughout history to put in place such a system but, to this day, none has succeeded. Naviaddress seeks to change this.
+
+1.1.1 Geographical Coordinates
+
+The latitude-longitude coordinates system is, perhaps, the first location identification technology to be instituted. This system has been used since its introduction in the first world atlas in A.D. 150 by
+
+6
+
+
+
+the well- known astronomer Ptolemy. Its mechanism is relatively simple: it uses angular measurements to describe a position on the Earth's surface.
+
+As technologies evolved, Sir Isaac Newton formalized the first universal definition and principle of a geographical coordinates system: a system that enabled every location on Earth to be described by a set of numbers, letters or symbols.
+
+This system is still used today and would appear to represent the best mapping/addressing solution available. It is standardized, purportedly easy to understand and could, in principle, identify any location on the planet relatively accurately.
+
+However, despite its worldwide usage, it is far from being ideal. Its first flaw lies in the conversion method of the distances at different locations across the globe. For instance, if a ship would be located at the Equator, one degree of latitude would be equal to 110.57 kms; 40 degrees of latitude to 111.03 kms; while 80 degrees would already represent 111.66 kms. While this difference may not be represent a substantial variation for a private boat, it would be crucial for naval and cargo ships, due to the high cost of maintenance and fuel.
+
+Moreover, the geographical coordinates system only applies to locations in two dimensions. As cities become more crowded, with the erection of ever larger building or complex structures, a third dimension becomes essential for a location system to be completely usable.
+
+Another concern is the depiction of large area locations: a long coordinate is a small dot that outlines a very precise location on a map. Proper description of an area, however, requires a set of coordinates which makes it more difficult to analyze, store, and use.
+
+Other shortcomings would include:
+
+ The longitude/latitude format being difficult to understand, particularly for individuals not familiar with maps.
+
+7
+
+
+
+ Complexity in converting the latitude/longitude into an actual `location' due to conversion coefficients that may vary depending on location.
+
+ The system not being user-friendly. It is non-trivial to transmit the location information from one person to another on a daily basis. Even if such information were to be transmitted, the coordinates would still only represent dots on a map and it would be hard to tell if that dot would depict the correct place without actually consulting a map.
+
+ Geographical coordinates only allow for representation of fixed positions on Earth, not moving locations. After all, location and position are different things.
+
+1.1.2 Postal Addresses
+
+Before the postal addressing era, which dates back to the 18th19th centuries, most houses and buildings had no identification whatsoever. Streets were named after local landmarks or noble people living in the area. Various towns had streets left without a name at all. As mailing services expanded, the good memory of local postmen had become insufficient to allow for delivery of packages to thousands of people on a daily basis.
+
+The development of postal codes reflected the increasing difficulties of postal delivery. The system was implemented in major cities and the creation of the Universal Postal Union in the late 19th century only assured its expansion, which became truly global by the 1930s.
+
+However, postal codes themselves are not uniform. For starters, they could be divided in several major types, including:
+
+ Along administrative borders;
+
+ Close to administrative borders;
+
+ Independent of administrative areas;
+
+8
+
+
+
+Another flaw is that postal code systems in some areas are simply insufficient, requiring senders to further specify the desired address.
+
+Other shortcomings include the fact that:
+
+ There is no simple mapping algorithm to a physical location (i.e. coordinates);
+
+ Addresses have an insufficient amount of data to fully capture a particular place's location (no description or photograph or video to show a house);
+
+ The addresses' formats are different throughout the world:
+
+To be sure, the modern way of house numbering is an alternating scheme progressing in each direction along a street, with odd numbers on one side and even numbers on the other. Minor variations of the standard pattern also exist: for instance, various towns across the United Kingdom have "up and down" numbering schemes, where numbers progress sequentially along one side of the road and then sequentially back down the other side.
+
+Cities in North America, particularly those that are structured in grids, roughly follow the principles of a Cartesian coordinate system: blocks and quadrants of buildings are grouped in cardinal directions into their street numbers. Many other cities around the world have their own schemes.
+
+Although house numbering is the general identification scheme principle in most parts of the world, some houses (for instance, in England and Ireland) are actually identified by name. In such cases, the street name will usually follow the house name and read as follows: "Smith Cottage, Frog Lane, Barchester, Barsetshire, BZ9 9BA" or "Dunroamin, Emo, Co. Laos, Ireland" (Note: these are fictional examples).
+
+ There is a language (and cultural) barrier, since addresses are expressed in local languages;
+
+9
+
+
+
+Even when putting aside the variety of address styles and `empty' addresses, another issue arises: how can we share addresses with others around the world? This issue works both ways - when sending and receiving an address. We could, for instance, consider examples such as searching an address online in Norway using only the English alphabet, trying to explain directions to a taxi driver in China when not a fluent speaker or sending an office location to a potential investor from another country.
+
+To best illustrate this point and the complexity of cultural particularities, we provide, in the below Table, some examples of addresses from all over the world. Even if we were to translate all of these addresses into English (or use Roman numerals), this would barely help.
+
+
+
+World Addresses  Postal Format
+
+
+
+Original Address
+
+
+
+English denomination
+
+
+
+6 Parvis Notre-Dame - Pl. Jean-Paul 6 Parvis Notre-Dame - Pl. Jean-Paul II
+
+
+
+II, 75004 Paris, France
+
+
+
+75004 Paris France
+
+
+
+  15,  117 42, 
+
+
+
+Dionysiou Areopagitou 15, Athina 117 42 Greece
+
+
+
+ 19  : 100000
+
+
+
+19 Xin Jian Gong Men Lu Haidian Qu, Beijing Shi China 100000
+
+
+
+  1, , 125009
+
+
+
+Teatralnaya pl. 1, Moskva, 125009
+
+
+
+    ,    ,    ,  ,  110006,  
+
+
+
+Lal Qila, Chandni Chowk, New Delhi, Delhi 110006, India
+
+
+
+10
+
+
+
+Ultimately, a postal address is something fluid, location and culture-specific. It does not follow a general pattern, because there is no one universal solution. Every part of the world has its own addressing standard.
+
+ As well, despite its advances and supposed broad coverage, modern postal addressing remains incomplete, even in developed countries, as evidenced by the following examples:
+
+ a third of the houses in Ireland had not received proper unique identification until the introduction of Eircode postcode finders in 2014;
+
+ the Navajo Nation, a Native American tribe living in the Navajo Desert in the USA was still assigning rural addresses as of 2015;
+
+ in South Africa, one third of the population does not have an official address. This translates into more than 11.5 Million people being deprived of basic social rights, because the related governmental services cannot identify where these people live.
+
+ Finally, designation of postal addresses are primarily within the purview and control of governments and local authorities and processes to change or update these, to the extent available, may often be quite cumbersome and time-consuming.
+
+All of the above points to a simple conclusion: Despite certain advances throughout the last centuries, a simple solution to addressing has yet to be achieved. Naviaddress is here to change this and introduce comprehensive, accessible addressing for all  covering 21st century needs.
+
+1.2 Naviaddress Idea Creation
+
+As for many other projects, the idea of Naviaddress came from a need that Mr. Mikhail Gamzin, the founder of the Naviaddress
+
+11
+
+
+
+System, identified a few years ago. Here is the story in his own words:
+
+"The idea of Naviaddress first came to me in Paris in 2012. My friends invited my wife and I to a restaurant. We took a taxi from our hotel and started explaining our intended destination to the taxi driver. We, first, did so in English, but he didn't understand. We then tried to explain this in our very weak French, with the same result. I had to call my local friends and pass the telephone to the taxi driver, for them to clarify the restaurant's location. At that moment I realized that what we really need in this modern digital world are digital addresses! I did some research and, to my surprise, such solution had yet to be developed. After pursuing this research further and, buoyed by the success of startups such as Uber and Airbnb and their impact within big industries, I realized, in 2014, that the time had come and set upon realizing this great endeavor."
+
+1.3 Our Vision
+
+The goal of a global digital addressing system, Naviaddress, is the creation of a decentralized global unified address platform for real and virtual worlds. We believe in a world where postal and local addresses reflect the historical and cultural peculiarity of a given place. In parallel, people would also be able to use new, reinvented digital addresses, reflecting modern society's needs: naviaddresses.
+
+12
+
+
+
+We proclaim that:  Addresses must have a simple standard format throughout the world;  Addresses can be created not only by governments but by any person or group;  An address is much more than just a text line: it should also reflect a geo-position and a digital description of a location;
+
+Our vision is to create a modern and easy-to-use international addressing system, which will give rise to a plethora of addresses:
+
+ International addresses;  Unified addresses, easy to reference;  Flexible addresses;  And, more importantly, addresses that are easy to obtain
+
+(accessible even to those individuals who would be living on an unnamed street or an unnumbered building); All that, and much more, is what we call a naviaddress. Our primary focus is to engage regular people and companies from all over the world in the creation/assignment, modification and exchange of addresses in our system for their own benefit and to address all of their location-related needs. We wish to cover primarily all habitable places on Earth. This would enable, for instance, people who may currently not have any official, government-provided address to assign a naviaddress to a physical location. Empowering people to have rights in their addresses: what an opportunity!
+
+13
+
+
+
+2
+
+THE NAVIADDRESS SYSTEM
+
+Create
+
+
+
+Navigate
+
+
+
+Search
+
+
+
+Share
+
+
+
+2.1 Core Principles
+
+The Naviaddress System has been developed by the Naviaddress Platform Operator based on patented technology able to assign a digital address to any location in the world. The core principles of the Naviaddress System and its elaboration are:
+
+ Clarity in any language and for any culture: an address is depicted by digits only
+
+ Naviaddress offers a simple, universally recognizable, digit address, such as the following:
+
+[71] 0022
+
+ Addressing any object or place: hybrid of postal addressing and geotagging capabilities
+
+ More than just an address repository: possibility for users to add additional information
+
+ Endless user content inclusion possibilities, such as contacts, "last mile" and more;
+
+2.2 Naviaddress types and address protocol (containers)
+
+One of the main features and advantages of the Naviaddress System lies in the simplicity of its description of addresses and locations. This consists essentially of a specific, hierarchical sequence of digits beginning in most cases with a Container (corresponding to the international country code) and followed by a sequence of digits based either on information from a specific postal address or automatically assigned by the System, as further outlined below.
+
+15
+
+
+
+Here is an example of a naviaddress:
+
+Each Container can include naviaddresses with a length of 1 to 18 digits.
+
+ 1 to 5-digit naviaddresses: Premium naviaddresses whose rights may be allocated to Customers by the Platform via auction (please refer to Section 3 for more details);
+
+ 6 to 10-digit naviaddresses: exclusively managed by the Platform; used for development and popularization of Naviaddress; rights thereto can also be allocated to Users for creation of Custom naviaddresses with User-generated content; they are not available for direct purchase the Platform;
+
+ 11 to 18-digit naviaddresses: rights thereto available for third-party Developers (urban infrastructure and IoT);
+
+A naviaddress and its depiction/sequencing will vary depending, among other things, upon the type of naviaddress used and object represented. There are essentially 3 categories of naviaddresses within the Naviaddress System:
+
+1. Custom naviaddresses, representing dynamic objects, that may be moved;
+
+2. Postal naviaddresses, representing static objects, such as buildings, structures or locations; and
+
+16
+
+
+
+3. Global naviaddresses, depicting mobile objects;
+
+2.3 Custom Naviaddress
+
+A Custom naviaddress can only be created by Platform Users (as described in Section 3). It usually refers to a random place on the planet, such as a tree in the park, a spot in the sea, a parking lot and more. The algorithm employed in this regard uses GPS coordinates and the third dimension to create unique combinations of digits similar otherwise to the Postal naviaddress. A Custom naviaddress refers to a particular place at any given time. The address creator may, however, easily move or transpose it to another location. Custom naviaddresses consist, by default, of 6-digits (within given Containers) and are free for all Platform Users. They are usually the first step towards acquiring rights to Short Premium naviaddresses (further defined below) for the businesses or individuals wishing to incorporate Naviaddress into their marketing and promotional materials or for personal use.
+
+2.4 Postal Naviaddress
+
+A Postal naviaddress is a prebuilt unique combination of digits referring to specific locations using existing postal address information combined with country / region international telephone codes. As previously outlined, the Naviaddress Container reflects each country / regional calling code combination. A Container Postal naviaddress can be referred to as a unique 6-digit combination. For example: Postal naviaddress [7 1] 192918 can be searched in Moscow as just 192918. There are millions of Postal naviaddresses worldwide.
+
+17
+
+
+
+OpenStreetMap (OSM) refers to over 68M addresses alone and our goal is to index them all. While Platform Users may not create Postal naviaddresses, they can find these for a particular location by simply clicking on such location in our mobile applications or using the map on our website. Platform Users may also easily share Postal naviaddresses for such varied uses as e-commerce, calling a taxi, navigating, performing deliveries and more. Postal naviaddresses are visible and free to use for all. We plan on making the Postal naviaddress database opensourced. This will enable e-commerce, logistics and many other businesses to streamline their processes, thus increasing usability and optimizing costs. For ease of reference, a simple naming protocol was put in place for Postal naviaddresses, as follows:
+
+2.4.1 Federal Naviaddresses
+
+A Federal Container (also referred to as a Leval 1 or System Root Container) code is the basic denomination for stationary objects, such as building, structures or locations. It corresponds to a country's current calling code. For instance, Russia's country calling code is +7; hence, Russia's Federal Container code will also be [7].
+
+[7] 0022 ("7" is for Russia)
+
+In the event the same calling code is used in different countries, an additional Container will be added for the country whose population is lower at the time of Container creation, so as to prevent duplication of Federal Containers. Hence, the Container for the USA will use
+
+18
+
+
+
+be [1], while Canada's will be [11]. As well, Kazakhstan has been assigned Federal Container [77].
+
+It is important to note that new codes should not be used by other countries.
+
+Initially, the Naviaddress platform comprises 200 Federal Containers. More specifically, Federal Containers include:
+
+ 196 Federal (Level 1*) Containers corresponding to countries recognized by the United Nations and other territories;
+
+ Container [0] is assigned to other areas (oceans, seas, Antarctic, other no-man's land / neutral territories);
+
+ 3 containers are reserved for future use;
+
+
+
+Allocations within Federal (Level 1) Containers (about 200 containers)
+
+
+
+Address length (# of digits) 1 2 3 4 5 6 7 8 ... 18 TOTAL
+
+
+
+Price (NVC) 100,000 10,000 1000
+
+100 10 1 0.1 0.01 ... 0.00000000001
+
+
+
+Address pool per container (# of Naviaddresses) 10 100 1,000 10,000 100,000 1,000,000 10,000,000 100,000,000 ...
+
+1,000,000,000,000,000,000 1,111,111,111,111,110,000
+
+
+
+Value (NVC) 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000
+
+... 1,000,000 18,000,000
+
+
+
+= Premium
+
+
+
+19
+
+
+
+2.4.2 Regional Naviaddresses
+
+For countries with a high population density, Regional sub-Containers (Levels 2 and 3) may be introduced. Regional naviaddresses are also assigned to stationary objects.
+
+[7 1] 0022 ("7" is for Russia and "1" is the Moscow regional code)
+
+Every Regional Container uses a unique code from 1 to N depending on the regional division's population (where 1 - is an administrative division which includes the capital, 2 - the administrative division with the largest population at the time of the code creation and N - the administrative division with the lowest population). Please refer to the example below depicting France:
+
+
+
+Country / region code
+
+
+
+Country
+
+
+
+Region
+
+
+
+[+33] 33-1 33-2 33-3 33-4 33-5 33-6 33-7 33-8 33-9 33-10 33-11 33-12 33-13
+
+
+
+France
+
+
+
+le-de-France Auvergne-Rhne-Alpes Hauts-de-France Nouvelle-Aquitaine Occitanie Grand Est Provence-Alpes-Cte d'Azur Pays de la Loire Normandie Bretagne Bourgogne-Franche-Comt Centre-Val de Loire Corse
+
+
+
+Population
+
+
+
+Includes capital?
+
+
+
+67,000,80 12,005,077 Yes 7,634,000 5,960,000 5,776,000 5,573,000 5,545,000
+
+4,916,000 3,601,113
+
+3,315,000 3,237,097 2,816,000 2,556,835
+
+322,000
+
+
+
+20
+
+
+
+If the population in a Regional Container is too large (over 10 Million), Regional Containers are further divided into lower administrative level Containers in the same manner.
+
+The example below illustrates the State of Uttar Pradesh in India, which has a population of 200 Million.
+
+
+
+91-2
+
+
+
+Uttar Pradesh
+
+
+
+91-2-1 91-2-2 91-2-3 91-2-4 91-2-5 91-2-6 91-2-7 91-2-8 91-2-9 91-2-10
+
+
+
+Allahabad Moradabad Ghaziabad Azamgarh Lucknow Kanpur Nagar Jaunpur Sitapur Bareilly Gorakhpur
+
+
+
+199,812,341
+
+5,959,798 4,773,138 4,661,452 4,616,509 4,588,455 4,572,951 4,476,072 4,474,446 4,465,344 4,436,275
+
+
+
+21
+
+
+
+Allocated within Regional (Level 2 and Level 3) Containers (more than 5,150 Containers), e.g. Level 1 container for Russia [7], Level 2 for Moscow [7 1].
+
+
+
+Address length (# of digits)
+
+1
+
+
+
+Price (NVC)
+
+10,000
+
+
+
+Address pool per container (# of Naviaddresses)
+
+10
+
+
+
+2
+
+
+
+1000
+
+
+
+100
+
+
+
+3
+
+
+
+100
+
+
+
+1,000
+
+
+
+4
+
+
+
+10
+
+
+
+10,000
+
+
+
+5
+
+
+
+1
+
+
+
+100,000
+
+
+
+6
+
+
+
+0.1
+
+
+
+1,000,000
+
+
+
+7
+
+
+
+0.01
+
+
+
+10,000,000
+
+
+
+8
+
+
+
+0.001
+
+
+
+100,000,000
+
+
+
+...
+
+
+
+...
+
+
+
+...
+
+
+
+18
+
+
+
+0.0000000000001 1,000,000,000,000,000,000
+
+
+
+TOTAL
+
+
+
+1,111,111,111,111,110,000
+
+
+
+Value (NVC) 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000
+
+... 1,000,000 18,000,000
+
+
+
+A Custom naviaddress may overlap with a Postal naviaddress without creating confusion. For example, Postal naviaddress [7 1] 164273 and Custom naviaddress [7 1] 987467 refer essentially to the same place/address. However, each are generated by different algorithms and may address different user concerns.
+
+
+
+2.4.3 Global Naviaddresses
+
+Global naviaddresses have NO Container in their structure, being essentially designated for mobile objects (vehicles, animals and more):
+
+0022
+
+
+
+22
+
+
+
+They are assigned by the Platform to Users upon their registration. Primary Users of Global naviaddresses would be large corporate organizations with global subsidiaries / office networks (banks, fast-food chains, oil companies / gas stations and more) Registered Users will receive rights to such types of naviaddresses corresponding to their mobile phone numbers; alternatively, they may select other naviaddresses (shorter and/or customized).
+
+
+
+Address length (# of digits) 1 2 3 4 5 6 7 8 ... 18 TOTAL
+
+
+
+Price (NVC) 1,000,000 100,000 10,000 1,000
+
+100 10 1 0.1 ... 0.00000000001
+
+
+
+Address pool per container (# of Naviaddresses) 10 100 1,000 10,000 100,000 1,000,000 10,000,000 100,000,000 ...
+
+1,000,000,000,000,000,000 1,111,111,111,111,110,000
+
+
+
+Value (NVC) 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000 1,000,000
+
+... 1,000,000 18,000,000
+
+
+
+2.5 Total Naviaddress pool
+
+Global naviaddresses: NO Container; used for mobile objects & global corporate networks
+
+0022
+
+
+
+23
+
+
+
+Federal naviaddresses (Level 1 (nationwide) Container; stationary objects, e.g. buildings and locations):
+
+[7] 0022 (7 is for Russia)
+
+Regional naviaddresses (Level 2 & 3 (regions, cities) Containers; used for stationary objects):
+
+[7 1] 0022 (7 1 is for Moscow, Russia)
+
+
+
+Container Number of
+
+
+
+type
+
+
+
+containers
+
+
+
+Total address pool per container type
+
+
+
+Including Premium Naviaddress
+
+pool
+
+
+
+Total value (NVT)
+
+
+
+Including value of Premium
+
+Naviaddresses (NVT)
+
+
+
+Global Federal Regional TOTAL
+
+
+
+1 200 5,150 5,351 *
+
+
+
+1,111,111,111,111,110,000
+
+
+
+111,110
+
+
+
+180,000,000
+
+
+
+50,000,000
+
+
+
+222,222,222,222,222,000,000
+
+
+
+22,222,000 3,600,000,000 1,000,000,000
+
+
+
+5,722,222,222,222,222,000,000 572,216,500 9,270,000,000 2,575,000,000
+
+
+
+5,945,555,555,555,560,000,000** 224,553,110 13,050,000,000 3,625,000,000
+
+
+
+* The number of Containers may vary subject to adjustments in the Container structure for each country
+
+** 5.9 sextillion naviaddresses
+
+
+
+2.6 Premium Naviaddress
+
+A Premium naviaddress is a "short" Custom naviaddress (1-5 digits within a specific Container). It is ideal for designating business locations or private houses.
+
+Such naviaddresses will also be much easier to remember, as their digits are selected by the User. They are also ideal for Customers' marketing & promotional business materials.
+
+
+
+24
+
+
+
+A premium naviaddress can be instantly created, within minutes, by using our mobile application or website; another advantage compared to some existing online business directories. Finally, these naviaddresses (as well as Custom naviaddresses) are designed to be content-rich, incorporating User-specific information in a convenient and simple format (description and photos of the place, "last mile" routing information, useful tips, telephone numbers, websites and more). The current scope of the Naviaddress System is available to existing users and covers primarily Custom naviaddresses (i.e. creation of addresses for any places or objects  as this is currently the most user-friendly functionality). Through the alliances and strategic partnerships we intend to forge, particularly with geographical/mapping experts, the next step is to put in place a Platform where precise Postal naviaddresses would be created or logged in worldwide. This expansion, enabled by blockchain, would bring new participants and ultimately create a network effect.
+
+25
+
+
+
+3
+
+NAVIADDRESS PLATFORM AND TRANSACTIONS
+
+
+
+3.1 Introduction
+
+The Naviaddress Platform is a decentralized software solution based on cutting edge blockchain technology.
+
+The main goal of the Naviaddress Platform is to create and develop a worldwide universal digital address solution.
+
+To allow this, Naviaddress is developing its own user incentive program based on NaviTokenTM tokens (NVT)(further discussed below).
+
+As well, as outlined above, the Naviaddress Platform will promote the expansion of the System by issuing and sharing NVTs with Users who subscribe to any Naviaddress products, such as web and mobile applications, chat bots and so on.
+
+The Naviaddress Platform is gathering a community of geography experts and incentivizing creation and verification of world addresses.
+
+The main advantage of purchasing a NVT is the right to a naviaddress and the right to modify and update metadata related to such address. Information on such naviaddresses will be published and made available publicly on the Naviaddress System.
+
+3.2 Main actors
+
+The following are the main actors that are expected to interact within the Platform:
+
+ Platform. The Naviaddress Platform is created and managed by the Naviaddress Platform Operator.
+
+ Developer. Geographical/mapping companies, cartographers, governments and more. They develop various products, transactions and services relating to the Naviaddress System and help extend these. Developers receive NVTs by creating
+
+27
+
+
+
+new locations and extending the services and products. These activities are typically supported and rewarded by the Naviaddress Platform.
+
+ Customer. Customers have the right to acquire rights to a naviaddress and publish this information within the System in the blockchain ledger. Every Platform member is eligible to exchange naviaddresses for NVTs.
+
+ User. Individuals who use naviaddress applications and activities.
+
+A combination of different roles amongst the above actors is also possible. A Customer may become the beneficiary of a valuable naviaddress and sell the asset on the growing market. Other Customers may choose to focus on the operational (retail) business and become naviaddress Developers, which work directly with end users, without actually purchasing the rights to a naviaddress. Some other Customers may earn NVTs from the Platform by extending the System coverage and creating new segments of Postal naviaddresses, or developing new features or services.
+
+3.3 NavitokensTM
+
+A NVT is a unit of defined value internal to the Platform that may be used by any of the actors outlined above in acquiring or exchanging rights to naviaddresses, services or any other thing within the Platform.
+
+NVTs could also be used to promote the System by awarding NVTs to Users for certain actions within the Naviaddress Platform: registration, invitation of others, creation of popular Custom naviaddresses and other activities.
+
+Ultimately, NVTs will be used to stimulate Platform promotion, adoption and development.
+
+28
+
+
+
+The NVT will only be used by their holders:  on the Naviaddress platform ;  for the uses exhaustively described in this White Paper; and  in accordance with the Terms and Conditions of Token Sale to be executed by each purchaser of NVT.
+
+NVT will be used as a mean of payment for the right to a Premium Naviaddress through auction as described in Section 3.5. hereunder, which shall in turn include the right to:
+
+ assign a physical location to the Premium Naviaddress;  assign additional metadata to the Premium Naviaddress;  modify the location and the metadata associated with the
+
+Premium Naviaddress; and  exchange the Premium Naviaddress on the secondary auction
+
+market. Premium Naviaddresses will only be acquirable through NVT, excluding any cryptocurrency or fiat currency.
+
+3.4 Tokenomics
+
+The flow depicted below is typical of many "token economies" across various industries. The Naviaddress Platform invests NVTs into the development and extension of the Naviaddress System. In return, the Developers create new location descriptions, enriching the information available in the Platform.
+
+29
+
+
+
+Typical Transaction Circulation within the Naviaddress Platform
+
+
+
+Work
+
+
+
+PLATFORM
+
+NVT
+
+
+
+owAnedrdsrheisps, update
+
+
+
+NVT
+
+
+
+DEVELOPERS
+
+NVT Currency
+
+
+
+CUSTOMERS
+
+
+
+NVT
+
+
+
+Currency
+
+
+
+EXCHANGES
+
+
+
+The rights to naviaddresses are transferred from the Platform to the Customers in exchange for a specific amount of NVTs. This drives the NVT demand from the Customer side, which could be met on the marketplace.
+
+"High quality" addresses, namely those which include correct postal address information and User-generated content, will be rewarded within the Platform. The blockchain voting system, peer reviewer of special members, AI and oracles will be used to create a robust and quality digital address system. Moreover, in the near future, Naviaddress Platform will create a separate mobile application to facilitate this rewarding principle.
+
+
+
+30
+
+
+
+3.5 The right to a Naviaddress
+
+One of the most important transactions that will be taking place within the Platform relates to the issuance to Customers of the right to a naviaddress. The following diagram provides more details on this process. A standard way of transferring the right to a naviaddress from one Customer to another is via an auction. A designated smart contract will be implemented for this procedure.
+
+
+
+PLATFORM
+
+
+
+Address ownership
+
+
+
+Address ownership NVT
+
+
+
+Fee (NVT)
+
+
+
+AUCTION CONTRACT
+
+
+
+Address ownership Bids (NVT)
+
+
+
+ADDRESS OWNERS
+
+
+
+BIDDERS
+
+
+
+Each naviaddress will have a specific denomination in NVTs. If a Customer submits a request for a Premium naviaddress, an auction process will be launched where this Customer makes the first bid at par (reflecting the nominal value of the naviaddress denominated in NVTs). If no other bids are received, the nominal price received from the Customer's wallet will be burned and the rights to such naviaddress allocated accordingly.
+
+If there were other interested Customers and the first Customer would end up losing, then the naviaddress would be transferred to the bidder offering the maximum price and the base nominal value would be burned, with the Platform receiving the premium generated at the auction from the naviaddress. 10% of the Platform sales commission will be given to the first Customer. Thus, even
+
+
+
+31
+
+
+
+if this Customer were to be unsuccessful at an auction, he or she would still receive compensation in the form of NVTs. Here is a step by step overview of the process relating to creation of rights to a naviaddress:
+
+1. For (Custom & Postal) naviaddresses:  A Customer sends a request for a naviaddress;  A right to a naviaddress is granted by the Platform;  Tokens received from the winning Customer are burned;  The information about the naviaddress beneficiary (the beneficiary's public key) is updated.
+
+2. For premium naviaddresses, an auction for rights to such addresses will be set up, following which:  Information about the naviaddress beneficiary is updated;  A nominal number of NVTs are burned;  The auction fee is collected from the Naviaddress Platform wallet;  There is a mutual settlement with the unsuccessful requestor, if any;  Information about the naviaddress beneficiary and address storage is updated.
+
+3.6 Transfer of rights to a Naviaddress
+
+All rights to a naviaddress are eligible for exchange between Customers at an auction. Exchanges can only occur through such auction process. The original beneficiary puts up for auction the right to a naviaddress and the bidders then place bets, with offers not below the nominal value, as such would have been assigned at NVT issuance. Upon conclusion of the auction, the rights to the
+
+32
+
+
+
+naviaddress are transferred to the highest bidder. The previous beneficiary receives all the proceeds into his account, minus a Platform commission representing 10% of the difference between the nominal value and the highest bid.
+
+3.7 Safeguards - Blockchain
+
+The Naviaddress Platform is powered by blockchain.
+
+The blockchain technologies that emerged in recent years offer a qualitatively different solution to the problems faced by companies and individuals in the process of managing physical locations.
+
+In fact, open blockchains such as Bitcoin or Ethereum have a number of properties that distinguish them from any centralized database solution typically used to store and provide information. While they cannot be considered uniformly better or worse, some relative advantages might be:
+
+ Win-win consensus building
+
+Instead of centralized top-down decisions by local authorities, people within one area or globally can agree on digital identities, which manage conflicts and maximize everyone's interests simultaneously;
+
+ Low cost
+
+With no middle man to charge monopolistic fees and with a reward mechanism built into the blockchain protocol, transfers require only a small transaction fee;
+
+ Data immutability
+
+Each transaction is policed by every member of the network and its integrity verified and agreed upon by the network as a whole on a daily basis. Any change that any party attempts to make to the blockchain is recognized and rejected by the majority;
+
+33
+
+
+
+ Accountable changes Anything that was recorded in blockchain is visible to the public;
+
+ Security Since the blockchain is maintained by a large network of participants, no one actor can easily gain enough influence to submit a fraudulent or harmful data entry. Although this may be possible in theory with enough resources, it is prohibitively expensive in practice.
+
+We are confident that Naviaddress will benefit from these many safeguards and advantages of blockchain. Ensuring our technology is both free and secure/transparent for our Users is key for credibility, sustainability and growth. The Naviaddress System will ensure that the latest information about naviaddresses is verifiable, that these point to a precise geographical location and that naviaddress geographical coordinates are not compromised nor mails or valuable deliveries hijacked. Accountable changes and security will add trust in naviaddresses provided to the world. We strive for our service to be a source of truth and firmly believe that blockchain is an invaluable tool to achieve that goal. By using a blockchain we can also that the network will continue to operate even if something happens to the Platform Operator or its servers.
+
+3.8 Metadata and content storage
+
+As in every digital addressing system, the bulk of the data that may need to be stored off the chain and its integrity and availability will be subject to scrutiny. Part of the intrinsic value of the NVT token
+
+34
+
+
+
+will come from the ability to manage and maintain this global distributed database on behalf of all the stakeholders. In the case of the Naviaddress System, it is estimated that about 1Bn naviaddresses and information linked to these, such as pictures, phone numbers, website urls, will be stored on well-known and secure third party platforms. Initially, the System will be launched using a small number of BigchainDB nodes, all administered by the Naviaddress Platform. To increase the extent of the service's decentralization, the Platform nodes will be (further) integrated through our community members. BigchainDB (https://www.bigchaindb.com) was selected as the most robust side chain storage solution. As a scalable blockchain database, it is designed to merge the best of two worlds: the "traditional" distributed database world and the "traditional" blockchain world. It combines the key benefits of distributed databases and traditional blockchains, with an emphasis on scale. The Naviaddress Platform will be able to provide a fast and yet decentralized solution if the smart contracts that may be generated therein are linked with the BigchainDB storage. Finally, we have opted for IPFS (https://ipfs.io) regarding the media content storage, such as User images/photos and video information. IPFS provides resilient access to data, independent of low latency or connectivity to the backbone. IPFS and Blockchain are a perfect match! One can address large amounts of data with IPFS, and place the immutable, permanent IPFS links into a blockchain transaction. This timestamps and secures content, without having to put the data on the chain itself.
+
+35
+
+
+
+3.9 Platform main modules (Proof of concept)
+
+The first version of the Naviaddress Platform has been developed on the basis of security guarantees as provided by the following modules:
+
+ NaviToken, ERC20 token based on the Ethereum platform;  Wallet of Naviaddress Platform, where the tokens created
+
+during the TGE are initially stored. A commission from the auction sale and resale of rights to addresses is collected on this wallet.  Naviaddress metadata stores based on BigchainDB (https://www.bigchaindb.com);  Content storage based on IPFS (https://ipfs.io) for media files linked to a naviaddress metadata;  Naviaddress rights store smart contracts based on Ethereum;  Auction, an external module based on a blockchain (e.g. DomRaider) for obtaining the benefit of a naviaddress; In addition to these safeguards, two independent applications will be developed in the future: The first will target the experts who will create and verify System addresses (iOS, Android), while the second is intended for end Users (iOS, Android).
+
+36
+
+
+
+4
+
+BENEFITS OF NAVIADDRESS
+
+
+
+In light of the above, the many benefits that Naviaddress has to offer compared to the current addressing regime become all the more clear. In fact, Naviaddress seeks nothing less than to optimize and revolutionize the addressing and related industries altogether! Such benefits derive as much from the Naviaddress System currently in place as from the Naviaddress Platform that is in the process of being instituted, and include:
+
+ A Simple, Unified address; To be sure, Naviaddress [33] 575004 is much easier than:  5 Avenue Anatole France, 75007 Paris, France  5   , ,   5 Die Anatole Frankreich, Das Paris, Frankreich  575007
+
+ 5   75007 
+
+38
+
+
+
+ Broader/more complete coverage. Extending to all places (livable or otherwise) and objects (mobile or static) on Earth, including large areas;
+
+ 3 Dimensional area coverage;
+
+ Empowerment. Through the possibility of obtaining rights to addresses, controlling the content therein and transferring/ transacting these;
+
+ Flexible addresses. Addresses that move with you, with your office and that are coupled with your business or your home. There is no longer a need to change business cards or websites whenever your office location changes. Simply assign a new location to your naviaddress. It is that easy!;
+
+ Easy-to-obtain. With the geo-location information in hand, anyone may add an address to the System if it is not already there;
+
+ Premium addresses. The possibility of owning rights to valuable addresses;
+
+ A Smart address. Not just a nickname for your geo-code. You can associate additional information with your address media, messages, useful hints and more;
+
+ Joining an ever-growing network of Users and a community dedicated to the advancement of all matters related to addressing around the world;
+
+ Simple and secure transactions with respect to rights to addresses. Rendered possible by blockchain technology.
+
+Above all: A naviaddress is more than just an address. It is an Internet platform and a new form of digital good, allowing, among its many functionalities, the possibility of increasing the reputation or visibility of businesses, non-profit and government organizations alike.
+
+39
+
+
+
+Pursuant to our strategic partnerships with key industry players, the Platform will also enable stakeholders to do many more things, such as search for a place, book an Uber to it or reserve a hostel on booking.com. The possibilities and functionalities are truly limitless.
+
+40
+
+
+
+5
+
+ENDLESS POSSIBILITIES
+
+
+
+Order delivery * to Naviaddress
+
+
+
+Visit website from Naviaddress
+
+
+
+Make phone call to Naviaddress
+
+
+
+Make booking * at Naviaddress
+
+
+
+Call a taxi to Naviaddress
+
+* under development
+
+
+
+Naviaddress has a broad integration and development strategy in place. Many partnerships have been forged with leading industry players over the past years and these are only called upon to grow.
+
+
+
+5.1 Development roadmap
+
+
+
+2015
+
+
+
+Naviaddress incorporation, patent filing, MVP developed, Angel round US$500K raised;
+
+
+
+2016
+
+
+
+The first application release, integration with UBER;
+
+
+
+2017 Q1 2017 Q2 2017 Q3 2017 Q3
+
+
+
+Seed round US$2MM received; Strategic partnership with Booking.com; Naviaddress app user base reaches 100 000 users; Naviaddress blockchain protocol development initiated;
+
+
+
+2017 Q4
+
+
+
+Token Generation Event/TGE & NVTs will become available on exchanges;
+
+
+
+2018 Q1
+
+
+
+Naviaddress ledger, obtaining the right to naviaddresses smart-contracts;
+
+
+
+2018 Q2 2018 Q2
+
+
+
+Implementation of the blockchain protocol within the existing application;
+
+Launch of the incentive program for a new free Naviaddress Platform;
+
+
+
+2018 Q3 2018 Q3-Q4
+
+
+
+Transfer smart contracts;
+
+Business integration and partnership initiatives (DiDi, AirBnB, Alibaba, DHL, Amazon and many more);
+
+
+
+42
+
+
+
+5.2 Possibilities through partnerships
+
+In addition to working on the establishment of the Platform, our current focus is on further developing the integration of our products and services with the major address-holding providers to date: One Street Map Company, OpenAddress, Facebook, Foursquare, and, of course, Google. We strongly believe that, through those integrations, and many more to come, we will cover most addresses known to date.
+
+Our goal is also to create alliances and strategic partnerships with other leading actors in the industries where addressing and geolocation-related technologies are critical. Of particular interest, would be the logistics, transportation, e-commerce, hotel and related industries, which would most benefit from the universal and precise addressing System we are developing.
+
+We are also planning on creating and developing a community of cartography enthusiasts around our Naviaddress Platform to track, change and validate existing addresses based on their locations. This will help us to engage and grow the list of community experts who will become valuable participants in our Platform development.
+
+Another important step is to engage with governments to build integration bridges between the Naviaddress Platform and national addressing systems.
+
+Finally, the Naviaddress System could be utilized by many other projects and applications, particularly those which need to store location-related data in an irreversible repository. The real estate and corporate/legal industries are prime examples of such use and of potential efficiency gains that may be made in that regard.
+
+5.2.1 Legal / Corporate documents storage
+
+The blockchain-based storage used by Naviaddress will be an ideal place for organizations throughout the world to store and
+
+43
+
+
+
+publish key legal information, including as this may pertain to their changes, which are often linked to very specific locations. Such information could include:
+
+ Change of registration address;  Opening or closing of a particular subdivision at a certain
+
+location;  Changes in the territory served;
+
+5.2.2 Real estate
+
+The Naviaddress blockchain will also allow for the publication of information pertaining to the transaction and mortgage history of any property. It can, for instance, be used to store all the information which a notary must disclose to the buyer. Naviaddress can further manage a confidential part of this blockchain, where access would be sold to all interested parties in exchange for NVTs. An insurer could then use this information to automatically calculate insurance premiums. Conversely, this same insurer could, in order to obtain new customers and demonstrate his trustworthiness, share the confidential formula used to compute insurance premiums, based on objective blockchain data. Finally, the data could also be used by governmental entities, for instance, to manage agricultural subsidies, insure traceability of agricultural products of controlled regional origin and audit their production volume to prevent fraud.
+
+5.5 R&D to determine the best long-term solution
+
+Naviaddress is also dedicated to R&D and to employing the best available technology. In parallel to developing version 1 of our Platform, our R&D team is continuously working on a number
+
+44
+
+
+
+of distinct Proofs of Concept (POCs) to monitor the evolution of different technologies within our field. At this stage, we consider that the following POCs are the most relevant for our project:
+
+ Ties.DB, previously mentioned, is an innovative decentralized storage with ability to update and delete data (decentralized mutability);
+
+ Other side chains, in order to test chain segmentation;  The micropayment channels with ERC20 tokens, to assess
+
+scalability and verify our control over transaction costs using this principle;  Addresses-updating transaction batching, to reduce system price; This remains, however, a fluid list subject to change and the solutions eventually assessed may differ from those currently foreseen.
+
+45
+
+
+
+6
+
+LEGAL DISCLAIMER
+
+
+
+All matters associated with the Naviaddress project, including the terms of distribution of Navitokens (NVTs) can be found at: https:// Naviaddress.io . You acknowledge and agree that there are risks associated with purchasing, holding, using and disposing of NVTs in connection with the services and Platform, as disclosed and explained in the Terms and Conditions of Token Sale available at https://Naviaddress.io. If you have any questions regarding these risks please contact us at ico@naviaddress.com.
+
+Any person purchasing Naviaddress products or services ("Purchaser") expressly acknowledges technical and market uncertainties which are inherent in any business development projects as presented in this document (see below for an overview of risk factors) and that this project, therefore, may not come to fruition or may have to be abandoned. In such a case, Purchaser expressly acknowledges and accepts that he, she or it will not be entitled to sue or bring any direct or indirect legal action before any courts, arbitration bodies and/or any alternative dispute settlement bodies against the Naviaddress Platform Operator, its directors, shareholders, employees and/or subcontractors (the "Naviaddress Parties") in the event of the non-performance, nondeployment or non-implementation of the Naviaddress project.
+
+Any client purchasing the Company's products or services expressly acknowledges technical and market uncertainties which are inherent in any business development project as presented in this document (see below for risk factors) and that this project, therefore, may not come to fruition or may have to be abandoned, without the NVTs being used. In such a case, the client expressly acknowledges and accepts that it will not be entitled to sue or bring any direct or indirect legal action before the courts, the arbitration bodies or any alternative dispute settlement body, either in against Naviaddress Platform, its directors, shareholders, employees and subcontractors in the event of the non-performance, nondeployment or non-implementation of the Naviaddress project, even in cases where its NVTs have lost some or all of their value.
+
+47
+
+
+
+In addition, none of the above persons may in any way be held liable, without limitation, for any of the following:
+
+ use of services that are not compliant with the applicable terms;
+
+ non-performance, failure, malfunction or unavailability of the services due to a third party, the Purchaser, a third-party product, or any breach of obligations;
+
+ indirect damages such as but not limited to business loss or disturbance, loss of orders, operating loss, trademark infringement, loss of profits or clients (e.g. improper disclosure of confidential information concerning said clients due to failure or piracy of the system, third-party proceedings against the Purchaser, etc.);
+
+ loss, disclosure or unlawful or fraudulent use of user sign ons by the Purchaser or third parties;
+
+ suspension of access or temporary or permanent suspension of services (in particular, arising from a request issued by an appropriate administrative or judicial authority, or notification received from a third party);
+
+ loss, alteration or destruction of all or part of the content (information, data, applications, files or other items) hosted on the infrastructure, insofar as the Naviaddress Parties are not responsible for managing the continuity of client activities, and data backups in particular;
+
+ mismatch between the services and the Purchaser's needs (in particular, with regard to the sensitivity of the relevant data);
+
+ security incidents relating to use of the Internet, concerning in particular the loss, alteration, destruction, disclosure or unauthorized access to the Purchaser's data or details on or via the Internet; and/or
+
+48
+
+
+
+ damages to systems, applications and other items installed by the Purchaser on any infrastructure.
+
+6.2 General warning
+
+This document does not constitute an offer or an invitation to sell shares, securities or rights belonging to Naviaddress Platform Limited or any related or associated company ("Naviaddress Company").
+
+None of the information or analyses described in this document is intended to provide a basis for an investment decision, and no specific investment recommendation is made. Accordingly, this document does not constitute investment advice or an invitation to invest in any security or financial instrument of any nature whatsoever.
+
+This document does not constitute or form part of, and should not be construed as, an offer for a sale or subscription, or an invitation to buy or subscribe securities or financial instruments. This document, or any of its component parts, does not constitute the basis for, or should not be used as a basis for, or in connection with, a contract for the sale of securities or financial instruments or a commitment to sell securities or financial instruments of any kind.
+
+Naviaddress Company expressly disclaims any liability for any direct or indirect loss or damage of any kind arising directly or indirectly from:
+
+(i) any reliance on the information contained in this document;
+
+(ii) any error, omission or inaccuracy in said information; or
+
+(iii) any resulting action that may be brought.
+
+NVT does not represent an investment
+
+in a security or a financial instrument within the meaning of Cayman law and EU Directive 2014/65/EU of the European Parliament
+
+49
+
+
+
+and of the Council of 15 May 2014 relating to markets in financial instruments: NVTs confer no direct or indirect right to Naviaddress Company's capital or income, nor does it confer any governance right within Naviaddress Company;
+
+NVT is not proof of ownership or a right of control
+
+Control over a NVT does not grant the controlling individual any asset or share in Naviaddress Company, or in the Naviaddress system. A NVT does not grant any right to participate in control over Naviaddress Company`s management or decision-making set-up, or over the Naviaddress system.
+
+NVT is not an electronic currency
+
+within the meaning of EU Directive 2009/110/EC of the European Parliament and of the Council of 16 September 2009 relating to access to and pursuit of the business of electronic currency institutions: NVTs are not accepted outside the Naviaddress system and a NVT does not have a fixed exchange value equal to the amount delivered at the time of its issue;
+
+NVT is not a payment service
+
+within the meaning of EU Directive 2007/64/EC of 13 November 2007 relating to payment services in the internal market, nor within the meaning of EU Directive N 2015/2366 of the European Parliament and of the Council of 25 November 2015 relating to payment service 2 (DSP 2): the ICO does not involve the purchase/ sale of NVTs and Naviaddress Company's business does not consist in receiving currencies against the delivery of NVTs; as such, a NVT is not a means of payment either.
+
+NVT is a cryptographic token used by the Naviaddress system.
+
+A NVT is a crypto-currency, i.e. an unregulated, digital asset, issued and controlled by its developers, and used and accepted by the members of a given community.
+
+50
+
+
+
+6.3 Warnings on the risks inherent to the ICO
+
+Participation in the ICO is reserved for natural or legal persons acting within the scope of their professional activities. Any private individual acting on a non-professional basis as a simple consumer within the meaning of EU Directive 2011/83/EU relating to consumer rights is excluded from the ICO.
+
+Documents linked to the issue of NVT may not be transmitted or distributed to a U.S. citizen, or to mail or email address in the United States of America. It is prohibited to transmit, distribute or reproduce documents linked to the issue of NVT to or for a U.S. citizen or within the territories of the United States of America, in whole or in part.
+
+To ensure their eligibility for the purchase of NVT, the buyer declares that they are not a U.S. citizen, (within the meaning of Regulation S of the Securities Act 1933 in U.S. law), i.e.:
+
+Any private individual resident in the United States;
+
+ Any partnership or business organized or established under U.S. law;
+
+ Any property of which the executor or administrator is a U.S. citizen;
+
+ Any trust of which a proxy is an American citizen;
+
+ Any agency or branch of a foreign entity located in the United States;
+
+ Any non-discretionary account or similar account (other than a trust or property) held by a trader or other trustee for the benefit of or on behalf of a U.S. citizen;
+
+ Any discretionary account or similar account (other than a trust or trust) held by a trader or other trustee, that is organized, established or (if a private individual) resident in the United States; and
+
+51
+
+
+
+ Any partnership or company if: a. It is organized or established under the law of a foreign jurisdiction; and b. It is formed by a U.S. citizen primarily for the purpose of investing in securities not listed under the U.S. Securities Act, unless it is organized or established, and owned, by accredited investors who are not private individuals, trusts or properties.
+
+6.3 Warnings on the risks inherent to the ICO
+
+Risk of loss of access to a NVT due to loss of credentials Until it is distributed to the buyer, the said buyer's NVT may be linked to a Naviaddress Company account. You can only access the Naviaddress Company account using the credentials selected by the buyer. The loss of these credentials will result in the loss of the NVT. Good practices advise buyers to store their credentials securely in one or more backup locations that are geographically separated from the work location. Risks Associated With the Ethereum Protocol Both NVTs and the Naviaddress system are based on the Ethereum protocol. Therefore, any malfunction, unplanned function or unexpected operation of the Ethereum protocol may cause the Naviaddress system or NVTs to malfunction or operate in a way that is not expected. Ether, the native Ethereum Protocol account unit, may itself lose value in a similar way to NVTs, and also in other ways. For more information on the Ethereum protocol, see > http://www.ethereum.org Risks associated with the buyer's credentials
+
+52
+
+
+
+Any third party that obtains access to the buyer's credentials or private keys may be able to use the buyer's NVTs. To minimize this risk, buyers must protect themselves against people gaining unauthorized access to their electronic devices.
+
+Legal risk and risk of adverse regulatory intervention in one or more jurisdictions
+
+Block chain technologies have been reviewed by various regulatory bodies around the world. The ICO has been structured to comply with Cayman law applicable at the time of the offer.
+
+The operation of the Naviaddress system and of NVTs may be impacted by the passing of restrictive laws, the publication of restrictive or negative opinions, the issuing of injunctions by national regulators, the initiation of regulatory actions or investigations, including but not limited to restrictions on the use or ownership of digital tokens such as NVTs, which may prevent or limit development of the Naviaddress system.
+
+Given the lack of crypto-currency qualifications in most countries, each buyer is strongly advised to carry out a legal and tax analysis concerning the purchase and ownership of NVTs according to their nationality and place of residence.
+
+Risk of an alternative, unofficial Naviaddress system
+
+Following presales and development of the original version of the NVT platform, there is a possibility that alternative systems may have been established using the same open-source code and open source protocol that underlies the Naviaddress system. The official Naviaddress system may find itself in competition with these alternatives, unofficial systems based on NVTs, which could potentially adversely impact the Naviaddress system and NVTs.
+
+Risk of a lack of interest in the Naviaddress system or distributed applications
+
+There is a possibility that the Naviaddress system may not be
+
+53
+
+
+
+used by a large number of companies, individuals and other organizations, and that there may be limited public interest in the creation and development of distributed applications. Such a lack of interest could impact on the development of the Naviaddress system and, therefore, on the uses or potential value of NVTs.
+
+Risk that the Naviaddress system is not developped
+
+As described in Section 5.11. above, the main right associated with NVC is the right to access the auction system in order to acquire Premium Naviaddresses. The value of the NVC is therefore heavily correlated with the existence of such systems, which have not been implemented yet. NVC may lose part or all of their value if those systems are never fully developed.
+
+Risk that the Naviaddress system, as developed, does not meet buyer expectations
+
+The Naviaddress system is currently under development and may undergo significant redesign prior to its launch. For a number of reasons, not all buyer expectations concerning the Naviaddress system or NVT's form and function may be met on the launch date, including changes in design, implementation and execution of the Naviaddress system.
+
+Risk of theft and piracy
+
+Hackers or other malicious or criminal groups or organizations may attempt to interfere with the Naviaddress system or the availability of NVTs in several ways including, but not limited to, denial of service attacks, Sybil attacks, mystification, surfing, malware attacks, or consensus-based attacks.
+
+Risk of security weaknesses in the Naviaddress system's core infrastructure software
+
+The Naviaddress system's core software is based on open source software. There is a risk that the Naviaddress Company team, or other third parties, may intentionally or unintentionally introduce
+
+54
+
+
+
+weaknesses or bugs into the core infrastructure elements of the Naviaddress system, by interfering with the use of, or causing loss of, NVTs.
+
+Risk of weakness or exploitable breakthrough in the field of cryptography
+
+Advances in cryptography, or technical advances such as the development of quantum computers, may present risks for cryptocurrencies and the Naviaddress system, which could result in the theft or loss of NVTs.
+
+Risk of a NVT mining attack
+
+As with other decentralized cryptographic tokens and cryptocurrencies, the block chain used for the Naviaddress system is vulnerable to mining attacks, including but not limited to, dualexpense attacks, powerful mining attacks, selfish mining attacks, and critical competition attacks. Any successful attack poses a risk to the Naviaddress system, the expected performance and sequencing of Naviaddress Company markets, and the expected performance and sequencing of Ethereum contract calculations. Despite the best efforts of the Naviaddress Company team, the risk of known or new mining attacks exists.
+
+Risk of the Naviaddress System Failing to Be Used or Adopted
+
+While NVTs should not be considered an investment, their value is bound to change over time. This value may be limited if the Naviaddress system is not sufficiently used and adopted. In such a case, there could be few or no markets at the platform launch, which would limit the value of NVTs.
+
+Risk of a Tight Market for NVTs
+
+There are currently no exchanges or trading facilities on which NVTs can be traded. If such exchanges or trading facilities do develop, they will probably be relatively new and subject to poorly understood regulatory oversight. They may therefore be more vulnerable to
+
+55
+
+
+
+fraud and default than the established and regulated exchanges that exist for other products. Should exchanges or trading facilities that represent a substantial part of the NVT trading volume be involved in fraud, security failures or other operational problems, the failures of such exchanges or trading facilities may limit the NVT value or liquidity.
+
+Risk of an Uninsured Loss Unlike bank accounts or accounts in other regulated financial institutions, funds held through the Naviaddress Company or Ethereum network are generally uninsured. At present, there are no public or private insurance agents providing buyers with coverage against a loss of NVTs or a loss of value.
+
+Risk of winding-up of the Naviaddress Company project For a number of reasons including, but not limited to, an unfavourable fluctuation in Bitcoin. Ethereum or other crypto currency or other value, an unfavourable fluctuation in NVT value, the failure of business relationships or competing intellectual property claims, the Naviaddress Company project may no longer be a viable activity and may be dissolved or simply not launched.
+
+Risk of malfunction in the Naviaddress system
+
+The Naviaddress system may be impacted by an adverse malfunction including, but not limited to, a malfunction that results in the loss of NVTs or market information.
+
+Unforeseen risks Crypto-currencies and cryptographic tokens are a new, untested technology. In addition to the risks stipulated above, there are other risks that the Naviaddress Company team cannot predict. Risks may also occur as unanticipated combinations or as changes in the risks stipulated herein.
+
+56
+
+
+
+6.5 Recent regulatory actions
+
+As mentioned above, operations of the Naviaddress system and of NVTs may be impacted by future restrictive laws, regulations, opinions, decisions, injunctions, actions or investigations by national regulators and lawmakers.
+
+Some regulators have already initiated formal or informal proceedings related to the regulation of ICOs and tokens, some of which are listed hereunder. This list is provided for information purpose only and do not constitute legal advice.
+
+ The United States Securities and Exchange Commission (SEC) issued (i) a report dated July 25, 2017 stating that tokens offered by the company The DAO were securities within the meaning of the 1933 Securities Act, and (ii) an "investor bulletin" informing potential investors on ICOs.
+
+ The United Kindfom Financial Conduct Authority (FCA) issued a statement on September 12th, 2017 warning potential investors about the risks associated with ICOs.
+
+ The Canadian Securities Administrators (CSA) issued a "staff notice" dated August 24th, 2017 in which it states that ICOs might be governed by Canadian securities laws (knowing that tokens would, however, not always constitute securities for the purpose of such laws) or by Canadian derivative laws (if the products issued qualify as derivatives).
+
+ The Israel Securities Authority (ISA) published a statement dated August 30th, 2017 announcing that it would oraganize a committee to study the applicability of securities law to ICOs.
+
+ The Peopole's Bank of China, together with other Chinese regulators, issued a statement dated September 4th, 2017 prohibiting token fundraising transactions. Companies that have already launched an ICO are required to refund the tokens issued.
+
+57
+
+
+
+ The Monetary Authority of Singapore (MAS) released a statement dated August 1st, 2017 concluding that some tokens might be qualified as securities within the meaning of the Singaporean Securities and Futures Act.
+
+ The Securities and Futures Commission (SFC) of Hong Kong made a declaration on September 5th, 2017 in which it stated that tokens may qualify as securities under the Securities and Futures Ordinance.
+
+ The Financial Supervisory Commission (FSC) of South Korea declared, on September 3rd, 2017, that it established a "joint task force meeting" to discuss crypto-currencies regulatory framework.
+
+ The Financial Market Supervisory Authority (FINMA) of Switzerland, in a press release dated September 29th, 2017, announced it was investigating various ICOs. The FINMA specified, in Guidance 04/2017 published on the same day, that ICOs are susceptible, depending on their structuring, to be governed by (i) AML/KYC regulations (ii) banking monopoly provisions (iii) securities and derivatives trading regulations and (iv) collective investment schemes regulations. As mentioned by the FINMA, "due to the close proximity in some areas of ICOs and token-generating events with transactions in conventional financial markets, the likelihood arises that the scope of the application of at least one of the financial market laws may encompass certain types of ICO model".
+
+ The Australian Securities and Investments Commission (ASIC) recently published the Information Sheet 225 as guidance about the potential application of the 2001 Corporations Act to businesses conducting ICOs. According to this document, an ICO, depending on how it's structured, could be qualified as a managed investment scheme, as a public offer and/or as an offer of derivatives.
+
+58
+
+
+
+6.6 Know your customer procedure (KYC) and OECD complaisance
+
+As part of the Know Your Customer procedure (KYC), anyone wishing to acquire NVTs will have to provide Naviaddress Company with the KYC documents and/or information requested at the dedicated ICO website prior to purchasing NVT. Naviaddress Company is committed to comply with the OECD guidelines that may be applicable to its business in relation with the AML and KYC (http://mneguidelines.oecd.org/guidelines/).
+
+59
+
+
+
+

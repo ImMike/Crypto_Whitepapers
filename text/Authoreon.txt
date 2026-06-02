@@ -1,0 +1,709 @@
+Authorization, Authentication, Verification & Certification
+
+in a decentralized network
+
+Whitepaper
+
+1
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Version 2.0 December 10 2017 Written by the Authoreon-Team www.authoreon.io
+
+DISCLAIMER: This document and any other Authoreon documents do not constitute a prospectus of any sort and are not a solicitation for investment. The Autheon coin does not represent an ownership or share in ANY public or private corporation, or other entity in any jurisdiction. Acquisitions of Autheon through the Crowdsale are non-refundable. Autheon coins are only to be used in connection with Authoreon under the Terms and Conditions. Any acquisition and use of Autheon carries significant financial risk, including the use of experimental software.
+
+2
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Table of Contents
+
+What is Authoreon? ................................................................................................................ 5 Introduction.......................................................................................................................... 5 Abstract................................................................................................................................. 6 Architecture ......................................................................................................................... 7 Blockchain ........................................................................................................................ 8 Synapse ............................................................................................................................. 9 Access Lock ....................................................................................................................10 Product ................................................................................................................................ 11 Platform .......................................................................................................................... 11 Mobile App .....................................................................................................................11 Smart-Contracts-as-a-Service ...................................................................................... 11 Plugins, APIs & Marketplace........................................................................................11 Use Cases ............................................................................................................................12 Business Model ..................................................................................................................14 Overview ......................................................................................................................... 14 Monetization .................................................................................................................. 14 Payment .......................................................................................................................... 14 Go To Market......................................................................................................................15
+
+3
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Token & Crowdsale ...............................................................................................................16 Overview ......................................................................................................................... 16 Why a crowdsale? ..........................................................................................................16 Offering ..........................................................................................................................16 Token Fact Sheet...........................................................................................................17 Use of funds ...................................................................................................................17 Token Usage...................................................................................................................18 Distribution ....................................................................................................................18 Escrow .............................................................................................................................19 Post-Crowdfund Trading .............................................................................................20 Liquidity ..........................................................................................................................20 Restrictions ....................................................................................................................20
+
+Company .................................................................................................................................21 Legal structure ..............................................................................................................22 Team ................................................................................................................................23 Advisor ............................................................................................................................24 Mission & Vision.............................................................................................................25 Roadmap ......................................................................................................................... 25
+
+Contact .................................................................................................................................... 26
+
+References .............................................................................................................................27
+
+4
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+What is Authoreon?
+
+Introduction
+
+Authoreon is decentralizing authorization, authentication, verification & certification and thus securing previously unsecure instances and functions. The Authoreon solutions prevent fraud, cyber attacks, material and immaterial identity theft, and they provide an all-over traceability to supply and ownership chains.
+
+5
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Abstract
+
+
+
+With cyber attacks, password breaches, identity theft and document fraud on the rise, it becomes very obvious that the current online safety measures are not sufficient.
+
+
+
+In addition we face increased national security concerns - often in conflict with privacy & data protection regulations, as well as major challenges in IOT security, copyright & intellectual property protection, and reputation management.
+
+
+
+Furthermore, increased quality awareness calls for a traceable product identity and history in the supply chain and ownership chain.
+
+
+
+The failure to secure data, to verify identity and to grant access only to authorized instances is causing billions of dollars in damage each year, while the most valuable asset at risk is trust.
+
+
+
+Authoreon is solving these problems by
+
+
+
+decentralizing
+
+
+
+authorization,
+
+
+
+authentication,
+
+
+
+verification
+
+
+
+and
+
+
+
+certification.
+
+
+
+6
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Architecture
+
+
+
+The overall Authoreon platform architecture involves several components that leverage the properties and characteristics of blockchain technology, cryptography, artificial intelligence (AI) and substitution algorithms to provide maximum security, authorization and traceability.
+
+
+
+We achieve this by creating two additional separate overlay protocols on top of the blockchain: the synapse and the access lock layers.
+
+
+
+This 3-layer architecture secures
+
+
+
+ownership
+
+
+
+and
+
+
+
+decentralizes
+
+
+
+authorization through use-case-specific
+
+
+
+smart contracts in combination with
+
+
+
+the interplanetary database (IPDB)
+
+
+
+and the interplanetary file system
+
+
+
+(IPFS).
+
+
+
+All Authoreon platform transactions will be fueled by an applicationspecific token, the Autheon (AUTH).
+
+
+
+7
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Architecture
+
+
+
+Blockchain
+
+
+
+Authoreon is based on Ethereum, a public, open-source, censorshipresistant and innovative blockchain protocol and distributed computing platform, that provides a decentralized Turing-complete virtual machine (the Ethereum Virtual Machine (EVM)) enabling the execution of smart contracts.
+
+
+
+In general, a blockchain is a distributed database that enables a digital ledger of assets and transactions, which are shared among a distributed network of users, and are thus tamperproof.
+
+Utilizing advanced cryptography, a blockchain enables each participant on the network to interact securely with the digital ledger and without the need for a central authority. Since each participant in the network holds a copy of the blockchain and all former transactions are constantly revalidated before an addition can be made, it is extremely difficult to change or remove data in the blockchain.
+
+Whenever a participant wants to add an asset or transaction to the blockchain all other participants in the network run an evaluation algorithm to verify the transaction. If the majority of nodes agree that the transaction is valid, the asset or transaction is authorized and written to the blockchain.
+
+The Ethereum Blockchain achieves consensus using a Proof-of-Work algorithm, which uses a hash function to create conditions under which each single participant is allowed to announce conclusions about the submitted information. The results can then be verified by all other participants in the system. A false result is excluded by the parameters of the hash function, as it will fail to compute.
+
+Participation in the system will be incentivized by the common mining functionality.
+
+
+
+8
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Architecture
+
+Synapse
+
+On top of the blockchain, we developed the synapse protocol, which is an independent application layer inspired by the human brain. It is designed to further the functionality, scalability, and performance of the Authoreon platform by enabling smart authorization contracts. Smart contracts are decentralized programs that function on defined rules created with scripting languages, which can be either integrated into the protocol or dynamically created. They facilitate, verify, or enforce the negotiation or performance of a contract, or that make a contractual clause unnecessary. Smart contracts usually also have a user interface and often emulate the logic of contractual clauses. Proponents of smart contracts claim that many kinds of contractual clauses may thus be made partially or fully self-executing, self-enforcing, or both. Smart contracts aim to provide security superior to traditional contract law and to reduce other transaction costs associated with contracting.i The Synapse layer is responsible for storing data safely and effectively and verifying identities against the stored access authorization. As the intermediary between the blockchain (Proof-of-work) and the access lock layer (Proof-of-Stake), the synapse protocol also generates temporary access for authorized instances. It also keeps the blockchain light and fast by substituting the stored data - resulting in an increased performance, faster block processing times, as well as the ability to process more transactions in a single block.
+
+9
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Architecture
+
+Access Lock
+
+The access lock layer acts as the gate keeper, processing incoming requests to the synapse layer and granting temporary access if the requesting instance is authorized.
+
+For this purpose we developed the 2key-algorithm, providing one static key with a dynamic (temporary) key only if the other key is still valid by authorization and vice versa. Access is only granted to two dynamic keys.
+
+This mechanism replaces the traditional two-factor authentication enabling a wide range of potential applications.
+
+While the blockchain uses a Proof-ofWork algorithm to achieve consensus, the access lock layer will deploy a Proof-of-Stake function, which is similar to the Proof-ofWork system, however participation in the consensus-building process is restricted to parties identified as having a legitimate stake in the blockchain, e.g. individuals who own Autheon coins or customers with a lot of assets or transactions in the blockchain. Here, the hash function calculation is replaced with a simple digital signature which proves ownership of the stake.
+
+Instead of any individual attempting to calculate a value in order to be chosen to establish a consensus point, the network itself runs a lottery to decide who will announce the results, and system participants are exclusively and automatically entered into that lottery in direct proportion to their total stake in the network.ii
+
+Authoreon will also provide an incentive to participation in the access lock layer by enabling the 'minting' of coins (vs. 'mining' in the blockchain).
+
+This ensures broadest possible network participation and thus the most robust network security possible.
+
+10
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Product
+
+
+
+Platform
+
+The Authoreon solutions platform will be accessible through an easily manageable web application graphic user interface (GUI) that will be optimized for MetaMask but will run on any decentralized browser (e.g. Mist).
+
+Mobile App
+
+All platform functionality will be fully mirrored in a mobile app (for Android, iOS and Windows) to enable key authorization functions, mining and wallet interactions.
+
+Smart-Contracts-as-a-Service
+
+The platform will offer a wide range of modules, each addressing a different use case, each running a different Smart-Contract-as-aService (SCaaS), each with a different pricing and processing fee.
+
+Plugins, APIs & Marketplace
+
+By mid-2018 plugins and extensions will be available for 3rd party systems, the platform will be addressable via 2-key-protocol-APIs for external developers and it will include a marketplace for third-party extensions.
+
+
+
+11
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Use Cases
+
+Identity Theft
+
+The 2017 Identity Fraud Study from Javelin Strategy & Research finds that Identity thieves, who commit financial fraud with stolen account information, hit 15.4 million Americans in 2016 (16% up from 2015) and stole $16 billion dollars, which is a nearly billion dollar yearto-year increaseiii. Authoreon will provide an immutable digital identity for consumers, as well as the corresponding verification tools for verifying parties.
+
+User Authentication & Password Breaches
+
+With more than 3 billion records leakediv, it is clear that all existing security measurements are extremely insufficient. The Authoreon solution replaces the traditional authentication and even the two-factor authentication. We predict that e.g. even large social networks will use our solution to store their users' data safely in the blockchain.
+
+Telecommunications Data Retention
+
+Telecommunications data retention generally refers to the storage of call detail records (CDRs) of telephony and internet traffic and transaction data (IPDRs) by governments and commercial organizations. In the case of government data retention, the data that stored is usually of telephone calls made and received, emails sent and received, and websites visited. Location data is also collected. The primary objective in government data retention is traffic analysis and mass surveillance.v The problem is that these practices are often in conflict with privacy laws and regulations, since advocates claim the data retention can prevent e.g. terror attacks, while critics argue that the data is not secure against hacks and breaches and movement profiles could be created. (See also "European Court of Justice rules against mass data retention in EU").vi Authoreon proposes a solution to this dilemma by storing all collected data - immediately and only - in the blockchain and making them accessible only to authorized authorities via our 2-key-authentication, so an investigator would only get access if authorized by a judge. This way all private data is stored safely, while still accessible to authorities if ordered by court.
+
+12
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Use Cases
+
+Cyber Attacks
+
+Other forms of cyber crime involve for example ransomware attacks (like the recent Wannacry cryptoworm), homepage hacks (like the recent Coindash Hack) and DDos attacks. The global cost of cybercrime will reach $2 trillion by 2019, a threefold increase from the 2015 estimate of $500 billionvii. Authoroen is working on a solution to decentralize the storage of source code and databases - making e.g. homepages, ecommerce businesses, mobile apps, intranets immutable - so that only authorized instances will be able to make changes to the source code or database.
+
+Document Fraud
+
+"Document fraud is an important enabler of organized crime and terrorism, clearly. There is a whole subset of criminal activity and a criminal sector that is involved in stealing passports and producing sophisticated passports and supplying them to the criminal market." -- Europol Director Rob Wainwrightviii Passport and Visa Fraud is another major problem governments have to cope with. Authoreon is also addressing this use case by enabling the issuing authorities to store document data securely in the blockchain, as well as by providing the corresponding verification tools e.g. to police and border patrol.
+
+IOT Security Risks
+
+All the devices that are connected to the internet create access points with which hackers can infiltrate a company's networkix. Securing access by authorization in the Internet-ofThings, is another area Authoreon will address.
+
+Supply Chain, Copyright Infringement & Reputation Management
+
+Authoreon will also provide solutions regarding copyright infringements, intellectual property protection, reputation management and traceability in supply and ownership chains.
+
+13
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Business Model
+
+Overview
+
+The Authoreon platform is designed to provide secure solutions to previously insufficient measurements. The platform is open to companies, governments, organizations and private consumers.
+
+Monetization
+
+Since we propose solutions to different use cases, different customer groups  each with a different pain and different transaction volumes  we have an individual module-based pricing. This applies to a monthly subscription fee per module, as well as to an individual transaction fee.
+
+Payment
+
+Authoreon wants to eliminate unnecessary barriers to entry, while still providing market support for the Autheon Token. So the conversion to Autheon tokens will run as a background process - making the platform currency agnostic and enabling consumers to use major Fiat and Crypto currencies as a form of payment.
+
+14
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Go To Market
+
+The Authoreon team is already in talks with government officials from several nations to conduct pilots in data retention, as well as with representatives of large corporations to test our supply chain and tracebility solutions. We also plan to bring Authoreon to mainstream market and mass adoption by creating awareness and directly addressing the consumer, who is most negatively affected by fraud and cyber-attacks. After the successful launch with paying customers from all segments, Authoreon will expand aggressively with the help of our network of country managers, partners, advisors, customers and employees. Authoreon will also issue publicly verifiable badges and certificates proving the authenticity of authorization claims, which will also result in high visibility and network effects.
+
+15
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Token & Crowdsale
+
+Overview
+
+Authoreon aims to be at the forefront of authorization platforms in the blockchain. For this purpose Authoreon is proposing this Initial Coin Offering (Crowdsale). Participants send funds to an Ethereum Smart Contract. The Smart Contract mints tokens instantly and sends to user's online account. These are available for withdrawal upon the close of the crowdsale. Once completed (total duration or maximum tokens issued) the Ethereum funds are then transferred to a Coinbase multi-sig escrow wallet. You can view and download the full Crowdsale Terms & Conditions here.
+
+Why a crowdsale?
+
+For the Authoreon platform to be truly decentralized, a large group of supporters is required. Traditional investors - as a small group - would gain control of the network and they would ultimately act in their best interest, and not in the best interest of the users and the community. So we came to the conclusion that only a blockchain-driven crowdsale utilizing an Ethereum ERC20 token can provide the required amounts and quality of funds to achieve our vision with this truly decentralized network and provide enough fuel for the platform to run.
+
+Offering
+
+The Authoreon ICO is targeting fund raising from a minimum of $500.000 to a maximum of $4,500,000 USD due to development, current cash flow and scalable marketing needs. 1 Autheon token (AUTH) will be available for $0.15. Contributions are accepted in ETH, BTC, BCH, LTC, Dash and Paypal. Bonuses of 25% to 5% in Autheon tokens are offered to early contributors.
+
+16
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Token & Crowdsale
+
+
+
+Token Fact Sheet
+
+
+
+Token Name
+
+
+
+Autheon
+
+
+
+Token Symbol
+
+
+
+AUTH
+
+
+
+Utility of Token
+
+
+
+Autheon tokens are used to access certain functionalities of the platform including registering a new asset, transferring an asset, and a variety of other authorization features. The Autheon Token does not represent or confer any ownership right or stake, share or security or equivalent rights.
+
+
+
+Payments Accepted
+
+
+
+ETH, BTC, BCH, LTC, DASH / Paypal (with Escrow)
+
+
+
+Total Token Supply
+
+
+
+90,000,000 (90 million)
+
+
+
+Hard Cap on Crowdsale $ 4,500,000
+
+
+
+Price per Autheon
+
+
+
+$0.15 Discounts available
+
+
+
+Smart Contract Address Published here
+
+
+
+Use of funds
+
+
+
+Usage
+
+
+
+%
+
+
+
+Development
+
+
+
+35%
+
+
+
+The primary use of the raised funds will be
+
+
+
+Marketing
+
+
+
+35%
+
+
+
+for finalizing the development and for
+
+
+
+Operations
+
+
+
+20%
+
+
+
+marketing purposes. The Crowdsale funds
+
+
+
+Localization
+
+
+
+5%
+
+
+
+will be used for the following purposes:
+
+
+
+Legal
+
+
+
+5%
+
+
+
+17
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Token & Crowdsale
+
+
+
+Token Usage
+
+Received funds will aid in the final development of the platform, conducting pilot studies, and expenses related to bringing to market and maintaining.
+
+Autheon tokens are convenient, efficient and economical forms of payment for services provided on the Authoreon platforms and are not securities to be used for speculative trading purposes. There is no public market for the Autheon coin token and there is no guarantee on the future value of the Autheon coin token. The possibility exists that the Autheon coin token could be worth nothing.
+
+Ownership of AUTH carries no rights, express or implied, other than the right to use AUTH as a means to obtain Services, and to enable usage of and interaction with the Platform, if successfully completed and deployed. In particular, you understand and accept that AUTH do not represent or confer any ownership right or stake, share or security or equivalent rights, or any right to receive future revenue shares, intellectual property rights or any other form of participation in or relating to the Platform, and/or Company and its corporate affiliates, other than rights relating to the receipt of Services and use of the Platform, subject to limitations and conditions in these Terms and applicable Platform Terms and Policies (as defined below). AUTH are not intended to be a digital currency, security, commodity or any other kind of financial instrument.
+
+
+
+Distribution
+
+
+
+Maximum cap on crowdsale: $4,5 million Total Token supply: 90 million (90,000,000) AUTH
+
+ 1% Pre-Sale to cover crowdsale costs  33% are sold in the ICO  33% are allocated to incentivize participation  33% are retained by Authoreon
+
+Ethereum ERC20 Token Purchase methods accepted: ETH, BTC, BCH, LTC, DASH / Paypal
+
+
+
+18
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Token & Crowdsale
+
+
+
+Escrow
+
+Escrow is a strong insurance, that funds attracted via a Crowdsale are correctly used according to the initial agreements. For this purpose, Authoreon will accept ETH via escrow. All funds raised in the ICO are sent to the specified escrow services for safekeeping and distribution based on the milestone-release conditions below. Undistributed coins will be returned to the contributors in the event of failure to meet the minimum target or insolvency.
+
+
+
+Escrow Agents Authoreon has selected all crowdsale participants (= external Token holders) as their escrow agents for the Crowdsale. A smart contract will handle the voting.
+
+
+
+Storage of Crowdsale funds ETH will be stored in a Coinbase multi-sig wallet.
+
+
+
+Address: TBA after the ICO.
+
+
+
+Release of Crowdsale funds After the ICO has ended on Dec 31st, 2017, the attracted funds will be released to the multi-sig wallet. For calculation purposes, all non-USD currencies will be converted into USD at the relevant exchange rates at the moment of their collection. The funds will be released based on achieved milestones. If a milestone was achieved, will be decided in a public vote among all external Token holders; only after one milestone is completed, the token holders are asked for approval and for the release of funds for the next milestone. The Authoreon team tokens are restricted from voting.
+
+
+
+Milestone 1 Milestone 2 Milestone 3 Milestone 4 Milestone 5 Milestone 6 Milestone 7 Milestone 8 Milestone 9 Milestone 10 Milestone 11
+
+
+
+Complete Synapse & Access Lock Layers Complete Platform & GUI Complete Data Retention App Complete Marketplace & Mobile App Complete Identity Theft & Document Fraud Prevention Apps Build User Authentication App Build Supply Chain & Traceability Apps Build IOT Security App Build Cyber Security App Build Copyright & Intellectual Property Protection Apps Build Reputation Management App
+
+
+
+19
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Token & Crowdsale
+
+Post-Crowdfund Trading
+
+We will ensure that Autheon is tradable on major exchanges. While we cannot guarantee substantial liquidity levels of the Autheon Token until the platform is fully deployed, we will make every effort to enable the growth of the liquidity market right from the start.
+
+Liquidity
+
+Our goal is high levels of liquidity on the Autheon Token (AUTH) market. This is achieved through the laws of supply & demand. Through subscription and transaction fees for each of our services we gain more market share, the demand for AUTH increases thus creating buy-side liquidity.
+
+Restrictions
+
+Distributed coins have the following restrictions. Crowdsale Coins: No restrictions for crowdsale participants. Angel Coins: All of our five angel investors have committed to not sell off their coins and to hold the vast majority of them for the long-term benefit. Founder Coins: The Founders are restricted from selling any of their founder coins for six months starting with the beginning of the crowdsale. Afterwards the coins will be vested at a rate of 5% monthly for 20 months.
+
+20
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Company
+
+Company name
+
+author // noun creator, owner, one who makes or creates, author, originator, producer, builder, founder, trustworthy writer, authority, doer, literally "one who causes to grow". eon (aeon) /in/ noun an indefinite and very long period of time, a unit of time equal to a thousand million years, (in Neoplatonism, Platonism, and Gnosticism) a power existing from eternity. Logo Icosahedron a polyhedron with 20 faces and 30 edges (cf. nodes). Its structure plays an important role in cluster physics, management theory and packaging respectively in terms of lowest energy, efficiency and ideal networks.
+
+21
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Company
+
+Legal structure
+
+The Authoreon Pte. Ltd. (in the course of incorporation) will be registered in Singapore following the formation of the Authoreon Foundation as the Parent Organization (Swiss Non-profit). Network Participants: Token Holders (Global, open to everyone in compliance with their local laws and regulations) The Authoreon Foundation is in charge of the overall management and oversight to keep the Authoreon network in good health. It will be in charge of managing all tokens, contributions, and other revenue flows. Currently its board members include the directors of the Authoreon operating company. Over time outside parties consisting of highly reputable and knowledgeable figures in the Blockchain space will be invited to join. Any major changes to the network will first be placed to a vote by the directors of the foundation before being placed into effect; however, it is ultimately up to the network participants. Authoreon.io Pte. Ltd. (in the course of incorporation) is the operating entity that will be contracted by the foundation to build and deploy the core decentralized application, as well as be a candidate for future implementations. Please note that the foundation ultimately has the final decision as to where funds will be allocated and what companies will be contracted. Some functionality, security audits, etc. may require third-party vendors and service providers to work independently or jointly with Authoreon.io Pte. Ltd. (in the course of incorporation).
+
+22
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Company
+
+Team
+
+Our team is a healthy mix of Software Engineers, Blockchain Developers and Consultants, Design Experts, Marketing & Branding Specialists  all committed to the success of this venture.
+
+Chris Heinze
+
+Blockchain Architect, CEO & Co-Founder Chris has more than 14 years experience in Web Development and E-Commerce applications for mid- to large-sized businesses. He co-founded several startups (funded by Angel investors and VCs). Since 2014 his main passion is the Blockchain with all its applications and possibilities. Bugged by all the security issues, password breaches and internet fraud, he decided to tackle these problems by decentralizing authorization and authentication in an innovative and secure blockchain ecosystem.
+
+Ali Zain
+
+Blockchain Developer & Co-Founder Ali has more than 6 years experience in Full-Stack application development. He is an expert in blockchain, cryptocurrency & ICO development. He also co-founded Ideofuzion.
+
+Ajay Dhande
+
+Full Stack Developer & Co-Founder Ajay is a Full Stack Developer and an IT professional with more than 23 years experience in the IT Industry  including working in EZ Data INC., USA for 4 years, with TCS, INDIA for 3 years, carrying out his own family business of teaching computer languages like C, C++, and he has successfully delivered more than 80 projects in Ruby on Rails.
+
+Mohit Mali
+
+Backend Developer & Co-Founder Mohit is a Full Stack Backend Developer with more than 5 years experience in Javascript (Node.js), Ruby and Python, as well as in general Mobile & Web application development.
+
+23
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Mi XiaoLi
+
+Frontend & Mobile App Developer & Co-Founder Mi is a web and mobile developer with more than 10 years experience in PHP full-stack frameworks like Laravel, CakePHP, Yii, CodeIgniter, Smarty, Symfony, JSP, and Ruby on Rails, as well as in Java, Objective-C, Swift, Android Studio, Phonegap, Xamarin, Ionic, XCode, Unity3d, Cocos2d-x, and API Web Services. He developed numerous mobile apps for a variety of use cases such as social apps, image & video processing apps and messengers.
+
+Md Nasiruddin
+
+Application Developer & Co-Founder Md studied Information Technology at West Bengal University of Technology and has more than 6 years experience in application development with extensive skills in Python, Django, Blockchain, NLP, machine learning & AI. Apart from learning new technologies, he likes to play video games & any kind of sports.
+
+Advisor
+
+Atif Zahid
+
+Blockchain & Smart Contract Advisor Cryptocurrency eCommerce toolkit Founder at Maxnetlabs.com
+
+Mateusz Warcholinski
+
+Technical Advisor Remote JavaScript Development COO at Brainhub.eu
+
+Terry Seal
+
+Marketing & Branding Advisor Go To Market Founder at BuyBoon.com
+
+24
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Company
+
+Mission & Vision
+
+Our five year goal is to be at the forefront of securing authorization, authentication, verification and certification in the blockchain, with users and customers all over the world, securing thousands of assets and transactions per day  for private users, corporations, governments and organizations. We envision numerous SCaaS modules to serve a wide range of use cases, and a high adoption rate due to the platforms' usability as well as the fact that Authoreon will be owned by the crowd!
+
+Roadmap
+
+25
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+Contact
+
+Authoreon Pte. Ltd. (in the course of incorporation)
+
+10 Anson Road International Plaza #27-15 Singapore 079903 Email: info@authoreon.io Web: https://www.authoreon.io
+
+Communication
+
+Open and transparent mutual communication is critical to the success of the Authoreon Crowdsale, as well as the ongoing advancement of the venture. Your questions and suggestions are welcome at the following locations:
+
+26
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+References
+
+i https://tokenmarket.net/what-is/smart-contract/ ii https://medium.com/@chrshmmmr/consensus-in-blockchain-systems-in-short-691fc7d1fefe iii http://www.nbcnews.com/business/consumer/identity-fraud-hits-record-number-americans-2016-n715756 iv https://www.itgovernance.co.uk/blog/list-of-data-breaches-and-cyber-attacks-in-2016-1-6-billion-records-leaked/ v https://en.wikipedia.org/wiki/Telecommunications_data_retention vi http://www.dw.com/en/european-court-of-justice-rules-against-mass-data-retention-in-eu/a-36859714 vii https://securityintelligence.com/20-eye-opening-cybercrime-statistics/ viii http://www.politico.eu/article/europes-fake-forged-stolen-passport-epidemic-visa-free-travel-rights/ ix https://securityintelligence.com/a-primer-on-iot-security-risks/
+
+27
+
+Copyright  2017 Authoreon.io, All Rights Reserved
+
+
+
+

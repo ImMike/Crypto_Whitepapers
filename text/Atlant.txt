@@ -1,0 +1,1221 @@
+7/29/2017
+
+
+
+ATLANT Platform
+
+White Paper v0.97
+
+
+
+t.me/atlant_eng medium.com/@atlantio reddit.com/user/atlantio goo.gl/RQREJ9 twitter.com/atlantio
+
+
+
+Julian Svirsky  Neil Mohinani  Denis Donin
+
+
+
+Table of Contents
+
+Intro .............................................................................................................................................................. 2 Abstract ......................................................................................................................................................... 6 Blockchain  Quick Review ........................................................................................................................... 9 Problem  Buying & Selling Property .......................................................................................................... 12 Solution  Buying & Selling Property .......................................................................................................... 13 Problem  High Rental Middleman Fees & Fake Reviews .......................................................................... 16 Solution  Eliminating the High Rental Middleman Fees & Fake Reviews ................................................. 18 Tokenization and Listing for Trading of Properties..................................................................................... 24
+
+Property Inventory and Sourcing ............................................................................................................ 24 Property Token Offering ......................................................................................................................... 24 Rental Income ......................................................................................................................................... 25 Reserve Fund........................................................................................................................................... 25 Reserve Fund Drawdown Provision ........................................................................................................ 26 Duties of the Management Company..................................................................................................... 27 Change of Management Company ......................................................................................................... 28 Buyout or Purchase of Significant Stake ................................................................................................. 28 Delisting/Buyout of the Property............................................................................................................ 28 Details of Property Offerings .................................................................................................................. 28 Trading of Tokenized Assets ....................................................................................................................... 29 Technology .................................................................................................................................................. 30 Overview ................................................................................................................................................. 30 ATLANT Technology Stack....................................................................................................................... 32 ATLANT Software Components............................................................................................................... 33 Ricardian Contracts ................................................................................................................................. 36 References .................................................................................................................................................. 39
+
+
+
+http://atlant.io
+
+
+
+1
+
+
+
+Intro
+
+ATLANT Platform (hereinafter "ATLANT") is building a next generation global real-estate platform based on blockchain technology. We believe blockchain has the potential to help accelerate the adoption of the Sharing Economy which has already begun to unleash industry disruption by opening up significant amounts of previously untapped private capacity and tokenization of property may completely change real estate transactions and ownership transfer as we know them. That is why we are using the token crowdsale mechanism to pre-sell our product and finance development as opposed to traditional venture capital. With a secure, tamper-proof system based on the blockchain, users can trade parcels of property on our platform and bypass intermediaries in rental deals, transacting P2P (peer-to-peer), all of which will enhance ease of use and security for guests and hosts alike, streamlining user experience and driving accelerated adoption.
+
+Real Estate is the largest asset class in the world, and also one of the most inefficient. Our aim is to empower the $217+ trillion1 global real estate market with 2017 volume of $1.4 trillion2 to seek a more transparent and liquid way to invest and trade. ATLANT platform seeks to help subdivide individual parcels of real estate into tokens, and subsequently PTO (Property Token Offering) and list them on exchanges, starting with the decentralized ADEX exchange based on Ethereum smart contracts. Such endeavor would ease transfer of ownership, simplify fractional holding without minimal constraints, alleviate tax inefficiencies, make cross-border transactions simple, and eliminate substantial overhead faced in certain jurisdictions due to unnecessary middlemen. Tokenizing property will allow real estate assets to be uniquely identified via a digital record that contains information regarding occupancy, physical characteristics, legal status, historical performance, and financial position.
+
+1 Barnes Y. et al., (2016) Around the World in Dollars and Cents http://pdf.euro.savills.co.uk/globalresearch/around-the-world-in-dollars-and-cents-2016.pdf 2 Axford N. et al, (2017) Global Investor Intentions Survey http://www.cbre.com/research-and-reports/GlobalInvestor-Intentions-Survey-2017
+
+
+
+http://atlant.io
+
+
+
+2
+
+
+
+Further, ATLANT addresses both the short- and long-term real estate rental markets by lowering fees, using decentralized conflict resolution and making this market truly P2P, eliminating various middlemen, and also ensuring that reviews and listings are honest, as they are stored on an immutable blockchain.
+
+ATLANT platform is being developed as an open source framework with respect to both rental P2P network and tokenized property of assets, which continues to operate and trade on the Ethereum network, independent of platform's contributors. ATLANT provides a clean UI, utilizing EVM contracts under the hood. Additionally, ("ATL") platform tokens may be traded on centralized digital asset exchanges as well.
+
+Eventual moonshot goal of ATLANT, once government property registers are fully blockchaincompliant and have distributed ledgers, is to partner with various jurisdictions to make buy and sell transactions of smaller units feasible with integration into such registers without having to first place real estate into incorporated SPVs. There are currently multiple blockchain real estate registry pilot projects already in place specifically in Sweden, Georgia, Ghana, Ukraine, parts of Japan and USA (Chicago, Delaware), while multiple other jurisdictions are examining blockchainenabled title registries.
+
+
+
+Figure 1. Recording Ownership with Distributed Ledger Technology
+
+
+
+http://atlant.io
+
+
+
+3
+
+
+
+Blockchain will entirely reshape the title insurance industry. By registering real estate on a distributed ledger, blockchain could streamline the manually intensive practice of examining public records when validating titles in real estate transactions. According to Goldman Sachs estimates, blockchain driven property records could drive up to $4bn in cost savings due to reductions in headcount and actuarial risk in the US alone.3
+
+While blockchain technology is still in its infancy, and complete decentralized ledger of global property is not going to happen overnight, ATLANT plans to take a leading role in all facets of real estate globally to make this a reality, starting with disrupting the rental market and tokenizing large real estate assets for trading. Please refer to our timeline below for detailed overview of our current progress and future goals.
+
+
+
+3 Schneider J. et al, (2016) Goldman Sachs Equity Research Profiles in Innovation, Blockchain Putting Theory into Practice
+
+
+
+http://atlant.io
+
+
+
+4
+
+
+
+December 2016
+
+Concept Design
+
+
+
+February 2017
+
+Technical Specification
+
+
+
+September 2017
+
+ATLANT Network
+
+Alpha
+
+September 2017
+
+Public Token Sale
+
+
+
+August 2017
+
+Legal Structure
+
+September 2017
+
+Token Trading Launch
+
+
+
+2024+
+
+5% of Global Real Estate Transactions
+
+
+
+2018+
+
+Partnership with Government Blockchains
+
+
+
+Figure 2. ATLANT Project Roadmap
+
+
+
+June 2017
+
+ATLANT DAO
+
+Prototype
+
+August 2017
+
+Token Pre-Sale
+
+March 2018
+
+ATLANT Platform Launch
+
+April 2018
+
+ATLANT P2P Rentals
+
+Launch
+
+
+
+http://atlant.io
+
+
+
+5
+
+
+
+Abstract
+
+In its current iteration, ATLANT provides two main features to address known problems in today's global real estate: Tokenized Ownership and Peer-to-Peer Rentals.
+
+Tokenized ownership will simplify every type of operation with the real estate, including property investments and ownership transfers, either partial or complete. Real estate tokens representing a share in property ownership will allow for a liquid real estate market with transparent prices (price discovery). Please note that ATL tokens are essentially membership certificates in the ATLANT Platform, which give numerous rights and privileges to their owners provided compliance with KYC/AML policies of ATLANT and proof of member activity confirmed by running an ATLANT node on the member's computer, as discussed in more detail later. There is no passive expectation of income solely from holding ATL tokens.
+
+
+
+Figure 3. Sample ATLANT Tokenized Assets Screen
+
+Peer-to-Peer Rentals will make it possible to significantly reduce fees taken from both parties (tenant and lessor) and minimize the possibility of fake reviews and forged ratings  which are the main problems of existing centralized rental services such as Airbnb, Expedia, Booking and others.
+
+With advent of blockchain technology, existing hotel business and growth of online services such as Booking and Airbnb could be disrupted and channeled into a decentralized service such as ATLANT, and said technology could accelerate both supply growth and utilization. Under
+
+
+
+http://atlant.io
+
+
+
+6
+
+
+
+conservative assumptions, (just for the US market) blockchain technology will provide explosive growth to the lodging market (see Figure 4).
+
+
+
+Figure 4. Future US Room Supply Growth Attributable to Blockchain Technology
+
+P2P lodging via ATLANT will weaken the pricing power of traditional hotels, Airbnb, Booking, Expedia, with a greater impact on leisure-oriented hotels and lower-price-point hotels focused on a lower value-added product offering, while at the same time increasing RevPAR (revenue per available room).
+
+
+
+Figure 5. Future Global Booking Revenue Attributable to Blockchain Technology
+
+
+
+http://atlant.io
+
+
+
+7
+
+
+
+Figure 6. Future Projected RevPAR in the US Hotel Industry Attributable to Blockchain Technology
+
+ATLANT operates as a custom decentralized system, governed by the DAO family built on Ethereum. The platform is powered by its core token, abbreviated as "ATL".
+
+ATL tokens are essentially membership certificates in the ATLANT Platform, which give the following rights and privileges to their owners provided compliance with KYC/AML policies of ATLANT and proof of member activity confirmed by running an ATLANT node on the member's computer:
+
+ Listing fee charged in ERC20 compliant property tokens, in all properties listed through the ATLANT Platform during their initial property token offerings. The platform enables property owners and developers to tokenize property by creating customized smart contracts and perform a token distribution to either sell property (partially or completely) or attract financing for its construction. The size of the listing fee is initially set at 7% of the underlying asset and, subsequently, determined by voting of the ATL token holders. After a successful token sale, an agreed part of the property tokens is released out of
+
+
+
+http://atlant.io
+
+
+
+8
+
+
+
+ATLANT escrow to ATL token holders proportionately, provided such ATL token holders are running an ATLANT node on their computers. There is no passive expectation of income solely from holding ATL tokens.  Commissions from P2P rentals are imposed on the lessor, as a small fee, once a transaction with the lessee is finalized. These commissions are distributed to the ATL token holders running an ATLANT node on their computer. The size of this fee is determined by voting of the ATL token holders.  Votes to decide various actions taken with respect to the property: platform listing decision, listing fee approval, law firm choice, management company choice (property tokenization), property for rent approval, rental fee approval.  Ability to work, and earn extra income, within the framework of ATLANT as an arbiter for conflict resolution in P2P rentals, moderated via an arbiter rating system. As a result of this work funds withheld from the escrow of the losing party are distributed to the ATL token holder who performed the arbitration.  Influence on the platform and ability to propose, vote on and aid further developments to improve the efficiency of real estate globally, as well as boost ATLANT's global adoption and growth.
+
+Token holders agree upon every decision taken within the platform, affecting both tokenizing property and P2P rental service, by the use of a voting mechanism. ATL token holders vote for or against the proposals created by most reputable holders, covering all activities within the platform.
+
+
+
+Blockchain  Quick Review
+
+Blockchain is fundamentally a new type of database technology that is optimized to tackle a unique set of challenges. Historically, databases have been used as central data repositories by organizations to support transaction processing and computation. However, databases are rarely shared between organizations due to a variety of technology and security concerns. Blockchain is a shared, distributed database of transactions among parties that is designed to increase
+
+
+
+http://atlant.io
+
+
+
+9
+
+
+
+transparency, security, and efficiency. Blockchain is a database (with copies of the database replicated across multiple locations or nodes) of transactions (between two or more parties) split into blocks (with each block containing details of the transaction such as the seller, the buyer, the price, the contract terms, and other relevant details) which are validated by the entire network via encryption by combining the common transaction details with the unique signatures of two or more parties. The transaction is valid if the result of the encoding is the same for all nodes and added to the chain of prior transactions (as long as the block is validated). If the block is invalid, a "consensus" of nodes will correct the result in the non-conforming node.
+
+The blockchain ledger is replicated across multiple locations (we show just six in Figure 7 for simplicity), and each maintains its own copy, which is separately updated based on new transaction data. We show a sequence of three transactions. In the first two transactions, data and signature information are properly validated by all six nodes with matching "hash" values. However, for Transaction #3 at Location #5, the hash does not match the others, and will be corrected by the others via "consensus."
+
+
+
+Figure 7. Example of Blockchain Ledger Transactions
+
+Blockchain has the following advantages over a conventional centralized database:
+
+
+
+http://atlant.io
+
+
+
+10
+
+
+
+ Security: Blockchain relies on encryption to validate transactions by verifying the identities of parties involved in a transaction. This ensures that a "false" transaction cannot be added to the blockchain without the consent of the parties involved. A complex mathematical calculation known as a "hash" is performed each time a transaction is added to the blockchain, which depends on the transaction data, the identities of the parties involved in the transaction, and the result of previous transactions. The fact that the current state of the blockchain depends on previous transactions ensures that a malicious actor cannot alter past transactions. This is because if previous transaction data is changed, it will impact the current value of the hash and not match other copies of the ledger.
+
+ Transparency: By its very nature, blockchain is a distributed database that is maintained and synchronized among multiple nodes  for example, by multiple counterparties who transact with each other frequently. In addition, transaction data must be consistent between parties in order to be added to the blockchain in the first place. This means that by design, multiple parties can access the same data (in some cases locally within their organizations)  thus significantly increasing the level of transparency relative to conventional systems that might depend on multiple "siloed" databases behind firewalls that are not visible outside a single organization.
+
+ Efficiency: Conceptually, maintaining multiple copies of a database with blockchain would not appear to be more efficient than a single, centralized database. However, in most real-world examples (including several of the case studies we examined in capital markets), multiple parties already maintain duplicate databases containing information about the same transactions. In many cases, the data pertaining to the same transaction is in conflict  resulting in the need for costly, time-consuming reconciliation procedures between organizations. Employing a distributed database system such as blockchain across organizations can substantially reduce the need for manual reconciliation, thus driving considerable savings. In addition, in some cases blockchain offers the potential for
+
+
+
+http://atlant.io
+
+
+
+11
+
+
+
+organizations to develop common or "mutual" capabilities that eliminate the need for duplication of the same effort across multiple organizations.4
+
+
+
+Problem  Buying & Selling Property
+
+Real estate throughout time and to this day remains the greatest source of wealth for most families, in fact, it is the largest asset class globally. History tells us that more great fortunes have been made and lost in this asset class than any other. However, despite having a tremendous size ($217tn) and volume ($1.4tn), it remains one of the most inefficient of assets. Over time, various attempts have been made to make this market more manageable and liquid, nonetheless every individual or institution which buys and owns real estate faces nontransparent transaction costs, asymmetric information, property rights opaqueness, variability in taxes, and a host of other issues.
+
+Efficient Market Hypothesis Theory states that the price of a security at any given time reflects all of the available pertinent information. While there may be appropriate application for this theory relative to exchange tradable assets such as stocks and bonds, it is currently inapplicable relative to real estate. While over the long term pools of real estate might be relatively priceefficient, purchases of a particular property are often driven by individual circumstances and done with imperfect information, and limited number of buyers.
+
+Most real estate ownership globally is single ownership, or at most divided between just a few parties. This creates a problem as rising prices have outpaced consumer income and savings and have left ability to purchase real estate assets to just a small subset of the population. Further, high transaction costs and inefficiency in transactions themselves make redistribution of this market sub-optimal. Frequently, the cost of moving from an overly large house into a smaller one outweighs the savings and vice versa.
+
+
+
+4 Schneider J. et al, (2016) Goldman Sachs Equity Research Profiles in Innovation, Blockchain Putting Theory into Practice
+
+
+
+http://atlant.io
+
+
+
+12
+
+
+
+Also, investing in real estate for most individuals and corporations typically lacks any global reach as paperwork, due diligence and administration in a foreign jurisdiction involves knowledge and prohibitive costs.
+
+Solution  Buying & Selling Property
+
+ATLANT is the first decentralized real estate platform, built on top of the Ethereum network. With rapid rate of adaption of crypto-assets, ATLANT strives to remedy the situation of illiquidity and opaqueness in the real estate market. ATLANT serves as a turnkey solution for listing a real estate asset for trading in a tokenized form in a similar way that stocks are listed on exchanges such as FTSE or DAX.
+
+
+
+Figure 8. Property Token Trading Platform Preview
+
+ATL token holders, being the platform's members, work to find property owners or developers willing to sell their property assets or a part of their development to raise funds for the construction. Decentralized voting is performed with the use of EVM smart contracts to either
+
+
+
+http://atlant.io
+
+
+
+13
+
+
+
+accept or reject a new listing. In case a new property is approved to list on the platform, ATL holders vote for the property's law firm and management company.
+
+Approved lawyer, or competent local authority in each respective jurisdiction, verifies legal documentation provided by the listing party and digitally signs each document pertaining to the property. Once signed by the local authority, each document is hashed and pushed into the ATLANT Distributed Data Store ("ADDS"), while its hash is recorded in the Ethereum blockchain. This ensures that documents become immutable and virtually impossible to forge, as any change made inside an ADDS document will lead to a different hashing result, which would differ from the hash previously recorded in the Ethereum blockchain. By applying this operation to every item stored in ADDS, we create a permanent link to every document from the tamper-proof blockchain. As sometimes documents need to be updated legally, we use ADDS versioning provided by the IPFS protocol5.
+
+Once all decisions covering a new listing are made, ATL holders verify both a Ricardian contract (RC)6 and EVM contract created by a listing party. Ricardian contract is digitally signed and linked to the corresponding EVM smart contract, making the contract legally binding. Ricardian contracts are stored in ADDS. The final step of the process involves voting for the deployment of EVM smart contract into the Ethereum network, which effectively enacts the start of property tokenization. Property tokens are issued by the EVM contract in exchange for ETH and ERC20 tokens. Once initial property token distribution is finalized, ATL token holders who have carried out work of running an ATLANT node to secure the ATLANT network, receive a listing fee charged in property tokens, which are ERC20 compliant. Tokens raised from the proceeds of the sale are subsequently released from ATL escrow to the selling party in case of a successful sale (determined by the contract).
+
+
+
+5 IPFS Documentation (2007) http://ipfs.io/docs 6Grigg I. The Ricardian Contract. In Proceedings of the First IEEE International Workshop on Electronic Contracting,
+
+pages 25-31. IEEE, (2004) http://iang.org/papers/ricardian_contract.html
+
+
+
+http://atlant.io
+
+
+
+14
+
+
+
+ATLANT Network
+
+
+
+Property RC
+
+
+
+Legal Documentation
+
+
+
+ADDS
+
+
+
+Ethereum Network
+
+Property EVMC
+
+Smart Contract Escrow
+
+
+
+ADEX
+
+ERC20 Token Exchange
+
+
+
+Verify
+
+Approved Law Firm
+
+
+
+Approve
+
+
+
+Platform Token Holders (ATL)
+
+
+
+Get PTO Stake
+
+Property Token Offering (PTO)
+
+
+
+Listing Party
+
+
+
+Listing Request
+
+
+
+Property Token Holders
+
+
+
+Legal Documentation
+
+
+
+Property
+
+
+
+Figure 9. ATLANT Property Tokenization
+
+
+
+Management Company
+
+$
+
+Reserve Fund
+
+
+
+http://atlant.io
+
+
+
+15
+
+
+
+Subsequently, the tokenized property trades with bids and offers with order matching to create a state of equilibrium, reflecting true value of the property at a given time. ATLANT provides a decentralized exchange service ("ADEX") to facilitate trading of both platform tokens and property tokens. Trading is done in a decentralized way with the use of Ethereum exchange contracts TokenTrader7 and Maker-OTC8.
+
+Liquidity and true price of the asset which this system attempts to create, enable market participants to resolve many problems which currently make the market inefficient. Examples of this are collateral management for real estate assets in a dynamic price environment, as value of collateral can be easily determined, and collateral itself can be transferred via other blockchains. Further, store of wealth and inheritance can be easily written into smart contract so that there's no probate disputes.
+
+Additionally, platform tokens ("ATL") can be tradable at existing centralized exchanges after the end of the contribution period.
+
+Problem  High Rental Middleman Fees & Fake Reviews
+
+In the past decade, long-term property rental as well as short-term vacation rentals have become substantially more accessible with various online platforms, so much so that they have put pressure on the hotel market.
+
+
+
+7 TokenTrader And TokenTraderFactory (2017) http://github.com/bokkypoobah/TokenTrader/wiki/TokenTrader-
+
+And-TokenTraderFactory 8 Makerdao Maker-OTC (2017) http://github.com/makerdao/maker-otc
+
+
+
+http://atlant.io
+
+
+
+16
+
+
+
+Figure 10. Dynamics of P2P Lodging Usage
+
+With the popularity of sharing economy, which is based on the idea of a direct relationship between the host and tenant, the startups in the rental sphere are gaining popularity. However, currently P2P economy is not fully implemented, because there remains a middleman in the form of  booking service or agent which takes the role of  guarantor and arbitrator in resolving disputes and nonstandard situations.
+
+Our research indicates that the world's leading short-term rental marketplaces, such as Airbnb charge a service fee of up to 12% from the guest and 3% from the host, largely to compensate its 3500+ employees who process transactions in a centralized fashion. Similarly, hotel marketplaces such as Booking and Expedia charge their affiliate hotels a range of 15-30%, depending on location, for each booking deducted from the notional amount of each transaction.
+
+Reviews and description and quality of amenities in rental properties on such platforms as Airbnb and Booking are collected by a proprietary nontransparent internal database, leading to potential abuse of the system, via changing/deleting of reviews, or host self-rating. A Consumer Reports study of online ratings services criticized centralized reviews as businesses could reach out to customers and convince them to change negative reviews for positive ones, offering refunds or making other amends.
+
+
+
+http://atlant.io
+
+
+
+17
+
+
+
+Solution  Eliminating the High Rental Middleman Fees & Fake Reviews
+
+Although P2P lodging is already on a steep growth trajectory, in terms of both market awareness and adoption, we see an opportunity for blockchain to increase volume, safety, quality, and effectiveness of the transaction process. High transaction costs and safety concerns remain significant challenges to the adoption of P2P lodging, and are areas where we see potential for blockchain technology to disrupt the existing framework.
+
+
+
+Figure 11. Projected Growth of P2P Lodging with Blockchain
+
+We created a decentralized solution to the aforementioned problem of short- and long-term rentals as well as hotel bookings, allowing for reduction of commissions and true ratings. Peerto-peer rental service offered by the ATLANT relies on three main protective mechanisms: escrow, reputation system and decentralized arbitration. All of these approaches are implemented in existing decentralized exchange services and proved to be viable.
+
+Any lessor may get listed on the platform by providing a real-world identity and sending a security deposit into the escrow contract provided by the platform. This is a protective measure against rental listing spam and ADDS bloating. Initially, lessor creates both Ricardian and EVM contracts by means of ATLANT software, which are then automatically interlinked and deployed in ADDS (Ricardian) and Ethereum (EVM contract). Lessor's real-world identity is located inside of the Ricardian contract stored in ADDS. Once the smart contract is deployed, the lessor sends a
+
+
+
+http://atlant.io
+
+
+
+18
+
+
+
+security deposit to the appropriate smart contract, which acts as an escrow and discourages possible dishonest behavior of the lessor.
+
+
+
+ATLANT Network
+
+
+
+Rental RC #2
+
+
+
+Rental RC #1
+
+
+
+ADDS
+
+
+
+Ethereum Network
+
+Rental EVMC #1 Escrow #1
+
+
+
+Rental EVMC #2
+
+Escrow #2
+
+
+
+Accounts Payable
+
+Tenant Conflict Case
+
+Arbiter Pool
+
+
+
+Arbitration
+
+
+
+Accounts Receivable
+
+Lessor Conflict Case
+
+
+
+Conflict Resolution
+
+Figure 12. ATLANT P2P Rental System
+
+Platform's approach towards identities gives tenants full control over their own privacy. While they are encouraged to complete profiles fully, it is possible to have a pseudonymous identity or decide to subsequently reveal identity to lessor or arbiter (e.g. via Keybase9). Lessors are required to provide real-world identities in order to get listed as a host. Considering other entities on the
+
+
+
+9 Keybase open source security app http://keybase.io/docs
+
+
+
+http://atlant.io
+
+
+
+19
+
+
+
+platform, we share the approach of the Aragon10 project towards identity in the decentralized network:
+
+ Identity is opt-in. Entities are free to transact pseudonymously.  Entities are free to choose how they want to identify themselves, and what identity
+
+providers they consider valid to identify others.  Identity belongs to the individual or organization, which means that the only entity which
+
+can provide the ultimate truth about their identity is themselves or entities they personally appoint for this (through cryptographic proofs).
+
+Reputation system in the platform is essentially a decentralized rating and review system, where reputation refers to the overall trustworthiness of an identity within a network. Decentralized reputation approach has the following major considerations:
+
+ Sybil attacks11 - fake ratings made by an attacker using sockpuppet identities  Distributed storage - ratings must be persistent, publicly accessible and immutable
+
+Sybil attacks can generally be mitigated by increasing the cost in resources or time to perform an action. Proof of transaction from tenant to lessor is required to leave a review and change lessor's rating. As described above, a transaction from a tenant to a host implies a small fee, which is automatically paid to ATL token holders running an ATLANT node on their computer by the EVM contract. In addition to benefiting the platform token holders, this fee serves as a guard against fake reviews and forged ratings. As an additional protective mechanism, ATL holders may vote on a proposal to impose a fine on an unscrupulous host, which is paid from lessor's escrow security deposit.
+
+ATLANT utilizes its distributed data store ADDS to solve problems of rating persistence and accessibility, while Ethereum blockchain is used for timestamping and securing data, which
+
+
+
+10 Aragon Network: Digital Jurisdiction http://aragon.one 11 Sybil Attack, http://en.wikipedia.org/wiki/Sybil_attack
+
+
+
+http://atlant.io
+
+
+
+20
+
+
+
+enforces rating immutability. Transactions stored in the blockchain contain IPFS links to ratings stored in ADDS.
+
+Reputation is tied to the transacting entity within the ATLANT network, which can be either pseudonymous or self-identified. Rating is defined as the quality of the apartment for rent, which is essentially an overall score of a counterparty. Every rating score sent to the network by the tenant affects the rating of the host. Review is a written summary of the rental experience with a particular host. Ratings and reviews are made on a per transaction basis as the network's protection measure involves a proof-of-transaction approach. As the unscrupulous host may circumvent this protective mechanism by creating numerous pseudonymous entities and conducting small transactions to give him/herself a positive rating, the Platform allows ATL token holders to penalize this behavior, which is done by means of voting on appropriate proposals affecting the lessor's security deposit.
+
+Rating score is a basic unit of reputation change, which could be either positive or negative. Review is optional and may complement a rating score at the discretion of the lessee. Technically, both the rating score and the review are assembled in a single object (score object) and pushed into the ADDS upon rating score creation. Score object is directly linked to the payment transaction from tenant to lessor, while its hash is recorded in the Ethereum blockchain to guarantee rating score's counterfeit protection. Generic score object reflecting a rating score and an optional review at the ATLANT Platform comprises the following data fields:
+
+1. Identity of the host within the network 2. Rating score to influence lessor's overall rating
+
+a. -1: Negative rating b. 0: Neutral rating c. 1: Positive rating 3. Customer experience (optional review) 4. Customer identity (pseudonym) 5. Timestamp
+
+
+
+http://atlant.io
+
+
+
+21
+
+
+
+Network protocol ensures that score objects are stored decentrally in such a way that while every node has these objects in its local ADDS, nobody can modify ratings already created by other network identities.
+
+Blockchain bloat is a common issue in decentralized rating storage systems. ATLANT network takes protective measures against this, and relies on its own distributed data store built on top of open-source IPFS software. Furthermore, data store bloat has the potential to become an issue for the network thus certain restrictions are imposed on the score object's size to mitigate this threat.
+
+ATLANT uses decentralized arbitration for conflict resolution, a model which has already been successfully applied in practice by Bitcoin based companies Bitsquare12 and OpenBazaar13. This eliminates the need for a centralized authority such as Airbnb to perform conflict resolution. Rent price is not initially affected by possible conflict resolution costs in the future because arbiter fee is only taken from the losing party, in case of an arbitration, and once it is finished. We use smart contracts based escrow to lock security deposits of both parties (tenant and lessor) until their transaction is finalized.
+
+
+
+12 P2P Exchange Network, http://bitsquare.io 13 Online P2P Marketplace, http://www.openbazaar.org
+
+
+
+http://atlant.io
+
+
+
+22
+
+
+
+Figure 13. P2P Rental Service on the Blockchain
+
+ATLANT Platform implements a reputation-based arbitration system, which involves two types of arbitrator roles: a regular arbiter and a senior arbiter. Security deposits of both parties (tenant and lessor) are required to be sent to the rental smart contract prior to the actual money transfer. Arbitration logic is subsequently handled by the EVM rental contract. Arbiters are governed by the special arbitration contract, which requires a security deposit prior to working as an arbiter. This security deposit is automatically returned in whole to the arbitrator upon stepping down from arbitration.
+
+Reputation system is protected against Sybil attacks and other attack vectors applicable to decentralized networks by means of proof-of-transaction and small transaction fees (similar to ones utilized in Bitcoin). Both roles, of arbiter and a senior arbiter are supported in case of a high rating score. The ATLANT protocol assigns an appropriate arbiter and a senior arbiter automatically to transactions requiring conflict resolution. In case of a dispute security deposits are used as payment for dispute resolution efforts. Arbiters gets paid from the losing party's security deposit upon completion of an active arbitration process.
+
+The arbitration process entails several phases. In order to determine the winning party, an arbiter requests both the tenant and lessor to deliver specific proofs: real-world ID, hand-signed
+
+
+
+http://atlant.io
+
+
+
+23
+
+
+
+documents and evidence-containing footage pertaining to any issues. Then, the arbitrator renders their decision based on presented evidence, which means that the winning party does not lose anything, while the losing party is penalized by the system as its security deposit is transferred to the arbiter.
+
+If either party is not satisfied with the decision of the arbitrator, final arbitration round may be requested, which involves a senior arbiter. A senior arbiter is chosen by the protocol from a list of top-rated arbiters. The senior arbiter reviews evidence provided and renders a final decision. If the initial arbiter is found to have behaved dishonestly, further steps are taken to penalize this behavior, based on severity, typically impacting the regular arbiter's escrowed deposit.
+
+
+
+Tokenization and Listing for Trading of Properties
+
+Property Inventory and Sourcing
+
+ATLANT allows property owners and developers to tokenize their assets and list them for trading. ATLANT token holders will endeavor to find new properties and also accept incoming requests from such entities. Initially ATLANT plans to tokenize properties in select transparent jurisdictions such as continental Europe and UK, and eventually, as our expertise grows expand globally to capture further market share. Sourcing and diligence for each jurisdiction will be done in accordance with existing laws and procedures in each jurisdiction. ATLANT is developing a framework for each country which will be implemented and verified on the blockchain via digital signatures by respective local authorities.
+
+
+
+Property Token Offering
+
+Once a property has been identified and verified by local authorities, and its details published on the platform, a date will be set for the properties' Property Token Offering ("PTO"). Price for the listing offer will be taken from the developer or selling party. Lawyers/trust companies who digitally signed all certificates and will be handling transfer of ownership are involved off the
+
+
+
+http://atlant.io
+
+
+
+24
+
+
+
+chain with ATLANT supervising the process. All requisite documentation and offering documents will be published on ATLANT for prospective PTO holders to assess the property for potential purchase. Subscription will be handled via smart contracts and aggregated into a fund which will be collected via ATLANT escrow from the start of the PTO until expiry date set at the start of the process. If during this time period the fund has not reached capacity, ATLANT escrow will release tokens back to the addresses of the token holders. Should the fund reach capacity set forth by the seller, funds will be sent to the seller and PTO tokens will be distributed to the token holders of the property. Subsequently PTO tokens will be listed for trading on exchanges, starting from the decentralized ADEX exchange to increase liquidity and price discovery of the tokenized real estate asset.
+
+
+
+Rental Income
+
+The main recurring income as with traditional property holdings is rental income. It is the duty of the property management company to collect this income and redistribute it to token holders. Rental income is distributed automatically by using the property contract functionality, allowing for redistribution of funds in any ERC20 compliant token or ETH to platform token holders proportionately to their PTO holdings on the ATLANT Platform.
+
+Rental income is distributed to the property token holders after fees are deducted by the management company, and the reserve fund is topped off should it be less than 10% of the property price for the past 6 months of trading, or initial price of the PTO if 6 months has not elapsed.
+
+
+
+Reserve Fund
+
+During the PTO of a real estate asset, a 10% reserve fund will be created and held in the EVM smart contract escrow of the property DAO, or child DAO. The reserve fund is proportional property of the asset's token holders, however it is held in escrow, to pay the management company and cover any unexpected costs associated with the property. In the secondary market
+
+
+
+http://atlant.io
+
+
+
+25
+
+
+
+when property tokens are trading, while the reserve fund itself will not be transferred from the seller to the buyer during trading, price of the tokens will imply the reserve component in their price. This is true due to the fact that if the property is completely sold, in the event of a buyout or squeeze out, the reserve fund will be liquidated, and proceeds distributed to former token holders pro-rata.
+
+Services which will be covered by the reserve fund are structuring fees, escrow fees, property maintenance and repair fees, property management fees, property tax on rental income, insurance fees, property renovation fees, legal costs, and any other auxiliary expenses born by the management company in servicing the asset. The property management company has discretion over the reserve fund for day to day expenditures, in the event that single proposed expenditure does not exceed 3% of the value of average of 6 months trading price of the asset or initial price of the PTO if 6 months has not passed elapsed. Expenses which exceed this threshold are voted on by PTO holders.
+
+Due to current cryptocurrency volatility reserve fund assets will be automatically converted, via a smart contract, to fiat-like currency via Tether14 upon entering the reserve fund. The reason for this is that spending associated with the reserve fund is closely associated with fiat currencies. Funds from the reserve fund will be paid as necessary to the management company, which would be controlled by the use of a voting system (choice of the management company). The management company will have access to the reserve fund, however possibility of embezzlement will be minimized via the ATLANT Platform, by tracking the transactions made by the management company in a real-time and by voting on proposals to choose a different management company.
+
+
+
+Reserve Fund Drawdown Provision
+
+In the event that the reserve fund is drawn down to 2% of average 6 months trading price, or initial price of the PTO if 6 months has not elapsed, and is not replenished in time by proceeds
+
+
+
+14 Tether Digital Currency, http://tether.to
+
+
+
+http://atlant.io
+
+
+
+26
+
+
+
+from rent, liquidation of the property will commence. Property token holders will vote on a listing broker/public marketplace and upon sale of the property, proceeds of the sale and the reserve fund minus applicable brokerage commissions will be proportionally distributed among PTO token holders.
+
+Duties of the Management Company
+
+Property management company is responsible for:
+
+ Setting the initial rent level, collecting rent from tenants and adjusting the rent. They are also responsible for finding and screening tenants, handling security deposits, managing tenant complaints/emergencies, handling leases, move-outs, complying with property safety standards, and dealing with and initiating evictions.
+
+ Physical management of the property, including regular maintenance and emergency repairs. They are in charge of, or must hire someone to perform such task as extermination, checking for leaks, landscaping, shoveling of snow and removal of trash. This maintenance aims to keep current tenants happy and attract new tenants. They must also perform repairs when there is an issue, or must hire someone to attend to it.
+
+ Operating within the set budget for the building. In certain emergency situations when the occupants (tenants) or physical structure (investment property) are in danger, they may use their discretion to order repairs or likewise without concern for the budget.
+
+ Keeping thorough records regarding the property. This should include all income and expenses; list of all inspections, signed leases, maintenance requests, any complaints, records of repairs, costs of repairs, maintenance costs, record of rent collection and insurance costs. All of these records and actions will be logged/recorded on the blockchain.
+
+ Filing and paying taxes for the property and its rental income for which funds will come from the reserve fund.
+
+
+
+http://atlant.io
+
+
+
+27
+
+
+
+Change of Management Company
+
+Every year, property token holders will vote whether to keep or change the property management company. If more than 50% of token holders vote to change the management company, a proposal will be put forth to token holders to select a licensed management company from a list of proposed locally respected providers.
+
+
+
+Buyout or Purchase of Significant Stake
+
+Similar to fiat exchanges any token holder may propose to buy out the property in its entirety or purchase a significant stake of the tokens. This will enact a smart contract voting mechanism whereby token holders will vote to accept or reject the price offered to them. A threshold of 95% of token holders is necessary for mandatory buyout procedure to take place. In this event the acquirer will receive 100% of all tokens, in exchange for ETH which will be distributed pro rata among former token holders. In the event that the acquirer chooses to buy a significant stake and not purchase the property entirely, token holders will be able to tender their tokens at the proposed price.
+
+Delisting/Buyout of the Property
+
+In the event that a majority token holder acquires 90% or greater position in the asset, a squeezeout clause may be enacted, by this token holder, whereby reaming token holders will be bought out at the average price of 6 month of trading, or initial price of the PTO if 6 months has not elapsed.
+
+
+
+Details of Property Offerings
+
+ATLANT has specific requirement and process for listing PTOs which involves the following:
+
+1. Listing of technical and legal documentation of the real estate asset on ATLANT sufficient for ownership transfer in said jurisdiction.
+
+
+
+http://atlant.io
+
+
+
+28
+
+
+
+2. Real estate asset must meet listing requirements of the platform which are currently defined as estimated value of 20,000,000 or greater, and having a holding structure which is absent of liens. This limit is imposed initially during the pilot of the ATLANT Platform and will be further refined by ATL token holder voting. Subsequently ATL token holders will be able to vote to modify this value in general, or on a case-per-case basis.
+
+3. ATL token holders will vote on the competent legal entity which will verify validity of the transaction and property in respective jurisdiction.
+
+4. In the event that the law firm or competent authority in the property's jurisdiction renders a positive decision, with respect to the holding structure, and ownership of the asset, the PTO will be generated with the number of tokens equal to the square millimeters of the asset.
+
+5. ATLANT acts as an escrow of ETH or BTC which are sent by subscribers during the initial PTO of the asset. Subsequently, after the asset is inserted into a Special Purpose Vehicle (SPV) structure and tokenized, escrow assets are released to the seller of the real estate asset.
+
+6. Listing fee equal to 7% of the newly issued PTO tokens are retained by ATL Platform, and distributed pro rata to ATL token holders who have gone through KYC/AML and have done work as an active node on the ATLANT platform. Future listing fee levels will be voted on by the ATL Platform token holders.
+
+7. Reserve/insurance fund is created for every PTO. This fund remains the property of each token holder, however it is escrowed in the event that the SPV which owns the property needs to spend funds on the management company, lawyer fees or other unforeseen circumstances.
+
+8. After the PTO takes place, tokens of the asset are listed and trade freely on the ATLANT platform.
+
+Trading of Tokenized Assets
+
+ATLANT codebase includes ADEX (decentralized exchange) EVM smart contracts to allow for a safe and secure method of exchange between Platform tokens ("ATL") and property tokens (e.g.
+
+
+
+http://atlant.io
+
+
+
+29
+
+
+
+"ATLAXXX"). Ether and other ERC20 tokens may also be exchanged for property tokens on the
+
+decentralized ADEX exchange.
+
+Exchanging tokens by means of this model reduces a number of risks associated with traditional centralized exchanges  e.g. a risk of failure to fulfill its obligations to customers. Nevertheless, it is possible for some part of the tokens to be tradeable at centralized digital currency exchanges as well. From an economic point of view, there is an incentive for both ATL token holders and property token holders to contribute to tokens being traded at centralized exchanges.
+
+Tokens are traded via a traditional two-sided market consisting of bids and offers. If there are more buyers or sellers the market mechanism will move the token price, and thus the market capitalization of the asset, to a clearing level in accordance with the market's assessment of the property value.
+
+Technology
+
+Overview
+
+In terms of technology, ATLANT Platform is a standalone P2P network with the custom protocol built for purposes of digitizing real estate in a decentralized way. This network is governed by Ethereum smart contracts (ATLANT DAO family), implementing and enforcing rules for entities to interact in tokenizing property or rentals.
+
+ATLANT uses a list of technological concepts to implement the model described above.
+
+
+
+http://atlant.io
+
+
+
+30
+
+
+
+Ethereum DAO Family
+
+Decentralized Reputation
+
+
+
+Ethereum Smart Contract
+
+Escrow
+
+Arbitration System
+
+
+
+Voting on the Blockchain
+
+Ricardian Contracts
+
+
+
+Distributed Data Store
+
+
+
+Data Mirroring
+
+
+
+Historic Versioning
+
+
+
+Figure 14. Technological Concepts Used by ATLANT Platform
+
+
+
+Ethereum platform with its virtual machine (EVM) is by now the most established blockchainbased distributed computing platform with smart contract functionality. It powers both tokenization and contracting aspects of the ATLANT Platform.
+
+The platform implements its own protocol, responsible for data distribution and mirroring, historic versioning of documents, distributed data storage, arbitration and reputation in the decentralized network. The rest is implemented in the form of Ethereum smart contracts and executed by EVM: DAO family, voting on proposals, escrow, core and property tokens, rental agreements and auxiliary contracts. The ATLANT protocol provides a bridge, connecting the ATLANT network with the Ethereum-based smart contract infrastructure governing the ATLANT Platform.
+
+
+
+http://atlant.io
+
+
+
+31
+
+
+
+ATLANT Network
+
+Secure Workflow
+
+
+
+Arbitration System
+
+
+
+Identity & Reputation
+
+
+
+Contract Management
+
+
+
+ADDS
+
+
+
+Ethereum Network
+
+Platform DAO
+
+Property DAOs
+
+
+
+Rental Contracts
+
+ADEX
+
+
+
+Figure 15. Technical Overview of the ATLANT Platform
+
+ATLANT Technology Stack
+
+ATLANT Platform software components are being developed using the following stack:  Go  Solidity  JavaScript  Electron  EthereumJS  web3.js  Vue.js  IPFS
+
+We apply appropriate technology in accordance with the tasks to be accomplished.
+
+Our core node software which is doing the heavy-lifting is written in Golang and utilizes a modified IPFS node.
+
+
+
+http://atlant.io
+
+
+
+32
+
+
+
+Smart contract family is written in the Solidity language native to the Ethereum platform. Ethereum was chosen as the most trustworthy environment for execution of Turing complete15 smart contracts.
+
+The desktop client is made with Electron framework, using JavaScript and helper libraries to work with EVM contracts, and communicates with the core node running the ATLANT network.
+
+Web client development is among our top priorities because it simplifies working with the ATLANT Platform and will ultimately contribute to mass adoption of said platform. It is built with the VueJS frontend framework.
+
+
+
+ATLANT Software Components
+
+ATLANT Platform comprises the following software components:
+
+ atlant-go (Go)  atlant-desktop (Electron)  atlant-dao (Solidity)  atlant-web (Vue.js)  go-ipfs (forked)  go-onion-transport
+
+ATLANT core node software is the low-level component, containing implementation of the ATLANT protocol (atlant-go). Core node software is responsible for running the ATLANT P2P network and managing data flow through, establishing the data tier of the ATLANT Platform. Core node utilizes a modified IPFS node, which is capable of historic versioning, mirroring and reliable data distribution across the ATL network. ATL node handles several data structures, including property documents, arbiter registry, ratings and reviews data, peer identities, Ricardian contracts. Node software contains an implementation of ADDS, which is built on top of IPFS to provide a reliable way of distributed data storage. The atlant-go component utilizes go-ipfs and
+
+
+
+15 Turing Completeness, http://en.wikipedia.org/wiki/Turing_completeness
+
+
+
+http://atlant.io
+
+
+
+33
+
+
+
+go-onion-transport for the purposes of data distribution. We have selected the IPFS protocol due to its principles of decentralization and support for data encryption and historic versioning (similar to git).
+
+Desktop client communicates directly to the ATLANT node and represents the presentation tier of the ATLANT Platform. It interacts with the Ethereum network directly and contains a contract creation toolset. Depending on the user role (e.g. host), the client offers a set of ready-to-use contract templates and additionally a smart contracts designer. Once the contract is created, the client provides it in two versions: Ricardian contract and the EVM contract. Users is requested to digitally sign the Ricardian version of the contract in order to proceed with its deployment. Once the Ricardian contract is signed, desktop client interlinks it with the EVM contract, hashes the whole contract and creates the Ethereum transaction containing the Ricardian contract hash digest. Once the transaction gets broadcasted and subsequently confirmed, desktop client passes the signed Ricardian contract to the node, which in turn inserts it into the ADDS. The client supports several roles, including property developer, tenant and arbiter. It has a built-in wallet dedicated for storage and use of the platform tokens (ATL), property tokens and Ether. Voting on proposals is available for ATL token holders and property token holders. Opt-in identity management is supported (via Keybase and in the future, other identity providers).
+
+Web client shares the functionality of the atlant-desktop component, but communicates with remote ATLANT nodes for complete functionality. Although this approach harms decentralization in the short term, we believe it will lead to global adoption and fast-paced growth of the ATLANT Platform. Independent nodes will continue to operate as standalone applications powering the ATL network even after the full-featured release of platform's web version.
+
+DAO component (atlant-dao) comprises a set of EVM smart contracts written in Solidity. These contracts govern core platform changes, property tokenization, token exchange and peer-topeer rentals by creating a business logic tier. This is a high-level component, forming a framework of self-enforcing agreements between multiple parties in the field of real estate. Some examples are smart contracts in the atlant-dao component which regulate and enforce agreements between the platform DAO and lessors, property token holders and the management company,
+
+
+
+http://atlant.io
+
+
+
+34
+
+
+
+the platform DAO and property DAOs, tenants and lessors. Further, a special ADEX contract establishes a decentralized exchange of the platform tokens, property tokens and Ether.
+
+
+
+ATLANT Platform  Component Overview
+
+
+
+ATLANT Software Architecture
+
+
+
+Data Tier
+
+
+
+ADDS
+
+
+
+Go-IPFS (forked)
+
+
+
+Go-OnionTransport
+
+
+
+ Documents  Identities  Arbiters  Ratings & Reviews  Ricardian Contracts
+
+
+
+Logic Tier
+
+
+
+Atlant-Go
+
+
+
+ Data Management  Identity Management  Contract Management  Reputation System  Arbitration Mechanism
+
+
+
+Presentation Tier
+
+
+
+Atlant-Desktop
+
+EVM Property DAOs
+
+Rental Contracts
+
+
+
+External Ethereum Node
+
+
+
+ Contract Builder  Apply as a Property  Apply as a Host  Vote on Proposals  Work as an Arbiter  Opt-in Identity (keybase)  Integrated ATL Wallet
+
+
+
+Platform DAO
+
+
+
+ADEX
+
+ Automatic Contract Execution
+
+ Decentralized Exchange
+
+
+
+High-level Logic
+
+
+
+Figure 16. ATLANT Platform Software Components
+
+
+
+http://atlant.io
+
+
+
+35
+
+
+
+Ricardian Contracts
+
+The Ricardian contract is a method of recording a document as a contract at law, and linking it securely to other systems, such as the accounting system, for the contract as an issuance of value16.
+
+RC is a software design pattern to digitize documents and have them participate within financial transactions, such as payments, without losing any of the richness of the contracting tradition. Publication of the content and reference to that content by the unique cryptographic message digest eliminates frauds based on multiple presentations.
+
+The final goal of the Ricardian contract is to make the contract's format both machine readable, such that they can easily be extracted for computational purposes, and readable as an ordinary text document such that lawyers and contracting parties may read the essentials of the contract conveniently17.
+
+Technically, Ricardian contract is a digitally signed and cryptographically verified electronic document that records an agreement between multiple parties, formatted to be human and machine-readable (e.g. JSON format18). By applying a cryptographic hash function (one-way hashing) to the RC, we receive the Ricardian contract digest as an output, which is immediately recorded into the blockchain. This eliminates possibility of forging the RC, as any change to its data would completely change an overall Ricardian contract digest. World's most established blockchains Bitcoin and Ethereum guarantee that any Ricardian contract digest would remain unchanged once the transaction containing that digest is included into the blockchain block. In
+
+16 Grigg I. The Ricardian Contract. In Proceedings of the First IEEE International Workshop on Electronic Contracting, pages 25-31. IEEE, (2004). http://iang.org/papers/ricardian_contract.html
+
+17 Nagy & Shakel "OpenPGP-based Financial Instruments and Dispute Arbitration," (2008) in Proceedings of Financial Cryptography and Data Security http://ifca.ai/fc08/presentations/7-2-nagy.pdf 18 JavaScript Object Notation, http://en.wikipedia.org/wiki/JSON
+
+
+
+http://atlant.io
+
+
+
+36
+
+
+
+order to be recognized as a valid RC, contract's digest should match the one stored in the blockchain. This ensures that none of counterparties are able to amend the terms of agreements retroactively, eliminating potential disputes that may arise from hearsay claims between counterparties.
+
+At ATLANT, we use Ricardian contracts in addition to EVM contracts to ensure that smart contracts have a legal force. This is implemented by using both the Ethereum blockchain and ATLANT distributed data store. We have applied the principles described above and extended them as follows:
+
+ Every deployed EVM contract has a corresponding Ricardian contract (interlinked by pointing at each other's unique IDs)
+
+ Every Ricardian contract linked to an EVM contract is stored in ADDS  Every Ricardian contract stored in ADDS has its Ricardian contract digest stored in the
+
+Ethereum blockchain
+
+This approach ensures that one cannot forge a smart contract address inside the RC, as this change would prevent the Ricardian contract from being recognized as a valid contract.
+
+
+
+ATLANT Network
+
+Ricardian Contract #1
+
+Ricardian Contract #2
+
+ADDS
+
+
+
+Ethereum Network
+
+RC hash digest
+
+EVM Contract #2
+
+RC hash digest
+
+
+
+EVM Contract #1
+
+
+
+Figure 17. ATLANT Platform's Ricardian Contract Model
+
+
+
+http://atlant.io
+
+
+
+37
+
+
+
+Ricardian contracts used by the ATLANT Platform are legally binding contracts, the terms of which will be unequivocally interpreted by courts of law. Digitally signed and cryptographically verified, these RCs point to corresponding EVM contracts, which ensure the implementation of agreements at the application level.
+
+
+
+http://atlant.io
+
+
+
+38
+
+
+
+References
+
+1. Barnes Y. et al., (2016) Around the World in Dollars and Cents http://pdf.euro.savills.co.uk/global-research/around-the-world-in-dollars-and-cents2016.pdf
+
+2. Axford N. et al, (2017) Global Investor Intentions Survey http://www.cbre.com/research-and-reports/Global-Investor-Intentions-Survey-2017
+
+3. Schneider J. et al, (2016) Goldman Sachs Equity Research Profiles in Innovation, Blockchain Putting Theory into Practice
+
+4. IPFS Documentation (2007) http://ipfs.io/docs 5. Grigg I. The Ricardian Contract. In Proceedings of the First IEEE International Workshop
+
+on Electronic Contracting, pages 25-31. IEEE, (2004) http://iang.org/papers/ricardian_contract.html 6. TokenTrader And TokenTraderFactory (2017) https://github.com/bokkypoobah/TokenTrader/wiki/TokenTrader-AndTokenTraderFactory 7. Makerdao Maker-OTC (2017) http://github.com/makerdao/maker-otc 8. Consumer Reports (2013) The Truth About Online Ratings Services http://www.consumerreports.org/cro/2013/09/online-ratings-services/index.htm 9. Keybase open source security app http://keybase.io/docs 10. Aragon Network: Digital Jurisdiction http://aragon.one 11. Sybil Attack, http://en.wikipedia.org/wiki/Sybil_attack 12. P2P Exchange Network, http://bitsquare.io 13. Online P2P Marketplace, http://www.openbazaar.org 14. Tether Digital Currency, http://tether.to 15. Turing Completeness, http://en.wikipedia.org/wiki/Turing_completeness 16. Nagy & Shakel "OpenPGP-based Financial Instruments and Dispute Arbitration," (2008) in Proceedings of Financial Cryptography and Data Security http://ifca.ai/fc08/presentations/7-2-nagy.pdf 17. JavaScript Object Notation, http://en.wikipedia.org/wiki/JSON
+
+
+
+http://atlant.io
+
+
+
+39
+
+
+
+

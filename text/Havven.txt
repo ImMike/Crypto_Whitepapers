@@ -1,0 +1,945 @@
+A decentralised payment network and stablecoin v0.7
+
+Samuel Brooks, Anton Jurisevic, Michael Spain, Kain Warwick
+
+Abstract There is currently no effective decentralised medium of exchange. We propose a decentralised peer-to-peer payment network that does not rely on a central authority to maintain trust and enables a price-stable token for value transfer. Prior to Bitcoin, attempts to create digital currencies were centralised, making them vulnerable to censorship and seizure. Bitcoin's distributed consensus mechanism protected it from interference, but its fixed monetary policy fostered extreme volatility. Havven solves these problems by issuing a price-stabilised token against a distributed collateral pool which derives its value from the utility of the system. Fees are levied on transactions, and they are dispersed proportionally among collateral holders. Growth in transaction volume thus increases the value of the collateral, which allows the stable token supply to expand to meet demand. The resulting token retains the best features of Bitcoin, whilst the introduction of price stability enables the payment network to be used for everyday economic purposes.
+
+22:45, January 23, 2018
+
+1
+
+
+
+Contents
+
+
+
+1 Introduction
+
+
+
+3
+
+
+
+1.1 Payment Networks . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+
+
+
+1.2 Cryptocurrency . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+
+
+
+1.3 Stablecoins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+
+
+1.4 Distributed Collateral . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+
+
+1.5 Havven . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+
+
+2 System Description
+
+
+
+6
+
+
+
+2.1 Equilibrium Nomin Price . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+2.2 Issuance and Collateralisation . . . . . . . . . . . . . . . . . . . . 8
+
+
+
+2.3 Transaction Fees . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+
+
+2.3.1 Fees Received by Havven Holders . . . . . . . . . . . . . . 10
+
+
+
+2.3.2 Nomin Transaction Fees . . . . . . . . . . . . . . . . . . . 11
+
+
+
+2.3.3 Base Fee Rate . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+2.4 Collateralisation Ratio . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+
+
+2.4.1 Optimal Collateralisation Ratio . . . . . . . . . . . . . . . 12
+
+
+
+2.4.2 Maximum Collateralisation Ratio . . . . . . . . . . . . . . 13
+
+
+
+2.5 Nomin Demand and Havven Value . . . . . . . . . . . . . . . . . 14
+
+
+
+2.6 Issuance Case Study . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+
+
+2.7 Fee Evasion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+
+
+3 System Analysis
+
+
+
+19
+
+
+
+3.1 Agent-Based Modelling . . . . . . . . . . . . . . . . . . . . . . . 19
+
+
+
+3.2 Expected Market Players . . . . . . . . . . . . . . . . . . . . . . 20
+
+
+
+2
+
+
+
+1 Introduction
+
+1.1 Payment Networks
+
+Payment networks are closed systems within which users can transfer value. Such systems include credit card networks, the SWIFT network, and PayPal. Proprietors of these networks possess absolute control over the value within the network, so any transaction conducted within them may be blocked or reversed at any time. Although this is ostensibly designed to protect users, it introduces systemic risk for all participants. If the network is compromised or its owners cease to behave benevolently, no party can trust that the value in their account is secure or accessible.
+
+In a traditional payment network like American Express, participants trust that the fees charged are sufficient to service the expenses incurred. However, were this trust to disappear, merchants would refuse to participate. Thus, the value of the unit of account within this network is derived solely from a single entity and the trust that participants have in that entity. As a result, the viability of any centralised payment network depends on complete trust in a central authority.
+
+Bitcoin solved these problems by ensuring that users have sole discretion over the money in their account by producing a trustless, permissionless payment network in which anyone could participate at will. Since users could enter and exit the system at any time without being exposed to the aforementioned risks, adoption was accelerated, and network effects were amplified. Programmable blockchains allow the logic of a payment network to be decentralised in a transparent way. Anyone can verify whether the network is solvent, reducing the systemic risk associated with centralised networks.
+
+1.2 Cryptocurrency
+
+The technology of money has three key functions: to act as a unit of account, a medium of exchange and a store of value. As payment technology has advanced in recent years, money has become increasingly invisible and it is often lost upon its users that, like any technology, it can be improved. Bitcoin and other cryptocurrencies represent an impressive technological advancement on existing forms of money because they deliver improved durability, portability, and divisibility. Further, they do so without requiring centralised control or sovereign enforcement from which to derive their value. Their fixed monetary policies have protected them from debasement and devaluation, allowing them to outperform other forms of money as a store of value. However, this has created the potential for short-run volatility as they lack mechanisms to dynamically adjust supply to changing demand. Bitcoin has thus tended to be a poor medium of exchange and an even worse unit of account. In order for a token to perform these functions its purchasing power must remain relatively stable against the price of goods and services over the short to medium term.
+
+3
+
+
+
+1.3 Stablecoins
+
+Cryptocurrencies exhibit transaction immutability and censorship resistance, and in these ways are a better form of money; but their adoption has been hindered by the volatility inherent in their static monetary policies. Users cannot engage with such systems as a medium of exchange if the purchasing power fluctuates. Stability continues to be one of the most valuable yet elusive characteristics for the technology.
+
+Stablecoins are cryptocurrencies designed for price stability. They should ideally be as effective at making payments as fiat currencies like the US Dollar, while retaining their other desirable properties. A decentralised payment network built on a stablecoin would be able to capture all the benefits of a permissionless system, while also eliminating volatility. One approach to achieving price stability is to produce a token whose price targets the value of a fiat currency. Targeting stability against fiat currencies obviates the need to respond to macroeconomic conditions, as the token then benefits from the stabilisation efforts of large institutions acting in fiat markets. Furthermore, if a token's price can be maintained at $1, then it can serve as an interface between fiat money and cryptocurrency. If such a stablecoin does not require an account in a traditional bank, then it can be effectively used for settlement and purchasing, without the centralisation and counterparty risk involved in fiat transactions. Thus it can be expected that by using stablecoins, exchanges that trade fiat for crypto will be able to rapidly reduce their transactional costs, reducing the barriers for new users to enter the market.
+
+1.4 Distributed Collateral
+
+Today's fiat money is not backed by an asset; its stability is derived from the authority of the governments which issue it. These governments require that tax obligations are denominated in the currencies they control, which are then used to fund active stabilisation efforts. However, with government control comes the risk of tyranny and debasement. Decentralised monetary systems don't have these powers, and so they must use collateral to provide confidence in the value of their tokens. A decentralised system cannot use collateral assets that exist outside the blockchain, as interfacing with these assets necessitates centralisation with the aforementioned failure modes. Meanwhile, cryptoasset prices have been dominated by speculative volatility, so whether a system uses real-world assets or cryptoassets to back a stable token, if the value of the collateral is largely uncorrelated with the demand for the token then external price shocks can destroy the value of collateral without any change in the demand for the token issued against it. In extreme cases external price shocks can destroy the value of collateral without any change in the demand for the token issued against it. Clearly then, in designing an asset-backed stablecoin it is important to select the collateral asset carefully, but no existing asset perfectly serves the purpose.
+
+4
+
+
+
+1.5 Havven
+
+Havven is a decentralised payment network where users transact directly in a price-stable cryptocurrency. Those who use the stablecoin pay fees to those who collateralise the network, compensating them for the risks of providing collateral and stability. Collateral providers control the money supply, and fees are distributed in proportion with each individual's stabilisation performance. Thus, Havven rewards suppliers of stability and charges those who demand it.
+
+Havven implements two linked tokens to achieve this structure:
+
+Nomin The stablecoin, whose supply floats. Its price as measured in fiat currency should be stable. This token is useful insofar as it provides a superior medium of exchange. Thus in addition to price stability, Havven should encourage adequate nomin liquidity.
+
+Havven This token provides the collateral for the system and has a static supply. It's market capitalisation reflects the system's aggregate value. Ownership of havvens grants the right to issue a value of nomins proportional to the dollar value of havvens placed into escrow. If a user wishes to release their escrowed havvens, they must first present the system with the quantity of nomins previously issued 1.
+
+The havven token is a novel decentralised asset, whose intrinsic value is derived from the fees generated in the network it collateralises. This enables a form of representative money in which there is no requirement for a physical asset, thus removing the problems of trust and custodianship. Issuance of nomins requires a greater value of havvens to be escrowed in the system, providing confidence that nomins can be redeemed for their face value even if the price of havvens falls. The system incentivises the issuance and destruction of nomins in response to changes in demand, but ultimately the intrinsic value of the havvens will reflect the required nomin supply. Backing a stablecoin in this way provides full transparency over how many tokens have been issued against the available collateral. This provides a solid basis for confidence in the solvency of the payment network built upon it.
+
+Denominating the value of the nomin in an external fiat currency means that stability is relative only to that currency. Initially this currency will be the US dollar, but in the future the system may support additional flavours of stablecoin that are denominated in other currencies. The interested reader can find additional discussion of payment networks, stablecoins, and cryptoeconomics at http://blog.havven.io.
+
+1Following Bitcoin, the Havven system will appear in uppercase and singular; while the havven token will be lowercase and may be plural.
+
+5
+
+
+
+2 System Description
+
+Havven is a dual-token system that, combined with a set of novel incentive mechanisms, stabilises the price of the nomin with respect to an external asset. Users of the nomin token pay the owners of the havven token for collateralising and stabilising the system. The havven token incentivises those who hold it to fulfil two functions:
+
+ To provide the system with collateral.  To participate in the stabilisation of the nomin price.
+
+Collateralisation Confidence in the stability of the nomin begins with overcollateralisation, so that the value of escrowed havvens is greater than the value of nomins in circulation. As long as the ratio of total nomin value to total havven value remains favourable, there is sufficient backing in the underlying collateral pool to ensure that nomins can be redeemed for their face value. The redeemability of a nomin for the havvens against which it was issued strongly supports a stable price. Stabilisation Incentives Havven rewards those that have issued nomins. These rewards are derived from transaction fees and are distributed in proportion with how well each issuer maintains the correct nomin supply. The system monitors the nomin price, and responds by adjusting its targeted global supply, which individual issuers are incentivised to move towards. Where volatility persists, stronger stabilisation mechanisms may be applied, for example automated collateral recovery. Where a significant portion of nomins are being used for hedging, (and hence not generating transaction fees) a charge can be applied to ensure that the cost of utility for hedging is not being solely borne by transactions.
+
+6
+
+
+
+2.1 Equilibrium Nomin Price
+
+We first introduce the core system variables:
+
+
+
+H havven quantity Ph havven price
+
+
+
+N nomin quantity Pn nomin price
+
+
+
+All havven tokens are created at initialisation, so H is constant. The quantity of nomins floats, responding to the issuance actions of havven holders. The Havven system needs to incentivise issuers to maintain N such that the nomin price Pn, is stable at $1. As we proceed, we may subscript variables with t to indicate the value of that variable at a given time. Any variable lacking such a subscript indicates the value of the quantity it represents at the current time.
+
+
+
+In Havven, the measure of the value of nomins against the value of havvens is called the collateralisation ratio:
+
+
+
+C = Pn  N
+
+
+
+(1)
+
+
+
+Ph  H
+
+
+
+From the law of supply and demand, there exists some supply of nomins Nopt, where the related level of demand yields an equilibrium price of $1. This quantity is associated with an optimal collateralisation ratio Copt. We visualise this equilibrium below with a hypothetical demand and supply curve.
+
+
+
+Pn
+
+
+
+$1
+
+
+
+S
+
+
+
+D
+
+
+
+N Nopt = Copt  Ph  H The system is unable to influence the demand for nomins. We assume that some level of demand exists given the utility of nomins as a stable cryptocurrency.
+
+7
+
+
+
+Although demand cannot be manipulated, the supply of nomins is controlled by havven holders, whose issuance incentives are in turn controlled by the system. It follows that as we require a fixed price Pn = $1 and are unable to control either Ph or H, we must manipulate Copt such that N = Nopt in order to satisfy our requirement.
+
+
+
+2.2 Issuance and Collateralisation
+
+Havven's goal is to remain overcollateralised. In order to do so, the system defines a collateralisation target:
+
+
+
+0 < Copt < 1
+
+
+
+(2)
+
+
+
+It is necessary at this point to distinguish, for an account i, between the nomins it contains Ni (equity) and the nomins it has issued Ni (debt). Note that globally,
+
+i Ni = i Ni, as all nomins were issued by some account. However, a given account may have a balance different from its issuance debt. Hence we can define
+
+the collateralisation ratio for an individual account i in terms of its issuance
+
+debt:
+
+
+
+Ci
+
+
+
+=
+
+
+
+Pn  Ni Ph  Hi
+
+
+
+(3)
+
+
+
+The system provides incentives for individual issuers to bring their Ci closer to Copt while maintaining Copt itself at a level that stabilises the price.
+
+
+
+Nomin Issuance
+
+The nomin issuance mechanism allows Havven to reach its collateralisation target. Issuing nomins escrows some quantity of havvens, which cannot be moved until they are unescrowed. The quantity of havvens Hi locked in generating Ni nomins is:
+
+
+
+Hi
+
+
+
+=
+
+
+
+Pn  Ni Ph  Cmax
+
+
+
+(4)
+
+
+
+Under equilibrium conditions, there is some Hi  Hi when Ci coincides with Copt, which the issuer is incentivised to target. These incentives are provided in the form of transaction fees, discussed in section 2.4. It is important to note
+
+that the issuer may voluntarily increase their Ci up to the limit of Cmax; for example if they anticipate a positive movement in Copt.
+
+
+
+On the other hand, an issuer may not issue a quantity of nomins that would lock more than Hi havvens. Consequently, Ci may never exceed Cmax, except by price fluctuations, and in such circumstances, issuers are rewarded for bringing Ci back under Cmax.
+
+
+
+8
+
+
+
+After generating the nomins, the system places a limit sell order with a price of $1 on a decentralised exchange. This means that the nomins will be sold at the current market price, down to a minimum price of $1. If we assume implementation on Ethereum, then the nomins are sold for an equivalent value in ether, with the proceeds of the sale remitted to the issuer. Nomin Destruction In order to access the havvens that have been escrowed, the system must destroy the same number of nomins that were originally issued. When the issuer indicates the intention to retrieve their havvens, the system places a limit buy order on a decentralised exchange, up to a maximum price of $1. The system places this order on behalf of the issuer and upon completion, the nomins are immediately destroyed.
+
+9
+
+
+
+2.3 Transaction Fees
+
+Havven needs a direct incentive mechanism that can correct the global collateralisation ratio, C, in response to changes in the price of havvens or nomins. In order to target the correct price, the system adjusts the fees it pays to havven holders as according to their effectiveness in stabilising the price.
+
+2.3.1 Fees Received by Havven Holders
+
+The fee rate paid to a havven holder that has escrowed is r. The actual fee they receive is Hi  r, being proportional with their havven balance. This rate changes with respect their unique collateralisation ratio, Ci. It increases linearly to a maximum base at the optimal collateralisation ratio Copt, before quickly diminishing as Ci approaches the maximum collateralisation ratio Cmax.
+
+This function is designed to encourage havven holders to constantly target the optimal collateralisation ratio, by rewarding them with greater fees if they bring their Ci into alignment with Copt.
+
+
+
+r,i = base  Fi(Ci, Copt, Cmax)
+
+
+
+(5)
+
+
+
+ Ci
+
+
+
+ 
+
+
+
+Copt
+
+
+
+when Ci  Copt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fi(Ci, Copt, Cmax) =
+
+
+
+Cmax -Ci Cmax -Copt
+
+
+
+when Copt < Ci  Cmax
+
+
+
+(6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+
+
+otherwise
+
+
+
+r
+
+
+
+base
+
+
+
+Copt
+
+
+
+Cmax Ci
+
+
+
+10
+
+
+
+2.3.2 Nomin Transaction Fees
+
+Every time a nomin transaction occurs, the Havven system charges a small transaction fee. Transaction fees allow the system to generate revenue, which it can distribute to havven holders as an incentive to maintain nomin supply at Nopt.
+
+
+
+The fee rate charged on nomin transactions is c. It is constant and will be sufficiently small that it provides little to no friction for the user. We may then express the total fees collected in the last period, F , as a function of the velocity of nomins v and the total nomin supply N :
+
+
+
+F = v  c  N
+
+
+
+(7)
+
+
+
+2.3.3 Base Fee Rate Let us define the total fees paid to havven holders Fr:
+
+
+
+Fr =
+
+
+
+Hi  r,i
+
+
+
+(8)
+
+
+
+i
+
+
+
+Havven requires that the total fees collected from users has to be equal to the total amount of fees paid to the havven holders, so that Fr = F . Substituting our earlier definition (5) for r,i and solving for base:
+
+
+
+F
+
+
+
+base =
+
+
+
+i Hi  Fi(Ci, Copt, Cmax)
+
+
+
+(9)
+
+
+
+We have now defined the maximum fee rate, base, in terms of the fees collected, F . This rate should be achieved when an individual's Ci is at Copt.
+
+The definition of Copt must therefore provide the following incentive. If Pn > $1 then the system must encourage more nomins to be issued. However, if Pn < $1, the system must encourage nomins to be burned.
+
+
+
+11
+
+
+
+2.4 Collateralisation Ratio
+
+2.4.1 Optimal Collateralisation Ratio
+
+The optimal collateralisation ratio Copt is a target for havven holders to reach in order to maximise the amount of fees they receive. Copt is defined in terms of the nomin price Pn, such that its value directly tracks changes in the nomin price; a havven holder wishing to maximise their fees will target Copt by issuing or destroying nomins.
+
+The function for Copt given below provides our dynamic target for havven holders based on the price of nomins:
+
+
+
+Copt = f (Pn)  C
+
+
+
+f (Pn) = max(  (Pn - 1) + 1, 0)
+
+
+
+(10)
+
+
+
+ price sensitivity parameter ( > 0)
+
+
+
+ flattening parameter (  N,  2)
+
+
+
+f (Pn)
+
+
+
+1
+
+
+
+1
+
+
+
+Pn
+
+
+
+When Pn is at $1, Copt = C and there is no incentive given to move away from the current global collateralisation level. However, if Pn < $1, then Copt < C, incentivising issuers to burn nomins, thereby raising the price. The Pn > $1 case is symmetric. Notice that when the Pn is close to $1, f (Pn) is small. However, the further it diverges from $1, the larger the slope becomes, providing a stronger
+
+incentive, in the form of potential fees, for a havven holder to move toward Copt.
+
+
+
+12
+
+
+
+2.4.2 Maximum Collateralisation Ratio
+
+Havven seeks to maintain C  Copt < Cmax < 1, in order to retain sufficient overcollateralisation. It might seem intuitive that Cmax should be a static value. However, since Copt varies linearly with Pn and inversely with Ph, there are situations where Cmax may need to change. Below we define Cmax in terms of Copt.
+
+
+
+Cmax
+
+
+
+Cmax = a  Copt a1
+
+
+
+(11)
+
+
+
+Copt
+
+The value of Cmax determines how overcollateralised each nomin is at issuance. The higher its value, the more nomins can be generated for the same quantity of havvens. In contrast, if Cmax is low, the system has a greater capacity to absorb negative shocks in the havven price before it becomes undercollateralised. The value of Cmax therefore represents a tradeoff between efficiency and resilience. By defining Cmax as a function of Copt, Havven finds the optimal balance in this dilemma. This ensures that like Copt, Cmax only changes as a consequence of instability in the nomin price.
+
+It should be noted that Cmax > 1 corresponds to a fractional reserve monetary system, where a greater value of nomins can be issued against each havven. In Havven, this situation is unsustainable because it would cause simultaneous appreciation of havvens (up to at least the value of nomins issuable against a havven) and depreciation of nomins, immediately diminishing C, Copt and Cmax, bringing them back under 1.
+
+13
+
+
+
+2.5 Nomin Demand and Havven Value
+
+Being freely-tradable ERC20 tokens, havvens will have a market price which, like the nomin price, can be measured with an oracle. Initially, while nomin demand is low, we will use a seven day rolling average of the market price for both havvens and nomins. This rolling average is designed to smooth out fluctuations in the market price and increase the cost of attacking the system.
+
+However, once nomin transaction volume is sufficiently high, we may instead consider internally estimating the value of a havven by the fees it is likely to accrue in the future. This value, which implicitly measures nomin volume, would allow issuance incentives to directly reflect changes in nomin demand. By using this value instead of the havven market price, the system can avoid the influence of speculation, since the permitted nomin supply would expand and contract in line with how much nomins are actually being used.
+
+While the system cannot perfectly determine future fee returns and hence nomin demand, it is possible to estimate as a function of the transaction fees that the system has recently generated. This computation is designed not to be vulnerable to instantaneous volume spikes, while taking the most recent transaction volumes to be the most highly-correlated with future volumes:
+
+
+
+with
+
+
+
+Vt =
+
+
+
+t Ft-t (1 + r)t
+
+
+
+t =1
+
+
+
+(12)
+
+
+
+Vt the system's valuation of a havven in period t Ft the total fees collected in period t
+
+r a falloff term
+
+
+
+This
+
+
+
+can
+
+
+
+be
+
+
+
+computed
+
+
+
+efficiently,
+
+
+
+because
+
+
+
+Vt+1
+
+
+
+=
+
+
+
+Vt
+
+
+
++Ft r
+
+
+
+.
+
+
+
+Further,
+
+
+
+if
+
+
+
+it
+
+
+
+is
+
+
+
+assumed
+
+
+
+that the average fee take is approximated by Ft, and t is large, then:
+
+
+
+Vt 
+
+
+
+
+
+
+
+Ft
+
+
+
+(1 + r)t
+
+
+
+= Ft H r
+
+
+
+(13)
+
+
+
+t =1
+
+
+
+Consequently,
+
+
+
+1 r
+
+
+
+approximates
+
+
+
+the
+
+
+
+number
+
+
+
+of
+
+
+
+periods
+
+
+
+for
+
+
+
+a
+
+
+
+havven
+
+
+
+to
+
+
+
+yield
+
+
+
+a
+
+
+
+fee
+
+
+
+return of Vt. A judicious choice of r can then yield a Vt which underestimates
+
+
+
+the market price of havvens (which also incorporates, for example, capital gains),
+
+
+
+while not unduly constraining nomin supply.
+
+
+
+14
+
+
+
+2.6 Issuance Case Study
+
+Bob decides to purchase 100 havvens at $1 each. Consider the following initial conditions:
+
+
+
+Cmax = 0.5 Pn = 1  = 50
+
+
+
+Copt = 0.4 Ph = 1 =3
+
+
+
+C = 0.4 Hi = 100
+
+a = 1.25
+
+
+
+The system is in price equilibrium, with the global collateralisation ratio C equal to the optimal collateralisation ratio Copt. Initially, Bob's wallet contains only free havvens.
+
+
+
+Bob wants to earn the maximum possible fees, so he issues nomins up to Copt. The system generates 40 nomins and escrows 80 of his havvens, locking $80 worth of value in the system. The nomins are sold for $40 worth of ether and the proceeds are transferred to Bob's account.
+
+
+
+Nomin Price Change This example shows how the system incentivises havven holders to correct instability in the nomin price.
+
+1. As a consequence of reduced demand in decentralised trading markets, the nomin price Pn drops to $0.90. The system needs to incentivise havven holders to reduce the supply of nomins so that the price returns to $1.00.
+
+15
+
+
+
+2. First, consider that both C and Bob's Ci have decreased to 0.36. Since the nomin price has changed, Copt is recalculated to 0.342, which is smaller than both Ci and C. Consequently, Cmax also changes to 0.4275. This increases the percentage of Bob's havvens that are locked.
+
+3. Bob now has a higher dollar value of locked havvens and his Ci > Copt. This means that he is no longer receiving the maximum fee rate base. In order to return to base he must lower his Ci back to Copt by burning some nomins. He needs to work out how many to burn.
+
+4. He should burn 2 nomins so that he has 38 total issued, which will cost $1.80. When the system completes this process, his locked havvens will reduce back to 80. In addition, his Ci is equal to Copt at 0.342, which means he is once again receiving the maximum fee rate.
+
+5. Bob has taken the correct actions to raise the low nomin price. By electing to burn nomins, the system performed a limit buy order on his behalf, putting upward pressure on the nomin price. As compensation for doing so, he is rewarded with the optimal fee rate base.
+
+16
+
+
+
+Havven Price Change (Market Price) This example illustrates how the system maintains the dollar value of the underlying collateral by adjusting the quantity of a user's escrowed havvens when the havven price changes. Consider the same initial conditions as before:
+
+
+
+Cmax = 0.5 Pn = 1  = 50
+
+
+
+Copt = 0.4 Ph = 1 =3
+
+
+
+C = 0.4 Hi = 100
+
+a = 1.25
+
+
+
+1. Like before, Bob elects to issue up to Copt in order to maximise fees.
+
+
+
+2. The havven price Ph drops to $0.90, which means the value of Bob's wallet has decreased to $90. Both C and Bob's Ci have increased to 0.44. Since the nomin price has not changed, the system does not need to incentivise issuance or burning. This is reflected in the new value of Copt, which changes to 0.44, matching C and Ci.
+
+3. However, the system needs to escrow more of Bob's havvens to maintain the dollar value of the locked collateral. The system has now locked around 89% of Bob's havvens, to maintain $80 of locked collateral.
+
+
+
+17
+
+
+
+2.7 Fee Evasion
+
+Being based on Ethereum, Havven is potentially vulnerable to its tokens being wrapped by another smart contract which takes deposits, and replicates all exchange functionality on redeemable IOU tokens it issues. These wrapped tokens could then be exchanged without incurring fees. We consider this situation unlikely for a number of reasons.
+
+First, the fees are designed to be low enough that most users shouldn't notice them, so users will not in general be strongly motivated to switch to a marginal and less trustworthy alternative.
+
+Second, network effects are tremendously important for currencies; in order to have utility a token must be accepted for exchange in the marketplace. This is challenging enough in itself, but a wrapped token must do this to the extent that it displaces its own perfect substitute: the token it wraps. In Havven's case, this would undermine its built-in stabilisation mechanisms, which become more powerful with increased transaction volume. Consequently, as a wrapped nomin parasitises more of the nomin market, it destroys the basis of its own utility, which is that nomins themselves are stable.
+
+Finally, it is unlikely that a token wrapper will be credible, not having been publicly and expensively audited, while its primary function undermines the trustworthiness of its authors.
+
+Even as this may appear unlikely, it's a simple matter to implement a democratic remedy, weighted by havven balance, by which havven holders can freeze or confiscate the balance of any contract that wraps assets. Those havven holders are incentivised not to abuse this system for the same reason that bitcoin mining pools do not form cartels to double-spend: because abuse of this power would undermine the value of the system, and thus devalue their own holdings.
+
+The credible threat of such a system existing is enough to discourage token wrappers from being used, even if they are written, since any user who does so risks losing their entire wrapped balance.
+
+18
+
+
+
+3 System Analysis
+
+While, the simplicity of the Havven mechanism makes it feel intuitively viable, we take the view that falsification is vital in validating a proposed cryptoeconomic system. The more resilient a given system is to hypothetical attacks, the more trust can be put in its viability.
+
+Ultimately this must done empirically, but it is also important to model Havven extensively before launch. Therefore in our quantitative analysis we seek above all to identify its failure modes, and also to characterise its stability under a range of conditions.
+
+In our quantitative analysis, we take three distinct approaches in modelling the system:
+
+Analytical By expressing our system in the language of game theory and microeconomics, we seek to gain insight into Havven's incentive structure and the resulting price equilibria. Examining the problem from this direction can lead us to concise and mathematically robust conclusions.
+
+Simulationist We implement a broad range of strategies as AI agents, and examine how the market responds under different initial conditions, with different constituent populations, and in response to external shocks. This approach allows us to examine situations which are analytically intractable.
+
+Empirical The initial release of the Havven system utilising ether-backed nomins will be invaluable in testing our assumptions. Observation of real market behaviour will allow us to better understand how the it responds in different situations, and therefore how to choose appropriate values for system variables.
+
+The results of these investigations will be published as they are completed.
+
+3.1 Agent-Based Modelling
+
+It has been observed that analytic methods are often difficult to apply in the complex and dynamic setting of a market. One suggested solution to this problem is agent-based modelling. Under this paradigm, we proceed by first defining rational agent behaviour and then simulating the interplay of those strategies over time. We seek to develop a more effective method of characterising market behaviour and equilibrium prices than pure analytic reasoning.
+
+Such simulations also provide an immediate means of measuring quantities of interest. Simply by observing the model, we can discover how varying input
+
+19
+
+
+
+parameters affect system outputs in an experimental fashion. One important corollary is that this is a way of extracting reasonable settings for system parameters (such as fee levels) that might be difficult to reason about a priori. These systems, reactive as they are, also provide a method for testing proposed remedies for any identified failure modes, and are a platform to simulate the conclusions of any antecedent game-theoretic reasoning.
+
+3.2 Expected Market Players
+
+Here we outline some of the players anticipated in the market. These represent only some of the agents that our modelling and simulations are predicated upon.
+
+Havven Holders A havven holder provides the collateral and liquidity for the system. It is assumed that havven holders primarily seek fee revenues, and escrow most of their havvens, adjusting their issuance to track Havven's moving fee incentives. While these incentives make sense if havvens are relatively stable in the long term, Havven will also provide incentives for correcting the nomin price in in the short term. Returns for these actors are primarily realised in fees, seignorage, and the appreciation of havvens resulting from their constrained supply.
+
+Nomin Users These are the market participants who will make up the base demand for any stablecoin, chasing its superior utility as a medium of exchange or as as means of hedging against other forms of value. The users of nomins may include merchants, consumers, service providers, cryptocurrency market actors such as exchanges. The transaction volume these users provide is necessary for fees to exist. They may be disincentivised from using the system in low liquidity situations or with excessive volatility in the price of nomins.
+
+Speculators Speculators may tend to magnify price corrections, and are a significant vector by which to introduce exogenous shocks to the system. In our modelling we induce volatility by simulating modes of interest such as large capital flows in response to breaking news and the like. Speculators also produce an important stabilisation force. When the market believes that the price is being stabilised, upward price shifts induce sell pressure, and downward price shifts induce buy pressure. This strategy is profitable on the assumption that the price will return to the equilibrium point. This neutral stabilisation force is a self-sustaining negative feedback loop which operates independently of other incentives; preliminary simulations and observations of other systems have verified the efficacy of this corrective pressure.
+
+20
+
+
+
+Buyer of Last Resort While the system is designed to work without intervention, the Havven foundation will have capital reserves with which to intervene in the market to stabilise nomin prices in extreme situations. The advantage that such a market participant confers, given that a very large market entity is willing to underwrite the stability of the coin, is that profit strategies predicated upon the stability of the token become less risky and so more feasible. As a result, any such presence, even if it rarely intervenes in the market, enhances the aforementioned neutral stabilisation force. In our modelling, the Havven foundation in this capacity takes on the role of providing confidence. Modelling results will inform the need of such an actor in the ecosystem. Arbitrageurs and Market Makers The arbitrage force allows us to assume that the havven/nomin, havven/fiat, nomin/fiat prices are properly in alignment or will soon become aligned. Market-making activities allow us in our modelling to neglect the bid/ask spread, and situations where there is insufficient liquidity for players to transact. Please visit http://research.havven.io for an alpha version of our model, and http://blog.havven.io for further discussion of stablecoins and cryptoeconomics.
+
+21
+
+
+
+

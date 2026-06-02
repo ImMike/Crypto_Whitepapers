@@ -1,0 +1,421 @@
+Mercury Protocol
+
+Radical App International
+
+08/23/2017 Revised: 10/1/2017
+
+Abstract
+
+Modern c ommunication is outdated. Centralized communication platforms built on private s ervers are only as secure a s t heir w eakest defense, user p rivacy is habitually v iolated a s service p roviders s ell behavioral data t o a dvertisers [10], and content is r estricted to a single p latform. W e aim t o fix t hese issues i n t he c ommunication i ndustry with t he M ercury P rotocol, an o pen source project f or communication platforms t o reap the benefits o f d ecentralized blockchain technology at minimal cost. Any existing or future communication p latform that integrates t he Mercury Protocol w ill t heoretically be able t o e xchange c ontent across p reviously i solated p rivatized a pplications, i ncrease u ser privacy by creating m onetization s trategies t hat do n ot depend upon their behavioral data, leverage t okens to encourage u ser p articipation, and provide s tronger network s ecurity than a p rivate system that h as a single point o f failure. The first a pplication t o i mplement this p rotocol is Dust, s oon to be followed by Broadcast. We b elieve that t he M ercury Protocol can solve t he pervasive issues o f the current communication i ndustry, a nd will be the future standard of communication p latforms.
+
+
+
+Introduction
+
+We built the Dust a pplication with t he g oal of giving ownership of t he conversation b ack to t he u ser. Unlike o ther p latforms that store data o n hard d isk, Dust s tores all m essages in-memory (RAM). This makes i t several o rders o f m agnitude more difficult f or a malicious p arty t o gain a ccess t o a ny message data, a nd renders t he d ata f orensically unrecoverable f rom t he platform's servers once d eleted. As a result, Dust provides users w ith a p rivate platform that i s d esigned t o be safe from prying e yes.
+
+Similarly, blockchain technology also g ives b ack m ore power t o t he end u ser i n t he form of transparent information, p rivacy, s ecurity, a nd utility. All d ata on t he b lockchain is stored i n a d ecentralized m anner that i s p ublic, t ransparent a nd a uditable. Yet because a u ser's r eal identity is not a ssociated w ith the blockchain a ddress, u sers benefit f rom privacy through pseudonymity while still g enerating b ehavioral data for l arge scale a nalysis. M oreover, the d ecentralized c onsensus m echanism inherent t o blockchains e liminates t he possibility of a  single point o f failure w ithin the n etwork a nd helps to guarantee the v alidity o f t he events that occur on it.
+
+We are taking a dvantage of t hese h ighly a dvantageous c haracteristics o f the b lockchain technology i n order t o i mprove t he c ommunication industry b y building t he Mercury P rotocol. The p rotocol implements various communication features and will u tilize a Global Messaging T oken, a n ERC20 b ased t oken built on t he Ethereum b lockchain, to drive these features. T his t oken will encourage user p articipation in platforms that integrate the Mercury P rotocol, b y allowing u sers with G MT t o t ransact w ith Mercury Protocol services on the blockchain. A dditionally, t he Mercury Protocol will enable a p latform agnostic communication n etwork, w here a user o n o ne messaging platform c ould m ore securely send a message t hrough the blockchain t o another messaging platform if t hose platforms integrated the Mercury Protocol.
+
+The M ercury P rotocol will b e f irst integrated i nto Dust as a  proof o f c oncept a nd shipped to m arket b y end of Q3 2017. S hortly a fter, we w ill integrate t he protocol i nto Broadcast, a new platform designed t o tackle t he i ssues e ndemic t o s ocial media, including h arassment ( "trolling") and e cho chambers, among others. Broadcast will b e r eleased b y e nd o f Q 4 2017. Once both apps are in market with M ercury Protocol i ntegration, w e w ill conclude any r emaining security audits a nd o pen s ource t he p roject s o t hat others can j oin u s i n the decentralization o f the communication i ndustry.
+
+Current M essaging Ecosystem
+
+The current communication platform model i n v ogue has not s ignificantly evolved since the advent of the r adio. Service providers offer "free" services that aggregate u ser b ehavioral d ata a nd a ttention, which t hey in turn s ell to a dvertisers for profit. T his system c reates a strong i ncumbent b ias, a s newer platforms w ith s maller user bases s truggle to s urvive. In 2 016, F acebook and G oogle c ollected 77% o f American spending o n digital m arketing, a nd n early h alf of all global spending [ 8]. This s ystem n ot o nly consistently impacts u ser p rivacy, b ut also bears a ll t he technical p roblems a ssociated with c entralized platforms, including "single p oint of failure" s ecurity a nd t rust-based s ervices (e.g. t here is no m ethod for unbiased v erification that a p rivate s erver actually s ent y our m essage, d eleted a  p ost, e tc).
+
+
+
+How t he Mercury P rotocol H elps
+
+The M ercury P rotocol w ill be designed t o c ombat these p roblems. It will i nherit the b enefits of blockchain technology, i ncluding t he improved network s ecurity, user privacy, and d ata t ransparency previously d iscussed. Moreover, i t w ill i ntegrate Global M essaging Token, a new E thereum b lockchain token, that can a lso b e leveraged t o encourage p ositive u ser b ehavior, r ewarding the t imeliness, quality, o r r each o f communications, among o thers. T he p rotocol and t oken combined w ill provide a scalable solution for smaller p latforms t o c ombat t he incumbent bias c ontributing to the i ndustry oligarchy.
+
+Additionally, the p rotocol w ill enable d ecentralized a nd platform agnostic communication. This m eans it becomes possible t o send communications from one M ercury P rotocol i ntegrated p latform to a nother, thus expanding the ecosystem to i nclude all u sers a cross all Mercury Protocol i ntegrated platforms, a s opposed to a single p latform's users. T he M ercury P rotocol is applicable to a ll c ommunication platforms, a nd c an render t hese b enefits f or all types of m essaging service providers.
+
+Need for a  G lobal Messaging T oken
+
+As previously mentioned, t he Mercury Protocol will integrate a n ew blockchain token c alled " Global Messaging T oken."
+
+Tokens built on the b lockchain c an r epresent any digital a sset. For example, t okens c an b e u sed to represent v oting power i n an organization, paid credits w ithin an application, a nd almost a nything imaginable. W e see t he i nvention of s uch a b lockchain token a s a n opportunity t o change h ow communication is done. More s pecifically, a  t oken c an be u sed as a utility m etric f or communication platform participation. T he token would be c ompletely run o n t he blockchain, a nd create a system that enables t he creation of d ecentralized communication p latforms that give m ore p ower t o t he e nd u ser in the f orm o f more t ransparent information, privacy, s ecurity, a nd u tility. I f a  u ser g enerates c ontent o f value ( as determined by any g iven platform), they could b e awarded t okens that c an be exchanged f or premium s ervices within the platform. T his a ccess t o more s ervices can be leveraged t o encourage users to p articipate in the platform. T his i s the core idea behind t he G lobal Messaging T oken.
+
+While i t would b e possible to u se an existing token l ike Bitcoin or E ther i nto t he M ercury P rotocol, existing tokens a re valued a gainst their parent blockchains fluctuating value. T his f luctuation can cause problems when trying to balance a  p latform's e cosystem. F or e xample, if a  u ser s pends one Bitcoin to send a  p remium m essage, a nd the v alue of B itcoin spikes f or a r eason unrelated to t he m essaging platform, it could be a rgued that t he user i s losing out o n t hat increase in value. B y c reating a n ew Global M essaging Token ( GMT) t hat i s v alued b y t he u tility of Mercury P rotocol i ntegrated apps, the token i s more directly tied to t he a pplications i t's b uilt into. T his s tability makes it p ossible t o properly calibrate the t oken cost of a  p latform's premium services, a nd consistently promote positive network behavior.
+
+
+
+It i s o ur hope t hat a s more p latforms recognize the b enefits of t he M ercury Protocol and a dopt it, the token will increasingly g ain utility beyond t he i nitial use c ases o utlined further d own in this whitepaper.
+
+Overview o f t he T echnology
+
+Global M essaging T oken
+
+"Global Messaging Token" or "GMT" i s a n E RC20 s tandard token that i s b uilt o n t he E thereum blockchain. D ust i s t he f irst a pplication to use this t oken, followed by the Broadcast a pplication. For more details o n t he token, p lease refer t o section " O verview o f Global M essaging T oken".
+
+Why Ethereum
+
+Ethereum was designed w ith the explicit goal o f d oing more than just creating and recording transfers of a  b lockchain network's n ative t okens. Instead, i t c an b e thought o f a s a  generalized b lockchain technology w ith a b uilt-in T uring-complete programming l anguage. The language e nables a nyone t o write p rograms w ith c ustom t ransaction formats a nd state transition f unctions, e ssentially s pecifying whichever rules they w ant t hat can then be uploaded t o t he blockchain, and t he b lockchain will automatically i nterpret t he rules for them.
+
+Figure 1: E thereum is simply a transaction-based s tate machine: we begin w ith a "genesis s tate" and incrementally e xecute transactions to t ransform i t into s ome f inal state The g eneralized technology h as enabled w hat a re k nown a s "smart contracts", which are computer programs that directly control digital assets ( e.g. t okens, domain n ames, IDs, e tc) a nd can be u sed to
+
+
+
+encode protocols o n t he blockchain. Contracts have t heir o wn addresses a nd o wn digital a ssets. A contract t hat owns digital assets can only s end the a sset to a nother p arty v ia t he r ules d efined in t he contract's c ode, and t his transfer o f digital assets i s visible to e very p arty in the n etwork.
+
+Figure 1 : A  smart c ontract i s a d istributed contract t hat i s represented i n code t hat is intended t o facilitate, v erify, o r enforce the negotiation or p erformance o f t he c ontract. I n E thereum, s mart contracts can a ccept and s tore Ether and data, and can s end t hat E ther to o ther a ccounts or even o ther s mart contracts. Smart contracts can serve many different functions b ecause they can encode a nd enforce complex issuance rules and a utomated i ncentive structures for cryptocurrencies, digital financial c ontracts, escrows, multi-party p rotocols ( e.g. a uctions), a nd more. As a  r esult, u sing s mart c ontracts on the E thereum blockchain is c urrently t he i ndustry s tandard for issuing custom d igital a ssets. The advanced features a nd a ctive ecosystem of Ethereum make i t a natural fit f or GMT a nd the M ercury Protocol.
+
+
+
+State c hannels
+
+The number of t ransactions o n t he Ethereum n etwork i s g rowing a t a s ignificant pace-- d aily transactions i ncreased from 4 0,085 t o 2 40,465 f rom Q2 2 016 to Q2 2 017 [ 3], w hich represents a  500% year-over-year growth. T he daily transaction volume is c urrently between 2 25,000 t o 3 00,000, and a s Ethereum a doption g rows, the t ransaction v olume will c ontinue t o grow.
+
+However, because the Ethereum b lockchain is a decentralized network t hat is r eplicated on every node, it poses a scalability problem. The blockchain i s r eplicated o n every node in t he network, which means e very single node o n the n etwork p rocesses e very t ransaction and m aintains the e ntire s tate. While this offers s trong b enefits s uch as auditability, fault tolerance, authenticity and p olitical neutrality, it limits the throughput of t ransactions that can o ccur on t he n etwork.
+
+Under p erfectly contrived c onditions, E thereum's t heoretical transaction p rocessing capacity i s over 1,000 transactions per s econd. However, d ue to Ethereum network's b lock g as l imit, a  more r ealistic limit i s 1 0 transactions p er second f or s imple t ransactions, and 1  to 5 t ransactions per second f or complex ones [ 3]. The c urrent throughput on E thereum's n etwork i s ~ 8.5  transactions p er second, or approximately 7 40,000 t ransactions daily [4].
+
+This leads u s t o three potential i ssues: 1. As the Dust a pplication a cquires m ore users and adds more u ses c ases f or the G lobal Messaging T oken, t he number o f transactions w ill grow r apidly, w hich w ould l ead to severe scaling challenges 2. The u ser experience would suffer b ecause l ong t ransaction c onfirmation times w ould affect the responsiveness o f t he Dust app 3. On-chain t ransactions, r egardless o f size, a re r equired t o p ay a fee. T his i s l ikely t o cause users to r efrain f rom freely using G lobal M essaging T okens f or l arge n umbers o f micropayments, which would h inder t he g rowth of token usage on t he p latform
+
+Although t he l ong term g oal for Ethereum 2 .0 and 3.0 is for the protocol t o be a ble t o maintain a blockchain capable of p rocessing V ISA-scale t ransaction l evels v ia mechanisms such a s c ode pre-processing u sing precompiled c ontracts a nd W ebAssembly [3], blockchain s harding, and/or new initiatives such a s P lasma.io, the Mercury P rotocol w ill n eed to use a n interim s olution f or s calable interactions with the GMT tokens: State channels.
+
+State c hannels are essentially a m echanism b y w hich b lockchain interactions which c ould and would normally o ccur on t he blockchain i nstead g et conducted off of the b lockchain, w ithout s ignificantly increasing t he risk of a ny participant while p roviding s ignificant improvements in c ost and speed. State channels w ill be a c ritical p art of s caling blockchain technologies t o s upport h igher l evels o f u se. They can be applied to payments, smart contracts, a nd m any other s cenarios.
+
+A state c hannel i s designed to b e implemented a s follows [ 5]:
+
+
+
+1. Part of the blockchain s tate is l ocked via m ulti-signature or some s ort o f smart contract, where the only w ay t o update it i s i f a specific s et o f p articipants agree c ompletely
+
+2. Participants make updates amongst themselves b y c onstructing and cryptographically signing transactions w ithout s ubmitting it t o t he b lockchain. Each new u pdate overrides p revious updates
+
+3. At s ome later point, participants s ubmit t he state back t o the blockchain, w hich closes t he s tate channel and u nlocks the s tate again
+
+Steps 1  a nd 3  i nvolve b lockchain operations which are p ublished to t he n etwork, p ay f ees and w ait f or confirmations. H owever, S tep 2  d oes n ot involve the b lockchain at all. It c an c ontain an unlimited number o f u pdates a nd can remain o pen i ndefinitely. I n t his sense, t he blockchain is used purely as a settlement layer to process the final transaction o f a s eries of interactions f or t he final settlement. Ethereum e nables us to easily e ncode t he a bove m echanism i nto a  smart contract.
+
+
+
+Figure 3: At any p oint d uring t he p rocess, any participant c an send a t ransaction i nto the c ontract t o close the channel and s tart a  settlement p rocedure. This s tarts a t ime l imit within which p articipants can submit transactions, and the t ransaction w ith the h ighest sequence number is processed. I f o ne o f t he participants l eaves o r t ries to cheat, a nother one can at a ny time p ublish the l atest transaction t o t he blockchain t o f inalize t he s tate, assuming all t he participants c ompletely agree on t he s tate. [ 15]
+
+In t his r egard, s tate c hannels enable a ny n umber of transactions t o b e p rocessed i nstantly without facing the throughput limitations e xplained a bove. I t also h as p otential to r educe h igh per t ransaction fees by 7 x f or handling large numbers o f small digital transactions (i.e. micropayments) [7].
+
+Oracles
+
+Smart contracts a re like w alled g ardens i n t hat they c annot c ommunicate with the external world. I n other words, s mart c ontracts are unable t o fetch d ata f rom external APIs and d ata sources, and are restricted t o t he state m aintained o n the b lockchain.
+
+However, t he M ercury P rotocol will i mplement m any features which w ill require the p rotocol t o communicate with t he external world; for example, t o fetch content f rom an external C DN t hat t hen needs to b e s erved t o a set of end u sers, o r t o v erify t hat a piece of c ontent has been a ccepted a nd viewed b y a  user within an a pplication. To f acilitate s uch c ommunication, w e will use o racles. I n t he blockchain s pace, a n o racle i s a  party w hich relays i nformation between s mart contracts and e xternal data s ources. W hile we plan t o integrate oracles i nto the protocol in t he f uture, the specific implementation is yet t o b e d etermined.
+
+We w ill p ublish t he M ercury Protocol Technical Whitepaper t hat f urther d elves into the u nderlying technical a rchitecture, as w ell as a d etailed d escription of f eatures and functionality provided b y the protocol.
+
+Use C ases f or Global M essaging T oken
+
+Token F low
+
+Mercury Protocol integrated p latforms will be able t o i ntegrate Global M essaging T okens (GMT) into their ecosystem. U sers c an e arn G MT by performing platform s pecific i ncentivized actions (e.g., consuming x  posts a  day, r eading a  message within y  s econds, etc), a nd t hen u se these earned tokens to receive premium services on the p latform. The a pp w ill k eep a  s mall amount of tokens a s payment for s ervices r endered, a nd a llocate the r est t o a ward to users performing s pecific a ctions that a dd v alue to the platform (e.g., generating c ontent, achieving n  subscribers, e tc).
+
+
+
+Exchange GMT f or S ervices
+
+Historically, t here h ave b een t hree main forms of communication:
+
+1. 1-to-1: "An exchange" -  A back and f orth dialogue b etween t wo p arties, such a s written l etters, traditional phone c alls, or one-on-one t ext m essaging.
+
+2. 1-to-Many: "An a nnouncement" -  A  o ne d irectional b roadcast, s uch a s r adio, t elevision, or public speech.
+
+3. Many-to-Many: "A d iscussion" -  A  c ollection o f i ndividual p eople or e ntities, s uch a s a t own h all meeting, a  live d igital chatroom, or c ocktail p arty.
+
+Global M essaging T okens can be used to obtain a ccess to numerous s ervices in all t hree t ypes, a nd across a  variety o f p latform types. Whenever users use GMT t o obtain a service, the majority o f G MT paid will go to t he p latform r endering s ervice. F or example, D ust c urrently e nvisions m any p ossible services f or u sers t o utilize i n exchange for GMT, including but n ot l imited to:
+
+In t he 1 -to-1 private messenger portion of Dust
+
+1. Extending t he lifetime duration o f a message b eyond the s tandard t wenty-four h ours. 2. Allowing users t o send l arger m essage p ayloads s uch a s . PDF, . MOV, e tc. 3. Sending s pecial types o f m essages, s uch as an "urgent" t ype t hat c an r epeatedly notify t he
+
+recipient u ntil answered. 4. Sending messages to a  M ercury Protocol i ntegrated platform outside of t he Dust a pp.
+
+
+
+In t he 1-to-many " Blast" portion of D ust
+
+5. Increase i n-app reach by sending a  b last to a  specified number o f u sers w ho do not follow t he content creator.
+
+6. Send a  b last t o the followers o f a  specific account i n order to target an existing s ocial group o r demographic.
+
+Beyond t he two f orms of communications w ithin Dust, there a re several app-specific features we p lan to implement to enable further use of GMT:
+
+7. Featuring users o n t he f ront p age o f the discover tab t o help increase t heir f ollowing. 8. Third p arty apps t rade G MT t o e mbed a D ust m essenger c lient i nto their platform.
+
+Receive GMT t o Incentivize Participation
+
+It i s i mportant to n ote t hat GMT is d esigned and intended to be obtained primarily f rom a s ervice provider when a u ser performs one o r more v arious incentivized actions. When a  platform i s g iven GMT to p rovide a s ervice, a  p ortion of t he GMT should be allocated to i ncentivize user b ehavior. A  given ecosystem might award GMT t o users for p articipating i n the following w ays:
+
+In the role of content creator: 1. Generating quality content, a s determined b y c ontent c onsumer feedback b y platform 2. Creating c ontent often and/or consistently
+
+In the role o f c ontent consumer: 3. Generating de-identified b ehavioral d ata o r giving attention 4. Determining p latform content q uality by p roviding feedback 5. Responding w ithin a  c ertain timeframe t o n otifications or m essages 6. Sharing/"reposting" c ontent
+
+Other possible incentivized a ctions: 7. Consistent logins 8. Rewarding users for inviting f riends t o the platform. 9. Giving a ttention to p remium d istributed c ontent (ads) 10. Achieving milestones w ithin the platform (e.g., x number o f subscribers, x m essages sent, etc.)
+
+This i ncentive system allows u sers to generate a p ositive t oken b alance simply b y b eing active on t he platform, a nd t hus g rant a ccess to the p remium e xperience without having to acquire r esources from outside the e cosystem.
+
+While n ot a ll o f t hese G MT b ased f eatures are guaranteed t o b e i n t he first version of D ust a vailable after the token sale, m any w ill be, a nd w e w ill c ontinuously be w orking t o a dd more G MT integrated features t o b oth Dust and B roadcast. W e will c ommunicate the progress w e make in integrating t hese and n ew use cases v ia our b log.
+
+
+
+Use cases i n t he Industry at Large
+
+Beyond t he above example use c ases s pecific t o Dust, t here a re m any o ther ways t o i ntegrate a G lobal Messaging Token. I n t he 1-to-1 c ommunication format, f or example, e ncryption, archiving/storage, o r sending a  m essage t o a user on a different Mercury P rotocol i ntegrated m essaging p latform. Receiving a premium message from a  u ser n ot in a  user's c ontact b ook or friends list c ould award G MT in exchange for t heir attention.
+
+In the 1 -to-many broadcasting t ype o f communication, s ome premium u se cases m ight i nclude sending content to o ther u sers w ho a re n ot s ubscribed to a c ontent creator o r scheduling the r elease o f content for a  later t ime or date. Positive feedback o n content ( likes, c omments, e tc.) could award G MT to a  user as a r eward for quality content, promoting positive e ngagement b etween content c reators and consumers. T he higher the c ontent quality, t he more e njoyment c onsumers experience a nd the more GMT the creator receives.
+
+In t he more chaotic many-to-many open f orum discussion type of c ommunication, a use case t o could be u sing GMT to obtain the a ttention o f t he collective, whether i n t he form o f speaking t ime b efore a n audience or v isual f lair i n a  r eal-time chatroom. A nother use case m ight b e p aying a  GMT p remium t o join a  s horter queue to deliver one's message. In t he case o f a chatroom where premium users are using G MT to speak o r m essage w ithout waiting i n a q ueue, non-premium users s hould r eceive that GMT for h aving their q ueue time e xtended.
+
+In e ach of the communication t ypes, G MT c an be l everaged t o encourage positive behavior i n the ecosystem f or both content c reators a nd c onsumers. Additionally, b y p roviding o pportunities to obtain GMT t hrough c ommon participation within t he e cosystem, any g iven c ommunication p latform c an a llow less a ffluent u sers to partake in t he same p remium environment as the e stablished users. W hen properly b alanced, this system i s theoretically s elf-correcting, a s u sers who n egatively contribute to the platform ( a.k.a. " trolls") will h ave s ignificantly l ess access to premium services.
+
+Roadmap
+
+Phase 1 : Dust ( Q3 2017)
+
+We will build version 1 .0.0 of the M ercury Protocol, c onduct t he token s ale, a nd integrate G MT i nto Dust. T he M ercury P rotocol will r emain closed-source at t his s tage. Security a udits for the p rotocol a nd token s mart contracts will be conducted before a nd after shipping a G MT i ntegrated product. S ome finances f rom the t oken sale w ill b e u sed to e xpand the d evelopment t eam a nd increase throughput on feature development as we move forward.
+
+
+
+Phase 2 : B roadcast ( Q4 2017)
+
+The n ext step is completing v ersion 1 .0.0 of Broadcast and s hipping to market. T he p roject i s c urrently in p re-alpha, a nd we are on t arget to have a  first v ersion i n m arket by e nd of y ear. In a ddition, w e will drive f urther development of the Mercury Protocol and u se c ases f or G MT within D ust.
+
+Phase 3 : Beyond t he P latforms (Q1 2018 a nd later)
+
+Once D ust and B roadcast a re b oth i n market with GMT i ntegrated features, w e w ill open source the Mercury P rotocol. We will c ontinue t he d evelopment o f value a dded s ervices for Dust a nd B roadcast. Security audits will b e c onducted i n an on-going m anner a s more features and functionality is added to the p rotocol.
+
+Throughout t he a bove t hree p hases, we w ill continue t o evangelize t he protocol and token m odel in pursuit of a  n ew global standard o f m essaging e cosystem t hat is designed to b e d ecentralized, more secure, a nd a uditable.
+
+
+
+Adoption
+
+Dust i s c urrently in-market, averaging at least 20,000 daily a ctive u sers and o ver 200,000 m essages sent per day. T he e xisting user b ase h as proven to b e l oyal a nd c onsistently a ctive, m aking Dust a n ideal p latform t o d emonstrate t he versatile potential of a  G lobal M essaging T oken. Moreover, h aving Dust i n-market with a patent pending on t he in-memory s olution d emonstrates our t eam's a bility to tackle complex t echnical problems a nd d eliver a market-ready product. W e e xpect to see the number o f daily active users a nd average a ctions p er day rise significantly in t he n ear f uture. As w e gain knowledge about the G MT integrated f eatures in Dust, w e w ill l ook t o c ontinue to expand use c ases in both D ust a nd B roadcast.
+
+
+
+Similar P roducts
+
+
+
+Status WeChat Toshi Messenger Signal
+
+
+
+Decentralized Token System 
+
+
+
+
+
+In M arket 2018
+
+   
+
+
+
+Participation Open S ource Strong F ocus
+
+
+
+Incentive
+
+
+
+Protocol
+
+
+
+on P rivacy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dust
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Broadcast
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Status
+
+Status i s a d ecentralized messenger a nd b rowser that i mplements a  token based o n E thereum. T he platform a lso contains a  D App e cosystem, a llowing d evelopers to p ublish t heir o wn E thereum based apps. This a mbitious platform i s currently in Alpha, however, a nd their official r oadmap s hows no intention o f hitting m arket u ntil Q3 2019 at t he e arliest.
+
+
+
+WeChat
+
+WeChat is the d ominant c ommunication platform i n C hina, p roviding s ervices f or everything from private messaging, t o p ublically s haring "moments" similar to a social m edia p ost, and e ven a llowing users to send money v ia s mart-contract-esque m icrotransactions. W hile WeChat provides similar features to those p roposed in this paper, it i s a  c entralized, n on-blockchain b ased s ystem, which m eans it h as increased security risks and f ails t o incentivize e nd-users to p articipate.
+
+
+
+Toshi
+
+Toshi i s a decentralized m obile app f or E thereum a pps with i ntegrated p rivate m essaging and a n Ethereum wallet. Inspired b y WeChat is d esigned with t he intention of p roviding s ecure financial services to e veryone who has a s martphone. Toshi d oes not incentivize users to participate. Moreover, since the platform i s Ether based, a ny f uture i mplementation o f user i ncentivization would either produce i nconsistent incentives d ue to e ther market v olatility, or r equire s ignificant resources to transition t o a  token based system.
+
+
+
+Messenger
+
+Facebook Messenger is primarily a  private m essenger, w ith t he ability t o s end multimedia messages, stickers, m ake v ideo or a udio c alls via i nternet, a nd recently added the ability to s end m oney. While high quality, e stablished, a nd s table, Messenger i s t he epitome o f a  c entralized c ommunication platform. F acebook rakes in o ver $8 billion USD a nnually [9], m ost o f i t through a dvertising, and f ails to reward i ts users w ho generated it by p roviding t heir a ttention. T his non-blockchain based platform has increased security r isk for u sers by relying o n the defenses of a  single p arty, d oes n ot o pen source code f or i ntegration opportunities or p eer review, and r outes financial transactions through a centralized third-party that lacks t he transparency a nd t rustless c onsensus p rovided by decentralization.
+
+
+
+Signal
+
+Signal i s a  p rivate c ommunication platform f eaturing e nd-to-end e ncrypted messaging, VOIP, and v ideo calling built with the i ntention of "dismantling the surveillance s tates g lobally" [14]. The u nderlying open-source S ignal P rotocol t hat encrypts c ommunications i s widely considered t o be one o f the m ore secure methods o f c ommunication, e nsuring message i ntegrity a nd attribution. This p rotocol h as b een
+
+
+
+integrated i nto o ther major messaging platforms s uch as WhatsApp and M essenger. Signal is funded through public grants and donations, so it does not conform to the p reviously discussed a dvertising model. B ut Signal i s d ecidedly c entralized [ 14], a nd, u nlike D ust, s tores a record of messages exchanged. This p uts c onversation history a t r isk if a  malicious party m anages to copy t he d ata and brute force crack i t a t their l eisure. E ven if a  t hird party cannot gain a ccess to the c ontent o f the messages, it i s s till recorded t hat a conversation o ccurred b etween two or m ore parties. M oreover, Signal d oes not incentivize user participation, and l acks an auditable token system.
+
+Overview of G lobal M essaging T oken
+
+The token s old during t he t oken l aunch i s known as the Global M essaging T oken, or G MT. T his token is designed for various utilities i n m essaging a pps d esigned to be c ompatible with t he M ercury Protocol. Dust a pp is the first a pp that is p roposed t o u se t his token, f ollowed b y the B roadcast a pp.
+
+ERC 2 0 t oken
+
+The G MT t oken is i mplemented on t he public Ethereum blockchain ( using a n Ethereum smart contract) as an E RC20 token [6]. ERC20 e stablishes a standard contract ABI for t okens on the E thereum blockchain and h as b ecome t he d e facto r epresentation f or a ll types of digital a ssets. All E RC20 t okens share the same c ore c ontract i nterface, s implifying i ntegration w ith e xternal contracts.
+
+Core E RC20 functions i nclude:  transfer(to, value)  balanceOf(owner)  approve(spender, v alue)  allowance(owner, s pender)  transferFrom(from, to, value)
+
+In addition t o the c ore ERC20 interface, t he GMT t oken s mart contract will have a dditional f unctionality to create new G MT tokens, f inalize the crowdsale and send m oney t o a  h ardware wallet, and refund users in the case o f a  failed c rowdsale.
+
+The ERC20 t oken s mart contract is written i n t he S olidity programming language a nd will b e publicly accessible and f ree to use.
+
+Hardware wallet
+
+Both E TH and GMT tokens available for s ale w ill b e s tored in h ardware w allets.
+
+A h ardware w allet i s another form of c old storage which allows d igital assets to be stored offline. They provide i ncreased s ecurity b ecause they remove the process of having to load t he p rivate key t o some software w hich i s e xposed to o nline vulnerabilities.
+
+
+
+Hardware wallets h ave two parts   a  connected device a nd a d isconnected d evice. T he connected device stores t he p ublic k eys, chooses which t ransactions to sign, a nd e ssentially has the s ame functionality a s any paper wallet. T he o ne main d ifference is that i t c annot s ign a transaction because the offline device holds the p rivate key.
+
+When you w ant to sign a  t ransaction, y ou m ust c onnect t he d evice via a USB port or a Q R-code. T he transaction is t hen s ent to the o ffline d evice, w hich then g enerates a  signed t ransaction u sing t he private key s tored o n t he device a nd sends it back to the c onnected device, which is finally fed i nto t he blockchain network for the s tandard Bitcoin/Ethereum v erification process r equired for i t to b e i ncluded in the blockchain.
+
+Our hardware w allets w ill h ave b ackup keys s plit a nd distributed geographically. We feel this w ill provide us the utmost safety g uarantee against s ecurity a ttacks.
+
+Liquidation
+
+GMT tokens t hat a re purchased by the p ublic will be d elivered a s s oon as E TH i s received. T he GMT tokens w ill be i mmediately u sable a fter t he t oken sale as soon a s the r elevant Dust i ntegrations a re publically released.
+
+Security
+
+The Dust team takes security s eriously and w ill take s ecurity precautions d esigned t o safeguard t he funds. W e i ntend t o only l aunch the crowdsale once w e are a ssured t hat a ll security measures h ave been completed.
+
+This i ncludes: 1) A t horough security a udit b y O pen Zeppelin for a ll smart c ontracts used for the c rowdsale 2) All GMT tokens s tored b y u s will be stored offline in h ardware wallets 3) A m ajority of the reserve f unds will a lso be stored o ffline w ithin hardware w allets 4) The keys f or hardware wallets w ill b e g eographically d istributed 5) In the future, w e plan t o launch a  b ug bounty program f or all smart contracts w e develop
+
+The smart contracts f or GMT t oken sale a re c urrently under review by O pen Zeppelin. O nce completed, the review w ill be p ublicly available o n our blog. We will address a ny and all s evere o r c ritical vulnerabilities s uggested by O pen Z eppelin i n the final i mplementation of the s mart c ontracts. T he final implementation and code f or t he s mart contracts will be r eleased p ublicly p rior t o t he t oken l aunch.
+
+Governance
+
+In the n ear future, we will d efine and develop a  g overnance model a round G MT s uch that participants who have a certain amount of stake i n the o verall ecosystem will have v oting power t o p articipate in the decisions made around f uture innovation of the M ercury protocol, a nd d efining community s tandards for
+
+
+
+platforms w ho i ntegrate GMT, among other topics. W e w ill initially manage t he protocol c odebase u ntil such time a s the g overnance m odel h as b een properly e stablished.
+
+We w ill distribute a Whitepaper that i ncludes a more detailed e xplanation o f t he p roposed governance model a fter the t oken s ale.
+
+Team
+
+Core Team
+
+ Ryan O zonian, C hief Executive Officer  Rohit K otian,  C hief T echnology Officer  Igor S hpitalnik, Lead Backend Engineer  Ian R. C onnelly,  Project M anager  Preethi Kasireddy,  L ead B lockchain D eveloper  Alex M oir,  B lockchain Developer  Elliot Sperling,  Blockchain D eveloper  Sameer Khavanekar, iOS T eam L ead  Manju D eshpande,  i OS Developer  Alex Rupprecht, Android T eam L ead  Brant Kortman,  Android D eveloper  Evan Albert,  Lead Web Developer  Mayukh D as,  S oftware D eveloper  Michael T alarczyk,  Lead S ystems E ngineer  Jon I kemura,  L ead Designer
+
+Advisors
+
+ Mark Cuban, Dust Investor, D allas M avericks  Nick Tomaino, 1Confirmation, Previously at C oinbase, T he Control, Runa Capital
+
+References
+
+1. https://etherscan.io/chart/blocktime 2. https://etherscan.io/chart/tx 3. http://static1.squarespace.com/static/55f73743e4b051cfcc0b02cf/t/57506f387da24ff6bdecb3c1/
+
+1464889147417/Ethereum_Paper.pdf
+
+
+
+4. https://ethereum.stackexchange.com/questions/1034/how-many-transactions-can-the-networkhandle
+
+5. Jeff Coleman. State Channels. http://www.jeffcoleman.ca/state-channels/ 6. ERC20 i s the E thereum token standard. https://github.com/ethereum/EIPs/issues/20 7. https://media.consensys.net/state-channels-ethereum-is-open-for-business-5b7cd4d7506c 8. https://www.wsj.com/articles/the-race-is-on-to-challenge-google-facebook-duopoly-in-digital-adv
+
+ertising-1497864602 9. https://investor.fb.com/investor-news/press-release-details/2017/facebook-Reports-Fourth-Quart
+
+er-and-Full-Year-2016-Results/default.aspx 10. http://www.investopedia.com/ask/answers/120114/how-does-facebook-fb-make-money.asp 11. https://www.usatoday.com/story/tech/personal/2013/06/15/techlicious-text-message-alternatives
+
+/2423169/ 12. ht tps://www.wired.com/2015/08/time-to-ditch-texting/ 13. https://www.emarketer.com/Article/US-Ad-Blocking-Jump-by-Double-Digits-This-Year/1014111 14. https://techcrunch.com/2016/11/07/signal-app-maker-rebuts-criticism-of-dev-direction-by-calling-
+
+for-more-community-help/ 15. https://hackernoon.com/blockchains-dont-scale-not-today-at-least-but-there-s-hope-2cb4394655
+
+1a
+
+
+
+

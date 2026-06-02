@@ -1,0 +1,735 @@
+Digitex: A c ommission-free, t rustless f utures exchange f or t rading d igital c urrency p rices
+
+By Adam T odd
+
+DigitexFutures.com December 5 th, 2 017
+
+Abstract
+
+Presenting a  c ommission-free f utures e xchange t hat covers operational costs by minting its own native currency, t he DGTX token, instead of c harging transaction fees o n trades. Increasing d emand f or D GTX t okens f rom traders w ho are attracted to commission-free futures markets w ill outweigh t he i nflationary cost of m inting a s mall n umber o f new tokens each year. The exchange also r eplaces centralized a ccount balances with an i ndependent, decentralized smart c ontract o n t he Ethereum blockchain that h olds a ll account balances. This h ybrid model of a centralized matching engine c oupled w ith d ecentralized account b alances g ives t raders the speed a nd r eliability of o ff-chain price d iscovery c ombined w ith the trustless s ecurity o f on-chain a ccount s ettlement.
+
+1
+
+
+
+Contents
+
+
+
+1. Introduction
+
+
+
+        3
+
+
+
+2. Commission-Free Futures T rading
+
+
+
+        4
+
+
+
+Revenue G eneration By Token Issuance Instead o f Transaction F ees
+
+
+
+          4
+
+
+
+The Digitex P rotocol T oken ( DGTX Token)                                                           5
+
+
+
+DGTX T oken Supply a nd D istribution
+
+
+
+          6
+
+
+
+Revenue Generating Token I ssuance Starts I n January 2021 DGTX P rice P rojections And T heir E ffect On Token Issuance Model Eliminating D GTX Price R isk F rom Trades: DGTX P eg S ystem
+
+
+
+          7           7           9
+
+
+
+Buying a nd Selling D GTX Tokens
+
+
+
+        1 0
+
+
+
+3. Trustless F utures T rading
+
+
+
+                            11
+
+
+
+Decentralized Exchange C hallenges Benefits o f Centralized M atching E ngine &  Order Book
+
+
+
+                     11         1 1
+
+
+
+Hybrid Model o f Centralized &  D ecentralized C omponents                              11
+
+
+
+The Ultimate R ingfence: D ecentralized A ccount Balances
+
+
+
+      12
+
+
+
+Digitex Oracle U pdates A ccount B alance Smart C ontract                                  1 2
+
+
+
+4. The Digitex Futures E xchange Platform
+
+
+
+      13
+
+
+
+Main Features a nd B enefits Automated M arket M akers Futures Contract S pecifications Trading E xamples
+
+
+
+        1 3                      1 6                      17                      18
+
+
+
+Maker a nd Taker T ransaction F ees O n O ther Exchanges
+
+
+
+        2 1
+
+
+
+5. Decentralized Governance b y B lockchain ( DGBB)                            22
+
+
+
+Voting on N ew T oken I ssuance                                                                                          22
+
+
+
+6. Summary
+
+
+
+      2 3
+
+
+
+2
+
+
+
+1. Introduction
+
+Futures markets g ive t raders the opportunity to trade p rices without t he h igh costs and risks of transferring, storing and paying i n f ull for the actual underlying instrument o n w hose p rice they are t rading. Whether o n soybeans, gold, government bonds or B itcoins, futures m arkets are a v aluable financial tool for f acilitating price t rading by reducing f riction a nd c osts.
+
+But despite lower costs, t ransaction f ees a re s till s ignificant o n high volume, low profit m argin futures t rading s trategies. They a ct as a massive brake o n t he p otential l iquidity of futures markets b y c onverting m arginally p rofitable s trategies into l osing strategies after commissions.
+
+Transaction f ees are e liminated on t he Digitex F utures E xchange b y creating a n E thereum based token, c alled the D GTX t oken, and u sing it as the native currency of the e xchange. All profits, l osses, m argin r equirements a nd a ccount balances are denominated in DGTX tokens, meaning t hat traders must o wn D GTX tokens to participate i n t he commission-free, trustless markets on Digitex. This creates demand for D GTX t okens from t raders, enabling t he exchange to replace revenue g eneration from transaction f ees b y creating a nd s elling a  small number of n ew D GTX t okens each y ear.
+
+Instead o f p enalising active traders f or p roviding l iquidity, t his b rand new r evenue model imposes a s mall inflationary cost o n all token holders o n the u nderstanding t hat commission-free and l iquid markets w ill create demand for t he D GTX token f rom t raders t hat is g reater than the inflationary cost of funding the exchange.
+
+Another boost to l iquidity w ill c ome f rom the t rustless n ature of the Digitex Futures Exchange. Unlike o ther f utures e xchanges, traders on Digitex w ill b e a ble to trade without having to to trust t he exchange with t heir m oney. Account b alances a re h eld b y a decentralized, i ndependent smart contract on t he Ethereum b lockchain, not b y the e xchange. The e xchange informs t he account b alance s mart contract o f a  trader's o utstanding m argin liabilities and trading profits/losses, t hus k eeping h is account balance up to date, but the exchange does n ot have p hysical possession o f t he funds a nd a t no point d oes t he exchange hold anyone's private keys.
+
+New t oken i ssuance i s d one democratically b y a ll D GTX token owners using D ecentralized Governance b y B lockchain. They w ill c ollectively d ecide how many new t okens to i ssue and when, in o rder to cover the o perational costs of r unning t he exchange. M aintaining the futures e xchange i s in the b est i nterests of all DGTX t oken o wners because t he exchange creates d emand f or the D GTX t oken and g ives t he token i ts u tility a nd v alue.
+
+3
+
+
+
+2. C ommission-Free Futures Trading
+
+Revenue Generation By Token Issuance Instead of T ransaction Fees
+
+The f utures t rader's U topian dream o f a  c ommission-free e xchange i s no l onger a  dream. B y creating a n ERC-223 c ompatible protocol token o n t he Ethereum blockchain, called t he DGTX token, a nd using it a s the Digitex F utures Exchange's native c urrency i n which a ll p rofits, losses, m argin r equirements a nd account balances are d enominated, the exchange c an eliminate transaction f ees on t rades a nd cover costs b y creating new tokens instead o f charging f ees. T he r elatively s mall inflation c ost of c reating extra t okens i s m ore t han o ffset by the demand t hat i s created b y t raders who must own DGTX tokens t o participate i n t he commission-free, l iquid markets that a re c reated b y t his model.
+
+The s ize o f t his demand for DGTX coming from traders during a period w here c ryptocurrency trading volumes a re expected to g row e xponentially will b e orders o f m agnitude greater t han the s mall number of extra t okens t hat must be c reated t o generate this demand. T he futures exchange i s what g ives t he D GTX t oken i ts u tility a s a  vehicle f or trading h ighly l iquid futures markets w ithout a ny transaction f ees. And the only w ay for t raders t o participate in those markets i s t o buy D GTX t okens to cover their margin r equirements to o pen t rades.
+
+There w ill be n o new token issuance f or t he p urpose o f r evenue g eneration for a pproximately 2 y ears after t he l aunch of the D igitex F utures E xchange because the c osts o f r unning t he exchange will be covered b y t he proceeds of t he DGTX I CO. D uring t his 2  year p eriod new u ser registrations a nd t rading v olumes o n D igitex f utures m arkets will l ikely r ise sharply, a nd a ll new t raders will be competing to b uy a  l imited n umber of D GTX tokens. Any price rise of the DGTX token c aused b y t his s harp increase i n demand will l essen t he inflationary i mpact o f t he first t oken c reation e vent by r educing the n umber o f D GTX tokens that must b e created t o cover upcoming costs.
+
+Around the s tart of 2021, t he D igitex Futures Exchange w ill s tart c reating new D GTX t okens to cover t he costs of o perating t he Digitex Futures E xchange. These c osts w ill i nclude software development, s ervers, s taff, premises, marketing, support and a ll o ther associated costs. B ased on t he p rojected costs and the c urrent price o f D GTX, t raders w ill v ote on h ow many n ew t okens t o c reate t o cover those p rojected c osts.  The v ote will be d one through Decentralized Governance by Blockchain -  1  D GTX = 1  v ote.
+
+New DGTX t okens will be created v ia a f ully audited t oken creation s mart contract. Buyers will send E TH t o the s mart contract address a nd a utomatically receive t he c orrect amount of DGTX tokens in return. T here w ill b e a minimum and maximum f unding cap. A  separate, f ully audited s mart contract w ill k eep a r unning total of a ll t oken i ssuance events s o that a n accurate and verifiable t otal s upply of D GTX tokens i s always p ublicly a vailable.
+
+4
+
+
+
+The Digitex P rotocol Token (DGTX Token)
+
+At t he heart of t he D igitex F utures Exchange i s its p rotocol t oken, the D GTX t oken. To b uy o r sell f utures contracts on the exchange a t rader must h ave a  m argin balance o f D GTX s ufficient to cover h is p otential l osses because t he t ick value o f e ach D igitex futures c ontract is 1 DGTX token, meaning t hat all profits and losses are d enominated i n DGTX tokens. A s t rading volumes and l iquidity increase on the D igitex f utures markets the demand for DGTX by traders will a lso i ncrease.
+
+Below a re t he key elements o f the DGTX t oken:
+
+DGTX Token  DGTX is the p rotocol t oken that i s the n ative c urrency o f the Digitex Futures E xchange.  The t ick v alue of every Digitex futures market is 1 DGTX token.  Margin requirements on each D igitex f utures market a re p ayable in DGTX tokens because profits a nd losses are d enominated i n D GTX tokens.  Account b alances o n the D igitex Futures Exchange, which are h eld b y a n i ndependent smart c ontract, a re denominated i n D GTX t okens.  It is t he c reation of new D GTX t okens a fter a pproximately 2 y ears t hat a llows the exchange to operate without needing to charge transaction fees.  The D GTX Token Sale/Initial C oin Offering ( ICO) c reates an i nitial supply o f 1,000,000,000 DGTX ( one b illion D GTX t okens).  There is n o c reation of n ew DGTX tokens for the first 2 y ears after the l aunch o f the Digitex Futures E xchange.  Approximately 2 y ears a fter launching, t he Digitex F utures E xchange starts to create new D GTX tokens t o c over the costs o f running the D igitex Futures E xchange.  New token issuance causes inflation but it a lso c reates high d emand for D GTX tokens by subsidizing commission-free f utures markets t hat a ttract l arge numbers of traders who m ust buy D GTX t okens t o p articipate.  DGTX i s an E thereum b ased, E RC-223 t oken that w ill be f reely tradable f or B itcoin, Ether a nd many o ther c ryptocurrencies o n the D igitex platform through integration with trustless, d ecentralized token trading p rotocols s uch as s wap.tech, 0 xproject.com and b ancor.com.  Traders can e liminate D GTX price risk f rom their trades with the D GTX Peg S ystem.
+
+The owner o f D GTX t okens has t he ability to e ngage i n the buying and selling of liquid f utures contracts o n t he price o f B itcoin against t he US D ollar, E thereum against the US D ollar a nd Litecoin against the US D ollar without i ncurring any t ransaction fees on t heir trades. I f the same trader buys a nd s ells s imilar f utures contracts o n any other exchange h e w ill incur commission c osts. These c ommission costs c an be c onsiderable for very active, short term traders. S o the more active t he trader, t he greater the intrinsic v alue o f D GTX to t hat trader because e very time he buys o r s ells a  Digitex f utures contract he i s saving himself from p aying a c ommission. A  h igh v olume, low p rofit m argin trading strategy that loses m oney on every other s pot and f utures e xchange due to c ommissions is c onverted into a p rofitable strategy when d one on The Digitex F utures Exchange.
+
+5
+
+
+
+DGTX Token Supply a nd D istribution
+
+The i nitial s upply of D GTX is 1,000,000,000 (one b illion) D GTX t okens w hich is distributed as follows: 1000M T otal DGTX S upply
+
+ 700M DGTX (70%) D GTX Token Sale  200M DGTX (20%) D igitex Market M akers  100M D GTX ( 10%) T eam (current and future) DGTX T oken S ale -  7 00M DGTX (70%) 700,000,000 (700M) D GTX tokens will b e s old i n t he D GTX Token Sale w hich starts on J anuary 15th, 2018. B uyers w ill exchange ETH for D GTX t okens at an e quivalent price of U SD $ 0.01 p er DGTX token, m eaning there is a h ard cap of a maximum of $7M t hat can b e raised. Digitex Market M akers: 200M D GTX ( 20%) Digitex market m akers are automated trading r obots w ith a lgorithms t hat are programmed t o break e ven. With their h ighly active trading s trategy and a l arge t rading b ank o f 20% of all tokens i n circulation, t hey h elp create liquid f utures m arkets that h ave tight b id and offer spreads, even i n volatile m arket conditions. Team (current a nd f uture): 100M ( 10%) 100,000,000 (100M) DGTX tokens w ill b e paid t o t he founding team to compensate t hem f or past and future work. These t okens w ill b e v ested until 1  y ear p ast the f irst r evenue generation token c reation e vent, e nsuring the t eam h as strong i ncentives to create a  s table, self p erpetuating business m odel t hat p rovides ongoing and consistent d emand for DGTX tokens a fter the Token Sale funds h ave been s pent.
+
+6
+
+
+
+Revenue G enerating T oken Issuance S tarts I n January 2021
+
+Approximately 2 y ears a fter t he official p ublic launch of the D igitex F utures Exchange, we will start c reating new DGTX t okens t o cover the ongoing c osts o f o perating the e xchange. The number o f n ew DGTX tokens t o b e c reated will be determined b y o ther DGTX token owners who will v ote o n proposals made b y DGTX token o wners. Proposals of how m any n ew D GTX tokens to c reate can b e s ubmitted by a ny D GTX token owner and w ill be b ased on t he projected c osts of o perating the exchange and t he c urrent market p rice o f D GTX. New tokens will be created through a  transparent, f ully a udited t oken c reation s mart c ontract. B uyers will send ETH t o the s mart contract a ddress and will a utomatically receive t he corresponding number D GTX tokens i n r eturn.
+
+A l arge number o f n ew trader r egistrations o n t he Digitex F utures E xchange in the f irst 2 years w ill c reate a  surge in demand f or D GTX. T he h igher p rice o f D GTX means fewer tokens must b e c reated t o cover costs, reducing the inflationary e ffect o n t he total supply of DGTX.
+
+DGTX T oken P rice P rojections And Their Effect O n Token I ssuance M odel
+
+The greater the demand f or DGTX t okens b y traders o n t he D igitex F utures E xchange, the higher t he price o f D GTX will c limb. T he f ollowing table shows s ome d ifferent s cenarios a nd assumptions and their effect on t he p rice of DGTX t okens.
+
+Assumptions:  2% of traders a re w hales w ho buy a t otal of $150,000 U SD w orth o f D GTX tokens over a 2 year p eriod.  10% of t raders are m edium s ized traders who b uy a  total o f $15,000 U SD worth of DGTX t okens over a  2 y ear p eriod.  88% of traders are small traders w ho buy a total of $1,500 U SD worth o f DGTX t okens over a 2 year p eriod.  Although the t otal s upply of DGTX tokens i s 1 000M, o nly 300M a re available t o be bought a nd sold because t he r est are locked up b y the D igitex market makers (500M DGTX), early c ontributors and a dvisors ( 100M D GTX, v ested) a nd t he founding t eam (100M DGTX, v ested).  The t able below calculates t he p rojected p rice o f D GTX b y d ividing the t otal d ollar amount that t raders purchase in the 2  y ears following l aunch by the t otal available supply o f D GTX t okens a nd then a dding that a mount to the p rice o f D GTX tokens a t the final D GTX t oken sale. This p rice c alculation method is a n o versimplified and possibly i ncorrect a ssumption t hat d oes n ot take i nto account many factors, s uch a s current market s entiment i n cryptocurrencies. I n a  cryptocurrency bull market i t i s possible that t he DGTX price w ill rise c onsiderably more t han indicated b elow. Likewise, i f there is a m ajor crash in c ryptocurrency p rices, t he D GTX p rice could f ail to meet the p rojections b elow e ven if t he n umber o f t raders p rojections a re reached.
+
+7
+
+
+
+No. of t raders
+
+
+
+1,000
+
+
+
+Whales ( 2%)
+
+
+
+20
+
+
+
+Medium (10%) 100
+
+
+
+Small ( 88%)
+
+
+
+880
+
+
+
+Whales b uy
+
+
+
+$3,000,000
+
+
+
+Meds buy
+
+
+
+$1,500,000
+
+
+
+Small buy
+
+
+
+$1,320,000
+
+
+
+Total b uy
+
+
+
+$5,820,000
+
+
+
+Avail DGTX supp 700,000,000
+
+
+
+01/18 1 DGTX = $0.01
+
+
+
+Price I ncrease
+
+
+
+$5.82M/700M= $0.01
+
+
+
+01/21 1  DGTX = $0.02
+
+
+
+5,000 100 500 4,400 $15,000,000 $7,500,000 $6,600,000 $29,100,000 700,000,000 $0.01 $29.1M/700M= $0.04 $0.05
+
+
+
+10,000 200 1,000 8,800 $30,000,000 $15,000,000 $13,200,000 $58,200,000 700,000,000 $0.01 $58.2M/700M= $0.08 $0.09
+
+
+
+50,000 1,000 5,000 44,000 $150,000,000 $75,000,000 $66,000,000 $291,000,000 700,000,000 $0.01 $291M/700M= $0.42 $0.43
+
+
+
+Token Issuance I nflation Projections
+
+The f ollowing t able s hows how many new D GTX t okens w ould n eed to be c reated to cover the next 1 2 m onths of o perations a fter J anuary 2 021 if t he D GTX price w as a s indicated in t he table above. The 1 2 m onth p rojected cost of running the e xchange i ncreases i n e ach column to t ake i nto a ccount the higher s upport costs, development c osts, s ecurity c osts a nd marketing c osts associated w ith supporting the i ncreased number o f traders:
+
+
+
+January 2021 1 D GTX = $0.02
+
+
+
+12 M onth C osts $1M
+
+
+
+Tokens Issued
+
+
+
+$1M / $0.02= 50M D GTX
+
+
+
+% o f Tot
+
+
+
++5%
+
+
+
+Supply
+
+
+
+1 D GTX =  $ 0.05
+
+$2M
+
+$2M / $ 0.05= 40M DGTX +4%
+
+
+
+1 D GTX = $ 0.09
+
+$5M
+
+$5M /  $ 0.09= 55.6M DGTX +5.5%
+
+
+
+1 D GTX =  $0.43
+
+$10M
+
+$10M / $0.43= 23.3M D GTX +2.3%
+
+
+
+The worst case scenario i n the table a bove shows that i f o nly 1 ,000 new t raders r egister i n the first 2 years ( fewer t han 2 n ew traders p er d ay during a 2  y ear period where c ryptocurrency trading v olumes a re expected to grow e xponentially), r esulting i n a stagnant D GTX p rice of $0.02, t he exchange m ust increase t he t otal s upply o f tokens by only 5 % t o cover t he projected c osts of $1M for t he n ext 12 months. T he e ffect of a 5% i nflation r ate on the
+
+8
+
+
+
+DGTX p rice o f $0.02 w ill be negligible.
+
+In t he best c ase example, w here 50,000 new t raders a re attracted to t he commission-free, trustless markets o f the D igitex Futures E xchange, resulting i n a D GTX p rice of $0.43, the exchange c an c over the projected o perational c osts o f $10M f or the n ext 12 m onths with a n increase o f only 2 .3% i n t he total supply of DGTX tokens. The effect o f a  2 .3% i nflation r ate on the D GTX price would be to reduce it f rom $0.43 to $0.42, b ut b y doing t his t he exchange has secured another 1 2 months o f o perational, development a nd marketing c osts t hat w ill attract thousands m ore t raders, creating i ncreased demand for DGTX tokens t hat far o utweighs t he inflationary c ost o f creating t hat demand.
+
+Eliminating DGTX P rice R isk O n T rades: DGTX P eg S ystem
+
+Many t raders will consider the D GTX token t o b e a valuable, l ong t erm c onstituent of their crypto-currency h oldings and w ill t herefore be w illing t o absorb t he effects that any short term p rice volatility o f t he D GTX t oken could h ave o n t heir trading p rofits. However, t raders who a re using t he D igitex f utures m arkets to h edge r isk o n t heir p hysical holdings of the underlying instrument c annot t olerate t his a dded element of the DGTX token's p rice affecting t heir positions.
+
+For e xample, a trader who already owns 10 B itcoins thinks the p rice of B itcoin m ight d rop, b ut he w ants to k eep p hysical possession o f his B itcoins. S o he hedges his p osition b y s elling Digitex BTC/USD futures contracts. Now if the p rice o f Bitcoin drops h is losses o n his actual Bitcoin h oldings a re b eing r ecouped by the profit on his s hort f utures p osition on Digitex. B ut to go s hort on D igitex he had t o b uy D GTX tokens to c over h is m argin requirements, s o t his trader must be able to e nsure t hat a n a dverse DGTX p rice m ovement won't affect t he e fficacy o f this hedging s trategy.
+
+Traders c an eliminate DGTX price r isk by utilizing t he e xchange's D GTX peg s ystem. T he DGTX peg s ystem is simply a futures contract on t he p rice o f D GTX that allows anyone w ho o wns DGTX t okens to l ock in a s ale price at the c urrent market p rice, whilst keeping p hysical possession o f t heir DGTX tokens t o use a s margin for d oing trades on t he D igitex f utures markets. The p rice o f D GTX c an b e p egged i n t his way against E TH and BTC. In the e xample above, t he trader w ould buy DGTX tokens a nd then i mmediately use the DGTX p eg system to lock in a  sale price a t t he same price, guaranteeing t hat he can s ell h is DGTX t okens at the same p rice h e bought t hem f or whenever h e w ants. The d ownside t o d oing t his is t hat if the price o f D GTX r ises h e w ill lose money o n his peg system t rade because he has locked i n a lower price.
+
+As a futures contract, the DGTX p eg system r equires the trader t o d eposit a  m argin payment in the c urrency to which h e i s p egging t he value o f DGTX to cover his p otential losses o n t he trade. Because t he trader i s hedging a gainst D GTX p rice risk t his f utures contract does not use t he D GTX token a s i ts native c urrency. To keep t he e xchange t rustless, ETH deposits are paid into t he independent account b alance smart c ontract, and BTC d eposits a re converted into
+
+9
+
+
+
+RSK and deposited i nto a separate account b alance smart c ontract. R SK is a  Turing c omplete sidechain of t he B itcoin network t hat is a  1 :1 p eg with BTC that supports s mart c ontracts.
+
+Buying and Selling D GTX Tokens
+
+A highly l iquid m arket i n D GTX t okens i s essential t o the s uccess o f the Digitex Futures Exchange. Buying and s elling DGTX tokens m ust b e free, q uick, easy and a s frictionless a s possible. T raders m ust b e a ble to i nstantly convert a  w ide range of c rypto-currencies into DGTX tokens and b ack again with little to n o s pread and with zero t ransaction f ees. Many traders will b e happy t o b uy a nd h old D GTX tokens long term, but many other t raders w ill buy DGTX tokens only w hen needed and then c onvert them b ack i nto E TH or BTC as soon as t hey close t heir p ositions. Apart f rom making e fforts to list DGTX on various e xchanges, t he D igitex Futures Exchange will integrate 0xproject into its p latform, w hich is a  decentralized t oken trading p rotocol that allows t he instant a nd trustless trading o f any token p air. D igitex w ill set aside 20% o f the proceeds from t he Token Sale to use as collateral f or c reating a liquid m arket in DGTX t okens, ensuring there is a t hick o rder book o f b ids and o ffers f or DGTX/ETH and D GTX/BTC on t he Digitex t rading platform. With the e xistence of t hese v ery l iquid D GTX spot markets, it may b ecome normal b ehavior for s hort term traders o n the D igitex F utures E xchange to b uy D GTX tokens a t the s tart of a trading s ession, u se t he DGTX P eg S ystem t o lock i n their s ale p rice a nd t hen cash o ut a  few hours later into t heir original currency w hen they h ave finished t rading. T his could lead to v ery heavy t raded volumes o f DGTX tokens w ith all t he a ssociated benefits t hat would b ring. Digitex w ill also p lay an active m arket m aking r ole in t he DGTX Peg System f utures m arkets, ensuring t hat t raders wishing t o e liminate D GTX price risk w hilst h olding f utures p ositions can do so e asily w ith t ight spreads, n o commissions and little t o n o s lippage.
+
+10
+
+
+
+3. Trustless F utures Trading
+
+By r eplacing c entralized account balances with a n i ndependent, decentralized s mart c ontract on t he Ethereum b lockchain, traders c an u se the Digitex F utures E xchange without h aving to trust the e xchange w ith their money. T his h ybrid m echanism of a  centralized m atching e ngine and decentralized account b alances solves m any o f t he p roblems associated with purely decentralized exchanges.
+
+Decentralized E xchange Challenges The blockchain i s a h ighly versatile, disruptive t echnology that p romises t o s hake u p t he established w ays o f doing t hings in w ays that we c annot yet imagine. But t here a re several non-trivial c hallenges t o running a decentralized futures e xchange on t he blockchain, particularly w ith regards to efficient t rade s ettlement a nd order matching:
+
+ Latency of on-chain o rderbook prevents r eal t ime t rading.  Lack o f privacy on-chain can l ead t o f rontrunning on large o rders.  On-chain transactions can b e expensive.  Reliability and s calability of o n-chain t ransactions is still an unresolved i ssue.  Margin trading where the u ser d oesn't p ut d own t he full v alue o f t he contract b eing
+
+traded is not y et p ossible o n-chain.
+
+Benefits o f Centralized M atching Engine &  Order Book v s Decentralized Exchange Centralized s ervers have a dvantages o ver d istributed ledgers f or certain applications. Storing order books, s ettling t rades and r unning m atching engines o n c entralized s ervers i nstead of the blockchain c an h ave m any benefits:
+
+ Matching engines o n d edicated central s ervers a re b lazing f ast, allowing for real time trading a nd m ore s ophisticated t rading t ools and strategies.
+
+ Central s ervers h ave c omplete p rivacy, preventing f rontrunning of l arge o rders  Transactions o n a  p roprietary central server a re off-chain and effectively free.  Central servers are very fast, extremely reliable and scale w ell.  Margin t rading o n a c entralized s erver i s possible and allows t raders t o maximize t heir
+
+trading a ccount balance u sing leverage.
+
+Hybrid M odel o f Centralized and D ecentralized Components Digitex is t he i ntelligent combination o f t he s peed a nd reliability of centralized servers w ith the t rustless s ecurity o f decentralized smart contracts. The D igitex Futures Exchange interacts with the smart c ontract s o t hat i t c an update a t rader's a vailable balance t o reflect that t rader's outstanding m argin l iabilities a nd his trading p rofits a nd losses, but t he exchange does n ot h ave p hysical possession o f t he trader's funds a nd is unable t o do anything else t o the funds held in t he s mart c ontract.
+
+11
+
+
+
+The U ltimate Ringfence: D ecentralized A ccount Balances
+
+1. Digitex c annot freeze o r seize a  t rader's f unds f or any reason, s uch as o utside pressure from a uthorities, c reditors, KYC/AML regulators etc. D igitex can a nd w ill r esist this pressure l egally and without consequence b ecause the e xchange s imply does n ot have access to a t rader's funds.
+
+2. Digitex c annot m ismanage t he trader's funds i n any way b y u sing those funds f or other purposes b ecause the exchange does not have c ontrol of or a ccess t o t he private k eys of t he t rader's DGTX tokens.
+
+3. Digitex d oes not hold any p rivate k eys a nd s o is therefore not a  hacking target. I n t he unlikely event of a  s ecurity b reach o f t he e xchange, D igitex does not hold any funds that c an be s tolen.
+
+Digitex Oracle U pdates Account B alance S mart Contract The centralized exchange acts a s a n O racle to the i ndependent smart c ontract that h olds t he traders' account b alances. When a  t rader w ants t o withdraw D GTX t okens from h is a ccount, the s mart contract must f irst ask the exchange for an update o n his trading profits a nd l osses, as w ell as h is current m argin l iabilities on h is c urrent matched and u nmatched o rders. I n t his way t he s mart contract can u pdate h is a vailable to w ithdraw b alance. Such updates to a trader's account balance in the smart contract a re on-chain, so to m inimize g as costs updates are o nly s ent t o the s mart c ontract when the trader w ants t o withdraw.
+
+This c ommunication between t he exchange and the s mart contract p resents a  potential attack v ector to hackers who m ight w ant t o h ack into t he e xchange for the purpose of updating the s mart contract with i ncorrect i nformation that lets them w ithdraw m ore t han they h ave. The solution t o this i s to calculate the trader's p rofit and l oss from s cratch f rom a ll of his m atched trades whenever t he smart c ontract a sks f or a n update to a  trader's account balance.  By d oing this i t i s i mpossible for a  h acker w ho h as somehow g ained a ccess to t he exchange t o send incorrect u pdates t o t he s mart c ontract b ecause h e will b e unable t o create the fake matched t rades n eeded ( each n eeding a  c ounterparty and matching t imestamps) to calculate his fake profit and update the smart c ontract with i t.
+
+Security c an be f urther enhanced by requiring users of the D igitex F utures Exchange to h ave the M etamask b rowser plugin. This ensures t hat only you h ave the ability t o withdraw f rom your a ccount balance b y utilizing M etamask's secure i dentity vault w hich uses signed blockchain transactions t o v erify y ou are the s ame p erson who m ade the d eposit, b ut i n a completely a nonymous w ay t hat r equires n o identifying i nformation w hatsoever f rom y ou.
+
+12
+
+
+
+4. T he Digitex Futures Exchange
+
+The D igitex F utures E xchange is a  t rading environment f or the trustless buying a nd selling o f digital c urrency f utures c ontracts with z ero t ransaction fees. The e xchange d oes not h old any client funds, combining t he t rustless s ecurity o f d ecentralized account balances w ith t he speed a nd reliability of a  centralized o rder b ook a nd matching engine.
+
+Main F eatures &  B enefits
+
+1. Zero Trading F ees 2. Decentralized Account B alances 3. Highly Liquid Futures M arkets 4. Automated Market M akers 5. Digitex Native C urrency 6. Token I ssuance R evenue M odel 7. Bitcoin, E thereum & L itecoin Futures 8. One Click Ladder Trading I nterface 9. Large T ick S izes 10. High L everage 11. No Auto Deleveraging 12. Sub-Millisecond O rder Matching 13. Off-Chain P rice Discovery, O n-Chain Settlement 14. Decentralized G overnance b y Blockchain 15. Complete P rivacy 16. Blockchain D riven
+
+Zero Trading F ees There a re n o t ransaction fees of a ny k ind on the D igitex F utures E xchange. T raders c an submit Maker orders o r T aker orders at a ny time u nder any circumstances a nd p ay 0% c ommissions on all trades forever. D igitex's revolutionary t oken issuance model makes commission-free t rading f ully sustainable i ndefinitely, a nd it actually t hrives a s the e xchange gets b usier, ensuring t he long t erm success of t he D igitex Futures Exchange.
+
+Decentralized Account B alances Traders d o not need to t rust D igitex w ith holding their a ccount balance in o rder to trade o n the exchange. Y our account b alance i s held by a  d ecentralized, i ndependent s mart c ontract on the Ethereum blockchain, not by t he e xchange. D igitex cannot f reeze/mismanage/lose your funds because w e physically don't have a ccess t o your m oney. And i n t he unlikely e vent that D igitex i s hacked t here are no f unds f or the h ackers to s teal.
+
+Highly Liquid F utures Markets When you r emove t he constraints of t ransaction fees y ou get h ighly liquid markets because traders e ngage i n h igh v olume, single t ick trading strategies t hat a re not viable on o ther exchanges d ue t o commissions. Liquidity i s further enhanced by the p resence o f a utomated market m akers, f unded w ith 20% of t he total supply o f D GTX tokens, that are programmed to break even w hilst keeping s preads t ight at a ll times, e ven in volatile market c onditions.
+
+13
+
+
+
+Automated Market Makers Digitex m arket makers a re automated t rading b ots w ith a lgorithms that a re programmed to b reak even. With t heir highly a ctive trading strategy and a l arge trading bank o f 2 0% o f all tokens in circulation ( 200M DGTX), t hey help c reate liquid futures markets t hat h ave tight b id and o ffer spreads, e ven i n volatile m arket c onditions, g iving traders the c onfidence of a lways being a ble to enter and e xit positions w hich f urther e nhances l iquidity.
+
+Digitex Native C urrency The D igitex F utures E xchange h as its o wn native c ryptocurrency, c alled t he DGTX token. T he t ick value of each Digitex futures market is 1  D GTX t oken, meaning that all trading profits and l osses are denominated in D GTX tokens. Margin requirements are payable i n DGTX t okens a nd t raders account b alances, d eposits a nd withdrawals are d enominated in DGTX tokens. Therefore, t raders must o wn D GTX t okens to t rade on D igitex's c ommission-free, t rustless futures m arkets, w hich creates d emand f or t he DGTX t oken.
+
+Token I ssuance R evenue M odel The D igitex F utures Exchange is revolutionizing f utures t rading b y e liminating t ransaction fees on trades a nd i nstead generating revenue through token issuance of i ts n ative currency, the DGTX token. Because the DGTX token is i n d emand from traders, t he exchange is able t o create a nd s ell a s mall n umber of n ew D GTX t okens each year t o c over c osts. T he inflationary c ost o f a  s mall increase i n the DGTX s upply i s o ffset by d emand f rom t raders who m ust o wn i t t o participate in Digitex's c ommission-free, trustless f utures m arkets.
+
+Bitcoin, E thereum &  L itecoin F utures Digitex h as 3  futures markets: BTC/USD, ETH/USD &  L TC/USD. E ach f utures contract h as a  large tick size, w hich eliminates a lot of n oise and allows p rices to b e displayed o n a  o ne c lick ladder style trading interface, e ven in v olatile m arket c onditions. T ick values o f f utures contracts are denominated i n DGTX tokens, meaning that all p rofits a nd l osses are settled in DGTX t okens.
+
+One C lick Ladder T rading I nterface Digitex futures m arkets are displayed on a n i ntuitive l adder i nterface that allows t raders to s ubmit buy a nd s ell o rders instantly w ith a  single click. With m inimal mouse movement and without needing t he k eyboard, traders never n eed t o t ake t heir eyes from the p rice a ction. B ids and offers move up a nd down a c entral p rice ladder t hat a llows t raders to v isualize the m arket a s the p rice literally m oves up and d own.
+
+Large Tick S izes A distinctive feature o f D igitex f utures markets a re t heir l arge t ick s ize. I n f utures t rading, a  tick is the m inimum price increment that a futures c ontract can m ove u p or down. For example, t he t ick size on t he B TC/USD futures c ontract i s $5. T his removes noise and allows v olatile futures contracts t o b e d isplayed o n a  s calper-friendly o ne click ladder t rading i nterface w ithout t he p rice constantly d isappearing off t he top of the page and off the b ottom o f the p age.
+
+High Leverage Digitex f utures markets o ffer t raders very h igh l everage o f u p t o 100x, a llowing t hem t o r ealise large p ercentage gains (and losses) f rom r elatively s mall p rice movements. But u nlike o ther
+
+14
+
+
+
+Bitcoin futures exchanges, D igitex d oes not cancel y our winning t rade to protect i tself from l osses if your c ounterparty's l osing p osition gets s topped o ut b ecause he was too highly leveraged.
+
+No A uto D eleveraging Unlike o ther B itcoin f utures e xchanges that offer high l everage, Digitex will not c lose y ou out o f a winning position to p rotect itself from losses w hen your counterparty's losing trade is s topped out because he w as too h ighly leveraged. I t's out of your control whether t he counterparty to y our trade is a t m aximum leverage or not and y ou s houldn't m iss o ut o n a  profitable m ove that you correctly predicted because t he e xchange c anceled y our winning trade.
+
+Sub-Millisecond Order M atching Digitex is built o n the E rlang/OTP s tack, t he same programming l anguage a s W hatsApp, which was c hosen for its r eal t ime updating c apabilities and i ts a bility t o seamlessly h andle s pikes in activity with extremely l ow l atency. The t rading interface u pdates prices i n r eal t ime and is completely web browser b ased with n othing t o d ownload. T he D igitex o rder m atching engine matches trades i n l ess than one millisecond. T he e xchange i s h ighly s calable to millions o f concurrent u sers i f n eeded.
+
+Off-Chain P rice Discovery, O n-Chain Settlement Digitex i s a  hybrid futures exchange that combines t he s peed and reliability of a  c entralized order matching e ngine with t he t rustless s ecurity of d ecentralized a ccount balances o n t he b lockchain. This offers traders t he best o f both worlds w hen i t comes t o s peed of e xecution a nd the s afety of their deposits. Traders enjoy the benefits o f r eal t ime t rading o n a  blazing f ast order matching engine w ithout n eeding t o trust the e xchange w ith t heir m oney.
+
+Decentralized Governance b y B lockchain Digitex u ses b lockchain t echnology to eliminate t ransaction f ees by minting a small n umber of new D GTX tokens e ach y ear. T his token i ssuance r evenue model i s g overned democratically by i ts traders, for the benefit of its t raders, t hrough Decentralized G overnance by B lockchain. T his means that all DGTX token o wners collectively d ecide on w hen, if and h ow many new tokens are issued t o c over the costs o f operating t he f utures e xchange.
+
+Complete Privacy Traders o n D igitex can s tart t rading i mmediately w ithout needing t o s ubmit their name or any identifying d ocuments of a ny kind. A s a n o ffshore e xchange t hat a ccepts only DGTX tokens, Digitex i s not b ound b y i ntrusive, i neffective a nd p ointless K YC/AML regulations t hat intrude o n our users privacy a nd w hich put t hem at r isk o f i dentity t heft b y m aking the e xchange a  t arget for hackers s eeking p ersonal information. T he b est w ay to protect our users personal data is not t o collect t hat d ata i n t he f irst p lace.
+
+Blockchain Driven Digitex is driven by b lockchain technology. From t he u se o f its o wn c ryptocurrency to eliminate transaction fees, t o s toring a ccount b alances t rustlessly in a d ecentralized smart contract, and allowing its traders t o determine the rate o f n ew token i ssuance, everything t hat m akes Digitex revolutionary is o nly made p ossible b y e mbracing the d isruptive p ower o f new b lockchain technology t hat until v ery recently d idn't e ven e xist.
+
+15
+
+
+
+Automated M arket M akers
+
+Liquidity b egets liquidity. T raders want t o trade on liquid m arkets with tight s preads w here they c an get f illed q uickly and with the m inimum o f s lippage. Digitex market makers are automated t rading b ots w ith algorithms t hat are programmed t o break even. N ot b eing driven b y profit, the market makers do not exist t o extract value from traders. W ith t heir highly active trading strategy a nd a  large t rading bank of 20% of a ll tokens in c irculation ( 200M D GTX), t he Digitex m arket makers help create l iquid futures m arkets t hat h ave t ight b id a nd o ffer spreads, even in volatile market c onditions, giving traders t he c onfidence o f always being able t o e nter and exit positions w hich f urther enhances l iquidity.
+
+Digitex market makers are very w ell capitalized, w ith a  trading bank o f 2 00M DGTX tokens, which i s 2 0% o f t he total supply. This e nsures that a  large number of D GTX t okens are actually being u sed actively for t he p urpose o f trading, w ith all t he beneficial n etwork e ffects t hat brings, rather than those t okens s itting dormant in a s peculator's w allet. I t h elps to create very l iquid futures markets f rom d ay o ne, which c ombined with z ero transaction fees w ill attract a large number of t raders to t he Digitex F utures E xchange.
+
+Large numbers o f t raders w ill create a  surge in d emand for DGTX t okens and a  price b ump that w ill c onvince s peculators to t ake an early p rofit by s elling their DGTX t okens to those traders, t hus t ransferring more t okens f rom dormancy i n wallets to a ctive use o n t he f utures markets. In t his way, the D igitex m arket makers are a  catalyst to a h ighly e fficient trading environment where the majority o f t he ecosystem's p rotocol t okens a re in active use.
+
+A major benefit t hat c omes f rom t he m ajority o f D GTX t okens b eing i n a ctive use by t raders i s that t he governance of n ew t oken i ssuance, w hich i s c ontrolled b y DGTX token o wners, is being d one by interested p arties who are a ctively using the p latform. Many o f these active traders w ill be profitable because t here are n o transaction fees, giving them strong incentives to s upport t he long term s uccess of the e xchange and the D GTX t oken with well c onsidered governance proposals a nd voting b ehavior.
+
+16
+
+
+
+Futures Contract Specifications
+
+The exchange will l aunch with the f ollowing 3  futures c ontracts: B TC/USD, E TH/USD & LTC/USD
+
+Futures Contract: B TC/USD ( Bitcoin a gainst the US Dollar) Tick s ize (minimum price increment): $5 USD Tick value: 1 D GTX Taker/Maker Fee: 0% Funding C osts: 0 % Initial M argin:  20 D GTX Maintenance M argin: 10 DGTX Contract T ype:  C ontract F or Difference ( CFD) Contract Duration: 24 Hours Settlement Date:  Daily a t 0 0:00 G MT Settlement Price:  B itcoinAverage.com s pot p rice o f B TC/USD a t 0 0:00 G MT, rounded u p or down t o t he nearest $ 5. Settlement Process: C ash settled in D GTX tokens a t S ettlement Price. A ll open p ositions remain o pen by b eing rolled o ver into t he n ew c ontract w hich opens a t 0 0:00 G MT.
+
+Futures Contract: ETH/USD (Ethereum against the U S Dollar) Tick size ( minimum price increment): $1 U SD Tick v alue: 1  D GTX Taker/Maker Fee: 0% Funding Costs: 0 % Initial Margin: 20 DGTX Maintenance M argin:  10 DGTX Contract T ype: Contract F or D ifference (CFD) Contract Duration:  24 H ours Settlement D ate:  D aily at 00:00 GMT Settlement P rice:  B itcoinAverage.com spot p rice o f ETH/USD at 00:00 G MT, r ounded u p or down t o t he n earest $1. Settlement Process:  Cash settled i n D GTX tokens at Settlement Price. A ll open p ositions remain o pen b y b eing r olled over i nto the new contract which o pens a t 00:00 GMT.
+
+Futures Contract: LTC/USD (Litecoin against the U S Dollar) Tick s ize (minimum price increment): $ 0.25 USD Tick value: 1 D GTX Taker/Maker Fee:  0% Funding Costs: 0 % Initial Margin:  2 0 DGTX Maintenance M argin:  10 DGTX Contract T ype: Contract For D ifference (CFD) Contract D uration:  24 Hours Settlement Date: D aily at 0 0:00 G MT
+
+17
+
+
+
+Settlement Price:  BitcoinAverage.com s pot price of L TC/USD at 00:00 GMT, rounded u p or down t o t he n earest $ 0.25. Settlement Process:  C ash s ettled i n DGTX t okens a t Settlement Price. All o pen p ositions remain open b y b eing rolled over into t he n ew c ontract which opens at 00:00 GMT.
+
+Example T rade 1
+
+BTC/USD Trade on Digitex F utures Exchange  Bob i s a  short term, trend f ollowing Bitcoin t rader. He s ees the p rice of B TC/USD s tart to rise and h e j umps on by buying 500 BTC/USD futures c ontracts with a  s ingle c lick o f the mouse t hat a re being o ffered f or s ale a t $10,700.  The p rice r ises quickly a nd t hen starts t o come down so B ob immediately hits the b id and sells 500 contracts a t $10,720 with a  single click o f the m ouse.  The tick s ize of the B TC/USD f utures c ontract is $ 5 so B ob has made a p rofit of 4 t icks on a  5 00 contract position which i s a 2 ,000 tick profit. 1  tick i s w orth 1  DGTX s o he h as made a  p rofit o f 2,000 D GTX.  The c urrent m arket price of 1 D GTX t oken i s USD $ 0.10 s o B ob's profit is 2 ,000 DGTX x $0.10 =  $ 200.  Bob's i nitial margin requirement to open his t rade was 5 00 x 2 0 D GTX = 10,000 DGTX ($1,000). H e needed this m uch in h is account to be a ble to enter t he trade. His a ccount balance is h eld b y an i ndependent smart contract, not by the e xchange.  There are z ero t ransactions fees o n a ll trades s o B ob's profit of $200 a fter commission is $ 200.
+
+Same BTC/USD Trade on CryptoFacilities.com  Bob b uys 10 B itcoins worth of c ontracts o ffered a t $10,700 a nd then sells t hem a t the $10,720 bid, m aking a profit of $200, i n a f lurry of mouse c licks a nd k eyboard strokes.  He must h ave 10 x  $ 10,700 = $ 107,000 x  1 6.7% = $17,869 in his a ccount to cover this position. H is a ccount balance i s held by the exchange.  Bob's c ommission o n t his t rade w as $171.36 (Buy: 0 .08% x  10 x $10,700 =  $ 85.60, S ell: 0.08% x  1 0 x $ 10,720 =  $85.76, T otal: $ 85.60 + $85.76 = $ 171.36)  Bob's profit of $200 i s a ctually a profit of o nly $28.64 a fter paying commissions.
+
+Same B TC/USD Trade o n GDAX.com  Bob buys 1 0 Bitcoins o ffered at $ 10,700 a nd then s ells them a t the $ 10,720 b id, making a  profit o f $200, in a f lurry of m ouse c licks a nd k eyboard s trokes.  He must h ave 1 0 x  $ 10,700 =  $107,000 in his account to cover t his p osition. H is account balance i s held b y t he exchange.  Bob's commission to b uy a nd sell 10 Bitcoins w as $535.50 (Buy: 0.25% x 1 0 x  $10,700 = $267.50, Sell: 0 .25% x 1 0 x $10,720 =  $268, T otal: $267.50 +  $ 268 =  $535.50)  Bob's p rofit of $ 200 is actually a l oss o f -$335.50 a fter paying commissions.
+
+18
+
+
+
+BTC/USD T rade
+
+
+
+Digitex Futures Exchange
+
+
+
+Margin r equired
+
+
+
+$1,000
+
+
+
+Margin held by
+
+
+
+Independent smart contract
+
+
+
+Profit on t rade
+
+
+
+$200
+
+
+
+Commission o n trade $0
+
+
+
+Profit a fter commission
+
+
+
++$200
+
+
+
+Cryptofacilities.com GDAX.com
+
+
+
+$17,869 CryptoFacilities
+
+
+
+$107,000 GDAX
+
+
+
+$200 $171.36 +$28.64
+
+
+
+$200 $535.50 -$335.50
+
+
+
+Example T rade 2
+
+ETH/USD T rade on D igitex Futures E xchange  The price o f E TH s tarts dropping so A lice, a s hort term s calper, h its the bid a nd s ells 250 E TH/USD f utures contracts a t $ 502 w ith a  single click of t he mouse.  The price drops t o $ 501 o ffered a nd stays there f or 20 s econds so A lice decides t he move d own h as run o ut of momentum and s he buys 250 c ontracts a t $ 501 with a single click o f t he m ouse.  The t ick size of t he ETH/USD f utures contract is $ 1. A lice has made a  profit of 1 tick o n a 2 50 contract p osition which i s a  2 50 t ick p rofit. 1  tick i s w orth 1  D GTX so s he has made a profit of 2 50 D GTX.  The c urrent p rice o f 1  DGTX i s USD $ 0.10 so A lice's profit is 2 50 D GTX x $0.10 = $25.  Alice's initial margin r equirement t o open h er trade was 2 50 x 20 DGTX = 5,000 D GTX ($500). S he n eeded t his much in her account t o b e a ble to enter t he trade. H er a ccount balance is held by a n i ndependent s mart c ontract, not by t he e xchange.  There a re z ero transactions f ees on all t rades s o Alice's p rofit of $25 after commission is $25.
+
+Same E TH/USD T rade on Bitmex.com  Alice sells 2 5 Ether worth of contracts a t the $502 bid a nd t hen b uys t hem a t t he $ 501 offer, m aking a  p rofit of $ 25 in a  flurry o f mouse clicks a nd k eyboard strokes.  She m ust have 2 5 x  $ 502 = $ 12,550 x 2 % = $ 251 in h er account to c over this position. Her a ccount balance i s held by the e xchange.  Alice's c ommission o n t his trade w as $18.80 (Sell: 0 .075% x  25 x $502 =  $ 9.41, Buy: 0.075% x  2 5 x  $ 501 =  $ 9.39, Total: $9.41 +  $ 9.39 = $18.80)  Alice's profit of $25 i s actually a  p rofit o f o nly $ 6.20 after paying commissions.
+
+19
+
+
+
+Same ETH/USD Trade on Kraken.com  Alice sells 25 Ether worth of c ontracts at t he $502 bid a nd t hen b uys them at the $501 offer, m aking a p rofit of $25 i n a flurry o f m ouse clicks a nd keyboard strokes.  She must h ave 25 x  $502 = $ 12,550 x  20% =  $2,510 i n h er a ccount to cover this position. H er a ccount b alance is h eld b y t he e xchange.  Alice's commission on t his t rade w as $65.20 (Sell: 0.26% x 2 5 x  $ 502 = $32.63, Buy: 0.26% x 2 5 x  $ 501 = $32.57, T otal: $32.63 +  $ 32.57 = $ 65.20)  Alice's p rofit of $ 25 i s actually a  loss o f -$40.20 a fter paying commissions.
+
+
+
+ETH/USD T rade
+
+
+
+Digitex
+
+
+
+Margin r equired
+
+
+
+$500
+
+
+
+Margin held b y
+
+
+
+Independent s mart contract
+
+
+
+Profit o n t rade
+
+
+
+$25
+
+
+
+Commission o n t rade $0
+
+
+
+Profit a fter
+
+
+
+$25
+
+
+
+commission
+
+
+
+Example T rade 3
+
+
+
+Bitmex $251 Bitmex
+
+$25 $18.80 $6.20
+
+
+
+Kraken $2,510 Kraken
+
+$25 $65.20 -$40.20
+
+
+
+BTC/USD Trade on D igitex Futures Exchange  Tom b uys 1000 B TC/USD futures c ontracts at $ 10,000.  Jamie Dimon continues b uying Bitcoin a ggressively a nd the price r ises f ast. T om sells 1000 c ontracts a t $ 11,000.  The tick size of t he B TC/USD f utures c ontract i s $ 5. T om has made a profit of 200 ticks on a  1000 c ontract position w hich is a 2 00,000 tick profit. 1 tick is worth 1  DGTX so h e has made a  profit o f 200,000 D GTX.  The c urrent market price of 1 D GTX token i s U SD $0.10 s o T om's profit is 2 00,000 DGTX x $ 0.10 =  $20,000.  Tom's i nitial m argin r equirement to open his trade w as 1 000 x 20 D GTX =  2 0,000 D GTX ($2,000). He n eeded t his much in his account to b e able to e nter t he trade. His a ccount balance i s held b y a n independent s mart c ontract, n ot by the exchange.  There are z ero transactions f ees o n a ll t rades s o Tom's p rofit of $20,000 after commission is $20,000.
+
+
+
+Same BTC/USD Trade o n Bitmex.com  Tom buys 20 Bitcoins worth o f contracts at $ 10,000.  His initial margin requirement t o open this trade i s 2 0 x  $ 10,000 x 1 % = $ 2,000.  Unfortunately f or T om, h is counterparty to the trade w as highly l everaged. W hen t he price w ent up, instead of liquidating Tom's counterparty's p osition i nto t he market with a  s top loss, B itmex cancelled t he t rade, s topping Tom out of h is winning p osition at $ 10,050 and giving him a  p rofit of $ 1,000. 20
+
+
+
+ This is c alled Auto Deleveraging and is used by B itmex t o p rotect t hemselves from losses c aused by h ighly leveraged traders in v olatile markets.
+
+ The p rice of Bitcoin c ontinues r ising q uickly to $ 11,000 but p oor o ld Tom misses t he whole m ove.
+
+ In t he w ords o f t he Bitmex CEO, Arthur Hayes: " If you w ant 1 00x l everage  which obviously y ou d o, because t hat's w hy y ou're here  y ou a ccept that we at B itMEX c an't put o ur balance s heet on t he l ine t o s ettle t hese c ontracts."
+
+ Better luck n ext time, T om.
+
+Maker a nd T aker Commission F ees O n O ther E xchanges
+
+The a bove e xamples u se t he s tandard Taker f ee to calculate c ommissions o n C ryptofacilities (Taker f ee: 0.08%), Bitmex ( Taker f ee: 0 .075%), Kraken ( Taker fee: 0 .26%) a nd GDAX ( Taker fee: 0.25%). I t i s p ossible to reduce your commission p ayments o n those exchanges b y submitting s ell o rders a bove the current t rading price and buy o rders below t he c urrent trading price which w ill give you t he reduced Maker fee.
+
+However, t his restricts t he traders a bility to immediately open o r c lose p ositions b y lifting offers a nd hitting bids like Bob and A lice did i n t he a bove e xamples. T his inevitably l eads t o missed opportunities a nd u nrealized p rofits w hich have the s ame e ffect o n t he traders bottom line a s t ransaction f ees. Even if a  trader does most of h is trades a s a  Maker, Taker fees are s o expensive that a short t erm trading strategy t hat ekes o ut s ingle tick profits here a nd there i s c onverted from a profitable s trategy i nto a  losing s trategy. On t he D igitex Futures exchange traders c an Take whatever price t hey want w henever they want with n o commission costs o r f unding costs o f a ny k ind.
+
+As the prices of cryptocurrencies c ontinues t o r ise, the current u niversal model of p ercentage based transaction fees on a ll other e xchanges m eans t hat c ommissions are constantly getting more and more e xpensive. Ever increasing transaction f ees m ake s hort t erm trading strategies t hat provide l ots o f l iquidity t o t he markets even more unviable as t ime goes on, making Digitex more a ttractive t o these highly valuable l iquidity p roviders.
+
+21
+
+
+
+5. Decentralized Governance b y Blockchain (DGBB)
+
+Blockchain technology is t he d riving force b ehind D igitex: the blockchain allows t he e xchange to e liminate transaction fees through t he c reation o f i ts own c ryptocurrency, a nd smart contracts on t he b lockchain h old traders' a ccount b alances, a llowing the e xchange t o operate trustlessly. D igitex a lso u ses the blockchain to govern n ew token issuance efficiently and democratically through rules and voting s ystems that are e ncoded into smart c ontracts. One of t he g reat p romises o f t he blockchain i s decentralized g overnance. On t he assumption that DGTX o wners will a ct in t heir own collective self interest, Digitex can move forwards a s a dynamic o rganization capable o f a dapting quickly to changing conditions.
+
+Voting o n New Token I ssuance
+
+DGTX t oken owners submit proposals w ith r egards to h ow m any new DGTX t okens s hould be issued to c over t he o ngoing operational costs of r unning t he futures e xchange. Current D GTX t oken owners w ill act in t heir own c ollective s elf i nterest when it c omes t o deciding how many n ew D GTX t okens to create to cover the costs of o perating t he Digitex Futures Exchange. T hey must balance t he i nflationary cost of creating new t okens against the benefits of a  well funded, w ell m anaged futures e xchange that provides o ngoing and increasing demand for D GTX. They must preserve t he current value o f DGTX by m inimizing the c reation o f new tokens, whilst at t he same time c reating e nough n ew tokens to cover t he development and operational costs of t he D igitex Futures Exchange, w hich will i ncrease t he value o f DGTX t okens through increased demand f rom traders. Voting on p roposals takes t ime and a ttention a nd requires users t o b e c onstantly a ctive a nd accurately i nformed a bout e verything. DGTX token o wners c an t herefore d elegate t heir voting power t o a  t rusted p erson who votes on their b ehalf i f t hey don't w ant t o p lay a n active r ole.
+
+22
+
+
+
+6. S ummary
+
+The D igitex F utures Exchange is a revolutionary new f utures exchange m odel t hat m ints its own native cryptocurrency t o r eplace t he need f or t ransaction fees o n t rades. Commission-free trading will create highly l iquid f utures m arkets by a ttracting high volume, short t erm t raders w hose t rading strategies are not v iable on o ther e xchanges d ue t o commissions. As cryptocurrency p rices r ise, percentage based t ransaction fees o n other exchanges will a lso rise, further increasing t he a ppeal o f a  c ommission-free futures e xchange. Commission-free markets create demand f or D GTX t okens w hich more than offsets t he inflationary c ost o f c reating t hat d emand. Traders on Digitex can p articipate in liquid, c ommission-free markets w ithout needing to t rust the e xchange with c ustody o f t heir funds, f urther d ifferentiating t he exchange from t he traditional e xchanges t hat require t raders t o relinquish f ull c ontrol of their a ccount b alances to a central third party t hat c an potentially freeze/mismanage/lose those f unds. Through Decentralized Governance b y B lockchain (DGBB), new t oken issuance f or the purpose o f r evenue generation is r un democratically b y DGTX t oken owners. Highly l iquid, c ommission-free futures markets on a s table, f ast a nd trustless trading platform, d uring a  period of e xponential growth in cryptocurrency trading, will attract a large number of t raders, c reating huge demand f or D GTX tokens. As t he p rice o f D GTX tokens increases t he exchange m ust c reate fewer t okens t o c over costs, t hereby reducing t he inflationary c ost of c reating n ew tokens.
+
+23
+
+
+
+

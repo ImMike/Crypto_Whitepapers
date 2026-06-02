@@ -1,0 +1,839 @@
+1
+
+
+
+CONTENTS
+
+
+
+CONTENTS -----------------------------------------------------------------------------2
+
+
+
+1. Abstract ------------------------------------------------------------------------------4
+
+
+
+2. Background--------------------------------------------------------------------------5 2.1. Introduce DNS -----------------------------------------------------------------5
+
+
+
+
+2.1.1. Design Principle ---------------------------------------------------------------------5 2.1.4. DNS WHOIS -------------------------------------------------------------------------6 2.2. Introduce ENS ------------------------------------------------------------------6
+
+
+
+
+2.2.1. Design Principle ---------------------------------------------------------------------6 2.2.2. Operation Model ---------------------------------------------------------------------6 2.2.3. Infrastructure -------------------------------------------------------------------------7 2.2.4. ENS WHOIS --------------------------------------------------------------------------7 2.3. Security Enhancement by ENS------------------------------------------------7
+ 2.3.1. Prevent Phishing --------------------------------------------------------------------7 2.4. Investment Value of DNS/ENS-------------------------------------------------7
+ 2.4.1. Rare / Uniqueness ------------------------------------------------------------------7 2.5. Introduce DApp -----------------------------------------------------------------9
+
+
+
+
+2.6. Introduce Smart Contract ----------------------------------------------------10
+
+
+
+
+3. ENS.BID-----------------------------------------------------------------------------11 3.1. Introduction--------------------------------------------------------------------11
+ 3.2. Features ------------------------------------------------------------------------11
+
+
+
+
+3.2.1. User Friendly Interface of DApp------------------------------------------------11 3.2.2. ENS Trading Platform ------------------------------------------------------------12 3.2.3. ENS Escrow Contract ------------------------------------------------------------13 3.2.4. ENS Loan Service -----------------------------------------------------------------13
+
+
+
+4. ENS.BID Roadmap ----------------------------------------------------------------14
+
+
+
+5. Business Model--------------------------------------------------------------------15
+
+
+
+6. Marketing strategy
+
+
+
+---------------------------------------------------------16
+
+
+
+6.1 Results from SWOT Analysis--------------------------------------------------16
+
+
+
+
+6.1.1 The Strengths of ENS.BID -------------------------------------------------------16
+
+
+
+6.1.2 Weaknesses -------------------------------------------------------------------------17
+
+
+
+6.1.3 Opportunities ------------------------------------------------------------------------17
+
+
+
+6.1.4 Threats --------------------------------------------------------------------------------17
+
+
+
+6.2 Sales Strategy -------------------------------------------------------------------------18
+
+
+
+7. Our Team ---------------------------------------------------------------------------19
+
+
+
+2
+
+
+
+8. ENS.BID ICO -----------------------------------------------------------------------21 8.1 ICO Plan -----------------------------------------------------------------------21
+ 8.2 EBS token usage and advantages ------------------------------------------22
+ 8.3 ICO Funds Usage -------------------------------------------------------------23
+
+3
+
+
+
+1. Abstract
+
+ENS.BID is designed to become the cornerstone of a new generation of Ethereum domain name registration and trading platform, utilizing the advantages of decentralized technology to enhance the stability and security of the platform as well as providing an ENS domain name registration service with secondary trading market. In short, through the platform, users can buy or sell the ENS domain name without going through complicated processes.
+ We will provide a complete Ethereum domain name registration, transfer and trading service to enable simple and safe domain name service related functions. We are also the first in the industry to introduce the use of smart contracts dedicated to provide escrow service, provides a strong ensure to the safety of transactions for both sides.
+ ENS.BID is the first platform in the industry to provide domain name loan service via smart contract, ensuring an open, fair and transparent verification mechanism. Through the Ethereum domain name mortgage loans, anyone is able to reuse the funds that previously used for registering Ethereum domain name. While maintaining the interest costs to its minimum, users will be prompted with flexible funds if needed.
+ Moreover, ENS.BID optimize the usage of ENS to enhance the blockchain transaction user experience by providing next generation decentralized third party payment system gateway. Every company, startup, and token generating projects can leverage our total solution to their token ecosystem, it means we can not only build the third-party payment system but also an ICO consulting company.
+
+
+4
+
+
+
+2. Background
+
+Along with the rapid development of the internet throughout the years, internet applications have been infiltrating every aspect of our lives with the faithful support of Domain Name Service (DNS), so that instead of the long IP address which is difficult to work around with, people just need to memorize the domain name registered by the company or entity. Similar to the service in world wide web, it is essential for Ethereum application to be bonded with its own natural names rather then complicated addresses. With the advent of the Foundation, we are committed to develop and improve the future of all Ethereum applications, which the Ethereum name service for blockchain applications is the cornerstone to a fully-decentralized Etheream application ecosystem.
+
+
+At present, the most widely criticized opinion to crypto currency is that the wallet's address is too long to memorize resulting in high difficulty for individual or business to ensure that every wallet address were correctly entered. The demand of Ethereum name service is similar to the need of Internet DNS, which not only solved the problem that the digital addresses are impossible for human beings to remember, but also provide an innovative solution to whom wants to setup a website for individual or business application.
+
+
+2.1. Introduce DNS
+
+2.1.1. Design Principle
+
+DNS normally refers to the domain name system with the purpose to provide a translation or mapping between the domain name and IP address since the domain name is much easier to remember to humans. DNS could often be thought of a large database that each string of IP address have their corresponding English name. DNS provides people with a better experience surfing the internet by translating the complicated ip combination to daily words that everyone can memorize.
+
+
+2.1.2. Operation Model
+
+DNS is divided into client side and server side. The role of the client is asking questions, that is, ask the server about the ip address of a certain domain name, which the server must answer with real IP address in a quick manner. Local DNS servers will first check their own database. If their own database does not contains information about the queried domain name, the local DNS should query through DNS server network to query for the result. The result will be saved to accelerate future queries. In the real DNS operation, there are two ways to query: recursive and iterative. DNS proxy usually use the recursive method while individual clients usually use the iterative method.
+
+
+2.1.3. Infrastructure
+
+DNS domain name is divided into four levels: root domain, top level domain, second level domain, host domain 
+
+
+5
+
+
+
+For example: In the domain name `www.google.com.root.', `.root' is the root domain, while in practice, each domain name will contain this part, it will be omitted in most of the literature. `.com' is the top level domain, `google' is the second level domain, `www' is the host domain.
+
+
+2.1.4. DNS WHOIS
+
+WHOIS is a mechanism for the regulation of domain names. All individuals, companies or groups that apply for domain names must provide information of the ownership to the domain name, and should upload the information to the WHOIS host on the network for everyone to access. In short, WHOIS can be viewed as a search engine for the domain name database.
+
+
+2.2. Introduce ENS
+
+2.2.1. Design Principle
+
+The Ethereum Name System was launched in May, 2017 to provide a decentralized, open and extensible system for the Ethernet blockchain. Currently, only the domain names ending with `.eth' are available, while different domain names will be deployed in the future. The address is 32 bits in length. This includes the Ethereum wallet address, smart contract address, etc. The service is designed to provide a translation from simple and easy to read domain names, such as `myname.eth' to the form that can be read by the machine. The address could also representing other services such as the Ethereum URL, Swarm, and IPFS content. The similar part between ENS and DNS is that the domain owner can control the distribution of all subdomains under the domain and the domain names are unique.
+
+
+2.2.2. Operation Model
+
+In blockchain, cryptographic addresses are very common. At first glimpse, these addresses look like a combination of random numbers and letters which are longer and harder to remember than IP addresses. As a result, the Ethereum Foundation utilize several blockchain technologies, so that the address can become easy to read and pass around. This is how Ethereum name service response was born.
+
+ENS uses easy-to-remember domain names to handle information passing, securely and decentralized. With the aid of Ethereum name service, users will not have to memorize the complex numbers and letters that seemingly random (the current address is a combination of 32 letters and numbers). For example, we can send money to friends through `vitalik.eth' and operate smart contracts through `mycontract.eth'.
+
+Envision the Ethereum name service, which is more secure than the DNS and has a higher level of privacy for users. Meanwhile, the infrastructure and the associated management are fair and open to anyone. Imagine a trading platform for the Ethereum name service registration, trading and lending service proudly supported by our team. 
+
+
+6
+
+
+
+2.2.3. Infrastructure
+
+The current address of Ethereum is hard to remember, so the proposed 1EIP137 was designed to strengthen Ethereum infrastructure, through the Ethereum Foundation support. The goal is to connect to an address through a fixed Ethereum name service, swarm, that could make Ethereum easier to use.
+
+
+2.2.4. ENS WHOIS
+
+Supported by the Ethereum Foundation, etherscan.io is the first website to introduce Ethereum Name Service Lookup( EWHOIS), which can be used to inquire important information such as the status of ENS domain registration or the amount of the winning bid.
+
+
+2.3. Security Enhancement by ENS
+
+2.3.1. Prevent Phishing1
+
+A new company, known as CoinDash's currency trading social platform, became the focus as they were hacked within three minutes after starting the first ICO. The hackers hacked CoinDash's website to change the wallet address and stole about 700 million dollars worth of crypto currency. Although the blockchain technology is not easy to be hacked, the hackers were still managed to steal a large number of digital currency without sophisticated attacks. The incident suggests that the entire blockchain ecosystem is not without weaknesses. As the investigation goes on, the biggest weakness is revealed to be CoinDash's website. Because the current Ethereum wallet address is 32 bits long, changes are hard to be found on the first sight. The introduction to the ENS will not only make the address easier to memorize, but also make the future of wallet applications more secure, avoiding similar incidents from happening.
+
+
+2.4. Investment Value of DNS/ENS
+
+2.4.1. Rare / Uniqueness
+
+Why does the ENS have a high investment value? Take a look at the traditional DNS market we are familiar with, the market had created many amazing transaction records in the past. According to statistics, the industry's current annual output value had reached a historic high at 20 billion US dollars per year. This provides us with great business opportunities and unlimited potential. Since the beginning of March this year, there had been at least 128 million new domain name registered. The domain name had become an asset to companies around the world. The name had become more than a name now, it is the company's brand and public identity.
+
+
+1 https://github.com/ethereum/EIPs/blob/master/EIPS/eip-137.md
+
+7
+
+
+
+Domain name sales market size 2The domain name trading market can be divided into two major categories, the first one is the domain name retail market (Reail Market), and the second one is the domain name market (Trade Market). The total domain name trading market is usually estimated as follows: Provided that the average use of which is at the price of $10 (ICANN, 2012), the global domain name registration is about 25 million times a year. Therefore the annual domain name registration fee is estimated to be 2.25 billion US dollars. In the second kind of domain name trading market, domain name owner would provide domain names for sale. The winning bidder will have the right to use the domain name. Lets look at the following domain name acquisition cases throughout the past few years:
+
+
+DNS acquisition case  In 2011, Facebook spent $ 8.5 million to the US Farm Bureau to buy domain name fb.com.
+  In 2012, JD spent nearly $ 5 million to buy JD.com, JD as the Nasdaq-listed transaction code domain name.
+  In 2013, Beijing Xiaomi Technology Co., Ltd spent nearly $ 3.4 million to buy mi.com.
+  In 2013, Vipshop Holdings Limited. cost tens of millions buying vip.com.
+  In 2015, Qihoo 360 with 17 million US dollars to refresh the global domain name transaction records, bought 360.com from Vodafone. 
+
+
+Although the domain name transactions had been around for many years, the industry still has a stable annual increment. This also includes the saturated `.com', `.net' and other top-level domain name. The growth rate of the market has not decline and continue its growth throughout the years. The following figure provides the growth rate from 2010 to 2015:
+
+2 https://books.google.com.tw/books?id=DnAmDwAAQBAJ&pg=RA2-PA15&lpg=RA2-PA15&dq= &source=bl&ots=zKul5xOWww&sig=O3JaTsoEF9vZz7TTnytpuAdUrs4&hl=zhTW&sa=X&ved=0ahUKEwjxzMTylvrVAhXBG5QKHSK-CSUQ6AEITzAE#v=onepage&q&f=false
+
+8
+
+
+
+Domain name industry is an extension of the early development in the network industry. The current development of the ether square domain named ENS, is expected to inherit the DNS market development track. At the time the white paper is published, there are already over 160,000 Ether locked in the smart contract provided that only the `.eth' domain had been opened for registration. While the domain name is limited to seven letters only within the `.eth' domain, 159591 domain names were registered already. In the future, the further opening to the domain name registration is expected to produce a higher transaction volume.
+
+
+3In the current market situation, the `.eth' domain name is made public for sale on Ethereum since May 12, 2017. The domain name `.eth' is about the 20th according to the ranking of ICANN TLDs so far, while the highest value to registered domain name is `darkmarket.eth'4.
+
+
+The average price of the ENS domain name is 0.4 Ether (approx. 130 in US) and the conversion of the domain name market had already generated $21 million in volume of trading. In the future, if more legal domain names were opened, the generation of higher volume transactions is expected.
+
+
+2.5. Introduce DApp
+
+Decentralized Application, referred as DApp, is a combination of front-end interface and smart contract. While the majority of the features are similar to traditional applications, the environment where the application runs on is based on the Ethereum blockchain. The DApp runs on a decentralized network which provides a convenient development environment to use any programming language for frontend codes, user interfaces as well as adjusting the backend architecture.
+
+
+3 https://ntldstats.com/tld
+
+9
+
+
+
+2.6. Introduce Smart Contract
+
+In Ethereum, there is an address owned by the code in addition to the account address owned by group of keys. The smart contract that developed and deployed by users is essentially a piece of code and cannot be modified after the deployment into the blockchain. A smart contract also contains an address as a regular account. Whenever the address receives a transaction, the code associated with it executes. The code and data of the smart contract are also present in the block chain. During the execution process, users can create new transactions along with the execution of other smart contracts.
+
+
+10
+
+
+
+3. ENS.BID
+
+3.1. Introduction
+
+Lack of ENS trading platform: There have been more than 160,000 domain names being registered since the open of ENS registration. Although the platform offers a complete registration process, there have been no trading platform for buyers and sellers to trade with one another easily. Although there had been some sites trying to provide similar type of services, but the function and interface are primitive and usually support only single language interface. Without the support of other languages, major ENS domain name investors do not have a simple way to trade with one another, thereby forming a huge barrier of entering the ENS domain name trading market.
+
+
+No large ENS trading platforms: During the ENS bidding process, users deposit a margin of the bid into the account while our people can still offer their bid within the period. Normally a bidding period take three days. We are planning to use open ascending bid auctions as our mechanism, where if an user is the only bidder of a auction, 0.01 ETH will be charged to win the bid. ENS will release the domain name if the owner does not renew the contract within the expiration date.
+
+
+3.2. Features
+
+3.2.1. User Friendly Interface of DApp
+
+The lack of an easy and efficient way to connect to Ethereum had made an severe entry barrier to the ENS market. As a result, most of the DApp users are usually people with technical backgrounds rather then average business users. Even with numerous documents that could help users set up DApp environment, seldom does this apps has a carefully designed interfaces. Our ENS.BID is aimed to offer an easy-to-use and smooth user experience for normal users while providing a stable and secure auction platform.
+
+
+3.2.1.1. Support Offline Signature
+
+We have provided a solution to one of the important key issues in DApps deployment: trust. Now every user can use the DApp with confidence without providing sensitive information about the private key of one's possession. Our ENS.BID is deployed with offline signature feature to ensure security to all our users. The offline signature function has offered us a safe opportunity to send the transaction to any trusted ENode within the system. 
+
+
+3.2.1.2. Fully Support ENS Functions
+
+The domain name transaction function provided by the ongoing version of DApps are not powerful enough to support the growing demand of the domain name trading. For instance, when a user is trying to bid or purchase a domain name, the involvement of several different DApps can not be avoided nowadays. The user may have to user a DApp
+
+11
+
+
+
+to register the domain name at first, then use another App to transfer or trade the domain name along the process. Not to mention there are also the need of using other auction related DApps for different bidding systems. Our DApps is aimed to provide all the functions including opening, bidding, revealing, finalizing, setting domain name, domain name transfer, to achieve the goal of supporting full ENS solution.
+
+
+DApp for all ENS services provided on the market
+
+
+
+Platform Name
+
+
+
+ens.bid ensnares.co enlisting.co ensaddress.co myetherewallet ens.domains
+
+
+
+m
+
+
+
+m
+
+
+
+m
+
+
+
+.com
+
+
+
+Start Auction
+
+
+
+v
+
+
+
+x
+
+
+
+x
+
+
+
+x
+
+
+
+v
+
+
+
+v
+
+
+
+Bid
+
+
+
+v
+
+
+
+x
+
+
+
+x
+
+
+
+x
+
+
+
+v
+
+
+
+v
+
+
+
+Reveal
+
+
+
+v
+
+
+
+x
+
+
+
+x
+
+
+
+x
+
+
+
+v
+
+
+
+v
+
+
+
+Finalize
+
+
+
+v
+
+
+
+x
+
+
+
+x
+
+
+
+x
+
+
+
+v
+
+
+
+v
+
+
+
+Transfer
+
+
+
+v
+
+
+
+x
+
+
+
+x
+
+
+
+x
+
+
+
+v
+
+
+
+x
+
+
+
+Set Resolver
+
+
+
+v
+
+
+
+x
+
+
+
+x
+
+
+
+x
+
+
+
+v
+
+
+
+x
+
+
+
+Bid Remider
+
+
+
+v
+
+
+
+x
+
+
+
+x
+
+
+
+x
+
+
+
+x
+
+
+
+x
+
+
+
+Trading
+
+
+
+v
+
+
+
+v
+
+
+
+v
+
+
+
+v
+
+
+
+x
+
+
+
+x
+
+
+
+3.2.1.3. ENS Registration Reminder
+
+ENS.BID provides convenient reminders to many important stage along the auction. For instance, after the registration of the domain name, reminders that indicates the start of two important stages in the auction, opening revealing and finalizing, is sent to users individually. Since all the current DApps do not provide any kind of reminder, related errors are easy to take place. This feature will significantly reduce similar situations.
+
+
+3.2.2. ENS Trading Platform
+
+ENS.BID is a complete domain name trading platform for both buyers and sellers. While providing a safe, convenient and transparent trading platform, we also make ENS transactions easier by lowering the entry barrier to the market. We are committed to improve user experience for the goal of making it possible for everyone to trade on ENS.BID with ease.
+
+
+3.2.2.1. Trading and Auction Platform
+
+ENS bidding process: ENS.BID will provide an auction system listing all of the ENS domain names owned by sellers so that the buyers can select and bid with ease. The time and the minimum price of the bid will be determined by the seller, while the connection between the buyers and sellers will be supported with email reminder. The auction process will be supported by the ENS.BID while the whole transaction will be guaranteed by the smart contract deployed within the block chain.
+
+
+
+
+12
+
+
+
+3.2.3. ENS Escrow Contract
+
+3.2.3.1. Smart Contract for Escrow Service
+
+ENS.BID supports a decentralized escrow contract through smart contracts. While providing a contract for the buyers and sellers to work with, the process will completely help users avoid the risk brought by offline trading. The source code that provide escrow service will be open sourced and provided with the inspection from third party agencies.
+
+
+3.2.3.2. Transparency of ENS Trading Record
+
+All the operations within the Ethereum are called `transactions' which is used to label, identify and track the status as well as related information of trades. We will be recording all the information related to transactions and store it in databases. The information includes Transaction Hash, Time of the transaction, status of the transaction and the time stamp which the transaction is written into the block in the Ethereum block chain. The purpose of the action not only determines whether the transaction succeeds or fails, but also define what kind of action should be taken if the transaction by any means failed.
+
+3.2.3.3. ENS Transaction Completed Immediately
+
+ENS.BID provides a secure and decentralized contract to guarantee escrow service of the domain name transaction. Buyers will deposit the crypto currency in the escrow contract while sellers will transfer the ENS domain name to the escrow contract. At the time both parties have completed the their formalities, the escrow supported by the smart contract will ensure an immediate execution to the contract after the confirmation.
+
+
+3.2.4. ENS Loan Service
+
+3.2.4.1. Smart Contract for Loan Service
+
+One special service provide by ENS.BID is the domain name loan service supported through specially crafted smart contracts. All the users could loan thought the ownership of certain domain names. By transfer the domain name to opened loan contracts, our system would calculate the crypto currency that could be borrowed. We provides users a service to use the domain names as collateral to borrow, simple and fast.
+
+
+3.2.4.2. Transparency of ENS Loan Records
+
+In the world of Ethereum, in addition to the existence of private keys, there are also smart contracts. The essence of a smart contract is a piece of code that will lose the ability to be modified when it is deployed to the Ethereum blockchain. Whenever a smart contract receives a transaction, the execution of the code take place. All transactions related information will be stored within the chain to ensure the safety of the transaction. Each transaction can be queried, ensuring the transparency of all the transaction process.
+
+13
+
+
+
+4. ENS.BID Roadmap
+
+Our Ropsten version bidding product has already launched, user can not only start auction and bidding domain in our platform, but also can see the search results which our artificial intelligence recommend system provide.
+ We launch our ICO in first quarter of 2018, the amount of ETH raised will be used in product development, marketing, legal and account service, and business cooperation. After our ICO stage, we'll develop and run our ENS service as well as cooperate with our
+ clients in the following quarter. While the ENS service provided for the enterprise branding and marketing blockchain solution will create token flow, more potential domain investors will see the ENS potential value, the bidding market will begin activate and grow exponentially. The service token fee generating from the ENS bidding platform will grow from now, therefore, our goal in Q3 and Q4 is to expand the market, educate and promote how company can leverage the ENS commerce potential. More products and features based on ENS will also be delivered in this stage.
+
+
+14
+
+
+
+5. Business Model
+
+ENS.BID is a blockcahin startup business dedicated to format infrasture ENS(Etherum Name Service) ecosystem, in another words, whenever any our application and usage built on the ENS ecosystem, it'll be new sources of token income. Because the ENS is perfert for branding of any company, there exists many marketing and business application through ENS. For that, our team specialize in delivering total ecommerce blockchain tech solution based on ENS technology to bring our customers and token holders huge success.
+ Take 2014 revenue structure of Godaddy as example, Godaddy generated $1.39 billion of total revenues. Of theses total revenues, GoDaddy generated
+ 1. $763 million revenues, 55.0% of the total from domain name service offerings related services.
+ 2. $508 million revenues, 36.6% of the total, from the web hosting services and web presence products offerings.
+ 3. $116 million revenues, 8.4% of the total, from the business application product offerings.
+ Therefore, the first stage of our ENS business is to help domain holders hosting, management, and trading their domain. The domain amount hosting by the Godaddy is around 60 million, and the total market is 326.4million. In the mean while, the ENS market is around 0.2million, therefore, it's very promising and begining market just like the early stage of DNS market.
+
+
+
+ Our first business goal is dedicate to host and manage the first 100k ethereum domain names, and help them to build dapp and decentralized web service and trading with their valuable domain.
+
+
+15
+
+
+
+6. Marketing strategy
+
+Our strategy is based on building a new generation of Ethereum domain name registration and trading platform, utilizing the advantages of decentralized technology to enhance the stability and security of the platform as well as providing an ENS domain name registration service with secondary trading market. In short, through the platform, users can buy or sell the ENS domain name without going through complicated processes.
+
+
+
+ We will provide a complete Ethereum domain name registration, transfer and trading service to enable simple and safe domain name service related functions. We are also the first in the industry to introduce the use of smart contracts dedicated to provide escrow service, provides a strong ensure to the safety of transactions for both sides.
+ ENS.BID is the first platform in the industry to provide domain name loan service via smart contract, ensuring an open, fair and transparent verification mechanism. Through the Ethereum domain name mortgage loans, anyone is able to reuse the funds that previously used for registering Ethereum domain name. While maintaining the interest costs to its minimum, users will be prompted with flexible funds if needed.
+
+
+Moreover, ENS.BID optimize the usage of ENS to enhance the blockchain transaction user experience by providing next generation decentralized third party payment system gateway. Every company, startup, and token generating projects can leverage our total solution to their token ecosystem, it means we can not only build the third-party payment system but also an ICO consulting company.
+
+
+6.1 Results from SWOT Analysis
+
+SWOT Analysis is a useful technique for understanding the strengths and weaknesses of a product by identifying both the opportunities and the threats.
+ A SWOT analysis is commonly used as a part of marketing plan, but it is also a good tool for general business strategizing. For example, using SWOT as a starting point for team discussions.
+
+
+6.1.1 The Strengths of ENS.BID
+
+ENS.BID holds great value toward ens service by granting other company the ability to hold ICO projects. The strength of ours includes:
+
+
+a ) strong background knowledge and strong experience for ICO
+
+
+b ) solid skills of creating stable smart contracts
+
+
+c ) connection with various different local marketing groups
+
+
+d ) strong ENS tech support 
+
+
+16
+
+
+
+e ) legal and white paper reviewing
+ f ) experience with investing in cryptocurrency
+ g ) the ownership of valuable ENS domains
+
+
+6.1.2 Weaknesses
+
+Even though ENS.BID are valuable, still encapsulate the negative internal aspects to your business that diminish the overall value your products or services provide.
+ a ) lack of direct marketing power
+ b ) the need to expand the team size
+ c ) revenue will depends on the quality of company's ICO project 
+ d ) cryptocurrency cannot turn into legal currency directly 
+
+
+6.1.3 Opportunities
+
+Both ENS.BID's strengths and our awareness of its weaknesses will help it capitalize on emerging opportunities. These opportunities include but not limited to:
+ a ) legally ICO projects are not banned in Taiwan
+ b ) Asian startups and companies have strong demand for ICO
+ c ) no other company dominates this new ICO market.
+ d ) ICO projects are still banned in China, but the demand is still strong. Taiwan is the perfect choice for it.
+ e ) the Ethereum Domain Name Service is not completely developed
+ f ) ENS is a big market that little of people know of.
+ g ) many valuable ENS are unreleased for the time being.
+
+
+6.1.4 Threats
+
+Threats that ENS.BID should be awarded of:
+ a ) legislation process in Taiwan might change in the future 
+ b ) other Ethereum Domain Name Service might grow more popular than ENS.BID
+ c ) the value of cryptocurrency are unstable nowadays
+ d ) some government take ICO as an illegal act 
+
+
+17
+
+
+
+6.2 Sales Strategy
+
+Our sales Strategy comes from three different ways, Ethereum domain name service, hosting & presence and business dapp. The goal is building a global, high-performance infrastructure while wrapping in a world-class customer care. 
+ Our sales strategy is based on providing good user experience and easy-to-use user interface to the users on the ethereum , supporting all kind of ens activities. We will offer our first-time customers the easiest way to bid their first ens, thanks to our world-class biding experience. The real sales effort we will be focusing on is the service supporting the whole ens system. hosting & wrapped and business dapp, that conversion of each first-time customers into a long-term customer relationship. 
+ The ultimate goal is to become the App Store of ethereum world. If we reach that phase the major revenue of ENS.BID will be payment flow based on our ens system. For each time our customers' dapp receive token through our payment flow system, a charge fee is introduced to the process as our revenue.
+
+
+18
+
+
+
+7. Our Team
+
+ENS.BID solves the pain which normal users hard to participate the blockchain ecosystem, and the high entry barriers for other company, startup to use decentralized technology which improve their core competitive.
+
+
+To solve the need and challenge of this kind of market requires a combination of blockchain knowledge, user experience, growth hacking skills, sprint development, marketing strategy, and startup experience.
+
+
+The ENS.BID team synergies this essential mix of expertise to create a blockchain game changer.
+
+
+
+
+
+Phyrex, Yung-Chieh, Tsai Yung-Chieh, Tsai is a senior software developer specialized in decentralized systems, crypto currency, blockchain technology and smart contracts. Currently starting this ICO project, he has been working in the industry for more than ten years, which the past working experience includes staff software engineer of Migme Co., a leading company for social media management, in 2016. After a year, he issued CryptoABS, the first ICO project in Taiwan. The project was committed to introduce the newly formed technology from blockchain to the world of finance which dedicate to improve the security and reliability of the current banking system. Now he is the leading engineer of the project (who mainly uses the dark side of the force) that builds and maintains all the infrastructure of the ENS service.
+
+
+Johnny, Hsieh Johnny is an experienced programmer majored in iOS development and learning system implementation. He also has experience with growth hack framework, and UI/UX design. Besides the general software development, his focus is now on utilizing deep learning techniques to solve real world problems as well as using the dark side of the force. He had co-funded PxTag Co. in 2016, a company that utilize computer vision for instagram branding. For the time being,
+
+19
+
+
+
+he is now the AI director of a fintech startup, in charge of building up a learning system that evaluates customer ratings with personal and market financial datas. Just before joining the crew, he also had been invited to supervise an ICO project in Russia. He is now the iOS developer and machine learning engineering of the project.
+
+
+Vincent, Tu Vincent is a full stack developer. He'd like to apply new tech to hack real world problem. For solve the inefficiency and imbalance of charities and NGOs resources raising problem, build WeCare platform with team members during 2014 2015. Later on, serve as an core developer in the online language learning platform AmazingTalker which aim to help global students can learn from native professional speaker with the finest price. Furthermore, participate in building and maintaining large gambling and payment system. Now, apply the hacking skills and serial startup experience into ENS.BID, help ENS.BID to become a game changer of the blockchain world with other great talented team members.
+
+
+20
+
+
+
+8. ENS.BID ICO
+
+8.1 ICO Plan
+
+ENS.BID is based on the ERC20 Token. The ENS.BID token symbol will be ESB, with a total amount of 1 billion tokens.
+
+
+Token Distribution:
+
+
+ 50% ESB for ICO crowdsale.
+  20% ESB for ENS.BID platform reserve fund.
+  15% ESB are blocked for the team on a smart contract for 1 year.
+  7% ESB for community and token listing.
+  4% ESB for remuneration of the qualified consultants..
+  3% ESB for a bounty campaign.
+  1% ESB for contingencies.
+
+
+ICO Plan
+
+
+
+20% 15%
+
+
+
+50%
+
+
+
+7%
+
+4% 3% 1%
+
+
+
+ICO Crowdsale. ENS.BID Platform reserve Blocked for the team on a smart contract for 1 year. Community and token listing. Remuneration of the qualified consultants Bounty campaign Contingencies
+
+21
+
+
+
+8.2 EBS token usage and advantages
+
+The participants of the ENS.BID ICO project are granted with the following privileges:
+ 1. All participants of the ICO project are given a 25% fee waiver to all the service fee charged by ENS.BID.
+
+
+ICO Fund Usage
+
+30%
+
+10%
+
+40%
+
+20%
+
+
+
+Operation Marketing
+
+
+
+Develope Legal
+
+
+
+2. If the user provides ESB as a service token when he/she is trying to sell/bid the domain name, the priority of the specific bidding will be higher than using other tokens.
+
+
+3. The amount of token that offered by ENS.BID using certain service from us( ex. the domain name loaning system) is granted with a bonus if all the processes are done with ESB.
+
+
+4. For the benefit of users that holds our token, the privilege that we offer are not limited to those above. As the service type and the size of ENS.BID grow through time, more of the privileges will be announced.
+
+
+22
+
+
+
+The ESB token system is dedicated to provide a better and fair user experience to those who supported us. The token distribution is no different. The distribution will be based on real-time status of the market. In other words, the distribution will be highly related but not limited to the following factors: the amount of token that an individual holds and the amount that the market trades.
+ The ENS.BID team holds the right to all final decision to all the terms that listed in the document.
+
+
+8.3 ICO Funds Usage
+
+The sale of public offerings will be used to accelerate the development of the ENS.BID project (product development, marketing, marketing and auditing).
+ Product development Use up to 40% to hire highly professional and appropriate technical teams to ensure ENS.BID services continue to lead the market and continue to develop ENS-related services.
+ Platform operation Use 30% of the resources to maintain the server operation and handling customer service matters.
+ Marketing Use 20% of the money to carry out marketing to increase market share.
+ Legal, auditing and safety supervision Use 10% of the funds to conduct bank audit and safety supervision to ensure that all users of the block chain assets safe.
+
+23
+
+
+
+

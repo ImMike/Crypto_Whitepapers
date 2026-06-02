@@ -1,0 +1,385 @@
+MASS CRYP ENTERPRISE
+
+PLATFORM WHITEPAPER Version: 1.1
+
+
+
+Content
+
+1. Summary .......................................................................3 2. MASS CRYP Enterprise .................................................4
+
+i. Who we are .............................................................................................................4 ii. Mission ..................................................................................................................4 iii. Vision ...................................................................................................................4
+
+3. Our Projects ....................................................................5
+
+i. MASS CONNECTS Advertising Solutions ............................................................6
+
+4. Blockchain Technology...................................................7
+
+i. Proof of work........................................................................................................7 ii. Scrypt hash...........................................................................................................8 iii. Transaction.........................................................................................................10 iv. Traceability .........................................................................................................11 v. Mathematical proof............................................................................................12 vi. Network propagation..........................................................................................15
+
+5. Key Milestones Accomplished ......................................16 6. Roadmap of Growth Model ..........................................17 7. Market Strategy.............................................................18 8. Initial Coin Offering......................................................19
+
+i. Timeline..............................................................................................................19 ii. ICO Planning.......................................................................................................20 iii. Pre Sale...............................................................................................................22 iv. ICO Structure .....................................................................................................23 v. Token Sale Terms ................................................................................................26 vi. Final Considerations ..........................................................................................27
+
+
+
+1. Summary
+
+
+
+A new way to contribute to innovation becomes real through the advances of Blockchain technology
+
+
+
+"Now a day's Dubai is the most appropriate place in the world to start the development of blockchain-based prototypes, and has become incubator of startups for this market segment. In this regard, we aim to make MASS CRYP Enterprise a
+
+benchmark in blockchain
+
+Advertisement platform, blockchain
+
+applications and smart contracts for
+
+
+
+ICO is an important and transformative step for the development and expansion of MASS CRYP Enterprise projects. Therefore, we invite you to know and partner with our company through your participation in ICO in order to build through this participation a path towards creating value for society, using Blockchain technology applications in favor of the expansion of Crypto Economy.
+
+MASS CRYP Enterprise decided to start its crowd funding campaign to promote the development of their projects by creating its own digital tokens called MASS CRYP Coins, represented by the acronym MASS.
+
+
+
+2. MASS CRYP Enterprise
+
+i. Who we are
+
+Technology has given us enthusiasm and an understanding of broad and decentralised solutions aimed at various sectors of the global market. Since then, many organisations and teams have tried and been able to modernise the source code to advance and improve the capabilities of the protocols. We are no exception. We focus on creating a network of projects that represent fast, flexible and costeffective solutions for corporate customers, guided by the contribution of Blockchain Advertising & Marketing Technology applications.
+
+ii. Mission
+
+We focus on creating a network of projects that represent fast, flexible and costeffective solutions for corporate customers, guided by the contribution of Blockchain Advertising & Marketing Technology applications.
+
+iii. Vision
+
+Become a reference in the development of high technologies, offering solutions around the world in order to add experiences and improve people's lives.
+
+
+
+3. Our Projects
+
+MSSS CRYP Enterprise is a brand and project manager that follows a transformation management process geared towards innovation in order to create fast solutions tailored to the needs of the market. For the company, it is fundamental to deal in a coherent and transparent way with the various audiences that relates to itself, with the intention of managing its business on the concepts of transparency and sustainability. Therefore, it is essential to broaden everyone's understanding of their projects, get to know the current projects of MASS CRYP Enterprise
+
+MASS Cryp (MASS) project is completely based on "Social Media E-commerce & Video Based Marketing" on a single blockchain platform which will be unique by its own features named as "MASSCONNECTS". It will not only help people to communicate but also help them to develop their own business, which will be directly between buyers and sellers through E-commerce platform. MASS CRYP coin will play an important role as digital currency which has special & unique value of its own.
+
+
+
+i. MASS CONNECTS Advertising Solutions
+
+With a focus on several sectors of the market, based on Blockchain technology platform, MASS CRYP Enterprise generates flexibility and adaptation that results in a wide range of investment possibilities in new projects on advertisement, social connect and Ecommerce market.
+
+MASS Cryp (MASS) project is completely based on "Social Media E-commerce & Video Based Marketing" on a single blockchain platform which will be unique by its own features named as "MASSCONNECTS". It will not only help people to communicate but also help them to develop their own business, which will be directly between buyers and sellers through E-commerce platform. MASS CRYP coin will play an important role as digital currency which has special & unique value of its own.
+
+
+
+4. Blockchain Technology
+
+MASS coin is a peer-to-peer currency that enables instant, near-zero cost payments to anyone in the world. Mass Coin is a global payment network that is fully decentralised over blockchain. Mathematically proven cryptography secures the network and empowers individuals to control their own finances with uncompromised security.
+
+i. Proof of work
+
+The proof-of-work involves finding for a value that when hashed with scrypt hashing algorithm, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash.
+
+For our timestamp network, we implement the proof-of-work by incrementing a nonce in the block until a value is found that gives the block's hash the required zero bits. Once the CPU effort has been expended to make it satisfy the proofof-work, the block cannot be changed without redoing the work. As later blocks are chained after it, the work to change the block would include redoing all the blocks after it.
+
+!
+
+The proof-of-work also solves the problem of determining representation in majority decision making. If a majority of CPU power is controlled by honest nodes, the honest chain will grow the fastest and outpace any competing chains.
+
+
+
+ii. Scrypt hash
+
+When generating MASS coins, you hash a block header over and over again, changing it slightly every time. Each iteration results in entirely different hashes. A block header contains these fields: Version, hashPrevBlock, hashMerkleRoot, Time, Bits, Nonce.
+
+The body of the block contains the transactions; these are hashed only
+
+The Bits field is a representation of the current target, using a special floating-point encoding. This encoding uses three bytes for the mantissa, and the leading byte as a base-256 exponent. Only the 5 lowest bits are used.
+
+The Nonce starts at 0 and is incremented for each hash. Whenever it overflows, the extraNonce portion of the generation transaction is incremented, which changes the Merkle root
+
+Given just those fields, people would frequently generate the exact sequence of hashes as each other and the fastest miner would almost always win. However, it is [almost always] impossible for two people to have the same Merkle root, because the first transaction in your block is a generation "sent" to one of your unique MASS coin addresses. Since your block is different from everyone else's blocks, you are [almost always] guaranteed to produce different hashes. Every hash you calculate has the same chance of winning as every other hash calculated by the network.
+
+MASS coin uses scrypt (with parameters N=1024, r=1, p=1) for computing the proof-of-work hashes which are checked against the target, and SHA-256d (SHA-256 applied twice) for all other purposes. When computing hashes, you need to be particularly careful about byte-order.
+
+
+
+The following Python code will calculate the SHA-256d hash of Block 100000. The header is built from the six fields described above, concatenated together as little-endian values in hex notation:
+
+>>> import hashlib >>> header_hex = ("01000000" + ... "ae178934851bfa0e83ccb6a3fc4bfddff3641e104b6c4680c31509074e699be2" + ... "bd672d8d2199ef37a59678f92443083e3b85edef8b45c71759371f823bab59a9" + ... "7126614f" + ... "44d5001d" + ... "45920180") >>> header_bin = header_hex.decode('hex') >>> hash = hashlib.sha256(hashlib.sha256(header_bin).digest()).digest() >>> hash.encode('hex_codec') '60ce4639bf63532b27e8f8b036b9846f5d2ae18556289f80e38b85a5df4910e1' >>> hash[::-1].encode('hex_codec') 'e11049dfa5858be3809f285685e12a5d6f84b936b0f8e8272b5363bf3946ce60'
+
+Alternatively, using the scrypt package:
+
+>>> import scrypt >>> pow_hash = scrypt.hash(header_bin, header_bin, 1024, 1, 1, 32) >>> pow_hash[::-1].encode('hex_codec') '000000003b4ba52ab765631e20a04b88cd27f0b66d3509fb2da7781fae6d7901'
+
+Note that the scrypt hash, which is a 256-bit number, has many leading zero bits when stored or printed as a big-endian value (leading digits are the most significant digits).
+
+Block explorers usually display hashes in big-endian notation.
+
+
+
+iii. Transaction
+
+In MASS coin transactions are a faster. This is due to the block processing that is more efficient. The key difference for end-user being the 15 second time to generate a block. The faster block time of MASS coin reduces the risk of double spending attacks in the case of both networks have the same hashing power. MASS coin can handle a higher volume of transaction thanks to its faster block generation.
+
+!
+
+
+
+iv. Traceability
+
+Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block's hash, transactions are hashed in a Merkle Tree, with only the root included in the block's hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored.
+
+!
+
+
+
+v. Mathematical proof
+
+The race between the honest chain and an attacker chain can be characterized as a Binomial Random Walk. The success event is the honest chain being extended by one block, increasing its lead by +1, and the failure event is the attacker's chain being extended by one block, reducing the gap by -1.
+
+The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows
+
+p = probability an honest node finds the next block q = probability the attacker finds the next block qz = probability the attacker will ever catch up from z blocks behind
+
+!
+
+Given our assumption that p > q, the probability drops exponentially as the number of blocks the attacker has to catch up with increases. With the odds against him, if he doesn't make a lucky lunge forward early on, his chances become vanishingly small as he falls further behind.
+
+We now consider how long the recipient of a new transaction needs to wait before being sufficiently certain the sender can't change the transaction. We assume the sender is an attacker who wants to make the recipient believe he paid him for a while, then switch it to pay back to himself after some time has passed. The receiver will be alerted when that happens, but the sender hopes it will be too late.
+
+
+
+The receiver generates a new key pair and gives the public key to the sender shortly before signing. This prevents the sender from preparing a chain of blocks ahead of time by working on it continuously until he is lucky enough to get far enough ahead, then executing the transaction at that moment. Once the transaction is sent, the dishonest sender starts working in secret on a parallel chain containing an alternate version of his transaction. The recipient waits until the transaction has been added to a block and z blocks have been linked after it. He doesn't know the exact amount of progress the attacker has made, but assuming the honest blocks took the average expected time per block, the attacker's potential progress will be a Poisson distribution with expected value:
+
+!
+
+To get the probability the attacker could still catch up now, we
+
+! multiply the Poisson density for
+
+each amount of progress he could have made by the probability he
+
+Rearranging to avoid summing the infinite tail of the distribution...
+
+!
+
+
+
+Running some results, we can see the probability drop off exponentially with z.
+
+q=0.1 z=0 P=1.0000000 z=1 P=0.2045873 z=2 P=0.0509779 z=3 P=0.0131722 z=4 P=0.0034552 z=5 P=0.0009137 z=6 P=0.0002428 z=7 P=0.0000647 z=8 P=0.0000173 z=9 P=0.0000046 z=10 P=0.0000012
+
+q=0.3 z=0 P=1.0000000 z=5 P=0.1773523 z=10 P=0.0416605 z=15 P=0.0101008 z=20 P=0.0024804 z=25 P=0.0006132 z=30 P=0.0001522 z=35 P=0.0000379 z=40 P=0.0000095 z=45 P=0.0000024 z=50 P=0.0000006
+
+Solving for P less than 0.1%...
+
+P < 0.001 q=0.10 z=5 q=0.15 z=8 q=0.20 z=11 q=0.25 z=15 q=0.30 z=24 q=0.35 z=41 q=0.40 z=89 q=0.45 z=340
+
+
+
+vi. Network propagation
+
+The steps to run the network are as follows: 1) New transactions are broadcast to all nodes by Gossip Protocol. 2) Every node collects new transactions into a block without any distinction. 3) Every node works on finding a difficult proof-of-work for its block and
+
+confirm transactions. 4) Successful Node which finds or mines the block, broadcasts the block to
+
+all nodes. 5) All other Nodes accept the block only if all transactions in it are valid and
+
+not already spent and also check the previous block hash is included. 6) Nodes express their acceptance of the block by working on creating the
+
+next block in the chain, using the hash of the accepted block as the previous hash.
+
+!
+
+
+
+5. Key Milestones Accomplished
+
+
+
+Oct 2016
+
+Dec 2016 March 2017 Aug 2017 Oct 2017
+
+Nov 2017
+
+
+
+Road Mapping and planning of MASS CRYP and MASS CONNECTs
+
+Mining server setup (IT Sector)
+
+Started Education sector on Blockchain and Cryptocurrency awareness
+
+Developed marketing team at 7 different countries
+
+MASS CONNECTs foundation in Dubai
+
+Tie-up with Auxesis Group, one of the leading blockchain developer and advisor for MASS CRYP / MASS CONNECTs development and support
+
+
+
+6. Roadmap of Growth Model
+
+
+
+7. Market Strategy
+
+Strategic Partnerships is a fast and strategic approach to reach the remote parts of Asia, Africa, Middle East and Europe. Partnerships are the key elements for the same. Several such partnerships are already under development and include the following segments, namely,  Partnerships with advertisement agencies in Europe and USA  Partnerships with lot of merchant from different sectors for their product branding and promotion, through MASS CONNECTs.  Partnership with travel agencies and restaurant of Asia, Africa, Middle East and Europe.
+
+
+
+8. Initial Coin Offering
+
+i. Timeline
+
+
+
+ii. ICO Planning
+
+Strategic Planning
+
+We began in July 2017 the Strategic Planning, in which we defined the Strategies focused on the goals of the company. In this phase we seek to have a holistic view of the company. The objective here was to take into account all factors internal and external to the organisation, such as: the global economic scenario and the market situation in which the company operates.
+
+We analysed important aspects such as strengths, weaknesses, opportunities and threats. Therefore one can conceptualise with propriety who we are, what we want to achieve and what we consider important in the way. From this initial mapping, were defined the Goals and Objectives to be achieved by the company within the horizon that is being projected.
+
+Tactical Planning
+
+The second phase was the creation of Tactical Planning, which is based on plans focused on the medium term regarding the date of execution of our goal. Oriented to the areas and departments of the company, being detailed with the ways to achieve both the objectives and goals of the organisation, we detail the strategic planning for each sector and area of MASS CRYP Enterprise.
+
+We determined the marketing plans, the production plans, the personnel planning and even a financial planning regarding the maintenance and expansion of the organisation. From Tactical Planning we determine our tactical objectives for each specific sector of the organisation, all the actions performed here have been established in order to connect our Strategic Planning to Operational Planning.
+
+
+
+Operational Planning
+
+With plans focused on the short term, we defined methods, processes and systems to be used for the organisation in order to achieve its objectives. Our management has specified the members of our team, their responsibilities, tasks, functions and financial resources to put the plans into practice. This activity generated our action plan and schedule of activities that govern the execution of our daily activities.
+
+The total issue is 300 million of MASS CRYP (POW) Proof of Work tokens out of 300 million 10% amount (30 million) are pre-mined and available for purchase during the ICO on the MASS CRYP platform.
+
+Sale of MASS CRYP Token to a specific group of investors between Oct 18, 2017 and Oct 28, 2017. During this period, MASS CRYP issued 10 million of the total tokens to the investors group as pre ICO.
+
+10 million is issued in ICO and 5 million for organisation's reserve and 5 million for founders & advisory boards. 90% MASS CRYP will be minable.
+
+The contributions acquired during the pre-sale period were added to the MASS CRYP Enterprise Capital Fund. The balance of this period was used to accelerate the preparation phase of the Token for the Official launch of ICO.
+
+ Actions in the pre-sale period;  Organisation's Structure;  Investment in Intellectual Capital;  Digital Marketing Planning;  Press office;  Polishing of the organisation's projects;
+
+
+
+iii. Pre Sale
+
+Between Sept and Oct was held the disclosure of the date of ICO's opening, project presentation and the benefits of the acquisition of MASS Token.
+
+Marketing planning followed a few steps:
+
+ Environmental Analysis / SWOT;  Definition of the target audience;  Market potential;  Lifestyle and attitudes;  Buying behaviour;
+
+From massification, segmentation (knowledge of similar groups of customers) has been started, and nowadays one starts to customise, to know the specific habits of the public in this sector. MASS CRYP Enterprise digital marketing strategies have been determined, and they are integrated actions that will direct the entire organisation's position into the market.
+
+Some decisive factors have guided our actions.
+
+ Goal Setting;  Strategy formulation;  Timetable of action;  Scheduled financial investment planning;  Measurement of results;
+
+
+
+iv. ICO Structure
+
+In order to fund procedures of development, legal compliance, marketing, promotion and innovation for its projects, MASS CRYP Enterprise begins its MASS funding campaign which has been defined as a campaign to raise funds in Cryptocurrency from sponsors around the world and being referenced as ICO. Hence, buying the MASS CRYP Coin during the ICO characterises a purely voluntary action.
+
+Issuance And Planned Distribution Of MASS
+
+The total amount of MASS will be a limited number of Three hundred million (300 Million) in total (including those for organisation and team member and available for sale during pre ICO & ICO period 30 Million). Its issuance will be unique and it will not be possible to create new MASS CRYP Tokens, since they will be configured with these characteristics of POW.
+
+During the ICO the token holders will receive the MASS CRYP immediately and will have their coins frozen in their wallets and will only be able to sell them at the Official Trading
+
+It is planned that the total offer of MASS be distributed as follows:
+
+
+
+Uses of percentage and quantity
+
+ Total MASS CRYP supply 300 Million  270 million MASS CRYP token Minable  Proof of Work (POW);  20 million is for sale at ICO, 5 million for organisation's reserve and 5 million
+
+for founders & advisory boards.
+
+
+
+Price
+
+
+
+Payment
+
+
+
+The market will determine the value of the coin. The initial price is set to be $0.10, but the algorithm of ICO system is going to increase the price every after 1,00,000 token sold.
+
+The algorithm, being programmed to increase the coins price continuously and indefinitely will serve as an anti-inflationary measure based on Moore's Law. That means that we're going to discover the market valuation of the token, and at some point, during the sale, the price will stabilize.
+
+This means that the sooner you buy, the better is the price.
+
+
+
+The payment effectuation by a Purchaser shall be deemed to be made on the premise that the Participant accepts all terms and conditions contained in this White Paper and has agreed to purchase the MASS during ICO.
+
+As payment for the purchase of MASS Token during ICO, BTC will be accepted. Thus it is established that no fiduciary currency or any other type of currency will be accepted in the acquisition of MASS CRYP Coin during the mass funding campaign. Each Buyer must enter a balance in their wallet in MASS CRYP in order to be able to make the contribution by purchasing the MASS
+
+Token on the official platform named in the period determined by ICO.
+
+
+
+Mass Token Delivery
+
+MASS Token will be sent immediately to its buyers who will have the Tokens in MASS wallets on the MASS CRYP ICO Platform. The MASS acquired during ICO will be frozen in the participants' wallets and will be unlocked at the end of the mass funding campaign on the established date for the official opening of the MASS CRYP Coin Trading. Once it is on trading platform MASS CRYP ENTERPRISE has no control on MASS token or its price as it is based on POW and decentralised crypto currency. Participate in purchase of MASS CRYP token is only after reading and accepting the terms and condition of MASS CRYP mention on white paper.
+
+Profit Sharing
+
+Holders of the MASS token are entitled to receive one profit sharing; this profit will be paid proportionally to the amount of tokens that the user holds in their wallets on MASS CRYP ICO Wallet 20% will be the profit sharing on hold. The first distribution of profit sharing will take place on July 1, 2018.
+
+
+
+v. Token Sale Terms
+
+Participation
+
+Buyer's decision to participate in the campaign and purchase MASS must be made on the basis of his own knowledge about MASS Cryp Coin and the
+
+information disclosed in this White Paper.
+
+Liquidity
+
+MASS negotiations only depend on consensus on their value among relevant market participants. No one is required to redeem or buy any MASS from any holder (including buyers). And no one guarantees the liquidity or market price of MASS CRYP Coin in any measure, at any time.
+
+Price volatility
+
+Cryptographic tokens, if traded in public markets, often have extremely volatile prices. Fluctuations in price in short periods of frequency, the price can be determined by Bitcoin, Ether, US Dollar or other fiat and crypto coins. Such fluctuations may result from market forces (including speculation), regulatory changes, technical innovations, availability of Exchanges and other direct factors that represent changes in the supply
+
+
+
+vi. Final Considerations
+
+ It is important to be clear that these ICO Terms and Conditions do not fit in an investment request.
+
+ The Company makes its project public, by acknowledging it as positively achievable and is dedicating all its best efforts to ensure that the entire process occurs with absolute transparency and smoothness.
+
+ The Company will provide, during and after the sale period, through its Development Team, general guidelines for use by the user of MASS Tokens.
+
+ On the other hand, MASS CRYP advises interested parties that they have mastery and full understanding of the mechanisms and storage and transmission associated with tokens.
+
+ Therefore, MASS CRYP Enterprise is not responsible for any financial losses resulting from actions taken or omitted by the buyers.
+
+<END>
+
+
+
+

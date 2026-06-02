@@ -1,0 +1,673 @@
+Autonomous S mart Travel E cosystem
+
+v. 2 .0.0  September 17, 2 017 Final, J anuary 3 , 2 018
+
+
+
+Disclaimer
+
+The Securities Act of 1933 sec. 2 (a) defines "security" as: "any note, stock, treasury stock, security feature, security-based swap, bond, debenture, evidence of indebtedness, certificate of interest or participation in any profit-sharing agreement, collateral-trust certificate, preorganization certificate of subscription, transferable share, investment contract, voting-trust certificate, certificate of deposit for a security, fractional undivided interest in oil, gas, or other mineral rights, any put, call, straddle, option, or privilege on any security, certificate of deposit, or group or index of securities (including any interest therein or based on the value thereof), or any put, call, straddle, option, or privilege entered into on a national securities exchange relating to foreign currency, or, in general, any interest or instrument commonly known as a "security," or any certificate of interest or participation in, temporary or interim certificate for, receipt for, guarantee of, or warrant or right to subscribe to or purchase, a ny o f the f oregoing."1
+
+Aton (ATON), Further Network's cryptocurrency, is not an investment-grade security of any kind. Aton is a digital coin for participation and use of the Further Travel Settlement Network and does not confer ownership of a stake in the business. In recognition of the fact that the United States government has not provided guidance or law around the sale of digital tokens, we believe it best that no United States-based individuals participate in the purchase of Aton. The coin is generally going to be used by the travelers, agencies, airlines, hotels, car rentals, railway and cruise companies who are a part o f t he F urther Ecosystem, described h erein.
+
+This white paper is a work in progress and defines Further's intent to develop, market and maintain the ecosystem as a product. As the technology and business develops the structure may change and evolve. This p aper i s subject t o Semantic Versioning2 2.0.0.
+
+
+
+1 https://www.sec.gov/about/laws/sa33.pdf 2 http://semver.org/spec/v2.0.0.html
+
+
+
+2/29
+
+
+
+Table of C ontents
+
+
+
+Abstract
+
+
+
+5
+
+
+
+Executive Summary
+
+
+
+6
+
+
+
+Vision
+
+
+
+8
+
+
+
+Current World
+
+
+
+9
+
+
+
+Travel Industry's B asic Problems
+
+
+
+11
+
+
+
+Data Structure
+
+
+
+11
+
+
+
+Sticky T icket P roblem
+
+
+
+12
+
+
+
+An Identity
+
+
+
+12
+
+
+
+Business P roblems
+
+
+
+13
+
+
+
+Inefficient Reconciliation Process
+
+
+
+13
+
+
+
+Agency Idle Money
+
+
+
+14
+
+
+
+Path t o s olution
+
+
+
+15
+
+
+
+Further's Solution
+
+
+
+15
+
+
+
+Smart Travel R ecord
+
+
+
+16
+
+
+
+The Data
+
+
+
+16
+
+
+
+The Identity
+
+
+
+18
+
+
+
+The Value
+
+
+
+19
+
+
+
+The Coin
+
+
+
+20
+
+
+
+How it works?
+
+
+
+22
+
+
+
+Benefits...
+
+
+
+24
+
+
+
+...For C ompanies
+
+
+
+24
+
+
+
+...For Individuals
+
+
+
+24
+
+
+
+Further Blockchain a nd D evelopment
+
+
+
+25
+
+
+
+Further E ssentials
+
+
+
+25
+
+
+
+3/29
+
+
+
+Nodes vs Well-Known Nodes
+
+
+
+26
+
+
+
+Well D efined Consensus Mechanism w ith P redefined V alidators
+
+
+
+26
+
+
+
+High P erformance and S calable Environment for S mart Contracts
+
+
+
+26
+
+
+
+Privacy
+
+
+
+27
+
+
+
+Cheaper a nd F aster Transactions
+
+
+
+27
+
+
+
+Further R oadmap
+
+
+
+27
+
+
+
+Business Model
+
+
+
+28
+
+
+
+Conclusion
+
+
+
+28
+
+
+
+4/29
+
+
+
+Abstract
+
+Travel & Tourism is a key industry for economic development throughout the world. Its indirect contribution has been reached over 7 Trillion USD in the world in 2017. In a more globalized world, our means of travel and options are expanding continuously. Reaching to more diverse options of travel tickets and rooms is in our fingertips. On the other hand, within a global economy reconciliation between parties and circulation of related payment is becoming a bigger problem because of legacy systems, payment methods and the manner of settlement is handled. The transaction costs and disputes in settlements are reflected to us, fellow travelers, as costs. We believe that Further's ecosystem consisting of its own blockchain technology and digital currencies will be the solution to these problems. Further's Blockchain will provide a real-time solution for Billing, Settlement, and Payment problems; plus, it will introduce new functionalities like customizable airline ticket and an exchange market for tickets and reservations. Ticket and/or hotel reservation will be made through smart tokens, which will have the ability to be exchanged, divided, combined, and changed ownership while helping to accomplish the settlement and payment process.
+
+5/29
+
+
+
+Executive Summary
+
+The e-ticket transformation took 15 years to be established in the airline industry. The most of the Travel and Tourism Industry is dominated by legacy systems which mimics the paper based tickets and reservations. With the widespread use of internet, the availability of the inventory data of small portion of airlines and hotels became vastly accessible. Even though the electronic reservation and payment systems make it simpler for the customer to buy from certain vendors, the providers and agencies are still struggling with the settlement and payment operations. Also, if a customer wants to fly and stay in a non-major destination, the operation and payment process presents other difficulties. These would include problems such as, lack of online data, lack of trust between parties, lack of payment methods and/or additional costs. And for the airline industry we should also count the identity matching, big data and loyalty issues among the biggest issues waiting to be handled.
+
+Along with operational and remittance problems, in a more global world the industry is expanding and direct & indirect economical input to the system is expected to be more than 13 Trillion USD in 2020. However, the speed of advancements in operational matters are not correlated with the acceleration of growth of the economical input. As Further Network, we would like to tackle the major issues by introducing S mart Travel R ecord (STR).
+
+STR, is a smart token consisting of necessary data for flight, hotel or any other reservation or any travel product. STR will help solve the issues of settlement and payment using system's own digital currency. Further will introduce an Autonomous Smart Travel Network where any airline, agency, hotel wholesaler or hotel itself would be able to create a smart contract for the sale of their asset. This contract would be available for one-time or would be recurring for certain periods which are pre-defined o n the digital a sset i tself.
+
+With the use of blockchain technologies under the hood, we would be able to control and provide necessary data for real-time settlement and payment services. On the
+
+6/29
+
+
+
+other hand we will introduce new functionalities like dividing and/or exchanging the STR with other users in the system. STR would also bring more structured data and automation to the operational usability providing vendors will define their rule sets. These rule sets would be per certain periods of time like seasonal agreements or only for certain dates containing certain rules d esigned f or d esignated c ustomer. STR would be available to any travel industry asset provider, from cruise ship operators to hotels, from airlines to car rental companies. Every step of your travel can be combined in one STR. With every asset defined in your STR, you would access and do operations consisting all or individual asset specifically. STR, will hold the key for the identity of the traveler and traveler's itinerary. Allowing the holder of the STR to make changes on the itinerary, or use as a proof of key holder for the asset. With the same STR, a traveler can make a check-in for the flight and also for the d estination hotel. We aim to build and maintain an autonomous smart travel network where any asset provider from small to large would be able to create their own assets, create their own rules and transfer them using their own smart contract and get real time payment throughout the system using blockchain and cryptocurrencies. We will begin with tokenization of current assets from proprietary systems and for easy settlement and payment and continue with identity sharing and ultimately achieving a fully integrated systems with blockchain which will directly tokenize the asset without any midware.
+
+7/29
+
+
+
+Vision
+
+Transformational power of technology reshapes everything from the way we travel to even the way we interact with them. From an app that shows which and when to take a subway train to autonomous vehicles which are replacing taxis and even in the near future w ill be a irborne, we a re i n t he p ath o f r apid technological advancements.
+
+As technology adds an interactive layer, some of the systems remain monolithic and ancient. We no longer need papers to carry our airline tickets and we can track which gate our plane will leave and even the app will help us find the way within the airport but we cannot directly engage with our airline tickets to change the details of them without a human involvement. It is due to the technological sheet we covered over the systems. The real leap forward will come when we transform the core beneath the cover.
+
+We envision a future where the travel products are customizable, interactive and autonomous. An airline ticket can be a personalized product, solely for that travel for the person buying at the time of engagement. We may, very well, customize the ticket from the leg length of the row to the in-flight entertainment package the frequent flyer receives. Airlines may generate a peer-to-peer interline agreement contract within minutes of demand rises and offer them automatically. We may distribute and enable this personalized pass in your digital wallet, proofing your true identity, to be used from the autonomous vehicle taking you to the airport, throughout y our flight and a t t he door o f your destination h otel room.
+
+This vision can be realized by transmuting the structure of the underlying systems, and redefining the layers to automate various tasks and institutions. Self-evolvement is key to this evolution. We will start with tackling the current world problems and smooth the way to the future, where your Mars ticket will be aware of your engagement plans and in-flight preferences.
+
+8/29
+
+
+
+Current W orld
+
+In a more globalized world, our means of travel and options are expanding simultaneously. With the help of Online Travel Agencies (OTA) like Expedia and Booking.com reaching a more diverse options of travel tickets and rooms are in our fingertips. As the distances are shortening, the complexity and variety of the operations a re changing.
+
+There are three main parts to this operation, one being distribution of availability of data and reservation, second one being operations and settlement between all parties and third one is circulation of payment through means of domestic and over the border transactions.
+
+First part is partially solved with Global Distribution Systems (GDS) like Sabre, Amadeus and Hotel Wholesalers (HW) like Hotelspro and HotelBeds. These are technology savvy companies where the availability data is distributed through them. But they are bound to the systems the data is provided. Another aspect to wholesalers is that the data they got is limited. In case of airlines, GDS's only offer availability data of member airlines of International Air Transport Association (IATA) airlines and the rest of the world doesn't get visibility due to control of IATA. In case of hotels, the lack of standardized data is the real problem. Second and third parts are dominated with legacy systems where the transaction costs and settlement issues reflected to us fellow travelers as costs. Other alternative to using GDS'es and HWs is to use direct distribution. Some companies establish this via their own network of sales or their websites. Most, are stuck in their network islands where interoperability and e xchange of data is v ery difficult.
+
+Beginning of the millennium 1.674 Billion passengers flew, this number more than doubled in 2016 where almost 3.7 Billion travelers3 have chosen airline travel. In other words, 10 million daily passengers have traveled by air. When we look at the distribution of these passengers, 2.4 Billion passengers used IATA Member Airlines whereas 1.3 Billion passengers used non-IATA Airlines. An addition to this number is
+
+3 T he World B ank Data - https://data.worldbank.org/indicator/IS.AIR.PSGR
+
+9/29
+
+
+
+from the World Bank data of 2016 that 1.2 Billion hotel guests have been recorded. As of 2020, the estimate is over 8.5 Billion passengers. To give more insight to the corporate side of this world means approximately 620 commercial airlines of which 460 are non-IATA airlines. Also there are more than 250.000 travel agencies and 150.000 a re non-IATA a gencies.
+
+These sheer numbers bring us the size of the travel market, which is over 2.3 Trillion USD for 2016 and this is expected to be 4 Trillion USD4 by 2027. As of yet, in 2017 indirect contribution of the industry has reached more than 7 Trillion USD5 around the world. This makes the travel and tourism industry one of the key sectors for economic development t hroughout t he w orld.
+
+And if you take a look at the data more closely, these numbers are not just high end customers, the airline passengers are now have more diverse income profiles. This brings two things, airline travel is a common use of transport thus more and more new companies are appearing in the industry as airlines, airport operators or other service providers and second is that there is a vast amount of data that needs to be processed safely and securely, not just for airlines but entirety of travel and tourism industry.
+
+The very first step of a travel begins with transportation and accommodation plans at the destination and their eventual purchase. This would trigger several transactions between agency, airline and hotel, affiliate and service providers. The accumulated cost of each service is inflicted over the ticket and reservation prices. This also means that there is a lot data and value transactions between multiple parties of a single reservation. The cost of these transactions, even for a single reservation, consumes a lot of time and money. On the other side; airlines, hotel wholesalers, and travel agencies need to maintain an ongoing settlement processes within themselves and with each other to reconcile and settle these transactions. This process of billing, making a settlement and performing the actual payment, in other words Billing Settlement Payment process (BSP), is also very painful and error
+
+4 World T ravel & Tourism C ouncil 2 017 Report 5 World Travel &  T ourism Council 2 017 Report
+
+10/29
+
+
+
+prone. In light of the above data, you may imagine the total cost of maintaining the this model.
+
+Travel Industry's Basic P roblems
+
+To define the structure and the problems of the industry let's examine the counterparts in conventional ecosystem. Currently in the system, we have Airlines, Hotel Wholesalers, Cruise Operators, Railway Operating Companies as asset providers, an asset being a ticket or a reservation and we have Travel Agencies, Corporate and Individual customers as consumers of this asset. And the asset is issued and consumed thru provider's own proprietary system. The problems start where and how the data of the product is created to when and how that product is sold and c onsumed. L et's start w ith t he data i tself.
+
+Data S tructure
+
+There are lots of different Passenger Service Systems (PSS) where airlines create and sell their inventory. Almost all the systems are derivations of ancient paper based systems. These systems are bound to similar limitations, even if there is room for innovation, by design the current ecosystem enforces these limitations as well. The move from paper based airline tickets to electronic tickets took over 15 years in transaction to complete, between 1994 and 2009. And the e-ticket contains only the basic data about our tickets and it is not configurable or actionable, it is just data. Other transportation models followed suite but then again it is the same basic data. The ticket should be more than just a manifest of flight information. It must be customizable or even personalizable for traveler's needs and preferences. It must include the rules of returning or changing dates that should also be calculated actions and callable automatically, without requiring a human interaction. This can only be achieved in structural change of the data. These problems can also be adopted from train and cruise tickets to car rentals or to hotel reservations, where the difference from airlines is the lack of standardization. There is more leg room for innovation here.
+
+11/29
+
+
+
+Sticky T icket Problem
+
+Ever had a day, where you had a trip planned but just to be cancelled in last minute and you had someone nearby that would be suitable replacement for you but you couldn't transfer your ticket and you had to buy a new one for that person and returned yours? This is just one example of the incompetency of the legacy systems which are open to further improvement. Most Airline PSS'es are not suitable for this kind of change and couldn't track the ownership of this asset due to the security reasons. A similar but more favorable situation can be applied to railway or cruise tickets, car h ires a nd h otel reservations.
+
+What kind of software we would need just to change the ownership of the entire business trip we planned from airline tickets to car rental and hotel reservations like transferring a contact information over a smartphone? These and many are barriers of the usage of data in current systems. This also brings the specific problem of data, t he Identity.
+
+An Identity
+
+"Who is who" is a problem not because the identity is needed for verification but because truly identifying the customer would change the "customer's journey" throughout the system. Is John Milton buying a ticket now to Istanbul is the same with the last John Milton who bought a ticket to New York? Or is he the same as who made t he r eservation to D ubai through the a gency?
+
+There are some identifiers like passport number or a cell phone number but these are not assuring the uniqueness of a customer since these are open to error and change. Provided info can also be not true depending on the situation. Companies try to solve this problem by enabling a login through their website or with a loyalty program. This, however, is not a common denominator for all and not as commonly used as needed. Sometimes agencies provide this data and that also cannot be reliable in all cases. As the companies gather these information they keep a big pool of big data but few had a chance to tap into this pool. Ultimate use of the this data
+
+12/29
+
+
+
+would be customization of the travel asset. Let's take a look at some business problems that p roviders and agencies f ace.
+
+Business P roblems
+
+On business side of things, there is a common pattern emerges for almost all of the counterparts. As the operation keeps on going, the providers create their assets from their proprietary system and the ownership of the asset defined at the time of sale. At that moment a credit line is recorded between provider and the agency in question. As we explained in previous section the availability of the asset is dealt within GDS'es or direct distribution channels but the credit line here is the main reason for a lmost a ll of t he i tems b elow.
+
+Problems i n p rovider's point o f v iew:
+
+ IATA o r A irline C learing H ouse (ACH) dependency  High c ommissions a nd t ransaction f ees upon r eceiving a nd sending  Barriers f or expanding s ales c hannel  Trust and T raceability  Currency R isk  Difficulties t o keep their m oney i n their o wn c ountry  Long payment i ntervals, 1 5 to 45 d ays
+
+Problems in a gency's p oint of v iew:
+
+ Multiple d eposit account f or m ultiple p roviders ( high c apital b arrier)  Difficulties i n p rovider s ettlement  High cost of a l etter of g uarantee  Barriers o f expanding p rovider c hannel a nd p roduct option  High cost o f p ayment transactions
+
+Inefficient Reconciliation P rocess
+
+Basically the aforementioned credit line brings us to inefficient reconciliation process. The case of a travel agency working with only one provider is quite an easy
+
+13/29
+
+
+
+equation to solve. From the agency's point of view, there is a single reconciliation point with a s ingle provider.
+
+However, currently this single reconciliation can only be carried out within certain periods because the mutual control of the records in the systems of both parties involved in the sale realized. This can be effective only during certain periods and may require a need for third parties for money transfer. This situation also brings along a heavy operational process that needs to be carried out. For example, nowadays, this reconciliation between airline and agency can only be done within certain periods, minimum of 15 days to an average of 1 month. Even if an agency sell tickets through a single system, it needs to pay through a third party. Since both the transaction cost and the control of the transactions are necessary, it is only possible to carry out this process at certain periods. But the real world is much more complex in many ways.
+
+First and foremost, the agency usually works with more than one provider, and the providers also work with more than one agency. Although this is still a single settlement, it is becoming more and more difficult to operate with more than one party involved. Second, if the asset is offered jointly by several providers, it is a case that the agencies and providers need to be offset between themselves and the providers within themselves. We call this process multi settlement. Along with all these, reconciliation also needs to be done in monetary terms in order to complete the settlement process.
+
+In addition, IATA member airlines and agencies can make the reconciliation thru IATA on average of once per month, with high commissions paid and guarantee deposit money kept aside. But for those who are not members of IATA, this process can be much more uncertain, require a third party involvement, taking a long time, and p ainful.
+
+Agency I dle Money
+
+It is requested to block a certain amount of money or give a guarantee letter due to the risk that the agencies bear. Since they cannot reconcile instantaneously and the
+
+14/29
+
+
+
+provider keeps the money on hold, with a certain delay. In this case, a large amount of m oney r emains idle a t the b ank a ccount.
+
+For example; IATA requires 360.000 USD minimum guarantee letter for travel agencies and it can be increased according to transaction, volume or risk degree. Also, other providers require 3.000 USD or 5.000 USD minimum security deposit to open a new agency account even if the agency does not immediately sell this amount of products. When the agency works with 10 providers idle money can be multiplied accordingly causing a r equirement o f a  vast amount p re-paid m oney.
+
+Path t o s olution
+
+Blockchain as distributed ledger, opened the gates of opportunities for real-time online payment solutions. Adoption of this technology in travel industry has always been on the digital currency side giving us just another way of payment for our reservations. Although this is a very important feature as the payments no longer would need extra fees there is an unseen cost machine at the back of the transactions thus explaining the higher prices. We believe that blockchain technology and digital currencies will eventually solve the transaction fee problem. To take it a step further, we will redefine how the travel product is defined and consumed w hile providing a r eal-time solution for BSP. L et's take a  f urther look.
+
+Further's S olution
+
+Blockchain, in its nature, offers a basic and fundamental solution. It is the immutable history of the transactions and thus expressing the final ownership of the asset. Asset can be money, a license or a ticket. Its elegant design in keeping a secure, distributed chain of information would help real business scenarios as discussed in the f ormer section. The k ey points Further i s a iming to a chieve are;
+
+ Real-time s ettlement  Decentralizing the p rocess o f s ettlement, t hus r emoving t he mediator
+
+15/29
+
+
+
+ Reducing t he a mount o f m oney kept o r blocked i n deposit or safety accounts  Cost r eduction on p ayments  Simultaneous c ross-border payments  Customizable travel asset  Interoperability l ike merger, d ivide, e xchange of the travel assets
+
+And h ere is h ow w e a im t o achieve t his.
+
+Smart Travel R ecord
+
+We are introducing Smart Travel Record (STR) which is a smart token holding key data about your travel. Conventionally your flight ticket or your hotel reservation is not just data, it is a contract with terms and conditions. Let's take a look at an airline ticket more closely where flight data thus tickets are more structured comparing to other kinds. On your ticket, you would have your standard data consisting of your travel details and personal information as the passenger and also a value of the ticket you are holding. As passenger you also are bound to its presented rights and obligations. Within these limits presented you can use, return or burn your ticket. If you put travel agency into this equation, this is a multi-signature contract with lots of unseen mechanisms in place. We can transform this conventional ticket to Smart Passenger Record (SPR) for airline tickets using blockchain technologies. SPR is a sub model for STR, consisting of any transportation related data. We also introduce Smart Guest Record (SGR) for hospitality related smart token. STR will be a go to standard smart token for the t ravel a nd t ourism industry. L et's d ig in.
+
+The D ata
+
+The real revolution for the internet was availability, distribution and shareability of data. We believe Smart Travel Record (STR) will provide this for the travel industry. STR will contain or will be able to grant access to all the necessary data related to the travel including the itinerary with the value and transaction regarding the security and c ontract r ules. L et's take a  l ook at the l ifecycle of this smart token.
+
+16/29
+
+
+
+Birth of an STR will be when a travel product provider issues the document with necessary rules. We will be providing several different tools to generate an STR. While for larger, more established companies this would be communicating with their proprietary software; for smaller, agile companies we will have a tool to create the token on the fly. This will allow industry to become more robust. In an example of a small to mid-sized travel agency that may sell reservations for a local hotel via token creation and getting paid with a cryptocurrency for a special, once in a while convention in town that helped to book almost all of the rooms available. Everyone, who are allowed by the network, would be able to create an asset and tokenize it with STR and sell thru the network. This will ease the international sales while opening many opportunities.
+
+Life of an STR will consist of many standard actions like returning, changing some info allowed by the provider. But with one difference, requiring almost zero human interaction. An STR, containing pre-defined rules, will be able to determine the returning or changing of date policies according to the rules set by the provider. Aside from that we will give many other actions using the capabilities of smart token. The new abilities will only be available if the issuer desires and uses certain tools. New abilities would include transfer, division, exchange and customization of the STR.
+
+A customizable STR would customizable in a way that every item in an STR will be a lego brick. To give an example, in an airline a class of ticket would have a baggage capacity of let's say 15 kilos. To be able to change it to 30 kilos of baggage allowance, the airline may need to do a change in the class of the ticket. This may take whole lot of operations since the legacy systems may not designed to handle such small operations with ease and may require a whole class to be changed in refund and reissue processes. In STR, just the baggage allowance package will be changed and necessary value change is reflected if necessary. All the parts of STR would be customizable for a single time for a single reservation or per let's say for a flight w ith different choosable options.
+
+17/29
+
+
+
+Transferring a flight ticket is currently not possible considering how the conventional systems work. An STR would be transferable if generated in a certain way, allowing an exchange market for the assets. The conditions of ability and cost of transferring an asset will be set and controlled by the issuer via smart token algorithms. Conditions may vary from the origin and destination ports to a certain time period before t he flight or to the n umber of t ransfers a vailable at the t ime of the p urchase.
+
+An STR would also be divisible, where in an example of multi legged flight plan can be used in multiple parts if required. Also in another example, to change the current flight ticket to a new one still requires a human involvement. An STR would be changeable within terms of itinerary details and also would be exchangeable with other travel assets or change ownership, which will be achieved with more structured set of rules run on smart contracts. This makes STR fungible. The main reason these new abilities can't be achieved today is traceability of these functions and results. We will get more i nto h ow t o accomplish t his on t he n ext c hapters.
+
+Death of an STR will be triggered through combinations of several conditions like expiration, usage, and clearance. As a record of the transaction, an STR simply shows the owner holding the right to a cruise ticket or a reservation of a car in a rental shop. In the future, an STR can very well be actively used to trigger a check-in to a flight or in a hotel where it even can be granted as a key to the room you are checking in. When an STR is actively used or passively expired due to its usage conditions it will become absolute and will be terminated on the system keeping the privacy o f the t raveler i ntact.
+
+The Identity
+
+An STR will be accessible through a wallet, which will be the base for all the operations available. Besides for controlling the lifecycle of the STR, traveler's wallet will contain the proof of identity. The wallet will supply the proof of identity needed with STR, therefore however the purchase of the asset is occurred the wallet will supply the necessary ID needed to be matched with the systems that need the verification of the ID.
+
+18/29
+
+
+
+As explained in the previous chapters, "who is who" is the most vital question to the industry for to properly set out the customer journey. Identity is big part of this equation. A controlled identity verification system would very much be useful to the industry. The identity verification system will be closed to outside world as the entrusted information will not be shared directly with the counterparts in the network but only the verification of the identity of the wallet holder for certain operations. This will give more security both to the wallet holder and to the other nodes in the network as the identity system will work in need-to-know basis and only the verification is shared not t he w hole sensible information.
+
+The Value
+
+With the help of blockchain technology, the value of the smart token holding the asset is consistent within the system. When travel agency sells a ticket to a customer, the money paid would be divided in terms of ticket value to the airline and service charge to the travel agency. As explained in previous chapter, the settlement is an issue between these peers. As the token issued from the provider and transferred to the buyer we will keep the record of creation and circulation. The value of the ticket can be any of the fiat currencies or a cryptocurrency. This solves the issue of settlement in a very fundamental level. The track record of the token will automatically present the current state of the world for all parties to see the real-time settlement.
+
+By using blockchain the process of settlement does not require a central authority to check and balance the accounts, it is done automatically through a series of checks and rules that run against the smart contract. A centralized authority's main function is to foresee the process, which gives the ability to rule the inconsistencies and control the transactions. This may give the authority more power than required as a mediator. In some other cases where there is no controlling authority, the parties bring either a mediator or try to solve the settlement with old fashioned ways where they run each other's record against theirs to check for inconsistencies. We believe, STR with a well-defined consensus using a well-defined smart contract will solve
+
+19/29
+
+
+
+most of the problems in industry's settlement processes. We will discuss more on the s ubject i n coming chapters.
+
+The C oin
+
+As STR contains the real value of the ticket in a predefined currency, however it does not solve two big problems; the currency of the written value against the local currency's exchange and balancing the settlement. That is why we introduce network's own currency, Aton (ATON). An STR will hold value of both the local or desired currency and in Aton. When smart contract used with Aton, this will allow the smart contract to be run properly and complete the required payments accordingly to the rules a nd s imultaneously.
+
+First use case of Aton will be in a similar fashion of gas price in Ether6. In the network, every allowed node will have the right to deploy their asset with a smart contract and that will require a transaction cost. The cost will depend on the type and complexity of the transaction. For this reason, all the institutions that are in the ecosystem will need Aton. In other words, Aton is the money that runs Further Ecosystem.
+
+Aton will be main driving force that Further Ecosystem will be running on. For this reason, as the number of operations in the Further Blockchain increases, we expect to increase the demand for Aton. At the same time, when the demand for Aton increases too much, the transaction costs will be adjusted accordingly so that the costs will not i ncrease too m uch.
+
+Second use case is for the settlement purposes, all transactions which has a value in the Further Ecosystem will both be kept in desired currency and Aton. This will allow the system to calculate the entirety of the transactions and set the balance independent of the currency used by the issuer or the purchaser. This is important for ease of calculation and conversion to other currencies. In an example of an agency in Brazil working with other agencies around the globe can see the balance of all the operations in Aton and its conversion in Brazilian Reais without depending
+
+6 h ttp://ethdocs.org/en/latest/contracts-and-transactions/account-types-gas-and-transactions.html#gasprice
+
+20/29
+
+
+
+on counterparts' particular currency or another third currency, where another conversion i s necessary.
+
+Third use case is the completion of the contract with the payment. If the issuer requires or opts in the use of Aton, it will be used for real-time payment. Since STR holds both the desired currency value and the value in Aton, the system will calculate the settlement over Aton. The value of the transferred STR will be met by the Aton and making the payment automatic. If the accounts don't have the sufficient funds the transaction will not be completed, keeping a clear real-time balance. This establishes trust between parties, where otherwise using traditional methods takes time and bureaucracy requiring a third party involvement. Depending on the issuing and purchasing parties, they may choose to use Aton for specific types of transactions.
+
+We will incentivize peers to do business in Aton by reducing the cost of the transaction sufficiently if Aton is chosen as the payment method. As explained in previous chapters the cost of the money transfer in many occasions are much higher than the actual money earned from the sale itself. Aton will also help solve the international money transfer as the adoption increases. The businesses will benefit from using Aton with each other in regards of easiness of money transfer. Above example of Brazilian agency will be complete once the settlement is done, the payment will also be done while using Aton. And both them and their counterparts will not need to worry about the conversion, say from Thai Baht to US Dollars to Brazilian Reais. Aton will help peers to do transactions they might do rarely, very easily a nd less c ost f or money t ransfer.
+
+Aton will also help to solve another business problem, where a big sum of money must be a blocked in deposit accounts to establish trust and to be later used for transactions. The money kept in the deposit or safety accounts rises as the company makes more transactions. So the company must compensate for the money kept there. With Aton there is no such problem since the transactions occur instantaneously, the buyer or the agency is as good as the balance of their current account. In some cases, it may be needed to have a minimum amount of Aton kept
+
+21/29
+
+
+
+in a deposit account by some providers. But both the amount of Aton kept would be reduced considerably regarding the current world examples. And the kept amount would be useful for more than one requiring peer, thus solving the problem of doing settlement with multiple counterparts. Thanks to the real time settlement the amount kept can directly be used for the live transactions if certain rules are set and met. The deposit accounts kept in the system will be checked against its ruling via smart contracts during the transactions. This is sometimes required by the issuing peer depending on the sale location and type. Our goal is to totally eliminate the deposit accounts.
+
+In the near future, as the adoption of cryptocurrencies increase and countries' central banks issue their currencies as cryptocurrencies the set value for STR will shift from traditional fiat currency to a cryptocurrency. In that case we will support other cryptocurrencies as instant payment methods. This will be only be possible establishing an inter-blockchain mechanism within Further's Blockchain. This is a milestone f urther d own the road.
+
+And lastly, our long-term goal is to encourage the use of Aton within and out of the Further Ecosystem. We aim to establish Aton to become like traveler's default currency and act as traveler's check where Travel Agencies can act as small cash centers to convert to local currency. As a traveler the money you carry will be more secure and funds can easily be transferred and used in cases of emergency. We want to achieve a widespread use and achieve a value stability. Along with the needs of institutions in Further Ecosystem we will introduce new tools to achieve this gain in coverage. As the adoption Aton expands another advantage it brings will be able that providers offering advantageous prices in such areas as airline tickets, room rentals, ancillary s ervice sells like l ounges, car rentals, etc.
+
+How it works?
+
+Considering the legacy systems we will introduce many tools to control the lifecycle of an STR and Aton. The life cycle will be managed on Further's Blockchain, more
+
+22/29
+
+
+
+technical details on the following chapter. The tools we plan to introduce will include the f ollowing a nd more depending on the market's needs;
+
+ API infrastructure t o i ntegrate w ith p rovider's s ystem.  APIs w ill b e c reated s pecifically for; - Airline Management Systems (i.e. Sabre, Amadeus or proprietary) - Hospitality /  P roperty M anagement S oftware - Channel M anagers - Online T ravel A gencies  APIs will e ssentially include; - Check if the buying counterpart has enough Aton to fulfill the transaction. - Create the STR with basic rules and data, setting the smart contract a nd r eturn the r esult - Checking the s tatus o f the S TR
+
+ A dashboard for all the nodes to check their balance and settlement, if they don't u se the real-time settlement.
+
+ An S TR M anagement App for c ompanies with small t ransaction n umbers.  A special digital wallet for both the institutional and individual nodes with
+
+different capabilities to manage their Aton and STR they issued, purchased or owned.
+
+ A new online STR integrated Passenger Service System (PSS) and Hospitality Management Software (HMS) for all the asset providers. Where STR is directly created o n the n etwork w ithout e xtra integrations.
+
+The STR will be triggered whenever a ticket or a reservation is created using one of the above systems. Each provider will be able to add and edit their rule set for all the actions defined for the STR, in general or even individually. The smart contract in STR will then determine the outcome of the transactions according to the rule set defined for the actions. And also the outcome of the ownership will be changed as the ticket / reservation issued for the buyer. In many cases where the issuer, buyer (can be an
+
+23/29
+
+
+
+agency or a customer) are in the system and must have Aton, so that the settlement and the payment will be instantaneous. In other conditions, the system will generate a settlement report for all the parties involved, and in real-time everyone will be able to see their balances. For activities like second hand airline ticket, or exchange of an STR to work, we will introduce more integrated systems where the STR lifecycle will deeply integrated into issuer's own system. With each transaction or operation the system w ill calculate a  t ransaction f ee a nd i t w ill be d educted f rom t he wallet.
+
+Benefits...
+
+As some of the benefits are explained in previous chapters let's sum up the overall benefits in two p arts.
+
+...For C ompanies
+
+ Real-time settlement and payment will reduce the waiting time and reduce the security deposits c urrently a gencies a re facing i n t he current s ystem.
+
+ In an example of settlement between two Hotel Wholesalers, the settlement process is still error prone and many disputes occur since the transaction is not validated with a trustable, immutable system. This will definitely reduce the n umber o f disputes and r esolution time.
+
+ Big companies will be more agile and have more control over their distribution systems.
+
+ Small companies will also benefit from the quick transactions and they would be a ble t o offer their assets that they h aven't ever met before.
+
+ These will also lower the operational cost as the transactions and settlements are done a utonomously thus requiring less h uman i nvolvement.
+
+...For Individuals
+
+ Us f ellow t ravelers w ill benefit from t he c ost reduction in the t ravel i ndustry.
+
+24/29
+
+
+
+ New properties like exchanging or transferring the ticket will give more control over t he assets and decrease t he t ime spent for t hese a ctions.
+
+ An exchange market, a peer-to-peer market will emerge within the controlled limits, will be b eneficial for a ll the c ounterparts.
+
+ As Aton's usability increases, it will become go-to cryptocurrency for travelers. Instead of carrying money and worrying about the conversions and rates, travelers first of all will pay for the service they receive with Aton and Aton will be readily available as conversion currency for withdrawals from Travel Agencies. It will be easier and more secure to transfer money and get the conversion i n local c urrency.
+
+Further Blockchain and D evelopment
+
+The capabilities we would like to achieve requires a certain type of blockchain system. STR and Aton will live on the chain and we it should be secure, private network and should withhold the operational load of the planned within the network, considering the cryptocurrency transfers as well. Here is how we are going to accomplish t his.
+
+Further Essentials
+
+In it is core the structure is to establish a B2B environment including interactions with outside world. We are planning a closed, permissioned, scalable, and a consortium7 type blockchain. To establish this first we need to define some essentials like the n odes, consensus, v alidation, contracts in t he s ystem.
+
+7  https://blog.ethereum.org/2015/08/07/on-public-and-private-blockchains/
+
+25/29
+
+
+
+Nodes vs W ell-Known Nodes
+
+It is not possible for everyone to get into the system as a proper node. We will divide all the peers in the system depending on their capabilities. Nodes' common functionality will be executing transactions. Asset issuing, rule defining nodes will be well-known nodes. Institutions with the conditions specified by the system will be taken as w ell-known nodes b y a uthentication.
+
+Well D efined C onsensus Mechanism w ith P redefined V alidators
+
+In the case of an asset being sold, transferred or in other words for all the lifetime actions, it is absolutely necessary for the asset issuer and the intermediary counterparts to take an active role. However, a certain number of other relevant third party counterparts will also be required to approve the integrity of the contract and provide consensus. For example, in an airline ticket sales with multiple flights, regardless of STR generation node, where the ticket is first sold, other airlines of the travel will be involved in validation of the generated STR. When the consensus is reached the s mart contract will be e xecuted.
+
+In a consortium type blockchain, consensus is typically reached by a preselected set of nodes. This is more appropriate approach to reach a consensus in the system, where only institutions are involved in such process and end-users only trigger actions o n STR.
+
+High P erformance a nd Scalable E nvironment for S mart Contracts
+
+In a world where 3.7 billion airline tickets and 1.1 billion hotel reservations are booked annually, we can safely assume that approximately 6 billion transactions have been made in a year assuming one-third of the transactions grouped and the money being transferred en masse. In other words, there are 190 transactions per second in average. Of course, this load is not expected to be reached in the short term but it will be an arithmetic average of the calculation and actually more instantaneous processing will be done. Bitcoin can do 5-7 transactions per second
+
+26/29
+
+
+
+and Ethereum can do 50-100 transactions per second8. Nowadays, it has been lower because of congestion. That is why we keep the consensus, issuing and consuming nodes far from each other. We should be able to reach much more. This will lower the t ransaction times t hus r educing the operational costs.
+
+Privacy
+
+The confidentiality of the information contained within an STR is essential. This information is only for the current owner of the STR. However the issuing node and the related agent can also access the required information for the operation in a need-to-know basis. In the case of tickets with more than one provider, each provider should only see the relevant section. And in certain conditions the information will be purged only leaving the necessary track info for the settlement process to be complete.
+
+Cheaper and Faster Transactions
+
+One of the main goals is to reduce the operational and financial costs that companies have already had to bear. Real-time reconciliation, a reduction in the need for bank transfer to a minimum with almost zero resetting of the amount to be held in the bloc will result in a substantial reduction in costs. A faster transaction time is a must and it w ill h elp to lower the operational c osts a s w ell.
+
+Further Roadmap
+
+First of all, Further's Blockchain will be developed and introduced, which will include the concept of Smart Travel Record. Further blockchain development will take account of the issues outlined in this document. With Smart Travel Record, the way of system integration for providers and the user interface will be developed for agencies o r other organizations that d o n ot w ant t o i ntegrate t he s ystem.
+
+In the next stage, a fully compatible airline ticketing system will be implemented with the Smart Travel Record for the use of airlines. It will be developed for the airlines
+
+8 The B usiness Blockchain: P romise, Practice, and A pplication o f t he Next I nternet T echnology, W illiam Mougayar, Page: 2 0
+
+27/29
+
+
+
+that cannot develop in accordance with the STR structure with the integration methods given in the previous stage. In addition, the wallet structure will be activated for end users to transfer assets. Through this stage provider interactions and automated a greements will b e p resented a s w ell. In the last stage, an exchange marketplace for STR will be opened to support peer to peer a sset t ransfer and will w ork i ntegrated w ith u ser wallets.
+
+Business Model
+
+In this expanding ecosystem, Further will require certain number of fees to continue the development and maintaining the system. We can quickly summarize the types and c osts o f t he fees below;
+
+ Reservation and Ticketing will require a  certain fee per transaction.  For e ach action defined i n t he STR model there w ill b e a  f ee per transaction.  Billing, Settlement, P ayment fees.  For peer-to-peer e xchange of S TR defined by the r ules.  There w ill be n o additional c ost per distribution and c learance. The fees calculated will be depending on the type and info of the transaction. But on overall, t he fees calculated will be very low considering t he current world.
+
+Conclusion
+
+Nowadays, with blockchain, many different models are emerging in the individual field a nd a re becoming i ncreasingly popular. In the coming years, many kind of institutional business models will change with the influence of Blockchain. We anticipate that individuals will become more powerful in B2B domain. It would not be so wrong to say that many mediators will change shape
+
+28/29
+
+
+
+or disappear. This also applies to the travel and tourism industry. It is foreseeable diversification of the agencies in the tourism sector and maybe the individuals to provide services such as small agencies. If the risk of payment and the cost of operation are removed, it is likely to turn into a more personalized service. In other words, e veryone c an easily act l ike a tourism agent. We also foresee that it will be possible that the purchased ticket can be sold to someone else in accordance with the rules and can be appreciated in an exchange market.
+
+29/29
+
+
+
+
