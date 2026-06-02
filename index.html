@@ -93,7 +93,8 @@ function passesFilter(r){
 }
 
 function card(r, q){
-  const pdf='./pdfs/'+encodeURIComponent(r.file);
+  // PDFs are too large to host on Pages — link to GitHub's blob viewer on master
+  const pdf='https://github.com/ImMike/Crypto_Whitepapers/blob/master/pdfs/'+encodeURIComponent(r.file);
   const txt='./text/'+encodeURIComponent(r.name+'.txt');
   let chips='';
   for(const t of r.team) chips+=`<span class="chip team">🧑 ${esc(t)}</span>`;
