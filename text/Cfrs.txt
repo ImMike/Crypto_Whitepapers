@@ -1,0 +1,1433 @@
+CodeTract Token Launch
+
+Whitepaper Building on Ethereum for mainstream transaction of value
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Contents
+
+
+
+1 Overview
+
+
+
+2
+
+
+
+2 Introduction
+
+
+
+4
+
+
+
+3 US Dollar backed token
+
+
+
+6
+
+
+
+3.1 USDCT is able to . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+
+
+3.2 Specifications . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+
+
+3.3 Future work . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+
+
+4 Physical Gold backed token
+
+
+
+9
+
+
+
+4.1 Specifications . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+
+
+4.2 Future work . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+5 Token Auction
+
+
+
+11
+
+
+
+5.1 Why Batch Auctions? . . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+5.2 Simulated Auction . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+5.3 Specifications . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+
+
+5.3.1 GCT/ETH . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+
+
+5.3.2 ETH/USDCT . . . . . . . . . . . . . . . . . . . . . . . 18
+
+
+
+5.4 Future work . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+
+
+
+6 Receive salary in fiat money backed token
+
+
+
+20
+
+
+
+6.1 Future work . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+
+
+7 CodeTract Token
+
+
+
+22
+
+
+
+7.1 Specifications . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+
+
+
+7.2 Uses of CTT . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+
+
+7.3 Future work . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+
+
+8 Budget
+
+
+
+25
+
+
+
+8.1 Budget breakdown . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+
+
+1
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+1 Overview
+
+Ethereum, being a Turing complete blockchain[1] with practical scaling plans have huge potential to be the common network processing transactions of value. These transactions used to take place through physical cash in the past. With the advancement in technology, this common network has quickly developed into a cashless medium through the use of internet banking and credit card transactions. Peering further into the future, there is a positive outlook that public Ethereum might be the next common network. Our goal is to identify current deficient areas and work on them to make Ethereum the network of choice for any transaction of value.
+
+
+
+Figure 1: Ethereum for mainstream transaction of value. 2
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Figure 2: Current convoluted on-board and off-board for Ethereum. Being Turing complete, proxy or substitutes of current services can be internalized in Ethereum, we will then be able to do away with on-boarding and off-boarding and transact through Ethereum from start to end. The fundamental step to promote transactions through Ethereum is for individuals to receive their salaries through an Ethereum transaction and in the same way, expense to organizations through Ethereum transactions. Then organizations would be able to pay salaries through Ethereum transactions, getting rid of the on and off-board process.
+
+With that goal, our team have been working on the following list of projects: 1. US dollar backed token (Beta to be on main net in March 2017) 2. Physical Gold backed token (Beta to be on main net in February 2017) 3. Token Auction (Beta to be on main net in February/March 2017) 4. Receive salary in fiat money backed token (Beta at end of 2017) 5. CodeTract Token (Token launch in March 2017)
+
+3
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+2 Introduction
+
+Huge hurdles for mainstream adoption that we are tackling includes navigating through the many centralized exchanges for on-boarding, dealing with unfamiliar currency units and inefficient off-boarding. All of these result in inconveniences and costs for users.
+
+
+
+Thus, we have first created 2 standard Ethereum tokens fully backed by the currencies of US dollars and gold, which consumers are familiar with. This will at the onset illustrate the efficiencies of Ethereum at transferring more traditional values. To bring this further, we have created an easy to use on-chain token auction that will establish Ethereum's capability with exchanging different units of value. Lastly, to create recurring demand for these services, we will provide a service for individuals to receive their salary in Ethereum tokens.
+
+
+
+4
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Figure 3: High level view on how our projects synergize and fits into Ethereum.
+
+5
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+3 US Dollar backed token
+
+The US dollar is the dominant international trade currency with a 51.9% share of the value of international currency usage[2]. The USD CodeTract (USDCT) token is a standard Ethereum token that acts as a stablecoin by being fully backed by US dollars.
+
+
+
+3.1 USDCT is able to
+
+1. Provide a familiar value of transfer to ease mainstream adoption and reduce price dependency on Bitcoin.
+
+2. Act as a stablecoin for users and dapps when price volatility is not desired.
+
+3. Be used for trading on-chain and bring more trading volume from centralized exchanges to on-chain.
+
+4. Allow permission-less programmable fiat money where anyone can create services on it as opposed to using fiat through traditional means where functions are limited by the service providers.
+
+5. Potentially be more superior than traditional fiat money by offering higher interest, cheaper and faster worldwide transfers etc.
+
+6. Allow creation of other stablecoins by acting as their collateral.
+
+7. Allow autonomous smart contracts to handle value more predictably.
+
+
+
+3.2 Specifications
+
+Main net address TBA
+
+Github TBA
+
+Website TBA
+
+
+
+6
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Name USD CodeTract
+
+Symbol USDCT
+
+Decimals 18 decimals or USD$1 = 1 USDCT = web3.toWei(1, 'ether')
+
+Type Ethereum smart contract Standard Ethereum token[3] modified to allow admin functions
+
+Gas consumption for commonly used functions
+
+
+
+Function Approximate Gas In ETH In USD
+
+
+
+transfer
+
+
+
+52,000
+
+
+
+0.00104 0.012
+
+
+
+approve
+
+
+
+46,000
+
+
+
+0.00092 0.011
+
+
+
+Assuming gas price of 20 shannons and ether price of $12.
+
+Price
+
+USD$1 = 1 USDCT Pegged and fully backed by US dollars stored under custody.
+
+Usage Fees
+
+No additional fees other than gas.
+
+Upgradability
+
+As this token is not fully autonomous, it is possible to upgrade to a new contract through either a push or pull method to fix bugs and add new functionalities. For the push method, the current contract can be halted and the ownership records can be rebuilt transparently and moved to the upgraded contract. For the pull method, the current contract can be halted and a same amount of upgraded tokens can be created. These will be left in a contract that enables token holders to obtain the upgraded tokens by sending the old tokens to the contract.
+
+Mode of distribution
+
+Authorised partners, who are pre-vetted companies will be able to create and redeem tokens by exchanging them for fiat money. They are
+
+
+
+7
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+then obligated to provide liquidity in our Token Auction. Users can primarily buy and sell the tokens through our Token Auction or through other services that integrates our token.
+
+
+
+Figure 4: Mode of distribution high level view. 8
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+3.3 Future work
+
+ Option for payment of network fees using USDCT to further improve user experience.
+
+ Option for linkage to identity to enable functions such as recovery of lost accounts.
+
+ Active integration with other dapps and services.  Upgrade to take advantage of new features of Ethereum.  On-board more authorised partners to provide liquidity.
+
+
+
+4 Physical Gold backed token
+
+The estimated total value of all mined gold is around $7 trillion, which is higher than the value of all physical fiat money[4]. Gold has been used as money for thousands of years and is only recently delinked from fiat money. The Gold CodeTract (GCT) token is a standard Ethereum token that acts as a stablecoin by being fully backed by physical gold.
+
+GCT shares many similar uses with USDCT. In addition, GCT is an alternative to fiat money by being non sovereign. GCT also enables gold to be easily and cheaply transfered like fiat money.
+
+4.1 Specifications
+
+Main net address 0x560c5528ff9886d83ae117845b180e6dcf6b5175
+
+Github https://github.com/codetract/gold
+
+Website https://gold.codetract.io
+
+Name Gold CodeTract
+
+9
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Symbol GCT
+
+Decimals 18 decimals or 1 GCT = web3.toWei(1, 'ether')
+
+Type Ethereum smart contract Standard Ethereum token[3] modified to allow admin functions
+
+Gas consumption for commonly used functions
+
+
+
+Function Approximate Gas In ETH In USD
+
+
+
+transfer
+
+
+
+52,000
+
+
+
+0.00104 0.012
+
+
+
+approve
+
+
+
+46,000
+
+
+
+0.00092 0.011
+
+
+
+Assuming gas price of 20 shannons and ether price of $12.
+
+Price
+
+Pegged and fully backed by physical gold stored under custody at BullionStar[7]. Gold are fully allocated and for multiples of 100 grams they can be converted to 100 grams PAMP .9999 gold cast bar. Refer to BullionStar[8] for more information regarding how physical gold are safeguarded including security, audit, insurance, authenticity etc.
+
+
+
+totalGold
+
+
+
+1 GCT =
+
+
+
+grams of gold
+
+
+
+totalSupply
+
+
+
+Initially this ratio is set to 1 so 1 GCT = 1 gram of gold but as storage fees accrue, totalGold will be reduced with totalSupply unchanged, reducing the ratio. Creating or redeeming GCT does not change this ratio.
+
+Usage Fees
+
+No additional fees other than gas and physical gold storage fee of 0.09% per year charged by BullionStar[9].
+
+Upgradability
+
+Similar to USDCT.
+
+
+
+10
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Mode of distribution
+
+Similar to USDCT, authorised partners, who are pre-vetted companies will be able to create and redeem tokens by exchanging them for physical gold. They are then obligated to provide liquidity in our Token Auction. Users can primarily buy and sell the tokens through our Token Auction or through other services that integrates our token.
+
+
+
+4.2 Future work
+
+ Automated physical gold redemption for GCT holders.  Option for linkage to identity to enable functions such as recovery of
+
+lost accounts.  Active integration with other dapps and services.  Upgrade to take advantage of new features of Ethereum.  On-board existing gold dealers as authorised partners to provide liq-
+
+uidity.
+
+
+
+5 Token Auction
+
+Token Auction is a smart contract on Ethereum that enables on-chain exchange of standard tokens. In its current form, settlement happens once a day with an externally fed but publicly verifiable settlement price. An external price is used instead of the equilibrium price so as to jump-start the auction and prevent price gaming due to initial low liquidity. It is an alternative to centralized and decentralized exchanges and will be the primary way to obtain USDCT and GCT.
+
+5.1 Why Batch Auctions?
+
+At present, exchanges pre-dominantly function as Continuous Limit Order Book (CLOB), where there are limit buy and sell orders on the book that can be continuously executed anytime with a new order if their price matches. In contrast, Token Auction is a frequent batch auction that changes trade executions from continuous to discrete time. Below is a characteristic comparison of Token Auction against currently popular centralized exchanges[5][6].
+
+11
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Characteristic On-chain Transparency Price Efficiency Counterparty Risk Speed advantage Reliability Fees Liquidity Settlement Execution Time
+
+
+
+Centralized Exchanges (CE) no low low high
+
+valuable uncertain percentage based spread across time
+
+instant continuous
+
+
+
+Token Auction (TA) yes high high low
+
+not valuable high
+
+low flat fee concentrated depends on network
+
+discrete
+
+
+
+On-chain
+
+Being on-chain allows other smart contracts to participate in the auction and brings about many advantages discussed below.
+
+Transparency
+
+For TA, all the orders details, mechanism of auction and execution of orders can be inspected and has no bias towards any participant. For CE, a high level of trust is required to ensure rules are strictly adhered to for all participants such as all orders are adequately backed, no trading on proprietary data etc.
+
+Price Efficiency
+
+With an externally fed price, TA can settle at the same prices that CE are trading at even with much lower liquidity. TA is also able to execute large orders with no spread.
+
+Reliability
+
+CE have a history of DDOS attacks, unscheduled maintenance, server outages during periods of high trading activity. TA is hosted on a decentralized network thus more resistant to DDOS attacks and has no single point of failure.
+
+Counterparty Risk
+
+CE have a history of hacks, fraud and a high level of trust is needed to ensure the assets are safeguarded. The assets in TA are managed by its code which ensures all matched orders can be fulfilled and withdrawn.
+
+
+
+12
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Speed advantage
+
+The mechanism in CE creates a race to react, giving huge advantages to traders with better access speed and reaction to changes in market conditions. This can be socially wasteful as resources are spent to obtain minor speed improvements. For TA, minor speed advantages have little value as orders can only be executed in discrete time.
+
+Fees
+
+Fees vary across CE but most participants are paying a percentage based fee for executed orders but creating and canceling orders are free. For TA, there is a low flat fee for all orders mainly attributed to gas, more details can be found under Specifications below.
+
+Liquidity
+
+For TA, liquidity can be concentrated near the settlement time. For CE, liquidity has to be spread across all venues, across time.
+
+Settlement
+
+For CE, orders can be executed instantly but there are often restrictions, cost and lead time with moving assets into and out of exchanges. For TA, assets can be removed right after the settlement price is finalized.
+
+Execution Time
+
+For CE, it is possible to execute an order anytime provided there are matching orders in the book. For TA, orders execution is only done once a day.
+
+
+
+13
+
+
+
+CodeTract Token Launch
+
+5.2 Simulated Auction
+
+
+
+https://codetract.io
+
+
+
+Figure 5: 3 stages of the auction.
+
+
+
+Consider the following submitted orders in order.
+
+
+
+Customer Side Quantity Price
+
+
+
+A
+
+
+
+Bid 1000 0.32
+
+
+
+B
+
+
+
+Ask 1000 0.50
+
+
+
+C
+
+
+
+Bid 1000 0.49
+
+
+
+D
+
+
+
+Bid 1500 0.45
+
+
+
+E
+
+
+
+Ask 2000 0.41
+
+
+
+F
+
+
+
+Bid 2000 0.25
+
+
+
+G
+
+
+
+Ask 1000 0.44
+
+
+
+H
+
+
+
+Ask 500 0.27
+
+
+
+I
+
+
+
+Ask 1000 0.35
+
+
+
+J
+
+
+
+Bid 500 0.42
+
+
+
+K
+
+
+
+Ask 1500 0.45
+
+
+
+From the table, the aggregated demand is 6000 units and supply is 7000 units. When sorted by ascending order for price and cumulative demand and supply, the table will be as follows.
+
+
+
+14
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Price 0.25 0.27 0.32 0.35 0.41 0.42 0.44 0.45 0.49 0.50
+
+
+
+Cumulative Demand 6000 4000 4000 3000 3000 3000 2500 2500 1000 0
+
+
+
+Cumulative Supply 0 500 500
+
+1500 3500 3500 4500 6000 6000 7000
+
+
+
+Figure 6: Demand and supply plotted.
+
+Assume the externally obtained settlement price is 0.45. From the chart, all bid orders that are equal or above this settlement price will be matched with ask orders that are equal or below this closing price. However, given that the settlement price may not be the equilibrium price of the bid/ask orders, this may not result in maximum executed quantity. In this case, the bid orders that should be filled are C and D which make up a total quantity of 2500. The ask orders to be filled, on the other hand, would be E, G, H, I and K which make up a total quantity of 6000. Supply is evidently higher than demand at this settlement price. Hence, bid orders C and D would be filled by ask orders E, H, I with E having a partial fill of 1000 units at the
+
+15
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+price of 0.45 while ask orders G and K would remain unfilled. Note that price priority have precedence then time priority is taken into account if the price are the same. The rest of the orders will remain unfilled. All matched quantities will be executed at the settlement price.
+
+
+
+Customer Side Quantity Price Executed Quantity Executed Price
+
+
+
+A
+
+
+
+Bid 1000 0.32
+
+
+
+0
+
+
+
+-
+
+
+
+B
+
+
+
+Ask 1000 0.50
+
+
+
+0
+
+
+
+-
+
+
+
+C
+
+
+
+Bid 1000 0.49
+
+
+
+1000
+
+
+
+0.45
+
+
+
+D
+
+
+
+Bid 1500 0.45
+
+
+
+1500
+
+
+
+0.45
+
+
+
+E
+
+
+
+Ask 2000 0.41
+
+
+
+1000
+
+
+
+0.45
+
+
+
+F
+
+
+
+Bid 2000 0.25
+
+
+
+0
+
+
+
+-
+
+
+
+G
+
+
+
+Ask 1000 0.44
+
+
+
+0
+
+
+
+-
+
+
+
+H
+
+
+
+Ask 500 0.27
+
+
+
+500
+
+
+
+0.45
+
+
+
+I
+
+
+
+Ask 1000 0.35
+
+
+
+1000
+
+
+
+0.45
+
+
+
+J
+
+
+
+Bid 500 0.42
+
+
+
+0
+
+
+
+-
+
+
+
+K
+
+
+
+Ask 1500 0.45
+
+
+
+0
+
+
+
+-
+
+
+
+5.3 Specifications
+
+Name Token Auction
+
+Trading pairs GCT/ETH, where B is GCT ETH/USDCT, where B is ETH
+
+5.3.1 GCT/ETH
+
+Main net address 0x48F230D47914cBE8F223344b7763f064336e8FA5
+
+Github https://github.com/codetract/tokenAuction
+
+Website https://gcteth.codetract.io
+
+16
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Type Ethereum smart contract
+
+Gas consumption for commonly used functions
+
+
+
+Function buyB sellB cancelBuyB cancelSellB settleBuyB settleSellB
+
+
+
+Approximate Gas 220,000 220,000 73,000 73,000 81,000 81,000
+
+
+
+In ETH 0.00440 0.00440 0.00146 0.00146 0.00162 0.00162
+
+
+
+In USD 0.053 0.053 0.002 0.002 0.002 0.002
+
+
+
+Assuming gas price of 20 shannons and ether price of $12.
+
+Settlement price derivation
+
+Price has 9 decimals or web3.toWei(0.123456789, 'shannon') . Every day at 11:00am UTC the price will be uploaded, which usually takes less than 30 minutes. The formula is
+
+GR(1 + P ) GCT /ET H =
+
+ET H/U SD
+
+Where G is the gold per gram obtained from the morning or previous available session of the LBMA gold auction available at ICE[10] R is the totalGold/totalSupply ratio obtained from the GCT contract P is the physical gold premium to account for the extra costs associated with the handling of physical gold[12] ETH/USD is the 30 minute average of GDAX ether price available at GDAX[11]
+
+
+
+An example 36.36  0.9991  (1 + 0.02)
+
+GCT /ET H = 12.1
+
+= web3.toWei(3.062299299, 'shannon')
+
+Minimum order Buy GCT - 0.1 ETH Sell GCT - 0.01 GCT
+
+17
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Order priority
+
+All orders with price not worse than the settlement price gets executed by price priority then time priority if there is a tie.
+
+Usage fees
+
+Buy/Sell order - No additional fees other than gas Cancel order - No additional fees other than gas Pull settlement - No additional fees other than gas Push settlement - 0.01 ETH and/or 0.005 GCT Filled Buy order settlement - Additional 1 wei ETH to account for rounding error
+
+Example single trip fees
+
+
+
+Function approve sellB settleSellB (push)
+
+Total
+
+
+
+Approximate Fees In ETH 0.00092 0.00440 0.01000
+
+0.01532
+
+
+
+In USD 0.011 0.053 0.120
+
+0.184
+
+
+
+Function approve sellB cancelSellB
+
+Total
+
+
+
+Approximate Fees In ETH 0.00092 0.00440 0.00146
+
+0.00678
+
+
+
+In USD 0.011 0.053 0.002
+
+0.066
+
+
+
+Assuming gas price of 20 shannons and ether price of $12.
+
+
+
+5.3.2 ETH/USDCT
+
+Main net address TBA
+
+Github TBA
+
+Website TBA
+
+
+
+18
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Type Ethereum smart contract
+
+Gas consumption for commonly used functions
+
+
+
+Function buyB sellB cancelBuyB cancelSellB settleBuyB settleSellB
+
+
+
+Approximate Gas 220,000 220,000 73,000 73,000 81,000 81,000
+
+
+
+In ETH 0.00440 0.00440 0.00146 0.00146 0.00162 0.00162
+
+
+
+In USD 0.053 0.053 0.002 0.002 0.002 0.002
+
+
+
+Assuming gas price of 20 shannons and ether price of $12.
+
+Settlement price derivation
+
+Price has 9 decimals or web3.toWei(0.123456789, 'shannon') . Every day at 12:00pm UTC the price will be uploaded, which usually takes less than 30 minutes. The formula is
+
+ET H/U SDCT = ET H/U SD
+
+Where ETH/USD is the 30 minute average of GDAX ether price available at GDAX[11]
+
+
+
+An example
+
+ET H/U SDCT = 12.0414 = web3.toWei(12.0414, 'shannon')
+
+
+
+Minimum order
+
+Buy ETH - 1 USDCT Sell ETH - 0.1 ETH
+
+Order priority
+
+All orders with price not worse than the settlement price gets executed by time priority.
+
+
+
+19
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Usage fees
+
+Buy/Sell order - No additional fees other than gas Cancel order - No additional fees other than gas Pull settlement - No additional fees other than gas Push settlement - 0.1 USDCT and/or 0.01 ETH Filled Buy order settlement - Additional 1 wei USDCT to account for rounding error
+
+Example single trip fees
+
+
+
+Function approve buyB settleBuyB (push)
+
+Total
+
+
+
+Approximate Fees In ETH 0.00092 0.00440 0.01000
+
+0.01532
+
+
+
+In USD 0.011 0.053 0.120
+
+0.184
+
+
+
+Function approve buyB cancelBuyB
+
+Total
+
+
+
+Approximate Fees In ETH 0.00092 0.00440 0.00146
+
+0.00678
+
+
+
+In USD 0.011 0.053 0.002
+
+0.066
+
+
+
+Assuming gas price of 20 shannons and ether price of $12.
+
+
+
+5.4 Future work
+
+ Standardize price feed for use by other apps and services.  Determine settlement price based on equilibrium price of on-chain de-
+
+mand (bid orders) and supply (ask orders).  Enable optimizations to allow an increase in the frequency of auctions
+
+such as auction every 3 hours instead of once a day.  Consider adding other popular token pairs.  Decentralized determination of settlement price.  Better user experience.
+
+
+
+20
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+6 Receive salary in fiat money backed token
+
+Ethereum is not yet ready for mainstream adoption. However, many aspects are being worked on by the community, from making more stable clients, creating services distinct to Ethereum, creating proxies or substitutes of existing traditional services, to communicating with other chains. For us, beyond the synergy of having familiar mediums of exchange like USDCT, GCT and an easy platform for exchange like Token Auction, it is also imperative to create a stable and recurring usage of these services. Salary satisfies these criteria as it is stable, recurring and is the source which spur other routine transactions such as expense on products and services to occur. Therefore, if the salary transaction occurs in Ethereum, it will increase the likelihood for subsequent transactions to be executed in Ethereum, provided that the proxy or substitute services are available.
+
+Hence, our team's proposal is to create a service in cooperation with employers such that employees have the option to receive their salary in USDCT. This is a much lower hurdle than to receive their salary in bitcoin or ether. For existing Ethereum users, this will provide an avenue to reduce dependencies on centralized forms of exchanges. For many other users of this service, this will be their first contact with Ethereum and it is very important to leave them with a good impression. Hence, a minimum quality of user experience must exist in Ethereum first. This should consist no less than a fully end to end mobile experience. An example would be mobile apps to check that they have received their salary, to transfer USDCT to other users, to exchange into other tokens and spend them in a similar fashion as debit or credit cards. Our team will vet and recommend high quality apps/services, provide new uses with adequate knowledge of Ethereum and its common pitfalls and provide a line of support for interacting with Ethereum.
+
+The initial phase would be to provide users the option of receiving partial amount of their salaries in USDCT instead of the full sum. The initial targeted markets will be academia, startups, venture capital firms, tech companies, companies already experimenting with Ethereum and blockchain, followed by the wider community. This has the potential to dramatically increase Ethereum's user base and transactions.
+
+
+
+6.1 Future work
+
+ Provide service for employees to receive part of their salary in USDCT.
+
+
+
+21
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+7 CodeTract Token
+
+Doing a public token launch is a great way to reach out to the community and build a network of users. CodeTract token (CTT) will be launched through a creation process using a smart contract running on Ethereum. To provide ease of access, a web based user interface will be provided where participants may use to join the token launch. Interested participants can show their support by sending ether to the CTT contract. CTT will be created and sent to the participants upon receipt of ether at the fixed rate of 100 tokens to 1 ether.
+
+Participants must only send ether to the CTT contract after the start of the token launch period which is determined by a block number. This token launch will conclude either by (1) reaching the specified end block (approximately one calendar month later) or (2) the maximum amount of tokens have been created. No more tokens can be created after this launch.
+
+The token launch will be announced through the following channels.
+
+1. Website: https://codetract.io
+
+2. Twitter: https://twitter.com/codetractio
+
+3. Reddit: https://www.reddit.com/user/codetractio
+
+4. Medium: https://medium.com/@codetractio
+
+Please ensure that the destination address matches the CTT contract before sending any ether.
+
+
+
+7.1 Specifications
+
+Main net address TBA
+
+Github TBA
+
+Website TBA
+
+Name
+
+
+
+22
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+CodeTract Token Symbol
+
+CTT Decimals
+
+18 decimals or 1 CTT = web3.toWei(1, 'ether') Type
+
+Ethereum smart contract Standard Ethereum token[3] modified to allow creation only during token launch Price 1 ETH = 100 CTT throughout the token launch Mode of distribution The CTT contract address will be released with an attached terms. Participants must agree to the terms. Participants can then join by sending ether directly to the CTT contract address. CTT will be created and exchanged for the ether in the same transaction. Ether goal 50,000 ether for minimum goal and 450,000 ether for maximum goal Start block and date TBA End block and date TBA Maximum tokens possible 50,000,000 CTT Tokens allocated to founders 5,000,000 CTT (10%) Tokens available for participants 45,000,000 CTT
+
+
+
+23
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+7.2 Uses of CTT
+
+Currently, there are minimal or no fees associated with all the projects. However, when sufficient scale is reached, CTT will be required to access and pay for the services of these projects. The bulk of the fees will most probably be collected through the Token Auction as transaction fees for exchanging tokens and data fees for access to the on-chain price feed.
+
+As CTT itself is unable to work on the projects, CODETRACT PTE. LTD., the legal entity registered in Singapore will be engaged for the work required. For any work which requires a drawdown of CTT's funds, a proposal has to be made public at least 7 calendar days before the withdrawal of funds. To ensure alignment of interests between the proposed work and CTT holders, CTT holders can veto through a smart contract. To initiate a veto, the CTT holder must deposit 1% of all CTT then other CTT holders will have 7 calendar days to vote. The veto passes if a super-majority of at least 0.666 (66.6%) is reached. When the veto passes, the 1% deposit is returned and all of CTT's funds can be redeemed in proportion to each CTT holder's share of CTT. However if the veto fails to pass, the 1% deposit is returned if it garnered at least 0.2 (20%) of votes but is forfeited and added to CTT's funds if it is not able to gather at least 0.2 (20%) of votes. The veto contract can be used anytime even in the absence of any new proposals. This whitepaper will serve as the first proposal to drawdown the minimum goal of 50,000 ether and is passed if the minimum goal is reached.
+
+Although CTT is only a token now that allows transfer between accounts, there are plans to create an autonomous organization for CTT holders. This would allow CTT holders discretion over the fees to charge, new projects, new service providers, use of funds etc. This would be done later after our other projects have achieved scale to give time for Ethereum to mature and so as not to affect the current focus on our projects.
+
+Regarding the 10% CTT allocated to founders, they will be locked in a smart contract which will initially release 25% of those CTT and subsequently 25% of those CTT every quarter over the next 9 months. This provides token owners the assurance that the founders remain committed to developing our projects beyond this token launch.
+
+
+
+24
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+7.3 Future work
+
+ Smart contract to provide release of CTT's funds through a super majority vote.
+
+ CTT autonomous organization.
+
+
+
+8 Budget
+
+The amount of ether obtained through this token launch will directly determine the amount of development of the projects proposed above.
+
+8.1 Budget breakdown
+
+
+
+Figure 7: Budget breakdown.
+
+Employment - 60% This consists of salary and compensation for team members such as developers etc.
+
+25
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+Sales and Marketing - 10%
+
+This refers to outreach efforts to non-Ethereum companies and individuals to educate and get them on-board the Ethereum platform to build an even more vibrant eco-system. This includes forming new partnerships with other companies, promoting our services through online mediums and at physical events.
+
+General and Administrative - 12%
+
+This includes rental, utility, equipment costs for team members and server costs to keep our services online.
+
+External Consultants - 10%
+
+This includes engagement of services such as legal and audits to provide an expert's view of our issues.
+
+Contingency Sum - 8%
+
+A sum is left aside to cater for unexpected events or issues to prevent our plans and services from being disrupted.
+
+
+
+
+
+26
+
+
+
+CodeTract Token Launch
+
+
+
+https://codetract.io
+
+
+
+References
+
+[1] Vitalik Buterin: A Next-Generation Smart Contract and Decentralized Application Platform, 2017, available at link.
+
+[2] SWIFT: Worldwide Currency Usage and Trends, 2015, available at link. [3] Ethereum Improvement Proposal: ERC Token standard #20, 2017, avail-
+
+able at link. [4] The Money Project: All of the Worlds Money and Markets in One Visu-
+
+alization, 2015, available at link. [5] J. Doyne Farmer, Spyros Skouras: Review of the benefits of a continuous
+
+market vs randomised stop auctions and of alternative Priority Rules , 2012, available at link. [6] Eric Budish, Peter Cramton, and John Shim: Implementation Details for Frequent Batch Auctions: Slowing Down Markets to the Blink of an Eye, 2015, available at link. [7] BullionStar: Homepage, 2017, available at link. [8] BullionStar: FAQ, 2017, available at link. [9] BullionStar: Fees, 2017, available at link. [10] ICE: LBMA Gold Price, 2017, available at link. [11] GDAX: ETHUSD Price, 2017, available at link. [12] BullionStar: Physical Gold Premium, 2017, available at link.
+
+
+
+27
+
+
+
+

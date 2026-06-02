@@ -1,0 +1,689 @@
+2017
+
+This version of the HireMatch whitepaper is released as a working draft - with the purpose of introducing the idea and receiving feedback from the blockchain community. If you want to contribute by leaving your comment or review, please email: admin@hirematch.io
+
+
+
+WHITEPAPER
+
+Disclaimer: The information in this document is subject to change or update without notice and should not be construed as a commitment by HireMatch. This document is for informational purposes only and does not constitute an offer or solicitation to sell shares or securities in HireMatch.io or any related or associated company. Any such offer or solicitation will be made only by means of a confidential offering memorandum and in accordance with the terms of all applicable securities and other laws.
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+2
+
+
+
+TABLE OF CONTENTS
+
+
+
+Introduction
+
+
+
+04
+
+
+
+Mission Statement
+
+
+
+05
+
+
+
+What are Smart Contracts?
+
+
+
+05
+
+
+
+The History and Future of Job Boards
+
+
+
+06
+
+
+
+Current "Job Board" Industry
+
+
+
+07
+
+
+
+System Implementation
+
+
+
+08
+
+
+
+What is an Agent?
+
+
+
+09
+
+
+
+What is a Bounty?
+
+
+
+09
+
+
+
+The HireMatch Token (HIRE)
+
+
+
+09
+
+
+
+Token Acquisition
+
+
+
+10
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+3
+
+
+
+Indirect Profit Sharing / Buy Back
+
+
+
+10
+
+
+
+HireMatch Roadmap
+
+
+
+11
+
+
+
+Meet The Team
+
+
+
+11
+
+
+
+Conclusion
+
+
+
+11
+
+
+
+Terms and Conditions
+
+
+
+12
+
+
+
+No Guarantee of Income or Profit
+
+
+
+12
+
+
+
+Regulatory Uncertainty
+
+
+
+12
+
+
+
+HIRE Tokens are Not an Investment
+
+
+
+12
+
+
+
+Quantum Computers
+
+
+
+12
+
+
+
+Insufficient Use
+
+
+
+12
+
+
+
+Risk of Loss of Funds
+
+
+
+12
+
+
+
+Risk of Failure
+
+
+
+12
+
+
+
+The Risk of Using New Technologies
+
+
+
+12
+
+
+
+Integration
+
+
+
+12
+
+
+
+Disclaimer of Warranties
+
+
+
+12
+
+
+
+References
+
+
+
+13
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+4
+
+"In the future, more and more things we do (passive or active) are going to get compensated by a token of some sort. In the same way today governments are issuing money, in the future companies will be issuing tokens to marry that value to a function that they have, or a product of their specific offering.", W illiam Mougayar at Ethereal Summit 2017.
+
+INTRODUCTION
+
+Innovation and competition go hand in hand, one always driving the other, and the employment recruitment industry has hist orically been no exception to this rule.
+
+Job boards are an essential part of the recruitment process. With employers and job-seekers alike using these boards as a main method of getting the word out about availability, it is nearly impossible to go through the job searching process without coming into contact with a job board. Despite this, very few users of job boards understand the evolution that these services have gone through.
+
+Although job boards have changed in the past 15 years, one thing remains the same, they all use a "centralized" business model. Centralized applications(websites) are curr ently the most widespread model for the job board market, and the vast majority of the internet in general. Indeed. com, Monster.com, and Careerbui lder.com all follow this model. Centralized systems directly control the operations and flow of information from a single center.
+
+These legacy sites are centralized and do very little to find quality applicants through the high-powered engine of social networks and other information sources. These sites are time consuming and can be overly complicated for users, especially when they are bounced to company homepages repeatedly. In addition, these sites are not fast enough for the growing millennial workforce.
+
+HireMatch.io is a Decentralized Application (DApp) that will eliminate the friction and costs of third party intermediaries like expensive recruiters, when firms are searching for talent. HireMatch will reduce the cost to find, interview and acquire new employees by removing unnecessar y friction and creating a more efficient marketplace by incentivising "Agents" with our ERC20 token we call "HIRE". [2]
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+5
+
+MISSION STATEMENT
+
+HireMatch has a mission to revolutionize and disrupt the recruitment industry by improving the current job marketplace quality worldwide, reduce the costs across the board, increase employee quality and create a community of people. Via our (HIRE) Token, we will implement a democratization of the job market. By using and implementing this platform, agents will receive rewards in the form of (HIRE) tokens, giving power back to the people and away from large corporate job boards. Our ultimate goal isn't to compete directly with other cryptocurrencies, such as Bitcoin, but rather to provide a solution and support for the current woes in the job board and recruitment industry.
+
+WHAT ARE SMART CONTRACTS?
+
+Since 2009, blockchain has gained widespread use in every conceivable industry such as finance, real estate and healthcare. Not to mention, an array of new blockchain-enabled businesses and services coming into the market in the past 2 years. With the arrival of ethereum to the blockchain space in late 2015 and its "smart contract" technology, the blockchain and its value have grown exponentially and is becoming more and more popular. [2], [4]
+
+Smart contracts are an innovative new way of exchanging money, property, shares, or anything of value in a transparent, conflict-free way while avoiding the services of a middleman, in the case of HireMatch.io; recruiters.
+
+Smart contracts contain code that can be used to make decisions, store data, and send cryptocurrency to others. A Smart Contract is defined by it's creators, but the services it offers, provided by the ethereum network, executes automatically.
+
+The community at large can participate or audit all HireMatch smart contracts on Github.
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+6
+
+
+
+THE HISTORY AND FUTURE OF JOB BOARDS
+
+
+
+The first job board created was named the Online Career Center. Developed by Bill Warren, the Online Career Center launched in 1992 merging with Monster in 1995.
+
+Despite job boards consistently having the same goals throughout their existence, the content advertised on them changed. The original job boards were considered generalists because they advertised for all types of job openings. This changed later in the 90s when niche boards and networks began to take over the industry . Niche boards allowed recruiters and job-seekers to specify their qualifications and industry, which opened up easier communication to those qualified. Networks used multiple sites to open up the possibility of recruiters targeting by location without having to use multiple vendors.
+
+Job aggregators changed the industry when they arrived in the middle 2000s. These aggregators, such as Indeed, allowed employers and job-seekers to use a platform to search across all available job websites, which eased the process of finding specific openings.
+
+Social media became popular around this time as well. Sites such as LinkedIn brought a twist to the job search because they allowed recruiters to openly search for qualified candidates instead of having to wait for applications.
+
+
+
+The classified section of a newspaper evolved into a wide variety of potential employment candidates because of the expanded use of the Internet. Now that job boards have become widely known as one of the best ways to land a job, where will they go next?
+
+Job boards have continued to evolve ever since their creation, so there is no reason to think that they will stop here. In fact, some boards are already moving into the next era of job boards.
+
+As time passes, job boards are moving closer to the full implementation of social media. The ability to post and share job openings are already available at sites such as LinkedIn, but are also becoming available in traditional job board sites.
+
+Another characteristic that job boards are evolving towards is the use of matching. Instead of either party having to search for someone that fits the qualifications, job boards are now offering the ability to match employees with their best suitors, saving time for everyone involved.
+
+Matching is the future of the recruiting industry. This is the main reason that the HireMatch.io platform has received enormous attention from investors. HireMatch. io offers a lower cost, higher speed to acquisition, a better overall quality of applicants.
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+7
+
+CURRENT "JOB BOARD" MARKETPLACE
+
+The global staffing market currently sits at a total of $404 billion. The average recruitment commission is $37,500 per installment of
+
+highly paid staff (above 100k).
+
+At this time, when a company is looking to fill a job, the first places they go to are Indeed.com, Monster.com, or Careerbuilder.com. Without a doubt, the recruitment industry is dominated by these
+
+major players.
+
+These legacy sites are centralized and do very little to find quality applicants through the high-powered engine of social networks and other information sources. These legacy sites are time consuming and can be overly complicated for users, especially when they are bounced to company homepages repeatedly. In addition, these sites are not fast enough for the growing millennial
+
+workforce.
+
+Issues that exist in the current recruitment industry are as follows: 1. Attracting potential applicants attention(noise). 2. Finding enough qualified candidates 3. High Cost of Employee Acquisition
+
+HireMatch.io will solve the above issues with a decentralized mobile application/platform.
+
+HireMatch.io will solve the noise issue by using the fundamental principle of networking: the know, like and trust factor. Agents can and will use their friends and associates connected by Facebook, LinkedIn or personal contacts to recommend with job offers. Agents can also be smart applications built on our API that harness the power of social media (Facebook, twitter, linkedin) to find and capture a potential
+
+applicant's attention.
+
+HireMatch.io will attack the "Finding enough qualified candidates" issue by using our incentivized network to find, validate and recruit talent. By decentralizing the recruitment process, HireMatch.io shall effectively
+
+lower the resource acquisition cost and create a more democratic and free job market in the process.
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+8
+
+
+
+SYSTEM IMPLEMENTATION
+
+It has been proven time and time again that decentralized markets make better decisions than centralized ones. [3] We created HireMatch.io to be a truly decentralized, blockchain-based Employee Recruitment Platform. Let's see how a potential transaction will work.
+
+
+
+2 The HF Manager puts the job requirements together and selects a bounty of 10,000 HIRE Tokens to acquire this new employee.
+
+
+
+4
+
+
+
+1
+
+
+
+3 The job gets published as a smart Contract
+
+
+
+5
+
+
+
+1. Acme Software is growing fast and needs to find a new software engineer.
+
+2. The HR Manager puts the job requirements together and selects a bounty of 10,000 (HIRE) Tokens to acquire this new employee.
+
+3. The HR Manager acquires (HIRE) tokens to post the job to the HireMatch.io Network.
+
+4. The job gets published via a Smart Contract on the Ethereum blockchain.
+
+
+
+5. Agents that fit the specific requirements will then get a notification that a smart contract has been issued and are able to refer LinkedIn contacts, Facebook contacts and phone contacts to find suitable applicants to the posted job.Agents can be humans or applications connected via our open API.
+
+6. When the applicant is selected by the company, the final bounty is distributed via the smart contract to every agent who had a part in hiring the new employee (Including referrals and Interviews that were accepted by the company) and the contract is closed.
+
+
+
+Using this model we plan to dramatically disrupt the employment recruitment industry and take considerable market share very quickly as cryptocurrency and blockchain technology become mainstream in the next few years.
+
+
+
+HireMatch is a platform that will be engineered to leverage both Ethereum blockchain technologies and it's Smart Contracts to increase efficiencies and decrease cost to employee acquisition that many companies face. HireMatch is a closed loop payment system, meaning no new tokens will be created or destroyed and HireMatch will only accept (HIRE) to fuel its network of agents.
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+9
+
+
+
+WHAT IS AN AGENT?
+
+An agent can be a human agent acting via our mobile app or website or a smart software agent connected via our API. Anyone will be able to access our API to create innovative applications and processes to deliver better and higher quality candidates through referrals and validation. Using the API model, we can expect exponential increase in the agent's effectiveness and quality, as well as a dramatic increase in the value of our (HIRE) Token.
+
+
+
+WHAT IS A BOUNTY?
+
+A bounty is the amount in (HIRE) tokens that a company places into the smart contract to be distributed upon successful execution of the contract.
+
+Here is how a successful bounty share could work (exact percentages are still under development and are subject to change.)
+
+BOUNTY SHARE
+
+
+
+THE HIRE TOKEN (HIRE)
+
+The token economy is a reward system used to reward a target behaviour. [6]
+
+
+
+25% 35%
+
+15% 25%
+
+
+
+(HIRE) is an ERC20 token that represents partial ownership and fuel for the HireMatch job network. The primary usage of the token is to incentivize user agents to find, recommend and verify applicants for job listings.
+
+Agents are paid in (HIRE) via execution of a smart contract, when recommending and validating applicants and/or when a referred applicant is hired.
+
+(HIRE) is the primary and only fuel for driving the HireMatch employee recruitment platform.
+
+We will issue 100,000,000 (HIRE) one time only and will never issue any more.
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+10
+
+
+
+TOKEN AQUISITION
+
+
+
+The HireMatch Token initial distribution will be in the form of a presale.
+
+Companies and/or Recruiters will need to acquire (HIRE) in order to access and post job offers to the platform. (HIRE) can be purchased via the HireMatch platform or an exchange.
+
+(HIRE) can be acquired through HireMatch's website and mobile app, through many crypto-currency markets and from individuals via transfer.
+
+Platform users will have the ability to acquire (HIRE) by sending Ether ("ETH") to the (HIRE) creation contract on the blockchain during a pre-sale.
+
+
+
+Token users will be able to acquire (HIRE) at a reduced rate by sending ETH to the pre sale smart contract address. Those with other cryptocurrencies such as BTC or Ethereum Classic can purchase (HIRE) via a conversion service that will be available on the HireMatch.io web page.
+
+A 5% allocation of (HIRE) tokens will be allotted to the founding team members, subject to a twelve(12) month holding period. These tokens will serve as longterm incentive for the HireMatch founding team and to HireMatch employees.
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+11
+
+
+
+HIREMATCH ROADMAP
+
+
+
+We intend to put HireMatch through rigorous research, development, testing and marketings over the next few years, and the various milestones we want to achieve for our users, developers, and the ecosystem overall. In total, there are 4 phases called: Research, Expansion, Marketing and The Future; each with its own milestones, goals, and focus.
+
+
+
+HIREMATCH V0.1 RELEASE
+
+
+
+QUANT INDEX INCORPORATED
+
+
+
+SALE ENDS, TOKENS DISTRIBUTED
+
+
+
+REVIEW APP RELEASE
+
+
+
+PUBLIC BETA LAUNCH
+
+
+
+JAN 2017
+
+
+
+MAR 2017
+
+
+
+JUN 2017
+
+
+
+OCT 2017
+
+
+
+NOV 2017
+
+
+
+Q4 2017
+
+
+
+Q1 2018
+
+
+
+Q2 2018
+
+
+
+Q3 2018
+
+
+
+Q4 2018
+
+
+
+MOBILE UI COMPLETION
+
+
+
+PUBLIC TOKEN SALE BEGINS
+
+
+
+REVIEW PLATFORM LAUNCH
+
+
+
+MARKET RESEARCH INTEGRATION
+
+
+
+BEGIN ONBOARDING COMPANIES
+
+
+
+1. Research - Gather the much needed market intelligence to plan and implement a scalable, robust decentralized job recruitment platform.
+
+2. Implementation & Expansion - Create and release beta version of the HireMatch.io platform mobile application, API and web application.
+
+3. Marketing - Market the platform and its benefits to the general public and the recruitment industry via traditional advertising(online and offline), tradeshows and webinars. Outreach to HR managers, recruiters or anyone that can benefit from the HireMatch.io platform.
+
+
+
+4. The Future -Build up the HireMatch infrastructure and API and continue 2, 3 and 4 infinitely.
+
+
+
+MEET THE TEAM
+
+
+
+ARMANDO PANTOJA CHIEF ARCHITECT, COFOUNDER
+
+
+
+CHAD KETTERING CHIEF MARKETER, COFOUNDER
+
+
+
+ALADIN BEN SASSI UI/UX DESIGNER
+
+
+
+M.J. PANTOJA ADVISOR, HUMAN RESOURCE EXPERT
+
+
+
+BAER NOLDUS RANDSTAD
+
+ADVISOR
+
+
+
+CONCLUSION
+
+The advancement of blockchain technology is becoming apparent in all industries. Most of these job boards are taking advantage of the wider audience available through the use of mobile applications and other advancing technology. HireMatch.io is primed to take advantage of these trends and disrupt the job board and job marketplace.[4]
+
+If you believe in what we are doing, contact us directly for presale information: investments@HireMatch. io. Our crowdsale will be open to the public on October 1st 2017
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+12
+
+
+
+TERMS & CONDITIONS
+
+
+
+This document is for informational purposes only and should not be considered as an offer to sell shares or securities using the HireMatch platform or any other affiliated company.
+
+(HIRE) tokens do not grant the right of control.
+
+Owning (HIRE) tokens does not give their holder the right of ownership or the right to property in HIRE. While the community's opinion and feedback can be taken into account, (HIRE) tokens do not give their holders any right to participate in decision making concerning the development of the HireMatch platform.
+
+
+
+No Guarantee of Income or Profit
+
+Any examples of income and profits calculation used in this document are given for demonstrative purposes only or for showing industry averages and do not constitute a guarantee that these results will be obtained according to the marketing plan.
+
+Regulatory Uncertainty
+
+Blockchain-related technologies are subject to supervision and control by different regulatory bodies around the world. (HIRE) tokens may fall under one or more inquiries or actions on their part, including but not limited to imposing restrictions on the use or possession of digital tokens such as (HIRE) tokens, which may slow or limit the functionality of the system or the process of purchasing (HIRE) tokens in the future.
+
+HIRE Tokens are Not an Investment
+
+(HIRE) tokens are not an official or legally binding investment of any kind. Due to unforeseen circumstances, the objectives set forth in this document may be amended. Despite the fact that we intend to reach all the goals described in this document, all persons and parties involved in the purchase of (HIRE) tokens do so at their own risk.
+
+Quantum Computers
+
+Technical innovations, such as the development of quantum computers, may pose a danger to cryptocurrencies, including (HIRE) tokens.
+
+Insufficient Use
+
+Despite the fact that (HIRE) tokens should not be considered as an investment, they can gain in value in the course of time. They may also fall in value if they are not actively used in the HireMatch platform.
+
+Risk of Loss of Funds
+
+Funds collected during the ICO procedure are not insured. In the event of loss or loss of value, there is no private or public insurance representative whom the buyer could address.
+
+
+
+Risk of Failure
+
+It is possible that for various reasons, including but not limited to the failure of business arrangements or marketing strategies, that the HireMatch search system and all subsequent marketing activities related to the funds collected during the ICO procedure may be unsuccessful.
+
+The Risk of Using New Technologies
+
+Crypto tokens, such as (HIRE), are a fairly new and relatively untested technology. In addition to the risks mentioned in this document, there are additional risks that the HireMatch team cannot predict. These risks may emerge in other forms rather than those indicated here.
+
+Integration
+
+This Agreement constitutes the entire agreement of the parties with respect to the subject matter hereof. All previous agreements, discussions, presentations, warranties, and conditions are combined in this document. There are no warranties, conditions or agreements, express or implied, between the parties, except as expressly provided in this Agreement. This Agreement may be amended only by a written document duly executed by the parties.
+
+Disclaimer of Warranties
+
+You agree that your use or inability to use (HIRE) tokens is solely at your own risk and you remove all responsibility from HireMatch . Since the date of issue, (HIRE) tokens will be sent to you without warranty of any kind, either express or implied, including all implied warranties of commercial value for a particular purpose without violating anyone's intellectual property rights. As some jurisdictions do not allow the exclusion of implied warranties, the above exclusion of implied warranties may not apply to you.
+
+
+
+HIREMATCH: DECENTRALIZED JOB EMPLOYEE RECRUITMENT PLATFORM V0.9
+
+13
+
+REFERENCES
+
+1. Satoshi Nakamoto. "Bitcoin: A peer-to-peer electronic cash system". In: (2008).
+
+2. Vitalik Buterin. "A next-generation smart contract and decentralized application platform. White Paper". In: (2014.).
+
+3. Haeringer, Guillaume, and Myrna Wooders. "Decentralized job matching." Internatio nal Journal of Game Theory 40.1 (2010): 1-28. Web.
+
+4. Ammous, Saif edean Hisham. "Blo ckchain Technology: What is it Good for?" SSRN Electronic Journal(n.d.): n. pag. Web.
+
+5. "Smart Contracts and Smart Properties Over Blockchains." Decentralized Computing Using Blockchain Technologies and Smart Contracts: Emerging Research and Opportunities (n.d.): 44-63. Web.
+
+6. Sunny King and Sco tt Nadal. "PPCoin: Peer-to-peer crypto-currency wi th proof-of -stake." In: (2012).
+
+
+
+

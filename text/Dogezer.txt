@@ -1,0 +1,1673 @@
+DoSoftwareTogether
+
+Whitepaper
+
+Version 1.3 03.01.2018
+
+Authored by: A. Kozlov N. Rams S. Chmilenko S. Sukov N. Kozlova D. Dolinin
+
+https://dogezer.com, community@dogezer.com
+
+
+
+ABSTRACT
+
+Dogezer is a New Generation Platform for Entrepreneurs, Software Engineers, UI\UX Designers, Artists, Salespersons, Marketing Specialists and all other individuals involved in the creation, promotion, and support of software products of any kind. Dogezer connects these individuals allowing them to collaborate on the products they believe in, and collectively share the fruits of their labor.
+
+Dogezer enables entrepreneurs to form and manage their software development teams without the need for outside funding. Dogezer effectively helps team members to become product investors through the investment of their time and labor into the product. Dogezer will allow individual contributors to break through the "glass ceiling" and become co-founders/early investors of innovative companies, with a minimal risk.
+
+Dogezer integrates the functionality of tools that are similar to GitHub, Jira, Slack, Google Docs, and UpWork in one common ecosystem. Dogezer provides everything needed to run a virtual software development company, including Dogezer's financial system. Such financial system can work with traditional payment mediums, cryptocurrencies or be used to generate project specific currency. Such currency can be stored on a blockchain (Ethereum or others) for additional traceability and auditability. Individuals executing a project can be paid using project specific currency, which is convertible to a share in the specific project's success, implementing the "Your team is Your investor" concept. Project owners can initiate their own ICOs right on the platform and use platform tools to execute it from start till end in conformity with requirements of applicable law.
+
+The Dogezer environment can also be used by traditional companies to replace a plethora of tools they are currently using. With Dogezer, they will no longer need to solve integration issues between different products and pay to multiple vendors. Dogezer allows them to use one integrated and efficient product, with all the tools required available in one place.
+
+The Dogezer team have been working on a solution from the spring of 2016. The fully functional alpha version is released and available for use at https://dogezer.io. Beta version is scheduled for summer of 2018 and 1.0 release will be launched at the end of 2018.
+
+Dogezer is planning to use the "Freemium" model where a limited amount of platform services are free. To consume services above the free level, the platform users will be required to have a number of "Unit of Service" on their Dogezer account. Users acquire the "Unit of Service" through the Basic or Premium License. The Premium Licenses will be available for sale through Initial Token Offering in the form of "DGZ" Token. The DGZ Token is of deflationary nature. A total number of the Premium Licenses in existence will be permanent. As a result, and to ensure proper rate of license consumption on the platform, the number of the Premium Licenses represented by one Token will grow over time.
+
+
+
+https://dogezer.com
+
+
+
+1 community@dogezer.com
+
+
+
+INTRO
+
+
+
+Revision History:
+
+
+
+0.1
+
+
+
+July 3th, 2017
+
+
+
+0.2
+
+
+
+July 14th, 2017
+
+
+
+0.3
+
+
+
+July 18th, 2017
+
+
+
+0.4
+
+
+
+July 26th, 2017
+
+
+
+0.5
+
+
+
+August 2nd, 2017
+
+
+
+1.0
+
+
+
+August 14th, 2017
+
+
+
+1.1
+
+
+
+September 24th, 2017
+
+
+
+1.2
+
+
+
+December 13th, 2017
+
+
+
+1.3
+
+
+
+January 3rd, 2018
+
+
+
+Initial version Modifications after internal review Adding ITO details Multiple improvements Quality improvements Released for General Public Updated ITO dates, preDGZ to DGZ conversion rate, added Dan to advisors list, formatting changes Cleanup, Updates and Clarifications Some cleanup
+
+
+
+Statements and Warnings
+
+ The present Whitepaper reflects our intention to fulfill Initial Token Offering (ITO). Dogezer is offering to buy DGZ Tokens, which represent the Premium license rights to use the Dogezer platform. The Premium license provides the rights to use the Dogezer platform to create, manage, contribute, share, program, develop or create features of a specific project at the Dogezer platform. Every DGZ Token owner has rights to commercially exploit the Premium license.
+
+ The PreDGZ and DGZ Tokens are not securities or any other investment instruments. The PreDGZ and DGZ Tokens are not designed for investment purposes and should not be considered as a type of investment.
+
+ No profits can be expected from the PreDGZ and DGZ Tokens.  No future increase of the PreDGZ and DGZ Tokens' value is guaranteed.  The PreDGZ and DGZ Token does not confer ownership of a stake in the business.  The DGZ Token holder acts as the licensee, who receives a portion of rights in order to use the
+
+Dogezer platform. The Dogezer platform does not aim to establish common enterprise with the DGZ Token owners, but provides the system for them to implement their own projects.  The success of the DGZ Token owners depends on their ability to create and manage such projects.  During the PreITO stage Dogezer offers to buy the PreDGZ Tokens, which represent the right to get an equal amount of the DGZ Tokens after the ITO stage is finished.  All rights to the Dogezer Platform are owned by Dogezer and are protected by applicable copyright laws and international treaty provisions. Dogezer having the all rights to use the Dogezer Platform enables and licenses the entrepreneurs to form and manage software development team with the help of the platform.
+
+
+
+https://dogezer.com
+
+
+
+2 community@dogezer.com
+
+
+
+CONTENTS
+
+Abstract ..................................................................................................................................................................1 INTRO ......................................................................................................................................................................2
+
+Revision History: ............................................................................................................................................... 2 Statements and Warnings ............................................................................................................................... 2 Contents .................................................................................................................................................................3 Introduction ...........................................................................................................................................................5 Analysis .............................................................................................................................................................. 5 Problems Solved ............................................................................................................................................... 7 The Dogezer Solution ...........................................................................................................................................8 Dogezer in 20 Words........................................................................................................................................ 8 Dogezer Solution Explained ............................................................................................................................ 8 Proof of Concept .............................................................................................................................................. 9 Platform Features ...............................................................................................................................................10 Project Creation & Templates....................................................................................................................... 10 DoFinance........................................................................................................................................................ 11 DoIssues and DoIterations............................................................................................................................ 14 Executing your ICO on Dogezer Platform ................................................................................................... 14 Teams; Karma & Ratings; Users & Projects Marketplaces........................................................................ 14 DoMessaging................................................................................................................................................... 15 DoGit & DoWiki ............................................................................................................................................... 15 DoFiles & DoDocs ........................................................................................................................................... 15 Planning, Analysis and Reporting Tools ...................................................................................................... 16 Legal and Fraud Handling ............................................................................................................................. 16 Future Features .............................................................................................................................................. 17 Dogezer @ Dogezer........................................................................................................................................ 18 Dogezer - Now and Future.................................................................................................................................19 Current State of Development ..................................................................................................................... 19 Roadmap ......................................................................................................................................................... 19 Architecture..................................................................................................................................................... 20 Team ................................................................................................................................................................ 20 Contacts ........................................................................................................................................................... 25 Future by Dogezer .......................................................................................................................................... 25
+
+
+
+https://dogezer.com
+
+
+
+3 community@dogezer.com
+
+
+
+Dogezer Business model....................................................................................................................................27 Market Analysis............................................................................................................................................... 27 Potential Competitors.................................................................................................................................... 28 Unit of Service ................................................................................................................................................. 29 Licenses ........................................................................................................................................................... 30
+
+Dogezer Initial Token Offering (ITO) .................................................................................................................31 Dogezer Token ................................................................................................................................................ 31 Dogezer PreITO Conditions........................................................................................................................... 32 Dogezer ITO conditions ................................................................................................................................. 33 Funds Distribution and Development Plan................................................................................................. 36 Marketing Plan................................................................................................................................................ 37 Bounty Campaign ........................................................................................................................................... 38
+
+Legal Disclaimers ................................................................................................................................................39
+
+
+
+https://dogezer.com
+
+
+
+4 community@dogezer.com
+
+
+
+INTRODUCTION
+
+Analysis
+
+Traditionally, creating a software product requires the product initiator to secure a budget for product development, which then is mostly used to pay the team working on the product. Typical examples include:
+
+ A startup company, often bootstrapped by an owner's personal finances, looking for financing from VC/Angels/Banks in order to be able to hire more people to work on the project.
+
+ An individual developer of niche software, saving money to be able to outsource some work which needs to be done (e.g. game developer looking for an artist or musician).
+
+ A team of developers creating their own product, but seeking a publisher's financial support to execute an effective advertising and marketing campaign.
+
+ A team organizing a KickStarter campaign to upsell the product and then use the funds received for the product development.
+
+ An established company looking for a budget to finance development of a feature or function, but struggling to get the budget approved under tight budget constraints.
+
+ A company gathering money through ICO to finance this company product creation.
+
+The process of getting funding for a project is time consuming and distracting for founders, and is not always market efficient due to such factors as the founder's access to venture funds, level of hype around technology or market targeted, monopolization of capital and so on. Sometimes founders fail to secure the capital, and often the projects are not even started, as it is clear that securing capital for such projects may be too tough a task for an everything-else-perfect technical founder. The same market inefficiency sometimes leads to founder teams who are only interested in raising the capital and, while they may be successful in doing that, they do not have enough passion and skill to really have the product completed.
+
+The ICO concept is already significantly changing this space, but has its own problems and disadvantages, doesn't work for all types of projects and is becoming quite a competitive space with a lot of junk projects.
+
+It is important to note that the biggest expense in software development is associated with human labor, as servers and software licenses costs are mostly negligible right now. The same is also partially applicable to marketing and legal expenses, where labor costs are taking a significant part of the overall budget.
+
+Dogezer will address the project owners' need of raising an investment by enabling them to use legally binding promises to their team as a method of project funding.
+
+From the perspective of individual contributors, software development is mostly a "work-for-hire" approach, where people get a salary for the time they spend working on a product. Cases where an individual contributor gets a share of the product's profit do exist, but are not very common and often
+
+
+
+https://dogezer.com
+
+
+
+5 community@dogezer.com
+
+
+
+go with vesting schemes and dilution. As a result, a significant amount of talent across the globe make a career in their beloved profession, only to hit a "glass ceiling" in a level of their financial compensation. In many situations, these people have enough time to work on something else, and many of them do - like participating in an open source community, or executing their own projects during their free time. Some of these people eventually start new companies and start to solve the project owner's challenges described above, however, most are not brave enough to leave a well-paid job, or even can't do this because they're limited by personal conditions (mortgage, family to support, etc.).
+
+Dogezer will address the needs of these individuals by giving them an easy to start, measurable and potentially rewarding way to participate in the development of the projects they believe in.
+
+In the current IT world, payments for labor come either as regular repetitive payments (i.e. salary/Time and Materials contracts) or as fixed price for a project/activity (milestones based payments). Both approaches in some cases could be accompanied by employee options. These approaches may impact an employee's motivation, productivity and efficiency on the job.
+
+ In the salary/T&M contract approach, the executor's economic incentive is to continue to execute the requested job for as long as possible (cultural and moral reasons being the driving factor that prevents most people from doing this). Project management often spend tremendous efforts trying to prevent such behavior by introducing artificial and complex processes of different metrics and estimations. In extreme cases, the employer is spying over their employees to ensure that the people are really working.
+
+ In the fixed-price approach, both parties are motivated to complete the job as soon as possible. However, the challenge is that the definition of "complete" may differ between the parties. For the projects ignoring such risk, the result is generally a solution which doesn't match the owner's expectations. For the projects aware of such risk, the project owner spends huge efforts to write extensive specs and/or micromanage the team.
+
+ The employee stock options - while overall, this appears to be a better approach to align the interests between an employee and employer, vesting, "investors get paid first" and potential dilution may spoil that approach. Stock options often do not reflect an actual contribution of employee and do not motivate one to work harder. Dilution often results in the employee's compensation becoming so small, that it doesn't really have much incentive or retention value.
+
+Dogezer will address this issue by ensuring that everyone working on a project has one common interest  to complete the project so that it generates revenue.
+
+
+
+https://dogezer.com
+
+
+
+6 community@dogezer.com
+
+
+
+Problems Solved
+
+Based on the above analysis, the Dogezer platform will solve the following problems:
+
+ For Founders:  Raising an Investment is Hard - In the current world, creating and launching a new software product requires the idea author to go through a series of painful investment rounds. That may require a lot of time, effort and sometimes money, which is better be invested in the actual product creation. In many cases investments do not happen, happen at the wrong time or with the wrong amount, or the process is not even started due to all the associated complexities.  Raised Investment Brings Limitations - In the event of successful investment, the founder essentially trades a share of his company for finances to be spent mostly on engineers, designers, salespeople and other knowledge workers that are crucial for the product success, and agrees to the rules enforced by investors. Regulations imposed and inability to give his team members more than money or dilutive options limits the founder's opportunities and brings in the challenges of reporting, budgeting, and team motivation.
+
+ For Individual Contributors:  Limited Growth Opportunities - Many individual contributors, such as software engineers, architects or designers, hit a "Glass Ceiling" in their current positions, where future growth opportunities are severely limited. Some of these people take an entrepreneur route, some change techs, companies, or even their profession, in order to raise the bar a bit. Unfortunately, in most cases, limits of growth for salaried persons, the absence of free capital, lack of choice and existing liabilities force them to continue to participate in the Rat Race, or just silently waste time waiting for the next paycheck. The vast amount of talent that is able and willing to create innovative products stay frozen due to lack of opportunity.  Unfair Reward Distribution - In a start-up team, the ratio of individual person contribution to the project success is unmeasured and the reward is mostly based on the agreements defined for several years in advance (like salary + traditional dilutive options with 4-year vesting and a 1-year cliff). As a result, rewards distribution to individuals is often unfair, unbalanced and is not based on how productive they are.
+
+ For Product and Teamwork:  Conflicts Within the Team - Every product is a result of the hard work done by a product team, and often an unbalanced team causes product delays, issues or failures. Sometimes management finds themselves in a conflict with engineering over the need to urgently add more features, changes in plans, or unnecessary overengineering. Often, conflicts are rooted deep within the structure and the way how individual contributors are rewarded and how much they could affect the future of the product. These conflicts result in slower speed to market, faulty products and damaged relations between team members.  A Zoo of Tools - Different sets of tools and processes between different projects, often being provided by different services, cause lengthy learning curves, lack of traceability and unnecessary mistakes, limiting team scalability as a result.
+
+
+
+https://dogezer.com
+
+
+
+7 community@dogezer.com
+
+
+
+THE DOGEZER SOLUTION
+
+
+
+Dogezer in 30 Words
+
+Dogezer integrates all of the necessary tools for people to work together on innovative projects, with the ability to use project specific tokens to reward results and incentivize collaboration.
+
+Dogezer Solution Explained
+
+The Dogezer Platform is a SaaS solution which combines the functionality of Kickstarter, UpWork, GitHub, Slack, Jira, Google Docs, Dropbox and ICO analogues with a set of defined processes how these solutions relate to each other in a clear, transparent and predictable way.
+
+Dogezer will give an opportunity to start a project in a matter of minutes; organize a set of teams who will be working on the project; define how project contributions will be rewarded, and then drive the project to completion by utilizing skills of independent contributors all around the world.
+
+The key goal of the Dogezer solution is to eliminate investors as the "middlemen" between people initiating the product and people working on the product for the benefit of both groups. Dogezer will provide an infrastructure that will guarantee fair and predictable behavior of each party involved, and will remove any doubts from both project owners and individual contributors regarding each other's fairness. Dogezer will implement a set of tools used in software development and connect them with a fully traceable and predictable financial system. This financial system will operate with multiple possible payment mediums - starting from legal tender, through crypto currencies, company shares, and up to project success derived instruments - like promises of payment when project revenue will exceed a certain number.
+
+With the help of such derived instruments, the project owner will be able to start and complete a project without getting a real financial investment from a third party, saving on the effort to get such investment and removing the limitations it brings. It may be enough for the project owner to declare his project goals, define how the revenue will flow in, define the project vision and then immediately have a budget in project specific currency in his possession. Such a budget could then be used to start inviting team members and share that budget with them, with the promise that in the event of successful completion, the budget will convert to real financial compensation and will reward everyone for risks taken. Individual contributors will be taking a bit more risk than they are used to while working in a "salaried" environment, but that risk will be paid back with significantly higher rewards than they are used to as well when the project is complete.
+
+Dogezer will be stimulating a concept of iterative investment, where investment, in the form of people's efforts for the project, happens on iterative basis through small individual chunks of work. This will allow a significant reduction of risk for each party involved, and will make the "cost of investment" dependent on how much the project has progressed so far - higher for initial stages, lower when the project is close to "break even".
+
+
+
+https://dogezer.com
+
+
+
+8 community@dogezer.com
+
+
+
+Dogezer will build an infrastructure where conflicts between team members or between a team member and the project owner are minimized or at least predicted in advance. In the event of such conflict, Dogezer will be utilizing wisdom of the crowd to resolve it. Active project members can participate in voting on a conflicting issue, and as the interests of everyone on the team are actually the same (to have the project done and have their rewards paid), a solution which is most beneficial for successful completion of the project will win.
+
+Dogezer will implement most of the key tools used in software development as integrated pieces of its solution. Over time, the number of services offered by Dogezer to the teams will grow, eventually resulting in a complete set of tools that are required to run a top-notch software development company. As a result, the Dogezer solution will become a single service, one-stop-shop that companies who operate in a traditional environment can use to replace the fragmented landscape they have now. For example: right now, a team of 15 developers can easily spend $500-$1000 per month for GitHub, Jira, Confluence, Slack, Dropbox and other services and need to have some engineering effort to ensure these things work well together. At Dogezer, these companies will get a frictionless all-in-one solution for a much lower price.
+
+If permitted by law, Dogezer would enable project owners to sell a share in their product (represented in a format of their project currency) to external parties to raise additional funds for activities which couldn't be paid with such project specific currency.
+
+Proof of Concept
+
+Pieces of the concept behind Dogezer are already proven by the market:
+
+ Open Source software proves that a number of geographically distributed individual contributors are able to create functional and complete software products widely adopted by the industry. This happens even without monetary compensation  and with the possibility to receive a financial reward, the number of participants and their commitment should grow.
+
+ Bounty campaigns for ICOs prove that multiple people are very anxious to work on promoting a product, even when they will receive a reward that is only potentially convertible to real financial reward.
+
+ ICO themselves prove that people are ready to invest their money in the products they believe in. There is a much wider audience that will be happy to invest their time into a product of their liking.
+
+
+
+https://dogezer.com
+
+
+
+9 community@dogezer.com
+
+
+
+PLATFORM FEATURES
+
+The key building blocks of the Dogezer platform are:
+
+ Project Templates - Quick project creation based on a project template, bringing in best practices and template documents for a project from the very beginning.
+
+ DoFinance - A flexible and powerful system to manage financial relations between project members.
+
+ DoIssues  A comprehensive and flexible issue tracker with support for different development processes and customizable issues boards.
+
+ DoIterations  The system responsible for breaking the project lifecycle into versions, phases, stages and sprints.
+
+ DoMarketplace - Projects and Users marketplaces to connect users with projects.  DoMessaging  A Slack inspired messaging system, integrated into all pieces of the solution.  DoGit - An integrated GIT based version control system with web interface.  DoWiki - An integrated Wiki for organizing project documentation.  DoFiles - Project cloud storage space with permissions, revisions, comments and a fully
+
+functional file manager.  DoDocs - Documents collaboration tool with revisions, suggestions and comments.  DoPlanning  Tool implementing project planning with the help of Gantt charts.  Other important features include things like:
+
+ Recommendation system which will suggest next steps for project or user.  Crowd wisdom functionality allowing/requiring to bring troublesome questions
+
+towards collective resolution by all active project members  Flexible and detailed permissions schema based on teams  Rating system to rate projects  Karma system to rate users  Import functionality to migrate users and projects from github.com, upwork.com,
+
+kickstarter.com and other services.  Different levels of identity verification for user  Detailed logging system recording every activity  Interactive help  Analysis and reporting tools  Horizontally scalable and high performing implementation  Running in a cloud for higher availability and reliability
+
+Project Creation & Templates
+
+When a project is created, the project owner is responsible for selecting a proper template for the project from templates created by the Dogezer team and future platform users. The template will set all the project settings appropriately, will setup the development process, and will load default documents to give the project a base to build from.
+
+
+
+https://dogezer.com
+
+
+
+10
+
+
+
+community@dogezer.com
+
+
+
+DoFinance
+
+
+
+Projects executed on the Dogezer platform will need to be set up how to manage financial relations inside the project. Based on the choices made, these projects will be set up in the Dogezer financial system (named DoFinance) accordingly. The following basic setups are supported by DoFinance, with more systems to be added in the future:
+
+
+
+Name
+
+
+
+Description
+
+
+
+Sample cases
+
+
+
+Off-platform payments
+
+
+
+All financial relations between the project owner and individual contributors are executed off-platform.
+
+Do Finance is either not used, or used as a gamification platform to measure and compare team members' performance.
+
+
+
+Personal and "Friends & Family" use.
+
+
+
+Established company or team
+
+
+
+utilizing the Dogezer platform
+
+
+
+functionality (DoGit, DoDocs,
+
+
+
+DoMessaging, etc.) to develop
+
+
+
+software
+
+
+
+using
+
+
+
+in-house
+
+
+
+personnel.
+
+
+
+Fiat/Crypto Payments
+
+
+
+Project activities executed on the Dogezer platform are being compensated with payments in fiat or crypto currency based on individual agreements with contributors.
+
+DoFinance will serve as an escrow and money transfer system.
+
+
+
+Funded business owner paying contributors immediately after their portion of work is done, similar to how it happens at upwork.com
+
+
+
+Payment at the project completion
+
+
+
+The project owner defines a cost he will be paying for a completed solution per his defined specification. Individual contributors working on a project will be paid in defined amount only after project completion.
+
+DoFinance will be set up to emit the project currency which will be passed as a proof of work done to individual contributors. At the end of the project the distributed project currency will be proportionally converted into the defined payment from the project owner.
+
+
+
+Business owners willing to have a software product in their possession, and having funds to develop it, but who are not ready/able to spend these funds before having a functional product.
+
+
+
+Simple ownership split
+
+
+
+The project owner assembles his team and splits ownership in a company he would like to build between team members, enabling them to work on their portion of a project.
+
+
+
+A group of friends/co-workers trying to build their own product and looking for a straightforward system to manage their relations.
+
+
+
+https://dogezer.com
+
+
+
+11
+
+
+
+community@dogezer.com
+
+
+
+DoFinance is utilized to formalize and track the agreements made.
+
+
+
+Project Currency -Revenue & Ownership. (Recommended approach)
+
+
+
+The project owner develops a high level plan for how the product would bring revenue, and then declares the amount of revenue he would like to pay to his team members. The declared amount of revenue to spend defines the maximum available amount of the Project Currency for the project. At the same time, the project owner declares which share of his company is represented by the whole amount of the Project Currency declared. As a result, one unit of the Project Currency is mapped to $1 of future revenue and some share (for example 0.000001%) of a company. This establishes a basic valuation for one unit of the Project Currency.
+
+The declared Project Currency is then used to pay team members working on the project. The Project Currency is declared at the start of the project, but generated only when an individual piece of work is completed by a team member.
+
+
+
+An independent idea author builds his team from the platform members and executes his idea through emitting legally binding promises in the form of the Project Currency. Eventually the Project Currency is converted either into project company share or revenue share, ensuring that team members are properly rewarded.
+
+Dogezer itself will be utilizing this model to add new features and improve the Dogezer platform, rewarding platform contributors with the Dogezer revenue and/or company shares.
+
+
+
+The project owner makes legally binding obligations to initiate buyouts of the Project Currency from his team members when some event (for example revenue hits $100.000) occurs. The team members may skip these buyouts and keep their Project Currency. After the last buyout, the project owner is responsible for conversion of the remaining Project Currency into his company share.
+
+
+
+The described approach implements the "gradual investment" concept, where an investment (in the form of labor from team members) is executed over a period of time in small steps, with the "cost" of each step being dependent on the previous progress and track record.
+
+
+
+https://dogezer.com
+
+
+
+12
+
+
+
+community@dogezer.com
+
+
+
+Dogezer supports variations of this approach where the Project Currency is attached to net profit (rather than revenue), financial investment from a third party or a combination of net profit, revenue and investment.
+
+
+
+The Dogezer team believes this approach ensures the best balance of interest between the project owner and current, previous and future team members.
+
+
+
+DoFinance is set up to be in charge of declaring, generating, controlling and converting the Project Currency.
+
+
+
+ICO based
+
+
+
+Dogezer will allow to organize an ICO for a project emitting coins according to the rules and schema defined by the project owner. These coins are then offered on the crypto currencies market to raise money for the project and establish valuation for the coin. Contrary to the currently happening ICOs, where the goal is mostly to raise money, with Dogezer, the effect of establishing a coin valuation may be more important than actual money raised, as this will enable the project owner to utilize the remaining coins to pay his team members.
+
+The coin value (excluding speculative factors) will depend on performance and progress of a project, stimulating team members who already own coins to put in more effort to complete the project.
+
+
+
+A company, which is interested and ABLE to raise financial investment on the crypto currency market, looking for both a quick and cheap way to organize ICO and ability to scale the team up in case of success.
+
+A company looking for a platform to organize ICO and a system to reward personnel who help in such ICO organization and execution. In other words, Dogezer may serve as a solution to replace preICOs and bounty campaigns.
+
+
+
+Combined (to be implemented after Release 1.0
+
+
+
+The combined model will allow the approaches described above to be combined in one project and to switch from one approach to another without violating the interests of participating members.
+
+
+
+All of the above and beyond, introducing additional flexibility to ensure the project will be completed.
+
+
+
+https://dogezer.com
+
+
+
+13
+
+
+
+community@dogezer.com
+
+
+
+DoIssues and DoIterations
+
+All work done for the project is reflected as an issue in a project task tracker. The task tracker, named DoIssues, provides all of the functionality of competitive software, such as Jira, and is able to support a number of development processes.
+
+The project owner is responsible for defining reward conditions for each issue (fixed budget, budget range, budget open for suggestions, "free" issue) and how an assignee is selected (directly assigned, first willing team member pickups, assignee determined through auction).
+
+When an Issue is completed, the project owner, or someone assigned by him, will review the Issue and will either accept it, request additional changes, or negotiate the payment with the Issue assignee. If negotiations fail and no agreement is reached, active project members are requested to come out with what should be a payment for the provided work.
+
+Each issue belongs to an "Iteration" which is a phase, stage or sprint of the project. Each "Iteration" can also have a budget assigned to it, which is distributed between participating team members basing on the project owner feedback, statistics on resolved issues and valuable comments, and suggestions from active project members.
+
+Executing your ICO on Dogezer Platform
+
+If permitted by law (taking into account prohibition of ICO in some jurisdictions) and/or after getting all necessary approval and license, Dogezer would give an ability for project owners to start ICO for their project, and collect cryptocurrencies from interested persons all around the world to improve the projects. Collected funds can be used to pay for activities which can't be paid by project specific currency (for example adwords advertising) or used to pay his team members except or in addition to project specific currency.
+
+Teams; Karma & Ratings; Users & Projects Marketplaces
+
+One of the key features of Dogezer is to connect the projects which need work to be done with the users who are able to execute the job. This is achieved with the help of two marketplaces:
+
+ Projects marketplace, where willing users can review projects and send the project owner a request to join in.
+
+ Users marketplace, where project owners can hunt for team members who can join their project and help to drive it further.
+
+Each user and project is assigned with a number of skill tags, describing skills required for a particular project and defining a user's experience or specialty skills. In addition to this, every project is assigned a rating, which is based on how active, responsive and fair to team members this project owner has been. Every user is assigned a "karma" that describes how positive, fair, reliable and cooperative that
+
+
+
+https://dogezer.com
+
+
+
+14
+
+
+
+community@dogezer.com
+
+
+
+person has been. These mechanisms are utilized to improve users-to-projects matching and to build effective and reliable teams that will drive projects to success.
+
+It is expected that hiring a user for a single issue or task will be a somewhat rare case on Dogezer. It will be more common to build a team of people with appropriate skills who express interest in the project, and then distribute tasks within such team. The task distribution can be based on the project owner's suggestions, interest of a team member, or through auctions where team members can compete with each other, encouraging a faster resolution and/or a cheaper price.
+
+Projects may have multiple teams within the main team. For example: management team, core development team, extended development team, design team, etc. The project owner defines the teams and team permissions. Users are then invited to join one or more teams within the project and can then be moved from one team to another by the project owner. The project owner's role is also not fully fixed. If required, the project owner can invite more people to join a special "Project Owners" team and reassign some of his responsibilities to these people.
+
+
+
+DoMessaging
+
+Each and every piece of the Dogezer solution is tightly integrated with a messaging system similar to Slack. People joining a team will be provided with access to appropriate chats, including the history of these chats, to allow them to catch up.
+
+The messaging system will automatically notify team members about actions that are happening, due dates, responses and queries from team members. The messaging solution will hold all of the project's communications on the platform, including comments to any entities: Issues, Iterations, Open Positions, Commits, Merge Requests, Documents, Suggestions, Files and so on.
+
+
+
+DoGit & DoWiki
+
+Dogezer is providing a fully functional git version control system, named DoGit, to support development of software products. Projects may have multiple protected repositories with branches, labels, support of automatic and manual merges and all other functionality of a git repository. Repositories access could be limited to just certain teams or persons, ensuring security of intellectual property. Dogezer supports top class web interface to work with the DoGit, and eventually will support a "continuous integration" process, code reviews and tools for code quality control.
+
+Dogezer also contains a wiki system to organize technical project information in a structured way. This wiki system is stored in its own separate git repository, enabling versioning and traceability of changes.
+
+
+
+DoFiles & DoDocs
+
+
+
+Each project executed on the Dogezer platform has a cloud based storage, named DoFiles, to store documents, images and other artifacts generated during project lifecycle. This cloud storage supports:
+
+
+
+https://dogezer.com
+
+
+
+15
+
+
+
+community@dogezer.com
+
+
+
+ Versioning, with a detailed revision history for each file and file system as a whole.  Configurable permissions, with ability to set up read/write/suggest/comment access for
+
+project teams/sub-teams/individual members/general public  Commenting, with comments being reflected in DoMessaging  Suggestions  A web file manager to organize files
+
+The Dogezer team is working to build a collaborative tool for online documents editing with revision history, comments, suggestion and export and import functionality. We are targeting to support docs, spreadsheets and presentations at the minimum, and we would like to have document comments to be tightly integrated with DoMessaging. We have prototyped a solution utilizing great online editors created by OnlyOffice, and are working to achieve a license agreement to have them as a part of our solution.
+
+
+
+Planning, Analysis and Reporting Tools
+
+Dogezer's solution will present a number of tools for project owners to plan, analyze and generate reports on a state of a project. We believe that we will need to have Gantt based project planning tool and ability to organize iterations through that tool. We feel that there is a need to provide tools to analyze a project as a whole, see where it is going, where most of the time is being spent and what the most painful areas are. We believe it would be great to collect project statistic and try to predict further project progress basing on this data.
+
+
+
+Legal and Fraud Handling
+
+Taking into account multiple jurisdictions of project members, the Dogezer team is working to strengthen the legal framework. We are targeting to have a legal framework which will make all relations established between users on the platform to be regulated by applicable local laws, so violations of those laws could be prosecuted by appropriate law enforcements agencies. To ensure good reputation of the platform and to protect our users, Dogezer will disclose required information to law enforcement agencies, ensuring that any illegal behavior (such as not executing promises or stealing software code) will be punished. Generally speaking, from a legal perspective, the teams built on the Dogezer platform should not differ from the teams hired by regular software development companies, where the rights of each participant are properly protected.
+
+The Dogezer platform also has a set of technical solutions to ensure that fraud probability is low:
+
+ Identity verification system  Comprehensive logging system to track every step done on the platform  Granular permissions system  "Rating" and "Karma" systems to ensure that wrong/unfair behavior of any individual is easily
+
+noticed  Internal Dogezer Arbitration Court to resolve the debatable issues, disputes and controversial
+
+cases
+
+
+
+https://dogezer.com
+
+
+
+16
+
+
+
+community@dogezer.com
+
+
+
+ Methods to track project revenue/income to ensure that "checkpoints", such as "Project revenue reached $100,000" have happened  For example, for a project which plans to receive revenue from selling application copies through an app store, Dogezer will require the project owner to connect his app store account to the Dogezer platform. The platform will then reveal the sales figures in a way that is transparent to all project participants.
+
+Future Features
+
+Multiple additional features are planned and will be implemented as the platform matures, including, but not limited to:
+
+ More tools for teams:  Wireframing tools  More project management tools  Continuous integration and deployment tools  Code review and quality control tools  CRM integrations  Website builder tool  Set of tools to enable legal workers to provide work for the project  Cloud interface, allowing to launch development, testing, staging or production servers with the latest code in a matter of a few clicks
+
+ More communication and work management tools:  Integrated to-do lists  Voice and video calls integrated into messaging system  Applications for iOS and android to stay connected
+
+ Improving platform:  Support more project types, bringing in advanced setups specific to different industries/problem areas  Establishing processes, workflows and creating/integrating tools to let Dogezer grow outside of the software development market  More financial models to manage financial relations within the project  Integrated exchange between independent project currencies, allowing team members to exchange the project currency they earned to fiat/crypto or to the project currency of another project with or without the project owner's consent  A mechanism for early investors and supporters to support projects with additional funding  Legal support for projects  Assisted projects, where the Dogezer team or community experts can be called for help/advice  Support for online advisory board for the project
+
+Dogezer will work with the community to understand which features are in higher demand and will stimulate the community to produce more ideas.
+
+
+
+https://dogezer.com
+
+
+
+17
+
+
+
+community@dogezer.com
+
+
+
+Dogezer @ Dogezer
+
+In a second half of 2018, the Dogezer team plans to launch the Dogezer solution as a project on the Dogezer platform, so the community could work on improving the Dogezer solution and be rewarded with a share of the Dogezer revenue for the work they have done to improve the platform. With this approach, Dogezer will be quick to react to market demand, will have higher speed to market and should easily outgrow any potential competitors.
+
+
+
+https://dogezer.com
+
+
+
+18
+
+
+
+community@dogezer.com
+
+
+
+DOGEZER - NOW AND FUTURE
+
+Current State of Development
+
+In 2011, the Dogezer team conceived the idea of creating a SaaS product to support collaborative development of commercial products, but implementation of the system was considered too complex at that time. The team resumed discussions about the platform in the spring of 2016 and started full scale development in October 2016.
+
+A FULLY FUNCTIONAL ALPHA VERSION OF DOGEZER PLATFORM HAVE BEEN RELEASED IN DECEMBER OF 2017. WE WELCOME YOU TO CHECK IT OUT AT HTTPS://DOGEZER.IO AND USE IT TO START YOUR OWN INNOVATIVE PROJECTS
+
+Roadmap
+
+ September 1st 2017: PreITO starts - Done  September 30th 2017: PreITO ends - Done  ~November 15th 2017: Alpha release  Done  December 20th 2017: Whitelisting starts  January 15th 2018: Whitelist sales start  February 15th 2018: Public ITO Starts  March 8th 2018: Public ITO Ends  April 1st 2018: Unsold tokens are burned. All tokens are distributed to purchasers and bounty
+
+campaign members before that date.  July 2018: Beta release  December 2018: Release of Dogezer 1.0
+
+
+
+https://dogezer.com
+
+
+
+19
+
+
+
+community@dogezer.com
+
+
+
+Architecture
+
+
+
+Technically, the Dogezer solution is a set of independent services running inside Docker containers with a special layer to control scaling. Python and MySQL are empowering the core part of the solution platform. From a frontend perspective, we utilize vue.js for some parts and stick to backend generated pages when it makes sense. The GitLab Community Edition is used at the backend for GIT related functionalities, and as a storage for DoFiles. We have been using Mattermost with a custom client written on Vue.js for the messaging system. However, due to some of the limitations of Mattermost, we are planning to create our own messaging backend. We prototyped an approach using OnlyOffice collaborative document editing solutions for DoDocs, but have yet to achieve a license agreement.
+
+Team
+
+The Dogezer team originates from Nizhny Novgorod, Russia, where the creative minds who have known each other for a lifetime gathered together in one office under the "Wearehere Labs" brand to begin work on the projects they felt passionate about. After spending a few months trying to design and develop our first product codenamed "yellowcucumber", a SaaS service for distributed web scrapping, we were tempted by opportunities to help one start up after another, which led us to work as a team "behind the scenes" for a number of US, Japanese, Swiss and UK companies.
+
+
+
+https://dogezer.com
+
+
+
+20
+
+
+
+community@dogezer.com
+
+
+
+As a team, we have been working on the following key projects:
+
+ An automated XBOX/Playstation/PC screen recognition software, website and infrastructure for a UK company in the eSports/gambling industry. The solution enables users to gamble on result of different game matches between themselves or other players.
+
+ Developing software for leaders of the automotive industry, including such companies as Ford, Hyundai and Jaguar LandRover.
+
+ Crafting an online restaurant reservation system for the Japanese market.  Actively participating in the Swiss start-up company semilimes.com.
+
+With diverse experience in helping multiple startups grow, our team decided to concentrate our efforts on our own product, which we believe will help solve some of the problems and inefficiencies we have noticed in the industry.
+
+As active members of the freelancing community we used the help of multiple freelancers in the development of many projects, including some pieces of Dogezer. We know how to scale the team up by utilizing the opportunities of the freelancing market and how to solve the issues that can arise while working remotely with freelancers across the globe.
+
+The Dogezer team is a team of doers built around the following key principles:
+
+ We always consider multiple perspectives.  We are not afraid of hard work.  We are not hesitant to make decisions. Bad decisions are better than no decisions. We
+
+learn from our mistakes and move on.  We are flexible and easily adapt to change.  We strive for technical excellence.
+
+Dogezer team consists of:
+
+Alexander Kozlov  Lead https://www.linkedin.com/in/alexander-kozlov-2563027
+
+Alex is an entrepreneur, software architect and software engineering manager with the experience of building effective software engineering teams from scratch.
+
+Alex's career includes providing services for such companies as Motorola, Kyocera, Sony Ericsson, Ford, Hyundai & Jaguar Land Rover.
+
+Despite being a part of leadership teams for the last 7 years, Alex proudly calls himself an engineer, loves to get his hands dirty and is able to create a production ready code in a heartbeat.
+
+
+
+https://dogezer.com
+
+
+
+21
+
+
+
+community@dogezer.com
+
+
+
+https://dogezer.com
+
+
+
+Nikita Rams  Dev Lead https://www.linkedin.com/in/nikita-rams-a90193144
+
+With over 15 years in software development, Nikita is a genuine full stack developer who has mastered a huge set of technologies. He can design, build and deploy an elegant and complete solution without breaking a sweat
+
+Nikita is a fast learner who concentrates on quality, strongly believes in a "KISS" concept and always comes out with elegant and effective solutions.
+
+Nikita also holds a doctorate degree in medicine and twice a month hits the road as a paramedic with his ambulance crew.
+
+Sergey Chmilenko  Creative Lead https://www.linkedin.com/in/sergey-chmilenko-95785660
+
+A former design team member of the largest Russian Outdoors Advertising Agency, NewsOutdoor (a part of News Corp), Sergey is a guru of visual design with the mind of a software engineer. The blend produces logically organized visual solutions which are a pleasure to implement.
+
+Sergey's attention to details is accompanied by speed, enabling us to do multiple iterations in no time.
+
+Sergey is fond of math and can express almost everything with a few "inhumane" mathematical expressions.
+
+
+
+Natalya Kozlova  Marketing and support https://www.linkedin.com/in/nataliya-kozlova-470339146
+
+Natalya joined our team to help with marketing campaigns and she quickly became an expert in the marketing field. Always full of ideas, Natalya is able to quickly grasp the problem and offer multiple, and sometimes unexpected, solutions.
+
+Natalya has great social and communication skills and will be running the Dogezer Bounty campaign.
+
+
+
+22
+
+
+
+community@dogezer.com
+
+
+
+Dmitry Dolinin  Software Engineer https://www.linkedin.com/in/dmitriy-dolinin-a429b0a1
+
+An experienced backend developer, Dmitry can craft a high quality and reliable code faster than a blink of an eye.
+
+Dmitry once managed a 70+ people development team responsible for biweekly releases of a mission critical software for a Fortune-500 company, but opted instead to work in the profession he loves, the profession of a software engineer.
+
+Dmitry is a member of the "Presidential Managerial Human Resources Pool" program of the Government of the Russian Federation.
+
+Over last few months Dogezer Core team have grown and now includes:  Mike Sorokin  Project Management  Renat Zakirov  Frontend Developer  Alexey Pavlyukov  Backend Developer  Daniel Savinov  Community Manager  Elizabeth Lebedeva Community Manager  Arina Karpova  Graphic Designer  Dmitry Mokhov  Community Manager  Nikita Kozlov  Community Manager  Kate Mudarisova  Community Manager  Arthur Matevosyan  Community Manager  Artem Bolotov  Community Manager
+
+We continue to expand the team, so more and more persons are being added. The most up to date information on current team members, their details, and reference links could be found at https://dogezer.com
+
+
+
+We are proud to have our advisors and are grateful for the support they give us:
+
+Sergey Sukov Sr. Vice President, Engineering and Delivery at Guavus https://www.linkedin.com/in/sergey-sukov-89abb7
+
+Senior Executive and leader with 20 years of international experience, Sergey has built and managed large distributed software development teams including Silicon Valley based pioneer of real-time big data analytics Guavus (recently announced to be acquired by Thales). He was previously part of the executive team of the mobile communications solutions provider Teleca (acquired by Symphony Services, then by Harman).
+
+
+
+https://dogezer.com
+
+
+
+23
+
+
+
+community@dogezer.com
+
+
+
+Dan Khomenko - Financial/Marketing/Blockchain Specialist. Australian Government https://www.linkedin.com/in/dan-khomenko-36687967/
+
+Dan is an exceptionally detailed, organized, and highly efficient business professional with long-standing and diverse experience throughout multiple industries and capacities. He worked for some of the largest financial organizations in the Asian Pacific Region for many years as a financial specialist and a project manager, but his pursuit for complicated and new things has brought him into a new blockchain industry. His personal life objective is: "Motivation starts with Passion". Dan loves foreign languages, Australian Footy (AFL) and some great Aussie beer.
+
+Aleksey Gudkov - Legal Adviser, PhD candidate, Autonomous University of Barcelona https://www.linkedin.com/in/agudkov/
+
+
+
+Dean Karakitsos  Ambassador. Founder of a number of successful companies in telecoms, market data and e-commerce. His current company, Bloqchain Science, builds secure decentralized systems for enterprises using blockchain technology for identity solutions, custom tokens and smart contracts https://www.linkedin.com/in/sakiskarakitsos/
+
+
+
+Brian Schafer  Ambassador. An experienced advisor and entrepreneur, Brian has spent the last 14 years leading teams in the finance and technology sectors across lending & financial services, hedge funds & CTAs, cloud computing & software development, and blockchain & cryptocurrency https://www.linkedin.com/in/brian-schafer-5bb06a3a/
+
+
+
+https://dogezer.com
+
+
+
+Ryan Reynolds - Ambassador, Ryan Reynolds has a Bachelor Degree of Computer Science from Rhodes University, South African founder of Inkrypto.com. Experienced Entrepreneur, Blockchain Consultant and Human Talent Specialist https://www.linkedin.com/in/ryanreynoldssouthafrica/
+
+
+
+24
+
+
+
+community@dogezer.com
+
+
+
+Evan Weldon - Ambassador, Former nursing student; left after a change in vocation to chase his true passion, working within emerging IT fields. Blockchain, cryptocurrency and financial technology https://www.linkedin.com/in/evan-weldon-64b242101/
+
+
+
+Max Unger - Ambassador, Max is an Australian entrepreneur, early investor in cryptocurrency, and a blockchain evangelist https://www.linkedin.com/in/max-unger-944553150/
+
+
+
+If you believe in the Dogezer concept, believe it will disrupt the software industry for the better and want to participate in the change - write us to team@dogezer.com to join our team or become an advisor.
+
+Contacts
+
+The Dogezer team is fully transparent and open for any suggestions or questions. You can find us at:
+
+ Telegram: https://t.me/dogezer  Email: community@dogezer.com  Twitter: https://twitter.com/DogezerCom  Facebook: https://www.facebook.com/profile.php?id=100018674143477  Medium: https://medium.com/@dogezercom  YouTube: https://www.youtube.com/channel/UCxaU9UXzG7VvjHhnlmmSmJA  Bitcointalk: https://bitcointalk.org/index.php?topic=2100916.0
+
+Future by Dogezer
+
+We believe that in a matter of just a few years from now, tectonic changes which have already started to happen will completely reshape the current world economy and the way people are doing business. We firmly believe that the following decentralization tendencies will only get stronger:
+
+ Wide usage of crypto currencies in every aspect of our lives  More and more independent workers - people who prefer to choose an independent career
+
+as opposed to a traditional career with an established company
+
+
+
+https://dogezer.com
+
+
+
+25
+
+
+
+community@dogezer.com
+
+
+
+ More and more jobs will become remote jobs crossing the borders of countries and continents
+
+ More and more companies will become "no office" companies or will be completely virtual companies operating with the help of crypto currencies separately from the regular economy
+
+Dogezer will contribute to that future by providing a tool for virtual companies and individual contributors to work together in a complete, secure and effective ecosystem which welcomes the use of crypto currencies.
+
+From a little bit more short-term perspective, the ICO Boom which the world is experiencing right now will eventually end. Either token buyers will lose interest to ICOs due to scam and failed projects, or, more probably, ICOs will become a competition of marketing specialists, similarly to how it has happened on Kickstarter. The Dogezer team believes that in a matter of a year from now, raising money on ICO will require a budget which is comparable with the amount of money to be raised, and, as a result, the opportunity to finance projects through ICO will be available only to some teams. The Dogezer solution will replace ICO as a method to finance the early stage project development, and will make that process less risky and more predictable as each step of investment (in the form of labor) will be based on previous progress. Scam, fake and unrealistic projects will not be able to convince team members to join them and spend their time helping such projects. Promising and progressing projects will be get an increased level of community support which will push these projects even further.
+
+
+
+https://dogezer.com
+
+
+
+26
+
+
+
+community@dogezer.com
+
+
+
+DOGEZER BUSINESS MODEL
+
+
+
+Market Analysis
+
+Dogezer is the platform for:
+
+ Idea authors/Project owners  Software project managers  Software developers and architects  UI/UX designers  Artists  Test engineers  Internet marketing specialists  Salespersons  Others - potentially anyone involved in implementing, promoting and selling software
+
+products
+
+According to EvansData Global Developer Population and Demographic Study 2017 Vol. 1 (https://evansdata.com/reports/viewRelease.php?reportID=9), by 2019, the world population of software developers will increase to around 26.4 million, making the total number of potential platform users in excess of 30 million (taking into account other specialties). Assuming Dogezer secures 0.3% of that audience as platform users with an average monthly check of $100, Dogezer's annual revenue should reach $108 million USD.
+
+Dogezer can be used to develop:
+
+ Innovative startup ideas, delivered to market as SaaS or any other model  Games for any platform, delivered through different publishers such as AppStore or XBox
+
+Store  Traditional boxed software, replacing traditional competitors  Enterprise specific software used in B2B or B2C  Potentially any software related products
+
+Eventually Dogezer will be covering many niches of the huge software development market, but initially we will concentrate on two beachhead markets:
+
+ Games development (according to open gaming alliance: $100 billion in 2019)  Cloud SaaS solutions development (according to Gartner: $64.78 billion in 2019)
+
+Dogezer set a goal to execute 3% of new projects in these two areas in 2020 through the platform, which should generate approximately $150 million of the annual revenue for Dogezer.
+
+From the perspective of the project owners, Dogezer is disrupting the VC market by replacing the need for VC/Angel investments with the ability to build projects on the platform utilizing promisebased funding schemes. According to http://about.crunchbase.com/news/inside-global-q1-2017-
+
+
+
+https://dogezer.com
+
+
+
+27
+
+
+
+community@dogezer.com
+
+
+
+vc-market/, seed and early stage investments were slightly more than $16 billion in the first quarter of 2017 ($64 billion per year). If 5% of these investments are replaced by Dogezer's approach, we estimate annual revenue of approximately $120 million.
+
+Comparing the Dogezer solution with current market leaders:
+
+ GitHub.com yearly revenue is $140 million (https://en.wikipedia.org/wiki/GitHub#Finance)  UpWork.com yearly revenue is estimated to be around $100 million
+
+(https://en.wikipedia.org/wiki/Upwork - $1 billion yearly freelancer billing with 7.5% to 22.5% commission)  Slack.com yearly revenue is around $100 million (http://expandedramblings.com/index.php/slack-statistics/)
+
+With Dogezer being an all-in-one solution that is more feature rich than these services, Dogezer's annual revenue could potentially reach the same numbers with a smaller number of active users.
+
+Based on the above analysis, Dogezer's annual revenue is estimated to be between $100 and $200 million. In the event that Dogezer becomes a disruptive solution from any of the reviewed perspectives, annual revenue could significantly exceed estimates.
+
+
+
+Potential Competitors
+
+As of July 31, the Dogezer team was not able to identify direct competitors who share the same concept and ideology. The following potential competitors have been identified:
+
+ http://colony.io who actually try to solve some of the same problems, but tend to organize their solution around DAO, blockchain and decentralization, and do not seems to plan to provide end-to-end set of development tools to support full traceability to completely resolve any trust problems.
+
+ http://starbase.co declares that eventually contributors can be rewarded with tokens generated on their platform, but unfortunately, their website and whitepaper don't provide more details.
+
+The Dogezer team is planning to release a blog post with a detailed comparison of our solutions in September. Please subscribe to our mailing list at https://dogezer.com or join our Telegram at https://t.me/dogezer to stay updated.
+
+It's possible that one of the current market leaders, such as Upwork.com, Github.com, Atlassian, Gitlab.com or Kickstarter.com would decide to expand their solution to include the Dogezer model. While this may sound like a risk for Dogezer, the Dogezer team believes that:
+
+ It may be hard to modify already existing products to bring in additional features without having any impact on existing customers, so there would be a slow speed to market.
+
+ Implementing the Dogezer model at this moment of time for any of these companies may put their main business model at risk, so it is highly unlikely that the shift will start to happen before the Dogezer solution is proven to be successful.
+
+
+
+https://dogezer.com
+
+
+
+28
+
+
+
+community@dogezer.com
+
+
+
+Unit of Service
+
+The Dogezer platform will use the "Freemium" model, making its customers pay for the consumption of the platform resources above the free level.
+
+Being a heterogeneous platform with multiple services, it is impossible for Dogezer to define just one parameter the users will be paying for  whether it is time, number of users in team, storage space consumed or whatever else. To solve that dilemma, Dogezer is introducing a basic unit of measure which permits to consume a combination of resources on the platform. Such unit will be named "Unit of Service" (UoS).
+
+Dogezer will be using UoS to charge:
+
+ Projects for project activities: 1 UoS from the project account, when consumed, will activate all of the following:  Allow support of 1 active user per week.  Allow 50MB of storage space for 1 year  Allow the generation of Project Currency convertible to $100 The actual numbers may vary and will be determined based on the market feedback.
+
+ Individual contributors for withdrawals/ownership rights clearing: The charge will be taken at the moment of withdrawal and will be set to be equal to 3% of the withdrawal value. For non-financial withdrawals/clearing (e.g. company ownership rights, or other rewards), Dogezer will be calculating the number of UoS needed basing on the market cost of such reward.
+
+ User or Project for value added services: Eventually, Dogezer will be able to support a number of value-added services provided by external parties. Dogezer will be charging the customers in UoS for the services, and the number of UoS for each of these services will be defined on a case by case basis.
+
+UoS will never leave the Dogezer platform and will belong either to a customer or project account. It is possible to transfer UoS from a customer account to a project account, but it is impossible to transfer UoS between customer accounts, between project accounts or from a project account to customer account.
+
+To support the Freemium model, every new project created on the platform will receive 100 free UoS on that project account. Dogezer will be ensuring that the amount of UoS is enough to cover the feasibility phase, avoiding unnecessary expenses for unfeasible projects.
+
+In the event that the project or user runs out of UoS, the accounts will be moved into the read-only mode. Each and every piece of the data will be available to read, but making any modifications of changes will require loading the necessary number of UoS to the appropriate account.
+
+All the numbers above are not set in stone, and will be changing based on the market reaction, to ensure that Dogezer is able to acquire an adequate amount of funds for daily operations and is able to achieve the maximum growth possible.
+
+
+
+https://dogezer.com
+
+
+
+29
+
+
+
+community@dogezer.com
+
+
+
+Licenses
+
+In order to load UoS into a customer account, the user will need to use a license on the Dogezer site. There are two license types available:
+
+ Basic License:  Loads 1 UoS to a customer account.  Available for sale on https://dogezer.com at a cost of 1 USD per License.  When bought, immediately converts into UoS on a customer account.
+
+ Premium License:  Loads 1 UoS to a customer account.  Available for sale at ITO (in the form of the DGZ Token)  Activates "Premium" status for 1 day. Actual duration for which "Premium" status is activated may be changed, to ensure that it is a rare resource. "Premium" status:  Provides a "Premium" badge for the project/user.  Ensures that "Premium" users and projects are given preference over non "Premium" users and projects assuming everything else is even:  If auction where the winner is selected automatically ends with two persons providing equal bids, the "Premium" user will be preferred over the non "Premium" user.  If crowd voting ends in a draw, the side which holds more "Premium" users' votes will win.  Etc.  For better exposure, "Premium" users and projects will place higher in search results.  "Premium" users will get priority support from our support team.  More features will be added in the future for "Premium" users.
+
+
+
+https://dogezer.com
+
+
+
+30
+
+
+
+community@dogezer.com
+
+
+
+DOGEZER INITIAL TOKEN OFFERING (ITO)
+
+Dogezer Token
+
+Through Initial Token Offering, the Dogezer team is going to sell a number of the Dogezer Premium Licenses, represented in the format of the DGZ Tokens. A DGZ Token is an ERC2.0 compatible token running on Ethereum blockchain.
+
+There is a total of 100,000,000 DGZ Tokens created, with 98,000,000 DGZ Tokens available for sale for a base price equal to 1 USD (in Ethereum equivalent) per one Token. The remaining 2,000,000 Tokens will be reserved for the Bounty campaign participants (1.5% of all Tokens after ITO end, i.e. max of 1,500,000 Tokens) and the Founders team (0.5% of all Tokens after ITO end, i.e. max of 500,000 Tokens). The minimal cap is a sum equal to 1,000,000 USD in Ethereum equivalent. All the Tokens undistributed at the ITO will be fully burned. One DGZ Token represents a number of the Dogezer Premium Licenses according to the following formula (captured in smartcontract):
+
+Where "Tokens Now" is a total number of tokens which are not yet burned and still exist in the world at the moment when calculation is done, and "Tokens Distributed at ITO" is a sum of all tokens sold at ITO, tokens distributed as a part of the bounty campaign and tokens assigned to the Founders team at the end of ITO.
+
+As defined by the formula, the minimal number of the Premium Licenses per one Token is 4. The number may change if tokens are burned.
+
+It is expected that the DGZ Tokens will be partially burned when they are presented at platform as the Premium Licenses and converted into UoS. The burn rate will depend on the number of Tokens sold during ITO, and will be calculated using the following formula, varying between ~20.5% and 70%:
+
+
+
+Where "Tokens Distributed at ITO" is a sum of all tokens sold at ITO, tokens distributed as a part of the bounty campaign and tokens assigned to the Founders team at the end of ITO.
+
+To finance operational expenses, the remaining part of a Token will be offered for sale to the public.
+
+The formulas and behavior described above are captured in appropriate smart contracts.
+
+
+
+https://dogezer.com
+
+
+
+31
+
+
+
+community@dogezer.com
+
+
+
+As a result, when the platform users need to load UoS into their account, they will need to either:
+
+ Buy the Basic License (1 USD per License)  Bring the DGZ Tokens bought at ITO (max of 0.25 USD per License in Ethereum equivalent)
+
+ It is possible to use a fraction of the DGZ Token, up to 10-8 of one DGZ
+
+Please visit https://dogezer.com to buy the DGZ Tokens or to find out more about Dogezer ITO.
+
+
+
+Dogezer PreITO Conditions
+
+
+
+Purpose
+
+
+
+To get initial market feedback on the ITO campaign
+
+
+
+Dates
+
+
+
+September 1st 2017, 13:00 UTC - October 1st 2017 00:00 UTC
+
+
+
+Payments Accepted In Ethereum (ETH)
+
+
+
+Payment Method Token
+
+
+
+Ethereum smart contract address is available at https://dogezer.com. Any other sources of smart contract address are INVALID.
+
+PreDGZ
+
+
+
+Token Cost
+
+Total Supply Token purpose
+
+
+
+0.002 ETH per 1 PreDGZ token (~65% discount from regular ITO price (1 USD) for DGZ token) * Additional discount in a form of 5% refund is available for purchases over 50 ETH. Such refund will be performed within 1 week after purchase. * Additional discount in a form of 10% refund is available for purchases over 100 ETH. Such refund will be performed within 1 week after purchase.
+
+2,000,000 PreDGZ Tokens
+
+To be converted to the DGZ Token at ITO using 1 preDGZ = 2 DGZ rate. * Note the change in conversion rate to increase discount for preITO versus regular ITO. * If Ethereum price would be established at less than 350 USD per 1 ETH at the moment of ITO, preDGZ would be converted to DGZ at the rate 1 preDGZ = 2 DGZ. This guarantees the minimum 65% discount on preITO phase. * If Ethereum price would be established at more than 350 USD per 1 ETH at the moment of ITO, preDGZ would be converted to DGZ at the rate 1 preDGZ = (New ETH Price used at ITO / 350) * 2 DGZ. This guarantees the minimal discount of 65% on preITO phase.
+
+
+
+Information purchaser
+
+Restrictions
+
+
+
+about
+
+
+
+Dogezer reserves the right to demand any information and documents about the purchaser, which it deems necessary or appropriate to comply with any applicable laws. The purchaser shall provide Dogezer with such information and documents.
+
+
+
+The PreDGZ Tokens are available for purchase in any country except the countries, including its states, territories in or under the laws of the country, where (1) cryptocurrency or blockchain technology are prohibited, or (2) the PreDGZ Token can't be freely transferable, or (3) the Dogezer platform does not meet the legal requirements of the country.
+
+
+
+https://dogezer.com
+
+
+
+32
+
+
+
+community@dogezer.com
+
+
+
+Dogezer ITO conditions
+
+
+
+Dates
+
+
+
+January 15th 2018, 13:00 UTC - March 8th 2018 13:00 UTC
+
+
+
+Token
+
+
+
+DGZ
+
+
+
+Total Tokens
+
+
+
+100 000 000
+
+
+
+Tokens for Sale
+
+
+
+98,000,000 DGZ Tokens
+
+
+
+Closed Whitelist Sale
+
+
+
+Will start Jan 15th 2018, 13:00 UTC and will continue until Feb 15th 2018, 13:00 UTC or until limit on tokens sold or number of participants would be reached
+
+ Total Tokens for sale at Closed Whitelist Sale: 5,000,000 DGZ tokens  Maximum Number of Participants: 120  Whitelisting starts: 20th Dec 2017
+
+o Fill in form at https://dogezer.com to join whitelist  Minimal purchase  25 ETH  Price is 0.8 USD per token, 10% discount on purchases over 100
+
+ETH  Payments in ETH only *Price in Ethereum will be announced on https://dogezer.com site 1-2 days before the start of ITO.
+
+
+
+Open ITO
+
+
+
+Will start Feb 15th 2018, 13:00 UTC and will continue until March 8th 2018, 13:00 UTC or until all tokens would be sold
+
+ Tokens for sale: All unsold tokens  Minimal purchase: 1 DGZ  Price:
+
+o First week (Feb 15th 201813:00 UTC  Feb 22nd 2018 13:00 UTC): 0.9 USD per DGZ token
+
+o Second week (Feb 22th 2018 13:00 UTC  Mar 1st 2018 13:00 UTC): 0.95 USD per DGZ token
+
+o Third week (Mar 1th 2018 13:00 UTC  Mar 8th 2018 13:00 UTC): 1 USD per DGZ token
+
+o Additional 5% discount for purchases over 50 ETH o Additional 10% discount for purchases over 100 ETH  Accepted Currencies: o ETH o BTC o preDGZ (as conversion for preITO participants) *Price in Ethereum will be announced on https://dogezer.com site 1-2 days before the start of ITO.
+
+
+
+https://dogezer.com
+
+
+
+33
+
+
+
+community@dogezer.com
+
+
+
+Payment Method
+
+
+
+Ethereum smart contract address will be available at https://dogezer.com 2 days prior to ITO start. Any other sources of smart contract address are INVALID. For Bitcoin payments, manual payments processing would be used. Please only use https://dogezer.com to initiate such processing
+
+
+
+Founders Tokens
+
+
+
+0.5% of all Tokens after ITO ends, vested over 3 years with 1-year cliff
+
+
+
+Bounty Tokens
+
+
+
+Program 1.5% of all Tokens after ITO ends
+
+
+
+Undistributed Tokens Burned
+
+
+
+KYC policy
+
+
+
+During the ITO, Dogezer will conduct Know Your Customer ("KYC") procedure for all of the purchasers of the DGZ Tokens and PreDGZ Tokens for a total value exceeding equivalent of USD 10000 (Ethereum equivalent).
+
+
+
+Restrictions Token Purpose
+
+
+
+This would entail the purchasers to submit their passport or ID photo and utility bill/other proof of a residence. A legal person should submit the general manager's passport photo, their company owner`s structure and extract from company registry. Dogezer reserves the right to request additional documents from customers when required.
+
+The DGZ Tokens are available for purchase in any country except the countries, including its states, territories in or under the laws of the country, where (1) cryptocurrency or blockchain technology are prohibited, or (2) the DGZ Token can't be freely transferable, or (3) the Dogezer platform does not meet the legal requirements of the country.
+
+One DGZ Token represents a number of the Dogezer Premium Licenses, according to the following formula:
+
+
+
+Token Burn Rules
+
+
+
+Where "Tokens Now" is a total number of tokens which are not yet burned and still exist in the world at the moment when calculation is done, and "Tokens Distributed at ITO" is a sum of all tokens sold at ITO, tokens distributed as a part of the bounty campaign and tokens assigned to the Founders team at the end of ITO.
+
+The DGZ Token, or a fraction of it, when delivered to the Dogezer platform will give the user a number of the Premium Licenses as defined by the formula above.
+
+Dogezer will burn a percentage of received Tokens according to the
+
+
+
+https://dogezer.com
+
+
+
+34
+
+
+
+community@dogezer.com
+
+
+
+following formula:
+
+
+
+Token Properties
+
+
+
+Where "Tokens Distributed at ITO" is a sum of all tokens sold at ITO, tokens distributed as a part of the bounty campaign and tokens assigned to the Founders team at the end of ITO.
+
+Divisible down to 8 decimal places
+
+
+
+As it is expected that the DGZ Tokens will exist for a significant period of time, Dogezer reserves the right to migrate the DGZ Tokens from Ethereum to another blockchain, in case the Ethereum blockchain is terminated, becomes outdated, unresponsive or unusable due to any reason.
+
+
+
+https://dogezer.com
+
+
+
+35
+
+
+
+community@dogezer.com
+
+
+
+Funds Distribution and Development Plan
+
+1. Funds collected: < 1,000,000 USD. ITO Fails. ITO Participants are refunded.
+
+
+
+2. Funds collected: > 1,000,000 USD and < 5,000,000 USD
+
+
+
+ITO result is satisfactory. Dogezer will actively utilize Dogezer@Dogezer to add extra features in the future. Dogezer will consider the possibility of selling a company share to VC to finance platform growth.
+
+
+
+Funds Distribution: $1M - $5M
+
+
+
+Funds Distribution:  10% Legal  75% Development and Support  5% Servers and Infrastructure  10% Marketing
+
+
+
+Legal Development Servers Marketing
+
+
+
+3. Funds collected: > 5,000,000 USD and < 20,000,000 USD.
+
+
+
+ITO went well. Dogezer will actively utilize Dogezer@Dogezer to add extra features and will finance future platform growth using the income gained from the first customers.
+
+
+
+Funds Distribution: $5M - $20M
+
+
+
+Funds Distribution:  5% Legal  50% Development and Support  10% Servers and Infrastructure  35% Marketing
+
+
+
+https://dogezer.com
+
+
+
+Legal Development Servers Marketing
+
+
+
+36
+
+
+
+community@dogezer.com
+
+
+
+4. Funds collected: > 20,000,000 USD.
+
+ITO went extremely successfully. The Dogezer team has funds to perform a full-sized marketing campaign, targeting disruptive growth.
+
+Funds Distribution:  $1,000,000 Legal  $12,000,000 Development and Support  $2,000,000 Servers and Infrastructure  $5,000,000 Marketing  Everything above 20,000,000 USD will be
+
+allocated towards:  70% Marketing  20% Development and support  10% Servers and Infrastructure
+
+
+
+Funds Distribution: $30M
+
+Legal Development Servers Marketing
+
+
+
+Dogezer will be hedging cryptocurrency volatility by reallocating the collected funds between different currencies.
+
+
+
+Marketing Plan
+
+Dogezer is planning to execute a low profile marketing campaign until Beta release, slowly expand it after Beta, and launch a full size marketing campaign closer to official release date.
+
+Dogezer will use the following marketing methods:
+
+ Traditional methods, such as online and offline advertising, SEO, SMM, sponsored events, free merchandise, etc.
+
+ Direct sales, where we plan to:  Convince the existing companies to migrate their projects to the platform to improve team scalability and be able to measure team performance with the help of the project currency.  Work with software development outsourcing companies, suggesting they utilize their "bench time" personnel at Dogezer for possibility of additional revenue.
+
+ Supporting seamless migration from as many other services as possible and contacting the users of these services in order to convince them to try such migration.
+
+ Referral program allowing a user to receive a part of the revenue earned by his referrals.  Last, but not least - we do believe that if there is at least one project completed on the
+
+platform which will make such project founder and his team millionaires  the word of mouth
+
+
+
+https://dogezer.com
+
+
+
+37
+
+
+
+community@dogezer.com
+
+
+
+effect will trigger, and the platform will experience exponential growth. To speed up such an event, we are going to use a part of the finances collected on ITO to give additional bonuses to individual contributors to get the selected projects executed. In other words  Dogezer will be sponsoring a number of projects on the platform to speed up these projects development.
+
+Our primary objective is to get as many users as possible on the platform and to ensure that the platform community is active.
+
+Our secondary objective is to ensure that the community is flourishing and more and more connections are established through the platform. These connections will eventually result in new ideas and new completed projects. We will be organizing and supporting conferences, competitions, meetups, hackathons and other events, both online and offline, to ensure that the Dogezer platform user has a lot of connections with other platform members.
+
+Bounty Campaign
+
+The most up-to-date information on Dogezer bounty campaign is available at bitcointalk thread: (https://bitcointalk.org/index.php?topic=2108930.0
+
+Please subscribe to our mailing list at https://dogezer.com, visit Bitcointalk Bounty Campaign Topic (https://bitcointalk.org/index.php?topic=2108930.0) or join our Bounty Telegram channel using https://t.me/dogezer_bounty to find out more details about our bounty campaign.
+
+
+
+https://dogezer.com
+
+
+
+38
+
+
+
+community@dogezer.com
+
+
+
+LEGAL DISCLAIMERS
+
+ Although the DGZ Tokens may be tradable, they cannot be used as an investment, currency, security, commodity, a swap on a currency or any other kind of financial instrument.
+
+ The DGZ Token is not a loan.  The regulatory status of cryptographic tokens, digital assets and blockchain technology is unclear
+
+or unsettled in many jurisdictions. Dogezer may cease the distribution of the DGZ Tokens, or cease the development of the DGZ platform, or cease operations in a jurisdiction where the governmental or authority actions make it unlawful or commercially undesirable to continue to do so. This cease of distribution and development may have a material adverse effect on the Dogezer.  The DGZ Tokens are not being offered or distributed to any person if the person or any created or organized entity, including, without limitation, any company, corporation or partnership is a citizen, resident of, or a person located or domiciled in the country, including its states, territories in or under the laws of the country, where cryptocurrency or blockchain technology are prohibited, or the DGZ Token can't be freely transferable, or the Dogezer platform does not meet the legal requirements of the country.  If a purchase or use of the DGZ Token happens in a country or territory where such purchasing or using are prohibited, Dogezer may take all the necessary and appropriate actions, in its sole discretion or under the ordinance of appropriate authorities, to invalidate such purchase or usage.  The person or any organized entity or company by buying, obtaining or using the DGS Token agrees to be bound on the base of rules described in the present Whitepaper, and confirms that the purchaser or user has read in full and understands this Whitepaper, the Terms of Use, Risk warning and Privacy Policy placed on the website https://dogezer.com  The person or any organized entity or company by purchasing, obtaining or using the DGS Token acknowledges the risk of the blockchain technology and the legal requirements of the country of residence.  In case the person or any organized entity or company, which is resident or under the law of the country where cryptocurrency or blockchain technology are restricted or the DGZ Token can't be freely transferable or the Dogezer platform does not meet the legal requirements of the country, buys, obtains or transfers the DGZ Token or uses the Dogezer platform, then such person does so it at his own sole risk.  Dogezer is not liable for any losses of a person or company arising from the use of the Dogezer platform or the DGZ Token in violation of the legislation regulating blockchain, and securities law.  Any person who purchases or uses the DGZ Tokens or uses the Dogezer platform on an unlawful, unauthorized or fraudulent basis shall be solely liable for, and shall indemnify, defend and hold harmless Dogezer and its respective past, present and future employees, officers, directors, founders, contractors, consultants, equity holders, suppliers, vendors, service providers, subsidiaries, affiliates, representatives, and agents from any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special and including, without limitation, any loss of business, revenues, profits, data, goodwill or other intangible losses.
+
+
+
+https://dogezer.com
+
+
+
+39
+
+
+
+community@dogezer.com
+
+
+
+ Dogezer retains all right, title and interest in all of Dogezer's intellectual property, including, without limitation, inventions, ideas, concepts, code, trademarks, discoveries, processes, marks, methods, software, compositions, formulae, techniques, information and data, whether or not patentable, copyrightable or protectable in trademark, and any trademarks, copyright or patents based thereon. Buyer may not use any of Dogezer's intellectual property for any reason without purchasing it from Dogezer or by obtaining prior written consent of the Dogezer except the use of the Premium license based on the DGZ Token.
+
+ The Purchase of the DGZ Token is non-refundable and the purchases cannot be cancelled, except the partial refund of the PreDGZ Token purchasers in case of low PreITO interest, and full refund of the DGZ Token purchasers if the funds collected will be less than 1,000,000 USD in Ethereum equivalent.
+
+ The Purchaser should not participate in the ITO or purchase the DGZ Tokens for investment purposes.
+
+ By buying or using the DGZ Token the purchaser guarantees that the purchaser is at least 18 years old and of sufficient legal age and capacity to purchase the DGZ Token and complies with all anti money laundering and counter-terrorism financing requirements.
+
+ By buying or using the DGZ Token the purchaser guarantees that the purchaser has sufficient knowledge and experience in business and financial matters, including a sufficient understanding of blockchain or cryptographic tokens and other digital assets, smart contracts, storage mechanisms, token wallets, blockchain-based software systems and blockchain technology and is fully informed about the Dogezer platform to be able to evaluate the risks and merits of purchasing the DGZ Tokens.
+
+ By buying or using the DGZ Token the purchaser guarantees the awareness of the risk that the DGZ Tokens may be subject to theft or access of a third party. Malicious groups may attempt to interfere with the Dogezer platform and the DGZ Tokens in a variety of ways, including, but not limited to, malware attacks, denial of service attacks, consensus-based attacks, Sybil attacks, smurfing and spoofing. This risk of theft may negatively affect the Dogezer platform or result in the loss of the purchaser's DGZ Tokens, the loss of purchaser's ability to access or control the DGZ Tokens or account. In the event of a theft, software bug or weakness, there is no remedy. The holders of the DGZ Tokens are not guaranteed any remedy, refund or compensation.
+
+ Dogezer is not responsible for the any losses arising from the access of a third party to the user account.
+
+ The Purchaser of the DGZ Token acknowledges and agrees that the DGZ Tokens are not to be obtained for the purposes of investment, speculation, for immediate resale or other financial purposes.
+
+ The DGZ Token value outside the Dogezer platform is based on the market conditions and could be equal to zero.
+
+ The purchase of the DGZ Tokens does not provide the purchaser with rights of any form with respect to the Dogezer revenues or assets except the Premium license rights.
+
+ In case the purchaser or user loses access to their own account due to loss of the private key or password Dogezer is under no obligation to recover any DGZ Tokens. The purchaser or user acknowledges, understands and agrees that all the DGZ Tokens are non-refundable and the
+
+
+
+https://dogezer.com
+
+
+
+40
+
+
+
+community@dogezer.com
+
+
+
+purchaser or user will not receive money or other compensation for any DGZ Tokens if case they lose the private key or password to their own account.  The purchaser or user acknowledges, understands and agrees that the purchasing, obtaining or transferring of the DGZ Tokens or usage of the Dogezer platform may have tax consequences for the purchaser. The purchaser or user is solely responsible for the purchaser or user compliance with the purchaser or user tax obligations. Dogezer bears no liability or responsibility with respect to any tax consequences to the purchaser or user.  For the purpose of compliance with Anti Money Laundering laws upon Dogezer's request, the purchaser or user shall immediately provide to Dogezer the information and documents that Dogezer, in its sole discretion, deems necessary or appropriate to comply with any applicable laws, rules, regulations or juridical orders. Such documents include, but are not limited to, passport, driver's license, utility bills, photographs of associated individuals, government identification cards, or sworn statements.  Dogezer will not publish any identifying information related to the users without the prior written consent of the user unless required to do so under applicable law.  During the test period and sometimes during the regular usage, the Dogezer platform or its parts may not function properly. Dogezer bears no liability or responsibility for the temporary unintentional non-functionality of the Dogezer platform.  Dogezer may make changes to the features and specifications of the Dogezer platform for any number of reasons, which could not meet the purchaser's expectations.  The Purchaser or user understands and agrees that Dogezer shall not be liable and disclaims all liability to the purchaser or user in connection with any force majeure event, including, but not limited to, industrial disturbances, electrical, telecommunications, hardware, software or other utility failures, software or smart contract bugs or weaknesses, earthquakes, storms, or other nature-related events, blockages, embargoes, riots, adverse acts or orders of government, adverse acts of Trump or Putin, acts of terrorism or war, conflicts with UFO, technological change, changes in interest rates or other monetary conditions, and, for the avoidance of doubt, changes to any blockchain-related protocol.  The Purchaser or user releases Dogezer from responsibility, liability, claims, demands, and/or damages (actual and consequential) of every kind and nature, known and unknown (including, but not limited to, claims of negligence), arising out of or related to disputes between the purchasers, users and the acts or omissions of third parties.  To the fullest extent permitted by applicable law, the purchaser or user will indemnify, defend and hold harmless and reimburse Dogezer from and against any and all actions, proceedings, claims, damages, demands and actions (including without limitation fees and expenses), incurred by Dogezer arising from or relating to the purchaser's obtaining, purchasing or use of the DGZ Tokens; the purchaser's responsibilities or obligations arising from purchasing and using the DGZ Token; the purchaser's breach of or violation of the Dogezer platform rules; any warranty or statement of the purchaser or user; the purchaser's or user's violation of any rights of any other person or entity; and/or any act or omission of the purchaser or user that is negligent, unlawful or constitutes willful misconduct.  During the Dogezer PreITO and ITO Token distribution the specific procedures on purchasing and using the DGZ Tokens will be placed on https://dogezer.com. By purchasing the DGZ Tokens, the
+
+
+
+https://dogezer.com
+
+
+
+41
+
+
+
+community@dogezer.com
+
+
+
+purchaser acknowledges and understands and has no objection to such procedures and material specifications.  The Purchaser or user and Dogezer shall cooperate in good faith to resolve any dispute, controversy or claim.  Any dispute arising out of or related to the purchasing of the DGZ Token or using the Dogezer platform shall be referred to and finally resolved by independent arbitration selected by Dogezer and at Dogezer's discretion and choice.  Dogezer is using the next official communication channels with the users, stakeholders and broad community of the Dogezer Platform:
+
+ https://dogezer.com
+
+ https://t.me/dogezer
+
+ team@dogezer.com  The present Whitepaper may be amended from time to time to introduce and reflect all novations
+
+and changes.  Dogezer doesn't make and expressly disclaims all representation and warranties, express or
+
+implied. With respect to the DGZ Token and Dogezer Platform Dogezer doesn't represent and warrant and expressly disclaims any representation or warranty, express, implied, including without limitation, any representations or warranties of title, non-infringement, usage, suitability for any particular purpose, or as to the workmanship or technical coding thereof or the absence of any defects therein, whether latent or patent.  All trademarks, registered trademarks, product names and company names or logos mentioned in this Whitepaper, or at the domain https://dogezer.com and other inventions, ideas, concepts, code, discoveries, processes, marks, methods, software, compositions, formulae, techniques, information and data, whether or not patentable, copyrightable or protectable in trademark, and any trademarks, copyright or patents based thereon are the property of their respective owners. Reference to any products, services, processes or other information, by trade name, trademark, manufacturer, and supplier or otherwise does not constitute or imply endorsement, sponsorship or recommendation thereof by Dogezer.
+
+ If it turns out that a particular term or conditions of the White paper is not enforceable, the term or conditions will be modified such that it is enforceable and this will not affect any other terms contained herein.
+
+
+
+https://dogezer.com
+
+
+
+42
+
+
+
+community@dogezer.com
+
+
+
+

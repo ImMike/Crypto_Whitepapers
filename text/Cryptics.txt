@@ -1,0 +1,651 @@
+Contents
+
+
+
+1 Motivation
+
+
+
+2
+
+
+
+2 Concept
+
+
+
+5
+
+
+
+3 Financial structure
+
+
+
+7
+
+
+
+4 Platform model
+
+
+
+10
+
+
+
+5 Analysis of competitors
+
+
+
+16
+
+
+
+6 SWOT
+
+
+
+18
+
+
+
+7 Roadmap
+
+
+
+19
+
+
+
+8 Team
+
+
+
+20
+
+
+
+1
+
+
+
+1 Motivation
+
+The rapid development in the cryptocurrency sector of economy within the last two years has opened a large number of opportunities. It did not only lead to a new, reliable and independent ecosystem of money transfers, but also provided efficient and creative alternatives to classical economics. For example, initial coin offerings (ICOs) that appeared just several months ago are now a brand-new and successful way of funding, which makes starting a real-world business from a breakthrough idea easier than it ever was before. Comparing 2016 with the first three quarters of 2017, the number of ICOs went up more than 3 times to 154 and the volume invested soared more than 20 times to more than $2 billion [1]. The cryptocurrency market volume (in terms of capitalization and transaction volume) continues to grow, without showing almost any signs of slowdown, and when the market faces obstacles, it immediately finds new ways of overcoming them. The reasons for that come from popularity of the new market, and the fact that the community it represents is highly diversified in terms of skills and ideas. These trends are indicated by:
+
+ Rapid development rates of the cryptocurrency market. In just a few years the development rate of the cryptocurrency market has increased significantly and its capitalization today is more than 700 billion dollars [2]. One can see from historical data how the capitalization of the Bitcoin market has grown and how the price of one Bitcoin has increased (see Fig. 1 [3].
+
+Figure 1: Bitcoin market capitalization trend (left); Bitcoin market price trend (right).
+
+ Increase in the number of cryptocurrencies for value storage. Today there are more than 1300 cryptocurrencies in the world, and the number of new cryptocurrencies is growing by more than 3 times a year [7].
+
+ Availability of a huge number of data sources for the extensive market analysis: the same currency pair can be traded at the same time on a multitude of exchanges. The number and the volume of transactions is growing fast. For example, in 2016, the number of transactions with Ethereum was estimated to be about 50 thousand per day, whereas today it is more than 300 thousand (see Fig. 2) [4].
+
+2
+
+
+
+Figure 2: Ethereum transaction trend. The volume of transactions with Bitcoin a year ago amounted to about $ 160 million a day, and today more $ 4.6 billion a day (see Fig. 3) [5].
+
+Figure 3: Transaction volume of Bitcoin in USD per day.  Strong interest from banks and other major financial institutions such as MasterCard.
+
+Bank of Tokyo-Mitsubishi UFJ (the largest bank in Japan), the Central Bank of Canada, the People's Bank of China and some other central banks have reported an intention to issue their own cryptocurrencies in the near future. Even Goldman Sachs received a patent for the settlement and clearing system SETLcoin based on their own cryptocurrency. However even with such impressive terms of growth, the cryptocurrency market is still not efficient. The evaluation of the market shows significant volatility (huge jumps in value can occur in very short periods of time), which can be attributed to a lack of knowledge and methods for the correct estimation of its value, due to the high volatility of the market, where moves of more than 20 % or more per day are not uncommon (such behaviour has been clearly observed during December 2017). Therefore, there exists the urgent need for more accurate forecasting algorithms ( e. g. gold volatility is about 1.2 %, whereas for major currencies it is from 0.5 % to 1 %), which can also take into account non-quantitative factors affecting the market's movement (such as news, social media and etc.).
+
+3
+
+
+
+At the same time, high volatility also means high potential profits and, hence, the strong interest from retail investors, who are willing to take on the accompanied risks. For example, just in the first two quarters of 2017 prices of Ethereum and Bitcoin in dollars have increased by 3500 % and 165 % respectively (see Fig. 4) [6].
+
+Figure 4: Performance year-to-date for the top 2 digital currencies versus traditional assets. Due to this instability, newcomers may be hesitant to join the market as they prefer to avoid such risks. However, the inflow of new participants is vital to the growth of this sector. For example, the more stable the market is, the more people are attracted to join it as means of investing their money into projects that seeking crowd-funding via ICOs. The world has seen some successful companies initiated through crowd-funding and now their services are appreciated all over the globe. This is especially important nowadays when old methods, such as quantitative easing and fiat monetary policies, are not as efficient in helping the growth of the global economy. On the other hand, if the market is more efficient, it means that ICOs can be priced more fairly, which further helps analysing their success and will later lead to easier assessment of which projects to support. For this reason, at CRYPTICS we believe that stabilizing the cryptocurrency markets and making them more efficient will attract more people for mutual benefit. One way to tackle the problem of the market efficiency is to provide support for those market participants, who take the risk of drastic changes on the market and provide liquidity on exchanges and a safety cushion for retail investors. We believe in the power of diversification and healthy competition, so we envision a platform where such traders can provide their services and evolve in order to solve the market stability problem together. However, it takes a specific in-depth knowledge and years of experience in order to get full understanding of the technology and trends in any new markets. Qualified specialists in the cryptocurrency trading field are only starting to appear and their approach is often somewhat scattered and can be more systematic, which makes it challenging for them to form reliable predictions. We at CRYPTICS plan to help with this by advancing forecast algorithms which can be further used for trading cryptocurrencies.
+
+4
+
+
+
+2 Concept
+
+By summarizing the previous section we can formulate the problem which has to be tackled and the solution which CRYPTICS provides: Problem: Efficient and stable markets are a plus for everyone: that was proved on conventional markets. Cryptocurrencies have made an important step to becoming a new economy, in particular by providing better means of financing entrepreneurial projects. The markets in cryptocurrencies are of great interest for all market participants, however the lack of stability prevents these markets from reaching their full potential and threatens to impose regulations onto them. Stability can be provided by traders and investors who post liquidity, but in these new markets, traders are more cautious of taking liquidity risks, due to a lack of reliable forecast models and understanding of market dynamics. Solution: Our goal is to increase safety and reliability of cryptocurrency markets, since it is so vital for the new economy they are helping to build. CRYPTICS will provide support to market participants, who take the risk of drastic changes on the market and provide liquidity on exchanges and a safety cushion for the individual fund managers by increasing transparency and understanding of cryptocurrency markets. We believe in the power of diversification and healthy competition. CRYPTICS provides a platform and connects individual fund managers, traders, financial quantitative researchers as well as the data science community. The concept is depicted on Fig. 5 and outlined below.
+
+Figure 5: CRYPTICS concept visualization.
+
+Forecast
+
+As a first step we finalize the CRYPTICS algorithm that is focused on predicting changes in prices of cryptocurrencies (including the ICO tokens) both with respect to the fiat currencies and to each other. Due to the fact that cryptocurrency markets are very new, the factors that drive prices are coming from very different sources, so the algorithm uses the method of Artificial Intelligence (AI) such as Machine Learning (ML), and specifically Deep Learning (DL), in order
+
+5
+
+
+
+to combine quantitative (e.g. prices) and non-quantitative (e.g. news) data to come with a stable and reliable prediction. The collection of data and its processing occurs is done real-time, and leads to predictions time horizons ranging from minutes to days. These predictions can be used by any customer of the CRYPTICS platform either for private purposes (personal investments), or to build a trading strategy and create a small fund on this platform.
+
+Funds
+
+At CRYPTICS we plan to bridge the gap between the knowledge and capital by providing traders with an opportunity to run their strategies on the CRYPTICS platform. To their benefit will be the exchange connectivity infrastructure (including fast and stable lines), easy access to forecast results (so they can be used in their trading strategies), and access to the capital of our customers. Namely, as a customer, you can both buy a forecast to make your personal acquisition of a particular cryptocurrency, and follow a diversified strategy developed by one of the traders. This trader will hence build his own private fund, and act as a fund and portfolio manager for those who supported him with their capital. At CRYPTICS we welcome any kinds of trading strategies: their profitability and risk profiles (Sharpe ratio, draw-down, tail risk etc.) will be outlined for the customers to choose from. Yet, since we particularly value stability of markets and believe that liquidity provision is vital for that, the strategies that have this focus will get benefits from our side. Our customers will have the pleasure of enjoying this as a recommendation system: once they have started following some strategies, they will be provided with advices on which new strategies seem to fit their risk profile.
+
+Research
+
+In CRYPTICS we believe that it is important to relate to the academic community by connecting the breakthrough research with the practical challenges and the data scientists by providing a better understanding of the cryptocurrency markets. In particular, we plan to organize contests dedicated to solve AI and data problems appearing when advancing our forecast algorithm, trading platform and in the overall cryptocurrency sector of the economy. Those contests offer monetary prizes for the best solutions, and will entail both closed and open-source results.
+
+Analysis of the market shows the absence of a similar analytical platform in the market of cryptocurrencies. Along with the usual services of providing historical data and short-term forecasts based exclusively on such data, CRYPTICS offers a number of qualitative differences and advantages:
+
+ The forecasts of other platforms are often short-term, and hence are used to manage private funds, rather than to provide information to a wider range of users.
+
+ Other platforms mostly take into account only quantitative market data, while the CRYPTICS platform takes into account data from several important sources including social networks, macroeconomic indicators, opinions of leading analysts, etc.
+
+ CRYPTICS will not only have a leading team of data scientists with strong AI skills, but also will provide a platform for contests, where academics can try tackling practical problems in ML and DL within the fast developing and challenging area of cryptocurrencies.
+
+ CRYPTICS will provide its trader customers with an infrastructure for the decentralized creation of private funds.
+
+6
+
+
+
+3 Financial structure
+
+The CRYPTICS token (CRP) will be released on the basis of ETH. It can be purchased when exchanging it for ETH during the token-sale, and we plan to add BTC and other cryptocurrencies as a mean of the purchase. CRYPTICS will launch a token which will be used to pay all fees on the CRYPTICS platform. Therefore, creating a direct correlation between the success of the platform and the value of the token. More people have profit from their trades and more fees will be paid, hence the more tokens will be bought - increasing the demand and hence the value of the token. Any CRP owner can exchange it for a forecast subscription. Since CRYPTICS profit will depend on the profit of our customers, we are interested in providing our clients with the most reliable predictions. In addition, CRP is going to be the transaction currency between traders that open private funds on CRYPTICS and their token holders. Here it is important to mention that CRYPTICS will not have its own fund in order to avoid conflicts of interest with clients. Instead CRYPTICS offers free usage of analytical data(quantitative and non-quantitative) and paid forecast services to create the best possible environment for CRYPTICS customers. Not only does this makes CRP unique in its functionality among other tokens, but also is likely to cast it to be one of the most fairly valued cryptocurrencies.
+
+CRYPTICS monetization concept
+
+CRYPTICS revenue is going to be based on two main sources of income as shown in Fig. 6:  In the beginning the revenue is going to be mostly coming from the CRYPTICS forecast engine. The forecasts will be provided as a subscription service, priced on their accuracy, time horizon, number of currencies.  At a later stage, with attraction of fund managers and traders to the CRYPTICS platform, a new revenue stream will come from fund managers, as a small percentage over their profits and/or turnover.
+
+Figure 6: Monetization structure. CRYPTICS also plans some revenue from non-core activities, e.g. wallet services for customers of the fund managers, advertisement of tested and reliable products from cooperation partners etc.
+
+7
+
+
+
+CRYPTICS is expecting to reach the amount of 88.000 users by the year 2021 with the average revenue per user (ARPU) of 1.084 $. CRYPTICS revenue forecast is represented on Fig. 7
+
+Figure 7: Revenue forecast. There are three areas of monetization forecasted for the year 2021:  Platform revenues (basic and premium) 94%  90.000.000 $  Advertising revenues 5%  5.000.000 $  Closed funds infrastructure revenues 1%  1.000.000 $
+
+Token Production
+
+Fundraising and release of CRYPTICS tokens (CRP) is intended to finance the development of the platform and to attract the best talent to make the product as reliable as possible. A part of funds will be used for marketing efforts and advertising the project. CRP will be used to pay for any services that the platform has. Since those services are provided in layers (forecasting system, AI community collaboration, private funds platform etc.), raising close to hard cap only means that CRYPTICS will be able to start faster all of them. Raising a smaller amount will still enable CRYPTICS to start the services one by one, only the development time is going to take longer. For this reason, we do not introduce a soft cap. Any amount raised will directed at product development. The ITO will start on 26 March 2018. A total of 66.000.000 CRP CRYPTICS tokens will be provided. The cost of 1 CRP is estimated to be 0,001 ETH.
+
+8
+
+
+
+The token distribution and the preliminary budget allocation are presented in Fig. 8.
+
+Figure 8: Token distribution(left); Budget allocation (right) We estimate the potential interest of token holders in Fig. 9.
+
+Figure 9: Projected interest of token holders. Collected funds will be used to develop a self-learning platform based on artificial intelligence, global marketing of the project, the creation of a sales department and contextual advertising. CRYPTICS will start accepting CRP tokens as payment for services within the platform.
+
+9
+
+
+
+4 Platform model
+
+CRYPTICS customers will be able to develop, implement and back-test their trading strategies. Additionally CRYPTICS platform will offer three major features: analytics, forecasting and fund infrastructure. The holders of CRYPTICS tokens will have possibility of using all available features presented in the platform, depending of their needs. We describe the main characteristics of CRYPTICS trading platform below.
+
+Analysis
+
+The analytical component of the CRYPTICS platform has the following characteristics:
+
+ Key factors will be collected from multiple data sources, and provide an optimal number of quantitative indicators to evaluate the cryptocurrency selected by a customer.
+
+ The provided data shown by indices with the probability of influence on the market and on separately selected cryptocurrencies. In other words, the user gets aggregated data with maximum insights.
+
+ Global indicators, such as total market capitalization, number of current coins available for bidding, number of active markets, total sales volume and the percentage of market capitalization for selected cryptocurrencies, are meaningfully tied to the events and moods of market players: users, traders, cryptocurrency holders, miners and developers of cryptocurrencies. Thus, the system provides the user with not just raw numbers, but the history and meaning of events associated with them
+
+ In the user's account, the user will see the results of trading and the efficiency of forecasts, as well as what data was used to compile manual, semi-automatic and automatic portfolio transactions for the selected period.
+
+Forecasting
+
+The unique feature CRYPTICS will provide is a set of reliable forecasts developed by CRYPTICS team of data scientists. The system could be used by our client in their strategies. Besides relying on quantitative market data for forecasts, CRYPTICS also uses non-quantitative data from selected lists of news sources and social networks accounts to estimate the market sentiment, which is of extreme importance not only for the most of altcoins, but also for some main currencies. CRYPTICS forecast engine outline is depicted in Fig. 10 and it has the following characteristics:
+
+ Sales forecasting charts for the selected cryptocurrency in a convenient time frame, taking into account the user's settings for the trading strategy (budget, risks, correlation, trading frequency, etc.).
+
+ The forecast of changes of the main market indicators for the selected cryptocurrency is built on a stream of data from the entire market and represents a powerful and reliable tool for constructing an individual portfolio of cryptocurrency for trading or cryptocurrency acquisition purposes. To distinguish media noise from key events and interpret them in the context of changing courses, building reliable forecasts for the interest of each CRYPTICS user is one of the main tasks of the project.
+
+ The quality of forecasting grows with every forecast, transaction, any signal on the market and in the community due to the built-in machine learning algorithm that collects information and compares it with previous forecasts.
+
+10
+
+
+
+Figure 10: CRYPTICS forecast engine outline.  CRYPTICS develops algorithms to predict changes in the value of cryptocurrencies:
+
+ Current state: for 24h horizon the average accuracy 62% over major cryptocurrencies including BTC, ETH, LTC and etc. (higher for some cryptocurrencies, e.g. 82% for ETH)
+
+ In the pipeline: predictions for shorter time horizons to provide the aid for highfrequency traders.
+
+ Methods used: machine learning and deep learning to combine quantitative (e.g. prices) and non-quantitative (e.g. news) data
+
+Since the beginning of October 2017, CRYPTICS has been posting daily forecasts on our corporate web-page https://cryptics.tech/, in order to demonstrate reliability and transparency of CRYPTICS unique feature to our potential customers and token holders. An example of a daily forecast is resented in Fig. 11.
+
+Figure 11: CRYPTICS daily forecast.
+
+11
+
+
+
+Funds
+
+CRYPTICS is not going to create its own fund, due to the potential conflict of interests with our clients. Instead we will offer to our users:
+
+ The possibility of creating private funds, to get capital support from other token holders, and manage these funds or just their own portfolio in order to increase profits.
+
+ Each user can publicly open his portfolio, as well as share it with other users, while earning a percentage of the profits from transactions made within this portfolio as a reward.
+
+ Each user will have a set of predefined portfolios that will automatically hold key indicators through analytics and forecasts in real time.
+
+ CRYPTICS provides its users with an infrastructure for the decentralized creation of private funds. Management of these funds will be in a semi- or automatic mode, taking advantage of all the features of the analytical platform, including forecasts built on the AI algorithms of the system.
+
+MVP
+
+CRYPTICS has already released its minimal value product (MVP), which offers necessary instruments for alleviating the situation with uncertainty and becoming a functional product on the crypto market. CRYPTICS maintains the concept behind of supporting market participants by providing liquidity on exchanges and a safety cushion for retail investors by creating a platform that connects market players and develops algorithms to predict changes in the value of cryptocurrencies. The CRYPTICS MVP demonstrates a fully functional dashboard for users and already highlights the main advantages of the system and its main competitive factors:
+
+ High frequency trading forecast, day-to-day forecasts with high accuracy and a profit & loss calculator.
+
+ Social media analysis for the forecast engine, allowing the program to analyse data flows from the internet, pinpointing key terms and evaluating them on a complex scoring model using machine learning and AI.
+
+ The analytical part is a key element of the CRYPTICS system as experience indicates that cryptocurrency prices are largely formed by hype, social behaviour and speculative factors that propagate in a viral manner throughout the internet.
+
+ Technical analysis is also integrated into CRYPTICS algorithms as AI forecasts indicators such as RSI, MACD, Bollinger bands, Ichimoku, SMA, EMA and etc.
+
+The CRYPTICS MVP dashboard allows for intuitive and user-friendly selection of primary and secondary assets, exchange facilities and allocation of overall trading budgets. After the initial setup, the system allows receiving forecasts graphically and the inbuilt bot conducts trades according to the selected strategy. The statistics calculator allows depicting the number of accurate and inaccurate forecasts in conjunction with the social module, which shows influence of social signals on a particular currency and the chosen strategy. Video presentation is available on our YouTube channel: https://youtu.be/INMF-WXg9E4.
+
+The release of CRYPTICS MVP is a milestone for the project and allows all potential trades and investors the opportunity to evaluate the efficiency and functionality of the fully operational product that does not have any real competitors or analogues of complexity and efficiency on the market.
+
+12
+
+
+
+Platform architecture
+
+CRYPTICS platform consists of different modules, responsible for prescribed tasks (described below), which combined represent the unique product. The CRYPTICS model platform is schematically presented in Fig. 12.
+
+
+
+Market Data
+
+
+
+Textual Data
+
+
+
+Data Lake
+
+
+
+Feature Engineering
+
+
+
+Pre-processing
+
+
+
+Prediction model
+
+Front-end
+
+Figure 12: CRYPTICS platform model.
+
+Data collection The first task of CRYPTICS is to collect real-time data that affect the cryptocurrency market or contain information about its current and forthcoming changes. The main sources of data collection are as follows:
+
+ Cryptocurrency exchanges  Official cryptocurrencies websites  News portals, forums, related social network accounts and messenger groups  Actions of the best traders and fund managers
+
+Data Storage The collected and marked data will be stored in the data lake. The task here is to organize the repository in such a way as to make it possible to repeatedly update information in real time, append features, training and tune model. We are going to use here some best in the class database.
+
+13
+
+
+
+Feature Engineering and Data preprocessing The most complicated, and in the same time, the most important part of our model. Therefore, CRYPTICS will use a variety of input sources and financial and quantitative models to calculate features and extract features from news. This is our know how where we select, extract, clean, transform data into features that summarize the information content necessary for pricing, and finally create tensor for our model. Prediction model The CRYPTICS model will generate forecasts for different time periods based on aforementioned sources. The outcome will be a predicted probability of the move direction and the expected value of its size, together with the accuracy estimates. The comprehensiveness of the input data and the predictions is one of the main advantages of using CRYPTICS , in contrast to a simple analysis of one or more data sources, or existing information panels. On a cold start, we can already guarantee a prediction accuracy of 64% one day ahead, which we are aiming to improve up until 75% for the hot start.
+
+Platform visualization
+
+Here we present the CRYPTICS landing dashboard prototype Fig. 13, the first which CRYPTICS customers will see after login in the account. The most important values are visible right here  trading bot results, development of clients' portfolios, and the watch-list with favourite coins, which can be selected in the client's profile.
+
+Figure 13: CRYPTICS landing page
+
+14
+
+
+
+The next ones are trading dashboard Fig. 14 and the optimization dashboard Fig 15 that feature the key principles of a client's project  the ability to trade and optimize your portfolio directly within CRYPTICS user interface and with the help of our AI.
+
+Figure 14: CRYPTICS trading dashboard
+
+Figure 15: CRYPTICS optimization dashboard 15
+
+
+
+5 Analysis of competitors
+
+
+
+Here we present the CRYPTICS comparison to other trading platforms and fund infrastructure. First we compare main goals and basic concepts in the table below.
+
+
+
+Company CRYPTICS
+
+Genesis Tokenbox Coindash AICOIN Cindicator NumerAI ICONOMI Enigma:Catalyst
+
+
+
+Main goal Increase safety and reliability of cryptocurrency markets by providing a support for market participants, who take the risk of drastic changes on the market and provide liquidity on exchanges and a safety cushion for the retail investors by increasing transparency and understanding of cryptocurrency markets. Unite exchanges brokers trades and investors into a decentralized open and fair network in the private trust management market built on blockchain. Bring together cryptocurrency funds under the management of professional portfolio managers and traders on the one hand and investors on the other
+
+Lower the bridge of entry to cryptoinvestment markets by providing tools and services that make interacting handling and trading crypto assets accessible to everyone Bridge the divide between a conventional trading/investment company and a DAO without formal structure.
+
+Create the social and technological infrastructure needed to make effective decisions under the volatile conditions.
+
+Improve networking on financial market by solving over-fitting problem in machine learning algorithm applied to financial problem. Cater to investors looking for a high profits not possible in the old economy.
+
+Create a decentralized open and secure protocol for the web that is set to change how data is aggregated shared and monetized. As an application is to increase the adoption of crypto-assets by building a tool that makes easier to make educated investment decisions.
+
+
+
+Basic concept Investment platform which provides traders with an opportunity to run their strategies using provided forecasts based on both quantitative and non-quantitative data and for nondevelopers to follow into the most successful strategies.
+
+Trust management platform, where the actions of managers brokers and investors are transparent and open. Each manager has his own cryptocurrency. Umbrella platform hosting funds and traders in a market place format and providing legal incorporation functionality for the creation of funds to issue of their own tokens and trading activities Market network, employing the best of marketplaces, social network ans SaaS to address the needs of tomorrow's crypto-investors, which result a social network of investors and traders. Passive investment platform that uses a strategy combining AI trading models with Wisdom of the Crowd to generate profit for coin holders. The part of profit generated from AI models will be invested in early stage seed companies. Portfolio based on the hybrid intelligence: collective intelligence of a large group of dissimilar decentralized analysts combined with AI prediction based on analytical data. Data scientists compete in the tournament by staking a new crypto-token on their prediction. Best predictions are rewarded based on auction mechanism. Open fund management platform where traders with experience create their own investment funds and investors can invest in those fund. Also offers two new financial instruments ICONOMI trade fund and coin manager fund. Investment platform that allows anyone to build their own crypto-hedge fund using Enigma data marketplace protocol. Non-developers can invest in successful strategies.
+
+
+
+16
+
+
+
+Next we compare the main features of the competitive products.
+
+
+
+Company
+
+CRYPTICS
+
+Genesis Tokenbox
+
+Coindash
+
+AICOIN Cindicator NumerAI ICONOMI
+
+Enigma:Catalyst
+
+
+
+Fund infrastructure
+
+yes
+
+yes yes
+
+yes
+
+yes no no yes
+
+yes
+
+
+
+Trade algorithm
+
+yes
+
+no no
+
+yes
+
+no no no no
+
+yes
+
+
+
+Data usage
+
+quantitative (e.g. prices) non-quantitative (e.g. news)
+
+  quantitative data social network data token holders data token holders data token holders data  quantitative data based on Enigma protocol
+
+
+
+AI-forecast
+
+HFT, intraday daily no no
+
+no
+
+no no no no
+
+no
+
+
+
+Here we can split our competitors into two different types:
+
+ The first group (NumerAI, Cindicator, ICONOMI and AICOIN) uses the idea of collective thinking and apply it to create the their own investment funds. They collect the forecasting data produced by their clients using tournament or/and auction systems of rewards and and then use these data in their AI modelling for investments.
+
+ The second group is a little bit more diverse. It consists of companies, which make it possible for clients to create their own products and cryptocurrency (Genesis, Tokenbox), combine idea of marketplace and social network (Coindash) and use trading platform as an application for innovative data protocol (Enigma: Catalyst).
+
+By summarizing the above, we can highlight major aspects of CRYPTICS in comparison to other platforms on the market, which make CRYPTICS to stand out:
+
+
+
+ First and foremost CRYPTICS profits when its clients profit. That is why CRYPTICS offers the free analytical data for the customers together with paid subscription for reliable forecasts, based not only on quantitative data but also non-quantitative.
+
+ CRYPTICS will organize data challenges for data scientists and academics, the results will be transferred to the forecasts, which will be available on the platform constantly improving the quality of the CRYPTICS product and hence giving our clients better chances to profit.
+
+ CRYPTICS does not plan to create its own investment fund to prevent the conflict of interests with our customers, hence making the market more transparent and fair.
+
+ Last but not least, CRYPTICS platform will be user oriented with a high level of beginner accessibility, easy to use and to learn.
+
+
+
+Together with the opportunity to create custom trading strategies and private funds the above features show that CRYPTICS does not just claim to provide liquidity and transparency to the cryptocurrency market but actually develops the platform which can help to achieve these goals.
+
+
+
+17
+
+
+
+6 SWOT
+
+The strong and weak side of CRYPTICS platform are shown in the strength, weakness, opportunities and threats (SWOT) table below.
+
+
+
+External/Internal Opportunities
+
+Threats
+
+
+
+Strength 1. Good results of forecast algorithms
+
+2. First project aiming at systemic evaluation of cryptocurrencies value
+
+3. Unique strategy with analysing social and news media in real time for forecasting 4. Blue ocean market in forecasting of cryptocurrencies
+
+5. Strong skilled team 6. Automation of buying/selling order execution (following the settings under customers' control) 1. Unstable and highly volatile market of cryptocurrencies 2. Very high objective to forecast as much as possible the fastest and highest volatility market in the world 3. Adoption rate depends on political climate in the realm of cryptocurrencies
+
+
+
+Weakness 1. MVP(Minimum Viable Problem) not fully ready yet  finalize MVP 2. Need for investment in product development and marketing  solving through funds raised during ICO 3. ICO organization  close asap all legal and organization issues
+
+4. Need for top professionals AI experts  work with universities and scientific groups
+
+1. Get the product on a high accuracy level asap 2. Connect to more data source to avoid dependency on few sources  get own data flow
+
+
+
+The important conclusion we can make from this table is that the positive aspects overweight the negative ones and the weaknesses and threats can be overcome.
+
+
+
+18
+
+
+
+7 Roadmap
+
+Step 1: Idea and Research  Development of CRYPTICS concept  Market research and data collection
+
+
+
+December 2016
+
+
+
+Step 2: Start of Development
+
+
+
+1Q - 2Q 2017
+
+
+
+ Development and testing of the mathematical models on the collected data
+
+
+
+ First forecasts based on ML&DL (adding non-quantitative data sources)
+
+
+
+ Team hiring
+
+
+
+Step 3: ITO  Development of token and wallet on Etherium basis
+
+
+
+3Q 2017 - 1Q 2018
+
+
+
+ Introducing new members: experts in Ml&DL, UX, marketing, business development
+
+
+
+ Preparation for ITO: whitepaper, website, marketing
+
+
+
+ Introducing MVP in December 2017 and ITO in March 2018
+
+
+
+Step 4: Production
+
+
+
+2018
+
+
+
+ AI development for forecast improvements via attracting AI experts on a competitive basis
+
+
+
+ Launching of portfolio features with CRYPTICS tokens as payment forecast service
+
+
+
+ Marketing activities all over the world
+
+
+
+Step 5: Automatization and Funds  Full bot's integration for all market transaction  Development of the decentralized funds infrastructure  Automatic portfolio management based on KPI forecasts
+
+
+
+2019
+
+
+
+Step 6: Expansion
+
+
+
+1Q - 2Q 2020
+
+
+
+ The product is complete with over 30.000 transactions per month based on forecasts
+
+
+
+ Starting the next stage of the development by introducing more real-time signals from media to increase the speed of forecasts to real world meanings
+
+
+
+Step 7: Decentralized Funds
+
+
+
+3Q - 4Q 2020
+
+
+
+ Launch of the decentralized funds managed by CRYPTICS users based on AI forecasts and auto-management
+
+
+
+ Earning on forecasts, fund infrastructure and marketing for the funds.
+
+
+
+19
+
+
+
+8 Team
+
+The CRYPTICS team has more than 5 years of experience in the field of analytics and IT technologies, experience in working with Big Data and fintech technologies, as well as 4 years of machine learning experience. General team of the project - 10 people. Key team members:
+
+Stanislav Maer, CEO, Projectmanagement, IT & Marketing. Stanislav has created and launched a number of on-line projects, including a contextual advertising system, an international marketplace, and an analytical tool for web-masters with built-in machine learning. Has experience in building IT projects and their introduction to the market in more than 45 countries around the world. Has more than 5 years of experience in on-line marketing and data analytics in retail. After that, several on-line stores were launched. Interest in blockchain and cryptocurrency technologies arose in 2013. In 2016, sold the portfolio of on-line stores, and focused on the CRYPTICS project
+
+Oleg Tereshchenko, CEO, Strategic & Process Management. Since 2011, he has created and launched a number of on-line projects, among them a task manager, an analytical tool for web-masters with built-in machine learning, and a telemedicine project. Management, optimization and construction of business processes using IT technology and data analysis led to the field of machine learning and smart contracts. Interest and study with practical experience of cryptocurrencies arose in 2012. In 2016 he focused on the CRYPTICS project.
+
+Maxim Maslennikov, CTO, AI Software Architect. Programming and managing commercial projects based on C/C++ and Python. Machine learning & deep learning specialist. For more than 15 years he has been engaged in the architecture of system centres, for 20 years he advised corporations in the field of machine learning and IT systems. He participated in numerous projects in the field of artificial intelligence.
+
+Ilya Tkachev, Head of R&D, Quant Trader. Since 2008 was trading personally on conventional exchanges, from 2014 professionally, as a member of the top market maker company. Believes that open and efficient markets with a multitude of players provide benefits for the overall economy and help avoiding too rigid regulation, which is now vital especially for the cryptoeconomy. Holds M.Sc. in Financial Mathematics and finishes a PhD in Probability and Statistics. During the course of his PhD successfully participated and led numerous research projects with applications in Economics, Systems Biology and Robotics.
+
+Yaroslav Khomenko Data scientist, Algorithm Development. Since 2015 - data analyst in several large on-line projects in the field of retail and analytics. Worked with Adobe Analytics, Google Data Studio, Watson Analytics, Microsoft Power BI, Tableau. Data collection via web scraping, used numerous APIs. Experience in programming and managing automated betting systems in contextual advertising. Analysis and management of price strategies, development of automatic strategies for managing the price portfolio. Programming on R and Machine Learning in Python. Since early 2017 - data scientist in the project CRYPTICS .
+
+20
+
+
+
+Alexey Voronetsky Financial Analyst, Product Development. Alexey has experience in setting up advertising campaigns and end-to-end on-line analytics. Since 2011 he works at the International Integrator Company NetCracker Technology Corp. He participated as a business analyst, a migration analyst in implementation projects for telecommunications companies such as NTT DoCoMo, Deutsche Telekom, Macedonian Telecom, Claro, Maxis, Andorra Telecom, Telefonica Ecuador. Interest in blockchain and cryptocurrency technologies appeared in 2015. Since 2016, he has been starting his hand at trading and is developing in this direction. Has funds in the Trust Management from several investors. Middle 2017 he has joined the CRYPTICS team.
+
+Sergei Holmeckis Advisory, Business Development & Finance. Supports CRYPTICS as consultant and advisor in the area of business development and finance. Sergei has track record of delivering international projects in the telecom industry and brings over 8 years of experience in versatile analytical roles, management consulting, transformation projects and profound experience in the realm of outsourcing and shared services.
+
+Dmitry Shcherbakov, Data Scientist. Scientific Research. Doctor of natural sciences, recently received the doctoral degree in Mathematics (with focus in Numerical Analysis), holds M. Sc. degree in Financial Mathematics. Dmitry has participated in numerous international research projects with applications in Applied Mathematics and Physics. Strong experience in scientific research, tackling complicated analytical and computational problems. Dmitry supports CRYPTICS as consultant and advisor.
+
+Andrew Gurar, Fund Infrastructure Manager,Product development Andrew possess a strong risk-management understanding and trading experience as well as experience in project management with brokerage and investment funds. He represents CRYPTICS on media channels as a foreign speaker (YouTube channel reporter) and delivers best practices from fiat world trading business and legislation
+
+Andrew Konstantin UX Expert, Product Front-end. Andrew has a strong experience in UX design and product front-end development. He has participated in a number of on-line projects.
+
+Valeri Hirda Marketing, PPC expert. Advertising professional specialist. Range experience of working in different position gives him an opportunity to be successful in relations within the team and clients.
+
+21
+
+
+
+References
+
+[1] https://www.forbes.com/sites/chancebarnett/2017/09/23/inside-the-meteoric-rise-oficos/#1447062a5670
+
+[2] https://coinmarketcap.com/ 10.01.2018 [3] https://coinmarketcap.com/currencies/bitcoin/#charts [4] https://etherscan.io/chart/tx [5] https://blockchain.info/charts/estimated-transaction-volume-usd?timespan=60days [6] http://www.marketwatch.com/story/what-delivered-the-best-return-of-2017s-first-half-
+
+bitcoinand-ethereum- 2017-06-28%20 [7] http://www.marketwatch.com/story/all-of-the-digital-money-in-the-world-in-one-chart-
+
+2017-06-07
+
+Copyright c 2017 CRYPTICS https://cryptics.tech 11 January 2018 22
+
+
+
+

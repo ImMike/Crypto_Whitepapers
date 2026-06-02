@@ -1,0 +1,551 @@
+Credo Token
+
+Blockchain Based Spam & Email Access Solution
+
+Stewart Dennis Turing Technology, Inc.
+
+July 9, 2017
+
+Abstract Email is broken. Spam costs the global economy $20 billion per year and still accounts for 70% of all email. Existing regulatory and technological solutions have failed to eliminate the significant monetary cost and negative externalities of unsolicited email and spam. Email access outside of known contacts is difficult. Email access via cold emails is not good for either senders or recipients; such messages are not responded to reliably and consume recipients' valuable time. Email access via introduction operates inefficiently through unreliable exchanges of social capital and requires senders to have a maintained social path in their network to the recipient. These problems with email present significant negative externalities and an inefficient mechanism of exchange for email access. The solution is to establish a new market for email access in which email senders contacting unknown recipients pay a fee for the email to either go through or be responded to. The fee prices in and compensates recipients for the attention or action they provide the email, and improves senders' likelihood of attaining the attention or response of recipients. The solution is implemented in two components: BitBounce and credo. BitBounce implements filtering of emails from unknown contacts and the payment mechanism for email receipt or response. The credo token is the primary unit of exchange that recipients are compensated with, though Bitcoin and Tezzies will also be supported for convenience. Credo serves the additional purpose of incentivizing adoption and continued use of the BitBounce solution via distributions based on proof of usage.
+
+1
+
+
+
+Contents
+
+
+
+1.
+
+
+
+Value Proposition
+
+
+
+2.
+
+
+
+State Change
+
+
+
+2.1 Starting State
+
+
+
+2.1.1 Email between known contacts
+
+
+
+2.1.2 Cold/unsolicited email
+
+
+
+2.1.3 Email via introduction
+
+
+
+2.2 Goal State
+
+
+
+2.3 Path
+
+
+
+2.3.1 Components
+
+
+
+2.3.2 Justification
+
+
+
+2.3.3 Timing
+
+
+
+2.3.4 Spam Filter Use Case
+
+
+
+2.3.5 Incentivized Response Use Case
+
+
+
+2.3.6 Autopilot Use Case
+
+
+
+2.3.7 Existing Email Accounts
+
+
+
+2.3.8 Plugins
+
+
+
+2.3.9 Scaling
+
+
+
+2.3.10 Success
+
+
+
+3.
+
+
+
+Distribution
+
+
+
+3.1 Psychology Behind Adoption
+
+
+
+3.2 Viral Marketing Effect
+
+
+
+3.3 Growth in Fundamentals
+
+
+
+3.4 Transaction Volume
+
+
+
+3.5 Reward Mechanisms
+
+
+
+3.6 Proof of Usage
+
+
+
+3.7 Fraud Prevention
+
+
+
+3.8 A New Email Standard
+
+
+
+3.9 A New Tradition-Based Norm
+
+
+
+4.
+
+
+
+Token Dynamics & Launch
+
+
+
+4.1 Blockchain Implementation
+
+
+
+4.2 Total Supply
+
+
+
+4.3 Non-inflation
+
+
+
+4.4 Division of Tokens
+
+
+
+4.5 Pricing
+
+
+
+4.6 Team
+
+
+
+4.7 Community
+
+
+
+4.8 Compliance
+
+
+
+4.9 Risks
+
+
+
+4.10 Smart Contract
+
+
+
+4.11 Token Pre-Sale
+
+
+
+4.12 Token Sale
+
+
+
+4.13 Use of Proceeds
+
+
+
+2
+
+
+
+1. Value Proposition
+
+We propose the credo (pl. credos) as a token of exchange in a market for email access that seamlessly integrates with existing email accounts and infrastructure. The Credo plus BitBounce[1] solution provides:
+
+ Recipients: reduced spam in inbox, restored productivity, compensation for engagement with emails from unknown senders.
+
+ Senders: more reliable acquisition of recipient attention and response, improved access to recipients who are currently difficult and valuable to contact (see 3.1 for discussion of the value of email access corresponding to sender-recipient pairings).
+
+2. State Change
+
+The purpose of credo and BitBounce is to solve the problems of spam and email access. Given that email usage is fast becoming global with 3.7 billion email users already [2], solving these problems would create tremendous good through positively impacting a large number of people.
+
+2.1 Starting State
+
+The starting state is a world with free email and many negative externalities. We can discretize free email access into three separate classes, and then assess each class in turn:
+
+2.1.1 Email between known contacts
+
+Email between known contacts is generally fine. This case only becomes problematic if a known sender abuses email access to a recipient (e.g. sending an excessively long series of emails until a response is received).
+
+2.1.2 Cold/unsolicited email
+
+Cold emails take up time and cause loss of productivity. Specifically, they cause a number of negative externalities including but not limited to: lost attention and productivity, overload, difficulty finding the right information, lost time spent on archiving and deleting cold emails, and other general negative effects associated with spam and unsolicited email. These negative externalities have been estimated to cost the global economy $20 billion per year[3] and US businesses $712 per employee each year in lost worker productivity [4].
+
+3
+
+
+
+Cold emails constitute a significant portion of emails, with research finding 66 percent of email reaching user inboxes is spam despite aggressive spam filters [4]. Other recent estimates from experts at Microsoft and Google indicate that 70% of all global email is still spam [3]. Existing regulations, such as the CAN-SPAM Act, and technology solutions such as spam filters have been found to be largely ineffective at solving the problem [5].
+
+2.1.3 Email via introduction
+
+Using a social-exchange theory model [6] of email communication, introductions operate via exchanges of social capital. Such email access depends on the network of the sender and the state of relationships in that network, which is much less efficient and reliable than a financial market with clear pricing. Moreover, such introductions conflate email access and referrals, which can be decoupled with email access and referral checking happening via separate processes.
+
+2.2 Goal State
+
+The goal state is a world in which a market for email access has been established and participation in the market for email access is pervasive and global. With that market established, recipients will be sufficiently compensated for any cold/unsolicited emails they receive. Moreover, it will be easy, efficient, and reliable to contact VIPs and other recipients of sender-specific value via monetary rather than social exchanges.
+
+2.3 Path
+
+2.3.1 Components
+
+There are two components to the path between the starting and goal states:
+
+1. BitBounce technology solution: use the BitBounce service and technology to solve the problems and facilitate the market for email access. This component of the solution is closed source and is being patented.
+
+2. Credo incentivized distribution: use credos to incentivize the adoption and continued use of BitBounce.
+
+2.3.2 Justification
+
+There are two choices that require justification: 1) using a cryptographic token, and 2) creating and using the credo token. For 1), the primary justifying reason to use a
+
+4
+
+
+
+cryptographic token rather than a conventional currency is that token transactions can be confirmed in seconds or minutes rather than days which is necessary for timely delivery of emails; there is a secondary, non-technological reason which is the marketing benefit of using cryptographic tokens. For 2), the justifying reason for creating the credo token is the need for more control over the proof of usage distribution of tokens (see 3.6). Redistributing Bitcoin or some other token to correspond to use of BitBounce seems infeasible. By creating a new token, we can distribute a much larger portion of the token's total supply in a way that corresponds to usage of BitBounce (see 3.4). Another justifying reason to create our own token is that we can raise funds for BitBounce through selling a portion of the tokens.
+
+2.3.3 Timing
+
+The idea of using payments to solve spam has been around for a while [7], but it has only recently become feasible through the innovation of faster transaction confirmation times found in cryptographic tokens. That innovation combined with the emergence of Blockchain technology to facilitate token creation makes now the right time to finally solve the spam and email access problems using this approach.
+
+2.3.4 Spam Filter Use Case
+
+The first use case for BitBounce is to act as a more effective spam filter, which solves the spam problem. This works as follows:
+
+1. A new user signs up and adds an email account. 2. The user then syncs and/or manually adds contacts to a whitelist. 3. Incoming emails received from addresses that are not on the whitelist are filtered
+
+to an email folder called unpaid, and an auto-response is then sent to the original email sender as illustrated in Figure 1. 4. The auto-response asks the sender to do one of the following:
+
+a. Request to be on the whitelist, which puts their email address on the recipient's whitelist with a button to approve their membership.
+
+b. Enter a recipient-generated promo code that will allow the email to go through for free.
+
+c. Pay a small fee for the email to go through. 5. If the sender does nothing, the email remains in the unpaid folder.
+
+5
+
+
+
+Figure 1. Auto-response Email
+
+2.3.5 Incentivized Response Use Case The second use case for BitBounce is to incentivize a response from a recipient, which solves the email access problem. This works as follows:
+
+1. A user composes an email to a listed VIP or arbitrary recipient (see Figure 2). 2. The user then specifies the fee to pay an arbitrary recipient or accepts the listed
+
+price for VIPs. 3. The user sends the email. 4. The user is asked to pay the fee or pays automatically depending on their
+
+account setup. 5. If the user pays, the email is sent to the recipient and another email is sent on
+
+the email thread informing the recipient that an amount of cryptocurrency is being held in escrow for them until they respond. 6. If the original recipient responds to the email thread then the response is then automatically detected and the amount held in escrow is released.
+
+6
+
+
+
+Figure 2. Incentivized Response Feature
+
+One challenge with this use case is ensuring responder authenticity. This is important because senders would not want to pay for a response from some delegate such as a secretary. Our initial approach will be to vet VIPs listed on our platform and have them agree to terms and conditions that require them to personally respond in order to receive the cryptocurrency incentive payment. At a later date, we can implement a more robust and automated method by using one of the emerging user-device identity platforms to automatically prove the identity of the responder. 2.3.6 Autopilot Use Case The third use case for BitBounce is to automatically pay in Credo for emails to go through to recipients. This reduces payment friction and still ensures the problems are solved because the inbox only contains emails from people you know or those you've been paid in Credo to receive. We have developed a consumer and enterprise version of BitBounce Autopilot. The enterprise version works by checking the from-address of incoming emails against the company's domain and then sending a Credo to the recipient user when there's a match. We are currently running a proof of concept with one enterprise for this and it is generating non-trivial transaction volume (98 Credo transactions in the last 24 hours). Given this enterprise is participating in the first pilot, we are subsidizing the proof of concept by providing them with Credo and Ether for their transactions.
+
+7
+
+
+
+2.3.7 Existing Email Accounts One of our primary design goals is to improve the state of email with minimal disruption to users' existing email experience. Users already have significant data in and habits formed around specific email services, and so we want them to be able to continue using their email setup of choice. This goal is accomplished through seamless integration of BitBounce with existing email accounts. As soon as a user adds an email account, BitBounce can sync their contacts to their whitelist and begin filtering spam (see 3.3 for early usage data). The user can then continue using their existing email client (e.g. Gmail, Outlook, etc.) with BitBounce operating in the background. In fact, we expect that many users will only rarely directly access the BitBounce dashboard (see Figure 3), especially as the plugins mature.
+
+Figure 3. BitBounce Dashboard.
+
+2.3.8 Plugins In order to further accomplish the goal of improving users email experience with what they are currently using, we intend to develop plugins for Gmail (see Figure 3 for design) and Outlook that allow for the attaching of credos to an email message (as per 2.3.4). These plugins will also facilitate easier adding of addresses to a whitelist via an Add to BitBounce Whitelist button. Plugins for these services have already been developed for
+
+8
+
+
+
+Turing Cloud[8], and the experience from developing them will now be applied to BitBounce plugins.
+
+Figure 4. Design: BitBounce plugin for Gmail.
+
+2.3.9 Scaling There are two main systems to scale: BitBounce email processing and Credo transactions.
+
+Scaling BitBounce email processing: much of the initial scaling of BitBounce can be done using experience the team gained from developing Turing Cloud. At some point, BitBounce can be switched to a new architecture that shards accounts across multiple databases, which would facilitate near infinite scalability.
+
+9
+
+
+
+Scaling Credo transactions: some amount of improved scalability will come from improvements in the scalability of Ethereum's underlying blockchain by the core developers (e.g. blockchain sharding). We also intend to conduct some portion of transactions off the blockchain that will be settled when a wallet owner wants to withdraw Credo; this will also help us avoid disproportionately large transaction fees on micropayments.
+
+2.3.10 Success
+
+We will measure the success of our solution to the spam problem by the percentage of all email accounts that have BitBounce active on them. We will consider our solution to the spam problem to be more successful as this percentage increases.
+
+We will measure the success of our solution to the email access problem by the volume of Credo transactions sent via BitBounce, which will indicate the level of activity within the market for email access that we have established. We will consider our solution to the email access problem to be more successful as this transaction volume increases.
+
+3. Distribution
+
+3.1 Psychology Behind Adoption
+
+Here is a look at the economic rationale for each party in using BitBounce:
+
+ Recipients who sign up to use BitBounce will have to specify or accept a default price at which unknown senders can email them. Given that recipients have specified or accepted such a price, they have determined a value for their attention and a corresponding price at which they are willing to receive or respond to such emails.
+
+ Senders will be able to see the price at which someone is willing to read or respond to their email. If a sender decides to send an email for a given price, then they have judged the value of the recipient's attention or response to be worth the cost.
+
+Several types of sender-recipient pairing may find greater value in initiating communication with each other via BitBounce. Some examples include entrepreneurs contacting investors, salespeople contacting CXOs, and recruiters contacting candidates (e.g. engineers).
+
+3.2 Viral Marketing Effect
+
+10
+
+
+
+BitBounce has a viral marketing effect via auto-responses, whitelist notifications, and Guaranteed Response emails. In data from early adoption, this effect has been nontrivial.
+
+3.3 Growth in Fundamentals
+
+We define an active user (AU or DAU) of BitBounce to be a user account that meets the following conditions:
+
+1) The user has at least one email account. 2) The BitBounce spam filter is enabled on the user's email account(s). 3) Access to the user's email account has not been revoked. As of July 8th 2017, we can disclose that BitBounce currently has a user base of 7,832 active users that is growing at a rate of 41.4% WoW and 293% MoM. Active users have added 654,950 whitelist members and we are now processing over 42,000 emails per day on their behalf. The metric we place highest priority on is active user growth because we expect this growth in fundamentals to be the primary cause of increased transaction volume and the success of our solution in bringing about the goal state.
+
+Figure 5. Chart and Metrics are as of July 8th 2017
+
+3.4 Transaction Volume
+
+The Autopilot Use Case (see 2.3.6) has started generating growing transaction volume. As of the time of writing, 98 Credo transactions were sent in the last 24 hours with 151 attempted Credo transactions (logic to retry failed transactions  such as failures from
+
+11
+
+
+
+insufficient gas - will be implemented soon). These early indicators suggest that the enterprise Autopilot version of BitBounce could be the largest driver of increasing Credo transaction volume.
+
+The total volume of transactions from other use cases remains low yet promising.
+
+3.5 Reward Mechanisms
+
+BitBounce stakeholders (contributors and shareholders in Turing Technology, Inc) will be issued an allocation of credos in proportion to their contribution and/or ownership of the parent company. Participants in the token pre-sale and sale will be rewarded with credos in exchange for financial contributions in ether (ETH). The early adopter and mainstream groups will be rewarded for usage of BitBounce. See 4.4 for a more detailed breakdown.
+
+3.6 Proof of Usage
+
+Given that credos are implemented on the Ethereum Blockchain, a consensus algorithm is not needed. However, consensus algorithms usually serve a secondary purpose as a reward function. With this in mind, we will be introducing a new reward function called Proof of Usage [9]. This function will reward actions that constitute usage of the BitBounce technology. The following uses of BitBounce will be rewarded:
+
+ Enable BitBounce on an email account for a specific length of time.  BitBounce an unsolicited email.  Send a Guaranteed Response email.  Respond to a Guaranteed Response email.  Add more than one email account.  Get friends, colleagues, or associates to adopt BitBounce.
+
+Actions will be rewarded according to varied weightings that are set for specific promotional waves (see 3.6). We will additionally look into developing an algorithmic usage score based on the credo transaction graph, though this unfortunately cannot power a purely technical credo distribution mechanism because of reasons that we'll now address.
+
+3.7 Fraud Prevention
+
+One problem with proof of usage is that it's susceptible to attack. Two significant attack vectors are 1) automating usage that is supposed to be performed by a human, and 2) having one entity create multiple identities in order to receive multiple rewards. Various
+
+12
+
+
+
+reputation and identity systems [10] have been developed to deal with this kind of problem, yet they remain sufficiently inadequate that a purely technical solution does not seem sufficient here.
+
+Given this, our solution will be to iterate via a series of promotional waves to a proof of usage reward scheme that maximizes the likelihood that rewarded actions have the following properties:
+
+1. A human performed the rewarded actions. 2. The human rewarded for the actions was not previously rewarded for taking such
+
+actions.
+
+In order to achieve these properties, we will utilize a combination of data science to detect potential fraud, know your customer (KYC) for certain waves, varied weighting of rewards to actions, and rewards for combinations or patterns of actions that would be difficult to automate.
+
+3.8 A New Email Standard
+
+Ultimately, we aim to distribute credo by establishing the token as a new standard in email. We will work to establish this new standard technologically through developing extensions to existing email protocols such as SMTP and IMAP. Our non-technological standardization efforts will focus on developing global recognition and trust in credo through transparency, accountability, and continued innovation leadership.
+
+3.9 A New Tradition-Based Norm
+
+Gift giving is an ancient, cross-cultural tradition to demonstrate respect for an elder or superior. This custom has been lost with digital relationships, but now Credo is the modern revival of the honorable custom. We aim to establish a new norm grounded in ancient tradition in which you send Credo to respect and honor your recipient's time.
+
+We will seek to establish this new norm through a marketing campaign that brands Credo as the Token of RespectTM and encourages people to Send the Token of RespectTM [11].
+
+13
+
+
+
+Figure 6. Marketing graphic for the Send the Token of RespectTM campaign
+
+4. Token Dynamics & Launch
+
+4.1 Blockchain Implementation
+
+Credo is implemented as an Ethereum-based token [12] on the Ethereum blockchain. Credo complies with the ERC20 token standard [13]. The Credo team will closely monitor developments in public blockchains. There is a possibility that if development of Ethereum stagnates or the Ethereum blockchain becomes a less hospitable environment and other alternative blockchains such as Tezos become more robust, we may choose to migrate Credo to another blockchain; in such a case, all ownership positions would be preserved 1-to-1. If all public blockchains become infertile grounds for Credo, we will develop/fork and operate our own blockchain.
+
+4.2 Total Supply 14
+
+
+
+The total supply of credos was determined during the Credo pre-sale. 1.37 billion credos were created in total. To be precise, 1374729257.2286 credos exist.
+
+Credo account totals are stored on the blockchain to 18 decimal places, so the smallest unit of account for Credo is 0.000000000000000001 CREDO.
+
+4.3 Non-inflation
+
+There will be no inflation in credos. The Credo smart contract does not permit any new tokens to be created.
+
+4.4 Division of Tokens
+
+The total supply for Credo tokens will be divided into four portions. These portions are as follows:
+
+Allocation: 40% of the supply will be sold to the public. Justification: this allocation is needed in order to generate funds necessary for further development and marketing of Credo and BitBounce. The allocation size gives token purchasers a meaningful ownership stake in the token, and ensures a more decentralized distribution of Credo. A portion of this supply was sold in presale, so 27.29% of the total supply will be available for sale in the main public ICO.
+
+Allocation: 30% reserved for a user growth pool. Justification: this allocation is needed to perform the Proof of Usage distribution of Credo and bootstrap the BitBounce network.
+
+Allocation: 15% reserved for general company expenses. Justification: this allocation is needed to cover expenses that the company may incur beyond what can be covered with the token sale proceeds. For instance, salaries for engineers brought onto the team could be paid for in Credo or with fiat purchased with Credo from this allocation.
+
+Allocation: 15% allocated to team members/shareholders in BitBounce's parent company. Justification: this allocation is needed to a) reward team members and shareholders for their significant contributions made to the development of BitBounce and Credo, and b) to keep team member's personal incentivizes aligned with the success of Credo, which is important since the continued contributions of key persons on the team will remain necessary for the foreseeable future.
+
+15
+
+
+
+4.5 Pricing
+
+The price of Credo at the token sale will be set based on valuing 40% of the supply of the tokens at $20 million US dollars. Following the token sale, the market will set the price based on the price traded on cryptocurrency exchanges.
+
+4.6 Team
+
+ Stewart Dennis is the founder and CEO of BitBounce. He has a degree in Computer Science from Stanford University and leads all engineering for BitBounce. He is also the lead engineer for Turing Cloud (owned and operated by the same parent company as BitBounce), through which he has gained significant expertise in email.
+
+ Alexis Roizen-Dennis leads design and branding for BitBounce.  Tim Draper is an investor in BitBounce and originator of the concept. He is the
+
+founding partner of Draper Associates and DFJ.
+
+4.7 Community
+
+The team will seek to foster a strong community around Credo, and attract community members who can give feedback and evangelize usage of the token and product.
+
+A Credo Owners Facebook group has been set up to foster discussion and keep owners informed of updates. Our partners in China have set up a WeChat group for Chinese Credo owners. We will also set up a sub-Reddit for Credo. We will not have a Slack group/channel because numerous other token Slack groups have been subject to phishing attacks.
+
+4.8 Compliance
+
+The team behind Credo is working with outside legal counsel to ensure full compliance. However, the emerging cryptographic token space is sparsely regulated right now. Our goal is to be as compliant as possible within such a regulatory environment, and some have raised the possibility that US securities regulations could apply. For the question of whether they apply, the appropriate framework is the Howey Test established in SEC v. Howey [14]. Our understanding and interpretation of this test is that credos do not pass it because 1) ownership of Credo does not provide any ownership or related rights in a company, 2) Credos are deployed in production and have real utility via the BitBounce service, and 3) credos serve a distinct function more akin to application credits than a financial instrument. That said, the contents of this document do not constitute legal advice and we encourage prospective purchasers with concerns to consult with an
+
+16
+
+
+
+attorney. We expect the regulatory environment to evolve as the cryptocurrency space matures and we will do everything we can to maintain compliance.
+
+4.9 Risks
+
+As with any cryptographic token, significant risks exist. These risks include potential failures in the still new Ethereum platform and with BitBounce technology. Prospective token purchasers ought to thoroughly assess the involved risks and know that possibilities involving a catastrophic failure in underlying technology that wipe out token value could happen. These risks will be further covered in the terms and conditions for the sale.
+
+We will endeavor to mitigate risks relating to BitBounce technology through rigorous testing and through using Credo bounties for identification of security vulnerabilities. We will mitigate risks relating to the Ethereum platform by monitoring other options for public blockchains (see 4.1).
+
+4.10 Smart Contract
+
+The smart contract for Credo is available on GitHub [15]. In order to ensure security, the token is based on the ERC20 standard with minimal deviations coupled with inspiration from other ERC20 tokens such as the Ethereum token tutorial, the FirstBlood token, and the BAT [16].
+
+4.11 Token Pre-Sale
+
+The Credo pre-sale took place from June 2nd to June 12th 2017. Over 26 million credos were sold for 260.79 ETH. As of the time of writing, approximately 60% of the token pre-sale proceeds have been liquidated and primarily used to build additional momentum ahead of the token sale with a smaller portion used for general company expenses.
+
+4.12 Token Sale
+
+The Credo token sale is taking place on July 26th 2017. Approximately 40% of the total supply of credos will be sold in the token sale. Instructions on how to participate will be released on the BitBounce website, emailed to BitBounce users, and broadcast through various media channels.
+
+4.13 Use of Proceeds
+
+The token sale proceeds will primarily be used on three areas:
+
+17
+
+
+
+ Improving the BitBounce service through product improvements, recruiting VIPs for email access, customer support, partnerships, etc.
+
+ Acquiring market share through additional viral growth mechanisms, paid marketing, advertising, PR, etc.
+
+ Defending against threats via security enhancements, use of encryption, proactive defense against any advanced persistent threats, protecting our trademarks and the IP of our inventions, etc.
+
+In executing on the above, we will expand the team. We will build out a small yet elite engineering team to join Stewart along with a number of other hires for areas such as marketing, business development, and customer service. A detailed budget has been developed, yet some flexibility will be factored into the planned expenditures based on evolving needs.
+
+References
+
+1. BitBounce service. URL: https://bitbounce.io 2. Email Statistics Report, 2017-2021, The Radicati Group, Inc. URL:
+
+http://www.radicati.com/wp/wp-content/uploads/2017/01/Email-StatisticsReport-2017-2021-Executive-Summary.pdf 3. What Is The Real Impact Of Spam On Business? URL: https://www.topsec.com/it-security-news-and-info/what-is-the-real-impact-ofspam-on-business 4. "Spam Costing US Businesses $712 Per Employee Each Year." Nucleus Research, n.d. URL: https://nucleusresearch.com/press/nucleus-research-spam-costing-usbusinesses-712-per-employee-each-year/ 5. "2nd Annual Spam Report." Nucleus Research, n.d. URL: https://nucleusresearch.com/press/2nd-annual-spam-report-cost-of-spam-morethan-doubled-in-past-year-to-1934-annually-per-employee/ 6. Emerson, R M (1976). "Social Exchange Theory". Annual Review of Sociology. 2: 335362. URL: http://www.annualreviews.org/doi/10.1146/annurev.so.02.080176.002003 7. Future Imperfect, Slicing Spam. David D. Friedman. URL: https://www.amazon.com/dp/B001GCUCLS/ref=dp-kindleredirect?_encoding=UTF8&btkr=1 8. Turing Cloud is a complete SaaS suite that you can run your business on. It includes numerous email-related products such as an email client, an email marketing system, sales email tracking functionality, and email analytics. URL: https://www.turing-cloud.com 9. Cyrus Khajvandi, a cryptocurrency expert who consulted on the development of credo, coined the Proof of Usage term.
+
+18
+
+
+
+10. Rep on the block: A next generation reputation system based on the Blockchain. URL: http://www.theblockchain.com/docs/A%20next%20generation%20reputation%20system%20based %20on%20the%20blockchain.pdf
+
+11. Token of RespectTM and Send the Token of RespectTM are trademarks of BitBounce via Turing Technology, Inc. with all rights reserved.
+
+12. Create Your Own Crypto-currency With Ethereum. URL: https://www.ethereum.org/token
+
+13. What is the ERC20 Ethereum Token Standard? URL: https://themerkle.com/what-is-the-erc20-ethereum-token-standard/
+
+14. SEC v. Howey Co. 328 U.S. 293 (1946). URL: https://supreme.justia.com/cases/federal/us/328/293/case.html
+
+15. Credo Token Crowdsale GitHub Repository. URL: https://github.com/turinginc/credo-token-crowdsale
+
+16. GitHub repository for BAT Smart Contract code. URL: https://github.com/brave-intl/basic-attention-tokencrowdsale/tree/master/contracts
+
+19
+
+
+
+

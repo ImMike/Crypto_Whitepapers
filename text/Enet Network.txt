@@ -1,0 +1,684 @@
+ENET, decentralized and disruptive marketplace.
+
+enet.network 1 of 15
+
+
+
+Table of contents
+
+
+
+Background and motivation
+
+
+
+3
+
+
+
+Why Ethereum and IPFS ?
+
+
+
+4
+
+
+
+What is a smart-contract ?
+
+
+
+
+What is IPFS ?
+
+
+
+
+How will we use these technologies ?
+
+
+
+
+Contract definition
+
+
+
+5
+
+
+
+The seller
+
+
+
+
+The buyer
+
+
+
+
+The shareholder
+
+
+
+
+Relationship definition
+
+
+
+
+Reputation
+
+
+
+
+Market regulation
+
+
+
+
+3 smart-contracts
+ Market logic
+ Tokens logic
+ Claims logic
+
+
+
+
+User experience across the marketplace
+
+
+
+
+Unified experience
+
+
+
+
+The profitable place
+
+
+
+10
+
+
+
+The ICO
+
+
+
+
+The token
+
+
+
+
+Roadmap
+
+
+
+11
+
+
+
+ICO Phase
+
+
+
+
+Smart-contract and web application development
+
+
+
+
+Mobile applications development
+
+
+
+
+Decentralized search engine
+
+
+
+
+Postal services integration
+
+
+
+
+Timeline
+
+
+
+
+Technical challenges
+
+
+
+13
+
+
+
+Creating autonomous mobile applications
+
+
+
+
+Tracking parcels and deliveries from real-life providers
+
+
+
+
+Using nodes directly from the browser
+
+
+
+
+Building a client-side search engine
+
+
+
+
+The team
+
+
+
+14
+
+
+
+How to participate ?
+
+
+
+15
+
+
+
+Welcome, developer !
+
+
+
+2 of 15
+
+
+
+Background and motivation
+
+In this world of online marketplaces we are living in, the need for a fair online marketplace has never been this high. There is no power balance between the consumer and the merchant. Scams are rampant, getting money back is always hard, and as a seller as soon you make a transaction with a consumer, you cannot be sure he will not try to make a false claim.
+ We want to be part of a more sustainable economy. This is why after a long period of brainstorming, documenting and researching we are proud to present you ENET. ENET is what we believe to be a step toward a fairer world.
+ Some companies tried to resolve this issue by creating trust labels. But all only few companies are indeed trustworthy. What if these companies fail in their duty to check data ? The issue of trust is just moved to another supposedly "more trustworthy" actor, but is still not resolved.
+ So, the real questions behind a marketplace are : How can I trust an unknown seller ? How can I make a transaction with them ? How can the seller trust me if I say I didn't receive the package ? These questions are legitimate, and we tried our best to provide an answer.
+
+3 of 15
+
+
+
+Why Ethereum and IPFS ?
+
+Blockchains have changed the way we can trust each other. First with Bitcoin, now with Ethereum, we can trust the ledger we are sharing together instead of trusting each other directly.
+ Today, Ethereum is one of the most popular blockchain that supports smart-contracts. It aims to replace server computing as we know it, by creating a "world computer".
+ IPFS is the technology for asset storing and file sharing on the internet in a purely decentralized way. It aims to replace HTTP by creating a better solution to share files across the internet.
+ 
+
+
+What is a smart-contract ?
+
+A smart-contract is code deployed on the blockchain. It is used to define and enforce the relationship between actors on the blockchain. And since the blockchain is immutable the code of the smart contract cannot be altered.
+ On a blockchain, a smart-contract is like any other actor. It has an address, a balance and can do actions (sending money etc...) but it also has a brain: it can perform actions and store information.
+
+
+What is IPFS ?
+
+IPFS stands for InterPlanetary File System. It is a protocol designed to create a peer-to-peer, addressable, distributed file-system.
+ This is the technology that will be used to store assets such as stores' pictures, products' pictures, products' description, in a distributed way.
+ An asset stored on this filesystem has an unique address that can be easily stored in a smart contract.
+
+
+How will we use these technologies ?
+
+Our engineering team has leveraged the possibilities of Ethereum to build smart-contracts over the Ethereum blockchain that defines the relation between "sellers", "buyers" and "shareholders". Furthermore, we will use IPFS to store assets to provide a user-friendly store without centralizing all the data at one point.
+
+4 of 15
+
+
+
+Contract definition
+
+Smart-contracts will enforce the relation that exists between the 3 parties stated before. First, we will present their roles, then the different relations and interactions between them.
+
+
+The seller
+
+
+The seller is an actor that wants to sell goods or services.
+
+
+The buyer
+
+
+The buyer is a consumer. It browses the market, checks out different sellers, and buys from them.
+
+
+The shareholder
+
+
+The shareholder owns a part of the market (represented by tokens). It represents a part of the market intrinsically. 
+
+
+Relationship definition
+
+To create a fair market, we need to enforce a set of rules between sellers, buyers and shareholders. Here is the exhaustive list of these rules.
+
+
+ A seller cannot receive the money of an order before the buyer confirms he received the transaction, or after a defined period after which the buyer cannot make a claim anymore.
+
+
+ An order cannot be processed if the buyer doesn't provide the required amount of money.
+  When there is a dispute between a buyer and a seller that can be solved amicably, the
+
+shareholders may decide on the action to be taken to resolve the conflict. To do so, the shareholders can ask for proof and choose between three outcomes :
+  Seller is in their right, buyer is not. All the money is given to the seller.
+  Buyer is in their right, seller is not. All the money is given to the buyer.
+  Shareholders cannot decide by majority, they can decide to split the money between the two
+
+parties.
+  When a transaction is made over the market, a fee equal to 2% of the transaction amount is
+
+held by the market.
+  At the end of each month, token shareholders can take their part of the 2% collected during the
+
+period based on the amount of tokens they hold at the closing date of the month.
+
+
+Reputation
+
+After a purchase is made over the marketplace, the buyer can leave comments for the seller and another about the product itself. They can also rate both. After enough feedback, we can rate a seller.
+
+
+Market regulation
+
+The content of the marketplace is regulated. We don't want to see illegal goods or services spawning across the market. When a seller wants to register, it's status is set to "under registration". A seller which is "under registration" is not yet shown to buyers. A certain amount of shareholders must approve the seller before the status goes from "under registration" to activated. Furthermore, a seller can be reported and removed.
+
+5 of 15
+
+
+
+3 smart-contracts
+
+All smart contracts are concerned with the following : market logic, tokens logic and claims logic.
+
+
+
+
+Market logic
+
+
+Holds the logic that permits orders to be managed. It also manages the users, the store list, and the products on each store.
+
+
+
+
+Tokens logic
+
+
+Provides the logic that permit tokens to be emitted during the ICO period, then to be traded. It also maintains the logic of accounting and closing date.
+
+
+
+
+Claims logic
+
+
+Allows token holders to claim their part of the 2% during the latest gathering period.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Seller
+
+
+
+Manage their stores
+
+
+
+Claims
+ Contract
+
+
+
+Market
+ Contract
+
+Browse and buy
+
+
+
+Resolving disputes
+
+
+
+Claim their part of fees
+
+
+
+Tokens
+ Contract
+
+
+
+Trading
+
+
+
+Buyer
+
+
+
+Shareholder
+
+
+
+Figure 1 : Describing the interaction between users and contracts.
+
+
+
+6 of 15
+
+
+
+User experience across the marketplace
+
+We have summarised the interaction between users, actors and contracts. Interacting with a smart-contract through raw transactions is not acceptable for most users. That's why we believe we must make this market as user-friendly as possible.
+
+
+Our vision is the following : the user goes to https://enet.network, provides its wallet file or plugs its hardware wallet (like a Ledger Nano S) and can start using the app. No matter if he is a buyer, a seller or a shareholder, it must be simple and easy to use. So the first thing to remove is the need to install a full Ethereum node or a full IPFS node.
+
+
+To permit such a system to exist, we need to use public nodes and use web applications that can be executed only on client-side. MyEtherWallet is doing this. They use the wallet locally to transmit the signed transaction to a public node that relays it over the network. For IPFS, we can use a public node too.
+
+
+This way a user can use the marketplace without needing to run a node, and can use it without uploading its wallet somewhere. Everything is happening locally and is broadcasted to the network when needed.
+
+
+Furthermore, work is in progress on both the Ethereum and IPFS projects to enable bootstrapping a node directly from the browser. When this technology becomes available, we will be able to use it and connect directly from the browser without the need of a third-party public node.
+
+
+Another aspect that we want to simplify is billing which can get complicated. To make it easier, the market will generate bills automatically after a transaction is made. Since the market stores all the transactions on the blockchain, we can directly use the blockchain data as the support to create a PDF document on the client side.
+
+
+We have created some basic wireframes of the views of the market so you can imagine more clearly what it will look like.
+
+
+
+ENET http://enet.network/market
+
+
+
+Figure 2 : When a buyer open the market, after logging in, they can browse the different sellers
+
+
+
+7 of 15
+
+
+
+ENET http://enet.network/market
+
+
+
+Figure 3 : When a consumer wants to buy an item from the "Cookie Market" store.
+
+ENET http://enet.network/market
+
+Figure 4 : Dashboard of a seller
+
+8 of 15
+
+
+
+Unified experience
+
+All users, whatever their role, must be able to use the marketplace without typing a single command line. Our goal is to make a fully functional marketplace using only Ethereum and IPFS, without installing a node locally and without interacting with the contract in command-line interfaces.
+
+
+Here is a list of the dashboards we want to implement to facilitate the usage of the contracts in addition to the market place itself, and what actions they will provide.
+
+
+
+
+Buyer dashboard
+
+ My orders
+  In progress
+  History
+
+ My account
+  My nickname
+
+ My favorite sellers
+
+
+
+Seller dashboard
+
+ Orders
+  Awaiting confirmation
+  Waiting expedition
+  Expedited
+  Received
+  Disputed
+
+
+ Manage products
+  Add/Remove/Edit categories
+  Add/Remove/Edit products
+
+
+
+Shareholder dashboard
+
+ Pending disputes
+  Resolved disputes
+  Reclaim monthly gain
+
+
+
+9 of 15
+
+
+
+The profitable place
+
+We are open by nature, and being open by nature means being transparent in every aspect of ENET. Our business model is as open as our code is : completely. ENET will be profitable for shareholders. The 2% taken from every transaction made over the market is shared among shareholder. Around every 30 days (157553 Ethereum blocks) every shareholder can claim its part of the fees gathered during the period. The part is calculated using the number of tokens owned by the user at the balance sheet date point in time.!
+
+The ICO
+
+The first step of the project is the Initial Coin Offering. The ICO is used to achieve two purposes :  Raise funds to make the project a reality.  Distribute all the tokens among the community. We offer an unlimited supply of token, but the token creation is limited over time : 90 days. Here is the exhaustive list of rules enforced by the smart-contract :  The contract is deployed by an address called "contract owner" which represents the development team.  The token is expressed with 8 decimals.  For 1 ENET token created for a shareholder, 1/6 more tokens are created and given to the contract owner(development team) after the ICO ends.  Tokens owned by the contract owner are indefinitely frozen (not transferable).  For a payment of 1 ETH you get 1,000,000 ENET Tokens during the ICO.  The minimum Ether amount required to achieve the ICO is 1 (Reason being that the funds must be transfered to a more secured wallet).  If the amount of Ether raised is higher or equal than the minimum amount after the ICO end time is reached, the ICO is considered a success.  If the amount of Ether raised is less than the minimum amount after the ICO end block is reached, the ICO is considered a failure.  If the ICO is a success, the development team can withdraw the amount raised and start the development of ENET Network.  If the ICO is a failure, every shareholder can destroy its token and get Ethers back. The development team cannot withdraw.
+
+The token
+
+The token (noted ENET) is a tradable token that represents a part of the marketplace. It is an ERC20 compliant token, so it is tradable easily over the Ethereum network. You can find details directly on https://enet.network/#getenet More technical details are also available on our GitHub : https://github.com/enetnetwork network.
+
+
+10 of 15
+
+
+
+Roadmap
+
+By nature, a smart-contract cannot be altered. Hence, we need to proceed very carefully with the smart contract development and deployment. And it is with a high-quality code requirement that we have designed the Roadmap. We can't and won't rush. We want to provide the best experience available. We want to minimise the risk taken by the shareholders by investing into our solution. This takes time.
+
+
+ICO Phase
+
+
+(January 2018 ~ March 2018)
+
+
+This phase is described in the "Profitable market" section. After the ICO we will do some hiring, we will create the company itself.
+
+
+Smart-contract and web application development
+
+
+(April 2018 ~ May 2018)
+ We want to take care of the software we are developing. As already stated, smart-contract development is a hard task since once a smart-contract is deployed it cannot be modified. We need to be really careful and do a lot of testing.
+
+
+Mobile applications development 
+
+
+(June 2018 ~ July 2018)
+
+
+We want our marketplace to be available from a mobile-phone as well. And to achieve that, we will create mobile applications.
+
+
+Decentralized search engine
+
+
+(July 2018 ~ September 2018)
+ A search engine across the market is hard to achieve since reading over the blockchain can be hard, and indexing field is almost impossible. We want to create a hybrid solution created across IPFS and Ethereum to achieve some of the searching task.
+
+
+Postal services integration
+
+
+(September 2018 ~ ?)
+ Disputes will happen often, and we need a way to track deliveries. The blockchain is made for this use case, and if we work closely with the delivery services, we can offer an efficient tracking system for our sellers and our buyers.
+
+11 of 15
+
+
+
+Timeline
+
+
+
+Q1 Research
+
+
+
+2018
+
+
+
+Q2
+
+
+
+Q3
+
+
+
+Q4
+
+
+
+ICO
+
+Smart contracts
+ And Web App Development
+
+Mobile apps development
+
+
+
+Client-side Search engine
+
+
+
+Postal services integration to track
+
+devliveries
+
+
+
+
+
+
+
+
+12 of 15
+
+
+
+Technical challenges
+
+To create the market in its first version, there are not many challenges to overcome. But when it comes to the next part of the timeline we will have to overcome some big ones.
+
+
+Creating autonomous mobile applications
+
+
+If we want to create completely autonomous mobile application (that would not require to call an intermediate node) we need to find a way to pass over the NAT that is commonly used by providers. Before being able to that, mobile application will reach the decentralized services through public nodes.
+
+
+Tracking parcels and deliveries from real-life providers
+
+
+To make disputes management easier, we want to integrate parcels transporters within the blockchain itself. We need to dig this path deeper since it would be a really nice-to-have feature to secure the decisions taken by the shareholders or to resolve disputes without asking them to intervene.
+
+
+Using nodes directly from the browser
+
+
+Ethereum and IPFS are currently working on pure JS implementation. They have attained interesting first steps recently, and it will probably be the best way for us to cut the link with public nodes.
+
+
+Building a client-side search engine
+
+
+To search among the products of the market we need to build a new kind of search engine : a client one that generates its indexes over a decentralized file-system like IPFS with some data referenced inside a smart contract to ensure the validity of indexes. We want to use this search engine to browse the content, but we want to do even more with it : make recommendation to the user using only client-side information and the search engine. We could provide the first recommendation system that respects your privacy.
+
+13 of 15
+
+
+
+The team
+
+A project is nothing without a team, and to make this project, we have the perfect team.
+ 
+
+Robert Novikov
+
+Developer for almost ten years, blockchain enthusiast since the first days, Robert is our lead developer and CEO. He's working hard on the smart-contracts today.
+
+Justin Patel
+
+Developer, manager, leader. A lot of adjectives can qualify Justin. He is of our product manager and will lead the project team once the funds raised.
+
+Edward Dobson
+
+Ed Dobson is a freelance full-stack web developer and cryptocurrency enthusiast from Illinois. His passions are security and authentication, and gaming (#PCMasterRace). By day he is a Cyber Threat Analyst
+
+14 of 15
+
+
+
+How to participate ?
+
+You can find all the information you need to participate at https://enet.network/ #getenet As stated before, the ICO opens around the 1st of January. If you want to participate before, simply spread the word around you !
+
+
+Welcome, developer !
+
+You're a developer and want to be in? Welcome! All the development processes will be opensourced, you will be able to interact with us by making pull-requests or opening issues.
+ Furthermore, we will be hiring some talented people if we raise enough money during the ICO phase. We will let you know on our landing-page the jobs opening we will have as soon as the ICO ends.
+
+15 of 15
+
+
+
+

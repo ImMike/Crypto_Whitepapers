@@ -1,0 +1,901 @@
+Intelligent Trading Technologies ( ITT)
+
+State-of-the-art d ata science t ools a nd a rtificial intelligence networks providing a ctionable real-time trading s ignals f or s uccess i n t he c ryptocurrency m arkets.
+
+Whitepaper
+
+17-August-2017
+
+edited 11-September-2017
+
+Website: i ntelligenttrading.org/ Token S ale S ite: i ntelligenttrading.org/token-sale/ Telegram B ot: ( currently i n private B eta) Twitter: twitter.com/ITT_Token Slack (join): itt-token-slack.herokuapp.com/ Slack (team): h ttps://itt-token.slack.com Github: github.com/intelligenttrading Reddit: r eddit.com/r/ITT_Token Email: i nfo@intelligenttrading.org
+
+
+
+Table o f C ontents
+
+
+
+0   Important N otice
+
+
+
+2
+
+
+
+1 -  E xecutive Summary
+
+
+
+8
+
+
+
+2 - Background, P roblem O verview
+
+
+
+9
+
+
+
+Cryptocurrency M arkets
+
+
+
+9
+
+
+
+Artificial Intelligence
+
+
+
+9
+
+
+
+Artificial Intelligence i n Cryptocurrency M arkets
+
+
+
+11
+
+
+
+3 -  Mission Statement
+
+
+
+12
+
+
+
+4 - Platform
+
+
+
+13
+
+
+
+ITT Bot UI Mock u p
+
+
+
+14
+
+
+
+Alert D escription
+
+
+
+14
+
+
+
+Details o f t he A lert
+
+
+
+15
+
+
+
+Additional S ections i n T esting
+
+
+
+17
+
+
+
+Technology A rchitecture
+
+
+
+17
+
+
+
+5 -  Roadmap
+
+
+
+19
+
+
+
+Phase 1: I nitial Development
+
+
+
+19
+
+
+
+Phase 2
+
+
+
+19
+
+
+
+Phase 3
+
+
+
+20
+
+
+
+6 -  Token Mechanism
+
+
+
+21
+
+
+
+7 -  I TT Token Sale
+
+
+
+23
+
+
+
+8 -  Leadership (Team)
+
+
+
+26
+
+
+
+9 -  Legal Considerations
+
+
+
+28
+
+
+
+10  KYC P olicy
+
+
+
+29
+
+
+
+11 -  Acknowledgements
+
+
+
+31
+
+
+
+1
+
+
+
+0   I mportant Notice
+
+PLEASE READ T HIS S ECTION A ND T HE FOLLOWING SECTIONS E NTITLED "DISCLAIMER O F LIABILITY", " NO REPRESENTATIONS A ND WARRANTIES", "REPRESENTATIONS AND WARRANTIES BY YOU", "CAUTIONARY NOTE O N FORWARD-LOOKING S TATEMENTS", " MARKET AND INDUSTRY I NFORMATION AND N O CONSENT OF OTHER P ERSONS", " NO ADVICE", " NO FURTHER INFORMATION O R U PDATE", "RESTRICTIONS ON DISTRIBUTION AND DISSEMINATION", "NO OFFER OF SECURITIES OR REGISTRATION" AND "RISKS A ND U NCERTAINTIES" C AREFULLY.
+
+IF Y OU A RE I N A NY D OUBT AS TO THE A CTION YOU SHOULD TAKE, Y OU SHOULD CONSULT Y OUR LEGAL, F INANCIAL, TAX O R O THER P ROFESSIONAL ADVISOR(S).
+
+The ITT t okens are n ot intended t o c onstitute s ecurities i n a ny jurisdiction. This W hitepaper does not c onstitute a  prospectus o r offer d ocument of any s ort and i s not i ntended to c onstitute a n offer o f s ecurities o r a solicitation for investment in s ecurities i n any jurisdiction.
+
+This W hitepaper does not constitute o r form part of any opinion on a ny advice to sell, o r a ny solicitation o f any o ffer by t he distributor/vendor of the ITT tokens ( the "Distributor") t o purchase any I TT t okens n or shall i t or a ny p art o f it n or t he f act o f its presentation f orm t he basis o f, o r be relied upon i n c onnection w ith, any c ontract or i nvestment decision.
+
+The D istributor w ill b e an affiliate o f I ntelligent Trading T echnologies ( "Intelligent Trading Technologies"), and will d eploy all p roceeds of sale o f t he I TT tokens to f und Intelligent Trading Technologies cryptocurrency p roject, businesses and o perations.
+
+No p erson i s b ound to enter i nto a ny c ontract or binding l egal c ommitment in relation to the sale and p urchase o f t he I TT tokens a nd no cryptocurrency or other form o f P ayment is t o be accepted o n the basis o f t his Whitepaper.
+
+Any a greement a s b etween t he Distributor and you a s a purchaser, a nd i n relation to a ny sale and purchase, of I TT t okens ( as r eferred t o in t his W hitepaper) i s to be g overned b y only a  s eparate document s etting o ut the terms and c onditions ( the " T&Cs") o f s uch agreement. I n the e vent of any inconsistencies between t he T&Cs a nd this W hitepaper, t he former shall prevail.
+
+You are not e ligible and you are not to p urchase any ITT t okens i n t he I ntelligent Trading Technologies Initial T oken Sale (as r eferred t o in this Whitepaper) if you a re a  citizen, r esident (tax or o therwise) o r green c ard h older of t he U nited S tates o f America o r a c itizen o r r esident o f the P eoples R epublic of China.
+
+No regulatory a uthority has examined or a pproved of any of t he information set out in t his Whitepaper. N o s uch a ction h as b een or w ill be t aken u nder the l aws, regulatory requirements o r
+
+2
+
+
+
+rules o f a ny jurisdiction. The publication, d istribution or dissemination of this W hitepaper does not imply that t he applicable l aws, r egulatory requirements or rules have b een complied w ith. There are risks a nd uncertainties associated w ith Intelligent Trading T echnologies a nd/or the Distributor and t heir r espective b usinesses and operations, t he I TT tokens, t he Intelligent Trading Technologies I nitial T oken Sale and t he Intelligent T rading T echnologies Wallet (each a s referred t o i n t his W hitepaper).
+
+This Whitepaper, any p art t hereof and any c opy thereof m ust not be t aken o r t ransmitted t o any country where d istribution o r d issemination o f this W hitepaper i s p rohibited o r r estricted.
+
+No p art of t his Whitepaper i s to be r eproduced, distributed or d isseminated without i ncluding t his section and the following s ections e ntitled "Disclaimer of Liability", "No Representations and Warranties", " Representations a nd W arranties By You", "Cautionary N ote O n F orward-Looking Statements", " Market and I ndustry Information a nd N o Consent o f Other Persons", " Terms Used", " No Advice", "No F urther Information or Update", " Restrictions On Distribution and Dissemination", "No O ffer of Securities O r R egistration" a nd "Risks a nd Uncertainties".
+
+DISCLAIMER O F L IABILITY
+
+To the maximum e xtent permitted b y t he applicable l aws, regulations a nd r ules, Intelligent Trading Technologies a nd/or t he D istributor s hall not be liable f or a ny i ndirect, s pecial, incidental, consequential or other losses of any kind, in tort, contract o r otherwise (including but not limited to l oss of revenue, income o r profits, and l oss o f use or d ata), a rising out of or in connection w ith any acceptance o f o r r eliance o n t his Whitepaper or any part thereof b y y ou.
+
+NO R EPRESENTATIONS A ND WARRANTIES
+
+Intelligent T rading Technologies and/or t he D istributor d oes n ot m ake or p urport to m ake, a nd hereby disclaims, a ny r epresentation, w arranty or u ndertaking in any form w hatsoever to a ny entity or person, i ncluding any r epresentation, warranty o r u ndertaking in relation to t he t ruth, accuracy and completeness of a ny o f t he i nformation set out i n this W hitepaper.
+
+REPRESENTATIONS AND W ARRANTIES B Y Y OU
+
+By a ccessing and/or accepting possession of a ny information i n t his Whitepaper or s uch p art thereof (as t he case m ay b e), y ou represent a nd warrant to Intelligent T rading T echnologies and/or t he Distributor a s f ollows:
+
+A. you agree a nd a cknowledge that the ITT t okens d o n ot constitute securities i n a ny form i n any j urisdiction;
+
+B. you agree and a cknowledge that this Whitepaper d oes not constitute a  prospectus or offer document of any sort and is n ot i ntended t o constitute a n o ffer o f s ecurities i n a ny jurisdiction o r a s olicitation for investment in s ecurities a nd y ou are not bound t o enter
+
+3
+
+
+
+into any contract or b inding legal commitment a nd no cryptocurrency or o ther form o f ITT i s to be a ccepted o n the b asis of t his W hitepaper; C. you a gree and a cknowledge t hat n o regulatory a uthority h as examined or a pproved of t he information set o ut i n t his Whitepaper, n o a ction h as b een or will be t aken under t he laws, regulatory r equirements o r r ules of any jurisdiction a nd t he publication, d istribution or dissemination o f this Whitepaper to you d oes not i mply t hat t he a pplicable laws, regulatory r equirements or r ules h ave b een complied with; D. you agree and a cknowledge t hat t his Whitepaper, t he u ndertaking and/or the completion of t he Intelligent T rading Technologies I nitial T oken Sale, o r future trading o f t he ITT tokens o n any cryptocurrency e xchange, s hall n ot b e c onstrued, i nterpreted or d eemed by you as a n i ndication of the m erits of the Intelligent Trading Technologies a nd/or t he Distributor, the I TT tokens, the I ntelligent Trading Technologies Initial T oken Sale and the I ntelligent T rading Technologies Wallet (each as referred t o i n this Whitepaper); E. the d istribution or d issemination of t his W hitepaper, a ny part thereof o r a ny copy thereof, or acceptance o f the s ame by you, is n ot prohibited o r restricted by t he applicable laws, regulations o r r ules i n your jurisdiction, and w here any restrictions in relation t o possession a re applicable, you have observed and c omplied w ith a ll such restrictions a t your own expense a nd without l iability t o I ntelligent T rading Technologies a nd/or the Distributor; F. you agree and acknowledge that i n the case where you w ish to purchase any ITT t okens, the I TT t okens are n ot t o be construed, interpreted, classified or treated a s:
+
+a. any k ind of c urrency other than c ryptocurrency; b. debentures, s tocks or s hares i ssued by any person o r e ntity ( whether Intelligent
+
+Trading Technologies and/or the D istributor) c. rights, options or d erivatives in respect of such debentures, stocks or shares; d. rights u nder a c ontract f or d ifferences o r u nder a ny other contract t he p urpose o r
+
+pretended purpose o f which is to secure a p rofit o r avoid a loss; e. units in a c ollective i nvestment s cheme; f. units i n a business t rust; g. derivatives o f u nits in a business trust; a ny other security or class o f s ecurities; or h. an i nvestment c ontract. G. you are f ully a ware of and understand t hat y ou are n ot e ligible to p urchase any ITT tokens i f y ou are a c itizen, resident (tax o r o therwise) or g reen card holder of the U nited States of A merica o r a citizen o r resident of t he P eoples R epublic o f C hina; H. you h ave a  basic degree o f u nderstanding of the o peration, f unctionality, usage, s torage, transmission m echanisms and other material c haracteristics of cryptocurrencies, blockchain-based software s ystems, cryptocurrency w allets o r o ther r elated t oken storage mechanisms, b lockchain t echnology and s mart c ontract t echnology; I. you are fully aware a nd u nderstand that i n the c ase where you wish to purchase a ny ITT tokens, t here are r isks a ssociated with I ntelligent T rading Technologies and the Distributor a nd their r espective business a nd o perations, the I TT tokens, t he Intelligent Trading T echnologies Initial T oken Sale. J. you agree and a cknowledge that neither I ntelligent Trading T echnologies nor the Distributor i s l iable f or a ny i ndirect, special, incidental, c onsequential o r other losses o f any k ind, i n tort, c ontract or otherwise (including b ut n ot limited t o l oss of r evenue,
+
+4
+
+
+
+income o r profits, a nd loss of u se o r data), a rising out o f o r in connection with any acceptance o f o r reliance on t his W hitepaper or a ny p art t hereof by y ou; a nd K. all o f t he a bove r epresentations a nd w arranties a re true, c omplete, a ccurate a nd non-misleading from the time of y our a ccess t o a nd/or a cceptance of possession this Whitepaper or such p art t hereof (as the c ase may be).
+
+CAUTIONARY NOTE O N FORWARD-LOOKING STATEMENTS
+
+All s tatements c ontained i n t his Whitepaper, s tatements m ade in p ress releases o r in a ny p lace accessible b y t he public and oral s tatements t hat may be m ade b y I ntelligent Trading Technologies a nd/or the Distributor o r t heir respective d irectors, executive officers o r e mployees acting o n behalf of Intelligent T rading T echnologies o r t he D istributor (as t he c ase m ay b e), t hat are n ot s tatements of historical f act, c onstitute " forward-looking statements". Some of these statements c an b e identified b y forward-looking terms s uch a s "aim", "target", " anticipate", "believe", " could", " estimate", " expect", " if", " intend", "may", "plan", " possible", "probable", "project", "should", " would", "will" o r other similar terms. However, these terms a re n ot the exclusive means of identifying f orward-looking statements. A ll s tatements regarding Intelligent Trading Technologies and/or t he Distributor's f inancial p osition, business s trategies, plans and prospects a nd t he f uture p rospects of t he i ndustry w hich I ntelligent Trading Technologies and/or the D istributor is i n are forward-looking s tatements. These forward-looking statements, i ncluding but not l imited t o statements as t o I ntelligent Trading T echnologies and/or the D istributor's revenue a nd profitability, prospects, future plans, other e xpected i ndustry trends a nd other matters d iscussed in this Whitepaper regarding I ntelligent Trading Technologies and/or the Distributor a re m atters t hat a re not historic facts, b ut o nly p redictions.
+
+These f orward-looking statements i nvolve k nown and unknown risks, u ncertainties a nd other factors t hat may c ause t he a ctual future r esults, performance or achievements of Intelligent Trading Technologies a nd/or the Distributor to b e m aterially different f rom a ny f uture r esults, performance or achievements e xpected, e xpressed o r i mplied by such forward-looking statements. T hese f actors include, amongst others:
+
+A. changes i n political, s ocial, e conomic and s tock or c ryptocurrency m arket c onditions, a nd the regulatory environment i n t he c ountries i n which I ntelligent Trading Technologies and/or the D istributor conducts i ts respective businesses and o perations;
+
+B. the risk that I ntelligent Trading T echnologies a nd/or t he D istributor may b e u nable or execute or implement their r espective business strategies and f uture p lans;
+
+C. changes i n interest r ates and exchange rates of f iat currencies a nd c ryptocurrencies; D. changes in t he a nticipated g rowth strategies a nd expected i nternal g rowth of I ntelligent
+
+Trading Technologies a nd/or the D istributor; E. changes in the a vailability a nd f ees billable to Intelligent Trading Technologies a nd/or the
+
+Distributor i n connection with t heir r espective b usinesses a nd o perations; F. changes in t he availability a nd s alaries of e mployees who a re required b y Intelligent
+
+Trading T echnologies and/or t he Distributor t o operate their respective b usinesses and operations; G. changes in p references of customers o f I ntelligent Trading Technologies and/or t he Distributor;
+
+5
+
+
+
+H. changes in c ompetitive conditions u nder which Intelligent Trading Technologies a nd/or the Distributor operate, a nd t he ability o f Intelligent T rading T echnologies and/or the Distributor t o c ompete u nder s uch c onditions;
+
+I. changes in t he f uture capital n eeds o f I ntelligent T rading Technologies and/or the Distributor a nd the availability o f financing a nd capital t o f und such n eeds;
+
+J. war or a cts o f international o r d omestic t errorism; K. occurrences of catastrophic events, n atural disasters and acts of God that a ffect the
+
+businesses and/or operations of I ntelligent Trading T echnologies and/or t he Distributor; L. other f actors beyond t he c ontrol o f Intelligent T rading T echnologies and/or t he
+
+Distributor; and M. any r isk and uncertainties associated with Intelligent Trading T echnologies and/or the
+
+Distributor and their businesses a nd o perations, or t he I TT t okens.
+
+All forward-looking statements made b y o r attributable t o I ntelligent T rading T echnologies and/or the D istributor o r p ersons acting on b ehalf o f Intelligent Trading T echnologies a nd/or the Distributor a re expressly q ualified in their entirety b y s uch factors. G iven t hat r isks a nd uncertainties that m ay cause the a ctual f uture r esults, performance or achievements of I ntelligent T rading Technologies and/or t he D istributor to be m aterially different from t hat expected, expressed or i mplied b y t he f orward-looking s tatements in t his Whitepaper, undue r eliance must not be placed o n these statements. These f orward-looking statements a re applicable o nly as o f the date o f this Whitepaper.
+
+Neither I ntelligent T rading Technologies, t he Distributor nor a ny other p erson r epresents, warrants a nd/or undertakes t hat t he a ctual future r esults, performance or a chievements of Intelligent T rading T echnologies and/or t he D istributor will b e as discussed in t hose forward-looking s tatements. T he a ctual results, performance o r a chievements o f I ntelligent Trading T echnologies and/or t he D istributor m ay d iffer m aterially f rom those a nticipated in t hese forward-looking s tatements.
+
+Nothing c ontained in t his Whitepaper i s or m ay be r elied u pon a s a promise, r epresentation or undertaking a s to the future performance or p olicies o f I ntelligent Trading T echnologies and/or the D istributor. Further, Intelligent T rading Technologies and/or t he D istributor disclaim any responsibility to update any o f those forward-looking s tatements or p ublicly a nnounce any revisions t o t hose f orward-looking statements t o reflect future developments, events or circumstances, e ven if n ew information becomes a vailable o r other e vents occur in t he f uture.
+
+MARKET A ND I NDUSTRY I NFORMATION A ND N O C ONSENT O F OTHER PERSONS
+
+This Whitepaper includes market a nd industry i nformation and forecasts t hat h ave b een o btained from internal surveys, reports and studies, w here a ppropriate, as w ell as market research, publicly available i nformation a nd i ndustry publications. S uch surveys, reports, s tudies, m arket research, p ublicly a vailable i nformation a nd p ublications g enerally s tate that the i nformation that they c ontain h as been o btained from s ources believed to b e reliable, but there can be n o assurance as to the accuracy or completeness o f s uch included i nformation.
+
+6
+
+
+
+Save f or Intelligent T rading T echnologies, t he D istributor a nd t heir respective directors, executive o fficers and e mployees, n o p erson has provided his o r her consent t o t he inclusion of his or h er name and/or other information attributed or perceived t o be attributed to such p erson i n connection therewith in this W hitepaper a nd n o representation, w arranty o r u ndertaking i s o r purported t o b e provided as to the accuracy or c ompleteness of such information b y such person and s uch p ersons shall n ot be o bliged t o p rovide any updates on t he same.
+
+While Intelligent Trading T echnologies and/or t he Distributor h ave taken r easonable a ctions t o ensure t hat t he i nformation is extracted accurately and i n its proper context, Intelligent Trading Technologies and/or t he Distributor have not conducted a ny i ndependent review of the information extracted from third p arty sources, v erified the accuracy o r completeness o f s uch information or a scertained the u nderlying economic a ssumptions relied upon t herein. Consequently, n either Intelligent Trading T echnologies, t he Distributor, nor their respective directors, executive officers and employees a cting on t heir b ehalf m akes a ny representation o r warranty a s t o t he a ccuracy o r c ompleteness o f such information and s hall n ot b e o bliged t o provide a ny u pdates o n the same.
+
+TERMS U SED
+
+To facilitate a b etter u nderstanding of t he ITT t okens b eing o ffered f or p urchase by the Distributor, and the b usinesses a nd operations of I ntelligent T rading T echnologies and/or the Distributor, certain t echnical t erms a nd a bbreviations, as w ell a s, in certain instances, t heir descriptions, h ave b een used in this W hitepaper. T hese d escriptions a nd a ssigned meanings should not be treated a s being definitive o f t heir m eanings a nd may not correspond to standard industry m eanings or usage.
+
+Words i mporting the singular shall, w here a pplicable, i nclude t he plural and v ice v ersa a nd words i mporting t he masculine g ender s hall, w here a pplicable, i nclude t he f eminine a nd neuter genders and v ice v ersa. R eferences to persons shall include corporations.
+
+NO A DVICE
+
+No i nformation i n this Whitepaper s hould b e considered t o be business, legal, f inancial or t ax advice r egarding Intelligent Trading T echnologies, the D istributor, t he I TT tokens, the Intelligent Trading Technologies I nitial Token S ale. Y ou should consult y our own legal, financial, t ax or other professional adviser r egarding I ntelligent T rading T echnologies and/or the Distributor a nd their respective businesses a nd o perations, t he ITT t okens, t he I ntelligent Trading Technologies Initial Token S ale. Y ou should b e aware t hat you m ay b e required to bear the f inancial risk of any purchase of ITT tokens for a n i ndefinite period of t ime.
+
+NO FURTHER INFORMATION OR UPDATE
+
+7
+
+
+
+No p erson h as b een or is a uthorised to give a ny information or representation n ot c ontained i n this Whitepaper i n c onnection w ith Intelligent Trading T echnologies and/or t he D istributor and their respective businesses and o perations, the ITT t okens, the Intelligent Trading T echnologies Initial T oken S ale and t he I ntelligent T rading T echnologies W allet (each a s referred t o i n the Whitepaper) and, if g iven, s uch i nformation o r r epresentation m ust not be relied u pon as h aving been authorised by or on behalf o f I ntelligent Trading Technologies and/or the D istributor. T he Intelligent Trading Technologies Initial Token S ale ( as referred t o i n the Whitepaper) s hall not, under any c ircumstances, constitute a  continuing r epresentation or create any s uggestion o r implication t hat there has been n o change, o r development r easonably likely to i nvolve a  material change i n t he a ffairs, c onditions a nd p rospects o f Intelligent Trading T echnologies a nd/or t he Distributor or i n a ny s tatement of f act or information c ontained in t his W hitepaper since t he d ate hereof.
+
+RESTRICTIONS ON D ISTRIBUTION A ND DISSEMINATION
+
+The distribution o r dissemination of t his Whitepaper o r any part t hereof may be p rohibited o r restricted b y t he laws, regulatory requirements a nd r ules of a ny jurisdiction. In t he c ase where any r estriction a pplies, y ou are to i nform yourself about, and to observe, any restrictions which are applicable to y our possession o f this Whitepaper o r s uch p art t hereof (as t he c ase may b e) a t your o wn e xpense a nd without l iability to Intelligent Trading Technologies a nd/or t he Distributor.
+
+Persons to whom a  c opy of t his W hitepaper h as b een distributed o r disseminated, provided access t o o r who o therwise have t he W hitepaper in their p ossession s hall n ot c irculate it t o a ny other p ersons, reproduce or otherwise distribute t his Whitepaper o r a ny information c ontained herein for a ny p urpose whatsoever n or permit or cause t he s ame to occur.
+
+NO O FFER OF SECURITIES O R R EGISTRATION
+
+This Whitepaper does n ot constitute a p rospectus or offer d ocument of any s ort a nd i s not intended to c onstitute a n offer o f securities or a  s olicitation f or investment in securities i n a ny jurisdiction. No p erson is bound t o e nter i nto any c ontract o r binding legal commitment and n o cryptocurrency o r other f orm o f Intelligent T rading Technologies is t o be a ccepted o n the basis of t his Whitepaper. Any agreement in r elation t o any sale and p urchase of ITT t okens ( as referred t o in this Whitepaper) is t o be g overned b y only the T&Cs o f such a greement and no other d ocument. In the e vent of a ny i nconsistencies between the T &Cs and this W hitepaper, t he former s hall prevail.
+
+You a re n ot e ligible to purchase a ny I TT tokens in the Intelligent T rading Technologies Initial Token Sale ( as r eferred t o in t his Whitepaper) i f y ou a re a  c itizen, resident (tax o r otherwise) or green c ard holder o f the U nited S tates o f America or a  citizen or r esident of the P eoples R epublic of China.
+
+No r egulatory a uthority h as e xamined o r approved of any of the information set o ut in this
+
+8
+
+
+
+Whitepaper. No s uch action has been o r will be taken u nder the laws, regulatory r equirements o r rules of a ny jurisdiction. The publication, d istribution o r d issemination o f t his Whitepaper d oes not imply t hat t he a pplicable laws, regulatory r equirements o r r ules have been complied w ith. RISKS A ND UNCERTAINTIES Prospective purchasers o f I TT t okens (as referred to in t his W hitepaper) should c arefully consider and e valuate all risks a nd u ncertainties a ssociated w ith I ntelligent Trading Technologies, the Distributor a nd t heir respective businesses and o perations, t he ITT tokens, t he Intelligent Trading T echnologies Initial Token Sale, all i nformation s et o ut in this W hitepaper and the T &Cs prior t o any purchase o f I TT t okens. I f a ny o f such risks and u ncertainties develops into a ctual events, the business, f inancial condition, r esults o f o perations and p rospects of I ntelligent T rading T echnologies a nd/or t he Distributor could be m aterially a nd a dversely affected. In such c ases, you m ay lose a ll o r p art o f the value of the I TT tokens.
+
+9
+
+
+
+1 - Executive S ummary
+
+Cryptocurrency markets h ave i ncreased in p opularity in r ecent y ears. What s tarted with B itcoin, a decentralized p ayment s ystem t o c ircumvent g overnment manipulation of c urrencies a nd redefining "Money" as w e know it, h as e volved and h as recently g ained critical mass with investors, traders, e ntrepreneurs and c onsumers. F rom a total c ryptocurrency M arket Capitalization o f less than $10B in 2012 t o ~ $144B today ( 17-Aug-17), cryptocurrencies continue to g ain i n value a nd d istribution. Although the r ecent increase o f t he cryptocurrencies' market cap and presence is r ather unprecedented, many believe that t hat this trend w ill not o nly c ontinue, but will i ncrease. With the n ear-constant inflow o f n ewly a vailable c ryptocurrencies, traders a re spending m ore time than ever trying to f ind s uitable investment o pportunities a mong the sea of c hoices. Numerous tools have r isen a lready to h elp t raders in t heir quest f or profit. T rading bots, and a lerts are already a round, but t hese a re c onstantly l eaving traders w ishing f or m ore. The a vailability o f c ryptocurrencies i s a  n ew and transformative phenomenon, and relevant data sources are s carce a nd f ragmented. N evertheless, it i s without question t hat b lockchain technology a nd c ryptocurrencies will p lay a more important role i n o ur l ives g oing f orward. Blockchain technology i s a c omplete game-changer, a nd i nvesting i n t hese disruptive technologies at the very e arly s tages s hould undoubtable be extremely profitable. T he real question i s w hich of the cryptocurrencies will d ominate this space i n t he coming future. I nvestors in this space ( both new and e xperienced) n eed a tool t o discern t he good f rom t he bad investments, and an efficient m ethod t o make this s election p rocess a s easy a s possible. Our mission is to i ncrease adoption a nd awareness o f c ryptocurrencies. U sing t he h yperbolic technology a nd artificial intelligence ( AI) t o i dentify market signals a nd p atterns that cannot be programmed b y humans, we a re building t he tool that will undoubtedly h elp you b ecome a m ore knowledgeable and s uccessful t rader.
+
+10
+
+
+
+2 -  B ackground, Problem O verview
+
+Cryptocurrency M arkets
+
+Cryptocurrency markets continue to increase in awareness and popularity. I n 2 017, t he prices o f more popular v irtual currencies, such a s bitcoin and ethereum, h ave soared t o record highs amid increased i nvestor i nterest. This increase i n i nvestor interest has l ed to the emergence o f m any other a vailable o ptions.
+
+With just a  few lines of c ode, n early anyone can issue their o wn n ew cryptocurrencies and offer it to the world. These o ther o ptions i nclude n umerous "alt-coins" and "app t okens", which h ave arisen t o t ackle m any different o pportunities for which the b lockchain provides n ext-gen solutions. T hese currencies, d eveloped on the blockchain, o ffer b uilt-in transparency - but a n understanding o f coding is r equired t o comprehend t he technologies and w hether they a re truly capable of the disruption t hey claim.
+
+This i ncrease in t he n umber o f a vailable cryptocurrencies has allowed for an unprecedented opportunity for traders, but it also makes i t makes a  trader's job increasingly more complex t o identify e xceptional i nvestment v ehicles. Cryptocurrency m arket p articipants are o verwhelmed by a very large and g rowing a mount of data that needs t o be d igested and understood to b e successful.
+
+Young, volatile, borderless, and available 2 4/7 -  t hese markets a re e xtremely far f rom efficient. This m eans t hat there a re significant e xcess returns to b e had, or A lpha - e specially when compared with traditional m arkets. C ryptocurrency m arkets are still i n their i nfancy and w e have yet t o see a  significant i nflux of institutional i nterest.
+
+The cryptocurrency m arket h as evolved d uring t he age of the i nternet, so information itself is quite easy to come b y - but g ood u nbiased i nformation is very d ifficult to i dentify from t he massive amount of available i nformation. T here are multiple i nstances o f misinformation, disinformation and w idespread " pump & d ump" schemes. With a ll of this conflicting a vailable information, what i s the truth and w hat i s a distraction?  I f t raders can properly a nalyze a nd absorb only the u seful information, t here are myriad w ays t o generate s uperior r eturns a nd p rofit.
+
+Artificial I ntelligence
+
+Artificial i ntelligence, s pecifically n eural networks u sed in machine l earning, a re d esigned a s software t hat emulates the a ctivity o f the h uman brain a nd how it p rocesses i nformation. These neural n etwork models are p articularly useful for predicting future e vents when trained o n historical d ata.
+
+The u se o f these technologies h as i mproved d ata science a nd d ata a nalyses and h as r ecently become i mpressively e ffective for certain tasks w hen c ompared t o t raditional algorithms b ased on hard c oded rules and pure statistical analysis. M achine intelligence as an e volving field,
+
+11
+
+
+
+represents t he largest opportunity f or staying ahead in any m arket where c ompetition m akes innovation n ecessary. Artificial Intelligence h as been around for a w hile, a nd i nvestments i n A rtificial Intelligence-based s tartups i s n ot a  new thing. Since 2012, the n umber o f deals and d ollars contributed to A rtificial Intelligence startups has been o n t he rise, a nd 2016 w as a  record y ear f or startups g lobally. The c hart below displays t he i ncreasing f unding rounds of AI startups over the last 5  y ears.
+
+Source: CB I nsights Current popular utilization o f A I technology i s the s imple s ubstitution o f routine human t asks. This i s the simplest a pplication because AI is fast a nd a ccurate, w ithout fatigue. F or e xample, estimation o f s tock p rice impact of news a nnouncements by c omparing p recedential c ases, reading financial r esults o r a nalyst r eports t o f ind hidden c ausality between many companies' results, t ext m ining o f Twitter t o f ind c orrelation b etween stock price and some w ords, etc. Artificial i ntelligence has been used f or over 18 y ears in t raditional f inancial market trading, t o generate additional r eturns for m any hedge funds and banks. This t rend i s e xpected t o continue. For i nvestment and t rading d ecisions, financial services h ave recently b een adopting A I tools. Capable of p rocessing a nd c omprehending data f aster t han any h uman, t he potential for both high-frequency t rading a nd l onger-term predictions b ased on intelligent intuitions l eads t o substantially g reater captured profits.
+
+12
+
+
+
+Artificial Intelligence in C ryptocurrency Markets
+
+Currently, c ryptocurrency t raders spend c ountless h ours i n chat groups, f orums, social m edia a nd scanning n ew s ites f or information -  a ll w hile t rying t o simultaneously comprehend complicated technical analysis a nd execute trades a t the p recisely r ight time. If a  t ool w ere to exist t o help traders analyze all of t his available information and allow t hem to easily profit f rom it, it would be i ncredibly useful. T his i s d one b y pairing traditional market (stocks, f iat currencies, b onds, d erivatives) trading concepts with today's cutting-edge pattern recognition a nd m achine learning capabilities. T hese technologies allow t he software to s can, analyze, and interpret t he m assive a mount of i nformation a vailable. W ith t his information, t his intelligent tool would then i dentify entry points a nd n otify t he t rader about t hese price movements before t hey h appen. T his would allow traders t o p rofit f rom t hese m oves when t hey happen, n ot g et a n alert a fter the profits h ave b een m ade. Fortunately, I ntelligent Trading Technologies ( ITT) i s building this ultimate c ompanion for the A LL traders. Let ITT's platform d o the heavy lifting and analyze all the r elevant i nput data f or cryptocurrencies and deliver game-changing t rading ideas to you t o execute. I TT trading b ots c an be customized to c ater to your preferences for time of d ay, t rading volumes, risk level, hold timings, a mong others. ITT will m onitor all o f the r elevant information, 24/7, on y our behalf. ITT's platform w ill automatically author a strategy, a nd it g ive you t he commands t o execute. ITT will t hen s end you actionable t rading alerts during the day a nd in time f or you m ake t he final call w hether t o trade. Our intelligent b ot ( Tier 2, scheduled t o b e r eleased 4 Q17) will b e capable o f s elf-programming and reprogramming t o m atch changes in t he m arket, a djusting i ndicator w eights, a nd c ontinuous optimization as a n agent motivated solely on m aximizing the traders hourly r eturn rate.
+
+13
+
+
+
+3 - Mission Statement
+
+The g oal o f Intelligent Trading Technologies i s to empower t raders w ith c onsolidated cryptocurrency m arket p redictors s erved b y our fleet o f A I-powered data bots o rchestrated t o produce i ntelligent insights f rom a  v ast world of real-time d ata. Thousands of a lt-coins p rice movements across multiple exchanges is j ust t he initial torrent o f data users m ust i ngest to e ffectively t rade c ryptocurrencies. The m ost e xperienced traders rely o n a h ost o f services t o help t hem derive insights from the slew o f market indicators popping up every second. We want t o e mpower e very beginner t rader with consolidated insights o n w hen t o buy, sell, or hold t heir d iverse portfolio of coins. I ntelligent i nsights m ean u sing d eep learning and statistical analysis to c ommunicate a  "why" b ehind e ach m arket predictor. State-of-the-art data science t ools a nd neural n etworks s hould be e mployed to p rovide a ctionable real-time trading s ignals for s uccess in t he c ryptocurrency m arkets. T hese d isruptive technologies are constantly a nd consistently c hanging our lives. I t's t ime t o leverage these technologies into c ryptocurrencies. ITT t okens will b e a d isruptor to traditional t rading m odels. This t oken s ale gives e arly adopters a unique o pportunity to b ecome an early subscriber and i nvestor in t he v alue o f t hese t rading insights. The I TT t eam w ill u se t he token sale f unds t o further our current m odel, r olling o ut new a nd exclusive bots only available via t he I TT Platform with subscriptions payments only accepting ITT t okens.
+
+14
+
+
+
+4 - P latform
+
+"Computers are u seless. They can only g ive you a nswers."   P ablo P icasso "I b elieve that t he most important single thing, b eyond discipline and c reativity, i s d aring to dare."  Maya Angelou
+
+In determining a good investment in any market, there are two primary m ethods u sed t o try to predict an asset's f uture p rice:
+
+ Fundamental A nalysis ( FA)  Typically for l onger-term trading, F A involves d etermining a n a sset's true value based o n i ts intrinsic p roperties as w ell as t he s tate o f t he m arket.
+
+ Technical Analysis (TA)  Technical a nalysis i nvolves reading i ndicators a nd chart p atterns to d etermine price trends, TA i s normally n ot concerned w ith the company's f undamentals. Technical a nalysis i s typically u sed for day/swing trading (i.e. short-to-medium term t rading) and l ooks a t p ast price a ction to determine f uture v alues.
+
+Looking at s imply FA &  T A i s n ot enough, h owever. T here a re m any day t raders o ut t here trying to profit f rom t his.
+
+Fortunately, trading using TA works r eally well i n c ryptocurrency m arkets, a nd u ltimately the goal i s t o p rovide you w ith q uality data to m ake e ducated c hoices. However, w hen t rading b ased on TA, it i s f airly common to r eceive mixed i ndicators (one bullish, one bearish). The a dded value f rom a smart p latform powered by A I i s t o intelligently s can for e ven m ore indicators or signals f rom multiple data s ources t o support o ne direction or t he o ther. AI is c onstantly l earning and a dapting to changing market conditions.
+
+ITT's p latform learns f rom h istorical t ime s eries o f price and v olume. I TT's data b ots are constantly s canning a nd l earning from t he v ast array o f data a vailable o n the i nternet. T herefore the m odel i s e xpected t o b e effective i f t he market e nvironment i s consistent with the near past. This i s s omething that the machine learning h elps with - b ecause at times m ere humans m ay perceive t he cryptocurrency market as unpredictable when i n fact c lear p atterns e merge w hen reading b etween the l ines.
+
+Even in a  n ascent, v olatile, and not yet efficient m arket s uch as t he c ryptocurrency markets, technical a nalysis can accurately predict price a ction b ased on historical data. T he shortfall comes w ith t hat this c annot predict a  h uman's m otivations and a ctions. I f a  whale d ecides t o move a  m arket, given t he lack o f r egulations a nd p otential for m arket m anipulation, t he b est quantitative m odel i n t he w orld won't be a ble t o p redict the p rice s wings. Obviously, t he m odel does not f oresee any o f idiosyncratic event s uch as natural disaster, referendum, or political change which are very difficult f or humans too. W ho could've p redicted t he GDAX, o ne o f the largest and m ost active cryptocurrency exchanges o ut there, a nd t he flash c rash in June where ETH prices dropped f rom $319 t o $0.10 in an i nstant.
+
+15
+
+
+
+When d eciding w hat i ndicators t o use on I TT's p latform, we did a  t horough a nalysis of w hat currently e xists, and m ade a w ish-list of indicators that w ould be i ncluded o n the p latform. From n early a  year o f m eticulous b acktesting a nd tweaking o ur indicators, w e h ave c ome up with a u seful lot. The exact triggers f or t hese i ndicators is proprietary, b ut t he s ource c ode for T ier 1 p ricing indicators is a vailable on G itHub.
+
+ITT Bot UI Mock up
+
+The a bove screenshot i s from the current T ier 1  ITT P latform. T he d ata is pulled live f rom multiple exchanges. Each alert w ill b e a  c oncise summary either "BULLISH" or "BEARISH" and h as a link to full d etails o f t he report.
+
+Alert Description
+
+The a lerts are e asy t o u nderstand. Current T ier 1 a lerts are s howing t he f ollowing:  Trading Pair  The cryptocurrency pair for which the alert is triggered. I n t his e xample, ETH/USDT ( Ethereum/USD Tether).  Overall Rating  This g ives y ou a q uick sign o f what our algorithms are p redicting w ith the asset. The two o ptions a re: 16
+
+
+
+ Bullish  Bearish  The s trength o f this s ignal w ill b e rated up to 5 s tars (strongest signal)  This i s a weighted s ummary o f the summation of a ll the i ndicators. T hese weightings c ontinue t o b e o ptimized for excess r eturns.  This rating is a link t o a full r eport detailing t he a lerts t hat w ere triggered.  Time Horizon  Each alert comes w ith an e xpected Time Horizon f or the alert. T hese h orizons a re defined b y number o f trading p eriods (15 m inute i ntervals).  Short ( minutes)  Medium (hours)  Long (days)  Short T ime H orizon r epresents < 20 p eriods, M edium r epresents 2 0-50 periods, and l ong represents > 50 periods.  Exchange  This s hows t he exchange o n w hich the t rading a lert was triggered, i n this example: B ittrex.  The e xchange name, Bittrex, i s a ctually a l ink t hat will take you t o s ee the indicated t rading p air.  Price S ummary  Current p rice of the trading p air a long w ith c hange in the p ast 2 h ours.  Volume Summary  Current b uy/sell volume along with the i ncrease f rom t he average buy/sell v olume over t he past 2  h ours.
+
+Details o f the A lert
+
+By c licking o n t he a lert l ink, u sers w ill b e taken t o a  s ummary o f w hat t riggered the trading alerts. This summary is broken out into:
+
+Technicals -  Price &  V olume In development of the b ot, w e h ave incorporated m any different t echnical i ndicators for t esting. Currently, t he only the most r elevant a nd consistent indicators are b eing u sed.
+
+How i ndicators w ork i s all about h ow they a re used i n a  trading p lan. M oving A verages, MACD, RSI, C CI d o their job in t erms o f calculations. T he real a dded value is how ITT's t echnology interprets t he information a nd learns from it as part o f a n overall trading strategy. T here i s absolutely n o "holy g rail" s ingle indicator or signal. Proper use of standard indicators with meticulous backward a nd f orward t esting, paired w ith having t he use of these i ndicators evolve as t he m arket e volves t o optimize the t rading s trategy for m aximum t rade r eturns.
+
+This section w ill s tart w ith an overall rating f or t he s ection, b ased o n a  w eighted-average of t he indicators i ncluded in t his section.
+
+17
+
+
+
+ Price  Percentage change i n p rice during recent periods.  SMA &  EMA f or m ultiple periods  RSI - 14, 21 p eriods  Stoch  StochRSI  Stoch R SI Fast K  & S low D  v alues from multiple period d ata  The m oving average & s lope o f these values o ver p revious periods  Moving Average C onvergence D ivergence ( MACD).  The sign a nd value MACD  Commodity Channel Index ( CCI)  CCI calculation (20 p eriods) versus p rice a ction  Average True R ange (ATR) -  14 p eriods
+
+ Volume  To eliminate s hort term fluctuations in volume to m inimize false s ignals, w e u se a proprietary m odel for v olume c alculated u sing a  weighted m ix of:  On Balance Volume (OBV) d etermining:  Whale/Rich L ist Ownership %  24 h our C hange in W hale/Rich L ist O wnership %  Klinger O scillator  The t otal b uy v olume in t he past p eriods versus t he average b uy volume in the past 24 h ours.  The percentage c hange i n b uy v olume f or the p ast periods versus the average b uy volume i n the past 2 4 hours.  The slope of b uy v olume for the p ast periods.  Total buy & sell o rders, mid p rice a nd s pread o f the order book  Buy Order/Sell Order R atio f or e ntire order b ook
+
+ Candles  Trendlines  Support  Resistance  A m ix of M arubozu & Doji f ormations indicators
+
+Sentiment Sentiment Indicators are where t he artificial i ntelligence f eatures r eally shine. Tier 2  s ubscription will include these features, current ( beta-testing) indicators i nclude:
+
+ Social  ITT's p latform b ots scan t he following sites:  BitcoinTalk Forums  Twitter  Reddit  YouTube  Focusing o n the f ollowing:  Positive/Negative M entions  Proprietary bullish/bearish i ndicators
+
+18
+
+
+
+ News  ITT's platform b ots scan the following sites:  Google N ews  Popular Cryptocurrency n ews s ites such a s:  Coin T elegraph  Coin Desk  Focusing on the following:  Positive/Negative M entions  Proprietary bullish/bearish indicators
+
+ Google T rends  ITT's P latform scans google trends f or k ey search queries.
+
+Additional Sections i n T esting
+
+We c ontinue t o t est a dditional features in t he ITT P latform. Currently investigating m ore Fundamental A nalysis aspects by looking a t correlations o f:
+
+ Longevity o f target asset's project.  Correlation o f r eturns a nd target a sset's c ore t eam's number of developers.  Number o f Followers o f c ryptocurrency's T witter a nd R eddit A ccounts.  For P roof of W ork C oins:
+
+ Track percentage i ncreases i n nodes
+
+Technology A rchitecture
+
+Tokens: E RC-20 token, f inite s upply of 2 1,000,000.00000000 Contracts: Service s ubscription in c ontract Blockchain: Ethereum network Scalability: 99.99% uptime as containerized o n Google Cloud Platform Performance: 8 00ms S LA t arget f or d ata-point t o u ser push notification Decentralized a nd Redundant: E thereum network Secure a nd Foolproof: User s ession is anonymous a nd n o u ser data is touched in Tier 1 , 2 subscriptions. T ier 3  i s hosted internally on private servers i n Switzerland.
+
+19
+
+
+
+Service D ata F lowchart: 20
+
+
+
+5 - R oadmap
+
+"Collaboration a llows teachers to capture each o ther's f und o f c ollective i ntelligence." - -Mike Schmoker
+
+Phase 1: I nitial D evelopment
+
+4Q16  Concept r ealization of a  trading assistant for Cryptocurrency Markets.
+
+1Q17  Development of a n a dvanced t rading a ssistant (on Telegram) begins as a  s ide project.  Initial Telegram Bot i ncluded t rading a lerts based on predefined p rice a nd v olume c hange with limited available cryptocurrencies.  Testing continues by founders, f riends, a nd advisors.  Increased d evelopment leads t o introduction of t echnical analysis indicators i n trading alerts.
+
+2Q17  Authoring o f w hitepaper as 3  n ew advisors j oin the t eam.  Continued d evelopment a nd t esting o f more advanced features w ith T elegram b ot -  an additional a rtificial i ntelligence p rofessional joined to i ncorporate AI f eatures into I TT.
+
+Phase 2
+
+3Q17  ITT P latform ( bots a nd a lgorithms) continues t o b e t weaked a nd o ptimized to p roduce market-beating returns.  Private Beta Tier 1  I TT B ot released on T elegram for l imited public use ( using Technical Analysis, AI features n ot i ncluded).  ITT Token S ale.  Acceleration o f development i n statistical d ata m odelling, and trader experience p atterns.
+
+4Q17  Tier 2 A I-enabled I TT B ot released o n a subscription-based m odel.  Personalized t rading a lert s ettings m ade a vailable on I TT Bot.  Availability of P ortfolio management companion a pp.
+
+1Q18  Support a dded for Simplified Mandarin, K orean, J apanese, C antonese, Spanish  Additional Features added to ITT Bot -  S ocial M edia S entiment Indicators. Investigate potential inclusion o f p redictive m arkets -  partnership w ith A ugur/Gnosis.  Continue t o b uild I TT c ommunity o f traders.
+
+21
+
+
+
+Phase 3
+
+2Q18  ITT u sers g ain access t o e xclusive c ryptocurrencies R esearch reports (buy/sell)  Release o f a lternative alerts -  via Slack, WeChat, Twitter, Wire, Ambit
+
+3Q18  ITT launches separate q uant f und with the introduction o f T ier 3  subscription options.
+
+Ongoing  ITT B ot will c ontinue t o b e t weaked a nd developed - these d ata bots w ill b e c onstantly re-tested a nd o ptimized.  We i ntend t o b ring institutional-level t rading technology and make it a vailable t o t he masses. S mart a utomated l oss prevention trades a vailable.  API a ccess to u ser a ccounts on exchanges f or f aster trade initiating and o ption for implementing s mart a utomated l oss prevention trades.
+
+Machine l earning and specifically the i mplementation o f generative adversarial n etworks w ill will f urther disrupt the growing e ffectiveness i n trading crytpocurrency assets. F urthermore, o ur focus w ill remain on b oth infrastructure a nd t uning the neural models t o e ffectively p roduce high-confidence t rading predictions from trillions of data signals ranging f rom media o utlets, social n etworks, international t rade r elations, current e vents, a nd technology a dvancements. While t iming is d ifficult to p redict, t he team h as i ts s ights s et upon a n AI assistant capable self-programming, retraining, a nd continued s elf-optimization. A nd, a t t he s ame t ime p romoting open and transparent t ransacting i nside s mart c ontracts on the E thereum network b lockchain.
+
+22
+
+
+
+6 -  T oken Mechanism
+
+
+
+The I ntelligent Trading Technology T oken (ITT) i s a n ERC20 E thereum token. E thereum tokens are represented a s s mart c ontracts t hat are executed o n t he p ublicly-available E thereum blockchain. The I TT t oken's d esign f ollows t he widely-adopted token i mplementation s tandards. This allows token holders to easily s tore a nd m anage their ITT tokens u sing e xisting solutions including E thereum W allet.
+
+
+
+The source c ode t o I TT's smart c ontract i s p ublicly available on GitHub. T he s upply o f I TT tokens i s limited t o 2 1 million I TT t okens. The E thereum network e nforces that t here w ill n ever be more than this i nitial 21 million I TT tokens m inted.
+
+
+
+ITT tokens are essential t o pay a ll subscription fees o n the ITT p latform.  W e w ill burn 2 5% of the s ubscription fees collected from ITT's users.
+
+
+
+We will continue t o support and promote t he trading o f ITT t okens on s everal e xchanges, as w ell as i ntroduce s ubscription-based access t o I TT's Platform after t he I TT t oken i s a dded to a n adequate n umber of e xchanges to allow f or sufficient v olume.
+
+
+
+Subscriptions, paid i n I TT tokens will target prices to that uphold t wo g oals: - maintains e nough e xclusivity to p revent the user c rowd from becoming a market-manipulator - remain a vailable t o amateur l ow-volume t raders
+
+
+
+Tier 1 S ubscription Services -  This I TT Bot s ends alerts based o n numerous technical indicators, and w ill start o ff around $5/month, p ayable i n ITT Tokens.
+
+
+
+The pricing mechanism i s a  product o f f actors i ncluding number o f subscribers, inverse
+
+
+
+relationship o f the U SD value o f t he ITT Token, and elastic t o t he ratio o f t otal subscribers t o
+
+
+
+Total M arket Cap o f all c ryptocurrencies.
+
+
+
+P
+
+
+
+=
+
+
+
+(aS
+
+
+
++ bP
+
+
+
+-1 ITT
+
+
+
+)
+
+
+
+* 0.95
+
+
+
+0.5+c(S /C G )
+
+
+
+Tier 2  Subscription Services - T his I TT B ot will s end customizable alerts personalized by artificial i ntelligence (neural n etwork) m odels tuned t o your trading g oals a nd optimized t o y our individual t rading ability.   The Tier 2  I TT B ot will start off a round $ 20/month, payable i n I TT Tokens.
+
+
+
+A s imilar pricing mechanism w as used i n producing t he i deal pricing equilibrium, adding
+
+
+
+elasticity in p rice according t o t he ratio o f AI-Powered traders ( ITT S ervice users) versus
+
+
+
+non-AI-Powered t raders.  This ensures the e ffectiveness o f t he A I a dvantage o f ITT's P latform.
+
+
+
+P
+
+
+
+=
+
+
+
+(aS
+
+
+
++ bP
+
+
+
+-1 ITT
+
+
+
++ cCIT T
+
+
+
++
+
+
+
+dC
+
+
+
+-1 G
+
+
+
+)
+
+
+
+*
+
+
+
+0.95
+
+
+
+e(CS*CG-1)+f (T S*T G-1)
+
+
+
+23
+
+
+
+Tier 3  Subscription S ervices - According to t he Roadmap in 3Q18, I TT will launch a s eparate quant fund p owered by the I TT Platform's technology.  ITT tokens w ill r epresent the future exclusive opportunity to convert i nto a  s eparate q uant f und u sing I TT's t echnology.
+
+24
+
+
+
+7 - I TT Token Sale
+
+For the I TT token sale, contributors c an r eceive u pdates a nd a nnounced o n t he I TT token s ale webpage ( i ntelligenttrading.org/token-sale/) .
+
+The ITT t oken s ale period w ill last u ntil USD $ 4.2 m illion equivalent i n E thereum/Bitcoin tokens have been r aised, o r for a m aximum duration of 1  c alendar m onth, w hichever is earlier.
+
+Start D ate: A ugust 18, 2017 at 14:00 U TC End Date: S eptember 1 7, 2 017 at 1 4:00 U TC CAP:  W e a re raising a pproximately $4.2M USD denominated in ETH/BTC in our token sale.
+
+Being a  c rowdfunded project, a  m ajority of 7 5 %  w ill be o wned b y the c rowdfunding participants in the form of ITT tokens, w hile 25 %  ITT tokens will be r eserved for the original development team, a dvisors, b ounties a nd the e arliest a dopters/contributors. I TT T okens reserved f or o riginal development t eam and a dvisors will be subject to a  12-month holding period t o serve as a  l ong-term i ncentive for the f ounding team.
+
+21,000,000 I TT T okens will be c reated:
+
+ 75% of T okens a vailable f or crowdfunding p articipants and traded on e xchanges
+
+ 15% of T okens available for User Rewards ( acquisition, performance and b onuses)
+
+ 10% o f tokens a vailable for original contributors/dev team/advisors ( subject t o 12-month holding period)
+
+As w ith all token sales, there are m any p ossible b enefits o f participating. The direct b enefit i s that you a re helping I ntelligent Trading T echnologies f urther the development of its p roduct. ITT's Platform will allow for i ncreased inclusion o f beginner c rypto traders, giving them g reater trading confidence in the c ryptocurrency m arkets a nd s hould help e ncourage more traders to enter the m arket.
+
+Additionally, once t he t okens a re l isted on many e xchanges, there potentially w ould be an opportunity t o make a  profit s elling t okens after you've p urchased them.
+
+25
+
+
+
+Token s ale p articipants w ill be able to send Ether ( ETH) or Bitcoin ( BTC)* to the I ntelligent Trading Technologies' token s ale a ddress only after the start of t he t oken s ale period.
+
+Please o nly contribute to official ETH a ddress as l isted on t he official I ntelligent T rading Technologies Website (http://token-sale.intelligenttrading.org). Any other a ddresses p osted before/during/after t he t oken s ale period anywhere o ther t han t he official w ebsite (http://token-sale.intelligenttrading.org) s hould n ot b e used.
+
+*Bitcoin ( BTC) c ontributions will o nly be taken in special c ircumstances in amounts >50 B TC. Please email f or more information a t i nfo@intelligenttrading.org.
+
+Contributors w ho p urchase  I TT t okens between A ugust 1 8 and September 1 (during the f irst two weeks o f t he t oken s ale) w ill r eceive bonus I TT tokens b ased o n the table below.
+
+
+
+Capital Committed
+
+
+
+ITT B onus Tokens
+
+
+
+< 5 E TH*
+
+
+
++0%
+
+
+
+5 ETH* - 50 ETH*
+
+
+
++10%
+
+
+
+>50 ETH*
+
+
+
++20%
+
+
+
+ETH* -  a lso applies t o an e quivalent amount in BTC a t t ime o f transaction.
+
+
+
+ITT tokens will b e d elivered to y our E TH Wallet s hortly after t he t oken s ale p eriod e nds, and then t radable on exchanges shortly thereafter.
+
+
+
+On the p roject w ebsite ( i ntelligenttrading.org/faq) , you w ill also f ind a d etailed g uide o n h ow to participate in t he I TT token s ale using e ither the E thereum W allet or P arity. Please do n ot send contributions from a n e xchange o r a ny w allet f or which you d o not control t he private k ey.
+
+
+
+Please check y our local laws a nd regulations prior t o participating. U nfortunately, citizens a nd residents o f the United States and t he P eople's R epublic o f China c annot currently participate i n the ITT token sale d ue to due t o regulations in t hose jurisdictions. P lease s ee o ur Terms & Conditions f or m ore i nformation.
+
+
+
+26
+
+
+
+Use o f T oken Sale Proceeds
+
+The f unds r aised w ith allow ITT to scale up o perations until w e b ecome cashflow p ositive at which p oint we will f ollow a n ot f or profit m odel a nd will be a ble to l ower s ubscription fees to the u sers. T he f unds will be d istributed a ccording to the table below and spent o n direct c osts according t o t he R oadmap. A breakdown c an be seen b elow.
+
+Primary D evelopment -  60%
+
+Sixty percent of t he funds received during t he token sale w ill be allocated f or development and continued improvement to t he I TT P latform a nd open-source project as laid o ut i n o ur development roadmap. F unds raised w ill a llow for A I i ntegration, S lack b ot, WeChat bot, w eb dashboard, a nd auto-trading v ia API connection t o e xchanges as t hey become a vailable.
+
+Marketing- 1 0%
+
+As the v alue o f ITT Tokens and t he ITT Platform will j ointly b enefit from m ore u sers, marketing will be done t hrough s ocial media, d irect marketing, partnerships a nd affiliate p rograms.
+
+Outreach- 1 0%
+
+Our outreach f unds w ill be utilised to provide e ducation to t he public o n t he ITT Platform and cryptocurrencies i n general. Increased a wareness o f cryptocurrencies and blockchain, w ill a llow for increased u se o f I TT P latforms a nd u ltimately m ore liquidity in t he m arkets in w hich w e operate. T his will a lso include o utreach t o ITT's u sers f or f eedback - e nsuring that w e continue to p rovide a  r elevant p roduct that c ontinues t o add significant value to t heir trading e xperience. We intend to firmly e stablish ITT a s t he dominant p layer i n the T rading A lert s pace.
+
+Operating E xpenditures - 2 0%
+
+Twenty percent of t he t oken sale funds w ill be r eserved for o perating e xpenditures. T hese will b e allocated f or any n on-development, hosting a nd l egal e xpenses.
+
+27
+
+
+
+8 -  L eadership ( Team)
+
+"Great t hings i n b usiness a re never done by o ne person. They`re done by a team of p eople." - Steve Jobs
+
+"Talent wins games, but teamwork a nd i ntelligence w in c hampionships." --Michael J ordan
+
+Benjamin L akoff, CFA Co-Founder Ben is an entrepreneur and finance professional. H e i s an a vid active t rader in both t raditional a nd c ryptocurrency markets. He holds the C hartered Financial Analyst ( CFA) designation and has b een i nvesting in Blockchain start-ups heavily s ince m id-2016. B en j oins ITT's t eam with b road a nd diverse experience across various b usiness s ectors i ncluding mergers & acquisitions, equity markets, b anking, and lately the Head of Planning in a  m ore d iversified and entrepreneurial o rganization. H e is f luent i n English, Portuguese, and Spanish and currently lives in Bangkok, Thailand.
+
+Thomas C ounsell Co- F ounder Tom h olds a  C omputer S cience d egree from P urdue University. I n 2012, h e cofounded the largest artisan ecommerce site i n M orocco w hile serving w ith the US P eace C orps. I n 2 015, h e c reated N oble Software Foundation a nd Incorporeal L td. w hile l eading l arge software development operations for technology startups in Thailand including A goda.com a nd serving as C TO a t CareerBolt a nd Aztrana.com. T om brings to ITT a unique set of d iverse cross-culture s kills and e xperience d eploying world-class applications u sed b y millions i nternationally. He now r esides in Czech R epublic focussing on practical applications o f the l atest artificial i ntelligence a nd blockchain technologies.
+
+Marcelo Barbosa Platform Developer With 17+ y ears of e xperience, M arcelo h as led t eams a s a  backend a nd full-stack e ngineer a t O virt, F edora L inux and CentOS L inux, G lusterFS, SizeOf, D atacom, R ed Hat, L ojas Renner, N eo N etworks and SIJ. His specialization i n cloud services, o pen-source p roducts, s calable server infrastructure, A PI d esign, a nd b lockchain has honed his p assions f or problem-solving and p roduct d evelopment.
+
+28
+
+
+
+Peter H Trading A dvisor Peter is b ased in t he U SA, and h as spent the p ast s ix y ears in investments working f or t he A sset Management d ivisions of J PMorgan a nd W ells F argo. Peter's trading e xperience s pans all a sset classes a nd h e has deep knowledge of fundamental and technical a nalysis a nd modeling. Peter i s a ddicted t o trading cryptos a nd is p assionate about t his project b ecause he sees great value i n the resource that ITT will be for a ll crypto i nvestors, f rom the first time buyer t o professional t raders. Due t o t he unknown r amifications o f t he U S r egulatory e nvironment for licensed i ndividuals, P eter h as chosen t o remain anonymous at this time Sebastian Bausch Advisor Sebastian is a security analyst a nd has b een p assionate a bout c ryptocurrencies since 2011. He is t he co-founder o f Criton G roup, a risk c onsulting f irm w ith focus o n A sia. Sebastian s tudied Mandarin at Xiamen U niversity a nd holds a postgraduate d egree from t he University o f N ottingham.
+
+Poramin I nsom Development Advisor Poramin i s t he founder and core d eveloper o f Z coin,  a n $ 30M M arket c ap anonymous c ryptocurrency. H e is the CEO o f S atang, a  m obile bitcoin wallet i n Southeast Asia. H e i s also the world's first p erson to i mplement s tealth addresses in Q T-Wallets, i mproving cryptocurrency anonymity. H e e arned a master's d egree in I nformation S ecurity from Johns H opkins University w here he w rote a  p aper on a proposed practical i mplementation o f the Zerocoin protocol.
+
+29
+
+
+
+9 - L egal C onsiderations
+
+Please r ead this s ection c arefully. If you are in a ny d oubt as t o t he a ction you should take, y ou should c onsult y our legal, f inancial, t ax o r other p rofessional a dvisor(s).
+
+ITT t okens a re functional utility t okens w ithin t he I TT p latform. I TT tokens a re not securities, and a re n ot intended t o constitute securities i n a ny jurisdiction. ITT t okens a re a lso non-refundable a nd are n ot for speculative investment.
+
+Intelligent Trading T echnologies' w hitepaper a nd w ebsite d o n ot c onstitute a  prospectus o r o ffer document o f a ny sort, a nd a re not i ntended to c onstitute an offer o f securities or a  s olicitation for investment i n securities i n any jurisdiction. T his w hitepaper and website d o not constitute or form part o f a ny opinion o n any advice to sell, or a ny s olicitation o f any o ffer b y t he distributor/vendor of the ITT tokens (the " Distributor") to purchase a ny ITT tokens n or s hall i t or any p art of it n or t he f act o f its p resentation form t he b asis o f, or be relied u pon in c onnection with, a ny contract or i nvestment decision. C ontribution t o the I TT token i s b y w ay o f d onation to the D istributor.
+
+The Distributor w ill be an affiliate of Intelligent Trading Technologies, a nd will deploy all proceeds of sale of the ITT t okens t o fund ITT's cryptocurrency project, businesses and operations.
+
+No p erson i s b ound to enter i nto any c ontract or b inding legal commitment i n r elation t o the sale and p urchase of the ITT tokens and n o c ryptocurrency or o ther form o f payment is t o b e accepted on t he b asis o f t his whitepaper.
+
+Any agreement a s b etween t he D istributor and you as a  purchaser, and in r elation t o any sale a nd purchase, o f ITT tokens ( as r eferred to in this whitepaper) is t o be governed b y o nly a  separate document setting out t he t erms and conditions (the "T&Cs") o f s uch agreement. In the event of any inconsistencies b etween the T&Cs and this w hitepaper, t he f ormer s hall p revail.
+
+You a re n ot e ligible a nd you are n ot t o purchase a ny I TT tokens in the Intelligent Trading Tokens S ale ( as r eferred to in t his whitepaper) if you a re a c itizen, r esident (tax o r o therwise) o r green c ard h older o f the United States o f America o r a  c itizen or resident o f t he Peoples Republic of C hina.
+
+No regulatory authority h as examined or a pproved o f a ny of the information s et out i n t his whitepaper. N o such a ction has b een o r w ill b e taken u nder the laws, r egulatory requirements or rules of a ny j urisdiction. The p ublication, d istribution o r d issemination o f this w hitepaper d oes not i mply t hat t he applicable l aws, r egulatory r equirements or r ules have b een complied w ith. There are risks a nd uncertainties a ssociated with Intelligent Trading T echnologies a nd/or t he Distributor and t heir respective businesses and o perations, the I TT t okens, a nd t he I TT T oken Sale ( each as referred t o in t his whitepaper).
+
+30
+
+
+
+This whitepaper, any p art t hereof a nd a ny copy t hereof must n ot be taken o r t ransmitted to a ny country w here distribution o r d issemination of t his whitepaper is prohibited o r r estricted. N o p art of this whitepaper i s t o be r eproduced, d istributed or d isseminated.
+
+To the m aximum e xtent permitted by t he applicable l aws, regulations a nd r ules, Intelligent Trading T echnologies and/or the D istributor shall not be l iable f or any i ndirect, special, incidental, c onsequential or o ther l osses o f any kind, in tort, contract o r otherwise ( including b ut not limited t o loss of r evenue, income o r profits, a nd loss o f use or data), arising out of or i n connection with any a cceptance o f o r r eliance o n t his whitepaper or any p art t hereof by you.
+
+Prospective purchasers of ITT tokens ( as r eferred to i n this whitepaper) should c arefully c onsider and evaluate a ll r isks a nd u ncertainties a ssociated with I ntelligent T rading Technologies, the Distributor a nd t heir r espective businesses a nd operations, t he I TT tokens, and the I TT Token, a ll information s et o ut i n this whitepaper and t he T&Cs p rior t o a ny p urchase o f I TT t okens. I f any of such risks a nd u ncertainties develops into actual events, the business, financial c ondition, results of o perations a nd prospects of I ntelligent T rading Technologies a nd/or the Distributor could b e materially and a dversely affected. I n s uch cases, you may lose a ll or part o f t he v alue of the ITT tokens. The r eports a nd s ignals produced as a n outcome of t his p roject are for informational purposes only. These signals s hould NOT be regarded as " investment a dvice" o r as a " recommendation" regarding a c ourse o f action, i ncluding w ithout l imitation as those terms are used i n any applicable l aw o r r egulation.
+
+This i nformation is p rovided with the u nderstanding t hat with respect t o t he material p rovided i n this p roject ( i) the p erson who prepared this document i s not a cting i n a f iduciary o r advisory capacity under a ny contract w ith you, o r any a pplicable l aw o r r egulation, (ii) that you will m ake your own i ndependent d ecision with respect t o any c ourse of a ction in connection herewith, as to whether s uch course o f action is appropriate o r proper based o n y our own j udgment a nd your specific c ircumstances a nd objectives, a nd ( iii) t hat you a re capable o f understanding and assessing t he merits o f a  c ourse of action and evaluating i nvestment risks i ndependently. Y ou may n ot rely on the m aterial contained herein. The person w ho w rote the codes t o produce these documents s hall not h ave any liability f or a ny damages o f a ny k ind whatsoever r elating t o t hese documents.
+
+10  KYC P olicy
+
+Please read this section carefully. I f y ou a re in any doubt as to t he a ction y ou should t ake, you should c onsult your l egal, financial, tax or other p rofessional a dvisor(s).
+
+Intelligent Trading T echnologies will r equire a c ompleted K now Y our Client ("KYC") documentation on a ll c ontributors o ver the B TC or ETH equivalent o f U S$10,000. Upon completion of t he t oken sale, Intelligent T rading T echnologies w ill e ngage o ur legal a dvisors t o collect a nd r eview KYC d ocumentation from i ndividuals and entities t hat are applicable. T he following shall b e r equired:
+
+31
+
+
+
+Individuals
+
+ Completed Compliance Form   I ndividual  Certified c olour p icture p assport p age  Certified u tility bill s howing current residential address
+
+If t he individual is n ot a  c itizen o f o ne o f t he f ollowing countries, additional i nformation is required: A rgentina, A ustralia, Austria, Bahamas, B ahrain, B arbados, Belgium, B ermuda, Brazil, British V irgin Islands, Canada, Cayman Islands, Denmark, F inland, France, Germany, G ibraltar, Greece, G uernsey, Hong K ong, Iceland, I ndia, I reland, Isle o f Man, I srael, I taly, J apan, J ersey, Liechtenstein, Luxembourg, M alta, Mexico, Netherlands, N ew Z ealand, Norway, Panama, People's Republic of China, Portugal, S ingapore, Spain, S weden, S witzerland, T urkey, U nited Arab E mirates, United K ingdom, U nited States of A merica.
+
+ Reference f rom a b ank w here t he individual has h ad a b usiness relationship for m ore than 2 y ears.
+
+ Reference f rom a  p rofessional whom the i ndividual has h ad a b usiness relationship for more t hat 2 y ears.
+
+Legal Entities
+
+ Completed C ompliance Form  E ntity  Certified C ertificate of I ncorporation / Formation  Certified M emorandum and Articles of A ssociation /  Bylaws  Certified Register of Directors and O fficers*  Certified Register of M embers**  Structure Chart
+
+*We will also r equire KYC o n t he directors of t he e ntity i n t he s ame form a s referenced above for a n i ndividual or e ntity. **We will a lso require K YC o n t he m ember(s) holding 1 0% o r m ore of t he issued shares in the same form a s referenced a bove f or a n i ndividual o r e ntity. *** C ertified d ocuments m ust b e c ertified or notarised by a  l awyer o r licensed n otary. ****If t here are a ny regulated entities w ithin t he structure, p lease advise a s t here may b e exemptions t hat c an be a pplied.
+
+32
+
+
+
+11 -  Acknowledgements
+
+Many p eople have c ommitted to support t he I ntelligent T rading T echnologies p roject with t heir time, energy, and network. We w ould like t o u se this opportunity to express our gratitude t o everyone who s upported u s throughout the c ourse o f development of this project. T hank you! A s pecial thanks t o Iglu, B angkok M eetups, Ethereum T eam a nd their technology, C oin exchanges f or their u seful APIs and m any o thers for t heir support, f eedback and improvements to the I TT Platform!
+
+33
+
+
+
+

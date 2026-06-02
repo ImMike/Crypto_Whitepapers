@@ -1,0 +1,743 @@
+Whole-Network Digital Assets Exchange Platform
+
+White Paper BitMart Foundation
+
+bitmart.com
+
+
+
+BITMART
+
+Table of Contents
+
+1. Project Background..............................................................................................................................1 1.1 Current Market Status ...................................................................................................................2 1.2 Mission and Vision .........................................................................................................................3
+
+2. Platform Overview ...............................................................................................................................4 2.1 Technical Architecture ...................................................................................................................5 2.2 System Functions ...........................................................................................................................5 2.2.1 Spot Trading............................................................................................................................5 2.2.2 Future Contract Trading .........................................................................................................5 2.2.3 Over-the-Counter Trading ......................................................................................................5 2.2.4 Whole-Network Trading .........................................................................................................6 2.2.5 Decentralized Trading.............................................................................................................6 2.2.6 All-Platform Support ...............................................................................................................6 2.3 Platform Features ..........................................................................................................................6 2.3.1 High Performance Support .....................................................................................................6 2.3.2 Great Experience ....................................................................................................................7 2.3.3 Security Mechanism ...............................................................................................................7 2.3.4 Sufficient Liquidity ..................................................................................................................7
+
+3. Revenue Model....................................................................................................................................9 4. Public Offering of Tokens...................................................................................................................11
+
+4.1 Offering Scheme ..........................................................................................................................11 4.2 Offering Plan ................................................................................................................................12
+
+4.2.1 Whitelists Offering Plan ........................................................................................................12 4.2.2 Public Offering Plan ..............................................................................................................12 4.3 Purposes of BMC Tokens .............................................................................................................12 4.4 Release Plan .................................................................................................................................13 4.5 Use of Funds ................................................................................................................................13 5. Development Path .............................................................................................................................14
+
+6. Core Team Members .........................................................................................................................17
+
+
+
+BITMART
+
+7. Advisors..............................................................................................................................................22 8. Our Advantages .................................................................................................................................27
+
+8.1 Ability to Operate in the Global Market ......................................................................................27 9. Governance Mechanisms ..................................................................................................................29
+
+9.1 Decision-Making Committee .......................................................................................................29 9.2 Executive Director........................................................................................................................29 9.3 Finance and Human Resources Committee.................................................................................30 9.4 Market and Public Relations Committee.....................................................................................30 10. Risk Warning and Disclaimers..........................................................................................................32
+
+
+
+BITMART
+
+01
+
+Project Background
+
+01 1
+
+
+
+BITMART
+
+1. Project Background
+
+Since Bitcoin was born in 2009, blockchain digital assets have been developing for nearly a decade. Bitcoin was once known as digital gold and now its unit price has already surpassed that of gold. What is more, market capitalization for the overall digital currency-related industry has exceeded three hundred billion U.S. dollars, too. More recently, blockchain digital assets have become an emerging financial resource that cannot be ignored. In the past, governments all over the world had promulgated legislation and regulations for supervising blockchain digital assets, and now institutions in various fields are conducting more research on blockchain technologies. While blockchain digital assets were initially worthless, they are now recognized as being legitimate assets or investments by millions of people. With the evolution of blockchain technologies and the maturity of technical solutions, Bitcoin and other digital currencies are all the rage in the global market. Meanwhile, the overall scale of digital assets continues to increase, crossing the threshold of 1 trillion U.S. dollars. 1.1 Current Market Status
+
+Currently, with dramatic growth of the secondary market for digital assets, there are over 300 digital asset trading platforms and more than 10 million active investing groups on a global scale. According to Coinmarketcap, since December 2017, the daily trading volume of the global digital asset market has exceeded 35 billion U.S. dollars, with the overall market capitalization surpassing 500 billion U.S. dollars. As a kind of emerging financial asset, due to its short development history and limited market size, blockchain digital assets have not yet become the investment targets of mainstream financial institutions. Thus, there has not been a professional financial asset trading platform to provide trading services for digital asset users.
+
+2
+
+
+
+BITMART
+
+However, even though some trading platforms had already been engaged in traditional financial transactions, the technical architecture of their trading systems was not yet strong enough to meet the requirements for professional financial systems--namely supporting efficient concurrent transactions. These systems have been prone to failures during transaction peaks, causing real financial losses for customers. In addition, many trading platforms seem to process business flows imperfectly, lacking certain functions and not fully meeting the needs of investors. Meanwhile, due to the isolation of users on each platform and the lack of connections among platforms, the market depth of individual platforms is not considerable enough to provide investors with a friendly experience when they are conducting transactions. Most importantly, no third party that endeavours to gain the public trust undertakes the custody of blockchain digital assets. Indeed, all client assets are kept by the platforms, which imposes high requirements on system security. Because of their special nature, blockchain digital assets are likely to be attacked by malicious people in the network. Once a security link is breached, it is highly probable that significant losses will be incurred by the platforms. So far, several exchanges have been stolen, resulting in the loss of many users' assets. 1.2 Mission and Vision The recent increase in the value of Bitcoin is starting to draw the attention of serious investors worldwide. Right now on the market, there are other types of digital assets besides Bitcoin, such as Litecoin and Ethereum, gaining popularity among investors. Meanwhile, we also see a growing number of start-ups getting involved in the boom of the blockchain. They are issuing new digital assets to raise funds for project development and have achieved great success. We believe that blockchain digital assets will embrace a new future as more market resources are allocated towards it. Our mission is to draw from our strengths to create a globally integrated trading platform that provides safe, reliable and professional services to investors and entrepreneurs worldwide, to promote the development of the blockchain industry.
+
+3
+
+
+
+BITMART
+
+02
+
+Platform Overview
+
+04 2
+
+
+
+BITMART
+
+2. Platform Overview
+
+As a global integrated trading platform, BitMart provides diversified system functions such as spot trading, futures contract trading, over-the-counter trading, whole-network trading, and decentralized trading. Moreover, it satisfies the needs of numerous investors. BitMart's trading system has a robust security mechanism and reliable underlying architecture, which provides investors with a dependable trading experience. Besides, the unique online trading model of the BitMart platform would efficiently match the market depth of major exchanges around the world while providing even higher liquidity. Relying on the whole network trading system, we believe the BitMart platform will become the largest liquidity provider of digital assets in the world.
+
+2.1 Technical Architecture BitMart is built on the Google Cloud Platform. 2.1.1 It adopts cutting-edge Internet technologies, optimizes for the performance of the exchange, provides high performance core matching engines, and supports Scale Out.
+
+2.1.2 It makes full use of distributed computation, such as Google Spanner, BigTable, etc., supports large concurrent operations, and ensures the security of user data.
+
+2.1.3 It has a flexible and dynamic application container framework. Kubernetes scheduling technology is employed to adjust the service capacity automatically--according to the load. Moreover, no matter how large the user volume is, users will have an identical experience.
+
+2.1.4 The blockchain nodes apply cold/hot wallet technology, and hot wallet protects the security of users' assets by adopting NetGap technology.
+
+2.1.5 According to the features of blockchain, the platform optimizes the operating modes of secret keys and addresses, holding the principle that security comes before efficiency.
+
+2.1.6 The functions of the website continue to improve, and data is collected and sent as feedback information in A/B mode, with a zero-downtime upgrade feature.
+
+2.2 System Functions
+
+2.2.1 Spot Trading
+
+BitMart platform is dominated by spot trading, and it picks superior blockchain digital assets globally.
+
+2.2.2 Future Contract Trading
+
+Given that the market stability is ensured, BitMart platform will provide individual digital asset types with future contract trading.
+
+2.2.3 Over-the-Counter Trading
+
+5
+
+
+
+BITMART
+
+BitMart platform will create an intermediary service platform to provide B2C and C2C trading modes for global businesses and individuals. 2.2.4 Whole-Network Trading By connecting with major global trading platforms, the BitMart platform will make borderless transactions available. With this system, users can conduct transactions across multiple platforms with one click.
+
+2.2.5 Decentralized Trading On the premise that security, stability, and efficiency are to be guaranteed, BitMart will start the development and construction of a decentralized exchange simultaneously, and this exchange will be put into operation sometime in the future. 2.2.6 All-Platform Support BitMart can be accessed seamlessly on the web, Android, iOS, PC, Mac OS, and the H5 mobile browser. In addition to covering digital assets that have been recognized widely, such as Bitcoin and Ethereum, BitMart will also set up a professional research team, upholding the concept of openness and cooperation, and picking high-quality blockchain digital assets around the world. 2.3 Platform Features 2.3.1 High Performance Support BitMart trading system adopts self-developed, high-performance core matching engine technology and leverages distributed computing technologies such as Google Spanner and BigTable. Thus, it can support massive concurrent computation and make the order
+
+6
+
+
+
+BITMART
+
+
+
+processing speed reach one million transactions per second.
+
+
+
+2.3.2 Great Experience
+
+
+
+BitMart adopts a flexible and dynamic application container framework. Kubernetes scheduling technology adjusts the service capacity automatically according to the load. With these technologies, the platform can support the simultaneous online operation of tens of millions of users and ensure a smooth experience.
+
+
+
+2.3.3 Security Mechanism
+
+
+
+BitMart adopts an advanced multi-layer and multi-cluster system architecture to ensure the security, stability, and scalability of the system. Its blockchain nodes apply cold/hot wallet technology, with NetGap technology being used by hot wallet. And the operating modes of secret keys and addresses are optimized according to the features of blockchain so as to ensure the security of user assets.
+
+
+
+2.3.4 Sufficient Liquidity
+
+
+
+BitMart has a unique whole-network transaction model, which will effectively match the
+
+
+
+market depth of all major exchanges in the world, providing higher liquidity and a better
+
+
+
+trading experience. With this technology, users can trade with counterparts on major
+
+
+
+platforms around the world without leaving BitMart. In the future, we are convinced that,
+
+
+
+with the support of the whole-network transaction system, BitMart will become the largest
+
+
+
+liquidity provider of digital assets in the world.
+
+
+
+Adopts self-developed high-performance core matching engine technology and leverages distributed computing technologies such as Google Spanner and BigTable.
+
+High Performan
+
+
+
+Adopts a flexible and dynamic application container framework. Kubernetes scheduling technology adjusts the service capacity automatically according to the load. 
+
+Great Experience
+
+
+
+ce Support
+
+
+
+Security Mechanism
+
+
+
+Platform Features
+
+
+
+Sufficient Liquidity
+
+
+
+Adopts an advanced multi-layer and multi-cluster system architecture to ensure the security, stability and scalability of the system.
+
+7
+
+
+
+Has a unique whole-network transaction model, which will effectively match the market depth of all major exchanges in the world, providing higher liquidity and a better trading experience.
+
+
+
+BITMART
+
+03
+
+Revenue Model
+
+08 3
+
+
+
+3. Revenue Model
+
+BitMart's revenue will come from the following sources:
+
+
+
+BITMART
+
+
+
+Source Transaction Fee Withdrawal Fee
+
+Margin Fee Other Fees
+
+
+
+Description The fee users need to pay when trading assets on the platform. The fee users need to pay when withdrawing assets from the platform. The fee users need to pay a fee or interest on the borrowed amount. Additional charges of the platform for provision of other services.
+
+
+
+Transaction Fee
+
+The fee users need to pay when trading assets on the platform.
+
+
+
+Withdrawal Fee
+
+The fee users need to pay when withdrawing assets from the platform.
+
+
+
+Margin Fee
+
+The fee users need to pay a fee or interest on the borrowed account.
+
+9
+
+
+
+Other Fees
+
+Additional charges of the platform for provision of other services.
+
+
+
+BITMART
+
+04
+
+3.
+
+Public Offering of Tokens
+
+0410
+
+
+
+BITMART
+
+4. Public Offering of Tokens
+
+4.1 Offering Scheme BitMart platform will issue exactly 1 billion BitMart coins (BMC). The specific offering methods are as follows:
+
+
+
+Target
+
+
+
+Percentage
+
+
+
+Specific participants
+
+Whitelist investors
+
+Early Adopters
+
+
+
+30% 10% 10%
+
+
+
+Community rewards
+
+Founding team
+
+
+
+20% 30%
+
+
+
+Volume
+
+
+
+Description
+
+
+
+300 million 100 million
+
+
+
+Public offering oriented to fans in blockchain community
+
+Community entrepreneurs and supporters
+
+
+
+100 million 200 million 300 million
+
+
+
+People who provided help at the early stage of the project
+
+For maintaining the operation and promotion of the community
+
+Held by the founding team and released throughout three years
+
+
+
+11
+
+
+
+BITMART
+
+
+
+4.2 Offering Plan 4.2.1 Whitelists Offering Plan
+
+
+
+Time
+
+
+
+2017-12-18 12:00 PM UTC -- 2017-12-25 12:00 PM UTC
+
+
+
+Amount exchanged with 1ETH
+
+
+
+11000 BMC
+
+
+
+Amount for whitelists offering
+
+
+
+100 million BMC
+
+
+
+Percentage
+
+
+
+10%
+
+
+
+Raising Scale
+
+
+
+9090 ETH
+
+
+
+Participation Channels
+
+
+
+Official website, cooperating with agency platforms.
+
+
+
+4.2.2 Public Offering Plan
+
+Offering Plan
+
+Amount exchanged with 1ETH
+
+Amount for public offering
+
+Percentage
+
+Participation Channels
+
+
+
+2017-12-28 3:00 AM UTC -- 2018-1-15 3:00 AM UTC 10000 BMC
+
+300 million BMC (Unsold Tokens: DESTROYED) 30%
+
+Official website, cooperating with agency platforms.
+
+
+
+4.3 Purposes of BMC Tokens
+
+4.3.1 Deduction of (BitMart) Platform Transaction Fee with Discounts When users conduct transactions on BitMart, they will get a discount on the transaction fee if they have BMCs, no matter what tokens they trade. Based on the current market value, the system will convert the amount to be paid into equivalent amount of BMCs and then the payment will be made with BMCs.
+
+4.3.2 Repurchase Mechanism When BitMart is launched online, the BitMart team will take out 20% of the income earned by trading fees on the platform every other month to repurchase BMCs. The repurchased
+
+12
+
+
+
+BITMART
+
+BMC will be destroyed completely and repurchase records will be released immediately. Users can check related information via the blockchain browser so that openness and transparency are guaranteed. The repurchase mechanism will continue to work until 500 million BMC are destroyed.
+
+4.4 Release Plan
+
+The tokens held by the founding team will be locked and then gradually released within 3 years. Released initially: 25% (75 million) Released after 1st year: 25% (75 million) Released after 2nd year: 25% (75 million) Released after 3rd year: 25% (75 million)
+
+4.5 Use of Funds
+
+The BitMart team mainly uses funds for daily operation, technical development, business expansion and so on.
+
+
+
+Percentage 40%
+
+30% 15% 15%
+
+
+
+Use
+
+
+
+Description
+
+
+
+Technical development
+
+
+
+Used tobuild the BitMart platform and perform upgrades to the system, which includes team recruiting, training, and the development budget.
+
+
+
+Branding and Brand establishment as well as operation and promotion Marketing of the platform.
+
+
+
+Daily operation Expenses of daily logistics management, office rent, audit, law works, and so forth.
+
+
+
+Reserve
+
+
+
+Kept in reserve to cope with any emergency or unexpected situation that might come up.
+
+
+
+13
+
+
+
+BITMART
+
+05
+
+Development Path
+
+0514
+
+
+
+5. Development Path
+
+
+
+BITMART
+
+
+
+July 2017 Conduct market research and verify technical and market feasibility
+
+October 2017 Build and test platform models and receive early investments
+
+December 2017 Sell tokens publically in the community officially
+
+
+
+September 2017 Conduct market research, set up the project team, obtain project approval, and develop products
+
+November 2017 Publish project white paper and start the token's public offering scheme
+
+January 2018 Complete the fundraising work and issue tokens
+
+
+
+End of January 2018
+
+Launch the platform online and start trading
+
+
+
+15
+
+
+
+BITMART
+
+06
+
+Core Team Members
+
+0616
+
+
+
+BITMART
+
+6. Core Team Members
+
+Members of the BitMart team come from the United States, Europe, Singapore, and China. Combined, they have rich professional experience in blockchain technology and finance.
+
+Project Leader: Sheldon Xia
+
+Sheldon Xia obtained his master's degree from Stevens Institute of Technology, a prestigious engineering university in the United States. He is a former founder of Xingmei Media Company and a serial entrepreneur. He owns copyrighted software, has five years of experience in the blockchain industry, and three years of experience in the financial industry. Sheldon is particularly skilled in the productization of technical and financial system solutions. As one of the earliest digital currency developer, he once led a team to develop and operate one of the first virtual currency trading platforms in China.
+
+17
+
+
+
+BITMART
+
+Chief Architect: Allen Chen
+
+Allen Chen is the chief technical expert of the blockchain who has designed and implemented the core matching engine of trading platforms, responsible for managing the technical security team and ensuring the safe and stable operation of the platform. Majoring in distributed system security and cloud computing, he has a master's degree in information security at Carnegie Mellon University. He once worked at the headquarters of Samsung in South Korea for developing system-level security solutions; he also worked as a Rakuten Tokyo security engineer; a former VMware R&D engineer engaged in the development of SaaS products and SDN solutions. He has many years of experience in the research and development of distributed system platforms and in working for multinational companies.
+
+18
+
+
+
+BITMART
+
+Marketing Leader: Javen Lou
+
+Javen Lou got his master's degree from the Stevens Institute of Technology in the United States as well as dual bachelor's degrees in arts and science. As a national patent holder, he once worked in the Chinese marketing team of Intel Corporation and has gained extensive experience in marketing, brand marketing, and image shaping of technological products. He is keen at discovering hot science and technology products earlier than most, and is proficient in channel promotion. Finally, he has distinctive logical and technical marketing capabilities as well as extremely profound understandings about the blockchain.
+
+19
+
+
+
+BITMART
+
+Product Leader: Terence Lee
+
+With a master's degree from the George Washington University in the United States, Terence Lee has gained many years of experience in human-computer interaction and user experience design, leading and directing the design of trading system products. He once worked in SAP, the world's largest supplier of enterprise management and collaborative e-commerce solutions, and is also a co-founder of a well-known cross-border online shopping platform in China.
+
+20
+
+
+
+BITMART
+
+07
+
+Advisors
+
+0721
+
+
+
+7. Advisors
+
+
+
+BITMART
+
+
+
+Aditya Sharma
+
+Aditya Sharma is the CIO of LaunchmyICO, with many years of IT technical background, and is a master of data mining, cloud computing and applications. When the Crypto-Currency wave comes, he fully engaged himself in. Now he provide technical and financial advices for blockchain startups.
+
+22
+
+
+
+BITMART
+
+Denis Farnosov
+
+Denis Farnosov is a serial entrepreneur (AlfaToken, MyRealToken, BIGROI Academy, BIGROI Investments), and advisor in a few blockchain projects. He has more than 10 years of experience in building and growing start-ups and over 6 years of experience in investing in high yield assets. Denis is a Master of Management and Economics, and has a diploma with honors. He is a big believer in the simplicity of blockchain technology and joined the BitMart team to assist in developing a leading platform for blockchain assets.
+
+23
+
+
+
+BITMART
+
+Mike Shokin
+
+Mike is a financial analyst with a wealth of experience in corporate finance and has applied this experience to bitcoin and blockchain derivatives. He has worked for ING Barings as a equity research analyst and taught at New York University. Mike holds a BA in Finance from Baruch College in New York and SOAS in London, and is licensed as a Chartered Financial Analyst in the United States. He speaks English and is learning Spanish and Russian.
+
+24
+
+
+
+BITMART
+
+Tom Budd
+
+Tom is the co-founder of Blockchain Velocity, a Digital Currency Venture Fund. He is also a prominent blockchain keynote speaker and has produced award winning cryptocurrency and blockchain research at Booz Allen Hamilton. Currently living in New York City, he provides market guidance to Blockchain and AI companies worldwide.
+
+25
+
+
+
+BITMART
+
+08
+
+Our Advantages
+
+0826
+
+
+
+BITMART
+
+8. Our Advantages
+
+8.1 Ability to Operate in the Global Market Coming from several countries around the world, the core team members have an international background. The exchange will set up offices globally to develop differentiated products and formulate specific marketing strategies for their respective markets. 8.2 Great Technical Foresight All coming from international big-name known Internet and financial firms and having graduated from top-level universities, members of the team possess advanced systematic knowledge and technical reserves, strong research and development capabilities. They are able to convert the latest technologies into products. 8.3 Efficient Resource Integration Competence The BitMart team has numerous partners in the blockchain and traditional financial sectors including but not limited to various financial institutions, venture capital firms, investment funds, media, virtual currency mining fields and mining pools, etc., laying a solid foundation for the future business development of the platform.
+
+27
+
+
+
+BITMART
+
+09
+
+Go vernance Mechanisms
+
+0928
+
+
+
+BITMART
+
+9. Governance Mechanisms
+
+The BitMart team will set up a BitMart Foundation (`Foundation' for short) in an offshore jurisdiction to devote itself to the development, construction, promotion, and financial support of the project, facilitating the healthy development of the ecosystem in that community.
+
+Containing operational procedures and rules for daily work and special cases, the governance framework of the Foundation will consist of the following functional committees.
+
+9.1 Decision-Making Committee
+
+The Foundation sets up a decision-making committee to appoint or dismiss executive director and heads of functional committees, make important decisions, hold emergency meetings, and so on. Members of the decision-making committee and president of the Foundation have two-year tenures.
+
+Any of the following matters shall be voted by the decision-making committee through open vote, with each member holding one vote and the president holding two. The decision reached by the decision-making committee shall be voted for by majority of all the committee members in office:
+
+ Modify the governance framework of the Foundation;  Appoint and dismiss executive director and heads of functional committees;  Make key decisions;  Appoint and dismiss members of the decision-making committee during their tenure in such cases as violation of members against limits of authority, laws, and administrative regulations, or voluntary resignations.  Considered necessary by president of the Foundation;  Jointly proposed by more than one-third of decision-making committee members;  Proposed by executive director;  Decision-making committee meetings should be attended by committee members personally. A member unable to attend for any reason may entrust other members of the committee to attend in writing and, if not, he shall be deemed to have waived his voting right at this meeting.
+
+9.2 Executive Director
+
+An executive director is elected by the decision-making committee and is responsible for the daily operation and management of the Foundation, the cooperation and coordination among subordinate committees, and hosting meetings of the decision-making committee among
+
+29
+
+
+
+BITMART
+
+others. This person shall report work to the decision-making committee regularly. 9.3 Finance and Human Resources Committee The finance and human resources committee is responsible for the use and audit of funds raised by the project, management of developers' compensations, audit of daily operating expenses, and so forth. 9.4 Market and Public Relations Committee The Market and public relations committee will serve the community, conduct project promotion and publicity, and so forth. In addition, the committee is also responsible for managing external public announcements. In the case of an event harming the reputation of the Foundation, the committee shall be fully in charge of the public relations and company responses--after internal audits and assessments have been completed.
+
+30
+
+
+
+BITMART
+
+10
+
+Risk Warning and Disclaimers
+
+1031
+
+
+
+BITMART
+
+10. Risk Warning and Disclaimers
+
+This paper is only informative, rather than giving advice on transactions pertaining to equity in BitMart or its securities. Any proposals or inquiries of a similar nature will be made under credible terms and permitted by applicable securities legislation and other relevant rules. Moreover, the foregoing information and analyses do not constitute a suggested course of action for investment decisions. This paper does not constitute any investment advice about any securities form, investment intention, or instigation of investment. This paper neither constitutes nor is understood as an offer of any transaction, any behaviour to invite any transactions for securities in any form, or any contract or commitment in any form. BitMart makes it clear that relevant interested users have clearly understood the risks of BitMart and that, once participants get involved in the project, it means that they are aware of and have accepted the associated risks of the project and are thus willing to experience any and all corresponding results or consequences. BitMart expressly disclaims any liability whatsoever for any direct or indirect losses arising from the participation in the project of BitMart, which includes:
+
+ Economic losses caused due to users' transactions;  Any error, negligence or inaccurate information due to individual understandings;  Losses resulting from individuals' transactions of various blockchain assets and any resulting behaviours. BitMart token, or BMC, is an encrypted token used on the BitMart platform. BMC is not to be considered as an investment. We cannot guarantee that BMC will rise in value and, in some cases, its value might decrease. A person not using BMC correctly may forfeit the right to use such coins and even lose them. BMC is not a kind of ownership or control right. Controlling BMC coins does not represent taking ownership of BitMart or BitMart applications, and BMC does not grant any individual the right to participate in, control, or make any decision about BitMart or BitMart applications.
+
+32
+
+
+
+BITMART
+
+CONTACT US:
+
+Twitter https://twitter.com/BitMartExchange Facebook https://facebook.com/BitMartExchange Reddit https://reddit.com/user/bitmartexchange Telegram t.me/BitmartExchange Email support@bitmart.com
+
+33
+
+
+
+

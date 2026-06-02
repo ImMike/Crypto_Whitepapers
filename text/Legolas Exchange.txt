@@ -1,0 +1,1725 @@
+Legolas Exchange
+
+A DEMONSTRABLY FAIR, PREMIUM CENTRALIZED EXCHANGE USING DECENTRALIZED BLOCKCHAIN
+
+TECHNOLOGY
+
+By Noam Cochin, Yohan Guez, Frdric Martin, Frdric Montagnon and Ouziel Slama
+
+July-September 2017
+
+
+
+Table of Contents
+
+
+
+Table of Contents
+
+
+
+1
+
+
+
+Abstract
+
+
+
+4
+
+
+
+1. Shortfalls of Existing Exchanges
+
+
+
+5
+
+
+
+1.1 Lack of Security
+
+
+
+5
+
+
+
+1.1.1 Bitcoin e
+
+
+
+5
+
+
+
+1.1.2 Weak Authentication
+
+
+
+5
+
+
+
+1.1.3 No Deposit Security or Recourse
+
+
+
+6
+
+
+
+1.4 Large Fiat Transactions Are Laborious
+
+
+
+6
+
+
+
+1.2 Price Manipulation
+
+
+
+6
+
+
+
+1.2.1 What is Front Running?
+
+
+
+6
+
+
+
+1.2.2 Crypto Exchanges and Front Running
+
+
+
+7
+
+
+
+1.2.3 No Transparent Price Formation
+
+
+
+7
+
+
+
+1.3 Lack of Transparency
+
+
+
+8
+
+
+
+1.4 Latency Problem
+
+
+
+8
+
+
+
+2. Legolas Exchange's Solution
+
+
+
+8
+
+
+
+2.1 Security measures
+
+
+
+9
+
+
+
+2.1.1 e Proof Wallets and Features
+
+
+
+9
+
+
+
+2.1.2 Large Fiat, Crypto Deposits and Withdrawals
+
+
+
+10
+
+
+
+2.2 Blockchain Technology on top of the Centralized Exchange
+
+
+
+10
+
+
+
+2.2.1 Front-running Proof
+
+
+
+10
+
+
+
+2.2.2 Traceability and Auditability
+
+
+
+10
+
+
+
+2.2.3 Latency: A Level Playing Field for All Market Participants
+
+
+
+11
+
+
+
+3. Legolas Technology
+
+
+
+12
+
+
+
+3.1 Protocol
+
+
+
+12
+
+
+
+3.1.1 Work ow overview
+
+
+
+12
+
+
+
+3.1.2 Overview of Components
+
+
+
+13
+
+
+
+3.1.3 High roughput
+
+
+
+14
+
+
+
+3.2 e Exchange
+
+
+
+14
+
+
+
+3.2.1 User Interface
+
+
+
+14
+
+
+
+3.2.2 Matching engine
+
+
+
+14
+
+
+
+3.2.3 Blockchain
+
+
+
+15
+
+
+
+3.2.4 REST and Websocket APIs
+
+
+
+15
+
+
+
+3.4 Full Stack Tools and Functionalities
+
+
+
+15
+
+
+
+3.4.1 Custom Reports
+
+
+
+15
+
+
+
+1
+
+
+
+3.4.2 Portfolio Analysis Tools
+
+
+
+15
+
+
+
+3.4.3 ICO Participation Functionalities
+
+
+
+16
+
+
+
+3.4.4 Tax Documents and Audit Log
+
+
+
+16
+
+
+
+4. Legolas Exchange Value Proposition
+
+
+
+16
+
+
+
+4.1 Current Exchange Landscape
+
+
+
+16
+
+
+
+4.1.1 Centralized Exchange
+
+
+
+16
+
+
+
+4.1.2 Decentralized Exchange
+
+
+
+17
+
+
+
+4.1.3 Legolas Exchange: A Hybrid Model
+
+
+
+17
+
+
+
+4.1.4 Comparison of Exchanges
+
+
+
+17
+
+
+
+4.2 Legolas Exchange's Business Model
+
+
+
+18
+
+
+
+4.2.1 LGO Token
+
+
+
+18
+
+
+
+4.2.2 Transaction Fees
+
+
+
+19
+
+
+
+4.2.3 Additional Paying Analytical Functionalities
+
+
+
+19
+
+
+
+4.2.4 LGO Destruction
+
+
+
+19
+
+
+
+4.2.5 LGO Li uidity Providers Pool
+
+
+
+19
+
+
+
+5. LGO Token Creation
+
+
+
+20
+
+
+
+5.1 Pre-sale Information
+
+
+
+20
+
+
+
+5.2 ICO Method
+
+
+
+21
+
+
+
+5.3 Round 0
+
+
+
+21
+
+
+
+5.4 LGO 2-Year Holding Bonus
+
+
+
+24
+
+
+
+5.5 Use of Proceeds
+
+
+
+24
+
+
+
+External Development
+
+
+
+24
+
+
+
+Education and Community Support
+
+
+
+24
+
+
+
+Lobbying
+
+
+
+25
+
+
+
+Reserve
+
+
+
+25
+
+
+
+6. About the Venture
+
+
+
+25
+
+
+
+6.1 Legolas Exchange
+
+
+
+25
+
+
+
+6.1.1 Company
+
+
+
+25
+
+
+
+6.1.2 Team
+
+
+
+25
+
+
+
+Frdric Montagnon (CEO)
+
+
+
+25
+
+
+
+Julien Romanetto (COO)
+
+
+
+26
+
+
+
+Ouziel Slama (CTO)
+
+
+
+26
+
+
+
+Yaacov Akiba Slama (Principal Architect)
+
+
+
+26
+
+
+
+Frdric Martin (Security Architect)
+
+
+
+26
+
+
+
+Abdelmajid Oulfakir (Lead developer)
+
+
+
+26
+
+
+
+Roei Erez (Lead Mobile Developer)
+
+
+
+27
+
+
+
+Yohan Guez (Product Owner)
+
+
+
+27
+
+
+
+2
+
+
+
+Noam Cochin (Marketing Manager)
+
+
+
+27
+
+
+
+6.2 Makor
+
+
+
+27
+
+
+
+ANNEX
+
+
+
+29
+
+
+
+1. Financial Institutions Are Embracing Crypto
+
+
+
+29
+
+
+
+1.1 Alternative Investment Is in Vogue
+
+
+
+29
+
+
+
+1.2 Cryptocurrencies Are Outperforming Majors Assets by Far
+
+
+
+29
+
+
+
+1.3 A Near-uncorrelated Asset
+
+
+
+30
+
+
+
+1.4 A Growing Demand for Crypto Assets
+
+
+
+31
+
+
+
+References
+
+
+
+32
+
+
+
+3
+
+
+
+Abstract
+
+e crypto community has been plagued by opa ue and unprincipled exchanges. Improving and strengthening these fundamental links within the community must be front and center. With cryptocurrencies emerging as a legitimate asset class, nancial institutions are working on entering this growing market, but they currently lack the tools to make large investments that remain in line with their security and transparency needs. Within this context, Legolas Exchange is committed to creating a trustworthy, demonstrably fair and bank-backed premium protocol where traders and investors, small and large, can transact without doubting the integrity and robustness of the platform or its order management system. Legolas Exchange's protocol incorporates a decentralized ledger within its proprietary centralized platform in order to neutralize front-running, guarantee the inalterability, temporality and transparency of the order book, and ensure a fair trading environment. Led by an experienced team of nanciers and successful entrepreneurs, Legolas Exchange has partnered with global brokerage rm Makor Capital. Makor operates a broker dealer business trading under 2 brand names, Makor Securities London Limited, regulated by the FCA, and Oscar Gruss and Son Inc, regulated by FINRA and the NFA. Makor will provide Legolas Exchange customers with custody of their deposits at major banks, and access to hundreds of nancial institutions already onboarded. Legolas Exchange aspires to become the reference in terms of security and compliance for all crypto exchanges.
+
+4
+
+
+
+1. Shortfalls of Existing Exchanges
+
+Existing crypto exchanges present numerous important aws and limitations. With no alternatives, the community is forced to accept opacity, capped or slow transactions, and the risk of catastrophic losses. Institutional investors who cannot overlook these concerns are locked out of the market and the trillions of dollars it represents.
+
+1.1 Lack of Security
+
+1.1.1 Bitcoin e
+
+Millions of bitcoins have been stolen from crypto exchanges since Bitcoin's creation. Lacking guarantees and insurance, hacked crypto exchanges decline responsibility for stolen bitcoins. An example of this is the Mt. Gox case in which the company said it had lost almost 750,000 of its customers' bitcoins and around 100,000 of its own bitcoins, totaling around 7% of all bitcoins, worth around $473 million at the time. Mt. Gox released a statement stating that, "the company believes there is a high possibility that the bitcoins were stolen," blamed hackers, and began a search for the missing bitcoins. Chief Executive Karpels said technical issues le an opening for fraudulent withdrawals. A er he was interrogated, Japanese prosecutors accused him of misappropriating Y315m ($2.6m) in bitcoins deposited into trading accounts by investors at Mt. Gox and moving it into an account he controlled approximately six months before Mt. Gox failed in early 2014.
+
+is case is only one of the most well documented, and there have been numerous other situations where crypto assets deposited at exchanges were lost or stolen. A signi cant risk still exists today, and it is widely agreed that due to complacency and a lack of better alternatives all major exchanges currently lack the proper security to ade uately protect customers' deposits.
+
+1.1.2 Weak Authentication
+
+Existing exchanges operate in a login/password paradigm. Even though some "veri ed account" solutions exist, many traders have faced locked accounts, credential problems and even incorrect balances on their account. Furthermore, most nancial institutions are set up in such a way that money managers serve as investment advisors to their investors and are re uired to follow dual signature rules whereby administrator are signatory to all
+
+5
+
+
+
+outside transactions. Existing 2 factor authorization policies are a step in the right direction but do not satisfy institutional compliance and security needs.
+
+1.1.3 No Deposit Security or Recourse
+
+An obvious drawback to most existing exchanges is that they create their own rules and re uire a large degree of trust from investors and traders. Running contrary to many principles of "trust-less" applications, traders who deposit cryptocurrencies and digital assets on exchanges may have no recourse should the exchanges choose to change the rules, keep some bitcoins locked for one reason or another, or even disappear altogether. Additionally, communicating and resolving disputes with exchanges when the residence of the holding company is in an unreachable tax haven can be unnecessarily di cult.
+
+1.4 Large Fiat Transactions Are Laborious
+
+ere are only a handful of crypto exchanges in the world that accept real at deposits and withdrawals, and all of them have some or all of the following attributes: lengthy onboarding process, high fees, and delays of up to a week for buying bitcoins with at (in conjunction with an unknown and sometimes evidently unfair execution price). Fiat transactions are also constrained to a certain amount, ranging from a few thousands to a few tens of thousands of dollars, per 24-hour period. In addition to these problems, withdrawing ats to a bank account from a crypto exchange is also challenging with most banks and nancial institution uestioning the wires, o en rejecting them and even closing customers' bank accounts.
+
+ese limits are an obstacle to many large investors and traders who are looking to move hundreds of thousands or millions in a short amount of time.
+
+1.2 Price Manipulation
+
+1.2.1 What is Front Running?
+
+Front running is the unethical practice of a broker trading an e uity in his personal account based on advanced knowledge of pending orders from the brokerage rm or from clients, thus allowing him to pro t from the knowledge. In other words, front running is a practice that consists in placing orders before someone else does based on advanced knowledge of their transaction. FINRA (Financial Industry Regulatory Authority) regulates front running within the
+
+6
+
+
+
+traditional nancial market but such regulations remain insu cient when it comes to protecting holders. e concept of "no evil seen, no evil done" hinders any possibility of action. Moreover these rules and regulations are di cult to keep up to date with the fast paced, constantly evolving technology. FINRA's latest 5270 rule, which addresses front-running block transactions, took 4 years to implement.
+
+e 2016 HSBC scandal, among others, is only the tip of the iceberg and proves that the only e cient means of prevention lies in technologies making such practices impossible. Legolas Exchange's protocol provides the technological means to combat front-running of block transactions. It is absolutely necessary and is the optimal way to achieve transparency in cryptocurrency trading and, on a larger scale, the whole nancial ecosystem.
+
+1.2.2 Crypto Exchanges and Front Running
+
+Crypto exchanges are best positioned to pro t from front-running practices: they can insert their own buy order before a trader's large buy order and sell the bought asset right a er the trader's order is executed.
+
+e trader winds up paying more for his purchase and the exchange has pocketed a substantial pro t pi ybacking o the trader. Large order dark pools, like the one proposed by Kraken Exchange, are particularly exposed to front running. Forums like Reddit, Bitcointalk and Steemit show hundreds of instances of users of crypto exchanges complaining about suspected front running. Even though the allegations are impossible to prove because of the complete opa ueness of the order book, the mere possibility is a large deterrent for large and sophisticated investors.
+
+1.2.3 No Transparent Price Formation
+
+e issues mentioned above are major obstacles to transparent price evaluation and, conse uently, to the creation of nancial products like ETF. On March 10, 2017, the U.S. Securities and Exchange Commission denied a re uest to list what would have been the rst U.S. exchange-traded fund built to track Bitcoin. In its statement, the SEC stated, "the Commission is disapproving this proposed rule change because it does not nd the proposal to be consistent with Section 6(b)(5) of the Exchange Act, which re uires, among other things, that the rules of a national securities exchange be designed to prevent fraudulent and manipulative acts and practices and to protect investors and the public interest." In other words, the commission found that the proposed fund was too susceptible to fraud.
+
+7
+
+
+
+In their report on virtual currencies, the EBA (European Banking Authority) listed a detailed number of possible regulatory responses to the challenges posed by virtual currencies. One of the main proposals is: "Transparent price formation and re uirements against market abuse. To avoid market manipulation and insider trading, intermediaries must comply with existing regulation against such practices in the nancial sector." It is crucial for modern exchanges to un uestionably prove that they cannot practice market manipulation. With its hybrid protocol, Legolas Exchange provides an elegant solution to this important issue.
+
+1.3 Lack of Transparency
+
+Most crypto exchanges don't provide any reports and are never audited by independent authorities. Moreover, the nancial audit process has traditionally been opa ue, operating in a black box environment with only a pass or fail judgement rendered by the auditor on an annual basis. A number of initiatives are underway internationally aiming to increase transparency of the audit process. However, Legolas Exchange believes that the only e cient means of reporting rests with technologies making every exchanges operation traceable in a public blockchain.
+
+1.4 Latency Problem
+
+Di erences in connection uality can also make trading unfair in existing exchanges: trader bots with good connections can see order books more uickly and can, therefore, react appropriately more uickly. In doing so, they gain an unfair edge over most exchange users. e problem is particularly acute during rallies when exchange throughput limits are reached. As a result of the uneven playing eld created by low latency traders, institutional investors may choose or be forced to avoid investing in certain parts of the market because they cannot receive the guarantees they need for fair and transparent price discovery and execution.
+
+2. Legolas Exchange's Solution
+
+Legolas's mission is to create a fair and ideal environment for institutional investors and other large investors to manage and invest in cryptocurrencies and digital assets. To this end, Legolas Exchange uses novel blockchain-based technology to guarantee fairness and transparency of the order book. e security, as well as auditing, reporting and analytical needs are met in the safest and most e cient way.
+
+8
+
+
+
+Additionally, thanks to its partnership with the regulated rm Makor Securities, Legolas will be able to o er at custody solutions for clients at major banks.
+
+2.1 Security measures
+
+2.1.1 e Proof Wallets and Features
+
+Legolas will leverage its partnerships with Makor Securities, Oscar Gruss and Ledger to provide the following security features: Custody of clients' at deposits: A regulated broker, Makor has existing custodian relationships with most global banks such as Merrill Lynch. Legolas and Makor will custody Legolas Exchange clients at a major global bank. Advanced multisig and secure terminals: Optional features based on multi-signature will be available to control active and cold storage. We will work with several Hardware Wallets and hardware manufacturers to o er optional secure terminals/displays to validate orders. Segregated custody of cryptocurrencies: Dedicated HSM storage will be available as an optional service for clients. Authentication: Simple login+password access type will not be allowed on Legolas. Legolas will enforce secure 2FA protection with FIDO U2F1 support or client certi cates2. By default, weak 2FA like OTP/Google Authenticator/Authy/SMS won't be authorized or will be only temporarily tolerated, since these methods are vulnerable to phishing attacks3. Active storage and cold storage: ese are guaranteed by di erent certi ed HSM (Hardware Security Module), thanks to our partnership with Ledger4. Legolas Exchange clients will be given a key on a 2 of 3 multisig wallet, along with Legolas Exchange and a Trusted ird Party. e key given to the third party will be stored in a Ledger cold wallet, itself stored in a bank safe. Should the client lose her key, the stored key will be retrieved from the bank, ensuring complete security of the funds. Tailor-made solutions: For customers with special re uirements imposed by law or by pre-existing processes, Legolas will build dedicated access control. Secure Web services: Highly available, redundant, customized DDoS shielded hosting solution with network and application levels rewalls. Legolas will use secure H P headers like HSTS to enforce TLS encryption, CSP & X XSS P to avoid/mitigate XSS
+
+1 Phishing proof 2FA: http://research.aurainfosec.io/u2f-phishing-proof-2FA-for-general-human-beings/ 2 https://en.wikipedia.org/wiki/Client_certi cate 3 http://www.neowave.fr/pleaseno/SMS_OTP_TOTP_ RCODE_SSL_ARE_NOT_SOLUTIONS.pdf 4 Secure Hardware Wallets and Hardware Secure Modules: https://www.ledger.fr
+
+9
+
+
+
+attacks, X Frame-Options to forbid clickjacking, etc. Passwords are salted and hashed5. Secure company policies: Strict role-based and attributes-based access control rules. No all-in-one-person privileged accounts. No direct access to assets (private keys are securely stored in HSM inside securely guarded and distributed hosting provider facilities). Security audits and certi cations: Unbiased zero-knowledge orders encryption is done through keys provided by CertEurope6 PKI-on-blockchain services. We are planning to pass regular external audits and to obtain security certi cations delivered by ANSSI7.
+
+2.1.2 Large Fiat, Crypto Deposits and Withdrawals
+
+Legolas Exchange's clients will be able to deposit and withdraw both at currencies and cryptocurrencies. Legolas Exchange and Makor will create a reliable, scalable and secure deposit and withdrawal system.
+
+e option to convert at currencies into crypto currencies, and reciprocally, in large uantities will be a game changer for the community and a gateway to unleashing vast new in ows.
+
+2.2 Blockchain Technology on top of the Centralized Exchange
+
+2.2.1 Front-running Proof
+
+Legolas Exchange's protocol uses blockchain properties to determine the position of a given order in the order ueue. To achieve this, a user's order is rst encrypted and then sent to the blockchain. Once a block is con rmed, the order se uence is engraved into the blockchain. At this point, it becomes impossible to insert an order into the order ueue, and the private key corresponding to the public key used to encrypt the order is published in the blockchain. us, temporality of the orders is strictly respected and the possibility of front running is neutralized. Legolas Exchange is the rst demonstrably fair exchange and is wholly in compliance with nancial standards regarding transparency.
+
+2.2.2 Traceability and Auditability
+
+In addition, all operations done on Legolas Exchange - orders, transactions, withdrawals and deposits - are engraved in the blockchain. Cryptocurrency deposits and withdrawals are recorded in their respective blockchain. anks to our privileged partnership with Makor, all at deposits and withdrawals are communicated to and from Makor using the
+
+5 Salted Password hashing, doing it right: https://crackstation.net/hashing-security.htm 6 CerEurope Certi cation Autorithy: https://uk.certeurope.fr/ 7 French National Cybersecurity Agency (ANSSI): https://www.ssi.gouv.fr/administration/produits-certi es/
+
+10
+
+
+
+Bitcoin blockchain in addition to being recorded in Makor's existing book and records. Legolas Exchange's platform is designed to be completely auditable by regulators and can provide proof of reserve and audit reports in real time.
+
+2.2.3 Latency: A Level Playing Field for All Market Participants
+
+e very short delay necessary for validating a block can be perceived, at rst, as a limitation when in fact it adds fairness to the trading process. Indeed, a block behaves like a pool, randomly ordering all transactions done during the validation time. erefore, traders using a fast internet connection or those who are closer to the exchange data center don't have an advantage over traders with slower connections or who are located farther away. e race against the clock is mainly used to practice front running. It becomes less relevant on Legolas Exchange, where it is neutralized. However Legolas Exchange's platform is blockchain agnostic and, beyond classic networks like Bitcoin and Ethereum, it can be plu ed into the latest blockchains, reaching several hundred thousand transactions per seconds (block.one, Assembly...).
+
+
+
+Shortfalls of Existing Exchanges Wallet e s and Hacks
+
+Weak Login/Password Authentication
+
+Unsafe Fiat Custody Laborious large at deposits and withdrawals Front Running Price Formation
+
+Lack of Transparency
+
+
+
+Legolas Solution
+
+Multisignature active and cold storage in partnership with Ledger
+
+Brokerage Industry Standards (Client certi cates and 2FA protection)
+
+Fiat custody at major bank
+
+Fiat transactions to and from client's accounts within Makor Group
+
+Front Running proof protocol
+
+Transparent and auditable storage of transaction prices in a blockchain
+
+Transparent and auditable storage of orders and transaction in a blockchain
+
+
+
+11
+
+
+
+3. Legolas Technology
+
+3.1 Protocol
+
+e Legolas Protocol is a semi decentralized order matching protocol. Incoming orders and transactions are encrypted, timestamped and stored in a blockchain, while order matching is made o -chain.
+
+e decentralization of orders and transactions information allows for transparent price formation, transaction auditability, and zero front-running. Centralization of order pooling and order matching leads to e ciency and scalability, bypassing current blockchain limitations.
+
+3.1.1 Work ow overview
+
+12
+
+
+
+3.1.2 Overview of Components
+
+1) In each batch, the independent and certi ed PKI publishes a public key and a private key in the blockchain. e public key can be used by anyone to encrypt and publish data in the next batch. e private key can be used by anyone to decrypt the data published in the previous batch.
+
+2) Trader retrieves the public key for the next batch from the blockchain. 3) Trader encrypts his order and a random number with public key and sends the
+
+encrypted order to the Order Pool. Orders in the Order Pool are encrypted and are ordered by timestamp, which makes front running impossible as price and volume information are not made available to the Exchange. 4) All encrypted orders in the Order Pool are hashed and published in the blockchain. Once a block is con rmed: 5) Order ueue Engine retrieves the private key for the previous batch from the blockchain. 6) Order ueue Engine asks the Order Pool for all encrypted orders corresponding to the hash published in the blockchain in step 4.
+
+13
+
+
+
+7) Order ueue Engine randomly sorts encrypted orders in the following manner: each encrypted order is concatenated with the block's hash and hashed. e resulting hashes are sorted alphabetically. Once orders are se uenced, Order ueue Engine decrypts them and sends them to Matching Engine and Backend.
+
+8) Matching Engine sends completed trades to Backend. In addition, trade logs are sent to the Blockchain where they are safely stored.
+
+9) User Interface communicates with Backend to display order books, latest trades, and all other relevant information.
+
+3.1.3 High roughput
+
+Each block on a blockchain is able to contain a limited amount of information, which currently creates limitations and bottlenecks as soon as the activity on the platform grows beyond network capacity. Blockchain's low throughput is therefore a major obstacle for trading because delaying a client's order due to technological limitations is unacceptable. Legolas Exchange solves this problem via an Order Pool system: instead of sending orders to the blockchain one at a time, the Order Pool sends a hash of all encrypted orders to the blockchain. is way a single hash code is sent to every block, and an unlimited number of orders per block can be achieved. It is important to stress that the orders being pooled are encrypted, their timestamp and their hash being the only information visible to the pool.
+
+is scaling method can be compared to what the Bitcoin Community is developing through the Lightning Network.
+
+3.2 e Exchange
+
+3.2.1 User Interface
+
+A fast and responsive trading user interface using the latest Javascript technology. Node S will be used for the backend and React S for the frontend. is stack has already proven its robustness and ability to support a large number of simultaneous connections. A vibrant community and ecosystem ensures the sustainability of this powerful stack.
+
+3.2.2 Matching engine
+
+e rst version of the matching engine will support the following types of orders: - limit orders - market orders - stop-loss orders
+
+14
+
+
+
+and the following matching algorithms: - FIFO - Pro-rata - Market Maker Allocation e part allocated to each algorithm will be decided a er consultation with the LGO
+
+holders. e ratio allocated to market makers will ensure fair trading without penalizing market
+
+makers.
+
+3.2.3 Blockchain
+
+e Legolas Exchange platform is designed to be ledger agnostic: it can easily be plu ed into any blockchain. e beta version of Legolas Exchange will use the Ethereum network but as soon as Legolas goes live with its current production system, the best blockchains will be used. Moreover, Legolas Exchange's development team is currently studying the use of a much faster public ledger: the Byzantine Fault Tolerant.
+
+3.2.4 REST and Websocket APIs
+
+e Legolas Exchange platform will provide a RESTFull API to consult the order book and make orders. A Websocket API will provide the latest trades and orders in real time.
+
+3.4 Full Stack Tools and Functionalities
+
+3.4.1 Custom Reports
+
+One of the most crucial tools that Legolas Exchange will provide is a full track record of past investments and trades and how they performed, enabling customers to sort and
+
+lter their data using various metrics, both visual and analytical. ese reporting tools and visuals are commonly available on prime stock broker portals, and Legolas Exchange will replicate many of the same functionalities. Legolas Exchange's reports will be available via CSV and an API and will meet the re uirements and needs of all customers, from day traders to long term holders to large nancial institutions. e data will be stored in both a centralized server and on the blockchain.
+
+3.4.2 Portfolio Analysis Tools
+
+With Legolas Exchange, customers will have access to custom made analysis tools, such as pro t & loss per trades, time period, type of digital asset, and volume. A full visual of the
+
+15
+
+
+
+portfolio value will also be available using sorting options by digital asset, market capitalization, balances, realized and unrealized gains. e Legolas Exchange team plans to develop additional tools over time, with the goal of providing customers with valuable analysis and analytics enabling them to improve their trading strategies and optimize their investment returns.
+
+3.4.3 ICO Participation Functionalities
+
+Sophisticated crypto investors may be interested in participating in an ICO. Legolas Exchange will allow its customers to bene t from a wide spectrum of investment options, including in-depth analysis of upcoming ICOs and exclusive large-volume discounts on investments made during pre-ICO phases. Furthermore, there is no minimum investment amount re uired, Legolas Exchanges values each investor, independently of the investment size.
+
+3.4.4 Tax Documents and Audit Log
+
+For institutional clients and others who re uest it, Legolas Exchange will have an opt-in functionality that lets clients keep a detailed log of all transactions in order to automatically create tax documents. It will also generate a Capital Gains Report in a format that is already prepared for accountants and tax o ces. In addition, Legolas Exchange's platform is designed to be able to provide proof of reserve and audit reports to institutional customers who may re uest them for their own auditing needs.
+
+4. Legolas Exchange Value Proposition
+
+4.1 Current Exchange Landscape
+
+4.1.1 Centralized Exchange
+
+A centralized exchange is a platform that facilitates transactions between cryptocurrencies and maybe at currencies. Transactions between the exchange's customers are recorded in the exchange's internal ledger. Transactions are typically not recorded on a blockchain or on any outside ledger. ere is no transparency and neither the account balance nor the transaction history can be viewed. e majority of existing crypto exchanges are centralized exchanges.
+
+16
+
+
+
+4.1.2 Decentralized Exchange
+
+A decentralized exchange is a marketplace that matches buyers and sellers on its platform and facilitates their transaction on a decentralized ledger or blockchain. Trades occur directly between users (peer to peer) through an automated process facilitated by the exchange. is system can be achieved, among other solutions that are currently being developed, by creating proxy tokens (crypto assets that represent a certain at or crypto currency) or assets (that can represent shares in a company for example) or through a decentralized multi-signatures escrow system. Fully decentralized exchanges have existed since 2013 with MasterCoin and Counterparty. Aside from latency issues, one substantial limitation with these existing systems and those being developed is that transactions cannot occur between di erent blockchains. As of now, pairs like ETH/BTC, LTC/BTC, XRP/BTC or BTC/USD are not tradable on a fully decentralized system since there is no vector to transfer information from one blockchain to another on a fully decentralized system. Finally, decentralized exchange projects currently being developed don't focus on at deposit. We believe that at deposit and withdrawal are important functionalities that must not be overlooked when trying to capture market shares. According to Coinmarketcap.com, the volume of intra-chain trading represents less than 2% of all transactions per day.
+
+4.1.3 Legolas Exchange: A Hybrid Model
+
+At Legolas Exchange we have long believed in decentralized ledgers and applications, but at the same time we also believe not all functionalities should be decentralized. Decentralized computing wastes energy and can be replaced by centralized computing combined with decentralized ordered hash storage. Centralization, for its part, isn't intrinsically bad and o ers some irreplaceable features for real life applications, namely privacy, speed, simplicity and authority. Legolas Exchange therefore proposes a hybrid exchange that incorporates features of both centralized and decentralized systems. We are convinced that a decentralized blockchain can make centralized systems transparent, fair and, most importantly, trustworthy.
+
+4.1.4 Comparison of Exchanges
+
+17
+
+
+
+Front-running On-Chain Trustless
+
+proof
+
+
+
+roughput Fiat
+
+
+
+shapeshi .io
+
+
+
+Yes
+
+
+
+Yes
+
+
+
+Kyber
+
+
+
+Yes
+
+
+
+Yes
+
+
+
+Oasis
+
+
+
+Yes
+
+
+
+Yes
+
+
+
+0xproject
+
+
+
+Yes
+
+
+
+Yes
+
+
+
+Poloniex
+
+
+
+No
+
+
+
+No
+
+
+
+Gemini,
+
+
+
+No
+
+
+
+No
+
+
+
+Bits amp,Kraken
+
+
+
+Legolas
+
+
+
+Exchange
+
+
+
+Yes
+
+
+
+Yes
+
+
+
+Yes
+
+
+
+Medium
+
+
+
+No
+
+
+
+Yes
+
+
+
+Medium
+
+
+
+No
+
+
+
+Yes
+
+
+
+Medium
+
+
+
+No
+
+
+
+Yes
+
+
+
+Medium
+
+
+
+No
+
+
+
+No
+
+
+
+High
+
+
+
+No
+
+
+
+No
+
+
+
+High
+
+
+
+Yes
+
+
+
+Yes
+
+
+
+High
+
+
+
+Yes
+
+
+
+External blockchain
+
+token Yes No No No Yes
+
+Yes
+
+Yes
+
+
+
+On-chain: Order book is published in a speci c blockchain. Trustless: Actors don't need to trust other actors in order for the system to function. Front-running proo : Impossible for the exchange to front run users' orders.
+
+roughput: Maximal number of orders that can be sent in a given amount of time. Fiat: Fiat currencies can be deposited into and withdrawn from the exchange. A at currency is a currency that a government has declared to be legal tender, but which is not backed by a physical commodity. External blockchain token: Ability to trade a token for a token in another blockchain.
+
+4.2 Legolas Exchange's Business Model
+
+4.2.1 LGO Token
+
+LGO will be created as an ERC20 compatible token on the Ethereum blockchain. LGO tokens will be re uired for any and all Legolas functionalities, deposits, withdrawals, transactions and analyses.
+
+
+
+18
+
+
+
+4.2.2 Transaction Fees
+
+Legolas Exchange will not charge any bitcoin or cryptocurrency transaction fee, commission, or apply extra bid/o er to any order on its platform. Instead, all transactions will re uire LGO tokens to be used as fees or fuel to place orders on Legolas Exchange.
+
+4.2.3 Additional Paying Analytical Functionalities
+
+In addition to regular trading, deposit and withdrawal exchange functionalities, Legolas Exchange will provide customers with opt-in paying analytical functionalities such as, for example, research, analysis, statistical calculations, recommendations, etc. ese functionalities will be payable in LGO.
+
+4.2.4 LGO Destruction
+
+As Legolas Exchange will charge all fees in LGO, it will accumulate LGOs over time. In order to reduce the LGO reserve that Legolas Exchange will hold relative to the overall supply of LGOs, Legolas Exchange will implement a transparent and veri ed mechanism that destroys on each trade 25% of all LGO paid to Legolas Exchange as a transaction fee. As a result, the supply of LGO will decrease over time as the activity on Legolas Exchange increases, and the demand for each LGO will increase accordingly. LGO will be subdivisible and fees will be adjusted to always re ect the (balanced) e uilibrium supply of LGO.
+
+4.2.5 LGO Li uidity Providers Pool
+
+In order to attract market makers to Legolas Exchange and maximize li uidity for users, Legolas Exchange will implement a transparent and veri ed mechanism that transfers 25% of LGO paid to Legolas Exchange into an LGO Li uidity Providers Pool.
+
+e LGO Li uidity Providers Pool will be redistributed to all market makers and users who add li uidity to Legolas Exchange order books. Legolas Exchange will charge negative LGO commission rates to users who add li uidity and adjust those credits over time in order to keep the LGO Li uidity Providers Pool close to empty at the end of every month. Overall, 50% of all LGO paid to Legolas Exchange will be either destroyed (25%) or transferred to the LGO Li uidity Providers Pool.
+
+19
+
+
+
+5. LGO Token Creation
+
+
+
+5.1 Pre-sale Information
+
+LGO tokens will be o ered in a private, invitation only pre-sale restricted to a selected group of nancial and crypto professionals. A second phase will open the sale to sponsored guests only, while a third phase will allow uali ed people in the general public to participate. Please refer to the terms and conditions of the sale for terms restrictions.
+
+
+
+Accepted Cryptocurrency
+
+
+
+BTC
+
+
+
+Pre-sale Method
+
+
+
+pre-generated BIP32 Wallet
+
+
+
+Token Platform
+
+
+
+Ethereum ERC20 contract
+
+
+
+Duration
+
+
+
+18 weeks / 3 rounds
+
+
+
+Token Distribution
+
+
+
+2 weeks a er end of sale
+
+
+
+Initial issuance supply
+
+
+
+Known a er the ICO
+
+
+
+Re-issuance for 2-years holding bonus
+
+
+
+5% of initial issuance each semester during 2 years (20% in total), distributed to LGO holders who have not sold any LGOs held at the address where they initially received the tokens.
+
+
+
+Round 0 Open only to advisors, partners and nancial and cryptocurrency professionals.
+
+
+
+Price: 0.02% of all LGO for 1 BTC CAP: 1,000 BTC.
+
+uantity sold: Minimum 20% of total supply. See paragraph 5.3. Start Date: TBD Min CAP / refund: $4M / 2 weeks a er the sale end, 15% fees.
+
+
+
+Round 1 Open only to Premium Buyers (Invited by founders or advisors)
+
+
+
+Price: 1 LGO for 3,500 satoshi uantity sold; 40% of total supply with Round 2
+
+Start Date; TBD
+
+
+
+Round 2
+
+
+
+Price: 1 LGO for 5,000 satoshi
+
+
+
+20
+
+
+
+Open to uali ed public. Distribution of Tokens Lockup
+
+Funds Governance
+
+
+
+uantity sold; 40% of total supply with Round 1 Start Date; TBD
+
+Pre-sale: 60% Reserve: 20% Advisors: 5% Founders: 15%
+
+Founders: blocked 1 year, then released the second year, 1/12 per month. Advisors: progressively released during 1 year, 1/12 per month. Employees: 25% released a er 1 year. 25% a er 2 years, and 50% a er 3 years.
+
+Legolas Exchange SAS Board. Fund will be kept in multisig address re uiring the signature of a majority of the board.
+
+
+
+5.2 ICO Method
+
+Legolas has made the decision to accept only bitcoins for its ICO. Each buyer has her own multisig address. Addresses are pre-generated o ine using the BIP32 algorithm. is design was chosen for the following reasons:
+
+1. Security: Bitcoin multisig is more robust than an Ethereum contract for storing large amounts.
+
+2. Simplicity: Buyers can send BTC from any address even exchanges like Kraken or Poloniex.
+
+3. Fairness: Given the volatility of cryptocurrencies, accepting multiple currencies raises issues of pricing and exchange rates. Buyers using di erent currencies would end up paying di erent prices for the token.
+
+To redeem ICO funds, the signature of a minimum of 2 funders is re uired. e server used for the ICO holds no private or public keys, only addresses.
+
+5.3 Round 0
+
+Minimum 20% of LGO tokens are reserved for advisors, partners and nancial and cryptocurrency professionals. is ensures that LGO holders are dedicated and involved
+
+21
+
+
+
+and not simply speculating. e exact price in Round 0 will be known only at the end of Rounds 1 and 2 but will certainly be advantageous. Regardless, at least 20% of the tokens will be distributed during Round 0. To achieve this goal we are using a formula inspired by convertible notes:
+
+Percentage of total supply sold during the pre-sale: LGO_SOLD = 60%
+
+Minimum percentage of total supply sold to Round 0 buyers: MINIMUM_ROUND_0_PERCENTAGE = 20%
+
+Bonus for Round 0 buyers: BONUS_ROUND_0 = 20%
+
+Amount sold during Round 0: CAP_ROUND_0_BEFORE_DISCOUNT = 1000 BTC
+
+Amount used to calculate the nal price: CAP_ROUND_0 = CAP_ROUND_0_BEFORE_DISCOUNT + BONUS_ROUND_0 = 1200 BTC
+
+Total amount sold during the whole pre-sale: TOTAL_CAP = CAP_ROUND_0 + CAP_ROUND_1 + CAP_ROUND_2
+
+Percentage distributed to Round 0 buyers calculated pro rata with the TOTAL_CAP: ROUND_0_PERCENTAGE_CAP = (CAP_ROUND_0 / TOTAL_CAP) * LGO_SOLD
+
+e nal percentage distributed to Round 0 buyers is the maximum of ROUND_0_PERCENTAGE_CAP and MINIMUM_ROUND_0_PERCENTAGE: ROUND_0_PERCENTAGE = MAX(ROUND_0_PERCENTAGE_CAP MINIMUM_ROUND_0_PERCENTAGE)
+
+is algorithm ensures that the price of LGO for Round 0 buyers will decrease proportionally to the success of Rounds 1 and 2:
+
+22
+
+
+
+Conversely, it also ensures that the total percentage held by Round 0 buyers will increase proportionally to any shortfalls in Rounds 1 and 2:
+
+Examples: 23
+
+
+
+Total Sold(BTC)
+
+
+
+LGO Total
+
+
+
+Supply
+
+
+
+Round 0 supply (%)
+
+
+
+1 001,50 51 492 857,14
+
+
+
+59,93%
+
+
+
+1 750,00 83 571 428,57
+
+
+
+36,92%
+
+
+
+2 500,00 115 714 285,71
+
+
+
+26,67%
+
+
+
+3 250,00 147 857 142,86
+
+
+
+20,87%
+
+
+
+4 000,00 192 857 142,86
+
+
+
+20,00%
+
+
+
+4 750,00 241 071 428,57
+
+
+
+20,00%
+
+
+
+5 500,00 289 285 714,29
+
+
+
+20,00%
+
+
+
+6 250,00 337 500 000,00
+
+
+
+20,00%
+
+
+
+Round 0 Price
+
+
+
+Effective
+
+
+
+(BTC)
+
+
+
+Discount Round 0
+
+
+
+0,00003240
+
+
+
+35,19%
+
+
+
+0,00003240
+
+
+
+35,19%
+
+
+
+0,00003240
+
+
+
+35,19%
+
+
+
+0,00003240
+
+
+
+35,19%
+
+
+
+0,00002592
+
+
+
+48,15%
+
+
+
+0,00002074
+
+
+
+58,52%
+
+
+
+0,00001728
+
+
+
+65,43%
+
+
+
+0,00001481
+
+
+
+70,37%
+
+
+
+5.4 LGO 2-Year Holding Bonus
+
+5% of the initial issuance will be issued each 6 months over 2 years (20% in total). Each time, the tokens will be distributed to LGO holders who have not sold any LGOs held at the address where they initially received the tokens. e token will be prorated between LGO holders who have respected this rule.
+
+is feature is meant as an incentive for participant in the initial LGO token sale to hold their tokens for at least two years.
+
+5.5 Use of Proceeds
+
+Funding raised through the pre-sale will be used to accelerate the construction of the Legolas platform. e distribution of funds will, in priority, go towards development, infrastructure and key hires such as senior developers, system administrators and nancial experts.
+
+External Development Legolas Exchange is in touch with several small and medium exchanges that may be interested in partnerships and ac uisitions by Legolas Exchange.
+
+Education and Community Support Legolas Exchange is deeply committed to the crypto community and is actively engaged in the development of Bitcoin and educational e orts aimed at making Bitcoin a widely used currency.
+
+
+
+24
+
+
+
+Lobbying Legolas Exchange has established contacts with the French government in order to assist in the building of a legal framework for cryptocurrency and ICOs.
+
+Reserve Legolas Exchange will maintain a locked reserve to protect the value of the LGO and deal with unforeseen events.
+
+6. About the Venture
+
+6.1 Legolas Exchange
+
+6.1.1 Company
+
+Due diligence, compliance and transparency are our priorities. Legolas Exchange SAS is incorporated in France and has contracted KPMG for account auditing, and FieldFisher as Corporate Lawyer. FieldFisher is a leading law rm with more than 1000 employees across 16 o ces around the world.
+
+6.1.2 Team
+
+e team is composed of entrepreneurs, investors and so ware engineers who have worked, co-founded and exited companies together in the past.
+
+Frdric Montagnon (CEO) An accomplished entrepreneur and investor with 20 years of experience, Frdric has founded and exited 4 companies for a total value of more than USD 400 million. He is ranked as the 7th largest start-up investor in France (https://www.challenges.fr/start-up/start-up-les-conseils-du-top-30-des-investisseurs-franc ais_432943), and has been involved in the eld of cryptocurrency as an investor since 2013. He is a well-known blockchain in uencer and his commentaries have been published multiple times.
+
+25
+
+
+
+Julien Romanetto (COO) For 20 years Julien has been a successful entrepreneur and an investor with an eye for the technical side. He has co-founded and exited with Frdric Montagnon Secret Media, OverBlog and Nomao for a total value of more than USD 400 million. Julien has been involved in crypto currencies and user cases for blockchain technology for the last 3 years.
+
+Ouziel Slama (CTO) Having devoted himself exclusively to the eld of cryptocurrency since 2013, Ouziel was a major contributor to Counterparty and the principal so ware manager at Symbiont.io. He has been an advisor and blockchain developer on several successful crypto projects. An Internet entrepreneur for the past 20 years, Ouziel has been a code-lover for... forever! He has extensive expertise in time-stamping and copyright protection.
+
+Yaacov Akiba Slama (Principal Architect) Yaacov Akiba Slama is an industry expert in using free so ware to build fully scalable and secure systems. He has worked on almost every level of the so ware stack, from the linux kernel to nal applications and websites. He worked at IBM on internal products, on the linux kernel, and for Mozilla. He is the co-founder and the principal architect of Wmap, an IM company, and byen.site, one of the French leaders in the sale of generic websites for small companies. He ac uired his theoretical knowledge at the prestigious cole Normale Suprieure in Paris and at e Hebrew University of Jerusalem.
+
+Frdric Martin (Security Architect) Frederic is a System and Security Architect with over 12 years experience. He has tackled every aspect of public key infrastructures (encryption, digital signature, strong authentication...). As a smart card based security expert and a blockchain technology evangelist, he vigorously promotes the use of architectures that combine secure so ware with secure hardware on both the user side (hardware wallets, secure terminals, cryptographic tokens) as well as the server side (hardware security modules).
+
+Abdelmajid Oulfakir (Lead developer) A full stack developer with more than 15 years experience, Abdelmajid managed a team of experienced developers at Nexway Paris before going to Morocco to build the Nexway Web Agency. On top of this, he has brought his knowledge and experience to several companies to build and manage talented development teams. A cryptocurrency holder since 2013 and
+
+26
+
+
+
+MtGox victim, Abdelmajid didn't think twice before joining his long-time friend Ouziel in building the bi est crypto exchange in the world.
+
+Roei Erez (Lead Mobile Developer) Roei is a so ware architect with over 12 years of experience. He has extensive experience managing agile teams and is a rst class developer. Roei joined Codebashing as VP of Engineering in January 2017 before the company was subse uently sold in August 2017. He has also been working at Harmon.ie, where he leads several mobile projects providing cross-platform applications for the company. Roei ac uired his rst bitcoin in 2012 and has been a big fan of all things cryptocurrency ever since.
+
+Yohan Guez (Product Owner) Yohan developed new indicators and machine learning models to enhance Mayan Capital's portfolio construction capabilities. Before joining Mayan, Yohan worked for the Emerging Markets trading desk at Societe Generale in Hong Kong and at BNP Paribas, where he was in charge of the implementation of stochastic models. In the course of his work, Yohan has become very interested in blockchain technology. He considers it, much like Social Media in the 2000s and Internet in the 1990s, to be the next frontier. Yohan joined the Legolas Exchange project in order to use cutting-edge technology to open new avenues for trading.
+
+Noam Cochin (Marketing Manager) Noam Cochin is a Franco-American writer and translator. A er studying Linguistics and Anthropology at McGill University in Montreal and the Hebrew University of Jerusalem, he moved to Geneva to teach and work as a freelance translator. A er moving to Paris he began working at a music archival center as head of the digital archives. In parallel, he studied applied mathematics at the CNAM where he gained an enduring passion for cryptography and cryptocurrencies. Since 2014, he has devoted himself full-time to writing and translating and counts many publishing houses and companies among his clients.
+
+e advisory board is composed of hedge fund managers, brokerage rm founders and CEOs, as well as bank managing directors.
+
+6.2 Makor
+
+e Makor group is an international brokerage rm established in 2011 to provide nancial securities research and execution to institutional investors in cash e uities, xed income, derivatives and FX.
+
+27
+
+
+
+With o ces in New York, Chicago, London, Paris, Geneva, Gibraltar, Tel Aviv and Singapore, and over 100 group employees, Makor o ers its clients a 24-hour global trading services, providing a single point of contact for more than 90 execution venues in cash e uities only. Makor provides its clients with original and innovative trading ideas specializing in risk arbitrage, special situations, relative value and event-driven opportunities for clients and regularly ranks within the Top 3 of the omson Reuters EXTEL risk-arb research surveys. Makor acts only as an agent and is therefore not susceptible to the various con icts in the industry. Makor takes no proprietary positions and as such acts wholly and exclusively for the bene t of the client. Makor's understanding of local markets and extensive client relationships built over 30 years industry experience, allows us to tap into local institutional portfolios in order to maximize li uidity for clients. Besides the client relationships, Makor has strong relationships with global custodians and prime brokers. ese international custodians, which provide essential services across all asset classes, are the oil that keeps the trading engine running smoothly. Prime brokerage services including custody and trade settlement are as important to the clients as the execution itself and in some cases even more important. Settlement of trading activity needs to be timely and problem free. In addition to facilitating clearing and settlement services, we also work closely with clients to optimise their balance sheet nancing re uirements, which re uires liaising with these global custodian service providers. Our leading service providers in this regard are internationally recognised and trusted names: for example Societe Generale, BNP Paribas, Pershing Limited, Bank of America Merrill Lynch, Royal Bank of Scotland, Citibank, CACEIS etc.
+
+28
+
+
+
+ANNEX
+
+1. Financial Institutions Are Embracing Crypto
+
+is year has seen vast capital in ows into crypto currencies. Nevertheless, the amount pales in comparison to the substantially larger investments that will come from institutional investors and nancial advisors in the months and years ahead. Up to now, large and professional investors have been missing the security and many of the tools they need to enter the crypto market. Legolas Exchange is embracing this future in ow and is o ering to build these functionalities to bene t both existing and incoming investors and traders alike.
+
+1.1 Alternative Investment Is in Vogue
+
+Over the last 10 years, institutional money managers have been steadily increasing their holdings in alternative investments in order to diversify their portfolios and increase expected risk adjusted long term returns. According to PricewaterhouseCooper, by 2020 global assets in alternative investments will grow to US$18.1 trillion, from $10 trillion today.
+
+is large and growing allocation means that institutional investors such as wealth managers, endowments, investment funds and sovereign wealth funds are constantly looking for new asset classes and products that present positive growth expectations. Crypto currencies and digital tokens are perfectly positioned to be one of the leading investment class and receive a large proportion of those 18 trillion dollars.
+
+1.2 Cryptocurrencies Are Outperforming Majors Assets by Far
+
+One of the most telling metrics supporting the thesis that nancial institution will invest heavily in crypto currencies is that the performance of cryptocurrencies has lowered the returns seen by e uity benchmarks over the last few years. Bitcoin return has outperformed the S&P 500 by a factor of 35 since April 2013. Even when using the Sortino ratio, a measure of risk-adjusted return, Bitcoin has largely outperformed all asset classes over the last seven years.
+
+29
+
+
+
+1.3 A Near-uncorrelated Asset
+
+In a globalized world where markets are becoming more interconnected , building a stable portfolio made of diversi ed investments is increasingly di cult. Finding uncorrelated investments is both challenging and incredibly rewarding for an institutional investor looking to create a diversi ed portfolio with stable long-term returns. In this context, one can calculate that the correlation between Bitcoin and the S&P 500 over the last 5 years is almost 0 (3% to be exact). is incredibly low correlation is attractive to large investors as a way of reducing their portfolio risk.
+
+
+
+Bitcoin Correlation with S&P 500 - average of only 3%
+
+
+
+2013
+
+
+
+2014
+
+
+
+2015
+
+
+
+2016
+
+
+
+2017
+
+
+
+-1%
+
+
+
+1.67%
+
+
+
+13.02% -9.20% 6.79%
+
+
+
+In fact, Bitcoin can even serve as a hedge against harmful geopolitical events due to its decentralized nature. ere is a growing body of empirical evidence supporting this thesis with, for example, bitcoin price spiking in response to both Brexit and the election of Donald Trump.
+
+is calculation can be extended to other nancial asset classes such as bonds, commodities, real estate and currencies with similar results: cryptocurrencies present a uni ue combination of positive expected growth and no correlation to established investment opportunities.
+
+30
+
+
+
+1.4 A Growing Demand for Crypto Assets
+
+Digital currencies have found favor among individual investors, but remain a niche phenomenon among the wider investment community.
+
+e growing demand by all types of investors for digital currencies has had a positive e ect on the nancial industry, leading them to view cryptocurrencies and digital assets as a major new market opportunity for their investors and clients. One of the best illustrations of this attempt by nancial professionals to enter the crypto market are the many attempts, both successful and unsuccessful, to create indices and securities that would track the price of Bitcoin or ICO performance. While ETFs (Exchange Traded Fund) have not been approved in any country yet, several nancial institutions are currently petitioning regulators in North America, the United Kingdom and continental Europe. Sweden already has an ETN (Exchange Traded Note) tracking the price of Bitcoin listed on the Stockholm stock exchange with a market capitalization of $90M. Seven global banks (BNP Paribas, Societe Generale, CitiBank, Barclays, Goldman Sachs, Banco Santander, Standard Chartered) have announced plans to integrate future use of cryptocurrencies.
+
+ese evolutions will continue to mature and accelerate in the coming months and years, opening a ood of investments intro cryptocurrencies and digital assets. Saxo Bank analyst Kay Van-Petersen estimates that cryptocurrencies will account for 10% of the average daily volume of at currency trades within 10 years, with Bitcoin alone accounting for $175 billion a day.
+
+31
+
+
+
+References
+
+Counterparty. "Counterparty Introduces Truly Trustless Games on the Blockchain." July 2014, http://counterparty.io/news/introducing-fully-trustless-games-on-block.
+
+e Journal of Trading. "Footprints on a Blockchain: Trading and Information Leakage in Distributed Ledgers" June 2017, http://www.iijournals.com/doi/abs/10.3905/jot.2017.12.3.005.
+
+Michael Lewis. "Flash Boys: A Wall Street Revolt" March 2014, https://books.google.fr/books/about/Flash_Boys_A_Wall_Street_Revolt.html?id=UcIkAwA AQBA
+
+Cristina Jaramillo. " e Revolt against High-Fre uency Trading: From Flash Boys, to Class Actions, to IEX" 2015-2016, https://www.bu.edu/rb / les/2016/10/Cristina-Jaramillo-DA.pdf
+
+e New York Times: "14 Trading Firms Settle Charges for $69 Million" March 2009, http://www.nytimes.com/2009/03/05/business/05specialist.html
+
+e New York Times: "How Traders Use Front-Running to Pro t From Client Orders" July 2016, https://www.nytimes.com/2016/07/21/business/dealbook/how-traders-use-front-running-to -pro t-from-client-orders.html?mcubz=0
+
+FINRA (Financial Industry Regulatory Authority). "FINRA Re uests Comment on Proposed FINRA Rule Regarding Front Running of Block Transactions" December 2008, https://www. nra.org/sites/default/ les/NoticeDocument/p117629.pdf
+
+FINRA (Financial Industry Regulatory Authority). "SEC Approves Consolidated Front Running Rule" December 2012, http://www. nra.org/sites/default/ les/NoticeDocument/p197391.pdf
+
+32
+
+
+
+FINRA (Financial Industry Regulatory Authority). "Notice 5270. Front Running of Block Transactions" June 2013, http:// nra.complinet.com/en/display/display_main.html?rbid=2403&element_id=10860
+
+SEC (Securities and Exchange Commission). "Order Disapproving a Proposed Rule Change" March 2017, https://www.sec.gov/rules/sro/batsbzx/2017/34-80206.pdf
+
+EBA (European Banking Authority). "EBA Opinion on `virtual currencies'" July 2014, https://www.eba.europa.eu/documents/10180/657547/EBA Op-2014-08+Opinion+on+Virtua l+Currencies.pdf
+
+Andres Guadamuz and Chris Marsden. "Blockchains and Bitcoin: Regulatory responses to cryptocurrencies" December 2015, http:// rstmonday.org/ojs/index.php/fm/article/view/6198/5163
+
+EBA (European Banking Authority). "Price dri before U.S. macroeconomic news: private information about public announcements?" May 2016, https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1901.en.pdf
+
+CPAB (Canadian Public Accountability Board). "Transparency in the audit" March 2016, http://www.cpab-ccrc.ca/Documents/Stakeholders/Audit%20Committee/CPAB_Exchange _Transparency_Audit_Part_2_EN.pdf
+
+Reddit. "Peter Todd explaining why side-chains are insecure and bad for decentralization" 2014, https://www.reddit.com/r/Bitcoin/comments/2424x1/peter_todd_explainins_why_sidechain s_are_insecure/
+
+Pieter Wuille, "BIP32: Hierarchical Deterministic Wallets" February 2012, https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+
+33
+
+
+
+Will Warren, Amir Bandeali, "0x: An open protocol for decentralized exchange on the Ethereum blockchain" February 2017, https://0xproject.com/pdfs/0x_white_paper.pdf
+
+Sweden's Nasdaq Exchange Approves Bitcoin-based ETN April 2017, https://www.coindesk.com/swedens-nasdaq-exchange-approves-bitcoin-based-etn/ What will it take for a Bitcoin ETF to get approved ? April 2017, https://www.forbes.com/sites/forbes nancecouncil/2017/04/04/what-will-it-take-for-a-bitc oin-etf-to-get-approved/#36d30ab236d0 Bitcoin investors bet the SEC will approve cryptocurrency ETF - a view at odds with analyst, February 2017, http://www.marketwatch.com/story/bitcoin-investors-bet-the-sec-will-approve-cryptocurr ency-etf-a-view-at-odds-with-analysts-2017-02-13 Start-up: les conseils du Top-30 des investisseurs francais, October 2016, https://www.challenges.fr/start-up/start-up-les-conseils-du-top-30-des-investisseurs-franca is_432943
+
+Bitcoin Worth $72M was stolen in Bit nex exchange hack in Hong Kong, August 2016, http://fortune.com/2016/08/03/bitcoin-stolen-bit nex-hack-hong-kong/
+
+Bloomberg https://www.bloomberg.com/ uote/COINXBT:SS
+
+34
+
+
+
+

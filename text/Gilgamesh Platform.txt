@@ -1,0 +1,711 @@
+White paper
+
+Knowledge Platform
+
+Skiral Inc. v 1.0
+
+August, 2017
+
+
+
+1 Executive Summary ..........................................................................5 1.1 Background .............................................................................5 1.2 Problem Statement ..................................................................7 1.3 Vision ..................................................................................... 11 1.4 Mission .................................................................................. 12
+
+2 Application Platform .......................................................................14 2.1 Platform Development Plan ................................................... 14 2.2 Gilgamesh Social Network Platform ...................................... 15
+
+2.2.1 Economics and Engagement Flow ............................................................15 2.2.2 Gilgamesh monetization strategy ..............................................................15 2.2.3 Governance Flow .......................................................................................15 2.2.4 Blockchain .................................................................................................15
+
+2.3 Gilgamesh Platform Internal Architecture ............................. 16 2.4 IOS Application Flow ............................................................. 18
+
+2.4.1 User Profile.................................................................................................19 2.4.2 Book Details ...............................................................................................20 2.4.3 User Feed...................................................................................................20 2.4.4 Explore .......................................................................................................21
+
+2.5 Gilgamesh Self-Publishing Platform ...................................... 21
+
+2.5.1 IOS Application Release ............................................................................21 2.5.2 IOS Application Basic Flow........................................................................22
+
+3 Token Platform ...............................................................................24 3.1 Why Ethereum Network and IPFS? ........................................ 24 3.2 Governance............................................................................ 24 3.3 GIL Token Market .................................................................. 25
+
+3.3.1 How to earn GIL? .......................................................................................25 3.3.2 How to spend GIL? ....................................................................................26
+
+4 Token Sale ......................................................................................27 4.1 GIL Token Distribution........................................................... 27
+
+
+
+4.1.1 GIL Token Value and Sustainability ...........................................................28 4.1.2 Legal Considerations .................................................................................28
+
+5 Roadmap ........................................................................................29 5.1 Key Activities and Partnership............................................... 29
+
+5.1.1 Finances.....................................................................................................29
+
+5.2 Use of Sales Proceeds ........................................................... 29
+
+5.2.1 Platform Development ...............................................................................29 5.2.2 Marketing and Business Development ......................................................29 5.2.3 Administration ............................................................................................30
+
+5.3 Development Roadmap .......................................................... 30 5.4 Major Release Overview ........................................................ 30
+
+5.4.1 V1. Plato.....................................................................................................30 5.4.2 V2. Shakespeare ........................................................................................30 5.4.3 V3. Homer ..................................................................................................30
+
+5.5 2nd Quarter  2018 .................................................................. 31
+
+5.5.1 V1. Plato  Research & Development, Alpha Release ...............................31 5.5.2 V3. Homer  Research and Development..................................................31 5.5.3 Team Expansion ........................................................................................31
+
+5.6 3rd Quarter  2018 .................................................................. 31
+
+5.6.1 V1. Plato - Beta Release ............................................................................31 5.6.2 V3. Homer - Planning and Design..............................................................32
+
+5.7 4th Quarter  2018................................................................... 32
+
+5.7.1 V1. Plato - Release.....................................................................................32 5.7.2 V3. Homer - Development .........................................................................32
+
+5.8 1st Quarter  2019................................................................... 32
+
+5.8.1 V1. Plato - Fixes .........................................................................................32 5.8.2 V2. Shakespeare - Beta Release ...............................................................32 5.8.3 V3. Homer - Alpha Release........................................................................32
+
+5.9 2nd Quarter  2019 .................................................................. 33
+
+5.9.1 V2. Shakespeare - Release ........................................................................33 5.9.2 V.3 Homer - Beta Release..........................................................................33
+
+
+
+6 Company.........................................................................................34 6.1 Values .................................................................................... 34 6.2 Our Team ............................................................................... 34
+
+7 Conclusion......................................................................................35 8 References .....................................................................................36
+
+
+
+1 Executive Summary
+
+The Gilgamesh platform is a knowledge-sharing social network powered by the Ethereum blockchain and IPFS that socially connects readers, critics, authors, and service providers, and empowers all users to become more knowledgeable and information-centric through a cohesive and engaging user experience. The platform is a resource for knowledge-seekers to unite and create an organized and infallible outlet that transforms the publishing industry and the way readers interact with one another by using Blockchain technology.
+
+The platform is an accessible, fair market ecosystem that incentivizes readers, critics, authors, and service providers with "GIL" Tokens in proportion to their contribution through Ethereum smart contracts.
+
+Phase one of the Gilgamesh platform will focus on organically growing user participation through interactive knowledge-sharing and incentives, and will meet a need in the market for a social platform that allows readers and participants in the book reading tradition, to share knowledge with one another in an interactive way.
+
+Phase two of the Gilgamesh platform will establish a network that removes the middleman in the publishing industry to garner more financial support for authors and remove the barrier of access for people to transfer and receive information. The selfpublishing platform will replace traditional publishers, the "middleman", by employing the marketplace power of Ethereum network, blockchain technology, and IPFS. By removing the middleman, society will experience an increase in the flow of knowledge between authors and consumers since more people (authors) will have affordable, unencumbered access to share knowledge, experience, and expertise with readers.
+
+The Gilgamesh platform is named for The Epic of Gilgamesh, conclusively considered the first written story. The Epic of Gilgamesh dates back to 2000 BC, and is written in the Sumerian cuneiform language
+
+1.1 Background
+
+The Epic of Gilgamesh is the oldest written story known to exist and is loosely based on the historical King Gilgamesh who ruled Sumerian Uruk (modern day Iraq) in 2700 BC. The oldest written version of the poem dates to circa 2000 BC, and is written in Sumerian
+
+
+
+6
+
+
+
+Executive Summary
+
+
+
+cuneiform, one of the earliest forms of writing. In its written form, the poem denotes the first marker in the evolution from oral storytelling to the tradition of the written word.
+
+Considering the evolution of communication, the written word is widely regarded as a modern advancement, occurring only 5,000 years ago, relative to the first cave paintings which date back nearly 40,000 years, and the invention of language which occurred between 30,000-100,000 years ago. Even more modern is the invention of the Gutenberg printing press which allowed for the mass production of books and rapid dissemination of knowledge throughout Europe beginning around 1440 AD.
+
+For 600 years books and the written word were valued among the top sources for information. People developed in-depth knowledge to become experts in areas of interest and created ways to better communicate their ideas through the written word. Libraries were established and funded through taxpayer dollars, and it was widely accepted that access to knowledge was crucial to the development of equality and humanity.
+
+Then, only 30 years ago, the invention of the internet upturned the way people receive and transfer knowledge. The evolution of communication has culminated in a desire for instant access to information. In the beginning, instant information was considered an important advancement in our ability to consume knowledge, however, as the internet has grown, social media has been introduced, and access has become nearly universal, the amount of valuable, accurate, and in-depth knowledge has dwindled. Social media has largely influenced our access to surface-level knowledge, known as content or "clickbait", and has contributed to the shift from knowledge as power to social influence as power.
+
+The Gilgamesh platform is a social network that uses the power and authority people gain as social influencers to increase in-depth knowledge through reading books and sharing information. Since the invention of the internet, we have experienced a vast increase in written content, however, the number of books Americans read annually has remained stagnant. The Gilgamesh platform will capitalize on the opportunity to provide the very first interactive social network for potential readers, active readers, critics, and authors to connect with one another, share information, and power the market through popular consensus and social influence.
+
+Currently, there are no other applications available to the target market to connect and share that are specifically focused on reading. Instead, our market has relied on outdated platforms like Goodreads, or Facebook Groups. The market is ready for a social application designed to help readers share information while connecting with one another.
+
+
+
+7
+
+
+
+Executive Summary
+
+
+
+Goodreads is the closest competitor to the Gilgamesh platform, however, Goodreads stagnant platform only allows users to leave reviews on a book's page without opportunity to connect in a truly social way; additionally, Goodreads does not offer an incentive to users to bring in new readers or increase user engagement. In response to the poor market availability, the Gilgamesh platform will grow organically as active users gain more followers, increase activity levels, promote conversations about books, and earn status as influencers.
+
+The Gilgamesh platform will make reading books and sharing knowledge fun through an incentivized social platform that rewards active participants with Gilgamesh Tokens (GIL) based on their level of participation and value on the platform by using smart contracts on the Ethereum blockchain. The collection of tokens will fuel the Gilgamesh platform organically because they incentivize productive engagements for readers, authors, and critics, and encourage users to read more books and be more active on the application in order to gain more knowledge and earn more tokens.
+
+
+
+1.2 Problem Statement
+
+The invention of the internet and social media brought on a cultural shift in the way people interact, socialize, and spend their time. With the average American spending nearly 10 hours per day looking at a screen for work and pleasure, quick content has begun to provide the instant gratification that frequent internet users have come to expect. However, this quick content does not inform, generate discussions, or provide in-depth knowledge on a subject. Quick content comment sections are active with opinions, judgments, and spammers, but there is no real conversation or knowledge transfer occurring. Consider this, have you ever seen a comment where someone's opinion was changed by a debate in the comments section? Like most people, you are probably shaking your head, "no."
+
+Skiral Inc., the company who created the Gilgamesh platform foresees an opportunity in the market to generate quality, respectful, and informative knowledge sharing for people who want to consume knowledge and participate in real conversations about a subject. As students we are taught to engage with literature and texts in all of our classes. We learn to substantiate and form an opinion, research a topic further for greater breadth of knowledge, and discuss the content of the information, whether that be in Literature, History, Economics, or Science class. Then one day for most Americans, the conversation stops. We graduate, gain employment, and settle into a stagnant intellectual life.
+
+
+
+8
+
+
+
+Executive Summary
+
+
+
+As we begin to understand the impact that the internet has on our mental and emotional health, the Gilgamesh team believes that society will begin to see technology-driven resources for people to earn both instant and delayed gratification. Social media has driven people to consume information unlike ever before both in quantity and quality but the result is not always a happier, more intelligent population.
+
+A national survey of 1,787 young adults found that those using at least seven of the eleven most popular social media platforms (Facebook, YouTube, Twitter, Google Plus, Instagram, Snapchat, Reddit, Tumblr, Pinterest, Vine, and LinkedIn) had a higher risk of depression and anxiety than those who used up to two, or no social platform.1 Compounded with depression, the high levels of constant multitasking required to maintain social media accounts and consume all the articles, videos, and images, has influenced people's ability to focus, which in turn directly impacts self-control and intelligence.
+
+In today's content driven society, self-directed education has been cast aside. The criticism of millennials is often that they have "surface level knowledge about many things but no real knowledge about anything" which rings true much more universally through generations than just millennials. According to "Book market in the U.S." by Statista, 80% of adults aged 18-29 reported reading at least one book in the past 12 months, compared to 73% of adults aged 30-49, 70% of adults aged 50-64, and 67% of adults aged 65+.2
+
+Understanding that adults aged 18-29 are more likely to be enrolled in colleges or universities than their older counterparts, it is safe to say that approximately 70% of adults self-direct reading each year. The creators of the Gilgamesh platform believe that when you start to read and experience the delayed gratification from completing a novel, or understanding a subject more fully, you will be more likely to read more often. The Gilgamesh social platform will create a space to congregate, discuss, and discover new topics and books you would never have before. Based on the trend toward consuming information, the team that created the Gilgamesh platform knows that people want to have information, however, they are only exposed to limited content on each subject. The Gilgamesh platform will engage users to investigate further, gain more knowledge, and share with their peers.
+
+In addition to overcoming the challenges that quick content presents, the Gilgamesh platform creators have identified a second barrier to knowledge: the publishing industry. Essentially, publishers are the middleman between authors and readers, and as such, are in control of both the market and authors. In the current landscape, a few powerful publishers
+
+
+
+9
+
+
+
+Executive Summary
+
+
+
+control access to the industry which primarily impacts authors, who rely on publishers to oversee the design, edit, and marketing of their book. Unfortunately, publishing companies abuse their power in the market and take advantage of authors, as exemplified by the term set forth in the "standard" publishing contract. Standard Book Contract
+
+Publisher Rights Ownership of manuscript, whether it is published or not
+
+Automatic consideration of next work over all other publishers
+
+Postpone review of second manuscript until after the first manuscript is published Settle lawsuits on behalf of the client Charge settlement fee for lawsuits back to author Full control of book or dust jacket cover Author Rights None Royalties Publisher negotiates discounts on the cover price, cutting the author's royalty Fixed percentage, even if the version sold is an eBook or softcover that costs less to produce than the original hardcover
+
+
+
+Although the internet itself serves as an outlet for open content, it is not safe or protected. Authors can publish online and share their book with readers, however, it can easily be reproduced or plagiarized with no protection to the original author. Additionally, publishing to the internet does not allow for anonymity for the author like the Ethereum network and IPFS can provide. Since Blockchain based technologies such as Ethereum network and IPFS are decentralized and distributed therefore cannot be hacked or broken, authors of controversial publications can rest easy in anonymity.
+
+
+
+10
+
+
+
+Executive Summary
+
+
+
+Fig. 1.1 Disconnected Book Industry Influencers
+
+The graphic above identifies a key problem in book industry: the barriers of communication and access between authors, service providers, and readers as established by the publishing industry. In order to maintain control of the publishing process from beginning to end, it is imperative for publishers to keep the authors separated from the service providers, and control what books go to publication and how those books are marketed to the public.
+
+In general the publishing industry is nothing more than a middleman that overcomplicates the process, infringes on authors' rights, and takes advantage of the power they hold in the market. Not only are publishers limiting who can distribute content by choosing established authors over new authors, or successful authors over less successful authors, it also does not financially or legally support the author. Authors typically receive between 6-10% of the "net" profit on each book sold. The "net" is calculated after a publisher discounts a book to wholesalers and retailers which is anywhere between 4060%, so on average, a cover price of $30 earns the author between $0.90-$1.50 per sale. Even a "very good sale" of 3,000 copies, will only earn authors $2,700-$4,500 or less, after all the other dubious publishing practices like payment terms of 90-120 days, full refunds to retailers for unsold books (that is charged entirely to the author), and the right for retailers to hold 20% of the profits from royalty payments as insurance to cover the cost of returns.3 Additional legal complications and one-sided contracts can further diminish the return that the author receives, which is actively driving writers away from writing and into other fields where they can make a stable income.
+
+
+
+11
+
+
+
+Executive Summary
+
+
+
+In recent years, self-publishing has become more popular, however, there are various financial and logistical challenges that authors who self-publish face including start up revenue to pay editors, layout designers, jacket cover illustrators, and legal fees; commission to the websites that sell the book; and marketing to the readers and buyers.
+
+
+
+1.3 Vision
+
+The Gilgamesh philosophy is to propel the human race forward through peer-to-peer learning and open dialogue. Stripped down, books can act as mentors that guide people to solutions, innovative thinking, and personal advancement. The Gilgamesh platform was created to encourage readers to consume better, more complete content, to engage with other readers, and create a fair market for authors, readers, and platform participants. The Gilgamesh platform will engage a native and flexible utility token that is unique to the platform by using the Ethereum ERC20 standard token which users will earn on the platform and spend on goods and services offered, or voting on the future of the platform. Users will earn tokens for actively participating in the platform through social engagement, creating useful content, or providing a service. The tokens earned can be saved to earn governing influence on the platform, purchase books, audio books, eBooks, or publishing services.
+
+Authors in particular will benefit from the Gilgamesh platform because each token earned can be spent on platform publishing services, advertising, etc., or donating to charity. The platform will also serve to connect authors with book designers, copy editors, distributors, copyright lawyers, and printing service providers who can be paid through the platform using Gilgamesh tokens.
+
+Use of the Ethereum network & IPFS allows the Gilgamesh platform to securely store critical information such as user information, token distribution, and book files on the blockchain. Since the blockchain is based on cryptographic hash, decentralized and protected against hackers and corporate oversight, the platform will be a truly censorshipfree, safe, and permanent solution for authors, writers, and readers to exercise freedom of speech, and disperse and consume information in a self-sustaining ecosystem. Additionally, Staking GIL tokens on the Gilgamesh platform to propose features for the platform will ensure governance. Since the platform is a fair market exchange, each tokenholder retains voting rights for governance over changes to the platform. Using smart
+
+
+
+12
+
+
+
+Executive Summary
+
+
+
+contracts, the Ethereum network protects each token-holder's right to vote and propose platform changes, and maintains the token-holder's position in the ecosystem.
+
+We believe that knowledge is powerful, and like the instant gratification that people get from social media, can become addicting on its own. When people fully engage with books they learn new things, overcome mental or personal challenges, and enjoy life more than those who are fixed on the screen.
+
+The Gilgamesh platform will serve as an open market to find, buy, review, and discuss books which will directly influence the book industry. Authors will be able to publish and receive the full financial benefit of their sales with the platform, which will bring new authors into the market, and influence the way people consume books.
+
+By adding the social aspect, the platform will grow organically as users work to establish a valuable position on the platform through engagement with the platform and other users. Gilgamesh's governance by token-holders will also provide an incentive to users to interact more often and more effectively with the platform to earn more influence on the development and advancement of the platform.
+
+The Gilgamesh platform is designed for avid readers, sometimes readers, and new readers. The goal is to create a social connection within a fair market economy that lets people create their own opportunities for success doing something they love in order to be happier, more intelligent people.
+
+
+
+1.4 Mission
+
+To create a secure and engaging knowledge sharing social platform that helps readers connect socially with other readers and authors in a fun and interactive way and benefits readers, authors, and self-publishing service providers by removing the gatekeeping publishers from the book industry. The Gilgamesh platform will give more authors access to publishing services, connect self-publishing service providers to serious job opportunities, and open the market for readers to drive the success of books and authors through social influence.
+
+
+
+13
+
+
+
+Executive Summary
+
+
+
+Fig. 1.2 Connecting Book Industry Influencers on the Gilgamesh Platform
+
+
+
+2 Application Platform
+
+The Gilgamesh platform will be introduced in two phases. Phase one will deliver the IOS application for the social network platform for users to engage with one another by creating and sharing meaningful content; phase one will also provide an affiliate program to give users access to purchase books, eBooks, and audiobooks using GIL tokens. Phase two will introduce the self-publishing section of the platform that will give authors and service providers an outlet for safe, secure, and inexpensive book publishing.
+
+To ensure that the blockchain is intact and there is no censorship, the GIL Token service and API will be open sourced and available to the public.
+
+2.1 Platform Development Plan
+
+The Gilgamesh platform is not yet built. The best-practices process identified by the Gilgamesh team includes building web services, database design and development, batch jobs, scraping web pages, developing reporting tools, creation of token web services and Ethereum smart contracts, storing sensitive data on IPFS, IOS application development, Android app development, creation of a responsive website, and integration of a blockchain based payment system.
+
+Fig. 2.1 Platform Architecture Overview
+
+
+
+15
+
+
+
+Application Platform
+
+
+
+2.2 Gilgamesh Social Network Platform
+
+2.2.1 Economics and Engagement Flow User earn GIL tokens on the platform based on their contribution and as a result of the influence the contribution has on the platform. For example, users can write a review of a book to earn GIL, when other users "like" or share the review, the original poster will receive GIL token as a reward for creating quality content that engaged the platform users. Each contribution organically grows the Gilgamesh platform. Users can spend GIL tokens on books, or save GIL tokens for governance. Authors earn GIL tokens when they gain Fans, receive positive book reviews and a high star rating, and through book sales made through the platform. It is important for Authors to be actively engaged with their Fans to encourage reviews and book sales. Authors can spend GIL tokens on book advertisements on the platform or self-publishing services, such as copy editors, book layout designers, copyright lawyers, printing services, and distribution.
+
+2.2.2 Gilgamesh monetization strategy The Gilgamesh platform will earn revenue through three main resources:  advertisements by authors or service providers,  a service fee for services garnered between author and self-publishing service providers,  and commission from book, eBook, and audiobook purchases readers make on the platform.
+
+2.2.3 Governance Flow GIL token-holders consist of token purchasers who purchase GIL during the token sale, service providers, platform users (authors, readers, and critics), and the Gilgamesh team. All token-holders can stake tokens in the Gilgamesh platform to vote and propose new ideas, initiatives, or fee schedules on the Gilgamesh platform. As a result, the Gilgamesh platform will ultimately be designed based on the token-holder's vote.
+
+2.2.4 Blockchain The Ethereum blockchain allows running decentralized code and smart contracts. Smart contract technology will be used to create secure ERC20 tokens.
+
+
+
+16
+
+
+
+Application Platform
+
+
+
+IPFS which is based on distributed hash tables will be also used to store sensitive information in a distributed file system.
+
+
+
+2.3 Gilgamesh Platform Internal Architecture
+
+The Gilgamesh platform will be powered by the Ethereum network and IPFS, under which the GIL tokens will operate as directed by open sourced blockchain technology and smart contracts.
+
+The social network IOS and Android applications, mobile website, and desktop website will be available for readers, critics, and authors to start. These user-facing applications will utilize Experience Services for social interactions using a RESTful API, and node.js.
+
+The self-publishing IOS and Android applications will be available for authors and service providers. These user-facing applications will utilize Experience Services for selfpublishing using a RESTful API.
+
+The backend of the platform contains an internal dashboard with administration and reporting tools for the development team. The internal dashboard received information from a stack of services, including Business Logic which includes both Experience Services via the Gilgamesh microservice, java, and node.js, the Database Layer which includes the MongoDB, GraphDB, RDMS, batch jobs, and caches, and the Ethereum token service.
+
+Configuration Service, will be used to push notifications to the apps through socket connection. Experience Service consumes data model from back-end micro services and create a friendly view model for all user facing applications such as IOS app, Android App, and mobile website.
+
+The experience service's role is to move the logic from each front-end app to the service, which will result in writing less logic in the front-end and move the business logic and complexity to the service.
+
+Gilgamesh platform services are all broken down to small independent microservices. Microservices are small and modular services which are deployed independently and will communicate with other microservices.
+
+Batch jobs are script that run everyday to update database records with fresh content and ensures data consistency and integrity.
+
+
+
+17
+
+
+
+Application Platform
+
+
+
+Gilgamesh Token Services is an open service RESTful API which is used to make calls and transactions to the Ethereum network.
+
+IPFS is peer to peer hypermedia protocol and a cryptographic hash that will be used to store critical information such as book files and user information, IPFS is a great match for blockchain based software, we can store large amount of data with IPFS and insert immutable IPFS link into the blockchain transactions or smart contract, this can secure and timestamp our content without having to put the data on the blockchain.
+
+
+
+Fig. 2.2 Internal Platform Architecture
+
+
+
+18
+
+
+
+Application Platform
+
+
+
+2.4 IOS Application Flow
+
+The Gilgamesh team engaged with designers to create mockups and prototypes of the Gilgamesh knowledge-sharing social app.
+
+
+
+Fig. 2.3 User Profile
+
+
+
+Fig. 2.4 Book Details
+
+
+
+Fig. # 2.5 Book Details: User Review
+
+
+
+Fig. # 2.6 User Feed
+
+
+
+Fig. # 2.7 User Feed: Just for You
+
+2.4.1 User Profile Each user has a User Profile that contains personal details and a custom username. All user information is protected on the blockchain. The Profile page gives users access to edit or change personal information and account settings, see Fans and Followers, and view earned GIL. The page also serves as a condensed version of the user's timeline by displaying books added by the user. From the Profile page, the user can access "Added Books" which displays the books the user has added to his timeline and user feed. The "User Reviews" tab is accessible on the User Profile and allows the user to view his own book reviews. The "Liked Books" tab displays which books the user has "liked" throughout the platform in the Explore section or on another user's feed. Finally, the "Bookmark" tab maintains each book that the user has saved throughout the platform in the Explore section or on another user's feed.
+
+
+
+20
+
+
+
+Application Platform
+
+
+
+2.4.2 Book Details Users can click on any book on the platform to view additional information. The Book Details page includes the cover, author, star rating, cover price, category, details, reviews, and related books. Users can "like", "bookmark", share to another social platform, or save the book from the Book Details page to their personal user profile and feed. A brief synopsis of the book is located within the "Details" tab on the Book Details page. Users can select the "...more" option to get a full synopsis. Additional information about the book including author biography, language, length, and publication year is also located on the "Details" tab. Users can see all the "Owners" of the book, "Ratings and Reviews", books in the Author's personal platform collection, and "People Who Own This Also Own" book suggestions by scrolling through the page. To write a review of a book, the user can access the "Review" tab on the Book Details page. This page will prompt the user to give the book a star rating out of 5 stars, title the review, and write a review.
+
+2.4.3 User Feed The User Feed is a continuous, scrollable page of activity that is generated by each individual user and the users he follows to create a history of posts and interactions. The User Feed features two tabs, the "Following" tab and the "You" tab. On the "Following" tab, users can view the platform interaction history, GIL rewards, comments, and "likes" for each user he follows. The various types of posts that a user can view include a "liked" book, book review, "liked" review, "added" book, or when a user starts to follow one or more other user. The "Following" tab also shows how many times the book was "Added" by users to their personal book collection and shows the overall star rating for the book featured. On the "You" tab, a user can view his own platform interaction history, GIL, comments, and "likes". When a user thoughtfully engages with the platform User Feed, the user will have the opportunity to earn GIL. Each contribution has the GIL token icon next to it to track and display the GIL earnings on that particular engagement. Users earn GIL in proportion to their contribution to the platform based on an established algorithm. The programmed algorithm will determine how many GIL the user earns for each activity.
+
+
+
+21
+
+
+
+Application Platform
+
+
+
+In the initial release version, Plato, the User Feed will generate passively through user activity, however, by the Shakespeare release, the platform will be more interactive and allow users to upload pictures, videos, quotes, summaries, or text that relate to a book or publication.
+
+2.4.4 Explore The Explore section of the platform is a place for users to scan a barcode or search for books, categories, and authors. There are two tabs on the Explore section, the "What's New" tab and the "Just for You" tab. In the "What's New" tab, users will have the option to "Explore in Categories" by selecting All Categories, Arts & Photography, Biographies & Memoirs, etc. The Categories are accessed by swiping to the left over the section icons to reveal more options. The "Hot New Releases" section is filled with newly released books that are gaining influence on the platform through "likes", reviews, and a high volume of users "adding" the book to his collection. The "Popular Authors" section is comprised of authors who have gained influence on the platform through adding books and gaining Fans. The "Featured Books" section is a place where authors can pay to advertise a book so that it appears on the "What's New" tab in the Explore section of the application. In the "Just for You" tab, users will find a list of "Popular Authors" and "Books you may like", based on reading and engagement history. Under each of the featured "Popular Authors" the user can view the name, number of books, and number of Fans the author has on the platform.
+
+
+
+2.5 Gilgamesh Self-Publishing Platform
+
+2.5.1 IOS Application Release The Gilgamesh Self-Publishing Platform, or Phase Two, will be released in the 4th Quarter of 2018. The self-publishing platform, powered by the Ethereum network and IPFS, will transform the application platform from a social media network to an industry-changing resource for authors and service providers.
+
+
+
+22
+
+
+
+Application Platform
+
+
+
+2.5.2 IOS Application Basic Flow At the highest level, the self-publishing platform will allow for the transfer of GIL between authors and self-publishing service providers and will act as a token earning source for the Gilgamesh platform. Self-publishing service providers include: book designers, copy editors, distributors, book printers, and marketers, who advertise their services on the platform to make valuable connections and earn GIL as income.
+
+
+
+Fig. 2.8 Service Providers on the Gilgamesh Platform
+
+The Gilgamesh Platform also helps authors publishing their books with the following services: eBook creation, eBook distribution, registering your manuscript with United States copyright office and place ads on Gilgamesh search pages.
+
+Each transaction between an author and service provider will result in a service fee, collected in GIL tokens, that will be asked to the service providers based on a percentage of income earned on the platform. Income earned on the platform can be used to be spend on development of the platform as decided by the governance. At the end of a contract between the author and service provider, each party will be asked to rate the experience working with one another for accountability and to give insight to future users who engage with an author or service provider.
+
+
+
+23
+
+
+
+Application Platform
+
+
+
+Authors and service providers can earn GIL on the social network platform to use for service fees, advertisements, to pay for services, or to gain influence in the governance of the platform.
+
+
+
+3 Token Platform
+
+The Gilgamesh Platform will operate as an independent ecosystem that uses Gilgamesh Token (GIL) as a utility token, an ERC20 token standard based on the Ethereum Network.
+
+3.1 Why Ethereum Network and IPFS?
+
+Ethereum and IPFS are decentralized networks based on open source Blockchain technology. The Ethereum Virtual machine makes it possible for users to deploy smart contracts (stateful applications) on the network. These smart contracts are self-enforcing, meaning that they will run exactly as pre-programmed, without the ability of manipulation or censorship. Smart contracts are cryptographically secure and can verify or enforce performance of the contract.
+
+The Gilgamesh platform creators have chosen the Ethereum token because it is failsafe, secure, and immutable. The Ethereum network and IPFS does not have a central point of failure and is secured using cryptographic algorithms so the platform will be protected against hackers and fraudulent activities.
+
+Other benefits of the use of an Ethereum token on the platform is that there are minimal infrastructure and platform costs associated with the Ethereum network, the platform can reward users in micropayments (10^-18 GIL), and all transaction are instant.
+
+The Ethereum network and IPFS makes the process of creating blockchain applications much easier and more efficient than ever before by removing the middleman, overhead, and complexity. Also, because the blockchain is established through the Ethereum network and IPFS, developers can focus on the application layer to create a more refined user experience.
+
+3.2 Governance
+
+The GIL token is a utility token that is distributed as an incentive for all users to participate and grow the ecosystem, including token holders, the Gilgamesh team, readers, critics, authors, and marketplace service providers. In the first year, the Gilgamesh platform will be established as a social network for readers and authors to connect and share knowledge, and eventually will serve as a resource for authors to self-publish using service providers
+
+
+
+25
+
+
+
+Token Platform
+
+
+
+on the platform. The GIL can be used to make purchases, engage service providers, and pay platform fees; or, the GIL can be retained by the user to gain voting rights on the governance of the platform.
+
+The Gilgamesh token, or GIL, represents influence on the platform, and will primarily earn influence for users and participants in the governing process. Each user will receive and disburse GIL in correlation with their level of participation as defined by the smart contract.
+
+The platform utilizes the GIL token to create a fair market economy where all token holders can vote on and propose: future application and development features, addition or removal of service providers, token value for user activities, etc. Essentially making each token holder an influencer in the platform in an amount that is directly proportionate to their participation. To organize and maintain a censorship-free and fair voting process, and protect each user's influence during quarterly votes, users will "lock-in" or stake tokens until the voting period ends or consensus is reached. During voting, users will be unable to spend tokens that are "locked".
+
+
+
+3.3 GIL Token Market
+
+3.3.1 How to earn GIL? There are three different user-types: reader/critic, author, and service provider. Each usertype can engage with the platform as more than one user-type, however, the ways to earn or use GIL are uniquely defined based on how the platform is used. Readers/Critics, Authors, and Service Providers earn through Social, Constructive, or Growth user engagements:
+
+
+
+Write a review or summary of a book User likes your review User comments on your review Gain new follower(s) User likes your profile page User likes your activity User comments on your activity
+
+
+
+Flagging spam activity Inviting friends to the platform Follower buys a book you recommend Provide a self-publishing service Receive positive reviews (Authors) Sell a book on the platform (Authors) Purchase a book on the platform
+
+
+
+26
+
+
+
+Token Platform
+
+
+
+3.3.2 How to spend GIL?
+
+
+
+Purchase a book, audio, or eBook Advertise (Service Providers) Advertise (Authors) Pay a critic to write a review (Author) Advertise a book Hire a copywriter Hire an editor
+
+
+
+Publish a book on the blockchain Legal advice for publishing & copyright Pay platform fees Hire a book designer Hire a printer Hire a book distributor Hire a marketer
+
+
+
+4 Token Sale
+
+4.1 GIL Token Distribution
+
+The GIL Token is a utility token meant to be used only on Gilgamesh Platform and it should not be used for investment, GIL Token is an incentive to boost user engagement, grow the platform organically, raise capital, and create a fair market economy. The GIL Token also represents Governance of the platform, and will give token-holders voting power over platform decisions.
+
+Token Sale Purchasers: 25% Skiral Inc. will utilize a token sale campaign to raise money for the development of Gilgamesh Platform. Token sale purchasers can gain influence in the governance of the Gilgamesh platform, spend tokens on the platform on goods and services, or maintain their initial status to vote and influence the Gilgamesh platform for future features and changes.
+
+Founders: 20% The Gilgamesh platform will be built by a core team of developers and programmers over the course of several years. To reward past work and stimulate progress, the founders and early contributors will be given GIL Tokens as a reward and to acquire governance power over the platform.
+
+Founders will receive GIL tokens over a 24-months vesting period with a 6-month cliff which means founders will mature 25% of their GIL tokens every 6 months.
+
+Early contributors & Advisors: 5% Early contributors will receive GIL tokens over a 6-month vesting period with a 3-month cliff, which means early contributors mature 50% of GIL tokens at the end of the third month and the remaining 50% at the end of the sixth month.
+
+Advisors will receive GIL tokens over a 1-year vesting period with a 6-month cliff which means advisors will mature 50% of their GIL tokens every 6 months.
+
+
+
+28
+
+
+
+Token Sale
+
+
+
+Retained by Gilgamesh: 20% The GIL Tokens will initially be locked and withheld for 18 months after the token sale from the platform and disbursed slowly for future growth and to sustain the GIL ecosystem through platform operations, research and development, and product discovery and expansion.
+
+Users in the Gilgamesh Platform: 30% GIL tokens will be retained for distribution to users based on productive contributions to the platform. however, every year 5% of tokens will be injected to the platform for 6 years, afterwards it's expected that Gilgamesh Platform earns enough tokens to pay GIL tokens for platform users. The tokens can be used to buy goods or services such as books or publishing services on the platform or can be held by users for voting power to govern the platform.
+
+4.1.1 GIL Token Value and Sustainability Once the platform is established, Skiral, Inc. will engage with the ecosystem by repurchasing GIL tokens and using those tokens to reward users on the platform. The goal is to foster a system where participants can earn GIL to 1) gain voting rights in the Gilgamesh platform, 2) purchase services or commodities through the marketplace, 3) for readers, earn token for their fair contribution. Users who choose to hold tokens for voting power and influence will be rewarded with "bonus" or incentive tokens for their activity and participation.
+
+4.1.2 Legal Considerations GIL Tokens are non-refundable utility tokens on the Gilgamesh platform. The GIL Token is not guaranteed to hold any inherent or future value. GIL token holders do not represent any value or position in Skiral, Inc. company. GIL tokens are not securities and there is no promise whatsoever that GIL token will hold any particular value. GIL tokens should not be used for investment purposes.
+
+
+
+5 Roadmap
+
+5.1 Key Activities and Partnership
+
+5.1.1 Finances Funds received from token purchasers will be used according to the chart below.
+
+Fig. 5.1 Funding Breakdown: Use of Token Sales Proceeds
+
+5.2 Use of Sales Proceeds
+
+5.2.1 Platform Development Platform development includes building web services, database design and development, batch jobs, scraping webpages, reporting tools, token web services and Ethereum smart contract integration, IOS app development, Android app development, responsive website development, and blockchain based payment system integration.
+
+5.2.2 Marketing and Business Development Business development will primarily focus on working with and integrating with third party companies to sell and ship books, develop analytics and tracking methods, and secure service providers for the self-publishing platform. Marketing will primarily focus on increasing general awareness and knowledge of the Gilgamesh platform to potential customers, service providers, and users.
+
+
+
+30
+
+
+
+Roadmap
+
+
+
+5.2.3 Administration Administration consists of general services required to operate a business including legal, accounting, contracted services, and security costs.
+
+
+
+5.3 Development Roadmap
+
+The Gilgamesh platform has been in early development and planning stages for the last 90 days. In that time, the team designed the front-facing elements of the social network platform for Phase One, architected and developed the core of the IOS application and developed registration, and profile modules. As the token sale begins, the team is focused on developing the Gilgamesh platform web services and IOS development for the upcoming release.
+
+
+
+5.4 Major Release Overview
+
+5.4.1 V1. Plato Plato is the earliest version of the IOS application that will be released to the public. The application will build the social network to include all social features and ERC20 token integration.
+
+5.4.2 V2. Shakespeare Shakespeare will expand the Gilgamesh IOS application with new features, including book collections, chat and messaging, user-created book summaries, extract quotes feature, additional posting features (user can add images, quotes, text), allowing users to post quotes, pictures, videos on their timeline, purchase books in app, and preview a synopsis or excerpt from a book.
+
+5.4.3 V3. Homer Homer will integrate the self-publishing platform to the Gilgamesh application. Users can connect with service providers to publish books, market books, and distribute books, essentially removing the middleman.
+
+
+
+31
+
+
+
+Roadmap
+
+
+
+5.5 2nd Quarter  2018
+
+5.5.1 V1. Plato  Research & Development, Alpha Release Steps taken to achieve V1. Plato - Alpha:  Development and design of IOS application  Service architecture and development  Database design and development
+
+Prior to its release to the general public, the Gilgamesh platform will be launched privately to a selected group of readers and authors to help the team identify and fix bugs, test the platform with real users, and prepare the team for release to the public.
+
+5.5.2 V3. Homer  Research and Development Research and development for self-publishing platform  Identify how service providers use and work within the platform  Identify potential obstacles team will face during Homer development  Work with service providers to understand how each service brings value to self-publishing
+
+
+
+5.5.3 Team Expansion Steps taken to achieve Team Expansion:  Establish hiring guidelines, benefits, pay structure  Determine growth plan for when to add new associates and which roles are required  Hire engineers, designers, legal, and marketing roles based on growth plan
+
+5.6 3rd Quarter  2018
+
+5.6.1 V1. Plato - Beta Release The Beta version of Plato is the first release of the Gilgamesh platform to public users by "invitation only". This is the first release that includes the ERC20 Token integration (GIL) to incentivize users by earning tokens for contributing to the platform.
+
+
+
+32
+
+
+
+Roadmap
+
+
+
+5.6.2 V3. Homer - Planning and Design During the 3rd Quarter of 2018, the Gilgamesh team will begin planning and design for the V3. Homer Release. The team will identify a final strategy to remove the middleman and pave the road for self-publishing. Mockups and IOS flow will be created.
+
+
+
+5.7 4th Quarter  2018
+
+5.7.1 V1. Plato - Release The Gilgamesh platform will be made available in the App Store to the general public. The IOS social network will include integrated token functionality. This release will mark the release of the first ever knowledge based social network platform that will enable readers and authors to socially connect and earn rewards (GIL) that is based on the Ethereum network and IPFS.
+
+5.7.2 V3. Homer - Development The Homer version will go through end-to-end development including:
+
+ Develop services and APIs  Develop iOS application  Design application and webpages
+
+
+
+5.8 1st Quarter  2019
+
+5.8.1 V1. Plato - Fixes After testing the social network platform with users, the Gilgamesh team will release a version update to fix any bugs, improve scalability, and introduce new features and enhancements.
+
+5.8.2 V2. Shakespeare - Beta Release The Shakespeare release will introduce book collections, live chat and messaging, and integrate advertisements (for books) into the application platform to users by invitation only.
+
+5.8.3 V3. Homer - Alpha Release Prior to its release to the general public, the Homer version of the Gilgamesh platform will be launched privately to a select group of authors and service providers to help the team
+
+
+
+33
+
+
+
+Roadmap
+
+
+
+identify and fix bugs, test the platform with real users, and prepare the team for release to the public.
+
+
+
+5.9 2nd Quarter  2019
+
+5.9.1 V2. Shakespeare - Release Once the Shakespeare - Beta version has been tested by select users, the Gilgamesh team will release the official version to the public. The Shakespeare update will support in-app instant messaging, improve the Gilgamesh timeline and book screen by allowing users to post photos of books, share quotes, and add summaries of books to their user profile and feed.
+
+5.9.2 V.3 Homer - Beta Release The Beta version of Homer will open the self-publishing platform to public users by "invitation only" to assist the team with identifying security or performance bugs prior to its release to the open public.
+
+
+
+6 Company
+
+The Gilgamesh platform is conceived and developed by Skiral Inc., whose goal is to propel the human race forward and help people become more knowledgeable.
+
+6.1 Values
+
+ Knowledge is power.  Strive to advance the human race in everything we do.  People who seek knowledge are happier than people who rest on their laurels.  Create opportunities to turn hobbies into economically sound income.
+
+6.2 Our Team
+
+Mahdi Pedramrazi, Founder & Software Architect Entrepreneur, Software Architect, Full Stack Software Engineer, UI Architect, and Ethereum Smart Contract Developer with over 10 years of experience in software development and front-end technologies. Main Architect, and engineer of many complex enterprise level web applications, and single page applications. Mahdi is obsessed with writing clean and extensible code, building blockchain-based applications and distributed systems to push the humanity forward.
+
+Atefe Mosayebi, Software Engineer & Project Manager Atefe is passionate about building great software and applying technology to improve humanity. She is experienced in software design and development and has a solid foundation in computer science, algorithms, data structures, and software design and relational databases and SQL development. Her interests include cryptocurrency and blockchain technology, large-scale distributed systems, and web applications.
+
+
+
+35
+
+
+
+Conclusion
+
+
+
+7 Conclusion
+
+Skiral Inc. is proposing the development of the Gilgamesh platform for knowledge-seekers, authors, and publishing service providers to progress peer-to-peer information sharing, improve publishing opportunities for authors, and provide an outlet for service providers to gain clients. Token holders in the Gilgamesh platform will have the opportunity to gain early access to the governance of the platform through staking GIL token. In the future, the Gilgamesh platform will upturn current publishing practices and provide authors with a resource for secure, protected, and income stabilizing publishing opportunities.
+
+The Gilgamesh platform is the first endeavor for Skiral Inc. to propel the human race forward. The application is a tool to encourage more people to take control of the information they consume, gain knowledge, learn new skills, and expand their interests. By creating the platform on the Ethereum network, IPFS, and utilizing the GIL token as an incentive, the Gilgamesh platform will organically become a fair market society that is governed by token-holders to build trust, security, and opportunity for anyone who wants to participate.
+
+
+
+8 References
+
+1 Zagorski, N. (2017, January 17). Using Many Social Media Platforms Linked With Depression, Anxiety Risk. Retrieved August 18, 2017, from http://psychnews.psychiatryonline.org/doi/full/10.1176/appi.pn.2017.1b16
+
+2 Book market in the U.S. (2017 ed., p. 32, Rep.). (2016). New York City, NY: Statistica, Inc.
+
+3 Fawcett, S. (n.d.). Book Publishing: The Problems With The Traditional Publishing Model. Retrieved August 18, 2017, from http://www.writinghelp-central.com/articletraditional-publishing.html
+
+
+
+

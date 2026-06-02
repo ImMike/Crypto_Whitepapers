@@ -1,0 +1,1703 @@
+A blockchain-based incentivized global health platform v0.8
+
+Dr. Mihaly Kertesz Viktor Tabori
+
+June 2017 Last updated Sept 2017
+
+The $ 7.6 trillion healthcare industry's new operating system
+
+Improving the lives of 1 billion people by making healthcare more transparent
+
+
+
+DISCLAIMERS
+
+This document is for informational purposes only and does not constitute an offer or solicitation to sell shares or securities in Etheal O or any related or associated company. Any such offer or solicitation will be made only by means of a confidential offering memorandum and in accordance with the terms of all applicable securities and other laws.
+
+The information set forth in this White Paper may not be exhaustive and does not imply any elements of a contractual relationship. The content of this White Paper is not binding for Etheal O ("Etheal Company" or "Etheal") and its affiliates and Etheal reserves the right to change, modify, add, or remove portions of this White Paper for any reason at any time before, during and after the sale of HEAL tokens by posting the amended White P aper o n t he website. This White Paper does not constitute an investment, legal, tax, regulatory, financial, accounting or other advice, and this White Paper is not intended to provide the sole basis for any evaluation of a transaction on acquiring of the HEAL tokens.
+
+Prior to acquiring the HEAL tokens, a prospective purchaser should consult with his/her own legal, investment, tax, accounting, and other advisors to determine the p otential benefits, b urdens, a nd o ther consequences of such transaction. Nothing in this White Paper shall be deemed to constitute a prospectus of any sort or a solicitation for investment, nor does it in any way pertain to an offering or a solicitation of an offer to buy any securities in any jurisdiction. This document is not composed in accordance with, and is not subject to, laws or regulations of any jurisdiction which prohibits or in any manner restricts transactions in respect of, or w ith use o f, d igital t okens. The HEAL token is not a digital currency, security, commodity, or any other kind of financial instrument and has not been registered under the Securities Act of 1933, the securities laws of any state of the United States of America or the securities laws of any other country, i ncluding the s ecurities laws o f any jurisdiction in w hich a p otential t oken h older is a resident.
+
+The HEAL tokens are not being offered or distributed to, as well as can not be resold or otherwise alienated by their holders to, citizens of, natural and legal persons, having their habitual residence, location or their seat of incorporation in the country or territory where transactions with digital tokens are prohibited or in any manner restricted by applicable laws or regulations. If such restricted person purchases the HEAL tokens, such restricted person has done so on an unlawful, unauthorized and fraudulent basis and in this regard shall b ear negative c onsequences. Etheal neither offers or distributes the HEAL tokens nor carries on a business (activity) in any regulated activity in countries and territories where transactions in respect of, or with use of, digital tokens fall under the restrictive regulations o r require f rom Etheal to be r egistered or l icensed with any applicable governmental authorities.
+
+Each purchaser of the HEAL tokens is reminded that this White Paper has been presented to him/her on the basis that he/she is a person into whose attention the document may be lawfully presented in accordance with the laws of the purchaser's jurisdiction. It is the responsibility of each potential purchaser of the HEAL tokens to determine if the purchaser can legally purchase the HEAL tokens in the purchaser's j urisdiction a nd whether t he purchaser can then r esell t he HEAL tokens t o a nother purchaser in any given j urisdiction. Certain statements, estimates and financial information contained in this White Paper constitute forward-looking statements or information. Such forward-looking statements or information involve known and unknown risks and uncertainties which may cause actual events or results to differ materially from the estimates or the results implied or expressed in such forward-looking statements or i nformation.
+
+The English language White Paper is the primary official source of information about the project. The information contained in English language White Paper may from time to time be translated into other languages. In the course of such translation some of the information contained in the English language White Paper may be lost, corrupted or misrepresented. The accuracy of such alternative communications cannot be guaranteed. In the event of any conflicts or inconsistencies between such translations and the official English language W hite P aper, t he provisions of t he E nglish language o riginal d ocument shall prevail.
+
+1
+
+
+
+Executive Summary
+
+
+
+4
+
+
+
+1. Opportunity
+
+
+
+11
+
+
+
+2. Challenges of patients: difficulty finding trusted and affordable care providers when prices are increasing
+
+
+
+rapidly, inability to find the appropriate treatment for a symptom, and three-month long waiting lists
+
+
+
+13
+
+
+
+2.1. Difficulty finding trusted and affordable care providers in a new city or abroad, who will either accept Peter's
+
+
+
+insurance or whom he can afford to pay out of pocket. This is made more difficult by dramatically rising prices,
+
+
+
+eg. in two years, the cost of a hip replacement has risen from $28k to $78k.
+
+
+
+13
+
+
+
+2.2. Inability to find the appropriate specialist to successfully treat a given symptom or illness
+
+
+
+14
+
+
+
+2.3. Three-month long waiting list for a treatment you know you need.
+
+
+
+15
+
+
+
+3. Challenges of care providers: reaching relevant patients and building trust is hard and expensive, they
+
+
+
+don't own their reputation, they can't transfer it, and they can't keep up with and utilize technological
+
+
+
+advancements
+
+
+
+17
+
+
+
+3.1. Reaching relevant patients is extremely expensive and hard.
+
+
+
+17
+
+
+
+3.2. Building trust is exhausting, it takes a lot of time and money, and the reputation isn't transferrable.
+
+
+
+Physicians have no upfront knowledge about their patients.
+
+
+
+18
+
+
+
+3.3. Technology is advancing rapidly, it is impossible to take full advantage of it while also practicing as a
+
+
+
+medical professional.
+
+
+
+19
+
+
+
+4. Challenges of suppliers, pharmaceutical companies: reaching patients and care providers globally is
+
+
+
+expensive, serving niche markets fragmented by physical borders is economically impossible
+
+
+
+20
+
+
+
+4.1. Reaching patients globally is difficult and expensive: gaining insights from patients from multiple countries
+
+
+
+requires multiple research firms, increasing costs and management overhead.
+
+
+
+20
+
+
+
+4.2. Reaching care providers globally: Medical Sales Representatives are slow and expensive.
+
+
+
+20
+
+
+
+4.3. Niche markets fragmented by state borders are not served. When not enough patients with a rare disease
+
+
+
+are present in one region, progress is hindered.
+
+
+
+21
+
+
+
+5. Etheal Ecosystem
+
+
+
+22
+
+
+
+5.1. Phase One: history of Etheal and Doklist.com
+
+
+
+22
+
+
+
+5.1.1 Doklist.com
+
+
+
+22
+
+
+
+5.1.2 Award-winning projects of Deloitte. Tech Fast 50 CEE #1 and Golden Effie Awards
+
+
+
+23
+
+
+
+5.1.3 Business Model validation
+
+
+
+24
+
+
+
+5.2. Blockchain: the missing ingredient to a killer strategy
+
+
+
+25
+
+
+
+5.3. Etheal Architecture plan, smart contracts, workflows
+
+
+
+27
+
+
+
+5.3.1. Quality supply of medical info: blockchain-based incentivized global doctor list and content platform,
+
+
+
+helping patients save $7,000-$50,000 on elective care.
+
+
+
+29
+
+
+
+5.3.1.1 KPIs measuring and promoting good behavior
+
+
+
+29
+
+
+
+5.3.1.1.1 Etheal Trust Score (ETS)
+
+
+
+29
+
+
+
+5.3.1.1.2 Etheal Rank Score (ERS)
+
+
+
+30
+
+
+
+5.3.1.1.3 Etheal Level
+
+
+
+31
+
+
+
+5.3.1.1.4 Etheal Raw Level
+
+
+
+31
+
+
+
+5.3.1.1.5 Etheal Highlight Rank
+
+
+
+32
+
+
+
+5.3.1.2 Fair and transparent fund structure to reward contributors developing the ecosystem
+
+
+
+32
+
+
+
+5.3.1.2.1 Community Fund
+
+
+
+32
+
+
+
+5.3.1.2.2 Weekly Contribution Endowment Fund
+
+
+
+32
+
+
+
+5.3.1.2.2 Etheal Operation Fund
+
+
+
+33
+
+
+
+5.3.1.3 Purpose: Charity Fund
+
+
+
+33
+
+
+
+2
+
+
+
+5.3.2. Universal review system: smart contract driven, transparent, translatable, transferable and seamlessly
+
+
+
+embeddable healthcare trust and review system
+
+
+
+34
+
+
+
+5.3.2.1 Transferable reviews handled by Smart Contracts and Blockchain
+
+
+
+34
+
+
+
+5.3.2.2 PoC Translatable reviews to any language
+
+
+
+35
+
+
+
+5.3.2.3 Embeddable reviews
+
+
+
+36
+
+
+
+5.3.2.4 Workflows of reviews and content moderation
+
+
+
+37
+
+
+
+5.3.3. Open decentralized health platform: UX friendly global blockchain-based distributed platform, where
+
+
+
+anonymously reaching patients and healthcare providers will be 8x cheaper and 14,400x faster
+
+
+
+39
+
+
+
+5.3.3.1. Doklist
+
+
+
+40
+
+
+
+5.3.3.2. Medical Tourism App
+
+
+
+40
+
+
+
+5.3.3.2.1. Information
+
+
+
+41
+
+
+
+5.3.3.2.2. Promotion
+
+
+
+41
+
+
+
+5.3.3.2.3. Risk, Trust, Reviews
+
+
+
+41
+
+
+
+5.3.3.3. AI-driven self-learning chatbot for Practice Management
+
+
+
+43
+
+
+
+5.3.3.4. Pharmaceutical Surveys, Communication Research and Advertisement App
+
+
+
+44
+
+
+
+5.3.3.5. Healthcare Fundraising Platform
+
+
+
+44
+
+
+
+5.3.3.6. Your very own Etheal Application
+
+
+
+45
+
+
+
+5.4 Roadmap
+
+
+
+45
+
+
+
+5.4.1 Phase Two: expansion through a decentralized smart-contract-driven incentivized portal, which helps
+
+
+
+find trusted care providers based on treated symptoms and performed procedures around the world
+
+
+
+45
+
+
+
+5.4.2. Phase Three: blockchain-based decentralized platform, serving the $8,600 billion healthcare market46
+
+
+
+5.4.3. Phase Four: maintaining and growing the decentralized Etheal Platform
+
+
+
+46
+
+
+
+6. HEAL Token
+
+
+
+47
+
+
+
+6.1. Why do we need a dedicated token?
+
+
+
+48
+
+
+
+6.2. What is the use of HEAL tokens?
+
+
+
+48
+
+
+
+6.3. How will Etheal create demand for HEAL tokens?
+
+
+
+49
+
+
+
+6.4. Token vesting
+
+
+
+50
+
+
+
+6.5. Community fund
+
+
+
+50
+
+
+
+7. Token Sale
+
+
+
+51
+
+
+
+7.1. Distribution
+
+
+
+51
+
+
+
+7.2. Token Sale One
+
+
+
+51
+
+
+
+7.2.1. Presale
+
+
+
+51
+
+
+
+7.2.2. Normal Sale
+
+
+
+51
+
+
+
+7.2.3. Whitelist
+
+
+
+52
+
+
+
+7.2.3. Referral reward
+
+
+
+53
+
+
+
+7.2.4. HODLER reward
+
+
+
+53
+
+
+
+7.2.5. Bounties
+
+
+
+53
+
+
+
+7.3. Token Sale Two
+
+
+
+54
+
+
+
+7.4. Token Sale Three
+
+
+
+54
+
+
+
+8. Team
+
+
+
+55
+
+
+
+References
+
+
+
+57
+
+
+
+3
+
+
+
+Executive Summary
+
+We are pursuing the opportunity to become the "Booking.com, Steemit and Salesforce of Healthcare" , with a model capable of generating $100B+ of potential revenue.
+
+Global healthcare expenditure is projected to reach $8,700 billion by 2020 [11], growing more than $300 billion annually. Additionally, according to Visa and Oxford Economics, medical tourism is expected to grow to $540 billion by 2025 with a staggering 25% CAGR [42].
+
+Despite the meteoric growth of the healthcare market, key players still face fundamental challenges:
+
+Patients
+
+Peter is like you or me. Eventually he has to go to see a medical professional - even though he would like to avoid it.
+
+1) Prices are increasing rapidly and finding an affordable and trusted care provider is hard: while settling in a new city or abroad it is challenging for Peter to find a care provider, who can either accept his insurance or is affordable enough for Peter to pay out of pocket.
+
+For example, Peter got a new right hip in 2008 for $ 28,000, just two years later the cost of his left hip replacement was $78,000 [18]. He feels completely powerless against such debilitating price rises and having to choose between paying astronomical prices for a procedure or staying injured.
+
+Even visiting those physicians recommended by Peter's friends is a gamble. After all, an average physician sees between 800-1000 patients each year, making it hard for any one person to provide an objective and realistic opinion for Peter to stake his health and wellbeing on.
+
+Peter also knows that he should get regular medical screenings, which would dramatically increase his life expectancy and quality of life. But in practice, the barrier to do so is extremely high: he doesn't know what screenings are relevant to him or which provider he should trust. To top it off,the actual process for
+
+4
+
+
+
+making an appointment is straight out of the 90s, forcing Peter call through a GSM or landline phone network.
+
+2) Not knowing who could treat a symptom or perform a specific treatment successfully. Even though Peter knows his symptoms, there is no easy way to find a specialist who has successfully treated that symptom in the past. Peter has to manually search through endless pages of Google search results and hope that he can find a clue towards solving his issue in some obscure forum.
+
+If his wife is endangered pregnant with twins, he won't settle for just any gynecologist; he will want a highly recommended gynecologist with a deep expertise in managing endangered pregnancies with twins.
+
+3) Three months-long waiting list for a treatment that Peter knows he needs. Peter has called the Sheba Medical Center - the Middle East's largest hospital, located near Tel Aviv, Israel - to inquire about having a growth on his kidney removed.
+
+Israel's state comptroller had recently issued a report on waiting times for hospital appointments and determined that it would take two or three months for a sixty-year-old Israeli to schedule an appointment for diagnostic work and treatment at Sheba. (The wait for an ear, nose, and throat operation at Nahariya's Medical Center of the Galilee, the government researchers concluded, was 1 3 months.) [31]
+
+Care providers
+
+Dr. John Parker is a dentist who tries to strike a balance between managing his practice and treating patients.
+
+1) Reaching relevant patients is extremely expensive and hard. Even though Dr. Parker's uncle created a basic website for him for free, getting relevant traffic through advertising on Facebook or Google quickly racks up substantial costs. What's more, big dental clinics with deeper pockets easily outbid him, even though Dr. Parker has far superior expertise in dental implantation, which is his specialty.
+
+For example, just 1 click from Google in New York for "dental implant" costs $10.
+
+5
+
+
+
+2) Building trust is exhausting, takes a lot of time and money, and the reputation isn't transferrable. Dr. Parker has no upfront knowledge about his patients. If Dr. Parker registers into a centralized online medical profile provider, and the website goes bankrupt, or John stops paying for the profile, he loses all the reviews and trust he has collected.
+
+Moreover, using such a platform, Dr. Parker will have no upfront knowledge about his patients and their appointment history. For example he won't know whether they will show up on time or not, and as there are no `late fees' or `no-show fees,' these delays bear a high economic cost in lost revenue.
+
+3) Technology is advancing rapidly; it is impossible to utilize it entirely while working full-time as a practicing dentist. Dr. Parker has no technical means to use new advancements like blockchains, chatbots, and AI, to dynamically open up new time slots in his calendar in times of increased demand. Nor can he manage his online presence in one place and broadcast fresh information - like his latest reviews and office hours - to multiple channels.
+
+Suppliers, pharmaceutical companies
+
+Kate works for a big pharmaceutical company as a business developer. She has trouble reaching patients and care providers globally, and her company is unable to serve physically fragmented niche markets.
+
+1) Reaching patients globally is difficult and expensive: Kate gains insights from patients around the world by working with several research and marketing firms, which dramatically increases costs.
+
+For every $1 that pharmaceutical companies spend on "basic research," an additional $19 goes toward communication research, marketing, and promotion, which is a $27B medical marketing industry in the USA alone [28].
+
+2) Reaching care providers globally is difficult and expensive: in some countries prescription drugs can only be advertised directly to physicians, forcing Kate to research and make deals with closed community websites for medical professionals in each country separately. She also employs Medical Sales Representatives to visit physicians in person, making this analog process both slow and costly.
+
+6
+
+
+
+3) Niche markets fragmented by state borders are not served. If Kate wants to address a global Orphan or Rare disease (which affects fewer than 200,000 people), where patients aren't concentrated in one geographical region, she will have a tough time collecting information about affected patients [32].
+
+Usually Kate would order a local research firm to conduct surveys, interviews, and communication research to support a business case for the new drug before any of the traditional R&D budget is spent [33]. Now she would need to involve 10+ research companies, with a subsequent increase in cost and project management resources that would render these projects infeasible. As a result, thousands of people are left suffering, even though theoretically Kate's company has the competency to develop the new drug.
+
+Etheal Ecosystem
+
+Etheal (pronounce thil, like at-heal) comes from the word "eithel," which means "w ell" in Sindarin.
+
+1) Blockchain-based incentivized global list of health professionals and content platform, helping patients save $7,000-$50,000 on elective care costs: patients will be able to search for and book specialists from around the world, indexed by their areas of focus and treatment methods, and peer-reviewed in their native language.
+
+Patients will be able to search for care providers in a snap - even abroad if needed - with information on where a specific treatment is done with great care and without a waiting list. They will be able to save $7,000-$50,000 on elective treatments performed in foreign countries that don't sacrifice quality of care [34]. Thanks to our global blockchain-based incentivized platform patients will have near-perfect information about global medical care providers.
+
+15% of any payment processed through Etheal will go to the Weekly Contributors Endowment Fund (WCEF), which is distributed back to patients and care providers contributing to the ecosystem on a weekly basis. The distribution ratio is based on the importance of the content they create and the positive feedback they get from trusted members of the community.
+
+Contributors will be able to automatically offer a portion of the tokens earned to charities and NGOs. They will also be able to display their donation preferences on their profile, which in turn will influence more people to donate.
+
+2) Smart contract driven, transparent, transferable and seamlessly embeddable trust and review system.
+
+The E theal Trust Score (ETS) will reflect the general reliability of a wallet address. The score is a combination of factors, including how early and well a
+
+7
+
+
+
+specific wallet address upvotes important and popular content and how much HEAL token the address owns.
+
+The idea for ETS is based on the "believability score" from Bridgewater Associates - the biggest and most successful hedge fund in the world. Compared to a democracy where the majority decides, or autocracy where a selected minority decides, the believability score fosters idea meritocracy by weighing the votes of how believable the voter is [41]. ETS will be used to weigh upvotes when calculating stakes for the Weekly Contribution Endowment Fund.
+
+The Etheal Rank Score (ERS) will reflect how much total value a user has generated in the ecosystem by, for example, writing useful content, showing up for appointments on time, or getting good reviews. The Etheal Rank will determine what special features an account has access to, like moderating disputes.
+
+Each transaction will be recorded in the blockchain with the address of the service provider and user, and encrypted details of the transaction. Both parties can write a review based on each transaction, and open a dispute when necessary. Resolving disputes without external intervention will be incentivized, but when necessary the issue will automatically be forwarded to a committee of moderators. Etheal Trust and Etheal Rank scores of all participants are updated automatically.
+
+Care providers will be able to embed their reviews easily to their personal website with a dedicated review widget and API.
+
+3) UX friendly global blockchain-based automated platform where patients and healthcare providers can be reached anonymously. Patients and care providers can opt-in and anonymously earn HEAL tokens by seeing and interacting with ads, surveys, and communication research paid for by pharmaceutical companies.
+
+Developers will also be able to develop applications on top of the Etheal Platform, similar to how Salesforce enables applications to integrate and run on top of their system.
+
+Current state Our current solution - a healthcare service comparison site - consists of 141 858 lines of code, and already serves more than 2.5M visits a year in two opposing poles of the globe (Brazil - Doklist.com.br and Hungary - Doklist.com). Expansion to Brazil and listing 380,000 care providers took only one month, where our CTO's preliminary estimate was three months.
+
+8
+
+
+
+Venture Capitalists have already realized and validated the business potential of online startups for physicians. For example, they have invested $223M real fiat dollars into Zocdoc [12], which provides online profiles to doctors in the US for a monthly fee of $300, and according to sources, has a churn-rate of around 50% [13]. We have also received two acquisition offers from our competitors, confirming that we are on the right path.
+
+Selling the proper utility HEAL token is the next step on our roadmap. You can now join our community and help us build a better healthcare system together. Our goals in the near future include expanding to 30 countries, moving the payment and incentivization layer to Ethereum, and ultimately building a platform where our current solution will be consolidated into one application.
+
+Other Etheal Platform Applications (EPA) are also in the plans, including a Medical Tourism App serving a $90B market [42], a free AI-driven chatbot a utomagically helping to manage online profiles of 2M physicians, a self-service tool for Pharmaceutical Surveys and Advertisement - since every $1 spent on R&D is accompanied by $19 marketing cost - and a Healthcare Fundraising Platform.
+
+The Etheal platform will be a global, unified healthcare ecosystem, open to developers, who will be rewarded and incentivized in proportion to the active user count of their apps.
+
+Business Model The strongest short-term growth driver will be M edical Tourism lead generation, where the market is predicted to grow to $540 billion by 2025 according to Oxford Economics and Visa.
+
+The second biggest growth driver will be pharmaceutical communication research and advertisement, which is a $ 27 billion market in the USA alone.
+
+Physicians will also be able t o bid to be included in the top 3 featured spots on search results, where in contrast to Google Adwords, their quality score is not dependent on how good of a website they have, but instead on the quality of service they provide. A doctor who provides excellent service, will have to pay less for the same featured spot.
+
+5% of all revenue generated through the Etheal Ecosystem will go to the Etheal Operation Fund to cover operating expenses, 1 5% will go to the Weekly Contribution Endowment Fund rewarding patients and care providers.
+
+9
+
+
+
+Most of the applications developed by us will be free, however, paid applications will use different models. For instance, pharmaceutical advertising is planned to be a revenue share model of 70%-30%, where users earn 70% and 30% goes to the Etheal Operation Fund.
+
+Roadmap
+
+Our goal is to build a decentralized, 2.0 version of our current successful solution, which is based on 141 858 lines of code and serves 2.5M visits a year. We have planned every step of our roadmap to maximize the value increase of the Etheal ecosystem in the shortest amount of time possible.
+
+First, we are focused on creating a decentralized incentivization and unified settlement layer in Ethereum. This will help us rapidly expand to 30 countries and increase the quality of our local doctor databases with automated smart contract driven incentives.
+
+Taking advantage of the blockchain-based incentive system and the resulting high-quality global database, we aim to quickly become a dominant player in rapidly growing markets (medical tourism and pharmaceutical communication research and advertisement), currently worth more than $117 billion globally.
+
+Opening up our platform to let anyone write an Etheal Application is the next step to grow the Etheal Ecosystem further.
+
+Finally, we will focus on the maintenance, development, and marketing of the Etheal platform for it to become the "B ooking.com, Steemit and Salesforce of Healthcare" , with a model capable of generating $100B+ of potential revenue.
+
+10
+
+
+
+1. Opportunity
+
+Thanks to developments in medicine, human life-expectancy is increasing, and global healthcare expenditure is projected to reach $8,700 billion by 2020 [11], growing more than $300 billion every year.
+
+Figure: Healthcare expenditure growth, source: Deloitte. [11]
+
+Traveling abroad for medical treatments is rising rapidly, and according to Oxford Economics and Visa it is projected to grow to $540 billion by 2025 with a 25% CAGR [42].
+
+Figure: medical tourism market is calculated to grow to $540 billion in 2025 by Visa and Oxford Economics [42] 11
+
+
+
+Despite the meteoric growth of the healthcare market, the digitalization and application of the latest technological developments in healthcare is lagging behind other sectors. Key stakeholders still face fundamental challenges, creating an opportunity vacuum. Venture Capitalists have already realized and validated the business potential of online startups for physicians. For example, they have invested $223M real fiat dollars into Zocdoc [12], which provides online profiles to doctors in the US for a monthly fee of $300, and according to sources, has a churn-rate of around 50% [13]. Priceline Group (including Booking.com) is the biggest online player in the global hotel industry, which made $10.64 billion in commission revenue in 2016 alone, by selling accommodations online [14]. Their current share-price is above $1,800 [15]. Since healthcare is 1 0 times bigger than the global hotel industry, we believe it is inevitable for a global player to emerge in the online healthcare market with a revenue of hundreds of billions of dollars. This is the opportunity we are pursuing.
+
+12
+
+
+
+2. Challenges of patients: difficulty finding trusted and affordable care providers when prices are increasing rapidly, inability to find the appropriate treatment for a symptom, and three-month long waiting lists
+
+Peter is like you or me. Eventually he has to go to see a medical professional - even though he would like to avoid it.
+
+2.1. Difficulty finding trusted and affordable care providers in a new city or abroad, who will either accept Peter's insurance or whom he can afford to pay out of pocket. This is made more difficult by dramatically rising prices, eg. in two years, the cost of a hip replacement has risen from $28k to $78k.
+
+Finding a trusted care provider is challenging: 1) In a new city or abroad: Even though Peter's friends may recommend a specific physician, they are only a few out of the 800-1000 patients treated by that physician every year, making it hard for any one person to provide an objective and realistic opinion for Peter to stake his health and wellbeing on.
+
+2) The current healthcare market is opaque. Prices can increase unexpectedly, and Peter can't easily gather trusted information about reliable alternatives, like cost-efficient care providers abroad.
+
+"I had my right hip replaced in 2008 at a clinic in Utah and the total fees to the insurance company were $28,000.
+
+I had my second hip resurfaced in Colorado in 2010 and the total fees to the insurance company were close to $ 78,000.
+
+I have had several friends do the Belgium clinic for hip replacements and they
+
+13
+
+
+
+have had good results.
+
+My belief is that politics and money are the biggest barrier to our healthcare system which worries me if the government (which is all about politics and money) is allowed to control the system." RW Richards, Boulder, USA, The New York Times [18]
+
+3) Lack of incentives and personalized information about preventive care: Peter may know, that regular medical screenings could dramatically increase his life expectancy and expected quality of life.
+
+In practice the barrier to go to regular screenings is extremely high: - While Peter is healthy, he has no incentive to go to screenings, but by the time he first experiences the symptoms of a severe disease, unfortunately it is probably too late - Peter doesn't know which specific test is relevant to him - Peter doesn't know which provider he can trust - the actual process for making an appointment is straight out of the 90s, forcing Peter call through a GSM or landline phone network
+
+Increased participation in colon cancer screenings could save 21,000 lives a year in the US alone [16].
+
+2.2. I nability to find the appropriate specialist to successfully treat a given symptom or illness
+
+1) When Peter has a symptom, like chronic fatigue, for example, he doesn't just need any physician, h e needs a specialist who has a long history of treating and healing patients with similar symptoms.
+
+In practice all Peter can do is - go from physician to physician and hope that eventually, someone can help - manually search through endless pages of Google search results, hoping that he'll find a clue towards solving the issue in some obscure forum
+
+2) When Peter is searching for a specific treatment for his wife who is endangered pregnant with twins, he won't settle for just any gynecologist; he will want a highly recommended gynecologist with a deep expertise in managing endangered pregnancies with twins.
+
+In practice all Peter can do is - ask friends to recommend a medical professional
+
+14
+
+
+
+- browse through endless pages of doctor profiles, and search for one that seems to be good at that specific treatment - make an emotional decision based on incomplete information and hope for the best
+
+2.3. Three-month long waiting list for a treatment you know you need.
+
+A reporter pretending to be a sixty-year-old Israeli has called the Sheba Medical Center - the Middle East's largest hospital, located near Tel Aviv, Israel - to inquire about having a growth on his kidney removed.
+
+Israel's state comptroller had recently issued a report on waiting times for hospital appointments and determined that it would take two or three months for a sixty-year-old Israeli to schedule an appointment for diagnostic work and treatment at Sheba. The wait for an ear, nose, and throat operation at Nahariya's Medical Center of the Galilee, the government researchers concluded, was 1 3 months. [31]
+
+Figure: Average waiting times for hip replacement [49]
+
+When Peter searches for an alternative solution online, he will probably run into the catchy marketing material of medical tourism agents claiming that Peter can enjoy a vacation and quality treatment together at a 60-70% discounted rate from his local options, even including travel expenses [34].
+
+It is not surprising then, that medical tourism, where patients seek dramatically lower-cost medical treatment abroad with shorter waiting periods, is an already well-established market of $90 billion growing rapidly at a staggering 25% CAGR [20].
+
+15
+
+
+
+Classical medical tourism agents are right, Peter can have high-quality elective care abroad for a substantially lower price, since these specialized clinics are performing a few specific treatments at a much higher volume than Peter's local care provider.
+
+Figure: Medical tourism is driven by cheap air travel, high quality specialized care, and shorter waiting times [20]
+
+The biggest problem with this industry, is that medical tourism agents are chiefly interested in collecting commission, so they are incentivized to sell Peter a particular clinic, with whom they already have a business relationship. As a patient, it is almost impossible to get trusted and unbiased information about relevant medical clinics.
+
+16
+
+
+
+3. Challenges of care providers: reaching relevant patients and building trust is hard and expensive, they don't own their reputation, they can't transfer it, and they can't keep up with and utilize technological advancements
+
+Dr. John Parker is a dentist, who tries to strike a balance between managing his practice and treating patients.
+
+For Dr. Parker, it is extremely difficult to reach relevant patients, build his online reputation, and keep up with the latest technological possibilities.
+
+3.1. Reaching relevant patients is extremely expensive and hard.
+
+1) While there are tools to easily and relatively inexpensively create a personal website for Dr. Parker (like wix.com), setting it up still requires time and some technical expertise. At the same time, a lmost nobody will find it without spending money on advertising.
+
+2) Dr. Parker could use profile providers with big marketing budgets like ZocDoc, but he would have to pay $300/month, and after he stops paying he would lose all the reviews he earned through the platform. Even though ZocDoc has raised $223M, it still has an alleged churn-rate of around 50% [12, 13], affirming that its business model is far from optimal.
+
+3) Even though Dr. Parker is specialized in dental implants, he would be listed as a dentist on classical doctor list sites, making it difficult to reach relevant patients looking for that perfect smile.
+
+4) Ad space is limited on Facebook, and only 3 ad slots are available to buy on Google Adwords for Search, so l arge clinics with deep pockets can easily outbid Dr. Parker even on topics in which he is a world-class expert.
+
+17
+
+
+
+5) Facebook and Google Adwords both use Quality Score to determine cost and positioning, which favors advertisers who have better websites. This is why an ordinary medical professional can't compete with clinics who work with a dedicated marketing team or agency.
+
+3.2. Building trust is exhausting, it takes a lot of time and money, and the reputation isn't transferrable. Physicians have no upfront knowledge about their patients.
+
+1) Almost everyone uses Google to research medical information, so if Dr. Parker had time, he would focus on managing his online reputation.
+
+Figure: 90% of patients use Google to research medical information [19]
+
+2) Dr. Parker could register on a centralized profile provider, but he would lose all of his reviews if he deleted his profile, or if the provider stopped operating.
+
+3) Moreover, Dr. Parker would probably need to register on multiple websites, making multiple profile management exhausting.
+
+4) Dr. Parker could spend huge amounts of money on billboards, advertisement, etc., but he doesn't have the time nor the technical aptitude to sort out which channel produces the best ROI.
+
+5) While Dr. Parker tries to allocate time to manage his practice, patients can't easily look up the track record of medical professionals by treatments and symptoms they need. So patients consult specialist after specialist to find the solution for their symptoms. Naturally p atients who don't find proper care get fed up and lose faith in medical professionals. This in turn deteriorates trust towards physicians, which
+
+18
+
+
+
+is why less than half of patients trust medical professionals compared to a 70%+ rate 50 years ago [19].
+
+Figure: trust in physicians is at an all time low [19]
+
+6) Using such a platform, Dr. Parker will have no upfront knowledge about his patients and their appointment history. For example he won't know whether they will show up on time or not, and as there are no `late fees' or `no-show fees,' these delays bear a high economic cost in lost revenue.
+
+3.3. Technology is advancing rapidly, it is impossible to take full advantage of it while also practicing as a medical professional.
+
+1) Dr. Parker has no technical means to utilize new advancements like blockchains, chatbots, and basic AI, to dynamically open up new time slots in his calendar in times of increased demand.
+
+2) He can't manage his online presence in one place and broadcast fresh information - like his latest reviews and office hours - to multiple channels.
+
+19
+
+
+
+4. Challenges of suppliers, pharmaceutical companies: reaching patients and care providers globally is expensive, serving niche markets fragmented by physical borders is economically impossible
+
+Kate works for a big pharmaceutical company as a business developer. She has trouble reaching patients and care providers globally, and her company is unable to serve physically fragmented niche markets.
+
+4.1. Reaching patients globally is difficult and expensive: gaining insights from patients from multiple countries requires multiple research firms, increasing costs and management overhead.
+
+1) Kate gains insights from patients around the world by working with several research and marketing firms, which dramatically increases costs.
+
+2) For every $1 that pharmaceutical companies spend on "basic research," an additional $19 goes toward communication research, marketing, and promotion, which is a $27B medical marketing industry in the USA alone [28].
+
+4.2. Reaching care providers globally: Medical Sales Representatives are slow and expensive.
+
+1) In some countries, prescription drugs can only be advertised directly to physicians, forcing Kate to research and make deals with closed community websites for medical professionals in each country separately.
+
+20
+
+
+
+2) She also employs Medical Sales Representatives to visit physicians in person, making this analog process both slow and costly.
+
+3) Time is the most precious commodity for medical professionals; they don't want to be disrupted, so developing personal relationships through Medical Sales Representatives is tough.
+
+4.3. Niche markets fragmented by state borders are not served. W hen not enough patients with a rare disease are present in one region, progress is hindered.
+
+1) Before any R&D budget is spent on a new drug, there has to be a business case rationalizing it [33].
+
+2) It is Kate's job to order a local research firm to conduct surveys, interviews, and communication research to lay the foundation for a new product.
+
+3) If Kate wants to address a global Orphan or Rare disease (which affects fewer than 200,000 people), where patients aren't concentrated in one geographical region, she will have a tough time collecting information about affected patients [32].
+
+4) Kate would have to involve 10+ research companies, with a subsequent increase in cost and project management resources that would render these projects infeasible. As a result, thousands of people are left suffering, even though theoretically Kate's company has the competency to develop the new drug.
+
+21
+
+
+
+5. Etheal Ecosystem
+
+
+
+5.1. Phase One: history of Etheal and Doklist.com
+
+
+
+5.1.1
+
+
+
+Doklist.com
+
+
+
+In 2013, we saw the launch of multiple startups aiming to provide an online profile for medical professionals, and online appointment booking for patients. What they did was easy:
+
+ collect or buy a database of medical professionals,  list physicians by 50 medical specialties,  create lists by hand for the few hundred most popular medical treatments,  raise $100m+ venture capital,  hire a huge sales team, and try to sell online profiles for physicians,  aggressively market the website to patients.
+
+
+
+Their biggest challenge was retaining enough paid online medical profiles to create a viable `LinkedIn for Physicians'. One of the biggest players in this space, ZocDoc has a churn rate of around 50%, meaning 5 out of 10 doctors stop paying for their profile after 1 year, though they have raised $223M in venture capital, from investors specialized in evaluating the potential of business ideas [12, 13].
+
+
+
+We decided we could do better, utilizing our 1 0 years of experience in the cut-throat competitive price comparison market.
+
+
+
+So we created Doklist.com, which is the world's first medical service comparison website. Doklist.com compares physicians by treatment methods and not just by specialty. This is important because, for example, if your wife is endangered pregnant with twins, you're not looking for just any gynecologist, you will look for a highly recommended gynecologist with a deep expertise in managing endangered pregnancies with twins.
+
+
+
+Making medical treatments searchable is a tedious task since there are no ISBN codes and no industry standard XML feeds to easily process large amounts of offers from a large amount of physicians. We had to build on our experience, and use a great deal of Natural Language Processing to make more than 40,000 physicians searchable by more than 88,000 medical services in Hungary. This was a huge jump in data compared to the databases of our international competitors.
+
+
+
+22
+
+
+
+The product-market fit was instantly validated by users. Patients have confirmed, that our approach is a much better solution from a jobs-to-be-done perspective, meaning it is solving their real problems better than the alternatives. We also got two acquisition offers from our competitors, which confirmed, that we are on the right path. The following graph shows traffic on Doklist.com, which serves 154,500 unique users each month, and more than 2,500,000 visits per year:
+
+Figure: Doklist.com yearly traffic
+
+Since charging physicians for profiles is an opposing force to growth, we decided to offer free profiles, and monetize our service through advertising, which makes the project self-funding.
+
+5.1.2 Award-winning projects of Deloitte. Tech Fast 50 CEE #1 and Golden Effie Awards
+
+While testing and searching for different business models, we were educated and inspired by the various industries addressed by our digital agency (A rtisan Marketing) , which also develops and maintains Doklist.com. We have worked in 18 industries with 13 different languages and amplified marketing campaigns by using the scientific method and behavioral testing.
+
+23
+
+
+
+ We led the full-refactorization and conversion optimization of an accommodation website, Szallas.hu resulting in a 2259% growth in revenue and ultimately winning the Deloitte. Tech Fast 50 CEE #1 award. [43]
+
+ We crafted the brand image and communication strategy of the World's first Classical Music Talent TV Show, which rapidly gathered m ore than 100,000 loyal Facebook community members. [44]
+
+ We were awarded a Golden Effie Award (the Oscar of Advertising Effectiveness) for using 5,400 behaviorally tested and targeted advertisements, which resulted in a +73% increase in revenue, while competitors spent 10x bigger marketing budgets. [45]
+
+5.1.3 Business Model validation
+
+While working for a client from the healthcare industry, we encountered medical tourism, which according to Oxford Economics and Visa is predicted to become a $540 billion by 2025 [42], and where medical tourism agents charge 20-35% commission for doing the same work as traditional offline travel agencies do without any additional innovation.
+
+We also encountered an Irish startup, whatclinic.com, with a genius business model: 1. patients can search for care providers abroad, and make inquiries to clinics, 2. the system automatically offers to f orward the same inquiry to 4 more clinics, 3. clinics are charged based on leads, 1 lead costs $10.
+
+This is a very clever Pareto efficient sales tactic from whatclinic.com:  If we assume that there are 1,000 clinics in their system.  It's enough to convince only 5 clinics to pay for leads.
+
+They will make on average $40,05 / lead, since  When a user makes a request to one of 995 free clinics, the system upsells 4 of the paying clinics, making 1 x $0 + 4 x $10 = $40 in revenue.  When a user makes a request to one of the 5 paying clinics, the system upsells the 4 other paying clinics, making 1 x $10 + 4 x $10 = $50 in revenue.  Thus the average revenue is (995 x $40 + 5 x $50) / 1000 = $40.05, while they had to sell their system to only 5 clinics.
+
+Although the sales tactic is genius, Whatclinic has 2 fatal weaknesses: 1) Patients aren't incentivized to write reviews. If you underwent a paid medical treatment, you also wouldn't feel too inclined to spend an additional 15 minutes writing a review.
+
+This is probably why they have introduced the dubious "WhatClinic
+
+24
+
+
+
+ServiceScore," which measures how fast a clinic answers inquiries, misleadingly presented as if it were a review rating score:
+
+Figure: WhatClinic ServiceScore misleadingly displayed as if it was a review rating on whatclinic.com
+
+2) Short supply. Since they can't incentivize strong local communities, and they want to be present worldwide, those clinics are listed, which already have deep pockets and spend a lot on advertising. This is far from optimal for patients, who are looking for the complete picture.
+
+Analyzing the business models and weaknesses of offline medical tourism agents and whatclinic.com, we recognize that huge disruption is bound to happen.
+
+5.2. Blockchain: t he missing ingredient to a killer strategy
+
+Satoshi Nakamoto revealed the concept of Blockchain and Bitcoin in 2008 [1], which was built on previous publications and innovations, like Adam Back's Hashcash [2], Wei Dai's B-money [3] and Nick Szabo's Bit Gold [4]. It solved the double spending problem with a distributed ledger using Proof-of-Work and "building on the longest chain" consensus.
+
+Nick Szabo also introduced "smart contracts" in 1996 [5], in a paper that describes how to facilitate, verify and enforce contracts in digital settings.
+
+Charlie Munger says that getting incentives right is the most fundamental thing to build a sustainable business [7]. Crypto assets and smart contracts make it possible to create very efficient incentive systems and token economies, which can quickly surpass traditional players.
+
+For example, Steemit [8] solves the incentivization of content creation and curation with a specialized blockchain by rewarding users, who contribute great quality content. Steemit has quickly risen from 2.9M to 16.9M monthly visits from March to August 2017 [9], while in comparison, the well-established New York Magazine (nymag.com) has 20M monthly visits [40].
+
+25
+
+
+
+Blockchain and smart contracts solve 3 very important issues: 1) Accepting payments and paying users for their contribution globally: in traditional settings we would need a massive legal and accounting team to make it possible for anyone, anywhere on the globe to buy services, not to mention the funds needed to pay hefty credit card processing fees. Furthermore, it would be almost impossible and unsustainable to pay or reward users, who develop the ecosystem across state borders.
+
+With smart contracts and blockchain, this problem becomes almost trivial.
+
+2) Incentivization of signing-up medical professionals and creating easy-to-digest medical content: normally when medical professionals write, their goal is to impress their fellow medical professionals, and there is little to no incentive to make the content easy to consume for the layman.
+
+With smart contracts, it's easy to reward content creators in proportion to how everyday visitors perceive their content (based on how many "upvotes" or "claps" an article receives, for example). Moreover, rewards are an additional push for medical professionals to sign up to have a free mobile-friendly online profile.
+
+3) Incentivization of review writing: if you undergo a paid medical treatment, you won't feel inclined to spend an additional 15 minutes writing a review.
+
+With a smart contract based incentive system, providing monetary rewards for writing a quality review is easy.
+
+Zoltan Patai (Linkedin), co-founder of Doklist.com and current top-tier Management Consultant, has masterminded the expansion strategy for Doklist.com:
+
+1. Build a s trong local supply of medical professionals  Provide a free mobile-friendly online profile for medical professionals to maximize growth  Incentivize the creation of quality content and reviews by using transparent smart contracts
+
+2. Expand country by country  Repeat step 1  Build a robust local supply that drives demand, which in turn intensifies supply growth, thus fuelling a self-reinforcing process
+
+3. Monetize and dominate cross-border medical tourism with strong local content available globally
+
+4. Dominate adjacent markets by building on strengths: for example, the pharmaceutical communication research and advertising market which is $27 billion in the US alone [28]
+
+5. Repeat step 4
+
+26
+
+
+
+To validate that we can expand, and our current idea is scalable, we chose a country which is culturally different, geographically distant, and at least one order of magnitude bigger, than our native Hungary, and is the most prominent destination country in dental tourism. Our expansion to Brazil took us one month, even though our CTO had estimated it would take three months. In Brazil, we list 380,000 doctors, and our platform has the necessary infrastructure and capabilities to reach up to 230 million people. Selling the proper utility HEAL token is the next step on our roadmap. You can now join our community to build a better healthcare together, expand to 30 countries, move the settlement and incentivization layer to Ethereum, and ultimately build a platform where our current solution will be unified under one application.
+
+5.3. Etheal Architecture plan, smart contracts, workflows
+
+Please note that this section describes our proposed Etheal Architecture, and details are subject to change until the final release of the Etheal Decentralized Platform, based on community feedback and the changing technological landscape of toolkits together with their capabilities and limitations.
+
+27
+
+
+
+Figure: proposed Etheal Architecture plan
+
+Decentralization Layer: used to store permanent information in the blockchain and to transparently automate incentivization and the payment layer of the ecosystem while storing larger quantities of data on the InterPlanetary File System (IPFS).
+
+Backend Off-chain Layer: used to cache and hold data and changes which are not needed to be stored in the blockchain and to provide an API endpoint to easily access and embed data from the ecosystem in any website or application.
+
+Etheal Platform Layer: consists of a sandbox and a simplified UX and mobile-friendly front-end where stakeholders can interact with the Etheal Ecosystem.
+
+The three cornerstones of our proposed Etheal Decentralized Platform will be: 1. Quality supply of medical info: blockchain-based incentivized global doctor list and content platform 2. Universal review system: smart contract driven transparent, translatable, transferable and seamlessly embeddable healthcare trust and review system.
+
+28
+
+
+
+3. Open, decentralized healthcare platform: UX friendly global blockchain-based distributed platform
+
+5.3.1. Quality supply of medical info: blockchain-based incentivized global doctor list and content platform, helping patients save $7,000-$50,000 on elective care.
+
+The Etheal Content Platform (like Steemit for medical professionals) will consist of physicians creating content for medical practitioners and patients, for which they can get upvotes from the community, and earn tokens each week based on their added value to the ecosystem.
+
+Physician profiles with accurate and up-to-date information will be incentivized by providing free online mobile-optimized profiles for physicians, providing them an opportunity to quickly and inexpensively market themselves compared to current alternatives like Facebook or Google Adwords. Physicians will be able to earn tokens by creating content and participating in advertising campaigns by pharmaceutical companies.
+
+Patients will also be able to earn tokens by providing objective feedback in the form of reviews. They will also be able to access trusted global information about care providers, thanks to physician profiles, thus Etheal will enable them to save $7,000-$50,000 on elective care even after including travel expenses [34].
+
+We will grow the crypto ecosystem not just by planning our own HEAL token-fiat exchange (in which our team has experience), but also by making it possible for medical professionals and patients to earn HEAL tokens by performing simple tasks.
+
+To have a successful incentive system, Etheal needs 3 things: 1) KPIs to measure and promote good behavior 2) A fair and transparent fund structure to reward contributors developing the ecosystem 3) A purpose; the desire to do something that has meaning and is important [46]
+
+5.3.1.1 KPIs measuring and promoting good behavior
+
+5.3.1.1.1 Etheal Trust Score (ETS) The idea for the Etheal Trust Score (ETS) is based on the "b elievability score" from Bridgewater Associates - the biggest and most successful hedge fund in the world. Compared to a democracy in which the majority decides, or the autocracy where a selected minority decides, the believability score fosters idea meritocracy by weighting votes based on how believable the voter is [41].
+
+29
+
+
+
+ETS is based on two factors to decrease the likelihood of Sybil-attacks: 1) Etheal Trust: the track record of the ethereum address is taken into account. Higher Etheal Trust means, that it is more probable, that the user is honest and their actions accurately predict future outcomes. Proposed calculation of Etheal Trust: - How early an ethereum address upvotes a content which later becomes popular (calculated for content older than 1 week), first 100 upvotes gets credit by multiplying Rank(X1) and Popularity(X2 ), where X1  means how early an address has upvoted, and X2 means the number of upvotes for the content Rank(X1)=Math.max((1/Math.sqrt(X1 )-0.1)/0.9,0) Popularity(X2)=Math.min(Math.sqrt(X2 ) /Math.sqrt(1000),1)
+
+Figures: Rank(X1) and P opularity(X2) to calculate Etheal Trust
+
+- how consistently he votes with the consensus: Moderation Trust = u ser vote==consensus Issue Urgency / user voted Issue Urgency
+
+2) Etheal stake = ln( HEAL tokens of ethereum address) Natural logarithm of the staking amount is used to protect against whales and make it diminishingly attractive to increase total Etheal Trust Score just by holding HEAL tokens.
+
+ETS will be used to weigh upvotes when calculating stakes for weekly rewards or deciding on a moderation issue, which are detailed in points 5.3.1.2.2. and 5.3.2.
+
+5.3.1.1.2 Etheal Rank Score (ERS) The Etheal Rank Score reflects the amount of value generated by an ethereum address, like writing great content and reviews, which get upvoted, or showing up on time for appointments as a patient.
+
+30
+
+
+
+Different actions will be weighted differently according to how much they increase the Etheal Rank Score.
+
+ETS is calculated per content category, eg. writing good content about the topic of `Dental Implants' and performing quality Dental Implants will increase the same ETS subscore for dentists, but `Hip Replacements' will be in an another ETS subscore category.
+
+The total ETS score is calculated as following: ETS =  ETSs ubscore i
+
+The final category structure will be finalized after the release of the Etheal Content Platform and before collecting feedback from the community.
+
+Example: Dr. David Daeron is a freshly graduated dentist specialized in dental implantations. While still in medical school he published comprehensible, interesting and important articles for patients about his expertise on Etheal Content Platform, earning a high Etheal Rank Score. Now as a freshly practicing medical professional, patients find him easily with issues regarding dental implants, instead of mistakenly going to Dr. John Johns for example, who is specialized in dental prostheses.
+
+Example: Peter Petterson regularly books appointments through Etheal with a few easy taps on his phone. He always shows up on time and writes useful and objective reviews, which get upvoted by the community, earning him a solid Etheal Rank. This, in turn, increases his stake in how much token he gets from weekly rewards.
+
+5.3.1.1.3 Etheal Level Etheal Level = ln(Etheal Rank)
+
+Etheal Level is planned to be calculated as a rounded down natural logarithm value of Etheal Rank, which will be displayed on the user profile and used to unlock access to specific features in the Etheal Decentralized Platform, like moderating unresolved reported issues, editing category trees or voting on particular development directions.
+
+5.3.1.1.4 Etheal Raw Level Etheal Raw Level = ln(Etheal Rank) Calculated as the natural logarithm value of Etheal Rank, which shows the gradual progression of a user from one Etheal Level to the next.
+
+31
+
+
+
+5.3.1.1.5 Etheal Highlight Rank On every page listing, medical professionals - up to a maximum of three - can be featured. The featured spot is based on a similar bidding system as Adwords and uses a similar score to Ad Rank. Etheal will use the professional positive track record (Etheal Raw Level) of physicians, instead of the quality of their website (which is the main criteria for Google Adwords).
+
+Etheal Highlight Rank = Etheal Raw Level x Bid
+
+5.3.1.2 Fair and transparent fund structure to reward contributors developing the ecosystem
+
+The funds underlying the Etheal Ecosystem are planned to be completely processed by blockchain-based smart contracts.
+
+5.3.1.2.1 Community Fund 20 million of the initial HEAL token base is set aside for the Community Fund:
+
+- 8 million HEAL tokens will be used to incentivize developers in strategic areas to create applications on the Etheal Distributed Platform after its release
+
+- 8 million HEAL tokens will be used to pay the users contributing to the ecosystem with quality content within the first two years of the Etheal Content Platform's official release
+
+- 2 million HEAL tokens are planned to be used for air dropping to show appreciation for the Ethereum community.
+
+The final timing and token structure of the Community Fund is at the discretion of Etheal and it is subject to change based on community feedback and priorities within the Etheal Ecosystem.
+
+5.3.1.2.2 Weekly Contribution Endowment Fund The Weekly Contribution Endowment Fund compensates patients and medical professionals contributing to the ecosystem. It is funded by:
+
+- A portion of the Community Fund in the first two years after releasing the Etheal Content Platform
+
+- 15% of tokens processed by the Etheal Distributed Platform as payment
+
+Stakes of individual users will depend on 1) the fresh value users create each week:new content / reviews that are upvoted weighted by the trust rank of the upvoters
+
+32
+
+
+
+ upvoted user content etheal trust ranku pvoter 2) the new upvotes they get for their existing content weighted by the trust rank of
+
+the upvoters 3) trust and rank scores of users: the exact calculation will be finalized to incentivize
+
+users to gain higher rank and trust scores, but avoid centralization of reward payouts, so bigger players will have the opportunity to earn more from, but not the majority of weekly rewards
+
+Evergreen content creation is incentivized thanks to the second component of calculating the stake of each user each week.
+
+Example: Dr. David Daeron writes a very useful article about "W hy do dental crowns cost so much, and what you can do about it?", which consistently attracts patients who find it helpful and upvote it, so this content alone becomes a steady flow of tokens for Dr. Daeron.
+
+5.3.1.2.2 Etheal Operation Fund Normally 80% of token revenue generated by an Etheal App goes to the developer which may be divided further between the app developer and its users. 15% goes to the Weekly Contribution Endowment Funds, and 5% goes to the Etheal Operation Fund to cover operating expenses of Etheal.
+
+Some of the apps developed by Etheal will be paid, and some, like an AI-driven chatbot to help medical professionals manage their online profile and practice, will be completely free.
+
+Example: An opt-in pharmaceutical communication research app plans to have 30%-70% revenue share, where 30% goes to the Etheal Operation Fund and 70% goes directly to patients and medical professionals participating in the app.
+
+- $10,000 is paid by a pharmaceutical company to get survey results - 5% * $10,000 = $500 goes to the Etheal Operation Fund - 15% * $10,000 = $1,500 goes to the Weekly Contribution Endowment Fund,
+
+indirectly rewarding Etheal Ecosystem contributors - 30% * 80% * $10,000 = 24% * $10,000 = $2,400 goes to the Etheal Operation
+
+Fund for maintaining the application - 70% * 80% * $10,000 = 56% * $10,000 = $ 5,600 goes directly to users
+
+participating in the survey
+
+5.3.1.3 Purpose: Charity Fund Our goal is to improve the lives of 1 billion people by making healthcare more transparent. Although we aim to decentralize and remove traditional state borders as
+
+33
+
+
+
+obstacles from obtaining quality care, we know that we can't succeed without supporting local communities. This is why contributors will be able to a utomatically offer a portion of the tokens to charities and NGOs. They will also be able to display their donation preferences on their profile, which in turn will influence more people to donate.
+
+5.3.2. Universal review system: smart contract driven, transparent, translatable, transferable and seamlessly embeddable healthcare trust and review system
+
+5.3.2.1 Transferable reviews handled by Smart Contracts and Blockchain Reviews are handled by transparent and verifiable Smart Contracts on a blockchain, and are incentivized by HEAL tokens. The use of an autofilter is planned to facilitate writing honest and respectful reviews, and to discourage obscene language.
+
+Figure: Sample flow of review writing 34
+
+
+
+5.3.2.2 PoC Translatable reviews to any language The review writing process is d ouble-blind, similar to the Airbnb review system. After the appointment, there will be a time window in which both patients and physicians can rate the other party. This is designed to be a s effortless as possible, especially on the physician's side of the process. If both parties finish the feedback process or the time window closes, both parties can read the reviews.
+
+The questions and processes are built on the manual dissection of 1,200 free text reviews written by patients, with a focus on distilling what patients are looking for when they search for care providers.
+
+Patients rate: - Overall satisfaction with the treatment and doctor - Pros and cons, whether they would r ecommend the doctor, and their satisfaction level with the provided treatment information, the treatment procedure, and the clinic - Effectiveness of treatment
+
+Physicians rate: - Did the patient show up on time? - Did he/she follow instructions? - Did he/she s how up for the control examination?
+
+Autosuggest tag input is planned to be used to: - make the review process quick and effortless - make the the gist of each review and s ummarization of several reviews e asy to translate f rom any source to any target language without needing state-of-the-art Natural Language Processing - enable h igh compression of data, dramatically decreasing the storage requirements of review data
+
+35
+
+
+
+Figure: Full-responsive mobile-friendly Proof-of-Concept Etheal Review Form
+
+5.3.2.3 Embeddable reviews Since review history is stored in the blockchain, it isn't owned by anyone, and is therefore freely embeddable and transferable to third party websites or applications. Etheal will develop a dedicated review embedding widget and API.
+
+Figure: Planned Etheal Review Widget 36
+
+
+
+5.3.2.4 Workflows of reviews and content moderation There are two layers of moderation:
+
+1) Automatic filtering: This will automatically prevent offensive, obscene and spam content
+
+2) Manual reporting and moderation: Each content is planned to have a m oderation threshold which will be dependent on the content type and Trust Rank of the owner. Moderation urgency will also be assigned and increased on content and reviews in accordance with the reporter's Trust Rank. Content by more trusted members of the community will require more reporting to get into the moderation pool.
+
+Figure: Example workflow of manual reporting content / reviews
+
+37
+
+
+
+Members will be incentivized to resolve the issue without manual action:
+
+Figure: example workflow of manual issue resolution
+
+Non-resolved issues will be incentivized to be resolved by moderators:
+
+Figure: example workflow of moderation issues being settled by moderators 38
+
+
+
+Valid reporting and timely moderation will increase participant trust and rank, while invalid reporting will decrease trust and rank.
+
+5.3.3. Open decentralized health platform: U X friendly global blockchain-based distributed platform, where anonymously reaching patients and healthcare providers will be 8x cheaper and 14,400x faster
+
+Suppliers and pharmaceutical companies employ Medical Sales Representatives, who, despite popular belief, usually don't have time to develop a personal relationship with medical professionals:
+
+1) Medical professionals are very aware of their time, they have a very tight schedule, and lots of sales representatives approach them: "a lot of times all they want to do is come up and sign your piece of paper to get your samples and then they're out" [47]
+
+2) Sales representatives have to physically visit 10 to 15 physician per day, and while they are on the road all day long, they don't have the time to build meaningful personal relationships [47].
+
+Although the process is very cumbersome, medical sales representatives are needed. It is hardly surprising that the median salary of these sales representatives is $125k per year [48].
+
+On the Etheal Decentralized Platform we will develop free applications, and other developers will be able to easily integrate their apps into the ecosystem. b=Based on our aspirations and expansion plans, they will be able to effortlessly reach 1 billion patients and 2 million physicians.
+
+Example: Now a sales representative can reach 250 physicians in one month with a salary of $125k per year, which is roughly $10k per month, that makes the cost of reaching one physician $10k / 250 = $40.
+
+On Etheal reaching 250 physicians could take 3 minutes and cost $5 per physician, since the system is digital and scalable, making Etheal 8x cheaper and 14,400x faster.
+
+Moreover, Etheal makes it possible to provide proof that physicians have learned about the drug. Physicians can be required to watch a 1-3 minute tutorial and answer a few quiz questions to get free samples and a share of tokens from what suppliers and pharmaceutical companies pay.
+
+39
+
+
+
+Figure: applications on Etheal Platform
+
+5.3.3.1. Doklist We will migrate our currently working application (Doklist.com and Doklist.com.br) to the Etheal platform. This is a local, trusted information source to finding care providers based on the procedures they perform or the symptoms they treat. It is available globally, and all information can be accessed in the patient's own native language.
+
+Physicians will be able to bid to be included in the top 3 featured spots on list pages, where in contrast to Google Adwords, their quality score is not dependent on how good of a website they have, but rather on the quality of service they provide. So if a doctor provides excellent services, he or she has to pay less for the same feature. The detailed calculation can be found in section 5.3.1.1.5.
+
+5.3.3.2. Medical Tourism App The strongest short-term growth driver will be Medical Tourism lead generation, where the market is calculated to grow to $540 billion by 2025 by Oxford Economics and Visa [42]. We are planning to monetize through leads, detailed in section 5.2.
+
+40
+
+
+
+Medical tourism refers to the act of traveling to another country to seek specialized or economical medical care, well-being and recuperation of acceptable quality with the help of a support system [20].
+
+"Medical tourism has transitioned from a cottage industry to an acceptable alternative for elective care that's s afe and c ost effective if coordinated by reputable health plans and providers." says Paul H. Keckley, Ph.D., Executive Director of Deloitte Center for Health Solutions [21].
+
+Mexico is already the world's second-biggest medical tourism destination (behind Thailand), generating $3 billion in 2014. Mexican agencies expect that with increased investment, the country could grow medical tourism revenues to $10 billion-$12 billion in the next seven to eight years [22].
+
+Medical tourism is also recession proof, despite the slowdown of the U.S. economy in 2008, the demand for cosmetic procedures, such as plastic surgery, has not decreased [22].
+
+5.3.3.2.1. Information According to Reuven R. Levary (Ph.D., Saint Louis University [23]), the most important factors by far for patients looking for care abroad are whether the care providers speak their language, the p olitical stability, and the e xpected costs. Distance from home is by far the least important factor, which is confirmed by the Deloitte report [21], where the increased access to low-cost global transportation is highlighted as one of the key drivers for a growing medical tourism sector.
+
+5.3.3.2.2. Promotion Vincent C.S. Heung et al. have determined, that the lack of promotional activity is a significant barrier to the growth of the medical tourism sector in Hong Kong [24].
+
+Supporting destination level marketing campaigns is a viable monetization channel for the Etheal ecosystem. Ministries of Health or Travel of target countries could easily promote their country's expertise, thus making investments in those areas worthwhile within target countries and decreasing waiting lists in less efficient source countries.
+
+5.3.3.2.3. Risk, Trust, Reviews Johnston et al. noted that a younger age group, which is more prominently represented among Canadians for going abroad for cosmetic procedures [29], is more prone to risks due to not fully understanding potential negative consequences. Penney et al. also noted, that adequate communication of risks for medical tourists may hurt patient safety [25].
+
+41
+
+
+
+Appropriately informing patients is essential, this is why prominently displaying trusted patient reviews and accreditations like Joint Commission International (JCI) is going to be a central communication point for the Etheal medical tourism app.
+
+42
+
+
+
+5.3.3.3. AI-driven self-learning chatbot for Practice Management Currently, more than 5 million businesses advertise on Facebook [26], which results in:
+
+NOISE
+
+Figure: The Visual Metaphor of the Internet's current state: Million Dollar Homepage [27]
+
+More and more businesses advertising online creates noise, and it becomes harder for care providers to be found by relevant patients. A free AI-driven self-learning chatbot will proactively help practice managers present themselves online, without necessitating advanced NLP (Natural Language Processing). Its job is not to have an open discussion, but to recommend relevant, personalized improvement ideas, letting the user accept, customize, or reject those ideas. Examples of use:
+
+ Alerts for increasing demand for a treatment, and offering to advertise their service.
+
+ Informing the provider real-time of an uncompetitive price for a procedure, and offering to change pricing.
+
+ For very busy practices a last-minute cancellation may trigger a notification to turn-on the waiting list to fill these spots.
+
+43
+
+
+
+The chatbot will be free to use. Since AI drives it, it doesn't need human supervision for scaling (its variable cost is close to zero). The more physicians use it, the more value it will generate for the whole ecosystem by making practices more efficient.
+
+5.3.3.4. Pharmaceutical Surveys, Communication Research and Advertisement App
+
+The second biggest growth driver will be pharmaceutical communication research and advertisement. Every $1 that pharmaceutical companies spend on "basic research," an additional $19 goes toward communication research, marketing and promotion, which is a $27 billion market in the USA alone [28].
+
+Figure: Pharmaceutical spending on communication and basic research and development [28]
+
+Providing a 100% automated globally available self-service communication and market research, recruitment and advertising tool for pharmaceutical clients will be a channel for massive value creation.
+
+5.3.3.5. Healthcare Fundraising Platform The Kickstarter of important health research and wellness applications with global access to patients, physicians, clinics, and suppliers is an application our team is excited about. This app is planned to facilitate consumer-focused healthcare innovations.
+
+44
+
+
+
+5.3.3.6. Your very own Etheal Application Our ultimate goal is to create a platform where trusted local health information is available regardless of traditional borders, and app developers can easily create useful tools to help the Etheal community improve the lives of 1 billion people.
+
+App developers will have total flexibility in how to monetize their apps, but payments will go through the system, with a total of 20% will go to the Weekly Contribution Endowment Fund (15%) and the Etheal Operation Fund (5%).
+
+5.4 Roadmap
+
+5.4.1 Phase Two: expansion through a decentralized smart-contract-driven incentivized portal, which helps find trusted care providers based on treated symptoms and performed procedures around the world
+
+Now that we are in Phase Two with Etheal, selling the proper utility HEAL token is the next step on our roadmap. Join our community, so that we can build a better healthcare together, expand to 30 countries, move the payment and incentivization layer to Ethereum, and ultimately, build a platform where our current solution will be completely unified under one application.
+
+Figure: Etheal timeline
+
+We will focus on rapid expansion, increased supply and preparations to become a unified global healthcare platform.
+
+In the case that we do not reach our funding goals, we will focus on building core elements of the ecosystem and maximizing the revenue generation in the shortest timeframe possible, in order to quickly reach the point where Etheal can become a true platform open to developers.
+
+45
+
+
+
+At the end of this phase, the second planned token sale will involve a wider range of people to finance the next phase.
+
+5.4.2. Phase Three: blockchain-based decentralized platform, serving the $8,600 billion healthcare market
+
+In Phase Three (~2019) we will deploy the necessary tools to enable anyone to write applications on top of the Etheal Decentralized Platform, simultaneously developing planned applications, like:
+
+- medical tourism app, - free chatbot for doctors and patients, - pharma survey, communication research, and advertisement app At the end of Phase Three, we will organize a last round of HEAL token sales, to include an even wider range of users and finance the final phase.
+
+5.4.3. Phase Four: maintaining and growing the decentralized Etheal Platform
+
+The final stage will see aggressive marketing of the Etheal platform, and incentivizing and helping developers to build on top of Etheal: This will be the final step in becoming the "Booking.com, Steemit and Salesforce of Healthcare," reaching 1 billion patients and 2 million care providers.
+
+46
+
+
+
+6. HEAL Token
+
+HEAL token (ERC20 standard) is a proper utility token (Howey test score = 20) fueling the Etheal platform. It's symbol is  (Unicode character U+1E2A, HTML entity &#7722;). The fixed supply of the HEAL token is 100 million, which is defined in a cryptographically binding smart contract and is the sole medium for settlement (purchase, incentives, etc.) within the ecosystem.
+
+Figure: HEAL token distribution, max. 100M 47
+
+
+
+6.1. Why do we need a dedicated token?
+
+ An internal token can be used as a dedicated method to access discounted services and to transfer value
+
+ The fair initial distribution and balanced long-term incentives reward those, who use and contribute to the ecosystem
+
+ In order to build a community, that believes in the future of better healthcare, via a fully automated and open Etheal health platform built together.
+
+6.2. What is the use of HEAL tokens?
+
+ Internal payment for services  Purchase of medical screening services with a 20-40% discount  Cross-border payment for medical services  Community incentivization to develop the ecosystem  Purchase of research participation and advertisement by big-pharma companies
+
+48
+
+
+
+Figure: token flows within the Etheal Ecosystem, HEAL tokens are used exclusively for settlement
+
+6.3. How will Etheal create demand for HEAL tokens?
+
+We hide the complexity of buying a crypto token by planning our own fiat- exchange, in which our advisory team is greatly experienced.
+
+We also plan to make it a no-brainer for new users to buy tokens and services with current exchange partners.
+
+49
+
+
+
+The more people use Etheal, the higher the demand is projected to grow. The more countries we expand to, the higher the demand is projected to grow. The more applications that are built on top of the ecosystem, the higher the demand is projected to grow.
+
+6.4. Token vesting
+
+Founders and team members are fully vested after 4 years with a 1 year cliff. Advisors are vested after 6 months with a 3 month cliff.
+
+6.5. Community fund
+
+The community fund consists of 20M HEAL tokens, which will be distributed in the following way:
+
+ 8 million HEAL tokens will be used to incentivize developers in strategic areas to create applications on the Etheal Distributed Platform after its release
+
+ 8 million HEAL tokens will be used to pay the users contributing to the ecosystem with quality content within the first two years of the Etheal Content Platform's official release
+
+ 2 million HEAL tokens are planned to be used for air dropping to show our appreciation towards the Ethereum community.
+
+The exact allocation and timing of the Community Fund is at the discretion of Etheal, and it may be subject to change in the future. The fund will be allocated in the spirit of growth, with the aim of developing the Etheal Ecosystem.
+
+50
+
+
+
+7. Token Sale
+
+7.1. Distribution
+
+As established in section 6., a total of 42.5M HEAL token will be sold in round one, 10M in round two and 6M in round three.
+
+Each token sale will begin after the ecosystem has reached the corresponding milestone described in section 5.4.
+
+7.2. Token Sale One
+
+7.2.1. Presale
+
+Tokens sold: maximum 9,000,000 Duration: 2 weeks Token price is fixed: 1 ETH = 1250  token Min contribution: 0.1 ETH Min cap: 333 ETH (not reaching min cap results in a full-refund of contributions) Soft cap: 3,600 ETH (presale is closed 120 hours after reaching soft cap) Hard cap: 7,200 ETH (presale is immediately closed after reaching hard cap)
+
+If we don't reach hard cap during pre-sale, remaining tokens will go to token sale round 2.
+
+7.2.2. Normal Sale
+
+Tokens sold: 20,000,000 Duration: 4 weeks Max gas price: 100 Gwei
+
+Whale Jump Protection: sending funds with more than 100 Gwei results in calculating your deposit on 80% value
+
+Min contribution: 0.1 ETH Token distribution:
+
+Your stake = sum(bonusi x your transferi)
+
+We calculate your stake by summarizing all your transfers increased by bonus at the time of receiving the fund.
+
+Your tokens = 20,000,000 x sum(bonusi x your transferi ) / sum(bonusj x transferj)
+
+51
+
+
+
+At the e nd of sale you get HEAL tokens according to your stake ratio to total stakes.
+
+Soft cap: 20 000 ETH (sale is closed 120 hours after reaching soft cap)
+
+Price when reaching soft cap: 1 ETH = 1000  token If we don't reach soft cap, remaining tokens will go to Token Sale Round 2 to make sure, average token price in normal sale will be 1 ETH = 1000  token.
+
+Hard cap: 66,667 ETH (sale is immediately closed after reaching hard cap)
+
+Price when reaching hard cap: 1 ETH = 300  token
+
+Bonus depending on the time of contribution:
+
+Figure: Normal Token Sale #1 bonus structure depends on the time of contribution
+
+7.2.3. Whitelist
+
+It is important for us to understand who will become part of Etheal ecosystem and to which extent the participants are interested in its development. Therefore, we have decided to create a Whitelist for the most interested contributors in our project. Final admission to whitelist is at the discretion of Etheal.
+
+52
+
+
+
+7.2.3. Referral reward
+
+We have set aside 2M HEAL tokens to award those, who help to build the Etheal community in its early days.
+
+Every whitelist applicant will get a personalized referral link, and they will get 5% bonus after every contribution using that link, plus each contributor will also get an additional 1% bonus for using a referral link.
+
+Example: One of your friends signs up for whitelist using your referral link, and buys 10,000 HEAL tokens during pre-sale. You will get an additional 5% * 10,000 = 500 HEAL tokens, plus your friend will get 1% * 10,000 = 100 bonus tokens.
+
+Remaining referral reward HEAL tokens will go to the HODLER reward fund (50% to lot 6 months and 50% to lot 9 months).
+
+7.2.4. HODLER reward
+
+To keep prices stable in the early months we use extensive vesting for founders, team, and advisors, and we reward those who HODL.
+
+Keep tokens intact (without moving any portion of them) on your wallet for 3/6/9 months after the normal sale has ended, and a 10M HEAL token HODLER reward will be distributed in total among presale and sale HODLERs in the ratio of their intact stakes to the total amount.
+
+During pre-sale you get +100% HODLER reward stake. Eg. you buy 1000 HEAL tokens during pre-sale, you get 2000 HEAL token stake within HODLER reward.
+
+HODLER lot 3 months: 1,000,000 HEAL
+
+HODLER lot 6 months: 2,000,000 HEAL
+
+HODLER lot 9 months: 7,000,000 HEAL
+
+7.2.5. Bounties
+
+We reserve 1.5M HEAL tokens for bounty; the details will be published in our bitcointalk.org ANN post.
+
+53
+
+
+
+7.3. Token Sale Two
+
+We will sell 10M token after reaching Milestone Two. Details will be released later.
+
+7.4. Token Sale Three
+
+We will sell 6M token after reaching Milestone Three. Details will be released later.
+
+54
+
+
+
+8. Team
+
+55
+
+
+
+56
+
+
+
+References
+
+[1] Satoshi Nakamoto, "Bitcoin: A Peer-to-Peer Electronic Cash System", 2008.
+
+[2] Adam Back, "Hashcash - a denial of service counter-measure", 2002., url: http://www.hashcash.org/papers/hashcash.pdf
+
+[3] Wei Dai, "B-money", 1998., http://www.weidai.com/bmoney.txt
+
+[4] Nick Szabo, "Bit Gold", 2005., url: https://unenumerated.blogspot.hu/2005/12/bit-gold.html
+
+[5] Nick Szabo, "Smart Contracts: Building Blocks for Digital Free Markets", 1996
+
+[6] Coinmarketcap, 2017, url: h ttps://coinmarketcap.com/
+
+[7] Farnam Street, "The Distorting Power of Incentives", 2016, url: https://www.farnamstreetblog.com/2016/03/distorting-power-of-incentives/
+
+[8] Steem, "An incentivized, blockchain-based, public content platform", 2017, url: https://steem.io/SteemWhitePaper.pdf
+
+[9] Similarweb, "Traffic of Steemit.com", 2017, url: https://www.similarweb.com/website/steemit.com
+
+[10] Matthew Di Ferrante, "Ethereum Payment Channel in 50 Lines of Code", 2017, url: https://medium.com/@matthewdif/ethereum-payment-channel-in-50-lines-of-code-a94fad2704bc
+
+[11] Deloitte. "2017 global health care sector outlook", 2017. url: https://www2.deloitte.com/global/en/pages/life-sciences-and-healthcare/articles/global-health-care-sector-outl ook.html
+
+[12] Crunchbase, Zocdoc, 2017, url: h ttps://www.crunchbase.com/organization/zocdoc
+
+[13] Quora, "What is ZocDoc's churn rate?", 2014, url: h ttps://www.quora.com/What-is-ZocDocs-churn-rate
+
+[14] Priceline Group, 2016 Annual Report, 2017, url: http://files.shareholder.com/downloads/PCLN/5143216819x0xS1075531-17-9/1075531/filing.pdf
+
+[15] Yahoo Finance, Priceline Group, 2017, url: h ttps://finance.yahoo.com/quote/PCLN/
+
+[16] Kennedy Health Alliance, "More Screening Could Cut Annual Colon Cancer Deaths by 21,000", url: https://www.kennedyhealthalliance.org/blog/more-screening-could-cut-annual-colon-cancer-deaths-21000)
+
+[17] The Washington Post, "`Pharma bro' Shkreli stays silent before Congress, calls lawmakers `imbeciles' in tweet", 2015, url: https://www.washingtonpost.com/news/wonk/wp/2016/02/04/pharma-bro-martin-shkreli-faces-congress-today -but-pledges-silence/
+
+57
+
+
+
+[18] The New York Times, "In Need of a New Hip, but Priced Out of the U.S.", 2013, url: http://www.nytimes.com/2013/08/04/health/for-medical-tourists-simple-math.html?pagewanted=all
+
+[19] Medical Futurist, "Embrace Disruptive Medical Technologies", url: http://medicalfuturist.com/grand-challenges/disruptive-medical-technology/
+
+[20] Deloitte. "Medical Tourism: Consumers in Search of Value." 2008.
+
+[21] Deloitte. "Medical tourism: Update and implications." 2009.
+
+[22] Deloitte. "2016 Global health care outlook. Battling costs while improving care." 2016. url: https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Life-Sciences-Health-Care/gx-lshc-2016-h ealth-care-outlook.pdf
+
+[23] Reuven R. Levary, "Multiple-Criteria Approach to Ranking Medical Tourism Destinations", 2011, Thunderbird International Business Review vol. 53, No. 4 529-537
+
+[24] Vincent C.S. Heung et al., "Medical tourism development in Hong Kong: An assessment of the barriers", 2010, Tourism Management 32 (2011) 995-1005
+
+[25] Penney et al., "Risk communication and informed consent in the medical tourism industry: A thematic content analysis of canadian broker websites", BMC Medical Ethics 2011, 12:17
+
+[26] Business Insider, "Facebook said it has over 5 million advertisers" 2017. Url: http://www.businessinsider.com/r-facebooks-sandberg-says-number-of-monthly-advertisers-tops-5-million-20 17-4
+
+[27] The Million Dollar Homepage. 2017. Url: http://www.milliondollarhomepage.com/
+
+[28] HuffingtonPost, "Pharmaceutical Companies Spent 19 Times More On Self-Promotion Than Basic Research: Report", 2012, url: http://www.huffingtonpost.com/2012/08/09/pharmaceutical-companies-marketing_n_1760380.html
+
+[29] Johnston et al., "An industry perspective on Canadian patients' involvement in Medical Tourism: implications for public health", BMC Public Health 2011, 11:416
+
+[30] Reuters, "Global Medical Tourism Market Size, Share, Trends and Forecast by 2021  Market Research Report 2017", 2017, url: h ttp://www.reuters.com/brandfeatures/venture-capital/article?id=11869
+
+[31] Sasha Issenberg, "Outpatients: The Astonishing New World of Medical Tourism", 2016
+
+[32] FDA, "Orphan Products: Hope for People With Rare Diseases", url: https://www.fda.gov/Drugs/ResourcesForYou/Consumers/ucm143563.htm
+
+[33] PharmaExec, "Prescription for Growth: Embrace a Niche", url: http://www.pharmexec.com/prescription-growth-embrace-niche
+
+[34] HuffingtonPost, "Save Thousands As A Medical Tourist In These 5 Countries", 2016, url: http://www.huffingtonpost.com/internationallivingcom/medical-tourism_b_11573814.html
+
+58
+
+
+
+[40] Similarweb, Traffic of Nymag.com, 2017, url: h ttps://www.similarweb.com/website/nymag.com [41] Chip Cutter, "An employee slammed hedge fund giant Ray Dalio in an email. Dalio loved it so much, he
+
+talked about it in a TED talk.", 2017, url: https://www.linkedin.com/pulse/employee-sent-hedge-fund-giant-ray-dalio-critical-email-chip-cutter [42] Visa and Oxford Economics, "Mapping the Future of Global Travel and Tourism", 2016, url: https://usa.visa.com/dam/VCOM/global/partner-with-us/documents/global-travel-and-tourism-insights-by-visa. pdf [43] Deloitte., "Deloitte Technology Fast 50 in Central Europe", 2014,url: https://www2.deloitte.com/hr/en/pages/technology/articles/technology-fast-50-ce.html [44] Euronews, "Hungarian classical music TV talent show goes global", 2016, url: http://www.euronews.com/2016/04/06/hungarian-classical-music-tv-talent-show-goes-global [45] Effie awards, "2016 gyztesek", 2016, url: h ttp://www.effie.hu/downloads/effie_gyoztesek2016.pdf [46] Daniel H. Pink, "Daniel H. Pink, "Drive: The Surprising Truth About What Motivates Us", 2009 [47] Jobshadow, "Interview with a Pfizer Pharmaceutical Rep", 2015, url: http://www.jobshadow.com/interview-with-a-phizer-pharmaceutical-rep/ [48] Medreps, "2015 Medical Sales Salary Report", 2015, url: https://www.medreps.com/medical-sales-careers/2015-medical-sales-salary-report/ [49] Nina Viberg, Birger C. Forsberg, Michael Borowitz, Roger Moline:" International comparisons of waiting times in health care  Limitations and prospects", 2013, url: http://www.sciencedirect.com/science/article/pii/S0168851013001759
+
+59
+
+
+
+

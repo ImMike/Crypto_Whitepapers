@@ -1,0 +1,665 @@
+Gimli A DECENTRALIZED ESPORTS BETTING SYSTEM
+
+White Paper https://gimli.io The Gimli Project Ltd, Malta
+
+v43 updated October 3, 2017
+
+1
+
+
+
+Abstract Gimli is a decentralized, interactive platform for video game streamers and viewers. On Gimli, viewers can place bets on game outcomes and challenges created by the streamer they are watching. They can participate in polls, gain social status, vote, tip, and contribute to streamers crowdfunding campaigns using Gimli's versatile digital token GIM. In a market where more than 500 Million viewers tune in each month to watch eSport tournaments worldwide, Gimli allows streamers to create transparent and trustless real time betting that does not depend on a third party acting as a bookmaker. By sharing all revenues with partner streamers, Gimli creates a new way for them to interact with and monetize their large audience, providing an untapped, stable source of revenue. This in turn leads to viral users adoption as streamers promote Gimli to their fans. Gimli will follow all rules, laws and regulations of each jurisdiction where it operates, and will obtain licenses where necessary. Facilitating remote betting via digital tokens on games of skills is both legal and regulated in most countries. Built and backed by an experienced team of eSport insiders, blockchain developers, and industry investors, Gimli has built a large partners network of internationally followed streamers and professional gamers who set up Gimli the way they like it, and put their reputations behind it.
+
+2
+
+
+
+Contents
+
+
+
+1 Market study
+
+
+
+4
+
+
+
+1.1 The rise of eSports . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+
+
+1.2 Twitch and game streaming platforms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+
+
+2 Opportunity
+
+
+
+5
+
+
+
+2.1 Streamers and their audience strive for interaction . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+
+
+2.2 Lack of reliable betting solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+
+
+2.3 Streamers struggle to monetize their audience . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+
+
+2.4 Legal and compliance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+
+
+3 The Gimli solution
+
+
+
+7
+
+
+
+3.1 A reliable solution to live eSports digital betting . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+3.2 A stable source of revenue for streamers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+4 Gimli in action
+
+
+
+9
+
+
+
+4.1 Betting just got real . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+
+
+4.2 The Gimli betting algorithm, step by step . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+
+
+4.2.1 Initiation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+
+
+4.2.2 Closing the bets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+
+
+4.2.3 Decision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+
+
+4.2.4 GIM fees . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+5 The betting system
+
+
+
+11
+
+
+
+5.1 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+5.2 Betting inputs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+5.3 Bet execution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+5.4 The bet attribution formula . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+6 System design
+
+
+
+13
+
+
+
+6.1 Gimli overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+6.1.1 Overview of the betting environment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+6.1.2 Overview of other environments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+6.1.3 Overview of the Gimli token environment . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+6.2 Breakdown of methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+
+
+6.2.1 Betting methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+
+
+6.2.2 Gimli Token methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+
+
+7 Platform design
+
+
+
+17
+
+
+
+8 Partnerships
+
+
+
+17
+
+
+
+9 Gimli Tokens (GIM)
+
+
+
+17
+
+
+
+10 The initial sale of GIM tokens
+
+
+
+19
+
+
+
+10.1 Use of proceeds . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+
+
+10.2 GIM token creation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+
+
+10.2.1 Initial GIM token sale to the general public . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+
+
+10.2.2 GIM token sale to streamers and eSports professionals . . . . . . . . . . . . . . . . . . . 20
+
+
+
+10.3 Token allocation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+
+
+
+10.4 Subsequent Token creation and trading . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+
+
+10.5 Duration and timing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+
+
+3
+
+
+
+1 Market study
+
+1.1 The rise of eSports
+
+From May to August 2015, the KeyArena in Seattle hosted the 5th edition of The international tournament, the most important event in the DOTA 2 calendar. In front of excited fans packed in the sold out arena, and followed live online by more than 20 million stream viewers [2], players competed for a prize pool of 18 million dollars. In 2016, the Intel Extreme Masters held in Katowice was followed by 34 million users [4] and the ESL Cologne recorded 27 million viewers [7]. The League of Legends World Championship reached even higher figures, with 43 million unique viewers recorded, accounting for 370 million hours watched [6].
+
+
+
+(a) DOTA 2 The International, 2015, Seattle
+
+
+
+(b) eSports viewership and most watched TV programs in the US in 2016
+
+
+
+eSports tournaments have exploded in the past twenty years, rising exponentially from a mere 27 tournaments in the year 2000 to more than 2,000 tournaments this year [9]. This outstanding growth comes with a sharp increase in the number of viewers, that now record tens of millions for major events and competes with traditional sports and the most famous television programs. This year, the IEM Master in Katowice gathered more viewers than NCIS, The Walking Dead and The Big Bang Theory [8].
+
+
+
+1.2 Twitch and game streaming platforms
+
+While fans can attend the main events live in arenas and stadiums, most people watch games online on streaming platforms that broadcast competitions, from local tournaments to global events, with casters commenting the games as they unfold. Among the most famous game streaming platforms are Twitch, Youtube Gaming, Smashcast.tv - recently formed through the merger of Hitbox.tv and Azubu - and Mirrativ.
+
+A recent study by research firm Newzoo and influencer marketing platform Nevaly [13] shows that approximately 470 million viewers watch online gaming content on a regular basis. This number is expected to surpass 500 million viewers later this year, accounting for 56% of all gamers across North and Latin America, Europe and Asia Pacific. Founded in June 2011, Amazon-owned Twitch now gathers 10 million visitors daily to watch and talk about video games with more than 2 million streamers monthly [10]. Google-owned YouTube Gaming does not release exact figures, but Newzoo [11] estimates that well over 20 million viewers tune in daily, with the balance of other streaming services adding another 10 to 15 million plus [5].
+
+
+
+4
+
+
+
+2 Opportunity
+
+2.1 Streamers and their audience strive for interaction
+
+Streamers are always striving to increase and improve interaction with their audience. It strengthens the links that binds them and increases revenues from subscriptions and donations. Often, they create surveys asking viewers for their opinion on who will win the next game or whether or not they should grow a mustache. To gather the results, they ask viewers to use Twitter's or Twitch's native chat room. Some even create tokens that they give to their viewers for them to bet and vote.
+
+These tools are inefficient ways to answer the basic need for interaction between a streamer and his audience. According to all streamers we have met over the years, and the numerous ones that back Gimli, Gimli will revolutionize their stream management:
+
+ create bets on anything from how fast they will beat the next level to how short they will cut their hair  create surveys on who will win the professional game they are casting live  receive donations and crowdfunding directly in digital tokens  create special status between viewers according to how many GIM (Gimli Tokens) they win or donate on
+
+the channel
+
+2.2 Lack of reliable betting solutions
+
+As eSports popularity is exploding, so is eSports betting, which is counted as a separate industry, as in regular sports betting. Newzoo describes betting on eSports as likely to mirror that on traditional sports and therefore be an even bigger industry than the sport itself. For instance, while the NFL generated 13 billion USD in 2015 [14], betting around the NFL is supposed to have made up to 100 billion USD [21]. Interpolating from the NFL's model, it is estimated that eSports betting revenue would amount to over 200 billion USD per year.
+
+Even though using fiat currencies for betting may be attractive, several countries have regulations that make it hard for any player to capture that market. As a result, the millions of daily eSports viewers lack a transparent, digital, and easy-to-use betting platform to bet on their favorite players and competitions. There is currently no widespread platform that allows users to place real-time bets on eSports. The few existing alternatives such as Pinnacle use private matchmaking system, private computations, and therefore suffer from lack of trust and weak overall users adoption. Furthermore, their gathering process for the games results is opaque and undisclosed. This represents a tremendous opportunity for Gimli.
+
+2.3 Streamers struggle to monetize their audience
+
+Today, the average spend per eSports fan per year is only four dollars. This compares to close to 80 dollars for the average sport fan. This low number and poor audience monetisation makes it difficult for streamers to secure a steady revenue.
+
+In an interview with Dot eSports [16], Twitch streamer Destiny breaks down how his income is patched together from multiple sources: ads, subscriptions, donations and sponsorships, with each piece being small or irregular on its own. However, up to 80% of viewers use AdBlock, Twitch keeps around half of the $ 5 monthly subscription fee, and donations are susceptible to costly PayPal chargebacks [17]. Therefore, streamers are constantly looking for new stable sources to monetize their viewers.
+
+5
+
+
+
+2.4 Legal and compliance
+
+Most states and countries have laws and regulations governing the legality of facilitating a wager of value between individuals, Gimli will abide by the laws of each jurisdiction where it operates.
+
+In this context, Gimli's regulatory context is driven by three main questions: which country or state has jurisdiction (typically the territory where users are located), are GIM considered a currency or equivalent by the authorities of that jurisdiction (many countries, like the U.S., have ruled Bitcoin a commodity, while other such as Japan have ruled it a currency), and in which category does wagering digital tokens on the outcome of a live game fall.
+
+The last point give a clear regulatory environment in which Gimli will operate in all legality. Most countries make a distinction between games of chance and games of skill, many also legislate differently on sport betting and games of cards such as poker. Some countries, like France, recognize eSports as a sport and have clear licensing rules and guidelines, others like the United Kingdoms authorize most forms of online betting within a simple regulatory environment; many countries in Asia simply authorize all forms of online gambling, while others forbid it. Overall, most countries require companies to obtain licenses. A high-level discussion of regulatory environments can be found at [25].
+
+6
+
+
+
+3 The Gimli solution
+
+3.1 A reliable solution to live eSports digital betting
+
+Built on top of the Ethereum blockchain, Gimli is the first decentralized, trustless platform, that allows eSports viewers to use digital tokens to place real time bets on video game outcome. Unlike centralized solutions, Gimli is transparent and resistant to hacking. The Gimli Smart Contract, that implements the betting process, guarantees safe betting between users without needing a third party institution. The ongoing bets as well as the matchmaking algorithm, hardcoded into the Ethereum blockchain, are accessible to all. This decentralized model also reduces transaction and other operating costs, and these savings are passed on to the consumer. Gimli aims at being the preferred global platform for eSports digital betting as well as the leading brand in competitive eSports, connecting millions of game enthusiasts around the world via a secure and reliable betting platform. Through Gimli's well designed and user-friendly interface, viewers can place a live bet on any ongoing game or challenge created by the streamer they are watching. Bets are evenly matched and Gimli does not charge any bid/offer when matching viewers; instead viewers who want to place a bet on Gimli need Gimli Tokens GIM to validate the transaction and place the bet (see section 9).
+
+3.2 A stable source of revenue for streamers
+
+The reliability of Gimli is rooted in our partnership with hundreds of streamers from several leading streaming platforms worldwide. Streamers report games results to our Smart Contract, which handles the bets and delivers the gains to the winners. Using the streamers' inputs means that bets are resolved with the original source and therefore Gimli avoids the pitfalls of traditional betting solutions, which have to rely on undependable and opaque secondary sources. As a reward, streamers who partner with Gimli get to decide how many of the GIM Tokens they will collect on the bets placed on their stream. Streamers decide the cost of betting on their stream and receive these tokens directly (see section 9). This auto-regulation ensures fees stay reasonable despite varying GIM value. These partnerships are therefore extremely beneficial to both Gimli and the streamers alike, and represent a tremendous opportunity for streamers to monetize their viewers pool. This reward will act as a strong incentive for streamers to promote the use of Gimli among their viewers, and therefore trigger exponential growth in the number of GIM users.
+
+7
+
+
+
+Figure 1: Gimli's organization diagram. 8
+
+
+
+4 Gimli in action
+
+4.1 Betting just got real
+
+It's October 31, 2015. SK Telecom T1 is facing KOO Tigers in the League of Legends World championship final. They're in the final match. Tension is rising quickly. You're among the hundreds of thousands of viewers watching the game on Twitch, caught up in the heat of the moment. You're on the edge of your seat in anticipation of SKT's next move. You know they're gonna win. You can feel it. You need to bet right now, and you need it to be fast and reliable.
+
+With Gimli's simplified betting interface popping up on your screen, you just choose how much to bet and send the bet! You hurry to be among the first ones to foresee SKT's victory. The sooner in the game you bet on the winning team, the greater your gains.
+
+Figure 2: Live betting on the Gimli App That's it! SKT won the game, and the tournament! Time to celebrate! Check your new wallet balance on the Gimli app, your gains have been transferred.
+
+Figure 3: Progamers celebrating You are not the only one who won. No matter who wins the game, streamers are rewarded for every bet that is placed on their streams! With viewers that won't spend much and advertising revenues cut down by adblockers, this is a great opportunity to monetize their viewer pool.
+
+9
+
+
+
+4.2 The Gimli betting algorithm, step by step
+
+Gimli works hand in hand with our streaming partners, who are in control of most of the operations. The streamer first launches Gimli and is assigned a unique ID, the Game ID. The streamer then inputs the stream details and sets the GIM fee they will charge to bet. In the example below we go through one of the main functionalities of Gimli: allowing viewers to bet on the outcome of the next game streamed live on the streamer's channel.
+
+A link to Gimli beta, and its interaction with the Ethereum test environment, can be found on our website.
+
+4.2.1 Initiation
+
+If this is a user's first time using Gimli, the interface helps them set up, receive or link to an Ethererum wallet, as well as buy GIM tokens or import them.
+
+Viewers can now place their bets. In the following illustration, we consider the scenario where viewers wager GIM on the outcome of a live game. We could also consider bets in Ether (ETH), the native Ethereum token.
+
+For each bet, the smart contract first checks that the user owns enough GIM in his Gimli wallet to place the bet, and enough GIM to pay the streamer's Channel's fees. The betting algorithm then withdraws the GIM bet amount from the viewer's Gimli wallet, and places it in a bet pot with all the other bets that were made on that same team. The GIM fees are withdrawn and kept in escrow, to be transferred to the streamer when the game ends.
+
+
+
+(a) Streamers set stream details and GIM fees
+
+
+
+(b) Users place their bets into the bet pot
+
+
+
+4.2.2 Closing the bets
+
+Acting as a trusted party on his channel, the streamer declares the winner and closes the bet session when the game is over. Since it is well known that he is the only judge and referee, scenarios where the streamer will choose to act in bad faith are highly unlikely. He would lose the trust of his audience and destroy his public image.
+
+4.2.3 Decision
+
+For a winning bet, the contract hands back the bet along with a proportional share of the all the losing bet pot. To account for time value of uncertainty, the amount won by all winner bettors is not the same and is described in section 5.
+
+
+
+10
+
+
+
+(a) Winners gain a share of the losing bet pot
+
+
+
+(b) The streamer closes the bet
+
+
+
+4.2.4 GIM fees
+
+The GIM fees collected during the betting session are sent to the streamer. This arrangement may change in the future and fees may be shared with professional players, game editors and others.
+
+
+
+5 The betting system
+
+5.1 Overview
+
+Gimli's betting system is designed for games between two or more opponents. Going forward, for simplicity, we'll explain the betting system with two opposing teams A and B, with the blockchain acting as a trustless bookmaker.
+
+In order to participate and place a bet, users need to pay the GIM fees decided by the streamer. At the end of the game, the smart contract pays out to the winners from the losers' bet pot. This means that Gimli does not take the opposite side of any user's bet, it simply provides one pot for each team and describes a methodology to split the losing pot among all the users who placed bets in the winning pot. This makes Gimli provably fair.
+
+For instance, let's assume that Alice bets on A and Bob bets on B. If A wins then Bob's bet is split between Alice and the other users who have placed bet on A.This split in not simply proportional, as will be explained later.
+
+
+
+5.2 Betting inputs
+
+Our system describes a simple, transparent and fair matchmaking method. The user inputs are:
+
+1. the team on which the user places his bet 2. the amount the user bets
+
+5.3 Bet execution
+
+At the end of the game, the losers' bet pot is divided among the winners in proportion to the amount they bet and as a function of the time at which they placed their bet. This is a fair way to settle bets: users who arrive later will receive a smaller payout (for a given bet amount) than the users who bet earlier, as the latter had access to
+
+11
+
+
+
+Figure 4: All bets on the same team are gathered in a single pot less information at the time of their bet, and this higher risk must be rewarded.
+
+Figure 5: Charlie places his bet after Alice and therefore gains less. To illustrate the necessity of taking the time of the bet into account, consider near end of the game, when presumably the winner is known in practice. Let A be the presumed winner. A user who decides to bet at this point can net an easy win by betting on A. Since all of the users are aware of this, presumably few people will bet until the very end of the game, when everyone will rush to bet on the winner, for a "free" share of the whole de minimis losers' pot. By decreasing the bet payoff as the end of the game nears, this strategy is no longer effective, and users can bet throughout the duration of the game with no particular advantage. Another methodology, whereby Gimli would take into account the density of bets being placed at each point to adjust the linearity in time of payoff to information is being reviewed by our team and may be implemented in the future.
+
+12
+
+
+
+5.4 The bet attribution formula
+
+Consider a user who would like to bet x on Team A. The odds are dynamically updated, and at any time t they are given by:
+
+x + f x, Bets on T eam A, Bets on T eam B, t : x where the left side indicates the amount the user wins if Team A wins (the initial bet x plus a payout f () that depends on the betting pots, the bet amount x and the time t of the bet), and the right side indicates the amount the user loses if Team B wins (his entire bet x, which is split among the winners).
+
+This system has several advantages:  it does not require any former knowledge of betting markets, as the user simply inputs the team and the
+
+amount to bet,  it ensures that every user who places a bet participates, so long as there is at least one bet on each team,
+
+and  it is simple to implement, robust, and light in terms of computations, as it only requires a running tally of the
+
+amounts bet in either pot, along with mathematical operations in f .
+
+6 System design
+
+6.1 Gimli overview
+
+In this section, we first describe the Ethereum framework upon which Gimli is built. We then detail the interactions between Gimli, the betters and the streamers during the bet process. Finally, we explain how the Gimli token functions. 6.1.1 Overview of the betting environment
+
+Gimli users will always interact with the Gimli interface, a front end written in Javascript that makes calls to the Ethereum blockchain through the Web3 protocol. This front end will provide general information on the stream as well as the most up-to-date odds, and facilitate the process for even the most new to Ethereum. Gimli is launched by the streamers, who will input the game characteristics and GIM fee to be charged.
+
+Figure 6: System Overview.
+
+13
+
+
+
+Users can now submit two pieces of information: 1. the team they are betting on, and 2. the amount of their bet. Users can continue to place bets, and the blockchain's event marker will notify the users of the latest odds. At the end of the game, the streamers identify the winner, and Gimli pays out the bets to the users that won from the bets of the users that lost. The GIM fee is transferred to the streamer. If ever there are only one-sided bets, all bets and GIM fees are returned to the viewers.
+
+6.1.2 Overview of other environments The Gimli platform is designed to make additional use cases of the Gimli Token easy to implement. A few
+
+ideas include:  create surveys on who will win the professional game they are casting live  allowing users to act as their own bookmaker and propose odds to each other  allowing bets in native Ether (ETH) tokens  receive donations and crowdfunding directly in digital tokens  create special status levels for viewers according to how many GIM they win or donate on the channel
+
+6.1.3 Overview of the Gimli token environment The Gimli Tokens (GIM) are sold during an initial period to the general public. They are ERC20 compat-
+
+ible [23] and can therefore be easily transferred or sold among users for ETH, using standard methods. As they comply with the ERC20 standard, GIM will also be compatible with the 0x [24] protocol. Moreover, the Gimli team is in contact with major exchanges to list GIM tokens on multiple exchanges shortly after the initial sale ends. Streamers get to set the amount of GIM they will charge viewers to place a bet on their stream. GIM tokens are necessary to be allowed to place a bet or participate in any of Gimli's functionalities. They can be acquired directly on the Gimli application, during the initial sale, as raffle rewards handed out by streamers, or bought on exchanges in the secondary market. In order to be able to sell GIM tokens to new users to allow bets, Gimli will have to be a constant buyer of tokens in the secondary market. To ensure stability in the sale of GIM tokens in the short term, Gimli will start with a small fund of tokens to sell to users, which will have to be supplemented by purchases in the secondary market to refill the fund as Gimli's userbase grows. See also section 9. See section 10 for further details on the inital sale.
+
+14
+
+
+
+Figure 7: Gimli Token environment.
+
+6.2 Breakdown of methods
+
+6.2.1 Betting methods
+
+Figure 8: Gimli Overview. The following methods give an overview of the interaction between the different methods related to the betting system. Note that thicker lines represent token transfers.
+
+15
+
+
+
+Gimli() initializes the contract and sets Gimli's address. newBet(gameID, streamer, game) is called by Gimli when the streamer prompts Gimli to launch a new game. The interface first uses an event marker to determine the latest gameID, the ID used to identify the game (a hash of the streamer address, the time stamp and the specific eSport). The interface then calls this contract with a new gameID, and all the users watching the stream can then search for this gameID using the interface to identify the stream. It also initializes the database with all the bets and their characteristics, and sets the GIM fee. We save the streamer's address as the "owner" of this Game ID. newStake(gameID, bet) is called by the user when they place their bet and pay the GIM fee. This saves the characteristics of the users bet (the sender, the bet amount and the bet time are implied, we only need to know which team the user is betting on). At this point no bets have actually been executed yet, we are waiting for the outcome of the stream. As soon as this is known, we will know who will transfer to whom. We adjust the running totals of the two bet pots and the odds are updated through an event marker. close(gameID, winner) is called by the streamer when the game ends, and the winner/loser is announced. We first verify the caller is the authorized streamer. Then, we will actually execute all of the bets and transfer all of the GIM bets from the users that took the losing side to the users that took the winning side, following the mathematical formulas described above. The GIM fee is transferred at this time to the streamer (the "owner" of this betting round). cancel(gameID) is called by close() when the game ends, if all of the bets were one-sided. This returns the bets and the GIM fee to the users.
+
+6.2.2 Gimli Token methods The Gimli token runs with the following contract:
+
+GimliToken(supplyAmount) initializes the token supply. This method is called once, when the entire environment is created. transfer(to, from, amount) can be called the users to transfer the tokens among themselves. The transfers are thrown if the user will be left with too small of a balance to pay the transfer fee. approve(to, value) approve and the related functions and contracts allow the owner of a Gimli token to approve a given user to buy their token for a given value. These are the ERC20 standard functions.
+
+16
+
+
+
+7 Platform design
+
+The decentralized nature of the blockchain makes Gimli open, resistant to hacking, and therefore a safe environment where viewers can bet. Gimli's well-designed and user-friendly interface makes it easy to place bets without any knowledge of blockchain technologies.
+
+Gimli strives to creates an easy-to navigate user-experience. Our demo version can be found on our website and we expect to release a new version in the coming weeks. Gimli also supports MetaMask, a Chrome plugin that allows users not familiar with Ethereum to create an account without having to run a node locally.
+
+
+
+(a) Gimli Application
+
+
+
+(b) Gimli Mobile Interface
+
+
+
+8 Partnerships
+
+Gimli is first and foremost an application created by eSports enthusiasts for eSports enthusiasts. In the last several months, our initial team has surrounded itself with professional gamers, streamers and various members of the eSports community. Those conversations have led to constant adjustments and improvement of Gimli to converge toward an application that responds to the real needs of the community.
+
+In the process, Gimli has partnered with a large number of famous streamers worldwide, many of whom, in addition to partnering and supporting Gimli, have agreed to serve as references for large prospective token buyers in the initial sale. Refer to our website, social rooms and blogs or contact us directly for more details.
+
+We are always looking for new partners, so feel free to reach out and join us to become part of this exciting adventure!
+
+9 Gimli Tokens (GIM)
+
+Gimli Tokens (GIM) are the means by which Gimli charges a fee and covers its costs. There is no mining or creation of GIM after the crowdsale. Viewers need to spend GIM each time they place bets on Gimli. They can also use GIM to donate to streamers or participate in surveys or crowdfunding. These GIM fee is set by the streamer for bets on their stream, and will differ from one streamer to another. Viewers who want to use Gimli need to have or acquire GIM.
+
+To make it easy for new users to bet at all times with Gimli, GIM can be purchased directly on the Gimli app from Gimli's GIM reserve. GIM are also available on the secondary market from streamers, who may sell or use
+
+17
+
+
+
+(a) Obverse
+
+
+
+(b) Reverse
+
+
+
+Figure 9: The Gimli Token (GIM).
+
+
+
+them as tournament or raffle rewards, or from other token holders.
+
+Since Gimli will be offering GIM for sale to users on its platform, Gimli will have to buy more GIM back from other token holders over time on exchanges as Gimli's GIM reserve is depleted. This buying pressure should increase as more users use Gimli.
+
+Gimli has a self-regulatory mechanism that allows the value of GIM to increase with demand while still keeping costs reasonable for end users.
+
+
+
+Figure 10: GIM price increases with new users following a similar cycle.
+
+Even as more users join Gimli, which drives up the price of GIM, betting costs are kept reasonable as streamers will adjust their betting fee, in GIM, to the appropriate rate to avoid losing their users altogether. This ensures new users are not slowly choked by increasing betting fees as GIM value increases for token holders and streamers and the number of Gimli users continues to grow. This mechanism also encourages users to purchase tokens upfront for later use.
+
+18
+
+
+
+10 The initial sale of GIM tokens
+
+In order to spread GIM tokens to as many end users as possible and to raise awareness of the Gimli platform, Gimli will be selling GIM tokens to the general public. Among other purposes, proceeds will serve to:
+
+ support the cost Gimli's growing team of insiders and experts  accelerate the growth of Gimli  provide streamers and eSports professional with an opportunity to acquire GIM at a discount to boost early
+
+adoption
+
+The GIM token sale will be open to the general public via an Ethereum Smart Contract.
+
+Ownership of GIM carries no rights other than the right to exchange over the Gimli platform. GIM does not represent or confer any ownership right or stake, share or security or equivalent rights, intellectual property rights or any other form of participation relating to the Gimli Platform.
+
+10.1 Use of proceeds
+
+Funds raised during the token sale will go toward the team, improvement and marketing of Gimli. Those goals involve, but are not limited to:
+
+ support a world class team of insiders, experts and advisors  develop the Gimli application, functionalities, and subsequent iterations  sponsor tournaments, professional gaming teams and/or streamers to spread the adoption of Gimli  promote the use of Gimli on all streaming media channels and in the eSport community  assess legal and compliance aspects
+
+10.2 GIM token creation
+
+GIM is a smart contract on the Ethereum platform. Its design follows widely adopted token implementation standards known as ERC20 [23].
+
+10.2.1 Initial GIM token sale to the general public The initial GIM token sale to the general public will be administered by an Ethereum Smart Contract. The
+
+code of the smart contract for the token sale will be available on GitHub and published through various channels before the sale launch date. The Smart Contract that will administer the sale will be audited by reputed security auditors whose comments and recommendations will be disclosed on the Gimli website.
+
+ Accepted currencies: Buyers during the initial sale will acquire GIM in exchange for Ether (ETH), the sale will be administered by an Ethereum Smart Contract.
+
+ Exchange rate: The price for one GIM is fixed at 1 ETH = 3500 GIM.  Maximum financing: The number of GIM sold during the sale is capped at 80 million to the general public
+
+and an additional 10 million to eSports professionals (see below for full breakdown).  Launch date and time: September 16. The full details for participating in the token sale can be found at
+
+http://gimli.io/token-launch/.
+
+19
+
+
+
+(a) 150 million GIM
+
+
+
+(b) September 16
+
+
+
+Figure 11: The Gimli token sale
+
+
+
+ Token launch completion: The sale will end when either all the GIM tokens have been sold or the token sale period is over.
+
+ Unsold tokens: Should the sale end without selling the full 80 million tokens, any remaining tokens will be transferred to Gimli reserve fund.
+
+ No U.S. Purchasers: GIM Tokens are not being offered during the initial sale to U.S. persons. If you are a citizen, resident of, or a person located or domiciled in the United States of America, including any corporation or partnership created or organized in or under the laws of the United States of America, do not purchase GIM Tokens.
+
+10.2.2 GIM token sale to streamers and eSports professionals In order to associate as many eSports professionals to the success of Gimli, GIM will be sold separately to:
+
+ streamers  professional gamers  professional video game developers  eSport tournament organizers  other eSport professionals
+
+The Initial Sale to eSports professionals will happen in parallel to the sale to the general public. In addition to the main sale via the Ethereum Smart Contract, eSports professionals will be able to participate by purchasing tokens from a dedicated eSports professionals fund of 10 million GIM. They will need to create an account on the Gimli website and follow the instructions to send ETH and redeem their GIM via a specific Ethereum Smart Contract. This sale offers a priority in GIM allocation to the main token sale through Ethereum.
+
+The use of this methodology is restricted to eSports professionals.
+
+10.3 Token allocation
+
+There will be a total of 150 million GIM tokens in circulation, allocated in the following ways:
+
+ up to 80 million sold to the general public during the token launch  10 million sold to eSports professionals  10 million kept in the Gimli reserve pool for sale through the Gimli App and website
+
+
+
+20
+
+
+
+ 20 million granted to advisors, streamers and professional gamers, kept in a multisigned wallet  30 million granted to Gimli founders, team and employees.
+
+Figure 12: GIM Allocation.
+
+10.4 Subsequent Token creation and trading
+
+ No token creation will happen after the initial sale ends. The total supply of GIM is fixed at 150 million tokens.
+
+ Tokens will be transferable and listed on exchanges once the initial sale is completed.
+
+10.5 Duration and timing
+
+The full details for participating in the token sale can be found at http://gimli.io/token-launch/.
+
+21
+
+
+
+References
+
+[1] https://github.com/ethereum/wiki/wiki/White-Paper [2] https://www.polygon.com/2014/7/29/5949773/dota-2-the-international-tournament-20-million-viewers [3] https://solidity.readthedocs.io/ [4] http://fortune.com/2016/03/22/intel-extreme-masters-shatters-esports-records/ [5] http://fortune.com/2016/02/26/twitch-ups-its-game-to-compete-with-youtube-gaming/ [6] http://www.lolesports.com/en_US/articles/2016-league-legends-world-championship-numbers [7] http://en.esl-one.com/csgo/cologne-2016/news/esl-one-cologne-clocks-new-attendance-record-returns-to-
+
+lanxess-arena-in-2017/ [8] http://tvbythenumbers.zap2it.com/more-tv-news/the-100-most-watched-tv-programs-of-2016-super-bowl-50-
+
+leads-by-a-mile/ [9] https://esportsobserver.com/esports-statistics-the-growth-of-our-industry-in-five-charts/ [10] https://www.twitch.tv/p/about [11] https://newzoo.com/insights/markets/esports/ [12] https://newzoo.com/insights/trend-reports/global-esports-market-report-2017-light/ [13] https://newzoo.com/insights/infographics/lets-play-global-2016/ [14] http://www.marketwatch.com/story/the-nfl-made-13-billion-last-season-see-how-it-stacks-up-against-other-
+
+leagues-2016-07-01 [15] https://www.pinnacle.com/en/odds/today/e-sports [16] https://dotesports.com/general/twitch-streaming-money-careers-destiny-1785 [17] https://dotesports.com/general/paypal-twitch-chargebacks-3739 [18] https://www.americangaming.org/sites/default/files/Nielsen_ NFL_ Betting.pdf [19] http://profootballtalk.nbcsports.com/2014/01/08/34-of-americas-35-most-watched-fall-tv-shows-were-nfl-
+
+games/ [20] http://www.lolesports.com/en_ US/articles/worlds-2016-finals-tickets [21] https://www.forbes.com/sites/darrenheitner/2015/09/09/93-billion-will-be-illegally-wagered-on-nfl-and-
+
+college-football/# ca0ee9178810 [22] https://www.boydsbets.com/super-bowl-how-much-bet/ [23] https://github.com/ethereum/EIPs/issues/20 [24] https://www.0xproject.com/ [25] https://www.google.com/amp/s/simonsblogpark.com/onlinegambling/simons-guide-online-gambling-legal-
+
+status-laws/amp/
+
+22
+
+
+
+

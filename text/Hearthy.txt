@@ -1,0 +1,1129 @@
+WHITEPAPER 1.1
+
+Javier Blanco Thomas Juan Sebastian Valencia Suarez
+
+David Conde Sayns
+
+20/10/2017
+
+This Whitepaper does not constitute a prospectus or offer document of any sort and is not intended to constitute an offer of securities or a solicitation for investment in securities in any jurisdiction.
+
+
+
+Index
+
+1. Abstract 2. Background
+
+Healthcare delivery
+
+3. The Product: Blockchain-Based Health Ecosystem
+
+Hearthy Ecosystem Advantages 1) Decreased Financial Burden 2) Empowered Patients 3) Ownership of data and 4) Open research 5) Interoperability
+
+4. Project Organizational Structure
+
+Hearthy Foundation How will the Hearthy Foundation select the best projects? Hearthy Corporation
+
+5. PHR Architecture
+
+Privacy and Cryptography Interoperability with actual systems
+
+6. Distributed Ledger Topography
+
+The Hearthy Foundation The Healthcare Provider The Patient The Research Organization The Medical Practitioner The Automated Agent/The Device The EHR/EMR Vendor
+
+2
+
+
+
+Index
+
+7. Use Cases
+
+Subscription-Based mHealth Project Hearthy Co. Researcher's access to clinical data Humanitarian crisis
+
+8. Economy Design
+
+An Approach to a Health-oriented Economy Token Anatomy Transaction fees, incentives... The rights of token owners
+
+9. Misc
+
+Onboarding strategies Fraud: Preventing, detecting and response
+
+10. Hearthy Kickoff and sale: 11. The Team
+
+Javier Blanco Thomas: CEO Juan Sebastian Valencia: CMIO David Conde Sayans: CCO Anxo Soto: CTO Diana D. Reinoso: Lead Designer Alex B. Ferrn: Developer Csar Caride: Developer
+
+3
+
+
+
+1 Abstract
+
+
+
+Existing healthcare models are based on antiquated paradigms. The truth is, European social security programs (being the most advanced) were established following World War II when the population was almost one-third of what it is now. The current demographic shift towards an aging population and more patients suffering from chronic diseases is straining healthcare systems resulting in a major global challenge. How can healthcare providers sustain universal, high-quality healthcare initiatives for this deluge of patients while endeavoring financial hardship and human resource constraints?
+
+For the last 5 years, the authors have worked in the health and insurance sectors for organizations including SERGAS, Ginemed Telemedica, Medipremium, and AXA (first as Glue Digital and later as Hearthy) to help these companies in their digital transformation processes, but experienced mixed outcomes. While beneficial digital projects resulted, critical unresolved issues remain such as increased healthcare costs, late adopters, low adherence... turning access to digital health into a luxury asset
+
+
+
+As a result, the authors are determined, as developers at Hearthy, to create a decentralized, open, and sustainable ecosystem to improve healthcare access regardless of income, making healthcare more efficient and user-centered.
+
+The proposed ecosystem will consist of: - A Protocol: A Personal Health Record (PHR), which relies on distributed ledger technologies that can be used and owned by the patient. - A coin: The (HER), which will empower the ecosystem. - The suite: Open source tools and applications, which will boost the traction of the protocol and create the first generation of services.
+
+
+
+Sex Invaders, Applying for Codigo100 and Empattics Project. Meedica Project
+
+4
+
+Medipremium mobile app
+
+
+
+2 Background
+
+
+
+Healthcare delivery
+
+
+
+The world's population is aging quickly thus increasing the associated cost of social security while simultaneously limiting the pool of available taxpayers to fund such programs. For example, in some parts of Europe and Japan, the average age is over 44-years-old with over 33% of the population being more than 60-years-old. Despite the acknowledgement that something needs to be done to alleviate the problem, considerable effort has been expended to take the path of least resistance and thus maintain the status quo. While it is considered too expensive and daunting to explore alternatives, the need to find a new approach to healthcare is imperative because the existing tactic is unsustainable.
+
+American healthcare is a prime example of a dysfunctional system.
+
+
+
+Approximately 10% of its population is currently uninsured following the implementation of President Obama's hopeful Affordable Care Act and the future of healthcare in the country remains unknown under a Trump presidency. While the U.S. has an inordinate amount of resources, without taking into consideration the necessary technological requirements, universal healthcare will be an impossible endeavor.
+
+And yet, countries still developing their healthcare systems have an even greater uphill battle. While there are some pockets of success like in Seguro Popular, Mexico where 55 million previously uninsured have been provided with insurance for the past 15 years, healthcare remains a global problem and a new approach is critical. A huge opportunity is open.
+
+
+
+5
+
+
+
+3 The Product: Blockchain-Based Health Ecosystem
+
+
+
+Within healthcare operations, there is no definitive EHR/PHR standard. Diverse standards, both proprietary and open source, are available and a 1996 consortium created HL7 for messaging between different HDOs, but without one standard in which to be aligned, interoperability between systems will continue to be a significant issue, EHR vendors also play a market strategy that generates fragmentation.
+
+Interoperability is most evident in Spain's healthcare program. While hosting one of the most effective, advanced, and well-designed health systems in the world (with an expenditure of $2,658 per inhabitant, universal healthcare, and a life expectancy of 83.08 years), the country's varying regions are not uniform in their systems approach.
+
+
+
+PACS
+
+
+
+PACS
+
+
+
+Vendor Node
+
+
+
+Semantic/non semantic
+
+interopera bility process
+
+
+
+This can result in a scenario where a patient moves from one region to another with no guarantee that their PHR is transferable. Why do we have to accept this?
+
+Our protocol basically intends to create a transactional layer bound with healthcare that fixes the most common cases which nowadays limit the health care access allowing frictionless transactions.
+
+
+
+Vendor Legacy EH R
+
+
+
+Vendor Legacy EH R
+
+
+
+Semantic/non
+
+
+
+Vendor Node
+
+
+
+semantic interopera bility
+
+
+
+AP P
+
+
+
+Vendor Node
+
+Data base
+
+
+
+Resear ch Node
+
+
+
+Vendor Node
+
+
+
+National Node
+
+
+
+Vendor Node
+
+
+
+National ID/Se rvice
+
+
+
+6 Figure 1. Example of a network based on Hearthy
+
+
+
+3 The Product: Blockchain-Based Health Ecosystem
+
+Hearthy Ecosystem Advantages
+
+1) Decreased Financial Burden
+
+By 2020, 40% of healthcare providers and hospitals will realize that existing PHRs are incapable of fully meeting their digital business and patient needs. However, integrating a new PHR is costly, often necessitating the use of less expensive and ineffective solutions.Thus, creating an open source ecosystem not only provides efficiency and improves interoperability, but the cost associated with implementation is greatly reduced. Administrative costs could also be limited by utilizing the new ecosystem.
+
+2) Empowering patients
+
+Increasing transferability and accessibility of patient records is the first step toward enabling patient self-advocacy. Automated agents can also be made available to patients, a recent study showed that linked automated agents can play a meaningful role in improving health outcomes(2). Another study, also suggests that allowing patients to record their symptoms on web-based interfaces could potentially generate better survival rates within certain types of cancer and improve survivability rates more than medication(3). Both studies indicate Hearthy's digital solution will empower patients and thus save lives.
+
+7
+
+
+
+3 The Product: Blockchain-Based Health Ecosystem
+
+What problems we solve with Hearthy?
+
+3) Ownership of data and user centric KYC
+
+Within the new healthcare ecosystem, patients control their data dictating who and when their patient records can be viewed. An easy to use, streamlined dashboard will enable patients to determine sharing permissions as well as review who has accessed their records. Finally, those patients who choose to share their data with insurance carriers and academic researchers will receive incentives in the form of tokens or cash back premiums. The intention is to not only increase privacy, but also to develop ownership among patients.
+
+4) Open research
+
+Accessing patient granted health data can be problematic for researchers, but by creating an aggregated, anonymized repository of medical data, researchers and developers can benefit from the new ecosystem. Researchers will be responsible for explaining their data need and patients will determine who may utilize their anonymous patient records. As previously mentioned, users may be rewarded for sharing their data.
+
+8
+
+
+
+3 The Product: Blockchain-Based Health Ecosystem
+
+What problems we solve with Hearthy?
+
+5) Interoperability
+
+Interoperability will no longer be an issue for healthcare systems. The new ecosystem will create a legacy semantic and non semantic interoperability adaptors, which will allow the legacy organizations to continue using their existing systems while enabling efficient data exchange between the systems.
+
+6
+
+
+
+4 Project Organizational Structure
+
+Varying aspects of this new ecosystem will be developed by two entities working in conjunction: the Hearthy Foundation and the Hearthy Corporation.
+
+Hearthy Foundation
+
+The Hearthy Foundation is the core of the project as well as the impetus behind the vision of of an open and global healthcare network. The Hearthy Foundation is intended to be a DAO in the future, yet for now, it will remain a human-operated foundation. After a prescribed amount of time, token holders will vote if and when the Hearthy Foundation should move toward becoming a DAO.
+
+The Hearthy Foundation will fund:
+
+The development of the protocol, the coin, and all the infrastructure necessary for other organizations to be able to benefit from the Hearthy ecosystem. Any organization or developer who plans to use the Hearthy protocol and to create a healthcare associated app.
+
+The Hearthy Foundation will be funded by transaction fees, which may be reduced for organizations that demonstrate better health outcomes.
+
+10
+
+
+
+4 Project Organizational Structure
+
+How will the Hearthy Foundation select the best projects?
+
+Every year, the Hearthy Foundation will establish a budget for developers based on its liquidity. The Foundation will then be opened for call for approximately 1 month and at that time accept problems that the developers have submitted for consideration. Every project sent to the Foundation within the deadline will be sent for peer review. Reviewers in this case are always token holders, and ultimately, one project is sent to at least 5 token holders. Their task is then to score the project resulting in the projects with the highest scores getting funded. Both organizations and developers also have the possibility to fund themselves partially. When the determination is made that a project will be funded, a project controller is assigned who will be responsible for controlling milestones and triggering the funding; every project is funded in steps, and only after having reached certain milestones. The Foundation is also tasked with maintaining the value of the token as high and stable. In order to achieve that, the Foundation has to protect the token-holder's interests, making the token value rise over time. Although current regulations don't allow the Foundation to make quarterly payouts, as soon as the regulator creates a comprehensible framework for token economy, the Foundation will evolve with the aim to incentivize long-term value of the HER token.
+
+11
+
+
+
+4 Project Organizational Structure
+
+Hearthy Co.:
+
+The Hearthy Corporation. is a startup organization defining a manageable problem and attempting to solve it with inherent milestones and small tranches of funding. The corporation will be funded by the Hearthy Foundation as it reaches the milestones noted below. Hearthy Co. is currently an established company that merged with Glue Digital and is registered in Spain (as JBTHOMAS SL).
+
+As blockchain ecosystems are implemented, all progress will become accessible through the company's Github profile. It is important to note that some of these ecosystems are legacies. It should also be underscored that the blockchain development has not yet begun; all stack is currently telemedicine-related. After creating the Hearthy Core (PHR+Production Blockchain), the Corporation will develop its first two projects as noted in the timeline below.
+
+12
+
+
+
+4 Project Organizational Structure
+
+13
+
+
+
+5 PHR Architecture
+
+
+
+All PHR will be created by Hearthy Co. aligned with FHIR standards, the latest version provided by the HL7 consortium.The PHR will be entirely modular, so that organizations/apps/developers will be able to use aspects of it as they choose. The exterior architecture of the solution will be structured as depicted in Figure 2.
+
+Moreover, the PHR will be separated into 3 layers: the first dedicated to security and privacy, conformance and terminology; the second dedicated to administration and defining all the roles generated by the ecosystem; and third dedicated to storing all medical data related to a medical process.
+
+
+
+Hearthy Co. will explore ontology standards such as ICD-10 and SNOMED-CT since it increases interoperability and provides a common understanding of concepts used in clinical documents. This is not an easy task, as it was addressed by a group of researchers in their paper written in 2011; they were trying to fill in the gap between HL7 and SNOMED-CT. However, Hearthy Co. intends to close this burgeoning gap in order to accelerate the automatic and critical processing of health data.
+
+Internally the PHR will be constructed following the FHIR specification, with the following structure.
+
+
+
+User User App
+
+Figure 2
+
+
+
+Health Care Provider PACS
+
+Custom PHR
+
+EHR Integration Adaptor Hearthy PHR Blockchain
+
+
+
+Third-party PACS
+
+
+
+"ICD-10 - Wikipedia." https://en.wikipedia.org/wiki/ICD-10.
+
+
+
+"Snomed CT - SNOMED International." http://www.snomed.org/snomed-ct. Accessed 9 Jul. 2017.
+
+
+
+"Semantic validation of the use of SNOMED CT in HL7 ... - NCBI - NIH." 15
+
+
+
+14
+
+
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152505/.
+
+
+
+5 PHR Architecture
+
+
+
+Figure 3:
+
+
+
+This figure shows all the basic elements of an modern HL7 EHR Document,
+
+
+
+15
+
+
+
+5 PHR Architecture
+
+Privacy and cryptography
+
+
+
+To ensure patient privacy, cryptography will be utilized giving the patient a granular access to their data and choosing what details remain private. Hearthy Co. will also make it possible for verified medical professionals to add to the PHR following authenticality.
+
+Once a medical milestone is created (stated by a doctor, the patient, or any automated agent) the system splits it into blocks and encrypts each block with a randomly generated key as depicted in Figure 4. In addition, an index is generated with each block and its key.
+
+
+
+The combination of index and encrypted blocks is signed by the doctor with their private key, to ensure that the data cannot be tampered with.
+
+Finally, the entire entry is encrypted with a random entry key and the key is sent to the user encrypted with their public key, ensuring that only the user can read it. This system affords the user access permissions by sharing either the entry key or any of the block keys, allowing the decryption of only the chosen data.
+
+
+
+Blood Glucose: 8 mmol/L
+
+BMI: 20
+
+
+
+Create index and
+
+
+
+Index: - Blood Glucose:
+
+K1
+
+Encrypt("Blood Glucose: 8 mmol/L", K1)
+
+Encrypt("BMI:20", K2
+
+Sign(Hash(...), DoctorPrivateKey)
+
+
+
+Send to trought the blockchain
+
+
+
+Encrypt(K, PatientPublicKey) Encrypt (..., K)
+
+
+
+16
+
+
+
+5 PHR Architecture
+
+Interoperability with actual systems
+
+
+
+The bad side of creating a new standard is that you have just n+1 standards when you finish. That's especially important when it comes to clinical software, changing an IT provider in health care is shocking for the whole organization, most part of the cost is not just about updating the software but to instruct and help all the organization to switch to the new software, in result, most healthcare organizations will just not change their actual vendors, so it is important to allow legacy organizations with existing EHRs to join our ecosystem easily.
+
+In that purpose the foundation will create Integrator adaptors for the at least OPEN MRS and OpenEMR systems, creating a turn-key solution for those will be the first projects funded by the foundation after the Mxico TeleHealth project, both have a great community and great presence in our focus areas.
+
+
+
+Allscripts, EPIC, eClinicalWorks, McKesson, CERNER... as being proprietary solutions will be out of scope, but Hearthy Co. will develop and integrate so any API FHIR compatible can connect with the ecosystem Hearthy is not intended to substitute those vendors, but to increase these capabilities and reach.
+
+
+
+17
+
+
+
+6 Distributed ledger topography
+
+
+
+The Hearthy Co. distributed ledger will consist of the following stakeholders.
+
+
+
+The Heathy Foundation
+
+
+
+The Foundation's amends and updates are the core of the system. Any node and token holder can propose an upgrade to the overarching system with a suggested price attached. If the majority of token holders find the tip useful, they will be able to send tokens to the proposer so that they can complete the upgrade with enough resources.
+
+
+
+The Foundation board itself, will also propose and develop upgrades as well as wield veto power, at least for the first 3 years after launch (the Foundation is extensively described in the previous sections of this paper).
+
+
+
+User
+
+
+
+Provide r Syste m
+
+
+
+Researc her DB
+
+
+
+Researc her DB
+
+Researc her DB
+
+
+
+Resear cher DB
+
+
+
+User
+
+User User
+
+Doctor
+
+
+
+3rd party health ser vice
+
+
+
+Hearth y Chatbot
+
+
+
+Foundation
+
+
+
+This figure shows how all thec actors are connected.
+
+
+
+Doctor
+
+
+
+User
+
+
+
+Heart hy apps
+
+
+
+Bloc kc hai n node
+
+
+
+Legacy Integration
+
+
+
+Legacy EHR
+
+
+
+User Doctor
+
+18
+
+
+
+6 Distributed ledger topography
+
+
+
+The Healthcare Provider
+
+The provider is a hospital, a healthcare professional, healthcare system, an insurance company...etc. Every provider buys enough tokens to maintain a node. By creating a node, the provider can ask any user for access. If the user consents, the provider is then able to access patient data in order to create a specific service. The provider is also able to send the user tokens for access. Furthermore, the provider can read and/or write data on the user's PHR if the user agrees.
+
+
+
+As Hearthy Co. begins working with regions with uninsured/ underinsured populations, the new ecosystem may be a great point of connection between providers and new healthcare users who will already have a PHR when the provider arrives.
+
+
+
+The patient
+
+
+
+The patient is the most important element of this innovative platform. Users will have various registration options. By default, the registration process uses only biometric identification utilizing just a selfie and a signature. Such systems create a unique user ID, which is recorded on the blockchain.
+
+
+
+The resulting selfie and signature are then stored on the device and all the information that circulates on the Internet is anonymized. Once a user is registered, a small amount of tokens is sent as a reward, which promotes engaging.
+
+
+
+19
+
+
+
+6 Distributed ledger topography
+
+
+
+A user will access the ecosystem via an app/dapp. Hearthy Co. will develop the initial apps, but the environment is as open and fluid as possible to enable any organization to create its own apps/ dapps. All services must be paid with tokens, and the user has to buy or obtain them through incentives.
+
+The providers can also send tokens to specific users in order to allow them to receive medical services (for example, some insurance companies may offer a variety of services inside the platform by buying and sending their policyholders a certain quantity of tokens every month, which could be used for prevention services, medication...etc.).
+
+A user will not have karma, but they can post a positive or negative review of any other agent in the blockchain.
+
+
+
+The Research Organization
+
+The medical researcher needs structured data for their clinical research. Every time a researcher creates a node on the network, he can create a request for all the desired data, including demographic information, and establish the price they are willing to pay per user.
+
+All the selected users then receive a notification within their apps asking them to share their data with the researcher. If the user agrees, all the data becomes visible for the researcher. However, this access will have an expiration date based on the associated smart contract. Hearthy Co. will also develop a dapp in order to make accessing the resulting data easier for researchers.
+
+A researcher has a karma, which can be earned every time a user agrees to share their information. However, researchers lose karma when more users choose not to agree to share their data. In situations of extremely low karma, a researcher might be banned from the network. Researchers must be held accountable, hence the Foundation or any token holder can issue a petition for a researcher to share the outcomes of their research under certain conditions.
+
+20
+
+
+
+6 Distributed ledger topography
+
+
+
+The Medical Practitioner
+
+Through the new platform, every medical professional becomes a user on the blockchain as well as on the developer's app. The doctor delivers healthcare in markets created by app developers and providers, either in the form of telemedicine or an alternative means. The doctor sets a price for their services or makes an agreement with the provider and/or with the app developer.
+
+
+
+Every consultation a doctor makes carries a fee based on tokens.The tokens are digitally transferred from the patient's wallet to the doctor's wallet. Then, the doctor can convert them into FIAT currencies. Every doctor has a karma, so they are held accountable as well.
+
+Hearthy Co. is also planning to develop specific tools that can aid doctors with diagnosing conditions more accurately.
+
+
+
+The Automated Agent/The Device
+
+
+
+Automations are crucial for the future of healthcare delivery.Automated apps, such as chatbots, are a prime example as they can help users manage tasks such as medication adherence or even carry out a complete treatment or diagnosis. Automated apps write and read on the blockchain as any other player. The app developer must buy enough tokens to manage the node and be able to set up a price for the service in form of tokens. Users, providers, or the Foundation itself can pay the associated fees.
+
+By consensus, the Foundation can reward developers of automated agents with tokens in order to generate new business models and to test ideas.
+
+
+
+Tokens will be released when specific milestones are achieved (it could be based on health outcomes and/or on design/development states).
+
+Hearthy Co. will deliver the first automated healthcare apps; one for medication adherence and a chatbot intended to work with depression/ anxiety patients that is similar to the one designed by Standford University earlier this year. Automated agents will have their own wallets and the developer can use the tokens from these wallets for whatever purpose.
+
+Automated agents have karma as well.
+
+21
+
+
+
+6 Distributed ledger topography
+
+The EHR/EMR Vendor
+
+User patient data will be created by Hearthy and is intended to be inclusive of software developers. The goal is to create a suite of integrations that allow any EHR vendor to be integrated.
+
+"JMH-Delivering Cognitive Behavior Therapy to Young Adults With ...." 6 Jun. 2017, https://mental.jmir.org/2017/2/e19/. Accessed 9 Jul. 2017.
+
+
+
+7 Use cases
+
+Subscription-Based mHealth Project Hearthy Co.
+
+The proposed service will be similar to Medipremium, which is an on-demand mHealth service based on monthly subscription, which allows the users to conduct chat and video consultations when requested. This project is intended to be introduced in Mxico. The subscription fee will be $4 per month allowing a certain number of monthly consultations. Every month, Hearthy Co. will exchange user currency for tokens on a secondary market. Hearthy Co. will distribute all these tokens between its users. Every user will have enough tokens to make approximately 2-5 medical visits per month. In case a user doesn't use their tokens, they will rollover for the next month. Additionally, the subscription will grant discounts to particular medical services chosen by the Hearthy Co. team. Hearthy Co. employs 8 physicians and 4 nurses, enabling a 24/7 medical service and has invested $60,000 in user acquisition over a 6-month period achieving 12,000 subscriptions in this period of time. A detailed study on the first real-world application of the Hearthy project can be reviewed by the web adress below. As stated in the paper, Hearthy Co. Mexico will generate its own profits and there will be an associated fee charged by the Foundation from transactions. All the Hearthy Co. technological stack will be open so that other organizations can easily join.
+
+https://docs.google.com/spreadsheets/d/1JmmI_B6vvFvNbSfL-5pGY0hnw0tyFW8prwU8acSZC64/edit#gid=147840735
+
+23
+
+
+
+7 Use cases
+
+
+
+Researcher Access to Clinical Data
+
+
+
+In this use case, a pharma company is attempting to measure how obesity is spreading throughout Mxico, a country that demonstrates the highest rate of obesity among adults in the world.
+
+The pharma company first registers on the platform, then creates a node and a wallet as well as purchases enough tokens to maintain it. Once the company's node is created and the pharma is registered as a researcher, it is possible for the researcher to publish a data request.
+
+A data request is defined by:
+
+The type of data (financial, clinical, conditions or medication). In this case, they will ask for sugar in blood and Body Mass Index. The timeframe. In this project, the researcher will ask for 1-year access .
+
+
+
+The researcher defines a demographic sample (eg.: males, between 25 and 45 years old) and funds the request. When the request is correctly funded, all the users falling into the designated category will receive a notification stating the objective of the research, the necessary data, and the timeframe. A request generates two different streams of tokens:
+
+Transaction fees which are paid to the Foundation when launching the request
+
+Data sharing fees which are paid to the users in form of tokens when accepting the request
+
+
+
+Medipremium is not owned or related to Hearhy, Hearthy was the technology provider for Medipremium. "Medipremium " https://www.medipremium.com/. Accessed 9 Jul. 2017.
+
+
+
+http://www.who.int/topics/obesity/en/
+
+
+
+24
+
+
+
+7 Use cases
+
+Researcher Access to Clinical Data
+
+The researcher defines a demographic sample (eg.: males, between 25 and 45 years old) and funds the request. When the request is correctly funded, all the users falling into the designated category will receive a notification stating the objective of the research, the necessary data, and the timeframe. A request generates two different streams of tokens: Transaction fees which are paid to the Foundation when launching the request Data sharing fees which are paid to the users in form of tokens when accepting the request When the user receives the tokens they can use them for any medical service associated with the platform. Therefore, it will create a virtuous cycle encouraging the users to create more medical data using services in turn making them consume more medical services, which consequently generates more data. Automated agent and psychotherapy services: Hearthy Co. will develop the first automated agent on the network, a chatbot intended to help patients with psychological issues; a minimum cap will need to be reached.
+
+25
+
+
+
+7 Use cases
+
+Humanitarian Crisis
+
+The world is facing a humanitarian crisis, which might be one of the biggest experienced in our history; it is a source of tragedy for millions around the globe. As providers of new technologies, we can try to bring a light of hope for the populations wandering around Europe in search for refuge. Large numbers of people forced to leave their homes and all their possessions suddenly in order to escape the flames of war, do not even possess proof of their identity, which would help to partially organize their trip throughout different countries. And what's even worse, the sanitary crisis brought by the precarity of their situation has created a perfect environment for the spread of infectious diseases.
+
+In this situation, there are 3 main scenarios where our system could be applied:
+
+The Identity Problem We can solve the identity problem by using biometric data collected through open source technology. This allows the data to be reproduced elsewhere and evaluated while the user's checksum is stored on the blockchain. The Health Data The platform stores patient health data securely and users will have access to their medical records regardless of their geography.
+
+The Teleconsultation Patients have access to a system similar to the one used in Medipremium, which will grant them access to medical experts through telemedicine. It is extremely useful and versatile, especially in cases of dermatology or infectious diseases.
+
+26
+
+
+
+8 Economy Design
+
+An approach to a health-oriented economy
+
+When designing the first evolution of the project's economy, it was determined that health outcomes were not taken into account. This tends to happen routinely (just to mention homeopathy as an example) and creates distortions and inefficiencies in the digital financial market. To be effective, a health-related token must encourage users and organizations to achieve better health outcomes.
+
+As a result, incentives that encourage better health outcomes are necessary. Every time a user is created, they receive a health score. The scoring system unilaterally starts at 0, regardless of any preexisting condition. This scoring is only visible through a Foundation-sponsored, smart contract. Every change in health KPIs (sugar in blood, BMI/body fat percentage, smoking status, etc.) contributes positively or negatively to the score thus influencing resulting health outcomes. Therefore, it is necessary for the health metrics used to measure performance be transparent. At the end of every quarter, an overall health score for the organization is generated based on its combined user health scores, which can consequently result in lower fees for the organizations demonstrating the best performance.
+
+What happens to an organization with mediocre outcomes? It can still operate, but the ones generating better outcomes are rewarded.
+
+27
+
+
+
+8 Economy Design
+
+
+
+The goal is to enhance the value of the digital coin - the token - to the maximum so that patients would receive further incentives to use the coins. The token must fuel the entire platform and be linked to the real economy. Digital currencies are on the verge of mass adoption, but for the time being we have to be linked to FIAT economy.
+
+In our economy players act in the following way:
+
+User
+
+The user connects to the blockchain via Hearthy Co. app or by another certified app. A user can buy at a market price and spend it on services. Every time the user or the doctor writes on the blockchain we also apply a transaction fee. This fee will be very small and have relatively no impact on the global token "economy" of the user.
+
+The doctor
+
+(Hearthy Co. Model, it can be changed by other app developers) When a doctor joins he creates a wallet, he sets a price for his or her services in  or FIAT, and when a visit finishes the doctor receives in his wallet. Later on he can withdraw it from Hearthy Co, converting it into FIAT currencies, or transfer the funds to any other wallet
+
+
+
+The marketplace
+
+The marketplace is owned by Hearthy Co. but anyone can build another one on their own. In Hearthy Co Marketplace any doctor and user can join, buy and sell services. Every time a transaction is made Hearthy Co. and Hearthy Foundation charge a certain fee in the form of  As far as fees are concerned, regulations will be established in order to avoid any irregularities. For example, a doctor can charge very low fees but at the same time provide a poor medical service. Such practices will be highly discouraged by allowing the patients and other healthcare professionals to give feedback about the decision made by that doctor. On the other hand, there will also be a ceiling set for the healthcare professionals. The main goal is to dissuade healthcare professionals from providing their expertise only for people who are able to afford it, and thus creating an unfair system for the patient population on the platform.
+
+
+
+28
+
+
+
+8 Economy Design
+
+
+
+The Hearthy Foundation
+
+
+
+The providers
+
+
+
+The Hearthy Foundation maintains, amends and updates the blockchain, providing the governance for the project. Every time a transaction is made the Foundation charges a small fee in form of . Later on the foundation will use this liquidity to improve the protocol, amend the PHR and boost new projects inside the ecosystem.
+
+Hearthy Co.
+
+Hearthy Co. will deliver the first developments and the telemedicine services. All these actions are aimed at validating the business model, attracting the users and encouraging other companies to join the blockchain platform. The company will also employ our team. Hearthy Co will receive revenues just from its marketplace and all the services deployed using the protocol. Hearthy Co. was founded with the sole idea of creating the initial adoption of the platform.
+
+
+
+Providers will have the opportunity to profit from accessing the blockchain. They can create their own apps using our blockchain, to generate new services or to promote health. They are also able to cash out their users when they fulfill the behavior management plan, medication adherence plan or specific care plan. Providers buy  and send them to their users who can use them inside the economy, send them to another user or convert them into FIAT currency. Every time a transaction is made the Foundation charges certain transaction fees.
+
+Researchers
+
+When a researcher wants to access the user's data, he needs to pay him some .The researcher has to buy enough in order to carry out the operation.
+
+
+
+Developers
+
+If any organization wants to create a service, they are able to do so.
+
+
+
+29
+
+
+
+8 Economy Design
+
+30
+
+
+
+8 Economy Design
+
+
+
+Token Anatomy
+
+
+
+Hearthy is introducing an open source cryptographic token named (HER), which is visualsed as a health cryptocurrency to be used in health services. is a pure cryptocurrency of a fixed supply. It is fractionally divisible and long-term deflationary by design.
+
+ is intended to be bought by users and by providers and researchers, as it is the fuel of the transactional layer we want to create. Only the 65% of the will be liquid in the short term. Similar to other cryptocurrencies, the units of  are mutually interchangeable and transferable, and they will be expected to trade in cryptocurrency exchanges.
+
+
+
+Implementation:
+
+ will be implemented on the public Ethereum blockchain as an ERC20 token. The Ethereum blockchain is currently the industry standard for issuing custom digital assets and smart contracts. The ERC20 token interface allows the deployment of a standard token that is compatible with the existing infrastructure of the Ethereum ecosystem, such as development tools, wallets, and exchanges. Thanks to Ethereum's ability to deploy Turing-Complete trustless smart contracts, it is possible to issue complex rules for cryptocurrencies, digital financial contracts, and automated incentive structures. These advanced features and active ecosystem make Ethereum a natural fit for.
+
+
+
+1
+
+
+
+8 Economy Design
+
+
+
+Incentives and Transaction Fees
+
+Cryptoeconomics is mostly about incentives, to ensure token holder long-term value we have to activate some design patterns on the economy of the system, those are based on 2 pillars, transaction fees and incentivized buying.
+
+
+
+Transaction fees There is a transaction fee for every transaction on the blockchain. Every time the fee is split into two: a certain percentage goes to the owners of the blockchain nodes (providers, data storage providers, etc.) and another part goes directly to the Foundation which will later use this liquidity to facilitate the growth of the ecosystem, to reward the developers as well as to amend and update the distributed ledger.
+
+If any organization wants to create a service, they are able to do so.
+
+Redistributing wealth, in form of paying invoices for those developers who create more value.
+
+Ensuring deflationary tendencies over time, so that the token becomes more and more valuable.
+
+
+
+Incentivized Buying
+
+Hearthy Co. is on talks with differents health companies, mainly pharmas and insurance companies to deliver pilots all around the world. To incentivize token buying Hearthy Co. will only accept HER as payment method, so all clients have to buy tokens in order to hire the company, this will be locked for a minimum of 3 years since starting.
+
+Any other company or developer funded by Hearthy will be also advised to use HER as payment method. In case of a dysfunctional deflation/inflation Hearthy Foundation can also help the HER to keep growing steady in value.
+
+
+
+32
+
+
+
+8 Economy Design
+
+Incentives, tokens a a service and Transaction Fees Tokens as a service
+
+Hearthy will incentivize that health partners buy tokens as part of their services. So a health plan with certain features can give some tokens to its policy holders in order to buy some medical services associated with prevention and wellness. Those users can spend the tokens on medical services, sell them, or even give them away to anybody who needs it more. In a ultra long-term scenario, tokens (due to its forced deflationary design) could also be used as a non-regulated savings product. So a young policyholder can save its tokens to use them when his medical costs raise. Hearthy will help insurance and medical companies to launch health products related to tokens.
+
+Controlled Airdrops for emmerging countries
+
+If Hearthy Foundation has enough token liquidity Hearthy can create token airdrops to boost penetration on emmerging markets, niche airdrops, developed on the correct scenario can boost protocol and also accelerate network effects, as well as create positive impact on the target countries.
+
+32
+
+
+
+8 Economy Design
+
+Rights for token owners:
+
+The primary use of tokens is for their owners to receive medical services by using them. Therefore the patients, health care organizations and doctors can use tokens in their daily health care-related transactions. The ownership of the HER tokens give political and partial refund rights to the token owners, when the project's milestones are reached. (example testnet ready milestone) token owners will have the right to ask for a refund if the majority of the holders believes the team hasn't matched the milestone correctly. If more than 50% vote the project to be discontinued the project will stop and all the remaining funds stored will be refunded in form of ETH. ICOFUNDING will hold these funds until the milestone is reached. For more info about this topic: https://blog.icofunding.com/the-need-of-an-ico-post-governance7ef476cbd76b
+
+32
+
+
+
+9 Misc
+
+Onboarding Strategies
+
+If we want the ecosystem and the coin to succeed, it is essential for us to gain some traction with health users and health organizations. The objective of the services Hearthy Co. will develop is to encourage other organizations to join the protocol, but that might not be enough. We will incentivize the onboarding in the following ways:
+
+Distributing an amount of tokens to the first organizations joining after Hearthy Co.: Organizations will present a health service/product associated to an invoice; next if the Foundation evaluates the project positively it can fund the initial development of the project. We believe this will incentivize small startups and health companies to come up with great ideas on developing projects in our ecosystem. Distributing an amount of tokens to the first users joining Hearthy Co. services, so they access the first services with a significant discount. Creating enough documentation and repositories to make it easy for any organization to set up a project. Advising small teams in UX, user experience and user onboarding
+
+33
+
+
+
+8 Misc
+
+Fraud: Preventing, detecting and response
+
+To prevent, detect and effectively respond to fraud Hearthy will develop a series of mechanisms in order to maintain the system working in a fair way:
+
+User control: as we reward users with tokens, at the very beginning we have to create a scoring service for them, so that we could detect and freeze false accounts. Organization control/Arbitration and meta-arbitration: if a certain number of users complains about a certain organization we can start a peer review. What it basically means is that other organizations in Hearthy may request documentation from the reviewed party. These peers review the complaints and reach a verdict. If that verdict is a source of a bad review, the organization becomes frozen. Such organization may ask the foundation for a meta-review. Whenever an organization reviews another one, it is automatically rewarded with tokens. Bug Bounties: Bugs are inherent to code. As soon as we launch we will start a permanent bug bounty program.
+
+34
+
+
+
+10 Hearthy Kickoff and  sale:
+
+
+
+To kickstart the network, an capped number  of will be sold based on a predetermined price function that increases over time. The funds raised from the initial sale will be transferred to the Hearthy Foundation to fund the development of the ecosystem. The ICO will be developed in two phases, Presale and ICO. ICOFUNDING will be our partner in terms of token issuance, distribution and escrow.
+
+CROWDSALE DETAILS
+
+Token supply: A maximum of 109.923.077 HER tokens will be created, unsold tokens after the ICO ends will not be minted.
+
+Funds accepted: Hearthy is collecting funds in ETH. Minimum investment goal: 5,000 ETH Maximum investment cap: 60,000 ETH
+
+
+
+Token distribution: Hearthy Co. will distribute the tokens following this
+
+
+
+structure:
+
+
+
+Presale participants 7,91%
+
+
+
+Early ICO participants 5,46%
+
+
+
+Early ICO participants 10,01%
+
+
+
+Early ICO participants 14,33%
+
+
+
+ICO participants 27,29%
+
+
+
+Foundation
+
+
+
+23,00%
+
+
+
+Founders and advisors 10,00%
+
+
+
+Bounties program 2,00%
+
+
+
+Token release: Tokens will be created automatically during the token sale.
+
+Token price: A no bonus price is sold following this rule: 1,000 HER= 1ETH. Presale participants will receive a 45% more tokens. (Example: If a presale participant buys 1,000ETH he/she will receive 1,450,000 HER) Dates: Presale will be opened from October 15 2017 to November 15. ICO will be opened as soon as possible, our estimated time is December 2017.
+
+
+
+35
+
+
+
+10 Hearthy Kickoff and  insurance:
+
+
+
+Bonus Schedule: The token sale will follow the following Bonus schedule,
+
+
+
+Period
+
+
+
+Bonus
+
+
+
+Amount
+
+
+
+Presale
+
+
+
+45%
+
+
+
+8.700.000
+
+
+
+Early ICO
+
+
+
+20%
+
+
+
+6.000.000
+
+
+
+Early ICO
+
+
+
+10%
+
+
+
+11.000.000
+
+
+
+Early ICO ICO
+
+
+
+5% no bonus
+
+
+
+15.750.000 30.000.000
+
+
+
+Allocation of ICO funds:
+
+50% for software development 25% for marketing expenses 20% for operational expenses 5% for legal expenses
+
+Legal Expenses 5%
+
+
+
+Operational Expenses 20%
+
+Marketing Expenses 25%
+
+
+
+Software development 50%
+
+36
+
+
+
+11 The Team
+
+Javier Blanco Thomas CEO
+
+Javier Blanco has been developing digital products for the last 11 years. He holds a degree in Audiovisual Communication in The Complutense University of Madrid as well as two Master degrees in IED and Trazos School, related with art direction and digital production. He has worked in Havas Media/MPG, and in projects with award winning studios and agencies like FarFar/Waskman or Duplostudio. Javier Blanco Founded Glue Digital in 2010, nowadays Glue Digital employs 7 people and manages about 25M users each year, working with Fortune500 clients all around the world (Carrefour, Mondelez, KFC, AXA,...). Glue Digital has been awarded with some design awards and nominations, such as Awwwards, German Design Council or Laus Awards.
+
+In the health field Javier has been working in different projects for more than 5 years, dealing with clients such as SERGAS, Ginemed, AXA or Medipremium. He founded Hearthy in 2015, first as a complete mhealth solution, and later as an entire ecosystem, Hearthy has been featured in programs like Google Launchpad and at conferences such as Health2.0. It has been the core of apps such as Medipremium, the first mobile health service deployed on the Spanish market.
+
+https://www.awwwards.com/glue/ https://www.facebook.com/gluedigitalSP/photos /a.739747902741140.1073741827.1263 22157417054 /1010121105703817/?type=3&theater
+
+
+
+Juan Sebastian Valencia CMIO
+
+Mr Shafi Ahmed qualified from Kings College Hospital Medical School in 1993, trained in London and obtained his specialist registration in general and colorectal surgery. He was appointed as a Consultant General, Colorectal and Laparoscopic Surgeon at The Royal London and St Bartholomews Hospitals in 2007. He performed research on the genetics of colorectal cancer and obtained his PhD from the University of London.
+
+He works in the Centre for Academic Surgery and has established minimal invasive colorectal surgery within the trust. He is pioneering single incision laparoscopic colorectal surgery (virtual scarless surgery) and also works with liver surgeons to pioneer simultaneous laparoscopic liver and bowel resections for cancer. He is the lead clinician and Multi Disciplinary Team lead for colorectal cancer at Barts Health NHS Trust. His main interests are colorectal cancer, diverticular disease, inflammatory bowel disease, coloproctology and the modern management of haemorrhoids. He still maintains a general surgical practice including hernia and gallstone surgery.
+
+http://mobileworldcapital.com/es/google-regresa-a-barcelona-con-launch pad-su-programa-de-pre-aceleracion/ Health 2.0 Europe, 2016 http://legacy.health2con.com/events/speaker/ /javier-blanco-thomas
+
+37
+
+
+
+11 The Team
+
+
+
+David Conde Sayans CCO
+
+David Conde, a fintech entrepreneur, started Txstockdata in 2015 and has been its Managing director ever since. With his skills and team leading talent, he has introduced this project from scratch to a recognized company.
+
+Txstockdata boasts of a multidisciplinary team of talented professionals dedicated to bringing innovative changes to the fintech industry. The Company is mainly focused on creating more efficient solutions related to savings and investments.
+
+David Conde studied Business and Administration degree at the Universidad Oberta de Catalua and he was one of the first European Financial Planners in Spain. He also is a MBA and MBA executive at IESIDE and Nebrija University. As managing director, David is leading the team behind Txstockdata's flagship product, Senseitrade. Senseitrade is a platform which turns big data from the Internet into trading opportunities.
+
+Recently they have launched another fintech product called Coinscrap. Coinscrap is a smartphone app that allows users to round up their daily purchases and automatically transfer the change to a saving product.
+
+
+
+Anxo Soto CTO
+
+Anxo has more than 10 years of experience writing software for the web. For the last 3 years, he has been working at Glue Digital doing full stack development and managing a small team of talented developers. He has participated in the latest eHealth developments at Glue Digital and Hearthy, helping to define the technological stack and integrating with heterogeneous systems from clients and providers. Anxo also has extensive experience in cryptographic systems. He studied Computer Engineering at the University of A Corua.
+
+Csar Caride DEVELOPER
+
+For the last six months, Csar has been working for Glue Digitial as a backend developer. He previously studied Computer Engineering at the University of Vigo where he also worked as a trainee for over a year. He has also worked as a developer and analyst on key projects related to the implementation of ERPS.
+
+38
+
+
+
+11 The Team
+
+
+
+lex B. Ferrn DEVELOPER
+
+
+
+Diana D. Reinoso Lead Designer
+
+
+
+Alejandro has 5 years of experience in web and the interface design. Part of that time has been spent working as a front-end developer at Glue Digital developing the competences and skills needed to design and implement web projects, services, and apps.He has a Design degree from the Antonio Failde School of Art and Design (Ourense) and a postgraduate diploma in Web Project Management and Design from Pompeu Fabra
+
+
+
+Diana has over 7 years experience in the design and generation of UX projects. She has already participated in diverse health-related projects such as Medipremium, Meedica, or Whitecloud. In the last 4 years, her work as a designer at Glue Digital has been honored with several design awards and nominations from entities such as Awwwards, German Design Council, and the Laus Awards. She holds an Advertising degree from the Vigo University. Diana is also an accomplished photographer with her work having been featured in Playground Magazine, Lamono Magazine, and exhibited at Matadero Madrid or Bright Trade Show Berln.
+
+
+
+30
+
+
+
+Hearthy Co. 3,Lpez de Neira Street 36203 Vigo (Spain) http://hearthy.co/
+
+40
+
+
+
+

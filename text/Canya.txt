@@ -1,0 +1,1963 @@
+
+
+Whitepaper
+
+The world's best blockchain-powered autonomous marketplace of services.
+
+Version 1.6 - January 2018
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+Table of Contents
+
+
+
+Table of Contents
+
+
+
+2
+
+
+
+1.
+
+
+
+Executive Summary
+
+
+
+6
+
+
+
+2.
+
+
+
+Token Sale
+
+
+
+9
+
+
+
+3.
+
+
+
+Platform
+
+
+
+12
+
+
+
+4.
+
+
+
+Smart Contracts
+
+
+
+15
+
+
+
+5.
+
+
+
+CanYa Rewards
+
+
+
+21
+
+
+
+6.
+
+
+
+Ecosystem Growth & Cryptocurrency Volatility
+
+
+
+23
+
+
+
+7.
+
+
+
+Decentralisation Roadmap
+
+
+
+24
+
+
+
+8.
+
+
+
+Budget
+
+
+
+25
+
+
+
+9.
+
+
+
+Roadmap
+
+
+
+26
+
+
+
+10. Team
+
+
+
+28
+
+
+
+11.
+
+
+
+Market
+
+
+
+33
+
+
+
+12. Current CanYa App Features
+
+
+
+36
+
+
+
+13. Summary
+
+
+
+38
+
+
+
+14. Due Diligence
+
+
+
+39
+
+
+
+Page 2 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+V1.1 Amendments
+
+All Sections - Update to styling
+
+V1.2 Amendments
+
+Section 2 - Update to ICO Structure Section 4 - Inclusion of Token Burn in Asset Contract Section 10 - Update to Advisory Board
+
+V1.3 Amendments
+
+Section 1 - Clarification on compliance and regulatory aspects Section 2 - Addition of KYC explanation. Section 4 - Clarification on function of smart contracts. Section 5 - Clarification on token reward mechanisms. Section 6 - Clarification on volatility of the coin. Section 7 - Clarification on curation/arbitration features. Section 14 - Addition of further company information.
+
+V1.4 Amendments
+
+Section 2 - Halving of Hard Cap & unsold tokens to be sent to the Asset Contract
+
+V1.5 Amendments
+
+All Sections - Update to styling Disclaimer - Addition Section 4 - Clarification of Smart Contracts & addition of the Charity Pool
+
+V1.6 Amendments
+
+All Sections - Update to styling
+
+
+
+Page 3 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+Disclaimer
+
+This material is provided by CanYa Services Pty. Ltd. ("CanYa", the "Company"), for informational purposes only, and is not an offer or a solicitation to buy or sell any securities or other financial instruments. Tokens are not intended for speculation and afford the holder no rights in, or claims to, any of the assets of CanYa or in any way a share in any profits that CanYa may achieve. Interested parties acknowledge agreeing to the Privacy Policy, and Terms and Conditions. This document is subject to change and must be accompanied by the previously agreed to documents, which remains in effect regardless of decisions to participate or engage with CanYa.
+
+This paper describes the current vision for the CanYa Platform. While we intend to attempt to realise this vision, please recognise that it is dependent on quite a number of factors and subject to quite a number of risks. It is entirely possible that the CanYa Platform will never be implemented or adopted, or that only a portion of our vision will be realised. We do not guarantee, represent or warrant any of the statements in this paper, because they are based on our current beliefs, expectations and assumptions about which there can be no assurance due to various anticipated and unanticipated events that may occur. These events may include further regulations or legal advice that require CanYa to obtain relevant licenses and approvals.
+
+There are several references throughout this paper to features being '... integrated', 'under development' or '... planned'. These references are for informational purposes as to the CanYa vision only and are not representations or warranties to the effect that those features are currently integrated or will be integrated in the future. Additionally, several references appear throughout this paper to certain features being '...subject to regulatory approval'. CanYa will attempt to obtain all relevant licenses and approvals if and when required, and will only implement such features once such licenses or approvals have been obtained. However, CanYa does not represent, warrant or guarantee that such licenses or approvals will be obtained and that any features described in this paper will be implemented.
+
+Please know that we plan to work hard in seeking to achieve the vision laid out in this paper, but that you cannot rely on any of it coming true. Blockchain, cryptocurrencies and other aspects of our technology and these markets are in their infancy and will be subject to many challenges, competition, regulation and a changing environment. We will try to update our community as things grow and change, but undertake no obligation to do so.
+
+Interested parties acknowledge that the CanYa Platform, as described in the CanYa whitepaper, may never in fact operate as intended. A CanYaCoin is intended solely as a mechanism for using the services offered through the CanYa Platform. CanYaCoins are not for speculative investment. No promises of future performance or value are or will be made with respect to CanYaCoins, including no promise of inherent value, no promise of continuing payments, and no guarantee that CanYaCoins will hold any particular value. CanYaCoins are not participation in the Company and hold no rights in said company. All proceeds received by the Company may be spent freely by the Company absent any conditions.
+
+
+
+Page 4 of 41
+
+
+
+canya.io
+
+
+
+Foreword
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+My team and I founded CanYa in 2015 with three core principles.
+
+The first is that services should be truly peer-to-peer -- there is no need for a third-party. For thousands of years we've exchanged value directly for another's skill or service; third-parties are a compromise. The second is that a true meritocracy will deliver the best experience for all users; the best providers should get the most work, and should charge the most for their services. The third is that careful design can be harnessed to deliver on the promises of technology, and that interfaces can serve seamless experiences between the digital world and the real one.
+
+With these principles in mind, we invested our time and money to realise that vision. From concept in 2015, development in 2016 and a successful soft-launch in 2017 in a small Australian market, the CanYa project is being delivered. Over 3400 provider listings have been created with 7600 users engaging on the platform, and monthly growth in double digits. Over a thousand peer-to-peer jobs have been processed with less than 1% requiring our arbitration.
+
+With the power of blockchain technology, we can deliver on the next phase of this journey. Not only can payments be decentralised, autonomous and instantly global, but so can curation, arbitration and soon storage and even computation. The entire marketplace infrastructure will be truly peer-topeer.
+
+But most importantly, we believe in a world powered by cryptocurrency commerce. Cryptocurrencies still have less than 0.1% of the user-base, trading volume and liquidity of fiat counterparts, but exceed in potential across all facets. We feel the primary barriers to adoption are the availability of crypto-enabled merchants, the learning curve associated with acquiring and spending crypto-currencies, and the presence of fees.
+
+We believe we've solved this with CanYa; an incredibly easy, delightful and accessible tool to pay for services anywhere in the world using crypto-currencies. The CanYaCoin and wallet will be the heart of the platform, allowing a single medium of trustless exchange between users, removing fees and cryptocurrency volatility, and empowering the wider cryptocurrency ecosystem (subject to regulatory approval).
+
+Yours in decentralisation,
+
+
+
+John-Paul Thorbjornsen CEO and Co-founder, CanYa
+
+
+
+Page 5 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+1. Executive Summary
+
+CanYa is a recently launched working, feature rich platform in the home & digital services industry. The platform is currently made up of mature iOS & Android apps to find, book, pay and review service providers. A web app is in beta. Exchanges are currently available in Australian fiat through a licensed third-party.
+
+The CanYaCoin (CAN) will soon power the platform's payment system, enabling a decentralised, trustless and hedged escrow service, a bridge between fiat and a variety of cryptocurrencies, a powerful rewards system to encourage network effects, and incentivised user-curation and userarbitration. 1
+
+CanYa is hoping to raise 30,685 ETH by offering 60,000,000 CanYaCoins. Funds raised will be used to integrate the cryptocurrency payment layer, provide liquidity for the hedged escrow contract, expand features and undertake an aggressive global launch with marketing, translations and infrastructure.
+
+CanYa is the ultimate link between cryptocurrency and the real world. The ERC20-based token is backed by the value of skilled human services with an estimated value of $2tn globally. The token can be exchanged in the platform and converted to real world skilled labour. A freemium subscription model provides a constant demand for the token and a revenue stream for the platform. By integrating fiat payment gateways, CanYaCoin aims to become a legitimate gateway of fiat into crypto, enhancing the entire ecosystem and accelerating mainstream adoption.
+
+The CanYaCoin sale allows users an opportunity to secure CanYaCoins at a discount.
+
+
+
+1 Subject to CanYa obtaining relevant licenses and regulatory approval. Features will only be
+
+
+
+implemented if, and when, such licenses or approvals have been received.
+
+
+
+Page 6 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+1.1 Core Features
+
+The CanYa platform is a fully featured marketplace of peer-to-peer services that consists of iOS & Android apps and a beta web-app. CanYa includes inbuilt chat, VoIP, calendar, alerts, payments, listing management, reviews, quotes, direct bookings, detailed pricing, job broadcast, multi-user jobs and more.
+
+(1) As a client, you can load your CanYa wallet with CanYaCoin and a variety of cryptocurrencies. 2
+
+(2) As a client, you can instantly connect and pay for services locally and globally, with no fees. CanYa supports most peer-to-peer services with an emphasis on home & digital services. Users help curate and verify new service providers with reviews.
+
+(3) As a service provider, you will can CanYaCoin for your skills and services. Service providers can spend CanYaCoin in the app or exchange it and send immediately to a Bitcoin or Ether wallet.
+
+(4) As a service provider, freely advertise your skills and services to a micro-local & global marketplace or pay a small monthly subscription for enhanced featured status. CanYa is a true meritocracy -- the best providers get the most exposure and work.
+
+"Book & pay my cleaner with crypto? I'm in!"
+
+
+
+2 Subject to CanYa obtaining relevant licenses and regulatory approval. Features will only be
+
+
+
+implemented if, and when, such licenses or approvals have been received.
+
+
+
+Page 7 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+1.2 Potential Use Cases
+
+Maria | Virtual Assistant | Caracas, Venezuala
+
+Maria struggles to find clients willing to pay her in Bitcoin, which she prefers due to her country's volatile fiat currency. She lists herself on CanYa and is able to receive payments in CAN, which she can spend on other services in CanYa or exchange freely to ETH/BTC.
+
+Praveen | App Developer | Hyderabad, India
+
+Praveen is a high quality app developer in Hyderabad. He wants to reach a global client base but doesn't want to pay high commissions to traditional platforms. Praveen lists himself on CanYa and uses a fully-featured web client to access a global task list. Praveen loves that his high rating means he has great exposure.
+
+Sarah | User | Vancouver, Canada
+
+Sarah has a sizeable crypto portfolio, and wishes she could spend it easily. She uses CanYa to hire a local 5-star landscaper to build her a new backyard and pays him in cryptocurrency. Her landscaper can easily convert & withdraw the cryptocurrency as fiat straight from one of Vancouver's many Bitcoin ATMs.
+
+David | Plumber | Melbourne, Australia
+
+David is a big believer in cryptocurrency and wants to grow his client base. He loves referring his existing clients to CanYa to receive payments in cryptocurrency. CanYa's multi-user job feature makes it easy for property tenants to book & review David whilst their property owners pays remotely in CAN once the job is complete.
+
+"CanYa will accelerate the mainstream adoption of cryptocurrencies"
+
+
+
+Page 8 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+2. Token Sale
+
+There will be precisely 100,000,000 tokens in circulation. There will be a hard cap of 60,000,000 CanYaCoins available for sale. The token offering will exclusively accept ETH. CanYaCoins will be distributed after the ICO.
+
+2.1 Private Sale
+
+26,000,000 CanYaCoins will be sold privately to strategic investors who bring long-term value to the project.
+
+2.2 Public Sale
+
+34,000,000 CanYaCoins will be sold across the public sale, which will be conducted over two stages and will commence in November 2017.
+
+The CanYaCoin Sale will include a "Dolphin" tier -- which is an exclusive invite-only bucket of tokens that will be made available to members of the public who contribute to the CanYa community in various ways. The Dolphin tier will be on-going until the main sale.
+
+
+
+Stage Dolphins
+
+
+
+Amount 14,000,000
+
+
+
+ETH: CanYa 1 ETH : 1400
+
+
+
+Bonus 40%
+
+
+
+Maximum USD Value* (ETH)
+
+10,000 $ 2,500,000
+
+
+
+1
+
+
+
+4,000,000 1 ETH : 1200 20%
+
+
+
+2
+
+
+
+16,000,000 1 ETH : 1000
+
+
+
+Total: 34,000,000 250
+
+
+
+3,333 $ 833,333 16,000 $ 4,000,000 29,333 $ 7,333,333
+
+
+
+The main sale will run for 30 days or until sold out. At the conclusion all unsold tokens will be sent into the Asset Contract. 3
+
+*Indicated price only - will change from Ether price fluctuations
+
+
+
+3Subject to CanYa obtaining relevant licenses and regulatory approval. Features will only be
+
+
+
+implemented if, and when, such licenses or approvals have been received.
+
+
+
+Page 9 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+2.3 Dissemination
+
+The total supply of tokens will be fixed and disseminated in the following manner:
+
+
+
+34%
+
+
+
+26%
+
+
+
+20% 20%
+
+
+
+Main Sales Private Sales Founders & Advisors Reward Pool
+
+
+
+Founder tokens will be locked for 12 months. The Reward Pool is used by the platform to incentivise users and is discussed in detail further down.
+
+
+
+Page 10 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+2.4 CanYaCoin (CAN Token)
+
+CanYa is offering CAN Tokens to the public for future use in the platform. The following is the purpose of the token, to be integrated in the future roadmap, and subject to regulatory approval:
+
+(1) A consumptive use token for providers to access premium features in the app, contributed monthly.
+
+(2) A loyalty token to reward users who participate in the platform, contributed to them when they perform certain activities in the ecosystem.
+
+If compliant with all local regulations, and appropriately licensed to do so:
+
+(3) A medium of value exchange allowing providers to invoice their services in CAN tokens.
+
+(4) A store of value, allowing providers to retain payments in the CanYa wallet.
+
+Note: the CanYa Wallet will be a modular open-source wallet that allows users to store tokens locally. CanYa will not hold user tokens or the private keys to the tokens.
+
+CanYa currently facilitate Australian fiat payments using a licensed third-party. Integration of fiat payments facilities in the CanYa ecosystem proposed in this white paper will require further licensing and regulatory approval, through CanYa, or through a third-party.
+
+2.5 Know Your Customer (KYC)
+
+KYC checks will be performed by CanYa for all ICO participants. This will be done for the following reasons:
+
+(1) As part of the CanYa fully integrated wallet service, CanYa is planning on integrating fiat 'on/off rails' services to allow users and providers to pay for services by credit card and withdraw payments to their bank accounts.4 These services will eventually require regulated KYC/AML checks, so it is necessary to start the compliance process now.
+
+(2) The cryptocurrency marketplace is becoming saturated with a number of ICO activities and it is becoming increasingly difficult to determine legitimate projects. CanYa has a legitimate team, a legitimate product and a legitimate ICO and so will be including KYC to demonstrate authenticity and our commitment to the CanYa project.
+
+
+
+4Subject to CanYa obtaining relevant licenses and regulatory approval. Features will only be
+
+
+
+implemented if, and when, such licenses or approvals have been received.
+
+
+
+Page 11 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+3. Platform
+
+
+
+CanYa was beta-launched in a small Australian city (Darwin) in late December 2016, and then softlaunched in a major Australian city (Adelaide) in January 2017. CanYa has been successfully tested in a market and has an existing user-base.
+
+
+
+3.1 Peer-to-peer
+
+
+
+CanYa is a peer-to-peer platform where clients choose & interact directly with the person who will be providing the service instead of a third-party. Using smart contracts, the platform will provide a trustless, secure and fast payment service.
+
+
+
+3.2 Service-Agnostic
+
+CanYa is suitable to a vast array of different services from professional licensed services to casual per-hour services. CanYa currently has over 200 services and 400 different skills listed for providers, all submitted by users. CanYa includes features that make it flexible for mobile services, brick-andmortar services, one-time jobs, recurring and group bookings.
+
+3.3 User-Generated
+
+
+
+The operational CanYa App
+
+
+
+CanYa's content is primarily user-generated & rapidly scalable. Providers add listings themselves and can request further services, skills and licences.
+
+
+
+3.4 Self-Curating and Self-Balancing
+
+CanYa is a true meritocracy and is thus self-curating.Providers with good reviews will see more exposure and therefore more work. Good providers will see high demand and can afford to start charging higher rates.
+
+
+
+Page 12 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+3.4 Self-Curating and Self-Balancing (Continued)
+
+CanYa automatically assesses and ranks providers on 15 different metrics, including
+
+
+
+1. Verifications (4 tiers) 2. Licences 3. Skills 4. Listing information 5. Profile Views
+
+
+
+6. Response Rate 7. Completion Rate 8. Quote Rate 9. Online Status 10. Loyalty
+
+
+
+11. Profile Engagement 12. Referrals 13. Reviews (4 metrics) 14. Badges 15. Ratings
+
+
+
+New providers are given a 7 day exposure boost to ensure they can penetrate an established provider base. All providers are given the opportunity to continually improve their profile and behaviour to ensure maximum exposure.
+
+3.5 End-To-End
+
+CanYa is an end-to-end solution providing discovery, engagement, booking, job tracking, payment, receipt issuance and review capture. CanYa also includes free media-rich messaging, free voice calling and a free quote & invoice service.
+
+
+
+Page 13 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+3.6 Smart with Machine Learning
+
+
+
+Planned
+
+
+
+The worst experience with hiring services is usually caused from hiring the wrong service. CanYa is planning on using the thousands of job requests processed in the platform, together with the listed skills and descriptions, to train ML algorithms to better match job requests with the right providers and to extract the right information from users easily.
+
+
+
+In future, users will simply ask the platform for help, and the right providers are immediately notified. This vastly improves the experience of the platform.
+
+
+
+3.7 Chat Bot Engagement
+
+
+
+Planned
+
+
+
+CanYa have already built and implemented a media-rich messaging service native to the app and sees thousands of messages sent between users each week. CanYa is in the early stages of building a smart chat-bot to engage users and providers. The chat service can be used to process job requests, as well as helping providers manage their schedule.
+
+
+
+Page 14 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+4. Smart Contracts
+
+Ethereum smart contracts provide a trustless hedged escrow which aims to protect cryptocurrency value for users, as well as processing the platform revenue stream and disseminating rewards for incentivised network effects.
+
+
+
+4.1 What is a Smart Contract?
+
+A smart contract is a fully automated protocol that exists on the blockchain in order to facilitate, verify and then execute the performance of an agreement. Smart contracts allow users of blockchain technology to make good on promises that have been specified in digital form without the need for third parties or written documentation.
+
+
+
+4.2 Trustless Hedged Escrow
+
+
+
+Under Development
+
+
+
+At the heart of the transaction process is a smart contract that holds secured cryptocurrency for the provider. With an Ethereum smart contract, the user does not need to trust the platform or the third-party 5 to send their cryptocurrency. Due to volatility in cryptocurrency, CanYa aims to create an internal pool in order to provide collateral to hedge the amount of cryptocurrency sent to the smart contract. CanYa have recently partnered with Digix and will be using the Digix token ('DGX') in order to secure the store of value for the hedged escrow function. Digix is a cryptocurrency backed by gold as every 1 DGX = 1 gram of gold. The value of the escrow will then be protected via a stable cryptocurrency and the internal pool will bear the cost and risk of any volatility in relation to the hedged amount. CanYa aims to provide protection against downswings of up to 20% with further protection being covered on a pro rata basis to be determined. Please note the development of the hedged escrow function is subject to a number of regulatory and technical developments and every effort will be made to ensure participants are aware of developments in this area.
+
+
+
+5Subject to CanYa obtaining relevant licenses and regulatory approval. Features will only be
+
+
+
+implemented if, and when, such licenses or approvals have been received.
+
+
+
+Page 15 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+4.2 Trustless Hedged Escrow (Continued)
+
+An example of the process:
+
+Step 1 - A client books a provider for $100 and sends crypto to a smart contract. Immediately an equivalent $100 from the store-of-value base is collected in a hedge contract. Step 2 - The provider completes the job and sends the $100 invoice. Step 3 - The client releases the payment.
+
+-> The value of the escrow has reduced to $90: $10 is exchanged from the hedge to pay the provider $100. -> The value of escrow has increased to $110: $10 is exchanged out to maintain a $100 invoice.
+
+
+
+Page 16 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+4.3 Dispute Resolution
+
+
+
+FIAT Integrated Crypto Planned
+
+
+
+CanYa has already built an effective automatic dispute resolution system, but this will be enhanced with a smart contract. The smart contract holds the cryptocurrency, but allows both parties to take recourse against each other and encourages them to negotiate. The CanYa app encourages users to negotiate via inbuilt-chat features and the ability to amend or dispute issues arising from the invoice.
+
+
+
+In the event the negotiations between parties is fruitless, either party can request arbitration from CanYa at a non-refundable cost of 5% from the total amount residing in the escrow smart contract. CanYa may provide a member of the management team or a mutually agreed third party to conduct the arbitration and all parties agree to be bound by any decision made. Ultimately, Canya aims to promote peer-to-peer dispute resolution and allow other platform users to assist in the dispute resolution process and arbitrate on issues arising from a job.6
+
+
+
+6 See Section 7 Roadmap. These features are subject to CanYa obtaining relevant licenses and
+
+
+
+regulatory approval. Features will only be implemented if, and when, such licenses or approvals
+
+
+
+have been received.
+
+
+
+Page 17 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+4.4 Trustless Payment Automation
+
+
+
+Planned
+
+
+
+Smart contracts allow for the automation of many business process that can execute without trust from any involved party. For CanYa, this includes deposits, milestone payments and even recurring payments.
+
+For a deposit, the provider specifies that a certain amount of the job be paid upfront, with the rest held in escrow. For milestone payments, the provider breaks the job into smaller parts and is paid incrementally. The provider can set milestones themselves, which execute payments on request, or are time-based. After each payment, the smart contract holds the next milestone payment in escrow. The smart contract also handles recurring payments, paying the provider out on terms that they agree with the client.
+
+
+
+4.5 Amended Invoices
+
+
+
+If a provider amends or issues an invoice lower than the escrowed amount, the remainder is refunded to the user when they release the crypto. If the provider amends an invoice to a higher amount, a smart contract will pay out the full amount, and deduct the remainder from the client's wallet (with client approval).
+
+
+
+Page 18 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+4.6 Asset Contract
+
+
+
+Under Development
+
+
+
+CanYa processes two forms of revenue: a 1% flat transaction fee and a freemium subscription model for providers. Both proceeds will be collected as CanYaCoins and will be sent to an Asset Contract. The Asset Contract will accumulate the crypto and split them in accordance with the publiclyviewable proportions in the smart contract and dispense them monthly. 30% will be sent to the Rewards Pool, 30% will be sent to the CanYa for platform maintenance and development, 30% will be burnt, and 10% will be sent to the Charity Pool.
+
+
+
+As the Asset Contract sends an amount of tokens to the Rewards Pool, which is unlocked and recycled back to the users as rewards, and increases the circulating supply and liquidity in the market. Consequently, the token value would decrease if nothing else was done due to inflation. To offset the increase in supply, an equivalent amount of tokens needs to be burnt, which is why the Asset Contract contains a burn function.7
+
+
+
+Please note, CanYa as an entity does not perform any action to burn tokens; rather users on the platform cause the tokens to be burnt by way of the Asset Contract. The burning of tokens is dependent on user-behaviour in order to maintain the integrity of the CanYaCoins.
+
+
+
+Charity Pool
+
+CanYa as an organisation believe in the pay-it-forward concept, and as such, will be maintaining a pool of tokens to be gifted to selected charities, drawn as a 10% payout from the Asset Contract. CanYa are excited to announce Giveth as a launch partner to receive CanYa donations.
+
+
+
+7 Subject to CanYa obtaining relevant licenses and regulatory approval. Features will only be
+
+
+
+implemented if, and when, such licenses or approvals have been received.
+
+
+
+Page 19 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+4.7 Provider Subscriptions - Continual Token Demand
+
+Under Development
+
+Providers can opt to pay a monthly subscription in CAN for coveted "featured" status. Being featured means securing the top position, the greatest exposure, access to the most work, and priority notifications to job requests. To stay true to being a meritocracy, multiple featured providers are still ranked according to their profile points.
+
+To control supply and demand, featured provider positions will double in cost for each position to ensure that being featured is priced for a minority. For example, if the first position is 1 CAN per month, the next position will cost 2 CAN per month and the next will be 4 CAN, etc. If a provider discontinues their position, it may cost them far more to re-enter, thereby encouraging them to hold their subscription. The subscription is sent to the Asset Contract for dissemination.
+
+Conversely as the provider base grows, the starting cost halves. In this way, the cost of entry is balanced with demand in obscure service categories. Similarly, an automated price drop over a regular time period ensures that users are not out-priced in markets with poor-performing fiat currencies.
+
+
+
+4.7 Transaction Fee
+
+There is a small 1% transaction fee processed for every payment made on the platform and is deducted from the provider's payout. Compared to Uber, this is up to 25 times lower. Proceeds from the transaction fee are sent to the Asset Contract for dissemination.
+
+
+
+Page 20 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+5. CanYa Rewards
+
+
+
+Marketplaces are very responsive to network effects; the more providers list themselves, the more clients will use them. The team have built a native rewards system that incentivises the following user-behaviours:
+
+(1) Encouraging users to sign up and use the platform, (2) Referring friends to the platform, and (3) Encouraging friends to use the platform.
+
+
+
+5.1 Friend Referrals
+
+
+
+FIAT Integrated Crypto Planned
+
+
+
+CanYa currently incentivises users to refer their friends to the platform by giving them $10 credit. In future, CanYaCoins will be issued for each successful referral. Each user is given a unique referral code and link with valid referrals being tracked through this code.
+
+
+
+5.2 Welcome Bonus
+
+
+
+FIAT Integrated Crypto Planned
+
+
+
+If a new user signs up with a friend's referral code they are immediately issued credit to encourage them to make their first transaction (currently $10).
+
+
+
+5.3 Transaction Rewards
+
+
+
+CanYa will incentive users to make transactions by issuing a 5% reward on each transaction. For example, if Tim pays his web-developer 100 CAN, then he will immediately receive 5 CAN after the transaction. This is a complete disruption of traditional payment methods where users incur fees when they transact. With CanYa, active users are rewarded for utilising the platform.
+
+
+
+5.4 Commission Payments
+
+
+
+FIAT Integrated Crypto Planned
+
+
+
+CanYa has an in-built incentive for users to encourage their friends to use the app by issuing a 2-4% commission if their referral transacts in the platform. For example, if Bob refers Jane, for every 100 CAN Jane spends or earns, Bob will be paid 2 CAN. This will encourage users to refer other users and providers and in turn maximising adoption of the platform.8
+
+
+
+8 Subject to CanYa obtaining relevant licenses and regulatory approval. Features will only be
+
+
+
+implemented if, and when, such licenses or approvals have been received.
+
+
+
+Page 21 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+5.5 Rewards Pool
+
+The Rewards Pool will hold 20% of the total available CanYaCoins after the ICO and will be held in a smart contract. Once the ICO is completed, the total number of tokens is recorded as the baseline amount. Each time the number of tokens in the pool decreases by half, all rewards are also halved. In this manner, Rewards will constantly be issued, no matter the amount left, on an asymptote to zero.
+
+The Rewards Pool is topped up monthly by allocation from the Asset Contract. If usage of the platform increases, the Asset Contract will increase the amount contained in the Rewards pool, thereby maintaining an equilibrium.
+
+
+
+Reward
+
+
+
+Baseline
+
+
+
+Reward Pool Token Dissemination
+
+
+
+Baseline/2
+
+
+
+Baseline/4
+
+
+
+Baseline/n
+
+
+
+Referrals (CAN)
+
+
+
+10
+
+
+
+5
+
+
+
+2.5 10/n
+
+
+
+Welcome (CAN)
+
+
+
+10
+
+
+
+5
+
+
+
+2.5 10/n
+
+
+
+Commission per transaction
+
+Growth per month
+
+
+
+5%
+
+
+
+2.5%
+
+
+
+1.25% 5/n%
+
+
+
+1%
+
+
+
+0.5%
+
+
+
+0.25% 1/n%
+
+
+
+100%
+
+
+
+Reward Pool Decay Function
+
+
+
+75%
+
+
+
+50%
+
+
+
+25%
+
+
+
+0%
+
+
+
+Baseline /2
+
+
+
+/4
+
+
+
+/8
+
+
+
+/16
+
+
+
+/32
+
+
+
+/64
+
+
+
+/128
+
+
+
+/n
+
+
+
+Page 22 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+6. Ecosystem Growth & Cryptocurrency Volatility
+
+6.1 Ecosystem Growth
+
+Early adopters to the platform are rewarded from the initially generous Reward Pool. As the Reward Pool is exhausted, dissemination is also reduced. As the user-base grows, providers list their services and are engaged by users. As the provider-base grows, some providers opt in to the premium subscription model to distinguish themselves and increase exposure. As the transactional revenue and subscriptions increase, the rewards pool is topped up allowing further reward dissemination.
+
+6.2 Protecting Against Volatility
+
+A token with scarcity properties is not a favourable cryptocurrency due to consequential volatility from speculation. CanYa plans on protecting against volatility by utilising a hedged escrow contract, which collaterises the value of the CanYaCoin with a proven store-of-value in a trustless manner.9 Whilst the token is being utilised as a cryptocurrency, its value is secured.
+
+Payments held in escrow is typically held for less than two weeks (from CanYa platform experience), which prevents CanYa's asset base being over-exposed to long-term fluctuations. Additionally, transactions are hedged on a per-transaction basis, and only escrowed crypto is protected. This sensibly limits the liquidity pool exposure.
+
+The market price of the token can be derived from a market-price aggregator or a decentralised data-feed based on the Schelling Points mechanism proposed by Vitalik Buterin.10 Market prices are aggregated, outliers are removed and correct submissions are rewarded.
+
+
+
+The team recognise that decentralisation is key for scalability and adoption of crypto, so have built a decentralised roadmap.
+
+
+
+9 See Section 4.1
+
+
+
+10 https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/
+
+
+
+Page 23 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+7. Decentralisation Roadmap
+
+The team recognise that decentralisation is key for scalability and adoption of cryptocurrency, so have built a decentralised roadmap. This roadmap is for informational purposes only and is an indication of the aspirations of the CanYa team. CanYa does not guarantee that any of the milestones detailed below will be achieved.
+
+
+
+Aspect Payments
+
+Curation/ Arbitration Storage Compute
+
+
+
+Integration Q1 2018
+
+
+
+Technology Ethereum
+
+
+
+Q3 2018
+
+2019 TBA
+
+
+
+Ethereum
+
+IPFS Fog/Mist Computing (SONM, Golem)
+
+
+
+Notes
+
+Using the ethereum blockchain to transact tokens with smart contracts. Trustless hedged escrow, asset contract and reward dissemination. Users can perform curation, verification and assist in arbitration of disputes. Decentralised, low latency storage.
+
+Decentralised computation.
+
+
+
+Decentralised storage and compute technology is not mature and as such will unnecessarily hinder deployment. To minimise the technology risk, CanYa is launching a hybrid platform, with centralised compute & storage using traditional server architecture but decentralised smartcontract payments. Aspects of user-initiated curation and arbitration outlined above will be integrated when over time. 11
+
+7.1 Curation
+
+Users submit new services, skills and licences to CanYa, which can be curated by nominated and known users. They earn CAN by performing this action and help ensure the integrity of the platform.
+
+7.1 Arbitration
+
+Although less than 1% of jobs end up requiring arbitration (from CanYa platform experience), users can elect for arbitration for a small 5% fee if negotiation is fruitless. This fee can be paid to other delegated token-holders to perform instead. In this way, the platform aims to promote peer-to-peer dispute resolution and the users ultimately help contribute to the ecosystem.
+
+
+
+11 Subject to CanYa obtaining relevant licenses and regulatory approval. Features will only be
+
+
+
+implemented if, and when, such licenses or approvals have been received.
+
+
+
+Page 24 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+8. Budget
+
+
+
+The indicated budget from the CanYaCoin offering is detailed below. Any budget deficit will be made up by CanYa revenue stream. The CanYa CTO has experience founding a tech company with 9 employees and over $2m/year recurring revenue. These figures best represent his experience on company expenditure in Australia.
+
+
+
+Central Services
+
+Headcount Rent, software, legal Expense
+
+
+
+Year 1 Year 2 Year 3 Year 4 Year 5 Total
+
+
+
+3
+
+
+
+3
+
+
+
+4
+
+
+
+4
+
+
+
+5
+
+
+
+$ 50,000 $ 213,000 $ 240,000 $ 260,000 $ 280,000
+
+
+
+$ 338,000 $ 501,000 $ 624,000 $ 644,000 $ 760,000
+
+
+
+Product Development Headcount Expense
+
+
+
+6
+
+
+
+7
+
+
+
+8
+
+
+
+8
+
+
+
+8
+
+
+
+$ 720,000 $ 840,000 $ 880,000 $ 760,000 $ 720,000
+
+
+
+Global Expansion Headcount
+
+Marketing Events/ Contractors Expense
+
+
+
+3
+
+
+
+4
+
+
+
+4
+
+
+
+4
+
+
+
+4
+
+
+
+$ 100,000 $ 200,000 $ 300,000 $ 300,000 $ 300,000
+
+
+
+$300,000 $ 300,000 $ 300,000 $ 300,000 $ 300,000
+
+
+
+$ 625,000 $ 800,000 $ 900,000 $ 900,000 $ 900,000
+
+
+
+Governance
+
+
+
+$ 120,000 $ 156,000 $ 202,800 $ 263,640 $ 342,732
+
+
+
+Total Headcount Total Expenses
+
+
+
+12
+
+
+
+14
+
+
+
+16
+
+
+
+16
+
+
+
+17
+
+
+
+$2,253,000 $3,010,000 $3,446,800 $ 3,427,640 $ 3,602,732 $15,740,172
+
+
+
+Central Services CanYa will grow its central office in Melbourne, Australia by adding to the leadership and management team.
+
+Product Development The platform will be enhanced with a fully featured web-app and a desktop client. Chat-bot development and machine learning layer development will be continued along with cryptocurrency payment layer with required smart contracts.
+
+Global Expansion CanYa will launch offices in Australia, South-east Asia, China, North America and Europe to support regional KYC/AML and customer service. These support centres will help expand CanYa's global presence. Centres will be responsible for regional marketing, PR and managing the regional userbase. 12
+
+
+
+12 Pending future development
+
+Page 25 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+9. Roadmap
+
+CanYa has been in existence since late 2015, and operational since late 2016. The team have global aspirations and maintain an aggressive timeline:
+
+
+
+Start
+
+November 2015
+
+The CanYa founders envisaged a global marketplace of services, emphasised on quality. Design started.
+
+
+
+MVP
+
+December 2016
+
+The CanYa founders self-funded and built an MVP app using fiat payment gateways. Launched as
+
+beta into Australia.
+
+
+
+Soft Launch
+
+March 2017
+
+Soft launched into a major Australian City. Rapid uptake with high organic growth. Web-app development starts.
+
+Token Sale
+
+November 2017
+
+Token Sale to raise capital to integrate a cryptocurrency payment layer between users, and to expand globally.
+
+Page 26 of 41
+
+
+
+Pre-Sale
+
+October 2017 Pre-Sale conducted to set a token value and on-board initial
+
+participants.
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+Global Launch
+
+March 2018
+
+
+
+CanYa 2.0
+
+July 2018
+
+In-app translation service, video calling, chat-bot, advanced desktop features.
+
+
+
+Global launch. KYC/AML support centres in Europe, South-East
+
+Asia, North America, China and Australia. Fiat payment support
+
+with partner exchanges.
+
+
+
+Decentralised
+
+December 2018 CanYa will integrate features for users to assist with curation and arbitration.
+
+Page 27 of 41
+
+
+
+Advanced Matching
+
+October 2018 Advanced ML algorithms to smartly match the best providers
+
+with each job request.
+
+Decentralised 2.0
+
+2019 The first of the storage and
+
+compute decentralisation aspects are integrated pending
+
+technology maturity.
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+10. Team
+
+10.1 Founders & Core Team
+
+John-Paul Thorbjornsen, BTech CEO & Co-Founder
+
+JP finished school in the Top 1% of his state, earned a technology degree with First Class honours at UNSW, completed a distinguished 10 year career in the Australian Air Force as an officer and pilot before founding a technology company in 2015. Early Bitcoin investor, placed as finalist in Australia's first Ethereum Hackathon, "RegHack - Melbourne". Leader, visionary, passionate. Tesla Model 3 on order.
+
+Rowan Willson, BSc CTO & Co-Founder
+
+Rowan grew up on config.sys hacks as a 10 year old and after compiling his first Linux 2.2 kernel hasn't looked back. Rowan graduated with a high distinction average at UNSW double majoring in maths & computer science. He also completed a successful 12 year career as a decorated pilot in the Australian Air Force, whilst concurrently founding and developing "OzRunways EFB" iOS app which revolutionised aviation in Australia. Rowan is a co-founder of CanYa and interests include machine learning, popular physics, aviation and music.
+
+Chris McLoughlin, BBus CMO & Co-Founder
+
+Chris completed a Business Degree with First Class honours before being employed as a pilot in the Australian Air Force. Chris is a fluent growthhacker, growing CanYa's social media base from 0 to over 55,000 followers in 8 months. Chris runs a tight marketing team and is passionate about engaging the community. Early Bitcoin investor, believes in a decentralised future.
+
+Kyle Hornberg, BTech
+
+Lead Operations & Co-founder
+
+Air Force Operational Manager. Leader, innovator, investor. Co-founded CanYa and runs a very tight operations team.
+
+
+
+Page 28 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+Jet Yap, BSc
+
+COO
+
+Jet has more than 10 years of experience working for large global IT shared services organisations and international professional services firms assisting customers and partners to make better use of SAP ERP technology. Jet was trained in SAP Finance and Controlling R/3, SAP Security and SAP GRC Access Control and participated in large scale ERP rollouts, following industry leading practices such as Prince2, ASAP and ITIL V3. Jet has been mining Bitcoin since 2012, and placed as finalist in Australia's first Ethereum Hackathon, "RegHack - Melbourne".
+
+Surya Wongtomo, BIt
+
+Project Manager
+
+Surya is a skilled and talented designer, developer and manager, running his own digital agency SWUX. Surya co-founded Brighton Peak Bitcoin Exchange and has been involved in cryptocurrencies since 2011. He is a r/ cryptocurrency moderator.
+
+
+
+10.2
+
+
+
+Tech & Design Team
+
+Juan Suarez, BSc
+
+Lead Front-end Developer
+
+Creative full-stack developer with 16 years experience and wide industry experience.
+
+Shaun O'Reilly, BIt
+
+Lead Back-end Developer
+
+Senior web-architect. Fluent on 14 software languages and 7 database systems. 25 years experience.
+
+Daniel Duckworth, BCs
+
+Machine Learning Integration
+
+Founder of ServiceCrowd marketplace. ML and automation expert.
+
+Esther Nitafan, BComDes
+
+Lead Design
+
+Art direction and branding, passionate about clear communicated design. Creative vector illustrator, motion graphics designer and UI/UX Designer.
+
+
+
+Page 29 of 41
+
+
+
+canya.io
+
+
+
+10.3
+
+
+
+An Autonomous Marketplace of Services
+
+Marketing, Community Engagement
+
+
+
+Steve Meacham, MBA
+
+Online Marketing
+
+Entrepreneur. Co-founder Crowdvenience marketplace. President of 100% gingers society (if that really existed!). Web developer. Marketing specialist.
+
+James Waugh, BA
+
+Head of Business Development
+
+James found cryptocurrencies in early 2015 and ventured down the Blockchain rabbit hole. After years of active engagement in the cryptocommunity he has developed a deep understanding of Blockchain technologies and Ethereum projects. This, in combination with an outgoing attitude, makes for a engaging ICO community manager.
+
+Kieran Blair MBus BTech
+
+Assistant Community Manager
+
+Kieran has lots of friends and likes chewing peoples' ears off about cryptocurrency; making him perfect for the Community engagement role. Constantly trying out new idea's and pitching his friends means that he spends more time with the cryptocurrency community, than his friends... Kieran's background is as an Air Force Fighter Pilot with interests in entrepreneurship, philosophy, and life hacking.
+
+Steph McLoughlin, BA
+
+Assistant Community Manager
+
+Communications Coordinator for GESB, the Government Employees Superannuation Board. Engaging and attentive, she helps lead the way in social engagement.
+
+Jacinta Kelly, BEng
+
+Customer Service
+
+Customer Service super-star. Jacinta leads a larger team of Support Agents that provide assistance across our many customer service platforms.
+
+
+
+Page 30 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+10.4 Advisory Board
+
+David Moskowitz
+
+CEO Indorse, CEO Attores CEO of Indorse.io, a decentralized network for professionals, which allows members to be rewarded for posting their skills and accomplishments.
+
+CEO of Attores, which enables data and document security using smart contracts and blockchain technology. Board member of ACCESS The Singapore Cryptocurrency and Blockchain Industry Association.
+
+Josh Buirski
+
+Distributed Technologies Institute
+
+Founder & Partner at Distributed Technologies Institute Pty. Ltd
+
+Kai C. Chng
+
+CEO & CoFounder DigixGlobal CEO of Digix - a gold-backed token with zero fractional reserves. One of the first ICOs conducted on Ethereum with over 465k Ether raised. Digix is also an asset tokenisation platform, allowing traditional assets to be tokenised.
+
+Karen Hsu
+
+Head of Growth - BlockCypher Finding and scaling product/market fit for small and large companies. Product strategy, Go-to-Market strategy and Execution, Business Development, Sales and more.
+
+Layla Tabatabaie
+
+Attorney, Author, Advisor New York attorney, author, and digital marketer. Over six years of branding, fundraising, digital marketing, PR, and copywriting for VC-backed apps, blockchain companies and chatbots.
+
+Becker Goldstein
+
+Co-Director of Advisory at Strategic Coin Strategic Coin is the 1st crypto market research and analysis company providing education, research and token launch advisory services for the crypto marketplace.
+
+
+
+Page 31 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+Taotao He Co-Founder/CEO of Total Digital Asset Group Co-Founder/CEO of Titan, an investment fund that provides actively managed cryptocurrency portfolios, where token holders invest alongside a professional team. Co-Director of Advisory at Strategic Coin.
+
+Thomas Graham Co-Founder of TLDR Co-Founder of CODEC, MapD and TLDR Capital. Partner of TLDR; a digital currency investment and advisory firm. Lawyer with expert advice and guidance on marketing strategy, capital intro and growth hacking.
+
+George Kimionis Founder & CEO at Coinomi George is an established entrepreneur with a Computer Systems background. He has significant expertise in the Financial and Trading software sector with considerable experience in building software related to Trading, Exchanges, Analysis, Risk-Management and education.
+
+Ian Scarffe Blockchain - ICO Advisor / Consultant / Strategist / Investor Ian Scarffe is a seasoned entrepreneur and leading Bitcoin, Blockchain and Crypto expert. Ian has successfully started a lead cleaning service for the Australian Formula 1 Grand Prix, is an active Entrepreneur Business Mentor at Adelaide University and has been inducted to the board of the Entrepreneurs Organization. His latest work includes being a consultant for the banking industries of Europe whilst running a startup incubator call `Binkplus'.
+
+
+
+Page 32 of 41
+
+
+
+canya.io
+
+
+
+11. Market
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+11.1 Industry Size
+
+The "gig-economy" is comprised of freelancers, tradespeople, home service providers, digital service providers and self-employed professionals. It is growing extremely fast as more and more people prefer flexibility and control over their careers. It is forecasted to grow towards 40% of the global workforce in the next ten years, with over 200 million workers and with a total annual transaction volume approaching $2tn.13 In China, India and South East Asia combined, it will approach $1tn in annual transaction volume in the next five years.
+
+
+
+Global transaction volume for services
+
+
+
+13 Gig economy valuation
+
+Page 33 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+11.2 USA Addressable Market
+
+
+
+America has a population of 320 million people with over 50 million involved in the gig-economy14. Information extracted from the US Census and IRS tax codes paints a clear $1tn industry in relevant services15. The industry is set to increase dramatically over the next 5 years as technology lowers the barriers of entry.
+
+
+
+USA - Tax Codes
+
+
+
+Sector
+
+
+
+Size
+
+
+
+Other Services Repair & Maintenance Personal Services Civic, Professional Delivery Services Total
+
+
+
+$577BN $184BN $162BN $230BN $78BN $1.3TN
+
+
+
+11.3 India Addressable Market
+
+India is an emerging economy with the 94% of it's 478 million16 workforce in "unorganised" work activity17: This presents a significant opportunity, as this unorganised sector contributes 57% to India's GDP of $2tn18. Further, the unorganised sector is more likely to be engaged in the peer-peer services and retail market19 and is thus suitable to use CanYa. Smartphone ownership has leapfrogged desktop/ laptop, and for most, is the only source of internet in India. The total market can be estimated to be $USD300bn in India, factoring in smartphone ownership and the existing market size.
+
+
+
+14 https://www.upwork.com/press/2016/10/06/freelancing-in-america-2016/ 15 https://www.census.gov/services/index.html 16 http://www.nationmaster.com/country-info/profiles/India/Labor 17 http://planningcommission.nic.in/aboutus/committee/wrkgrp11/wg11_rplabr.pdf 18 http://www.tradingeconomics.com/india/indicators 19 http://planningcommission.nic.in/aboutus/committee/wrkgrp11/wg11_rplabr.pdf
+
+Page 34 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+11.4 China Addressable Market
+
+China have a population of 1.3bn, a GDP of $11tn, with 36% of their 800 mn labour force in the services industry20. 40% of
+
+
+
+China's workforce are classified as urban employed, (370 mn) and of this, 20% work in "other firm types" as opposed to state or collective-owned entities (suggesting self-employed or nonagency workers)21. Of the "other firm types", 3% work in
+
+
+
+Household Services, 5% work in Construction and 9% work in Other industries (as a percentage of overall urban employed force). This suggests an industry of 84 million workers that could be on an average wage of 40,000 CanYa (approx. $USD500bn pa). Other factors include a very large migrant worker growth who predominantly work in the private sector, a large rural to urban shift, and aforementioned growth in the private sector22.
+
+
+
+China's smartphone penetration is 40%23. Conservatively the 
+
+market in China can be assessed to be $USD 500bn.
+
+11.5 Global Addressable Market
+
+For a global assessment we can extrapolate from the biggest markets: India, China and USA and conservatively arrive at an estimated 200 million workers and a total annual transaction volume approaching $2tn with an annual growth of 10%.
+
+
+
+20 https://www.cia.gov/library/publications/the-world-factbook/geos/ch.html 21 http://www.rba.gov.au/publications/bulletin/2011/sep/pdf/bu-0911-4.pdf 22 http://www.rba.gov.au/publications/bulletin/2011/sep/pdf/bu-0911-4.pdf 23 https://www.statista.com/statistics/321482/smartphone-user-penetration-in-china/
+
+Page 35 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+12. Current CanYa App Features
+
+12.1 Onboard & Search
+
+Users experience a secure password-free login experience that takes less than a minute. Upon launch, they can search over 200 services in any location they need.
+
+Providers can be ranked by price, rating or distance. A map view shows a top-down view of providers.
+
+Users can choose a provider and see details including verifications, business information, availability and prices.
+
+12.2 Booking & Quotes
+
+In a few taps, users can perform three types of bookings: a direct booking with a provider, a broadcast booking to a group of providers, or post a task to every provider.
+
+Users can detail the job, add photos, set a location and detail a time to complete the job. Users can choose a single booking, a recurring booking or even an instant booking.
+
+Once quoted, a user can accept, negotiate or decline.
+
+12.3 Chat, Call, Video
+
+The CanYa app includes free media-rich chat, HD voice calling and even video calling.24 Users can add other members to their jobs and experience multi-user chat groups to organise bookings.
+
+
+
+24 Pending future development
+
+Page 36 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+13. Summary
+
+12.4 Payments & Reviews
+
+Users receive invoices, can export to PDF, pay for jobs and review providers. Payment is currently performed by credit card and cash. Invoices are fully inclusive of GST (where appropriate) and are automatically collated to produce a BAS tax statement. Both the invoices and statements can be exported to PDF and emailed.
+
+12.5 Provider Features
+
+Providers can add multiple listings along with snooze and draft features. Providers have a single calendar to manage all their availability. Providers can send quotes set to be instantly booked and receive recurring bookings. Providers can amend quotes and invoices at any time.
+
+12.6 Engagement Engine
+
+CanYa includes both an in-built referral engine and an engagement engine to maximise organic growth. Users can refer friends by sharing links and smart email and push notifications encouraging users to engage with content regularly.
+
+
+
+Page 37 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+14. Due Diligence
+
+CanYa will be the world's best autonomous marketplace of services. By combining an open meritocracy with cryptocurrency payments, an exciting rewards system that rewards active users, advanced matching, multi-lingual support and decentralised aspects, CanYa is the first true global services platform. CanYa will help accelerate the mainstream adoption of cryptocurrencies.
+
+
+
+Page 38 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+14.1 Token Sale Risks
+
+Tokens CanYaCoins are not securities, equity or profit-share mechanisms. Token sale participants should understand the risk of purchasing tokens and read this CanYa whitepaper in full before participating. Participating in the Token Sale is subject to the CanYa Token Sale Purchase Agreement. CanYa staff are available to answer any questions at https://canya.io live-chat and support@canya.io
+
+Technical Risk The CanYaCoin contract is based on the ERC20 standard. All efforts will be made to ensure the contract is free from technical bugs but once submitted to the Ethereum network, it is unable to be modified. Participants should be intimate with Ethereum and blockchain technology to understand these risks. Participants should understand the risks around private key storage and transmission.
+
+Hackers and criminal intervention The CanYaCoin contract address will be made available via https://canya.io. History has shown that sometimes criminal elements attempt to take over computer and email servers in order to trick people into sending money to the wrong address. This may include social engineering. CanYa will implement all best practice security measures to thwart potential attacks. Participants must make all reasonable efforts and follow all instructions from CanYa to ensure they are dealing with the correct contract address. Participants should not use any smart-contract address published outside of https://canya.io as it could be a scammer pretending to represent CanYa. Participants should follow all security best-practice procedures as directed by CanYa.
+
+Tax & Regulatory risk The token buyer must conduct their own due diligence to ensure that they comply with all local laws regarding cryptocurrency, tax, securities and other regulations in their jurisdiction. The CanYaCoin Sale may in the future be subject to further regulation.
+
+Refunds Refunds are not permitted. Sales will be final once transacted.
+
+
+
+Page 39 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+14.2 Company Disclosure
+
+Entity Sialia Capital Pty Ltd owns all the intellectual property of the CanYa platform and is a privatelyowned company, registered in Australia and compliant with the Australian Securities and Investments Commission 2001 (Cth) and the Corporations Act 2001 (Cth).
+
+Sialia Capital Pty Ltd was founded in 2016 and has no public financial information available. However, it has received funding from private investors.
+
+CanYa Services Pty Ltd is the operational day-to-day company of CanYa and is a privately-owned company, registered in Australia and is compliant with the Australian Securities and Investments Commission 2001 (Cth) and the Corporations Act 2001 (Cth).
+
+CanYa Services Pty Ltd was founded in 2017 and has no public financial information available. It is contracted by Sialia Capital to operate the CanYa platform.
+
+Key Shareholders The Sialia Capital Pty Ltd founding team are the principle shareholders of the company owning 100% of the total shares on issue in the company.
+
+Sialia Capital Pty Ltd is the sole shareholder of CanYa Services Pty Ltd.
+
+Assets The Sialia Capital Pty Ltd owns all intellectual property rights to the CanYa brand and platform (to the extent possible), including trademarks registered in Australian and USA, software, media and content copyright.
+
+Important Contracts Sialia Capital Pty Ltd has entered into a Services Agreement with Purpletalk Inc (a private computer software company in USA) to provide development resources. Purpletalk can terminate within 30 days written notice. Sialia Capital has entered into a Services Agreement with Visual Recruit Pty Ltd (a private computer software company in Australia) to provide development resources. Visual Recruit can terminate within 14 days written notice.
+
+Backgrounds of Directors & Managers Background information on the directors and managers of CanYa Services Pty Ltd and Sialia Capital Pty Ltd is provided in the White Paper available on https://www.canya.io website.
+
+Litigation Disclosure Sialia Capital Pty Ltd nor CanYa Services Pty Ltd is involved in any litigation at the date of publication of this document. 
+
+
+
+Page 40 of 41
+
+
+
+canya.io
+
+
+
+An Autonomous Marketplace of Services
+
+
+
+Page 41 of 41
+
+
+
+canya.io
+
+
+
+

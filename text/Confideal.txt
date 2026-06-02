@@ -1,0 +1,911 @@
+Escrow platform on Ethereum blockchain
+
+White Paper
+
+1
+
+
+
+ABSTRACT
+
+Confideal is an anonymous service, which allows you to carry out quick, cheap and safe international transactions without participation of third parties. The platform is based on Ethereum Smart Contracts that are optimized for use by non-programmers.
+
+2
+
+
+
+TABLE OF CONTENTS
+
+1. THE PROBLEM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 2. THE SOLUTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+2.1. The advantages of our solution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .6 2.2. Advantages over existing alternatives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 3. CONFIDEAL ECOSYSTEM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8 3.1. Confideal platform . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8 3.2. Confideal Token (CDL) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8 3.3. Ethereum (ETH) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 3.4. Confideal network parties . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10 3.5. Confideal platform cryptocurrencies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10 4. USE CASES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 5. MARKET, TARGET AUDIENCE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 6. RISKS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 7. TECHNICAL DETAILS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 7.1. The process of creating a contract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 8. HOW TO USE CONFIDEAL. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 8.1. Arbitration. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 8.2. The rating of arbitrators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 9. THE TEAM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 10. THE ADVISORS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 11. DEVELOPMENT ROADMAP. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 12. PRE-ICO & ICO OFFER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 12.1. ICO Objectives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 12.2. Pre-ICO. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 12.3. ICO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 12.4. Use Of Funds . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+
+3
+
+
+
+1. THE PROBLEM
+
+International transactions are a pillar of the modern global economy. International trade, real estate investment, industrial-grade equipment shipment are just a few of the markets based entirely on such deals.
+
+The market of international trade has been estimated to have had a volume of 15 to 20 trillion USD in 2016. The real estate investment market is predicted to reach almost 1.4 trillion USD in 2017.
+
+This incredible volume of economic activity can only be maintained by thousands of international contracts signed every day. Each of those deals is associated with inevitable costs and risks. In addition to the risks inherent in the exchange itself, counterparties have to spend significant resources on creating and maintaining the contract.
+
+In order to better understand where these costs come from, let us point out three key problems that exist in today's international contractual processes:
+
+ Interaction with Counterparties (Contracting). The organization of international deals is, a priori, a more complex process than that of domestic contracts. For that reason, the partners tend to simplify the contracting process by conducting the entire workflow via the Internet. This approach creates additional risks -- it becomes possible to modify contract data without the partner's knowledge, forge signatures in Photoshop, etc.
+
+ Foreign exchange regulations. In countries with strict forex regulations there can often be substantial delays. Delays of five or more days are quite common, and sometimes banks can deny payment processing outright, without explanation.
+
+ Arbitration. If disputes arise between parties, another type of cost can be incurred: arbitration. The average cost of arbitration today is $2.5 million, and usually takes at least 6 months to reach a decision. Such potential losses are deal-breakers for SMEs (Small and Medium Enterprises).
+
+Obviously, the majority of the factors that can lead to these problems are external. In the case of strict foreign exchange regulations, the risks are created by government policy; similarly, the risks of contracting and arbitration arise from the counterparty (provided the company itself acts fairly).
+
+Mitigating uncertainties associated with government regulators or counterparties can lead to a significant reduction or elimination of those risks.
+
+4
+
+
+
+2. THE SOLUTION
+
+Confideal is a platform that uses smart contract technology powered by the Ethereum blockchain to solve fundamental problems frequently associated with modern contractual processes.
+
+Ethereum is a decentralized system which includes the tools necessary to create smart contracts, and also its own cryptocurrency Ether (ETH) which is needed for those contracts to work.
+
+Smart contracts are digital algorithms which describe a set of terms, which are automatically fulfilled by the Ethereum network. They enable companies, entrepreneurs and regular individuals to enter contracts with each other without having to rely on the honesty of the respective counterparty.
+
+The terms of a smart contract are established before the deal is made. Then their fulfillment is ensured by software code without any human interaction.
+
+Thus, the smart contract technology represents an ideal tool for low-risk consummation of deals: outlined and executed by program code, the contract between the counterparties can be fulfilled or broken only in accordance with the originally established terms.
+
+Due to the technological characteristics of the blockchain -- the distributed database where the smart contract is stored -- any interference aimed at changing the terms of the deal after it has been signed is impossible without the mutual consent of each party.
+
+The Ethereum smart contract works as an "escrow agent", a sort of bank account, where the terms of the deal and the money (cryptocurrency) are stored until the contract is fulfilled.
+
+Moreover, the terms of the contract are available only to the counterparties themselves, and, in case of disputes, to the arbitrator. In addition, arbitrators resolve disputes without having access to the personal data of the counterparties. All that they know is the cryptocurrency wallet addresses of each of the 2 sides (for more information on arbitration see 6.1).
+
+Users also have the option to manage their smart contract (e. g. to close the deal, break it, set up fines and down payments, and establish how the money will be distributed if there is a breach of contract.)
+
+5
+
+
+
+The principal target market for Confideal services consists of individuals and companies engaged in the cryptoeconomy. However, the usefulness of Confideal extends beyond that. Existing businesses, including entrepreneurs and individuals who want to enjoy the advantages of our platform, can integrate blockchain solutions into their business. Our platform's main goal is to reduce a variety of transaction costs. For that reason, it will be useful for anyone, regardless of their field of activity or location.
+
+2.1. The advantages of our solution
+
+It's important to note that it is technically possible to modify the data stored on the blockchain. However, it is economically The Confideal platform offers a range of advantages compared to traditional ways of contracting:
+
+1. The terms of the contract are established before it is signed and are stored on the blockchain. That is why it is impossible to change its terms after both sides have agreed to them. The contract can only be closed or broken according to the original arrangements.
+
+It's important to note that it is technically possible to modify the data stored on the blockchain. However, it is economically infeasible: such a modification would require an immense amount of computational resources from a malicious actor, highly disproportionate to the possible gains which can be made by forging a single contract.
+
+2. All transactions on the Confideal platform are made with the use of cryptocurrencies, which completely eliminates all barriers to payment. The absence of an intermediary, such as a bank, makes the counterparties free from unnecessary oversight procedures and removes the possibility of a payment cancellation due to an external decision. In addition, both the time to complete transactions and their costs are significantly lower when using cryptocurrencies: 15 to 20 seconds and less than $1, respectively.
+
+Another advantage of using cryptocurrencies for payments is that the process of signing a contract and paying for it are integrated. Launching a contract requires the presence of the sum of money which the counterparties have agreed on. After that the money can only move according to the terms of the contract.
+
+3. The option to resolve disputes without leaving the platform. Our service allows third parties: law firms, lawyers and mediators to settle disputes between users. These are highly skilled professionals that are qualified to work as arbitrators on our platform. They are motivated by the arbitrator's fee which is paid for resolving a dispute -- up to 10% of the contract's sum.
+
+6
+
+
+
+2.2. Advantages over existing alternatives
+
+Currently, alternative blockchain-based integrated platforms for making secure international contracts do not exist. It is possible to use the Ethereum blockchain to create smart-contracts manually, however that requires programming skills, or incurring the additional cost of hiring a programmer. There is also a number of services, which allow non-programmers to create smart contracts with the use of a simplified interface. But those services cannot be considered fully integrated platforms for international transactions, because they do not provide arbitration services for dispute resolution. The only option available to the counterparties on other platforms is to bring in a third-party arbitrator, who could be unfamiliar with the contracts and their details. Thus, Confideal is a unique platform which offers a full range of tools necessary to create, maintain and execute contracts, as well as to resolve disputes with a pool of pre-selected, professionally qualified arbitrators familiar with these kind of contracts, all in one comprehensive, unique package not offered by other companies.
+
+7
+
+
+
+3. CONFIDEAL ECOSYSTEM
+
+3.1. Confideal platform
+
+The Confideal platform is a crucial component of the overall Confideal ecosystem, which provides the interaction between its participants. The platform allows creating typical commercial contracts to deliver goods or services between the parties utilizing a user-friendly interface. Moreover, the platform enables contractual disputes to be settled by involving arbitrators.
+
+3.2. Confideal Token (CDL)
+
+The Confideal Token (CDL) is the main internal cryptocurrency used for payments in the Confideal ecosystem. The token was developed according to ERC20 token standard on the Ethereum blockchain, ensuring its full compatibility with other projects compliant with this standard.
+
+The total supply of CDL tokens is limited and cannot be more than 105.5 million units (or lower, depending on the distribution of additional tokens during the ICO). Most of the CDL tokens will be created during the ICO. The price of 1000 CDL tokens will be equivalent to one Ether (ETH).
+
+Owning and using CDL tokens gives three basic rights:
+
+1. When using the primary feature of the Confideal platform -- executing international transactions (deals) with the use of smart contracts -- it is possible to pay your counterparty with the CDL tokens, in which case, the payer will not incur a 1% fee, which is applied to payments in all other cryptocurrencies.
+
+Integrated into the Confideal platform is a system where users rate arbitrators in order to measure and ensure objectively the quality of arbitration services provided. One of the factors that determines the ranking of each arbitrator in relation to their peers is voting by CDL token owners. This way, the CDL token owners have a right to directly influence one of the most important parts of the Confideal platform.
+
+2. When voting, 10 CDL tokens are equivalent to 1 vote. So, an owner of 1000 CDL is able to give 100 votes to 1 arbitrator or to distribute them between several ones.
+
+8
+
+
+
+3. Confideal guarantees that it will buy CDL tokens in exchange for ERC20 tokens of other companies (Bancor, Aragon, BAT, Gnosis etc.), provided that the amount of those tokens is adequate to conduct the exchange. The tokens of other projects will be accumulated whenever a contract is paid for in one of those tokens on the Confideal platform. They will be stored by Confideal, in order to guarantee the option of exchange. This way, if a CDL holder ever wants to get rid of their stake for any reason, they will always be granted an option to exchange them for a different ERC20 token. The tokens will be exchanged in 1 to 1.5 ratio in USD equivalent. The redeemed CDL Tokens will be back in circulation.
+
+We expect that the key holders and users of CDL Tokens will be those who:  Make big deals where a 1% fee is a significant amount of money.  Are interested in voting to rate arbitrators  Are interested in CDL Token as a market asset.
+
+3.3. Ethereum (ETH)
+
+Ethereum is a platform for creating decentralized applications based on smart contracts. Apart from this feature, Ethereum can also execute them by using what we call the "Ethereum Virtual Machine" (EVM).
+
+The Ethereum network consists of tens of thousands of computers around the world. Anyone can join the network and start performing computational tasks, in exchange for cryptocurrency rewards paid in Ether (ETH).
+
+Today, there are dozens of fully decentralized and successfully working apps, which were developed based on Ethereum platform:
+
+ Decentralized investment funds;  Crowdfunding platforms;  Prediction market platforms;  Platforms for decentralized trading of financial products, electric power, etc.
+
+Based on the positive experience of other teams in developing and using decentralized applications, we have decided to use the Ethereum platform as the basis for Confideal.
+
+9
+
+
+
+3.4. Confideal network parties
+
+1. Contractual counterparties are companies, entrepreneurs, individuals, who want to enter a contract to execute a deal (which is a transaction);
+
+2. Smart contract is a blockchain-based program which works as an "escrow agent" which ensures that the money flows in strict accordance with the terms established in the contract;
+
+3. An arbitrator is a qualified third-party legal firm or professional, chosen as an arbitrator to resolve a dispute on Confideal platform. After submitting the necessary documents to confirm their status, arbitrator candidates are approved by Confideal and are allowed to use the platform. The choice of an arbitrator for a particular contract is made by the counterparties themselves, before entering the deal;
+
+4. The Confideal company is the team that works on the development of the Confideal platform and performs other functions, such as the guaranteed exchange of CDL tokens (see 3.2) or the approval of arbitrator candidates.
+
+3.5. Confideal platform cryptocurrencies
+
+Cryptocurrencies that we plan to support after token generation:
+
+ ETH (Ether) is the main cryptocurrency of the Ethereum blockchain, which can be used to conduct payments between users. When making payments with ETH, a 1% fee is applicable.
+
+ CDL (Confideal) -- the internal cryptocurrency of the Confideal platform. It is based on the Ethereum blockchain and is the main payment method used by the counterparties. The 1% fee is not applicable to CDL payments, which means that the contractual service is free for CDL users. Buying CDL will be possible during the ICO or later on online cryptocurrency exchanges.
+
+Cryptocurrencies that we plan to support in the future, as of Q4 2017:
+
+ ETC (Ether Classic) -- based on the Ethereum blockchain, ETC has appeared after its hard fork. Today, it is also one of the main payment methods between the users.
+
+ EOS (EOS) -- the cryptocurrency of a smart contracts platform, designed to be able to simultaneously perform large numbers of tasks.
+
+10
+
+
+
+ XTZ (Tez) -- the cryptocurrency of Tezos, a smart contracts platform which is focused on transparency and security and allows its users to govern the development process of the platform.
+
+ ERC20 Tokens -- cryptocurrencies of such projects as Bancor, Aragon, BAT, Gnosis etc., designed according to the ERC20 standard of the Ethereum blockchain.
+
+11
+
+
+
+4. USE CASES
+
+The Confideal service is not a self-contained platform, which is why it does not and cannot have its own, permanent base of users. Our service is transactional in nature and its economic basis is created by web-platforms, online shops, social networks, forums, and all other third-party websites which might have use for the features that Confideal provides.
+
+Regarding the specific use cases for our platform, we can predict a number of scenarios:
+
+Trade, including international trade with the use of GPS tracking
+
+---- International trade. In this scenario, a number of various requirements can arise in regards to proper paperwork and customs clearance, depending on the regulations present in the countries of counterparties. To solve this problem, Confideal provides a special feature that enables users to attach additional files to the contract (such as document scans).
+
+---- Domestic trade. In this case, users need only create and enter a contract on our platform. If necessary, there is an option to export a paper version of the contract directly via the interface of the platform.
+
+Service providers
+
+-- Offline services. When creating a contract, it is important to specify how and where the contractor will report on their work. For example, that could be done via direct presence of the client, or via sending document scans by email.
+
+-- Online services. Similarly, it is imperative to specify the method of reporting on progress in the contract. In case of online interaction between the counterparties, the contractor could upload program code to a repository, provide a link to a file stored online, send photo/video content by email, and so on. Specifying the communication channel is important in this and other types of contracts, because in the case of arbitration, the arbitrator will be examining the communications between counterparties in exactly the channels that were listed in the contract.
+
+Long-term contracts with delayed or step-by-step payments:
+
+If one or both counterparties do not want to deposit the entire sum of the deal onto the smart contract, Confideal allows users to send funds gradually, as the contractor fulfills their obligations. In order to do that, the client has to set milestones in the contract, along with their respective due dates. After that,
+
+12
+
+
+
+the corresponding sums of money must be deposited into the contract on the specified dates, otherwise the contract will be broken.
+
+Contract chains, where some contracts are stored inside other contracts:
+
+For example, a contractor could enter an agreement to assemble a mobile phone. In order to assemble it, they need to buy the required parts. If the contractor creates a contract for part supplies and then stores it inside the phone assembly contract, they are guaranteed to receive the money from the second contract as soon as the first one is complete, thus covering their costs.
+
+Real estate deals with cryptocurrency payments and escrow
+
+This is a typical contract, in which a third-party escrow account is included in the contract and holds the money for the duration of the deal, in order to ensure that both counterparties follow through with their obligations. The advantage Confideal provides here is that instead of people or organizations, the escrow service is executed by program code, which decreases the transaction fee for both sides of the deal.
+
+Multilateral contracts with three or more counterparties and activation on different dates
+
+For example, this could be one supplier sending wholesale supplies to several clients. The contractor ships the goods, after which they are gradually paid for, as the clients receive their respective shipments.
+
+Cryptocurrency security deposits
+
+It is possible to rent automobiles, jewelry, electronic devices, etc. and use cryptocurrency as a security device. Additionally, the payment for the rent itself can be conducted in either national currencies or crypto currency, depending on the agreement.
+
+Property renting with IoT devices (smart locks)
+
+Hotels, motels, hostels can install so-called smart locks on the doors of their rooms. These are electronic locks which have an internet connection, which allows the owner to conduct the entire process of checking in remotely -- from guests paying for the reservation to them receiving the electronic key to checking out. In this scenario, Confideal can be used to hold a deposit during the guests' stay, which will be returned to them after they check out and the owner ensures that the room has been left intact.
+
+13
+
+
+
+5. MARKET, TARGET AUDIENCE
+
+The global volume of cross-border trade reached almost $20 trillion in 2016. The market of servicing the transactions that correspond to this movement of goods is roughly equal to 1% of the entire volume, or $200 billion.
+
+Amongst all of the countries that import and export goods, 40% of volume is generated by those that can use cryptocurrency for payments -- approximately 8 trillion USD. Consequently, the volume of our target market of transaction servicing is as high as $80 billion.
+
+According to experts, currently cryptocurrencies comprise less than 5% of that volume, but Gartner Inc. estimates that by 2020 a blockchain-based business will be worth $10 billion. The reason for such growth is that currently there is a lack of well-developed user applications to make the use of cryptocurrencies in trade transactions convenient. Smart-contracts-based platforms are one possible type of such applications.
+
+Confideal is primarily a platform for international deals. We do not specify any preference for specific regional markets. The cryptocurrency market is currently very volatile, so we have initially chosen a multilingual strategy so that all potential users can use Confideal. The languages will include: Chinese, English, French, German, Japanese, Korean, Portuguese, Russian and Spanish.
+
+International deals are not our only focus; we also see great potential in another market: payment services.
+
+According to McKinsey Global Payments Report 2016, the global revenue of payment processing companies generated by processing international payments reached 303.2 billion USD in 2015, which is 17.32% of the total revenue of these companies.
+
+These payment processing companies are already classified as a separate industry of the global economy, and this industry is growing rapidly. According to McKinsey, by 2020 the total revenue of such companies will have reached 2.2 trillion USD. Confideal aims to enter this quickly growing, high-tech market and establish its own niche there.
+
+Using Confideal can be beneficial to every market associated with big deals which carry high costs: real estate, high-cost services, etc.
+
+14
+
+
+
+We expect that our first users will be individuals and companies that are already involved in cryptocurrency-based business, because they are more aware of the advantages of this technology:  Miners -- equipment supply contracts, mining power renting contracts;  Blockchain-based companies -- service contracts, employment contracts;  Exporters -- small companies which are engaged in supplying consolidated
+
+or fabricated cargo;  Real estate agents that want a cryptocurrency-based escrow service.
+
+15
+
+
+
+6. RISKS
+
+There are two main issues to be mentioned as the risks of platform development:  Legal issues: Governments of various countries have begun to publish
+
+statements about their vision of the future of the crypto industry. So, we envision a high level of regulatory uncertainty in the area of international blockchain transactions.  "Diffusion of Innovations": As is known, the rate of adoption to technology innovations among b2b sector is slower than among b2c. For that reason, there is a risk of low adoption between the potential consumers. In view of these risks, we suppose that nowadays the crypto industry has already passed "the point of no return" when society could reject blockchain technology. According to Gartner Inc., by 2022 smart contracts will be used by more than 25% of global organizations. For that reason, this emerging market needs outstanding infrastructure to rely on. Confideal is going to become one of the essential parts of the future global economy. We are sure, that in the near future Blockchain technology will occupy a respected place in society, which is being proven by governments around the world. Besides, in order to increase its adoption rate we are going to promote Confideal by making partnerships with different e-commerce and IoT companies, and also by interaction with media.
+
+16
+
+
+
+7. TECHNICAL DETAILS
+
+Since the Confideal application requires a connection to the Ethereum blockchain, it is essential to install special software such as Parity and Mist browsers or the Google Chrome extension MetaMask.
+
+Among these options MetaMask is the simplest one, because it works within Google Chrome and does not require Node installation , unlike Mist and Parity. MetaMask works as a direct "bridge" between Google Chrome and the Ethereum Blockchain.
+
+Within the Confideal platform, MetaMask is simultaneously the wallet and the key to the user's account, as well as the digital signature which is used to launch smart contracts. For that reason we recommend users to be very careful about the safety and security of their MetaMask accounts.
+
+MetaMask provides instant, full-scale access to the Confideal platform and its full array of smart contract features.
+
+
+
+Lawyers
+
+
+
+Legal companies
+
+
+
+Arbitrators
+
+
+
+IoT
+
+
+
+IoT
+
+
+
+IoT
+
+
+
+device device device
+
+
+
+IoT supplier
+
+
+
+Third-party data suppliers
+
+freight companies, government registries, and others
+
+
+
+ETH ERC 20
+
+
+
+MetaMask, Parity, Mist, and other tools
+
+
+
+-- Digital signature -- Tokens
+
+
+
+Customer
+
+
+
+App interface Customizations for B2B
+
+
+
+Blockchain
+
+Smart contract
+
+
+
+Confideal interaction scheme 1
+
+
+
+1 Node is a computer, connected to the blockchain network via a software client, which performs the tasks of confirming and relaying transactions, and permanently stores a copy of the blockchain, which is downloaded automatically after connecting to the blockchain network
+
+17
+
+
+
+7.1. The process of creating a contract
+
+ The body of a contract is created via our user-friendly interface;  Both counterparties sign the contract with their unique keys;  The client deposits the agreed-upon sum of money to the contract;  The contract is recorded onto the blockchain and is stored there forever. In order to ensure confidentiality, only a small range of smart data necessary to the fulfillment of the contract, is stored on the blockchain: logical terms (such as fines for breach of contract), sums of money and dates. All other contract data is not stored on the blockchain openly: instead, a hash function is applied to it, and the resulting hash is then recorded onto the blockchain. The hash is a fixed-length pseudo-random string of characters. It does not reveal any contract data to an outsider. The counterparties that own plaintext copies of the contract, can confirm their validity by repeating the hashing procedure and comparing the resulting hashes. Currently, all additional information that is necessary to sign and maintain a contract, can only be stored in the abovementioned way (hashes of plaintext recorded on the blockchain). However, in the future we plan to add the option to fully integrate external data that will simplify the process of monitoring the deal -- such as ship container tracking.
+
+18
+
+
+
+8. HOW TO USE CONFIDEAL
+
+In order to enter a contract using Confideal, the counterparties need to do the following:
+
+ Download and install the MetaMask extension for the Google Chrome browser. A how-to video on this process is available here.
+
+ Buy one of the cryptocurrencies supported by the Confideal platform. Currently that are Ether (ETH) or Confideal (CDL). In the future we plan to add the support for a number of other cryptocurrencies (see 3.5), that can be bought via numerous online exchange platforms, such as www.bitfinex.com or www.coinbase.com.
+
+Due to the nature of the Ethereum network, all activities, including signing a contract and closing a deal are associated with respective transactions. In turn, sending transactions requires a fee payment, regardless of the volume of the transaction itself. Given the fact that signing a contract requires both parties to conduct a transaction, all participants should own a certain amount of ETH to pay the fees. Currently, each microtransaction in the Ethereum network costs about 0.02 ETH.
+
+ Enter the Confideal app via MetaMask. The user will immediately have an option to create a contract.
+
+ Create a contract. Our user-friendly interface enables you to enter all necessary contract terms without having any programming skills: the name of the contract, the text of the agreement, the payment volume, due date, the wallet address of the counterparty. The options to set a down payment and fine for breach of contract are also available.
+
+ Sign and pay for the contract. After a user enters all contract data, they sign it with their MetaMask wallet and send the contract to the other party. In turn, they also sign it with their own MetaMask key. At this is the moment the contract is paid. During the signing, a client also deposits the entire sum of money to a smart contract, where it is stored until the terms of a deal have been completely fulfilled or broken.
+
+ Launch the contract. When both sides have signed the smart contract, Confideal automatically launches it on the Ethereum blockchain, where it is stored forever.
+
+19
+
+
+
+ Close the deal. Some time later, various scenarios are possible:
+
+-- The deal is successfully concluded. After the terms of the contract have been fulfilled and the client has confirmed the quality of the delivered good or service, the counterparties close the deal.
+
+-- The deal is cancelled and closed. If for any reason the parties are unable to fully fulfill the contract, they have the right to cancel and close it, distributing the sum of the contract according to prearranged terms.
+
+-- The deal is cancelled and arbitration is started. If during the cancellation of a contract the sides cannot reach an agreement, they can launch the process of arbitration within the system.
+
+8.1. Arbitration
+
+Arbitration is a special system within the Confideal platform which attracts qualified arbitrators in order to settle disputes between users. Arbitrators can be members of associations, arbitration centers or other organizations which confirm their status as professional arbitrators.
+
+Arbitrators create their accounts on the platform and enter their personal data: languages, location, specialization, working experience, etc.
+
+An arbitrator for any particular deal is selected by both sides of the contract during its setup, before the actual signing. At the moment, it is only possible to select just one arbitrator per deal. In the future, we plan to add an option to select several arbitrators per deal.
+
+Confideal arbitration is divided into two separate modules:
+
+ Arbitration. Here, arbitrators' decisions have legal jurisdiction and can be used in national courts of law for further enforcement by bailiffs (the arbitrators themselves don't have the power to enforce their decisions). Arbitration on Confideal conforms to national laws and the UNCITRAL international arbitration regulations. Typically, this stage takes more time to reach a resolution, as it requires the involvement of national courts.
+
+ Mediation. According to the agreement of the counterparties, a third party is selected to settle the dispute, make a decision and enforce it. Mediation is a simpler process than arbitration, as it does not conform to the strict regulation of national or international laws. Instead, it requires agreement from the counterparties of the contract. Additionally, it takes less time, as the
+
+20
+
+
+
+decision is enforced within the Confideal platform. This module is set as the default option, in order to increase the speed of dispute resolution.
+
+8.2. The rating of arbitrators
+
+In order to ensure a high level of professionalism and satisfaction with arbitration services, there is a rating system for arbitrators on the Confideal platform. It allows the best arbitrators to rise to the top of the ratings of available arbitrators and, consequently, receive more requests for dispute resolution from users.
+
+The position of each arbitrator in the rating is determined by two types of factors: objective and subjective.
+
+ Objective factors: speed of response, number of settled disputes, completeness of disclosed information about self. The weight of objective factors accounts for 70% of the arbitrator's rating.
+
+ Subjective factors: votes given to arbitrators by the CDL token owners (see 3.2). Subjective factors account for 30% of the arbitrator's rating.
+
+In addition to the rating, which determines the position of every arbitrator on the list of all arbitrators, there is also an option to vote for arbitrators using a system of "likes" and "dislikes". This system does not affect the positions of arbitrators on the list, but serves as an additional, subjective measure of the quality of their work.
+
+After the process of arbitration is over, the counterparties involved in the respective contract can evaluate the work of their arbitrator by liking or disliking. This evaluation is available to all Confideal users, and is not limited to CDL token owners.
+
+The main purpose of this system is to ensure that the rating of arbitrators is safe from any kind of artificial manipulation. Thus, if a person holds a large number of CDL tokens and tries to use them to promote their "own" arbitrator to one of the top positions in the rating, the ratio of likes to dislikes, as well as their total amount, will serve as an additional indicator of the experience of that arbitrator and the quality of their work.
+
+21
+
+
+
+9. THE TEAM
+
+
+
+Pyotr Belousov, CEO
+
+Business Development, Product Development
+
+
+
+Andrei Baibaratsky, CTO
+
+Product Development, Software Development and Technologies
+
+
+
+Alexey Semionov, CMO
+
+Strategic Marketing, Product Marketing, Branding
+
+
+
+Kirill Danshin
+
+Product Development, Software Development and Technologies
+
+
+
+Egor Khromov
+
+Software Development and Technologies
+
+
+
+Vladimir Ananyev
+
+Software Development
+
+
+
+Iskander Ishmukhambetov
+
+Project Management
+
+
+
+Philip Khomenok
+
+Community Relations, Marketing
+
+
+
+Vladimir Luzhbin
+
+Product Design
+
+22
+
+
+
+10. THE ADVISORS
+
+
+
+Alejandro Klock
+
+CEO, CE consulting Russia
+
+
+
+Alexey Soloviev
+
+CEO, QIWI Blockchain Technologies
+
+
+
+Ludmila Kharitonova
+
+Managing Partner, Zartsyn, Yankovsky and partners
+
+
+
+Alexander Rugaev
+
+CEO, ICOpromo.com
+
+
+
+Anton Sazansky
+
+Vice President, ICOpromo.com
+
+
+
+Reuben Godfrey
+
+Co-founder, Blockchain Association of Ireland
+
+
+
+Vladimir Efremov
+
+Partner, Trendlaw
+
+
+
+Johan Lek
+
+Managing Partner, Dana Aria consulting
+
+
+
+George Basiladze
+
+Co-Founder, Cryptopay
+
+23
+
+
+
+11. DEVELOPMENT ROADMAP
+
+From a simple service for safe transactions, we plan to turn Confideal into a full-fledged contract platform which will solve a number of problems related to modern contractual activities.
+
+The platform's further development will include the following steps:
+
+
+
+Stage
+
+
+
+Stage description
+
+
+
+Term Stage budget
+
+
+
+Stage 0
+
+
+
+Design and creation of a smart contract platform for the ICO (TGE)
+
+
+
+2017 Q4
+
+
+
+Stage 1
+
+
+
+Mediation  arbitrators' user accounts, where they will be able to work with the contracts assigned to them for consideration.
+
+
+
+2018 Q1
+
+
+
+Stage 2
+
+
+
+API & Widget -- companies will be able to use our service by hosting it on their websites.
+
+
+
+2018 Q2
+
+
+
+Stage 3
+
+
+
+Installment payments -- in order to avoid freezing all the funds of the contract, the service will enable its users to place it in stages. The contract will remind users about the need to make payments.
+
+Arbitration deposit made by the contractor is an important feature that will decrease risk between the parties.
+
+Document Repository -- a place where users can store the files attached to their contract -- photos, scanned copies, text files (and any files that are legally relevant to the contract)
+
+
+
+2018 Q3
+
+
+
+N/A 2,500 ETH
+
+2,500 ETH 6,000 ETH
+
+
+
+24
+
+
+
+Stage 4
+
+
+
+Support Cryptocurrencies tied to National Currencies -- an important detail that reduces exchange rate risks. Companies engaged in international goods supply sense the changes in prices of cryptocurrencies. For that reason they need protection against such exchange rate differences.
+
+
+
+2019 Q1
+
+
+
+Stage 5
+
+
+
+Control Over New Versions of the
+
+
+
+2019
+
+
+
+Documents -- parties can coordinate and Q2
+
+
+
+adjust the contract: simultaneously, online,
+
+
+
+without leaving the service.
+
+
+
+Filters & Analytics -- the ability to filter contracts (for example, all successfully closed or only recently signed contracts), as well as analytics on the movements of funds.
+
+
+
+Export Contracts in a Ready-to-Use Format -- an ideal solution for offline companies interacting with public authorities.
+
+
+
+Stage 6
+
+
+
+Language Support: Chinese, Russian, German, French, Spanish
+
+
+
+2019 Q3
+
+
+
+Stage 7
+
+
+
+Arbitration -- a system that provides an opportunity to go beyond the limits of the Confideal arbitration and send a contract for consideration to an arbitration court within the framework of national legislation or UNCITRAL.
+
+
+
+2020 Q1
+
+
+
+Stage 8
+
+
+
+New Contract Management Options:
+
+Status -- mobile version of the Ethereum client. Users will be able to manage contracts via their smartphones
+
+Parity -- Ethereum browser for interacting with Ethereum applications
+
+
+
+2020 Q2
+
+
+
+10,000 ETH 1,000 ETH
+
+3,000 ETH 7,000 ETH 2,000 ETH
+
+
+
+25
+
+
+
+Stage 9
+
+
+
+Expansion to other blockchain platforms, that support smart contracts (RSK, Ethereum Classic, Qtum, EOS)
+
+Installation of the Confideal service on the district0x platform -- development of the application on the district0x platform by means of the d0xINFRA framework. It will allow the district0x community to use our service in their platform.
+
+
+
+2020 Q4
+
+
+
+Stage 10
+
+
+
+IoT Solutions for Smart Contracts with Hardware -- interconnected oracles updating the contract with incoming information from external sensors (GPS data, meteo data, electronic locks).
+
+
+
+2021 Q4
+
+
+
+16,000 ETH
+
+20,000 ETH Total:
+
+70,000 ETH
+
+
+
+26
+
+
+
+12. PRE-ICO & ICO OFFER
+
+
+
+12.1. ICO Objectives
+
+The purpose of Confideal ICO is to raise funds for the further development of the Confideal escrow platform.
+
+Despite the fact we have already developed a functioning service for making smart contracts, currently Confideal cannot be considered a full-fledged platform to support transactions. It is necessary to develop the ecosystem, add new functions and conduct marketing activities in order to raise awareness about the service.
+
+Confideal has the opportunity to become a standard, widely used tool for making safe deals, and our ICO is the next logical step towards the realization of this goal.
+
+
+
+12.2. Pre-ICO
+
+
+
+Start of Pre-ICO:
+
+
+
+August 2017
+
+
+
+Purpose of Pre-ICO:
+
+
+
+Fund-raising amounting to 3,000 ETH, about 6% of the total token supply.
+
+
+
+Bonus Tokens During Pre-ICO: 50%
+
+
+
+12.3. ICO
+
+
+
+Start of ICO:
+
+
+
+02 November 2017, 12:00 noon CET
+
+
+
+Expiry of ICO:
+
+
+
+When the planned maximum number of tokens is successfully sold OR November 22, 2017, 12:00 noon CET, whichever comes earlier.
+
+
+
+Maximum Amount of Tokens:
+
+
+
+100,000,000 units. Tokens not redeemed during the ICO will not be issued, i.e. only the redeemed tokens will be in circulation. After the ICO there will be no release/minting of new tokens.
+
+
+
+Token Price:
+
+
+
+1000 CDL = 1 ETH
+
+
+
+27
+
+
+
+Bonuses for the purchase of tokens during the ICO:
+
+
+
+The amount of Ether collected Up to 3,500 Up to 18,200 Up to 29,400 Up to 39,200 Up to 48,300
+
+
+
+Bonus 25% 12% 8% 5% 3%
+
+
+
+Purpose of ICO:
+
+
+
+fund-raising amounting to 70,000 ETH
+
+
+
+ICO minimum threshold:
+
+
+
+5,000 ETH
+
+
+
+ICO Smart Contract Source Code: https://github.com/confideal
+
+
+
+Team Reward:
+
+
+
+10% of the total Token Supply, to be frozen for 6 months (until May 22, 2018).
+
+
+
+12.4. Use Of Funds
+
+Purpose
+
+Product Development & Maintenance Business Growth & Development Marketing & Sales Operations Legal Reserve
+
+
+
+Share of funds collected 30%
+
+25%
+
+15% 10% 5% 15%
+
+
+
+28
+
+
+
+

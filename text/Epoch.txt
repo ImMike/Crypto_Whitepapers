@@ -1,0 +1,1345 @@
+EPOCH
+
+EPOCH Blockchain
+
+White Paper
+
+Prepared by: EPOCH FinTech TEAM Date: August 2017
+
+
+
+EPOCH Blockchain White Paper
+
+Foreword
+
+Blockchain technology has brought glimmers of great changes to the digital economy era.
+
+Such change has occurred twice in the nearly 50 years' history of the Internet. The first change was the global networking. Since the birth of ARPANET in 1969, the mainstream countries in the world have gradually accessed the Internet and started the journey of global networking. The second change was the global application. Since the publication of the paper titled World Wide Web in 1989, Internet applications have achieved all-round development and the global breaking out.The third change is brewing.The birth of Bitcoin in 2009 was a landmark event. With the support of blockchain technology, Bitcoin has broken the "dark box" of traditional banknotes and provided new ideas and effective practices for the storage and transmission of values based on cryptography, encryption algorithms, distributed storage and consensus mechanisms. The circulation of banknotes as entities is invisible. No one knows where a banknote comes from and goes to, but blockchain can make every flow of the digital currency have a clearly searchable "chain." At the same time, the privacy of participants is effectively protected by digital signatures.
+
+It is found that the significance of blockchain is that it can be used to build a more reliable Internet system and fundamentally solve the fraud and rent-seeking problems in the exchange and transfer of values. More and more people believe that the digital economy will become more credible and the economy and society will become fairer and more transparent with the popularization of blockchain technology.
+
+
+
+EPOCH Blockchain White Paper
+
+Contents
+
+Chapter 1. Rise and Future of Blockchain ............................................................................................1 1.1 Rise and Core Technologies of Blockchain .....................................................................1 1.2Market Potential and Demand of Blockchain in Enterprise Applications .....................2 1.2.1Financial Industry ..........................................................................................................2 1.2.2Internet of Things..........................................................................................................4 1.2.3Supply Chain ..................................................................................................................4
+
+Chapter 2. EPOCH Blockchain Solution...............................................................................................6 2.1 Design Principles and Objectives of EPOCH Blockchain Solution ...............................6 2.1.1 Design Principles: ........................................................................................................6 2.1.2 Design Objectives: ......................................................................................................6 2.2 Overall Architecture of EPOCH Blockchain ......................................................................7 2.2.1 Underlying Platform - EPOCH Ledger...................................................................8 2.2.2 EPOCH Platform Platform Product Service Layer -EPOCH Platform...........8 2.2.3 Application Service Layer - EPOCH Application............................................... 10 2.3 Underlying Platform - EPOCH Ledger ............................................................................. 10 2.3.1 Basic Services ............................................................................................................ 10 2.3.2 User Management .................................................................................................... 11 2.3.4 Operation Monitoring............................................................................................. 15 2.4 Technical Characteristics and Advantages......................................................................... 16 2.4.1 High Performance .................................................................................................... 16 2.4.2 High-speed Access.................................................................................................... 17 2.4.3 High security.............................................................................................................. 18 2.4.4 Efficient Operation................................................................................................... 20 2.5 Industry Application Prospects ........................................................................................... 20 2.5.1 Overview of EPOCH Blockchain Application Scenarios ................................ 21
+
+
+
+EPOCH Blockchain White Paper
+
+Chapter 3. EPOCH Protocol Token .................................................................................................... 22 3.1 Functions and Technical Points of Token ........................................................................... 22
+
+Chapter 4. ICO Matters......................................................................................................................... 24 4.1 Pre ICO .................................................................................................................................... 24 4.2 Public Crowdfunding Plan for Tokens................................................................................ 24 4.3.1 ICO Details:............................................................................................................... 25 4.3.2 Token Distribution Details: .................................................................................... 25 4.3.3 Key Points of Repurchase Program:..................................................................... 26 4.3.4 Fund Use Plan:........................................................................................................... 26 4.3.5 Details of Incentive Plan during ICO:.................................................................. 27 4.3.6 EPOCH Token Features .......................................................................................... 27 4.3.7 Contribution Rules .................................................................................................. 28 4.3.8 Exchange Launch Plan: ............................................................................................ 28
+
+Chapter 5. EPOCH Development Roadmap .................................................................................... 29 Chapter 6. Core Team ............................................................................................................................ 31 Chapter 7. Operation Team................................................................................................................... 34 Chapter 8. Summary ............................................................................................................................... 37
+
+
+
+EPOCH Blockchain White Paper
+
+Chapter 1. Rise and Future of Blockchain
+
+1.1Rise and Core Technologies of Blockchain
+
+The birth of the blockchain marked the beginning of human's building a truly trustable Internet. By teasing out the rise and development of blockchain, it can be found that blockchain attracts people's attention because it can establish point-to-point reliable trust on the Internet, which removes the interference of mediation in the process of value transfer, protects privacy while disclosing information and protects individual rights and interests while making decisions jointly.This mechanism improves the efficiency of value interaction and reduces the costs.
+
+From a technical perspective, we believe that blockchain is a technology system that is jointly maintained by multiple parties, stores data in a blockchain structure, ensures transmission and access security by cryptography, enables consistent storage of data, and completely eradicates tampering and repudiation. This technology has brought unlimited reverie to the world.
+
+Blockchain is not simply a single technology, but a comprehensive technical system that integrates the research results in many aspects. We believe that it has three indispensable core technologies, which are consensus mechanism, theory of cryptography and distributed data storage.
+
+The first is the consensus mechanism. Consensus refers to the process that multi-party participated nodes reach a consensus on certain data, behaviors or processes through the interaction of several nodes under default rules. Consensus mechanism is algorithms, protocols and rules for defining the consensus process. The consensus mechanism of blockchain features majority rule and equality. Majority rule refers to not only the number of nodes, but also computing power, number of shares and other characteristic quantities that can be compared to computers. Equality refers that when a node satisfies the conditions, all nodes have the priority to propose the consensus result, which is directly recognized by other nodes and may eventually become the final consensus result.
+
+The second is the theory of cryptography. In blockchain, the dissemination of information achieves mutual trust between the parties to a transaction according to the asymmetric digital encryption technology of public key and private key. In the process of realization, after the information is encrypted with one key in the public and private key pair, it can be decrypted only with the other key. In addition, when one of the keys is publicized (that is, the public key), it is impossible to calculate the other key (that is, the private key) according to the public key.
+
+11
+
+
+
+EPOCH Blockchain White Paper
+
+The third is the distributed storage. The distributed storage in blockchain refers that each participating node has its own independent and complete data storage. Comparing with traditional distributed storage, the distributed storage in blockchain is different in two aspects. One is that each node in the blockchain stores the complete data according to the blockchain structure, while the traditional distributed storage usually divides the data into several parts according to certain rules. The other is that the storage of each node in the blockchain is independent and has the same status, and ensures the consistency of storage through consensus mechanism, while the traditional distributed storage usually synchronizes data to other backup nodes through the central node. The data nodes can be different physical machines or different instances at the cloud.
+
+1.2Market Potential and Demand of Blockchain in
+
+Enterprise Applications
+
+1.2.1Financial Industry
+
+The financial service industry is the driving force of global economic development and one of the most centralized industries. Information asymmetry between the parties to a transaction on the financial market makes it impossible to establish an effective credit mechanism. There are a large number of centralized credit intermediaries and information intermediaries in the industrial chain, which has slowed down the system operation and increased the capital transaction cost.
+
+The open and tamperproof nature of blockchain technology makes the decentralized trust mechanism possible and has the potential to change the financial infrastructure. All types of financial assets, such as equity, bonds, notes, warehouse receipts and fund shares, all can be integrated into the blockchain ledger and become the digital assets that can be stored, transferred and traded on the blockchain. It has a bright prospect in the application in the financial sector, such as cross-border payments, insurance claim settlement, securities transactions and notes.
+
+In terms of (cross-border) payment, blockchain technology can be used to realize capital transfer and has particularly prominent potential advantages, especially in cross-border payment. It can be used to establish direct interaction between payer and payee of cross-border payment, so as to streamline the process flow, achieve a real-time settlement, improve transaction efficiency and reduce business costs, thus promoting the development of business models such as cross-border micro-payment. The typical application case is Visa B2B Connect, the B2B cross-border payment program, jointly developed by the international bank card organization Visa and Chain, a blockchain company. It is scheduled to be launched in 2017 and has been tested at 30 banks in 10 countries. The blockchain
+
+22
+
+
+
+EPOCH Blockchain White Paper
+
+system jointly developed by Visa and Chain enables real-time processing of payment transactions, thus increasing efficiency and reducing costs.
+
+In the area of insurance claim settlement, insurance institutions are the core entities of traditional insurance operations and are responsible for fund collection, investment and claim settlement, which often have high costs in management and operation. With the application of smart contracts, the applicant doesn't need to apply for and the insurance company doesn't need to approve claim settlement. As long as the claim settlement conditions are triggered, the claim will be handled automatically and the indemnity paid.The true and tamperproof features of data on a blockchain can effectively simplify the claim handling process and reduce processing costs and the probability of claiming fraud. In addition, the use of blockchain technology to achieve digital management of personal data and simplify information certification will help to disclose the history more clearly. A typical application case is LenderBot, which was launched by blockchain company Stratumn, Deloitte and payment service provider Lemonway in 2016. It allows people to register customized mini-insurance products via Facebook Messenger to insure high-value items exchanged between individuals, and blockchain substitutes the third-party role in the loan contract.
+
+In the aspect of securities transactions, traditional securities business needs deep involvement of intermediary agencies in order to effectively complete the issuance and trading of stocks. After equity is integrated into blockchain to become digital assets, transaction can be directly initiated without the involvement of intermediary agencies. Asset distribution can be conducted in a confidential or openly as required. In stock asset transactions, the contracts unanimously reached by the parties are represented by the blockchain code to achieve automatic execution of the contracts and ensure that the relevant contracts are visible only to the counterparties and are kept confidential to unrelated third parties. In addition, regulatory compliance costs can be further reduced by ensuring that securities issuance and transactions comply with regulatory requirements and frameworks through appropriate mechanisms. A typical application case is the Linq platform, a private equity exchange platform launched by Nasdaq in collaboration with Chain in January 2016 to facilitate the transfer and sale of private equities in a completely new way. The private stock issuers on the Linq platform possess digital ownership and the platform can significantly shorten settlement time and reduce capital costs and systemic risk. Moreover, the approval process for traditional issuance and purchase is also further simplified to enhance the efficiency of transactions and management. Information such as identification of transaction parties and trading volumes is recorded on the blockchain in real time, which helps the issuers improve the decision-making efficiency. The open and traceable system helps the issuers and regulators to maintain the market order and reduce insider transactions.
+
+In terms of notes, the establishment of a new digital note business model
+
+33
+
+
+
+EPOCH Blockchain White Paper
+
+based on the blockchain technology architecture enables the decentralized transfer of the value of notes to reduce the dependence on the notes trading center in the traditional business model and the operation risks brought by a centralized system by means of distributed high fault tolerance and asymmetric encryption algorithms. The programmability of blockchain can effectively control the mismatch of assets in the intermediary market, thus promoting the authenticity of fund demand reflected by market transaction price and controlling the market risks with the help of data transparency. The tamperproof timestamps and Internet-wide opening features of blockchain technology can effectively prevent the problems such as repeated selling, asynchronous payment and endorsement, etc.
+
+1.2.2Internet of Things
+
+The current IoT ecosystem relies on a centralized network management architecture, where all devices are connected to a cloud server. As the network size grows, the infrastructure and maintenance of centralized cloud servers, large servers and network equipment will incur great costs. In the vision of decentralized IoT, blockchain is the framework that facilitates transaction processing and collaboration among devices that interact, and each device on the network can operate as an independent micro-business entity.
+
+In 2015, the ADEPT system jointly created by IBM and Samsung had demonstrated people's exploration in this direction: IBM and Samsung hoped that the ADEPT system would allow various devices on the Internet of Things to operate automatically. Theoretically, when running home appliances have a failure, they can automatically send signals and update the software. Even the device itself can "communicate" with its peripheral devices via ADEPT to improve energy efficiency. In the ADEPT system, blockchain serves as a distributed ledger when billions of devices automatically interact with each other. By implanting protocols in the system, the cost of ADEPT system as a bridge for communication between devices can also be greatly reduced.
+
+In addition, Visa and DocuSign jointly launched a blockchain car rental program. In October 2015, Visa and DocuSign, a digital deal management company, unveiled a proof-of-concept program that used blockchain technology to keep track of car rental data and drive digitization of the car rental process. In this program, digital fingerprints of customers are created and registered on the blockchain, and transactions are recorded with a distributed ledger to update car rental agreements and insurance programs in real time, thus simplifying the cumbersome steps in the traditional car rental process.
+
+1.2.3Supply Chain
+
+Blockchain technology helps to improve the efficiency of supply chain
+
+44
+
+
+
+EPOCH Blockchain White Paper
+
+management. As data is transparent and open to all parties involved in the transaction, a complete and smooth flow of information throughout the supply chain ensures that all parties involved can identify problems in the operation of the supply chain system in a timely manner and find the solutions to the problems in a targeted manner, and then improve the overall efficiency of supply chain management. Blockchain technology avoids supply chain disputes. The characteristics of tamperproof data and the existence proof of the timestamp can be well applied to resolve the disputes among the participating parties in the supply chain system and achieve easy testification and accountability. Blockchain technology can be used for anti-counterfeiting of products. Tamperproof data and traceable transactions can eliminate the problem of fake and shoddy commodities in the product circulation process in the supply chain. For example, blockchain startup Provenance in London provides companies with a supply chain traceability service to retrieve and track information on the origin and history of product materials, ingredients and products, and improve the transparency and authenticity of information in the supply chain by recording the entire process information on the retail supply chain on the blockchain. Through Provenance's blockchain platform, all the information during the manufacturing and transportation of products is integrated and the credit system in the supply chain is built to promote the sound development of the system.
+
+As a result, we have reason to believe that blockchain technology will generate tremendous business needs and market prospects and more and more companies will join the development of blockchain industry. To this end, a high-quality and efficient enterprise-level blockchain application and development platform will be inevitable market demand. EPOCH blockchain solution was born just at the right moment. It uses the team's years of industry experience to promote the popularization and implementation of blockchain industry and Fintech technology, precisely matches business needs, and deploys customized and specialized blockchain development production line.
+
+55
+
+
+
+EPOCH Blockchain White Paper
+
+Chapter 2. EPOCH Blockchain Solution
+
+Based on our innovation, EPOCH development team has created "EPOCH Blockchain" solutions that provide enterprise-level services. Based on the concept of "open and sharing", EPOCH will build a blockchain infrastructure and open its internal development capabilities to share with global enterprises to jointly promote the development of trusted Internet and create a win-win ecosystem of blockchain. The existing team members have rich experience and solid technical practice in various fields such as ERP project implementation, system architecture design and distributed application development (DAPP). The backbone of the team's technical staff has made great achievements in big data analysis and processing, financial security system construction, and exploration of cloud ecology and industry connection.
+
+2.1Design Principles and Objectives of EPOCH
+
+Blockchain Solution
+
+The EPOCH blockchain is dedicated to delivering enterprise-level blockchain infrastructure, industry solutions, as well as secure, reliable and flexible blockchain development and customization.
+
+2.1.1Design Principles:
+
+Independent innovation: EPOCH blockchain focuses on independent innovation and currently owns a number of unique core technologies with independent intellectual property rights in key areas. It has accumulated patents and technologies in terms of consensus algorithms, concurrent processing, account security management and risk control.
+
+Safe and efficient: Based on years of safe and reliable operation experience accumulated in finance and supply chain, EPOCH team has launched the EPOCH credible blockchain to share information effectively, protect information security and improve system efficiency.
+
+Open and sharing: EPOCH will build blockchain infrastructure, open internal service capabilities, and share it with industry partners to jointly promote the development of trusted Internet and create a win-win ecology of blockchain.
+
+2.1.2Design Objectives:
+
+EPOCH blockchain is designed to provide industry partners with enterprise-level blockchain infrastructure, industry solutions, as well as secure,
+
+66
+
+
+
+EPOCH Blockchain White Paper
+
+reliable and flexible blockchain custom development and business docking services. With high-performance blockchain services, the overall operating costs can be effectively reduced and the operational efficiency can be improved through visualized data management tools on the premise of secure and reliable service docking. We firmly believe that the next generation blockchain development and application platform of the most commercial potential and technological innovation will become a reality step by step with the unremitting efforts of the EPOCH team.
+
+2.2 Overall Architecture of EPOCH Blockchain
+
+
+
+Users will be provided with credible, safe and fast blockchain applications. The overall architecture of EPOCH trusted blockchain solution is divided into three layers: the bottom is the EPHCH Ledger platform developed by EPOCH team, which uses the safe, efficient and distributed storage of blockchain technology to provide blockchain-based services for upper application scenarios. Its core purpose is to build a leading enterprise-level blockchain infrastructure. The middle layer is the platform product service layer (EPOCH Platform), which builds highly available and scalable blockchain application products on EPOCH Ledger. These include shared ledger, authentication services, sharing economy, digital assets and other directions, which integrate basic product functions of related fields and help enterprises quickly set up the upper blockchain application scenarios. The application service layer (EPOCH Application) is mainly targeted at partners and technology providers to jointly explore the development direction of the industry blockchain and promote the implementation of blockchain application scenarios. The overall frame structure is shown below:
+
+
+
+Application Service Layer (EPOCH Application)
+
+
+
+Digital bills
+
+
+
+Digital gold
+
+
+
+Institution clearing and settlement
+
+
+
+...
+
+
+
+Platform Product Service Layer (EPOCH
+
+
+
+platform)
+
+
+
+Digital
+
+
+
+Authentication
+
+
+
+assets
+
+
+
+service
+
+
+
+Underlying platform (EPOCH Ledger) Including application interface and API
+
+
+
+User
+
+
+
+Basic services
+
+
+
+Amccoaunnatgmemaneangetment
+
+Authority management Key management Risk control audit
+
+
+
+Interface adaptation Consensus management Network communication Record storage
+
+
+
+Shared ledger
+
+Smart contracts
+
+Contract registration Contract execution Contract trigger Upgrade & cancel
+
+
+
+Sharing
+
+
+
+...
+
+
+
+economy
+
+
+
+Operation monitoring
+
+
+
+Configuratio n Alarm Publish
+
+
+
+Visualization Monitor Cloud adaptation
+
+
+
+Fig. 1-1 EPOCH Blockchain Infrastructure
+
+
+
+77
+
+
+
+EPOCH Blockchain White Paper
+
+2.2.1Underlying Platform - EPOCH Ledger
+
+User management: It is responsible for managing the identity information of all blockchain participants, including the maintenance of public and private key generation, key storage management, and the maintenance of correspondence of real user identity and blockchain address, and supervising and auditing the transactions of certain real identities with authorization. For the application of financial transactions such as digital assets, the rules of risk control configuration are also provided to ensure the security of system transactions.
+
+Basic service: The basic services are deployed on all nodes of the blockchain to verify the validity of business requests and record the valid requests on the storage after consensus is reached. For a new service request, the basic service first parses and authenticates the interface adaptation, and then stores the transaction or contract with the signature and the encryption by a consensus algorithm, and stores the data in a shared ledger completely and consistently. Consensus mechanism can be adaptive and have high concurrency under normal network and node conditions and strong fault tolerance in the case of network exception or node spoofing.
+
+Smart contract: It is responsible for the registration, issuance, triggering and execution of contracts. The contract logic is defined by the user with some programming language, and after being published to the blockchain, it is triggered and executed by user signature or other events to complete the contract logic such as transaction settlement according to the contract clause logic.
+
+Operation monitoring: Responsible for the deployment, configuration modification and contract setting during product launch and visualized output of real-time status during product operation, such as alarm, transaction volume, network status and node health status.
+
+2.2.2EPOCH Platform Platform Product Service Layer
+
+-EPOCH Platform
+
+Platform product service layer abstracts all kinds of typical blockchain applications and provides the basic capabilities and implementation framework of typical applications. Based on these basic capabilities, users can easily implement the blockchain of business logic by stacking the unique features of their services. It helps users quickly relocate existing services to the blockchain in order to cope with the new scenarios or set up entirely new business scenarios. It solves previously difficult problems with the tamperproof and non-repudiation features of the blockchain.
+
+Digital assets: Based on an analysis of digital assets such as virtual currency,
+
+88
+
+
+
+EPOCH Blockchain White Paper
+
+gaming equipment, commercial paper, points and coupons, we found that asset chaining is a key link. To this end, the concept of "asset gateway" is introduced to assist users in transferring assets from off-chain to on-chain. Once the assets are on the chain, transfer, split, withdrawals and other operations will be strictly controlled by public and private key account system, all operations will have signature verification, and both parties to the transaction will leave inerasable traces. For assets with validity such as commercial paper and coupons, it also provides automated clearing on maturity, including asset issuance, transfer, withdrawal, liquidation and inquiries.
+
+Authentication service: For the application scenarios of intellectual property, policy preservation (proof of interest), personal and enterprise qualification certificates, since the blockchain features non-erasability and publicity, institutions and individuals can publish copyright information, insurance information and qualification certificates to the blockchain via the application interface or programming interface or APP to let all accounting nodes jointly testify. In addition, based on the EPOCH self-built intellectual property platform, users' rights protection will be more convenient and the evidence will be more authoritative in the aspects of ownership registration, ownership cancellation and infringement evidence entry, etc.
+
+Shared ledger: Reconciliation and liquidation between financial institutions are basically carried out by the day, and the reconciliation is mainly carried out by sending bank statements to each other and comparing the running account. This will bring a certain delay to the final confirmation of transaction and transfer of funds. Some business scenarios that require real-time payment must even be funded by business operators. The naturally shared ledger of blockchain enables reconciliation at any time, and the funds can be checked as long as the reconciliation logic of both sides are connected to the blockchain. It achieves quasireal-time transaction confirmation and transfer of funds, and neither party can repudiate it. It is very competitive especially for businesses with relatively long funding chain and involving more aspects. At the same time, regulators can also participate in the recording of the shared ledger.
+
+Sharing economy: One of the key factors for sustainable sharing economy is that the establishment of mutual trust between suppliers and demanders to ensure the smooth implementation of sharing behaviors, and the blockchain provides a way of realization from a technical perspective. The endorsement of technical assurance capabilities allows multiple participants that can't reach trust to build credibility together and achieve the same effect without the need for an intermediary agency or service platform to build strong internal audit processes, rigorous accounting and backup systems and additional facilities for regulatory compliance, thus saving a lot of cost and making sharing more efficient and feasible.
+
+99
+
+
+
+EPOCH Blockchain White Paper
+
+2.2.3Application Service Layer - EPOCH Application
+
+Application service layer (EPOCH Application) provides application services based on blockchain solution to end users. The application service layer of the EPOCH blockchain solution will provide various EPOCH users with services of various blockchain scenarios. In the future, it will provide credible, safe and convenient blockchain services for users in scenarios such as digital bills, precious metal transaction, intellectual property protection, online aid, institution clearing and settlement and public welfare. EPOCH blockchain will also adhere to the principle of open and sharing, work together with industry partners to find out more application scenarios for the blockchain in the future, open up the capabilities of the EPOCH Ledger and EPOCH Platform, develop new application services, and maintain the ecology of the blockchain together.
+
+2.3 Underlying Platform - EPOCH Ledger
+
+
+
+2.3.1 Basic Services
+
+The basic service module consists of interface adaptation, consensus management, network communication and record storage, as shown below:
+
+
+
+Interface adaptation
+
+Consensus management
+
+
+
+Protocol analysis Consistency judgment Authentication & certification Switch management
+
+Adaptability Algorithm configuration bft-pos/t-pos/OSX
+
+
+
+Record storage
+
+
+
+Consensus node Encryption interface
+
+
+
+Network communication
+
+
+
+Router management P2P
+
+
+
+Fig. 1-2 Basic Service Module
+
+2.3.1.1 Interface adaptation
+
+To ensure that users can access the EPOCH blockchain conveniently at low cost, EPOCH Ledger provides a flexible programming API to the application layer. The API supports both synchronous and asynchronous modes. After parsing, authenticating and verifying the service request, the interface adaptation layer
+
+10 1 0
+
+
+
+EPOCH Blockchain White Paper
+
+records the service request to the ledger storage through a consensus algorithm. As the client of consensus management module, interface adapter module also participates in consensus management. The interface adaptation module is mainly responsible for the summary and consistency judgment of the results returned by each consensus node. In addition, when the "improved bft-pos" consensus algorithm with independent intellectual property rights is used, the interface adaptation module receives and collects the election switchover request from the service side. When the switching conditions are met, it notifies the consensus management module for reelection.
+
+2.3.1.2 Consensus management: Consensus mechanism is the core technical point in the blockchain. The process that multi-party nodes reach a consensus on data, behaviors or processes through the interaction of nodes under default rules is called consensus. Consensus mechanisms are algorithms, protocols and rules that define the consensus process.
+
+Consensus mechanisms are divided into two categories in accordance with the process of consensus. One is the consensus of the same probability, which is the final confirmation in engineering; the other is consensus after absolute consistency is achieved, that is, a consensus is confirmation. EPOCH blockchain provides the consensus mechanism of the second category and supports both adaptive and user-specified configuration. The adaptive mode is to automatically use "improved bft-pos" algorithm with high efficiency, fraud control and independent intellectual property when the network is in good condition and has no fraud node. When fraud nodes or fault nodes exceed the threshold, it automatically switches to the "improved bft-pos" algorithm, which is more stringent and has independent intellectual property rights. User-specified configuration mode means that the user directly configures a fixed consensus mechanism for consensus management.
+
+2.3.1.3 Network communication: The network communication module is responsible for the transmission of message data between nodes and on the service side. EPOCH blockchain employs a dynamic, self-organizing network that can be multiplexed, connected and shared. It can be well compatible with existing firewalls, proxy servers and other security facilities to enable peer-to-peer networking and secure and reliable data transmission.
+
+2.3.1.4 Record storage: EPOCH blockchain record storage can support a variety of media, including database, file system, and cloud storage media such as cloud DB and cloud KV. Blockchain structure is employed for record storage, so that any tampering with historical data can be found by self-verification, and will be alarmed and automatically corrected.
+
+2.3.2 User Management
+
+User management primarily addresses the mapping of user identities to
+
+11 1 1
+
+
+
+EPOCH Blockchain White Paper
+
+blockchain addresses, the protection of user privacy, and the traceability of regulatory audits. In terms of business scenarios, some scenarios need anonymity and transactional irrelevance, such as stock trading and digital currency, and some scenarios do not need anonymity or irrelevance, such as mutual insurance and source tracking. To take into account both scenarios, key management requires strong adaptability and compatibility. EPOCH blockchain offers a variety of configurations that users are free to choose from.
+
+In the aspect of user access, one is to connect the original system to the blockchain after transformation, and the original key management system has high-security level, such as institution liquidation and bank factoring; the other is that a new application scenario is connected to the blockchain or the original system has no sound key management system, such as some supply chain business and B2C business. In order to inherit the original key management system with high-security level while retaining the usage habits of the existing users, EPOCH blockchain provides three modes, which are traditional key system integration, full management and partial management.
+
+Traditional key system integration: Suitable for users with higher-security level in the original private key system, such as: financial institutions, banks' original external encryption devices, electronic signatures, etc.; for such users, EPOCH blockchain only need to associate the original user's private key system with the blockchain address.
+
+Partial management: Suitable for key systems that the main part accessing to blockchain service has a higher security level or scenarios with a variety of blockchain technologies interconnected. Under partially managed circumstances, EPOCH blockchain guarantees the address association and consistency of associated multiple blockchains.
+
+Full management: Suitable for newly accessed scenarios and those with higher Internet habits. The original systems basing on username and password are matched through the secure key generation and management system, so that the user information is isolated from blockchain address to protect user privacy and security.
+
+For the full management mode, the user management system of EPOCH blockchain consists of account management, key management, rights management and risk control audit, as shown below:
+
+
+
+Account management
+
+Account registration Account login Account logoff  Irrelevance
+
+12 1 2
+
+
+
+Key management
+
+Key generation Key association Key safe
+
+ Key signature chain
+
+
+
+Authority management
+
+Account registration Account login Account logoff  Irrelevance
+
+
+
+Risk control audit
+
+Account registration Account login Account logoff  Irrelevance
+
+
+
+EPOCH Blockchain White Paper
+
+Fig. 1-3 Full Management Mode
+
+2.3.2.1 Account Management
+
+Account management is responsible for the users' account management, including account registration, login, logout and handling of irrelevant account and key. When the account is registered, the identification information such as the user name and password customarily used by the user is mapped to the EPOCH blockchain address. Blockchain related business requests can be sent only after the account is logged in. For scenarios with a high degree of transaction secrecy, users can select the irrelevant processing of EPOCH blockchain addresses, so that different transactions of the same user are not associated in the block record storage, which improves user security and transaction confidentiality.
+
+2.3.2.2 Key management: In the full management mode, the key management system is responsible for the association of the user key with the account, key security management and retrieval. The user key is generated by the client and the user can save the key in the key safe or delegate it to the associated account in order to retrieve the key when it is lost. In order to ensure reliable association of the user account and the key, the key management system uses multi-node chain storage for the signature of the association.
+
+2.3.2.3 Authority management: The authority management module is responsible for the control and management of user accounts, key system, node joining and exiting, data access and other permissions, including audit authority, account delegation authority, node consensus authority and user data access authority. Audit authority is to provide regulatory agencies with audit function, strictly control the access permission and data range, and realize association for users of irrelevant transactions on the shared ledger. Account delegation authority is used to control the access permission of the user account delegation relationship. Consensus authority is used for consensus authority management for participated or newly joined nodes. Access authority is used to manage data query permissions of clients on the blockchain.
+
+2.3.2.3 Risk control audit: The risk control module is responsible for risk control of the transaction of digital assets in the blockchain. EPOCH blockchain provides the risk control expert model system, which can adapt to risk control rules, detect risks in time, manage and control risks and take preventive measures by analyzing and capturing the deep relationship between the massive data. The audit module provides the auditing agency with auditing capability and ensures that auditing capability can only be used by auditing agency through strict authority control.
+
+The contract part of EPOCH blockchain includes standard contracts and customized service contracts. Standard contracts include asset consistency check, automatic transaction matching, jointly confirmed transfer, automated clearing on
+
+13 1 3
+
+
+
+EPOCH Blockchain White Paper
+
+
+
+maturity, and other contracts of relatively simple logic. The contracts are built in EPOCH blockchain and can be used by directly linking to the blockchain. User customized smart contracts include modifying the configuration and adding additional business logic through contract templates, as well as supporting more complex user-programmed contracts that run in a standalone environment.
+
+Smart contracts include contract registration, triggering, execution and cancellation, as shown below:
+
+
+
+Contract registration
+
+
+
+Contract trigger
+
+
+
+Contract execution
+
+
+
+Contract cancellation
+
+
+
+Contract generation
+
+
+
+Safety check
+
+
+
+Timed trigger
+
+
+
+Event trigger
+
+
+
+Structure image
+
+
+
+Code execution
+
+
+
+Contract checking
+
+
+
+Contract transfer
+
+
+
+Registration consensus
+
+
+
+Contract store
+
+
+
+Transaction trigger
+
+
+
+Other contract triggers
+
+
+
+Status consensus
+
+
+
+Error roll-back
+
+
+
+Consensus management
+
+
+
+Contract clean-up
+
+
+
+Fig. 1-4 Smart Contract
+
+2.3.3.1 Contract Registration
+
+Contract registration is the process of storing the consensus in the blockchain after checking and processing user-prepared contracts. EPOCH blockchain supports writing smart contracts in multiple languages.
+
+2.3.3.2 Contract Triggering
+
+Contract triggering is the process of triggering contract execution through external conditions after the contract is registered, and supports timed trigger, event trigger, transaction trigger and other contract trigger. Timed trigger refers to the process of automatically triggering a contract call when the node reaches consensus on trigger time after the preset time in the contract arrives. Event, transaction, and other contract calls trigger contract execution through a new process of request consensus.
+
+2.3.3.3 Contract execution: Contract execution is the complete process of the contract code operation in an independent environment, including the consensus on the mirroring environment for contract construction, code execution and the change of state in the execution code, and the exception handling of consensus.
+
+2.3.3.4 Contract cancellation: Contract cancellation is a process of transferring and cleaning up the contracts that have been executed, expired, or whose business needs have been changed. The process of cleaning up requires
+
+14 1 4
+
+
+
+EPOCH Blockchain White Paper
+
+multi-node consensus.
+
+2.3.4 Operation Monitoring
+
+To ensure that customers can quickly access the system, quickly and accurately identify the system running status after accessing and meet other operation & maintenance needs during the operation, such as storage ledger expansion and program upgrade, EPOCH blockchain provides a complete, quick and visualized operation monitoring system, including such functions as configuration, monitoring, alarm, publishing and business analysis, etc.
+
+2.3.4.1Configuration
+
+It is responsible for handling the configuration of network nodes, such as the selection of consensus algorithms, adaptive thresholds, storage of ledger, and routing of networks.The configuration itself can be delivered as a transaction in the blockchain and take effect after an agreement is reached through consensus algorithm.
+
+2.3.4.2Monitoring
+
+It is responsible for collecting the status data running in the system and visualizing it. Status data in the system includes the system traffic, elapsed time, health status of nodes and the use of underlying machine resources (CPU, memory, HDD). User can learn about the status of the entire blockchain system in real time through the visualized monitoring.
+
+2.3.4.3Alarm
+
+Notify the relevant personnel of serious cases in the system such as fraud nodes, ledger tampering and machine failure by SMS, telephone,WeChat and e-mail in order to handle them in a timely manner.
+
+2.3.4.4Publish
+
+The operations in scenarios such as initial deployment of the system, in-service program upgrade, and node expansion during operation can be supported by the publish module. Publish module guarantees the consistency of the executable programs of interfaces, consensus algorithms and other important modules.
+
+2.3.4.5 Business analysis: Business analysis includes data consistency checking among nodes and multi-dimensional statistics and analysis of transaction data. It provides graphs of business statistics analysis and business trends to authorized users.
+
+15 1 5
+
+
+
+EPOCH Blockchain White Paper
+
+2.4 Technical Characteristics and Advantages
+
+Under the design principle of "independent innovation, safe and efficient, open and sharing", the enterprise-level infrastructure services built by the EPOCH blockchain have the following characteristics: high performance, high security, high-speed access and efficient operation.
+
+1. High performance: Relying on a strong blockchain bottom storage technology and EPOCH self-developed consensus algorithm, the transaction supports second-level confirmation; massive data storage, safe and efficient data processing and real-time computing solutions;
+
+2. High security: Rich permission policies, secure key management system and user privacy protection solutions to ensure data security;
+
+3. High-speed access: Rich application development frameworks and flexible deployment help different types of users to quickly access and build applications;
+
+4. Efficient operation: Comprehensive, real-time and visualized operation and maintenance management system to quickly identify the status of the system and meet the needs of multiple levels of operation management.
+
+2.4.1 High Performance
+
+2.4.1.1 Rich Experience in High Concurrency Processing
+
+All existing members of EPOCH team have experience and technical practice in large-scale data processing, and the core developers have once held important positions in technological research and development in large multinational companies, and have unique technical accumulation and operational capacity in the construction and optimization of massive data processing architecture as well as distributed storage and distributed computing.
+
+2.4.1.2 Efficient adaptive consensus algorithm: In enterprise-level blockchain solutions, the concurrent processing capability of a single blockchain is mainly subject to consensus algorithms. In the actual blockchain application, the network status between nodes is good in most of the time, and the probability of node failure or Byzantine node is small, so that only the data consistency of multiple nodes needs to be solved and complete the e-transaction efficiently in most of the time. As long as there is a node failure or fraud, it can automatically switch to the algorithm with byzantine fault tolerance to ensure the smooth operation of the business. The adaptive blockchain consensus algorithm provided by the EPOCH blockchain is efficient when the network is in good condition, and there is no node failure or fraud, and can accurately detect node failures or node frauds. When a node failure or fraud is detected, the system automatically enables
+
+16 1 6
+
+
+
+EPOCH Blockchain White Paper
+
+the Byzantine fault tolerance algorithm. In a network with 3f+1 total nodes (where f is the number of Byzantine error nodes), the system normally provides services to the outside when the fault-tolerant node does not exceed f; when all node failures are repaired or byzantine fault-tolerant node is solved and all node data are the same, it automatically switches back to the efficient algorithm. Adaptive algorithm can ensure efficient concurrent processing of consortium blockchain in most of the time and accurately handle the problem of node error.
+
+2.4.1.3 Quick Confirmation of Transaction
+
+EPOCH blockchain adopts highly efficient and adaptive consensus algorithm to ensure transaction confirmation upon completion of consensus, and optimizes other steps in the transaction confirmation process, such as signature algorithm and ledger storage, realizing second-level transaction confirmation.
+
+2.4.1.4 Mass storage: The EPOCH blockchain supports local database storage, file system storage, and cloud storage. Local storage achieves separation of hot and cold storage; database storage adopts sharding mode, and cloud storage supports expansion in accordance with the cloud cluster rules.
+
+
+
+Data access layer
+
+
+
+Cold
+
+
+
+Hot
+
+
+
+Local storage
+
+
+
+Cloud storage
+
+
+
+Fig. 1-5 Storage Structure
+
+2.4.2 High-speed Access
+
+The actual business docking scenarios can be divided into three categories: The first is that the original system is connected to the blockchain after transformation; the second is to develop new demands using blockchain based on the original system, and the third is to use blockchain in new system and scenario.
+
+In order to adapt to the above three scenarios, EPOCH blockchain has made a lot of compatibility design in user business development, deployment and security inheritance based on the principles of reducing business development workload as much as possible, meeting users' existing development habits, easy deployment and maintaining the original security system, so that users of a variety of scenarios and development habits can achieve docking to the blockchain at a lower cost and faster speed.
+
+2.4.2.1 Access Meeting a Variety of User Habits
+
+EPOCH blockchain platform product layer (EPOCH Platform) offers rich
+
+17 1 7
+
+
+
+EPOCH Blockchain White Paper
+
+application development frameworks and the applications include basic application models for digital assets, shared ledger, proof of authentication, crowdfunding and ownership transactions. Users can develop a business based on these application development frameworks or directly based on APIs provided by EPOCH Ledger at the bottom of the EPOCH blockchain. It provides multi-language support for the underlying API libraries used in business development to meet the development habits of different users and reduce the difficulty of user access.
+
+
+
+Service A
+
+
+
+Service B
+
+
+
+Service C
+
+
+
+Service D
+
+
+
+LEDGER
+
+
+
+Authentication &
+
+
+
+API
+
+
+
+Shared ledger
+
+
+
+certification
+
+
+
+EPOCH Ledger
+
+Fig. 1-6 User Access
+
+2.4.2.2 Cross-platform Deployment
+
+EPOCH blockchain supports cloud deployment, server deployment and other deployment methods according to different user needs and adapts to a variety of user deployment environments.
+
+2.4.2.3 Optional key management docking mechanism: EPOCH blockchain provides three types of docking mechanism, namely original key system association, partial management and full management. When docking with the existing system, the appropriate docking mechanism can be selected according to the actual situation of existing key management system. If the original key system has a higher security level and can be multiplexed, use the original key association mode directly; select fully managed key management for new services; or select partial management mode according to the service conditions.
+
+2.4.3 High security
+
+2.4.3.1 Reliable and consistent record storage: EPOCH blockchain ensures that the service request can't be tampered with during the transmission through the digital signature of asymmetric encryption and ensures the consistent data storage of each node through the consensus mechanism. Stored data records are prevented from modification through self-verification within the nodes and quasi-real-time multi-node data verification.
+
+Self-verification of node: EPOCH blockchain uses blockchain structure to
+
+18 1 8
+
+
+
+EPOCH Blockchain White Paper
+
+store data records. The modification of part of the records will destroy the integrity of the blockchain structure, which can be quickly verified and data can be restored from other nodes. In addition, each ledger node of the EPOCH blockchain has its private key, and the header of each block contains the signature of the private key of the node. The modification of the data in the block can be verified through the signature.
+
+Multi-node quasi-real-time data verification: When the private key of a node is stolen and the malicious user has the possibility to modify all the data in the ledger chain, the EPOCH blockchain provides quasi-real-time data comparison mechanism among multiple nodes, which can find out whether the ledger data of a node has been tampered in time.
+
+
+
+Original ledger info Original ledger info Original ledger info
+
+
+
+Signature info hash
+
+Signature info
+
+
+
+Consensus node Store
+
+
+
+Store Consensus node
+
+
+
+Data verification
+
+
+
+hash Signature info
+
+
+
+Consensus node
+
+
+
+Store
+
+
+
+Store Consensus node
+
+
+
+Fig. 1-7 Multi-node Data Verification
+
+2.4.3.2User Privacy and Transaction Privacy
+
+The user information and blockchain address in EPOCH blockchain are isolated from each other. The information of associated user can't be obtained from the stored records of each node. User information storage is protected by permissions control, access authentication, encrypted storage and other multi-layer protection. Users with higher confidentiality level on transactions can also choose transaction irrelevance mechanism, in which each transaction of a user is mapped to different addresses on the blockchain, so as to ensure that the relevance of multiple transactions of a user can't be obtained from the transaction ledger.
+
+2.4.3.3 Secure key management system: In the key management solution of EPOCH blockchain, the key safe and user account delegation are provided to ensure the security of the key. The key safe encrypts and stores the key on multiple different nodes with user information. The key safe won't be accessed under the normal business process. If the user key is lost, the key can be retrieved by authenticating the user information. Account delegation is to retrieve the account through delegation account operating the delegated account. The operations of all delegated accounts of EPOCH blockchain will be recorded independently in the blockchain, and the operations on the delegated account have
+
+19 1 9
+
+
+
+EPOCH Blockchain White Paper
+
+strict frequency control and independent risk control strategy, so that the operational risks of delegated account can be strictly controlled.
+
+2.4.4 Efficient Operation
+
+EPOCH blockchain enables visualized service delivery and visualized service metrics. In terms of service delivery, the entire service delivery process from code compilation, testing, acceptance of grayscale environment to the formal deployment of the environment can achieve visualized management. In terms of service metrics, the data is standardized and categorized by layers, and various indicators from infrastructure, upper layer components and application services to user side are collected based on application topologies and presented on a unified analysis platform.
+
+EPOCH blockchain provides common and efficient information collection components, which are deployed in the business layer, consensus node layer and ledger storage layer. With the information collection components, the system information of the machine (such as CPU, memory, HDD and network status), node usage status (such as node traffic, access time, health status of nodes) and business usage (business traffic, success rate, and time distribution) are displayed in real time on the monitoring interface to facilitate the management of the entire system.
+
+2.5 Industry Application Prospects
+
+We have noticed that blockchain technology has shown an unfolding development in various parts of the world. From a business perspective, the blockchain with the help of the security features and trust mechanisms will become an important technology engine for the development of the digital economy. It plays a role in many industries and has great development potential in the field of industrial applications. However, from the perspective of industry IT system requirements, building applications on the blockchain requires that the blockchain solution should have three powerful underlying capabilities: The first is the perfect compatibility/switchover capability between the old and the new systems, the second is new system security capabilities, and the third is the user privacy protection in multiple scenarios.
+
+Based on the above requirements, EPOCH blockchain provides a highly available and extensible blockchain application base platform, through which partners in various fields can quickly set up an upper blockchain application to help enterprises focus on the business itself and the operation of business model, benefiting merchants and institutions in a variety of application scenarios.
+
+20 2 0
+
+
+
+EPOCH Blockchain White Paper
+
+2.5.1 Overview of EPOCH Blockchain Application
+
+Scenarios
+
+Based on EPOCH blockchain base platform, the application of blockchain technology can cover many areas such as currency, finance, economy and society. From the perspective of the application value of blockchain, we summarize the scenarios of EPOCH blockchain solutions, which are divided into proof authentication certification, shared ledger, smart contract, sharing economy and digital assets.An overview of the specific scenarios is as follows:
+
+
+
+Authentication & certification
+
+Purchase insurance (proof of stake and protection)
+
+Public donations (destination tracking)
+
+
+
+Shared ledger
+
+Institution liquidation service
+
+Bank factoring service
+
+
+
+Smart contract Solve seller credit Solve buyer credit
+
+
+
+Sharing economy Share remaining material objects
+
+Share remaining time
+
+
+
+Trace to source (source tracking)
+
+
+
+Supply chain finance service
+
+
+
+Individual and enterprise qualification certificate
+
+
+
+Share remaining probability (online aid)
+
+Decentralized autonomy
+
+(credit infrastructure)
+
+
+
+Digital assets Share points
+
+Digital bills, coupons
+
+Digital currency Cross-border transfer
+
+
+
+Ownership protection (property, intellectual property right)
+
+
+
+Share registration, crowdfunding and transfer
+
+
+
+Stock clearing
+
+
+
+Core value of authentication & certification
+
+
+
+Core value of shared ledger
+
+
+
+Core value of smart contract
+
+
+
+Solve existence proof of information asymmetry
+
+
+
+Establishing a trust mechanism
+
+
+
+Improving efficiency
+
+
+
+Core value of sharing economy
+
+
+
+Core value of digital assets
+
+
+
+Decentralization
+
+
+
+Value Internet
+
+
+
+Fig. 1-8 Application Scenario Overview
+
+
+
+21 2 1
+
+
+
+EPOCH Blockchain White Paper
+
+Chapter 3. EPOCH Protocol Token
+
+3.1 Functions and Technical Points of Token
+
+We will issue ERC20-compliant native tokens for EPOCH, which is identified as EPO token. Tokens running on EPOCH blockchain provide a secure, encrypted operating environment for enterprise users, which is an essential step of enterprise application development. The traditional block network system is subject to security attacks of potential malicious users to the main network system and branch system, so the block network must provide an effective mechanism and reach a consensus in the encryption environment to prevent attacks. For example, in the Bitcoin network, the well-known Proof-of-Work algorithm is employed to build a security defense strategy. However, this algorithm itself inevitably generates a large amount of electrical energy consumption in order to achieve preemptive claim for new blocks. When a node of big computing power finishes the massive hash value calculation objects, broadcasts network-wide, and obtains the approval of most nodes of the whole network, it obtains the ownership of the block and receives its reward.
+
+In addition, another well-known consensus algorithm POS is also discussed in the industry and it's used by many blockchain development teams in practice. In general, POS algorithm is as follows. There is a collection of money holders who put the tokens in their hands into the POS mechanism and become verifiers. Assuming a block at the beginning of the blockchain (the most recent block in the blockchain), the POS algorithm randomly selects one of these verifiers (the weight of selecting verifier depends on the tokens they put in; for example, the probability of a verifier depositing 10,000 tokens being selected is ten times that of a verifier depositing 1,000 tokens) and the holder has the right to produce the next block. If the verifier does not generate a block within a certain period of time, a second verifier is selected to generate a new block. Same as POW, the longest chain shall prevail.
+
+In contrast, when enterprise customers adopt the "improved bft-pos" consensus algorithm with EPOCH's independent intellectual property, it not only retains the priority of computing power, but also considers the block generation logic of voting rights, conserves energy consumption, and reinforces the security of the EPOCH block network comparing with the traditional proof of work and proof of stake. Logically, if users hold more tokens and have more voting rights, the number of tokens they lose will go far beyond the potential earnings of their attacks. Therefore, it will effectively suppress the possibility of attacks from large computing power and large amount EPOCH token holders. Instead, they can realize more revenue from tokens and opportunities of new block declaration through the "improved bft-pos" consensus algorithm by following the intentions of
+
+22 2 2
+
+
+
+EPOCH Blockchain White Paper
+
+honest nodes. In the algorithm perspective, tokens play a fundamental role throughout the
+
+public chain network, whether it is btf-pos, proof of work or proof of stake. The tokens must provide the necessary value of existence to contribute to the constant driving force for the user-encrypted blockchain network participating in the decentralized network. EPO token is a necessary condition for the existence of EPOCH network and a cornerstone for ensuring activity of block network. EPOCH team will make use of years of experience in financial supply chain and practice of commercial operations to provide EPOCH token holders with maximum convenience of token circulation. Of course, the design of EPOCH block network itself also incorporates an operational code structure of token circulation and contract execution, allows the token holders to trade tokens with other users in EPOCH network and obtain stake gains, thereby activating the system stability and transaction security of the entire block network.
+
+23 2 3
+
+
+
+EPOCH Blockchain White Paper
+
+Chapter 4. ICO Matters
+
+4.1 Pre ICO
+
+The pre-sale time of EPO tokens is from January 1, 2018 to January 5, 2018, five days in total. During the pre-sale period, all tokens in the planned quota are available for sale without the maximum or minimum limit.
+
+Pre-sale details:
+
+Maximum pre-sale limit: 40 million (including 20 million for private placement)
+
+Pre-sale ICO price: 1 ETH = 5000 EPO
+
+The minimum number for transaction: 0.05 ETH
+
+PreICO period: From 00:00 am January 1, 2018 to 24:00 pm January 5, 2018
+
+Token sale method: After contributed ETHs are received, EPO smart contract will automatically convert them to tokens.
+
+All users participating in the pre-sale period will receive a more favorable redemption rate, 1 ETH = 5000 EPO. Through this method, the project team aims to encourage more users to participate and to raise funds to promote the follow-up token sale and advertising cooperation.
+
+Purpose of pre-sale funds: Pre-sale funds will be used for follow-up formal ICO market development and advertising, and EPO PR Team will use advertising, news, video media, social applications and other ways to promote public offering of EPO tokens.
+
+4.2 Public Crowdfunding Plan for Tokens
+
+EPO token sale will be conducted in the form of public offering. At that time, 50 million of the total 90 million will be put on sale to the public for a period of one month from January 8, 2018 to February 7, 2018. In the process of token selling, the early participants will be rewarded step by step. From the date of sale, the reward will decrease step by step by time periods until the entire crowdfunding target is achieved.The primarily set soft top target is 10% of the total crowdfunding, that is, 9 million sold is considered as a soft top target reached. Of course, all members of the EPOCH team with the utmost sincerity invite users who are interested in the EPOCH block network to participate in the crowdfunding of early tokens to witness and benefit from the deployment and implementation of a large enterprise-level blockchain development network. At the
+
+24 2 4
+
+
+
+EPOCH Blockchain White Paper
+
+same time, EPOCH Market and Business Development Team has started business negotiations with venture capital funds related to blockchain in the stage of tokens development. Relying on excellent market development experience and efficient team operation, the Team has now raised the venture capital funds equivalent to 20 million tokens, which has provided reliable financial support and market recognition for the subsequent sale of tokens, market development, technology research and development.
+
+4.2.1 ICO Details:
+
+Purpose of EPO tokens: It is the essential element for the operation of underlying block network. The more enterprises accessing the platform, the more actively EPO is consumed and used. With the support of the preset algorithm, the generation of new blocks will continue to provide the driving force to maintain the efficient and safe operation of the whole EPOCH block network.
+
+Identification symbol: EPO
+
+Maximum supply (hard top): 90 million
+
+Quantity for sale: 50 million
+
+Mode of participation: Only ETH is supported
+
+ICO price: 1ETH = 2500 EPO
+
+Minimum participation amount = 0.05 ETH
+
+ICO period: From January 8, 2018 to February 7, 2018
+
+Token issuance method: EPO smart contract is converted automatically according to the redemption rate
+
+ICO minimum target: 9 million EPO
+
+4.2.2 Token Distribution Details:
+
+55% of the tokens are offered for public sale during the ICO period, and up to 4% of the total amount of tokens will be used for testing during the product development phase and incentive use during subsequent marketing.
+
+EPOCH Development Team will retain no tokens. Instead, based on the sales and transactions of other tokens in the market over the past few months, the Team has found that high-value token holders cashed infrequently in short-term after a large number of tokens entered the trading session. As virtual currency trading is different from stocks and securities transactions, there is no limit up/down or trading hours limit. Therefore, such market behaviors will inevitably lead to sharp fluctuations in prices, undermine the interests of investors, and endanger follow-up
+
+25 2 5
+
+
+
+EPOCH Blockchain White Paper
+
+promotion of tokens. To this end, EPOCH Development Team has decided that part of the private equity reserve fund will be used for repurchase if the EPOCH tokens have sharp fluctuations in prices after the EPOCH tokens have entered a market transaction.
+
+4.2.3 Key Points of Repurchase Program:
+
+After the tokens go to the exchange, the Team will start the repurchase program within 8 hours. 4% tokens of the total EPO will be repurchased by the Team in the form of BTC in different time periods in order to ensure the relatively stable market value of the tokens on the day of the transaction, protect the interests of all investors, and prevent undermining the stability of the token market and investors' confidence due to excessive market speculation behaviors.
+
+Plan of disposal of unsold tokens during ICO:
+
+EPOCH smart contract has been set in code for this situation, and the generation of EPO tokens can only be activated upon receipt of the ETH contributed by investors, so there are never unsold tokens.
+
+4.2.4 Fund Use Plan:
+
+EPOCH team will establish a strict financial audit system. All funds raised during ICO will be used in strict accordance with the initial fund allocation plan. According to the flow of funds, the EPOCH Annual Financial Report will be released at the end of the year to ensure that the use of funds is open and transparent. Below is the EPOCH financial plan diagram:
+
+
+
+3% 5% 5% 2% 5% 5%
+
+15%
+
+
+
+Fund Use Plan Project development, product update and iteration
+
+Platform operation, hardware and software environment support
+
+Security audit
+
+
+
+Business and market development
+
+
+
+Legal expenses
+
+
+
+60%
+
+
+
+Cross-chain cooperation alliance construction, industry cooperation and development
+
+Quarterly and annual financial audit
+
+
+
+Project reserve fund and market stability repurchase
+
+
+
+Project development and product iteration: 60%
+
+Platform operation, hardware and software environment support: 15%
+
+26 2 6
+
+
+
+EPOCH Blockchain White Paper
+
+Security audit: 5% Business and market development: 5% Legal expenses: 2% Cross-chain cooperation alliance construction, industry cooperation and development: 5% Quarterly and annual financial audits: 3% Project reserve fund and market stability repurchase: 5%
+
+4.2.5 Details of Incentive Plan during ICO:
+
+EPOCH tokens will employ a cascade bonus program during the official ICO, and all eligible users will be benefited.
+
+
+
+Details of Incentive Plan during ICO
+
+
+
+3200 3000 2800 2600 2400 2200
+
+
+
+Week 1
+
+
+
+Week 2
+
+
+
+Week 3
+
+
+
+25% 20% 15% 10% 5% 0% After Week 4
+
+
+
+EPOCH
+
+
+
+BONUS
+
+
+
+Week 1 Week 2 Week 3 After Week 4
+
+
+
+1 ETH = 3000 EPO 1 ETH = 2750 EPO 1 ETH = 2625 EPO 1 ETH = 2500 EPO
+
+
+
+bonus 20% bonus 10% bonus 5% bonus: no
+
+
+
+4.2.6 EPOCH Token Features
+
+Fixed volume, scarce in amount: EPOCH token generation can be triggered only when EHT contributions are received at the contact address. The total amount is 90 million, and there will be no follow-on offering.
+
+Strong market demand: At present, EPOCH has conducted many business development activities, conducted focused promotions with existing business partners and potential customers and initially reached a partnership with more
+
+
+
+27 2 7
+
+
+
+EPOCH Blockchain White Paper
+
+than 70 enterprises. The first batch of corporate customers that access has sufficient market share and business volume level, and will have a strong demand power on the premise that the business is running well.
+
+Repurchase program: In response to the characteristics of the encrypted monetary transaction, the EPOCH Team has decided to use repurchase programs to hedge potential market risk factors, proactively regulate the market's serious speculative environment and protect the interests of investors. During the phased implementation, the price of EPO tokens will inevitably show a steady bull market in a certain period if the repurchase operation is normal. Eventually, the price fluctuation will tend to stabilize and reflect the due market value of EPOCH when other disturbances in the market are removed.
+
+Incentive program: During ICO, a generous incentive will be provided during each phase, and the early you participate, the more you will be benefited.
+
+4.2.7 Contribution Rules
+
+When you participate in the EPO token pre-sale and crowdfunding plan, be sure to read the following rules carefully:
+
+Please send ETH to EPO crowdfunding contract address from your private wallet, such as myetherwallet, Metamask, Parity, Mist or Ledger. Never send ETH from exchange addresses, such as Coinbase, Poloniex and Cryptopia.
+
+Do not send ETH to the contract address before the token sale starts, and the EPOCH Team will never require any investors to send tokens to the contract address in any name.
+
+Token distribution triggers the contract code immediately after receiving the ETH at the contract address to automatically perform the token distribution task at the corresponding exchange rate.
+
+4.2.8 Exchange Launch Plan:
+
+EPOCH Team has prepared sufficient project documents, certificates of qualification and other audit materials for the exchange launch plan.At present, the Market Operation Team has comprehended relevant matters about EPO tokens entering the circulation of the exchange and communicated with the audit teams of major exchanges in advance. EPOCH Team promises that EPO tokens will be available on at least two major trading platforms simultaneously within 30 days after the ICO.
+
+28 2 8
+
+
+
+EPOCH Blockchain White Paper
+
+Chapter 5. EPOCH Development Roadmap
+
+
+
+Overview of EPOCH Block Network Development and Market Expansion Roadmap:
+
+
+
+Q3 of 2016: The market entered a gestation period with the bitcoin price fluctuation and forward-looking enterprise-level development teams gradually stepped into the trend of blockchain development and application. Based on our own advantages, EPOCH Team finished the draft of blockchain white paper in the third quarter of 2016.
+
+
+
+Q1 of 2017: Enterprise-level business development in the blockchain had been on the rise and the market demand had soared. EPOCH organized R&D and market teams to learn outstanding market experience, improve the technical framework for the white paper and implement in depth.
+
+
+
+Q2 of 2017: Deployed blockchain development and testing network based on the original big data NoSQL platform to centrally test the architecture laying and implementation of business logic. In the meantime, the bft-pos algorithm was constantly improved in order to be sufficiently robust in design and development of underlying code and meet the needs of customized development.
+
+
+
+Q3 of 2017: The development and testing teams entered the deep running-in stage. The test results of the previous stage were summarized and troubleshot. The platform consensus nodes and line-of-business data worked well and were compatible with the existing production line based on the comparison of test results.
+
+
+
+Q4 of 2017: EPOCH released announcement of EPO token public crowdfunding, and the white paper was improved and finalized based on prior commissioning experience. ICO was officially started and would launch the major ICO websites, and token crowdfunding was officially started.
+
+
+
+Q1 of 2018: EPOCH will release the daemon version developer management control page, invite a group of partners in finance and supply chain field to access the blockchain network system, synchronize the production line data, test the operation of consensus nodes and listen to customer feedback.
+
+
+
+Q2 of 2018: EPOCH will gradually publish the API documentation and formulate related interface operation specifications. The interface adaptation will be based on the multi-language environment:
+
+
+
+Include (Python, GO, JS, Ruby, .Net, Java, C, C++) and other mainstream development languages, so that enterprises of all types of business volume can quickly access EPOCH block network.
+
+
+
+Q3 of
+
+29 2 9
+
+
+
+2018: Hold cross-chain cooperation alliance, introduce mature
+
+
+
+EPOCH Blockchain White Paper
+
+blockchain project teams that have market potential and close business relationship with EPOCH to form a multi-dimensional cooperation alliance, reinforce the modular and customized business application architecture system and provide a solid foundation for business access of large-scale enterprise-level teams.
+
+Q4 of 2018: Release the annual cooperation and development and company business implementation report. Write normative documents and product technical compliance review documents for EPOCH blockchain, provide effective and complete market norms and solid experience for the healthy and orderly development of blockchain industry, upgrade API based on user feedback and release version 2.0. Innovate in design logic and optimize code to provide a professional, secure and efficient adaptation and development environment for EPOCH online block network enterprises and commercial calls.
+
+30 3 0
+
+
+
+EPOCH Blockchain White Paper
+
+Chapter 6. Core Team
+
+Dr. Leonz Kessler Co-founder Principal Consultant
+
+Leonz has about ten years of experience in investment banking in Switzerland and has extensive practical experience in financial auditing and venture capital. He graduated from the University of Basel with double degrees in finance and business administration. At present, Dr. Leonz is employed by the EPOCH team and is mainly responsible for the establishment of external strategic relationship, risk management and control of corporate strategic direction. Dr. Leonz has once served as a senior researcher of the Institute of Financial Policy of ETH Zurich and published many professional papers on the industrial pattern of new economic configuration to explore the possibility and diversity needs of financial innovation in the era of digital economy. He has deep insight and firm confidence on the rise of the digital economy in the future.
+
+Dr. Niklas Lattmann Co-founder and CEO
+
+Niklas has nearly eight years of experience in the financial industry and has once held senior management positions in two large German multinationals. Niklas graduated from the University of Bern with doctor degree in applied mathematics. Currently serving as CEO in the EPOCH team, he is responsible for the daily operational management and commercialization of EPOCH Blockchain and is committed to building an enterprise commercial platform for the EPOCH blockchain and overseeing the whole process of business implementation. During his eight years of working experience, Niklas has served as a senior consultant and professional manager for a number of financial industry companies with profound
+
+31 3 1
+
+
+
+EPOCH Blockchain White Paper
+
+experience and marketing capabilities in finance and supply chain fields and also has a good accumulation in comprehending customized needs of enterprises.
+
+Balz Lenzi Co-Founder Chief Architect
+
+Balz is responsible for the concept, system, product design and R&D of EPOCH blockchain, and providing technical architecture and strategic thinking for EPOCH. As chief architect, he is responsible for leading the entire R&D team. He has many years of experience in the blockchain technology industry and has won honors such as blockchain industry alliance expert and doctor in the service contract. He focuses on and practices blockchain technology and applications, and is good at cloud computing, big data and software-defined storage. He has served as the chief software architect of the finance industry in IBM Switzerland, executives of a number of cloud computing companies and high-end foreign expert of Kone. He has published over 20 papers in international conference journals and is the author of Blockchain Technical Guidelines.
+
+Dr.Conz Brndli, Blockchain Technology Development
+
+As the sponsor and major developer of blockchain PPs open source project, he has in-depth practice and research in network and communications technology, and has more than ten years of experience in software development and project management. By deeply practicing in the field of digital encrypted currency represented by bitcoin, he first puts forward the idea of "blockchain + network communication" to maximize the revolutionary value of the blockchain and strives
+
+32 3 2
+
+
+
+EPOCH Blockchain White Paper
+
+to promote the technological innovation and application development of blockchain and network communication integration in the form of open-source project.
+
+Ruven Hsler Product Design Custom Development
+
+He has more than ten years of experience in large-scale software technology architecture. In the last three years, he has been focusing on the application of blockchain technology in mass data and high-performance, highly available software system. As a blockchain technology enthusiast, he focuses on the combination of cloud computing and blockchain. He has long been involved in the design and development of large projects such as performance tuning tools, display and video drivers, H5 Web OS, distributed multimedia processing and transmitting cloud platform.
+
+Helen Dscher Chief Financial Officer
+
+As the former senior audit manager of the Swiss branch of PricewaterhouseCoopers, Helen has more than 12 years of professional experience as a certified public accountant and is a Swiss Certified Public Accountant, a fellow member of the Swiss Institute of Certified Public Accountants and a member of the Chartered Institute of Management Accountants.
+
+33 3 3
+
+
+
+EPOCH Blockchain White Paper
+
+Chapter 7. Operation Team
+
+Nolan Schalcher, Sales & Marketing Manager
+
+
+
+Kevin Asper, Chief Technical Officer
+
+
+
+34 3 4
+
+
+
+Jonas Zahner, Senior C, C++ Development Engineer
+
+
+
+EPOCH Blockchain White Paper
+
+Juna Wegmller, Legal and Compliance
+
+
+
+Juna Wegmller, Legal and Compliance
+
+
+
+35 3 5
+
+
+
+Leon Schni, Operation and Maintenance Engineer
+
+
+
+EPOCH Blockchain White Paper
+
+Tho Hagenbuch, Software Engineer Louis Bichsel, ERP Implementation Engineer
+
+
+
+36 3 6
+
+
+
+Jrg Aerne, Data Analyst
+
+
+
+EPOCH Blockchain White Paper
+
+Chapter 8. Summary
+
+Blockchain technology is not merely a technology for digital encrypted currency or financial field and will be an emerging foundational technology in the information network. Through the application, development and practice of blockchain technology, EPOCH Team explores the possibility of its large-scale enterprise applications, strives to build a complete, operational and a large-scale enterprise-level blockchain application development system based on the decentralization strategy to provide practical guidelines and strong support for enterprise-level application development. EPOCH blockchain provides rich and varied open programming application interfaces, development tools, an efficient operating platform to accurately match the needs of enterprise-level business development, and achieve safe, efficient and scalable commercial application scenarios. Here, the EPOCH Team sincerely thanks all investors and corporate clients who have participated in the construction of EPOCH blockchain network infrastructure and we will strive to improve our business operations.
+
+37 3 7
+
+
+
+

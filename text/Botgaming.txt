@@ -1,0 +1,1029 @@
+BotGaming
+
+Blockchain powered gambling platform for messenger bots
+
+
+
+White Paper v2.0
+
+
+
+Abstract
+
+BotGaming is a blockchain powered gambling platform for messenger bots. We started game development in 2016, and initially we focused on a social gambling business model with monetization solely through in-app purchases. Today the total number of our bots installed on all platforms exceeds 400,000, with more than 35,000 monthly active users. Our products have been mentioned by Forbes, TechCrunch and CNet.
+
+In May 2017, we made a decision to create a fully-featured gambling platform for messenger apps by obtaining a MGA (Malta Gambling Authority) license, which entitles the company to operate in the European market.
+
+The core value of BotGaming is verifiability and user trust. Our open source RNG generator and the performance of all transactions on the blockchain ensures provably fair gambling.
+
+BotGaming's token - BotCoin (BOT) will be used as the primary in-game currency for all of our games. It will be connected across all platforms and allow users to gamble for real money against their friends on their devices.
+
+BotGaming uses blockchain protocol as a strong bidirectional payment channel between players, casino and affiliates. Needless to say, this solution guarantees the fairness of reward payouts and gives players complete control over their funds.
+
+When a player starts a game session we ask them about the amount of BOT tokens they want to play with. This is consistent with the principle of responsible gambling. Then we deploy a game contract, which locks the corresponding number of tokens on their wallet. When a player decides to quit the game session, the smart contract distributes the reward and the outcome of all operations are added to the blockchain.
+
+As can be seen from this description, BotGaming uses the blockchain at the game session level only. This approach solves issues with transactional fees and speed. We need to pay gas only twice - to open and close game session. Once the game session is open, all transactions like slotmachine spins or hand-drawing in poker are gas-free, and are conducted almost instantaneously.
+
+The next feature was to make all in-game interaction provably fair and transparent. Thus, we choose to use a Pseudo Random Numbers Generator (PRNG) with open source code and reproducible results. It is mean that initializing a PRNG with the same seed yields the same result.
+
+Our PRNG source written in Java, C++ and Python will be hosted on Github for all to test it confirm its veracity. Also on Github, we will host a downloadable client that allows to playback the PRNG's result with a specific argument.
+
+In addition, each spin in slotmachine will be accompanied by a link to the web-based PRNG, thus the player will be able to verify the correctness of the algorithm.
+
+1
+
+
+
+BotGaming uses messengers only as the front end, and all interaction with the blockchain happens on our servers. We ensure the security of transactions and are not dependent in this sense on the messenger app. Currently BotGaming's platform hosts four bots. PokerBot  is the #11 bot on Telegram. Users play Texas Hold'em Poker with friends or random users at tables for 5-9 people. The bot has been translated into 14 languages and more than 300,000 people have installed PokerBot. SlotoBot - is a slot machine for messengers. Its current version has social functions for tournaments and duels with friends or casual users, as well as a booster store. The bot has been translated into 30 languages and is available for play on the following messengers: Telegram, Facebook Messenger, Kik, Slack, Line, Wechat. The total number of bot installs exceeds 70,000. TotoBot  is a peer-to-peer totalizator for messengers. The players make bets between each other, and this is the key difference between TotoBot and the products of betting companies. The MVP version of the bot is being developed. LotoBot  is an instant lottery for messengers. The MVP version of the bot is being developed. BotGaming  is a product information bot. Bot games for Dice, BlackJack, Baccarat, Roulette are planned in the future.
+
+1 http://telegramgeeks.com/2016/04/mypokerbot-top-1-bot-telegram-store-bot/ 2
+
+
+
+Table of Content
+
+
+
+Abstract
+
+
+
+1
+
+
+
+Table of Content
+
+
+
+3
+
+
+
+1. Market Analysis
+
+
+
+5
+
+
+
+1.1. Blockchain technologies in online gambling
+
+
+
+6
+
+
+
+Common issues that players face in online gambling
+
+
+
+7
+
+
+
+Issues that blockchain based gambling startups faced
+
+
+
+7
+
+
+
+Issues solved by BotGaming
+
+
+
+7
+
+
+
+1.2. Messengers and online gambling
+
+
+
+7
+
+
+
+Advantages of using of a messenger as a platform
+
+
+
+7
+
+
+
+2. Introduction to the product
+
+
+
+8
+
+
+
+2.1. PokerBot
+
+
+
+8
+
+
+
+2.2. SlotoBot
+
+
+
+8
+
+
+
+Key functions of SlotoBot:
+
+
+
+8
+
+
+
+2.3. TotoBot
+
+
+
+9
+
+
+
+2.4. LotoBot
+
+
+
+9
+
+
+
+2.5. BotGaming
+
+
+
+9
+
+
+
+2.7. Payment methods
+
+
+
+9
+
+
+
+2.8. Reward withdrawal
+
+
+
+9
+
+
+
+3. Product Specific Section
+
+
+
+9
+
+
+
+3.1. Slotobot
+
+
+
+9
+
+
+
+3.2. Pokerbot
+
+
+
+10
+
+
+
+3.3. TotoBot
+
+
+
+10
+
+
+
+3.4. LotoBot
+
+
+
+10
+
+
+
+4. Marketing Strategy
+
+
+
+10
+
+
+
+4.1. Work with the community
+
+
+
+11
+
+
+
+4.2. Media buying
+
+
+
+11
+
+
+
+4.3. Affiliate Programs
+
+
+
+11
+
+
+
+5. BotCoin (BOT) token
+
+
+
+11
+
+
+
+6. Technical
+
+
+
+12
+
+
+
+Front End
+
+
+
+12
+
+
+
+3
+
+
+
+Blockchain protocol
+
+
+
+12
+
+
+
+PRNG
+
+
+
+12
+
+
+
+7. The Tokensale
+
+
+
+13
+
+
+
+Tokens allocation
+
+
+
+13
+
+
+
+8. Roadmap
+
+
+
+13
+
+
+
+9. Financial Projections
+
+
+
+15
+
+
+
+10. Legal sctructure
+
+
+
+15
+
+
+
+11. Team
+
+
+
+16
+
+
+
+Management team
+
+
+
+16
+
+
+
+Development Team
+
+
+
+17
+
+
+
+Advisers
+
+
+
+18
+
+
+
+12. Partners
+
+
+
+19
+
+
+
+13. Conclusion
+
+
+
+19
+
+
+
+4
+
+
+
+1. Market Analysis
+
+There are following products are traditionally represented in the online gambling market: sports betting, casinos, poker and lotteries. As per a Juniper Research forecast2, total wagers made on mobile and online gambling services will grow from $553.8 billion in 2016, to $946.0 billion in 2021, a CAGR of 14.1%.
+
+As specified in the research, one of the main growth drivers of the gambling marker is players' move to mobile devices, which is related to rising availability of 3G, 4G and Wi-Fi. Another tendency is the players' switch from sports betting (comprising more than 50% of all bets) to casual games, especially online casinos. Although the Western European share of the online gambling market comprises more than 50%, the highest rates of users growth are observable in Asia, with the main driver being online lotteries in China.
+
+2https://www.juniperresearch.com/researchstore/content-applications/mobile-online-gambling/mobile-online -gambling-casinos-lotteries-be
+
+5
+
+
+
+It is no coincidence that the most successful exit in the industry is related to China. Jack Ma's consortium bought Playtika, a social gambling game developer (Slotomania, Caesars Casino Vegas, Downtown Slots) for $4.4B. It's worth noting that although Playtika games are represented on all platforms (AppStore, GooglePlay), its main audience and company profits came from Facebook. Thus, the concept of a "business in a business", which we are develop, has already proven to be successful.
+
+1.1. Blockchain technologies in online gambling
+
+Despite the high rates of growth of the industry, online gambling is constantly hampered by a lack of user trust. This problem covers all aspects of the gambling industry, from PRND to payments.
+
+Some gambling start-ups try to use blockchain at all stages of the game session, however, this leads to problems with speed in very dynamic games, where latency is simply not allowed. Also, the high cost of smart contract execution is a real deal-breaker for micro bets, because transaction fees can exceed wager amounts.
+
+For example, let's take the slotmachine. Any in-game action, like betting or changing a bet amount normally would be processed through the blockchain. But this method slows down the game, raises fee and makes it nearly impossible to play.
+
+BotGaming uses a blockchain protocol in the game session level only. Once the game session is open, all transactions like slotmachine spins or drawing hands in poker are gas-free, and are applied with almost instantaneous speed.
+
+We use PRNG with open source code to make transactions inside the game session transparent and verifiable.
+
+6
+
+
+
+Common issues that players face in online gambling
+
+ Restricted access to game accounts  Hidden fees for deposits and withdrawals  Unreasonably high bookmakers' fees  Hidden terms that enable casinos not to pay or detain rewards  Nonverifiable PRNG-algorithms  Aggressive marketing (email, phone calls, etc.)
+
+Issues that blockchain based gambling startups faced
+
+ Low speed  High cost of smart contract execution
+
+Issues solved by BotGaming
+
+ No risk of fraud from the operator  No hidden terms and hidden fees  Completely verifiable PRNG-algorithm  No risk of non-payment of rewards  Almost instant ingame transaction speeds  Payment for the execution of a smart contract only at the opening and closing of
+
+the game session
+
+1.2. Messengers and online gambling
+
+As noted above, one of the drivers of the industry's growth has been the emergence of mobile users. As mobile device users spend up to 70% of time on messengers, it makes it especially promising to use them as mobile gambling platforms. This is completely correlated with messengers' development themselves, which are turning into ecosystem enclosures with their own sticker stores, payment systems (Telegram) and their own cryptocurrencies (Kik).
+
+Advantages of using of a messenger as a platform
+
+ Users do not need to install a new application, there are no requirements to the device performance and quality of cellular network
+
+ Ad traffic for messengers is much cheaper than usual mobile traffic  A high potential for building affiliate networks through channel owners on
+
+messengers  Possibility to work in the regions where a phone is the only used device  Possibility to use messengers' social functions
+
+7
+
+
+
+2. Introduction to the product
+
+BotGaming is a platform for gambling bots on messengers that uses blockchain technology to implement provably fair gambling. An ingame currency, BotCoin (BOT), is used for betting and withdrawal rewards.
+
+The purchase of BotCoin is available with most wallets, through exchanges or directly on BotGaming's website. Additionally, rewards are immediately transferred to the user's wallet. Verifiability and fair play are provided by the PRNG algorithm with open source code.
+
+2.1. PokerBot
+
+PokerBot  is the #13 bot on Telegram. Users play Texas Hold'em Poker with friends or random users at tables for 5-9 people. The bot has been translated into 14 languages and more than 300,000 people have installed PokerBot. With PokerBot you can:
+
+ Play with friends or random users  Play at a public table or create your own table  Take part in the bonus program (includes rewarding bonuses for being active)  Increase player ratings  Provide referral links for players
+
+Currently the bot is only monetized through in-app purchases.
+
+2.2. SlotoBot
+
+SlotoBot is an arcade slot machine for messengers. It is possible to play in emoji mode and in graphic modes. In the latter case, a separate picture is rendered for each spin. The bot is translated into 30 languages. The total number of downloads exceeds 70,000. Versions of SlotoBot have been released for the following messengers:
+
+ Telegram  Facebook Messenger  Kik  Slack  Line  WeChat
+
+Key functions of SlotoBot:
+
+ Single player mode  Duel mode with friends or random players  Tournaments with prize fund  A bonus program (includes rewarding bonuses for being active)  Players' ratings
+
+3 http://telegramgeeks.com/2016/04/mypokerbot-top-1-bot-telegram-store-bot/ 8
+
+
+
+ Boosters stores (for duels and tournaments)  A billing system  A referral program for players Currently SlotoBot is only monetized through in-app purchases.
+
+2.3. TotoBot
+
+TotoBot is a p2p totalizator for messengers. Betting between players is the key difference between TotoBot and other betting companies. Now an MVP version of the bot is being developed.
+
+2.4. LotoBot
+
+LotoBot is an instant lottery (bingo) for messengers. At the moment, the MVP version of the bot is being developed.
+
+2.5. BotGaming
+
+BotGaming is the product information bot. At the moment, the MVP version of the bot is being developed. In the future, Dice, BlackJack, Baccarat, and Roulette are planned for development.
+
+2.7. Payment methods
+
+Bots running on BotGaming platform accept bets using the inter-game currency - BotCoin. After the completion of the token sale, BotCoin will available for purchase.
+
+2.8. Reward withdrawal
+
+Rewards are immediately transferred to the player's wallet when game session ends and can be converted into any cryptocurrency or fiat money.
+
+3. Product Specific Section
+
+3.1. Slotobot
+
+The Gambling Gross Revenue (GGR) of the slotmachine operator is made up of the difference between the amount of deposits for a period, the sum of rewards withdrawn, transition fees (3-5% of GGR) and royalties of content providers (10-15% of GGR ). Another important indicator of the performance of the slot machines is Return to Player (RTP), the ratio of winning and losing bets. In most jurisdictions, a minimum 95% is secured by legislation.
+
+9
+
+
+
+Using the blockchain system and our own development, we will be able to minimize all costs and raise RTP to 97%. This will increase user lifetimes and the company's profits in the long term.
+
+Slotobot is a good candidate for paid advertising traffic. During our test advertising campaigns, the download cost of the Telegram-bot by European users (regions Tier 2 & Tier 3) was $0.1 - $0.25.
+
+In the most pessimistic scenario, in which the conversion from download to payment comprises 10%, the average revenue from one payment (ARPPU) from one player is $50, and payouts equal to 75% of turnover or ARPPU .
+
+
+
+Ad Budget $100 000
+
+
+
+Slotobot Installs
+
+400000
+
+
+
+User Payments
+
+40000
+
+
+
+ARPPU
+
+
+
+Payouts
+
+
+
+$2 000 000 $1 500 000
+
+
+
+GGR $500 000
+
+
+
+ROI 400%
+
+
+
+With an advertising budget of $100.000, we expect $500,000 GGR (taxes will be withheld from this amount), and the marketing ROI is 400%. The turnover, and therefore, the volume of trades in tokens is expected to be 20 times higher than the marketing budget.
+
+3.2. Pokerbot
+
+The profit of the poker room consists of a commission from the Pot during each hand. Depending on the size of the buy-in, it comprises around 1 to 5% of the Pot.
+
+The average blind in online poker is $0.01 and average Pot is about 30 Blinds equaling $3. So, the commission rate from one pot is up to $ 0.15.
+
+An advanced poker player draws more than 100,000 hands in a normal lifetime, corresponding to commissions of $15,000.
+
+3.3. TotoBot
+
+Profits are generated by a commission from the prize pool for each event, comprising 5-10% of the total prize pool.
+
+3.4. LotoBot
+
+The profit from instant lotteries consists of the difference between the amount received from ticket sales and the prize pool of each lottery, comprising 10% of the total amount of the tickets sold.
+
+
+
+4. Marketing Strategy
+
+BotGaming's global development strategy is based on customization for each region. We will focus on popular messengers in each country and games allowed in its jurisdiction.
+
+10
+
+
+
+4.1. Work with the community
+
+The token sale is not only a tool for attracting investments, but also a way to express ourselves in the cryptocurrency community.
+
+4.2. Media buying
+
+Currently the audiences of messenger channels are underestimated. This is due to the low efficiency of traffic transfusion from the messenger's ecosystem to other platforms, whether it's web or mobile applications. We offer channel owners a reliable way to monetize their audience by placing adverts or participating in our affiliate program. Additionally, we have gained considerable expertise in the purchase of traffic from traditional mobile advertising networks and the subsequent monetization of our bots. It is worth noting that regardless of the source of traffic, the installation of a bot for a messenger costs 5-10 times lower than an installation of a mobile application.
+
+4.3. Affiliate Programs
+
+Two types of affiliate programs will be implemented for BotGaming. First, players will be able to share a referral link to all their contacts. After a referral registers with any of BotGaming's bots, the referrer gets 20% of the GGR for this player. Second, channel owners can post referral links. Registration as an affiliate partner is available on the project's website or through BotGaming's information bot. There is a referral commission of up to 50% of GGR. The calculation of referral payments is instant when game session ends. Identification of users at the device level enables to avoid affiliate program fraud.
+
+5. BotCoin (BOT) token
+
+BOT is a utility token based on ERC20 standards. It is used as in-game currency for all the game contracts integrated within the BotGaming platform. Keys to BOT can be stored in platform wallets by players and in any Ethereum client or by more advanced Ethereum users. We have already seen significant growth of our platform. It is fast, can handle many users and is ready to scale after the crowdsale. We assume that every 100,000 Slotobot installs will generate a trading volume of tokens equivalent to $1,000,000. We want to become the most reputable and well known messenger bot gaming platform and we welcome our base to join us to become part of the BotGaming community.
+
+11
+
+
+
+6. Technical
+
+Front End
+
+BotGaming uses messengers only as front end, and all interaction with the blockchain happens on the side of our servers. So, we ensure the security of transactions and are not dependent in this sense on the messengers.
+
+Blockchain protocol
+
+BotGaming uses blockchain protocol as a strong bidirectional payment channel between players, casino and affiliates. When a player starts a game session we ask them about amount of BOT tokens they want to play with. This is consistent with the principle of responsible gambling. Then we deploy a game contract, which locks the corresponding number of tokens to their wallet. When a player decides to quit the game session, the smart contract distributes rewards and the outcome of operations are added to the blockchain. As can be seen from this, BotGaming uses blockchain at the game session level only. This approach solves issues with transactional fees and speed. We need to pay gas only twice to open and close game session. Once the game session is open, all transactions like slotmachine spins or drawing hands in poker are gas-free, and are applied with almost instant speed.
+
+PRNG
+
+We use the open source Random Numbers Generator (PRNG), which allows players to reporduce results based on the seed.
+
+12
+
+
+
+Our PRNG source code is written in Java, C++, and Python and will be hosted on Github. It will be open for testing and verification. Also, on Github we will host a downloadable client that allows playback of the PRNG's results with a specific argument.
+
+In addition, each spin in the slotmachine will be accompanied by a link to a web-based PRNG, thus the player will be able to verify the correctness of the algorithm.
+
+For more information learn T echnical Appendix.
+
+7. The Tokensale
+
+ Basic token cost $0.01  Minimal limit $5,000,000  Hardcap $20,000,000
+
+
+
+Tokens allocation
+
+
+
+On Sale Team and owners BankRoll Bounty Advisers, Escrow
+
+
+
+60.00% 20.00% 10.00% 5.00% 5.00%
+
+
+
+13
+
+
+
+8. Roadmap
+
+
+
+2017
+
+
+
+2018
+
+
+
+2019
+
+
+
+MAU 35,000
+
+
+
+130,000
+
+
+
+500,000
+
+
+
+License Social Gambling
+
+
+
+Curacao, Malta, Germany, Great Britain, Ireland,
+
+
+
+Italy
+
+
+
+Spain, Austria, Belgium,
+
+
+
+Sweden
+
+
+
+IQ
+
+
+
+Games:
+
+
+
+PokerBot, PRNG Serification with NMi
+
+
+
+Games: Fantasy Football
+
+
+
+SlotoBot
+
+
+
+Investor's area with multi AI driven system to improve
+
+
+
+currency support
+
+
+
+players retention
+
+
+
+Provably Fair Service
+
+
+
+Public Presale
+
+
+
+The Tokensale
+
+
+
+IIQ
+
+
+
+Games: LotteryBot,
+
+
+
+TotoBot
+
+
+
+Token distribution BOT token listing with exchanges Activation of Bankor Token Changer Wallet for games KYC for games Relaunch as real money gambling: Slotobot, LotoBot, TotoBot Affiliate program Marketing campaign BotGaming platform website AI-dirven functions: snap screen for in-play betting Games: RouletteBot
+
+
+
+HTML5 interface for games
+
+
+
+IIIQ
+
+
+
+Market Research
+
+
+
+Games: DiceBot, BlackJack, Bingo, Baccarat, Sport Betting Poker relaunch Lottery for token holders Lottery for players (gas recharge) Loyalty program for players
+
+
+
+Games: eSport
+
+
+
+IVQ
+
+
+
+White Paper
+
+
+
+Games: Pachinko
+
+
+
+Game Smart Contracts
+
+
+
+Ai based functions: Natural
+
+
+
+New PRNG
+
+
+
+Language Processing for sport
+
+
+
+Bot Gaming platform MVP betting
+
+
+
+Start Roadshow
+
+
+
+BigData to realize players
+
+
+
+behavioral patterns
+
+
+
+14
+
+
+
+9. Financial Projections
+
+
+
+BotGaming's expenses are given in the diagram below.
+
+
+
+Legal Token rate maintenance Development Marketing Operations
+
+
+
+10.00% 15.00% 30.00% 40.00% 5.00%
+
+
+
+Considerable costs for legal support of the company are stipulated not only by the specific character of the blockchain, but also by the need to obtain licenses to run a gambling business. A Malta Gambling Authority license is assumed to be obtained in order to operate in the European market.
+
+10. Legal structure
+
+BotGaming is a two-company legal structure. The first company is a Canadian corporation, which developments the software for the BotGaming platform, blockchain and the gaming bots themselves. The Canadian corporation also holds all of the intellectual property rights to our state-of-the-art technology that we actively seek to protect via copyright, patent and trademark law. The second company is a Gibraltar corporation that seeks to obtain firstly a Curacao gaming license, secondly a Malta gaming license and thirdly all other jurisdictions to allow our players to legally gamble on BotGaming bots, as well as to make and receive payments.
+
+We believe that legal stability is of outmost importance for the success of our business. Consequently, we have designed our legal structure to achieve the following goals:
+
+ Ensure long term legal stability and predictability;
+
+15
+
+
+
+ Incorporate in jurisdictions that provide favorable legal views towards blockchain, online gambling and crypto currencies;
+
+ Gain access to corporate incentives provided to software companies, such as those provided by government of the province of Quebec;
+
+ Optimize taxation; and  Have the possibility of easily registering and/or transferring IP between the
+
+companies as may be needed in the future.
+
+Canadian corporation is BotGaming Inc., which is duly organized under the laws of the province of Quebec in Canada and has its place of registration at 587 CH. Pionniers La Minerve, Qubec, Canada. The Gibraltar corporation is (now registering), which is duly organized under the laws of Gibraltar and has its place of registration at (now registering).
+
+The BotGaming tokens may be acquired from the Gibraltar company as this company will ultimately be engaged in providing the gaming services to the players. In order for the Gibraltar company to act lawfully, all of the required IP rights and the rights to the software of the BotGaming platform, blockchain and bots are duly and properly licensed from the Canadian corporation. The details of the software and IP rights licensing agreement may be available for the review to prospective contributors upon request.
+
+11. Team
+
+Management team
+
+Kirill Pyrev
+
+CEO
+
+A seasoned developer of messenger bots, online games and dating services. CMO & co-founder of FXVan, a brokerage company, which he later expanded to the Asian market.
+
+Fedor Matasov, Ph.D.
+
+CTO
+
+More than 15 years experience in gambling and the sports betting industry. Strong expertise in development of complex solutions for offline gambling covering software and hardware as well as high loaded online casinos. During this time collaborated with companies: Ritzio, Unicum (brand Vulcan), IGT (USA), GLI, ITechLabs, AAMS (certification companies), Octavian (BG), Denim (Italy).
+
+Leo Kangin
+
+Head of product
+
+Chat Bots & AI evangelist who launched several successful messenger bots including MojiHunt (featured on Forbes, VentureBeat) and PennyCat (as seen on CNBC TV channels, LifeHacker, VentureBeat).
+
+16
+
+
+
+Samuel McCulloch
+
+Business development
+
+Founder of SmartICOinvestor.com and ICO consultant. Options trader for multi-million USD fund and crypto investor. Head of business analysis for Coinfabric.com.
+
+Mikhail Sinitsyn
+
+Business development manager East Asia
+
+Professional Chinese-speaking project manager, with vast experience in developing and executing projects related to the East Asia region, including start-ups (Diamond Education International Ltd. in China and Hong Kong), as well as governmental-level projects.
+
+Ruslan Mukhametkhanov
+
+Marketing and PR manager Ten years digital marketing experience. Held a leading position at Ingate - one of the largest Internet agencies in Eastern Europe. Now focused on product marketing and user acquisition.
+
+Dmitry Popov
+
+Project Manager
+
+Passionate project manager who loves user centric product models and flexible workflow frameworks. Adept at analyzing the competitive landscape, conducting research and attaining continual profits through focused planning.
+
+Ksenia Gromenko
+
+Community manager
+
+Online community and social media strategist with 7 years experience in project development and creating project communities.
+
+Development Team
+
+Dmitry Rozhkov
+
+System Architect
+
+About 15 years in gambling industry and cooperated with companies - Ritzio, Unicum (brand Vulcan), AAMS (Italy certification company), Denim(Italy), TNS Gallup Media (INT), Wurlitzer (USA).
+
+Senior Java and C#, C++ developer. Crypto enthusiast since 2013.
+
+ Gambling protocols: G2S, SAS 4-0-6.2, cctalk,ccnet, ASP, ID003  Programming language: Java , C/C++/C#, Python, Perl etc  Frameworks: .NET, ASP.NET, ASP.NET MVC, WPF, WCF, JSF, Spring
+
+17
+
+
+
+ API: WinAPI, WinForms, Managed DirectX, MAPI  DB: PostgreSQL , MSSQL, Interbase, xBase, MySQL  ORM: XPO, NHibernate, Hibernate,  VCS: Mercurial, VSS, TFS, SVN,
+
+Mikhail Ruban
+
+Full Stack Developer More than 11 years experience in software and gambling development.
+
+ Gambling protocols: G2S, SAS 4-0-6.2, cctalk,ccnet, ASP, ID003  .NET: C#, WCF, ASP, LINQ, Entity Framework  Java: Java 8, Spring, Hibernate  BD: PostgreSQL, MS SQL
+
+Kirill Glinsky
+
+Full Stack Developer Seven years of software development.
+
+ .NET: C#, WCF, ASP, LINQ, Entity Framework  Java: Java 8, Spring, Hibernate  BD: PostgreSQL, MS SQL
+
+Evgeny Savin
+
+ChatBot Developer Seven years experience in software development and two years experience developing messenger bots.
+
+ JavaScript, Node.js, ES6, NPM, babel, docker, sequelize, express, ejs, nunjucks, mocha, chai
+
+ PostgreSQL, MySQL, Memcached, Redis  PHP, Yii2, Sphinx, Smarty, Bootstrap 3, HTML, CSS, jQuery  C#, Java
+
+Dmitry Ruban
+
+Q&A Lead Provide lifecycle management of automated testing projects on software and large database applications using various monitoring and scripting tools. More than 6 years experience in Q&A.
+
+Advisers
+
+18
+
+
+
+Melissa Blau
+
+Director at iGaming Capital
+
+Melissa is an investor/advisor in several companies in iGaming, Blockchain and Cryptocurrency. Her prior experience in the iGaming sector includes senior executive roles with operators and banking advisory capacity. Prior to iGaming, Melissa was a partner at a $450m MediaTech fund. Melissa has a BA from the Wharton School, University of Pennsylvania and an MBA from Harvard University.
+
+Ariel Israilov
+
+Investment Advisor Ariel graduated from Finanz Akademie, Vienna and has trading and market making background with over 15 years of global entrepreneurship experience. As a venture capitalist his investment focus is East-African, ASEAN and CIS countries. Ariel is the CEO and Founder of FRESHVALE LTD and several IT, finance and security technologies companies.
+
+Andrei Moskvitch
+
+ICO Legal Advisor
+
+Managing Partner at A2 law firm. Senior legal professional with over 10 years of experience in international law, legal & corporate strategy, IP due diligence, IPO IP structuring, tech transfer, patent protection and enforcement, Internet regulation, ICO and blockchain. Goal-oriented problem solver with an excellent track record of successful work for global players such as Adidas, AFK Sistema, Airbus, Biocad, Bombardier, IBM and Yandex.
+
+
+
+12. Partners
+
+
+
+Decentralized platform for crowdfunding projects. Wings is one of the top fintech startups according CoinTelegraph. WINGS is providing the platform and technical support for the BotGaming crowdsale campaign.
+
+
+
+ALTHAUS Group is an independent investment and advisory firm, which offers a full range of financial, tax, legal and management advisory services for the companies and private equity funds.
+
+
+
+WAGERTEC is a professional service company, providing three lines of services; licensing, administration, consulting.
+
+- Curacao Company Incorporation & Annual Management
+
+19
+
+
+
+- Obtaining iGaming License for all king of online gaming (Poker, Slots, Casino, SportsBetting, Bingo). - Hosting and collocation services - PSPs and Merchant Accounts The market leading gaming compliance testing and auditing laboratory in the fields of gaming and IT security, we are committed to maintaining accreditations in emerging and regulated jurisdictions.
+
+Bancor is a Decentralized Liquidity Network that allows you to hold any Ethereum token and convert it to any other token in the network, with no counter party, at an automatically calculated price, using a simple web wallet.
+
+We are full service IP protection firm founded in 2010. We are a team of patent & trademark professionals focused solving your unique problems, win your battles and add value to your intellectual capital. Our company maintain a narrow network of exclusive IP professionals and litigators in Europe, Russia, Canada and USA.
+
+13. Conclusion
+
+This document presents in great part the technological and marketing strategies planned and adopted with the objective of perfecting and maintaining the continuous development of BotGaming. Using blockchain and messengers as a technology platform brings about new level of trust to gambling games and makes it extremely easy to access. For more information visit botgaming.me or email k irill@botgaming.me. Technical Appendix https://botgaming.me/technical.pdf
+
+20
+
+
+
+

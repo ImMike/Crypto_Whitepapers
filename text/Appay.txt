@@ -1,0 +1,613 @@
+White paper
+
+November, 2017
+
+
+
+Executive s ummary
+
+
+
+3
+
+
+
+1. P ayment fees, chargebacks a nd l ong payment w ait t imes
+
+
+
+ 4
+
+
+
+1.1 Apple P ayment Fees
+
+
+
+4
+
+
+
+1.2 Google P ayment F ees
+
+
+
+4
+
+
+
+1.3 Amazon Payment Fees
+
+
+
+4
+
+
+
+1.4 Long Payment Wait Times
+
+
+
+4
+
+
+
+1.5 Chargebacks
+
+
+
+5
+
+
+
+1.6 Inability t o be p art of the c ryptocurrency r evolution
+
+
+
+5
+
+
+
+2. A ppays's solution: c reate a  payment g ateway using E thereum's blockchain
+
+
+
+6
+
+
+
+2.1 Drastically reduce p ayment fees while instantly p assing p ayment t o publishers
+
+
+
+6
+
+
+
+2.2 Give publishers f ull c ontrol o f their f unds
+
+
+
+7
+
+
+
+2.3 Remove t he credit card r equirement to m ake i n app p urchases
+
+
+
+7
+
+
+
+2.4 Give APY r ewards for using APY coins
+
+
+
+7
+
+
+
+3. Product architecture a nd p roduct development t imeline
+
+
+
+9
+
+
+
+3.1 Smart Contracts & Workflows
+
+
+
+9
+
+
+
+3.2 Intended Product architecture
+
+
+
+10
+
+
+
+3.3 Launch version of the p roduct
+
+
+
+11
+
+
+
+3.4 Product development r oadmap.
+
+
+
+12
+
+
+
+4. Market o pportunity a nd b usiness m odel
+
+
+
+13
+
+
+
+4.1 Market o pportunity
+
+
+
+14
+
+
+
+4.2 Business model
+
+
+
+15
+
+
+
+5. Marketing and Strategy
+
+
+
+16
+
+
+
+5.1 Launch P artners
+
+
+
+16
+
+
+
+5.2 Integrating w ith existing SDK's
+
+
+
+17
+
+
+
+6. C rowdsale d etails
+
+
+
+18
+
+
+
+6.1 APY Creation R atios
+
+
+
+19
+
+
+
+6.2 APY Tokens
+
+
+
+20
+
+
+
+6.3 Budget
+
+
+
+21
+
+
+
+7. T eam
+
+
+
+22
+
+
+
+7.1 Appay T eam
+
+
+
+22
+
+
+
+7.1 Appay Advisory Team
+
+
+
+22
+
+
+
+References
+
+
+
+23
+
+
+
+Executive s ummary
+
+In 2015, g lobal mobile app revenues a mounted to 69.7 billion U .S. d ollars. I n 2020, mobile apps a re projected t o g enerate 1 88.9 billion U.S. d ollars. That's a  300% i ncrease in revenue over 5  y ears w ith n o e nd o f g rowth i n sight.
+
+Despite this huge growth, app d evelopers and users a re s till s tuck using a n a ntiquated payment p rocessing s ystem. A ll of the app s tores charge a  30% f ee on e very transaction. T here c urrently exists 3  major p roblems f acing the m obile payment application market.
+
+1) Trust:  I n o rder t o m ake a n in app p urchase, u sers m ust provide their personal information a long with credit c ard i nfo. T his information i s then stored b y the app s tore. With new d ata breaches occurring seemingly every day e xposing m ore a nd m ore personal information p eople are becoming reluctant to give out t his information a s f reely as b efore. T his i s r esulting i n l ost sales a s p eople shy a way from b uying i n app d ue t o lack o f trust in the u nderlying payment system.
+
+With Appay purchases a re a nonymous and n o p ersonal information i s e ver a sked o r stored. Also o ur payment platform i s built on top of Ethereum's blockchain which helps to b ridge t he trust issues p otential b uyers may have. T he i ncreased l evel of t rust w ill lead t o higher revenue for a pp developers due t o i ncreased s ales.
+
+2) Payment F ees:  Publisher c reate a pps, m arket a pps, m aintain apps, t hey d o all the work y et the app stores c harges a  30% fee on e very purchase t hat occurs w ithin an app. P ublishers c urrently h ave no choice but t o p ay t hose fees. Business p ractices' l ike these are considered extortion in m ost industries. T his business model i s making big companies such as Apple and G oogle very rich a t t he e xpense o f t he h ard working developers a nd p ublishers. Appay fixes this issue b y only charging a 2 .5% f ee o n transactions. This w ill instantly r esult in a  27.5% r evenue increase for e very app t hat uses A ppay.
+
+3) P ayment w ait times:  The app s tores p ay Net30 or Net45. This means that publishers can w ait a s long as 7 5 days after a s ale before t hey see any funds. T hat is an u nacceptably l ong delay t hat n eeds t o be corrected. W ith A ppay payments a re instant. They will s how u p in p ublishers wallets i n seconds n ot months. This i n turn w ill put more money b ack into the h ands of the app d evelopers w ho then w ill have more money t o m arket t heir apps. L eading to more downloads a nd m ore transactions.
+
+
+
+1. Payment f ees, chargebacks a nd p ayment wait t imes
+
+Publishers a re forced to w ait w eeks and s ometimes months for payment. T hey a lso have t o pay a  30% f ee o n e ach t ransaction. Buyers a re f orced to e xpose their credit cards to c ompanies t hat h ave shown t o n ot c are about s ecurity. This e cho system is broken a nd i s in n eed o f a fix. U sing E thereum's blockchain Appay will fix all of t hese problems with a  simple, secure, i ntuitive solution.
+
+1.1 Apple P ayment F ees
+
+Currently a ll apps and in app subscriptions work on a 3 0/70 s plit. A pple g ets 30% o f what's paid f or an app or s ervice, w hile t he company o r developer o ffering t he a pp gets a 70% c ut. That means w hen someone p urchases Netflix through the Netflix i OS a pp, Apple c ollects o ver $ 2 o f t he fee $7 the c onsumer p ays. Apple h as also disabled d irect links to o utside s ubscription s ign-up s ervices within a pps i n o rder to m aintain t heir monopoly.
+
+Apple's 30% subscription cut has been a sticking point for many c ompanies, especially those w ith tight margins l ike m usic s ervices. I t's e ven gotten A pple into hot water in t he past, m ost notably d uring t he e -book price f ixing case levied against i t b y the U .S. Department of Justice.
+
+1.2 Google Payment F ees
+
+Things d on't g et a ny better o n t he G oogle P lay store. G oogle charges a  3 0% fee o n every in app p urchase j ust l ike Apple. Apple also has b een known t o c hargeback publishers f or p urchases when user c omplain to V isa a nd M astercard.
+
+1.2 Amazon Payment F ees
+
+Similar t o b oth Apple and Google, Amazon charges a  30% f ee on every in a pp purchase. They a lso reserve the right to chargeback a ny a mounts t hey s o choose.
+
+1.4 L ong p ayment w ait t imes and thresholds
+
+When does A pple and G oogle p ay o ut? The c urrent payment schedules are N et30 f or Google and N et45 for A pple. T his means that app d evelopers n eed t o wait between 3 0 - 4 5 days f rom t he e nd of a  calendar month b efore funds a re s ent to t hem. Even a fter funds a re sent they could still w ait 1-3 weeks for payment to a rrive d epending o n t heir l ocation.
+
+Payout T hreshold Apple has a  minimum payout o f $10 for a  select list o f b anks. I f your a ren't lucky enough to h ave a n a ccount w ith t hose b ans t hen your m inimum payout threshold is $ 150usd.
+
+
+
+For s mall app d evelopers t his m eans payment can be d elayed f or months w hile the earnings accumulate a bove the t hreshold.
+
+To receive p ayment f rom A pple, y ou m ust h ave provided a ll r equired b anking and tax information and documentation, as well a s meeting the minimum payment t hreshold.
+
+Google Play has a  one-time fee o f $25. Unfortunately, y ou d on't get y our m oney immediately when y ou m ake a  sale. Almost every Android a pp market h olds o n t o y our money for a period of time.
+
+1.5 Chargebacks
+
+Kids w ith access t o t heir parents' devices or accounts make t ens o f millions of d ollars i n unauthorized i n a pp p urchases e very y ear. While m ost micro-transactions are v ery small, some of t hese totals e asily exceed $100 cumulatively b efore t he p arent i s aware of t he situation. B y t hen t he d amage is a lready d one.
+
+In April 2 017, Amazon agreed t o refund c onsumers o f roughly $70 m illion of unauthorized i n-app purchases. H owever, the c ulprits weren't criminals--instead, these t ransactions were a ll made b y c hildren.
+
+In 2014 both Google a nd A pple s ettled with the F TC for combined a mount of $ 51.5 m illion in relation to chargebacks for in app purchases. This amount w as in addition t o t he amounts already charged b ack t o p ublishers.
+
+With A ppay chargebacks a re a t hing of the past. Once f unds are s ent a nd confirmed i nto the p ublishers wallet t here i s no w ay f or t hose funds t o be charged b ack at a later time. This w ill be something that publishers f ind v ery attractive. C hargebacks a re a m ajor p roblem f or p ublishers c urrently, it i s very hard to d o b udget planning when y ou n ever k now when someone will scoop i n and s teal f unds you c ollected m onths p rior. A ppay g ives t he control of f unds back to the p ublisher a nd lets t he p ublisher d ecide w hen to process the chargeback.
+
+1.6 Inability to be p art of t he c rypto r evolution
+
+Since a pp payments are c urrently c ontrolled by t he appstores, b uyers h ave no w ay to p ay f or their p urchases using c rypto currency. App d evelopers have no way t o c ollect cryptocurrency a s payment a nd t he e ntire payment ecosystem i s s tuck w here i t's been for t he p ast 15 years. T he solution Appay i s developing will bring mobile a pplication purchases i nto t he 21st century. The f ramework w e lay w ill a llow for c ontinuous i mprovements that will b enefit publishers a nd u sers for t he next 15 y ears.
+
+
+
+2. Appay's solution: c reate a  payment gateway using Ethereum's blockchain t echnology
+
+Appay w ill d evelop a  p ayment gateway that w ill allow for p urchases to be m ade by sending A PY t okens. In order t o f acilitate t his f unctionality into m obile a pplications we will d evelop a s oftware d evelopment kit. T his S DK w ill a llow t he app developer t o easily s etup i n app purchases w ith a  f ew simple lines o f c ode. T he p rocess o f transferring f unds will occur o n Ethereum's network by transferring A PY coins f rom the purchasers wallet t o t he app owner's w allet.
+
+2.1 D rastically reduce p ayment f ee's w hile instantly passing payment to p ublishers
+
+Apple c urrently charges a  30% fee on every t ransaction. They also m ake their publishers wait u p t o 45 days t o receive p ayment e ven t hough they c ollect payment instantly. W ith A ppay p ublishers will be p aid in minutes and i nstead of paying a 3 0% fee Appay w ill only c harge them a  2.5% fee.
+
+
+
+2.2 Give publishers f ull control o ver t heir f unds
+
+Currently p ublishers are at t he m ercy of t he a pp store in o rder to r eceive p ayment. At anytime A pple or G oogle c an chargeback p ublishers f or p roducts a lready s old. With Appay f unds a re t ransferred instantly l eaving n o chance t hat a t a l ater t ime s omeone can come take your m oney.
+
+2.3 R emove t he requirement of needing a c redit card t o make in a pp purchases
+
+With A pple t he only payment option is to u se a c redit card. Many people d on't w ant to expose t heir c redit c ards t o p latforms t hey don't t rust. Some people simply don't h ave credit c ards, a nd o thers don't w ant to use their cards. W ith A ppay w e remove this requirement. You c an a nonymously pay for y our in app purchases by simply acquiring an APY c oin.
+
+2.4 G ive A PY r ewards for u sing APY coins
+
+Users o f APY coins will be given 10 A PY r ewards f or e very 1  A PY c oin used. These rewards w ill be s tored i nto an A PY reward a ccount a ccessible v ia p rivate k ey. T hese rewards w ill b e r edeemable f or m erchandise i n o ur APY store. The store w ill d isplay products f rom our partners such a s W almart.com, A mazon.com, etc. T he p oints t o $ conversion w ill b e 10,000 APY reward p oints for every $1 usd. We believe t his r eward system w ill h elp t o g row our user b ase of A PY coin owners v ery quickly.
+
+
+
+3. P roduct a rchitecture and p roduct d evelopment timeline
+
+3.1 S mart Contracts &  W orkflows
+
+Smart contracts w ill e nable us to f acilitate t he payments s olution w ith a decentralized trust and r eputation s ystem b etween p arties. The number of s mart contracts, d etailed structure, and f unctionality will b e d efined a nd f inalized d uring development.
+
+
+
+3.2 Intended P roduct A rchitecture
+
+We will b uild our b ase libraries using Objective C . A n iOS s pecific SDK w ill b e written entirely i n O bjective C . While t he Android S DK will b e written in Java and w ill incorporate the shared O bjective C  l ibraries. We w ill e xpand this SDK t o U nity, Blackberry, F acebook, e tc on subsequent versions.
+
+
+
+3.3 L aunch version o f t he product
+
+Here is a s ample implementation o f our S DK i nto t he g ame Tesoro. When a u ser wishes t o make a n in app p urchase t hey would then see the items for s ale p riced in APY c oins. When t hey s elect p urchase t hey would then be p rompted to e nter their private k ey. O nce that w as a uthenticated t he designated a mount o f APY c oins minus Appay's 2.5% transaction fee would b e transferred f rom the u ser's w allet i nto t he publishers w allet c ompleting t he s ale.
+
+SDK V1 Version 1 of our S DK w ill be rolled out t o our launch p artners o nly. It will be fully functional a nd will allow for payment o f i n a pp p urchases b y sending APY coins. Publishers will be c redited i nstantly a nd u sers w ill anonymously b e able t o m ake t heir purchases without exposing any personal information SDK V2 Version 2  will have the same functionality a s version 1  w ith t he a ddition of a ny p roduct improvements our launch p artners a sk f or. This v ersion will b e f reely a vailable t o all app d evelopers a nd w e w ill l aunch it with a big marketing i nitiative.
+
+
+
+SDK V3 Version 3  w ill include our m obile advertising platform that will a llow p ublishers t o earn additional revenue b y displaying mobile a ds. These a ds w ill be s imilar to t he ads t hat are available t o p ublishers through ad n etworks such as a dmob, v ungle, and m opub. What will make o ur product even m ore attractive is t hat we will p ayout f or ads displayed instantly u sing E thereum's blockchain. C urrently all a d n etworks pay o ut Net30, N et45, or N et60. Which l eaves publishers waiting for t heir hard earned advertising r evenue. With A ppay t here will b e no w ait same a s there is n o wait for i n app purchases.
+
+SDK V 4 Version 4  will e xtend f unctionality to other app s tores s uch a s Blackberry W orld, B Shop, and the W indows Store.
+
+3.4 Product development r oadmap
+
+Product development t imeline m ight n ot b e final and i s s ubject to c hange depending on the feedback we r eceive from our i nitial customers.
+
+April 2 018 -  SDK V1 launches
+
+August 2 018 - SDK V2 l aunches
+
+December 2 018 - SDK V 3 l aunches
+
+February 2019 - SDK V4 launches
+
+
+
+4. Market opportunity and b usiness model
+
+In 2015, global m obile app r evenues amounted to 6 9.7 b illion U .S. d ollars. In 2 020, mobile a pps are p rojected to generate 1 88.9 billion U.S. d ollars. T hat's a  300% i ncrease in revenue over 5 years with n o e nd o f growth i n s ight.
+
+Despite this h uge growth, app d evelopers a nd u sers are still s tuck using a n antiquated payment p rocessing s ystem. Appay p lans to disrupt the m obile a pplication m arket by introducing a  b lockchain based in a pp p ayment platform.
+
+
+
+4.1 M arket o pportunity
+
+In 2015, g lobal mobile app revenues a mounted t o 69.7 billion U.S. d ollars. I n 2 020, mobile a pps are p rojected to g enerate 1 88.9 b illion U .S. d ollars. Appay will charge a 2.5% flat f ee on every t ransaction. B y 2020 w e h ope to b e p rocessing 30% of e very i n app transaction. This would lead to a  yearly r evenue of $1.47 billion U.S. dollars.
+
+ Worldwide m obile app s tore downloads t o exceed 352 billion in 2 021, with gross consumer s pend across all app s tores to s urpass $ 139 b illion.
+
+ Gross c onsumer spend on g ames v ia a ll mobile a pp stores should e xceed $ 105 billion i n 2021. S pend o n a pps (excluding games) in categories l ike news, m edia and dating a pps is forecast to g row significantly f aster a nd h it $ 34 billion in 2021.
+
+ Google P lay a nd t hird-party A ndroid stores a re forecast t o see d ownloads g row at an annualized r ate of 2 3% to 2 99.9 billion b y 2 021, thanks to g rowing smartphone a nd a pp a doption in emerging m arkets, p articularly India, M exico, Brazil and I ndonesia.
+
+According to t he comScore r eport, t he number o f mobile users s urpassed desktop users in 2 014. Gartner's p rediction narrates that o ver 2 68 b illion mobile downloads w ill generate a n income o f $ 77 b illion in 2017. The e stimated g lobal mobile a pp r evenue was $ 35 b illion in 2014, $ 45 billion in 2 015, $ 58 b illion i n 2 016, and a predicted $77 billion in 2 017, as stated a bove. The statistics i ndicate that people w ho fall in t he a ge group o f 18 to 2 4 years of age use m ore mobile apps than any other g roup. They are followed closely by 25 to 34 y ears, 35 t o 4 4 y ears, 45 to 54 years, and t hen over 5 5 years, r espectively. T he i mplication is that b usinesses t hat u se m obile a pplications will target the middle g eneration more t han t he y ounger and o lder g enerations.
+
+
+
+4.2 B usiness m odel
+
+Appay w ill be a  f ree to u se SDK o ur r evenue c omes f rom a 2 .5% fee on each transaction. This i s a r eduction of 2 7.5% c ompared to what A pple and G oogle currently charge on i n a pp p urchases. T his will l eave more i ncentive for d evelopers t o k eep developing a nd e arning m ore r evenue t hus increasing A ppay's r evenue.
+
+
+
+5. M arketing a nd Strategy
+
+In o rder f or Appay t o be successful we n eed t o get the word out t o a pp developers. T o do t hat we plan t o target Ad n etworks, mobile a d platforms, and d evelopers. In o rder to target these people w e w ill u se demand s ide p latforms. facebook, google, a nd linkedIn.
+
+5.1 Launch P artners
+
+We have a lready s igned on m any a pp p ublishers a nd when w e launch our SDK w ill b e integrated i nto thousands o f m obile a pps. S ome o f these partners that have already signed up to A ppay a re.
+
+ EvaMedia C orp  EverythingAmped C orp  AiDataSoft I nc  Adflare LLC
+
+
+
+5.2 I ntegrating w ith e xisting S DK's
+
+We w ill aim t o i ntegrate o ur S DK d irectly i nto l arge SDK platforms such a s Mopub, Conversant, Smaato, TapJoy, A irPush, Vungle, E tc. T his w ill g ive a ll of those p ublishers direct a ccess t o o ur payment g ateway.
+
+
+
+6. Crowdsale d etails
+
+The C rowdsale of Appay a nd the c orresponding token creation p rocess w ill be organized around the smart contracts running on E thereum. P articipants willing to support t he development of t he A ppay P roject can d o so b y sending E ther currency to t he d esignated a ddress. By d oing so, they are purchasing A ppay T okens ( APY) a t the r ate o f 5 000 APY per 1  E TH w hich are sent i nstantly t o their w allet.
+
+ Accepted c urrency during t he ICO i s Ether.
+
+ The creation w ill be c apped ( "Soft Cap") u pon r eceipt of E TH e quivalent to USD 5 m. T his a mount i s s ubject to c hange before the T oken C reation event.
+
+ The Token C reation p eriod will l ast 6 0 days max if Soft C ap is not reached sooner.
+
+ If the S oft Cap is reached b efore the e nd o f f ourteen days, a dditional contributions w ill b e accepted f or 8 4 hours in case some contributors missed the v ery s hort window f or APY creation.
+
+ If the Crowdsale campaign does not reach its minimal capital goal of USD 70.000 all funds will be returned automatically to the APY holders by the Ethereum s mart c ontracts.
+
+ Token Creation has a hard cap: upon achieving this cap, token creation will stop and no further contributions will be accepted. The hard cap amount will be announced.
+
+ Tokens t hat are not sold d uring the Crowdsale will b e b urned a utomatically by smart contract
+
+
+
+APY c reated p er e ther
+
+Minimum Goal
+
+Soft C ap
+
+Hard C ap
+
+Additional
+
+Maximum n umber of t okens generated
+
+% o f t okens g enerated to bounty, partners, a dvisors and loyalty program
+
+% of t okens g enerated t o Crowdsale participants
+
+Date of c rowdsale start
+
+Date of crowdsale end
+
+Additional t ime if soft cap is reached
+
+
+
+5000 APY USD 7 0k USD 5m To Be A nnounced 84h i f s oft c ap i s r eached To B e Announced
+
+10%
+
+75%
+
+December 1, 2 017 60 d ays o r u ntil soft c ap is reached 84H
+
+
+
+6.1 A PY C reation Ratios
+
+ 1st price b atch until t he soft c ap is r eached: 1 E TH = 6000 A PY  2nd p rice batch a fter t he s oft cap i s reached: 1  E TH =  5 000 APY.
+
+The c ontribution amount limits for e ach price b atch w ill b e a nnounced.
+
+
+
+6.2 A PY T okens
+
+Appay t okens w ill be an Ethereum-based t oken o f value. T he t okens are a  digital asset, b earing v alue by t hemselves based o n t heir underlying assets, properties and/or a ssociated r ights.
+
+Appay t okens r epresent p ercentage share o f r evenue of A ppay p roject.
+
+Ethereum-based tokens r ely o n a w ell-established E thereum infrastructure, benefiting f rom s everal advantages:
+
+ Security a nd predictability ( as opposed to, for e xample, h aving to run a n independent b lockchain network).
+
+ Use of r obust a nd w ell-supported c lients ( Ethereum-based tokens can be managed with official Ethereum clients).
+
+ High l iquidity ( interchangeable w ith o ther Ethereum- based tokens or E ther), easier listing o n exchanges with infrastructure already i n p lace.
+
+Ethereum s mart contracts enable a  v ery transparent a nd s ecure w ay o f p rofit s haring among t he token h olders.
+
+Our E thereum-based token contract c omplies with the ERC20 standard, w hich means that i t i s e xtremely e asy for e xchanges involving trading e dgeless t okens t o happen. M ore detailed info about t he ERC20 s tandard c an be o btained from: https://github.com/ethereum/EIPs/issues/20
+
+
+
+6.3 B udget
+
+
+
+Field
+
+Legal
+
+
+
+Portion o f b udget
+
+8%
+
+
+
+Product D evelopment
+
+
+
+50%
+
+
+
+Operations
+
+
+
+12%
+
+
+
+Marketing, m erchant acquisition & p artnerships
+
+
+
+30%
+
+
+
+Activities
+
+Company establishment, contracts with publishers, etc.
+
+Product d evelopment according t o development roadmap
+
+Management, e mployee salaries.
+
+Expenses for a ttracting publishers, making partnerships w ith sdk p roviders, ad e xchanges
+
+
+
+7. T eam
+
+We h ave f ounded our c ompany in t he middle o f t he b est c omputer s cience t alent p ool i n the w orld. The University o f Waterloo i s a w orld renowned center for c omputer s cience and our team c onsists of developers h and picked from that school. W ith a  direct connection i nto the school we intend to c ontinue to h ire and grow t he t eam with only the best developers. Our management team h as 3 0+ y ears of e xperience creating and succeeding at business. With m any startups u nder t heir belt a nd our award winning development team, Appay i s s etup to s ucceed.
+
+7.1 A ppay Team
+
+David B oulette: c o-founder, b usiness.  David has a c omputer s cience d egree f rom W LU a long w ith 2 0+ years of software development experience. H e h as started s everal successful startups including one that has g one public. His passion for p erfection and p ushing the limits o f technology w ill be invaluable at A ppay.
+
+Faizal J amal: c o-founder, product. Faizal h as b een V P of product d evelopment with a m ain f ocus i n t he digital ad s pace f or 10+ years. H e h as a lso established m any b usinesses t hat run in t he l ocal a rea a nd generates l ong term residuals f rom various i nvestments. He i s a visionary and s trives t o make t he world wide w eb a b etter p lace for everyone.
+
+Ravikumar A nghan: L ead Developer Ravikumar has a masters d egree i n computer s cience. H e h as w orked in t he r esearch space along with m ore r ecently t he mobile development space. W ith h is e xceptional development skills h e w ill work directly with management to guide our amazing t eam o f developers.
+
+Puskar P andey: Software Engineer Puskar is a s elf p roclaimed blockchain guru who h as r ecently graduated from U ofW. H e brings h is p assion f or t he blockchain t o A ppay where h e intends t o l everage his skills to make A PY coins a r eality.
+
+7.1 Appay A dvisory T eam
+
+Michael S chmidt: Legal C onsultant
+
+Peter Serra: Finance A dvisor
+
+
+
+References
+
+https://chargebacks911.com/app-purchase-chargebacks/
+
+https://www.theverge.com/google/2014/9/4/6106665/google-in-app-purchases-ftc-settlement
+
+http://www.business2community.com/mobile-apps/2017-mobile-app-market-statistics-trends-analysis-017 50346#tCtXLUkJZczSxyAl.97
+
+https://medium.com/@sm_app_intel/mobile-app-industry-revenue-statistics-wheres-the-money-come-fro m-82581a45186d
+
+https://github.com/ethereum/EIPs/issues/20
+
+https://www.comscore.com/Insights/Blog/Number-of-Mobile-Only-Internet-Users-Now-Exceeds-DesktopOnly-in-the-U.S
+
+https://www.macrumors.com/2013/08/23/doj-claims-apple-implemented-in-app-purchase-rules-to-retaliate -against-amazon/
+
+https://itunespartner.apple.com/en/books/faq/Payments%20and%20Financial%20Reports_Getting%20Pa id#
+
+
+
+

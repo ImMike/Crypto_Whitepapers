@@ -1,0 +1,3061 @@
+Blockchain Platform for the Recruitment
+
+
+
+v 1.3 January 2018
+
+Whitepaper
+
+
+
+aworker.io
+
+
+
+1
+
+
+
+Platform for the Recruitment Industry on the Ethereum blockchain
+
+White Paper Version 1.3
+
+20 January 2018
+
+Anton Cherkasov
+
+
+
+This document is for informational purpose only and does not constitute an offer or solicitation to sell shares or recommendation of an investment in the Aworker platform or other company. Aworker team may revise this White Paper while the project is developed.
+
+
+
+aworker.io
+
+
+
+2
+
+
+
+Table of Content
+
+
+
+1. Executive Summary
+
+
+
+4
+
+
+
+2. Problems
+
+
+
+6
+
+
+
+2.1. It's hard to hire good employees
+
+
+
+6
+
+
+
+2.2. The complexity of the candidate evaluation
+
+
+
+7
+
+
+
+2.3. High cost of hiring a candidate
+
+
+
+7
+
+
+
+2.4. The complexity of the job search
+
+
+
+8
+
+
+
+2.5. Companies use data about people's professional skills for free
+
+
+
+9
+
+
+
+3. Aworker's Solution
+
+
+
+10
+
+
+
+3.1. Aworker's goals
+
+
+
+10
+
+
+
+3.2. Aworker's users
+
+
+
+10
+
+
+
+3.3. [Module 1] Decentralized Job Marketplace
+
+
+
+13
+
+
+
+3.4. [Module 2] Decentralized Skills Verification System
+
+
+
+18
+
+
+
+3.5. [Module 3] Decentralized Reputation System
+
+
+
+21
+
+
+
+4. Technologies
+
+
+
+30
+
+
+
+4.1. Motivation to use blockchain
+
+
+
+30
+
+
+
+4.2. The description of smart-contracts
+
+
+
+31
+
+
+
+4.3. Technology stack and top-level architecture
+
+
+
+35
+
+
+
+4.4. Roadmap of Product Development
+
+
+
+36
+
+
+
+5. Market Analysis and Aworker Business Model
+
+
+
+38
+
+
+
+5.1. Business Model
+
+
+
+39
+
+
+
+6. Financial Model
+
+
+
+43
+
+
+
+6.1. Monetization
+
+
+
+43
+
+
+
+6.2. Financial Model
+
+
+
+44
+
+
+
+6.3. Pessimistic Scenario
+
+
+
+45
+
+
+
+6.4. Realistic Scenario
+
+
+
+46
+
+
+
+6.5. Optimistic scenario
+
+
+
+47
+
+
+
+7. Token Sale
+
+
+
+49
+
+
+
+7.1. Special terms for early contributors at ICO
+
+
+
+52
+
+
+
+7.2. Allocation of Funds
+
+
+
+52
+
+
+
+7.3. WORK token
+
+
+
+53
+
+
+
+7.4. Value of WORK token
+
+
+
+53
+
+
+
+7.5. The acquisition of tokens in the early phases
+
+
+
+54
+
+
+
+8. Aworker Team
+
+
+
+55
+
+
+
+9. Disclaimer of Liability
+
+
+
+58
+
+
+
+10. Sources
+
+
+
+60
+
+
+
+aworker.io
+
+
+
+3
+
+
+
+aworker.io
+
+
+
+3
+
+
+
+1. Executive Summary
+
+
+
+Aworker is a blockchain platform for the recruitment. Aworker is aimed to disrupt the recruitment market, which volume in 2016 amounted to 429 billion dollars. With the help of WORK tokens and Ethereum blockchain technology, Aworker will help people find a better job, and companies to select the most competent employees.
+
+
+
+Core issues
+
+
+
+As of today, there are three main difficulties in the recruitment for businesses:
+
+
+
+1. It is hard to hire good employees. There are two reasons for this: it is difficult to find them and it is not always possible to assess them correctly
+
+2. High expenses of the recruitment. The average costs of hiring a new employee for medium level job is about $8,000.
+
+3. The complication of candidate's assessment. It is not always possible to evaluate the professionalism of the applicant since the data is unreliable. A person can write on the resume and tell in the interview about himself anything he/she wants.
+
+
+
+General problems for job seekers:
+
+
+
+1. Finding a job is challenging due to high competition. Even outstanding, talented specialists sometimes don't get an offer because of the amount of CV that recruiter receives.
+
+2. Companies use data about people's professional skills for free. People are not paid for the information which they share on social networks, such as LinkedIn or Facebook.
+
+
+
+Solution
+
+
+
+Aworker is created to help: 1. People get a job faster and with more preferable conditions 2. Companies hire the best candidates and reduce costs per hire.
+
+
+
+Aworker uses Blockchain technology to create:
+
+ P2P platform for personnel recruitment. With the power of smart contracts, it
+
+is possible to change the rules of recruitment, when other people recommend candidates and all participants of critical stages receive a reward.
+
+ Reputation system, which will prove the qualification of specialists.
+
+
+
+aworker.io
+
+
+
+4
+
+
+
+Candidate 1
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+Aworker 1
+
+
+
+Candidate 2
+
+
+
+Company
+
+
+
+Blockchain
+
+Offer
+
+
+
+A
+
+Vacancy
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+Interview
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+Candidate 4
+
+
+
+WORK
+
+
+
+Aworker 2
+
+
+
+WORK
+
+
+
+Candidate 3
+
+
+
+WORK token
+
+WORK token is a coin of workers. WORK token is tied to the hiring of employees in the company. The company will have to spend WORK tokens to find and hire an employee. The number of tokens is limited.
+
+Companies will receive an application for hiring and communicating with candidates. HR managers will be able to create a vacancy, using the opportunities of smart contracts, and to check core information about the candidate in the blockchain: what are his/her verified skills, competencies, completed projects, etc. Blockchain will provide more reliable information about applicants, which is now lacking in companies.
+
+We want to create the world where people are rewarded for their skills and achievements at work. And companies receive a reliable rating of specialists to facilitate the candidates' selection process.
+
+Decentralization provides the best opportunities for creating the brand new ecosystem. Each person will be able to show professionalism and develop a reputation of a reliable employee for a couple of clicks.
+
+
+
+aworker.io
+
+
+
+5
+
+
+
+2. Problems
+
+There are several main difficulties in recruitment and job hunting processes:
+
+1. It is hard to hire good employees 2. Difficulty in assessment of candidates 3. High costs for hiring 4. Workers have troubles finding a good job 5. Companies use data about people's professional skills for free
+
+
+
+2.1. It's hard to hire good employees
+
+
+
+People are the basis for the success of any company. Entrepreneurs know it very well. Therefore, strong team creation is one of the most significant issues for any business. But the trick is in the searching for good workers.
+
+
+
+Two critical problems faced by a company:
+
+ It is challenging to find good specialists.  It is challenging to evaluate the candidate objectively.
+
+
+
+Finding good candidates is challenging because the existing work sites (Monster, Indeed and others) are overflown with resumes. HR manager receives a stream of applications for an open job. However, the quality of applicants does not always satisfy the recruiter.
+
+
+
+HR managers often use social networks to search the information about candidates. This happens because existing sites for employee's search do not cover the needs of companies. Nevertheless, even with the use of LinkedIn and Facebook, companies struggle with a lack of competent personnel.
+
+
+
+Another problem is the difficulty of evaluating candidates. More details about this topic are in section 2.2.
+
+
+
+The search for employees through centralized work sites has its limitations. These companies are more bureaucratized and have a broad base of incompetent workers because for them it is essential to have an impressive number of resumes, not its quality. We want to get away from this method and create a decentralized P2P marketplace where companies can post information about open vacancies, and the community can find and recommend most suitable candidates.
+
+
+
+aworker.io
+
+
+
+6
+
+
+
+2.2. The complexity of the candidate evaluation
+
+HR manager has difficulties in impartial candidate's assessment, as now there is no source of objective information. The candidate can write anything about himself on the resume.
+
+That is why companies are not able to assess the professional competencies of an applicant quickly. For example, a person can have excellent selfpresentation skills. But when he/she comes to work, he/she shows poor results. A company spends time and money on training this employee who ultimately has poor performance. Hence, companies have a mistrust of applicants during interviews.
+
+Workers suffer from it too. When a job seeker takes up a vacancy, there is no trust in his/her professional skills. It is not an easy job for a person to prove professional reputation unless he/she is a recognized expert. But such experts are very few in most fields. How can a sales consultant or a sales manager prove to be a reliable employee?
+
+At the moment there is no single tool to verify the professionalism of a specialist. Even at the job interview, a candidate cannot always prove his/her good name. After all, these are only his/her words.
+
+That is why we need to create a unified reputation system that will verify skills and level of candidates' experience, a system that will be based on decentralization and smart contracts. This will be a solid basis for confirming the employee's reputation.
+
+
+
+2.3. High cost of hiring a candidate
+
+
+
+Complex evaluation and a long search for candidates lead the company to another problem - the high cost of hiring employees.
+
+
+
+The average cost of replacing one specialist in the US according to the report of the Center for American Progress: $8,000.
+
+
+
+These numbers include:
+
+
+
+ The cost of posting a job on the job site,
+
+
+
+ Time to find a suitable employee,
+
+
+
+ The fixed costs incurred by the company during the search for an employee,
+
+
+
+ Downtime in performance in the first several months of the new employee's work
+
+
+
+related to training.
+
+
+
+aworker.io
+
+
+
+7
+
+
+
+Aworker will help to reduce these costs up to 4 times by reducing search time, fixed costs associated with this, and improving the professionalism of employees.
+
+2.4. The complexity of the job search
+
+High competition in the labor market affects the complexity of job search. It is hard for a candidate to stand out against the background of those resumes that come to an open position.
+
+An applicant can not prove that he/she is reliable and a productive worker. When the applicant comes for an interview with HR manager, he's like a clean sheet. The recruiter has no verified information about this person and can not trust the applicant. So it's a common practice to choose not the best employee, but the one who knows how to talk their way at the interview.
+
+In the fight for a vacant place, usually win people, who:
+
+ Have a good resume,  Have good recommendations,  Have advanced speaking skills and can correctly answer questions during the
+
+interview.
+
+On request, "how to write a resume" Google shows you 103 000 000 articles. Therefore, a good resume does not always reflect the real competencies of the applicant. After all, he can write anything about himself. Usually, HR managers understand this.
+
+If you ask Youtube `how to answer questions during the interview' correctly, it'll show at least 5 330 000 videos. It means that excellent communication skills and outstanding self-presentation can easily mislead even an experienced HR manager. So often not the best employee get a job, but the one who knows how to promote himself.
+
+In reality, the company is interested in the effectiveness of a potential employee. The blockchain technology will help people to prove their professionalism. With the help of decentralization, a person will be able to create the reputation of a reliable and honest worker. In Aworker, an employee will be able to get community recommendations if he proves his professionalism.
+
+
+
+aworker.io
+
+
+
+8
+
+
+
+2.5. Companies use data about people's professional skills for free
+
+Companies use information about people's professional skills for free. Facebook and LinkedIn know too much about us: what we love to read, where we prefer to rest, what interests we have. This information is sold to other companies while advertising. The business finetunes the audience targeting according our interests.
+
+Such interests do not always reflect the real professional competences of a specialist. And even if they do (in the case of LinkedIn), that does not change things significantly. Social networks use our data to sell it to other companies without giving anything to owners of skills at the same time.
+
+We consider the established situation unfair. And we are eager to reward people who have the skills that are interesting for business. If you possess what a company needs, you can claim remuneration for the information.
+
+
+
+aworker.io
+
+
+
+9
+
+
+
+3. Aworker's Solution
+
+We are creating a decentralized and reliable solution for employees and companies based on the Ethereum blockchain with smart contracts. Our solution consists of a job marketplace, skills verification and an independent rating of reputation. Employees get the opportunity to find a job and make money on their network, skills and professional achievements. Companies get access to a decentralized rating and skills verified via smart contracts.
+
+3.1. Aworker's goals
+
+ To create a decentralized global ecosystem for companies and workers, which will
+
+help to find the best employees and recommend friends for proper open positions.
+
+ To create the universal decentralized system of employees' assessment and
+
+reputation for the whole world.
+
+ To create a simple and reliable tool to verify reputation for a couple of clicks.  To enable people to make money on their skills to have additional motivation for
+
+the development (upgrade the professional skills).
+
+ To create a decentralized ecosystem that will give employees additional offers and
+
+motivation for the development.
+
+ To enable an employee to become the best in the professional field.  To introduce the advantages of Ethereum smart contracts to the real world.
+
+Thus, our mission is to build a better ecosystem for Work 2.0 giving people an opportunity to verify their professional competence easier without the involvement of HR or reputational agencies, and to receive rewards for what they know and can do.
+
+3.2. Aworker's users
+
+There are four types of users in Aworker:
+
+- Employee - Aworker - HR manager - Employer
+
+
+
+aworker.io
+
+
+
+10
+
+
+
+1. Employee  a person who works for a company or looking for a job. An employee can respond to vacancies and enter information about his skills, competencies or work experience. Each month, an employee can be involved in a decentralized Aworker rating. The rating depends on the job title. Thus, an employee can become the best in the field in the city, region, country or world.  The worker will be able to receive WORK tokens for:
+
+ Confirmed skills  Hitting in the top 10 specialists of his country  Receiving an offer and going to work  Attending an interview  Making available his/her private information
+
+ The employee understands that the relationship between people and companies will be the most transparent in the future. And reputation is the most important human asset. Therefore, he is ready to show the results of his work and steps in the development of his skills on a monthly basis.  A worker can also estimate an employer and leave a reply about an employer or a company. An employee's skills are confirmed by Aworker community (Aworkers).   Examples of professional specializations included in the rating of employees:  sales manager  sales consultant   marketing specialist   bank operator, etc.  An employee will have three statuses: seeking a new position, not looking for a new job, open to offers.
+
+The employee will be able to hide the private information (for example, contact details) and indicate the cost of opening the data. The company interested in this employee should send an inquiry. After confirmation of the request, an employee will automatically receive WORK tokens and will open their data for this company.
+
+2. Aworker  the most proactive and qualified user of the application. He has more proven skills and higher reputation recommendations than the employee. Aworker can recommend his acquaintances to open vacancies, check the skills of employees and evaluate the candidates rating. The reputation of aworker will depend on his results. The more often he will recommend the best candidates, the higher his rating will be. If the best candidate is the one for whom aworker will give
+
+
+
+aworker.io
+
+
+
+11
+
+
+
+his voice, then he/she will receive more reputation points for the right choice (for more details about this read in 3.3.5 and 3.4.5).
+
+Aworker will be able to receive WORK tokens for:
+
+ Recommendations of acquaintances to open vacancies (in case of friend's
+
+recruitment or an interview visit)
+
+ Correct evaluation of candidates  Correct confirmation of skills
+
+Any employee, manager or HR manager has an opportunity to become an Aworker. To do so, he/she will need to increase your reputation to 3 points. Aworkers with a high reputation will be able to receive special orders from companies to search for people (for more details, see section 3.3.5). An aworker with a high reputation as a networker is a proven headhunter who can cooperate with companies on a remote basis.
+
+3. HR manager  a company's representative who can inform about open vacancies, view assessment and employee's rating. HR manager will be able to track Aworker job seekers in the application, communicate with them, have access to the rating and verified skills. Thus, the HR manager will have the most complete and reliable information about candidates and will be able to make effective decisions faster than nowadays.
+
+4. Employer  the next employee's supervisor. A person can get the Manager status once it is confirmed by three employees from the company. The manager will be able to vote for the employees of the company (or other employees), but his/her voice will be equal to the voice of any aworker. The manager will also have an ability to write a review about the employee. In Aworker there will be a separate rating of managers, where aworkers will also be able to vote and choose the best manager. The evaluation mechanics will be identical to the evaluation of employees. The main difference is in the assessment of managerial skills and competencies.
+
+
+
+aworker.io
+
+
+
+12
+
+
+
+Employee's Additional Reward
+
+
+
+Achievements
+
+
+
+Employee
+
+
+
+Skills
+
+
+
+Referrals
+
+
+
+3.3. [Module 1] Decentralized Job Marketplace
+
+Using the Job Marketplace, employees will be able to:
+
+ receive a reward for friends who will work for the company;  receive a reward for acquaintances who will be invited to an interview for the
+
+company;
+
+ To see at every moment the status of the hiring process.
+
+
+
+3.3.1. How it works
+
+
+
+Aworker will be able to receive a reward for the recommendation each time his/her acquaintance gets a job at the company. The entire process will be open to an employee, and he/she will always be able to see the hiring stage.
+
+
+
+In this case, the candidate search process becomes P2P, when other network users look for worthy candidates to the company and recommend them.
+
+
+
+aworker.io
+
+
+
+13
+
+
+
+Recommendations of their acquaintances will create a pleasant and friendly team in the company. Everyone wins in this case. An employee helps his acquaintances, and the company receives recommendations from a trusted employee.
+
+Now only employees of this company, recruitment agencies or headhunters can recommend their acquaintances to open positions. We want to expand these opportunities. Each person will be able to recommend his/her friend if he/she understands that this friend has all the competencies for this vacancy. Aworker with a high reputation will be able to become a remote headhunter for companies that will recommend acquaintances for a particular reward (see in detail in 3.3.5).
+
+
+
+Candidate 1
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+Aworker 1
+
+
+
+Candidate 2
+
+
+
+Company
+
+
+
+Blockchain
+
+Offer
+
+
+
+A
+
+Vacancy
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+Interview
+
+
+
+WORK
+
+
+
+WORK
+
+
+
+Candidate 4
+
+
+
+WORK
+
+
+
+Aworker 2
+
+
+
+WORK
+
+
+
+Candidate 3
+
+
+
+Aworker's hire scheme
+
+Blockchain technology makes it possible to create a transparent and reliable system that will take into account the interests of all parties. Employees of the company often do not know when the reward will be paid, if they hire their friend. Other people (not company employees) cannot recommend their acquaintances because there is no common and reliable platform. We want to make this process open so that each side has more detailed information to help make a decision.
+
+
+
+aworker.io
+
+
+
+14
+
+
+
+3.3.2. Reward
+
+The reward between the participants of the recruitment process in Aworker is distributed:
+
+ 50% gets the one who recommended the best candidate  20% gets the best candidate the company chose  10% receive those who recommended people who came for an interview  10% get people who come for an interview  10% gets the Aworker platform
+
+Thus, all the most qualified participants receive remuneration and aworkers who recommended them. All payments occur automatically in WORK tokens anywhere in the world.
+
+3.3.3. Example of work
+
+HR manager creates a campaign in Aworker, where he indicates that he will be happy to consider candidates for this vacancy from Aworker users. HR manager specifies the settings who will be able to see this job: only employees of the company or all users of Aworker. Also, HR indicates the amount of remuneration for a suitable candidate. This amount is blocked on account of the company in WORK tokens. Now the HR manager chooses the time of reward payment: after hiring or after successfully passing the trial period.
+
+Aworker sees open jobs in the Aworker application, to which he can recommend his acquaintances. He understands that one of the vacancies perfectly fits his friend. The employee clicks the "Recommend to a friend" button and receives a link to this job. Then he sends it to his friend in the message. This friend goes through the link, reads and responds to the vacancy.
+
+The HR manager reviews his resume. He sees on whose recommendation this candidate came. The HR manager invites him to an interview. After several stages of the interview, this candidate gets a job in the company.
+
+Automatically the employee who recommended his friend receives a reward in WORK tokens. Some of the WORK tokens are collected by his friend, who passed all the stages successfully and was hired.
+
+An employee who recommended a good candidate raises his reputation by 5 points. This is indicated by his reputation as an aworker.
+
+
+
+aworker.io
+
+
+
+15
+
+
+
+Also, part of the reward is paid to other applicants, whom the company invited for an interview. They receive bonuses in WORK tokens for being selected by the company as suitable candidates. Aworkers who recommended these candidates are also rewarded in WORK tokens.
+
+
+
+3.3.4. Cases: Finding a job
+
+
+
+Case for an employee
+
+
+
+Fred opens the Aworker application. He sees open vacancies, which he can recommend to his friends. One of the positions is Specialist in the Bank. He remembers that his friend George (with the position of a banking specialist) is looking for a job. Fred will be happy to help George find a new workplace. If everything happens successfully, then Fred will receive a reward of 1200 WORK tokens. He clicks on the "Recommend to a friend" button and gets a personal link.
+
+
+
+Fred writes to George in Facebook. He gives his link and recommends George to consider this vacancy. George goes to the site and reads the job description. He likes the conditions and responds to the vacancy. A few days later HR manager of the bank Molly calls George. After a phone call, Molly invites George to an interview. George comes to the interview with Molly, and then to an interview with the head of the branch of the bank. After that, the head and Molly consult and choose George. The next day, George gets an offer to work at the bank. He agrees. George becomes an employee of the bank from next week. He is grateful to Fred for telling him about this vacancy.
+
+
+
+Fred sees in Aworker the status of the bank's communication with George. And when the status is updated to Hired, Fred receives 1200 WORK tokens. George receives 400 WORK tokens. Also, Fred raises his reputation in Aworker by 5 points (it is not counted in the Workers' Rating).
+
+
+
+Case for a company
+
+
+
+HR manager Molly receives a task from the supervisor to hire five specialists for two weeks in different branches of the bank. Molly understands that in such a short time, she should use the most effective tools. She publishes a vacancy in Aworker to get a stream of proven candidates from high-reputation aworkers.
+
+
+
+Molly points out that the compensation will be 2,000 WORK tokens for a closed position. In this case, the reward will be paid immediately after hiring. This amount is blocked in WORK tokens on the company account.
+
+
+
+aworker.io
+
+
+
+16
+
+
+
+Now Molly starts to receive responses to the vacancy of the Specialist. She sees it all in her Aworker personal account. At the same time, some of the candidates come on the recommendation from users. She considers the candidate's resume, the profile of the candidate (if he is in Aworker) and the user who recommends this candidate.
+
+Molly's attention is drawn to George, who was recommended by Fred with a good reputation. George is a user of Aworker so that she can see proven skills. Molly understands that George is a good worker and has all the necessary competencies for this vacancy. She calls George, invites him to an interview, and changes the status of communication to "Invited to an interview."
+
+In the interview, she communicates with George and is convinced that he will perfectly suit the vacancy of the Specialist of their bank. She invites George to the next stage "Interview with the Chief." George another day is interviewed by the head of the branch, and after that Molly invites George to work in the company.
+
+George goes to work in the bank next week. Molly changes her status in Aworker to "Hired." Automatically reward (in WORK tokens) goes to the accounts of Fred and George.
+
+Molly is pleased with the fact that in the shortest time she was able to: I. Close all vacancies with good employees; II. Invite the most suitable candidates for interviews and spend a minimum of time
+
+on unscrupulous applicants; III. Assess the professional competencies of candidates in a matter of seconds.
+
+Case for an aworker
+
+George has been looking for a job for a month now. The proposals he receives did not suit him because of working conditions. He spends hours every day to view work sites but gets few invitations for interviews due to high competition.
+
+On the same day, Fred contacts him and sends a link to a job in one of the banks. George understands that he is perfectly suited to this vacancy, as it meets all the requirements. He likes this bank and the working conditions that they provide.
+
+He registers in Aworker and sends a resume for a job. He also follows the recommendations and sends a skill test: an experienced PC user. He even passes the case to a client-oriented specialist. These skills are confirmed in a few days.
+
+
+
+aworker.io
+
+
+
+17
+
+
+
+After that, HR manager of the bank Molly calls him and invites for an interview. After the interview, George is invited to a meeting with the head of the branch, which leads to a job offer in their bank.
+
+George starts working at the bank next week. At the same time, George received 400 WORK tokens for successful entry to work.
+
+
+
+3.3.5 Special Features
+
+Aworkers with a high reputation (more than 30 points) will have access to the individual conditions of work with companies. In fact, an aworker with a high reputation can help companies find employees remotely.
+
+The company is interested in such users, as they were convinced of the quality of their work:  They understand people;  They recommended candidates who have been recruited;  They can analyze and make conclusions about specialists.
+
+Companies will be able to work in two directions with known aworkers:
+
+ To create exclusive vacancies with the best reward only for aworkers with a high
+
+reputation. It is relevant for people looking for more qualified positions.
+
+ To create vacancies with payment for recommendations. When the reward is paid
+
+not for a closed job, but for the recommendation itself. Here the cost of rewards for the recommendation will be less than for a closed position, but the reward will be guaranteed.
+
+
+
+3.4. [Module 2] Decentralized Skills Verification System
+
+Using the Skills Verification, employees will be able to:
+
+ Receive reward for their proven skills.  Increase their competence in the eyes of HR managers.  To use the decentralized Reputation Building System which will confirm the real
+
+skills of a person on a global scale.
+
+
+
+Aworker will create a transparent verification system having credibility among companies. It will be decentralized, universal, transparent, and will offer a list of employees' skills suitable for a job.
+
+
+
+aworker.io
+
+
+
+18
+
+
+
+3.4.1. How it works
+
+Every time an employee's skill is confirmed, information about it will be saved on the blockchain. Then an employee can be shown advertising messages because of verified skills. An employee will receive part of the advertising budget. We will not act like some other platforms and social networks that earn money by reselling data to the other companies. If you own something that a company needs, you have rights on the part of the advertising budget.
+
+
+
+3.4.2. What can be verified
+
+
+
+An employee can confirm two types of data:
+
+1. Skills that prove employee's value and may eventually be interesting for companies. For example, foreign language knowledge, advanced training courses, knowledge of professional tools and programming languages, etc. The skill test is performed using a supporting document (certificate, video, etc.) and community voting. In some cases, testing will be used instead of the document.
+
+2. Work experience and education. The companies an employee used to work for, and the projects he/she used to be involved in are mentioned. This is one more opportunity to receive reward. A company may be looking for the professionals who used to work, for example, for Microsoft and are currently looking for a job. If an employee meets the requirements, he/she will be able to see the information about this vacancy on Aworker.
+
+
+
+3.4.3. Example of how it works
+
+
+
+An employee registers in the application. Then, he/she indicates a skill he/she possesses and attaches a supporting document. He/she clicks Submit for Verification button, spends a certain amount of WORK tokens. Now part of the users (aworkers) receives notification about the skill verification. Each user views the document and answers Yes or No. When answering, they also spend WORK tokens.
+
+
+
+After collecting a sufficient number of answers, a decision can be made. The skill is confirmed by the majority of Yes answers received. The users, who verified the skill, get WORK tokens back with a reward from those who made a mistake. Those, who answered No, get error penalty and WORK tokens are not returned to them. They are divided between those who verified the skill, i.e., between most of the aworkers in this case. An employee also receives back WORK tokens if his/her expertise is verified.
+
+
+
+aworker.io
+
+
+
+19
+
+
+
+In case most the users choose No, the skill is not confirmed. An employee does not receive WORK tokens back. This time those who confirmed the skill are fined. They do not get any WORK tokens back. WORK tokens are sent back to those who did not confirm the skill.
+
+In turn, companies can create advertisements in Aworker which will be shown to employees with particular skills. If an employee sees an advertisement on his/her confirmed skill, he/she automatically receives a reward in WORK tokens. The total amount of advertisements displays is summed up at the end of the month.
+
+The user (the aworker) who answered correctly, has a 1point increase in reputation. This is indicated in his/her profile but is not included in the rating.
+
+If the majority refuses to verify this skill, it remains unconfirmed in employee's profile. In this case, the employee does not receive WORK tokens back.
+
+At the same time, an employee with a confirmed skill will be able to turn off advertising in his/her profile at any time. After that, he/she will not be able to receive reward but will have a verified skill.
+
+The reputation that aworkers receive with every right answer will allow them to make their profile noticeable and gain access to partners' special offers. Read more about this in  5.1.2.
+
+The platform will select the most suitable aworkers for each skill  those who either already possess this skill or are most similar to this type of employee. This will help to involve the most relevant users into the verification process.
+
+If a person fails to supply any confirming documents for the community, he/she will have to go through specialized testing with a time limit. In case of having unsatisfactory testing results, the opportunity for repeated testing will become available in 14 days.
+
+
+
+3.4.4. Doubtful skills
+
+It is worth paying special attention to the verification of subjective skills that are much harder to be checked online. Aworkers will have the opportunity not to verify the skill. In this case, the competence will remain unconfirmed. WORK tokens will not be returned to the user who added this skill. Thus, the number of people who are willing to add too subjective skills will have to be reduced to a minimum.
+
+
+
+aworker.io
+
+
+
+20
+
+
+
+The following are the examples of too subjective skill: Sales genius, Ability to hold complicated negotiations, etc. It is impossible to check online how genius a person is in sales, or how good he/she is at holding complicated negotiations. This could be done in case of personal contact or a large number of video examples of the sales process and feedback from customers. Otherwise, people who check an employee online will find it extremely difficult to understand how brilliant this employee is as a sales manager.
+
+
+
+3.4.5. Case: Skills Verification
+
+John adds the information that he has the English language: UpperIntermediate skill. He attaches a certificate from an English school confirming this. He sends the skill for verification and spends WORK tokens. The community of aworkers confirms John's skill in 14 days. John and aworkers who confirmed the skill get WORK tokens back.
+
+After that, John sees in his profile advertisement related to the English language and gets WORK tokens for it every time.
+
+Now an HR manager will see that John knows English. The manager will have better trust in this information than in the description on the social network as you can post there any unconfirmed information. The process of verification of employees' skills will become most honest and independent by the Ethereum blockchain.
+
+
+
+3.5. [Module 3] Decentralized Reputation System
+
+
+
+Creation of decentralized verified employees' reputation is a complicated one for several reasons, such as:
+
+
+
+ Changing a company, an employee starts everything from scratch.  Employees should use a single unified system where companies can check their
+
+reliability. At the same time, such system should be decentralized. This will guarantee independence and autonomy from companies' involvement and data reliability, winning trust in the system among business communities.  At the moment there is no single system to prove employees' professional competencies and performance.
+
+
+
+ The information provided by an employee to prove his/her performance may not be regarded as trustworthy as he/she is a party in interest. HR managers
+
+
+
+aworker.io
+
+
+
+21
+
+
+
+may doubt even the professional skills mentioned due to the subjectivity of the information. A decentralized system eliminates this problem.
+
+Aworker platform will create an honest reputation system winning companies' trust. Being decentralized, universal and transparent, it will show objective employees' assessment.
+
+3.5.1. How it works
+
+Each time an employee is assessed, the blockchain saves data about professional competencies of a person. An employee can easily find a new job using this data and rating. After all, he/she will create a reputation of a reliable worker. HR managers will trust data about professional competencies of a person and his/her verified skills.
+
+Thus, a reputation system for employees and companies will be created. Employees will be able to confirm their experience and skills, and HR managers choose most suitable candidates for companies.
+
+Every time an employee enters the assessment results regarding the professional competency of an employee, the smart contract will automatically update the employee's rating position.
+
+Trusted rating
+
+Each month an employee will be able to receive assessments of his/her work activity. The smart contract will update the final rating position based on employee's results. It will show:
+
+ Average assessment of employee competence;  Number of voters who voted for the employee;  Confirmed skills.
+
+In the future, we will develop a special algorithm for evaluation of such professional qualities of a worker as effectiveness and plan fulfillment. In this case, data will vary for every specialization according to the characteristics of the appointment taken up by an employee.
+
+
+
+aworker.io
+
+
+
+22
+
+
+
+3.5.2. Main reasons to participate in the ranking of personnel
+
+1. Demonstrate competencies and create the reputation of a reliable employee.
+
+2. Opportunity to receive additional WORK tokens. 3. Personal expertise development: opportunity to become the best specialist in
+
+the professional field in the city or the world.
+
+The rating will be created on the Ethereum blockchain.
+
+Transparency and proven information are essential in the world of decentralization. The same situation is with the relationship between the company and employees. When hiring employees, the company selects those who like the job and who have professional competence to carry it out. Using this information, HR manager will understand whether a candidate is suitable or not for a company.
+
+On the other hand, an employee is eager to have more detailed information about the company. Aworker provides him/her with employees' feedback on a particular company, thus, facilitating the decision making process.
+
+3.5.3. An example of implementation
+
+This information will be available to both parties:
+
+ An employee will be able to see the overall rating, the data, and reviews about
+
+companies.
+
+ A company will be able to see the overall rating, the data, professional skills and
+
+feedback about an employee in his/her profile.
+
+Using this information a company and an employee will be able to evaluate each other and to make a decision about cooperation. The smart contract will automatically raise or lower an employee's rating basing on his/her performance.
+
+
+
+Examples: The formation of the decentralized Aworker rating is based on three types of data:
+
+
+
+1. Confirmed professional skills (in more detail in section 3.4); 2. Average score from aworkers based on the analysis of employee performance in
+
+the past month;
+
+
+
+aworker.io
+
+
+
+23
+
+
+
+3. A number of community votes.
+
+
+
+Average rating from aworkers
+
+
+
+Each month, an employee will receive an assessment of his/her work. Aworkers will be
+
+able to assess the employee based on activity for the previous month. The key aspects
+
+for which aworkers evaluate an employee are:
+
+- What professional skills did the employee confirm this month? - At what level are these skills developed by the employee? (analysis of supporting
+
+documents)
+
+- What were tests on the specialty the employee took within the application? - Did he/she attend any professional events this month? If so, which ones? - Did the employee attend training or development courses? - Did the employee publish content on the network dedicated to his activities (posts,
+
+photos, videos)?
+
+- Availability and analysis of materials that show a person in working process.
+
+
+
+To determine the rating and voting, we use the game theory. Aworker puts an overall assessment of the employee on a 10-point scale after analyzing the data. When evaluating, he spends a certain amount of WORK tokens. On the 10th of each month, the employee's average grade is summed up. Aworkers, who rated the average (or if there are no such aworkers, then the closest to the average) are rewarded in WORK tokens. Aworkers, who rated not equal to the average or not the most average, do not get their WORK tokens back. Such a mechanic will motivate people to be more serious about the evaluation of candidates. Aworkers who make the right choice will increase their reputation by 3 points. High reputation will open additional opportunities regarding earnings and offers from partners (in more detail in p.3.3.5 and p.5.1.2).
+
+
+
+The evaluation of aworkers will be recorded in the blockchain. This information will influence the place in the ranking.
+
+
+
+Number of community votes
+
+
+
+From the 1st to the 10th of each month, any Aworker user will be able to vote for the best specialist in different business areas. One user can vote only for one worker. You can vote for any user, except yourself. Everyone will be able to see the results of the employee and by this make a choice. The more votes the employee gets, the better the score will be in the rating.
+
+
+
+During the voting, the user spends a certain amount of WORK tokens. Users who make the right choice (vote for the person who will become the best employee) will receive a reward in WORK tokens and 3 points to their reputation. Users who vote not
+
+
+
+aworker.io
+
+
+
+24
+
+
+
+for the winner will not receive back WORK tokens. Such a mechanics will allow people to pay more attention to voting. Based on the assessment of aworkers, community votes, and proven professional skills, the total coefficient is calculated, which determines the position of the employee in the rating.
+
+In the ideal situation, the best employee should be the one who has the biggest number of confirmed professional skills, a better average rating of work activity and the most votes from the community.
+
+Summing up and the feedback
+
+The 10th day of each month is summed up for the previous month. Top-10 employees in the country in their area of expertise receive additional compensation. The profile of each employee displays all the information: proven skills and assessments.
+
+Reviews. An employee and a company (manager or HR manager) will be able to write feedback to each other at any time at will. Reviews will be visible in the profile of the employee or company. This will be an auxiliary tool where everyone can get or leave recommendations.
+
+3.5.4. Reducing fraud via the international rating
+
+Employees rating will be available to the registered Aworker users. It will help to demonstrate competence and good name to the world. Reviews about companies and employees will give a chance to identify fraudsters among unscrupulous employers and employees. Those, who have a higher rating and better points, will be able to prove their good reputation and reduce mistrust in job searching phase.
+
+We will promote relations between people and companies to the higher level. We want to create honest and reliable evaluation system so that every employee in small, medium and large business could take advantage of our decentralized system and would have good opportunities to develop their career and improve their life.
+
+
+
+aworker.io
+
+
+
+25
+
+
+
+3.5.5. Cases: Rating
+
+Case for an employee
+
+John is a sales assistant in a company which sells clothes via its network of a retail chain. Sometimes he has slowdowns in sales, but he likes the job and shows good result. He wants to earn more, but this year he has not been promoted. He is thinking of changing the company, but he is not sure and afraid of a new team and new professional duties. He is also not sure to be taken to a new company due to fierce competition.
+
+John learns from his colleagues about the Aworker application and registers in it. John passes a test for knowledge of sales techniques. At the end of the month, he receives ratings from Aworkers on a 10-point scale. The average score of John's performance this month was 4.3 points. In this case, John has no confirmed skills, and he passed only one test. By these data and voters' votes, a total efficiency factor is formed, according to which John enters the Rating of Sales Assistants. It ranks 807 in New York and 1280 in the US. This month, he does not fall into the top 10 sellers of the country (A-List) and does not receive compensation.
+
+Next month John decides to prove his competence. John confirmed two professional skills: public speech and presentable appearance. He passes the test on the skills of merchandising. He publishes several posts about sales techniques on his Facebook page and attends a training course on handling objections. This time, the community puts him an average score of 9.1 points. He also receives 40 votes from Aworkers. Basing on this data he gets the 3rd position in NYC and the 10th position in the USA among the sales consultants. Now John gets his rewards 500 WORK tokens. He is also recognized as one of the best sales consultants in the country this month.
+
+Using Aworker, John receives additional reward and gets a reputation of a reliable employee. Now, it is much easier for him to start working for another company. John has a good reputation as his results are confirmed at Aworker's decentralized rating.
+
+Case for a company
+
+Mary is an HR manager in a company which sells sports goods all over the country. She is given a task to find a new sales manager for a regional department. She posts a vacancy at Indeed. Candidates start responding to the vacancy. She can see respondent candidates at her Aworker's personal cabinet.
+
+
+
+aworker.io
+
+
+
+26
+
+
+
+She can check all Aworker users. She liked Paul's resume. She opens his Aworker profile (Paul is an Aworker user) and analyses his performance and his rating at the previous job. Mary understands that Paul has an average result at his previous job and decides not to call Paul. She continues searching.
+
+She also likes Helen's resume. Mary checks Helen and finds out that she has good performance at her previous job. Last year Helen was on the list of best managers of the country (AList) three times. She can see good marks from the previous manager, calls Helen and invites her to an interview. After several validation steps, Helen goes to work at Mary's company.
+
+Mary could assess professional competence of candidates in several minutes. She saved time and did not hire an unscrupulous candidate due to Aworker. Mary uses Aworker because it provides access to information which cannot be found anywhere. Aworker gives an opportunity to communicate easily and automatizes routine operations of HR manager.
+
+Aworker's case
+
+Michael is a freelancer who loves to travel and enjoy new applications.
+
+Michael registered in the Aworker application via a link sent him by a colleague. Michael decided to confirm his professional skills, but also he is interested to become an aworker to check others.
+
+He learns that aworkers with a good reputation can:
+
+ Receive special conditions from Aworker partners  Receive WORK tokens for their recommendations  Becomes a remote headhunter if desires
+
+Therefore, Michael enters the application at the end of the month and receives information about John's verified skills. He evaluates the results of John's work for the current month. Just one completed test on sales techniques. Michael puts 5 points to John. It took two minutes for Michael for the evaluation.
+
+Also, Michael looks through all the participants in the rating of sellers and votes for Bob Hanks. He liked the activity of Bob and the number of posts in social networks about sales and clarifying the needs of customers.
+
+
+
+aworker.io
+
+
+
+27
+
+
+
+February 10 summarizes the month. John receives an average rating of 4.3 points. Michael does not get back WORK tokens. Remuneration was received by those who put 4 points since this estimate is the nearest to the average 4.3.
+
+After Michael looks at the overall rating. And the winner in January is Bob Hanks, for whom Michael voted. Michael receives WORK tokens for the candidate's victory, and it raised his reputation to 3 points.
+
+Michael also sees that to access payment for recommendations he needs to get 5 points of reputation. He also uses an independent, decentralized rating of professionals to confirm his skills.
+
+3.5.6. Data for Rating
+
+To determine the total coefficient by which the place in the ranking will be determined, the employee should receive an assessment of his performance and competence, community votes and confirm professional skills.
+
+3.5.7. Controversial situations
+
+If there are 2 or more candidates for the same vacancy having the equal total coefficient calculated by assessment results and verified skills, an employee with a stronger reputation is preferred. If there are 2 or more candidates for the same vacancy having the same total coefficient and equal reputation levels, the employee with better assessment results regarding is preferred. If total coefficients, reputation levels, and the assessment results are equal, the decision is to be made by the token holders. The candidate who is voted for by the majority will have a higher rating. We believe that digital democracy is the best way to solve controversial issues in a decentralized world.
+
+
+
+3.5.8. Antifraud System
+
+We take into consideration possible fraud cases and develop the antifraud system. For security reasons, we cannot disclose all details of the system, but there are some options to help minimize fraud issues, such as:
+
+ An employee must indicate his/her accounts on social networks and the job site;
+
+
+
+aworker.io
+
+
+
+28
+
+
+
+ The personality of a manager who is authorized to confirm data will be carefully
+
+checked. This person must have three verifications from employees of the
+
+company;
+
+ Integration with decentralized identity verification tool Civic to reduce the risk of
+
+dishonest users registration;
+
+ Users with suspicious social networks and job sites pages will be blocked until data
+
+is confirmed;
+
+ Suspicious behavior of each participant (an employee or a manager) will be
+
+monitored by our system.
+
+
+
+aworker.io
+
+
+
+29
+
+
+
+4. Technologies
+
+4.1. The motivation to use Blockchain technology
+
+In determining the nonfunctional requirements for the Aworker platform, we have made a conclusion, that for achievement the best result the platform should be decentralized, it should provide transparency in decisionmaking, also it has to be stable and secure, extendable, scalable and it ought to promote an exposed arrangement for user motivation.
+
+Blockchain technology can help to implement this ground rules, it was chosen as a default platform for Aworker realization. Let's consider the listed principles in more detailed way:
+
+ The platform should be decentralized.
+
+The network does not have a managing center, all nodes of Aworker platform are equal.
+
+ Provide transparency in decisionmaking.
+
+At any time, the information about ranking and voting can be received, it will help to make sure in the honesty of the taken decisions.
+
+ Stable and secure.
+
+The platform should provide stable operation in any period of time, it has to be resistant to hacker attacks and to ensure the safe storage of user data.
+
+ Extendable.
+
+The Aworker platform should provide a set of interfaces for the implementation of services, that use these platforms.
+
+ Scalable.
+
+The network productivity should not fall, if there is an increase in the number of users and the addition of resources.
+
+ Beneficial to interested persons.
+
+The application's internal economy has to allow users to get tangible profits and motivates potentially new members to join the platform.
+
+
+
+aworker.io
+
+
+
+30
+
+
+
+4.2 The description of smart contracts
+
+All used smart contacts will be implemented on the statically typed Turingcomplete Solidity language.
+
+4.2.1. Distribution of remuneration to participants of marketplace
+
+This smart contract allows people to get a reward for those users who actively recommend their friends to open positions, provided that acquaintances receive the specified post or come to the interview. Candidates who come to the interview or receive the post also get rewards.
+
+
+
+Company
+
+
+
+HR manager logs in Aworker
+
+
+
+HR manager creates a vacancy
+
+
+
+Blockchain
+
+Denotes the amount of a reward in WORK token
+
+
+
+Send the link to the friend
+
+
+
+He gets a unique link on request
+
+
+
+The Employee decides to recommend a friend
+
+
+
+An Employee finds the vacancy
+
+
+
+The friend apply for a job
+
+aworker.io
+
+
+
+The system identifies the passed by reference users
+
+
+
+HR manager invites the user to an interview
+
+
+
+The friend is interviewed
+
+
+
+All key participants (the employee, aworkers, and candidates who were invited to interviews) receives a reward WORK tokens
+
+
+
+The applicant goes to work in the company
+
+HR manager changes the user status to "Accepted"
+
+
+
+HR manager sends an offer to the applicant
+
+31
+
+
+
+ HR-manager of the company creates a vacancy, sending a message to the network
+
+participants.
+
+ For each user who wishes to recommend a friend (who responded to a message), a
+
+unique link is formed on request.
+
+ The system identifies the users who have passed by reference who responded to
+
+the vacancy and subscribes to notifications of a change in the status of the user.
+
+ When the status of the user changes to "Accepted", the reward between the key
+
+participants (received an off-site with a job and those who came to the interviews) is automatically distributed, using a smart contract after their request.
+
+4.2.2. The confirmation of employee skills
+
+
+
+The Employee
+
+
+
+Log in Aworker
+
+
+
+Add a new skill
+
+
+
+Gives a link to a confirming document
+
+
+
+The users send WORK tokens that are stored in the prizepool.
+
+
+
+Users vote for having the skill or not having it.
+
+After the minimum number of votes is collected they get calculated.
+
+
+
+Aworker users check the information
+
+
+
+The skill is not confirmed
+
+
+
+Are there more positive
+
+
+
+No
+
+
+
+votes than the negative
+
+
+
+ones?
+
+
+
+The skill is confirmed and
+
+
+
+Yes
+
+
+
+the data is saved in the
+
+
+
+blockchain.
+
+
+
+Those who downvoted share the prizepool with each other
+
+
+
+Those who upvoted share the prizepool with each other.
+
+Blockchain
+
+
+
+aworker.io
+
+
+
+32
+
+
+
+This smart contract provides a transparent procedure of showing their skills for each Employee. The Employee's skill is deemed confirmed only after the minimum number of votes is collected.
+
+The minimum amount of votes must correspond to the following three conditions: 1) Minimum 100 voters; 2) The difference between the majority and the minority of votes exceeds 20%; 3) The total prizepool awarded to the winners is minimum +10% to every majority member's stake.
+
+ The Employee, who wants to obtain a public confirmation of the skill, initiates the
+
+launch of contact by sending a message about the addition of a new skill with the reference to the supporting document (or documents).
+
+ The service users, who expressed a desire to check the Employee's skill (for
+
+instance, because they have such skill themselves), join to the voting and give their votes for or against skill confirmation. They base their decisions on the document's reliability.
+
+ After the voting is over, the number of voters, who elected for or against
+
+confirmation, is counted. The skill is affirmed, if the majority of voters supported the confirmation. In this case, information about the skill is entered in the blockchain.
+
+ The process ends with a reward distribution: the ones, who have entered the
+
+majority, receive an award from those, who voted for the less popular option.
+
+4.2.3. The compilation of employee rating
+
+This smart contract allows to form a rating of the employees, taking into account the views of the aworkers.
+
+ The employee initiates the launch of the smart contract by submitting the form
+
+indicating that he wants to participate in the rating.
+
+ Aworkers, in response to a Worker puts the employee assessment on a 10-point
+
+scale. At this stage, all receives information is stored in the Mongo DB database.
+
+
+
+aworker.io
+
+
+
+33
+
+
+
+The Employee
+
+
+
+Logs in Aworker
+
+
+
+Sends the form with personal information
+
+
+
+The average score calculation
+
+
+
+Users evaluate employee performance
+
+
+
+Aworker users check the employee
+
+
+
+The overall coefficient is calculated based on the average score, votes and skills
+
+
+
+Users send WORK tokens, which are stored in the prize/reward pool
+
+
+
+Company
+
+
+
+external request
+
+
+
+The coefficient and scores are retained in the rating
+
+
+
+The employee gets into the top 10 in the rating
+
+
+
+Yes
+
+
+
+An employee gets a reward in WORK tokens
+
+
+
+No
+
+
+
+The end of the smart contract
+
+
+
+Blockchain
+
+
+
+ A smart contact launches a method, which generates a coefficient. That coefficient
+
+is an estimate of Employee's performance over the previous period and the choice of the community. The coefficient is to be stored in blockchain and made available to the public.
+
+ In each specialty the coefficients of all Employees are ranked and a based on them
+
+rating is made, in which the best 10 workers of the month receive a reward. The reward between the winners is automatically distributed after their request, using a smart contract.
+
+Every position will have a smart contract. This decision will help us avoid mixing different positions with each other. For example, the sales managers will not compete with the shop assistants, etc.
+
+
+
+aworker.io
+
+
+
+34
+
+
+
+4.3. Technology stack and toplevel architecture
+
+The application is built on the basis of the Ethereum platform and the protocol for distributed storage of IPFS files. The data about transactions, which are made inside the platform, are stored in blockchain.
+
+Based on the listed technologies, the implementation of businesslogic layer (domain logic layer) is built: the interaction of smart contracts, frontend, file storage management system, etc.
+
+
+
+Web API / Mobile API
+
+Integration with the API Indeed, Monster, etc.
+
+Domain logic layer (smart contracts, frontend, etc.)
+
+Ethereum / IPFS
+
+
+
+The Aworker platform provides opportunities of interaction between the API and resources like Indeed, Monster, etc. This is necessary in order to uniquely identify platform users through accounts in professional social networks, besides to combine the capabilities of existing sites with the Aworker platform.
+
+The top level allows to external sites and applications to use the Aworker platform data. The API is planned to be provided under an open license. For realization of abovenode platform, it is planned to use the following services and technologies:
+
+ Ethereum  a platform for creating decentralized applications, based on the
+
+blockchain technology. The platform offers the possibility of implementing smart contracts on the statically typed Turingcomplete Solidity language. For the Aworker platform, the public blockchain Ethereum will be used.
+
+ IPFS is a protocol for distributed file storage. This system allows to store user
+
+documents, that confirm their skills and achievements, not on the central service, but in distributed storage.
+
+ Civic is a platform for decentralized verification of users' personalities on the
+
+Internet. It will avoid duplicating invalid accounts inside the Aworker platform and accounts created to implement fraudulent schemes.
+
+
+
+aworker.io
+
+
+
+35
+
+
+
+ Solidity is a highlevel language for writing smart contracts and executing them on
+
+the virtual machine Ethereum. All contracts of the Aworker platform will be
+
+implemented with help of the Solidity language.
+
+ Truffle is a framework for developing and testing smart contracts.  NodeJS is an eventoriented programming language intended for writing backend.  Web3js  is a API for working with the blockchainnetwork Ethereum.
+
+
+
+4.4. Roadmap of Product Development
+
+The product development schedule may vary and not be final. The order and functionality may vary depending on the feedback we receive from the first customers.
+
+
+
+Stage 1: Aworker Alpha. Release of personal users cabinet
+
+Objective: to develop a employees' personal cabinet in which users can add their skills.
+
+Release date: February 2018
+
+Stage 2: Developing a personal account for Companies and Job Marketplace
+
+Objective: to develop a personal cabinet for the Companies. Accounting for incoming applications and placement of vacancies within Aworker.
+
+Release date: March 2018
+
+Stage 3: Integration into the blockchain and security audit, Skills Verification
+
+Objective: to develop smart contracts to confirm skills and check system security; to develop smart contracts to vacancies; to improve a personal cabinet.
+
+Release date: April 2018
+
+Stage 4: Development of the Ethereum blockchainbased Ranking
+
+Objective: to develop a decentralized Ranking where employees will be ranked via smart contracts; creating different smart contracts for each vacancy; to create the antifraud system and integrate with identity verification tool (Civic).
+
+
+
+aworker.io
+
+
+
+36
+
+
+
+Release date: May 2018
+
+Stage 5: Development of companies' advertising cabinet
+
+Objective: to develop companies advertising cabinet and employees' reward system for proven skills; audit of advertising messages behavior logic, accounting statistics, and distribution of rewards.
+
+Release date: 3Q 2018
+
+Stage 6: Development of companies' applications
+
+Objective: to develop a recruiting automation system for companies; to integrate into the blockchain and audit of the security system; to integrate with job sites (Monster, Indeed, HeadHunter, etc.).
+
+Release date: 4Q 2018
+
+Stage 7: Development of Aworker API and mobile application
+
+Objective: to develop an API to integrate thirdparty companies with Aworker and display an independent ranking on their sites; to develop a mobile application for iOS and Android
+
+Release date: 1Q 2019
+
+Stage 8: Development of recommendation system
+
+Objective: to develop a recommendation system for companies and people based on behavioral data.
+
+Release date: 1Q 2019
+
+
+
+aworker.io
+
+
+
+37
+
+
+
+5. Market Analysis and
+
+Aworker Business Model
+
+In 2016 the total number of working population in the world was 3.26 billion people according to the report of the International Labor Organization (ILO). In 2017 LinkedIn claimed to have about 467 million registered users.  LinkedIn users are potential Aworker users. The volume of the staffing market according to Staffing Industry Analysts is $429 billion. The average cost of replacing one specialist in the US is around $8000.
+
+IFC and the International Bank report that the total number of small and medium businesses companies in the world is 125 million.
+
+
+
+Number of employees and companies in the world
+
+
+
+Total number of employees
+
+
+
+LinkedIn Users
+
+
+
+Market
+
+
+
+3,2B
+
+
+
+467M
+
+125M Number of Small and Medium Businesses
+
+
+
+According to International Labour Organization (ILO), IFC and World Bank
+
+
+
+aworker.io
+
+
+
+38
+
+
+
+Below is a graph showing the increase in the number of LinkedIn users for the last 7 years according to Statista.
+
+
+
+5.1. Business Model
+
+5.1.1. Aworker platform
+
+To automate of many processes in the recruitment, we want to create a unique product to help people promote themselves on the market as professionals and create a good standing. We also want to help companies find and hire qualified employees.
+
+As Blockchain helps to solve many problems connected with hiring and reliability of job applicants, our product will consist of 2 parts:
+
+1. Application for employees 2. Application for companies
+
+
+
+5.1.2. Application for employees
+
+
+
+We want to create a working ecosystem which:
+
+
+
+aworker.io
+
+
+
+39
+
+
+
+ will make the job search easier and select most appropriate companies;  will build a reputation of a trustworthy employee;  will give an opportunity to increase rewards;  will advise each employee on more efficient development (upon behavioral and
+
+performance analysis);
+
+ will give an opportunity to purchase partner products with big discounts.
+
+
+
+Decentralization and Blockchain will enable employees to have the following opportunities:
+
+1. Job Marketplace: An employee will have an opportunity to recommend vacancies to friends getting a reward for successful recommendations (got a job or went to the interview). See paragraph 3.3 for details.
+
+2. Skills Verification System: An employee will have an opportunity to add professional skills he/she possesses and get a reward for confirmed skills. See
+
+
+
+aworker.io
+
+
+
+40
+
+
+
+paragraph 3.4 for details.
+
+
+
+3. Rating: An employee will have an opportunity to be rated by an independent system for specialists and get rewards of being the best specialist in the country. See paragraph 3.5 for details.
+
+
+
+4. Special offers for List: An employee will have access to special offers from partners. We want to create an ecosystem able to provide employees with better opportunities for personal development. We will integrate other companies into the Aworker ecosystem to reach this goal. The goal of the partnership is to offer employees special terms (basing on an employee rating and reputation) which are not available on the market.
+
+
+
+For example, the best participants of the Rating (AList candidates) will be able to underbuy cars, pay lower mortgage interest, receive a discount for trips, training, etc. The motivation of our partners is the reliability of employees. All companies want to have reliable and solvent consumers. Using Rating and decentralization, an employee will be able to confirm his/her reputation and enjoy a special (exclusive) offer for this. Partners will be elected by voting among the WORK tokens owners. We will integrate those partners who are of particular interest for most users. All partners' offers can be paid for in WORK tokens. Thus, the value of the token will grow together with the Aworker ecosystem.
+
+
+
+Employee's case: John reached the 8th position in the country as a sales assistant. Now he is on the list of the best sales assistants of the country (AList). Special offers from partners are available for him now. As John's reputation is 10 points, he is offered special terms: he can  buy a Ford with a 15% discount;  get a lower interest rate at Citibank;  have a training course on human resource management at a business school with a 50% discount;  a 30% discount on accommodation in the Hilton hotel chain during holidays;  and other offers. 
+
+
+
+5.1.3. Application for companies
+
+
+
+Companies will get a platform which:
+
+
+
+ will provide access to the reliable database about employees (rating, verified skills,
+
+assessment of professional competencies, feedback);
+
+ will automate routine work while hiring;  will allow finding new employees in the application.
+
+
+
+aworker.io
+
+
+
+41
+
+
+
+Decentralization and Blockchain will enable companies to have the following opportunities:
+
+ Job Marketplace. HR manager will create vacancies so that employees or Aworker
+
+users have an opportunity to recommend their friends. See paragraph 3.3 for a detailed description of Job Marketplace. Our privilege is providing a chance to earn for all users of the application not only for employees of companies unlike nowadays.
+
+ Automation of recruitment process. It is an application for keeping records of
+
+applicants. It keeps the record of communication with candidates. It monitors the effectiveness of HR manager. It communicates directly with candidates from one personal cabinet.
+
+ Database. HR managers will be able to check applicants in a unique database,
+
+Aworker Rating, and see confirmed professional skills of a candidate. This will help an HR manager to rank a candidate and make the right decision based on information from the Ethereum blockchain.
+
+ Advertising. HR managers will be able to use Aworker as an additional source to
+
+attract applicants. A company will be able to advertise employees with confirmed professional skills. All payments will be provided in WORK tokens. A part of reward will be compensated to employees with appropriate professional skills.
+
+ Presentation of best employees of the company on the website.
+
+
+
+aworker.io
+
+
+
+42
+
+
+
+6. Financial Model
+
+6.1. Monetization
+
+Aworker has 4 ways of monetization to create a successful business:
+
+1. Accounts for companies 2. Premium accounts for employees 3. Advertisement 4. Escrow
+
+
+
+6.1.1. Accounts for companies
+
+A company will be able to use Aworker on a fee basis. Monthly subscription will be charged. All the features of the application will be available for different tariff plans.
+
+
+
+6.1.2. Premium accounts for employees
+
+Premium accounts will give an employee an opportunity to use additional services, such as branding your profile while job search, using a personal assistant, etc.
+
+Monthly subscription will be charged. The user will be able to unsubscribe at any time.
+
+
+
+6.1.3. Advertisement
+
+The next method of monetization is the advertising model. Companies will be able to display advertising upon the confirmed skills of employees. The advertising model will be implemented following Facebook pattern. The difference will be the process of reward distribution and the use of token. 50% of the advertising budget will be used to reward employees for their proven skills. All advertising budgets will be in WORK tokens.
+
+
+
+6.1.4. Escrow
+
+
+
+Escrow guarantees people, as well as companies, the fulfillment of contract terms. Smart contracts in Job Marketplace will be created by Escrow.
+
+
+
+aworker.io
+
+
+
+43
+
+
+
+6.2. Financial Model
+
+ATTENTION: Statements, estimates and financial information contained below, constitute forward-looking statements or information. All examples of financial results, calculation of income and profits used below, are provided for demonstration purposes only. Please read chapter 9 "Disclaimer of liability" at the end of this Whitepaper, for more details.
+
+We expect a gradual increase in the number of users within 5 years. An average growth of the client base of startups in B2C and B2B markets proves that we can expect 10 million users and 50,000 companies in 5 years.
+
+Certain statements, estimates and financial information contained herein constitute forward-looking statements or information. Such forward-looking statements or information involve known and unknown risks and uncertainties, which may cause actual events or results to differ materially from the estimates or the results implied or expressed in such forward-looking statements. Further, all examples of calculation of income and profits used in this paper were provided only for demonstration purposes or for demonstrating the industry's averages. For avoidance of doubt, nothing contained in this Whitepaper is or may be relied upon as a guarantee, promise, representation or undertaking as to the future performance of Aworker and/ or WORK token, and/or promise or guarantee of future profit resulting from purchase of WORK token.
+
+
+
+Aworker Users
+
+
+
+10 000 000 9 000 000 8 000 000 7 000 000 6 000 000 5 000 000 4 000 000 3 000 000 2 000 000 1 000 000 100 000 0
+
+aworker.io
+
+
+
+2018
+
+
+
+2019
+
+
+
+Users Premium Users
+
+
+
+2020
+
+
+
+2021
+
+
+
+Companies Adver-sing accounts
+
+
+
+2022 Escrow Transac-on
+
+
+
+44
+
+
+
+6.2.1 Data for calculation
+
+Key assumptions in the financial model are based on the following data:
+
+ a 10% growth of startup clients base per month;  the token value is predicted on the basis of the statistics on the growth of bitcoin,
+
+ETH, and other altcoins;
+
+ Operating costs will be covered by the company's profit after reaching the break
+
+even point;
+
+ The number of Aworker employees will be 150 people in three years.
+
+
+
+6.3. Pessimistic Scenario
+
+To calculate the pessimistic scenario, we made the following presumptions:
+
+ low number of companies' accounts;  low number of premium users accounts (5% of the total number of users);  low amount of Escrow;  low amount of advertising;  longrunning development time.
+
+
+
+6.3.1. Cost and capitalization of Aworker platform: Pessimistic scenario
+
+The calculation is based on the following presumptions:
+
+ the number of registered users in 5 years will be 2 million employees and 10
+
+thousand companies;
+
+ the growth of the customer base will be 4% per month;  in the first year there will be a minimum number of users;
+
+
+
+Year
+
+Users Companies
+
+
+
+1
+
+1 000 100
+
+
+
+2
+
+680 000 2 250
+
+
+
+3
+
+1 006 400 4 440
+
+
+
+4
+
+1 489 472 6 571
+
+
+
+5
+
+2 204 419 9 725
+
+
+
+aworker.io
+
+
+
+45
+
+
+
+ marketing campaigns will begin from the 2nd year after the release of the main
+
+product.
+
+
+
+6.3.2. Cash Flow: Pessimistic scenario
+
+In the pessimistic scenario, the breakeven point will be reached in 3 years.
+
+
+
+Year
+
+
+
+1
+
+
+
+2
+
+
+
+3
+
+
+
+Revenue
+
+
+
+320 760 9 189 600 18 335 424
+
+
+
+Operating expenses 3 781 038 13 662 920 15 492 085
+
+
+
+EBITDA
+
+
+
+-3 460 278 -3 933 320 3 283 339
+
+
+
+Net Income
+
+
+
+-3 599 006 -9 075 200 -5 656 860
+
+
+
+Cash Flow
+
+
+
+-4 199 006 -9 615 200 -6 096 760
+
+
+
+4 35 021 868 18 834 374 16 627 494
+
+2 354 820 1 914 820
+
+
+
+5 72 185 631 30 305 126 42 320 505 14 799 041 14 359 041
+
+
+
+In the pessimistic scenario, Aworker will become profitable in 2021.
+
+
+
+6.4. Realistic Scenario
+
+To calculate the realistic scenario, we made the following presumptions:
+
+ average number of companies' accounts;  average number of premium users accounts (10% of the total number of users);  realistic amount of Escrow;  realistic amount of advertising;
+
+
+
+6.4.1. Cost and capitalization of Aworker platform: Realistic scenario
+
+
+
+The calculation is based on the following presumptions:
+
+
+
+ The number of registered users in 5 years will be 5 million employees and 20
+
+thousand companies;
+
+ The growth of the customer base will be 6% per month;  In the first year there will be a moderate number of users;
+
+
+
+aworker.io
+
+
+
+46
+
+
+
+ Marketing campaigns will begin from the 2nd year after the release of the main
+
+product.
+
+
+
+Year
+
+Users Companies
+
+
+
+1
+
+
+
+2
+
+
+
+5 000 1 032 000
+
+
+
+500
+
+
+
+4 128
+
+
+
+3
+
+1 775 040 7 100
+
+
+
+4
+
+3 053 069 12 212
+
+
+
+5
+
+5 251 278 21 005
+
+
+
+6.4.2 Cash Flow: Realistic scenario
+
+
+
+In the realistic scenario, the breakeven point will be reached in 2 years.
+
+
+
+Year
+
+
+
+1
+
+
+
+2
+
+
+
+3
+
+
+
+Revenue
+
+
+
+1 618 800 19 546 906 42 345 354
+
+
+
+Operating expenses 3 845 940 15 734 381 20 294 071
+
+
+
+EBITDA
+
+
+
+-2 227 140 4 352 524 22 491 283
+
+
+
+Net Income
+
+
+
+-2 912 780 -6 648 627 3 012 735
+
+
+
+Cash Flow
+
+
+
+-3 512 780 -7 188 627 2 572 735
+
+
+
+4
+
+
+
+5
+
+
+
+72 834 009 145 439 405
+
+
+
+26 396 802 44 955 881
+
+
+
+46 877 207 100 923 524
+
+
+
+16 423 629 41 802 944
+
+
+
+15 983 629 41 362 944
+
+
+
+In the realistic scenario, Aworker will become profitable in 2020.
+
+
+
+6.5. Optimistic scenario
+
+To calculate the optimistic scenario, we made the following presumptions:
+
+ high number of companies' accounts;  average number of premium users accounts (10% of the total number of users);  high amount of Escrow;  high amount of advertising;
+
+
+
+6.5.1. Cost and capitalization of Aworker platform: Optimistic scenario
+
+
+
+The calculation is based on the following presumptions:
+
+
+
+aworker.io
+
+
+
+47
+
+
+
+ The number of registered users in 5 years will be 10 million employees and 50
+
+thousand companies;
+
+ The growth of the customer base will be 10% per month;  In the first year there will be a moderate number of users;  Marketing campaigns will begin from the 2nd year after the release of the main
+
+product.
+
+
+
+Year
+
+Users Companies
+
+
+
+1
+
+5 000 500
+
+
+
+2
+
+950 000 4 800
+
+
+
+3
+
+2 090 00 10 560
+
+
+
+4
+
+
+
+5
+
+
+
+4 598 00 10 115 600
+
+
+
+23 232
+
+
+
+51 110
+
+
+
+6.5.2. Cash Flow: Optimistic scenario
+
+In the optimistic scenario, the breakeven point will be reached in 2 years.
+
+
+
+Year
+
+
+
+1
+
+
+
+2
+
+
+
+3
+
+
+
+4
+
+
+
+5
+
+
+
+Revenue
+
+
+
+2 247 600 27 818 400 74 632 800 164 192 160 367 356 000
+
+
+
+Operating expenses 3 877 380 17 388 680 26 751 560 44 668 432 89 339 200
+
+
+
+EBITDA
+
+
+
+-1 629 780 10 969 720 48 321 240 119 963 728 278 456 800
+
+
+
+Net Income
+
+
+
+-2 804 060 -5 388 800 12 335 320 48 578 048 128 493 608
+
+
+
+Cash Flow
+
+
+
+-3 404 060 -5 928 800 11 895 320 48 138 048 128 053 608
+
+
+
+In the optimistic scenario, Aworker will become profitable in 2020.
+
+
+
+aworker.io
+
+
+
+48
+
+
+
+7. Token Sale
+
+The sale of Aworker tokens (WORK) to support and develop the Aworker ecosystem will be carried out with the help of a smart contract in the Ethereum blockchain. Participants wishing to support the project will be able to purchase WORK tokens for ETH. The total number of WORK tokens is limited.
+
+The sale of WORK tokens will take place during 4 token sales: Pre-ICO: Token Sale #1, Token Sale #2, Token Sale #3. ICO: Token Sale #4.
+
+ Issuing and selling WORK tokens will be done using Ethereum smart contract.  Participants who want to support the development of the Aworker project will be
+
+able to send ETH to the address indicated on the site aworker.io or in the official groups of the project.
+
+ Accepted currency: ETH, BTC.  Tokens of team members will be blocked for 1 year in an Ethereum smart
+
+contract.
+
+ The number of available tokens is limited (Hard Cap). If the sale of tokens will
+
+reach this limit, the release of tokens will be stopped. Hard Cap is equal to 24,770 ETH.
+
+ The Token Sale #4 will last 31 days, if not previously achieved Hard Cap.  Tokens that will not be sold at token sale, will be automatically burned.  Tokens purchased on all stages, will be available to contributors through 2 weeks
+
+after the end of the Token Sale #4.
+
+
+
+aworker.io
+
+
+
+49
+
+
+
+Summary WORK tokens for ETH Maximum sum (Hard Cap) Maximum amount of WORK tokens % of tokens - Tokensale % of tokens - Reserve fund % of tokens - Team % of tokens - Consultants
+
+% of tokens - Seed contributors % of tokens - Bug Bounty % of tokens - Bounty
+
+Accepted currency
+
+
+
+2,405 WORK 24,770 ETH 213,778,700 WORK
+
+60 % 15.8 % 10% (automatically freezing for 1 year via a smart contact) 7 % (automatically freezing for 1 year via a smart contact)
+
+4.2 % 2% 1 % (automatically freezing for 2 month via a smart contact) ETH, BTC
+
+
+
+Token Sale #1 WORK tokens for ETH (discount 30%) Amount of available WORK tokens (Token Sale #1) Tokens Sale #1 launch date Duration of Token Sale #1
+
+
+
+3,436 WORK = 1 ETH 357,143 WORK 26 January 2018 1 week
+
+
+
+Token Sale #2 WORK tokens for ETH (discount 20%) Amount of available WORK tokens (Tokens Sale #2) Tokens Sale #1 launch date Duration of Token Sale #2
+
+
+
+3,006 WORK = 1 ETH 1,250,000 WORK 15 February 2018 2 weeks
+
+
+
+aworker.io
+
+
+
+50
+
+
+
+Token Sale #3 WORK tokens for ETH (discount 15%) Amount of available WORK tokens (Token Sale #3) Token Sale #3 launch date Duration of Token Sale #3
+
+
+
+2,829 WORK = 1 ETH 4,411,765 WORK 15 March 2018 4 weeks
+
+
+
+Token Sale #4 WORK   ETH
+
+
+
+2,405 WORK = 1 ETH
+
+
+
+Maximum amount of WORK tokens (Tokens Sale
+
+
+
+#4)
+
+
+
+Hard Cap
+
+
+
+Core Tokens Sale launch date
+
+
+
+26 May 2018
+
+
+
+Duration of Tokens Sale #4
+
+
+
+31 days or reaching Hard Cap
+
+
+
+The data in the tables may change before the beginning of the token sales. It depends on the course of the ETH and other factors.
+
+
+
+Aworker Tokens Distribution
+
+
+
+60% Token Sale
+
+aworker.io
+
+
+
+15.8% Reserve Fund
+
+
+
+1% Bounty
+
+
+
+10% Team
+
+7% Advisory Board 4.2% Seed Investors 2% Bug Bounty
+
+
+
+51
+
+
+
+7.1. Special terms for early contributors at ICO
+
+Aworker offers special conditions for early contributors at the main stage of token sale (Token Sale #4). The earlier the contributor wants to support the Aworker project, the more favorable bonus he/she will get. For the very first contributors, there are additional bonuses. The bonus starts at 8% and decreases every 20% of the tokens sold. For those who want to support the project in the last place (after 80% of the released tokens), bonuses are not provided. The size of the bonus is shown in the figure above.
+
+7.2. Allocation of Funds
+
+The funds received at the token sale will be distributed according to the table below. The sale of Tokens is carried out to ensure the development and promotion of the project.
+
+
+
+55% Development
+
+
+
+25% Marketing
+
+
+
+10% Operations
+
+5% Legal 5% Partnerships
+
+
+
+aworker.io
+
+
+
+52
+
+
+
+7.3. WORK token
+
+WORK token will be issued on the basis of the Ethereum token. WORK token is a utility token. The Ethereum based tokens take a number of advantages of Ethereum:
+
+ Security and predictability (Ethereum is the world's blockchain #2 used by most of
+
+the decentralized applications).
+
+ Reliable support (Ethereum based tokens can be managed by official clients in the
+
+Ethereum network).
+
+Our Ethereum based token will be created under ERC20 standard. See more details about ERC20 standard at: https://github.com/ethereum/EIPs/issues/20
+
+7.4. Value of WORK token
+
+WORK token is the coin of workers. WORK token is connected with hiring people in the companies. Company has to spend WORK tokens to find and hire an employee. The number of tokens is limited.
+
+The value of the token depends on the spread of the Aworker ecosystem. The more users and partners will be in the Aworker ecosystem, the more highly valued the WORK token will be.
+
+Examples of using the WORK token in the application:
+
+ Hiring employees on aworkers' recommendations includes spending WORK
+
+tokens.
+
+ Monthly access to the business account has to be paid with WORK tokens.  Placement of advertising in the application in WORK tokens.  Acquisition of partners' products on special offers. With the increase in the number
+
+of partners, the value will increase too. At the same time, the higher the employee's reputation, the more favorable conditions he will get.
+
+ Allocation of the employee profile for job search.
+
+
+
+aworker.io
+
+
+
+53
+
+
+
+7.5. The acquisition of tokens in the early phases
+
+The early phases (Token Sales No. 1, No. 2, No. 3) will offer 6,018,908 WORK tokens at a discount from the value of the token on the ICO (Sale of Tokens #4).
+
+Early participants will be able to purchase WORK tokens at stage #1 under the most favorable conditions with a 30% discount. In total, at stage #1, 357,143 WORK tokens will be available with a 30% discount. All calculations will occur at the exchange rate at the time of the transaction. WORK tokens purchased at the early phases stage will be sent to the user's personal wallet immediately after the ETH transfer. Dispose of WORK tokens will be possible in 2 weeks after the end of Token Sale #4.
+
+Example: The contributor at the stage #1 of Token Sale acquires WORK tokens for 1 ETH (including 30% of the discount). He receives 3,436 WORK tokens (instead of 2,405 tokens). All calculations will occur at the exchange rate at the time of the transaction. The volatility of the ETH course at the time of the ICO (Token Sale #4) will not affect the tokens purchased by the contributor earlier during the Token Sale #1 (or at any other early stages). If the contributor wants to purchase WORK tokens at the ICO (#4), then all calculations will occur at the current exchange rate at the time of the transaction.
+
+
+
+aworker.io
+
+
+
+54
+
+
+
+8. Aworker Team
+
+8.1. Aworker Team
+
+Anton Cherkasov CEO & Cofounder
+
+Anton  the Aworker project thought leader. Blockchain fan. He has gained a lot of experience in creating SaaS and e Commerce startups. The founder of the SaaS service Kepler Leads. He has an extensive expertise in launching SaaS projects and promoting them on the market. Worked in the Wildberries development team (Russia's largest online clothing store), Gazpromneft subsidiary. LinkedIn Facebook
+
+Michail Doshevskii CTO & Cofounder
+
+Michail is a developer at Kaspersky Lab. Manages the development management at Digit. Key competencies  the design of services and applications, C #, REST API, Microsoft technologies stacks: ASP.NET, Web API, Azure. LinkedIn
+
+Sergey Streltsov CMO
+
+Sergey is a content director, formerly Global Marketing Director, at Yoola (the world's largest independent multichannel network). Has a wide experience in promotion in B2B and B2C markets. Expert in the video content niche and product promotion. LinkedIn Facebook
+
+
+
+aworker.io
+
+
+
+55
+
+
+
+aworker.io
+
+
+
+Mikhail Barkov HR Director
+
+Mikhail worked at the position of HR Director in PAZOLINI (one of the world leaders in the production and sale of footwear and accessories) and Talent Acquisition and Development in L'Oreal. He is responsible for product promotion on the HR market and hiring employees for Aworker. LinkedIn Facebook
+
+Svetlana Fomenkova Director of Development
+
+Svetlana has an extensive expertise in the development, strategy and promotion of the company. She worked with such brands as Lexus, Philip Morris, FHM, The Macallan, Hearst Shkulev Media, FIFA and others. LinkedIn
+
+Roman Ivantsov Architect
+
+Roman is an experienced developer and architect. He has 10 years of experience in these fields. Roman created such projects as Virium, Est Wi-Fi, TargetOk, etc. He has knowledge of Solidity and rich experience of systems programming on the Ethereum blockchain.
+
+Evgeny Petukhov Backend Developer
+
+Eugene is an experienced .Net developer. C# development experience is 9 years. He worked as a leading programmer at Norilsk Nickel. He has experience in the development of web applications and desktop applications.
+
+56
+
+
+
+aworker.io
+
+
+
+Alexander Zachinalov Frontend developer
+
+Alexander is a frontend developer at SOKOLOV (one of the world's leading ecommerce jewelry sales leaders).
+
+Pavel Levkovich Project lead
+
+Pavel is an experienced project lead. He worked as a senior developer in Vnesheconombank (VTB is one of the biggest Russian's bank). Also, he developed such projects as Bot Factory and MetaShop.
+
+Serafima Aleksandrova PR anager
+
+Serafima has an experience working as a Public Relations Manager in international digital agencies like WelkerMedia Inc, Lobster Media. She is a digital content marketing enthusiast with advanced mathematical skills.
+
+Vasily Kuznetsov Advisor
+
+Co-Founder of the biggest Russian blockchain community and ex-manager in Russian AI Community. Experienced tech entrepreneur and digital marketer.
+
+Denis Polulyakhov Advisor
+
+IT-entrepreneur with 12 years of experience. Founder CARBYN Blockchain Group, CCO Moda Mark (fashion ecommerce), CCO Brand57 (digital marketing, web&app development) co-founder Sunberg (IT development), MO Jupiter (FMCG production).
+
+57
+
+
+
+9. Disclaimer of Liability
+
+
+
+PLEASE REVIEW CAREFULLY THE PRESENT SECTION "DISCLAIMER OF LIABILITY". IF YOU HAVE ANY DOUBTS AS TO WHAT ACTIONS YOU SHOULD TAKE, WE RECOMMEND THAT YOU CONSULT WITH YOUR LEGAL, FINANCIAL, TAX OR OTHER PROFESSIONAL ADVISOR(S). No part of this Whitepaper is to be reproduced, distributed or disseminated without including this section "Disclaimer of Liability".
+
+
+
+The information set out in this Whitepaper, is published for informational purposes only. It may not be exhaustive and doesn't imply any elements of a contractual relationship or obligations. The sole purpose of this Whitepaper is to present Aworker and WORK tokens to potential token holders in connection with the proposed ICO. Despite the fact that we make every effort to ensure the accuracy, up to date and relevance of any material in this Whitepaper, this document and materials contained herein are not professional advice and in no way constitutes the provision of professional advice. To the maximum extent permitted by any applicable laws, regulations and rules, Aworker doesn't guarantee and doesn't accept legal responsibility of any nature, for any indirect, special, incidental, consequential or other losses of any kind, in tort, contract or otherwise (including but not limited to loss of revenue, income or profits, and loss of use or data), arising from or related to the accuracy, reliability, relevance or completeness of any material contained in this Whitepaper. Further, Aworker does not make or purport to make, and hereby disclaims, any representation, warranty or undertaking in any form whatsoever to any entity, person, or authority, including any representation, warranty or undertaking in relation to the truth, accuracy and completeness of any of the information set out in this Whitepaper. You should contact relevant independent professional advisors before relying or making any commitments or transactions based on the material published in this Whitepaper.
+
+
+
+This Whitepaper is not subject to any legal system and is not governed by any law. No regulatory authority has examined or approved of any of the information set out in this Whitepaper, and no such action has been or will be taken under the laws, regulatory requirements or rules of any jurisdiction. The publication, distribution or dissemination of this Whitepaper does not imply that the applicable laws, regulatory requirements or rules have been complied with.
+
+You don't have the right and shouldn't buy WORK tokens if you are a citizen or resident (tax or otherwise) of any country or territory where transactions with digital tokens and/or digital currencies are prohibited or in any other manner restricted by applicable laws. Purchased tokens cannot be offered or distributed as well as cannot be resold or otherwise alienated by their holders to mentioned persons. It is your sole responsibility to establish, by consulting (if necessary) your legal, tax, accounting or other professional advisors, what limitations, if any, apply to your particular jurisdiction and situation, and ensure that you have observed and complied with all such restrictions, at your own expense and without liability to Aworker.
+
+WORK tokens are not and will not be intended to constitute securities, digital currency, commodity, or any other kind of financial instrument and have not been registered under relevant securities regulations, including the securities laws of any jurisdiction in which a potential token holder is a resident. This Whitepaper is not a prospectus or a proposal, and its
+
+
+
+aworker.io
+
+
+
+58
+
+
+
+purpose is not to serve as a securities offer or request for investments in the form of securities in any jurisdiction. However, in spite of the above, legislation of certain jurisdictions may, now or in future, recognize WORK tokens as securities. Aworker does not accept any liability for such recognition and\or any legal and other consequences of such recognition for potential owners of WORK tokens, nor provide any opinions or advice regarding the acquisition, sale or other operations with WORK tokens, and the fact of the provision of this Whitepaper doesn't form the basis or should not be relied upon in matters related to the conclusion of contracts or acceptance investment decisions. This Whitepaper doesn't oblige anyone to enter into any contract, to take legal obligations with respect to the sale or purchase of WORK tokens, and to accept any crypto currency or other form of payment. Potential owners of WORK tokens are advised to contact relevant independent professional advisors, on the above matters.
+
+Certain statements, estimates and financial information contained herein constitute forwardlooking statements or information. Such forward-looking statements or information involve known and unknown risks and uncertainties, which may cause actual events or results to differ materially from the estimates or the results implied or expressed in such forwardlooking statements. Further, all examples of calculation of income and profits used in this paper were provided only for demonstration purposes or for demonstrating the industry's averages. For avoidance of doubt, nothing contained in this Whitepaper is or may be relied upon as a guarantee, promise, representation or undertaking as to the future performance of Aworker and/or WORK token, and/or promise or guarantee of future profit resulting from purchase of WORK token.
+
+WORK tokens cannot be used for any purposes other than as provided in this Whitepaper, including but not limited to, any investment, speculative or other financial purposes. WORK tokens confer no other rights in any form, including but not limited to any ownership, distribution (including, but not limited to, profit), redemption, liquidation, property (including all forms of intellectual property), or other financial or legal rights, other than those specifically set forth in this Whitepaper. While the community's opinion and feedback can be taken into account, WORK tokens do not give any right to participate in decision-making or any direction of business related to the Aworker service.
+
+English language of this Whitepaper is the primary official source of information about the WORK tokens, any information contained herein may from time to time be translated into other languages or used in the course of written or oral communications with customers, contractors, partners etc. In the course of such translation or communication some of the information contained herein may be lost, corrupted or misrepresented. In the event of any conflicts or inconsistencies between such translations and communications and this English language of Whitepaper, the provision of this English language of Whitepaper as original document shall prevail.
+
+By continuing reading this Whitepaper, and\or by making any further steps related to solicitation of information about Aworker ICO and\or purchase of WORK tokens, you confirm that you have read, understood, accepted, and agreed with, the above section "Disclaimer of Liability".
+
+
+
+aworker.io
+
+
+
+59
+
+
+
+10. Sources
+
+http://www.ifc.org/wps/wcm/connect/Industry_EXT_Content/ IFC_External_Corporate_Site/Industries/Financial+Markets/msme+finance/sme +banking/msme-countryindicators http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/---publ/documents/ publication/wcms_443472.pdf http://www.ilo.org/global/research/global-reports/weso/2016/WCMS_443480/lang--en/ index.htm https://medium.com/@wtfmitchel/linkedin10millionmonthlyactiveusers a482e2ecc086 https://github.com/ethereum/EIPs/issues/20 https://www2.staffingindustry.com/eng/About/Media-Center/Press-Releases/GlobalStaffing-Market-Revenue-Growth-to-Accelerate-to-6 https://www.americanprogress.org/wp-content/uploads/2012/11/CostofTurnover.pdf
+
+
+
+aworker.io
+
+
+
+60
+
+
+
+

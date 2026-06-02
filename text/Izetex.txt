@@ -1,0 +1,1397 @@
+Protocolandtokenforinteractionbetweenbusinesses, applicationdevelopersandclientsindecentralizedway
+
+AlexanderGryaznov AlexeyS tudnev IzetexP TELtd. https://izx.io
+
+revision2.1.2 22November2017
+
+
+
+Content
+
+
+
+Content
+
+
+
+2
+
+
+
+Abstract
+
+
+
+4
+
+
+
+Background
+
+
+
+4
+
+
+
+TheG ameC hanger
+
+
+
+5
+
+
+
+Vision
+
+
+
+6
+
+
+
+IZXT okenM odel
+
+
+
+8
+
+
+
+EconomicM odelandAddedV alue
+
+
+
+8
+
+
+
+DesignP rinciples
+
+
+
+8
+
+
+
+Roles
+
+
+
+9
+
+
+
+AppD eveloper
+
+
+
+10
+
+
+
+Player
+
+
+
+10
+
+
+
+Advertiser
+
+
+
+11
+
+
+
+TokenHolder
+
+
+
+11
+
+
+
+Referrer
+
+
+
+11
+
+
+
+Network
+
+
+
+11
+
+
+
+Tokens
+
+
+
+12
+
+
+
+TokenT urnover
+
+
+
+13
+
+
+
+TokenIssuance
+
+
+
+14
+
+
+
+TokenUtility
+
+
+
+15
+
+
+
+IZXP rotocol
+
+
+
+17
+
+
+
+ProtocolP urpose
+
+
+
+17
+
+
+
+BlockchainP rotocol
+
+
+
+17
+
+
+
+SmartC ontracts
+
+
+
+17
+
+
+
+IZXT okenERC-20SmartC ontract
+
+
+
+18
+
+
+
+CrowdsaleS martContract
+
+
+
+18
+
+
+
+MultisigWalletS martContract
+
+
+
+18
+
+
+
+TokenD riverS martC ontract
+
+
+
+18
+
+
+
+CampaignM anagerS martContract
+
+
+
+18
+
+
+
+Scenarios
+
+
+
+18
+
+
+
+CrowdSale
+
+
+
+19
+
+
+
+IssueScenario
+
+
+
+20
+
+
+
+CampaignS cenario
+
+
+
+21
+
+
+
+LoyaltyP rogramScenario
+
+
+
+22
+
+
+
+PaymentScenario
+
+
+
+23
+
+
+
+BurnS cenario
+
+
+
+24
+
+
+
+DecentralizedApplications
+
+
+
+24
+
+
+
+TokenHolderConsole
+
+
+
+25
+
+
+
+CampaignM anagementConsole
+
+
+
+25
+
+
+
+MobileGame
+
+
+
+25
+
+
+
+AdvertiserC ashierMobileA pplication
+
+
+
+25
+
+
+
+Proofo fC oncept
+
+
+
+26
+
+
+
+MVP
+
+
+
+26
+
+
+
+Statisticalreports
+
+
+
+28
+
+
+
+Testsperformed
+
+
+
+28
+
+
+
+Summarystats
+
+
+
+31
+
+
+
+Mainfindings
+
+
+
+31
+
+
+
+Advantages
+
+
+
+32
+
+
+
+Conclusion
+
+
+
+33
+
+
+
+References
+
+
+
+34
+
+
+
+Abstract
+
+IZXisadecentralizedplatformforbuildingeffectiveinteractionbetweenadvertisers,game developersandcustomers.Itallowsbusinesstoutilizeaugmentedandvirtualrealitygames inordertoconvertgameplayerstorealcustomers.
+
+Businesslogicofm arketingcampaignsbuiltonIZXplatformisflexycustomizableand managedbysmartcontracts.G ameartifactsaretiedtoIZXD rivetokenswhichbackedby specialoffersanddiscounts.Thegameplayerfindsartifactsinsideagamearenaand receivestokenstoherwallet.T henshecanexchangethetokensondiscountsinaplace thatsellsproductorprovideservices,e.g.hotel,restaurant,clothesstoreorbarbershop.
+
+IZXintentistom akebusiness-to-customervalueexchangetransparent,secureandeasy perceivedbycustomer,atthesametimeaffordableforlocalbusiness.Itbringsnew opportunitiesforbusinessestobuildtheirowneffectivemarketingcampaigns,providesnew monetizationoptionsform obilegamedevelopersandfinallymakesend-usershappyby erasingtheboundariesbetweenvirtualandrealtreasures.
+
+ThispaperdescribestheIZXconceptandprotocolalongwiththeproofofconcept:w orking platformwithanARgameintegratedw ithit,w hichtothemomenthasthousandsusersin morethansixtycountriesaroundtheG lobe.
+
+
+
+Background
+
+
+
+"HalfthemoneyIspendonadvertisingisw asted; thetroubleisIdon'tknowwhichhalf." JohnW anamaker
+
+
+
+Advertisingtechnologiesrequireinnovationmorethanever.Inthedigitalage,business entitiesareswitchingtotheomnichannelmodelofinteractionwiththeircustomers.This leadstothewidestcoveragebeingoccupiedbytheworld'sw ealthiestcompanies.F acebook andG oogleholdabout75%ofdigitaladsmarketrevenues,and99%oftheentirem arket growthforthepastyears.M eanwhilethew asteofuserattentionbecomesinsaneandthe auditoryrespondsaccordingly-morethan600m illionpeopleuseadblockersontheir devices,andthenumbercontinuestogrow.
+
+Thereturnonm arketingbudgetsdecreasessteadily.P ublishermarginsaresqueezedby intermediaries.Foreverydollaryouputindigitalmarketingtoday,60centsgotovarious middlemen.Andforthispriceyougetnoadvertizingaccountability.Totallackof transparency,novisibilityofhowyouradsperform.T hisopaquenessinturnleadstofraud
+
+
+
+risingathugescale.B otsproducingfraudulentimpressioncosttheindustry$7.2billiona year,w ith$1billiongrowthyearly1.
+
+Whileadvertisingefficiencydoesnotbecomebetter,thecustomerexpectationscontinue skyrocketing.Thistrendiscalledthe"Amazonificationofexpectations":customersexpect theAmazonPrimelevelserviceinallindustries.T hemarketingcouldtakethischallengeby utilizingthedeepm achinelearningtoanalysethebigdataofusersbehavior.T hiswouldlet totargetpersonaloffersw ithhighprecision,proposingclientsexactlywhattheyneedatthe exactm oment.T heproblemisthedataisbeingburiedattheproprietaryserversandis definitelyunderutilized.Theysaythedataisnewcommodity.Thequestionis,whomthis commoditybelongsto?InidealWorld,theindividualshouldtakeallcontroloverwhohas accessbothtoherpersonaldataandherattention.Thereshouldbewaystogetclear understandingofwhatpieceofone'spersonaldataisbeingusedbywhatcompanyandhow exactly.Todaywehavetheinversesituation,w henthecontrolofuser'sdatahasbeen stolenfromher:thedatalockedincorporatedatabases,insteadofservingtheuser'sneeds.
+
+TheGameC hanger
+
+Cuttingedgetechnologiesbringnewm arketopportunities.Imagineadecentralized marketingplatformw heretheonlyintermediatebetweenanadvertiserandpublisherisa smartcontractwhichindependentlyrunsonadistributdblockchainnetworkandimpartially governsthisbusinessinteraction.
+
+Alltransactiondata,includingbutnotrestrictedtodatareferringcustomeractions,isbeing storedsecurelyinthedistributedledger,simultaneouslyallowingthedeepanalysisofitwhile ensuringtheprivacy.Thiscouldbeachievedbyanalyzingtheshareddatalayerof blockchaintransactionsbyartificialintelligencebuiltonrecurrentneuralnetworks.This shareddataallowstotrackandmeasuretheadvertisingefficiencydowntoeverycent, allowingadvertiserstocontroltheirmarketingquality.Meanwhile,acustomergetsthe ultimatefine-grainedcontroloverthepersonaldataandanabilitytochoosew hattoshare withwhomtogetbetteroffers.Marketersshouldcontinuouslydelivervaluetocustomer,to preventherretractionofgivenconsenttouseherdata.Thisencouragesthemtofightforthe databytestingbetterapproachestobeabletoproposethebestsolutionforboth-customer andadvertiser.
+
+Themicropaymentopportunitiesandreal-timesettlementprovidedbyblockchainnetwork opensnewmarket,whereeconomicmodelscouldbebuiltoneachcustomer'simpression. Thisshiftsthevaluefromindependentdemandsideplatformsandadvertisingexchanges backintotheedgesofsupplychain:advertisers,publishersandprogrammers.
+
+Tokenizationofthisindustryenablesthepowerofthecrowdtodrivetheinnovation. Participantsofthisdecentralizedplatformformthecommunityofindividualswhosharethe samevision,valuesandbeliefs.T hegovernanceoftheplatformisentirelyunderits memberscontrol:theydefineitsrules,policiesandthedevelopmentvector.T heyputtheir
+
+1A dF raudWillC ost$7.2B illionin2016,ANAS ays,U pNearly$1B illion, http://adage.com/article/digital/ana-report-7-2-billion-lost-ad-fraud-2015/302201/[2]
+
+
+
+cumulativeefforttobuildittherightway.Andtheygetallthebenefitsandprofitsgenerated byit.Thisapproachalsocreatesacommunity-drivenm arketing,w herecommunitym embers promotetheplatformandbusinessesbyusingitthemselves.
+
+Marketingisallaboutcustomer'ssentimentsandimpression.Howtodealw ithuserinflated expectations,w henitbecomesmoreandm oredifficulttosurprisethecustomerspoiledby hi-techproductsofomnipotentcorporations?Herecomesanotherpromisingtechnologyof thepresent-augmentedandvirtualreality.Imagineyouradvertisingappearonthe customerwaytoofficeinaformoftreasurychestoraC upw ithm iraculouselixir.Shepicksit upbyw ithgadget,immediatelygettingyourspecialdiscounttokenrighttohersmartphone. Allsheneedsnowtoredeemtheprizeisjusttosendthiscrypto-tokentoyourmanagerand cometoyourplace.Justassimpleandfunatsametime.
+
+Them ostfascinatingbreakthroughsaretendedtobeachievedinthespaceofdifferent researchareasintersection.T heblockchaintechnologyhasemergedandrisesrapidlybeing baseduponthecombinationofsoftwareengineering,gametheory,economicsand cryptographyscience.W ebelievethatcombiningtheaugmentedandvirtualrealitywiththe decentralizedapplicationsonblockchainnetworkandartificialintelligencewillspawnthe brandnewparadigmofbusiness-to-customercommunicationinemotional,informationaland economicsenses.
+
+Vision
+
+IZXisadecentralizedm onetizationplatformforindependentgamedeveloperswithelements ofaugmentedorvirtualreality.Theadvertisingproviderm aychoosegamesthatw illbeused foritspromotionalevents,theirdevelopersgetroyalties.IZXisablockchain-basednetwork, itscodeisopensource,andithasnogeographicalboundaries.
+
+IZXistheprotocolfor:
+
+ Buildingwithout-middlemeneconomicalinteractionbetweenadvertisers,developers andcustomers.
+
+ Rewardinggameandapplicationsdeveloperswhohelpbusinessestointeractw ith customers.
+
+ Implementingdiscounts,specialandpersonaloffersforcustomers.  Transferringplayerseffortsandpassionintobrandawarenessandloyalty.
+
+Finally,IZXisthecryptocurrencythatrepresents:
+
+ Advertiser'svaluepropositiontocustomers.  Valuew hichparticularcustomersmaybringtobusiness.  Customerattention.  Gamepoints.  Loyalty.
+
+
+
+Today,cryptocurrencyismainlyspreadwithincertaincommunities,suchascomputergeeks (includingm iners),speculatorsandscammers.IZXisthefirstcryptocurrencythatappearsin walletsofawideaudience.Ithasthefollowingmainproperties:
+
+1) Availabilitytoeveryone-withnoneedinadditionalcostsorknowledge. 2) Usefulnessinappliedvalueineverydaylife.
+
+IZXmissionistomakevalueexchangesbetweenbusinessandclientsclear,easyand straightforward.W ew ishtoletpeopleindependentlydecidew hichvalueproposalsandhow they'dliketoreceiveintheirinformationflow.
+
+WebringclientstoofflinebusinessesfromtheInternetandmobilew orld.Existingm ethods ofclientacquisitionlackthefollowingproperties:
+
+1) Onlinem arketinghasalotofmiddlemen.Itleadstohighcostsandinefficiency. 2) Indigitaladvertisingm odels,offlinebusinesslosescomparingtoonlinebusinessesin
+
+mostcases. 3) Traditionalonlinemarketingm odelsasC PM,CPCandevenC PAdonotexactly
+
+matchofflinebusinessobjectives:theypayforvirtualactions,notforrealones. 4) Temporaryandfocusedgoals,whichbusinessesfrequentlyrepresentasspecial
+
+offerswithlimitedproposition,arehardlycoveredw ithexistingmodels.
+
+IZXprotocolsophisticatedlysolvestheseproblemsbyapplyingcuttingedgetechnologiesto buildneweffectiveecosystem.B ym orethan2.5billionsofsmartphoneownersonEarth cryptocurrencywillsoonbeperceivedasamundanereality-alwaysathand,easytouse, reliable,fastandsafewaytoexchangevalues.Howevertodaymostofthisimmerse audienceremainsuntappedbythecrypto-economybecauseofthehighthresholdofthe technologyperception.Itisnoteasyforordinarypeopletounderstandtheblockchain conceptsdeepenoughtorecognizethefantasticopportunitiesitcanbringtoourlife.We targetthisissuebyprovidingtheproduct,whichm akestheuseofcryptocurrencyasclear andsimpleasjustcatchingthePokemoninthepopularmobilegame.Userscanearn crypto-tokensbysimplygatheringvirtualcoinswiththeirsmartphones.IZXturnsthegame appintoacrypto-wallet,facilitatingthecryptocurrencyperceptionbypeople.
+
+Meanwhile,crypto-tokensgatheringisjustahalfofthedeal.E arningcryptocurrencyasa rewardengagesplayersintothegamerathereffectively(moredetailsinthe Proof-Of-Conceptparagraphofthispaper).B utw hatifthosetokenswereintentionally placedintothegamebyacompanytopromoteitsproductorservice?Thesetokensjust servetransportfunctionforthevaluesproposedbyadvertiserstotheirpotentialcustomers. Playersputacertainefforttoearnthesevirtualtokens,thereforetheyhaveclearincentiveto cometothecompanywhichclaimstoexchangethetokensfortherealdiscountorspecial offer.
+
+
+
+That'showIZXprovidesadvertisersw iththew aytoattractattentionandm otivatetoreal actionsthegeneration,whichbasicallyspendsfivehoursoftheirdayinasmartphone2.
+
+IZXT okenM odel
+
+EconomicModelandA ddedV alue
+
+Theeconomicmodelisbasedonmicro-payments.IZXgivesbusinessesmechanicsfor clientacquisition,userretentionandloyaltyprogramswiththem icro-paymentinfrastructure. Overall,IZXprotocolcanbeappliedinmostscenarios,w hereB2Ccustomersinteractin business,beitw ithorw ithoutm onetaryvalue.
+
+IZXaddedvaluecomesfromtheadditionalinteractionsbetweencustomersandbusinesses thatwillnottakeplaceotherwise.
+
+Businesses,beinginaroleofAdvertisertotheIZXprotocol,arew illingtorunm arketing campaignstoengageneworretainexistingclients.
+
+AdvertisersbuyIZXD riveT okenstorunadvertisingcampaigns.P layersplaythegameto collecttokens.Aftercollecting,theyarem otivatedtogotoanadvertisertom onetizetheir tokensinexchangetospecialoffer,prize,moneyoranyotherreward.
+
+Applicationdeveloperscreatenewgames,integratetokensintoexistinggames,attracting newandexistingplayerstouseIZXD rivetokens.T hisgivesapplicationdevelopersan additionalm onetizationchannelfortheirgames.
+
+Applicationdevelopers,w hoareattractingnewpotentialcustomerstoadvertisers,generate theaddedvalue.Primarycashflowcomesfromadvertisers,whopayfortokens.
+
+DesignPrinciples
+
+Designanddevelopmentdecisionsarebasedonthefollowingprinciples:
+
+1. IZXisthecommunity-managedorganization,builtonD AO(decentralized autonomousorganization)principles.Thereisnocentralpointofcontrolordecision point.
+
+2. EveryIZXparticipanthasequalrightstocontributetotheorganization.T hepowerin makingdecisionsandabilitytobenefitfromactivitiesisalwaysproportionaltohisor hercontributiontotheorganizationdevelopment.Thecontributioncanbedoneina varietyofw ays,enablingm anyrolestointeractw ithownbenefits.
+
+2A ccordingtoF lurryAnalytics[3]
+
+
+
+3. T echnologyandbusinessmodelareaimedatthewideadoptionoftheblockchain technologyinthesociety.Thisassumestheprioritygiventoscale-outasopposedto scale-upapproachestotechnologyandbusinessdecisions.
+
+4. IZXtokensmodelisopentoextensionsandchangesinaccordancew ithparticipant interests.
+
+
+
+Roles
+
+Rolesaredefinedforbetterunderstandingofthebusinessmodel,relatedm echanicsand processes.P articipantsmayplaym ultiplerolessimultaneously,orindifferenttimes, accordingtotheirpreferencesandgoals.Thelistofrolesisnotlimited,asIZXorganization maychangeorextendthem.
+
+PartiesinvolvedinIZXeconomicmodelm ayplaydifferentroles:
+
+ Appdevelopers:  Players;  Advertisers;  TokenIssuers;  Referrers;  NetworkF und.
+
+Weuseroletermstodenoteaparticularprotocolusagepattern.H owever,aparticular personm ayexecutemultipleroles,dependingonreallifesituation.
+
+
+
+Role PLAYER
+
+
+
+Activities Playsgame(s)
+
+
+
+Profitsource Earningtokens
+
+
+
+Interactswith
+
+Advertiser, Referrer
+
+
+
+APPDEVELOPER ADVERTISER TOKENH OLDER REFERRER
+
+
+
+Createsgame(s)
+
+Createsandruns marketing campaigns
+
+Issuetokensfor advertiser campaigns
+
+Refersparticipants tojointhe organization
+
+
+
+Getcommissionin tokensforgame
+
+
+
+Player, Referrer
+
+
+
+Attractsplayers, convertsto customers
+
+
+
+Player,TokenHolder, Referrer
+
+
+
+Rewardfromtoken Advertiser,
+
+
+
+utilityusage
+
+
+
+Referrer
+
+
+
+Getreferralpayouts
+
+
+
+Player,G ame developer,Advertiser, TokenH older
+
+
+
+NETWORK
+
+
+
+Developsand supportsIZX network
+
+
+
+Table1.IZXprotocolactorroles
+
+
+
+Rewardfortoken usageandnetwork growth
+
+
+
+Gamedeveloper, Player,A dvertiser
+
+
+
+AppDeveloper
+
+Appdeveloper:personororganization,developingapplicationsw ithIZXDrivetokensupport. AppdevelopersintegrateIZXasam onetizationplatform.Accordingtotheprotocol,app developersgetacommissionfromcertaintransactionsandcanmonetizetheusageoftheir apps.Theremightbeseveraltypesofapplications:
+
+G ames-applicationsthatinvolveplayersintogatheringIZXD rivetokensandcarryingout realactionswiththem,e.g.exchangingthemfordiscounts,rewards,etc.;
+
+MarketingA pplications-provideA dvertisersw ithproductsandservicesform arketing campaignscreation,analysisandoptimization;
+
+Wallets,exchangesandothersupportingapplications.
+
+ForanyoftheseapplicationtypesIZXprotocolexplicitlydefinesthem onetizationm odel,as wellasthecommissionpaymentmechanismforappdevelopers.
+
+Gamescanbedevelopedspeciallyform onetizationthroughIZXprotocol,ortheprotocol canbeeasilyintegratedinexistinggamesastheprimaryorsecondarymonetizationtool.
+
+ApplicationimplementsIZXsupportbyintegratingblockchainAPI(e.g.w eb3)to communicatew ithsmartcontracts.Toevensimplifythisintegration,Izetexwillprovide embeddablemodulesforthem ostcommongameandapplicationplatforms(Unity,React Native,A ndroid,Swift).W ealsoencouragedevelopmentofopen-sourceA PI'sandm odules tosimplifydevelopment.
+
+Technologyplatformforapplicationdevelopmentisnotlimiteditcanbemobile,Weband desktopapplications,orm essengerbots.
+
+Player
+
+PlayersareuserswhoplaygamesdevelopedbyAppdeveloperswithintegratedIZXDrive tokensupport.EachPlayerownsanaddressinblockchainthatallowshimtoholdtokens andoperatew iththem.
+
+Playershaveseveralexplicitincentivestoplaygames:
+
+ Collectedtokenscanbeexchangedonothercryptocurrenciesorfiatm oneydirectly fromapplication;
+
+ Advertiserspresentdiscounts,loyaltyprogramsandotherinterestingoffersfor playersinexchangefortokens;
+
+
+
+ Advertiserm ayexchangeremainingplayer'stokensonproducts,servicesorm oney;  Itisfun!
+
+Inthebasicgamescenario,Playerdoesnotinitiatetransactions,andasfornowitisnot requiredtohaveE THbalance.
+
+Advertiser
+
+Advertisersarebusinessesthatacquirenewandw anttoretainexistingclientsusingIZX marketingcampaigns.
+
+Toexecuteacampaign,A dvertiserbuystokensusinganexchangeordirectlyfromtoken holders.T okensareassociatedwithspecificaction,requiredfromtheclienttocollectthe token.IfPlayerexecutesaspecificaction,hecollectsthetokenandbecomesapotential customerforAdvertiser.A sanexample-P layercanbeencouragedtofindatokeninthe city,cometoapizzarestaurantandm akeam inimalorderwith40%discountbasedonthe tokenhecollected.
+
+AdvertisersusesoftwaredeliveredbyA ppDeveloperstocreate,manage,analyzeand optimizecampaigns.
+
+TokenH older
+
+TokenHolderisgrantedthepermissiontoissueIZXDriveT okensandsellthem.P rotocol ensuresthispermissionandpolicyappliedtotokenissue.
+
+Also,TokenHoldersm ayinitiatevotingfortheprotocolchanges,ordelegatethistoother tokenissuers.
+
+Referrer
+
+Referrersusereferralprogram,payingrewardsfornewPlayer'sandAdvertiser's registration.R ewardispaidusingsmartcontract,w henthenewcomerwillexecutevaluable actionwithIZX.
+
+Network
+
+TheN etworkFundsupportsthedevelopmentofthenetwork.Itsuppliestokensfordeveloper bonuses,bonusesforfindingbugsandvulnerabilities,referralprograms. N etworkF undgetssomeinitialtokens,andlatergetscontinuouslysupplementedbasedon tokensdistribution. NetworkFundbalanceissupportedonsomelevel,abletoperformspecialoffers,referral programsandotheractivitiesforthesakeofnetworkdevelopment.
+
+
+
+Tokens
+
+IZXuses2blockchain-basedtokens:
+
+1)IZXDriveT oken,usedformarketingcampaigns,games,referralprograms,andother activities.Thistokenistemporal,issuedondemandandburntwhenused. 2)IZXT oken,E RC-20token-Ethereum-based,issuedanddistributedinthescopeofICO. IZXtokenprimaryuseistocontrolthelimitofIZXDriveT okensthatcanbeissuedbythe tokenholder.
+
+
+
+IZXDriveToken
+
+Usedbygameplayers,developers, advertisers
+
+BurntwhenusedbyAdvertiserin exchangetomarketingoffer
+
+Issuedondemand
+
+Thecurrentnumberoftokensinthe turnoverislimitedbythenumberof tokens,issuedduringICO
+
+IZXD rivetokencanbeexchangedon goodsandservicesfromadvertisers
+
+
+
+IZXT oken UsedtoissueIZXDriveTokens
+
+Notburnt
+
+IssuedduringICO Totalnumberofissuedtokensisdefinedby ICOconditions
+
+Tokenscanbebought/sold/exchanged asanyotherE RC-20tokenbyholders,as anyothercrypto-currency
+
+
+
+Tokenismanagedbythespecialized blockchainnetwork
+
+
+
+TokenismanagedbyE RC20standard contractonE thereumnetwork
+
+
+
+Table2.ComparisonofIZXandIZXD riveTokens
+
+
+
+TokenTurnover
+
+
+
+Figure1.IZXD riveT okenflow Thetypicalscenariooftokenturnoverissupposedlythefollowing: 1)Advertiserplanstorunm arketingcampaigntoattractnewclientstothenewlyopened
+
+localbusiness.Advertisercreatesthecampaignandplacesthebuyorderforarequired amountofIZXD riveTokensw ithaspecifiedbidprice; 2)TokenHolderacceptstheorder,issuesandsellsamountofIZXD riveTokensto Advertiser; 3)Advertiserdistributestokensforplayersw hoperformedspecificaction,e.g.reached specificdestinationinacity; 4)P layerscometoA dvertiser'slocalofficetogetarewardforcollectedtokens.Tokensget burntafterPlayerexchangesthemonreward;
+
+
+
+5)GameDevelopersgetcommissionfortheirgamesbeingplayed; 6)IfA dvertiserorP layerw asreferredbyReferrer,theReferrergetscommissionpayoutfor
+
+referrals.
+
+CurrentlythelifetimeofIZXD riveT okenistypicallylimitedbyaspecificcampaignrun period.TokensaredistributedbyTokenH olderandultimatelyendupbeingburntby Advertiser.
+
+Unspenttokensinw alletsofAdvertiser,P layer,ReferrersandG ameDeveloperscanbesold onexchangetoadvertisersastheprimarymechanismofparticipant'sappreciation.
+
+TokenIssuance
+
+TokenHoldercanissueanumberoftokensaccordingtothefollowingformula:
+
+Limit=GrantIssued+B urnt
+
+where:
+
+Limit=maximumnumberofIZXD rivetokensthisHolderm ayissuenow Grant=equalstothenumberofIZXT okensownedbyTokenH older Issued=totalnumberofIZXDrivetokensissuedbytheH older Burnt=totalnumberofburnttokensissuedbythisH older
+
+Theformulaensuresthat:
+
+1)TokenH oldercannotissuem orethanG ranttokensinitially; 2)T okenHoldercanissuetokenscontinuouslyandinfinitelyintime,assumingthatthe tokensw illbeburnt; 3)N umberofallcirculating(notburnt)IZXD rivetokensislimitedtothesumofalltokens thatH oldergrants; 4)IZXTokensarethemeasurefortokenHoldertoissuenewIZXD rivetokensandutilize it.
+
+
+
+TokenUtility
+
+Tokenutilityisbestdescribedbyconsideringaspecificscenario,w hereallrolesare participatingtoownbenefits,generatingaddedvalue.
+
+Figure2.TokensU tilityD iagram(part1) Tokenisutilizedaccordingtothesimplifiedschema(Figure2).Somedetailsandtechnical interactionsbetweensmartcontractsareremovedforthesakeofsimplicity.R efertotheIZX Protocolsectionfortheimplementationdetails. 1)T okenHolderownsanamountofIZXT okens(ERC-20,issuedduringICO).Itallowshim
+
+tomakeasellorderforacorrespondingamountofIZXD rivetokens; 2)AdvertiserplacesabuyorderofIZXD riveT okens,reservingacorrespondingamountof
+
+Ethersforthepricedefinedbysell/buyordersclearance; 3)ExecutingthebuyordereffectivelytriggerstheissuanceofcorrespondingnumberofIZX
+
+DriveT okensandreservesEthonT okenD riversmartcontract; 4)IssuedIZXDriveT okensarebeingaddedtothegame,w herePlayercollectsthem(or
+
+receivesinanyotherw ay); 5)PlayercomestoAdvertiserandtheyburntheIZXDriveT oken;
+
+
+
+6)BurningIZXD riveT okenremovesitcompletelyfromtheturnover,anddistributes correspondingfractionofreservedEthersfromT okenD river;
+
+7)BurningtokensallowsT okenH oldertoplacenewsellorders,andthecyclecontinues.
+
+Figure3.T okenU tilityDiagram(part2)
+
+WhenEthersareunlockedfromT okenD river,thesmartcontractdistributesthemaccording totherules:
+
+1. TokenH olderreceivespartofEtherastherewardforplacingsellorderand issuancofIZXDrivetokens.
+
+2. Gamedeveloperreceivesrewardforthedevelopmentofgame,w hichhelped toacquireP layersandexecutepropertransactionsw ithAdvertiser.
+
+3. Networkmaintainersarerewardedforthetokenblockchainprotocol developmentandfunctioning.
+
+4. Playersarerewardedfortakingpartinthegameandburningtokens. 5. Referrers,whotakepartintheprotocol,areoptionallyrewarded:
+
+a. whoreferredthisadvertisertouseIZXD rivetokens; b. whoreferredthisplayertoinstalltheapplicationandthenuseIZX
+
+DrivetokenswithA dvertiser.
+
+Theactualratiosandpolicyonthisdistributionareasubjecttochangeatanym oment, assumingtheapprovalofIZXTokenholders.T heIZXprotocolpoliciesaresetupintheform ofsmartcontractsandaresubjecttobeexecutedw ithnocentralauthorityororganization.
+
+
+
+IZXP rotocol
+
+ProtocolPurpose
+
+IZXprotocolisasetofsmartcontractinterfacesandcommunicationrulesbetweenparties. Thepurposeoftheprotocolistoensurethattheeconomicm odelisproperlyexecutedforall participants. Tousetheprotocol,someofparticipantsshoulduseanaccountinEthereumnetwork,w ith capabilitytosigntransactions.S omemethodsrequireD ecentralizedA pplicationstobeused.
+
+BlockchainP rotocol
+
+SmartContracts
+
+ThisdiagramshowsthemainsmartcontractsconstitutingIZXprotocolandrolesof participantsthatsigntransactionsw ithsmartcontracts.
+
+
+
+
+
+Figure4.IZXS martContracts
+
+IZXTokenERC-20S martC ontract
+
+SmartC ontractIZXTokenissignedwiththeTokenH olders.ItfollowstheE RC-20standard3.
+
+CrowdsaleS martC ontract
+
+Crowd-salesmartcontractissignedbetweentheissuerandT okenHoldersbasedonthe priceandrulesofICO.
+
+MultisigW alletS martC ontract
+
+Multisigw alletsmartcontractissignedbetweenIZXnetworkfounderstoensureproper distributionofcollectedEther.
+
+TokenDriverSmartC ontract
+
+TokenDriversmartcontractensurestheIZXDrivetokenissuancepolicy,sell/buyorder clearanceandproperdistributionofE thertopartiesafterIZXD rivetokenisburnt.
+
+CampaignManagerS martContract
+
+CampaignManagersmartcontractensuresthatcampaignsareproperlyregisteredand executedaccordingtoA dvertiserpreferences.
+
+Scenarios
+
+Scenariospresentedbelowaretodemonstratehowtheprotocolcanbeusedforrealworld usage.Itisnotintendedtocoverallpossiblecases,assmartcontractmethodscanbe executedinanysequenceandcontext. ScenariosarebestdescribedasUMLsequencediagramsusingthefollowingnotation:
+
+Actorasperrole.O wnsblockchainaddress
+
+Smartcontract
+
+3https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md
+
+
+
+Callsmartcontractinblockchain Signandsubmittransactiontoblockchainnetwork Directinteractionbetweenactors,NOTinvolvingblockchain Table3.ScenarioU MLNotations
+
+CrowdSale
+
+ Figure5.Crowdsaleinteractiondiagram
+
+1)TokenHoldersendsEthertoE RC-20standardIZXT okencontract 2)IZXtokendelegatesthecalltoC rowdsalesmartcontract 3)C rowdsalecalculatesthenumberofIZXtotransfer,andchangeifneeded.Itexecutes3
+
+operations: a.TransferIZXtokenstoaddressofT okenH older b.SendEtherforIZXTokenstoM ultisigW alletsmartcontract
+
+4)TokenHoldercannowqueryforbalanceofIZXtokens.
+
+
+
+IssueScenario
+
+Figure6.IZXD riveTokenIssuescenariodiagram 1)T okenH olderownsIZXE RC-20tokens.T okenH oldersignstheSaleO rdertransaction,
+
+expressingtheintenttoissueaspecificamountofIZXDrivetokensforspecificprice; 2)IZXT okenbuyersignstheBuyOrdertransactionalongwiththem aximumpriceand
+
+amounthewishestopay.Transactionispayable,itcoststheamountequaltotheprice ofIZXtokens.IZXTokenbuyertransfersthisamounttoTokenD river; 3)T okenD riversmartcontractexecutestheclearancebetweenS aleOrdersinthequeue andtheB uyO rder; 4)TheresultofclearanceisanumberofissuedIZXD rivetokens,transferredtoCampaign Managersmartcontract,andboundforIZXTokenbuyer. 5)IZXTokenbuyernowcanuseIZXD rivetokensonCampaignManagersmartcontract. EtherisreservedonTokenDriversmartcontractandcanberequestedback,orspent onconvertedclient(lookIZXD riveB urnScenario)
+
+
+
+CampaignS cenario
+
+ Figure7.CampaignScenarioD iagram
+
+1)A dvertisershouldhaveanumberofIZXD rivetokens(lookIZXD riveIssueS cenario) beforerunningacampaign.Advertisersetsupaclientacquisitioncampaign,defining desiredauditorium,game,andmanyotherrelevantparameters;
+
+2)AdvertiserissuesasignedtransactiontorunacampaigntoC ampaignM anagersmart contract.CampaignManagersmartcontractreservestheissuedtokensforthis campaignthatlatercanbeusedforthecampaign;
+
+3)Advertiserannouncesthegamecampaignstart,P layersstartcollectingIZXDrivetokens; 4)Whenplayerw insagame,theGameissuesatransactiontoCampaignM anagersmart
+
+contractthattheplayercollectedtherighttoburnthetoken.T hisrightm aybea temporal,dependingoncampaign'ssettings.Iftokengetsexpired,therighttousethis tokenisrevoked.R ightstoburnthetokensaredisplayedinthepersonalaccountof Player(inhisgame"wallet")asownbalance; 5)AfterthePlayergetsconvertedtoAdvertiser'sclient,heaskstoburnthetoken. AdvertiserissuestheBurntransaction,whichremovesthetokenfromtheCampaign Managerregistry,andtriggerstheIZXDriveBurnS cenario.
+
+
+
+LoyaltyProgramS cenario
+
+ Figure8.LoyaltyProgramScenarios
+
+1)AdvertiserstartsaloyaltyprogramcampaignthesamewayasdescribedinCampaign Scenario.T hecampaigndefinesimportantparameters,suchasspecialofferconditions andthetimeframeforaloyaltyprogramactivity;
+
+2)A ftercustomerexecutestherulesofloyaltyprogram,advertiserburnsthetoken.
+
+
+
+PaymentScenario
+
+ Figure9.PaymentS cenarios
+
+1) CustomerreceivesissuedIZXDrivetokens,asrole"IZXTokenB uyer"inIssue Scenario
+
+2) Merchant,acceptingpaymentsinIZX,setsupacampaigninCampaignManager 3) Merchantcreatesaninvoicetocustomer,owingIZXDrivetokens(IZXDriveB uyerat
+
+IssueScenario).ThiscanbedoneusingQRcodescanbetweenmobiledevices,or usingotherwirelesstechnology; 4) Customerissuesthetransactiontoburntheinvoicedamountoftokens,toCampaign manager; 5) Merchantm ayaskforreceipt,thattokensw ereburnt; 6) AfterexecutingtheBurnS cenario,theamountinE ther,accordingtothenumberof tokensburnt,w illbetransferredtoM erchantaccount;
+
+
+
+BurnS cenario
+
+Figure10.B urnScenarioDiagram AftertheIZXD rivetokenisburnt,theTokenDriveristriggeredtodistributethereserved Ether(receivedintheprocessofIssueScenario).T hetriggerisexecutedinbatch4toavoid largeE thereumgasconsumptiononeverytokenburn. Etherisdistributedtoallparticipantswhohaveparticipatedinthetokenlifecycleaccording toTokenUtilitysection.
+
+DecentralizedA pplications
+
+Decentralizedapplications(DApps)areutilizedbyparticipantstouseB lockchainProtocolin aconvenientw ay. Also,someD Appfunctionalitycanbeembeddedinothersoftwareusedbybusinessina scopeofbusinessprocesses. IzetexdevelopsnecessaryD AppsandhelpsotherstointegratecapabilitytouseIZX protocolintheirapplication.O pensourcerepositories[19]containtheAPI'sandexamples forthirdpartydevelopers. ThelistofDAppsbelowisnotfinal,aseverydevelopercanmakeownapplicationbasedon BlockchainP rotocol. 4T ransactionbatching:https://blog.ethereum.org/2014/09/17/scalability-part-1-building-top
+
+
+
+TokenHolderC onsole
+
+TokenH oldersuseconsoletoperformtasksrelatedtoIZXD rivetokenissuance: 1. Putsellordersforautomatictokenproduction; 2. Issuetokensforaspecificbuyer; 3. Monitorthegrantedissueamountsandtokenusagestatistics; 4. Monitortheburnprocessandassociatedrewards.
+
+TokenH olderconsolewillbeimplementedasin-browserD App.Itcommunicatesw ithT oken Driver,C ampaignm anagerandIZXERC-20tokensmartcontracts.
+
+CampaignM anagementConsole
+
+Advertisersusecampaignm anagementconsoleto: 1. setupcampaigns; 2. tracktokenbalance; 3. placebuyorders; 4. monitorcampaignperformance; 5. extractandanalyzedatafromallcampaignsusingreal-timeandhistoricaldata.
+
+Campaignmanagementconsolewillbeimplementedasin-browserDApp.Itcommunicates withTokenDriverandC ampaignmanagercontracts.
+
+MobileG ame
+
+Playerusesm obilegameIZXtocollecttokensandrequesttoburnthemA dvertiser. MobileG ameallowsPlayersto:
+
+1. playthegametoearntokens; 2. seethetokenbalancesasrightstoburntokens; 3. conditionsandm ultimediamaterialsaboutspecificcampaignsw heretokensare
+
+used; 4. requesttoburnthetokenfromadvertiser.
+
+MobilegameprototypehasbeencreatedonMVP(lookMVPsection)stageoftheprojectas AppleS tore/GoogleP layapplication.MobileapplicationisinteractingwithC ampaign managersmartcontract.
+
+AdvertiserC ashierMobileA pplication
+
+Advertiserusescashiermobileapplicationasatoolto: 1. burntokensbyrequest(asQRcodescan)fromclient; 2. receivethereceiptfortheactualnumberoftokensburnt.
+
+Advertisercashierapplicationw asimplementedasapartofM VP(lookM VPsection),asa partofIZXG ame.M obileapplicationisinteractingw ithC ampaignmanagersmartcontract.
+
+
+
+ProofofC oncept
+
+Totesttheviabilityofourideaswedecidedtobuildtheprototypewhichcurrentlyincludes:  mobilegamewithaugmentedrealitywhichm echanicsprettym uchremindsa well-knownP okemonGO;  thebackendformarketerwhichallowshimtosetupcustomizedm arketing campaignsbymintingbrandedtokensandplacingthemonthemap;  thesetofsmartcontractsgoverningIZXtokenemissionandparticipantrewarding rules.
+
+Questionswewantedtofigureoutinfirstplace:  caninterestforthegamereallyconvertplayersintocustomersforbusinessthat placetheirproposalsintheformofgameartifacts?  doesblockchaintransactiontransparencyhelptoensuresecurityfromthefraudulent behaviorofprotocolparticipants?
+
+Theanswersfollowdirectlybasedonthedataobtainedfromthetests.
+
+MVP
+
+Izetexusestheagileapproachintheproductdevelopment.W em oveforwardthroughthe HADI5cyclesbyformulatingcertainhypothesisandtestingthemintherealmarket conditions.InA ugust2017w ereleasedtheB etaversionofIZXPlatformalongsidewiththe samenameaugmentedrealitygameconnectedtoit.
+
+5H ypothesis-Action-Data-Insight
+
+
+
+Figure11.IZXmobilegamescreenshots Them obilegameIZXisavailableatbothGooglePlayandAppleS toreandhavethousands ofactiveplayersmonthly,asperO ctober2017.T hegamedemonstratesafoldincreasein audienceeverym onth,asshownonthediagram:
+
+Figure12.IZXgamemonthlyactiveplayersdiagram
+
+
+
+Statisticalreports
+
+Allthedataregardingplayermetrics,marketingcampaignefficiency,gamespreadaround theW orldandalotofotherinformationisavailableatanalyticaldashboardsintheplatform backendw hereadvertisershaveanaccesstowiththeirpersonalaccounts.
+
+
+
+Figure13.IZXstatisticaldashboard
+
+
+
+Someoftheplatform'sbasicmetricsvisualisationsarepubliclyavailablereal-timeonoursite forallw hoareinterested:http://stat.izx.io/superset/dashboard/8/.
+
+Testsperformed
+
+
+
+Duringpastmonthswehaveperformedanumberoftestsofourplatformforpromotionof thefollowingenterprises:
+
+
+
+Date
+
+13/08/17 13/08/17 29/08/17 29/08/17 29/08/17
+
+
+
+Enterprise
+
+Restaurant1 Restaurant2 Bank1 Bank2 ICOstartup1
+
+
+
+Tokens placement
+
+
+
+Numberof Token
+
+
+
+Token
+
+
+
+Participants gathered redeemed
+
+
+
+Citystreets 39
+
+
+
+61
+
+
+
+22
+
+
+
+45
+
+
+
+67
+
+
+
+35
+
+
+
+Conference 55 halland streetsnearby 35
+
+
+
+175
+
+
+
+118
+
+
+
+75
+
+
+
+49
+
+
+
+38
+
+
+
+107
+
+
+
+65
+
+
+
+29/08/17
+
+29/08/17
+
+03/10/1705/10/17 12/10/1713/10/17
+
+
+
+Government agency Hi-Tech Technopark ICOstartup2
+
+ICOstartup3
+
+
+
+22/08/17- IZX 21/10/17
+
+Table4.IZXM VPtests
+
+
+
+41
+
+61
+
+Conference 20 hall
+
+Conference 27 halland streetsnearby
+
+Alllocations 795 whereapp usersappear
+
+
+
+78
+
+
+
+55
+
+
+
+171
+
+
+
+107
+
+
+
+84
+
+
+
+9
+
+
+
+69
+
+
+
+25
+
+
+
+4607
+
+
+
+2639
+
+
+
+IZXm arketingcampaignsallowedrestaurantstoofferreal-timediscountsduringlow-activity periods.G ametokensweredistributedoncitystreets,theyrepresentedfreedrinksand cakesprovidedfornewcustomers.T histechniquebroughtalotofnewclientstothese restaurantsduringthetestingperiod.A lladvertisershavefulfilledtheirobligationson providingrealvaluetoplayeronexchangetogatheredtokens.
+
+
+
+Only12tokensredeemedof84gatheredduring"ICOstartup2"campaign,becausethe majorityofparticipantsturnedouttobecheatersandgatheredtokensusinggeolocation spoofsoftware.T hiskindoffraudiseasilydetectedbytheplatformalgorithms,andall tokensobtainedunfairlyarerevoked.
+
+
+
+IZXtokensrepresentourairdroptokens:theyareexchangedon1-to-1basistoourERC20 tokensdistributedtothecommunityduringourcrowdsale.T odistributeairdroptokensfairly, wedevelopedspecialalgorithmwhichputstokensnearagameplayerincasethereareno tokenslocatedintheepsilonneighborhoodofplayer'sposition.Thistrickallowsusto monitorthenaturalgamespreadaroundtheGlobe.
+
+
+
+Figure14.IZXgamespreadaroundtheGlobe
+
+
+
+TothedateofOctober26th,tokenshadbeendistributedover60countries.Thetop10 countriesbytokenquantityare:
+
+
+
+Country
+
+
+
+Tokens
+
+
+
+RussianF ederation
+
+
+
+10833
+
+
+
+Ukraine
+
+
+
+1774
+
+
+
+Spain
+
+
+
+629
+
+
+
+India
+
+
+
+264
+
+
+
+Belarus
+
+
+
+258
+
+
+
+Kazakhstan
+
+
+
+177
+
+
+
+France
+
+
+
+164
+
+
+
+UnitedS tatesof
+
+
+
+115
+
+
+
+America
+
+
+
+Turkey
+
+
+
+78
+
+
+
+Uzbekistan
+
+
+
+72
+
+
+
+Table5.IZXgametop-10countries
+
+
+
+Summarystats
+
+ Totalp articipants:3484  Totaldistancew alkedb yplayers:6715km  Totaltimespenting ame:1533hours  Totaltokensgathered:6814  Totaltokensredeemed:1708
+
+Mainfindings
+
+Theanalysisofthedatagatheredduringthetestsgivesusanumberofinsights.Among themthem ajoronesare:
+
+ Ourconceptworks:Playersarereadytoputtheirphysicaleffortstow alktangible distancesandgatherIZXtokens.T heydocometoAdvertiserstoredeemthetokens, naturallyconvertingthemselvesintocustomers.
+
+ Player's'interesttothegamedoesnotdependonthevalueoftheprize:thegameis interestingbyitself,quiteenoughforjustgatheringtokensw ithoutredeemingthem.
+
+ AchancethatPlayerw illredeemearnedtokenreallydependsontheprizevalue.  Artificialbarriertoredeemingatokenreducestheconversionrateofthetokeninto
+
+theprize.Forthesakeofthebestcampaignefficiency,Advertisershouldprovidean instantandeasytokenredeemingprocess.  Widerangeoftokentypesavailableforgatheringsimultaneouslyinthesamelocation leadsPlayertotakethemall,indiscriminately.  Peoplearereadytowalkseveralkilometersdailyduringtheplay.A ndtheyreturnto thegameregularlyonadailybasis,evenwithoutanyspecificeventsorcampaigns.  Thegameengendersacertainamountoffanaticalplayersw hoarestartingtocollect tokensprofessionally,butstillfollowingtherules.Asw ellasacertainamountof cheaterswhosebehavioralpatternsarerecognizedeasilybythesystemAI algorithmsthroughtransactionsanalysis.  Blockchainbringsvaluetotheprocessinthesecurityaspect:transparencyof transactionsavailableonthepublicledgermakesiteasytodetectfraudulent behavior.Thism otivatesadvertiserstofulfillobligationsentirely,aseverybody, includingpotentialcustomersandotheradvertisers,canseethetransactions.A nd moreimportantly,thisletstodetectcheatingplayerspubliclyandverifiable,sothat theimpartialityofgivenpenaltiesraisesnoquestion.  Interestingly,theuseofblockchaintechnologyalsobringsanadditionalincentiveto players:theyarehappytoearncryptocurrencythroughthegame.
+
+
+
+Advantages
+
+HereisIZXcomparisonwithtraditionalloyaltyprograms
+
+
+
+Zero-costsetup Zero-timesetup Nearreal-time Universalpoints AttractsN EWcustomers Decentralized Transparent Secure
+
+
+
+Loyaltyp rogram IZX
+
+
+
+-
+
+
+
++
+
+
+
+-
+
+
+
++
+
+
+
+-
+
+
+
++
+
+
+
+-
+
+
+
++
+
+
+
+-
+
+
+
++
+
+
+
+-
+
+
+
++
+
+
+
+-
+
+
+
++
+
+
+
+-
+
+
+
++
+
+
+
+HereisIZXcomparisonw ithawell-knownaugmentedrealitygame
+
+
+
+Player'shappiness AugmentedR eality AllgamefunctionsFREE Earningrealvalue Isaplatform Letsyoum onetizeyourapps OpenandD ecentralized Customizableforadvertisers
+
+
+
+PokemonGO + + -
+
+
+
+IZX + + + + + + + +
+
+
+
+Conclusion
+
+Izetexprovidesneweffectiveapproachforcustomeracquisitionandretention.Itsprotocol solvesthenumberofcommonproblemsinherenttotraditionalcentralizedm arketing services.IZXplatformbuildsnewm arketfordigitaladvertisingbyencouraginggame developerstointegratetheirappswithdecentralizedmarketingprogram.Itremovesthe inputthresholdforbusinesstobuildtheirownoriginaleffectivedigitalm arketing.
+
+IZXtokensbecometheactuatingm ediumforvaluetransmissionbetweenGame Developers,PlayersandA dvertisers,harmonicallyconvertingvirtualprizestorealones,and gamerstocustomers.
+
+
+
+References
+
+[1]C OLLOQUYLoyaltyC ensusReport2017https://colloquy.com/reports/ [2]A dAge,A dFraudW illC ost$7.2B illionin2016,A NAS ays,U pN early$1Billion, http://adage.com/article/digital/ana-report-7-2-billion-lost-ad-fraud-2015/302201/ [3]SimonKhalaf,LaliKesirajuU .S.ConsumersT ime-SpentonMobileC rosses5H oursa Day,FlurryAnalyticsBlog http://flurrymobile.tumblr.com/post/157921590345/us-consumers-time-spent-on-mobile-cross es-5 [4]JeremyEpstein.TheC MOP rimerF orTheB lockchainWorld https://www.neverstopmarketing.com/wp-content/uploads/2017/07/CMO-Primer-For-The-Blo ckchain-World-NSM.pdf [5]W hatisD app?https://ethereum.stackexchange.com/questions/383/what-is-a-dapp [6]R opstenTestNetworkhttps://github.com/ethereum/ropsten [7]E OShttps://github.com/EOSIO [8]WAVEShttps://github.com/WAVESPLATFORM/ [9]Augmentedrealityhttps://en.wikipedia.org/wiki/Augmented_reality [10]A ppleA Rkithttps://developer.apple.com/arkit/ [11]A ppleVRprojecthttps://www.macrumors.com/roundup/apple-vr-project/ [12]F utureiPhone'sw illuse5nmChipstoS upportA R,AI,DeepLearningandP rovide PowerforD ays http://www.patentlyapple.com/patently-apple/2017/06/future-iphones-will-use-5nm-chips-to-s upport-ar-ai-deep-learning-and-provide-power-for-days.html [13]Google'saugmentedrealityprojectisthecoolestthingitshowedoffthisw eek http://www.businessinsider.com/google-tango-2017-5 [14]S amsungtoannounceA ugmentedR ealityglassesatMobileW orldC ongress https://mspoweruser.com/samsung-announce-augmented-reality-glasses-mobile-world-cong ress/ [15]DeepLearninghttps://en.wikipedia.org/wiki/Deep_learning [16]SuperSethttps://github.com/apache/incubator-superset [17]RandomF oresthttps://ru.wikipedia.org/wiki/Random_forest [18]D eloitteresearch"Makingblockchainrealforcustomerloyaltyrewardsprograms" https://www2.deloitte.com/content/dam/Deloitte/us/Documents/financial-services/us-fsi-maki ng-blockchain-real-for-loyalty-rewards-programs.pdf [19]IZXG ithubOpensourcerepositoryhttps://github.com/izetex [20]IZXG ameforA ppleIOShttps://itunes.apple.com/us/app/id1273219641 [21]IZXG ameforA ndroidhttps://play.google.com/store/apps/details?id=io.izetex.one [22]BlockchainT echnologyWillE nableA ccountabilityinDigitalA dvertising https://cointelegraph.com/news/blockchain-technology-will-enable-accountability-in-digital-ad vertising
+
+
+
+

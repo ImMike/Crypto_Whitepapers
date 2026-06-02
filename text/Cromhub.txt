@@ -1,0 +1,1109 @@
+PROJECT WHITE PAPER ------------------------------------------------------------------------
+
+
+
+CROM is a tracking and settlement clearing house for the $500bln/year digital marketing industry. CROM uses blockchain technology and smart contracts to provide transparency, trust and liquidity while preserving anonymity where needed. The CROM token will furnish holders with permanent advantages when using CROMhub; and it will be freely tradable.
+
+DISCLAIMER: This draft white paper is for discussion and pre-information purposes only, provided as a courtesy. The information contained herein is subject to change, no part of this draft document is legally binding or enforceable. Please do not copy or disseminate any part of this document without written approval by sure yield inc limited  and without including this disclaimer. Do not base an investment decision solely on the information contained herein. Copyright 2017 sure yield inc limited , all rights reserved.
+
+01 / 19
+
+
+
+TABLE OF CONTENTS ------------------------------------------------------------------------
+
+Table of Contents .............................................................................................................................................................. 02 Executive Summary .......................................................................................................................................................... 03 The CROM Project ............................................................................................................................................................. 04
+
+Project Journey ................................................................................................................................................... 04 Market .................................................................................................................................................................. 04 Problems in the Market Today ......................................................................................................................... 04 The Product ....................................................................................................................................................................... 06 Outline .................................................................................................................................................................. 06 Advantages .......................................................................................................................................................... 07 Comparison to existing blockchain based marketing solutions ............................................................. 08 Milestone 1 .......................................................................................................................................................... 09 Milestone 2 .......................................................................................................................................................... 10 Pricing & Revenue Streams .............................................................................................................................. 10 Technology ........................................................................................................................................................................ 11 General overview ................................................................................................................................................. 11 CROM on-chain implementation .................................................................................................................... 11 CROM off-chain implementation ..................................................................................................................... 12 Core Team .......................................................................................................................................................................... 12 Project Timeline ................................................................................................................................................................. 13 CROM token & ICO .......................................................................................................................................................... 14 The CROM token ............................................................................................................................................... 14 The ICO ................................................................................................................................................................. 14 Use of funds ......................................................................................................................................................... 15 ICO Legal Disclaimer ........................................................................................................................................................ 16 Copyright Information ...................................................................................................................................................... 19 Additional Resources ....................................................................................................................................................... 19
+
+02 / 19
+
+
+
+EXECUTIVE SUMMARY ------------------------------------------------------------------------
+
+Tracking and settlement in todays performance marketing ecosystem is not optimal. Fraud and long delays in payments are the norm. CROM intends to change that. We propose to handle transactions in performance marketing between parties (advertiser  network  publisher) using blockchain technology and cryptocurrency instead of classic money transfer. Tracking today means conveying information about events that are connected to payments of fees from the advertiser to the final publisher, often across multiple middlemen (,,get paid for a successful sale"). Launching in the affiliate market, which is believed to grow to $6.8bln by 2020, CROM strives to manage a substantial part of the tracking and financial settlements. Once established, CROM will extend into the $500bln+ digital marketing industry. As opposed to today's system of ex-post wire transfers, CROM will instantly settle amounts due with all parties involved in one transaction by transferring cryptocurrencies between parties. The platform will be available stand-alone and for API-integration into existing platforms. Thereby, it helps to substantially grow liquidity in the market: by speeding up money transfers and allowing all marketers to re-invest faster. Such transfers incur a fee, which represents the base revenue stream. CROM token holders paying for transactions can diminish this fee substantially, thereby saving costs. Moreover, CROM token holders receiving transactions can earn bonuses on transactions. Thus, all parties in the marketing ecosystem profit from holding token, this creates demand and a lasting speculative value for investors. The founding team behind CROM have been active in the digital advertising market for as many as 20 years; it is well connected to key players in the market and is committed to create a marketable, revenue-generating real-world product fast. Based on this knowledge and network, CROM intends to work together with the largest media platforms and tracking providers. The CROM token is unique in representing lasting monetary advantages for token holders. It will be freely tradable and highly sought after by all parties in the digital performance market.
+
+03 / 19
+
+
+
+THE CROM PROJECT ------------------------------------------------------------------------
+
+Project Journey
+
+"What if you could pay for a CPA sale instantly with Bitcoin?"
+
+This question was in the mind of our founding team already as early as 2015. Back then, they worked on different projects in different positions in different companies, but all in the performance marketing industry. They knew each other already, discussed the flaws of the existing pre-dominant settlement process in performance marketing and played with ideas and scenarios of marrying blockchain technology to marketing somehow.
+
+With the advent of Ethereum a potential realization of this idea became more realistic.
+
+Key members of the team have experience in designing and implementing a "traditional" campaign management and tracking platform. This platform is live and is generating 7-digit revenues. It entails a full-blown tracking system, campaign management, traffic shaping and fraud management modules, extensive API-capabilities and an inherent business intelligence system.
+
+In late 2016 therefore, work began on first prototypes of smart contracts managing performance marketing tracking and settlements.
+
+The project is now at a stage that requires substantial scaling of investment, hence the proposal of an ICO to fund the acceleration of development.
+
+Market
+
+At this point, the total addressable market is being defined as the "Performance Marketing Ecosystem". With CROM, we propose to handle all CPx events which are further down the value chain than clicks. This can be Costper-Lead, -per-Sale, -per-Order, -per Install, and similar. This particular market is estimated at $6.8bln by 20201.
+
+Going forward CROM will handle also CPC and CPV models, potentially even CPM. This market is much bigger; being estimated well beyond $500bln2. While the business model will immediately work, technological advances must be made in the blockchain technology to handle such large amounts of transactions.
+
+
+
+04 / 19
+
+
+
+1 http://mthink.com/affiliate-marketing-industry-grow-6-8-billion-next-five-years/ 2 https://www.cnbc.com/2016/12/05/global-ad-spend-to-slow-in-2017-while-2016-sales-were-nearly500bn.html
+
+
+
+Problems in the Market Today
+
+In a nutshell, the tracking and settlement process in todays performance marketing ecosystem is tedious and long-winded. It can be pictured like this:
+
+
+
+Advertiser notifies a sale to Intermediate
+
+
+
+Then, Intermediate notfies a sale to Publishe r
+
+
+
+Publishers asks Intermediate for sum of verified sales at end of month
+
+
+
+Intermediate verifies sales to Publisher
+
+
+
+Advertiser verifies sales to Intermediate
+
+
+
+Intermediate asks Advertiser for a sum of verified sales at end of month
+
+
+
+(Publisher contest s final sales numbe r with Intermediate; negotiations )
+
+
+
+(Intermediate contests final sales number with Adver tiser; negotiations )
+
+
+
+Publisher sends invoice to Intermediate, usually ,,net30"
+
+
+
+Intermediate pays Publisher
+
+
+
+Advertiser pays Intermediate
+
+
+
+Intermediate sends invoice to Advertiser, usually ,,net30"
+
+
+
+This process results in - time- and resource-intensive settlement cycles, - uncertainty about the months performance, and - vulnerability to fraud and therefore a general lack of trust among market players.
+
+Now therefore, we specify three major problems:
+
+Trust Parties get events reported through various tracking systems in near-time. Events might get scrubbed or the count of events might get corrected. All parties might be involved in time and resource intensive negotiation cycles to arrive at final numbers. Currently, transactions in the digital advertising market are not transparently handled and inhomogeneously verified. Thus, inherent to the digital advertising market are business risks which are countered with higher prices and long verification (advertisers) and payout (publisher) periods.
+
+Liquidity Further, liquidity is a constant problem, with advertiser budgets being only slowly spread along the value chain because of aforementioned trust issues. The accepted timeframe to pay for events is "net30" after the end of a billing period, usually one month. Thus, the time from a payable event to actual funds received on the bank account today averages 45 days.
+
+Intermediates, such as marketing networks, often prepay publishers in shorter cycles, thereby giving credit and assuming the business risk of not getting paid (in full) by the advertiser. For such services, the intermediate keeps a share of the payout, further diminishing the profit for the publisher.
+
+Cost Transferring funds around the world in today's globalized digital marketing ecosystem often incurs substantial fees, which eventually get deducted from payable funds. PayPal, for example, charges the advertiser in Germany a transaction fee of 3.3% + fixed fee (depends on the currency) when paying a network or publisher in, let's say, Israeli shekel. For a wire transfer, Deutsche Bank would charge 15.00 flat for any amount + exchange fee + fees for the receiving party (depending on their bank).
+
+
+
+05 / 19
+
+
+
+THE PRODUCT ------------------------------------------------------------------------
+
+
+
+Outline
+
+
+
+With CROM we propose a "clearing house" approach among n parties in a value chain. As opposed to the status quo described above, settlement along the whole value chain will be almost instant.
+
+
+
+A value chain in that sense is a chain of events, triggered by the advertiser, triggering i) the flow of information about the event (the "postbacks"); and ii) a financial settlement (the CPx).
+
+
+
+Such parties can be
+
+
+
+-
+
+
+
+Advertisers  who register a conversion, inform all other parties via tracking mechanisms
+
+
+
+
+
+
+
+and are willing to send funds
+
+
+
+-
+
+
+
+Networks  defined as intermediaries between advertisers and publishers. Networks can 
+
+
+
+
+
+
+
+send and receive funds.
+
+
+
+-
+
+
+
+Publishers  defined as final target source of a conversion. Publishers can receive funds but
+
+
+
+cannot send.
+
+
+
+The advertisers wants to buy "conversions" (the CPA, CPO, CPL etc.) which, upon evaluation, they are willing to pay a certain amount for.
+
+
+
+The network (or intermediary) receives the information about such an event and, usually with a time delay, the payment. The network forwards the information about the event to the next player in the value chain, let's say, the final publisher. Then, the network splits the payment received and keeps one part for its services and sends the other part to the publisher; again, with a time lag.
+
+
+
+The publisher receives the information about the event and will then receive the payment.
+
+
+
+A value chain can consist of as little as two parties (within a longer chain, unknown to CROM); or many parties. But for each event, there is always one advertiser, n intermediates (=networks) and one publisher.
+
+
+
+All parties use tracking technology that can be unique to them or it can be licensed (HasOffers, Offerslook, Voluum, etc.).
+
+
+
+CROM intends to be complimentary to existing business and legal relationships among market players in the performance marketing ecosystem. Such relationships will still be governed by Insertion Orders. Normal tracking and campaign management systems will still be used. Payout can still be agreed upon in any "fiat currency", as calculation of crypto-transfer-amount happens in real-time.
+
+
+
+As opposed to other efforts to marry blockchain technology with digital marketing, the barriers to entry will be very low to foster adoption.
+
+
+
+CROM-based transactions are expected to be added as an option to the most common digital advertising marketplaces. Since "money for invoice at the end of the month" transactions will still exist in parallel, current market players can easily transform their way of acquisition over time to be handled with CROM.
+
+
+
+We propose CROM to be available as a cloud-service accessible to users both as a web application and an API that can be integrated with existing tracking systems.
+
+
+
+06 / 19
+
+
+
+Advantages With CROM we propose a "clearing house" approach among n parties in a value chain. As opposed to the status quo described above, settlement along the whole value chain will be almost instant.
+
+Intermediate
+
+
+
+Advertiser
+
+
+
+Publisher
+
+
+
+transparent smart contract
+
+
+
+Liquidity: by speeding up the transfer of funds
+
+
+
+CROM
+
+few minutes
+
+
+
+Traditional settlement via bank transfer
+
+
+
+Cost: by being considerably cheaper per transaction (depending on circumstances)
+
+
+
+2 - 6% plus incidental other fees CROM: 1 - 3%
+
+
+
+av. 45 days
+
+
+
+Looking at the individual market players, there are distinct advantages (and potential disadvantages) for the market players when using CROM:
+
+
+
+Advertisers:
+
+
+
+-
+
+
+
+Proposed marketing budgets are "prepaid" to campaigns upon creation, which makes budget
+
+
+
+
+
+
+
+use controllable. Once budget is consumed, there will be no more sales accepted; no ex-post
+
+
+
+attribution discussions.
+
+
+
+-
+
+
+
+Transaction cost can be lower than with traditional ways of settlement, especially with
+
+
+
+international transfers.
+
+
+
+-
+
+
+
+In case of fraud or emergency, funds can be retracted from the campaign almost immediately.
+
+
+
+-
+
+
+
+Once advanced:
+
+
+
+l
+
+
+
+Advertiser has unprecedented control, as funds are only paid out once full
+
+
+
+value chain is known
+
+
+
+l
+
+
+
+Advertiser can blacklist networks or publishers, even without knowing whether
+
+
+
+
+
+
+
+and where in the chain such blacklisted players are
+
+
+
+07 / 19
+
+
+
+Networks:
+
+
+
+-
+
+
+
+Networks do not need to "give credit" to publishers demanding faster payment anymore, as
+
+
+
+
+
+
+
+funds are immediately available. Some networks might see this as disadvantage, as "giving
+
+
+
+
+
+
+
+credit" is part of their value proposition.
+
+
+
+-
+
+
+
+Transaction costs are lower than with traditional ways of settlement, especially with 
+
+
+
+international transfers.
+
+
+
+-
+
+
+
+Margin (the networks share) can be routed to the networks own wallets in real-time. Margin
+
+
+
+
+
+
+
+share can be changed in real-time.
+
+
+
+- Once advanced:
+
+
+
+l
+
+
+
+Network can "qualify" with advertisers by using CROM, thereby gaining a competitive
+
+
+
+
+
+
+
+advantage (but losing options to "cheat").
+
+
+
+l
+
+
+
+Networks can blacklist other networks or publishers, even without knowing whether
+
+
+
+
+
+
+
+and where in the chain such blacklisted players are
+
+
+
+Publishers:
+
+
+
+-
+
+
+
+Publishers have full disclosure of the actual campaign payout and budget
+
+
+
+-
+
+
+
+Publishers get funds almost immediately
+
+
+
+-
+
+
+
+Publishers can have tax advantages
+
+
+
+-
+
+
+
+Publishers can have privacy advantages
+
+
+
+-
+
+
+
+Publisher can get a bonus on payments, depending on their ownership of [CROM] token
+
+
+
+Comparison to other blockchain-based marketing solutions
+
+There are a few projects in existence which address various aspects of the digital marketing ecosystem. We believe that CROM is not in direct competition with any of them; rather each project serves a specific need.
+
+Selected projects are:
+
+AdEx: "AdEx is a blockchain-based ad exchange aiming at disrupting the existing online advertising landscape and address its significant problems: advertising fraud, privacy and consent to receiving sponsored messages, etc."3
+
+We believe, that AdEx addresses a different market need than CROM as it focuses on the exchange function, while CROM serves as tracking and settlement clearing house.
+
+Basic Attention Token: "Basic Attention Token radically improves the efficiency of digital advertising by creating a new token that can be exchanged between publishers, advertisers, and users."4
+
+BAT is taking a completely different approach as their solution mainly sits at the interface between publishers and users. It also requires a specific browser to be used by end users. CROM does not interfere with the way publishers and users interact.
+
+adToken: adToken runs adChain. "The adChain Registry is a smart contract on the Ethereum blockchain, which stores domain names accredited as non-fraudulent by adToken holders".5
+
+adToken focuses on a very different value-add initially, which is white-listing of reputable publishers. It could be considered complementary, not in competition with CROM.
+
+
+
+08 / 19
+
+
+
+3 https://www.adex.network/ 4 https://basicattentiontoken.org/ 5 https://adtoken.com/#FutureVision
+
+
+
+Adshares: "Adshares Network is a decentralized, peer-to-peer market for programmatic advertising. Adshares gives advertisers and publishers ability to trade directly without the need for centralized ad exchanges."6
+
+Adshare aims at a peer-to-peer exchange of impressions and payment for these impressions. While this is a laudable approach, it also requires substantial changes in the way publishers and advertisers interact, and it strives to cut out middlemen who deliver value add today. The barriers for entry will be much higher compared to CROM.
+
+Other noteworthy projects are Qchain (,,open, transparent, and decentralized digital marketing solutions") and Papyrus (,,Decentralized Advertising Ecosystem") - the impact of both cannot be clearly estimated because of the broad nature of their projects.
+
+
+
+Milestone 1
+
+In milestone 1, we will finish and publish a proof-of-concept, connecting any two parties along a value chain. We foresee this happening first at the "publisher end", i.e. between the publishers and the networks holding a relationship with them.
+
+
+
+Advertiser (can also be a network)
+
+normal tracking platform
+
+
+
+Publisher (can also be a network)
+
+normal tracking platform
+
+
+
+Advertiser crypto wallet
+
+
+
+Publisher crypto wallet
+
+
+
+The frontend will be released. This includes account management and all fundamental functionality to use CROMhub. Advertisers as well as publishers will be able to register, log in, set up campaigns, pre-pay budgets, set and test postbacks. CROM tokens can be managed; fees and bonuses are calculated. There will be real-time statistics and dashboards with campaign KPIs. It will be possible to transfer earnings.
+
+The API will be released, enabling integration of CROM functionality into "traditional" tracking platforms.
+
+Further, milestone 1 will see the first real-life implementation into an existing tracking platform.
+
+
+
+09 / 19
+
+
+
+6 https://adshares.net/
+
+
+
+Milestone 2 In milestone 2, we will enable a full value chain, creating a clearing house that will only release funds once all parties along the chain are known and approved. At the same time, funds will be released to all parties in neartime.
+
+We propose the provision of smart contracts for any individual value chain publisher and advertiser (so, a campaign is mirrored in a smart contract). This contract will be available to everyone for inspection prior to the deployment. Once deployed, it will be a core piece that holds all information about the agreement between the parties like the payout amount, fee and bonus calculation, remaining budget as well as the functionality of transferring the funds. This way it is ensured, that the whole transaction is as transparent as possible and better controlled over the campaign lifetime. The portal functionality will be extended by business intelligence (BI) functionality. First, there will be an "offchain" component for KPI visualization and traffic data. Second, there will be an "on-chain" component, making the behavior of the smart contracts and the data transmitted among them transparent. Potentially, the on-the-fly exchange of currencies will already be possible. Pricing & Revenue Streams Advertisers and networks will have to pay a small fee on each transaction, which will be transparently deducted from their wallet. Publishers do not get charged for receiving funds. The fee will be set in milestone 1 and can be adapted to market reality. We propose the fee to be substantially lower than the average of traditional transaction fees. Such fees will be the main revenue stream for the company and will provide funds for future development. We foresee that many customers of CROMhub will hold token to manage their cost for CROMhub.
+
+10 / 19
+
+
+
+TECHNOLOGY ------------------------------------------------------------------------
+
+General overview
+
+CROMhub will be built upon Ethereum.
+
+Ethereum was designed with the explicit goal of doing more than just creating and recording transfers of a blockchain network's native token. Instead, it can be thought of as a generalized blockchain technology with a built-in Turing-complete programming language. The language enables anyone to write programs with custom transaction formats and state transition functions, essentially specifying whichever rules they want that can then be uploaded to the blockchain, and the blockchain will automatically interpret the rules for them.
+
+The generalized technology has enabled what are known as "smart contracts", which are computer programs that directly control digital assets (e.g. token, domain names, IDs, etc) and can be used to encode protocols on the blockchain. Contracts have their own addresses and own digital assets. A contract that owns digital assets can only send the asset to another party via the rules defined in the contract's code, and this transfer of digital assets is visible to every party in the network.
+
+In Ethereum, smart contracts can accept and store Ether and data, and can send that Ether to other accounts or smart contracts. Smart contracts can serve many different functions because they can encode and enforce complex issuance rules and automated incentive structures for cryptocurrencies, digital financial contracts, escrows, multi-party protocols (e.g. auctions), and more. As a result, using smart contracts on the Ethereum blockchain is currently the industry standard for issuing custom digital assets. The advanced features and active ecosystem of Ethereum make it a natural fit for the CROM project.
+
+CROM on-chain implementation
+
+CROM tokens will be released in the ERC20 standard on the decentralized Ethereum blockchain. The standard allows us to make the token easily interchangeable and ensures it is compatible with every popular wallet implementation. It can also be natively supported by new projects and services.
+
+CROMhub itself will initially utilize the Ethereum blockchain. It will use smart contracts to represent campaign data. Such smart contracts can be linked to create complete value chains. Within the smart contracts, all campaign data will be transparent and visible to all parties. Campaign data can be fixed upon creation or it can be dynamic to be adapted to business reality.
+
+Looking into the future, we are aware of the current blockchain limitations. However, with the advent of solutions such as Plasma or Lisk, we are already thinking about how to utilize them to unleash the full potential of the platform. We will consider using other blockchain technologies to leverage their features to realize our vision.
+
+11 / 19
+
+
+
+CROM off-chain implementation
+
+Our core infrastructure is hosted on Amazon Web Services (AWS) allowing it to scale the platform independent from regions as well as ensuring low latency and high throughput between all services.
+
+Moreover, Amazon EC2 Container Service (ECS) provides us highly scalable container management service to run and manage Docker containers on a cluster for fully isolated environment.
+
+All data is stored in both relational (MariaDB and PostgreSQL) and non-relational (MongoDB and Elasticsearch) databases for best possible storing approaches. To provide top performance and high availability modes, all databases are running in separated clusters with full replication and being backed up on short intervals.
+
+When it comes to security and ensuring end-to-end protection over a public network, all information in transit is secured using SSL/TLS as well as having an encryption key for encryption at rest to provide maximum security for data stored in our databases.
+
+The initial implementation will provide a public RESTful API using Python and Django REST framework as well as web-based client interface for performance monitoring and management. Our goal is to provide a flexible system that is easy to integrate with existing tracking platforms.
+
+THE TEAM ------------------------------------------------------------------------
+
+sure yield inc limited , a Hong Kong based company, is building CROMhub. While employees and advisors are based around the world, the main development center is in Berlin, Germany. There, you can find us in the Factory Berlin, Rheinsberger Str. 76/77, 10115 Berlin
+
+Core Team: Thomas Kothuis, Chief Executive Officer Dominik Rachwal, Chief Technology Officer Thomas Richter, Project Lead Konrad Tysiac, Lead Blockchain Developer Robert Bochenski, Blockchain Architekt Phil Rukin, Developer Matthias Kirsch, Lead Business Development Chris Bisset, Business Intelligence Christian Hullena, Lead Design Matti Seidel, Communications Janine Henning, Finance
+
+Get to know the team on our webpage www.CROMhub.com
+
+Advisors: Christoph Vilanek, CEO at Freenet AG; Chairman of the Board for Strer Media, mobilkom-debitel, Exaring; member advisory board for Gamigo AG and Webtrakk Lorenzo Green, CEO iStack Holdings, Founder of Affiliate World Conferences, Co-Founder & CEO Monetizer, Co-Founder Kobi Digital Niren Hiro, Silicon Valley investor; CrowdStar, AdMob, Yahoo!, CBS Sportsline, MTV Networks
+
+12 / 19
+
+
+
+PROJECT TIMELINE ------------------------------------------------------------------------
+
+
+
+Q1 2016  l
+
+
+
+Assembling the founding team and developing initial idea
+
+
+
+Q2 2017  l
+
+
+
+First draft of white paper, assembling advisors, function tests
+
+
+
+of off-chain components
+
+
+
+pre-ICO  l Nov 17  Dec 01
+
+
+
+pre-ICO funding round, 2.0m CROM tokens to early investors
+
+
+
+ICO  l Dec 01  Dec 15
+
+
+
+crowdfunding event, 4.0m CROM tokens to the general public
+
+
+
+Q4 2017  l
+
+
+
+Completion of crowdfunding event, Listing on exchanges
+
+
+
+Q1 2018 
+
+
+
+l
+
+
+
+
+
+
+
+Office set-up, management team implementation and recruitment finalisation
+
+
+
+Q2 2018  l
+
+
+
+Pre-milestone 1; first CROMhub platform release; first business
+
+
+
+partnerships annouced
+
+
+
+Milestone 1  l Q3 2018 
+
+
+
+Release of a fully functioning version of CROMhub, integration with first business partners
+
+
+
+Milestone 2 
+
+
+
+l
+
+
+
+Q1 2019 
+
+
+
+Release of a milestone 2 enabled version of CROMhub, scalability development
+
+
+
+13 / 19
+
+
+
+CROM TOKEN & ICO ------------------------------------------------------------------------
+
+
+
+The CROM token is an ERC20 standard token that is built on the Ethereum blockchain. CROMhub.com is the first application to use it.
+
+
+
+Acquiring CROM tokens has advantages for all market players:
+
+
+
+-
+
+
+
+For advertisers and networks: Lower the fee to be paid per transaction
+
+
+
+-
+
+
+
+For publishers: Gain a bonus on funds received
+
+
+
+-
+
+
+
+For other interested parties: Hold token for future use and/or rent out token to
+
+
+
+others
+
+
+
+But, acquiring CROM tokens also carries risks:
+
+
+
+-
+
+
+
+That the project will not ever be adopted in the form outlined here, nor in any other form
+
+
+
+-
+
+
+
+That the projects underlying business case will not work as intended
+
+
+
+-
+
+
+
+That technology underpinning the project will not work as intended
+
+
+
+-
+
+
+
+And, therefore, the token may lose value
+
+
+
+Please read the Legal Disclaimer carefully.
+
+
+
+The CROM token
+
+
+
+The CROM token is a digital asset, bearing value by itself based on its underlying assets, properties and/or associated rights. CROM tokens rely on the well-established Ethereum infrastructure, benefiting from several advantages:
+
+
+
+-
+
+
+
+Security and predictability (as opposed to, for example, having to run an independent blockchain
+
+
+
+network).
+
+
+
+-
+
+
+
+Use of robust and well-supported clients (Ethereum-based token can be managed with official
+
+
+
+Ethereum clients).
+
+
+
+-
+
+
+
+High liquidity (interchangeable with other Ethereum-based token or Ether).
+
+
+
+-
+
+
+
+Easier listing on exchanges with infrastructure already in place.
+
+
+
+All contract source codes being used will be made available to the public before the ICO here: https://github.com/cromhub
+
+
+
+The ICO
+
+
+
+Please consult the "How to contribute" guide on our webpage www.cromhub.com.
+
+
+
+Tokens name: CROM
+
+
+
+What do the tokens represent? 
+
+
+
+These tokens represents an irrevocable fee advantage in using the
+
+
+
+Companies' services in the future.
+
+
+
+14 / 19
+
+
+
+Total supply: 
+
+
+
+There will be a fixed supply of 10m tokens; no more tokens will be
+
+
+
+created by the Smart Contract.
+
+
+
+
+
+
+
+6m tokens (60%) thereof will be sold during the ICO.
+
+
+
+Distribution: 
+
+
+
+2.0m tokens during a pre-ICO to early investors with a 25% bonus; 
+
+
+
+
+
+
+
+4.0m tokens during the public at nominal rate.
+
+
+
+
+
+
+
+
+
+
+
+Investments made before the pre ICO batch is exhausted will grant
+
+
+
+25% more CROM tokens.
+
+
+
+
+
+
+
+The tokens will be credited to buyers account immediately.
+
+
+
+ICO time and duration:  
+
+
+
+The ICO will start Dec 01, 2017, 12:00 GMT and last for 14 days or until all CROM tokens are sold  whichever happens earlier.
+
+
+
+
+
+
+
+The pre-ICO will start Nov 17, 2017, 12:00 GMT and will last for 14
+
+
+
+days.
+
+
+
+CROM token price: 
+
+
+
+0.01 ETH (1 ETH = 100 CROM)
+
+
+
+Soft cap: 
+
+
+
+8,000 ETH (= 1m CROM)
+
+
+
+Hard cap: 
+
+
+
+56,000 ETH (= 6m CROM)
+
+
+
+Unsold tokens:  
+
+
+
+If the soft cap is reached, but here are still CROM tokens unsold after 14 days, these CROM tokens are transferred to the company wallet.
+
+
+
+CROM token trade:  
+
+
+
+We intend to make the CROM tokens tradable on popular exchanges within three weeks after the ICO ends.
+
+
+
+Use of Funds
+
+The funds collected will provide operating capital for four years. The majority will be spent on technology and platform development. Business development will also be a considerable cost factor.
+
+A development office will be opened in Berlin shortly after a successful ICO. A secondary office is considered in Szczecin at a later stage. Business development efforts will focus first on Asia and Israel, then the USA and Europe. Senior personnel with well-established networks will be hired to drive sales.
+
+The CROM project will invest substantially into legal and regulatory advice, as trust is the main factor in the successful establishment of the project.
+
+Lastly, we will honor strategic advisors with CROM token as well as keeping a small company reserve for future use.
+
+
+
+15 / 19
+
+
+
+The proposed use of funds in summary:
+
+5% 5% 15%
+
+55% 20%
+
+
+
+2% 3%
+
+35%
+
+7600%%
+
+
+
+ICO LEGAL DISCLAIMER ------------------------------------------------------------------------
+
+We have prepared this white paper and other materials concerning the sale of CROM token and the CROM project, which are available at https://www.cromhub.com/whitepaper.pdf (the "White Paper").
+
+The CROM tokens will be distributed to buyers thereof pursuant to the CROM Token Purchase Agreement. sure yield inc limited  ("Company") makes no representations or warranties, express or implied, including, without limitation, any warranties of title or implied warranties of merchantability or fitness for a particular purpose with respect to the CROM Distribution Contract or the CROM tokens or their utility, or the ability of anyone to purchase or use the CROM tokens. Without limiting the foregoing, none of the Company Parties represent or warrant that the process of purchasing and/or receiving the CROM tokens will be uninterrupted or error-free or that the CROM tokens are reliable and error-free. As a result, Buyer acknowledges and understands that Buyer may never receive CROM tokens and may lose the entire amount Buyer paid to Company. Buyer shall provide an accurate digital wallet address to Company for receipt of any CROM tokens distributed to Buyer pursuant to the CROM Distribution Contract.
+
+The sale of CROM tokens and the CROM tokens themselves are not securities, commodities, swaps on either securities or commodities, or a financial instrument of any kind. Purchases and sales of CROM tokens are not subject to the protections of any laws governing those types of financial instruments.
+
+This White Paper nor any other information provided by the Company in any form do not constitute a prospectus or offering document, and are not an offer to sell, nor the solicitation of an offer to buy an investment, a security, commodity, or a swap on either a security or commodity. Buyer should not participate in the CROM token
+
+16 / 19
+
+
+
+sDistribution or purchase CROM tokens for investment purposes. CROM tokens are not designed for investment purposes and should not be considered as a type of investment.
+
+Buyer acknowledges, understands and agrees that Buyer should not expect and there is no guarantee or representation or warranty by Company that: (a) the Project will ever be adopted; (b) the Project will be adopted as developed by Company and not in a different or modified form; (c) a blockchain utilizing or adopting the Project will ever be launched; and (d) a blockchain will ever be launched with or without changes to the Project. Buyer acknowledges and agrees that Buyer is not purchasing CROM tokens for purposes of investment, speculation, as some type of arbitrage strategy, for immediate resale or other financial purposes. The Project is still under development and may undergo significant changes over time. Although Company intends for the Project to have the features and specifications set forth in the White Paper, Company may make changes to such features and specifications for any number of reasons, any of which may mean that the CROM Platform does not meet Buyer's expectations.
+
+Buyer acknowledges and understands that the proceeds from the sale of the CROM tokens will be utilized by Company in its sole discretion. The proceeds may as well be used for a secondary share buy back by the company at its unique discretion.
+
+On the Ethereum blockchain, timing of block production is determined by proof of work so block production can occur at random times. For example, ETH contributed to the CROM Distribution Contract in the final seconds of a distribution period may not get included for that period. Buyer acknowledges and understands that the Ethereum blockchain may not include the Buyer's
+
+transaction at the time Buyer expects and Buyer may not receive CROM tokens the same day Buyer sends ETH. The Ethereum blockchain is prone to periodic congestion during which transactions can be delayed or lost. Individuals may also intentionally spam the Ethereum network in an attempt to gain an advantage in purchasing cryptographic Token. Buyer acknowledges and understands that Ethereum block producers may not include Buyer's transaction when Buyer wants or Buyer's transaction may not be included at all. CROM tokens may be subject to expropriation and or/theft. Hackers or other malicious groups or organizations may attempt to interfere with the CROM Distribution Contract or the CROM tokens in a variety of ways, including, but not limited to, malware attacks, denial of service attacks, consensus-based attacks, Sybil attacks, smurfing and spoofing. Furthermore, because the Ethereum platform rests on open source software and CROM tokens are based on open source software, there is the risk that Ethereum smart contracts may contain intentional or unintentional bugs or weaknesses which may negatively affect the CROM token or result in the loss of Buyer's CROM tokens, the loss of Buyer's ability to access or control Buyer's CROM tokens or the loss of ETH in Buyer's account. In the event of such a software bug or weakness, there may be no remedy and holders of CROM tokens are not guaranteed any remedy, refund or compensation.
+
+The Project and all of the matters set forth in the White Paper are new and untested. The Project might not be capable of completion, implementation or adoption. It is possible that no Product utilizing the Project will ever be launched and there may never be an operational platform. Even if the Project is completed, implemented and adopted, it might not function as intended, and any Token associated with a Product adopting the Project may not have functionality that is desirable or valuable. Also, technology is changing rapidly, so the CROM tokens and the Project may become outdated.
+
+The regulatory status of cryptographic Token, digital assets and blockchain technology is unclear or unsettled in many jurisdictions. It is difficult to predict how or whether governmental authorities will regulate such technologies. It is likewise difficult to predict how or whether any governmental authority may make changes to existing laws, regulations and/or rules that will affect cryptographic token, digital assets, blockchain technology and its applications. Such changes could negatively impact CROM tokens in various ways, including, for example, through a determination that CROM tokens are regulated financial instruments that require registration.
+
+17 / 19
+
+
+
+Company may cease the distribution of CROM tokens, the development of the Project or cease operations in a jurisdiction in the event that governmental actions make it unlawful or commercially undesirable to continue to do so. The industry in which Company operates is new, and may be subject to heightened oversight and scrutiny, including investigations or enforcement actions. There can be no assurance that governmental authorities will not examine the operations of Company and/or pursue enforcement actions against Company. Such governmental activities may or may not be the result of targeting Company in particular. All of this may subject Company to judgments, settlements, fines or penalties, or cause Company to restructure its operations and activities or to cease offering certain products or services, all of which could harm Company's reputation or lead to higher operational costs, which may in turn have a material adverse effect on the CROM tokens and/or the development of the Project.
+
+18 / 19
+
+
+
+COPYRIGHT INFORMATION ------------------------------------------------------------------------
+
+ 2017 sure yield inc limited , every logo represented here and market data used is the property of the respective owners. In the additional resources section, you can find the respective sources.
+
+ADDITIONAL RESOURCES ------------------------------------------------------------------------
+
+Webpage: https://www.cromhub.com White Paper: https://www.cromhub.com/CROMwhitepaper.pdf Github : https://github.com/cromhub Telegram: https://t.me/CROMhub Facebook: https://www.facebook.com/CROMhub/ Reddit: https://www.reddit.com/r/CROMhub/ Twitter: https://twitter.com/CROMhub Email: info@cromhub.com
+
+19 / 19
+
+
+
+
