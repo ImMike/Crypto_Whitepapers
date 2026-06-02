@@ -93,7 +93,7 @@ function passesFilter(r){
 }
 
 function card(r, q){
-  const pdf='./'+encodeURIComponent(r.file);
+  const pdf='./pdfs/'+encodeURIComponent(r.file);
   const txt='./text/'+encodeURIComponent(r.name+'.txt');
   let chips='';
   for(const t of r.team) chips+=`<span class="chip team">🧑 ${esc(t)}</span>`;

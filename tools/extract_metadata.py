@@ -222,7 +222,7 @@ def extract_wallets(text: str) -> dict[str, list[str]]:
 def main() -> None:
     CACHE.mkdir(parents=True, exist_ok=True)
     DATA.mkdir(parents=True, exist_ok=True)
-    pdfs = sorted(ROOT.glob("*.pdf"))
+    pdfs = sorted((ROOT / "pdfs").glob("*.pdf"))
     print(f"Found {len(pdfs)} PDFs")
 
     records = []
