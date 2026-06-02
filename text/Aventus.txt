@@ -1,0 +1,997 @@
+Contents
+
+
+
+1 Problem
+
+
+
+3
+
+
+
+1.1 Industry Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+
+
+
+1.2 The Current System is Broken . . . . . . . . . . . . . . . . . . . . . . 3
+
+
+
+1.3 Existing Solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+
+
+1.3.1 Technology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+
+
+1.3.2 Legislation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+
+
+1.4 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+
+
+2 The Aventus Solution
+
+
+
+6
+
+
+
+2.1 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+
+
+2.2 The Overall Aventus Ecosystem . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+2.2.1 The Protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+2.2.2 The Service Layer . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+2.2.3 Application Layer . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+
+
+2.3 AventCoin (AVT) - The Aventus Token . . . . . . . . . . . . . . . . 9
+
+
+
+2.3.1 Purpose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+
+
+2.3.2 Mechanics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+
+
+3 Solution Architecture
+
+
+
+11
+
+
+
+3.1 Aventus Registry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+3.1.1 Legitimate third party applications using the protocol . . . . . . . 12
+
+
+
+3.1.2 Non-fraudulent events within the protocol . . . . . . . . . . . . . . 12
+
+
+
+3.1.3 Algorithmic parameters . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+
+
+3.2 Event . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+3.3 Ticket . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+3.4 Primary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+3.5 Secondary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+
+
+3.6 Promotion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+
+
+3.7 Market Price Oracle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+
+
+Bibliography
+
+
+
+18
+
+
+
+2
+
+
+
+1 Problem
+
+1.1 Industry Overview
+
+Generally speaking, the ticketing industry can be broken down into two main segments. The first is the primary market, in which event organisers typically control the ticket price, revenue-splits and methods of ticket sale distribution (e.g.: to select groups via third parties, with certain promoters or through certain online hubs like TicketMaster) [1]. Pricing of tickets by organisers within the primary market takes place in a variety of ways, including at a fixed value, in an open auction or using dynamic pricing per seat based on demand [1]. Generally tickets are sold on the primary market with a face value below their market value, so that event organisers can maximise the attendance of their target audience, ultimately increasing customer loyalty and in-event advertising and merchandise sales [2].
+
+The second is the secondary market, where tickets purchased on the primary market are resold at inflated prices [1] by touts and purported attendees. The secondary market is where the bulk of industry malpractice arises, since these markets are unregulated and are consequently prone to being pervaded by counterfeits, tickets that have been already used or sold or tickets that have been bulk-purchased in the primary market and relisted, often at extortionate prices, in secondary markets [3]. Unsurprisingly, the pricing dynamics within the primary market heavily affect the volume and transactional-value in the secondary market. However, it should be noted that event organisers in the primary market currently have very limited control over, and no right to revenue in, the secondary markets. Secondary markets are often highly visible, for example black-markets often seen outside the doors of major events, where touts re-sell tickets to eager would-be attendees who were unsuccessful in securing their desired ticket(s) in the primary market.
+
+1.2 The Current System is Broken
+
+In the existing industry, the corollary of the isolation of operations and misaligned incentives is that primary and secondary market platforms actually profit from some forms of unethical activity, often at the expense of fans and event organisers [4]. In general, event organisers aim to under-price tickets to maximise fan attendance, increase customer loyalty and earn more revenue from in-event sales [2]. Consequently large economic potential exists for the formation of secondary markets, with resellers being able to make a profit by pricing tickets at closer to their `real` market-value [1]. Touts often employ software programmes known as "bots" to bulk-purchase tickets on primary markets, with the result that popular events can sell-out in minutes, mostly to resellers who never intended to attend the event [5]. According to TicketMaster, such purchases contribute to around 60% of sales to popular shows [5].
+
+3
+
+
+
+Since primary market platforms (such as TicketMaster) earn a portion of revenue from each ticket sale, and the ticket price in the primary market is fixed by the event organiser, these platforms maximise their revenue by maximising the number of tickets sold. Hence, these platforms are positively incentivised to not prevent the use of bots to bulk-purchase tickets.
+
+Once touts manage to dominate the available tickets from the primary market, they place them onto secondary markets extremely quickly (often within minutes [1]) at inflated prices, which average 49% above their face-value in the primary market but with some margins exceeding 1000% [6]. This phenomenon prevents price-sensitive fans from attending an event and causes regular fans to pay higher-than-intended prices for tickets, which manifests itself in customer dissatisfaction and poor brand publicity for the event organiser [6].
+
+Furthermore, it should be noted that when resellers bulk-purchase tickets, they very often list the same ticket on numerous secondary market platforms [1]. Once the ticket is sold on one platform the reseller often does not remove it from the other platforms and, whether intentionally or not, therefore ends up selling it (as a counterfeit) on those other platforms [7]. The Telegraph has estimated that Britons squandered over 5 million on counterfeit tickets in 2015 through false social-media advertisements [8].
+
+Since the fees of secondary market platforms (such as Stubhub) are calculated as a percentage of ticket resale price (typically 25-30%), such platforms have little incentive to seek to prevent or curtail the extortionate secondary market prices given that such reseller behaviour contributes substantially to their bottom lines [1].
+
+Another problem to address is a lack of oversight and consumer confusion. Unethical behavior from various entities involved in the ticket selling process is observable. They will claim to have sold out a release in record time, even if that is not the case, to make it seem like the event is very popular. These unsold tickets will be repackaged into other releases or even handed off directly to the secondary market to make some profit off of them. Customers have no oversight over where they are buying from, in fact Professor Mike Waterson, UK government report writer on secondary markets, states that 1 in 4 customers do not know where they are buying their tickets from, be it primary, secondary or even known to be fraudulent outlets [1].
+
+The siloed nature of these primary and secondary ticketing companies often results in an event's tickets being sold only on one platform through a narrow set of authorised promoters. Such arrangements effectively put the responsibility of promoting an event, and generating ticket sales, largely into the hands of the event organisers and the ticketing platform (with the size of its relevant user base for such an event being key), resulting in it being difficult for awareness of the given event to spread to its full potential targetaudience. Indeed, according to TicketMaster's CEO Sean Moriarty, "nearly 35% of ticket inventory goes unsold, and if you ask fans why they didn't go to shows, one of the most popular reasons is 'I didn't know about it'" [9].
+
+1.3 Existing Solutions
+
+Attempts to address the difficulties referred to have been made by industry participants, most prominently in two distinct ways: via technology and legislation.
+
+1.3.1 Technology
+
+There have been two main types of technological solutions deployed in an attempt to address some of the difficulties referred to. The first comprise mechanisms which only allow the resale or other transfer of a ticket at its primary market face-value or lower. This is used by primary markets such as Resident Advisor [10] or fan-to-fan transfer marketplaces like Twickets [11]. The second category comprises data-driven techniques for identifying
+
+4
+
+
+
+touts at the point-of-purchase and for identifying tickets on secondary market websites [11]. Companies using this second category of approach include Songkick [12] and Dice.fm [13] (the latter, incidentally, also preventing resale of its tickets altogether).
+
+Unfortunately, both of these technological methods fall short of solving the range of problems previously outlined:
+
+ preventing resale altogether prevents genuine fans who for legitimate reasons cannot attend the given event from selling their tickets on to other fans;
+
+ mandating that transfers must be for the primary market face-value or less creates incentives for black-markets (for example, with tickets being transferred online at their face-value but with an offline monetary transaction also taking place); and
+
+ seeking to identify touts using machine-learning is an intractable problem to solve, as 'scalpers' (those on-selling at inflated prices) can create tools to learn the search algorithms and change their behaviour accordingly to avoid their conduct being identified.
+
+1.3.2 Legislation
+
+Authorities in many jurisdictions have recognised the iniquity in ticket-touting; some (such as France and Italy) have outlawed it [14]. In the U.K the re-selling of tickets to football matches without the permission of the relevant club is illegal [15].
+
+Unfortunately, however, legislative initiatives have not materially impacted upon the panoply of problems associated with ticket-touting. This is not least because, fundamentally, it is very difficult to control or constrain black-markets: despite some football clubs having long authorised-reseller lists, tickets still regularly appear on other sites; at sports matches and concerts globally, black-market sales continue to occur (and often immediately outside of the venue itself [14]). By way of further example, although the use of bot software to make bulk-purchases has increasingly been subject to prohibition across the globe (with laws put forward, for example, in both the U.S. and the U.K to make their use illegal [5, 16]), as Annabella Coldrick, CEO of the Music Managers' Forum, stated, such penalties are unlikely to make a significant difference due to the relatively straightforward means of circumventing them (e.g.: by "paying people based abroad to buy tickets, or by using multiple credit cards" [16]).
+
+1.4 Conclusion
+
+Since the problems associated with ticket touting, counterfeits, oversight and promotion have not yet been comprehensively addressed by technology or new legislation, artists, organisers and fans have, understandably, become pessimistic as to whether the ticketing market will ever change for the better [17].
+
+We believe that the problems highlighted in this paper point to a need to re-build the industry from the bottom-up, replacing the current, siloed, architecture to create a new, fair, secure and transparent economic model under which fans and event organisers would have greater control whilst, at the same time, touts and ticketing-platforms would be incentivised to behave in such a way as to produce positive externalities and in end effect enable events to reach more people.
+
+5
+
+
+
+2 The Aventus Solution
+
+2.1 Overview
+
+Aventus is a global open standard for the exchange of tickets. Its blockchain-based platform eliminates uncontrolled resale and counterfeit tickets. It allows event organisers to create, manage and promote their events and tickets with dramatically reduced costs, even letting them set price controls and receive commissions on ticket resales. It also gives ticket buyers rewards for promoting events, and identifying fraudulent activity.
+
+Aventus' innovations vastly improve upon existing solutions by bringing oversight and transparency to the ticketing life-cycle, security to the transfer and validity of tickets, new revenue streams for event organisers and greater promotional capabilities.
+
+The Aventus Protocol resolves the difficulties earlier highlighted in this paper, through the following:
+
+1. Secondary Market Control: At the core of the Aventus Protocol is a model pursuant to which off-chain transactions involving tickets are prevented. By ensuring that sales occur through the Aventus Protocol, event organisers can reliably enforce resale prices (minima and maxima) and even receive a portion of secondary market sales-revenue. The solution is twofold:
+
+ Tickets have an identity associated with them: which could be the original purchaser's full name, face (as a photo), identity document or credit card. It is added at the point of purchase in the primary market (the validation mechanisms chosen is determined by the event organiser). The identity associated with the relevant ticket will be checked at the event and compared to that on the blockchain before entry is granted. Changes to identities (and therefore to the recognised 'right of event access' with the associated ticket) can only take place if the ticket is resold through the approved secondary market. Please note that ticket buyers add an encrypted picture or hash of the purchasing credit card number, full name or ID number. The key protecting the photo is encoded in the ticket which is presented at the event, thus none of the sensitive information is ever publicly visible.
+
+ Owners reselling their tickets in the secondary market do not know to whom they are selling their ticket: the ticket is put up for sale and all network participants can register an interest in purchasing it. Matching (ticket allocation to interested network participants) would then be performed in a pseudo-random fashion.
+
+2. Blockchain Security: Each ticket would have a unique identifier on the blockchain. Due to its immutable properties, once the event organisers have set up their tickets
+
+6
+
+
+
+on the Blockchain, counterfeits thereof cannot be created. Should an event itself be fictitious or fraudulent, the economic model underpinning the Aventus Protocol incentivises network participants to report such fact. The community of users of / participants in the Aventus Protocol (referred to hereinafter as the 'Aventus Community') subsequently determines the event's validity using a decentralised consensus mechanism on the blockchain. Given the transparent nature of the blockchain, much of the oversight issues can be solved. None of the previously discussed shady behavior when selling tickets will be possible and consumers will be able to find a validated list of outlets selling tickets on the blockchain. This list is keept free of fraud since applications have to be listed and undergo a vetting process by the members of the Aventus community.
+
+3. Promotion and Platform Cost Reduction: There are two key ways in which the Aventus Protocol will cause events to reach a wider and even more targeted audience:  by de-siloing the ticket selling process, all events listed on the Aventus Protocol will be accessible to any application using it (unless forbidden by the organisers), thus forming a global, open pool of events which can be curated for specific audiences and whose tickets can be sold by any application, incentivised via a commission on each sale. This would completely overturn the current, siloed, nature of the industry and encourage multiple participation to drive increased sales.  Event organisers could reward promoters (who may be listing apps and/or individuals who generate ticket sales via such apps) with a commission on ticket sales they are responsible for generating. The commissions which can be facilitated may be as dynamic and complex as desired, since each promoter can receive a different commission (based on off-chain assessments of their skill and reputation for generating sales). The combination of listing apps and reduced fees due to blockchain micro-transactions will, axiomatically, result in ticketing costs being dramatically smaller than is presently the case, allowing overall ticket prices to be lower (and therefore more competitive and attractive).
+
+2.2 The Overall Aventus Ecosystem
+
+Despite the fact that the primary innovation discussed in this paper is the protocol itself, it is worth explaining that the overall ecosystem is comprised of 3 layers, as depicted in figure 1: the protocol, the service layer, and the application layer.
+
+2.2.1 The Protocol
+
+The subject of this paper. This layer is entirely composed of Ethereum smart contracts that allow for the creation and validation of events, the issuance and sale of tickets in primary and secondary ticket markets (customisable by the event organisers), and the distribution of ticket sale revenue and market/event fees between the event organisers, ticket promoters, market matchers, attendees, etc. There will be minimal fees for using these contracts so that the protocol can remain competitive and enjoy maximal adoption.
+
+2.2.2 The Service Layer
+
+Services available here are aimed to make using the protocol as efficient and easy to use as possible, especially for developers looking to build mainstream ticketing applications. Tools will include:
+
+7
+
+
+
+Figure 1: The Aventus ecosystem.
+
+ An Ethereum account management platform where users with minimal crypto-currency knowledge can have their accounts, funds, and transactions managed on their behalf.
+
+ A fiat to AVT conversion mechanism so that users can buy tickets easily, and so event organisers and app developers can cash out quickly if necessary to avoid currency risk. This will be done through a third party payment processor such as Uphold or MetalPay.
+
+ A ticket and ID validation service where attendees' faces will be scanned and compared to photos uploaded at point of purchase using machine vision. This will reduce entry fraud at events and allow organisers to track the performance of bouncers.
+
+ Template user interfaces and integration tools that further lowers the barrier to entry to creating a customised ticketing interface for event organisers (e.g. a football club) or promoters (e.g. an influencer).
+
+ Others worth mentioning include in-event advertising tools and reputation calculations for promoters with respect to sales generated in previous, similar events.
+
+More services will be added over time depending on demand. Although developers using these services will incur an additional cost, such tools will make building ticketing applications significantly easier especially with respect to onboarding mainstream users.
+
+8
+
+
+
+2.2.3 Application Layer
+
+The final level consists of applications that build on top of the services layer (or in some cases just the protocol layer). The Aventus team will create and launch the first ticket sales application in the sports and music industry. It will allow for the creation and management of events and associated tickets, along with the creation of promotional schemes for encouraging more ticket sales. Further, it will enable ticket buyers to receive rewards and find new events to attend easily. It should also be noted that Aventus will concentrate efforts on working with third party developers to support the creation of other applications on top of the services layer.
+
+2.3 AventCoin (AVT) - The Aventus Token
+
+2.3.1 Purpose
+
+The Aventus protocol token AventCoin is essential for aligning the economic incentives of participants such that the problems in section 1 are solved, and for ensuring that minimal fraud occurs in the system. Its main purposes are:
+
+1. To provide an incentive layer to enable self-regulation of the Aventus Protocol. This refers to stake-weighted voting mechanisms (further explained in section 3.1) for the Aventus Community to determine:
+
+a) Legitimate apps/DApps using the Aventus Protocol (section 3.1.1) so that event organisers and ticket buyers are not taken advantage of.
+
+b) Legitimate events on the Aventus Protocol (section 3.1.2) so that apps/Dapps do not lose users by selling tickets for fraudulent tickets.
+
+c) Aventus Protocol algorithm parameters that determine important fees in the system such as the event-creation fee (section 3.1.3), so that the protocol can constantly evolve to remain competitive.
+
+2. To reward early adopters of the Aventus Protocol, thereby enabling it to benefit from network effects. Network effects apply to the Aventus Protocol since as the number of events using it grows, the greater value it has to third party applications.
+
+2.3.2 Mechanics
+
+There are four primary use cases for AVT:
+
+ Event hosting: event organisers must purchase AVT to pay the event-creation price. This cost will be proportional to the number of events deemed fraudulent in the protocol. It will not be affected by the volatility of AVT by accounting for the fiat currency exchange rate. In the initial phase of using the Aventus Protocol, at the end of a successful event, AVT from the early-user incentive pool will be distributed amongst all participants in the event to reward early-event host-adopters, promoters and secondary market facilitators.
+
+ Ticket sales: although tickets to an event on the Aventus Protocol must be purchased in ETH, AVT or any other ERC-20 compliant crypto currency, the volatility associated with crypto-currencies will be mitigated. Ticket prices will be denominated in fiat currency and use a market-feed oracle to calculate AVT prices at the time of purchase. Event organisers and promoters are free to cash out their cryptocurrency from ticket sales or commissions, at their convenience, to avoid holding it for unnecessary periods of time.
+
+9
+
+
+
+ Community stake: events can be reported as being suspected of being fictitious or fraudulent through a mechanism which involves putting up a deposit of AVT. If the deposit is matched by the organiser of the (purported) event, a stake-weighted vote would be initiated, in which any stake-holder can agree or not (elaborated upon in section 3.1 below). Platforms building on the Aventus Protocol would have an incentive not to sell fictitious or fraudulent tickets to their users, thus giving them an incentive to hold AVT for voting and future event-creation. Applications making sales on the protocol go through a similar process of being validated by the network so that we can remove the current problems in the industry of fraudulent resellers.
+
+ Matching: Tickets sold on the Aventus Protocol in the secondary market must be matched with buyers who have previously registered a firm intent in their purchase at their listed prices. To list a ticket for resale a user will also have to be able to pay the secondary market sale fee in AVT. Matching is on chain calculation that Aventus Protocol users can run to pseudo-randomly match buyers and sellers and receive the secondary market sale fees for doing so. This ensures that sellers do not know who they are selling to to prevent off chain monetary transactions taking place for the transfer of a ticket and then a transaction in the system merely being logged which adheres to the restrictions.
+
+10
+
+
+
+3 Solution Architecture
+
+
+
+3.1 Aventus Registry
+
+The Aventus Registry is the entry point to the Aventus Protocol. It keeps track of:
+
+1. A list of the legitimate third party applications using the protocol
+
+2. A list of the non-fraudulent events within the protocol
+
+3. Algorithmic parameters determining system fees and time periods.
+
+Each of these variables will be determined and consistently updated through stakeweighted voting by the Aventus Community. This voting process is similar to that proposed by Colony [18], whereby:
+
+1. Either a set of deposits or an initial fee is put forward to initiate the voting process. The origin of these funds is explained below for each particular variable.
+
+2. Votes are then cast by the Aventus Community in secret. Once the 'vote reveal period' begins, voters' AVT balances are locked.
+
+3. Once they reveal their votes, their balances are unlocked.
+
+4. In the case of a deposit-based vote, the winning party's deposit is returned and the losing party's deposit is distributed amongst the winning party and the voters. In the case of a fee-based vote, the fee is simply distributed amongst voters. The distribution of funds to the voters is demonstrated in equation 1, which gives the minority voters a discounted portion of the pot rmin relative to the majority voters' portion rmaj:
+
+
+
+rmin = (r - rprop)  pmin  d
+
+
+
+1 - pmin 1 - pmin
+
+
+
+,
+
+
+
+(1)
+
+
+
+where:
+
+
+
+ r: the total reward pot to be distributed amongst voters
+
+
+
+ rprop: the reward to be given to the winning proposer
+
+
+
+ pmin: the fraction of votes corresponding to those in the minority
+
+
+
+ d: the discount factor [0, 1] applied to the minority's fraction of the pot pmin
+
+
+
+
+
+
+
+1
+
+
+
+-
+
+
+
+pmin 1-pmin
+
+
+
+: a scaling factor based on the difference between the number of
+
+
+
+majority and minority votes,
+
+
+
+11
+
+
+
+and
+
+
+
+rmaj = r - rprop - rmin,
+
+
+
+(2)
+
+
+
+An individual voter v's portion rv of his respective pot is then based on his balance relative to his group's, as depicted by equation 3 (assuming v's group is the minority):
+
+
+
+rv = rmin 
+
+
+
+bv
+
+Vmin i=0
+
+
+
+bi
+
+
+
+,
+
+
+
+(3)
+
+
+
+where:
+
+
+
+ bv: voter v's AventCoin balance
+
+
+
+
+
+
+
+Vmin i=0
+
+
+
+bi
+
+
+
+is
+
+
+
+the
+
+
+
+sum
+
+
+
+of
+
+
+
+the
+
+
+
+balances
+
+
+
+of
+
+
+
+all
+
+
+
+of
+
+
+
+the
+
+
+
+voters
+
+
+
+in
+
+
+
+the
+
+
+
+minority
+
+
+
+group
+
+
+
+The following sections explain the application of the voting process to each of the variables mentioned above.
+
+
+
+3.1.1 Legitimate third party applications using the protocol
+
+A third party application that wishes to use the protocol must create a proposal in the Aventus registry, requesting to be added to the official list of legitimate applications if they wish to sell tickets for an event. Along with the proposal, a listing fee is submitted which will power the Aventus Community's vote regarding the application's legitimacy. This is necessary to give better oversight to consumers so that they can know where they are buying their tickets and that the outlets are not fraudulent as discussed in section 1.2.
+
+
+
+3.1.2 Non-fraudulent events within the protocol
+
+An event that wishes to benefit from the Aventus Protocol must be created through it and is only added to the official event-listing if the organiser has paid the relevant event-creation fee. Following an event being added to the Aventus Registry, the Aventus Community has a period within which to report it as fictitious or fraudulent by submitting a deposit, as previously described. If the deposit is not matched by the organiser of the (purported) event, the reporter's deposit is returned (with such member of the community also receiving the event-creation fee) and the event is removed from the official event-listing and rendered defunct. If it is matched, the voting process outlined above occurs to determine the validity of the event. This is again to ensure validity of events on the platform and get around any oversight problems discussed in 1.2.
+
+
+
+3.1.3 Algorithmic parameters
+
+Fees and time interval parameters in the system such as the application-listing fee, the event-creation fee or the time period in which an event can be reported strongly affect the economic behaviour of protocol participants. Since they are strongly affected by usage data of the protocol itself (e.g. the rate of fraudulent events or the number of fraudulent applications using it), they will be re-calibrated algorithmically at the point of event creation. As an example, we examine the determination of the event-creation price, which logically depends on:
+
+ The monthly rate of fraudulent events - the amount of fraudulent events in the system Nefvreanutds within a given 1 month amendment interval, divided by the total number of events in that interval Netvoetanlts; and
+
+
+
+12
+
+
+
+ The monthly event validation voting participation - The average number of votes per event within a given amendment interval:
+
+
+
+Nvotes per event =
+
+
+
+N Netvoteanlts votes
+
+
+
+i=1
+
+
+
+event
+
+
+
+Netvoetanlts
+
+
+
+i
+
+
+
+,
+
+
+
+(4)
+
+
+
+where:
+
+
+
+ Nevvoetnest i: the number of votes for reported event i  Ntokenholders: the total number of token holders in that month,
+
+
+
+and is represented by equation 5:
+
+
+
+Pevent = Pf loor + Pscale
+
+
+
+Nefvreanutds Netvoetanlts
+
+
+
++
+
+
+
+1 - Nvotes per event Ntoken holders
+
+
+
+,
+
+
+
+(5)
+
+
+
+where parameter Pfloor is the minimum event creation price possible (if the fraud rate is zero and if all token holders vote on every reported event), and Pfloor + 2Pscale AVT is the maximum event creation price possible (if the fraud rate is one and if no token holders vote on any reported event).
+
+Since the algorithms themselves have parameters (such the fee floors, ceilings, and scaling values depicted in equation 2), these will need to be voted upon by the Aventus Community. Every 3 months, there will be a time interval in which community members can put forward proposals (along with a proposal deposit) to change these algorithmic parameters. After the community members vote to determine the winning proposal, the winning deposit is returned and the losing ones are distributed amongst voters.
+
+
+
+3.2 Event
+
+Events are listed by paying the event-creation fee, uploading the event's details (date, location, description, images et al.) to IPFS (a peer-to-peer hypermedia protocol [19]), and storing the IPFS hash in the newly created event smart-contract. The event-creator must then create the ticket types and define a series of addresses associated with the staff at the event who will be responsible for validating tickets.
+
+Before ticket sales can begin, a freeze period occurs during which no edits can be made and the event must not be reported, as detailed in section 3.1. The full life-cycle of an event is depicted in figure 2.
+
+
+
+Figure 2: The timeline of an event. Events need not be open to the public - the protocol will include different options, such as:
+
+13
+
+
+
+ Private events: the creators must sign off on any ticket sold.
+
+ Approved merchant events the event's tickets can only be sold or re-sold exclusively via approved merchants.
+
+It should be noted that the event-creator(s) will be able, if desired, to define the revenuesplit from ticket sales between the venue, artist, management company etc. Existing decentralised project-management tools can also plug into events and have all AVT transferred to management smart-contacts based on pre-defined rules or contributions.
+
+3.3 Ticket
+
+A ticket is defined by 3 parameters:
+
+1. Category: This determines when primary ticket sales start and end, whether the tickets can be refunded and if they can be resold (along with what the price floors, ceilings and event-creator commissions would apply to the resale). The category can be as general or specific as desired (for example "food", "early-bird entry", or "D-Block Stadium Seats").
+
+2. Sub-Category: This determines the price of the ticket, such that its specificity should be proportional to how finely-grained the event-creator wishes to make the pricing. For example, if each seat in a stadium should be priced differently but sold at the same time, each sub-category would be a seat and the category would be "Stadium Seats".
+
+3. Number: This is the quantity of tickets issued at the sub-category's given price. Using the example above, if each seat was priced differently there would only be 1 per sub-category.
+
+The 3 parameters above give a unique definition of any type of ticket, including any stadium seating arrangements and pricing mechanism.
+
+All tickets are validated in the same way: at the point of purchase the buyer must upload a representation of their identity (described in section 2.1) which the ticket will have referenced to. When the buyer attempts to redeem the ticket (exercise the 'right of access' conferred by the ticket), the validator will scan the ticket and ensure that the uploaded identity matches the name, face, ID or credit card of the person presenting the it. The identity verification part of the process will either be:
+
+ automated using a camera (either as third party hardware or in an app on the validator's phone), a feature that Aventus will offer in the services layer (explained in section 2.2); or
+
+ manual, whereby the validator uses his own judgement to verify that the person presenting the ticket is indeed the same person as that in the uploaded identity.
+
+3.4 Primary
+
+The primary component handles all primary market ticket sales. There are three ways a ticket category can be sold:
+
+ Face value: It may be sold at a pre-set value determined by the event's organiser.
+
+ Auction: It may be auctioned off, where the highest bids receive the tickets.
+
+14
+
+
+
+ Dynamic: It can be priced based on changes in demand, in order to maximise revenue per seat. Real-time prices are determined according to the quality and quantity of the tickets and demand for the event. These prices will be determined a layer above the Aventus Protocol and input via oracle.
+
+Once a purchase succeeds, a name, identity document number, credit card number or a photo of the owner is associated with the ticket as a means of proving identity (as previously explained in section 3.3). This is so that private keys to accounts holding tickets cannot be sold on an off-chain website, thus resulting in a secondary market which is not susceptible to this type of exploitation by the event's creator. All ticket prices are denominated in fiat currency and a market-price oracle determines the cost in AVT at the time of purchase.
+
+It should be noted that none of this data is stored in plain text on the blockchain. Names, identity documents and credit cards are first hashed and then stored. When a ticket holder shows up the the event, the physical identity item is checked against the hash stored in the blockchain. Images of faces are encrypted and stored on IPFS and the IPFS hash is stored on the blockchain. At the event the ticket holder presents their ticket which has the decryption key for the photo encoded into it, which is used to decrypt the image and subsequently the facial comparison is made.
+
+3.5 Secondary
+
+This component handles all secondary market sales based on controls set by the event organiser. There will be a beginning and an end date for the sales, containing at least one interval i to sell tickets in.
+
+The market's functionality is depicted in figure 3 and works as follows:
+
+ Listing: Listing a ticket requires specifying the ticket ID and the price you wish to sell it for and paying the selling fee in AVT. Tickets to be sold in i must have been listed in i - 1. A listing remains until sold or cancelled by the seller.
+
+ Buying: During i users register an interest in buying various combinations of tickets listed in i1 and must have sufficient funds to do so, which are then 'locked'. Buyers will not be able to purchase these tickets immediately, since sellers could otherwise agree to list a ticket for a certain price and require an additional payment off-chain, which is one of the facets of an unregulated secondary market which the Aventus Protocol is designed to address.
+
+ Matching: At the end of i users attempt to match buyers to tickets in a pseudoprobabilistic manner. Once completed, all unsuccessful buyers' funds will be 'unlocked'. It should be noted that non-determinism is not possible on a blockchain, therefore (even when 'randomly' choosing who receives which tickets), the outcome can be known before the matching transaction is entered into the system but as long as the block rewards are not less than the matching reward the system is secure.
+
+Tickets purchased on the secondary market will have the identity image associated with it to that of the new owner. All ticket prices are denominated in fiat currency and a market-price oracle determines the cost in AVT at the time of purchase.
+
+3.6 Promotion
+
+Since the event listing and ticket selling process has been de-silod, any validated application will be able to make sales for any of the event brought to the protocol residing in the event pool. This will mean that merely listing an event on the Aventus protocol means all
+
+15
+
+
+
+Figure 3: The Secondary Ticket market.
+
+applications can start making sales in a completely secure manner, without unregulated touting, counterfeits or oversight issues.
+
+Furthermore, the event creator can choose (per ticket category), to create a rewards' scheme giving a commission to promoter-applications for generated sales. These apps can split their commissions with individual promoters selling tickets on their behalf. The promoters' commissions can be as complex and dynamic as desired, based on off-chain determinations of the skill and reputation of the relevant person in connection with generating sales of the relevant type (e.g. historical sales made in similar events, or gross sales over time).
+
+This mechanism helps reduce marketing-costs and increases reach into target- markets (by decreasing the barriers to entry of becoming a promoter and allowing for the monetisation word-of-mouth spreading about events). It also minimises the overhead associated with managing promoters' sales and compensation, since it is completely automated by smart contracts.
+
+There are a couple of possible attack vectors here:
+
+ The gaining of an unfair discount through a ticket-buyer' becoming a promoter to purchase the ticket "through" himself is addressed by disallowing commission on a promoter's first sale.
+
+ Tickets sold in the secondary market are not eligible for promoter commission (which obviates the risk that a promoter bulk-purchases tickets "through" himself to re-sell on the secondary market, generating unfair commissions and unwarranted promotion history).
+
+3.7 Market Price Oracle
+
+Blockchains cannot access information not contained within them. Therefore, additional data required by the Aventus Protocol must be inserted into the Blockchain.
+
+Problem: the party controlling the data sent into the system can affect the protocol's behavior.
+
+Solution: we will use existing trusted solutions (such as Oraclise) and provide our own oracle smart-contract. We will allow event-hosts to decide which oracle to use for the market price-feed from a list of options approved by the Aventus Community.
+
+16
+
+
+
+References
+
+
+
+[1] Waterson, M.
+
+
+
+Independent Review of Consumer Protection Mea-
+
+
+
+sures concerning Online Secondary Ticketing Facilities.
+
+
+
+http:
+
+
+
+//www2.warwick.ac.uk/fac/soc/economics/staff/mjwaterson/
+
+
+
+ind-16-7-independent-review-online-secondary-ticketing-facilities.pdf,
+
+
+
+2016. Online; Accessed 25 Feb. 2017.
+
+
+
+[2] Courty, P. An economic guide to ticket pricing in the entertainment industry. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.398.9979& rep=rep1&type=pdf, 2000. Online; Accessed 25 Feb. 2017.
+
+
+
+[3] Davies, R.
+
+
+
+MPs call for inquiry into ticket touts and resale
+
+
+
+websites.
+
+
+
+https://www.theguardian.com/business/2016/nov/16/
+
+
+
+mps-call-for-inquiry-into-ticket-touts-and-resale-websites, 2016. Online;
+
+
+
+Accessed 26 Jan. 2017.
+
+
+
+[4] Davies, R.
+
+
+
+Pixies lead music industry effort to break stranglehold
+
+
+
+of ticket touts.
+
+
+
+https://www.theguardian.com/money/2016/sep/10/
+
+
+
+pixies-lead-battle-against-ticket-touts, 2016. Online; Accessed 26 Jan.
+
+
+
+2017.
+
+
+
+[5] Sisario, B. Congress Moves to Curb Ticket Scalping, Banning Bots
+
+
+
+Used Online.
+
+
+
+https://www.nytimes.com/2016/12/08/business/media/
+
+
+
+ticket-scalping-bots-act.html, 2016. Online; Accessed 26 Jan. 2017.
+
+
+
+[6] Marks, T.
+
+
+
+Why Ticket Prices are Going Through
+
+
+
+the
+
+
+
+Roof.
+
+
+
+http://www.consumerreports.org/money/
+
+
+
+why-ticket-prices-are-going-through-the-roof/, 2016. Online; Accessed
+
+
+
+26 Jan. 2017.
+
+
+
+[7] Yates, S. The great ticket mark-up - how fans are paying through the nose. http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id= 1501119&objectid=11833817, 2017. Online; Accessed 20 Mar. 2017.
+
+
+
+[8] Morely, K.
+
+
+
+Facebook and Twitter are a 5m 'hotbed' for
+
+
+
+fake ticket sales.
+
+
+
+http://www.telegraph.co.uk/news/2016/05/21/
+
+
+
+facebook-and-twitter-are-a-5m-hotbed-for-fake-ticket-sales/,
+
+
+
+2016.
+
+
+
+Online; Accessed 26 Jan. 2017.
+
+
+
+[9] Sarti, N.
+
+
+
+UK Live Music Industry.
+
+
+
+http://www.slideshare.net/
+
+
+
+InklingIntelligence/uk-live-music-industry-2011, 2011. Online; Accessed 26
+
+
+
+Jan. 2017.
+
+
+
+17
+
+
+
+[10] Resident Advisor. RA introduces ticket resale service. https://www. residentadvisor.net/news.aspx?id=25747, 2014. Online; Accessed 20 Mar. 2017.
+
+
+
+[11] Twickets Limited. Tickets - How it Works. https://www.twickets.co.uk/ how-it-works, 2017. Online; Accessed 20 Mar. 2017.
+
+
+
+[12] Songkick Limited. Songkick - About Us. http://www.songkick.com/info/about, 2017. Online; Accessed 20 Mar. 2017.
+
+
+
+[13] Dice Limited. Dice.fm - About. https://dice.fm/about, 2017. Online; Accessed 20 Mar. 2017.
+
+
+
+[14] Guzman,
+
+
+
+Z.
+
+
+
+The surreptitious rise of the on-
+
+
+
+line
+
+
+
+scalper.
+
+
+
+http://www.cnbc.com/2015/03/04/
+
+
+
+online-ticket-resellers-the-surreptitious-rise-of-the-online-scalper.
+
+
+
+html, 2015. Online; Accessed 26 Jan. 2017.
+
+
+
+[15] McMilan, C.
+
+
+
+Secondary ticketing: the problem and possible solu-
+
+
+
+tions, explained.
+
+
+
+https://inews.co.uk/essentials/culture/music/
+
+
+
+secondary-ticketing-problems-solutions/, 2016. Online; Accessed 26 Jan.
+
+
+
+2017.
+
+
+
+[16] Davies, R. Touts using bots to buy tickets could face jail. https://www.theguardian. com/money/2016/oct/19/touts-using-bots-buy-tickets-face-jail, 2016. Online; Accessed 26 Jan. 2017.
+
+
+
+[17] Forde, E. What's the Real Cost of Secondary Ticketing? http://musically.com/ 2016/10/05/analysis-whats-the-real-cost-of-secondary-ticketing/, 2016. Online; Accessed 20 Mar. 2017.
+
+
+
+[18] Fischer, A. Towards better Ethereum voting protocols. https://blog.colony.io/ towards-better-ethereum-voting-protocols-7e54cb5a0119, 2017. Online; Accessed 26 Jan. 2017.
+
+
+
+[19] Benet, J. IPFS - Content Addressed, Versioned, P2P File System (Draft 3). https://github.com/ipfs/ipfs/blob/master/papers/ipfs-cap2pfs/ ipfs-p2p-file-system.pdf, 2014. Online; Accessed 26 Jan. 2017.
+
+
+
+18
+
+
+
+

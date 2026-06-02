@@ -1,0 +1,527 @@
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+IBCPacketTx
+
+
+
+IBCBlockCommitTx
+
+
+
+IBCBlockCommitTx
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+BurnAtomTx
+
+
+
+Year 0: 100 Year 1: 113 Year 2: 127 Year 3: 144 Year 4: 163 Year 5: 184 Year 6: 208 Year 7: 235 Year 8: 265 Year 9: 300 Year 10: 300 ...
+
+
+
+BondTx
+
+
+
+ValidatorTimeoutWindow
+
+
+
+ValidatorTimeoutPenalty
+
+
+
+
+
+ValidatorTimeoutMaxAbsent
+
+
+
+
+
+ValidatorPayoutPeriod
+
+
+
+ReserveTax
+
+
+
+BlockGasLimit
+
+
+
+ReportHackTx HackRewardRatio
+
+
+
+HackPunishmentRatio
+
+
+
+ReportHackTx
+
+
+
+AbsenteeismPenaltyPeriod MinimumProposalDeposit
+
+
+
+VetoPenaltyFeeBlocks
+
+
+
+VetoPenaltyAtoms ParameterChangeProposal BountyProposal
+
+
+
+TextProposal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+AppendTx CheckTx Commit
+
+Data ([]byte) Code (uint32) Data ([]byte) Log (string)
+
+
+
+Data ([]byte) Code (uint32) Data ([]byte) Log (string)
+
+Data ([]byte) Log (string)
+
+Data ([]byte) Code (uint32) Data ([]byte) Log (string)
+
+Data ([]byte)
+
+Key (string) Value (string) Log (string)
+
+Validators ([]Validator)
+
+
+
+Commit BeginBlock types.Application
+
+
+
+Height (uint64) Height (uint64) Validators ([]Validator)
+
+MaxHeight
+
+
+
+IBCPacket
+
+
+
+AckPending
+
+
+
+IBCBlockCommit
+
+
+
+IBCPacketTx
+
+
+
+FromChainID FromBlockHeight Packet IBCPacket
+
+Header IBCPacketHeader SrcChainID DstChainID Number Status AckPending Type MaxHeight Payload
+
+
+
+IBCBlockCommit
+
+
+
+IBCPacketTx
+
+
+
+FromChainID
+
+
+
+IBCPacket
+
+
+
+IBCPacketTx
+
+
+
+IBCPacket
+
+
+
+IBCPacketTx
+
+
+
+FromBlockHeight Packet IBCPacket
+
+Header IBCPacketHeader SrcChainID DstChainID Number Status AckPending Type MaxHeight Payload
+
+IBCPacketTx
+
+FromChainID FromBlockHeight Packet IBCPacket
+
+Header IBCPacketHeader SrcChainID DstChainID Number Status AckSent Type MaxHeight PayloadHash
+
+IBCPacketTx
+
+FromChainID FromBlockHeight Packet IBCPacket
+
+Header IBCPacketHeader SrcChainID DstChainID Number Status AckReceived Type MaxHeight PayloadHash
+
+Timeout
+
+
+
+IBCPacket
+
+
+
+AckSent
+
+
+
+IBCBlockCommit IBCPacketTx
+
+
+
+AckPending AckReceived
+
+
+
+AckSent
+
+
+
+*
+
+
+
+/\
+
+
+
+/\
+
+
+
+/
+
+
+
+\
+
+
+
+/
+
+
+
+\
+
+
+
+*
+
+
+
+*
+
+
+
+/\
+
+
+
+/\
+
+
+
+/\
+
+
+
+/\
+
+
+
+/\
+
+
+
+/\
+
+
+
+* * * h6
+
+
+
+/\ /\ /\
+
+
+
+h0 h1 h2 h3 h4 h5
+
+
+
+A SimpleTree with 7 elements
+
+
+
+SendTx BondTx UnbondTx ReportHackTx SlashTx
+
+
+
+BurnAtomTx ProposalCreateTx
+
+
+
+ProposalVoteTx
+
+
+
+IBCBlockCommitTx
+
+
+
+IBCPacketTx
+
+
+
+IBCBlockCommitTx
+
+
+
+ChainID (string)
+
+
+
+BlockHash ([]byte)
+
+
+
+BlockPartsHeader (PartSetHeader)
+
+
+
+BlockHeight (int)
+
+
+
+BlockRound (int)
+
+
+
+Commit ([]Vote)
+
+
+
+
+
+
+
+ValidatorsHash ([]byte)
+
+
+
+ValidatorsHashProof (SimpleProof)
+
+
+
+AppHash ([]byte)
+
+
+
+AppHashProof (SimpleProof)
+
+
+
+Precommit
+
+
+
+ValidatorsHash
+
+
+
+BlockHash
+
+
+
+AppHash
+
+
+
+BlockHash
+
+
+
+IBCPacket
+
+
+
+Header (IBCPacketHeader) Payload ([]byte) PayloadHash ([]byte)
+
+
+
+Payload
+
+
+
+Payload PayloadHash IBCPacket
+
+
+
+IBCPacket
+
+
+
+IBCPacketHeader
+
+
+
+SrcChainID (string) DstChainID (string) Number (int) Status (enum) Type (string) MaxHeight (int)
+
+
+
+AckPending AckSent AckReceived NoAck Timeout NoAckWanted AckReceived
+
+
+
+IBCPacketTx
+
+
+
+FromChainID (string) FromBlockHeight (int)
+
+
+
+Timeout
+
+
+
+Header
+
+
+
+Packet (IBCPacket) PacketProof (IAVLProof)
+
+
+
+AckPending AckSent AckReceived NoAck AppHash
+
+
+
+Timeout
+
+
+
+IBCPacket
+
+
+
+IBCPacketTx SrcChainID
+
+
+
+IBCPacketTx DstChainID
+
+
+
+PacketProof IBC/<SrcChainID>/<DstChainID>/<Number>
+
+
+
+Status
+
+
+
+IBCPacket
+
+
+
+

@@ -1,0 +1,35 @@
+name: "📄 Request / add a whitepaper"
+description: Suggest a crypto whitepaper to add to the archive
+title: "[Add] <project name>"
+labels: ["whitepaper-request"]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project name
+      placeholder: e.g. Ethereum
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Whitepaper PDF URL
+      placeholder: https://…/whitepaper.pdf
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Publication year (if known)
+      placeholder: "2017"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      placeholder: Official site, team, token ticker, why it's notable…
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Want to add it yourself?
+      options:
+        - label: "I can open a PR (drop the PDF in the repo root + run the scripts)"

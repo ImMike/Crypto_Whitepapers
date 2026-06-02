@@ -1,0 +1,1227 @@
+1.1 version
+
+
+
+MIROCANA
+
+Artificial Intelligence for transparent investing
+
+WHITE PAPER
+
+MIROCANA.COM
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+Table of Contents
+
+
+
+1.0 PROJECT DESCRIPTION AND PLOT CONCEPTS
+
+
+
+3
+
+
+
+1.1 MIROCANA STRUCTURE AND ECOSYSTEM
+
+
+
+4
+
+
+
+1.2 CONCEPT OF STRATEGY
+
+
+
+5
+
+
+
+1.3 CONCEPT OF SIMULATION
+
+
+
+7
+
+
+
+1.4 CONCEPT OF DATA SOURCE
+
+
+
+8
+
+
+
+2.0 METHODS OF PERFORMANCE IMPROVEMENT
+
+
+
+9
+
+
+
+3.0 INFRASTRUCTURE, SCALING AND TOKEN MINING
+
+
+
+10
+
+
+
+4.0 MIROCANA INVESTMENT PRODUCTS
+
+
+
+11
+
+
+
+5.0 ROADMAP, PLANS AND POTENTIAL
+
+
+
+12
+
+
+
+6.0 LONG-TERM COMPETITIVE ADVANTAGES
+
+
+
+13
+
+
+
+7.0 TOKEN SALE TERMS
+
+
+
+14
+
+
+
+8.0 CORE TEAM AND CONTACT INFORMATION
+
+
+
+16
+
+
+
+9.0 DISCLAIMER AND RISKS DECLARATION
+
+
+
+17
+
+
+
+2
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+1.0
+
+Project Description and Plot Concepts
+
+Mirocana is a complex, self-reinforcing system based on deep-learning neural nets and other modern machine learning models that predicts stock, currency and crypto-currency markets. We collect, store, process and analyze huge volumes of financial data. The entire system is designed to constantly increase the accuracy of predictions.
+
+Mirocana Company was founded in March of 2015. Since that time we have raised venture money and built a reliable and successful trading prediction system for ourselves. We manage our funds using this AI-system, and we have a strong vision on how our products will change investment industry. Today, sophisticated investing algorithms and AI-powered trading robots are only available to a limited number of market players. Companies like WorldQuant, BlackRock, Aidyia, Morgan Stanley, Goldman Sachs, Tow Sigma and plenty of others that we do not know about, develop these complex algorithms and keep the technology to themselves. They spend hundreds of millions of dollars each year to hire thousands of highly paid quantitative analysts, algo-traders and data scientists to gain a competitive edge that is unreachable to a retail investor. We want to change that. We aim to create a system that will be available to our token-holders, is designed to constantly increase the accuracy of predictions, and is empowered not only by the members of our team but by many interested people around the world.
+
+For our token-holders, we are developing three simple investment analysis products based on predictions of the Mirocana system. We believe that transparency is the key-point of our products. We are not a hedge-fund, we do not take customers' funds to our accounts and our token is not a financial asset. We help customers manage their funds on their broker or exchange accounts without any rights to withdraw or transfer the funds, so our customers are secure. The customers can easily observe at what positions the system opens and closes. Each customer is able stop using our products and services at any time by revoking an access key. The access to our investment products is restricted by the amount of MIRO tokens on your account.
+
+It's difficult to consistently generate profits on stock, currency and crypto-currency markets, but we intend to build a system that will be able to do that, and we want this system to be accessible to many people, especially to our early-stage customers, not just people who have capital.
+
+
+
+3
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+1.1
+
+Mirocana Structure and Ecosystem
+
+
+
+As the main theory of making predictions we use historical extrapolation. Mirocana is connected in real-time to dozens of different sources of data and it stores time series of data that, in some cases, stretch back as far as the 1950s.
+
+Any information can be interpreted in many different ways. Every data interpretation in the system is called a strategy. For every data source, Mirocana has at least several dozens of strategies.
+
+
+
+4
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+1.2
+
+Concept of Strategy
+
+
+
+Strategy is an algorithm in the form of code that takes time series of quotes and series of data as an input (the data can be collected from one or more data sources) and produces an output. The output is a set of predictions in the format that is common for all the strategies in the system, so they remain comparable.
+
+Prediction of the strategy contains information about direction (to buy or to sell), strength level, duration and meta data about market conditions in which this signal has occurred.
+
+We use two types of strategies. Some strategies are only based on quotes data, while the other strategies are based on quotes + additional data (such as the activity of other traders, market data, fundamental data, tweets, news, etc.).
+
+The first type of strategies is not tied to a specific financial instrument or a timeframe. We apply these strategies to every time-frame (ex: 1M, 1H, 4H, etc.) and to every instrument (ex: Apple shares, EUR/USD, BTC/ETH, etc.). That allows us to connect to a broker or an exchange and start to generate predictions rather quickly.
+
+The second type of strategies, on the contrary, is tied to an instrument and a timeframe. However, it is more complex and provides increased accuracy of predictions.
+
+
+
+EACH STRATEGY IN THE SYSTEM CAN BE CLASSIFIED TO ONE OF THE 9 CATEGORIES
+
+
+
+Based on activity of traders, funds, and insiders
+
+Based on news and articles
+
+Based on symbols' correlation
+
+
+
+Based on technical indicators
+
+Based on macroeconomic data and events
+
+Based on social media activity
+
+
+
+Based on fundamental data
+
+Based on graphical chart patterns
+
+Autogenerated strategies
+
+
+
+We have developed our own syntax for creating new strategies, it is optimized for a fast backtest and multi-thread calculations.
+
+
+
+5
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+The majority of strategies in the system have, in their code, variables that vary in some limited range. That means that these strategies have hundreds and, in some cases, thousands of sub-strategies with their own unique set of parameters and the logic of the main strategy. That allows us to find more patterns in data more accurately and increases overall predictive accuracy.
+
+Moreover, we have developed a framework, which helps us to create new strategies, that are based on graphical chart patterns, much faster. The idea behind this method is that we set up an ideal pattern of price changes. After that, when we run a backtest of a strategy, it applies the function that measures the degree of coherence and similarity of current prices changes to an ideal pattern, and if the degree is higher than a threshold we generate a prediction to buy or to sell. This framework allows us to test dozens of new graphical chart patterns every week and add to the system only those that work.
+
+We possess an ever-growing number of strategies. The more strategies in the knowledge of the system - the more accurate predictions it produces. Our team and members of Mirocana Research Group are working every day to create new useful strategies and, in future, we will release Mirocana Alpha product, that will attract algo-traders and quantitative analysts from all over the world to help us to add new strategies in exchange for our MIRO tokens.
+
+
+
+6
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+1.3
+
+Concept of Simulation
+
+Simulation is a function that takes as input time series of quotes and series of predictions of all the strategies in the system. Then, according to its logic it calculates the weights among strategies using deep-learning neural nets and other machine learning models to produce cumulative predictions. Afterwards, using this cumulative predictions and the logic of risk management and position sizing logic, it places buy and sell orders in the simulation environment.
+
+To properly calculate the importance of every individual strategy (with its specific set of parameters) in final predictions, we use our own internal ML-products and open-source tools for machine learning and data science. Some of the open-source tools that we use:
+
+
+
+TENSORFLOW LIGHTGBM
+
+
+
+XGBOOST H2O
+
+
+
+CATBOOST THEANO
+
+
+
+In general, the weight of a strategy, calculated during a simulation, depends on a level of prediction's accuracy and its consistency.
+
+If a strategy is unable to find patterns in the series of data during a simulation, it is given a near-zero weight, so it will not affect a cumulative prediction.
+
+If a strategy constantly produces predictions with negative results - it is given a negative weight. It means that when this strategy indicates `buy' - the simulation will `sell', and vice versa.
+
+We have a number of simulations in the system with different logics of weights distribution. Our team tests new configurations of neural nets, conducts new experiments every day and adds new simulations. In future, we will release Mirocana Sigma product, which will attract talented data scientists from all over the world to continue to refine our product.
+
+After all the results for all simulations are calculated, we deploy the best performing simulation to the production.
+
+
+
+7
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+1.4
+
+Concept of Data Source
+
+
+
+Data Source is a code that is responsible for collecting and recording information from a site or a service to a database through a documented API or direct parsing. It can be data of any kind that we think may correlate with the assets' prices, which we predict or will predict.
+
+
+
+WE COLLECT DATA FROM TENS OF DATA SOURCES, INCLUDING BUT NOT LIMITED TO:
+
+
+
+Thomson Reuters
+
+
+
+Quotes, fundamental and macroeconomic data.
+
+
+
+OANDA
+
+
+
+Quotes, economic calendar and orderbook.
+
+
+
+Quandl
+
+
+
+Quotes, market data and fundamentals.
+
+
+
+Interactive Brokers
+
+
+
+Quotes and market data.
+
+
+
+IEX Exchange
+
+
+
+Quotes and market data.
+
+
+
+Poloniex
+
+
+
+Quotes and crypto-currencies market data.
+
+
+
+Bloomberg LP
+
+
+
+Quotes and market data, sentiment data and news.
+
+
+
+Autochartist
+
+
+
+Graphical chart patterns.
+
+
+
+Saxo TradingFloor
+
+
+
+Traders' activity and market data.
+
+
+
+eToro
+
+
+
+Traders' activity on the platform.
+
+
+
+ZuluTrade
+
+
+
+Traders' activity on the platform.
+
+
+
+myfxbook
+
+
+
+Traders' and algorithms activity.
+
+
+
+ForexFactory
+
+
+
+Traders' and algorithms activity.
+
+
+
+Preqin
+
+
+
+Traders' and hedge-fund managers' activity.
+
+
+
+Google Trends
+
+
+
+Searches and trends data.
+
+
+
+Twitter
+
+
+
+Traders' activity, announcements and news.
+
+
+
+TipRanks
+
+
+
+Analytics and hedge-fund managers activity and insides.
+
+
+
+PpsychSignal
+
+
+
+Traders' sentiment analysis.
+
+
+
+Yahoo News
+
+
+
+News, articles and traders' sentiment.
+
+
+
+Investing.com
+
+
+
+Economic calendar events, news, traders' sentiment data.
+
+
+
+SEC.gov
+
+
+
+Reports and data releases. Market activity data.
+
+
+
+Direct News Sites Parsing News, articles and other information.
+
+
+
+Each data source has at least a few dozens of strategies that interpret its data. Some strategies in the system are based on the information about the trading activity of thousands of professional traders, analysts, experts and hedge-fund managers. We have models that can predict the rate of return of newly placed orders, based on the trader's past performance.
+
+
+
+Our team negotiates the terms of partnership with new data vendors and we will be constantly implementing new public and private sources, including data sources with information about the activity of other market players.
+
+
+
+8
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+2.0
+
+Methods of Performance Improvement
+
+The rate of return that we are able to generate, relatively to capital under management, highly depends on the accuracy of our predictions. We constantly add new data sources, strategies and simulations to the system to increase the accuracy of predictions. In order to attract the best and the brightest minds in the field of data analysis, we will roll out three platforms for crowd-sourced learning:
+
+MIROCANA ALPHA
+
+Mirocana Alpha is a web interface where any skillful quantitative analyst or an algo-trader will be able to create, test, optimize and evaluate his/her own strategy based on quotes data or the data from our data sources. Then we will value this strategy and consequently pay a reward for this strategy in MIRO tokens, that later can be used to access Mirocana Investment Products or exchanged for other crypto-currencies at the Exchange.
+
+MIROCANA SIGMA
+
+Mirocana Sigma is a web interface where any data scientist or mathematician will be able to create, validate, test and score his/her own predicting models based on our encrypted (obfuscated) predictions data. We will periodically conduct kernel-based tournaments among data scientists. The top participants will be paid with MIRO tokens.
+
+MIROCANA TARGET
+
+Mirocana Target is an Android and iOS app, as well as a web interface, where any person will be able to leave his/her predictions of future price movements for stocks, currencies and crypto-currencies and then get paid with MIRO tokens depending on the accuracy and consistency of their predictions.
+
+Our current research work heavily relies on the Mirocana Research Group: the community of more than 70 experienced data scientists, mathematicians, and quantitative analysts, who have interest in Mirocana development. We split our research work into several tasks and distribute these tasks among our Research Group. If the tasks are successfully done with required predictions accuracy and on time, we make a payout to the members of the Research Group. After a Token Sale we will be making our payouts in MIRO tokens, and after our Mirocana Alpha and Mirocana Sigma platforms are released, the members of Mirocana Research Group will be the first to join.
+
+
+
+9
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+3.0
+
+Infrastructure, Scaling and Token Mining
+
+We have our own servers infrastructure, but rent additional servers as well. To store information from data sources we use MongoDB, to store quotes data, simulations' results, and predictions generated by each set of parameters of each strategy for each instrument and each time-frame we use ClickHouse. This is the only one open-source database that is capable of reading up to 700 million rows of data per second per server. It was open-sourced by Yandex in July of 2016, according to our benchmarks this is the fastest database currently available.
+
+The majority of our codebase is written in Python 3.4. This programming language has a simple syntax, so we are able to write (and read) our code faster. Plus, with this language, it is also easier to onboard a new developer.
+
+In future, we will rewrite our core functionality into other low-level languages in order to optimize and speed up our processes. To create these processes we consider Python as the best choice.
+
+We are not developing high frequency trading algorithms, however, we declare an interest in this field.
+
+Calculation of strategies' backtest results for each instrument, for each time-frame and for each set of parameters, along with training of neural nets during a simulations, requires a substantial computational power. We have created a task-worker logic of system's operation: when we create a new strategy, systems create new tasks for backtests to be calculated. Today, workers that execute this tasks are running only on our servers. In future, when we experience a fast growing number of strategies and simulations, it will be very reasonable for us to let many interested people with free computational power install our workers and start mining our MIRO tokens. We have plans to release Mirocana Miner product: this product will attract many interested miners from all over the world. Mining MIRO tokens could be much more profitable for miners than mining Ethereum or other crypto-currencies.
+
+
+
+10
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+4.0
+
+Mirocana Investment Analysis Products
+
+We possess three investment analysis products. The key value of these products is that you do not transfer your funds to our accounts. We aim to help manage your funds using our system on your account. The access to these products will be restricted by the amount of MIRO tokens on a customer's account.
+
+
+
+PRODUCT FOR STOCK MARKET
+
+Our system predicts over 400 securities that are listed on NYSE and NASDAQ stock exchanges. We can set up an integration with your Interactive Brokers account and start analyzing how to help you manage your funds on your account using our Artificial Intelligence. This is our most valuable product and it is limited. Access will be granted only to TOP 200 people who have the most MIRO tokens on their balance by the end of the Token Sale. After the Token Sale you will only be able to get access if you have more than 5 million dollars to be managed by the system.
+
+
+
+This product will be available on the 1st of March, 2018 and every customer will have a personal account manager to help setting up an integration.
+
+
+
+PRODUCT FOR CURRENCY MARKET
+
+Our system predicts 125 currency pairs that are available with OANDA broker. We can connect our system to your account and start helping you manage your funds. To obtain access to this product you need to have at least 10,000 MIRO tokens on your account (if you purchased them during a the Token Sale) and 30,000 MIRO tokens (if you purchased them later at the exchange).
+
+
+
+This product will be available within a month after the Token Sale. In order to set up the integration, you will need to provide your access key (we will not have the rights to withdraw or transfer the funds) from your OANDA account.
+
+
+
+PRODUCT FOR CRYPTO-CURRENCY MARKET
+
+Our system predicts 90 crypto coins that are traded on the Poloniex exchange. We can start allocating you coins on your behalf on the Poloniex exchange. To get access to this product you will be required to have at least 5,000 MIRO tokens on your balance (if you purchased them during a Token Sale), and 15,000 MIRO tokens (if you purchased them later at the exchange).
+
+
+
+This product will be available within two months after the Token Sale. You will need to provide your Poloniex Access Token and a Secret Key, we will not have the rights to withdraw or transfer the coins.
+
+
+
+Mirocana token-holders who have access to one or more investment products will be able to set up a target return in their Mirocana Account for each product. Target return is the rate of annual return that you would like our system to achieve with the funds you have in your accounts with brokers our exchanges you choose. This value can be set from 5% to 150%. When you select the rate of target return the system will show the risk level that is associated with that rate of return. It will show maximum possible drawdown, profit factor, Sharpe ratio and other metrics that are commonly used to determine the risk adjusted return results of the trading systems.
+
+
+
+11
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+5.0
+
+Roadmap, Plans and Potential
+
+
+
+We set "increasing accuracy of predictions" as the main goal of the company. We will add new data sources, strategies, simulations and other features that will positively affect our investment performance.
+
+
+
+2017, November 2017, December 2018, February 2018, March 2018, May 2018, June 2018, August
+
+
+
+OUR MULTI-YEAR PLAN
+
+Simulation results for the version 1.1 released. ~140 strategies in the system, ~3 billion predictions in the database.
+
+We will finish a Token Sale. Our customers who have access to products for Currency and Crypto-Currency markets will be able to start manage their funds in January of 2018.
+
+Simulation results for version 1.2 released. At that point we will have 350 strategies in the system and 8 billion predictions.
+
+We will launch our product for Stock Market. Every customer will have his/her own account manager who will help set up the integration with Interactive Brokers correctly.
+
+Mirocana Alpha released - a platform, where any interested quant or algo-trader will be able to submit his/her own strategy and get paid in MIRO tokens.
+
+Simulation results for version 1.3 released. At that point we will have 1100 strategies in the system and 24 billion predictions.
+
+Mirocana Sigma released. It will significantly increase the accuracy of system's predictions.
+
+
+
+2018, October 2019, February
+
+
+
+Simulation results for version 1.4 released. At that point we will have 2400 strategies in the system and 53 billion predictions.
+
+Mirocana Target released. We will add this platform as a new data source in the system.
+
+
+
+2019, March 2019, May 2019, August
+
+
+
+Simulation results for version 1.5 released. At that point we will have 4000 strategies in the system and 88 billion predictions.
+
+We will experience a fast growing number of strategies and we will release Mirocana Miner product. Miners will be paid with MIRO tokens for the work of their servers.
+
+Simulation results for version 1.6 released. At that point we will have 7000 strategies in the system and 150 billion predictions.
+
+
+
+12
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+6.0
+
+Long-Term Competitive Advantages
+
+FLEXIBLE CODEBASE
+
+We are a team of engineers and data scientists. And we solve a problem of predicting the markets as a data science problem. The majority of traditional trading firms use third-party software to write and backtest their strategies, therefore they are limited by that software. We wrote everything from scratch. We have developed our own engine to backtest strategies and to run the simulations. This allows us to quickly scale our system and unlocks an endless field for new exciting experiments.
+
+HIGH SCALABILITY
+
+To constantly improve accuracy of system's predictions we must add new data sources, new strategies and new simulations. We do that by our own but also we develop three products for crowd-sourced learning that will attract smart people from all over the world to help us. Furthermore, our Mirocana Miner product will solve the problem of constantly increasing needs for computing power.
+
+CUMULATIVE EFFECT
+
+It is known that many traditional investment firms use a few dozens of strategies and manually allocate capital among them, trying to achieve balance. Our system bases its final predictions on all the strategies that we have at once. Each strategy by itself is able to generate profit but combining them together, using deep-learning neural nets and other ML-models, creates a cumulative effect - some sort of super-strategy that has the results that are better than the results of the best performing strategy.
+
+MARKET ADJUSTMENTS
+
+Trading robots that are used by investment banks and trading firms may be very complex, but the code that describes their logic is usually no more than 2 thousand lines. Such algorithms may work well for extended period of time, but when the behavior of market is changed, these robots do not change, they start losing, and they are manually replaced by another working algorithm. Mirocana system is very different: if some strategy stopped working, it will be given a low weight after some iterations and this strategy will not affect the final prediction.
+
+ANALYSING HUMANS
+
+Some of our strategies are based on the activity of human traders, analysts and hedgefund managers. Our system learns strong and weak sides of these traders based on their past performance and is able to predict their reaction on certain market events. By analysing the reaction of a small fraction of traders, our system is able to extrapolate this reaction for the rest of them.
+
+
+
+13
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+BACKTEST LEGITIMACY
+
+If you ever tried to code a trading strategy, you may noticed that your strategy shows very decent results on the backtest, but is not working quite well on the real data. This happens because you adjust and validate your strategy parameters based on the full result of the strategy, meaning based on future data that your strategy should not know. To prevent this you will need to develop you strategy on training data and validate it on the test data. In the Mirocana system, when a new simulation is launched it iterates over history, making training and testing at the same time, and it does not know anything about the future data - that ensures the legitimacy of our backtesting.
+
+
+
+7.0
+
+Token Sale Terms
+
+
+
+To accelerate the velocity of our research and development we decided to make our investment products available to many people. We will conduct a Token Sale. By buying MIRO tokens during the Token Sale, you are buying the access key to our investment analysing products. After the Token Sale, MIRO token may get listed at one or more crypto-exchanges, if that happens, you may be able to exchange MIRO tokens for other crypto-currencies if you no longer want to have access to our AI-products.
+
+The supply of tokens is limited. Performance of our investment products permanently improves over time and more customers will want to access our products. It is possible that at some point in the future we will experience an extreme shortage of tokens. In that case, a secondary offering may be considered, but we will not conduct it until the end of 2019.
+
+
+
+TOKEN SALE START DATE AND TIME:
+
+Sunday, November 19, 2017 12:00:00 GMT Timestamp: 1511092800
+
+TOKEN SALE END DATE AND TIME:
+
+Tuesday, December 19, 2017 12:00:00 GMT Timestamp: 1513684800
+
+
+
+TOKEN PRICE: 1 MIRO token = 0.001 ETH
+
+INITIAL SUPPLY: 200,000,000 MIRO tokens
+
+MAX. HARD CAPITALIZATION: 60,000 ETH
+
+
+
+14
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+MIRO TOKENS WILL BE DISTRIBUTED IN THE FOLLOWING PROPORTIONS
+
+
+
+1 0 Will be held in Token Storage to make
+
+
+
+payouts in Mirocana Miner product
+
+
+
+%
+
+
+
+60%
+
+
+
+Will be distributed among Token Sale token buyers
+
+
+
+Will be held by the company to make
+
+
+
+2 4 payouts in our crowdsourced learning platforms: Alpha, Sigma, Target
+
+
+
+,75%
+
+
+
+0 , 2 5 Reserved for bounty programm
+
+
+
+%
+
+
+
+5 % Reserved for advisors
+
+
+
+PROCEEDS RECEIVED DURING A TOKEN SALE WILL BE USED FOR
+
+
+
+1 5 Legal, marketing and other expenses
+
+
+
+%
+
+
+
+Expanding the team of managers who are
+
+
+
+5 responsible for finding new data sources and negotiating terms of partnerships
+
+
+
+%
+
+
+
+1 0 Renting new servers and adding them to our
+
+cluster until Mirocana Miner product is released
+
+
+
+%
+
+
+
+Hiring new developers and blockchain
+
+
+
+1 0 experts for the purpose of creating Mirocana Miner product
+
+
+
+%
+
+
+
+Hiring new developers and engineers for the purpose of
+
+
+
+10%
+
+
+
+development and optimization of our core engine functionality for strategy backtests and simulations
+
+
+
+15%
+
+
+
+Expanding the team of algo-traders and quantitative analysts with experience in finance and trading for the purpose of creating new strategies
+
+
+
+15%
+
+
+
+Expanding the team of data scientists and mathematicians for the purpose of testing new neural net configurations and experimenting with different machine learning algorithms to improve layer of simulations
+
+
+
+20%
+
+Hiring new developers for the purpose of creating Mirocana Alpha, Sigma and Target products.
+
+
+
+15
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+8.0
+
+Mirocana Core Team
+
+
+
+GEORGE PETROV Founder and CEO
+
+george@mirocana.com
+
+
+
+EVGENIY ULYANOV Head of Operations
+
+eugene@mirocana.com
+
+
+
+DARIA PATANINA Head of Marketing
+
+daria@mirocana.com
+
+
+
+SERGEY POPOV
+
+C++ Core Developer sergey@mirocana.com
+
+
+
+ALEXEY DEMENTYEV Head of Product Development
+
+alexey@mirocana.com
+
+
+
+DARIA SHCHURIK Head of Analytics
+
+darya@mirocana.com
+
+
+
+DMITRIY TOLSTYAKOV Head of Strategies Division
+
+dmitriy@mirocana.com
+
+
+
+VLASIALAV POCHUKALIN Head of Design
+
+vlad@mirocana.com
+
+
+
+SUPPORT@MIROCANA.COM
+
+
+
+CORP@MIROCANA.COM
+
+
+
+is an email for questions and requests about products' functionality and bug reports. Also you can get answers to your questions in our public chat on Telegram.
+
+
+
+is a primary email for business proposals and work-related matters. GEORGE@MIROCANA.COM
+
+
+
+is the founder's email for any other problems or suggestions.
+
+
+
+JOIN OUR COMMUNITY
+
+
+
+16
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+9.0
+
+Disclaimer and Risks Declaration
+
+We understand the concerns that potential token buyers may have regarding Mircoana project and its development. You can find out our risks declaration in the following document: http://static.mirocana.com/documents/RisksDeclaration.pdf
+
+Please note that Miro Tokens by themselves will not give you any return on investment. We are not selling a security or a financial instrument. We will not take any actions that may increase the value of Miro tokens over time and you will be subject to a restriction of selling the Miro tokens on secondary markers. The only reason why you should purchase the Miro tokens today is that the supply of the tokens limited and if you want to access our products at a reasonable cost or at all, your best opportunity is to purchase the necessary amount of Miro Tokens at the Token Sale.
+
+SIMPLE AGREEMENT FOR FUTURE MIRO TOKENS https://static.mirocana.com/documents/en/SimpleAgreementforFutureTokens.pdf
+
+TOKEN PURCHASE POLICY https://static.mirocana.com/documents/en/TokenPurchasePolicy.pdf
+
+PRIVACY POLICY https://static.mirocana.com/documents/en/PrivacyPolicy.pdf
+
+NOT BEEN REGISTERED UNDER THE U.S. SECURITIES ACT OF 1933, AS AMENDED (THE "SECURITIES ACT"), OR UNDER THE SECURITIES LAWS OF CERTAIN STATES AND IS ONLY BE SOLD TO "ACCREDITED INVESTORS." THE SAFT MAY NOT BE OFFERED, SOLD OR OTHERWISE TRANSFERRED, PLEDGED OR HYPOTHECATED EXCEPT AS PERMITTED UNDER THE ACT AND APPLICABLE STATE SECURITIES LAWS PURSUANT TO AN EFFECTIVE REGISTRATION STATEMENT OR AN EXEMPTION THEREFROM.
+
+NOTICE TO RESIDENTS OF CANADA: THE SAFT MAY BE SOLD ONLY TO PURCHASERS PURCHASING AS PRINCIPAL THAT ARE BOTH "ACCREDITED INVESTORS" AS DEFINED IN NATIONAL INSTRUMENT 45-106 PROSPECTUS AND REGISTRATION EXEMPTIONS AND "PERMITTED CLIENTS" AS DEFINED IN NATIONAL INSTRUMENT 31-103 REGISTRATION REQUIREMENTS, EXEMPTIONS AND ONGOING REGISTRANT OBLIGATIONS. ANY RESALE OF THE SECURITIES MUST BE MADE IN ACCORDANCE WITH AN EXEMPTION FROM THE PROSPECTUS REQUIREMENTS AND IN COMPLIANCE WITH THE REGISTRATION REQUIREMENTS OF APPLICABLE SECURITIES LAWS.
+
+
+
+17
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+NOTICE TO RESIDENTS OF CHINA: THE SAFTS ARE NOT BEING, AND MAY NOT BE, OFFERED OR SOLD, DIRECTLY OR INDIRECTLY, WITHIN THE PEOPLE'S REPUBLIC OF CHINA (FOR SUCH PURPOSES, NOT INCLUDING THE HONG KONG AND MACAU SPECIAL ADMINISTRATIVE REGIONS OR TAIWAN), EXCEPT AS PERMITTED BY THE SECURITIES AND OTHER LAWS AND REGULATIONS OF THE PEOPLE'S REPUBLIC OF CHINA. THE SAFTS MAY ONLY BE OFFERED OR SOLD TO PRC PURCHASERS THAT ARE AUTHORIZED TO ENGAGE IN THE PURCHASE OF INSTRUMENTS OF THE TYPE BEING OFFERED OR SOLD. PRC PURCHASERS ARE RESPONSIBLE FOR OBTAINING ALL RELEVANT GOVERNMENT REGULATORY APPROVALS/LICENSES, VERIFICATION AND/OR REGISTRATION THEMSELVES, AND COMPLYING WITH ALL RELEVANT PRC REGULATIONS, INCLUDING ANY RELEVANT FOREIGN EXCHANGE AND OVERSEAS INVESTMENT REGULATIONS.
+
+NOTICE TO RESIDENTS OF HONG KONG: SAFTS MAY NOT BE OFFERED OR SOLD IN HONG KONG BY MEANS OF ANY DOCUMENT OTHER THAN (I) IN CIRCUMSTANCES WHICH DO NOT CONSTITUTE ANY OFFER TO THE PUBLIC WITHIN THE MEANING OF THE COMPANIES (WINDING UP AND MISCELLANEOUS PROVISIONS) ORDINANCE (CAP. 32 OF THE LAWS OF HONG KONG) (THE "CWUMP ORDINANCE") OR WHICH DO NOT CONSTITUTE AN INVITATION TO THE PUBLIC WITHIN THE MEANING OF THE SECURITIES AND FUTURES ORDINANCE (CAP. 571 OF THE LAWS OF HONG KONG) ("SECURITIES AND FUTURES ORDINANCE"), OR (II) TO "PROFESSIONAL INVESTORS" AS DEFINED IN THE SECURITIES AND FUTURES ORDINANCE AND ANY RULES MADE THEREUNDER, OR (III) IN OTHER CIRCUMSTANCES WHICH DO NOT RESULT IN THE DOCUMENT BEING A "PROSPECTUS" AS DEFINED IN THE CWUMP ORDINANCE, AND NO ADVERTISEMENT, INVITATION OR DOCUMENT RELATING TO THE SAFT MAY BE ISSUED OR MAY BE IN THE POSSESSION OF ANY PERSON FOR THE PURPOSE OF ISSUE (IN EACH CASE WHETHER IN HONG KONG OR ELSEWHERE), WHICH IS DIRECTED AT, OR THE CONTENTS OF WHICH ARE LIKELY TO BE ACCESSED OR READ BY, THE PUBLIC IN HONG KONG (EXCEPT IF PERMITTED TO DO SO UNDER THE SECURITIES LAWS OF HONG KONG) OTHER THAN WITH RESPECT TO INSTRUMENTS WHICH ARE OR ARE INTENDED TO BE DISPOSED OF ONLY TO PERSONS OUTSIDE OF HONG KONG OR ONLY TO "PROFESSIONAL INVESTORS" IN HONG KONG AS DEFINED IN THE SECURITIES AND FUTURES ORDINANCE AND ANY RULES MADE THEREUNDER.
+
+
+
+18
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+NOTICE TO RESIDENTS OF THE EUROPEAN ECONOMIC AREA: IN RELATION TO EACH MEMBER STATE OF THE EUROPEAN ECONOMIC AREA WHICH HAS IMPLEMENTED THE PROSPECTUS DIRECTIVE (EACH, A "RELEVANT MEMBER STATE"), THE SAFT AND ANY RELATED DOCUMENTS ARE BEING DISTRIBUTED ONLY TO, AND DIRECTED ONLY AT (AND ANY RELATED PURCHASE ACTIVITY WILL BE ENGAGED ONLY WITH: (A) A LEGAL ENTITY THAT IS A QUALIFIED INVESTOR AS DEFINED IN THE PROSPECTUS DIRECTIVE, (B) FEWER THAN 150 NATURAL OR LEGAL PERSONS (OTHER THAN QUALIFIED INVESTORS AS DEFINED IN THE PROSPECTUS DIRECTIVE), SUBJECT TO OBTAINING THE PRIOR CONSENT OF ANY REPRESENTATIVE FOR ANY SUCH OFFER; OR (C) PERSON THE SALES TO WHOM WOULD BE IN ANY OTHER CIRCUMSTANCE FALLING WITHIN ARTICLE 3(2) OF THE PROSPECTUS DIRECTIVE; PROVIDED THAT NO SUCH TRANSACTION MAY RESULT IN A REQUIREMENT FOR THE PUBLICATION BY US OF A PROSPECTUS PURSUANT TO ARTICLE 3 OF THE PROSPECTUS DIRECTIVE. THE EXPRESSION "PROSPECTUS DIRECTIVE" MEANS DIRECTIVE 2003/71/EC (AS AMENDED), INCLUDING BY DIRECTIVE 2010/73/EU, AND INCLUDES ANY RELEVANT IMPLEMENTING MEASURE IN THE RELEVANT MEMBER STATE. THIS EUROPEAN ECONOMIC AREA SELLING RESTRICTION IS IN ADDITION TO ANY OTHER APPLICABLE SELLING RESTRICTIONS SET OUT BELOW. NOTICE TO RESIDENTS OF THE UNITED KINGDOM: IN THE UNITED KINGDOM THE SAFT IS BEING DISTRIBUTED ONLY TO, AND IS DIRECTED ONLY AT (AND ANY PURCHASE ACTIVITY TO WHICH IT RELATES WILL BE ENGAGED ONLY WITH): (I) INVESTMENT PROFESSIONALS (WITHIN THE MEANING OF ARTICLE 19(5) OF THE FINANCIAL SERVICES AND MARKETS ACT 2000 (FINANCIAL PROMOTION) ORDER 2005 AS AMENDED (THE "FPO")); (II) PERSONS OR ENTITIES OF A KIND DESCRIBED IN ARTICLE 49 OF THE FPO; (III) CERTIFIED SOPHISTICATED INVESTORS (WITHIN THE MEANING OF ARTICLE 50(1) OF THE FPO); AND (IV) OTHER PERSONS TO WHOM IT MAY OTHERWISE LAWFULLY BE COMMUNICATED (ALL SUCH PERSONS TOGETHER BEING REFERRED TO AS "RELEVANT PERSONS"). PERSONS WHO ARE NOT RELEVANT PERSONS SHOULD NOT TAKE ANY ACTION IN CONNECTION WITH THE SAFT OR BASED UPON ANY DOCUMENTS USED IN CONNECTION THEREWITH. IT IS A CONDITION OF YOUR ACQUISITION OF THE SAFT THAT YOU WARRANT TO MIROCANA, ITS DIRECTORS, AND ITS OFFICERS THAT YOU ARE A RELEVANT PERSON. THE SAFT AND ANY DOCUMENTS USED IN CONNECTION THEREWITH HAVE NOT BEEN APPROVED BY ANY AUTHORIZED PERSON.
+
+
+
+18
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+NOTICE TO RESIDENTS OF JAPAN: THE SAFT IS BEING OFFERED TO A LIMITED NUMBER OF QUALIFIED INSTITUTIONAL INVESTORS (TEKIKAKU KIKAN TOSHIKA, AS DEFINED IN THE SECURITIES EXCHANGE LAW OF JAPAN (LAW NO. 25 OF 1948, AS AMENDED)) AND/OR A SMALL NUMBER OF INVESTORS, IN ALL CASES UNDER CIRCUMSTANCES THAT WILL FALL WITHIN THE PRIVATE PLACEMENT EXEMPTION FROM THE REGISTRATION REQUIREMENTS OF THE SECURITIES EXCHANGE LAW AND OTHER RELEVANT LAWS AND REGULATIONS OF JAPAN. AS SUCH, THE SAFT HAS NOT BEEN REGISTERED AND WILL NOT BE REGISTERED UNDER THE SECURITIES EXCHANGE LAW OF JAPAN. THE PURCHASER OF THE SAFT AGREES NOT TO RE-TRANSFER OR RE-ASSIGN THE SAFT TO ANYONE OTHER THAN NON-RESIDENTS OF JAPAN EXCEPT PURSUANT TO A PRIVATE PLACEMENT EXEMPTION FROM THE REGISTRATION REQUIREMENTS OF, AND OTHERWISE IN COMPLIANCE WITH, THE SECURITIES EXCHANGE LAW AND OTHER RELEVANT LAWS AND REGULATIONS OF JAPAN.
+
+NOTICE TO THE RESIDENTS OF THE RUSSIAN FEDERATION: THE SAFT AND ANY RELATED DOCUMENTS ARE NOT AN OFFER, OR AN INVITATION TO MAKE OFFERS, TO SELL, PURCHASE, EXCHANGE OR OTHERWISE TRANSFER SECURITIES OR FOREIGN FINANCIAL INSTRUMENTS TO OR FOR THE BENEFIT OF ANY PERSON OR ENTITY RESIDENT, INCORPORATED, ESTABLISHED OR HAVING THEIR USUAL RESIDENCE IN THE IN THE RUSSIAN FEDERATION, EXCEPT "QUALIFIED INVESTORS" (AS DEFINED UNDER RUSSIAN SECURITIES LAWS) TO THE EXTENT PERMITTED UNDER RUSSIAN SECURITIES LAWS. THE SAFT AND ANY DOCUMENTS USED IN CONNECTION THEREWITH ARE NOT AN ADVERTISEMENT IN CONNECTION WITH THE "PLACEMENT" OR A "PUBLIC CIRCULATION" (AS BOTH TERMS ARE DEFINED UNDER RUSSIAN SECURITIES LAW) OF ANY SECURITIES, AND THE SAFT IS NOT INTENDED FOR "PLACEMENT" OR "PUBLIC CIRCULATION" IN THE RUSSIAN FEDERATION, IN EACH CASE UNLESS OTHERWISE PERMITTED UNDER RUSSIAN SECURITIES LAWS. NEITHER THE SAFT NOR A PROSPECTUS RELATING HERETO HAS BEEN OR WILL BE REGISTERED WITH THE CENTRAL BANK OF THE RUSSIAN FEDERATION.
+
+
+
+18
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+NOTICE TO RESIDENTS OF SINGAPORE: THE SAFT AND ANY DOCUMENTS USED IN CONNECTION THEREWITH HAVE NOT BEEN REGISTERED AS A PROSPECTUS WITH THE MONETARY AUTHORITY OF SINGAPORE UNDER THE SECURITIES AND FUTURES ACT, CHAPTER 289 OF SINGAPORE ("SFA"). ACCORDINGLY, THE SAFT AND ANY OTHER DOCUMENT IN CONNECTION WITH THE OFFER OR SALE, OR INVITATION FOR SUBSCRIPTION OR PURCHASE, THEREOF MAY NOT BE CIRCULATED OR DISTRIBUTED, NOR MAY IT BE OFFERED OR SOLD, OR BE MADE THE SUBJECT OF AN INVITATION FOR SUBSCRIPTION OR PURCHASE, WHETHER DIRECTLY OR INDIRECTLY, TO ANY PERSON IN SINGAPORE OTHER THAN (I) TO AN INSTITUTIONAL INVESTOR UNDER SECTION 274 OF THE SFA, (II) TO A RELEVANT PERSON PURSUANT TO SECTION 275(1), OR ANY PERSON PURSUANT TO SECTION 275(1A), AND IN ACCORDANCE WITH THE CONDITIONS SPECIFIED IN SECTION 275 OF THE SFA, OR (III) OTHERWISE PURSUANT TO, AND IN ACCORDANCE WITH THE CONDITIONS OF, ANY OTHER APPLICABLE PROVISION OF THE SFA. WHERE THE SAFT IS SUBSCRIBED FOR OR PURCHASED UNDER SECTION 275 OF THE SFA BY A RELEVANT PERSON WHICH IS A TRUST (WHERE THE TRUSTEE IS NOT AN ACCREDITED INVESTOR (AS DEFINED IN SECTION 4A OF THE SFA)) WHOSE SOLE PURPOSE IS TO HOLD INVESTMENTS AND EACH BENEFICIARY OF THE TRUST IS AN ACCREDITED INVESTOR, THE BENEFICIARIES' RIGHTS AND INTEREST (HOWSOEVER DESCRIBED) IN THAT TRUST SHALL NOT BE TRANSFERABLE FOR 6 MONTHS AFTER THAT TRUST HAS ACQUIRED THE SHARES UNDER SECTION 275 OF THE SFA EXCEPT: (1) TO AN INSTITUTIONAL INVESTOR UNDER SECTION 274 OF THE SFA OR TO A RELEVANT PERSON (AS DEFINED IN SECTION 275(2) OF THE SFA), (2) WHERE SUCH TRANSFER ARISES FROM AN OFFER THAT IS MADE ON TERMS THAT SUCH RIGHTS OR INTEREST ARE ACQUIRED AT A CONSIDERATION OF NOT LESS THAN S$200,000 (OR ITS EQUIVALENT IN A FOREIGN CURRENCY) FOR EACH TRANSACTION (WHETHER SUCH AMOUNT IS TO BE PAID FOR IN CASH OR BY EXCHANGE OF SECURITIES OR OTHER ASSETS), (3) WHERE NO CONSIDERATION IS OR WILL BE GIVEN FOR THE TRANSFER, (4) WHERE THE TRANSFER IS BY OPERATION OF LAW, (5) AS SPECIFIED IN SECTION 276(7) OF THE SFA, OR (6) AS SPECIFIED IN REGULATION 32.
+
+
+
+18
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+NOTICE TO RESIDENTS OF SOUTH KOREA: THE SAFT AND ANY DOCUMENTS USED IN CONNECTION THEREWITH ARE NOT, AND UNDER NO CIRCUMSTANCES MAY BE CONSTRUED AS, A PUBLIC OFFERING OF SECURITIES IN SOUTH KOREA. NEITHER MIROCANA NOR ANY PLACEMENT AGENT MAY MAKE ANY REPRESENTATION WITH RESPECT TO THE ELIGIBILITY OF ANY PERSON TO ACQUIRE THE SAFT UNDER THE LAWS OF SOUTH KOREA, INCLUDING, WITHOUT LIMITATION, INDIRECT INVESTMENT ASSET MANAGEMENT BUSINESS LAW, THE SECURITIES AND EXCHANGE ACT AND THE FOREIGN EXCHANGE TRANSACTION ACT AND REGULATIONS THEREUNDER. THE SAFT HAS NOT BEEN REGISTERED UNDER THE SECURITIES AND EXCHANGE ACT, SECURITIES INVESTMENT TRUST BUSINESS ACT OR THE SECURITIES INVESTMENT COMPANY ACT OF SOUTH KOREA AND THE SAFT MAY NOT BE OFFERED, SOLD OR DELIVERED, DIRECTLY OR INDIRECTLY, OR OFFERED OR SOLD TO ANY PERSON FOR REOFFERING OR RESALE, DIRECTLY OR INDIRECTLY, IN SOUTH KOREA OR TO ANY RESIDENT OF SOUTH KOREA, EXCEPT PURSUANT TO THE APPLICABLE LAWS AND REGULATIONS OF SOUTH KOREA.
+
+NOTICE TO RESIDENTS OF SWITZERLAND: SAFTS MAY NOT BE PUBLICLY OFFERED IN SWITZERLAND AND WILL NOT BE LISTED ON THE SIX SWISS EXCHANGE ("SIX") OR ON ANY OTHER STOCK EXCHANGE OR REGULATED TRADING FACILITY IN SWITZERLAND. SAFTS AND ANY RELATED DOCUMENTS HAVE BEEN PREPARED WITHOUT REGARD TO THE DISCLOSURE STANDARDS FOR ISSUANCE PROSPECTUSES UNDER ART. 652A OR ART. 1156 OF THE SWISS CODE OF OBLIGATIONS OR THE DISCLOSURE STANDARDS FOR LISTING PROSPECTUSES UNDER ART. 27 FF. OF THE SIX LISTING RULES OR THE LISTING RULES OF ANY OTHER STOCK EXCHANGE OR REGULATED TRADING FACILITY IN SWITZERLAND. NEITHER SAFTS NOR ANY RELATED MARKETING MATERIAL MAY BE PUBLICLY DISTRIBUTED OR OTHERWISE MADE PUBLICLY AVAILABLE IN SWITZERLAND. SAFTS AND ANY RELATED MARKETING MATERIALS HAVE NOT BEEN AND WILL NOT BE FILED WITH OR APPROVED BY ANY SWISS REGULATORY AUTHORITY, PARTICULARLY INCLUDING THE SWISS FINANCIAL MARKET SUPERVISORY AUTHORITY ("FINMA"), AND IT HAS NOT BEEN AUTHORIZED UNDER THE SWISS FEDERAL ACT ON COLLECTIVE INVESTMENT SCHEMES ("CISA"). THE PROTECTIONS AFFORDED TO ACQUIRERS OF INTERESTS IN COLLECTIVE INVESTMENT SCHEMES UNDER THE CISA DOES NOT EXTEND TO ACQUIRERS OF SAFTS.
+
+
+
+18
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+NOTICE TO RESIDENTS OF ISRAEL: MIROCANA DOES NOT INTEND TO OFFER THE SAFT TO THE PUBLIC IN ISRAEL WITHIN THE MEANING OF THE ISRAELI SECURITIES LAW, 1968, OR OFFER SAFTS, WITHIN ANY SPECIFIC YEAR, TO MORE THAN 35 OFFEREES RESIDENT IN ISRAEL. EACH OFFEREE MUST AND HEREBY DOES WARRANT TO MIROCANA THAT IT IS PURCHASING SAFTS FOR INVESTMENT PURPOSES ONLY AND NOT FOR PURPOSES OF RESALE.
+
+NOTICE TO RESIDENTS OF UKRAINE: THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH DO NOT CONSTITUTE AN OFFER OF THE SAFTS OR MIROCANA TOKENS IN THE UKRAINE. THE SAFTS OR MIROCANA TOKENS HAVE NOT BEEN OFFERED OR SOLD, AND WILL NOT BE OFFERED OR SOLD, DIRECTLY OR INDIRECTLY, IN THE UKRAINE, EXCEPT AS MAY BE PERMITTED BY LAW.
+
+NOTICE TO RESIDENTS OF CAYMAN ISLANDS: THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH DO NOT CONSTITUTE A PUBLIC OFFER OF THE SAFTS OR MIROCANA TOKENS, WHETHER BY WAY OF SALE OR SUBSCRIPTION, IN THE CAYMAN ISLANDS. MIROCANA WILL NOT CARRY ON BUSINESS IN THE CAYMAN ISLANDS. THE SAFTS OR MIROCANA TOKENS HAVE NOT BEEN OFFERED OR SOLD, AND WILL NOT BE OFFERED OR SOLD, DIRECTLY OR INDIRECTLY, IN THE CAYMAN ISLANDS, EXCEPT AS MAY BE PERMITTED BY LAW WITHOUT CREATING AN OBLIGATION FOR MIROCANA TO REGISTER IN THE CAYMAN ISLANDS.
+
+NOTICE TO RESIDENTS OF INDIA: THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH AND ANY RELATED DOCUMENTS DO NOT CONSTITUTE AN OFFER TO SELL TO OR AN OFFER TO BUY INTEREST FROM ANY PERSON OTHER THAN THE PERSON TO WHOM THIS DOCUMENT HAS BEEN SENT BY MIROCANA OR ITS AUTHORIZED AGENTS. THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH SHOULD NOT BE CONSTRUED AS A PROSPECTUS. THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH ARE NOT BEING OFFERED FOR SALE OR SUBSCRIPTION BUT ARE BEING PRIVATELY PLACED WITH A LIMITED NUMBER OF SOPHISTICATED INVESTORS, AND PROSPECTIVE INVESTORS MUST OBTAIN LEGAL ADVICE THAT THEY ARE ENTITLED TO SUBSCRIBE FOR THESE INSTRUMENTS AND MUST COMPLY WITH ALL RELEVANT INDIAN LAWS IN THIS RESPECT.
+
+
+
+18
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+NOTICE TO RESIDENTS OF AUSTRALIA: NO SAFTS, PLACEMENT DOCUMENT, PROSPECTUS, PRODUCT DISCLOSURE STATEMENT OR OTHER DISCLOSURE DOCUMENT HAS BEEN LODGED WITH THE AUSTRALIAN SECURITIES AND INVESTMENTS COMMISSION (ASIC), IN RELATION TO THIS OFFERING. THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH AND ANY RELATED DOCUMENTS DO NOT CONSTITUTE A PROSPECTUS, PRODUCT DISCLOSURE STATEMENT OR OTHER DISCLOSURE DOCUMENT UNDER THE CORPORATIONS ACT 2001 (OR THE CORPORATIONS ACT) AND DO NOT PURPORT TO INCLUDE THE INFORMATION REQUIRED THEREFOR. ANY OFFER IN AUSTRALIA OF THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH MAY ONLY BE MADE TO "SOPHISTICATED INVESTORS" (WITHIN THE MEANING OF SECTION 708(8) OF THE CORPORATIONS ACT), "PROFESSIONAL INVESTORS" (WITHIN THE MEANING OF SECTION 708(11) OF THE CORPORATIONS ACT) OR OTHERWISE PURSUANT TO ONE OR MORE EXEMPTIONS CONTAINED IN SECTION 708 OF THE CORPORATIONS ACT SO THAT IT IS LAWFUL TO OFFER THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH WITHOUT DISCLOSURE TO INVESTORS UNDER CHAPTER 6D OF THE CORPORATIONS ACT. THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH MUST NOT BE OFFERED FOR SALE IN AUSTRALIA IN THE PERIOD OF 12 MONTHS AFTER THE DATE OF ALLOTMENT UNDER THIS OFFERING, EXCEPT IN CIRCUMSTANCES (I) WHERE DISCLOSURE TO PURCHASERS UNDER CHAPTER 6D OF THE CORPORATIONS ACT WOULD NOT BE REQUIRED PURSUANT TO AN EXEMPTION UNDER SECTION 708 OF THE CORPORATIONS ACT OR OTHERWISE OR (II) WHERE THE OFFER IS PURSUANT TO A DISCLOSURE DOCUMENT WHICH COMPLIES WITH CHAPTER 6D OF THE CORPORATIONS ACT. ANY PERSON ACQUIRING THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH MUST OBSERVE SUCH AUSTRALIAN ON-SALE RESTRICTIONS. NOTICE TO RESIDENTS OF THAILAND : THE SAFTS AND ANY DOCUMENTS USED IN CONNECTION THEREWITH HAVE NOT BE APPROVED BY THE OFFICE OF THE THAI SECURITIES EXCHANGE COMMISSION ("TSEC"), AND NO REGISTRATION STATEMENT AND DRAFT PROSPECTUS HAVE BEEN FILED WITH THE TSEC AND HAVE BECOME EFFECTIVE, IN RELIANCE ON APPLICABLE EXEMPTIONS FROM SUCH REQUIREMENTS, INCLUDING FOR OFFERS TO "INSTITUTIONAL INVESTORS" UNDER THE SECURITIES AND EXCHANGE ACT AND ANY RELATED ACT OR RULES.
+
+NOTICE TO RESIDENTS OF ALL OTHER JURISDICTIONS: NO ACTION HAS BEEN TAKEN TO PERMIT THE OFFER, SALE, POSSESSION OR DISTRIBUTION OF THE SAFT OR ANY RELATED DOCUMENTS IN ANY JURISDICTION WHERE ACTION FOR THAT PURPOSE IS REQUIRED. YOU ARE REQUIRED TO INFORM YOURSELF ABOUT, AND TO OBSERVE ANY RESTRICTIONS RELATING TO, THE SAFT AND ANY RELATED DOCUMENTS IN YOUR JURISDICTION.
+
+
+
+18
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+IMPORTANT NOTICES TO ALL PURCHASERS
+
+THE COMPANY MAKES NO WARRANTY WHATSOEVER WITH RESPECT TO THE TOKENS, INCLUDING ANY (i) WARRANTY OF MERCHANTABILITY; (ii) WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE; (c) WARRANTY OF TITLE; OR (iii) WARRANTY AGAINST INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS OF A THIRD PARTY; WHETHER ARISING BY LAW, COURSE OF DEALING, COURSE OF PERFORMANCE, USAGE OF TRADE, OR OTHERWISE. EXCEPT AS EXPRESSLY SET FORTH HEREIN, CONTRIBUTOR ACKNOWLEDGES THAT IT HAS NOT RELIED UPON ANY REPRESENTATION OR WARRANTY MADE BY THE COMPANY, OR ANY OTHER PERSON ON THE COMPANY'S BEHALF.
+
+IN SOME JURISDICTIONS PURCHASER ARE REQUIRED TO HAVE SPECIFIC QUALIFICATIONS TO PURCHASE MIRO TOKENS. FOR EXAMPLE, ONLY PERSONS OF ADEQUATE FINANCIAL MEANS WHO HAVE NO NEED FOR PRESENT LIQUIDITY SHOULD CONSIDER PURCHASING THE PURCHASE RIGHTS SET FORTH IN THE SAFT OFFERED HEREBY BECAUSE:
+
+PURCHASING A SAFT INVOLVES A NUMBER OF SIGNIFICANT RISKS (SEE "RISK FACTORS"); AND NO MARKET EXISTS FOR THE SAFTS OR THE PURCHASE RIGHTS CONTAINED THEREIN, AND NONE IS LIKELY TO DEVELOP IN THE REASONABLY FORESEEABLE FUTURE. THIS OFFERING IS INTENDED TO BE A PRIVATE OFFERING THAT IS EXEMPT FROM REGISTRATION UNDER THE SECURITIES ACT AND APPLICABLE STATE SECURITIES LAWS
+
+IN THE UNITED STATES THERE MAY BE PURCHASER SUITABILITY REQUIREMENTS AS OUTLINED BELOW. IT IS THE RESPONSIBILITY OF EACH PURCHASER TO VERIFY IF ANY OF THOSE REQUIREMENTS APPLY.
+
+FOR U.S. PERSONS (AS DEFINED BELOW), THIS OFFERING IS LIMITED SOLELY TO "ACCREDITED INVESTORS" AS DEFINED IN REGULATION D UNDER THE SECURITIES ACT, MEANING ONLY THOSE PERSONS OR ENTITIES COMING WITHIN ANY ONE OR MORE OF THE FOLLOWING CATEGORIES:
+
+ANY BANK, AS DEFINED IN SECTION 3(A)(2) OF THE SECURITIES ACT, OR ANY SAVINGS AND LOAN ASSOCIATION OR OTHER INSTITUTION DEFINED IN SECTION 3(A)(5)(A) OF THE SECURITIES ACT, WHETHER ACTING IN ITS INDIVIDUAL OR FIDUCIARY CAPACITY; ANY BROKER-DEALER REGISTERED PURSUANT TO SECTION 15 OF THE EXCHANGE ACT; ANY INSURANCE COMPANY, AS DEFINED IN SECTION 2(13) OF THE SECURITIES ACT; ANY INVESTMENT COMPANY REGISTERED UNDER THE INVESTMENT COMPANY ACT OF 1940 OR A BUSINESS DEVELOPMENT COMPANY, AS DEFINED IN SECTION 2(A)(48) OF THAT ACT; ANY SMALL BUSINESS INVESTMENT COMPANY LICENSED BY THE UNITED STATES SMALL BUSINESS ADMINISTRATION UNDER SECTION 301(C) OR (D) OF THE SMALL BUSINESS INVESTMENT ACT OF 1958;
+
+
+
+18
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+ANY PLAN ESTABLISHED AND MAINTAINED BY A STATE, ITS POLITICAL SUBDIVISIONS OR ANY AGENCY OR INSTRUMENTALITY OF A STATE OR ITS POLITICAL SUBDIVISIONS FOR THE BENEFIT OF ITS EMPLOYEES, IF SUCH PLAN HAS TOTAL ASSETS IN EXCESS OF $5,000,000; AND ANY EMPLOYEE BENEFIT PLAN WITHIN THE MEANING OF THE EMPLOYEE RETIREMENT INCOME SECURITY ACT OF 1974, IF THE INVESTMENT DECISION IS MADE BY A PLAN FIDUCIARY, AS DEFINED IN SECTION 3(21) OF SUCH ACT, THAT IS EITHER A BANK, SAVINGS AND LOAN ASSOCIATION, INSURANCE COMPANY OR REGISTERED INVESTMENT ADVISOR, IF THE EMPLOYEE BENEFIT PLAN HAS TOTAL ASSETS IN EXCESS OF $5,000,000 OR, IF A SELF-DIRECTED PLAN, WITH INVESTMENT DECISIONS MADE SOLELY BY PERSON(S) THAT ARE ACCREDITED INVESTOR(S); ANY PRIVATE BUSINESS DEVELOPMENT COMPANY AS DEFINED IN SECTION 202(A)(22) OF THE INVESTMENT ADVISORS ACT OF 1940; ANY ORGANIZATION DESCRIBED IN SECTION 501(C)(3) OF THE INTERNAL REVENUE CODE OF 1986, AS AMENDED, ANY CORPORATION, MASSACHUSETTS OR SIMILAR BUSINESS TRUST, OR COMPANY, NOT FORMED FOR THE SPECIFIC PURPOSE OF ACQUIRING THE COMMON STOCK, WITH TOTAL ASSETS IN EXCESS OF $5,000,000; ANY DIRECTOR OR EXECUTIVE OFFICER OF MIROCANA; ANY NATURAL PERSON WHOSE INDIVIDUAL NET WORTH, OR JOINT NET WORTH WITH THAT PERSON'S SPOUSE, EXCLUSIVE OF THE VALUE OF THE PERSON'S PRIMARY RESIDENCE NET OF ANY MORTGAGE DEBT AND OTHER LIENS, AT THE TIME OF HIS OR HER PURCHASE EXCEEDS $1,000,000; ANY NATURAL PERSON WHO HAD AN INDIVIDUAL INCOME IN EXCESS OF $200,000, OR JOINT INCOME WITH THAT PERSON'S SPOUSE IN EXCESS OF $300,000, IN EACH OF THE TWO MOST RECENT YEARS AND WHO REASONABLY EXPECTS TO REACH THE SAME INCOME LEVEL IN THE CURRENT YEAR; ANY TRUST WITH TOTAL ASSETS IN EXCESS OF $5,000,000, NOT FORMED FOR THE SPECIFIC PURPOSE OF ACQUIRING THE COMMON STOCK, WHOSE PURCHASE IS DIRECTED BY A SOPHISTICATED PERSON AS DESCRIBED IN RULE 506(B)(2)(II) OF REGULATION D; OR ANY ENTITY ALL OF WHOSE EQUITY OWNERS ARE ACCREDITED INVESTORS. THE TERM "NET WORTH" MEANS THE EXCESS OF TOTAL ASSETS OVER TOTAL LIABILITIES, EXCLUSIVE OF THE VALUE OF YOUR PRIMARY RESIDENCE NET OF ANY MORTGAGE DEBT AND OTHER LIENS.
+
+
+
+18
+
+
+
+MIROCANA.COM
+
+
+
+ Mirocana
+
+
+
+

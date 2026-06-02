@@ -1,0 +1,391 @@
+A Trustworthy Distributed Platform for Copyright
+
+Registration and File Integrity Verification
+
+The Engraved Team
+
+info@engraved.tech
+
+Draft -- Version 1.1 29th October 2017
+
+
+
+Contents
+
+
+
+1 Introduction
+
+
+
+4
+
+
+
+1.1 Copyright registry . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+
+
+1.2 Integrity registry . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+2 The Engraved Project
+
+
+
+8
+
+
+
+2.1 Ownership Registry . . . . . . . . . . . . . . . . . . . . . . . 8
+
+
+
+2.1.1 The Registry Process . . . . . . . . . . . . . . . . . . 8
+
+
+
+2.1.2 License registration . . . . . . . . . . . . . . . . . . . 9
+
+
+
+2.2 Integrity Validation . . . . . . . . . . . . . . . . . . . . . . . 9
+
+
+
+2.3 Decentralized Autonomous Organization (DAO) . . . . . . . 10
+
+
+
+2.4 Engraved Coin: EGC . . . . . . . . . . . . . . . . . . . . . . 10
+
+
+
+3 Crowdsale (ICO)
+
+
+
+11
+
+
+
+3.1 Engraved Token: EGR . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+3.2 Engraved Contracts Approval . . . . . . . . . . . . . . . . . 11
+
+
+
+3.3 Maintenance Incentives . . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+4 Roadmap and Levels of Funding
+
+
+
+13
+
+
+
+4.1 Core Smart Contracts (2 months*) . . . . . . . . . . . . . . 14
+
+
+
+4.2 Engraved Dashboard (3 months*) . . . . . . . . . . . . . . . 14
+
+
+
+4.3 Advanced Engraved Dashboard (9 months*) . . . . . . . . . 15
+
+
+
+4.4 Permanent and Secure IPFS Storage (15 months*) . . . . . . 15
+
+
+
+4.5 Future Work . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+
+
+2
+
+
+
+Disclaimer
+
+There are risks and uncertainties associated with Engraved and/or the Distributor and their respective businesses and operations, the EGR/EGC tokens, the EGR Token Crowdsale and the Engraved DAO (each as referred to in this Whitepaper).
+
+This Whitepaper, any part thereof and any copy thereof must not be taken or transmitted to any country where distribution or dissemination of this Whitepaper is prohibited or restricted.
+
+The EGR/EGC tokens are not intended to constitute securities in any jurisdiction. This Whitepaper does not constitute a prospectus or offer document of any sort and is not intended to constitute an offer of securities or a solicitation for investment in securities in any jurisdiction.
+
+This Whitepaper does not constitute or form part of any opinion on any advice to sell, or any solicitation of any offer by the distributor/vendor of the EGR/EGC tokens (the "Distributor") to purchase any EGR/EGC tokens nor shall it or any part of it nor the fact of its presentation form the basis of, or be relied upon in connection with, any contract or investment decision.
+
+You are not eligible and you are not to purchase EGR tokens if due to the purpose of Engraved tokens (EGR/EGC), they are considered securities in your country.
+
+You are not eligible and you are not to purchase any EGR tokens in the Crowdsale (as referred to in this whitepaper) if you are a citizen, resident (tax or otherwise) or green card holder of the United States of America or resident or citizen of the People's Republic of China, South Korea or Hong Kong SAR.
+
+3
+
+
+
+Abstract Engraved is a blockchain technology built on top of Ethereum with two main goals. First, provide a permanent, secure and cheap mechanism to establish indelible records which relate original works with their copyright holders. This relation is built through customizable copyright licenses on a certain moment in time. The original work is not stored on the blockchain but a cryptographic digest of it, allowing the copyright holder to keep its work in secret if desired. Second, Engraved also constitutes a system for file integrity verification, where file distributors can register files with their checksums under a custom namespace if desired.
+
+1 Introduction
+
+Around 475,000 works are registered yearly only in the U.S. Copyright Office with fees from USD 35 to USD 55 per work. This number represents a very small fraction of the total works created in a year in the United States and much more smaller in the World. Specially taking into account small original works which are not usually formally registered: amateur photos, blog and social media posts, open-source developments, graphic designs, music, videos, etc. Engraved offers a cheaper and easy to use alternative that allow authors to register all kind of works, including those that were not traditionally registered.
+
+Authorship rights are reflected in many international and regional legal agreements.
+
+"Everyone has the right to the protection of the moral and material interests resulting from any scientific, literary or artistic production of which he is the author."
+
+Universal Declaration of Human Rights, Article 27
+
+"The copyright is a form of protection provided by the laws of a country for "original works of authorship" for several types of creative or intellectual creations, whether published or not. It does not extend to ideas, names or procedures among others."
+
+U.S. Copyright Office
+
+4
+
+
+
+Most of the countries do not require formal registration to establish copyright in any completed work. The Berne Convention enforces a requirement that countries recognize copyrights of works held by the citizens of all other parties to the convention. It constitutes the most important international copyright-related treaty with 172 parties. The works are protected by the own legislation of every party with minimum requirements but with variations. For instance, the time a work is protected after death oscillates between 50 a 70 years.
+
+"The enjoyment and the exercise of these rights shall not be subject to any formality; such enjoyment and such exercise shall be independent of the existence of protection in the country of origin of the work. Consequently, apart from the provisions of this Convention, the extent of protection, as well as the means of redress afforded to the author to protect his rights, shall be governed exclusively by the laws of the country where protection is claimed."
+
+Berne Convention
+
+"In general, copyright registration is a legal formality intended to make a public record of the basic facts of a particular copyright."
+
+U.S. Copyright Office
+
+In addiction, Engraved also provides a method to ensure that a published file has not been modified since its publication. It can be especially useful for file distributors to ensure that a file has not been modified due to a transmission failure or even an attack.
+
+Engraved is a blockchain-based technology which uses the Ethereum Virtual Machine to execute its core functionality. Its main purpose is to relate entities. When talking about the copyright registry, the copyright holder and the original work (its digest) are related through a custom copyright license. In the case of the integrity verifier, a file name is related with its cryptographic digest. The chosen irreversible hash algorithm is Keccak-256.
+
+5
+
+
+
+1.1 Copyright registry
+
+Although a formal registration of a work is not required to the author in order to acquire its rights, having a trustworthy evidence is crucial to prove the authorship. In practice, being the first to register the work. Engraved offers a solution to make copyright registration trustworthy and secure as it is based on the Ethereum blockchain. There are many advantages over a traditional copyright registry among which stand:
+
+ The registration price (about USD 0.25) is lower than a formal registration (USD 35 to USD 55 at the U.S. Copyright Office), making it accessible to everyone and for works which were not often registered beyond a copyright notice.
+
+ It is fast. The formal copyright registration of a work may take several months, engraving it takes just a few seconds.
+
+ The work can be registered without being showed to a third party.
+
+ The work is recorded in the blockchain associated with the timestamp of the block in which the transaction was recorded, giving greater accuracy.
+
+ As the platform is decentralized, it is less susceptible to catastrophic loss or failure or even hacking.
+
+A work can be registered given its cryptographic digest, the author(s) name(s) and/or identifications of any kind with an optional copyright license. It exists a free text field where the copyright has to be reserved and which can work also for small custom copyright licenses. This field can be combined with a license reference which identifies an already registered license. Moreover, users also will be able to register new license texts.
+
+Having the original file, its cryptographic digest can be obtained and compared with the existing one in the blockchain, proving the relation of the author(s) with the original file represented by the engraved digest through the chosen copyright license.
+
+Having a work registered and relating its cryptographic digest with its author through a copyright license allows him to proof the authorship and the reserved rights in the future while preserving the original file unpublished if wanted (Proof of Existence).
+
+6
+
+
+
+1.2 Integrity registry
+
+When sensitive data is distributed, an integrity validation system is advisable to ensure that this data was not modified. Software developers usually provide a checksum that can be recomputed by the user with the downloaded data. If both match, the retrieved file is an exact replica of the original one. This approach can be extended to other domains where file verification is required.
+
+Verifying the integrity of an engraved file is as simple as obtaining a cryptographic digest of the obtained file and query the Engraved Integrity contract. If the record is present, information about the file will be retrieved.
+
+The key problem is storing the checksum in a reliable and highly available storage in a way that only the original "engravers" can modify it. Once again, the reliable and highly available storage will be the Ethereum blockchain, but, in this case, only the checksum and the original file name will be required. Authors can create namespaces that will be associated with their Ethereum address. Under a given namespace, the owner can add new files with its checksums. For example, this article could be registered as shown below, where "/engraved" is the namespace owned by the Engraved team.
+
+/engraved/engraved_whitepaper_v1.pdf: 0x5f60f95eff2c50700...
+
+Besides being sure a file has not been modified while making a copy of it, it is also important to ensure that the file submitter is a trustworthy source so the user can verify that the given file has not been modified and re-registered. For this purpose, a memorable code is assigned to every registered entity. This registration is done when the corresponding registry function is executed from an Ethereum address. This address will be the master address of the entity and will be able to provide engraving permissions to third addresses under its namespace. One address can be part of multiple entities and thus, when engraving a document, the user can choose between their available entities. When registering an entity, an identification code, as previously said, is assigned to it. This code could be published by the entity on their official website so it can be verified by users and, optionally, the entity could set a DNS TXT record entry so automated verifications of the source domain can be performed by third-party applications.
+
+7
+
+
+
+Figure 1: Interaction with the Engraved core smart contracts: Copyright and Integrity registries.
+
+2 The Engraved Project
+
+The Engraved core functionality will be implemented with Ethereum smart contracts.
+
+"What Ethereum intends to provide is a blockchain with a builtin fully fledged Turing-complete programming language that can be used to create "contracts" that can be used to encode arbitrary state transition functions."
+
+Ethereum Whitepaper [1]
+
+This way, we use a worldwide renowned platform with more than 25000 active nodes and a market cap greater than 27 billion dollars. This ensures long support with a large users community.
+
+2.1 Ownership Registry
+
+2.1.1 The Registry Process All transactions in the Ethereum network cost gas. Therefore, the ownership registration can not be free. We define another small fee that do not create new psychological barriers and that will be send to Engraved Decentralized Autonomous Organization. This organization is necessary to
+
+8
+
+
+
+make democratic and decentralized decisions on the future of the platform (Section 2.3).
+
+Authors have to submit the Keccak-256 digest of the work, the author's identification, a free text and the desired license reference (Figure 1). Both, the free text and the license reference are optional. The default license is "All rights reserved" but can be changed using the free text field. Authors can also use a predefined license and leave the free text empty (see Section 2.1.2). Note that the Engraved platform is agnostic to the author's identification, but it should be enough to demonstrate its authorship undeniably. Identifiers like national IDs or any other reliable third party identification could be used.
+
+2.1.2 License registration
+
+We need an initial set of registered licenses. This way, users just have to select one of this preregistered licences when they engrave new works. Moreover, users can add extra clauses to base-license with the free text field or just supply this free text with a full license.
+
+At the beginning, we will register some of the most commonly used licenses. Furthermore, the license registry will be open and any user can add new licenses (L in Figure 1) that all authors will be able to use for their works selecting the license reference (R in Figure 1).
+
+2.2 Integrity Validation
+
+As already mentioned, the integrity validation core is the namespace management. The entity creator can add new namespace and manage its permissions: change the owner and grant or revoke engraving permissions to other users. This entity users can engrave new files given the file hash and the corresponding namespace. Moreover, common users can engrave new files without a namespace or an entity (Figure 1). Therefore, users can choose a different level of identification depending on the use case.
+
+Furthermore, we do not define additional fees in this registry at the beginning. If we achieve a wide use by authors, lots of users will query the system millions of times a month to validate the engraved files. This will increase the popularity of the Engraved ecosystem, increasing the Ownership Registry popularity and thus, its revenew. Nevertheless, the Engraved organization (Section 2.3) can change this fee in the future.
+
+9
+
+
+
+2.3 Decentralized Autonomous Organization (DAO)
+
+Both ownership registry and integrity validation are managed by a decentralized autonomous organization. The smart contract that defines this organization must be approved by token holders after the crowdsale.
+
+The organization will be able to change the fees of the Ownership and Integrity registries, defined in ether. If the fee remains constant, the value in USD will change and, if the ETH/USD rate keeps growing, the engraving fee could grow uncontrolled. Token holders can make a proposal to modify the fee. Then, organization members can vote in favour or against the proposal. The weight of the vote of each token holder is proportional to their EGC token balance (see Section 2.4). Finally, the proposal is approved if:
+
+ It reaches a minimum number of votes: a minimum level of participation is required.
+
+ The majority vote in favour of the proposal.
+
+All incomes will be distributed annually to token holders to promote the participation in the voting process. An optimal fee will produce a higher income and, therefore it will increase the profit of the Engraved DAO. Dividends will be paid under active claim. The distribution will be proportional to the number of EGC tokens of each token holder over the total and a minimum percentage of the total supply will be required. In addition, a minimum payment per token holder will be determined in order to prevent disproportionate costs with microtransactions. This measurement also reduces the number of token holders with a few tokens that do not feel involved in the organization.
+
+2.4 Engraved Coin: EGC
+
+We design the token contract following the ERC20 standard. This token will define the voting weight and the dividends percentage of each EGC token holder. Investors will be able to exchange EGR tokens (acquired during crowdsale) by EGC tokens. Finally, this token also will be unlocked for trading.
+
+In this way, the main token contract is not predefined by Engraved developers and it have to be approved by investors after crowdsale. Therefore, all Engraved smart contracts (Ownership Register, Integrity Validation, DAO,
+
+10
+
+
+
+and EGC) have to be accepted by investors. Moreover, new features can be discussed before the final deployment and can be added to the final contract version.
+
+3 Crowdsale (ICO)
+
+3.1 Engraved Token: EGR
+
+This token was designed exclusively for the crowdsale and incentive distributions. Token holders will be able to exchange EGR tokens with EGC when the Engraved contracts are approved.
+
+At the beginning, EGR token will remain locked. Therefore, tokens only can be used for voting the Engraved contracts proposal once the crowdsale is completed. When the organization contract is deployed, token holders can take an active part in the decision making process described in the previous sections through EGC tokens.
+
+Tokens can be acquired sending Ether to the crowdsale contract. The Figure 2 describes the exchange rate in each period. We also define an airdrop period before the crowdsale in which the first 500 investors can acquire EGR tokens for free by executing the "claim" method of the crowdsale smart contract. Each investor can only execute this method once and they will receive 1,000 EGR. Both airdrop and crowdsale stages are managed autonomously through an Ethereum smart contract so the Engraved team will not be able to change the crowdsale rules once deployed.
+
+The amount of issued tokens is limited to 1,000,000,000 (1 billion), otherwise organization profit may not be enough to reach the minimum payment to each token holder. Furthermore, this limit ensure that we can reach the minimum amount to implement all planned features (Section 4).
+
+3.2 Engraved Contracts Approval
+
+After the crowdsale, we will publish the core contracts (DAO, integrity validation, ownership registration and EGC token). The transfer of the token ownership to the DAO contract must be approved by the EGR token holders (a voting period of 7 days after the proposal is published). If the transfer proposal is not approved, a new one have to be published.
+
+Once the new contracts are approved, the EGR token will be unlocked for trading and investors will be free to exchange EGR tokens with EGC
+
+11
+
+
+
+Figure 2: Crowdsale: token sale is not allowed in white periods (only allowed during gray periods).
+
+Figure 3: Engraved deployment process. 12
+
+
+
+Figure 4: Levels of funding.
+
+tokens. Furthermore, the maintenance incentives campaign will start at that time. The whole process is shown in Figure 3.
+
+3.3 Maintenance Incentives
+
+To ensure a long-term support, members of the core team receive a percentage of the EGR token total supply.The first incentives round will be distributed to the core team members after the approval of the Engraved contracts: 10% of the total supply. The second incentive round, one year after the deployment, amounts to 5% of the existing tokens. The third incentive, two years after the deployment, amounts to 2.5% of the tokens. The last incentive round, three years after deployment, amounts to 1.25% of the existing tokens. Therefore, the total incentive is distributed three years after the deployment.
+
+4 Roadmap and Levels of Funding
+
+In this section we present the planned iterations for the Engraved platform development. The project is divided in four stages composed of multiples functionalities. Functionalities of the last three stages are tagged with +
+
+13
+
+
+
+(190 ETH), ++ (580 ETH) or +++ (980 ETH), referencing the three required levels of funding for their implementation (see Figure 4).
+
+4.1 Core Smart Contracts (2 months*)
+
+* After the crowdsale ends.
+
+The core contracts are constituted by the registries (copyright and integrity) contracts and the DAO contracts (The Engraved Decentralized Autonomous Organizacion and the Engraved Coin token).
+
+List of proposed functionality:  The Ownership Registry smart contract  The Integrity Validation smart contract  The Engraved DAO smart contract  The Engraved Coin token
+
+4.2 Engraved Dashboard (3 months*)
+
+* After the core contracts approval.
+
+The Engraved dashboard will be developed if a minimum amount of 190 ether is reached during the ICO. Through a web application, users will be able to engrave items: both original works at the copyright registry and files at the integrity registry. This first version will be highlighted by its simplicity of use. An Ethereum wallet will not be needed either off-chain sign up. With a traditional payment gateway, the user will pay for an estimation of the transaction cost in Ethereum gas plus the engraving commission.
+
+List of proposed functionality: + Web-based Copyright Registry + Web-based Integrity Registry without entities + Traditional payment gateway
+
+14
+
+
+
+4.3 Advanced Engraved Dashboard (9 months*)
+
+* After the core contracts approval.
+
+The next iteration will be implemented if a minimum amount of 580 ether is reached. This advanced web dashboard will support all Engraved features including entity management for the integrity validation registry. It also will include user profiles and metadata management, so users will be able to see their engraved files and handle their entities.
+
+List of proposed functionality:
+
+++ Register an entity in the Integrity Registry associated with a Ethereum address
+
+++ Register a file in the Integrity Registry without entity
+
+++ Register a file in the Integrity Registry under an entity with an offline signature
+
+++ Search by digest, user, date, work attributes (title, description) and tags
+
+++ User works tracking
+
+++ Work statistics (views)
+
+++ Automatic multi-author / user rights transfer
+
+++ User management (accounts)
+
+4.4 Permanent and Secure IPFS Storage (15 months*)
+
+* After the core contracts approval.
+
+If we reach an amount of 980 ether we will release the complete platform. This last step includes permanent and secure storage for original works on IPFS (the InterPlanetary File System) [2]. Although the original work is not needed for engraved it (only the cryptographic digest), authors will be able to store their works and make it accessible through this platform ensuring high availability.
+
+15
+
+
+
+List of proposed functionality: +++ Cloud based storage through the IPFS protocol
+
+4.5 Future Work
+
+The Engraved development is not limited to the functionalities previously discussed. According to the reception of the project by the community other functionalities and/or modules would be developed. Moreover, remember that core contract are not predefined and must be approved after crowdsale, so the community could propose features on the core features.
+
+References
+
+[1] V. Buterin et al., "Ethereum white paper," 2013. [2] J. Benet, "Ipfs-content addressed, versioned, p2p file system," 2014.
+
+16
+
+
+
+

@@ -1,0 +1,1801 @@
+BitRewards White Paper
+
+Bringing blockchain to customers' loyalty
+
+December 30, 2017
+
+
+
+Contents
+
+EXECUTIVE SUMMARY.........................................................................................................................................4 MARKET OVERVIEW .............................................................................................................................................6
+
+PREFACE ...............................................................................................................................................................7 LOYALTY MANAGEMENT MARKET .............................................................................................................................8 KEY PROBLEMS FOR LOYALTY REWARDS PROVIDERS................................................................................................8
+
+Account inactivity .............................................................................................................................................8 Low redemption rates ......................................................................................................................................9 Low client retention ..........................................................................................................................................9 Increased costs for customer service ..............................................................................................................9 Low motivation by offered rewards ............................................................................................................... 10
+
+VALUE PROPOSITION........................................................................................................................................ 11
+
+HOW DOES BITREWARDS SOLVE THE MAIN PROBLEMS? ........................................................................................ 11 Account inactivity .......................................................................................................................................... 11 Low redemption rates ................................................................................................................................... 12 Increased costs for customer service ........................................................................................................... 12 Low motivation by offered rewards ............................................................................................................... 12
+
+NEW CUSTOMER EXPERIENCE .............................................................................................................................. 12 Advantages to retailers ................................................................................................................................. 13 Ecosystem and community ........................................................................................................................... 14
+
+HOW IT WORKS .................................................................................................................................................. 14
+
+USER EXPERIENCE. HOW CUSTOMERS EARN BIT .................................................................................................. 14 STEPS TO REDEEM .............................................................................................................................................. 18 RETAILERS' WORKFLOW ...................................................................................................................................... 20
+
+Option 1. Working with the system through the BitRewards operator.......................................................... 20 Mechanics of rewards payment through the BitRewards operator............................................................... 21 Payments for purchases through the BitRewards operator:......................................................................... 21 Maintenance of fiat and cryptocurrencies reserve at the BitRewards operator............................................ 22 Option 2. Direct transactions ........................................................................................................................ 22 Liquidity smart contract ................................................................................................................................. 23
+
+PRODUCT ARCHITECTURE .............................................................................................................................. 23
+
+RETAILER ........................................................................................................................................................... 24 Plugins for online shopping platforms........................................................................................................... 24 Merchant's dashboard .................................................................................................................................. 25 Retailer's crypto-wallet.................................................................................................................................. 25 Auxiliary parts of the system:........................................................................................................................ 25
+
+CUSTOMERS ....................................................................................................................................................... 26
+
+2
+
+
+
+Customer's loyalty program dashboard with integrated crypto-wallet and access to the merchants' websites ...................................................................................................................................................................... 26 Mobile application ......................................................................................................................................... 27 BITREWARDS NETWORK...................................................................................................................................... 27 BitRewards Operator .................................................................................................................................... 28 Bancor Liquidity smart contract .................................................................................................................... 34 BUSINESS MODEL ............................................................................................................................................. 34 GO TO MARKET STRATEGY ............................................................................................................................. 37 ACTIVE INTERACTION WITH THE COMMUNITY OF ENTREPRENEURS AND ONLINE STORES' OWNERS............................ 39 PARTNERSHIPS ................................................................................................................................................... 40 RELATIONSHIPS WITH DEVELOPERS AND SERVICES PROVIDERS ............................................................................. 40 TEAM .................................................................................................................................................................... 41 OTHER TECH TEAM MEMBERS........................................................................................................................ 47 ADVISORS ........................................................................................................................................................... 48 PARTNERS AND EARLY ADOPTERS' TESTIMONIALS.................................................................................. 50 HISTORY AND CURRENT PROGRESS OF THE COMPANY ........................................................................... 54 PRODUCT ROADMAP ........................................................................................................................................ 54 CROWDSALE DETAILS...................................................................................................................................... 59 LEGAL.................................................................................................................................................................. 62 GENERAL INFORMATION ...................................................................................................................................... 62 REQUIRED KNOWLEDGE ...................................................................................................................................... 62 RISKS................................................................................................................................................................. 62 IMPORTANT DISCLAIMER...................................................................................................................................... 63 REPRESENTATIONS AND WARRANTIES ................................................................................................................. 64 APPLICABLE LAW AND ARBITRATION ..................................................................................................................... 65 REFERENCES ..................................................................................................................................................... 66
+
+3
+
+
+
+"The received wisdom that economic inequality is fated to endure and even get worse makes all of us, in a little way, Marxists. But what if the model of organization that Weber and his inheritors in economics and sociology found to be the most adapted to competition and management in modern life has become obsolete? What if power is dispersing, coming to dwell in new forms and through new mechanisms in a host of small and previously marginal players, while the power advantage of the big, established, and more bureaucratic incumbents decays? The rise of micropowers throws open such questions, for the first time. It holds out the prospect that power may have become remarkably unmoored from size and scale."
+
+ Moiss Nam,
+
+The End of Power From Boardrooms to Battlefields and Churches to States, Why Being In Charge Isn't What It Used to Be
+
+4
+
+
+
+Executive Summary
+
+Loyalty is trust. Trust is called a new currency, just like the bitcoin, because the difference in trust between a company and its competitor directly translates into how much money each is going to make.
+
+Every year millions of retailers spend in excess of $20 billion on software that improves the loyalty of their customers. They need to do that in order to stay competitive in the current crowded marketplace. Loyalty programs are not only costly, but also time consuming and cumbersome to set up. Often times, customers get only more frustrated from participation in them, complaining about difficulty to earn points or bonuses and to redeem them. This results in a fact that most loyalty programs just don't pay themselves off, and shut down in less than 12 months time.
+
+We are a team who works together for 5 years in GIFTD, an innovative profitable loyalty SaaS company that helps hundreds of small and medium-sized e-commerce businesses to increase their revenue by an average of more than 17%. We are building BitRewards as a spinoff from this successful business, because blockchain allows introducing a new approach towards loyalty and rewards market, which will create new value for the customers, merchants and community.
+
+BitRewards is a blockchain loyalty platform and ecosystem that enables retailers to reward their customers' purchases, friends' invited and other configurable actions with crypto-currency. It has an absolute value for the customers, as they get for their purchases the liquid Ethereum-based tokens, which can be redeemed for purchases or transferred to another crypto-wallet. The price of the tokens is also set for growth due to our unique business model, so these rewards may go up in value in the course of time, rather than expire.
+
+BitRewards also brings a lot of benefits to the retailers, because they get customers that are more satisfied with the rewards in crypto and become more loyal. A comprehensive loyalty program increases the retailers' revenue by dozens of percent. The stores are also tapping into the cryptoenthusiasts audience, which is very active and appreciates the attention from the regular businesses.
+
+The unique value proposition for the retailers is that BitRewards will offer this valuable and expensive loyalty technology free of charge. The retailers will only have to buy in the open market the BIT to reward their users. The value of such software starts from $200/month, therefore thousands of retailers will be keen to connect to the platform. We can make such a claim, because we operate in the market of rewards and loyalty software for more than 5 years, have more than five hundred clients - online stores and deeply know their needs. BitRewards also uses AI-based predictive analytics,
+
+5
+
+
+
+which allows to configure the rewards and actions for each particular business to address its unique target audience and achieve the highest return on investment from every dollar spent on the rewards.
+
+BitRewards is compatible with the most existing e-commerce systems (Magento, Shopify, WordPress, Ecwid, etc.). It is easy to integrate and has a simple API.
+
+Tokens -- BIT:
+
+Internal BitRewards tokens are called BIT and comply with the ERC20 standard. BIT is an internal currency and is used to conduct all operations within the BitRewards ecosystem. Customers of the online stores participating in BitRewards Network will receive BIT as a cash-back -- a certain configurable amount or percent on their purchases, purchases of the friends that they referred to the store, shares and likes in social networks and other actions. The cash-back will be credited to the customer's automatically created crypto-wallet connected to the store via BitRewards plugin. BIT can be redeemed at the same store or with the other BitRewards participating merchants via an online crypto-wallet connected to the participating merchants. Customer crypto-wallet's BIT balance may also be connected to the bank debit card, which the users can spend just as if they used their regular Visa or Mastercard. The customers will appreciate the opportunity, because they get a liquid crypto-currency instead of loyalty points. The customers can also buy BIT at an exchange or via the Bancor liquidity smart contract. The private key to a token holder's BIT can be stored on the wallet provided by BitRewards network platform, on the standard Ethereum wallet, or on any wallet supporting the ERC20. The value of the BitRewards token is determined at the open crypto-currency exchanges. The tokens can be exchanged to ETH, Bitcoin or fiat currencies. The token is accepted by all merchants that use the loyalty platform and other partners of BitRewards Network. The BIT token's exchange rate may grow because of the limited initial issuance of 2 billion tokens and the demand for tokens from the growing number of retailers joining the platform exceeding the supply from the customers who redeem the tokens for purchases or sell them at the exchange, which will create an ascending path of least resistance.
+
+6
+
+
+
+Market overview
+
+Preface
+
+BitRewards is designed for all types of retailers, but our sweet spot is e-commerce because they willingly adopt such services and are easy to scale. The e-commerce market has grown consistently every year, and, according to Statista data, the market will increase more than 70% in the US over the next five years (from $360 billion in 2016 to $638 billion in 2022).
+
+The rapid growth of e-commerce, the automation of purchase processes and delivery have made this market extremely competitive. Today customers are more price sensitive, expect more from brands, and compare prices on a regular basis. Customer loyalty, measured in repeat purchases and referrals, is the key driver of profitability for online businesses, even more so than for offline companies, according to a series of joint studies in online retail by Bain & Company. User acquisition today is one of the most costly activities of any retailer. Statistics say that the average conversion of traffic into purchases in e-commerce comes to 3%, however the real figures are 1% and less. And it is clear why: our attention span today is 8 seconds - less than that of a
+
+7
+
+
+
+goldfish. Businesses spend an increasing amount of resources wrestling for customers' attention, and this is only half the task: they also have to retain their attention. Studies show that acquiring a new customer is anywhere from 5 to 25 times more expensive than retaining an existing one. And customers are also easily switching brands, particularly when the competition is a click away. So retailers must invest in their customers' loyalty. Lots of data show that loyal customers stay longer, buy more and more often, cost less to process, help in price competition, tell their friends about their experiences, and provide valuable feedback.
+
+Loyalty management market
+
+Loyalty systems in retail are designed to reward customers for their past purchases or other useful actions and to provide them with incentives for making future purchases. A rewards program enables activation, retention, up-selling and referrals, along with providing strong value offer to the customer. A typical loyalty management system is comprised of operational parameters, such as transaction types, program design and funding options. It further includes value parameters such as redemption options, redemption thresholds, and earnings rates.
+
+And businesses are actively adopting loyalty programs:  63.7% of small businesses plan on using a customer loyalty program in 2016 (Belly)  38% of executives have a dedicated budget for customer experience (Leapfrog Marketing
+
+Institute)
+
+The market for loyalty programs is growing and will reach $4 billion by 2020 ("Loyalty Management Market" report by MarketsAndMarkets). There's approximately another $1 billion in digital gift cards, and at least $11 billion in referral solutions. On top of that, more than $50 billion loyalty points are issued globally each year. According to a Deloitte report, enrollment in loyalty programs across various industries reached 3.3 billion memberships in 2015 and has more than tripled since 2000. Despite this rapid growth, customer loyalty rewards programs are not realizing their full potential.
+
+According to the 2016 Bond Loyalty Report, North American consumers belong to 13.4 loyalty programs on average, but are only active in about half of those. Moreover, only 44 percent of consumers said they are "very satisfied" with the loyalty program experiences.
+
+Key problems for loyalty and rewards solutions
+
+Encouraging loyalty is not an easy game. A lot of customer issues can result in problems for loyalty rewards providers, including:
+
+Account inactivity
+
+8
+
+
+
+With many loyalty programs, the need to take additional actions and non-transparent reward schemes are perceived negatively by customers and lead to adoption decrease and customer inactivity. According to 3Cinteractive, 70% of consumers do not sign up for a loyalty program due to the inconvenience and time required to complete registration.
+
+Low redemption rates
+
+According to The 2016 Bond Loyalty Report, the percentage of customers who were active members was only at 50 percent. Out of these members, 20% never redeemed their received bonuses and rewards. Also, according to this report, loyalty and rewards program members who do not make redemptions are 2.7 times more likely to defect from one program and join another.
+
+Source: THE 2016 BOND LOYALTY REPORT
+
+Low client retention
+
+Existing loyalty programs give insufficient motivation to encourage repeat purchases. According to COLLOQUY "Customer loyalty 2015 & beyond report", the top two reasons why consumers stop participating in a loyalty program are: the program did not provide offers that were of interest (56%), and it was too hard to earn points for rewards (54%).
+
+Increased costs for customer service
+
+9
+
+
+
+Retailers who want to set up their own in-house loyalty program need to not only invest time, money and effort, but to also arrange a solid customer support service specifically aimed at the loyalty program, which incurs training and sometimes hiring employees, the implementation of internal practices and procedures, reporting, and analysis. The more sophisticated the loyalty program rules are, the higher the cost of customer service.
+
+Low motivation by offered rewards
+
+According to CardLinx's 2016 Card-Linking Industry Survey, 64% of consumers prefer cash-back payments as a part of rewards, and only 12% prefer programs connected with the accumulation of bonuses, points or miles.
+
+At the same time, loyalty programs are still one of the most effective solutions to generate more revenue from existing customers. According to the Talech Retail Technology Report, 87% of customers say they want loyalty programs. The outlined problems could be solved by an integrated loyalty system, which would provide customers with convenient tools to earn rewards and redeem them for valuable purchases. With the emergence of blockchain technology, creating such a system has become possible. Our hypothesis that the new approach to rewards and loyalty with the use of blockchain and smart contracts can deliver synergy, is confirmed by the recent blockchain experiments of Deloitte, IBM, China Union Pay, MasterCard, VISA and many others.
+
+10
+
+
+
+Value proposition
+
+BitRewards is a B2B2C rewards and loyalty solution built using blockchain and smart contract technology. The platform enables merchants to reward shoppers with BitRewards tokens (BIT, an ERC20 token) for their and their friends' purchases and other valuable actions with configurable rewards. AI-based analytics allows to set up and adjust the rewards in order to achieve the best conversion and loyalty, which results in increased sales. The decentralized rewards management on blockchain makes the platform unique and delivers great value to all platform members and their customers: - for the retailers  a premium blockchain loyalty management system with value of $200-$2000 per month for free. - for the customers  crypto-currency rewards, which they can turn into real money or redeem for purchases and which do not expire and tend to go up in price.
+
+Our platform provides the necessary infrastructure for the loyalty management system: modules or plug-ins for all popular online trading platforms (OpenCart, Shopify, WordPress, Magento, etc.), mobile wallets for customers, mobile apps, and extensions for browsers (Chrome, Firefox). Since BitRewards is a decentralized system, its solutions are easily scalable and have no geographical or platform limitations or restrictions. In fact, the plug-in can be downloaded from the app stores of e-commerce platforms and web-site builders and any retailer can be connected to BitRewards in a matter of a few minutes.
+
+How does BitRewards solve the main problems of loyalty systems?
+
+Account inactivity
+
+BitRewards consolidates retailers in the integrated open-loop loyalty system and provides a simple and convenient user interface with a customer-centric approach. Every individual user will have a single wallet, accessible from the website of any participating merchant, or from a web or mobile app. There is no need to register in a standalone loyalty program of each retailer, and the acquired tokens can be redeemed with any other network member.
+
+11
+
+
+
+Customer-centric approach in BitRewards Network
+
+Low redemption rates
+
+Unlike the existing loyalty systems that give points, BitRewards transfers value into tokens and credits them directly to the customer's wallet. The value of the rewards denominated in crypto-currency is poised to go up along with the growth of the crypto-economy and the market share of the blockchain based services and infrastructure, which will make customers want to spend their tokens for additional purchases. The users will also be receiving regular reports and offers from the stores where they made their purchases, which will also serve to incentivize their further actions.
+
+Increased costs for customer service
+
+Merchants can use the BitRewards platform for free. It can be easily installed and set up and does not require any special technical knowledge or skills. The workflow around receiving and spending BitRewards tokens will be standard for all participating customers, and questions will be handled by the BitRewards service operator, who provides technical guidance, support and quality assurance.
+
+Low motivation by offered rewards
+
+Customers will perceive the received crypto-currency as being "for free". It will spur their additional interest in cryptocurrencies and initiate demand for valuable rewards from the places they will shop at.
+
+BitRewards benefits
+
+12
+
+
+
+New customer experience
+
+The BitRewards decentralized loyalty system creates a unique, user-friendly customer experience:  The regular customer's dashboard with loyalty points turns into a full-fledged crypto-wallet linked
+
+to hundreds of merchants. Creation requires only a simple registration with a Facebook account, email or phone number. It can be used as a regular wallet for the storing of BitRewards cryptocurrency, as well as other currencies (Ethereum, Bitcoin, etc.), growing in value of the received rewards (connected with the growth of token).  The bonuses in the form of BIT from different merchants are accumulated in one customer's account, which is connected to the entire BitRewards Network.  The tokens can be redeemed with any merchant within the BitRewards Network and the network's partners that can promote their business with additional bonuses and discounts for the BIT token holders.  Customer crypto-wallet's BIT balance will also be connected to the bank debit plastic or virtual card, which the users can spend just as if they used their regular Visa or Mastercard.  Maximum flexibility and security of the rewards: tokens unlike points don't expire; they can't get lost, or cease to exist if the merchant goes out of business.  An easy way to make purchases in crypto-currency: Ethereum and Bitcoin can be credited to the customer's BitRewards account and be used as payment with BitRewards' participating merchants.  The token's value is set for appreciation due to the increasing demand from retailers and the general prevailing bull market nature of crypto-markets right now.
+
+Advantages to retailers
+
+The retailers connected to the BitRewards Network acquire new marketing tools and increase customer loyalty:  Free, but powerful and flexible loyalty program for any retailer, brand or service.  Unique opportunity to reward customers and pander to crypto currency enthusiasts wants.  Great chance to stand out among competition and promote a brand or a store.  Outstanding value for the customers: BitReward's business model suggests constant
+
+appreciation of BIT. (When customers hold BIT received as a reward from a store, they may see their value go up over the course of time).  Seamless exchange of BIT into Bitcoin, Ether and any other crypto-currency right in the user's wallet on merchants' websites, or on any other wallet or exchange.  Amazing incentive for customers when their reward amount grows, enabling the merchants to communicate good news and attract a lot of repeat business.
+
+13
+
+
+
+ Cross-redemption of BIT: users can redeem BitRewards Tokens with the member merchants, or any other participating operator. Something, which will make them feel valued much more than when receiving standard points.
+
+Platform, ecosystem and community
+
+All merchants get access to the AI data analysis system that we call BitRecommendations that automatically recommends the actions and rewards, which aims at offering the customers various actions and rewards incentivizing the most productive behaviour of the customers for every particular merchant. The BitRewards Network is an ecosystem, which is beneficial to all participants, including customers and retailers. Each retailer connecting to the network increases both their value, and the overall value of the network. The ecosystem participants benefit from significantly cutting down their expenses on loyalty management. They also get access to a top-notch rewards and loyalty system free of charge, something which was previously only affordable for large players. BitRewards promotes members of its community in every possible way: by exchanging the best practices, by using the platform, for starting advertising campaigns, and by developing new applications. The BitRewards community will not only promote the rapid growth of participating businesses, but also give a voice to its members on the future of the platform.
+
+How it works
+
+1. The retailers connect to the BitRewards loyalty system by installing the ready-made GIFTD extension or by integrating it with their own loyalty system.
+
+2. This solution rewards customers with BIT for their and their friends' purchases as well as other actions. The module performs all the required token processing through the BitRewards platform.
+
+3. The value of BIT may appreciate because of the limited initial issuance of 2 billion tokens and the constant leading demand for tokens from the growing number of retailers joining the platform.
+
+4. The probable appreciation of BIT encourages customers to save their tokens instead of redeeming them for purchases, also reducing the amount of free-floating tokens.
+
+How customers earn BIT. User experience.
+
+The following workflow illustrates the simple steps users will need to take in order to earn BitRewards Tokens by completing their purchase at the BitRewards Network's member merchant.
+
+14
+
+
+
+1. A customer makes a purchase in an online store, which is connected to the BitRewards module and sees the reward they can earn for every item they buy in the store.
+
+15
+
+
+
+2. They register through a social network, email or phone. 3. The customer sees confirmation of their BIT reward after the completion of their purchase.
+
+16
+
+
+
+4. They also have easy access to the their wallet on the online store's website.
+
+5. Each customer registered in the loyalty system of the BitRewards Network on the retailer's website automatically receives a crypto-wallet with the unique Ethereum-address. This can be used for the receiving and sending of Ether and any other ERC20 tokens, and to serve as payment for goods or services of this or any other retailer in the BitRewards Network.
+
+17
+
+
+
+6. If needed, tokens can be sent to any Ethereum compatible wallet.
+
+7. A confirmation message regarding the successful transfer of BIT is shown on the screen and sent to the user's email, if provided.
+
+18
+
+
+
+Steps to redeem
+
+BitRewards Tokens are also easy to redeem. A customer will just need to mark how many BIT he or she wants to spend on the purchase, and the order amount will be reduced depending on the current market rate of BIT. A special smart contract will be introduced which will serve as a middleware between the shop and customer in this scenario. It will hold the customer's BIT until a full fiat currency payment is received, then it will transfer BIT to the shop. If the full payment is not received in the certain time period, it will transfer BIT back to the customer and notify the shop about this event. If the customer wants to top up BIT at his BitRewards Network, he can transfer Ether or any ERC-20 tokens from his Ethereum wallet to his BitRewards Wallet and then use Liquidity smart contract to exchange Ether or tokens to BIT.
+
+Steps to redeem BitReward Tokens for purchases:
+
+The wallet with BIT is seamlessly integrated into the merchant's online store, and customers can choose what amount of BIT they want to redeem for their purchases.
+
+19
+
+
+
+The wallet is easily accessible from any merchant's website.
+
+Retailers' workflow
+
+The retailers can interact with the BitRewards system in two ways: Via BitRewards Operator, which carries out all necessary operations and administers the sales and purchases of tokens. Working through the operator, retailers have the opportunity to make payments in crypto-currency and conduct settlements in fiat currencies. The accounting and financial documents, if necessary, will be provided by the operator. Buy the BitRewards tokens directly through the crypto-currency exchange, or through a Smart Contract that maintains the liquidity of the BIT in the market.
+
+Option 1. Working with the system through the BitRewards operator
+
+Since a lot of retailers are not ready to work with crypto-currency exchanges directly, operations will be handled through the BitRewards' operator company. It will provide the retailers with the ability to transact in crypto-currency and use the platform's loyalty features with the view to enable them to use distributed ledger technologies to improve their products and to promote the BitRewards tokens adoption. The operator will offer extended support, design new tools for the retail industry, and provide legal, tax and accounting counseling to the clients.
+
+20
+
+
+
+Mechanics of rewards payment through the BitRewards operator
+
+1. After a customer makes a purchase with their BitRewards tokens, the BitRewards plug-in installed by the retailer sends the BitRewards operator an inquiry "Rewards Request". The inquiry also contains the e-mail address of the customer (or other ID), or their wallet address.
+
+2. If the BitRewards operator receives the wallet address, the system transfers the tokens from its stock to this wallet. If the address is unknown, the operator creates a new account, transfers the tokens there, and the customer receives a notification with the details of the created wallet. Using the link, the customer installs the web or mobile BitRewards Wallet, and can transact with it, or choose to transfer their tokens to their other wallet.
+
+3. After the completion of the operation, the BitRewards Network operator produces a bill in fiat currency in the address of the retailer for the amount which the operator spent on the transaction.
+
+Payments for purchases through the BitRewards operator:
+
+1. In case a customer makes a purchase in full or in part using BitRewards tokens, the retailer sends a request through API for the sale of the BitRewards tokens.
+
+2. In response to the request, the BitRewards Network operator returns the wallet account number and the amount in fiat currency, which will be paid for the given amount of tokens.
+
+3. After receiving the tokens, the operator transfers the fiat money to the retailer.
+
+Using the current infrastructure of Ethereum, the transaction processing can take up to 1 minute. After the release of the Raiden Network and Lightning Network protocols, the transaction will be settled in a matter of seconds.
+
+21
+
+
+
+Maintenance of fiat and cryptocurrencies reserve at the BitRewards operator
+
+1. The BitRewards operator needs to maintain a necessary reserve of BIT, fiat currencies, and ETH tokens.
+
+2. To prevent the sharp fluctuations of the BIT' exchange rate, a liquidity smart contract will be created on the basis of Bancor.Protocol (BNT tokens).
+
+3. For the maintenance of the necessary level of BIT reserve, the BitRewards operator buys or sells BIT at the crypto-currency exchange, or through the liquidity smart contract.
+
+4. For the maintenance of the necessary level of fiat currencies ETH or BNT, the BitRewards Network operator buys or sells fiat currencies at the crypto-currency exchange for BIT.
+
+Option 2. Direct transactions
+
+BitRewards is a decentralized system. Retailers can make operations with the purchase and sale of BIT independently, without the BitRewards operator.
+
+1. The retailer creates its crypto-wallet designed for the payment of rewards and the receiving of tokens for purchases from the customer.
+
+2. The retailer makes all necessary transactions of purchases and sales of tokens and fiat currency at a crypto-currency exchange, and/or with the liquidity smart contract provided by BitRewards Network. 22
+
+
+
+Liquidity smart contract
+
+BitRewards Tokens are designed to appreciate over the course of time. Crypto assets markets can be volatile, and the market price of BIT can depend on the general market conditions and expectations. Since BIT' main purpose is the means of payment, it is important that the token's exchange rate against crypto or fiat currencies does not change rapidly and has liquidity at all times. In order to provide for this liquidity and mollify the market fluctuations, a Bancor (a product of Bprotocol Foundation1) smart contract will be created. It will allow the buying and selling of BIT and will also be used to increase the market demand and supply when the exchange rate fluctuations leave a certain corridor. The special liquidity smart contract will hold a reserve of tokens of the BitRewards system and means (in the form of Bancor tokens - BNT). Anyone will be able to buy or sell BIT simply by sending ETH to the contract's address. This solution is able to provide for the liquidity of tokens and solves the problem of a "double coincidence of wants", when a buyer and a seller have to match the time and place for the transaction to occur. A liquidity smart contract always acts as one of the parties either selling or buying. The contract also abides by efficient market rules: upon the selling of the asset, the price goes down, and upon the buying of the asset, the price goes up, therefore the liquidity smart contract changes the market price of the asset, available to the transaction, depending on the transaction's amount. Therefore, the liquidity for any party interested in buying or selling BIT will be provided for at all times.
+
+1 https://www.bancor.network/static/bancor_protocol_whitepaper_en.pdf
+
+23
+
+
+
+Product architecture
+
+Retailers
+
+Plugins for online shopping platforms
+
+Plugins for online shopping platforms are widgets, which can be set up as the loyalty program of the retailer, and to pay BitRewards as rebates to customers as rewards for their and their friends' purchases. The system of rewards and loyalty is based on the suite of solutions of GIFTD which are widely applied in e-commerce: 1. A "cart protection" tool: incentivizes the completion purchases, which increases the amount
+
+customers spend and reduces the amount of abandoned orders 2. A referral system integrated with social networks 3. Net promoter score calculator and Customer's reviews module 4. Digital gift cards solutions, which enables customers to send gift cards via email, SMS,
+
+Facebook, etc. 5. Points-based loyalty system: Customers earn points for their actions and retailers can define
+
+which of the points they exchange into the BitRewards Tokens and at what exchange rate. These solutions will be transferred on the distributed ledger and will be supplied for free to all members of BitRewards. It will include API for integration of the existing loyalty programs of retailers.
+
+24
+
+
+
+Merchant's dashboard
+
+A merchant's dashboard is set up when creating the loyalty program. This allows merchants to define the actions and amount of the rewards earned for the completion of each purchase, including the percentage of the purchase returned to customers for their and their referral's purchases.
+
+Retailer's crypto-wallet
+
+The retailer does not necessarily need to create the BitRewards crypto-wallet, as the transactions can pass through the BitRewards Operator using fiat currencies. Retailers can store their BIT, ETH and other cryptocurrencies, which they use for transactions and pay for BIT from this wallet. The retailer's crypto-wallet will be an open-source software, which is installed on the retailer's servers. For convenience, the Docker image, which contains all necessary settings, will be created. For maximum security, the private key for the retailer's crypto-wallet will reside at the retailer's servers. The less secure, but simpler way is to use BitRewards API that stores the keys. If needed, the retailer can open two crypto-wallets -- cold (for large amounts) and hot (for current transactions). The "cold" wallet should be shielded from online connection and managed manually. The "hot" wallet should be connected to the other software of the retailer (CMS, accounting software, etc.) through a private API.
+
+Auxiliary parts of the system:
+
+ Mobile SDK for the integration of the BitRewards crypto-wallet into the merchant's apps.  Triggered notifications system (email, SMS, push, messengers).  Corporate personnel loyalty system.
+
+25
+
+
+
+Customers
+
+Customer's loyalty program dashboard with integrated crypto-wallet and access to the merchants' websites
+
+ Customers receive notification of BIT awarded to them at the merchant's website or their preferred notification method
+
+They can sign up or login to the loyalty program via Facebook and other social networks, email or phone, and receive immediate access to the crypto-wallet in which they can see the BIT that have been added. The customers can access the wallet via the website of any BitRewards Network merchant, from the BitRewards website, extensions for Chrome, Internet Explorer and Safari or a mobile app.
+
+The BitRewards wallet allows the customers to pay with crypto-currency for purchases from any retailer on the BitRewards Network.
+
+The crypto-wallet will give a unique Ethereum-address to the customer. It will allow the storing, acceptance and sending of BIT, ETH and any other ERC20 tokens. It will be an entry point to the world of cryptocurrencies for many people. Other crypto-currency types will be added at the later stages.
+
+If the BIT amount equivalent exceeds $50 on the customer's wallet, they will be offered to set up twofactor authentication (2FA) via Google Authenticator or SMS.
+
+By default, the crypto-wallet will store private keys on the BitRewards Network servers in an encrypted form. The encryption key will be created from the access key of the customer, with which they login to the BitRewards app (Facebook Access Token or Password Hash). The key will be deciphered only in the presence of the active login session of the key owner.
+
+For advanced customers who are concerned about the security issue of the third-party wallets, there will be following options available:
+
+1. Transfer of BIT, ETH and any ERC20 tokens on any external wallet (including hardware wallets). 2. Downloading a private key from the BitRewards system. In this case, the encrypted private key
+
+will be deciphered and provided to the customer for storage on their computer or an external carrier, and the private key will be removed from the BitRewards Network base. From this time, the customer will need to apply the private key for any action in the system connected with
+
+26
+
+
+
+movement of BTW, ETH or any other tokens. If desired, the private key can be imported to the system again.
+
+As soon as the Lightning Network and Raiden Network technologies become available, the BitRewards Wallet will be integrated with them and become a part of these networks. This will allow BitRewards crypto-wallet users to significantly reduce or even cut down to zero the commission for money withdrawal to the exchange, transfers to retailers, or other participants of these networks.
+
+The introduction of Lightning & Raiden will also allow transactions to be carried out instantly (time of confirmation of a regular Ethereum-transaction is about 60 seconds, and in the Lightning Network/Raiden Network - less than 1 second).
+
+The BitRewards services will not take an additional fee for payments through the Lightning Network and the Raiden Network. The cost of these additional services will be offset by the increased exchange rate of BIT.
+
+The BitRewards wallet is a single access point and the payment service enabling any non-tech savvy user to pay in crypto-currency on the website of any retailer the BitRewards Network. The customer can transfer any crypto-currency currency on this wallet and convert it into BitRewards, which retailers will accept. We are also talking to payment services providers, who show significant interest in using the BitRewards infrastructure for the combination of fiat and crypto-currency payments.
+
+Mobile applications
+
+The mobile apps on the iOS and Android platforms, which replicate the functionality of the web apps will also have the following features:
+
+1. Crypto-wallet 2. Merchants' special offers 3. Scanning and storage of loyalty cards (making plastic cards redundant, the inconvenience of
+
+which is one of the main reasons customers stop using loyalty systems) 4. Gift cards 5. Geofencing
+
+BitRewards Network
+
+27
+
+
+
+BitRecommendations -- AI-driven decentralized recommendations system.
+
+BitRecommendations is the first in the world decentralized crowdsourced recommendation system, honed to suit the needs of e-commerce and using the blockchain for the quality control and security of the data.
+
+How it works for the merchants:  Merchants send the encoded data about the activities of their users to BitRecommendations system and in turn get the access to a cutting-edge recommendation system free of charge.
+
+ BitRecommendations offers product recommendations ("you may also like") and rewards recommendations -- how to show appreciation to the users for their actions with a thoughtful reward  cryptocurrency, a cup of coffee or a ticket to an event.
+
+ The education of BitRecommendations occurs on the data of thousands of the merchants and millions of data points per day, which will provide the high quality of the recommendations.
+
+ All the data received from the merchants is stored on the decentralized file system IPFS. The metadata, including the ratings of data quality, is stored on the Ethereum blockchain. Such structure makes the system eternally operable and available to the clients. If BitRecommendations stops working, with the support of BitRewards DAO the new system, which will use the data can always be created.
+
+ If a merchant tries to cheat and sends fake data, it will be discovered, and this information will go to the Ethereum blockchain.
+
+ The merchants can see the previous user activity of every user and BitRecommendation provides the scoring of the user's reputation, which allows the merchants to offer a loan or a post-payment for the purchases.
+
+BitRecommendations -- the eyes and brain of online stores. The recommendation system is a necessary component of the merchants' loyalty systems -- it enables them to incentivize higher order value and repeat purchases, improving the ROI.
+
+28
+
+
+
+An efficient recommendation system must contain huge amounts of data. This represents a problem for the small and medium-sized businesses because they can't acquire the necessary amount of traffic and sales to collect the data.
+
+DMP data is not enough. Data management platforms, which aggregate data from various sources, are designed to provide the merchants with their users' profile -- social graph, interests, disposable income, etc. This information is useful but insufficient to make the high-quality forecasts in e-commerce, because the user's habits and consumption patterns are hard to figure out, yet they contain crucial data for decision-making.
+
+For instance, it's impossible to understand what color of the device a customer will prefer, basing assumptions on the data about their age and attraction to a certain brand of cars.
+
+BitRecommendations is a decentralized DMP designed to collect, store and process the retail data using deep learning algorithms. The control of the quality and security of the data is provided for by the blockchain.
+
+Every merchant is a source of huge amounts of data about their shoppers. 90% of this data remains unused. The best that happens with it is it gets sent to Google Analytics, where a marketing specialist will go through its aggregated copy.
+
+BitRewards will give merchants the solution, which allows them to seamlessly and frictionlessly have all the data about their users at their disposal: - General data types (viewed items, added to order items, order amount) - Industry-specific data types about the user's interests (colors of garments, gadgets' screen sizes, food calories, etc.)
+
+This data will be collected and stored by the merchant at its servers. Merchants will receive the turnkey solution, which can be deployed on any server. - Every 24 hours the data is encoded and sent into IPFS - The merchant sends the IPFS-address containing the specific data and metadata to the BitRecommendations smart-contract (number of the unique per period, merchant ID) - The merchant can send this data to the smart-contract of any other organization, to which BitRewards DAO entrusted the private keys -- it is necessary to avoid the dependence on the centralized BitRecommendations software.
+
+Upon the receipt of the data into the smart-contract, BitRecommendations runs several processes:
+
+29
+
+
+
+- Checks the merchant's reputation. If the reputation is unreliable, the weight of the data is low, or it is ignored. - Downloads the data from IPFS on the BitRecommendations servers. - Starts the lock-up period (2 weeks at the beginning of the operations) and processes the received data via the moderation subsystem. The purpose of the moderation is to determine whether of not the data is accurate and came from the reliable sources, and attach the appropriate weights to the data. To solve this problem, the deep learning and AI is applied. - After the lock-up period, BitRewards credits the merchant with BitRewards tokens for the valuable data and reduces the rating and repayments in the case of a fake data. - The accurate data is used for deep learning algorithms.
+
+Machine Learning: product recommendations.
+
+The following dataset sources will be used for the recommendation system's learning: - Third party DMPs (Oracle Bluekai, Krux, MediaMath, etc.) - Data on the user activities, shared by the merchants, as described above.
+
+BitRecommendations is based on these data and machine learning algorithms and provides the API to any merchant, developer or service provider.
+
+The API allows for any merchant to receive the high precision product recommendations starting from day one of the operations, even with low user traffic, because of the application of algorithms, which make decisions after learning on thousands of other merchants and millions of data points.
+
+The payment for the API is accepted in BIT tokens only.
+
+Machine learning: rewards recommendations.
+
+BitRecommendations' API also equips every merchant with the knowledge about the preferences of rewards of their users. Based on the assumptions what each user will appreciate more, e.g. a coffee from Starbucks, massage or a ticket for a favorite band, the system suggests the choice which has the potential of the maximum ROI.
+
+BitRecommendations analyses the rewards that were given by the loyalty systems of different merchants, aggregate the received data and makes predictions about the future rewards.
+
+Machine Learning: financial scoring.
+
+30
+
+
+
+The purchasing activities and habits of every user become available to all BitRecommendations participants (in encoded, anonymous and de-personified way). Therefore, the financial scoring becomes available.
+
+It will be used for the following use cases: - Offer the after-payment of up to 100% or a loan, to the users, who service their liabilities in a reliable way, which can be derived from the historical data and stored in the blockchain. - Offer user-specific financial and insurance products. - Offer the incentivizing discounts only to the customers, who are motivated by them. Avoid unnecessary discounts for those whos purchasing history suggests that they were buying in other stores without the discounts.
+
+Application of the blockchain technology and the crowdsourced nature of the platform allow achieving the level of intelligence and economic efficiency, earlier unaffordable for the small and medium-sized business.
+
+BitRecommendations' business model.
+
+BitRecommendations API will be offered to most of the merchants free of charge. The platform operates on the reciprocity principle.
+
+- The merchant gets BIT tokens for the provided data and pays BIT for using the BitRecommendations API. The ratio of the price and reward will be designed so that the store makes the equal or larger amount of BIT if it shares with the system the data about the activities of all its users.
+
+- If a merchant prefers not to share the data about the activities of its users, it will have to pay BIT tokens to use BitRecommendations API.
+
+The hosting and updates of the BitRecommendations system are paid for from the proceeds for BIT tokens exchange commission, which will be introduced after one year from the beginning of the operations.
+
+Application of blockchain and risk mitigation.
+
+Decentralization of BitRecommendations system makes it invulnerable from the untrustful members of the system and ultimately from BitRewards operations. However, it will keep its open protocol available for the new members: any e-commerce business will be able to connect to it and benefit from the data collected from the thousands of other stores.
+
+31
+
+
+
+- All data received from the merchants is stored on the decentralized file system IPFS. The metadata, including the data quality scoring, is recorded on the Ethereum blockchain. This makes the system genuinely trustless. Should the BitRecommendations system fail to work, under the procedures of DAO BitRewards, the new team will be hired, and the new system using the aggregated data will be implemented.
+
+- If a merchant tries to cheat and provides fake data, this will be discovered, and its score will be downgraded leading to the payment of less amount of BIT for its data. Potentially the scoring can go down to zero when the data that is received from this merchant is not used by the system, and the merchant does not receive remuneration for the provided data. In this case, the merchant will have to pay to use BitRecommendations system. Merchant's score is stored on the Ethereum blockchain.
+
+By virtue of using BIT tokens, BitRecommendations can offer the cutting-edge data-driven recommendation service for valuable members of the system free of charge.
+
+BitRewards DAO
+
+After the token launch, we will create the decentralized autonomous organization BitRewards (DAO). The objectives of DAO:
+
+1. Run BitRewards business in the most efficient way 2. Create favorable conditions for the adoption of BitRewards platform by the large numbers of
+
+merchants 3. Create favorable conditions for the BIT token price appreciation
+
+The mandate of DAO: 1. Management of the BitRewards Foundation. a. Remuneration of people and organizations developing new integration for the BitRewards system and increasing the demand for BIT. b. Remuneration of people and organizations that connect new stores to the BitRewards system and thereby increase the demand for BIT. c. Remuneration of any people and organizations that in one way or another increase the demand for BIT and thereby increase the price of BIT.
+
+Management of a smart liquidity contract (Bancor Exchanger) a. Including, maintenance of necessary reserves on a smart liquidity contract in BIT and Ether.
+
+Management of BitRewards Intellectual Property a. Including, control over the source code of BitRewards
+
+Monitoring the entire BitRewards ecosystem and strategic decision making 32
+
+
+
+Sources of funds in the BitRewards Foundation: 1. 12% of the total number of issued tokens; 2. From 10% to 20% of the funds raised during the token launch (depending on the collected amount)
+
+The sources of funds for BitRewards Foundation may change in the future. Technically, DAO will be implemented on the Wings platform.
+
+DAO Management Scheme: A member of DAO is an individual or a legal entity that made transactions with BIT. The different types of the membership (weights) are defined by the amount and features of operations with BIT during a certain period of time, preceding the estimation of the type of the membership. The majority of the decisions of the DAO are made by voting (simple majority). Any member of the DAO can put forward proposals. The proposals include a description of the action, amount, purpose and conditions for transferring funds from the DAO accounts (if applicable). In addition to the usual members of DAO, it can have Super Users. Super User Rights:
+
+1. Conduct everyday operations and management of DAO within the standard nature of its business;
+
+2. Instantly transfer any amounts between DAO accounts by a smart liquidity contract on Bancor technology or change the composition of the basket of currencies in DAO accounts;
+
+3. Put forward high priority proposals (including withdrawal of funds from DAO accounts), which are automatically executed 1 week after the date of the proposal, except for cases when at least 20% of participants are vetoing the execution of the proposal (veto power of DAO participants).
+
+4. Change the operational and other rules of the DAO according to the procedure of paragraph 2.
+
+Super Users are appointed or removed by voting (with a 67% majority).
+
+At the beginning of DAO operations, the BitRewards team will act as the Super User. In the event that the BitRewards team runs the business unsatisfactorily or loses the trust of the DAO members for other reasons, this may change, and DAO can elect other Super Users.
+
+About the open source of BitRewards software: The entire source code of all BitRewards products will be publicly available under a special license.
+
+33
+
+
+
+The license will allow the usage and modification of the source code only for personal noncommercial purposes (experiments, etc.). Usage or modification for commercial purposes will be prohibited. The license can be changed by the decision of DAO. Also, DAO may grant special rights to use and modify the source code to any individuals and organizations at its own discretion. The objectives of this type of license are:
+
+1. To enable the members of DAO to resume the BitRewards platform operations at any time, and also to continue its development if the BitRewards team fails to fulfill its obligations.
+
+2. Exclude the creation of BitRewards system's clones, competing with BitRewards and working with other cryptocurrencies, which may potentially reduce the demand on BIT.
+
+BitRewards Operator
+
+The BitRewards Operator's goal will be to service merchants and provide a better level of service to their users with the help of BitRewards apps. It will promote the platform among other solutions providers with the view to enable them to use distributed ledger technologies to improve their products and to help spread the BitRewards tokens global adoption. The Operator will offer extended support, design new solutions for the retail industry, and provide legal, tax and accounting counseling to the merchants.
+
+Bancor Liquidity smart contract
+
+Provides for BIT's seamless exchange into crypto- and fiat currencies. (Please go to "Liquidity smart contract" section for more details.)
+
+Business model
+
+BitRewards Network profits from the growth in value of the BIT token, therefore it provides basic customer software and apps for the retailers free of charge. Although it will be possible for the developers of the Smart Rewards apps within the BitRewards ecosystem to charge the merchants for the customary tools, the BitRewards in its first year of operations will not take commission from transactions, aiming to provide maximum efficiency to the merchants.
+
+This demonstrates that BitRewards is committed to the growth in the value of BIT, which strategically corresponds to the interests of tokens holders. Our strategy is the maximum adoption and utility of the apps that are built on BitRewards platform among retailers, which will increase the demand for tokens, their adoption and price.
+
+34
+
+
+
+After 12 months of operations we will introduce 0.5% commission on the sales transactions with BitRewards tokens.
+
+Also, the special administration entity BitRewards Operator can offer paid services as a result of retailers' inquiries, as they will be interested in our expertise. Such services may include:
+
+ Customary apps for specific business goals (e.g. a sophisticated bounty campaign);  Adjustments of settings and the testing of hypothesis of the rewards and other parameters of the
+
+loyalty system;  The integration of customary blockchain solutions in the existing corporate loyalty program;
+
+The BitRewards Network does not see such development as a priority and considers it the most efficient to transfer such types of important services to independent contractors, BitRewards enthusiasts, and community members with which we plan to work. This will help the adoption of the BitRewards platform and broader acceptance of BIT.
+
+
+
+Projected registration of retailers in BitRewards system
+
+
+
+Year 2018 2019
+
+
+
+Month
+
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar
+
+
+
+Connection per month
+
+3 2 5 10 20 28 36 45 51 56 62 69 77 87 92
+
+
+
+Qty of store
+
+3 5 10 20 40 68 104 149 200 256 318 387 464 551 643
+
+
+
+Monthly avg. reward, USD
+
+500,00 500,00 500,00 500,00 600,00 600,00 600,00 600,00 600,00 600,00 600,00 600,00 700,00 700,00 700,00
+
+
+
+Monthly demand, USD 1 500 2 500 5 000 10 000 24 000 40 800 62 400 89 400
+
+120 000 153 600 190 800 232 200 324 800 385 700 450 100
+
+
+
+Total, USD
+
+1 500 4 000 9 000 19 000 43 000 83 800 146 200 235 600 355 600 509 200 700 000 932 200 1 257 000 1 642 700 2 092 800
+
+35
+
+
+
+Apr
+
+
+
+97
+
+
+
+740
+
+
+
+700,00
+
+
+
+518 000
+
+
+
+2 610 800
+
+
+
+May
+
+
+
+103
+
+
+
+843
+
+
+
+700,00
+
+
+
+590 100
+
+
+
+3 200 900
+
+
+
+Jun
+
+
+
+111
+
+
+
+954
+
+
+
+700,00
+
+
+
+667 800
+
+
+
+3 868 700
+
+
+
+Jul
+
+
+
+120
+
+
+
+1074
+
+
+
+800,00
+
+
+
+859 200
+
+
+
+4 727 900
+
+
+
+Aug
+
+
+
+129
+
+
+
+1203
+
+
+
+800,00
+
+
+
+962 400
+
+
+
+5 690 300
+
+
+
+Sep
+
+
+
+140
+
+
+
+1343
+
+
+
+800,00
+
+
+
+1 074 400
+
+
+
+6 764 700
+
+
+
+Oct
+
+
+
+152
+
+
+
+1495
+
+
+
+800,00
+
+
+
+1 196 000
+
+
+
+7 960 700
+
+
+
+Nov
+
+
+
+166
+
+
+
+1661
+
+
+
+800,00
+
+
+
+1 328 800
+
+
+
+9 289 500
+
+
+
+Dec
+
+
+
+180
+
+
+
+1841
+
+
+
+800,00
+
+
+
+1 472 800
+
+
+
+10 762 300
+
+
+
+Jan
+
+
+
+198
+
+
+
+2039
+
+
+
+900,00
+
+
+
+1 835 100
+
+
+
+12 597 400
+
+
+
+Feb
+
+
+
+205
+
+
+
+2244
+
+
+
+900,00
+
+
+
+2 019 600
+
+
+
+14 617 000
+
+
+
+Mar
+
+
+
+213
+
+
+
+2457
+
+
+
+900,00
+
+
+
+2 211 300
+
+
+
+16 828 300
+
+
+
+Apr
+
+
+
+222
+
+
+
+2679
+
+
+
+900,00
+
+
+
+2 411 100
+
+
+
+19 239 400
+
+
+
+May
+
+
+
+233
+
+
+
+2912
+
+
+
+900,00
+
+
+
+2 620 800
+
+
+
+21 860 200
+
+
+
+Jun
+
+2020 Jul
+
+
+
+244
+
+
+
+3156
+
+
+
+900,00
+
+
+
+2 840 400
+
+
+
+24 700 600
+
+
+
+258
+
+
+
+3414
+
+
+
+1 000,00
+
+
+
+3 414 000
+
+
+
+28 114 600
+
+
+
+Aug
+
+
+
+272
+
+
+
+3686
+
+
+
+1 000,00
+
+
+
+3 686 000
+
+
+
+31 800 600
+
+
+
+Sep
+
+
+
+288
+
+
+
+3974
+
+
+
+1 000,00
+
+
+
+3 974 000
+
+
+
+35 774 600
+
+
+
+Oct
+
+
+
+306
+
+
+
+4280
+
+
+
+1 000,00
+
+
+
+4 280 000
+
+
+
+40 054 600
+
+
+
+Nov
+
+
+
+310
+
+
+
+4590
+
+
+
+1 000,00
+
+
+
+4 590 000
+
+
+
+44 644 600
+
+
+
+Dec
+
+
+
+316
+
+
+
+4906
+
+
+
+1 000,00
+
+
+
+4 906 000
+
+
+
+49 550 600
+
+
+
+This calculation is based on the historical data of GIFTD rewards and loyalty solutions provider.
+
+
+
+The value of the network grows in the process of adoption by a large number of participants, who start using BitRewards.
+
+
+
+36
+
+
+
+According to the estimates, in case a conservative forecast (reaching a softcap of $3,000,000), the targeted funds will be sufficient to sign up 5000 retailers in 3 years, which will generate a monthly demand for BIT worth $4.9 million.
+
+Go to market strategy
+
+BitRewards promotion among retailers, content management systems, website builders, and ecommerce service providers is one of the key tasks, as the BIT token value directly depends on the number of merchants in the network and the intensity of the adoption of the BitRewards rewards and loyalty apps.
+
+We have signed the letter of intent with Ecwid, one of the top e-commerce website builders with over 1 million merchants in 175 countries headquartered in San Diego, CA, USA. We plan to conclude agreements with all major content management platforms for online commerce. They are keen to use our product.
+
+Since we aim to develop a large community of BitRewards adopters, we plan to offer the comprehensive loyalty solutions and applications of BitRewards loyalty system free of charge. The value of such service is at least $200/month, for a small online store, and up to several thousand dollars for a large store. Such offer is unprecedented and comprises a key component to our go-tomarket strategy.
+
+37
+
+
+
+We will also open the platform's code for the community and allow the development of the apps for any interested party. The developers will be able to offer their apps on their terms to retailers and make a commission income. The broad adoption by the retailers and their customers will ignite a network effect that provides for explosive growth and wards off competition. Given that the retailers' rewards and loyalty systems market does not have an exclusive leader, a decentralized free system like BitRewards will take a significant share and can become a market standard, which we aim to achieve. To attract the highest number of merchants using BitRewards system, it is planned to apply three main strategies:  Active interaction with the community of entrepreneurs and online stores' owners and managers  Partnerships with e-commerce platforms and website builders  Relationships with developers and services providers
+
+38
+
+
+
+Active interaction with the community of entrepreneurs and online store owners
+
+Our target audience is small and medium online retailers. Although we see value from BitRewards in many different verticals, from brick-and-mortar stores, to employees' loyalty solutions, the sweet spot for us is online stores selling consumer goods or services with traffic of 10 to 500 thousand monthly unique users, which we presently assess at 100-200 thousand clients. BitRewards has strong competitive advantages in comparison with other loyalty systems:  Free of charge  Simple installation which doesn't require technical expertise  Access to a large number of loyal customers of partner retailers in the BitRewards Following the current trend, the focus in promotion of BitRewards Network will be made on content marketing, which will push the message to merchants that the BitRewards Network offers much more than any competitor can offer, and moreover it's for free. To sign up the vast number of merchants, it is planned to use the following marketing channels:  Social networks
+
+Content production for our blog, email, social media and other outbound activities. We have high conversion rate after the live demo presentation of our solutions: after the initial presentation, 3050% of the clients covert within 1-2 months.
+
+In the USA we've found out that there's a great demand from 2 interesting verticals inside the ecommerce space, which we've never explored before: 1. Event organizers who sell tickets for events through Eventbrite, for which the organizers want
+
+to reward points to their clients, who can later redeem these points for new ticket purchases. 2. Start-ups, who need a referral system and are ready to pay cash for new clients. We are excited about these developments and plan to sign up several hundreds of active merchants in the first year.  Workshops, webinars and events Hosting seminars, webinars and participating in conferences, as well as partnering with digital agencies who service online stores, and for whom we have already launched a partner affiliate program.
+
+39
+
+
+
+Partnerships
+
+Co-operation with website builders and CMSs for online stores (platforms like Shopify, Magento, WordPress, Ecwid, etc.), as a lot of our clients are coming from these sources and they are the easiest to convert. They are interested in the development of the e-commerce ecosystem, and are very keen adopters of the services that help online stores' efficiency.
+
+Relationships with developers and services providers
+
+BitRewards Network will provide an open source ecosystem for retailers' solutions providers, so that they can profit from the creation of the apps that they provide within the network. The developers will be able to use the software and template apps of BitRewards Network and develop custom apps for any e-commerce business and every other case where smart rewards are applicable. The BitRewards Network ensures that developers benefit from both the creation and adoption of software, arranging prizes and hackathons, and providing the remuneration from the retailers directly. The solutions that attract the highest demand from the retailers will win the monetary rewards for the developers. Developers and retailers will also be able to vote for the most necessary features and initiate the creation of new functionality of the platform.
+
+40
+
+
+
+Team
+
+The BitRewards team is probably one of the strongest teams there are, dealing with blockchain for the retail industry.
+
+After spending more than 5 years in fintech during 15 years in the financial sector, in 2012 Alex Egorov, the CEO, founded GIFTD, an e-commerce loyalty and rewards solutions company. A year later, Alexander Nevidimov joined Alex as a CTO to work on the GIFTD project. Mr. Nevidimov has vast experience in the crypto-currency space, having worked before as one of the main developers for one of the top mining pools at that time 50BTC.com. The BitRewards blockchain team also boasts one of the strongest developers of mobile software, Andrey Kladov, who in his 8+ years of experience participated in the creation of several highly complex software products enjoyed by millions of users globally. Inspired by the most technically sophisticated projects, he has constantly found himself at the forefront of the cutting edge technologies. At WWDC14, Andrey presented the Ultimate Guitar mobile app after their team was selected as part of a small group of 24 companies to participate in Apple's Earth Day '16 in Cupertino. Andrey is an avid blockchain advocate who explores every blockchain service that comes out and experiments with its application to e-commerce solutions.
+
+41
+
+
+
+The core team
+
+Alex Egorov
+
+CEO linkedin.com/in/alexanderegorovgiftd/
+
+Alex spent 15 years working in banking and financial sphere, and finished his banking career as a Vice-president of the National Reserve Bank (Moscow, Russia) in charge of international relations, foreign financial markets and trade finance. In 2011 he founded the company, which started rendering IT services to enterprise customers and later embarked on the development of its own product, which shaped the GIFTD.tech suite of solutions for the e-commerce industry. With deep knowledge in finance and tech, Alex has an outstanding talent for complex processes organization and management of teams of sharp and bright people, who share his ideas and implement them in useful and beautiful IT products.
+
+Profound financial knowledge and IT experience helps Alex stay at the forefront of FinTech and he deeply understand how the economy and financial ecosystem will bend towards the blockchain's disruptive forces.
+
+Alexander Nevidimov
+
+CTO, Blockchain architecture, Big Data expert linkedin.com/in/alexander-nevidimov-78872a57/
+
+Olympic Programming training for 5 years, winner of the ACMICPC/IOI championships, main developer of the bitcoin mining pool 50btc.com, CTO of GIFTD for 4 years, Alexander has more than 12-year experience in backend development (and 3 years fullstack), leading diverse development teams for more than 6 years.
+
+Having propensity for adopting innovation, Alexander started testing various distributed ledgers since 2012, and acts as a tech radar screen for BitRewards Network, finding and applying various blockchain services and solutions to BitRewards' goals, aiming to and succeeding at using accomplished and approved IT community technologies. An agile practitioner, Alexander is excellent at arranging technical development teams both at the startup and mature level.
+
+42
+
+
+
+Studying Machine learning, and being an advanced Big Data expert, Alexander implemented machine learning algorithms into GIFTD rewards and loyalty tools for e-commerce (recommendation system, processing hundreds of thousands items per day) and created from scratch a proprietary data analysis system, which processes and reports on more than 200 million data points per month.
+
+Andrey Kladov
+
+Mobile architecture, blockchain linkedin.com/in/andrey-kladov-b315603b/
+
+Mobile mastermind behind dozens of b2b and b2c apps, Andrey boasts impeccable mobile development skills using Cocoa, Cocoa-Touch, Objective-C, Swift-Language, Java and Android SDK. For his over 8-year mobile development experience, Andrey participated in the creation of several highly complex software products enjoyed by millions of users globally. Inspired by the most technically sophisticated projects, he has constantly found himself at the forefront of the cutting edge technologies. Starting to apply Swift coding language in production right after its presentation at WWDC14, Andrey presented Ultimate Guitar mobile app after they were selected among a small group of 24 companies to participate in Apple's Earth Day'16 in Cupertino.
+
+Vitaliy Makarenko
+
+COO linkedin.com/in/makvitaly/
+
+Vitaliy has vast experience in corporate processes management and sales, which he gained working on strategic industrial projects with Fortune 500 companies.
+
+During more than 7 years in selling software B2B products, Vitaliy honed his skills in market analysis and strategy, personnel management, customer development and customer success, which allowed him to accomplish several prominent projects in highly competitive IT solutions market for a total amount of more than $90 million. His insights allow him to drive product strategy so that its features precisely hit customers' expectations.
+
+43
+
+
+
+Marat Arslanov
+
+CMO linkedin.com/in/arslanovmarat/
+
+Before joining the team, he had a 6-year career designing sophisticated marketing campaigns as a CEO of a digital marketing agency. Marat is extremely passionate about data driven marketing and behavioral analytics. These interests perfectly suit the goals of the rewards and loyalty SAAS tools. Marat leads the digital marketing for in GIFTD.
+
+A strong believer in big data solutions and machine learning technologies, he is an organic match for the engineers team, setting concrete goals and aspiring to achieve measurable results.
+
+Marat is also exemplary at delivering uncompromising quality and precision in both internal tasks' setting and solution and customers' requirements, which is utterly conducive in setting strategic goals for product development.
+
+Segey Alisov
+
+Head of design linkedin.com/in/segey-alisov-a3908a9b/
+
+Sergey has an amazing ability to turn product concepts into beautiful reality that users resonate with. An amazingly productive designer with over 10 years in mobile and web UX and UI, he lead the design and features invention and implementation of apps that are used by more than 10 million users for the major players in airlines, communication, fashion and sports. Sergey headed the design and art team for GIFTD, participated in creation of numerous e-commerce solutions from scratch, and has started creation of the main BitRewards platform parts' prototypes.
+
+44
+
+
+
+Ilya Starovoitov
+
+Business Development linkedin.com/in/ilya-starovoitov-5b504957/
+
+Ilya is a charismatic sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding on how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+
+Slava Zytsar
+
+Frontend engineer linkedin.com/in/zytsar-svyatoslav-187660a9/
+
+More than 10 years experience in frontend development. Highly qualified and expert level in (Webpack, Gulp, PHP, PostCSS, Sass, SVG, ES6, BEM), Slava is the key frontend person for GIFTD e-commerce tools.
+
+Dmitri Semenov
+
+QA engineer linkedin.com/in/dmitrii-semenov-a6754aa9/
+
+More than 5 years in QA. Worked on more than 15 high-load mobile and web projects.
+
+45
+
+
+
+Max Litkevich
+
+Technical support engineer linkedin.com/in/maksim-litkevich-131227151/ 4 years experience in support and troubleshooting, analyzing and solving complex technical problems.
+
+46
+
+
+
+Other tech team members
+
+Sergey Kulitskiy
+
+Backend engineer More than 16 years in web, mobile development
+
+Nail Gazizyanov
+
+Chat-bot, machine learning engineer More than 5 years in backend development, 2 years machine learning.
+
+Vasiliy Kurkin
+
+Fullstack engineer. Web and mobile high load development.
+
+Sergey Edinin
+
+Backend developer. 14 years experience in web and mobile development, chatbots.
+
+Evgheniy Ahmetgareev
+
+Network security engineer. Developer, more than 5 years in network security.
+
+Roman Mukhutdinov
+
+Frontend engineer. More than 10 years experience in frontend development.
+
+Ramil Zayneev
+
+Full-stack developer. An experienced team leader with more than 10 years of high-load projects development
+
+47
+
+
+
+Advisors
+
+successful exits.
+
+
+
+Artem Chestnov
+
+Advisor, Board member, BitRewards https://www.linkedin.com/in/artem-chestnov-aa5461/ Artem Chestnov has launched the most successful asset tokenization platform Latoken as managing director and head of operational team and acts as board member at Reborn (life extension technologies). Artem has wide experience in marketing and business development with global leading corporations (Inbev, Loreal) and MBA degree from INSEAD. His specialty is launching new products to market, in his career he launched over 50 products, projects, 4 start ups and executed 2
+
+
+
+Ivan Anichkov
+
+Advisor Enterprise solutions, Data Expert, linkedin.com/in/ivanvanichkov/
+
+Mr. Ivan Anichkov has gained 20 years of enterprise IT and business development serving the frontline with prominent knowledge leaders as Nice systems, IBM, EMC and HP. Ivan with his counterparty executives led numerous value driven projects for top tier corporations. Having started from subject matter roles in IT consulting and professional services, Ivan has developed competences into strategic enterprise management with primary responsibility for commercial activities and strategic business development. Mr. Anichkov has successful board /management experience of $ 80M (25% YoY) multichannel (up to 200 reps, few dozen SI partners in 5 countries) value sales enterprise business, and lately hands-on leadership of $5-10M direct business origination for niche market companies during high growth phase (200-300% YoY).
+
+Ivan has been involved in bridging the gaps from understanding his customer objectives and concerns and translating them into practical business case applications by means of studying and efficiently adopting cutting edge technologies along with globally proven approaches such as CRM, LTV and Loyalty Management, Customer Interactions, Big data, Information Management, Predictive analytics and BI.
+
+48
+
+
+
+His specialty recipes for results include needs understanding and subject matter expertise in key customer markets (Banking, Retail, Transport and Critical Industry), acumen of IT business applications (ERP/CRM/Analytics/Big Data/Web/Fintech) and building profitable business cases, long term value and solution sales strategy, broad outlook for ecosystem and available business models, leadership and motivation of diverse teams, innovative technology operations, robust KPI based management.
+
+Alexey Gritsyna
+
+Business Development, E-commerce linkedin.com/in/alexeygritsyna/
+
+Alexey is an entrepreneur and investor who operates out of the United States. With a degree in Economics and extensive experience in the US medium size business sales, production, and marketing, he not only brings deep knowledge of the US ecommerce niche, but also great passion and enthusiasm for the cutting edge technologies in that space and beyond.
+
+John McNaughton
+
+Advisor Payments processing and finance advisor linkedin.com/in/john-mcnaughton-486b1071/
+
+A well known global international banker with more than 25 years of experience in international finance and payment systems. C-level executive for a number of financial institutions in Great Britain, USA and EU.
+
+Participating in foundation of one of the most dynamically developing banks in Europe -- Expobank, CZ (Prague), and being one of its top executives, John acts as a board member for several other financial institutions.
+
+49
+
+
+
+Greg Mann
+
+USA Sales and IR, Board member linkedin.com/in/greg-mann-05705b23/
+
+Experienced Sales and Growth Leader/ Visionary Entrepreneur and Investor. A passionate and driven individual with a brain like an engineer and a mind like a founder. Greg brings excitement and opportunity to all that are willing to risk the unknown.
+
+Sergey Fradkov
+
+International scaling and business development linkedin.com/in/sfradkov/
+
+Serial entrepreneur, manager of technological projects and companies. Has more that 25 years of experience in technology, built several successful businesses in the field of mobile applications, IT services and enterprise software. Founded and managed a startup accelerator that was ranked as #3 in Europe, served as technology visionary and advisor to the portfolio companies. Advisor to several startups in cryptocurrency space, including ICOs, tokenomics and utility tokens.
+
+Roman Yankovskiy
+
+Legal Advisor linkedin.com/in/yankovskiy/
+
+Roman has been at the forefront of solving complex legal problems for fintech industry since 2015. He has extensive experience in advising and consulting on P2P lending, scoring, blockchain and crowdfunding. He is a partner of Zartsyn, Yankovskiy and Partners, prolific author, speaker and lecturer on legal aspects of the hi-tech and venture business.
+
+50
+
+
+
+Partners and early adopters' testimonials
+
+Anton Soloviev
+
+Head of partners, InSales (A leading online stores' builder)
+
+Wow to BitRewards, chaps! We've recommended GIFTD tools to the retailers that open their online stores with our platform for a couple of years now. We are one of the largest e-commerce platforms in Europe, with thousands of clients, and I'm on a constant lookout for new cool tech that we or our clients can work with. BitRewards currency concept is pretty amazing, and I've told the guys for a long time that online stores want to be given the real McCoy cash for their friends' purchases. We've got hundreds of clients who asked about the feature, and BitRewards currency solves this beautifully, and gives tons of extra features, with no pain in the neck about taxes and legal stuff. Well done! Looking forward to the future!
+
+Roman Gryanko,
+
+Chairman, Assist (One of the largest Ecommerce payment systems in the Eastern Europe)
+
+The BitRewards team has already delivered amazing technology behind their rewards and digital gift cards for ecommerce businesses. We are following the team for several years now and a lot of times recommend their solutions to our clients. We have talked a lot with Alex (Egorov, CEO) about how the payments technologies in online stores can be improved with the application of blockchain, and plan to use BitRewards platform when it goes live. The solution is amazingly simple and efficient, and we are looking forward to implementing it into our payment system. BitRewards will allow us to expand our user base, and add method of payment with cryptocurrencies, which is a must in the current environment and raises more and more interest among our clients.
+
+51
+
+
+
+Sergey Sidorov
+
+CEO and Founder, PromoSoundGroup.net We are a provider of music promo services. We work with both new bands and established musicians, promoting them and connecting with the top labels and world's leading publishers. The key component of our business is the personal approach to each and every client. Our business success depends on the loyalty of our customers. We've been using GIFTD referral tools for several months now and it's great that they are moving into blockchain  which we are most willing to try to apply in our work. The guys make their products very user friendly and it would be most exciting if we could also use blockchain as easily as the rest of GIFTD products.
+
+Ankit Talwar
+
+Founder and CEO, DiscWallets.com I wish I received several bitcoins as a cash back for my shopping back in 2012! BitRewards is an amazing concept  it's an innovation sorely needed in online retail today and we want our customers to be part of it. I'm sure they will appreciate receiving crypto money from my store.
+
+Paul Ryazanov:
+
+Founder and CEO, MageCloud.net (Development and services for Magento online stores) Blockchain will find its place in e-commerce space, without a doubt. As developers, we welcome every tool, which will be efficient for our clients. Opening the rewards tools on blockchain for free and providing it to developers to make money out of it is great. We'd love to check BitRewards out!
+
+52
+
+
+
+Victor Sadygov
+
+Managing Partner Nika Estate (Elite real estate boutique) We are offering the absolute best we can to our clients who have gotten used to impeccable services. I believe it is a great idea to give something back to the customers -- it pays off in the end anyway! We also want to be on the cutting edge of tech and giving crypto currency as a reward for purchases or, even more so, referrals will be definitely appreciated by our customers. We also see tremendous marketing opportunities in that space - we need to harness the blockchain hype and legitimately brag about it! I'm excited about using BitRewards  I truly believe it is a great technology!
+
+53
+
+
+
+History and current progress of the company
+
+In 2013, Alexander Nevidimov joined Alex as a CTO to work on the GIFTD project in the sphere of gift cards, bonuses and rewards in e-commerce. Mr. Nevidimov had vast experience in the cryptocurrencies field, having worked before as one of the main developers for one of the top mining pools, 50BTC.com. This experience made the team experiment with digital currencies, which merchants or brands can issue and use on their own, and GIFTD was constantly looking for chances to apply blockchain to the product, which, however, was a little too exotic for the corporate world in 2012. The team started building a centralized digital gift cards and promo codes processing platform, approaching it as a financial product with a view to allowing the issuance of the brand's own currency, which can be exchanged for commonly accepted cash (regular prepaid gift cards), or paid for different client's actions (free gift cards and promo codes) and started offering it in the market in 2015. GIFTD has developed several standard e-commerce solutions that are installed by more than 500 online merchants and this figure will go to more than 1000 in 2018. In 2016 it became clear to the GIFTD team that blockchain will inevitably be adopted among its corporate clients and their customers, so CTO Alexander Nevidimov started to put together the Blockchain R&D department. In 2017 the department started to have regular meeting and is now 10 tech people strong.
+
+Product roadmap
+
+The BitRewards Network is being developed as the next essential component of the GIFTD rewards and loyalty system. We currently have the tested solutions - widgets that merchants can install on the top of their websites and social networks, which give rewards in the form of points or discounts to the users. A part of the solution is the customer's dashboard or wallet with points, where they see the points they have earned or redeemed and other features. Product development consists of 10 stages. The total costs of stages 1-8 will come to US$2 million. Depending on the amount that will be raised during the ICO, these stages' timeline can be accelerated. The execution of stages 9-10 will cost US$1 million. All the costs include operations and sales and marketing activities. Unlike many other blockchain startups, we plan that only 27% of the total costs will be spent on the product development, because a lot of essential components of the system has already been developed and tested. Depending on the ICO results and adoption of the product of the previous stages, we can embark on stages 9-10 earlier than planned.
+
+54
+
+
+
+The funds that we raise beyond the soft cap will be invested in sales marketing activities, which will help us sign up more merchants more quickly, creating a stronger network effect and delivering the product features faster. Additional funds will also be used for opening of new geographical markets faster and delivering new features of the product, which were not mentioned in the pipeline below. This product roadmap might not be final and is subject to adjustments depending on the feedback we receive from the early BitRewards adopters.
+
+Stage 1: Development of a points based loyalty system GIFTD designed to reward shoppers. (ompleted) Time: November, 2016 - February, 2017
+
+Purpose: To create a fully functional rewards system with automated rebate and referral mechanics. It will be installed by default on top of the merchants' websites and initially tested with the selected merchants issuing BIT instead of merchants' points to their customers. Contains a dashboard and "points" wallet, a prototype for the BitRewards wallet.
+
+55
+
+
+
+Results: The solution was developed and tested with several merchants and service providers. It allowed the team to conduct necessary customer development activities and understand the merchants' and customers' needs.
+
+Stage 2: Structuring the concept of using Ethereum blockchain with loyalty and rewards tools and customer development of the cryptorewards for e-commerce industry, team hiring. (ompleted) Time: February  October, 2017
+
+Purpose: To invent the simple and frictionless, yet secure, structure that enables non-tech-savvy merchants to easily reward and redeem crypto-currency from non-tech-savvy users. Lack the simplicity and the product will not be adopted. Should the security have any chance of being compromised, it will outweigh any benefits the platform may bring.
+
+Results: The clear and compelling structure has been drafted and accepted by the team members and advisors. Security elements were contemplated and shaped so that hypothetically no gross threat to the BitRewards Network system will exist at any point in time. It was decided that Lightning Network and Raiden Network technologies should be applied to provide for the speed, better user experience, and cost efficiency (implementation upon their tested versions of said technologies are production mode ready).
+
+Stage 3: The full-functioning loyalty system BitRewards for the retailer and the user's crypto-wallet connected to the loyalty program, with access on the website of retailer and BitRewards website. Time: October 2017 - May 2018
+
+Purpose: Development of a fully functioning core BitRewards product. The system is based on GIFTD Loyalty program and includes a crypto-rebate system, rewarding users' and referrals' purchases. It comprises the retailer's dashboard with the possibility of setting a percentage from the purchase amount, which the smart contract transfers in BIT Token and sends to the customer. At this stage it is also planned to implement the BitRewards customer's wallet (Customer's Wallet). Payment with BIT at the retailers' online stores, transfers of the BIT to external Ethereum wallets from the Customer's Wallet, and transfers of the Ethereum based currencies to Customer's Wallet will also become possible at this stage.
+
+56
+
+
+
+At Stage 3 it is also planned to launch a sales and marketing subsidiary in the USA, which will carry out global operations for the English speaking countries.
+
+Costs: $1.01 million
+
+Stage 4: Retailer Crypto-wallet and liquidity management smart contract Time: March - June, 2018
+
+Purpose: Release of the uniform solution for retailers, with which they can make operations with their customers and between each other. The crypto-wallet of the retailer represents the Smart contract tied to the BitRewards Network. Settings allow the ability to check automatically the balance of BIT and to recharge it if necessary. This wallet can be used by default for the transfer of rewards to customers and for the reception of BIT as a means of payment for goods or services. The fiat currencies or the BIT of the retailer are kept in this wallet. The retailer can pay for BIT from this wallet if he has to acquire them from BitRewards.
+
+During this stage, the DAO and the service company BitRewards Operator that will support the transactions in BIT will also be fully deployed and the Bancor smart contract will be launched.
+
+Costs: 130k
+
+Stage 5: Integration of loyalty system with Lightning Network and Raiden Network (after the launch of these technologies). Time: June - July, 2018
+
+Purpose: To enable fast, free and secure BitRewards tokens transactions for merchants and customers. Lightning and Raiden technologies allow almost immediate remittance and confirmation of Ethereum based tokens. These technologies will be integrated as soon as they are tested and become available in the full production mode.
+
+Costs: 170k
+
+Stage 6: Customer's Mobile app with crypto-wallet. Time: June - August, 2018
+
+Purpose: To provide the customers with the single point of access to their wallet via BitRewards Mobile app for iOS and Android and use it online and offline. At this stage the special offers of the BitRewards Network merchants and partners will become available within the app, and users will be able to purchase them with BIT and other currencies.
+
+57
+
+
+
+At this stage the best offers from global CPA affiliate networks will be added to the customer's wallet, which will allow customers earning tokens for purchases with thousands online stores globally.
+
+Costs: 160k
+
+Stage 7: The Alfa-version of the AI-based rewards recommendation and items recommendation. Time: July - November, 2018
+
+Purpose: To provide the early adopters with the efficient recommendations tools that improves the loyalty of the customers and increases sales and achieve efficient results from the split-testing for the key target audiences of merchants. To further provide the omni-channel shopping experience to the customers. Digital gift cards, scanning of loyalty cards into the mobile wallet and the geofencing and merchant search engine will be developed. At this stage we will open subsidiary and will focus on the promotion of our products in the Asian market.
+
+Costs: 490k
+
+Stage 8: Mobile SDK for merchants' apps. Time: September - December, 2018
+
+Purpose: To provide merchants' proprietary mobile apps with BitRewards loyalty and crypto-currency wallets.
+
+Costs: 170k
+
+Stage 9: Integration of AI and machine learning into the BitRewards platform. Time: January - April, 2019
+
+Purpose: Predictive analysis platform with AI recommendations' mechanism. After this stage, the data collected by the platform will be used to predict the customers' behavior and automatically select the best incentivization tool and make the best offer along with the improvement of the merchants' efficiency.
+
+Costs: 680k 58
+
+
+
+Stage 10: Blockchain based traffic exchange between online and offline merchants. Time: April - May, 2019
+
+Purpose: To drive new traffic to the BitRewards Network member merchants via omni-channel realtime customer behavior analysis and recommendations. We consider BitRewards as a decentralized system, since the launch, decisions on necessary completions will be made by the forces of community which will influence the goal-setting process and interact actively with the team. The most part of the system components will be developed on the open-source basis, and we encourage all developers to take part in the completion of the system.
+
+Costs: 180k
+
+59
+
+
+
+Costs breakdown
+
+
+
+Field Product Development Operations Marketing, sales, merchant acquisition & partnerships
+
+Legal
+
+Management
+
+
+
+Portion of budget 27% 12% 39%
+
+6%
+
+16%
+
+
+
+Activities
+
+Product development according to development roadmap
+
+Management, other non-tech staff salaries
+
+Expenses for attracting the retailers to the platform, making partnerships with payment providers, website builders, loyalty programs services providers and other partners.
+
+Company and subsidiaries establishment, contracts with the retailers, development of legal opinions about the entire stack of BitRewards services and retailers' operations, etc.
+
+C-level executives salaries
+
+
+
+60
+
+
+
+Token generation event details
+
+BIT token is an ERC-20 standard-basis Ethereum token.
+
+
+
+BIT token allow for the payment of goods and services in partner merchants of the BitRewards system and can also be exchanged for ETH/USD at independent exchanges, or at the BitRewards liquidity contract. Tokens will be offered on a private white list subscription efficient as of 25th of December 2017.
+
+
+
+Token Sale Volume
+
+
+
+up to 1,280,000,000
+
+
+
+Token Issue Volume
+
+
+
+up to 2,000,000,000
+
+
+
+Distribution of Tokens:
+
+Soft cap: Hard cap:
+
+
+
+12.00% - Reserve for liquidity 64.00% - Total for sale now 14.00% - Management 3.50% - Advisers 2.00% - Bounty 2.50% - Marketing 2.00% - Contingency
+
+$3 000 000 $15 000 000
+
+
+
+Unsold tokens: Token price:
+
+
+
+All unsold token will be burnt 0.00003472 ETH
+
+
+
+Website link:
+
+
+
+BitRewards.network
+
+
+
+Accepted forms of payment
+
+
+
+ETH, BTC
+
+
+
+Private pre-sale Start Date: Private pre-sale End Date:
+
+
+
+December 25, 2017 January 11, 2018
+
+
+
+Public pre-sale Start Date: Public pre-sale End Date:
+
+Crowd Sale Start Date: Crowd Sale End Date:
+
+
+
+January 12, 2018 March 31, 2018
+
+April 01, 2018 April 30, 2018
+
+
+
+Token Issue Date:
+
+
+
+May 10, 2018
+
+
+
+Liquidity (Exchanger) Smart Contract Launch May 11, 2018
+
+
+
+Major Exchanges Listing
+
+
+
+June-July, 2018
+
+
+
+Minimum amount of BIT tokens purchase
+
+
+
+1000 BIT
+
+
+
+Please note the purchased tokens for the amounts of more than US$50.000,00 will be locked up for three months after the token sale event.
+
+61
+
+
+
+Legal
+
+General information
+
+BitRewards tokens (hereinafter referred to as BIT or BIT token) crypto-tokens issued on the Ethereum platform on the basis of an ERC-20 standard contract. BIT is a utility token designed to support transactions on the BitRewards Network platform.
+
+BIT shall not be construed as and does not have the legal qualification of a security, as it does not represent any equity share and/or constitute the rights for any dividends or interest.
+
+The sale of BIT is final and non-refundable. BIT are not shares and do not give the right to participate in the general meeting of BitRewards Network company or its current or future legal entities. BIT can not have a performance or a specific value outside the BitRewards Network platform. Therefore, BIT should not be used or purchased for speculative or investment purposes. The buyers of BIT acknowledge that national securities laws that ensure that investors are sold investments that include all the relevant disclosures and are subject to regulatory control of investor's protection are not applicable.
+
+Anyone who buys BIT directly acknowledges and represents that he/she has carefully reviewed this white paper and fully understands the risks, costs and benefits associated with the purchase of BIT.
+
+Required Knowledge
+
+The BIT token buyer agrees that he/she understands and has significant experience in cryptocurrencies, blockchain, distributed ledger protocols and smart contracts systems and that he/she fully understands the risks associated with crowdsale, as well as the mechanisms associated with the use of cryptocurrencies.
+
+BitRewards Network shall not be responsible for the loss of BIT or situations which make it impossible to access BIT that may result from any act or omission of the user or any person who undertakes to purchase BIT, or in the event of hacker attacks.
+
+Risks
+
+The acquisition of BIT and their storage are associated with various risks, in particular the risk that BIT will not be able to launch its services and develop the functionality of the BitRewards Network platform and provide the promised features of the platform. Therefore, before purchasing BIT, any
+
+62
+
+
+
+user should carefully consider the risks, costs and benefits of acquiring BIT in the crowdsale and, if necessary, to receive any independent recommendations in this regard. Any interested person who is unable to accept or understand the risks associated with the business (including the risks associated with the inability to deliver BitRewards Networks platform), or any other risks specified in this white paper and/or Terms and Conditions of the crowdsale should not acquire BIT.
+
+Important Disclaimer
+
+This white paper should not be considered as an invitation for investment. It is neither in any way nor should it be construed as an offering of securities in any jurisdiction. This white paper does not contain any information or advice that could be considered as a recommendation or which could be used as a basis for any investment decision. BIT are only utility tokens that can be used only on the BitRewards Network platform and are not intended to be used as an investment.
+
+The offering of BIT on any trading platform is performed in order to allow the use of the BitRewards Network platform, not for for speculative purposes. The offering of BIT on any trading platform does not change the legal qualification of the tokens, which remain a simple means for operations within the BitRewards Network platform and not as a security.
+
+BitRewards Network and/or its subsidiaries should not be treated as a consultant for any legal, fiscal or financial matters. Any information contained in this white paper is provided for general information purposes only and BitRewards Network does not make any representation as to the accuracy or completeness of this information.
+
+BitRewards Network is not a financial intermediary in accordance with any national law and is not required to obtain any Anti Money Laundering authorizations. The purchase of BIT should not confer any rights or influence over BitRewards Network or its subsidiaries and management to the buyers.
+
+Regulatory authorities in many countries carefully study the enterprises and operations related to cryptocurrencies. In this regard, regulatory measures, investigations or actions may affect the activities of BitRewards Network and even limit or prevent its development in the future. Any person who undertakes to purchase BIT must be aware of BitRewards Network business model. The white paper and/or terms and conditions of the crowdsale may change or need to be modified due to new regulatory requirements and compliance with any applicable laws in any jurisdiction. In this case, buyers of BIT, and anyone who undertakes to purchase BIT acknowledge and understand that neither BitRewards Network nor its subsidiaries are liable for any direct or indirect loss or damage caused by such changes.
+
+63
+
+
+
+BitRewards Network will do everything possible to start its activities and develop a BitRewards Network platform. Anyone who undertakes to purchase BIT acknowledges and understands that BitRewards does not provide any guarantees that it will be able to achieve it. They should acknowledge and understand therefore that BitRewards Network (including its subsidiaries and employees) is not liable for any loss or damage that may arise or relates to the inability to use BIT.
+
+Representations and Warranties
+
+Before taking a decision to purchase BIT, make sure you are capable to provide representations and warranties specified in the respective section of this white paper and/or Terms and Conditions of the crowdsale. The distribution of this document and the offering and sale of BIT in certain jurisdictions may be restricted by law, and therefore persons into whose possession this document comes should inform themselves about and observe any such restrictions. Any failure to comply with these restrictions could result in a violation of the laws of such jurisdiction. BIT have not been registered under the U.S. Securities act of 1933 (the "Securities Act"), or with any securities regulatory authority of any state or other jurisdiction of the United States. BIT shall not be offered or sold to, or for the account or benefit of, a green card holder of the United States or a United States citizen or permanent resident of the United States (tax or otherwise), or to an individual having a primary residence or domicile in the United States (tax or otherwise), including Puerto Rico, the U.S. Virgin Islands or any other possession of the United States. If you are one of the aforesaid, you are not eligible to buy BIT in any form and/or by any means. Purchasing BIT, the buyers agree with the above and, in particular, they represent and guarantee that they:
+
+ carefully read the white paper, fully agree to its terms and conditions and accept to be legally bound by them;
+
+ are authorized and have the full right to purchase BIT in accordance with laws that apply in the jurisdiction of the place of their residence;
+
+ live in a jurisdiction that allows to purchase BitRewards tokens via crowdsale without requiring any authorization;
+
+ are familiar with all relevant rules and regulations in the specific jurisdiction in which they are based and that the purchase of cryptocurrencies in this jurisdiction is not prohibited, limited or not subject to additional conditions;
+
+ will not use the purchase of BIT for any illegal activities, including, but not limited to, money laundering and financing of terrorism;
+
+ have sufficient knowledge of the nature of cryptocurrencies and have considerable experience and functional understanding of the use and complexity of working with tokens and currencies and systems and services based on the blockchain;
+
+ acquire BIT, because they want to have access to the BitRewards Network platform;
+
+64
+
+
+
+ do not buy BitRewards tokens for speculative investment or use.
+
+Applicable law and arbitration
+
+Any dispute or disagreement arising out of or under a crowd shall be settled by arbitration in accordance with the Singapore International Chamber of Commerce Arbitration Rules (Rules), in force on the date of the filing of the notice of arbitration in accordance with these Rules. The arbitration commission consists of only one arbitrator. The place of arbitration is Singapore International Arbitration Center. The arbitration proceedings are conducted in English.
+
+65
+
+
+
+References
+
+1. Retail e-commerce sales in the United States from 2016 to 2022 https://www.statista.com/statistics/272391/us-retail-e-commerce-sales-forecast/
+
+2. Ecommerce conversion rates http://www.smartinsights.com/ecommerce/ecommerce-analytics/ecommerce-conversion-rates
+
+3. The Value of Keeping the Right Customers https://hbr.org/2014/10/the-value-of-keeping-the-right-customers
+
+4. Small Business Survey 2016: Marketing & Customer Retention Trends https://www.bellycard.com/resources/customer-retention-marketing-insights/
+
+5. 2016 Planning Report: Evolving Strategic And Financial Plans For The Always-on Consumer http://leapfrogmarketinginstitute.leapfrogonline.com/publications/2016-planning-reportevolving-strategic-and-financial-plans-for-the-always-on-consumer/
+
+6. Loyalty Management Market by Type of Solution (Customer Loyalty, Employee Retention, and Channel Loyalty), Deployment Type (On-Premises and On-Demand), Organization Size (SMEs and Large Enterprises), Vertical, and Region - Global Forecast to 2021 http://www.marketsandmarkets.com/Market-Reports/loyalty-management-market172873907.html
+
+7. The 2016 Bond Loyalty Report http://info.bondbrandloyalty.com/2016-loyalty-report
+
+8. 2017 Mobile Marketing Planning Guide http://go.3cinteractive.com/l/13622/2016-09-15/2m4vl7
+
+9. COLLOQUY "Customer loyalty 2015 & beyond report" https://www.colloquy.com/latest-news/tough-lesson-from-our-new-research-report
+
+10. Talech Retail Technology Report https://s3.amazonaws.com/talech_assets/marketing/talech-retail-research-report-march-2015
+
+11. 2016 Annual Card-Linking Industry Survey The CardLinx Association Rewards https://fidel.uk/assets/2016-card-linking-survey.pdf
+
+12. The Bprotocol Foundation https://www.bancor.network/static/bancor_protocol_whitepaper_en.pdf
+
+66
+
+
+
+

@@ -1,0 +1,703 @@
+CrazyBET
+
+easily bet on any events
+
+White Paper
+
+v. 1.1
+
+
+
+Janis Kotans, Vadim Horev, Petrus Ozolins, Ivan Melnik
+
+
+
+July 2017
+
+
+
+CrazyBET.io
+
+
+
+1
+
+
+
+Table of contents
+
+
+
+TABLE OF CONTENTS
+
+
+
+2
+
+
+
+1. INTRODUCTION
+
+
+
+3
+
+
+
+1.1. MISSION
+
+
+
+3
+
+
+
+1.2. PROBLEM
+
+
+
+3
+
+
+
+1.3. SOLUTION
+
+
+
+3
+
+
+
+2. COMPETITORS
+
+
+
+4
+
+
+
+3. BUSINESS CASES
+
+
+
+5
+
+
+
+3.1. BET CASES WITH THIRD-PARTY CONFIRMATION
+
+
+
+5
+
+
+
+3.2. BET CASES WITH AUTOMATIC CONFIRMATION BY API
+
+
+
+6
+
+
+
+3.3. BET CASES FOR GAMES WITH PVP MODE
+
+
+
+6
+
+
+
+4. HOW IT WORKS?
+
+
+
+6
+
+
+
+4.1. GENERAL UNDERSTANDING
+
+
+
+7
+
+
+
+4.2. BET ON THE GAME IN PVP MODE.
+
+
+
+7
+
+
+
+4.3. BET WITH THIRD PARTY CONFIRMATION
+
+
+
+9
+
+
+
+4.4. BET WITH AUTOMATIC CONFIRMATION BY API (PRIVATE BET)
+
+
+
+10
+
+
+
+4.5. BET WITH AUTOMATIC CONFIRMATION BY API (PUBLIC BETTING)
+
+
+
+11
+
+
+
+4.6. DETERMINATION OF THE WINNER
+
+
+
+12
+
+
+
+4.7. TYPES OF BETTING
+
+
+
+12
+
+
+
+5. CRAZYBET ECONOMICS
+
+
+
+13
+
+
+
+6. MARKET
+
+
+
+13
+
+
+
+7. RAODMAP
+
+
+
+15
+
+
+
+8. CBET ICO
+
+
+
+17
+
+
+
+8.1. ICO GOALS
+
+
+
+17
+
+
+
+8.2. DURATION OF THE ICO
+
+
+
+17
+
+
+
+8.3. TOKEN DISTRIBUTION
+
+
+
+17
+
+
+
+8.4. TOKEN PRICE
+
+
+
+18
+
+
+
+8.5. BOUNTIES
+
+
+
+19
+
+
+
+9. TEAM
+
+
+
+19
+
+
+
+CrazyBET.io
+
+
+
+2
+
+
+
+1. Introduction
+
+1.1. Mission
+
+Our mission is to allow friends to easily bet on money with each other on any events. Starting with a bet "who will drink more beer" to PvP game wall to wall.
+
+1.2. Problem
+
+Problem 1. No place to make a bet on any topic or play in popular games with PvP (Player vs Player) mode for money... With honest payouts and transparent conditions. If you want to bet on who drinks more beer or what weather will be in Amsterdam tomorrow, you will face the problem of searching a service with financial instruments and deal fairness control.
+
+Problem 2. If you want to play in popular game in PvP mode with money reward, you will meet a problem searching the service like that. The players have no opportunity for placing bets in games now ("who will win?" "who will get more scores? etc."). What to do if you want to play with each other or the office against the office for 50$? There is no automation system for such cases now. There is only one way  searching for "guarantor" on the game forums and make a deal with him. Usually it takes a lot of time. The guarantors like that don't agree for small bets or expend time taking decision. This problem is currently relevant and there is no complete solution to it even with the human factor.
+
+1.3. Solution
+
+The platform allows you to create three types of bets:  Bet with a third party confirmation.  Bet with automatic confirmation by API.  Bet on the competition in games with PvP mode.
+
+
+
+CrazyBET.io
+
+
+
+3
+
+
+
+Our platform will act as guarantor of such transactions and providing extensive options for their organization. The internal currency for betting is CBET. It works on the basis of smart contracts, which allows them to achieve a high level of security and honesty of bets.
+
+We will give people a convenient opportunity to organize a bet. Using our website or app, people will be able to customize all the details of the dispute and conclude it. The platform provides security from scammers and waiver of bid through smart contracts, automation of decision making and competent work with Arbitrators.
+
+The main functions of the site are the following items:  Complete adjustment of the terms of the dispute on both sides and its conclusion;  Automatic conclusion of a smart contract for each bet and its execution;  Control of the fairness of the bet under its terms.
+
+
+
+2. Competitors
+
+Bait Bait is a peer-to-peer (P2P) betting platform that allows users to bet their friends on practically any sporting event. Sports Available - NFL, NCAAF, NCAAB, NBA, MLB, Soccer, and more. Also pulling in the betting lines from Vegas, users can bet their friends on the spread, the over/under, or who's going to win. Weakness - Only a sporting event, you can not create your own personal events. There is no third party verification (only API for sporting events).
+
+
+
+Youbetme The company bills itself as a way to "bet on anything, at any time". To be clear, it doesn't support real-money betting, but rather tracking friendly bets with friends. Oriented on sport betting. Weakness - there is no possibility to put money. There is no verification of the dispute by a third party. API is only with sports events.
+
+
+
+CrazyBET.io
+
+
+
+4
+
+
+
+Puntaa Is a tournament style and club fundraising social betting platform that allows you to place wagers on season long sport tipping tournaments, weekly sport tipping tournaments as well as daily sport and horse racing tipping tournaments. Also Puntaa provide social bets against your mates. Puntaa more of a social platform and wagering is an element of that. Puntaa is currently only available for use in Australia. Weakness - Works only in Australia. There is no verification of the bet by a third party. API only with sports events.
+
+Tedbets The Tedbet's slogan is "bet anyone, anywhere, on anything" although the core focus of the product is indeed on sports. Weakness - No verification of the bet by a third party. API only with sports events.
+
+
+
+3. Business cases
+
+
+
+3.1.Bet cases with third-party confirmation
+
+In those cases where it is not possible to automate the receipt of the result of dispute (bet), the arbitrator of the dispute is appointed. Often these are disputes that occur offline.
+
+
+
+Examples of bets:  Who will drink more alcohol?  Who is the first to go on a date with Mary?  Who will reach faster to a certain point?  Who is the first to pick up a girl at a bar?  Who will be promoted this month?  Who has it bigger?)
+
+
+
+And other bets that can only come up. Everything is limited by your imagination.
+
+
+
+CrazyBET.io
+
+
+
+5
+
+
+
+3.2.Bet cases with automatic confirmation by API
+
+Weather You can make a bet with a friend or any person on a series of weather events:
+
+ What will be the maximum temperature in the city X on August 12, 2017?  The maximum temperature in city A will be more than in city B.  Will there be rain this weekend in Alaska?  What height or what speed will the waves reach in Soorts-Hossegor?
+
+Cryptocurrency cost Work on the API occurs with several exchanges, so with a bet you need to choose one, the results of which will determine the choice. It is enough to choose the terms of the dispute, for example:
+
+ Will the BTC price achieve a certain rate?  What amount of turnover will be on a BTC/ETH pair on Poloniex?  What is the size of the largest transaction from 08 to 09 PM on the Bittrex exchange for
+
+a BTC/LTC pair?  How many times will Apple be mentioned in the NY Times articles for July 15, 2017?
+
+Policy Which party will win in the parliamentary elections in Norway?
+
+
+
+3.3.Bet cases for games with PvP mode
+
+You can play one on one or a wall to the wall (in PvP mode) with a prize fund. StarCraft, WarCraft, World of Tanks, Call of Duty, Counter Strike and other games where there is a PvP mode.
+
+
+
+4. How it works?
+
+
+
+CrazyBET.io
+
+
+
+6
+
+
+
+4.1.General understanding
+
+We will connect all kinds of API services from different sites for automatic data acquisition, which will be used to analyze the outcome of the dispute. The API-connected services become available when selecting from the list of possible bets option. Each such service will have its own set of possible betting options. In those cases where it is not possible to automate the receipt of the result of dispute, the arbitrator of the dispute is appointed. The arbitrator may be appointed by the parties or an arbitrator provided by the system may be selected. In this case, it is necessary to clearly describe the terms of the dispute, so that then there will be no disagreement. If there is any disagreement on the results of the dispute, the user may apply to our Arbitrage System.
+
+4.2.Bet on the game in PvP mode.
+
+
+
+CrazyBET.io
+
+
+
+7
+
+
+
+1. Teams make a deal about the game on the certain server, which is connected to platform. Teams agree on the terms of the bet.
+
+2. Team A create a bet on the platform by completing a form with all bet conditions, PvP game data, Team B identifier.
+
+3. Team B accept the invitation and agree with bet terms.
+
+
+
+CrazyBET.io
+
+
+
+8
+
+
+
+4. Smart contract is created automatically with the conditions that were specified when completing the form and creating a bet.
+
+5. Automatically transferred CBET from each of the parties for the execution of the smart contract.
+
+6. At the appointed time, a game takes place between Team A and Team B. 7. After the game, the platform receives API data from the game server about the results
+
+of the game. 8. Transfer of game data for smart  contract execution. 9. Distribution of funds, according to the concluded smart contract.
+
+4.3.Bet with third party confirmation
+
+
+
+1. Players agree to place bets with each other for any events. 2. Player A create a bet on the platform by completing a form with all bet conditions,
+
+selecting the Arbiter, Player B's ID (for sending the invitation).
+
+
+
+CrazyBET.io
+
+
+
+9
+
+
+
+3. The arbitrator accepts the invitation and agrees to become the Arbiter of this bet. 4. Player B accept the invitation and agree with bet terms. 5. Smart contract is automatically created with the conditions that were specified
+
+when filling out the form for creating a bet. 6. CBET is automatically transferred from each of the players for the execution of the
+
+smart contract. 7. At the appointed time there is a game between Player A and Player B. 8. After the game, Arbiter receives data from the Players about the results of the
+
+event. Arbiter checks the data. 9. Transfer of event data for smart-contract execution. 10. Distribution of funds, according to the concluded smart contract.
+
+4.4.Bet with automatic confirmation by API (private bet)
+
+
+
+1. Players agree on a bet from the list of possible bets on the platform.
+
+
+
+CrazyBET.io
+
+
+
+10
+
+
+
+2. Player A create a bet on the platform by completing a betting form. This form contains the ability to enter all the terms of the bet, enter the Player B's ID (for sending an invitation) or enter the password for the bet.
+
+3. Player B accept the invitation and agree with bet terms. 4. Smart contract is automatically created with the conditions that were specified
+
+when completing the form to create a bet. 5. CBET is automatically transferred from each of the Players for the execution of the
+
+smart contract. 6. At the appointed time, the platform receives API data from the server about the
+
+results of the betting object. 7. Transfer of betting results data for smart-contract execution. 8. Distribution of funds, according to the concluded smart contract.
+
+4.5. Bet with automatic confirmation by API (public betting)
+
+
+
+CrazyBET.io
+
+
+
+11
+
+
+
+1. Player A creates a bet on the platform by filling out the betting form. This form contains all conditions of the bet from list of possible bets.
+
+2. Player B agree with bet terms. 3. Player C agree with bet terms. 4. After the expiration of the time limit of the bet, a smart contract is created
+
+automatically with the conditions that were set when filling out the form for creating a bet. 5. CBET is automatically transferred from each of the Players for the execution of the smart contract. 6. At the appointed time, the platform receives API data from the server about the results of the betting object. 7. Transfer of betting results data for the execution of a smart contract. 8. Distribution of CBETs, according to the concluded smart contract.
+
+
+
+4.6.Determination of the winner
+
+The winner is determined on the basis of revealing the real facts on the subject of the published bet and after the expiration of the arbitrage time. The winner is automatically determined, based on data obtained by the API or by third party confirmation as a result of the meeting and the discovery of reliable facts on the merits of the dispute. In case of disagreement with the decision, the client can file an arbitration request for clarification of the situation within 24 hours.
+
+4.7.Types of betting
+
+There are 3 types of betting:  Public bet  Private betting without viewing  Betting with a password
+
+
+
+Public Bet - You can bet without inviting the other side. In this case, any user of the system can agree to your bet terms and take part in it. Bets can be either one-on-one or one-to-many.
+
+
+
+CrazyBET.io
+
+
+
+12
+
+
+
+Private betting without viewing - When you create a bet, you specify the opponent - user of the system or his email. Other users can not see this bet. Bet with password - When you create a bet, you specify a password. Only users who know this password can participate in this bet. Other users can only watch and comment on your bet.
+
+5. CrazyBET economics
+
+Stakes inside of the platform are made only in CBET. Start rate CBET, if buy at the platform will be 1CBET=0,5$. As far as developing CBET platform the rate will be changing towards increase.
+
+At the start of the project, the cost of CBET when buying on the platform will be 5 times more expensive than when buying at ICO.
+
+From every successful deal - the fee is paid. These costs are spent on platform`s maintenance. Betting with automatic confirmation by API (till December 2017)  1 CBET; Bet on the game in PvP mode (till December 2017)  1 CBET; A bet with a third party confirmation is 5% + 1 CBET (of which 5% is to arbitrator).
+
+6. Market
+
+There is no separate statistics on the direction of these types of bets. Therefore, to see the dynamics and the overall size of the market, we take the general statistics of the gambling market. The global online gambling market is a dynamic and rapidly changing business. By the end of 2016, it reached $45.86 billion, and is expected to reach $96.89 billion by the end of 2024
+
+
+
+CrazyBET.io
+
+
+
+13
+
+
+
+Online gambling's Gross Gaming Revenue (stakes minus winnings) in EU is expected to rise from 16.5 billion in 2015 to 24.9 billion in 2020.
+
+
+
+CrazyBET.io
+
+
+
+14
+
+
+
+Betting is the most popular European online gambling product at 37% of the market, whilst online poker and casinos make up respectively 24% and 22%. But there are still 17% of different types of bets, despite the fact that there are only several services on the market that allow them to be made.
+
+
+
+7. Raodmap
+
+
+
+March-May 2017 June 2017 July 2017
+
+August 2017
+
+
+
+Idea creation Team development Concept development Software core Web-site launch White paper release ICO start Alpha testing WEB version:
+
+ Profile settings  Betting with automatic confirmation by API  Betting with PvP games Negotiations with exchange services.
+
+
+
+CrazyBET.io
+
+
+
+15
+
+
+
+September 2017
+
+October 2017 November 2017
+
+
+
+Lists the CBET token for trading. Beta testing WEB version:
+
+ functional testing  UI testing  security testing  stress testing Functional testing:  Betting with automatic confirmation by API  Betting with PvP games  Betting with third party confirmation  Withdrawal function  Account balance  Profile WEB Version 1.0: Betting with automatic confirmation by API - 5 connected services Betting with PvP games - 10 connected servers with 3 top games Betting with third party confirmation Start selling CBET from the site. Payment Gateway - credit cards (or direct transfer tokens to account). Company establishment WEB Version 2.0 Betting with automatic confirmation by API about 20 connected services Betting with PvP games about 25 connected servers with 5 top games The ability for users to become arbitrators (subject to a deposit) Integration with classical betting systems Start marketing campaigns. Withdrawal function.
+
+
+
+December 2017
+
+
+
+WEB Version 2.1 Betting with automatic confirmation by API - 25 connected services Betting with PvP games - 30 connected servers with 5 top games Integration with classical betting systems
+
+
+
+CrazyBET.io
+
+
+
+16
+
+
+
+March 2018 April 2018
+
+
+
+Android and iOS version 1.0 Change commission rates. Full-featured Android and iOS version. WEB Version 3.0 with adaptation for China Market Adaptation and translate WEB and App for China Market.
+
+
+
+8. CBET ICO
+
+8.1. ICO Goals
+
+The collected funds will be spent on the development of the platform, marketing and legal support for this platform. Token holders will be the first users of CBET platform. It's will be start impulse for CrazyBET.
+
+8.2. Duration of the ICO
+
+START DATE: July 22, 2017 at UTC 00:00 END DATE: August 10, 2017 at UTC 00:00
+
+8.3. Token Distribution
+
+
+
+Tokens for ICO participiants Tokens for Development Team Tokens for alpha and beta testers Tokens for Bounties Tokens for sale to players at $ 0.5 after launching the platform. These tokens will be used only for sale through the platform at a price of at least $ 0.5 Total tokens
+
+
+
+21 000 000 3 000 000 1 200 000 1 200 000 3 600 000
+
+30 000 000
+
+
+
+CrazyBET.io
+
+
+
+17
+
+
+
+CBET will be an Ethereum-based token. CBET tokens are standard ERC 20 smart contracts. They will be fully transferable and will grant the token holder the right to use this token on CrazyBET platform. Token holders will be free to buy and sell CBET tokens once they are listed on various exchange. All CBETs tokens purchased or received during the ICO will be distributed within 5 days of the closing date of the ICO.
+
+8.4. Token price
+
+2000 CBET = 1 ETH. We will accept ETH, BTC, LTC. Minimal goal: 1 000 ETH Maximal goal: 7 000 ETH We start project anyway! ICO is your opportunity for raise money and our opportunity for faster growth.
+
+
+
+CrazyBET.io
+
+
+
+18
+
+
+
+8.5. Bounties
+
+A bounty will be distributed for different participation methods, such as:  signature campaign  participants at Bitcointalk org  following and promoting CBET Twitter account  publishing and posting CBET on blogs  topic translating  facebook compaign
+
+9. Team
+
+Janis Kotans CEO
+
+More than 10 years experience in investment research, financial planning and asset management. Took part in more than 20 business as Financial Advisor.
+
+Vadim Horev Marketing Director
+
+Extensive experience in strategic planning and marketing Worked in top gambling compnies of EU. More than 8 years in marketing and project management.
+
+
+
+CrazyBET.io
+
+
+
+19
+
+
+
+Petrus Ozolins CTO
+
+Old school developer, Master of Engineering science) More than 20 years experience in software development. Java guru.
+
+Ivan Melnik Team Lead Senior Full Stack developer. Worked in top software development companies such us Luxoft, IBM, and Amadeus. Team lead of our 6 developers.
+
+
+
+CrazyBET.io
+
+
+
+20
+
+
+
+

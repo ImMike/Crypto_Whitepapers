@@ -1,0 +1,1643 @@
+Decentralized News Network
+
+News by the People, for the People
+
+By Samit Singh and Dondrey Taylor
+
+Draft Version 1.5.0 December 2017
+
+Special Thanks to Smith + Crown, which helped develop the token economy powering DNN
+
+Abstract
+
+A decentralized news network backed by incentives for individuals to create, review, and consume news. The primary innovation of blockchains is a verifiable and cryptographically secured global ledger that can lead to new types of incentive structures. Developers can take advantage of the Ethereum blockchain to build applications that are not only architecturally and politically decentralized, but are underpinned by tokens of value. We propose a network in which writers produce news content that is reviewed by fact-checkers before being published on the network without the risk of being taken down. All parties involved in publishing a factual article will be rewarded with tokens in a self-sustaining environment that thrives on tangible activity and accuracy of content rather than on advertising revenue and corporate interests.
+
+
+
+LEGAL DISCLAIMER
+
+As of the date of publication of this Whitepaper, DNN have no known potential uses outside of the DNN Platform.
+
+This Whitepaper does not constitute a prospectus or offering document, and is not an offer to sell, nor the solicitation of any offer to buy any investment or financial instrument in any jurisdiction. DNN should not be acquired for speculative or investment purposes with the expectation of making a profit or immediate re-sale. No promises of future performance or value are or will be made with respect to DNN, including no promise of inherent value, no promise of continuing payments, and no guarantee that DNN will hold any particular value. Do not participate in the DNN token sale unless you are prepared to lose the entire amount you allocated to purchasing DNN. DNN are not participation in Decentralized News Network Limited and DNN hold no rights Decentralized News Network Limited. DNN are sold as a functional good and all proceeds received by Decentralized News Network Limited may be spent freely by Decentralized News Network absent any conditions, save as may be prescribed in this Whitepaper.
+
+This Whitepaper is for information purposes only and is subject to change.
+
+Decentralized News Network Limited cannot guarantee the accuracy of the statements made or conclusions reached in this Whitepaper. Decentralized News Network Limited does not make and expressly disclaims all representations and warranties (whether express or implied by statute or otherwise) whatsoever, including but not limited to:
+
+- any representations or warranties relating to merchantability, fitness for a particular purpose, suitability, wage, title or non-infringement;
+
+- that the contents of this Whitepaper are accurate and free from any errors; and
+
+- that such contents do not infringe any third party rights. Decentralized News Network Limited shall have no liability for damages of any kind arising out of the use, reference to or reliance on the contents of this Whitepaper, even if advised of the possibility of such damages.
+
+All information here that is forward looking is speculative in nature and may change in response to numerous outside forces, including technological innovations, regulatory factors, and/or currency fluctuations, including but not limited to the market value of cryptocurrencies.
+
+This Whitepaper includes references to third party data and industry publications. Decentralized News Network Limited believes that this industry data is accurate and that its estimates and assumptions are reasonable; however, there are no assurances as to the accuracy or completeness of this data. Third party sources generally state the information contained therein has been obtained from sources believed to be reliable; however, there are no assurances as to the accuracy or completeness of included information. Although
+
+White Paper Decentralized News Network May 2017
+
+1
+
+
+
+the data are believed to be reliable, we have not independently verified any of the data from third party sources referred to in this Whitepaper or ascertained the underlying assumptions relied upon by such sources.
+
+Please note that Decentralized News Network Limited is in the process of undertaking a legal and regulatory analysis of the functionality of DNN. Following the conclusion of this analysis, we may decide to amend the intended functionality of DNN in order to ensure compliance with any legal or regulatory requirements to which we are subject. In the event that we decide to amend the intended functionality of DNN, we will update the relevant section of this Whitepaper and upload the latest version of our Whitepaper to our website.
+
+PROBLEM
+
+BACKGROUND
+
+In 1983, 90 percent of the U.S. news industry was owned and controlled by 50 different companies.1 Thirty-four years later, 90 percent of American news coverage, whether read, watched or listened to, flows from just six media conglomerates: Comcast Corporation; News Corporation; The Walt Disney Company; Viacom Inc.; Time Warner Inc.; and CBS Corporation. With this substantial level of corporate media concentration, big publications and networks demonstrate overt political leanings that are almost predictable, as they indulge their respective target audiences. Over time, this affects how well the public perceives current events, due to a high degree of confirmation bias that veers toward groupthink.
+
+THE CURRENT STATE OF NEWS
+
+The state of big media today is analogous to the type of scenario we see within the U.S. telecom and cable industries, little-to-no regulation or transparency, a handful of massive corporations presiding over an oligopoly, a noticeable lack of choices for consumer consumption, and an overall anti-consumer tilt that favors profits over quality and satisfaction.
+
+Consequently, because of all of this consolidation in power, the general public is led to believe that the media landscape is rigged to primarily accommodate the biggest and most prosperous players involved.
+
+According to The Economist, the overall concentration of ownership in IT, Telecom and Media is the highest amongst most U.S. based industries. This is a big part of the reason that "two-thirds
+
+1 Columbia Journalism Review, Free Press
+
+White Paper Decentralized News Network May 2017
+
+2
+
+
+
+of Americans, including a majority of Republicans, have come to believe that the economy unfairly favors powerful interests."2
+
+This leads to disastrous results. According to a September 2016 Gallup poll, Americans' trust and confidence in the mass media "to report the news fully, accurately and fairly" has dropped to its lowest level in Gallup polling history, with just 32 percent saying they have a great deal or fair amount of trust in the media.3
+
+Let us take politics as an example. Most corporations today, media-driven or otherwise, are motivated by overt political agendas which more or less mirror the aspirations of the establishment. Politicians competing for power desire to win favor through any means by vying for votes and taking big money donations from corporations and high net worth individuals. In the US, partisan media companies make substantial donations to political causes and have been doing so for decades, in order to gain a profound influence on election cycles.
+
+According to the Center for Responsive Politics, "these organizations had -- either through corporate treasuries, sponsored political action committees or both -- donated almost $7 million to political action committees and vaguely referenced `527 committees' just during 2009 and 2010 and nearly $38 million since the 1990 election cycle." Typically, these donations have switched between Democrats and Republicans in back-and-forth cycles.4
+
+All in all, while the bureaucratic establishment decides how to s et the tone, the media frequently helps d ictate it through large donations in exchange for political favors. This creates an endless cycle of powerful corporations and politicians passing the baton between one another, as they all enrich themselves further. These big bets are initially made by media companies so they can continue to consolidate their power, uninterrupted. In turn, their news becomes very skewed and one-sided in order to appease the political establishment and avoid a conflict of interest. The core values and principles of journalism are subsequently compromised in favor of biased and sometimes blatantly false coverage, that perpetuates the political atmosphere the media wants to cultivate.
+
+Most importantly, the issue of `fake news' has increased with each passing day. With the growth of social and blogging platforms, as well the internet as a whole, publishing has turned into an act that is both simple and instantaneous. At the same time, the lines between what is fake and what is real have blurred, as we race to distinguish fact from fiction. Publishing is now a fully democratized action, turning everyone into an editor, which is equally as powerful as it is potentially dangerous.
+
+2
+
+http://www.economist.com/news/briefing/21695385-profits-are-too-high-america-needs-giant-dose-competiti on-too-much-good-thing 3 h ttp://www.gallup.com/poll/195542/americans-trust-mass-media-sinks-new-low.aspx 4 h ttps://www.opensecrets.org/news/2010/08/news-corps-million-dollar-donation/
+
+White Paper Decentralized News Network May 2017
+
+3
+
+
+
+ECHO CHAMBER OF SOCIAL MEDIA
+
+Over the past decade, there's been a big shift in the way people stay informed. Americans looked to daily newspapers and television for much of their news; however, this behavior has significantly shifted elsewhere. In the U.S., 62 percent of adults rely on social media for news.5
+
+Among social media providers, Facebook has become a rival to the big suit-and-tie networks like CNN, Fox News, ABC, and NBC. Facebook has become a gatekeeper for much of the news that Americans consume online. Many traditional news outlets have morphed into being the so-called content pipelines for Facebook's news factory.
+
+Truthful and fact-driven news has been forsaken in favor of click-bait headlines and digital ad revenues. The general public's understanding of current events has been immensely distorted. In fact, there are a large number of websites whose sole purpose is to drive the spread of flimsy and groundless stories. For them, integrity is derived primarily from click-rates and impressions, rather than factual reporting, as reported by The New York Times just after the 2016 presidential election.6
+
+Reporters have come under increasing pressure to produce "clickbait" articles that pander to readers' increasingly short attention spans. Content that is sensationalistic and exaggerated attracts more eyeballs and clicks than stories presented in a more accurate, thorough fashion. Partisan contributors share completely fabricated stories from fringe and alt-news websites, lending to confirmation bias. In some ways, social media, rather than improving, is contributing to political polarization and a lower quality of open conversation on the internet. According to Pew, 23 percent of Americans say they have shared a made-up news story, with 14 percent saying they shared a story they knew was fake at the time and 16 percent having shared a story they later realized was fake. Almost half said government, politicians and elected officials bear a great deal of responsibility for preventing made-up stories from gaining attention.7
+
+The order and visibility of posts in Facebook's news feed is governed by a sophisticated proprietary algorithm, which has the ability to decide which posts to showcase over others. This amounts to the power to manipulate which posts consumers see. The platform tries to choose posts that people are likely to read, like, and share with friends. Facebook hopes this will induce people to return to the site. This has the dangerous effect of turning the platform's feed into a tabloid that sucks users in and gives them a place to to continue reading the same type of content. "Filter bubbles" is a term referring to this phenomenon.8
+
+Simply put, our viewpoints, when combined with the personalized tailoring of social media, give rise to echo chambers in which we are mainly exposed to beliefs and facts that are consistent
+
+5 h t tp://www.journalism.org/2016/05/26/news-use-across-social-media-platforms-2016/ 6 https://www.nytimes.com/2016/11/25/world/europe/fake-news-donald-trump-hillary-clinton-georgia.html 7 h ttp://www.journalism.org/2016/12/15/many-americans-believe-fake-news-is-sowing-confusion/ 8 h ttps://en.wikipedia.org/wiki/Filter_bubble
+
+White Paper Decentralized News Network May 2017
+
+4
+
+
+
+with those we already hold. Consequently, this leads to confirmation bias and we unconsciously surmise that many others share our perspectives on issues of the world. A well-known Forbes experiment called Blue Feed, Red Feed delves deeper into these echo chambers that we all inhabit on Facebook.9
+
+Much of the news content in the feed consists of the most attention-grabbing headlines, regardless of whether the articles are factual or important. Facebook's algorithm, as clearly witnessed with the recent glut of fake news, doesn't take into account whether a particular story is accurate or not. If it generates a lot of engagement, in the form of likes, shares, and such, it automatically gets moved to the top of the feed. And often, a sensational and blatantly inaccurate story will generate more engagement than a story that accurately explains an issue without exaggeration.
+
+As a result, bigger news organizations are swayed negatively. Businesses trying to maximize the traffic to their articles are made aware that sensationalism attracts clicks and impressions, while accuracy does not. This huge demand for clickbait created by Facebook creates a false incentive for reporters, thus warping what we read and making us apathetic in the absence of facts. Close to two billion people around the world utilize Facebook as a major source of information and the network is exerting a substantial degree of control over the news we access on a daily basis.
+
+DNN'S SOLUTION
+
+WHAT IS DNN?
+
+Decentralized News Network is a news platform that combines news creation with decentralized networks as a means to delivering factual content, curated by a community of readers, writers, and reviewers.
+
+DNN will harness the power of the Ethereum blockchain to create an infrastructure that is virtually impossible to infiltrate or take down. Since DNN is not centralized, it does not suffer from having a single point of failure. The platform's core purpose is to present news as a ccurately as possible, free of any corrupt incentives or hidden agendas, which plague most news corporations.
+
+The DNN platform will focus on facilitating the dissemination of balanced and factual observation of current newsworthy affairs.
+
+9 h ttp://graphics.wsj.com/blue-feed-red-feed/
+
+White Paper Decentralized News Network May 2017
+
+5
+
+
+
+DNN's mission is to create news content that is both empowering for its readers, as well as representative of the integrity of its writers. DNN aspires to become the most trusted and democratic news alternative to the mainstream media.
+
+HOW THE BLOCKCHAIN CAN HELP
+
+The Decentralized News Network will introduce a compensation model built on incentives and made possible by the Ethereum blockchain. DNN removes the need for advertisers because the platform will not source revenue from display ads. DNN will run as a network, fueled by the DNN token. Each action, which includes the writing and reviewing of an article, will be made possible by these tokens and linked to the Ethereum network. DNN's system works to incentivize writers and reviewers, in a self-sustaining and autonomous environment that leaves no room for corporate bias. Compensation is derived from the community's engagement, rather than external revenue streams such as native ads. In turn, there is no opportunity for corporate interjection, whether it is through sponsored content or elsewhere.
+
+Furthermore, with the blockchain providing the foundation for the platform, DNN can transparently display how money is made and transacted behind the scenes, and for what reasons and to which parties tokens are distributed. Ideally, the platform can create a new kind of transparency, dictated by a truly open and contributor-controlled environment for information sharing and consumption. By persisting the contents of published articles to a decentralized file datastore, and making references to these articles directly in ethereum smart contracts, we can ensure that every article is as immutable and everlasting as the ethereum network.
+
+A blockchain-based news media platform such as DNN's has the ability to democratize traditional news media for several reasons:
+
+Since the blockchain contains data in time-stamped blocks that chain together, being continuously added and archived, it becomes nearly impossible for outsiders to manipulate existing data or information within the distributed ledger.
+
+Next, the blockchain decentralizes authority to publish content on DNN. There is no single source that controls the message and feel of published works, which is something that is all too commonly witnessed with traditional media. DNN is not tethered to any special interests or political agendas, nor is it vying for a substantial chunk of ad revenue, which puts it in a category separate from most publications that are tied down to a bigger entity.
+
+Lastly, the blockchain's core value rests on trust. The technology achieves a state of implicit trust, thereby securing a system where contributors don't need to know one another or be associated with a third-party intermediary to verify or confirm a transaction. It is implicit and autonomousblockchain is the gatekeeper and enabler of all contributors' incentives on DNN.
+
+White Paper Decentralized News Network May 2017
+
+6
+
+
+
+WHY IS DNN NECESSARY?
+
+The concept of decentralized news itself is not new. There were startups, like the now defunct Reported.ly (which lost funding due to lack of revenue), that have dabbled in community driven, Internet-based news reporting, and dissemination.10
+
+The idea is that if news distribution were to function without any central authority, less importance would reside on media titans and there would exist a higher degree of autonomy and independence from the bottom-up, starting with journalists and ending at readers.
+
+Distributors of news can act as nimble vessels for disseminating accurate information without any overseers but the community they serve, leading to greater integrity and a fearlessness to report.
+
+At the end of the cycle, readers can focus on the content -- the news -- free of corporate influence and more transparent because of the power and function of blockchain technology.
+
+Transparency in news can make way for a more democratic and freer thinking press.
+
+In addition, suppression of information and mass censorship by governments and corporations, is a threat to publishers and writers throughout the world. A gag order is a common tool used by governments to restrict publishers from disclosing certain details, regardless of how factual those details may be.
+
+The people have a right to the facts and the truth. The core purpose of DNN is to provide truly factual news that is curated and community-moderated.
+
+HOW WILL DNN WORK?
+
+Overview of key actors on the network
+
+DNN is a decentralized platform built on top of the Ethereum blockchain, that allows anyone to submit articles that will be reviewed by a handful of quasi-selected and anonymous contributors that coordinate without the need for explicit trust. During review, contributors check articles to ensure that they are in accordance with the network's public set of editorial standards. Each piece of news published on DNN is replicated across a series of community-hosted nodes and made available to the public. Readers, writers, reviewers, and publishers earn tokens in proportion to the amount of positive contributions they make to the platform.
+
+10
+
+http://www.forbes.com/sites/tomwatson/2015/01/05/inside-the-decentralized-news-network-reported-lys-n ew-model-for-journalism/#1cb88a7a4a90
+
+White Paper Decentralized News Network May 2017
+
+7
+
+
+
+DNN is comprised of four types of actors that each have key roles and contributions that together, make up the underlying functions and framework of the network:
+
+WRITERS
+
+Writers, or reporters, are individuals who submit news content in the form of articles. Whether freelance journalist, casual blogger, or an average consumer of global news, anyone can contribute to the DNN.
+
+However, since anyone can submit articles to DNN, getting published is not guaranteed.
+
+To increase the chance of getting published writers should ensure that they closely comply with the DNN content guidelines to mitigate the chance of reviewers rejecting their piece due to infractions.
+
+The DNN content guidelines are a set of agreed-upon best practices for constructing pieces that are both comprehensive in scope and that convey the facts clearly and concisely. Articles that are submitted to DNN go through a series of stages before being submitted. Please refer to Figure 1.
+
+REVIEWERS
+
+Reviewers, or editors, read and vote upon submitted articles before an article is available for public consumption on the DNN's article feed. The review process includes basic tasks such as noting grammatical errors, pointing out inaccuracies and questionable statements, as well as content classification.
+
+Most important, however, is that reviewers ensure articles adhere to the DNN content guidelines.
+
+Reviewers do not have the ability to modify articles, but rather can accept (i.e. vote to have content published) or reject (i.e. vote to prevent content from being published) any written piece. To make sure that no single reviewer has the final say on whether or not an article should be publicly incorporated into the network, the network will assign seven random reviewers to validate the article. The seven reviewers are chosen in a process called the Review Selection Bid, as seen in Figure 2.
+
+All seven reviewers are completely unaware of one another's identities; they vote and leave feedback in complete isolation to avoid groupthink or any form of collusion.
+
+White Paper Decentralized News Network May 2017
+
+8
+
+
+
+Figure 1: Reviewer Selection Bid
+
+White Paper Decentralized News Network May 2017
+
+9
+
+
+
+White Paper Decentralized News Network May 2017
+
+
+
+Figure 2: Article Stages 10
+
+
+
+READERS Readers are news consumers. Readers can comment, add notes, share, tip, bookmark articles of interest, and denote articles they deem questionable. Unlike readers on traditional news platforms, readers on DNN play an active role in helping to shape the news they read, which includes participating in Reader Suggestions whereby article topics are put forward by you, the news consumer. Readers pay for access in DNN tokens. As Ethereum continues to improve scalability with additions like sharding, state channels, and plasma, an ideal way to implement a subscription model, a pay-per-article model, or a combination of the two will be explored.
+
+PUBLISHERS Unlike readers, reviewers, and writers who are human actors of the network, publishers are server nodes which act as a proxy between human contributors and the DNN network residing on the Ethereum blockchain. Specialized open source software consisting of the complete DNN contributor-interface and network interface, is bundled and installed on each publisher. Publisher nodes are responsible for replicating published articles and ensuring that the DNN network remains available in the face of coordinated attacks. Publisher nodes communicate with one another through a peer-to-peer protocol that makes use of the same cryptography behind Bitcoin and Ethereum. Using this peer-to-peer protocol, publishers are able to relay details about their state to nearby node hosts. The main purpose for publishers is to provide an attack resistant transport for the DNN software, rather than host the DNN software on a centralized server, which introduces a significant point of failure. Storing DNN's software on a decentralized network also allows the community to run and manage it without the need for an external facilitator or trusted intermediary.
+
+White Paper Decentralized News Network May 2017
+
+11
+
+
+
+Figure 3: Publisher Nodes
+
+OVERVIEW OF DNN TOKEN ECONOMY
+
+Brief Introduction to token economy
+
+Tokens are a core component of decentralized platforms like DNN. In DNN's case, tokens serve two purposes: to reward for contributions, and to c arry out actions. For people who are new to cryptocurrency platforms like Ethereum, the idea of dealing with tokens may seem a bit far-fetched and unnecessary. To most people, the immediate benefit of using tokens will not be as apparent as using a more ubiquitous fiat based currency like the US Dollar. As a result, it is quite common for people to ask questions such as: how can I use tokens to pay for real-world things? Where exactly do tokens come from? How do tokens get their value? To answer these questions, a deeper understanding about what tokens are and how they work in the context of a decentralized network, will first need to be acquired.
+
+Broadly speaking, tokens are digital keys that grant access to a particular service or resource, which has been made possible by the technology that enables the Ethereum blockchain.
+
+White Paper Decentralized News Network May 2017
+
+12
+
+
+
+Depending on the platform, the amount of tokens that are available can be fixed or infinite, each of which affects the value of a token.
+
+To better conceptualize tokens, think of them as you would seat tickets at a sports game. Tickets enable you to reserve access to an available seat (i.e. interact or gain access to the event). Put another way, for every available seat in the arena, there will be one ticket accompanying it. Depending on where the event takes place, the tickets will be priced in a local fiat currency (e.g. USD or EUR). A person who has a ticket is free to sell their ticket for a price that is greater than or less than the going rate. Since tickets are limited, the cost of the ticket will increase as less tickets become available.
+
+In the same way tickets give you access to seats in a sports arena, tokens enable you to interact with various aspects of the network. Tokens can also be sold or exchanged with other people who would also like access to the DNN network -- much in the same way sports tickets or any scarce asset can be sold or exchanged
+
+ROLES OF THE DNN TOKEN AND DNN POINTS
+
+The DNN platform consists of one token: DNN. The DNN token has unique usages on the platform and can be obtained in different ways.
+
+DNN TOKEN
+
+The DNN token is the primary instrument of value that can be used to carry out actions on the platform. To enable the ability to price actions (such as reader tips to writers or reader subscriptions) on a micro scale, the DNN token will be divisible by up to 3 decimal places. DNN tokens can be o btained in the following way: Earn it by contributing to the network.
+
+DNN tokens are used for a variety of things within the DNN network depending on the role the contributor chooses to take on.
+
+For example, writers use DNN tokens to pay for the Writer Fee associated with submitting their article to the network. Once an article has been accepted, writers can earn DNN tokens through the engagement generated by their article.
+
+Reviewers use DNN tokens to to be considered by the network as a reviewer of a submitted article.
+
+Readers use DNN tokens to interact with articles in the form of viewing, commenting, and tipping writers.
+
+Unlike writers, reviewers, and readers- publishers do not spend DNN tokens on the network because they don't carry out actions. Instead, publishers must hold them to increase the amount
+
+White Paper Decentralized News Network May 2017
+
+13
+
+
+
+of DNN tokens they can potentially earn. Every time a review process completes (i.e. reviewers have reached consensus on whether or not to publish an article) newly minted DNN points ("described in the following section") will be issued to all publisher nodes on the network proportional to their existing DNN token holding.
+
+The diagram in the following section showcases how DNN tokens are used, and distributed, based on the types of actions carried out by each user role on the DNN platform.
+
+DNN POINTS
+
+The DNN point is solely an instrument of accounting, which helps facilitate the distribution of DNN token rewards, while providing a mechanism that ensures that the DNN token cost of each action remains stable. Since the supply of DNN tokens is fixed, it is quite likely that as the demand for DNN tokens increases with the popularity of the platform, the amount of DNN tokens needed to carry out an action on the platform will need to adjust. DNN points provides the flexibility of determining the amount of DNN tokens required to carry out each action on the platform inline with network growth.
+
+DNN points act as the reward or credit for various actions on the DNN platform, and get automatically converted on a bi-weekly basis into DNN tokens that have been accumulated through the actions of every user of DNN.
+
+DNN generates and credits DNN points to writers, reviewers, and publishers at the conclusion of the review process. The review process is considered to be finished when each reviewer has voted. The amount of DNN points a contributor c an earn is determined by the types of contributions they make to the network, (and in the case of reviewers, how many DNN tokens they bid during the reviewer selection bid).
+
+The rewarding of points is structured in a way that rewards the actions that ensure the articles in the feed remain as factual as possible and consistent with the platform's Content Guidelines.
+
+DNN points have no value on the platform, and only serve as an indication of entitlement to a portion of the DNN tokens available for distribution. As mentioned prior, DNN tokens can be spent in a variety of ways within the platform. DNN tokens that do not get immediately transferred to writers in the form of tips, get sent to a DNN tokens pool called the Reward Pool (refer to the section Reward Pool for an in-depth explanation).
+
+White Paper Decentralized News Network May 2017
+
+14
+
+
+
+SUBJECTIVE MINING DNN POINTS
+
+Most blockchains that are available today use some form of proof of work, also referred to as objective mining, to introduce new tokens or coins into the platform. In a proof of work blockchain, miners race to validate blocks of transactions by producing cryptographic hashes with the goal of earning a payout from the coinbase transaction included in each newly mined
+
+White Paper Decentralized News Network May 2017
+
+15
+
+
+
+block. Unlike objective mining, subjective mining involves the creation of tokens that gets triggered as a result of the actions of token holders. In DNN's case, the creation of DNN points takes place at the conclusion of the review process, that is, when each reviewer casts his or her vote or when the total amount of time allowed to cast a vote for a given article has elapsed. This process is what ensures that each contributor on the platform earns a share of DNN tokens accumulated in the reward pool, in a way that is proportional to their efforts. The more reputation a user has, the more DNN points get minted during the review process.
+
+REWARD POOL
+
+The reward pool holds DNN tokens that have been used to carry out actions on the platform. Commenting, reading, and liking articles are some of the actions which fund the reward pool with DNN tokens. These tokens are held in the reward pool until they are distributed during the payout period. In a nutshell, DNN tokens held in the reward pool are automatically swapped on a biweekly basis for all DNN points that have been issued since the last distribution. The rate of DNN points to DNN tokens, gets determined by the available supply of DNN tokens in the reward pool and the amount of DNN points in circulation. Upon exchanging DNN points for DNN tokens, the DNN points collected by the smart contract are immediately burned and therefore reduce the overall DNN points in circulation. As users convert their DNN points for DNN tokens, the amount of DNN points needed to obtain a single DNN token will increase in proportion.
+
+White Paper Decentralized News Network May 2017
+
+16
+
+
+
+Figure 4: Article Publish Flow
+
+White Paper Decentralized News Network May 2017
+
+17
+
+
+
+UNDERSTANDING PAYOUTS
+
+READER PAYOUT
+
+Readers can earn DNN points by suggesting topics to writers. If an article that is focused on a suggestion is accepted, a portion of DNN points generated from the review process will be given to reader who suggested that topic. Suggesting a topic requires any number of arbitrary DNN tokens from the reader. The more DNN tokens a reader gives per suggestion, the higher the bonus is for writers who construct articles about it, and the bigger potential amount of DNN points they can earn. Readers can suggest topics during the reader suggestion period, which lasts for one week (refer to "Reader Suggestions"). Following the conclusion of the reader suggestion period, topics are presented to writers for consideration. It is the responsibility of each reviewer to ensure that articles are tagged with the correct topic. Payouts from reader suggestions get distributed proportionally to the total amount of tokens a reader gave for that topic. For example, if a reader suggests a topic with 50 DNN, while the combined tokens for that topic is 1000 DNN, then the reader is entitled to five percent of the tokens set aside for reader rewards.
+
+PUBLISHER PAYOUT
+
+Publishers can earn DNN points for hosting nodes. Nodes help ensure that the DNN software is readily available to all participants on the network. Payouts for publishers comes from a portion of the reviewer process reward and are distributed to nodes proportional to their DNN token holding. The more DNN tokens a publisher has, the higher cut they will receive from the DNN points allocated from the review process for publishers.
+
+WRITER PAYOUT
+
+Writers have the ability of earning DNN tokens directly in the form of tips, as well as DNN points either through reader suggestions, or by submitting articles that end up getting approved by reviewers.
+
+TIPPING PAYOUT FOR WRITERS
+
+Once an article is published, it becomes immediately available to readers. To show support and explicit approval for a particular article, readers can tip the writer. Tipping requires a small amount of DNN tokens. The DNN tokens are then transferred in their entirety to the writer of the article.
+
+The point of tipping articles is to further incentivize writers into producing quality articles, which, are facilitated by DNN's Content Guidelines, meaning writers will want to pay close attention to what is designated as good and bad reporting.
+
+White Paper Decentralized News Network May 2017
+
+18
+
+
+
+APPROVED ARTICLE PAYOUT
+
+Upon acceptance of an article for publication, the writer of the piece will earn DNN points proportional to the quality of work they provide. Work in the context of the DNN platform is defined as the ratio between accepted and rejected articles from the writer to-date and adherence to the DNN Content Guidelines.
+
+Each writer earns a different amount of DNN points depending on their reputation. The writer's reputation is based on the ratio between the writer's total number article accepted and articles rejected. The higher the ratio is (i.e. the more articles the writer gets accepted than rejected) the more DNN points the writer will earn, and ultimately DNN tokens the writer will be entitled to in the reward pool.
+
+A writer's acceptance-rejection ratio (or "AR ratio") is the primary factor in determining whether or not to increase or decrease a writer's article pay rate.
+
+Since reviewing an article for the first time will result in a zero payout, first time writers who get their article accepted, will be entitled to a minimum payout (determined and issued by the network) of DNN point. The following expression describes the payout for an accepted article for a given writer.
+
+AR Ratio = (# of articles accepted / # of articles rejected)
+
+Payout = AR Ratio * # of DNN points minted
+
+In other words, the more articles a writer submits that are deemed worthy of being published by reviewers, the more DNN points that writer can earn. The possibility of earning a considerable amount of DNN for writing for the DNN platform is therefore limitless.
+
+To prevent abuse, the DNN network imposes a minimum and maximum word count. The lower and upper bound word counts are 700 and 3,000 words respectively. Article word counts are calculated by the DNN software that runs on each publisher node, and will be verified by reviewers. Articles that have word counts greater than the maximum word count are allowed to be published, however, writer payouts will only account for word counts equal to or less than the maximum word count.
+
+REVIEWER PAYOUT
+
+When a group of assigned reviewers reaches a consensus for a particular article, each reviewer within the group earns a percentage of DNN points minted based on his or her reputation. DNN point rewards come from the Writer Fee and newly minted DNN points. Each reviewer can earn a potential payout proportional to the amount of DNN tokens that he or she bids to review the article, and their personal reputation. We use the word "potential," because no reward is issued to a reviewer should they vote incorrectly. Furthermore, the more DNN tokens a reviewer is willing to
+
+White Paper Decentralized News Network May 2017
+
+19
+
+
+
+forfeit for an incorrect vote, the higher the potential payout he or she can earn. When a reviewer votes incorrectly, the DNN tokens they bidded will be sent to the reward pool for later distribution. A reviewer's reputation is a ratio between the number of times they voted with the majority and as a minority.
+
+Reviewer bids can also be referred to as their stake, in the sense that, it is representative of how confident a reviewer is in a vote. The following is an expression of the potential reviewer payout.
+
+Potential Payout = (Reviewer's Bid / Combined bids of all selected reviewers) x  (Available DNN point minted based on reputation)
+
+READER SUGGESTIONS
+
+In more traditional news organizations, the power in a reader-writer relationship heavily favors the writer, meaning that the writer produces a piece about a certain topic and the reader simply consumes whatever is published. There isn't a strong way for the reader to directly suggest or influence the topics that media companies choose to cover, aside from those companies analyzing data metrics and engagement. For DNN, reader suggestions solve this issue by incentivizing writers to write articles about things that readers want. The power to suggest meaningful subjects directly to writers gives readers a voice by allowing them to participate in the creation of news that interests them.
+
+At the beginning of each suggestion cycle, readers will propose topics that they would like writers to potentially cover. These topics will be ranked by popularity, before being presented to writers for bidding. To entice writers into writing articles about the suggested topics, additional tokens are awarded for each topic suggestion that gets approved and deals with that particular subject. Each reader is limited to no more than a single suggestion per cycle, which is a period of one week. DNN imposes these requirements in order to prevent active readers from exploiting the power to suggest and thereby, influencing the type of content that writers churn out on a daily basis.
+
+The reward that writers receive for writing about a suggested topic is known as a bounty. The amount of DNN points a bounty will consist of is based on how many readers suggested the topic. To suggest a topic, readers must pay DNN tokens. Since each vote is associated with an amount of DNN tokens put forth by a reader, the more votes a particular topic has, the bigger the bounties will be. To prevent writers from diluting the topic by flooding DNN with articles about a suggested topic in hopes of earning a bounty, only one article per 24 hours, that is based on a suggested topic, will be eligible for a bounty payout. In other words, the maximum amount of articles a writer can construct based on a suggested topic is seven per cycle or per week.
+
+White Paper Decentralized News Network May 2017
+
+20
+
+
+
+OVERVIEW OF ARTICLE SUBMISSION AND REVIEW
+
+Before an article can be published to the network, it must first undergo a careful review to ensure that it is factual and abides by the DNN content guidelines. Each reviewer is required to place a bid using DNN tokens to be considered for delegation to an submitted article. The first seven reviewers from the pool with the highest bids that is less than the cap are selected to review the article. It is important to note, that bids must be lower than the maximum bid amount dictated by the DNN network. Any amount of DNN tokens that exceeds the upper cap will be transferred to the reward pool. During the review period, reviewers are able to provide written feedback and vote to reject or accept the article into the network. The actions performed by each reviewer are completely unknown to the other reviewers and more than 50 percent of the reviewers must approve the article in order for it be added into the network. If the reviewers choose to reject the article, the writer has the option of submitting the article again after making any suggested changes, in which case, a new set reviewers will be assigned. The diagram below shows a complete overview of the review process:
+
+REVIEWER ACCESS
+
+As mentioned earlier, the review process works by assigning an article to a group of seven reviewers who have bid the most DNN tokens to review an article. These reviewers may or may not be located in the same geographic region. However, in the future, there is a possibility of assigning articles to reviewers in the same region that the article pertains to. For example, articles about China will be handled by reviewers in China and articles discussing the U.S. will be assigned to reviewers in the U.S.
+
+Each reviewer, with the exception of super reviewers, has no knowledge of who the other reviewers assigned to the article are or how they voted. Super reviewers are a special type of reviewer with a reputation ratio greater than 2. They will be granted a broader degree of privileges that allow them to oversee the behavior of regular reviewers, in order to safeguard against repeatedly biased votes. Regular reviewers only have access to the contents of an article and DNN content guidelines. To prevent collusion, the identities ("ethereum addresses") of each selected reviewer will remain hidden to all regular reviewers during the review process.
+
+
+
+Access Is able to see reviewers involved Is able to see contents of article Is able to see stakes
+
+
+
+Reviewers NO YES YES
+
+
+
+Super Reviewers YES YES NO
+
+
+
+Figure 5: Reviewer Access
+
+
+
+White Paper Decentralized News Network May 2017
+
+21
+
+
+
+REVIEWER BID FORFEITURE
+
+Since the review process depends on the collective votes of reviewers, it is imperative that each reviewer cast a vote in a timely manner. The amount of time a reviewer is allowed is built in and dictated by the network. This is because a reviewer could undermine the process by not promptly voting or working too slowly.
+
+Should a reviewer fail to cast a vote, the amount of DNN used to bid for the article will be forfeited and redistributed to other reviewers and the writer (dependent on acceptance into the network). In this regard, a reviewer's bid also serves as c ollateral. In addition to forfeiting DNN, the reviewer's reputation will be reduced (refer to "Reviewer Reputation"). A negative reputation will reduce the likelihood of a reviewer becoming a super reviewer with the right to handle articles that yield greater rewards.
+
+Reviewers who choose to put up, i.e. "stake", more DNN tokens are more likely to get selected to review an article.
+
+Forfeiture of tokens happens when a reviewer either fails to cast a vote in a timely fashion or if their vote for an article does not match the majority vote determined by the other selected reviewers. When a reviewer votes incorrectly, the DNN tokens they bidded will be sent to the reward pool for later distribution. For example, if five of the seven reviewers decided that an article should be published, while two of the seven votes to reject the article, the combined bids for the two reviewers who voted against publishing will be distributed evenly between the other reviewers and the writer. Similarly, if five of seven reviewers decide to reject the article, while two out of seven vote to accept the article, the DNN tokens from the two reviewers who voted to accept the article will get distributed between the other reviewers, but not the writer.
+
+4-3 REVIEW SCENARIO
+
+To account for divisiveness amongst reviewers over an article that may be discussing a controversial or polarizing topic, split decision articles will be reassigned to a different set of 7 reviewers. Divisiveness in a given review process manifests itself in a split vote outcome, that is 4 reviewers in favor of accepting and 3 reviewers in favor or rejecting the article, and vice-versa.
+
+For any article to get accepted or rejected, a difference of two votes will be required in favor or acceptance or rejected. Refer to Figure 9 for voting outcomes. Articles that get re-assigned a total of 3 times will be rejected by the DNN network.
+
+READER INITIATED REVIEW / VETTED AMENDMENTS
+
+White Paper Decentralized News Network May 2017
+
+22
+
+
+
+In addition to a pre-review of articles, which takes place prior to the article being published, articles can also undergo a post-review process, initiated by readers. Post-review is an additional layer of assessment that allows readers to get involved in ensuring that published articles follow the DNN content policies.
+
+To place an article back into review, readers will be required to put a bond in the form of DNN tokens on the article. Bonding an article allows the reader to earn a portion of DNN points if the article bonded is rejected by the secondary review. Each reader can place no more than a single bond on an article they deem to be questionable. Furthermore, only one reader at a time will be entitled to a reward from an article being bonded. Bounded articles are placed into the review queue, preventing them from being bounded by any other reader. Therefore, to ensure that every reader has the opportunity to bond an article, reader bonds will work similar to reviewer bids, in the sense that, the reader who places the highest bond within the bond period ("1 week from the published date") will be the one entitled a reward should the article be rejected. If the article ends up being accepted through the secondary review, the bond placed by the reader will be forfeited and transferred to the reward pool.
+
+Since articles cannot be taken off the DNN network, any article that is rejected through the secondary review process will display a notice to the reader informing them of its rejection. Any relevant notes left by reviewers will also be displayed on the article for added clarity to the reader.
+
+There is no limit to how many times an article can be placed into a secondary review, nor any restrictions on the number of bonds a reader can place, however to prevent the review queue from being overwhelmed, either inadvertently by honest bonds or by malicious bonds- a minimum amount of DNN tokens, dictated by the DNN network, will be required from any reader wishing to place a bond on an article they come across.
+
+SUPER REVIEWER
+
+Within the group of seven reviewers, it is possible that two or more will be "super reviewers". They are elected monthly by active reviewers. The role of the super reviewer is to oversee the actions of standard reviewers, this includes taking into account past voting behavior, and the outcomes of past article assessments for which the reviewer in question has participated in. No more than 2 super reviewers can be assigned to an article at any given time. Aside from super reviewers having the role of overseer, votes cast by standard and super reviewers differ in weight. The voter weight diagram below showcases the weight of each vote between standard and super reviewers. Unlike standard reviewers who are unaware of the other reviewers involved, super reviewers are capable of seeing all reviewers within the assigned group, as well as their reputations. While super reviewers can see the identity hash of each of the assigned reviewers, they won't know the final vote of each reviewer. To prevent super reviewers from colluding with standard reviewers, the hash representing each assigned reviewer will change for each new review and will only be visible to the super reviewer Using the reviewers identify ("ethereum address"), super reviewers look up any past articles the reviewer had been assigned and voted
+
+White Paper Decentralized News Network May 2017
+
+23
+
+
+
+on. The additional review history provided to super reviewers allows the to better judge how each standard reviewer will likely vote on a future article based on any patterns they may find from past votes.
+
+
+
+Weights with 2 Super Reviewers
+
+Reviewer Groups Standard Reviewers 1 - 5
+
+Super Reviewer 1 Super Reviewer 2
+
+
+
+Weight 33 percent 33 percent 33 percent
+
+
+
+Weights with 1 Super Reviewers
+
+Reviewer Groups Standard Reviewers 1 - 5
+
+Super Reviewer 1
+
+
+
+Weight 50 percent 50 percent
+
+
+
+Weights with No Super Reviewers
+
+
+
+Reviewer Groups Standard Reviewers 1 - 5
+
+
+
+Weight 100 percent
+
+
+
+WRITER FEE
+
+
+
+Figure 6: Review Weights
+
+
+
+As mentioned in earlier sections, the writer's fee is paid to reviewers. The fee will be distributed based on two factors: the amount a reviewer bids with respect to every other reviewer, as well as the initial writer fee split between reviewers and super reviewers.
+
+
+
+This is described in the fee distribution chart below. Basically, if the combined bids by standard reviewers is greater than the total amount wagered by super reviewers, then the split is 70/30 in favor of standard reviewers.
+
+
+
+If the writer fee is 100 DNN tokens, the standard reviewers' bids amount to 50 DNN tokens, and the super reviewers bid 15 DNN tokens, then standard reviewers will receive 70 percent of DNN points minted and super reviewers will receive 30 percent of DNN points. The reviewer reward (RR) distributions are listed in Figure 7.
+
+
+
+White Paper Decentralized News Network May 2017
+
+24
+
+
+
+Reward Split Super Reviewers wages >= 50percent Reviewer wages >= 50percent Super reviewers and Reviewers have same vote Only reviewers selected
+
+
+
+Reviewers 30 percent of RR 70 percent of RR
+
+50 percent of RR
+
+100 percent of RR
+
+
+
+Super Reviewers 70 percent of RR 30 percent of RR
+
+50 percent of RR
+
+0 percent of RR
+
+
+
+RR = Reviewer Reward
+
+
+
+Figure 7: Reward Split
+
+
+
+If the total of the bids are reversed and the total amount of DNN tokens bid by super reviewers is greater than the amount bid by standard reviewers, then 70 percent of the writer fee is allocated to super reviewers and 30 percent to standard reviewers. In the event that both super reviewers and standard reviewers bid the same amount, 50 percent of the writer fee is allocated to super reviewers and 50 percent to standard reviewers. By bidding a higher amount of DNN tokens to review an article, reviewers increase their chances of earning a larger reward. The writer fee is only paid when the process is finished. The writer fee is held in escrow until all votes have been committed or the voting time has elapsed.
+
+
+
+The purpose of the bidding system is to create an environment in which being selfish benefits the network. When each contributor seeks to maximize the amount of reward he or she can earn, the result is a more robust review process. To prove this, we'll review how a reviewer earns tokens. During the process, a reviewer must read the submitted article, ensure that it adheres to DNN content guidelines and vote to accept or reject the article. This is known as the reviewer's personal vote and is accompanied with feedback to the writer. The reviewer is entitled to a portion of the writer fee after the casting of a determination vote.
+
+
+
+After reviewers cast a determination vote, they must also cast a peer vote. The peer vote is a vote on the likeliness that the other reviewer type will accept or reject the article. The reason for this vote is to have a measure that is representative of how confident the reviewer group is in the outcome of the consensus. That is, if the consensus of the peer votes matches the determination votes, then it is highly probable that reviewer groups have produced aligned publishing outcomes. In other words, the more reviewers there are who vote the same for their peer vote as they do their determination vote in a given review group, the more likely it is the case the review outcomes are aligned. The consensus formed from the peer votes will strictly be used for metadata and will not influence the decision to publish nor affect a user's reputation.
+
+
+
+The amount of DNN tokens a reviewer bids, combined with the total amount of DNN tokens bid by all reviewers of the same type, indicates the portion of the writer fee to which the reviewer is entitled, assuming the vote is correct. For example, if a reviewer bids five DNN tokens and the
+
+
+
+White Paper Decentralized News Network May 2017
+
+25
+
+
+
+total amount of DNN bid by the reviewers assigned is 50, then the potential reward for that reviewer is 10 percent of the writer fee portion allocated to that reviewer type. If the writer fee is split between super reviewer and standard reviewers by 70-30, then the potential reward of a particular reviewer will be a percentage of either 70 percent or 30 percent of the writer fee.
+
+REVIEW OUTCOMES
+
+To determine whether or not an article should be added to the network, determination votes of both standard reviewers and super reviewers are considered. In the case of standard reviewers, only the majority vote will count. Each super reviewer vote counts as a separate vote. For an article to be accepted or rejected, five out of the seven votes must be the same. Included within those votes must be at least one super reviewer (if they have been assigned to the article) that agrees with the majority of standard reviewers. The below diagram outlines each of the vote outcomes for groups involving super reviewers.
+
+
+
+Standard Reviewer Majority Vote YES NO YES YES NO YES NO NO
+
+
+
+Super Reviewer #1 Determination Vote
+
+YES YES YES NO NO NO NO YES
+
+
+
+Super Reviewer #2 Determination Vote
+
+YES YES NO YES NO NO YES NO
+
+
+
+Should Publish
+
+YES YES YES YES NO NO NO NO
+
+
+
+Figure 8: Publish Decisions
+
+For groups that do not consist of super reviewers, the following diagram outlines each of the majority vote scenarios.
+
+
+
+0 reject votes
+
+
+
+0
+
+
+
+1
+
+
+
+2
+
+
+
+3
+
+
+
+4
+
+
+
+accept votes accept votes accept votes accept votes accept votes
+
+
+
+5 accept votes
+
+
+
+6 accept votes
+
+
+
+Not Published Not Published Not Published Not Published Not Published Not Published Not Published
+
+
+
+7 accept votes
+
+Published
+
+
+
+1
+
+
+
+Not Published Not Published Not Published Not Published Not Published Not Published Published
+
+
+
+reject votes
+
+
+
+2 reject votes
+
+3 reject votes
+
+
+
+Not Published Not Published Not Published Not Published Not Published Published Not Published Not Published Not Published Not Published Re-assigned
+
+
+
+White Paper Decentralized News Network May 2017
+
+26
+
+
+
+4 reject votes
+
+5 reject votes
+
+6 reject votes
+
+7 reject votes
+
+
+
+Not Published Not Published Not Published Re-assigned Not Published Not Published Not Published Not Published Not Published Not Published
+
+
+
+Figure 9: Majority Vote Publish Decisions
+
+REPUTATION SYSTEM
+
+Every contributor with the exception of readers has a reputation. Reputation provides a snapshot of all the activity a contributor performs day-to-day. Most importantly, it provides some means of public accountability. Since each type of contributor has a unique set of activities they can perform, the makeup of their reputation differs.
+
+WRITER REPUTATION
+
+Writer reputation reflects the number of articles accepted and the number rejected, referred to as the a rticles accepted to articles rejected ratio or AR ratio for short. The ratio is used to indicate whether or not the writer has a consistent history of submitting articles that are in accordance with DNN content guidelines. An AR ratio that is greater than one indicates that the writer submits more articles that are accepted than rejected, while an AR ratio of less than one indicates the inverse.
+
+AR Ratio = (Accepted Article Count / Rejected Article Count)
+
+REVIEWER REPUTATION
+
+A reviewer's reputation is comprised of the total number of times they voted with the majority, and their net bids. Net bids, is the total amount of bids lost and returned. The reviewer reputation gives key insights into a reviewer's behavior, such as how much effort he or she put into reviewing articles. The following diagram outlines what is considered a good reputation and bad reputation.
+
+
+
+Account
+
+Reader Reviewer Writer
+
+
+
+Reputation
+
+
+
+Good Reputation
+
+
+
+--
+
+
+
+--
+
+
+
+Correct Votes / Incorrect Votes
+
+
+
+>= 1
+
+
+
+Articles Accepted / Articles Rejected >= 1
+
+
+
+Bad Reputation -<1 <1
+
+
+
+Figure 10: Reputations
+
+
+
+White Paper Decentralized News Network May 2017
+
+27
+
+
+
+Note that incorrect votes and loss bids will negatively impact a reviewer's reputation. In other words, bids that are lost will subtract from net bids, while votes against the majority will result in the subtraction of correct votes.
+
+OUTSTANDING QUESTIONS
+
+There are several outstanding questions that DNN will be answering, in order to finalize these issues. Much of this will be facilitated by feedback from the community, as we work to have an open conversation about said issues on various channels and blog posts.
+
+The issues are as follows:
+
+ Super Reviewers: Broadly, we know that there needs to be some role on the network that polices or oversees the reviewers themselves. Much of the review design is predicated on reviewers wanting to vote with other like-minded reviewers, but it is possible that reviewers will collectively think that other reviewers are corrupt. They could begin asking themselves not "Does this article adhere to other standards?" but "Do other reviewers not want this article published--and will they make the same bet that the other reviewers think the same?" To combat this, we want to instantiate a kind of semi-privileged reviewer role who we can trust is upholding DNN's content policies. The fact that such an entity could be involved in the reviewer panel should help mitigate this kind of thinking among reviewers. However, we haven't fully fleshed out how these super reviewers are chosen (vote, application, algorithm?) and the full scope of their privileges, responsibilities, and compensation.
+
+ Potential DNN inflation: We are considering implementing an initial inflation system to seed the reward pools with newly minted DNN to provide sufficient incentives while the platform is still attracting reader revenues. Any thoughts on this are appreciated.
+
+ Redemption mechanism: There are some unknowns regarding the redemption mechanism of swapping DNN point for DNN. While we like the game theory aspect of distributing DNN in the reward pool pro-rata among DNN point contributors, we recognize that this creates immense uncertainty among many readers and reviewers regarding their compensation while also requiring them to engage in game theory. This would likely stymie platform adoption. Other possible options include using the reward pool to guarantee a redemption ratio and then having DNN point holders queue up, distributing redemption rights via lottery, or staggering the redemption period. We are broadly committed to pooling most revenues and distributing among DNN point holders, but the exact mechanism is still being debated. It is also quite likely that the redemption process may be subject to bot activity, in an attempt to get a better DNN point to DNN ratio. Various safeguards against bots will need to be explored to mitigate this scenario from occurring.
+
+White Paper Decentralized News Network May 2017
+
+28
+
+
+
+ Time period for participation: Writing and reviewing takes time. The news stays news only so long. This dynamic will pose a challenge to producing quality and timely content. We want a mechanism that ensures people who signal interest in reviewing articles actually follow through but we want to leave enough time for reviewers to reliably do a good job. If it's too short a window, reviewers will be skittish about putting up their DNN for bonding; if too long, stories could become obsolete. We intend to test this in the early stages before finalizing a review window.
+
+ Reputation: We are still iterating versions of a reputation system on DNN. We have introduced several parameters that could track reputation, but we haven't finalized the magnitude of that reputation's impact on token rewards. We have resisted introducing another token for reputation, though we recognize the value of having a single shared reputation across all functions on the platform. Recognize that the approach we have laid out is a proposal.
+
+ DNN Fee: Broadly, we think that DNN could fund itself by charging a fee on transactions over the network. The one challenge with this is that our revenue will grow linearly with network growth, but one of the core advantages of having a distributed infrastructure is that the cost of maintaining the network doesn't need to scale with network growth. We are considering several options here, including a dynamic fee, a fee system that gradually retires, and a portion of revenue seeding additional bounty contracts.
+
+ Reputable and reliable sources being incorrect: In some cases, writers may get an article published on DNN which seems to perfectly meet the editorial guidelines. However, there have certainly been instances where the sources themselves have been incorrect and publications are forced to retract those particular statements. Instances such as these may prove to be somewhat tricky to navigate. We are thinking that we can allow readers to flag articles on the basis that they are deemed suspicious in terms of their factual integrity. DNN can append a disclaimer to such articles, warning the readers that said article has been flagged as suspicious by a number of readers. The article can then be sent to into a secondary review in order to take it off the news feed or clear it of any suspicion.
+
+White Paper Decentralized News Network May 2017
+
+29
+
+
+
+DNN'S TECHNOLOGY STACK
+
+DNN's network will be built using Ethereum smart contracts, IPFS (eventually Swarm or Filecoin), and ZeroNet.
+
+SMART CONTRACTS
+
+When it comes to Ethereum, smart contracts written in Solidity are used to store verified and accepted articles, in turn creating a published article feed. DNN will utilize smart contracts to facilitate the entire review process and payouts.
+
+INTERPLANETARY FILE SYSTEM
+
+IPFS is a complete peer-to-peer network that allows for the storage and retrieval of hypermedia. Since the amount of gas required to store articles becomes less cost-efficient as the platform scales, only a reference to the article is stored within Ethereum (i.e. a IPFS hash pointer to the article). The hash pointer used for the article will be a reference to its complete contents in IPFS.
+
+ZERONET
+
+DNN ensures availability of its web application through the use of ZeroNet, though with slight variations. ZeroNet is a completely decentralized and censorship-resistant network built using the same cryptographic structure as Bitcoin and the technology of BitTorrent.
+
+Like BitTorrent, ZeroNet works by seeding data -- in this case the DNN web application -- to hosting nodes that are interested in using the data.
+
+Hosting nodes, known as peers, download ("leech") and upload ("seed") the DNN web application between each other rather than through a centralized server. Throughout the DNN, thousands of hosting nodes spread out across different geographical regions, containing complete copies of the entire DNN web application and making it available to interested viewers.
+
+In addition to the traditional BitTorrent approach, which requires contributors to install software in order to download data from the BitTorrent network, the DNN application network can also be accessed simply through a standard web browser. Contributors have the option of connecting directly to public hosting nodes or by navigating to DNN's domain and letting DNN find an available hosting node. Anyone can become a hosting node if they download the DNN application directly from the DNN domain instead of viewing it through a web browser. Once a contributor becomes a hosting node, they will automatically connect to nearby peers and begin to seed the DNN web application.
+
+White Paper Decentralized News Network May 2017
+
+30
+
+
+
+GAME THEORY
+
+COUNTERING MALICIOUS BEHAVIOR
+
+The review process is one of the most important aspects of the platform. At any given moment, articles submitted must be vetted for sources and overall accuracy to uphold the integrity of the decentralized article feed. As a result, this makes the review process an attractive target for malicious contributors and network actors seeking to exploit it for nefarious reasons. Some of the most common attacks on the review process may include, but are not limited to: flooding reviewers with the same article to boost the likelihood of acceptance, automating the actions of the reviewer to obtain DNN by providing bogus contributions, submitting articles that contain little or no content and colluding with other like-minded reviewers to accept or reject articles of a particular topic based on personal political views or inherent biases. The review process is designed to resist these types of attacks by making it costly to engage in activity that is not in the best interest of the network. DNN accomplishes this by gamifying all aspects involving contributor collaboration.
+
+VON NEUMANN-MORGENSTERN UTILITY THEOREM
+
+There is always a bit of uncertainty in every decision. What determines how people decide depends on their desires/values and how much risk they will take on. In a collaborative environment such as DNN's review process, decisions made through collaboration are crucial to the platform's success. However, because deciding collaboratively in an open forum can lead to erratic behavior, DNN uses the Von NeumannMorgenstern utility theorem to ensure a benefit to the platform from decisions made by each reviewer in isolation. DNN's incentive structure is designed to favor reviewers who work to vote rationally in line with DNN content guidelines, rather than irrationally. Von NeumannMorgenstern theorem, tells us that given certain postulates of rational behavior involving risky outcomes a person who must make a decision will choose to behave in such a way as to maximize some expected value.11 Put another way, a decision-maker will rank the outcomes by the probability of occurrence, expected risk, and preference.12 The decision matrix explained under the schelling point, showcases each outcome.
+
+SCHELLING POINT
+
+What is the most effective means of ensuring that reviewers won't misbehave? What measures will stop a reviewer from voting randomly or choosing to collude with other reviewers or writers? DNN's answer to both questions involve Schelling points, named after Nobel Prize winning economist Thomas Schelling. His work shows that a person will tend to choose an option, in the complete absence of any line of communication with a collaborator, that has some significant
+
+11 Theory of Games and Economic Behavior. Von Neumann, John and Oskar Morgenstern. 12 https://en.wikipedia.org/wiki/Von_NeumannpercentE2percent80percent93Morgenstern_utility_theorem
+
+White Paper Decentralized News Network May 2017
+
+31
+
+
+
+value or appears more natural or logical then the other option.13 For example, imagine there are two prisoners held in separate cells without any form of direct communication. Both are given a paper with the numbers 15, 358, 266, 89, 13820, 1,000,000, written on it.
+
+Each prisoner is then asked to pick a number. If the number they select is the same as the prisoner in the other cell, then both of them will be freed. Should they choose incorrectly, they will both be faced with a 10 year prison sentence. According to Schelling, the answer that both prisoners will likely choose is 1,000,000. From the perspective of either prisoner, the best possible strategy is to think about what one prisoner expects the other to select.14
+
+In the case of DNN's review process, reviewers are completely isolated, unaware of the identities of the other reviewers, and do not have any direct line of communication with each other. However, each reviewer has access to the DNN content guidelines and the article the group has been selected to review. Each reviewer is asked to vote the same as the majority. If the reviewer votes correctly, he or she will receive a reward. If the reviewer votes incorrectly, the bid will be forfeited.
+
+Therefore, each reviewer can consider their decisions as follows: I vote randomly and the other reviewers vote randomly, I vote randomly and the other reviewers vote according to the guidelines, I vote according to the guidelines and the other reviewers vote randomly, or I vote according to the guidelines and the other reviewer vote according to the guidelines. The following matrix showcases each reviewer's possible strategy.
+
+
+
+Reviewer Votes by Guessing
+
+Reviewer Votes w/ Guidelines
+
+
+
+Peer Reviewers Vote by Guessing
+
+
+
+Reviewer cannot predict outcome
+
+
+
+Peers cannot predict outcome
+
+
+
+Peer Reviewers Vote w/ Guidelines
+
+
+
+Reviewer cannot Predict Outcome
+
+
+
+Peers likely to predict outcome
+
+
+
+Reviewer likely to predict outcome
+
+
+
+Peers cannot predict outcome
+
+
+
+Reviewer likely to predict outcome
+
+
+
+Peers likely to predict outcome
+
+
+
+Figure 11: Review Outcome Matrix
+
+According to the matrix, we can see that the best option for each reviewer is to adhere to the DNN content guidelines prior to voting.
+
+This is because each participant would assume that the other reviewers will likely vote according to the guidelines. This will lead to a predictable outcome and a higher chance for each reviewer to retain their bid.
+
+
+
+13 h ttp://lesswrong.com/lw/dc7/nash_equilibria_and_schelling_points 14 http://rbsc.princeton.edu/sites/default/files/Non-Cooperative_Games_Nash.pdf
+
+White Paper Decentralized News Network May 2017
+
+32
+
+
+
+ATTACK VECTORS IN CURRENT ECONOMIC STRUCTURE
+
+For any decentralized network to be able to survive, it is important to identify various types of attack vectors and ways to either mitigate or prevent them altogether. Many of these attack vectors are common to all community-based decentralized networks and some are specific to DNN.
+
+SYBIL ATTACK
+
+Sybil attacks consist of creating a large number of accounts in the attempt to either overwhelm the network or seize control of a democratic process. In DNN's case, any successful attempt to hijack the review process would mean that an adversary could in theory, alter the guidelines by choosing to approve or disapprove articles that appeal to a certain bias. To prevent this from happening the DNN network imposes a cap on the amount of tokens that can be waged and takes into careful consideration the reputation of each reviewer bidding. Together, these two mechanisms will provide a decent safeguard for those seeking to out bid others by spreading their tokens between multiple accounts.
+
+BIG BROTHER ATTACK
+
+Companies or nations rich with resources could theoretically pool their resources together into an attempt to carry out a massive sybil attack. Big Brother attacks are notorious for being difficult to stop, by the simple fact that it is difficult to gauge how much resources an entity has or their intent to attack the network. A big brother attack could happen on DNN, if an entity were to purchase more than 51% of all DNN tokens, in which case it would be possible to out bid the entire network. The only counter to a big brother attack is to amass honest contributors, whose collective DNN holding and reputation is greater than or equal to the adversary's. Attacking a network of this size wouldn't be sustainable and would likely be a waste of resources for any such organization.
+
+PUPPET MASTER ATTACK
+
+The puppet master attack is a variation of the Big Brother attack. Similar to the Big Brother attack, an attacker controls a large number of accounts, each consisting of DNN tokens and reputation. After a certain threshold has been reached the attacker uses some means of sabotaging the publisher nodes by either removing them from the network or creating a hostage situations using the published data. Like the Big Brother attack, The only counter to a big brother attack is to amass honest contributors, whose collective DNN holding and reputation is greater than or equal to the adversary's. One way to mitigate the hostage situation is to distribute article data across various nodes that are unrelated to the network.
+
+REVIEWER BID SELECTION COLLUSION
+
+White Paper Decentralized News Network May 2017
+
+33
+
+
+
+Preventing users from guessing which article they will be selected to review is crucial in mitigating possible collusion. To accomplish randomization, the highest bidders will be randomly assigned to articles within the review queue. For example, let's say that there are five articles in the review queue and seven reviewers who decide to bid large amounts of DNN tokens in hope of being assigned to the topmost article. To prevent this from happening, each of the seven top reviewers will be randomly assigned to the five articles, one top bidder per article. The idea behind randomly delegating articles in the queue to top bidders, is to make it difficult to coordinate bids.
+
+ERRATIC AND COLLUSIVE VOTING BEHAVIOR
+
+Collaborating to get articles published, that fit a narrative endorsed by a group of contributors, is certainly a real possibility. To prevent this from happening, reviewers will only be shown the necessary details to prevent any foreknowledge of which articles they will be bidding on.
+
+To become a reviewer, a contributor needs to put forth a certain amount of tokens. Since reviewing articles costs tokens, which can potentially be lost if a reviewer ends up voting against the majority, it will be less likely that reviewers will vote blindly or in a biased manner. This is because the cost of voting blindly without reviewing outweighs the cost of reviewing according to our guidelines.
+
+Each reviewer must cast a "personal vote," for which a reviewer says a "yes" or "no" to an article according to our guidelines. It is certainly a possibility that a reviewer can say whatever he or she wants without reviewing properly, but if that's the case, the reviewer will lose his or her initial stake if their vote turns out to be wrong. This introduces a harsh penalty for reviewers attempting to game the system.
+
+The aspect of anonymity also helps to prevent reviewer collusion if multiple reviewers try to rig the votes. There is no centralized review team and none of the reviewers for a specific article are aware of each other's identity.
+
+Based on our research of blockchain-based networks, we believe everyone on the platform will want to maximize their personal gain and act out of greed. In this case that's a good thing, because more reviewers will act in the best interest of the system if the rewards are high enough and the penalties are sufficiently harsh. We're confident that reviewers will vote in a proper manner. Of course, it's possible that all seven reviewers assigned to an article don't vote properly, but the probability of that happening seems too low, considering that they're all working for a specific reward and don't even know how the other reviewer are voting.
+
+Eliminating bad behavior completely is not possible and shouldn't be the goal. Even those who are attempting to abuse the system are still doing work. Any compensation they get for their successful attempts to abuse is at least valuable for the purpose of distributing the token. All that
+
+White Paper Decentralized News Network May 2017
+
+34
+
+
+
+is necessary is for us to ensure that abuse isn't so rampant that it undermines the incentive to do real work in support of the DNN and causes the value of the DNN token to plummet.
+
+Steemit, a community-based social media platform on the blockchain, believes preventing malicious behavior for just a small subset of contributors, may not always be best for the platform:
+
+"The goal of building a community currency is to get more "crabs in a bucket" already full of crabs. Going to extreme measures to eliminate all abuse is like attempting to put a lid on the bucket to prevent a few crabs from escaping and comes at the expense of making it harder to add new crabs to the bucket. It is sufficient to make the walls slippery and give the other crabs sufficient power to prevent others from escaping."
+
+Another example would be like forcing every car manufacturer to impose a reduction in the speed of their cars to jogging speed, all because a few people continue to break driving laws. As long as there are measures in place to ensure that voting randomly and without feedback causes the contributor to lose tokens, then the probability of an anonymous set of reviewers--with no chance of communicating with one another, colluding to accept or reject articles that otherwise shouldn't have been accepted/rejected--is quite low.
+
+ACCESSING DNN
+
+Each party on DNN, with the exception of publishers, is capable of accessing the network through both web and mobile. Since publishers are merely nodes on the network and do not require human intervention, they must use platform-specific software to access the network. Furthermore, for all other contributors, the DNN application provides an interface to interact directly with the network and to perform actions such as:
+
+1. Submitting, consuming, constructing and editing articles 2. Reviewing submissions 3. Managing tokens
+
+Every party is capable of carrying out a particular subset of contributor actions and given access to certain features on the web and mobile app, as demonstrated below.
+
+WRITER ACCESS
+
+Mobile and web apps provide writers with a fully featured editing interface for constructing the article they plan to submit to the network. The editing interface allows writers to draft, categorize, style and apply specially tailored article layouts. For example, if an article is rich with images and videos, a writer may want to choose a layout that puts more emphasis on the media than the writing. Another example is if an article consists of a video, writers may opt to display the video
+
+White Paper Decentralized News Network May 2017
+
+35
+
+
+
+prior to the written portion. These configurations and various others are available using article specific layouts and are similar to blog layouts.
+
+Although the article editor interface can be accessed directly on the DNN web and mobile app, there is no centralized server that is actively saving changes. In other words, since there is no central repository that sits on a controlled server, the contents of the draft, layout and styling are together saved to the device on which the article originated. This enables articles to be edited offline and reduces the potential for single point of failures within the network. In the event the article is rejected, writers will have the ability to make changes and see reviewer feedback within the same editor interface used to create the article.
+
+REVIEWER ACCESS
+
+Reviewers use the DNN app to review articles, manage their tokens and receive notifications. To ensure that reviewers are informed of articles they have been selected to review, the DNN app will send them a series of notifications. These notifications can either be in the form of emails or push alerts. Present in each notification is a link that directs the reviewer to the stage of the given article. The stage is an interface used by reviewers to give feedback and to vote on whether or not an article should be included in the network. Similar to word processing software, the stage allows reviewers to insert notes, highlight, and apply various overlaying styles to convey their feedback to the writer.
+
+To eliminate groupthink, reviewers are not allowed to know what feedback or vote the other assigned reviewers have provided. Once the reviewer has provided feedback, the next step is to decide whether or not the article is eligible to be added to the network. This is done by casting a vote to "accept" or "reject" the article within stage. Reviewers also have the option of passing the article to another reviewer if they find themselves unable to review.
+
+READER ACCESS
+
+Since articles are replicated across tens of thousands of publisher nodes, readers must use the DNN app to view and interact with published articles. Much like a web browser is used to view websites that reside on various servers, the DNN app is used to view articles stored on publisher nodes on the network. Similar to a cryptocurrency explorer, the DNN app works by displaying the longest published chain of articles.
+
+Within the DNN alpha app, articles are listed in the chronological order in which they were published as a vertical stream dating back to the first published article. Using the stream, readers select an article to view its entire contents, flag or comment on any published article. Since each contributor is associated with a unique hash, each action the contributor takes is tracked as metadata. This metadata is later used to determine the amount of activity the reader performed and the amount of payout earned. In the future, articles could be sorted by topic and/or keyword;
+
+White Paper Decentralized News Network May 2017
+
+36
+
+
+
+these details could be provided by the writer, curated by DNN itself, or perhaps a combination of both.
+
+NETWORK EXPANSION
+
+Mutually Incentivized Referral Program
+
+Community-based networks like DNN depend on having contributors. A network without nodes or contributors is simply not a network. What would Facebook be like without your friends? What would Twitter be like without followers? Community-based networks are measured by their contributor base, because contributors are a pivotal part of the experience. In the case of decentralized networks like DNN, contributors both enhance the experience and, even more importantly, improve the robustness and accuracy of the platform.
+
+To help grow the contributor base of DNN, a unique and mutually beneficial referral program serves a way to incentivize both the referrer and referee, by using reputation. All contributors of DNN have the potential to increase their reputation by positively contributing to the platform. What makes reputation important is that it directly influences the amount of token reward a contributor can earn from interacting with the platform. For example, the more reputation a writer has, the more tokens will be given to them for each article they submit. The more reputation a reviewer has, the bigger their potential reward is for voting with the consensus. Furthermore, the higher the reputation is for a reader, the more bond reward they can receive for pointing out inaccuracies.
+
+To expand the DNN network, the DNN referral program will focus on enhancing contributor growth and contributor engagement. DNN's referral system accomplishes this by rewarding contributors up front and over time. Whenever a referrer successfully invites a referee, a connection between the two is made to signify a referral link. Both the referrer and referee earn a reputation for establishing a referral link (See Figure 12). The more people a referrer brings onto the platform, the more referral links they will establish, and reputation points awarded. To prevent contributors from earning reputation points by creating bogus accounts, reputation points will only become redeemable when the referee earns a positive reputation or obtains a reader subscription.
+
+In addition to being rewarded reputation for establishing a referral link, referrers have the opportunity to earn reputation proportional to the positive reputation of each of their referees. This means that referral links, enable a long term bond between the referrer and referee.
+
+WRITER & REVIEWER GUIDELINES
+
+DNN CONTENT POLICY
+
+DNN has three core content rules that make up its policy: 1. Verifiability
+
+White Paper Decentralized News Network May 2017
+
+37
+
+
+
+2. No Unsourced Content 3. Faithfulness to Sources
+
+Together, these three content rules determine the style and quality of material that is acceptable and should not be viewed separately from one another.
+
+Writers and reviewers on the network are strongly encouraged to familiarize themselves with all three policies. DNN's content policy is non-negotiable and cannot be overridden by editor or writer consensus.
+
+VERIFIABILITY
+
+Verifiability in DNN means that other people, whether readers, writers, or reviewers, can trace the information contained in any given article back to its original source. Every definitive statement, presented as fact, has to be backed by a reputable and published source, thereby granting readers the freedom to look through a writer's source material.
+
+DNN will not publish material that lacks proper sources. Our news content is mainly determined by information that has already been published and is not to be based solely on the personal viewpoints of writers. This also means that anonymous sources cannot be utilized since they lack a publicly visible point of origin.
+
+Regardless of whether or not writers are sure that a certain aspect is indeed true, it must be verifiable by the audience before they can include it in their final piece.
+
+Many times, reliable sources can be in conflict with one another; in such cases, it is essential for writers to maintain accuracy and an objective perspective by simply presenting what all the sources state, while also citing the corresponding place of origin.
+
+All material in DNN, including articles, lists, and captions, must be verifiable. T he onus to prove verifiability is the responsibility of the writer who includes the material, which means the reporter must be comfortable with providing attribution that can back the corresponding content directly and effectively.
+
+Anything that is quoted, as well as any content with verifiability that is being debated or could end up being debated, needs to have an inline citation present that directly supports it. The attributed source material must visibly support the content as shown in the piece.
+
+Additionally, any passage in an article that clearly requires a source but has not been given one, may be subject to scrutiny by reviewers on DNN. In such cases, this may lead to rejection for the writer, if the reviewer deems that the passage needs to be adequately backed up by a reference. Condescending or malicious content about living or well-known individuals that are not sourced or is poorly sourced, is subject to immediate rejection by DNN's reviewers.
+
+Reliable sources include:
+
+ University-level textbooks
+
+White Paper Decentralized News Network May 2017
+
+38
+
+
+
+ Books published by reliable publishing houses  Books published by university presses  Magazines  Peer-reviewed journals  Mainstream newspapers  Reliable and accurate blogs
+
+At times, writers must exercise caution with certain sources, since they may not have been scrutinized during their organization's normal fact-checking processor may have been published in error.
+
+NO UNSOURCED CONTENT
+
+DNN articles must not contain unsourced content. Unsourced content on DNN to refers to content such as theories, allegations, and ideas, that cannot be traced back to any reliable and published sources. This also includes analysis of published material where a writer attempts to reach or imply a conclusion that is not stated by the source material. For writers to show that they are indeed not including unsourced content, they need to be able to cite reliable, already published sources that are directly related to the topic of the article and d irectly support the content within. Despite attributing content to its source material, writers need to be cautious to not plagiarize said content. Instead, writers should write the material in their own words through paraphrasing while still keeping the original source's meaning. By actively barring writers from including unsourced content in their work, DNN can place limits on the degree to which writers present clear falsehoods within articles. In turn, this also becomes a supporting pillar for accuracy on the platform. For DNN's writers, research that consists of gathering and shaping content from existing, previously published sources is important to writing a factually accurate article. Ideally, the best practice for writers on the platform would be to research the most reliable and significant sources on a given subject before summarizing what is said in his or her own words, while clearly attributing statements to their correct sources. Source material needs to be carefully paraphrased and structured while continuing to retain its original meaning. Writers should not interject and deviate from what is contained in the sources by implying or directly stating things that were not otherwise stated. This includes positioning the content out of its primary context. Simply put, content on DNN must s tick to the nature of its sources and never stray.
+
+White Paper Decentralized News Network May 2017
+
+39
+
+
+
+FAITHFULNESS TO SOURCE
+
+All news content existing on DNN that is attributed to sources m ust be consistent with said sources. This means that any piece of content must fairly and accurately represent the perspectives that have been already published by reliable sources on a given topic.
+
+Additionally, sourced information should be presented in such a way that editorial bias is mitigated, even if only a little. In essence, while writers are allowed to maintain a voice in their writings, articles on DNN need to be clearly supported by evidence. It is the job of reviewers to validate and publish articles that present information with clearly attributed sources and without editorial manipulation of the sourced content.
+
+To achieve this, a writer must critically and meticulously analyze a variety of reliable sources before attempting to portray to the reader the information contained in them fairly, proportionately, and with as little bias as possible. Listed below are the following principles to achieve the level of both faithfulness and fairness to sourced content that makes DNN purposeful:
+
+ Do not state opinions as facts. Many time, articles will contain information conveying important opinions that have been expressed about the subjects at hand. However, these opinions should not be stated in the writer's voice. Instead, they should be accurately attributed in the text to those particular sources, or where sensible and acceptable, described as widely held views, minority views, etc.
+
+ Do not state seriously debated/questionable assertions as facts. Sometimes, two or more reliable sources may conflict with one another. Writers should treat such assertions as opinions rather than facts, and not present them as direct statements, otherwise, this would give rise to bias.
+
+ Do not state facts as opinions. Factually-backed a ssertions that are uncontested and uncontroversial, as well as made by reliable sources should usually be directly stated on DNN. Unless a particular topic specifically deals with a disagreement over otherwise uncontested information, writers would not need specific attribution for such assertions, although they may add a reference link to the source in support of verifiability. Most importantly, any passages containing information about factual assertions should not be worded in any way that makes them appear to be debatable.
+
+White Paper Decentralized News Network May 2017
+
+40
+
+
+
+ADDITIONAL NOTES
+
+For writers, an important point of note is that they must use their r eal name. This is a measure primarily meant to prevent anyone on the platform from impersonating another writer and DNN may incorporate social sign-ins to enforce this.
+
+Ideally, reviewers should strive to encourage writers to reword certain sections or sentences that deviate from their sources, or to include sources if they aren't already present for statements that seemingly require them. Information that is blatantly untrue or lacks a clear origin can usually be detected in the fact-checking process by weighing said information against its source. Essentially, such problems should be rectified when possible through the normal review process. Certain material should only be removed if there is good reason to believe that it misinforms readers in ways that cannot be addressed by rewriting it.
+
+Furthermore, the views of the writer (since they are unsourced) should only be included, in a "see also" or "to be sure" subsection to an article that explicitly speaks on those specific views.
+
+DNN hopes to report on issues, free of any blatant falsehoods and statements describing events that never occurred or statements that were never made. Research that is both extensive and properly referenced, as well as based upon the most authoritative and reliable sources available, can help mitigate conflicts in accuracy, even if it does not eliminate them altogether.
+
+Lastly, not only will all written articles have an upper and lower character limit, but will also be consistently presented in sections. Each article on DNN will be designed in a format that contains its content in three distinct sections. The sections will be titled as follows:
+
+Section 1: What is the issue?
+
+Section 2: W hat do we know about this issue?
+
+Section 3: W hy is this issue important?
+
+Each section will be concise and straightforward, allowing for writers to potentially present less misinformation and for reviewers to have a simpler time reviewing. The format of articles on DNN should always be clean and consistent, making the total reviewable surface area much more manageable.
+
+NOTES ON LIBELOUS CONTENT
+
+Even though publishing will be facilitated by a robust review process, there may be instances or edge cases where content is published to DNN that its community or certain individuals deem slanderous. DNN will implement a formal complaint system tailored for such instances; if an article
+
+White Paper Decentralized News Network May 2017
+
+41
+
+
+
+is targeted by any individual(s) as being damaging to said individual(s) on the grounds of falsehood, DNN reserves the right to take such content down from the application after careful analysis of the inquiry.
+
+Secondly, there may be instances where content that is published to the network isn't necessarily slanderous, but still questionable in terms of factual integrity. To mitigate this, DNN shall allow readers to flag articles on the basis of overall accuracy. Unlike most platforms where flagging is a passive action that can be subject to being abuse. Flagging on DNN will be an expensive action, requiring users to pay more DNN tokens than other actions such as commenting, to prevent a high multitude of readers flagging articles simply because it's controversial. If an article is flagged enough times, it will be appended with a disclaimer for all readers, which states that said article may not necessarily be entirely accurate based on the suspicion of readers. For cases such as this, the article will be sent back into review for a second look, while still displaying the disclaimer. If the article is deemed to be untruthful during this secondary review process, it will be taken off DNN's feed. If it is deemed to be acceptable, it will continue to be viewable without any disclaimer.
+
+COMPETITIVE LANDSCAPE
+
+
+
+DNN
+
+
+
+Purpose
+
+
+
+Content Focus
+
+
+
+Peer-Review
+
+
+
+Payouts
+
+
+
+Decentralized
+
+
+
+Uses Tokens
+
+
+
+News platform combining news creation with decentralized networks to deliver factual content, curated by the community.
+
+
+
+Political News (to begin with)
+
+
+
+A community of reviewers - Reviewers earn tokens to fact-check mews articles for fact check articles veracity using DNN's
+
+
+
+Content Guidelines. DNN's - Readers earn tokens by
+
+
+
+incentive-based review process is gamified to prevent collusion and reward all parties involved with getting an article published.
+
+
+
+suggesting topics to writers YES - Ethereum
+
+- Writers earn tokens from accepted articles and reader interest (i.e. tipping, comments, etc.)
+
+
+
+YES - DNN
+
+
+
+- Writers earn money
+
+
+
+through donations and
+
+
+
+A platform that brings
+
+
+
+Professional journalists hired by WikiTribune to
+
+
+
+reader subscriptions
+
+
+
+WikiTribune paid journalists and a General News
+
+
+
+work with a community of - Volunteers are not part of NO
+
+
+
+NO
+
+
+
+community of
+
+
+
+volunteers to fact-check payout
+
+
+
+volunteers together.
+
+
+
+articles.
+
+
+
+- Readers are not part of
+
+
+
+payout
+
+
+
+White Paper Decentralized News Network May 2017
+
+42
+
+
+
+Userfeed
+
+
+
+Content ranking & reputation system for blockchain communities.
+
+
+
+Content specific to community
+
+
+
+Rules for peer-reviewing content is specific to blockchain community.
+
+
+
+- Tokens earned from curators backing other curators
+
+- Readers are not part of payout
+
+
+
+YES - Ethereum YES - ETH, Reputation
+
+
+
+Lunyr
+
+
+
+Decentralized world
+
+
+
+knowledge base which
+
+
+
+rewards contributors with app tokens for peer-reviewing and
+
+
+
+General Information
+
+
+
+contributing
+
+
+
+information.
+
+
+
+Experts in same field as content review it for accuracy.
+
+
+
+- Contributors earn tokens by contributing content
+
+
+
+- Experts earn tokens by peer reviewing
+
+
+
+YES - Ethereum YES - LUN, CBN, HNR
+
+
+
+- Readers are not part of payouts
+
+
+
+Synereo
+
+
+
+Allows content creators to easily monetize original works without having to turn their channels into advertisement real General Content estate, while granting their followers the opportunity to be rewarded for getting the word out.
+
+
+
+- Curators get paid for
+
+
+
+matching content with
+
+
+
+appropriate community
+
+
+
+Curators, identifying high
+
+
+
+quality content and
+
+
+
+- Content creator gets paid
+
+
+
+matching it with appropriate for publishing original
+
+
+
+YES
+
+
+
+audiences.
+
+
+
+videos, music, pictures and
+
+
+
+texts
+
+
+
+- Readers are not part of payout
+
+
+
+YES - AMP
+
+
+
+Pramanika
+
+
+
+Decentralized network of different heterogeneous news institutions.
+
+
+
+General News
+
+
+
+Qualified reviewers append opinions addressing authenticity of article prior to Not specified its publishing.
+
+
+
+YES - Not YES - Ethereum specified
+
+
+
+White Paper Decentralized News Network May 2017
+
+43
+
+
+
+DNN Token Distribution
+
+MARKETING AND COMMUNITY BUILDING In an effort to attract writers and kickstart the DNN platform with new content, 4% of the token supply will be for DNN accounts created and pre-seeded with DNN tokens. The pre-seeded accounts will be created prior to Mainnet launch and will be provided to the first wave of new users during the initial phases of the project.
+
+White Paper Decentralized News Network May 2017
+
+44
+
+
+
+BOUNTY DNN will set aside 1% of the token supply for a general bounty program. The bounty program will be open to everyone who would like to participate and will end on the last day of the crowdsale. Distribution of DNN tokens earned through the bounty program will occur within the first week of the end of the crowdsale.
+
+CROWDSALE 40% of the DNN token supply will be put aside for purchase during the DNN token sale. The DNN token sale will be available to the general public and will require a minimum transaction of 0.01 ETH in order to participate. There will be no maximum transaction amount. Any tokens not sold during the crowdsale will be transferred to the DNN holding.
+
+ADVISORY 14% of the DNN token supply will be distributed to various advisory firms and individual advisors, who have helped with the conceptualization and implementation of the DNN platform. These tokens will be dispersed without vesting, during the presale period.
+
+PRIVATE PRESALE 20% of tokens will be reserved for the private presale. The private presale will take place the month before the crowdsale and will be subject to a minimum transaction of 5 ETH in order to participate. Any unsold tokens from our presale will be available for purchase during the crowdsale.
+
+FOUNDERS DNN's founders will be entitled to 10% of the DNN token supply. Theses tokens will be subject to a 10 month vesting schedule with one twentieth of the tokens being released to both founders monthly. DNN HOLDING DNN will set aside 11% of the token supply for the DNN holding. The DNN holding is a portion of funds reserved from the token supply, that will be gradually introduced into circulation after certain growth milestones have been met. The idea behind adding tokens with incremental increases in activity, is to ensure that the amount of DNN tokens in circulation is representative of the current demand for them. Having an ideal amount of DNN tokens in circulation helps to reduce the amount of unused DNN tokens that are held outside of the system. Since the review
+
+White Paper Decentralized News Network May 2017
+
+45
+
+
+
+process acts like a coinbase for DNN points, it makes for a great indicator of user activity, because the DNN point serves as a way to gauge the amount of outstanding DNN tokens needed to satisfy DNN point holders. The more article reviews that take place, the more likely DNN tokens are being consumed by the platform.
+
+To prevent the DNN holding from being mismanaged, the funds will be held in and controlled by a smart contract programmed to transfer one one-thousandth of the DNN holding into the reward pool for every five thousand newly published articles.
+
+
+
+USE OF FUNDS
+
+General and Administrative Development Legal Marketing Miscellaneous (outreach, travel, etc.)
+
+
+
+35% 40% 10% 10% 5%
+
+
+
+GENERAL & ADMINISTRATIVE
+
+Refers to costs of operating the business such as building rent, consultant fees, depreciation on office equipment, supplies, subscriptions and utilities, as well as managerial compensation.
+
+
+
+DEVELOPMENT
+
+Refers to costs of building and maintaining the product, such as developer salaries, server costs, and development tools.
+
+
+
+MARKETING
+
+Refers to costs of communicating and delivering the company's value to its users, such as general outreach through various channels, public relations, media coverage, community building/management, and advertising.
+
+
+
+White Paper Decentralized News Network May 2017
+
+46
+
+
+
+LEGAL
+
+Refers to the company's ongoing legal expenses, due to company setup, and any and all legal advice.
+
+MISCELLANEOUS
+
+Refers to incidental expenses which cannot be classified such as travel, lodging, and attending conferences.
+
+NOTES ON GOVERNANCE
+
+DNN's content guidelines and policies, (which function as the primary method to govern how reviewers will assess submitted articles,) will be governed by community. While DNN has established baseline rules for how content should be reviewed, the company intends to pass governance down to the community, once the platform's development has reached its final stage. Community members will be able to hold voting periods, to assess the overall effectiveness of the guidelines and to propose potential amendments for greater positive impact. The core team will not hold exclusive ownership of the platform's content policies, in order to allow the community to have a more significant presence.
+
+DNN's protocol will be owned by the core team, since the company is structured as a private entity with its founders being the principals. That being said, the team will open-source the platform's smart contracts and front-end codebase, allowing anyone to contribute additions, and fixes that the community can decide to incorporate into the protocol. Secondly, individuals can host nodes on the network, thereby giving the community the ability to fork the DNN protocol. This can be done by garnering enough support, in cases where the network is compromised or crucial protocol changes are needed.
+
+DNN TEAM
+
+Samit Singh, Co-Founder Product & Design
+
+Samit is an experienced web and mobile designer/product developer, who co-founded a messaging app startup called MiniChat, Inc., along with his partner Dondrey. Together, they also created a video and photo app called Tack Video. He has 7+ years of startup experience, having worked at other startups before this. He follows UI/UX design, mobile technology, and emerging technology-- especially all the unique ways in which we can explore social interaction and incentivized networks. This is what eventually led to his love of blockchain technology and
+
+White Paper Decentralized News Network May 2017
+
+47
+
+
+
+cryptocurrencies. As of now, he designs DNN's interface and defines its overall experience. Lastly, he has also taken part in running a large scale ETH mining operation with Dondrey.
+
+Dondrey Taylor, Co-Founder Tech & Development
+
+Dondrey is a seasoned web and mobile full stack developer, who was the co-founder and CTO of MiniChat, Inc. He is also one of the creators of T ack Video. He holds a B.S. in Information Technology with a specialization in systems architecture. His passion for blockchain based services began from a love of neural networks. Before creating DNN, he took part in building one of the top Ether mining farms, where he was tasked with building various types of mining rigs. He is currently working on DNN's front-end and back-end codebase (its Ethereum smart contracts) and implementing ways to distribute the DNN application between network nodes.
+
+Justin Festa, Advisor Digital Media Executive @ LittleThings
+
+Justin is a digital media executive with years of experience running both product and revenue at LittleThings, the largest women's lifestyle URL on the web. He intimately understands the opportunities and challenges that come from running a platform that reaches millions of people per day. Beyond his digital media experience Justin is a also a programmer who is fascinated by blockchains and believes adamantly in their potential. Festa is a graduate of Lehigh University with a dual major in Computer Science and Business.
+
+Matt Chwierut, Advisor Research Director @ Smith + Crown
+
+Matt Chwierut is the Research Director at Smith + Crown. He guides a research team in evaluating new cryptocurrency protocols, authoring briefing memos on key emerging topics, and reviewing countless white papers. His background includes research and consulting on emerging technologies, cross-sector innovations, and applied economics.
+
+Malisa Pusonja, Project Manager R&D engineer @ Devana Labs
+
+Malisa is Chief R&D engineer at Devana Labs, has been working on decentralized platforms for a while. Currently, his main focus is rapid prototyping and MVP development, especially in the context of blockchain/ethereum apps. He loves naming things that no one has named, because he believes that, when you do that you get new patterns and a whole new world. This is especially true in the context of MVP's in the building phase. His two favorite technical debt patterns are human-centric agile methodologyTM and Product-Abstractness Continuum Fit. He loves to mix
+
+White Paper Decentralized News Network May 2017
+
+48
+
+
+
+and match this with sacrificial architecture, Strangler patterns, Atwood's Law, and Dietlzer's law, in order to plan and execute the best MVP building phase possible.
+
+Andrej Cvoro, Solidity Developer Software developer @ Devana Labs
+
+Andrej is a freelance software developer with more than 10 years of coding experience and a great breadth of technical knowledge and skills. Generally passionate about innovative and leading edge technologies, his current primary focus is on decentralized technologies such as blockchain. He has been following Ethereum platform from its very inception and started doing Solidity development last year.
+
+Uros Radovanovic, Solidity Developer Software developer @ Devana Labs
+
+Uros is a software developer, working at Devana Labs. He works on various decentralized, secure email services, and is primarily focused in developing encrypted backends. He's a strong believer in lifetime studying and the fact that anyone he meets knows something that he doesn't, which means that every person can teach him something new. He is a Junior Greco-Roman and freestyle wrestling champion. His big passions are free speech, information security, AI, and dogs.
+
+Rebecca (Grace) Rachmany, Advisor CEO @ Gangly Sister LLC
+
+Rebecca (Grace) Rachmany is a serial entrepreneur, founder and CEO of Gangly Sister LLC, a new media company with the mission of transforming how girls are portrayed in the media. Grace has held management positions in technology companies for over 25 years, and has served as CEO of Tech Tav and Marketecht, profitable services companies. She recently founded IwriteICOwhitepapers.com, a service company for the cryptocurrency market. Grace is Entrepreneur-in-Residence at Swisscontact, mentoring startups in emerging economies. In the past, she has mentored at Microsoft Ventures and Google Startup Wednesdays. She holds an MBA from Kellogg Northwestern and is a graduate of Anthony Robbins' Business Mastery and Landmark's Team Management and Leadership Program.
+
+Pietro Speroni di Fenizio, PhD, Advisor Mathematician & Researcher
+
+Pietro Speroni di Fenizio is a researcher in complex systems. He holds a Ph.D. in bioinformatics, a master's in evolutionary and adaptive systems, and a degree in mathematics. In his research, he specialises in using algebra to understand complex systems and design the rules of complex
+
+White Paper Decentralized News Network May 2017
+
+49
+
+
+
+systems to obtain specific emergent behaviours. In the past, he first focused on artificial life and artificial chemistries and then on voting theory, e-participation, and consensus building, constantly aiming in developing tools that were mathematically fair to all participants. Some of those tools were then used by Italian institutions. More recently, his focus has shifted toward governance on the blockchain and how to build self-governing tools for DAOs.
+
+Dario D'Aprile, Advisor Founder @ Human and Machine Dario is the founder of Human and Machine ltd, a customer experience and product strategy studio that helps teams to design and roll out innovative services. Dario implemented successful digital publishing programmes for National Geographic and News International, and brought early stage startups to profitability and international markets. His products and services have been used by over 800 million people worldwide: this has led to him receiving over 20 creative awards, including a W3 award and a Grammy.
+
+Richard Mills, PhD, Advisor Social Scientist @ University of Cambridge Richard Mills is a social scientist who studies peer production and online community governance. Richard is a Research Associate at the University of Cambridge and Director of Research for the WikiRate project. He holds a PhD and Mres in Applied Social Statistics, as well as a Bsc and Msc in Psychology. Richard's PhD research focuses on applying large scale data science techniques to understand the characteristics of resources produced by user interactions on sites like Reddit and the Stack Exchange. Richard has created various detailed case studies outlining how the design, structures, and algorithms, influence its resources. Since completing his PhD, Richard has been applying this knowledge to the design of WikiRate.org, an open community platform which facilitates collaborative research to understand corporate impacts. Richard also works on the Whistle project, which is building an app to facilitate the reporting and verification of reports of human rights violations.
+
+White Paper Decentralized News Network May 2017
+
+50
+
+
+
+White Paper Decentralized News Network May 2017
+
+51
+
+
+
+GO-TO-MARKET / ROADMAP
+
+White Paper Decentralized News Network May 2017
+
+52
+
+
+
+FUTURE PLANS
+
+As DNN goes beyond its eventual beta and commercially-ready product, there will be a number of things that can be done with the platform in the future, including:
+
+ Building a system granting contributors the ability to create community generated polls  Letting writers pay in tokens to `boost' their articles in the main feed, with a percentage of
+
+those tokens being circulated amongst DNN's readers  Creating a DNN Foundation which will have access to a portion of the tokens to pay for
+
+writers, cultivate reviewers, promote and maintain the network  Growing the network internationally with different languages and regional news  Building end-to-end native applications on iOS and Android, containing the full
+
+functionality of the network, instead of just a portion  Live streaming important events
+
+White Paper Decentralized News Network May 2017
+
+53
+
+
+
+

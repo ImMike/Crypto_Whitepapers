@@ -1,0 +1,1023 @@
+FintechFans - Fintech Job Board, Decentralized Marketplace and Decentralized Crowdsale
+
+paper version: v2.1.0
+
+Wiebe-Marten Wijnja, Marcel van Oost, Rene van Pelt
+
+January 20, 2018
+
+
+
+Abstract
+
+The FinTech market is booming. In 2017, it is expected that FinTech companies will raise a total of 20 Billion US dollars in investment money. There are more than 5000 FinTech , 50 of which are unicorns, meaning they have a valuation of more than a billion dollar. Because of this trend the demand for qualified staff is increasing exponentially. FintechFans has been founded to address this market.
+
+FintechFans is a facilitator in the FinTech sector. It brings in the required innovation to facilitate in FinTech for the next decade, by harnessing the power of the Blockchain, one of the key enabling technologies for the decades to come.
+
+This whitepaper describes the FintechFans Decentralized Crowdsale. This fundraising event will enable FintechFans to create a Decentralized Marketplace for one-off tasks and short-term projects, as well as integrating the existing FintechFans Job Board and Web Portal with the new systems built using Smart Contracts on top of the Ethereum Blockchain.
+
+To ensure that the Decentralized Marketplace will only contain high-quality content, placing an advertise-ment involves a fee. Part of this fee is a deposit that is returned to the parties interacting with the advertisement to further stimulate the usage of the Decentralized Marketplace. To ensure that the fee cost is insulated from the fluctuations of the host currency Ether, a new utility token, the FintechCoin (FINC), will be created. This is the token people will receive during the Decentralized Crowdsale.
+
+Besides being usable on the Decentralized Marketplace, the FintechCoin is also used to periodically vote on the height of the fees of the Decentralized Marketplace. Finally, the FintechCoin will power a plethora of peripheral services.
+
+
+
+Contents
+
+
+
+1 High-level non-technical overview
+
+
+
+2
+
+
+
+1
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+1.1 FintechFans' Plans . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.1.1 The FintechFans Job Board . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.1.2 The FintechFans Decentralized Marketplace . . . . . . . . . . . . . . . . . . 3
+
+1.2 About Fintechfans . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 1.3 Revolutionizing contract work with distributed technologies . . . . . . . . . . . . . 4
+
+1.3.1 Status of the project . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 1.4 Goal of the FintechCoin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+1.4.1 Secondary Uses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+
+
+2 Decentralized Crowdsale
+
+
+
+7
+
+
+
+2.1 Pre-Sale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+2.2 Public Decentralized Crowdsale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+2.3 Rules of the Tokensale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+2.4 FINC Creation and Distribution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+
+
+2.5 Distribution of funds . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+
+
+3 Timeline
+
+
+
+10
+
+
+
+4 Technical details
+
+
+
+11
+
+
+
+4.1 Ethereum and Smart Contracts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+
+
+4.2 Versioning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+
+
+4.3 Secondary systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+
+
+4.3.1 FintechFans webinterface . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+
+
+4.3.2 FintechFans Decentralized Marketplace Dapp . . . . . . . . . . . . . . . . . 12
+
+
+
+4.4 Technical realization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+4.4.1 Method of development . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+5 Management
+
+
+
+13
+
+
+
+5.1 Staff . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+5.1.1 Chief Executive Officer: Marcel van Oost . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+5.1.2 Chief Technical Officer: Wiebe-Marten Wijnja . . . . . . . . . . . . . . . . . 13
+
+
+
+5.1.3 Chief Financial Officer: Frank Jansema . . . . . . . . . . . . . . . . . . . . . 13
+
+
+
+5.1.4 Chief Marketing Officer: Rene van Pelt . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+5.2 Team . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+5.2.1 Legal expert: Paul Scholtens . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+5.2.2 Community Manager: Ratko Stambolija . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+5.3 Advisory Board . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+5.3.1 Legal expert: Julian Lagus . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+
+
+5.3.2 FinTech veteran: Agustin Rubini . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+
+
+5.3.3 Serial-entrepreneur: Jan Albert Jager . . . . . . . . . . . . . . . . . . . . . . 15
+
+
+
+5.3.4 Strategic advisor: Michel Herder . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+
+
+5.3.5 Payments Professional: Paul Hagens . . . . . . . . . . . . . . . . . . . . . . 15
+
+
+
+5.3.6 Cryptocurrency expert: Chrisjan Pauw . . . . . . . . . . . . . . . . . . . . . 16
+
+
+
+5.3.7 FinTech Entrepreneur: Michelle Katics . . . . . . . . . . . . . . . . . . . . . 16
+
+
+
+5.3.8 Cryptocurrency expert: Anthony S. Dell . . . . . . . . . . . . . . . . . . . . 16
+
+
+
+6 Post ICO: Monthly reporting
+
+
+
+16
+
+
+
+7 Disclaimers and Warnings
+
+
+
+16
+
+
+
+7.1 Limitation of Liability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+
+
+7.2 Taxes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+
+
+1 High-level non-technical overview
+
+Financial Technology is a relatively new, but rapidly growing set of innovations that compete and improve upon traditional means of managing financial services.
+
+FintechFans is a facilitator that makes it easier for FinTech specialists to find jobs and personnel. FintechFans' current systems are primarily usable through its centralized Job Board.
+
+
+
+2
+
+
+
+1.1 FintechFans' Plans
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+Because FintechFans is a supporting and facilitating party, it aspires to permit and allow all members of the global Fintech community to share in its efforts to create a Decentralized Marketplace. This is the main reason a Decentralized Crowdfunding is held, during which the value of FintechFans is distributed across the community.
+
+FintechFans' vision is to kindle financial innovation by uniting specialists and companies. The FintechFans Decentralized Marketplace has four main unique strategic objectives that realize this vision:
+
+Job seekers and companies are in direct contact. Because there are no recruiters involved, contact and communications between parties are seamless, costless, direct and clear.
+
+Review system Finalizing and settling jobs and contracts from a Decentralized Marketplace through a transaction in the Ethereum Blockchain, makes it possible to work with a value-deposit. Every contract comes with this deposit as a part of the employer fee. After the contract is done, both parties can provide feedback and review about the other party in order to inform other users about the quality of service. They are incentivised to do so because they can earn part of the advertisement's deposit fee.
+
+Peer-to-peer payments for performed services. It is possible to pay for performed services using fiat currencies outside of the FintechFans System. However, the Ethereum platform will be leveraged to provide a fast and trustworthy way for payments in which no central party is necessary. Creation of an advertisement will always cost a small fee in FintechCoin, but the Fullfillment of the advertisement's task can be paid using Ether, the FintechCoin or any other ERC20-compliant token[2].
+
+No fees for the pay-outs. The only fees paid on the FintechFans Decentralized Marketplace are those fees paid for placing an advertisement. These fees benefit the community as a whole, both trough the reward for reviewing and through the burning of FINC (see section 1.4). The Decentralized Marketplace never charges fees over pay-outs regarding declared hours, completed projects or any other forms of work.
+
+1.1 FintechFans' Plans
+
+FintechFans wants to build two main systems, which will together make up its digital platform:
+
+1.1.1 The FintechFans Job Board
+
+On the Job Board, FinTech companies and organizations post job openings for long-term positions. A simple version of the FintechFans Job Board is online right now [3]. The Job Board will be completely overhauled using the funds of the Decentralized Crowdsale.
+
+This system will remain inherently centralized, because of the rapid changes and flexible nature required of a Job Board and the content on it. However, a Blockchain-based metadata store and integration of automated payments will be amongst the things to be realized.
+
+1.1.2 The FintechFans Decentralized Marketplace
+
+The Decentralized Marketplace is for one-off tasks and short-term positions. The freelancing market is the main target segment of this platform. Its value is calculated
+
+to be greater than 5 billion dollars globally. In the US it represents 35% of the total workforce. Another key segment is the interim positions market. Contractor numbers in the United Kingdom and the European Union have undergone a prolonged period of growth since 2008. This rise, which has occurred in spite of a largely stagnant labour market, acts as proof ever more people are recognising the benefits of flexible working.
+
+The Decentralized Marketplace is a completely novel, decentralized application. As it consists, at its core, as a set of Smart Contracts on the Ethereum Blockchain, interference by any party, including the FintechFans Company itself is impossible.
+
+Payment for performed services can directly happen through the Decentralized Marketplace. FintechFans' web portal will be an easy way for visitors to browse and view the Decentralized Marketplace, but a Decentralized Application (Dapp) to browse the portal without having to rely on a central webserver is also planned.
+
+3
+
+
+
+1.2 About Fintechfans
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+The FinTech job market is a growing market, and growing it further is FintechFans' passion. This fact has led the company to focus its efforts on connecting FinTech experts and companies. FintechFans believes that focusing on a niche helps the team to target and achieve its goals quickly.
+
+Regardless of how much funds will be raised, the main focus of the company is to become self-sustainable. After building the core decentralized platform the focus will be shifted towards improving the tools that interact with the platform, such as mobile applications and streamlining the review system of the decentralized marketplace. Besides this, if our partners are interested, we will host one or multiple events to show the platform to the world.
+
+A decentralized job marketplace is something that is relevant within all branches of industry. Therefore, as soon as the platform has gained some traction, the platform will be gradually expanded to incorporate other areas of expertise. For example: since a lot of jobs within the FinTech industries are technical (software development) jobs, it would be logical to expand the decentralized marketplace into an IT expert platform.
+
+1.2 About Fintechfans
+
+FintechFans' plans do not appear out of thin air. It is a company with a history. For the last year, FintechFans has been working hard on developing the Job Board on the web-domain https://fintechfans.com. Today it offers 3400 job openings posted by more than 400 FinTech companies. Even though a Job Board is a necessary piece of tooling for both companies and job seekers, more specialistic work will always be better distributed on a freelancer platform.
+
+FintechFans founders have significant experience in running various FinTech companies. they know the market, and know the field of work. Last but not least: The company knows the potential, as well as the limitations of Blockchain as a technology.
+
+FintechFans is convinced that this is the moment to raise funding and create an ecosystem for professionals. The possibilities for innovation in payments in FinTech is tremendous, let's facilitate that!
+
+The founding company, Qantani, has built, scaled and sold a FinTech startups. Qantani was a certified Payment Service Provider (PSP). Its mission was to provide accessible and affordable payment e-commerce solutions for online businesses.
+
+After the exit from the PSP market, Qantani invested in various FinTech and Blockchain-related concepts, one of which is FintechFans.
+
+This history as certified payment provider renders Qantani/FintechFans very capable when it comes to compliance, regulations and information security.
+
+1.3 Revolutionizing contract work with distributed technologies
+
+The way the contractors' staffing industry works nowadays is sub-par: Recruiters are an allpowerful man-in-the-middle. They have to be very secretive about the professionals in their network to ensure they will be paid for placement, endangering the quality of selection on the company's side. This drives up prices, harming quality of work in the end.
+
+FintechFans envisions a world where professionals have a profile that is not the result of centralized assessment and review. Instead, it will be a detailed historical overview of all activities within the field of work. Because transactions and performed jobs are logged in a decentralized datastore, participants of the Decentralized Marketplace can use their own methods and tools for assessment of quality. For example: data can be interpreted in such a way that companies select specialists that meet their requirements of prior work experience.
+
+On the other hand, specialists can select companies that have the reputation of paying a certain percentage upfront.
+
+Thus, the Decentralized Marketplace is not merely a fancy gadget: Finalizing an event in the system improves the trusted and decentralized, unbiased profile of companies and experts. This is much more fine-grained compared to a centralized audit, and more valuable than a classical review system.
+
+1.3.1 Status of the project
+
+The Job Board has been live and running since the beginning of 2017. To create a base demand for FINC, services on the Job Board will only be payable in FINC. Furthermore, even a centralized
+
+
+
+4
+
+
+
+1.4 Goal of the FintechCoin
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+Figure 1: The current FintechFans job board interface
+
+Figure 2: An impression of the alpha version of the new FintechFans platform dashboard
+
+platform like a Job Board needs innovation. Therefore it is planned to redesign the whole system from the ground up in the first quarter of 2018. You can find an impression of the Job Board in Figure 1. The first version of the user interface for the Decentralized Marketplace has also been built and deployed. For simplicity and mutual benefit the interfaces of the Job Board and the Decentralized Marketplace will be combined in one dashboard. You can find an impression of this dashboard in figures 2 and 3.
+
+1.4 Goal of the FintechCoin
+
+To realize FintechFans' plans, a Decentralized Crowdsale will be held, during which anyone can exchange Ether for FintechCoin (Abbreviated as FINC).
+
+The Primary goal of the FintechCoin is to pay for the execution of actions on the FintechFans Decentralized Marketplace (such as placing an advertisement). The reason a new token is introduced for this, is to insulate the fees of the Decentralized Marketplace from the price fluctuations of the support layer cryptocurrency, Ether.
+
+Part of these fees will be burned (permanently destroyed). Another part is placed in the Smart Contract as deposit and will be split between the two parties that end up working together upon completion of the advertisement lifecycle, which includes the parties reviewing each-other (see figure 4).
+
+Because advertisement fees are partially burned, the total amount of FINC will decrease when
+
+5
+
+
+
+1.4 Goal of the FintechCoin
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+Figure 3: An impression of the alpha version of the new FintechFans platform dashboard
+
+Figure 4: The primary decentralized process that the FINC is used in. the Decentralized Marketplace is used. To compensate for the decrease of the amount of available FINC, prices for placing an advertisement (a job listing) will need to be adjusted.
+
+Because the elasticity of the prices of the Decentralized Marketplace cannot be predicted within a smart contract, this is not an automated process. Instead, FINC tokens can be used in a continuous decentralized voting system to determine the prices of the Decentralized Marketplace. In this voting system 1 FINC will equal 1 vote. More details on the implementation of this voting system will follow at a later time. 1.4.1 Secondary Uses
+
+Figure 5: Secondary, Centralized Features that FINC can be used for. As secondary use, the following centralized functionalities (as shown in figure 5) and perks available on the FintechFans Job Board can be paid for directly using the FintechCoin:  Buying an advertisement slot on the publicly visible web pages.  Placing a job opening on the Job Board.  Giving 'premium attention' to prior placed job openings on the Job Board.
+
+6
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+2 Decentralized Crowdsale
+
+The FintechFans Crowdsale will take place in two stages:
+
+2.1 Pre-Sale
+
+During the Pre-Sale, large and well-known parties in the world of FinTech are approached and have the opportunity to partake in the crowdfunding. The Pre-Sale will be held from November 29, 2017 until March 30, 2018.
+
+2.2 Public Decentralized Crowdsale
+
+After the Pre-Sale, a public sale will start, during which the rest of the coins will be offered to the general public. The Public Decentralized Crowdsale will be held from April 9, 2018 11:00:00 UTC until April 30, 2018 11:00:00 UTC
+
+As an extra incentive to invest in the Public Decentralized Crowdsale, early adopters receive a discounted price:
+
+< 2 million FINC has been sold  20% discount < 4 million FINC has been sold  15% discount < 6 million FINC has been sold  10% discount < 9 million FINC has been sold  5% discount
+
+
+
+2.3 Rules of the Tokensale
+
+At the start of the tokensale, the price of one FINC will be fixed to be 1 euro worth of ether. Because the exchange rate between the euro and the ether is not constant, however, the exact price in euro of one FINC will fluctuate.
+
+During the FintechFans tokensale a couple of rules will apply that collectively decide if the tokensale is a success of has failed.
+
+1. If 12.000.000 FINC has been sold, the tokensale will have reached its maximum goal and the tokensale will have been a success. No more than 12.000.000 FINC can ever be sold. With the discounts in mind, this means that a maximum of approximately e10.950.000, - can be spent in the tokensale.
+
+2. When the end date of the public crowdsale (April 30, 2018 11:00:00 UTC) has past, the tokensale will end. At this point the smart contract automatically decides what will happen:
+
+(a) When less than 1.000.000 FINC has been sold when the public crowdsale has ended, the Crowdsale will have failed. All the Ether that has been send to the smart contract can then be retrieved by the participants.
+
+(b) When more than 1.000.000 FINC has been sold when the public crowdsale has ended, the crowdsale will have succeeded. At this point the spent ether will be useable by FintechFans and the project can kick off. Keeping the discounts in mind, this means that a minimum of approximately e800.000, - has to be spent on this project for it to succeed.
+
+
+
+2.4 FINC Creation and Distribution
+
+
+
+During the Crowdsale, FintechCoins will be created when Ether is sent to the Decentralized Crowd-
+
+
+
+sale Smart Contract.
+
+
+
+For
+
+
+
+every
+
+
+
+FINC
+
+
+
+generated
+
+
+
+for
+
+
+
+investing
+
+
+
+participants,
+
+
+
+another
+
+
+
+7 13
+
+
+
+(
+
+
+
+0.538)
+
+
+
+FINC is generated and distributed as follows:
+
+
+
+4 13
+
+
+
+(
+
+
+
+0.31)
+
+
+
+FINC
+
+
+
+is
+
+
+
+generated
+
+
+
+and
+
+
+
+sent
+
+
+
+to
+
+
+
+Fintech-
+
+
+
+Fans,
+
+
+
+2 13
+
+
+
+(
+
+
+
+0.15)
+
+
+
+FINC
+
+
+
+is
+
+
+
+generated
+
+
+
+and
+
+
+
+sent
+
+
+
+to
+
+
+
+the
+
+
+
+address
+
+
+
+for
+
+
+
+Bounties
+
+
+
+and
+
+
+
+the
+
+
+
+Advisory
+
+
+
+Board,
+
+
+
+and
+
+
+
+1 13
+
+
+
+(
+
+
+
+0.077)
+
+
+
+FINC
+
+
+
+is
+
+
+
+generated
+
+
+
+and
+
+
+
+set
+
+
+
+to
+
+
+
+the
+
+
+
+address
+
+
+
+of
+
+
+
+the
+
+
+
+Founders'
+
+
+
+24-month
+
+
+
+time-locked
+
+
+
+vault. This distribution is shown in Figure 7.
+
+
+
+7
+
+
+
+2.4 FINC Creation and Distribution
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+Figure 6: FINC Distribution during Crowdsale. 8
+
+
+
+2.5 Distribution of funds
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+Figure 7: A flowchart describing the minting of FINC.
+
+To prevent abuse of the tokensale, the FINC created for the Founders will be locked for 24 months. These funds will only be accessible when 24 months have passed since the end of the Decentralized Crowdsale phase. Independently of how much FINC is sold, this token creation system will lead to a distribution of the total amount of created FINC that is displayed in Figure 6.
+
+2.5 Distribution of funds
+
+The Ether that has been spent during the Distributed Crowdsale will amount, at minimum, to a value of at least  e800.000, - and at most  e10.950.000, -.
+
+Do note that because of the discounts being given during the Pre-Sale and the Public Decentralized Crowdsale, it is possible for the final amount accessible for development to be somewhat less. We prepare for a minimum as low as  e800.000, - which would be enough to build the platform in its most rudimentary form.
+
+Fifty percent of the raised funds will be used for the initial development of the FintechFans Smart Contracts, public web portal and peripheral services. The other fifty percent of the funds will be used for short and long-term management and marketing of the platform. See also Figure 6.
+
+The distribution in Figure 8 roughly describes the distribution of funds in case of minimum funding. When during the tokensale more than the minimum funds needed are raised, the exceeding capital will mainly be spent on Marketing & Communications.
+
+
+
+9
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+Figure 8: A rough description of the distribution of funds in case of minimum funding.
+
+3 Timeline
+
+In Timeline 1, both the details of the Crowdfunding phase and the development phase are shown.
+
+10
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+Timeline 1: Timeline of the FintechFans project
+
+4 Technical details
+
+This section describes the technical implementation details of FintechFans' plans in more detail.
+
+4.1 Ethereum and Smart Contracts
+
+The FintechFans Decentralized Marketplace will be built on top of the Ethereum cryptocurrency platform[1, 6]. Its core functionalities will be provided by a trinity of Smart Contracts together making up the decentralized application on top of the Ethereum Blockchain.
+
+On top of this, enhanced features are provided by peripheral pieces of software that are not part of the decentralized application and will operate outside of the Ethereum Blockchain. The FintechCoin contract This contract exposes an ERC20-compliable interface ([2]), allowing
+
+11
+
+
+
+4.2 Versioning
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+the FintechCoin to integrate with all common Ethereum wallet software and other Smart Contracts. The FintechCoin will also be able to be burned by a FINC holder, or by a Smart Contract that the FINC holder has given an allowance of (a part of) its FINC.
+
+The FintechFans Decentralized Marketplace Functionality contract This contract implements and facilitates the core functionality of FintechFans, that is: the Decentralized Marketplace. In future versions, it will also include information and calls to allow reading/writing information from the FintechFans Job Board. This contract is versioned.(See 4.2)
+
+The Public Crowdsale contract This contract is separate from the FintechCoin contract to allow for a separation of concerns: After the tokensale has ended, its details are no longer relevant for future use of the Decentralized Marketplace.
+
+4.2 Versioning
+
+The FintechFans Functionality contract is versioned: In the future, it might be decided that extra functionality is required or certain details of its current implementation should be altered.
+
+In those cases, a new version of the FintechFans Functionality contract will be released and placed on the Ethereum Blockchain with the changes in place.
+
+Because smart contracts are completely public and virtually indestructible once published, it is impossible to prevent users from using older versions of the contract, and neither is it intended to enforce this using some centralizing piece of code inside the smart contract.
+
+Instead, users are freely able to use old version of the software (although the company will encourage them to move to the most up to date version,).
+
+Versioning of the smart contracts will follow the Semantic Versioning 2.0.0 standard [4], and the release of new versions will be clearly indicated and presented to all parties involved.
+
+One option the company is considering, is to add a list of versions to the FintechFans tokens contract, which could be used for automated update discovery by external systems making use of the FintechFans functionality smart contract.
+
+4.3 Secondary systems
+
+There are a few systems that will be developed, which will not be released on the Ethereum Blockchain themselves, but exist as peripheral applications.
+
+4.3.1 FintechFans webinterface
+
+Most importantly, FintechFans' homepage and Job Board will be accessible through a normal webinterface, running in a central location (i.e. a Domain Name on the World Wide Web). Just like its currently deployed systems are right now. This pre-existing interface will be updated to integrate seamlessly with the new Blockchain-facing systems:
+
+4.3.2 FintechFans Decentralized Marketplace Dapp
+
+The FintechFans Decentralized Marketplace will not only be accessible to end users using the centralized Fin-techFans webinterface, but also through a Decentralized Application (Dapp), which can be used from supporting Ethereum clients directly without connecting to the World Wide Web.
+
+ It is planned to (partially) store the contents of the Job Board on the Ethereum Blockchain for decentralized and future reference.
+
+ It is planned to allow automated payments using FINC for the secondary functionalities of the Job Board and the FintechFans webinterface. (See also 1.4.1)
+
+The FintechFans Decentralized Marketplace will also be available through a webinterface. This webinterface will make interaction with the system as easy as possible, so that for most users, the details of using Ethereum (and the trace amounts of Ether required to perform calculations on its Blockchain) are hidden. Similarly, because only creating a new advertisement on the Decentralized Marketplace costs a small amount of FINC, potential hirees do not need to concern themselves with it or its workings straight away (Although, as mentioned earlier, if they want it is definitely possible for them to be paid in FINC for their performed tasks).
+
+12
+
+
+
+4.4 Technical realization
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+4.4 Technical realization
+
+The FintechFans smart contracts and the peripheral systems connected to it will be built by Resilia [5].
+
+Resilia is a small and lean group of experts in the area of decentralized, distributed and faulttolerant systems, and also the party realizing the technical sections of this whitepaper.
+
+4.4.1 Method of development
+
+Development will be done in an incremental, iterative fashion: Frequently, feedback will be requested from both the staff of FintechFans, and more importantly early and/or large adopters, to make sure that their needs are reflected in the released system(s).
+
+5 Management
+
+The process of FintechFans' FinTech Decentralized Marketplace and Decentralized Crowdsale will be supervised by a small team of enthusiastic and engaged people. Short profiles of these people follow:
+
+5.1 Staff
+
+5.1.1 Chief Executive Officer: Marcel van Oost Marcel is a battle-tested expert in the world of Financial Technologies. He is founder of several (FinTech-) startups, amongst them Qantani , and is intimately acquainted with the intricate compliance details of digital payment systems. He actively started working with Bitcoin from 2012 onward, and is striving to increase Bitcoin and Blockchain exposure in the Netherlands ever since. In his spare time Marcel loves sports like football, running and cycling.
+
+5.1.2 Chief Technical Officer: Wiebe-Marten Wijnja
+
+Wiebe-Marten loves conceiving things that just keep working. A Computing Scientist in body and mind, Wiebe-Marten started working with Bitcoin in 2012. After a couple of free-lance projects, he worked on the SatoshiCarnival Bitcoin casino. Besides this, he loves using and thinking about the BitTorrent protocol, and other systems that allow for decentralized data sharing. Wiebe-Marten is an enthusiastic Open Sourcerer , and a long-time developer using the Elixir programming language that is geared towards creating scalable and fault-tolerant applications. He is also a moderator on the Elixir Forum. In his spare time, Wiebe-Marten loves making music (piano, marimba) and experiencing new things.
+
+5.1.3 Chief Financial Officer: Frank Jansema
+
+
+
+As a financial consultant for Shell and his CFO experience at a payment service provider, Frank has earned his stripes as a financial specialist. He knows how to do his math and has a sweet spot for the Blockchain and cryptocurrencies. In his spare time Frank loves to play chess and watch sports like football and cycling.
+
+
+
+13
+
+
+
+5.2 Team
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+5.1.4 Chief Marketing Officer: Rene van Pelt
+
+
+
+Rene will be lead of the marketing department. Apart from marketing the FintechFans Decentralized Marketplace worldwide from Q1 2018, he will also be marketing the fundraising. Having worked with marketing automation as a marketeer, as well as having built a marketing automation platform as a programmer, with Rene the team has both the know-how and the guts to reach stake-holders and users.
+
+
+
+5.2 Team
+
+5.2.1 Legal expert: Paul Scholtens
+
+
+
+Paul's expertise lays in corporate and labour law. In this role his main responsibility will be contracting employees and advising in project related legal questions. In his spare time Paul likes to spend time outdoors and exploring new ideas.
+
+
+
+5.2.2 Community Manager: Ratko Stambolija
+
+Ratko Stambolija studied computer engineering at the Belgrade College of Electrical and Computer Engineering and proceeded to work as a freelance technical writer, assuring satisfaction of many clients over the years. Passionate about innovative technologies, he became an active supporter of Blockchain and cryptocurrency projects. He is currently working on his first novel, which depicts the impact of technology on modern relationships. His greatest fan is a dog named Little Dog Joe. Ratko lives in Belgrade, Serbia.
+
+5.3 Advisory Board
+
+To keep FintechFans' innovative and relevant, an Advisory Board will be constructed, consisting of a mix of people from the FinTech world and people from the Cryptocurrency world. The Advisory Board will have a consulting function of regularly being queried for advice on certain matters regarding FintechFans and its strategies.
+
+To compensate the people that take part in the Advisory Board, they will be rewarded for their time and efforts from FintechFans' own FINC wallet.
+
+5.3.1 Legal expert: Julian Lagus
+
+Julian is working for his Master of Law on the University of Helsinki, Finland. Julian is a specialist in the area of Distributed Ledger Technologies and Cryptocurrencies. Julian has a Bachelor of Laws (cum laude) from University of Groningen, where he focused on International and European Law. Julian is currently pursuing an LLM in the University of Helsinki. His specialities are cross-border transactions and business activities, conflict of law situations stemming from the aforementioned relationships and legal tech. He also has experience with working as an entrepreneur.
+
+
+
+14
+
+
+
+5.3 Advisory Board
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+5.3.2 FinTech veteran: Agustin Rubini
+
+Agustin is a financial industry strategist that often speaks and writes about FinTech, banking, and the future of financial services. Versed in developing digital strategy and driving innovation in the financial services industry, Agustin enjoys discussing the future of banking and the disruptive effect of technology on the financial services industry. Agustin is a director from Banking Innovations, and advises on innovation, portfolio growth, customer experience, marketing strategies, investment and digital transformation within the financial services industry. He has extensive digital programme delivery, and is currently working in FinTech in HSBC Commercial Banking. Agustin is the author of the book "FinTech in a Flash: Financial Technology Made Easy".
+
+5.3.3 Serial-entrepreneur: Jan Albert Jager
+
+Jan Albert is a serial-entrepreneur from The Netherlands. Having invested in and developed multiple IT companies since the early 2000's, his network and expertise will be of great help during the tokensale and during product development. Jan Albert has experience with multiple Blockchain-based projects. Jan Albert can bring an organization from start-up to scale-up and make sure that investors get the maximum result for their invested capital.
+
+
+
+5.3.4 Strategic advisor: Michel Herder
+
+
+
+Michel is a change leader with years of experience inside the recruitment business including a HR background and knowledge about different new technologies. Michel carefully keeps an eye on the latest developments. Blockchain is such a technology with a lot of opportunities which could disrupt several business models in different branches.
+
+
+
+5.3.5 Payments Professional: Paul Hagens
+
+
+
+Paul is a Payments and Financial Technology veteran. With years of experience in the payments industry from marketing & sales to management and recruitment; Paul is of great value to the team. Paul knows the roles in a FinTech teams and knows the bottlenecks in recruitment and hiring quality candidates.
+
+
+
+15
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+5.3.6 Cryptocurrency expert: Chrisjan Pauw
+
+Chrisjan is a content writer specializing in FinTech and Finance. A fully qualified Chartered Accountant with many years' experience working in corporate finance in London, Chrisjan started up his own content writing website. This is where his love for finance very quickly expanded into a fascination with FinTech and how disruptive technologies have the potential to completely revolutionize every aspect of the financial landscape. Chrisjan loves the outdoors and one of his favourite places is the bushveld in his native South Africa.
+
+5.3.7 FinTech Entrepreneur: Michelle Katics
+
+FinTech Entrepreneur, FemTech leader, and start-up mentor. Risk manager, mathematician, and economist by training. Michelle aims to drive a paradigm change in the financial sector and drive banks and employees to practice and certify skills in a simulation environment, leading to sharper skills, smoother conduct risk compliance and individual accountability.
+
+5.3.8 Cryptocurrency expert: Anthony S. Dell Risk, Regulatory, Compliance, and Legal Corporate Strategy Leader and C-Suite Executive with exceptional communication skills and true business vision in Risk Management, Legal and Regulatory Strategies, Corporate Compliance, FinTech, Data Privacy/Cybersecurity, and financial services. Frequent public speaker on expert design and build for risk-intelligent, cost-effective, scalable operations and controls programs that enhance enterprise value with demonstrable ROI. Engineer's approach infused with high EQ and artist's passion for innovation and technology in strategy, policy, risk, compliance, audit, and legal functions that flex through rapid change.
+
+6 Post ICO: Monthly reporting
+
+In order to give token holders certainty about their investment, the company will maintain a blog to report about the project's progress. Topics treated in the monthly reports:
+
+1. Progress on the technical side
+
+2. Whether FintechFans is on track with the roadmap
+
+3. The token, usage and market value
+
+4. The company: Get to know FintechFans, see the project grow and join the conversation to give feedback.
+
+7 Disclaimers and Warnings
+
+FintechCoins are utility tokens for use on the FintechFans Decentralized Marketplace. FintechCoins are not securities. FINC are not for speculative investment. No promises of future performance or value are made with respect to the FintechCoin. FINC are not participation and hold no rights in FintechFans. FINC are non-refundable. FintechFans reserves the right to freely spend any profits received absent any conditions.
+
+16
+
+
+
+7.1 Limitation of Liability
+
+
+
+Mauritsstraat 1 9724BH
+
+Groningen +316 341 15 940 info@fintechfans.com
+
+
+
+The Decentralized Crowdsale and the FintechCoins are intended for individuals familiar with Blockchain-based technologies. Do not participate in this Crowdsale if you do not understand cryptographic tokens, cryptocurrencies, and Blockchain-based software systems. Cryptographic tokens possessing value in public markets have repeatedly demonstrated extreme and rapid fluctuations in price, as a result of sudden changes in the balance of supply and demand. You must be prepared to accept similar fluctuations in FINC's value.
+
+7.1 Limitation of Liability
+
+No FintechFans party will be liable (whether in an action in negligence, contract or tort based on a warranty or otherwise) for any loss even if FintechFans or its representatives, or any FintechFans party are advised of the possibility of such loss, howsoever caused as a result, directly or indirectly, of or arising from or in connection with:
+
+1. your participation in the Decentralized Crowdsale, receiving and holding FintechCoins.
+
+2. any access, the use of, or inability to access or use, the FintechFans' software systems, including its website;
+
+3. your reliance on or use or inability to use the content and information of the FintechFans website or any linked website;
+
+4. any failure of performance, error, omission, interruption, defect, delay in operation or transmission, computer virus or line or system failure of the FintechFans website or any linked website;
+
+5. the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from FintechFans' software systems, including its website;
+
+6. unauthorized access to or alteration of your transmissions or data;
+
+7. statements or conduct of any third party on FintechFans' software systems including its website;
+
+8. or any other matter relating to the FintechFans' software systems including its website.
+
+7.2 Taxes
+
+FintechFans does not make any promises or explanations concerning the tax implications potentially caused by the purchase, possession, and use of FintechCoins. The holder bears the sole responsibility of determining if the potential appreciation or depreciation in the value of FINC over time has any tax implications in their jurisdiction. The holder agrees not to hold the FintechFans liable for any tax liability arising from the holder's purchase and ownership of FINC.
+
+References
+
+[1] Vitalik Buterin et al. "Ethereum white paper". In: (2013). [2] the Ethereum Community. ERC20 Token Standard. 2015. URL: https://theethereum.wiki/
+
+w/index.php/ERC20_Token_Standard. [3] FintechFans. Fintech Job Board. 2017. URL: https://fintechfans.com/. [4] Tom Preston-Werner. Semantic Versioning 2.0.0. 2013. URL: http://semver.org/. [5] Resilia. Resilia - Pioneers in Decentralized, Distributed and Fault-Tolerant Systems. 2017. URL:
+
+https://resilia.nl. [6] Gavin Wood. "Ethereum: A secure decentralised generalised transaction ledger". In: Ethereum
+
+Project Yellow Paper 151 (2014).
+
+
+
+17
+
+
+
+

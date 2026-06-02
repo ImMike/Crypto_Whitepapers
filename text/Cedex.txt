@@ -1,0 +1,1059 @@
+Certified Blockchain Based Diamond Exchange
+
+WHITE PAPER
+
+TRANSFORMING DIAMONDS INTO A NEW ASSET CLASS
+
+
+
+TABLE OF CONTENTS
+
+Abstract - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 4 Introduction to the Platform- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 5 Case Study and Market Overview - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 6
+
+2.1 Status Quo in the Diamond Market 2.2 Related Projects using Blockchain Technology The CEDEX Solution- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 7-10 3.1 Transparency and Standardization: The DEX 3.2 Diamond Tokenization 3.3 The Blockchain Technology 3.4 The CEDEX Coin A Two-Sided Diamond Trading Market - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 10-12 4.1 Supply Side: Selling Diamonds on CEDEX 4.2 Demand Side: Investing in Diamonds 4.3 Delivery of Diamonds CEDEX Financial Offering - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 12-14 5.1 Category Trading 5.2 Shared Investment
+
+
+
+5.3 Short Sale 5.4 Basket Trading- Diamond ETFs 5.5 Loans to Traders Platform  CEDEX.com - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 15 Rapid Deployment  Feasibility Evaluation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 16-17 7.1 Requirement Sets 7.2 Existing Rapid-Deployment Systems Market Trends and Potential - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 18 The Team and Partners - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 19-20 9.1 The Team 9.2 Advisory Board 9.3 regarding IDEX Conclusion- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 21 Appendix A  CEDEX Coin Token Sale- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 22 Appendix B  Use of Funds - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 23 Appendix C  Execution & Business Road Map - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 24-25 References - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 26-26
+
+
+
+AUTHORS OF THE WHITE PAPER
+
+Alex Norta Phd - Large-Scale Systems Group Tallinn University of Technology, Tallinn, Estonia alex.norta.phd@ieee.org
+
+Saar Levi - CEDEX CEO & Co-Founder Herzelia, Israel saarl@cedex.com
+
+Ronen Priewer - CEDEX Co-Founder Herzelia, Israel ronenp@cedex.com
+
+Evgeni Kif - CEDEX Product Manager Kiev, Ukraine evgenik@cedex.com
+
+ABSTRACT
+
+Diamonds have the potential to become the next asset class. This white paper addresses how CEDEX intends to bridge the gap between the current diamond ecosystem and the developing financial markets. After presenting the difficulties and obstacles unique to the diamond ecosystem, we will present four layers of developments and innovations marking CEDEX as the future global exchange for investment in diamonds. In contrast to other commodities, such as gold, it is difficult to achieve uniform pricing characteristics for diamonds since they are not fungible. One carat of diamonds is not equal to another carat due to many countless combinations of characteristics. Furthermore, the diamond market is missing liquidity. While one can buy diamonds at retail, it is a challenge to resell them at a reasonable market price. Since diamond exchanges operate on a business-to-business (B2B) basis, they are not relevant for traders and, in fact, there is no platform for reselling diamonds. This white paper outlines how we aim to bridge the gap between the current diamond ecosystem and the future diamond investment market through a tokenization process that will transform diamonds from a unique asset to a fungible asset with clearly defined values. In addition, we present a corresponding trading platform that will provide a two-sided market in which traders will be able to trade and liquidate their diamond holdings. We present and discuss the advantages of the CEDEX platform, the mechanisms to achieve fungibility for diamond trading, the process necessary to create diamond market value transparency and, finally, the blockchain-based CEDEX diamond-trading platform. Japanese residing in Japan are bound to observe the rules mentioned in the Japanese white paper
+
+Keywords: blockchain, smart contract, Ethereum, diamond trading, asset tokenization, price-discovery mechanism, decentralized, peer-to-peer, CEDEX, The DEX, CEDEX Coin
+
+Page 4
+
+
+
+PROJECT ESSENTIALS
+
+Creating a new asset class out of diamonds
+
+First diamond exchange for retail clients
+
+Market potential = US $350 billion
+
+Alpha version of the proprietary algorithm available on the site
+
+Strong team  proven results
+
+Financed by a publicly held company
+
+1 INTRODUCTION
+
+Diamonds are most commonly known as precious gemstones used in the jewelry industry. According to a recent report1, consumer demand for diamonds accounts for 95% while investment demand accounts for less than 5%. In 2015, the value of the worldwide diamond jewelry market hit US $79 billion [13]. Moreover, Frost & Sullivan [19] predict a demand-supply shortfall of mined diamonds that increases every year, leading to a demand-supply gap of 41 million carats by 2022 and 278 million carats in 2050 (approximately US $40 billion). As a result, diamond prices are likely to be affected over the coming decades, making them a potentially interesting investment asset. Even though diamonds present an alternative investment, up until now, several issues have prevented their use as an investment vehicle. Bain & Company [26] identify three main constraints: First, it is difficult to achieve uniform pricing for diamonds in contrast to other commodities, such as gold, since diamonds are not fungible. As a result, one carat of diamonds is not equal to another carat. Generally, diamonds are priced based on clarity, color, cut and carat size, the "4Cs" of the diamond industry. However, they are also valued based on emotional factors [10][36]. Different combinations of the 4Cs result in countless characteristic combinations, making it difficult to establish a per-carat price. Second, there is a lack of pricing transparency in the diamond industry due to missing industry standards and oligopoly structures. Finally, the diamond market lacks liquidity in that diamonds are usually a one-sided market with limited to no ability to resell them at their real market price. Paradoxically, a surplus of liquidity also exists because the industry annually pushes diamonds worth approximately US $20 billion into the market. Even though diamond trading exchanges exist, they only service B2B transactions, making them irrelevant for individuals or traders. Two main issues have to be solved in order to allow commodity asset tokenization of diamonds in particular: First, the creation of a process that transforms diamonds from a unique asset to a fungible asset with a transparent and clearly defined value. Second, the creation of a trading platform that provides a two-sided market in which traders can liquidate and invest in diamond holdings. This white paper addresses this gap by introducing CEDEX's blockchain-based asset-class trading platform for diamonds, It answers the question of how to transform diamonds from a unique asset to a transparent, fungible asset. We also pose the following sub-questions: What data and market indicators must be compiled to create diamond market value transparency? How can a two-sided market for diamond trading be established? And, what are the mechanisms to achieve fungibility for diamond trading?
+
+Page 5
+
+
+
+2 CASE STUDY AND MARKET OVERVIEW
+
+Section 2.1 describes the status quo of the current diamond trading market. In subsequent sections, we show the innovations the CEDEX platform will bring to the market. Section 2.2 gives additional background literature so readers who are new to this domain can become aware of necessary concepts, terms and frameworks.
+
+2.1 STATUS QUO IN THE DIAMOND MARKET
+
+At the moment, there are two main motivations for investing in precious metals such as gold, silver, platinum or diamonds. First, traders purchase such commodities to maximize yields by generating above-market returns due to price appreciation. Second, hedge-oriented traders seek a stable store of value to preserve their capital or to lower the volatility of their overall portfolios, e.g. although polished diamonds generate less returns than other commodities, they are significantly more stable [26].
+
+Interested traders who consider taking a position in diamonds have different options. They can either purchase individual stones or sealed boxes of stones, referred to as diamond bullions. Bullions are usually filled with small stones of a defined type and can range in price. Alternatively, private banks may offer their clients the opportunity to invest directly in physical diamonds, providing purchase services where diamonds are valuated and certified.
+
+Traders may also gain exposure to prices of polished diamonds via asset management firms that buy and hold stores of physical diamonds. Those firms sell shares entitling holders to a pro-rata portion of the value of the diamond stores. The funds typically purchase polished colorless stones weighing one to five carats. Traders may alternatively buy shares of companies that operate in the diamond industry. However, the value of company shares does not necessarily correlate with the value of diamonds and depends on additional factors [26]. It is important to note that diamond exchanges only target B2B transactions and are not relevant for individual traders. Consequently, it is challenging for individuals to sell diamonds at their market price. This has led to the current system in which jewelry shops buy diamonds from individuals at a price point considerably below fair market value.
+
+2.2 RELATED PROJECTS USING BLOCKCHAIN TECHNOLOGY
+
+The CEDEX project addresses the pricing issues and the need to unlock diamonds as an investment option using blockchain technology. Blockchain technology is best known for providing the foundation of the peer-to-peer (P2P) cryptocurrency and payment system Bitcoin [29]. In recent years, the blockchain concept, also called the distributed ledger system, has spread in popularity. This has resulted in various blockchain-based applications such as in the finance sector [8][24][30], in prediction markets [20][35][37], as a platform for the Internet-of-Things (IoT) applications [9][32], in the legal industry [31] and so on.
+
+CEDEX utilizes the Ethereum [39] blockchain for its solution. In addition to the underlying distributed ledger, Ethereum incorporates Turing-complete programming languages on the protocol-layer to realize smart contract capabilities. Smart contracts are, "orchestration and choreography protocols that facilitate, verify and enact with computing means a negotiated agreement between consenting parties" [12]. The latter establish binding agreements and deploy applications using such smart contracts to enable certain services and functionalities, e.g., a P2P-trading platform.
+
+Several projects offer tokenization of asset classes, e.g., Goldmint [21], OneGram [22] and Xaurum [40], which represent gold-based cryptocurrency. Due to the fungible nature of gold, it is far easier to enable tokenization of metal-based asset classes. Carats.io2 and the Israel Diamond Exchange (IDE) have established a diamond-backed cryptocurrency based on an index reflecting the activity within the Israeli diamond industry [18]. Alrosa3 is backing a
+
+
+
+1 http://www.bain.com/publications/articles/global-diamond-report2014.aspx 2 http://www.carats.io/ 3 http://eng.alrosa.ru/
+
+
+
+Page 6
+
+
+
+project similar to Carats.io together with an initial coin offering (ICO) called D1 Coin4. Everledger5 is also a diamond-focused and blockchain-based project that tracks defining characteristics, history and ownership of diamonds to create a permanent record on the blockchain.
+
+3 THE CEDEX SOLUTION
+
+The ultimate objective of the global website cedex.com is to bridge the gap between the traditional diamond industry and the more innovative financial markets. The platform envisions bringing together diamond holders who want to liquidate their holdings and traders looking to diversify or hedge their investment portfolio to include diamonds as an investment asset, and doing so in a secure and transparent way.
+
+CEDEX is built on four pillars: The DEX proprietary technology, blockchain technology, diamond tokenization and the CEDEX Coin.
+
+
+
+Diamond Tokenization: A Diamond-Smart Contract representing a diamond's ownership, gem composite and
+
+historical trading information.
+
+
+
+The DEX: A proprietary algorithm that evaluates and rates
+
+the Diamond-Smart Contract market price, allowing "non-experts" to confidently trade in
+
+diamonds.
+
+
+
+Blockchain-Based Exchange: A trading platform uniting Diamond-Smart Contract owners and traders.
+
+
+
+The CEDEX Coin: A new cryptocurrency allowing traders and cryptocurrency holders to buy diamonds
+
+on the CEDEX.com exchange.
+
+
+
+Section 3.1 presents the way the DEX establishes transparency and standardization in diamond trading. Section 3.2 discusses the tokenization of diamonds. Section 3.3 maps the CEDEX solution in the domain of blockchain-based exchanges. Finally, Section 3.4 outlines the CEDEX Coin.
+
+3.1 TRANSPARENCY AND STANDARDIZATION: THE DEX The DEX, CEDEX's proprietary machine-learning algorithm, addresses the most significant obstacles in transforming diamonds into an asset class, i.e. lack of transparency and coherence in diamond value appraisal. The DEX takes gemological data, diamond financial indice data and global inventory data into consideration. Utilizing the global diamond inventory data, the DEX quantifies diamond prices and ranks individual diamonds and their respective prices [38]. Briefly, machine learning allows software applications to accurately predict outcomes without being explicitly programmed. Machine-learning algorithms receive input data and apply statistical analysis for predicting an output value within acceptable ranges.
+
+4 https://www.d1coin.io/ 5 https://www.everledger.io
+
+Page 7
+
+
+
+The DEX comprises three elements (Fig.1). The first is the gem composite, expressed in percentage terms and representing a diamond's gemological perfection. The second DEX element is the parallel composite indicating the rarity of a diamond category and the available quantity of diamonds in the relevant category. The third DEX element is the indices composite, giving potential traders market directions for the diamond industry.
+
+
+
+Gemological Composite Parallel Trades
+
+Diamond Indices
+
+
+
+Ranks individual diamonds by their theoretical market value.
+
+
+
+Fig.1: Simplification of the DEX algorithm
+
+
+
+Using the DEX, traders will be able to base their investment decisions on analytical data, which has not been available so far. In so doing, traders will be able to answer the question of which diamond represents the best value for money.
+
+An alpha version of the DEX is already available on www.cedex.com for 0.30-0.39, 0.50-0.59,0.70-0.79,1.00-1.19 Carat. To maximize accuracy, CEDEX is developing the DEX towards pricing additional types of diamonds. The accumulated data is continuously analyzed and supplied to the pricing algorithm. The DEX has the goal of pricing any certified diamond at an accuracy rate of more than 99.5%.
+
+
+
+3.2 DIAMOND TOKENIZATION
+
+A private diamond holder or dealer wishing to liquidate his or her holdings will be able to use the simple CEDEX tokenization onboarding process to create a smart contract. This contract represents the financial offering, including the sale of a single diamond, a shared investment on a high value diamond or a diamond basket sold to multiple traders (Diamond ETF). Once the request is executed, the diamonds will be delivered to the custodian and validated against their GIA certificate. Following approval, the Diamond-Smart Contract will be created and sent to the owner's digital wallet. The diamond will remain at the custodian for safe keeping and the Diamond-Smart Contract holder will have the option to either list the Diamond-Smart Contract on the CEDEX Exchange or to sell directly peer-to-peer
+
+To ensure trust and reliability, the CEDEX Exchange will only allow its users to purchase GIA-certified diamonds. GIA certificates are issued following grading by the Gemological Institute of America (GIA).
+
+
+
+Single Diamond
+
+
+
+DISTRIBUTE List on CEDEX
+
+
+
+PICK-UP
+
+
+
+Shared Investment
+
+
+
+Peer-to-Peer
+
+
+
+Diamond Basket (ETF)
+
+
+
+Fig. 2: Three simple steps to upload a diamond/s and create a Diamond-Smart Contract 1) Enter the GIA certificate (or certificates if loading a diamond basket) 2) Choose how many smart contracts to create (one for single stone sales, multiple for shared investment or diamond basket) 3) List the diamond on CEDEX or sell peer-to-peer. Order a pick-up.
+
+
+
+Page 8
+
+
+
+3.3 BLOCKCHAIN TECHNOLOGY
+
+The CEDEX project uses blockchain technology to tokenize diamonds. In the first phase, Diamond-Smart Contracts will be issued via a simple process initiated once a diamond holder lists a stone for trading. The simple interface will create a smart contract that represents the diamond's gemological data and additional information to allow the creation of a financial product that represents the underlying asset, i.e., diamonds. As the blockchain-based CEDEX ecosystem evolves, we anticipate the diamond ecosystem will adopt Diamond-Smart Contracts as the new means of trading diamonds.
+
+
+
+Cutting Center
+
+
+
+Gemological Lab
+
+
+
+Custodians
+
+
+
+Wholesalers
+
+
+
+THE NEW DIAMOND ECOSYSTEM ON BLOCKCHAIN
+
+
+
+Public
+
+Fig.3: The vision  the diamond ecosystem on blockchain
+
+
+
+Retail Stores
+
+
+
+Diamond-Smart Contract Diamond
+
+
+
+Figure 3 shows the Blue Ocean vision of the diamond ecosystem. The finished polished diamond will be sent for registration to the gemological lab. After examining the diamond and issuing the grading report, the lab  using the CEDEX open platform  will list the diamond to create the Diamond-Smart Contract. The token includes the following information: GIA ID, register wallet, historical transactions and data necessary to create the fungibility mechanism. CEDEX offers a simple tokenization process to create a smart contract token (Diamond-Smart Contract) as described in 3.2
+
+After the Diamond-Smart Contract creation, the diamond will be sent to a custodian. B2B digital diamond trading will commence until the stone reaches its final destination; either on the CEDEX Exchange as a financial asset or until it is purchased as merchandize by the end user. Once the diamond has been physically delivered to the end user, the Diamond-Smart Contract will be marked as delisted on the blockchain.
+
+Tokenizing diamonds is beneficial to the entire ecosystem in many ways:
+
+No additional transportation and insurance costs will occur while stones are traded within the ecosystem.
+
+All transactions using the CEDEX Coin will save fiat-currency transaction charges.
+
+The diamond origin and all transactions will be documented on the Diamond-Smart Contract.
+
+The trades will be executed quickly, efficiently and P2P without any third-party involvement.
+
+Open blockchain technology allows anyone to collect, aggregate and analyze data for their own purposes and for public use, thereby increasing transparency.
+
+
+
+Page 9
+
+
+
+3.4 THE CEDEX COIN The CEDEX Coin will be implemented as an ERC-20-compatible token over the public Ethereum blockchain. Activity on cedex.com, and later on within the diamond ecosystem, will be performed solely using CEDEX Coin. This will make the token an integral part of the CEDEX platform and the driver of its economy.
+
+Traders who want to purchase diamonds and diamond derivatives via Diamond-Smart Contracts on the CEDEX platform will have to purchase CEDEX Coin to carry out their transactions. Payment to and for all service providers, such as the gemological labs, custodian, insurance and transportation will only be possible using CEDEX Coin. Traders opening a short position will use CEDEX Coin to cover the collateral and borrowing fees. Traders will be able to use their portfolios as collateral to receive CEDEX Coin loans. Diamond dealers will be able to accept CEDEX Coin for diamond purchases as long as they are committed to the transparency offered by the DEX.
+
+CEDEX Coin holders will be able to use their tokens once the sale has been completed. Tokens will be allocated for the following services:
+
+- To certify diamonds in gemological labs. Once certified, the company, using the DEX, will assess the market value of the diamond, using the DEX, and will notify the diamond holder about its recommended value - For secure and insured transportation services for the diamond - For insurance services - For custodian services  Allowing the diamond holder to keep assets with the custodian
+
+Demand for CEDEX Coins will be influenced by the number of active traders using the platform. The number of active users is expected to grow rapidly in the early years as the CEDEX Exchange opens new markets, either by expanding its own operation or via licensing software to local entities.
+
+As Fig.4 shows, use of CEDEX Coin on the CEDEX Exchange will later expand to the diamond ecosystem. Dealers and service providers will receive CEDEX Coins from CEDEX traders and will use the CEDEX Coins to pay for inventory and services throughout the entire diamond ecosystem to increase efficiency and reduce transaction costs.
+
+4 A TWO-SIDED DIAMOND-TRADING MARKET
+
+All Diamond-Smart Contracts, as well as their trades, will be stored on the blockchain, thereby providing a fully transparent registry of the underlying diamonds trading history. Diamond-Smart Contracts will be tradable on the CEDEX trading platform or on a P2P basis, allowing traders to easily participate in diamond investments. The novel result will be a decentralized and fungible asset-class trading platform that permits professional-level investments in diamonds without requiring any expertise in diamond trading. To explain how CEDEX will establish a two-sided market for diamond trading, Section 4.1 specifies the mechanism for uploading diamonds to the platform for subsequent trading. Section 4.2 focuses on buying and selling individual diamonds. Finally, Section 4.3 describes the way CEDEX users may take possession of physical diamonds.
+
+Page 10
+
+
+
+Secure Transport
+
+
+
+Insurance
+
+
+
+Custodians
+
+
+
+Gemological Labs
+
+
+
+Manufacturers
+
+
+
+Fig.4: The expanding use of CEDEX Coin in the diamond ecosystem
+
+4.1 SUPPLY-SIDE: SELLING DIAMONDS ON CEDEX On the supply side, we have identified two main sources of supply: a. Diamond Dealers Post signing a strategic cooperation agreement with the diamond industry global leader IDEX online (see Partners section), CEDEX will be connected with all the major global diamond manufacturers. b. Private Diamond Holders  A considerable obstacle for transforming diamonds into a financial instrument is the inability for private diamond holders to resell stones fairly. A retail client looking to sell back a diamond to a dealer or pawn shop usually receives a price 30-50% below fair market value. Such a spread between the buying and selling price is the result of the illiquid and currently non-transparent diamond market. Private diamond owners hold hundreds of billions of dollars' worth of stones. In 2016 alone, approximately US $20 billion was purchased at retail. We believe the opportunity to sell at market price will create an unprecedented flow of diamonds on to the CEDEX Exchange. CEDEX use blockchain technology to tokenize all listed diamonds, including those from private owners, as illustrated in Fig 2. above.
+
+4.2 DEMAND-SIDE: INVESTING IN DIAMONDS With the CEDEX platform, traders will be able to purchase a Diamond-Smart Contract (representing a diamond) using CEDEX Coin. The new asset class created by the CEDEX project will attract the following potential traders: a. Commodity Traders  Those traders currently investing in commodities such as precious metals seeking exposure to the sector or using these commodities as a hedging tool for currency or market fluctuation will be excited to discover diamonds as new asset class with low volatility and with very low correlation to the stock market. b. Cryptocurrency Holders  Cryptocurrency holders looking to reduce volatility will use the CEDEX Exchange as an opportunity to lock in and realize the value of their crypto assets. Leveraging the online B2C expertise of its business partner, TechFinancials, Inc., CEDEX will gradually expand to more markets to open this new and exciting asset class to traders looking to diversify their portfolios.
+
+Page 11
+
+
+
+4.3 DELIVERY OF DIAMONDS
+
+A trader who purchases a Diamond-Smart Contract will be able to request the delivery of a physical diamond. In such cases, the delivery process will begin when the Diamond-Smart Contract status changes to In Delivery Process and the diamond is sent to the owner. Once the owner receives the diamond, the Diamond-Smart Contract will be marked as delisted by the smart contract.
+
+
+
+Diamond Private Diamond
+
+
+
+Dealers
+
+
+
+Holders
+
+
+
+Cryptocurrency Commodity
+
+
+
+Holders
+
+
+
+Traders
+
+
+
+Fig.5: CEDEX creating a two-sided market
+
+
+
+5 CEDEX FINANCIAL OFFERINGS
+
+CEDEX is an open and transparent market place for traders to liquidate and invest in diamonds as a new financial asset class using blockchain technology and asset tokenization.
+
+Section 5.1 explains category trading of diamonds on the CEDEX platform. Section 5.2 discusses the processing of short sales with categorized diamonds. Finally, Section 5.3 shows an example of basket or ETF trading.
+
+5.1 CATEGORY TRADING
+
+One of the main hurdles of transforming diamonds to an asset class is the ability to create homogeneous products. The CEDEX solution will combine blockchain technology and the DEX algorithm to create Category Trading. The methodology assigns commonly traded diamonds to major categories based on their gemological characteristics [15]. For each category, CEDEX defines a benchmark. Within each category, the diamonds will receive a deviation score from the category benchmark, which is encrypted in the Diamond-Smart Contract. The ability to assign a deviation to the Diamond-Smart Contract is the result of the DEX algorithm. Once listed, a smart contract will calculate the value difference from the category based on the deviation score and allow the DEX to evaluate and rate all Diamond-Smart Contracts in the same category, creating a homogeneous asset class for the traders.
+
+
+
+Category "A"
+
+
+
+$990
+
+
+
+$870
+
+
+
+$940
+
+
+
+Fig.6: Category trading of diamonds
+
+
+
+Category "A" sorted by value
+
+
+
+$990
+
+
+
+103%
+
+
+
+$940 94%
+
+
+
+100%
+
+
+
+$870 86%
+
+
+
+Page 12
+
+
+
+Figure 6 depicts an example where three diamond holders (shown on the left side) list diamonds that are all 1 carat in size, but have slightly deviating gem compositions. In the center of the figure is the CEDEX trading platform, which uses the DEX to calculate a 1-carat category that is a 100% gem composite. The result (on the right side) shows that the DEX calculations yield a clearly justified theoretical market price per diamond that is expressed in tradeable Diamond-Smart Contracts.
+
+5.2 SHARED INVESTMENT
+
+One of the most exciting and innovative trades the CEDEX platform will offer its users is the "Shared Investment" option. After uploading a diamond for trade, a diamond holder will have the option of selling the stone as a single Diamond-Smart Contract or as multiple Diamond-Smart Contracts. Choosing the multiple Diamond-Smart Contracts option will create multiple smart contracts that represent partial ownership of the backed diamond.
+
+This function will, for the first time, allow retail clients to invest in high-valued diamonds that are usually a speculative and volatile segment of the diamond market.
+
+5.3 SHORT SALE
+
+Short selling is the well-established practice of selling securities without owning them. This strategy is motivated by the belief that the price of a security will drop, allowing it to be bought back a lower price to generate a profit. In such a case, traders earn the price difference of the security minus the borrowing cost.
+
+To open a short sale position [17] on the CEDEX Exchange, a trader will send a short sell order that will initiate a request to locate and borrow the relevant category. Once this order is approved and if the bid/ask prices match, the order will be executed. Short selling on CEDEX will use an automated feed from the Lending Company for the quick approval of the borrowing request.
+
+When the short sale is executed, the Lending Company will lend the Diamond-Smart Contract to the short seller against collateral and borrowing fees. The collateral and lending fees will be calculated on a daily basis.
+
+
+
+Lending Company
+
+
+
+Short Sale
+
+
+
+Borrow Diamond-Smart Contract
+
+
+
+Collateral + Borrowing Fee
+
+Fig.7: Opening a short-sale position
+
+
+
+TRADER A
+
+
+
+CEDEX
+
+
+
+Buy PUBLIC
+
+
+
+Page 13
+
+
+
+Fig. 7 shows the opening protocol of a CEDEX short sale position. To the left of the figure, the Lending Company lends a Diamond-Smart Contract to Trader A, who in return deposits collateral plus borrowing fees. Once the short seller ask price is matched by the buyer bid price, the trade will be executed.
+
+
+
+Lending Company
+
+
+
+Buy to Close Short Sale
+
+
+
+Return Diamond-Smart Contract
+
+
+
+Receive Collateral
+
+Fig.8: Closing a short-sale position
+
+
+
+TRADER A
+
+
+
+CEDEX
+
+
+
+Sale PUBLIC
+
+
+
+Fig.8: To close the short position, Trader A buys the same Diamond-Smart Contract category on the CEDEX Exchange and returns it to the Lending Company. The Lending Company returns the collateral to trader A and the transaction is completed, leaving trader A with the trade margin minus the borrowing fees.
+
+When the trader wants to close the short position, the same diamond category is bought back on the CEDEX Exchange and returned to the lender. The short seller retains the margin, less the borrowing cost paid to the lender.
+
+5.4 BASKET TRADING  DIAMOND ETFS
+
+One of the main milestones representing the evolution of a financial asset is the creation of derivative products [16] that allow diversification and efficient market exposure. Briefly, a derivative product is a contract based on an underlying asset from which the former value is derived. Given the anticipated rapid demand for the new diamond asset class, the CEDEX platform is structured to develop financial instruments, such as exchange-traded fund (ETF) [33] trading. ETFs are traded comparably to stocks and traditionally held assets, e.g., commodities, bonds, stocks and so on.
+
+Mapped onto the CEDEX system, a diamond holder will be able to upload a list of GIA certificates [34] to trade multiple diamonds as one basket. The CEDEX system creates multiple Diamond-Smart Contracts that each represent a partial ownership of the basket. This novel function is anticipated to evolve over time to complex financial products backed by diamonds, such as short ETFs, leveraged ETFs, single category ETF baskets, multi-category ETF baskets, rear and high value ETF baskets and more.
+
+5.5 LOANS TO TRADERS
+
+The diamonds held by the custodian on behalf of traders will be able to serve as collateral for providing loans.
+
+Users will be able to get CEDEX Coin loans based on their portfolio liquidity. Interest will be set according to common interest rates. Such loans will be provided on selected Diamond-Smart Contracts (e.g. loans will not be given on shared investment Smart Contracts). Once a loan is granted, the Diamond-Smart Contracts that are set as collateral will be marked on the smart contract and could change ownership if the lender defaults.
+
+
+
+Page 14
+
+
+
+6 THE CEDEX PLATFORM
+
+The CEDEX platform will give traders a clear view of possible financial offerings without the need for extensive knowledge about diamonds. The trading platform screenshots below illustrate the methodology that will enable traders to choose either an investment range or an investment category. The DEX displays diamonds, listed in sequence by "best-value investment" from top to bottom. The DEX rating range is represented numerically in values from 0.599 to 0.999 with the higher rating representing the most valuable investment (based on the DEX algorithm as described in Chapter 3.1). In addition, the system will provide traders with financial and gemological data, allowing them to gauge the investment potential in parallel to the DEX recommendation.
+
+Fig. 9: Screenshots of the CEDEX Exchange. The buyer will choose the desired investment category. The DEX, the proprietary CEDEX algorithm, sorts all diamonds in that category, displaying the best-value diamonds at the top (asking price vs. market price).
+
+Page 15
+
+
+
+7 RAPID DEPLOYMENT  FEASIBILITY EVALUATION
+
+We have performed a paper-based feasibility evaluation that considers existing blockchain projects to explore the degree of rapid CEDEX deployment. The suggestions in this section are tentative system candidates. Ultimately, the CEDEX ecosystem must satisfy functional and non-functional requirements derived from the system presentation in earlier sections. Section 8.1 briefly presents the requirements and Section 8.2 lists existing system candidates for rapid CEDEX deployment.
+
+7.1 REQUIREMENT SETS
+
+Functional requirements for the CEDEX system are as follows:
+
+Identification authentication of stakeholders is essential to ensure that only credibly credentialed interaction with the diamond-trading platform is possible. Smart-contracting capability is another functional requirement for diamond trading on the CEDEX platform. Evaluation functionality must guarantee that smart contracts are developed in a sound way and are executed as intended without flaws that would lead to unintended consequences, e.g., a wrongful diamond classification, loss of tokens and so on. Data-storage management is also essential for the CEDEX system. Mass data must be stored in a blockchain-based way and there should be an additional blockchain database with an elaborate manipulation-logics layer on top.
+
+Non-functional requirements [2][23] for the CEDEX system are discernible during development versus runtime and we have chosen a suitable subset for both. Modifiability and integrality of the CEDEX system are non-discernible while security, interoperability, high automation, performance, usability and flexibility are discernible during runtime. Finally, we consider requirements of the CEDEX architecture that are beyond the scope of this paper and future work, namely scalability, applicability, completeness and feasibility.
+
+Modifiability is non-discernible and means taking changes and adaptations to the diamond-trading context into account. These comprise regular updates and harmonization of composed blockchain systems, e.g., those resulting from regulatory changes.
+
+Security refers to CEDEX's ability to not allow unauthorized usage and denial-of-service attempts while allowing trusted users with good reputations. The sub-requirements of security [1] are system availability for authorized action, confidentiality and integrity. Confidentiality is the absence of unauthorized disclosure of information. Integrity is the absence of improper system alterations. A diligent security study is important to the CEDEX system implementation and our important future work.
+
+High automation is assured if the CEDEX system considers the existing blockchain-based systems for an application implementation. Flexibility is given when the system is built to accommodate many diverse activities during runtime including the participation of diverse partners and the exchange of diverse data.
+
+Usability of the CEDEX system [4] will be achieved by taking the following sub-requirements into account: User interface simplicity and error avoidance assumes anticipating and preventing common stakeholder-use errors during diamond trading; closely related error handling supports a user with error recovery and learnability infers users can quickly master CEDEX-based diamond trading.
+
+7.2 EXISTING RAPID-DEPLOYMENT SYSTEMS
+
+To prevent us from "re-inventing the wheel," we performed a study about available systems for the rapid deployment of the CEDEX system. For identification, an existing blockchain-based system is Civic6, which currently only takes the email address and mobile phone number of users who wish to gain identified access into consideration. The advantage of Civic is that users retain ownership of their identity, which differs from alternative systems such as the Estonian e-residency7 identification. In the latter case, a government entity retains identification ownership and has the
+
+
+
+6 http://civic.io/
+
+
+
+Page 16
+
+
+
+power of revocation, which is undesirable. While the newly established Civic identification is currently still limited, research shows [25] that authentication is essential to ensure an identified individual is who he or she claims to be. While the current version of Civic is limited so that authentication of identification is not assured, it is possible to combine Civic with other existing services such as Verify8, which automatically checks government-issued documents against database systems for identity authentication.
+
+For smart contracting the current standard is Ethereum [39], despite acknowledged drawbacks. First, proof-of-work (PoW) transaction validation does not scale and thus, Ethereum is not feasible for most industry applications. Second, the Ethereum-affiliated Solidity smart-contract language cannot be formally verified [6] and was recently hacked9 because of security flaws. This resulted in a loss of approximately US $50 million10. More scalable is a smart-contract solution that uses proof-of-stake (PoS) [5] transaction validation and blockchain sharding [27]. For example, the smart-contract system Qtum [11] already uses PoS successfully in its application.
+
+For smart-contract evaluation, several existing systems with minimal capabilities are available. For a limited set of insecure coding deficiencies, Securify11 formally verifies Ethereum smart contracts as a beta version. Securify provides an online verification example with checks for recursive calls, transaction recordings, unexpected Ether flows, insecure coding patterns and untrusted-input use in security operations. Other examples for projects under development are the Embark-framework12 and Populus13. Both appear immature for formal verification and evaluation.
+
+The ongoing research topic of smart-contract evaluation is addressed in recent scientific publications. In [7], the authors explore the challenge of writing secure smart contracts. A problem is that programs and pseudonymous users call third-party program public methods with the consequence of insecurely combining trusted and untrusted programs. Translating the smart-contract code to the functional programming language F* is an option to allow for analyzing and verifying Solidity-code runtime safety and functional correctness. In [14], common smart-contract development pitfalls are checked based on a set of heuristics stemming from empiric observations of students. The occurrence of common development mistakes decreases by following best practices as the pitfall heuristics address the aspects of failures to use cryptography, misaligning incentives, errors in encoding the state machines and Ethereum-specific mistakes such as incentive or call-stack bugs.
+
+For blockchain-based mass-data storage, the so-called Interplanetar File System14 (IPFS) [3] is an open-source, content-addressable, P2P, distributed hypermedia protocol. IPFS provides a highly performing block-storage model with hyperlink-addressable data sets. In IPFS, a single computer stores data subsets using content addressing with hash-linked lists distributed across several computers. Data is distributed in IPFS across several computers to develop distributed blockchain applications in addition to adding immutable, permanent IPFS links into a blockchain transaction.
+
+For managing diamond-trading data, BigChainDB [28] is an existing suitable system candidate that is a decentralized blockchain database with blockchain characteristics for the creation and movement of digital assets, immutable trading-event tracing and decentralized control. Its complementary nature to other blockchain systems, such as IPFS, Ethereum or Qtum, is important for the CEDEX system.
+
+
+
+7 http://e-resident.gov.ee/ 8 http://www.verif-y.com 9 https://www.wired.com/2016/06/50-million-hack-just-showed-dao-human/ 10 https://bitcoinsmagazine.com/articles/ethereum-classic-hard-forksdiffuses-difficulty-bomb-1484350622/ 11 https://securify.ch/ 12 https://github.com/iurimatias/embark-framework 13 http://populus.readthedocs.io/en/latest/ 14 https://ipfs.io/
+
+
+
+Page 17
+
+
+
+8 MARKET TRENDS AND POTENTIAL
+
+The current diamond B2B trade market is valued at approximately US $60 billion a year, with consumers purchasing merchandise worth US $20 billion annually. Only 5% of this US $20 billion market is purchased for investment purposes.
+
+There are major global forces, mostly focused on the B2B or derivatives markets, seeking to introduce diamonds to the finance market. These include the Indian Commodity Exchange, RapX's collaboration with Bloomberg and the Singapore Diamond Investment Exchange. The transformation from merchandise to financial asset class will increase investment volume substantially.
+
+To evaluate the potential market size for investment diamonds, we have analyzed the gold market. This market has a turnover of US $700 billion, with gold and gold derivative investments totaling 80% approximately, or US $550 billion. The remaining 20% represents jewelry and industrial use. The current diamond market turnover is approximately US $90 billion with an investment value of only US $1 billion. By removing the market barriers described above, we believe diamonds will become the leading investment assets for traders seeking to hedge currency or get exposure to this alternative asset class. This shift could potentially increase the diamond investment market from US $1 billion to US $350 billion, assuming the relationship between investment turnover and jewelry and industrial use is similar to that of gold- 80% vs. 20%
+
+
+
+GOLD MARKET
+
+
+
+Current
+
+20 GOLD JEWELRY % INDUSTRIAL OTHER
+
+80% INVESTMENT
+
+
+
+US $140bn US $550bn
+
+
+
+DIAMOND MARKET
+
+Current
+
+99 DIAMOND JEWELRY % INDUSTRIAL OTHER 1% INVESTMENT
+
+
+
+US $87bn US $1bn
+
+
+
+Future
+
+20 DIAMOND JEWELRY % INDUSTRIAL OTHER
+
+80% INVESTMENT
+
+
+
+US $87bn US $348bn
+
+
+
+Page 18
+
+
+
+9 THE CEDEX TEAM AND PARTNERS
+
+The CEDEX project was founded by a team of professionals in the internet, online marketing, financial technologies and diamond industries. TechFinancials, Inc has provided the financing for the project by way of a loan and equity investment, for which it was granted an option to be the holder of up to 92% of the CEDEX project.
+
+TechFinancials, Inc is a leading developer of financial trading technologies, its experienced team of software developers, financial engineers and online marketing technology developers will provide development services for creating the trading technology, alongside the CEDEX team.
+
+9.1 THE TEAM  A PROVEN TRACK RECORD
+
+Saar Levi  CEO & Co-Founder Saar has been an entrepreneur since 1993. He has over 15 years' experience in the global financial markets and has held senior roles in leading financial institutions such as Lehman Brothers, Barclays Capital and Intesa Sanpaolo. He served as the CEO of Luxemburg Art Exchange and was the Founder and CEO of LEM Management Ltd.
+
+Ronen Priewer  Co-Founder Ronen is an entrepreneur with experience and knowledge of the diamond industry spanning over two decades. A sought-after consultant, he has worked primarily in Asian markets, specializing in technology consulting and financial software. He was CEO at F&C, which focuses on joint ventures with international software companies seeking to enter the Chinese market and is the Founder and Managing Director of the diamond brands LeLumiere and Masaor.com.
+
+Yael Eckstein  Marketing Manager Yael has worked in the financial/online gaming industry for the past six years and has experience in both B2B/B2C marketing. She has experience in event planning and public diplomacy. She was recognized as a winner of the national L'Oral award for a new product launch. Yael holds a BA in Business and Marketing from the Interdisciplinary Center.
+
+Boaz Hilel  Global Business Development Boaz has specialized in business development for the Forex and trading industries for the last 10 years. He has been involved in the blockchain and cryptocurrency emerging market since 2012. He has supported several successful startups that provide different solutions to the market and strongly believes cryptocurrency is the new financial market.
+
+Calvin Hau  Asia Business Development Calvin has spent over seven years in the institutional Fintech sector, specializing in business development of Forex & Commodity e-trading tech. He has extensive experience and solid product knowledge in white label, API integration, eFX platform, derivatives and FX trading aggregation. Prior to joining TechFinancials, Calvin was head of an institutional e-FX business development team in a major Swiss Forex bank and a leading prime liquidity tech firm in the Asia region.
+
+Shigeo Akiyama - Business Development Japan Shigeo has experience in the online financial industry. He acted as CEO for all TechFinancials Japan activity, which included business activities, crypto/virtual currency payment and all client agreements and support. Prior to this he was a Risk Management and Compliance Manager in an online Forex firm.
+
+Nissim Agami  Online Marketing Manager Nissim is an entrepreneur and an expert in online marketing with a 10-year professional track record in the diamonds field, specializing in marketing and social media. Nissim has extensive experience in digital marketing and online sales promotion of many products in the financial industry. In recent years Nissim built and managed marketing departments for a number of major financial brokers.
+
+Ben Rosanes  Customer Relations Manager Ben has worked in the financial online industry for the past six years. He has experience in both B2B/B2C sales, support, operations and customer success. Ben has extensive practical knowledge of ESMA and CY regulations.
+
+Avner Levinstien  CTO & Senior Blockchain Developer Avner has been a software developer and software architect since 1987. He has extensive experience using open source software stacks and development tools.
+
+Page 19
+
+
+
+Evgeni Kif  Head of Product Evgeni has extensive experience building Internet businesses from the ground up as well as managing products and development teams. He is a blockchain enthusiast with technical and functional knowledge. Evgeni has over seven years' experience leading product management organizations, defining road maps and strategies for products that reach millions of customers.
+
+Kateryna Gordieieva  Senior QA Engineer Kateryna specializes in front-end and back-end testing in web app and mobile web. She has almost four years of experience in testing Forex and trading platforms. She was involved in the testing of a new crypto gateway payment method. In addition, she has spent two years working in quality assurance and has practical experience in maintaining quality management systems.
+
+Aviv Balassiano  Development Manager Aviv has worked for a hi-tech company in the financial industry for eight years and has experience in financial asset evaluation algorithms. Using AKKA and Vertx, he has developed large-scale applications with non-blocking technologies that can handle a lot of concurrency using a small number of CPUs.
+
+Itay Regev  BI Developer Itay has over five years' experience as a business intelligence end-to-end developer. He has experience in ETL, ODS, DWH and OLAP design and implementation and has worked with multiple visualization tools. Itay has strong mathematics and statistic capabilities with experience in various data mining techniques for classification and regression analysis. He is a blockchain and cryptography enthusiast.
+
+Aleksandr Rebenok  Database Administrator Aleksandr has been an SQL developer for over 14 years. He has more than 12 years of database administrator (DBA) experience. In addition, he has over 10 years' experience as a database architect.
+
+9.2 ADVISORY BOARD
+
+Alex Norta Ph.D. is a research member at the Faculty of Software Science/TTU. His research interests include business-process collaboration, workflow management, e-business transactions, service-oriented computing, software architectures and software engineering, ontologies, mashups and social web. His PhD thesis developed the eSourcing concept for dynamic inter-organizational business process collaboration. Alex has worked on the white papers for blockchain-tech startups Qtum.org, Agrello.org and Everex.io. He also serves as an advisor for several other blockchain-tech startups including Cashaa and RecordGram.
+
+David Drake is the Chairman of LDJ Capital, a family office based in NYC; Victoria Partners, LDJ Real Estate Group; Drake Hospitality Group; and, The Soho Loft Media Group. LDJ Capital's extended network of funds and hedge funds manages 1.5 trillion USD in assets. David previously represented the US Commerce Department at the EU and he spoke at the UK Parliament. Mr. Drake's access to 100,000 investors is maintained through his media holding investment The Soho Loft Media Group which has produced and sponsored over 1500+ global finance conferences since 2002. David Drake is actively involved in the crypto community as an advisor and speaker and has helped blockchain firms he advised raise $101M in funding through their ICO.
+
+Jorge Rodriguez Ethical hacker since childhood, security expert, blockchain developer, marketing and social media manager, project manager. Jorge Rodriguez is passionate about technology which is considered one of the greatest security experts in the world of CryptoCurrencies.
+
+Jae Kim is a blockchain evangelist and CEO of a US based e-commerce web development company, with 20 years of e-commerce experience building Korean, English, and Chinese websites. He has a deep understanding of both Korean and US culture and is an expert in online advertisement, marketing and managing relationships with Korean investors. Jae Kim runs the biggest Korean ICO YouTube channel. He is also a blockchain investor, the founder of a number of cryptocurrency and blockchain related websites and serves as the Korean advisor for a number of companies, including Paycent.com, Centra.tech, and Micromoney.io.
+
+Ehud D. Cohen Chairman of the Board. He founded IDEX in 1999, and has actively managed the business from its inception, pioneering the first international online B2B diamond trading platform. During the 15 years preceding the formation of IDEX Online, Ehud managed EC Diamonds B.V.B.A., a global diamond trading company which he
+
+Page 20
+
+
+
+established in 1985. During these years, he lived and operated in all the main diamond production centers  New York, Antwerp, Mumbai and Ramat Gan, establishing the company's trading network worldwide. Ehud is IDEX's largest investor.
+
+Christopher Bell has 20 years' experience in the gambling industry and was the chief executive officer of Ladbrokes plc until 2010. He joined Ladbrokes plc in 1991 and became managing director in 1994 before joining the board of Ladbrokes plc in 2000 (known as Hilton Group plc until 2006). He is the independent non-executive chairman of XL Media plc, a senior independent director of Quintain Estates and Development plc, a non-executive director of Spirit plc and a member of the Responsible Gambling Strategy Board, which advises the UK government on gambling policy. Prior to joining Ladbrokes plc, Mr. Bell held senior marketing positions at Victoria Wine Company Limited and Allied Lyons plc.
+
+Asaf Lahav co-founded TechFinancials, Inc. and has held the post of Group Chief Executive Officer since its inception in 2009. He also co-manages the TechFinancials business unit with specific responsibility for the product development team. Asaf has 20 years' experience in managing complex technological projects and was a Director of Research and Development at EMC Corporation. He previously held senior R&D roles at ProActivity Software Solutions Limited, a privately held provider of business process management software solutions, which was subsequently acquired by EMC Corporation.
+
+Pialy Aditya is an innovation-driven growth executive with proven ability to scale both multi-billion dollar corporations and startups. Her expertise in data-driven digital transformations solve large-scale problems and contribute to significant growth in revenues, profitability and market share. Pialy has led both the Digital business (web, mWeb & mobile) and Partnerships for Shop Your Way (SYW), one of the largest loyalty platforms in the U.S. with tens of billions of dollars in annual revenue. As a pioneer in the fashion tech space, Pialy launched Mintbox in 2009. Mintbox attracted millions of members with private micro-targeted card linked sale experiences based on a consumer's omni-channel shopping behavior while driving valuable traffic to retailers both in-store and online. Pialy has a BS from NYU's Stern School of Business and a MBA from Harvard Business School.
+
+CONCLUSION
+
+We have presented the CEDEX trading platform, which will turn diamonds into a tradable asset class. This paper explains the status quo in which the main problem hindering diamonds as a tradeable asset class is the very characteristic that the diamond industry promotes  each stone is unique. Consequently, there is a lack of transparency and liquidity, on the one hand, as diamonds change ownership via private transactions. On the other hand, there is an untapped investment market that we estimate at US $350 billion. Once CEDEX is launched, this investment market will start growing rapidly.
+
+We have discussed our long-term vision of a diamond ecosystem based on blockchain technology and shown examples of other projects that are also based on tokenizing diamonds and in which all means of payments are digital.
+
+The market indicators for creating diamond market value transparency and coherence are established by the DEX, the CEDEX machine-learning algorithm that takes several factors into account.
+
+These factors include diamond financial and global inventory data, diamond prices and their individual rankings. Currently, the DEX is available for 0.3-, 0.5- and 1-carat round diamonds.
+
+A considerable challenge has been to establish fungibility for diamonds to allow uniform trading. The CEDEX platform will solve this problem by applying the DEX algorithm and creating a smart-contract that represents a gemologically validated asset. Consequently, it is possible to apply innovative trading mechanisms employing blockchain-based tokens, such as category trading, short selling or ETF trading, to the diamond industry. We stress that these mechanisms are not a complete set. In the future, more diamond-trading mechanisms will be developed with blockchain-based tokenization of diamonds being the technological enabler.
+
+The Diamond-Smart Contracts will be transparently registered on the blockchain to achieve full diamond-trading
+
+Page 21
+
+
+
+traceability. This will allow Diamond-Smart Contracts, representing fungible diamonds, to be traded on the CEDEX platform or P2P by professional traders in a decentralized way. Consequently, we will enable single-diamond trading, uploading diamonds for sale and also taking physical delivery by a trader in which all related events are stored on the blockchain. The result will be the establishment of a two-sided market for diamond trading.
+
+While the deployment feasibility of the CEDEX system is positive, limitations of this paper pertain to the CEDEX platform being a decentralized and distributed diamond-trading platform with complex business semantics flowing across system components that must be cross-component dependable and free of concurrency conflicts.
+
+APPENDIX A - CEDEX COIN TOKEN OFFERING
+
+The pre-sale offering will be conducted over a 10-day period beginning on March 16th, 2018 at 19:00 GMT. The main-sale start date will be dictated by the completion of the pre-sale. If the pre-sale is completed within 24, hours main-sale will open at 19:00 GMT on March 17th, 2018. If the pre-sale is not completed within 24 hours the main sale will commence at 19:00 GMT on April 13th, 2018. In either event the main sale will last 28 days or until the maximum cap is reached.
+
+The CEDEX project will issue a maximum of, 100,000,000 CEDEX Coins. Due to the high volatility of ETH/USD rate CEDEX will cap the dollar value that will be sold throughout the Token-Sale to a maximum of USD$40 million. According to this adjustment the value of 1 CEDEX Coin will not exceed $0.8
+
+The public token sale will offer 50,000,000 CEDEX Coins. Currently, the CEDEX Coins are to be sold for 100,000 ETH.
+
+Up to 25,000,000 of the coins will be sold in the pre-sale and the remainder in the sale.
+
+All of the token supply will be created during the token sale and distributed once it is completed. Any tokens offered for sale to the public and not sold will be destroyed.
+
+As the Hard Cap for the Token-Sale will be published in ETH, prior to the Token-Sale, on March 14, 2018 08:00 GMT CEDEX will be locking and publishing the final ETH amount to be sold in the Token-sale
+
+Users will be able to purchase CEDEX Coin in Ether, Bitcoin and fiat currencies according to the available rates in the market. A portion of the supply will be pre-allocated to the CEDEX founders and team members in the vesting schedule listed below. The company will hold 15% of the CEDEX Coin supply for future development and marketing expansion. This holding will also be used for purchasing additional diamonds in order to expand the financial offering of the CEDEX project.
+
+
+
+% OF TOTAL CEDEX COIN SUPPLY 10%
+
+5%
+
+5%
+
+15%
+
+
+
+BENEFICIARY Team and Advisory Board
+
+Founders
+
+Outsourced services The Company
+
+
+
+TERMS
+
+10% vested after end of sale, 30% after 6 months, 30% after 12 months and 30% after 18 months
+
+10% vested after end of sale, 30% after 6 months, 30% after 12 months and 30% after 18 months
+
+No vesting period
+
+Used in the future for: development and marketing expansion or for diamond purchases to facilitate future financial instruments offered on CEDEX and for operational costs
+
+
+
+Page 22
+
+
+
+Public Token Sale 50%
+
+Up to 15%
+
+
+
+Selling 25% of CEDEX coins in the CEDEX Coins will be distributed at the end of the pre-sale, and remaining amount sale period up to 50% in the public sale.
+
+
+
+Bonuses for pre-sale and early bird sale participants
+
+
+
+No vesting period
+
+
+
+Table 1: CEDEX Coin Token distribution overview
+
+
+
+Participants in the pre-sale and sale will receive special bonuses as indicated below: Pre-sale up to 25% of total CEDEX Coin  0.3 CEDEX Coin for each CEDEX Coin purchased. First day of sale up to 25% of total CEDEX Coin  0.15 CEDEX Coin for each CEDEX Coin purchased (ending at 24:00 GMT). Further information and updates will be posted ahead of time on cedex.com.
+
+
+
+APPENDIX B - USE OF FUNDS
+
+We currently anticipate that the net proceeds collected in the token sale will be used as follows: Up to 20% for finalizing the development of the DEX, Diamond-Smart Contracts and the exchange as described in the milestone section in Appendix C below. Up to 45% for marketing, business development and sales purposes. Most of the funds will be used for marketing the exchange in different jurisdictions. This will include online and offline marketing activities, signing partnership relations with various business partners and signing agreements with potential partners from the diamond industry. Up to 20% for regulation, licenses, legal and operational progress. Up to 15% for working capital.
+
+The expected breakdown may be altered based on the token sale outcome and project progress.
+
+
+
+20%
+
+
+
+45%
+
+
+
+20%
+
+
+
+15%
+
+
+
+CEDEX Development
+
+
+
+Marketing & Business Regulation Development
+
+
+
+Working Capital
+
+Page 23
+
+
+
+APPENDIX C - EXECUTION & BUSINESS ROAD MAP
+
+The CEDEX project was launched at the beginning of 2017. The CEDEX team has already achieved extensive business and technological milestones, as illustrated in Fig. 10. In October 2017, TechFinancials announced the project to the public. AIM Announcement October 23, 2018 Below we have detailed the four milestones that are the building blocks of the CEDEX project.
+
+
+
+Q1 2017
+
+Market Research Technical Feasibility
+
+Assessment Starting "DEX" Development
+
+
+
+Q3-Q4 2017
+
+Diamond-Smart Contract Development
+
+Marketing Strategy Token Sale Security Audits
+
+"DEX" Alpha Launch
+
+
+
+Q3 2018
+
+Launch of CEDEX Platform
+
+
+
+Q3 2019
+
+Geographic Expansion
+
+
+
+1
+
+
+
+2
+
+
+
+3
+
+
+
+4
+
+
+
+5
+
+
+
+6
+
+
+
+7
+
+
+
+Q2 2017
+
+Team Set-up Business Strategy Implementation of the Blockchain Technology
+
+Fig.10: CEDEX road map and milestones.
+
+
+
+Q1 2018
+
+
+
+Q1 2019
+
+
+
+Token Pre-Sale Offering Financial Offering Expansion:
+
+
+
+Token Sale Offering CEDEX Platform Development CEDEX Coin Will be available
+
+for Use (see section 3.4)
+
+
+
+- Short Sale - ETF Trading
+
+- Leverage - Products & Loans
+
+
+
+Q4 2017 MILESTONE 1  THE DEX
+
+The first milestone and major achievement of the CEDEX technology and diamond teams is the creation of an alpha version of the DEX. As explained in detail above, the DEX is an algorithm that compiles all relevant market and technical data and creates a machine-learning engine to evaluate a diamond's market price and rate its asking price accordingly. The alpha version of the DEX is already operational on the cedex.com website.
+
+Q3 2018 MILESTONE 2 MVP LAUNCH (MINIMAL VIABLE PRODUCT) OF THE CEDEX PLATFORM The second milestone is to finish the MVP product, complete the regulatory framework for launching the product in the first locale and start marketing activities in order to drive traffic to the platform. The MVP will allow traders to buy, sell or take physical delivery of a diamond.
+
+
+
+Page 24
+
+
+
+The main components of the MVP product: Diamond onboarding from diamond dealer's ERPs Customer onboarding platform - Registration - KYC (Know Your Customer) and AML (anti-money laundering) support Customer wallet management - External wallet  allows users to use standard Etherium wallets - Internal wallet  allows users not familiar with crypto wallets to participate in the exchange Trading arena in which customers can buy and sell Diamond-Smart Contracts using CEDEX Coin - Creating Diamond-Smart Contracts Representing the Diamond - DEX Version One - in which every diamond presented on the Exchange will get a DEX score - Web Trading Arena - Web Mobile Trading Arena Operational Back Of ce system - CRM - Diamond Upload  integration with diamond ERP system - Wallet Management - Compliance Management - Configuration Management
+
+Q1 2019 MILESTONE 3  FINANCIAL OFFERING EXPANSION AND REGULATION The next step in the evolution of making diamonds a commodity is the ability to transform them from a one-of-a-kind asset to a homogeneous asset. CEDEX's innovative solution combines blockchain technology and the proprietary developed algorithm to create a Category Trading. Category trading is the building block for future development of the asset class, allowing traders to get exposure to different diamond categories, short selling a category and expanding to complex derivatives. As the CEDEX platform evolves, we expect professional traders and financial institutions utilizing this new financial product to offer their clients exposure to their existing portfolios. Such expansion of the diamond investment market will be followed by the addition of more regulation to the Exchange to secure traders and to adhere to local regulatory constraints. In terms of financial offering development, we plan to expand the CEDEX offering and start introducing complex derivative products such as leveraged ETFs, short leveraged ETFs, cross categories products, high-value diamonds ETFs, future contracts and so on.
+
+Q1 2019 MILESTONE 4  GEO EXPANSION Once the CEDEX is adopted in the initial locale, the exchange business roadmap is planned to expand to additional markets. To allow such expansion, the CEDEX will require regulatory licenses to comply with each country's regulatory requirements. Each geographical expansion will result in additional usage and demand for CEDEX Coin as new traders receive access to the CEDEX Exchange.
+
+Page 25
+
+
+
+REFERENCES
+
+1. Avizienis, A., Laprie, J., Randell, B., Landwehr, C.: Basic concepts and taxonomy of dependable and secure computing. IEEE transactions on dependable and secure computing 1(1), 1133 (2004)
+
+2. Bass, L., Clements, P., Kazman, R.: Software architecture in practice, Addisson (1998)
+
+3. Benet, J.: IPFS-content addressed, versioned, P2P file system. arXiv preprint arXiv:1407.3561 (2014)
+
+4. Bengtsson, P.: Architecture-level modifiability analysis. Journal of Systems and Software 69 (2002)
+
+5. Bentov, I., Gabizon, A., Mizrahi, A.: Cryptocurrencies Without Proof of Work, pp. 142157. Springer Berlin Heidelberg, Berlin, Heidelberg (2016)
+
+6. Bhargavan, K., Delignat-Lavaud, A., Fournet, C., Gollamudi, A., Gonthier, G., Kobeissi, N., Kulatova, N., Rastogi, A., Sibut-Pinote, T., Swamy, N., ZanellaBeguelin, S.: Formal verification of smart contracts: Short paper. In: Proceedings of the 2016 ACM Workshop on Programming Languages and Analysis for Security. pp. 9196. PLAS '16, ACM, New York, NY, USA (2016)
+
+7. Bhargavan, K., Delignat-Lavaud, A., Fournet, C., Gollamudi, A., Gonthier, G., Kobeissi, N., Rastogi, A., Sibut-Pinote, T., Swamy, N., Zanella-Beguelin, S.: Formal verification of smart contracts. In: Proceedings of the 2016 ACM Workshop on Programming Languages and Analysis for Security-PLAS16. pp. 9196 (2016)
+
+8. Bussmann, O.: The Future of Finance: FinTech, Tech Disruption, and Orchestrating Innovation. In: Equity Markets in Transition, pp. 473486. Springer (2017)
+
+9. Christidis, K., Devetsikiotis, M.: Blockchains and Smart Contracts for the Internet of Things. IEEE Access 4, 22922303 (2016)
+
+10. Chu, S.: Pricing the Cs of Diamond Stones. Journal of Statistics Education 9(2) (2001)
+
+11. Dai, P., Mahi, N., Earls, J., Norta, A.: Smart-contract value-transfer protocols on a distributed mobile application platform. URL: https://qtum. org/uploads/files/cf6d69348ca50dd985b60425ccf282f3. pdf (2017)
+
+12. Dai, P., Mahi, N., Earls, J., Norta, A.: Smart-Contract Value-Transfer Protocols on a Distributed Mobile Application Platform. URL: https://qtum.org/uploads/ files/a2772efe4dc8ed1100319c6480195fb1.pdf (2017), (Accessed September 18, 2017)
+
+13. De Beers: The Diamond Insight Report - 2016. URL: https://cdgwebsites.com/debeers/impact_2016/stable/downloads/De_Beers_Insight_Report_2016_ web-ready.pdf (2016), (Accessed September 16, 2017)
+
+14. Delmolino, K., Arnett, M., Kosba, A., Miller, A., Shi, E.: Step by Step Towards Creating a Safe Smart Contract: Lessons and Insights from a Cryptocurrency Lab, pp. 7994. Springer Berlin Heidelberg, Berlin, Heidelberg (2016)
+
+15. Eaton-Magan~a, S., Breeding, C.: An introduction to photoluminescence spectroscopy for diamond and its applications in gemology. Gems & Gemology 52(1) (2016)
+
+16. Ellersgaard, S., Jnsson, M., Poulsen, R.: The fundamental theorem of derivative trading - exposition, extensions and experiments. Quantitative Finance 17(4), 515 529 (2017)
+
+17. Fang, V., Huang, A., Karpoff, J.: Short selling and earnings management: A controlled experiment. The Journal of Finance 71(3), 12511294 (2016)
+
+Page 26
+
+
+
+18. Fox, M.: Israel Diamond Exchange and Carats.IO to Launch Diamond Backed Digital Currency. URL: https://www.leaprate.com/financialservices/fintech/israel-diamond-exchange-carats-io-launch-diamondbacked-digita l-currency/ (2017), (Accessed September 18, 2017)
+
+19. Frost & Sullivan: Grown Diamonds: Unlocking Future of Diamond Industry by 2050 (2014)
+
+20. Gnosis Team: Gnosis - Whitepaper. URL: https://gnosis.pm/resources/ default/pdf/gnosis_whitepaper.pdf (2017), (Accessed September 16, 2017)
+
+21. GoldMint, PTE, LTD: Goldmint - Whitepaper. URL: https://goldmint.io/ static/files/Goldmint_WP_eng.pdf (2017), (Accessed September 18, 2017)
+
+22. Khan, I.: OneGram: A Shariah Compliant and Gold Backed Digital Token. URL: https://onegram.org/wp-content/uploads/2017/09/whitepaperv1.0.2-1.pdf (2017), (Accessed September 18, 2017)
+
+23. Kotonya, G., Sommerville, I.: Requirements Engineering: Processes and Techniques. Wiley Publishing (1998)
+
+24. Lane, Alexi and Leiding, Benjamin and Norta, Alex: Lowering Financial Inclusion Barriers With a Blockchain-Based Capital Transfer System. URL: https://daks2k3a4ib2z.cloudfront.net/59157962bdb4300afa8771a9/5963c09d077a520b5a965208_20170710_EVX _WP.pdf (2017), (Accessed September 18, 2017)
+
+25. Leiding, B., Norta, A.: Mapping Requirements Specifications into a Formalized Blockchain-Enabled Authentication Protocol for Secured Personal Identity Assurance. forthcoming
+
+26. Linde, O., De Meo, R., Epstein, A., Fischler, S.: Diamonds: Timeless Gems in a Changing World. URL: http://www.bain.com/offices/tokyo/en_us/publications/articles/diamonds-timeless-gems-in-a-changing-worldtokyo.a spx (2014), (Accessed September 18, 2017)
+
+27. Luu, L., Narayanan, V., Zheng, C., Baweja, K., Gilbert, S., Saxena, P.: A secure sharding protocol for open blockchains. In: Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security. pp. 1730. CCS '16, ACM, New York, NY, USA (2016)
+
+28. McConaghy, T., Marques, R., Muller, A., De Jonghe, D., McConaghy, T., McMullen, G., Henderson, R., Bellemare, S., Granzotto, A.: Bigchaindb: a scalable blockchain database. white paper, BigChainDB (2016)
+
+29. Nakamoto, S.: Bitcoin: A Peer-to-Peer Electronic Cash System. URL: https:// bitcoin.org/bitcoin.pdf (2008), (Accessed September 18, 2017)
+
+30. Nguyen, Q.K.: Blockchain - A Financial Technology for Future Sustainable Development. In: Green Technology and Sustainable Development (GTSD), International Conference on. pp. 5154. IEEE (2016)
+
+31. Norta, A., Vedeshin, A., Rand, H., Tobies, S., Rull, A., Poola, M., Rull, T.: Self-Aware Agent-Supported Contract Management on Blockchains for Legal Accountability. URL: http://whitepaper.agrello.org/Agrello_Self-Aware_ Whitepaper.pdf (2017), (Accessed September 16, 2017)
+
+32. Ouaddah, A., Elkalam, A.A., Ouahman, A.A.: Towards a Novel Privacy-Preserving Access Control Model Based on Blockchain Technology in IoT. In: Europe and MENA Cooperation Advances in Information and Communication Technologies, pp. 523533. Springer (2017)
+
+33. Petajisto, A.: Inefficiencies in the pricing of exchange-traded funds. Financial Analysts Journal 73(1), 2454 (2017)
+
+34. Richman, B.: An autopsy of cooperation: Diamond dealers and the limits of trustbased exchange. (2016)
+
+Page 27
+
+
+
+35. Santiment LLC: Introducing Santiment: The Datafeeds Platform for the Crypto-markets - Whitepaper. URL: https://docs.google.com/document/ d/1hHmJQWrPrObSgCA8kTbk-4LgqGbYzukQAjtg5b8jwc0/edit (2017), (Accessed September 16, 2017)
+
+36. Scott, F., Yelowitz, A.: Pricing Anomalies in the Market for Diamonds: Evidence of Conformist Behavior. Economic Inquiry 48(2), 353368 (2010)
+
+37. STX Technologies LTD: Stox Platform for Prediction Markets - Whitepaper. URL: https://www.stox.com/assets/stox-whitepaper.pdf (2017), (Accessed September 16, 2017)
+
+38. Witten, I., Frank, E., Hall, M., Pal, C.: Data Mining: Practical machine learning tools and techniques. Morgan Kaufmann (2016)
+
+39. Wood, G.: Ethereum: A Secure Decrentralized Generalised Transaction Ledger. URL: http://gavwood.com/paper.pdf (2014), (Accessed May 02, 2017)
+
+40. Xaurum Team: A Treatise on Xaurum. URL: http://www.xaurum.org/ TreatiseOnXaurum.pdf (2016), (Accessed September 18, 2017)
+
+LEGAL DISCLAIMER This whitepaper is for information purposes only and may be subject to change. We cannot guarantee the accuracy of the statements made or conclusions reached in this whitepaper and we expressly disclaim all representations and warranties (whether express or implied by statute or otherwise) whatsoever, including but not limited to: - any representations or warranties relating to merchantability, tness for a particular purpose, suitability, title or non-infringement; - that the contents of this document are accurate and free from any errors; and - that such contents do not infringe any third party rights. We shall have no liability for losses or damages (whether direct, indirect, consequential or any other kind of loss or damage) arising out of the use, reference to or reliance on the contents of this whitepaper, even if advised of the possibility of damages arising. This whitepaper may contain references to third party data and industry publications. As far as we are aware, the information reproduced in this whitepaper is accurate and that the estimates and assumptions contained herein are reasonable. However, we offer no assurances as to the accuracy or completeness of this data. Although information and data reproduced in this whitepaper are believed to have been obtained from reliable sources, we have not independently veri ed any of the information or data from third party sources referred to in this whitepaper or ascertained the underlying assumptions relied upon by such sources. As of the date of publication of this whitepaper, CEDEX Coins have no known or intended future use (other than on CEDEX's platform which is still under development). No promises of future performance or value are or will be made with respect to CEDEX Coins, including no promise of inherent value, no promise of any payments, and no guarantee that CEDEX Coins will hold any particular value. Unless prospective participants fully understand and accept the nature of CEDEX's business and the potential risks associated with the acquisition, storage and transfer of ERC-20 tokens such as CEDEX Coins, they should not participate in the token sale. CEDEX Coins are not being structured or sold as securities. CEDEX Coins hold no rights and confer no interests in the equity of CEDEX. CEDEX Coins are sold with an intended future use on CEDEX's platform and all proceeds received during the token sale may be spent freely by CEDEX on the development of its business and the underlying technological infrastructure. This whitepaper does not constitute a prospectus or disclosure document and is not an offer to sell, nor the solicitation of any offer to buy any investment or nancial instrument in any jurisdiction. CEDEX Coins should not be acquired for speculative or investment purposes with the expectation of making an investment return. No regulatory authority has examined or approved any of the information set out in this whitepaper. No such action has or will be taken under the laws, regulatory requirements or rules of any jurisdiction. The publication, distribution or dissemination of this whitepaper does not imply that applicable laws or regulatory requirements have been complied with. Participation in the token sale carries substantial risk and may involve special risks that could lead to a loss of all or a substantial portion of your contribution. Further information about the risks of participating in the token sale is set out in the Token Sale T&Cs. Please ensure that you have read, understood and are prepared to accept the risks of participating in the token sale before sending a contribution to us. The token sale and/or CEDEX Coins could be impacted by regulatory action, including potential restrictions on the ownership, use, or possession of such tokens. Regulators or other competent authorities may demand that we revise the mechanics of the token sale and/or the functionality of CEDEX Coins in order to comply with regulatory requirements or other governmental or business obligations. Nevertheless, we believe we are taking commercially reasonable steps to ensure that the token sale mechanics and issue of CEDEX Coins do not violate applicable laws and regulations.
+
+CAUTION REGARDING FORWARD-LOOKING STATEMENTS This whitepaper contains forward-looking statements or information (collectively "forward-looking statements") that relate to our current expectations of future events. In some cases, these forward-looking statements can be identi ed by words or phrases such as "may", "will", "expect", "anticipate", "aim", "estimate", "intend", "plan", "seek", "believe", "potential", "continue", "is/are likely to" or the negative of these terms, or other similar expressions
+
+Page 28
+
+
+
+intended to identify forward-looking statements. We have based these forward-looking statements on current projections about future events and nancial trends that we believe are relevant to our nancial condition, results of operations, business strategy, nancial needs, or the results of the token sale. In addition to statements relating to the matters set out here, this whitepaper contains forward-looking statements related to CEDEX's proposed operating model. The model speaks to our objectives only, and is not a forecast, projection or prediction of future results of operations. Forward-looking statements are based on certain assumptions and analysis made by CEDEX in light of its experience and perception of historical trends, current conditions and expected future developments and other factors it believes are appropriate, and are subject to risks and uncertainties. Although the forward-looking statements contained in this whitepaper are based upon what we believe are reasonable assumptions, there are risks, uncertainties, assumptions, and other factors which could cause our actual results, performances, achievements and/or experiences to differ materially from the expectations expressed, implied, or perceived in forward-looking statements. Given such risks, prospective participants in the token sale should not place undue reliance on these forward-looking statements.
+
+Page 29
+
+
+
+

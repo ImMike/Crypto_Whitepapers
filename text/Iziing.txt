@@ -1,0 +1,901 @@
+!
+
+WHITE PAPER
+
+v.9e
+
+DIVERSIFIED FIAT-BASED FINANCIAL INSTRUMENTS FOR THE CRYPTO ECONOMY: EXCHANGE-TRADED FUNDS PUT ON BLOCKCHAIN AND SOLD BY THE ROBO-ADVISOR
+
+
+
+TABLE OF CONTENTS
+
+EXECUTIVE SUMMARY..................................................................................................................................................................................4 1. Glossary.............................................................................................................................................................................................................5 2. The state of the financial markets..................................................................................................................................................6 2.1. Crypto financial market: highly volatile and bound to the price of BTC........................................................6 2.2. Fiat financial markets: ETFs provide exposure while keeping fees low .......................................................9 2.3. Opportunities for the Robo-advisors in the financial markets ............................................................................13 3. Solution for financial markets: BTFs sold via Robo-advisor ....................................................................................16 3.1. Tokens of the iZiing Platform .......................................................................................................................................................17 3.1.1. iZiing tokens (IZG)  ERC20 utility tokens on a public blockchain ................................................................17 3.1.2. BTF-tokens  asset tokens backed by real assets on a private blockchain ..........................................17 4. Solution for the miners - Run the nodes in the iZiing Blockchain.......................................................................19 4.1. Problems of the Crypto Miners ..................................................................................................................................................19 4.2. Solutions of the iZiing Blockchain for the Crypto Miners.......................................................................................19 4.3. Proof-of-Importance consensus (POI) of the private iZiing Blockchain ....................................................20 4.4. Opportunities for the Mini Node holders in iZiing Blockchain ..........................................................................20 4.5. Opportunities for the Master Node holders in the iZiing Blockchain ...........................................................21 5. How it works (from the iZiing Platform perspective) .................................................................................................22 6. How it works (from a user perspective)...................................................................................................................................23 6.1. Option 1  for crypto holders - purchasing BTFs using cryptocurrency.....................................................23 6.2. Option 2 for fiat holders  purchasing BTFs using fiat money.........................................................................24 7. Main components of the iZiing Platform................................................................................................................................24 7.1. iZiing Blockchain  the private blockchain ......................................................................................................................24 7.2. iZiing Wallet  the user interface of the iZiing Platform .........................................................................................25 7.3. Robo-advisor can create a personalized portfolio of BTFs for a user..........................................................25 8. Security of the components of the iZiing Platform ......................................................................................................26 8.1. Legal status of the iZiingPlatform and its tokens .......................................................................................................26 8.2. Security of the iZiing Wallet ........................................................................................................................................................26
+
+Page 2 of 41
+
+
+
+8.3. Security of the BTF assets.............................................................................................................................................................26 8.4. Security of the private iZiing Blockchain .........................................................................................................................26 9. Prospective partners for the iZiing Platform .......................................................................................................................27 10. Competitive Landscape......................................................................................................................................................................27 10.1. Fiat competitors ....................................................................................................................................................................................27 11. Business model of the iZiing Platform.....................................................................................................................................28 11.1. Fees and commissions of the iZiing Platform................................................................................................................28 11.2. Volume of trading in BTFs on the iZiing Platform, estimate................................................................................29 11.3. Income of a Mini Node of the iZiing Platform, estimate .........................................................................................30 11.4. Income of a Master Node of the iZiing Platform, estimate ..................................................................................30 12. Roadmap .......................................................................................................................................................................................................31 12.1. Part I. Technical development.....................................................................................................................................................31 12.2. Part II. Business development.....................................................................................................................................................31 12.3. Part III. List of main BTFs to be created ...............................................................................................................................33 13. Our team.........................................................................................................................................................................................................36 14. Terms of the iZiing crowdsale.......................................................................................................................................................37 14.1. Terms of iZiing Pre-ICO  40% discount, 500 000 USD hardcap .....................................................................37 14.2. Referral campaign during Pre-ICO - 5% referral bonus ...........................................................................................37 14.3. Terms of iZiing ICO  hard cap is 30 mln USD ...............................................................................................................38 15. Tokens distribution after ICO event............................................................................................................................................39 16. Use of funds collected at the crowdsale ...............................................................................................................................41
+
+Page 3 of 41
+
+
+
+EXECUTIVE SUMMARY
+
+
+
+iZiing project is about developing and marketing Blockchain Traded Funds (BTF) as the solution to problems of limited instruments to make savings in emerging countries and in crypto world
+
+ A BTF is the next generation of Exchange-Traded Fund (ETF) put on a blockchain and to be sold for a crypto currency as well as fiat currencies.
+
+ An ETF is a marketable security that tracks a basket of assets (stocks, commodities) through buying those assets physically or getting an exposure to them.
+
+ ETFs have lower fees and better risk/return than most of hedge funds and mutual funds.
+
+ As of August 2017, ETF funds hold c. $4trn of assets and show 5yr CAGR of ~15%.
+
+ 88% of ETF assets are in USA+EU, with only 12% in developing countries.
+
+iZiing team have prepared the BTF concept to enter these untapped markets  iZiing team has experience in creating passive ETFs which cover 85% of world stocks by capitalization and willing to bring that experience and benefits to crypto world.  Storing accounts on private Blockchain with many node holders shall embed trust in the records of ownership.  Robo-advisors  natural extension of BTF concept  will construct personal investment portfolios using the best investment practices supported by the theories of Nobel laureates.
+
+We are launching an ICO to distribute the Blockchain nodes and to collect funds for development and marketing of the iZiing Platfrom
+
+ 2018  development of the private blockchain, creation of the base international legal structure, pilot launch of the first BTFs and expansion of the product range to 15-20 trackers of major world indexes and assets as well as major crypto assets.
+
+ 2019  launch of B2B2C Robo-advisor solutions in Asia, Middle East, and other emerging and developed markets.
+
+All participants of the iZiing ICO may become the node holders in the private iZiing Blockchain
+
+The node owners will be entitled to earn up to 70% of trading commissions generated by the iZiing Platform in the form of transaction commissions
+
+
+
+ iZiing Pre-ICO starts 12.12.2017 offering 40% discount, price of 1 IZG token = 0,66 USD. Pre-ICO hardcap is 0,5 Mln USD.
+
+ iZiing ICO start price is 1 IZG = 0,77 USD; end price = 1,10 USD. ICO softcap is 5 Mln USD, hardcap is 30 Mln USD.
+
+
+
+ 30,8 Mln (44%) of IZG tokens is going to be sold at a crowdsale during Pre-ICO and ICO out of 70 Mln IZG.
+
+ 20% of IZG tokens will be preserved for the project founders and the new hires.
+
+ 36% of IZG tokens will be allocated to special funds for other stakeholders.
+
+
+
+Page 4 of 41
+
+
+
+1. Glossary
+
+Mutual fund is an investment vehicle made up of a pool of moneys collected from many investors for the purpose of investing in securities and operated by professional money managers. Exchange-Traded Fund (ETF) - is a type of fund that owns the underlying assets (shares of stock, bonds, oil futures, gold bars, foreign currency, etc.) and divides ownership of those assets into shares. ETF shareholders are entitled to a proportion of the profits, such as earned interest or dividends paid, and they may get a residual value in case the fund is liquidated. The ownership of the fund can easily be bought, sold or transferred in much the same way as shares of stock, since ETF shares are traded on public stock exchanges. Throughout this text, we use "ETF" as a generic acronym for a range of exchange-traded products, including those organized under the Investment Company Act of 1940, various trust structures, and exchange-traded notes. Proof of Importance (POI) - a further development of Proof - of - Stake consensus. It is a consensus based on the capability of the node to process smart contracts. SLA (Service Level Agreement) - Agreement on the level of service which represents a formal agreement between the customer of service and its supplier, containing a description of services, rights and obligations of the parties and, most importantly, a consistent level of quality of the service. Blockchain Traded Fund (BTF) - is a blockchain analogue to ETF. Each BTF would have its own BTF-tokens with the name of the fund. Special Purpose Vehicle (SPV)  a company that issues and redeems BTFs. BTF-token - is an asset token which would be backed by real fiat financial assets of different kind: gold and commodity contracts, equities, bonds, etc. These assets would be actually bought by iZiing Platform and put into a separate SPV-company. The BTF-tokens would legally guarantee actual ownership of the assets held in the SPV. iZiing project  is the endeavor of creating the iZiing Platform iZiing Platform  is the interlinked system of iZiing Wallet, iZiing Blockchain for storing the BTF contracts, a third-party custodian, broker and various sales channels including our own Robo-Advisor. iZiing Technologies Inc.  is the company-operator of the iZiing Platform charged with the tasks of developing it and extending into the new markets. iZiing Wallet  is a downloadable application which provides an overview and breakdown of the user accounts, and facilitates purchasing, selling, transferring and exchanging BTF-tokens..
+
+iZiing Blockchain  is a private blockchain created for secure BTF trading in fiat and crypto-currencies.
+
+Page 5 of 41
+
+
+
+2. The state of the financial markets
+
+The Blockchain Traded Funds1 (BTF) may become interesting savings and investment instrument for both crypto and fiat investors.
+
+2.1. Crypto financial market: highly volatile and bound to the price of BTC
+
+Bitcoin (BTC) price shows annualized volatility2 of more than 70%. BTC Annualized Volatility and Future Projection
+
+Source: www.sifrdata.com
+
+1 Blockchain Traded Fund (BTF) - is a new generation of Exchange-Traded Fund put on blockchain. Each BTF would have its own BTF-tokens with the name of the fund. 2 Volatility is a measure of the dispersion of returns. Shown below are annualized volatilities based on 90 days of log returns calculated from volume weighted average daily prices.
+
+Page 6 of 41
+
+
+
+Price of other crypto currencies move together with the price of BTC providing high positive correlation and little diversification opportunities.
+
+Cryptocurrency Correlation Matrix
+
+Source: www.sifrdata.com Correlation amongst assets is the degree to which they move in tandem. The values range between -1 and +1, where a value of -1 means that the returns move in opposite directions (e.g. BTC up 0.2% and ETH down -0.2%) and a value of +1 means the returns move in the same direction (e.g. BTC up 0.2% and ETH up 0.2%). A value of zero denotes no (linear) dependence between the assets. The results can be interpreted as follows: 0.5 to 1: Strong positive relationship 0.3 to 0.5: Moderate positive relationship 0.1 to 0.3: Weak positive relationship -0.1 to 0.1: No linear relationship -0.1 to -0.3: Weak negative relationship -0.3 to -0.5: Moderate negative relationship -0.5 to -1.0: Strong negative relationship The plot above shows 90 day log returns calculated from volume weighted average daily prices.
+
+Page 7 of 41
+
+
+
+As of November 2017 crypto market shows high degree of volatility1 of returns if compared to fiat markets, e.g. to main US stock index of S&P 500.
+
+Volatility of Cryptocurrency Returns compared to S&P 500 stock index
+
+Source: www.sifrdata.com High volatility provides crypto investors with opportunity to place speculative bets with a potential of high returns, but neither stability nor diversification required to make savings and stable investments.
+
+All crypto investors are facing the problem of what to do with their crypto profit and how to diversify their risks
+
+Tether (tickers USDT and EURT) seems to be the only crypto reserve asset. Exit or exposure to fiat currencies and assets is another opportunity. The BTF tokens will be based on fiat assets and may become interesting savings instrument for crypto holders.
+
+1 Volatility is a measure of the dispersion of returns. Shown below are annualized volatilities based on 90 days of log returns calculated from volume weighted average daily prices.
+
+Page 8 of 41
+
+
+
+2.2. Fiat financial markets: ETFs provide exposure while keeping fees low
+
+An individual investor willing to save his hard-earned money has several instruments available:
+
+a) Holding cash reserves  but they are prone to inflation.
+
+b) Making a bank deposit but it has low interest rate (zero in Eurozone, negative in Denmark, Sweden, Switzerland and Japan).
+
+c) Buying a real-estate. But it requires management and usually produces returns less than those of a stock market.
+
+d) Buying financial securities manually via a stock broker, buying shares of a mutual fund or an ETF fund1.
+
+A mutual fund is an investment vehicle made up of a pool of moneys collected from many investors for the purpose of investing in securities such as stocks, bonds, money market instruments and other assets. Mutual funds are operated by professional money managers, who allocate the fund's investments and attempt to produce capital gains and/or income for the fund's investors.
+
+Mutual funds give small or individual investors access to professionally managed portfolios of equities, bonds and other securities. Each shareholder, therefore, participates proportionally in the gains or losses of the fund. Mutual funds invest in a wide amount of securities, and performance is usually tracked as the change in the total market cap of the fund, derived by aggregating performance of the underlying investments.
+
+Mutual fund units, or shares, can typically be purchased or redeemed as needed at the fund's current net asset value (NAV) per share, which is sometimes expressed as NAVPS. A fund's NAV is derived by dividing the total value of the securities in the portfolio by the total amount of shares outstanding.
+
+An ETF, or exchange-traded fund, is a marketable security that tracks an index, a commodity, bonds, or a basket of assets like an index fund. Unlike mutual funds, an ETF trades like a common stock on a stock exchange. ETFs experience price changes throughout the day as they are bought and sold. ETFs typically have higher daily liquidity and lower fees than mutual fund shares, making them an attractive alternative for individual investors.
+
+An ETF is a type of fund that owns the underlying assets (shares of stock, bonds, oil futures, gold bars, foreign currency, etc.) and divides ownership of those assets into shares. The actual investment vehicle structure (such as a corporation or investment trust) will vary by country, and within one country there can be multiple structures that co-exist. Shareholders do not directly own or have any direct claim to the underlying investments in the fund; rather they indirectly own these assets. Albeit many ETF funds provide an option of physical redemption of its ETFs  an option to exchange a minimum required amount2 of ETFs for its underlying assets.
+
+
+
+1 Throughout this text, we use "ETF" as a generic acronym for a range of exchange-traded products, including those organized under the Investment Company Act of 1940, various trust structures, and exchange-traded notes.
+
+
+
+2 Based on size of minimum redemption basket
+
+
+
+Page 9 of 41
+
+
+
+Characteristics of ETFs, Individual Stocks, and Mutual Funds
+
+
+
+Source of funds features - www.indexstrategyadvisors.com ** Source for Average Management Fees - www.etf.com1
+
+Exchange Traded Funds (ETFs) take lower fees than mutual funds, and as result produce better returns on average.
+
+The shares of ETF funds are traded on a stock exchange similar to any other shares. This is convenient for the investors. The ETFs usually track an index or transparent basket of assets, while a Mutual Fund is less transparent. The Securities and Exchange Commission (SEC) requires that mutual funds have at least 80% of assets in the particular type of investment implied in their names; how the remaining assets are invested is up to the fund manager. However, the different categories that qualify for the required 80% of the assets may be vague and wide-ranging.
+
+So ETF funds became more attractive than mutual funds and in 2015, 2016 and first half of 2017 ETF funds inflow have surpassed that of the mutual funds.
+
+
+
+1 http://www.etf.com/etf-education-center/21012-why-are-etfs-so-cheap.html?nopaging=1
+
+
+
+Page 10 of 41
+
+
+
+Mutual Funds vs. ETF assets under management and inflows US ETF market, Billions USD
+
+
+
+Source: Investment Company Institute and FactSet
+
+World ETF market has grown to 4 trillion USD in August 2017 For comparison, capitalization of the whole crypto market have reached 0,2 trillion USD on
+
+1.11.2017
+
+Such growth is based on the competitive advantages of ETFs compared to classic investment funds: lower costs, greater transparency, they are more tax efficient, they provide diversification and a simple trading process on exchange. The ETF funds have a potential to eventually substitute the mutual funds, which gives ETF funds' AUM1 to reach target of 21 trillion of USD in the future. Blockchain Traded Funds by iZiing should capitalize on that trend.
+
+
+
+1 AUM  Assets under Management, the key metric for a hedge fund, mutual fund or an ETF fund
+
+
+
+Page 11 of 41
+
+
+
+USA is the leader in investing in ETF. Developing countries are lagging far behind in ETF penetration. This opens up a huge opportunity for the sale of BTFs by iZiing Platform.
+
+ETF AUM and inflows, Billions USD by country
+
+Source: First Bridge ETP Global Database; Data as of December 31, 2016
+
+Page 12 of 41
+
+
+
+2.3. Opportunities for the Robo-advisors in the financial markets
+
+Recent trends of Robo-advisors is undermining traditional face-to-face contact with a trusted human financial advisor. In USA representatives of younger generation are firing their human advisors right after receiving inheritance. Robo-advisor offers for its customer: - lower fees than using services of an investment consultant, - convenience of using online service  there is no need to visit a retail outlet. For a financial service provider it offers lower distribution costs and wider geographical reach. Robo-advisory is the next step in the evolution of asset management and financial advice.
+
+Evolution of wealth management service models
+
+Source: A.T.Kearney 2015 Robo-Advisory Services Study
+
+Page 13 of 41
+
+
+
+Over the next five years, A.T. Kearney anticipates two waves of robo-advisory services adoption: Wave 1: Pioneers
+
+  Younger consumers (50% under 35 years old)  Highly employed (74% employed full or part time)  Sophisticated and risk-taking investors (e.g., high penetration of investment accounts, 20%
+
+self-described as risk takers)  Likely to adopt robo-advisory services in the near-term  Interested in a new, low cost, approach to investing (that is what BTFs are all about!) Wave 2: Enthusiasts  Slightly older than Pioneers  Highly employed (71% employed full or part time)  Less sophisticated investors (44% novice investors) and more cautions investors  First need to do research about the robo-advisory industry and the providers  Likely to be shifting funding from liquid funds to low cost, robo-advisory mutual funds
+
+and ETFs Adopters of robo-advisory services will be primarily moving from self-directed service models.
+
+Evolution of wealth management service models,
+
+% who selected each service model among banked consumers in each adoption wave whose households own investments
+
+Source: A.T.Kearney 2015 Robo-Advisory Services Study
+
+(Pioneers N=270, Enthusiasts N=1,041, Potential late adopters N=590, Unlikely adopters N=2,101)
+
+Page 14 of 41
+
+
+
+A.T. Kearney predicts that ~$2 trillion will be managed under robo-advisors by 2020 Estimated U.S. robo-advisors assets under management
+
+In trillions of dollars
+
+Source: A.T.Kearney 2015 Robo-Advisory Services Study
+
+1) Non-invested assets include liquid funds (e.g., cash and cash equivalent deposits) 2) Invested assets include credit market instruments, corporate equities, mutual funds, IRAs and 401(k)
+
+The iZiing team have unique experience of development of the first Robo-Advisor for financial services on Emerging Markets.
+
+Page 15 of 41
+
+
+
+3. Solution for financial markets: BTFs sold via Robo-advisor
+
+iZiing Robo-advisor and Blockchain Traded Funds (BTFs) would capitalize on most advanced technologies and the market situation. BTFs tokens are going to be created using blockchain technology and backed by real assets (usually financial instruments). The BTF infrastructure would replicate the standard ETF infrastructure, though due to the benefits of Blockchain it will be even more reliable and transparent. The underlying assets in BTFs would solve the most important problem of other cryptocurrencies: solid real-world price support. The other cryptocurrencies are too volatile due to their lack of ties with fiat world, they have no back up asset or guarantee. In addition to that, BTF may become an effective and reliable instrument for savings and investments in developing countries which currently lack such convenient instruments and mostly make savings using cash or bank deposits.
+
+iZiing Blockchain, as well as other global blockchain platforms, shall belong to its members and users
+
+Blockchain Traded Fund (BTF) - is a next generation Exchange-Traded Fund put on blockchain. Each BTF would have its own BTF-tokens with the name of the respective BTF fund. Robo-advisor would allow users to create and maintain a personal diversified portfolio of BTFs, while taking into account the investor's financial goals and risk tolerance. Private IZiing Blockchain with Proof-of-Importance consensus should embed trust in the system, while promoting user's activity at the same time.
+
+Page 16 of 41
+
+
+
+3.1. Tokens of the iZiing Platform
+
+3.1.1.iZiing tokens (IZG)  ERC20 utility tokens on a public blockchain
+
+During the crowdsale we are going to issue ERC20 iZiing tokens (IZG) on the Ethereum Network in order to attract funds necessary for the development of the iZiing project.
+
+IZG tokens are only created during crowdsale and their number is limited.
+
+Maximum number of IZG tokens is 70 million Price of 1 IZG token will be 1,10 USD at the ICO end
+
+When the private iZiing Blockchain would become operational then IZG tokens can be exchanged 1 to 1 for iZiing coins (IZC) of the private iZiing Blockchain.
+
+IZG (and IZC) are planned to be utility tokens used to pay transaction commissions in iZiing Blockchain . Size of commission for a transaction is planned to be 0,15% of the BTF value of that transaction. Both IZG and IZC tokens will be traded on crypto exchanges and should have a market exchange rate.
+
+This would not disrupt the stability of the BTF marketplace, since BTF price should not be based on the IZG/IZC price, but on the price of the underlying assets.
+
+For simplicity of comprehension we call "IZC" as "IZG" later in this text because in essence they would give the same rights to their owners.
+
+3.1.2.BTF-tokens  asset tokens backed by real assets on a private blockchain
+
+BTF tokens are asset tokens which shall be created later than ICO by an SPV-company and shall be backed by real fiat or crypto assets of different kind: gold and commodity contracts, equities, bonds, etc. These assets would be physically bought by the iZiing Platform and put on segregated accounts, each with its own market-maker to provide liquidity.
+
+The initial price of one BTF token would be around 100 USD in order to make it affordable for the retail investors
+
+A quantity of BTF tokens initially created by the SPV will depend on the value of the basket of the underlying assets.
+
+All BTF tokens are going to be stored on a private iZiing Blockchain for additional privacy and security. The price of the BTF tokens is going to be related to the currency and value of the underlying assets.
+
+The BTF-tokens would legally guarantee actual ownership of the assets held in the SPV
+
+SPV can issue several types of BTFs, each of them being fixed to an underlying asset similar to non-crypto ETFs. The underlying investment asset could be a commodity, equities or bond indices. The SPV according to its charter will be limited to investing each received US Dollar or Bit-
+
+Page 17 of 41
+
+
+
+coin into a corresponding financial asset. Information about actual holdings of an SPV company will be recorded in a private iZiing Blockchain and will be accessible on-line in form of a depo account statement provided by an independent third-party custodian. Therefore, all investors will always have clarity of the BTF's exposure to real assets. In other words, the SPV has a legal obligation to create and redeem BTF-tokens with real assets. Even if majority of BTF holders should decide that the SPV should be liquidated, which is highly unlikely event, then in any case the investors will receive the money owed to them by the SPV through the standard process of a company liquidation via sale of the BTF's underlying assets on a stock exchange. Normally BTFs will be made accessible to a wide range of clients via simple interface (mobile app and website). Liquidity for trading of BTF-tokens is going to be provided by a market-maker who will be always ready to buy or sell an unlimited amount of BTF-tokens. The unique quality of BTFs lies in their interlink of obligations created in Blockchain to those legally binding in real-life  the debt obligation contract signed by the private key that may be printed out on paper and used in court for a legal process exactly as one would use an ordinary paper contract.
+
+The hash of legal contract would be stored on the iZiing Blockchain, so to keep integrity of its text
+
+BTF buyer's returns will be affected by the price of BTF that is linked to the price of an underlying asset. Any income that may be produced by the underlying assets (like coupons or dividends) by default will be reinvested back into the underlying assets of a BTF (more of that same asset will be bought), and the value of that BTF would increase correspondingly. If investor would like to receive a regular cash-flow from his holdings of a BTF, then he/she can sell part of his/her BTF portfolio. This may be done automatically through the market-maker and other market participants. We plan to issue 15 to 20 different BTFs in 2018, including those of traditional investment asset classes (shares, bonds, commodities) as underlying, so investors can maximize their investment portfolio diversification.
+
+Page 18 of 41
+
+
+
+4. Solution for the miners - Run the nodes in the iZiing Blockchain 4.1. Problems of the Crypto Miners
+
+Apart from volatile exchange rates of the minable crypto currencies the crypto miners have two other major problems. 1) The constant "arms race" because of the increasing complexity of mining makes hardware equipment obsolete in 1 to 1,5 years.
+
+The complexity of mining a Bitcoin (logarithmic scale)
+
+Source: Wikipedia - History of Bitcoin difficulty 2) The problem of the utility-value of the earned cryptocurrency. Most crypto currencies do not yet provide an opportunity to buy real goods and services on them, meanwhile they are purely speculative. That makes their price very volatile and sensitive to both news and speculation.
+
+4.2. Solutions of the iZiing Blockchain for the Crypto Miners
+
+A miner in iZiing Blockchain will be able to engage in really useful work of processing financial transactions and would be rewarded for her work under the terms of POI consensus. A miner must hold a node in the private iZiing Blockchain in order to get rewards. Instead of searching for hashes as in systems with POW consensus, the node holders in iZiing Blockchain will be processing transactions for the provision of services. A miner should be able to see her rating and earnings in the iZiing Wallet interface. It is planned that in order to run a Mini Node a smartphone would be sufficient with installed client software (iZiing Wallet app) and minimum deposit of 90 IZC (~100 USD). In order to run a Master Node server hardware would be required which would have to be online with installed Master Node software. Also minimum deposit of 2700 IZC (~3000 USD) will be required.
+
+Page 19 of 41
+
+
+
+4.3. Proof-of-Importance consensus (POI) of the private iZiing Blockchain
+
+Proof-of-Importance is a blockchain consensus mechanism introduced by NEM1. iZiing project may use its version modified for the financial services system to reward node holders of the private iZiing Blockchain .
+
+In addition to ideas successfully tested in the NEM system we are planning to use ideas from the DASH2 system, in particular the idea of Master Nodes giving special computational tasks to the Mini Nodes to improve the quality of the hash of blocks in order to decrease the feasibility of hacking the blockchain. Later the Master Nodes may give other types of computational tasks in order to distribute workload.
+
+These ideas are going to be implemented stage by stage. Essentially we should start the iZiing Blockchain protocol development from the Delegated Proof-of-Stake consensus, then adding light POW-part for the Mini Node holders.
+
+POI consensus functions similarly to Proof-of-Stake (POS): nodes need to deposit an amount of tokens to be eligible for creating blocks and are selected for processing of a transaction roughly in proportion to some score. In Proof-of-Stake, this `score' is one's total vested amount, but in Proofof-Importance, this score includes more variables including the recent activity of the nodes.
+
+We consider POI consensus to be more democratic as compared to the POS consensus, where nodes may become inactive after having accumulated enough wealth
+
+4.4. Opportunities for the Mini Node holders in iZiing Blockchain
+
+Each user of iZiing Blockchain would have to download the iZiing Wallet and pass an identity check so he could sign his orders and contracts with a private key. This would also defend our blockchain from Sybil attacks. Effectively each user would have his own Mini Node in the iZiing Blockchain. For a user of Mini Node the primary inputs of his Importance Rating may be:
+
+1) Amount of IZG tokens in deposit for the purpose of activating the node: minimum 90 IZG (~100 USD), maximum 2300 IZG3 (~2500 USD).
+
+2) Activity in transaction generation  e.g. ordering and promoting services of the iZiing Platform in the past 30-90 days, with more recent transactions weighted more heavily.
+
+We envisage three types of transaction generation activity:
+
+ Investor's activity on the iZiing Blockchain: buying/selling BTF tokens.
+
+ Analyst's activity on the iZiing platform: publishing articles inside the iZiing Community, receiving rating for those articles ("likes"), making comments + "likes" of the comments, etc.
+
+1 https://nem.io/wp-content/themes/nem/files/NEM_techRef.pdf#section.7
+
+2 https://dashpay.atlassian.net/wiki/spaces/DOC/pages/8585240/Selfsustainable+Decentralized+Governance+by+Blockchain+Budget+System 3 Minimum amount will be needed as collateral for possible misbehavior. Maximum amount will be set in order to discourage the hoarding of tokens and to provide liquidity for the system.
+
+Page 20 of 41
+
+
+
+ Promoter's activity: referral links for the new downloads of the iZiing Wallet, referral links for the purchase of particular BTFs inside the iZiing Community.
+
+3) Activity in transaction execution  e.g. executing special tasks given by a host Master Node. Each Mini Node must choose a host Master Node in order to be able to receive its share of commissions from transactions. Number of slots at each Master Node will be limited thus dispersing the network and removing possible single points of failure. The Importance Rating of a Mini Node addresses primary criticism of Proof-of-Stake that people simply hoard as many tokens as possible and reap the rewards from that. This concentrates wealth while discouraging transactions. The Importance Rating means that spending tokens will increase it. These ideas would be implemented step-by-step based on their utility for the system.
+
+4.5. Opportunities for the Master Node holders in the iZiing Blockchain
+
+In order to run a Master Node server hardware would be required which would have to be online and have installed the Master Node software. For a user who wishes to own a Master Node the primary inputs of his POI-rating may be: 1) Amount of IZG tokens in deposit for purpose of activating the node: minimum 2700 IZG (~3000 USD), maximum 27000 IZG1 (30000 USD). 2) Number of days from the past 100 days, when the Master Node was online and performed at the level required by the SLA2. 3) A Master Node standing in the list of best performing Master Nodes in the network. This list may take into account such parameters as: speed of signing of the block of transactions, number of hosted Mini Nodes, total sum of Importance Ratings of hosted Mini Nodes etc. These ideas would be implemented step-by-step based on their utility for the system.
+
+1 Minimum amount will be needed as collateral for possible misbehavior. Maximum amount will be set in order to discourage the hoarding of tokens and to provide liquidity for the system. 2 SLA (Service Level Agreement) - Agreement on the level of service which represents a formal agreement between the customer of service and its supplier, containing a description of services, rights and obligations of the parties and, most importantly, a consistent level of quality of the service.
+
+Page 21 of 41
+
+
+
+5. How it works (from the iZiing Platform perspective)
+
+The creation of the BTF infrastructure will be financed by funds collected during ICO. The BTF infrastructure includes an SPV company, fiat assets, third-party custodian, broker, BTF tokens, and iZiing Wallet.
+
+First to launch a BTF fund iZiing Platform shall establish a special SPV company. This company shall have all legal papers required by the financial regulators. Then the SPV company, using the funds starting from 1 mln USD1 shall purchase the underlying assets for the BTF fund and put them under supervision of an independent, regulated and trusted third party custodian. Therefore the presence of the assets can be proven at any time. These initial funds may come from a major investor or from the funds iZiing Platform may have collected during an ICO.
+
+Then the SPV company should issue the BTF tokens in amount and denomination related to the value of the underlying assets.
+
+Issued BTF-tokens are going to be traded on the private iZiing Blockchain with a constant presence of a market-maker in order to provide constant liquidity.
+
+A market-maker is an agent selected by the iZiing Platform that sets strict bid/ask spreads. Any participant of the iZiing Blockchain can trade BTFs around that spread or create a market order with their own preferred price.
+
+In case there is no willing market-maker for any of the BTF funds the iZiing Platform shall play that role for that BTF fund, and shall search for an independent and professional market-maker. In this case any BTF investor will be able to redeem their holdings directly via SPV.
+
+
+
+1 To be confirmed
+
+
+
+Page 22 of 41
+
+
+
+For index BTF funds an index replication can be done using the same technology which is applied to managing ETFs. Both physical and synthetic replication is possible. Physical replication means buying and holding the assets which constitute the index. Synthetic replication means using derivatives to replicate the index dynamics.
+
+
+
+6. How it works (from a user perspective)
+
+
+
+Any investor would be able to easily join the IZiing Blockchain by completing a simple on-line authentication process.
+
+Purchase and sale of a BTF should be done through the iZiing Wallet app, which will be available on a mobile device or computer. Access to that wallet is granted after a quick and simple registration. After registration client can create a private key used in BTF transactions as well as personal password for the wallet. Essentially there are two ways for BTF transactions depending on the volume traded. For large volumes, trading can be done directly with the SPV (similar to creation mechanism as in case of standard ETFs). Smaller volumes can be bought and sold through the market maker or between the BTF holders on the market. If due to operational reasons no marketmaker is available during certain period (1-2 weeks), smaller volumes will also become eligible for direct redemption via SPV.
+
+A user can create a portfolio of BTFs using a Robo-advisor service or by picking a range of BTFs by himself. A Robo-advisor platform can automatically create and manage portfolio of BTFs that can be constructed by taking into account the investor's investment goals and risk tolerance.
+
+
+
+6.1. Option 1  for crypto holders - purchasing BTFs using cryptocurrency
+
+
+
+1.
+
+
+
+Bank's client has $100 on his/her account.
+
+
+
+2. Using the existent digital currency exchange service such as Coinbase, $100 are converted into cryptocurrency
+
+
+
+3. Received cryptocurrency is transferred into client's wallet and then invested into BTFs.
+
+
+
+Page 23 of 41
+
+
+
+6.2. Option 2 for fiat holders  purchasing BTFs using fiat money
+
+Client can make an order to purchase BTF straight through the bank:
+
+In order to implement such process, a partnership with banks/payment systems will be organized so that BTF trading can be smooth. In this case, the bank's clients will be able to make an instantaneous purchase through their online banking software.
+
+7. Main components of the iZiing Platform
+
+Main IT components of the iZiing Platform are the iZiing Blockchain, iZiing Wallet and Robo-advisor.
+
+7.1. iZiing Blockchain  the private blockchain
+
+iZiing Blockchain  is a private blockchain created for secure BTF trading in fiat and crypto-currencies.
+
+A separate private blockchain will also prevent unexpected Hard Forks of the main Ethereum Network
+
+iZiing Blockchain will be based on and developed using current capacities of the Ethereum Framework. Ethereum Framework provides one of most flexible Smart Contracts and have extensive array of development tools and development community which allows for fast development and guarantees the subsequent maintenance of the created system because of available support personnel. Since we are going to implement POI consensus, the transaction rate will not be a bottleneck at all. Even the current Ethereum POW strategy already provides sufficient bandwidth for transactions, and we can easily increase it to much higher values. Current transaction speed of Ethereum Network is 2 transactions per second. This is enough for our purpose,
+
+The ETF industry doesn't need the hard real-time transaction processing Page 24 of 41
+
+
+
+Waiting for connection services for one minute is not critical for the customer.
+
+ETF orders on fiat stock exchanges usually get executed in paper in T+2 mode, meaning that after the execution of an electronic order the price of the contract is set to the current market price, but physical issue of a legal document for the actual order execution normally takes place in two days' time.
+
+7.2. iZiing Wallet  the user interface of the iZiing Platform
+
+To access the iZiing Platform, each investor needs to install the iZiing Wallet. It allows managing IZG tokens account, mining node rating and income and BTF tokens account.
+
+The wallet application would be similar to one of online banking: it provides an overview and breakdown of the accounts, and facilitates purchasing, selling, transferring and exchanging BTFs.
+
+Transactions history is also available to be viewed at any time. At the later stages we may create an instrument similar to a bank debit card that shall make possible to use BTF token balances to make fiat payments at any POS terminal. Purchases will be made through an instant exchange of BTF tokens into the payment currency (similar to traditional transactions using currency different to the one in the bank account).
+
+The wallet shall meet all security requirements and shall have userfriendly interface. It shall combine all functions of standard onlinebanking applications and in addition to that it shall support payments of both crypto currency and fiat money.
+
+7.3. Robo-advisor can create a personalized portfolio of BTFs for a user
+
+The Robo-advisor is an online interface with an investment portfolio analytics module which will be available for iZiing Platform users free of charge.
+
+The Robo-advisor may recommend and create a portfolio that consists of BTFs based on several individual characteristics of the investor (risk tolerance, investment horizon and others). Furthermore, the Robo-advisor automatically rebalances the portfolio when necessary, based on investment goals of the user.
+
+As the BTF structure is very similar to the ETF structure, our current Robo-advisor technology does not need any major technological or process adaptations to work with BTFs.
+
+Page 25 of 41
+
+
+
+8. Security of the components of the iZiing Platform
+
+8.1. Legal status of the iZiingPlatform and its tokens
+
+We are planning to build two-tier legal structure: there will be main global legal structure based on Common Law and special legal entities for each of the countries we plan to sell BTFs in so to comply with their financial regulations.
+
+iZiing legal structure would be designed to comply with financial regulations The IZG token, which is to be sold at the crowdsale  is designed as a utility token. To substantially profit from holding them a user needs to make additional efforts. A BTF token is an asset token and as such it should be designed as such. This token is not sold at the crowdsale. When it is going to be sold on the platform it would comply to the financial regulations.
+
+8.2. Security of the iZiing Wallet
+
+Market leading security authentication for users will be used in line with current regulations applicable to fiat ETFs. We are planning to use industry standard hash algorithms like SHA256 and asymmetric open key
+
+cryptography based on the elliptic curves
+
+8.3. Security of the BTF assets
+
+Independent third-party custodian shall preserve the assets held in SPV company of a BTF fund. The BTF-ownership contract is deemed to be a debt obligation contract signed by the private key that may be printed out on paper and used in court for a legal process exactly as one would use an ordinary paper contract. So the BTF buyer should be able to defend her ownership rights if required.
+
+8.4. Security of the private iZiing Blockchain
+
+We are planning to implement full spectrum of measures in order to make the private iZiing Blockchain very stable and secure
+
+1) We will be spreading the IZG tokens during crowdsale in order to disperse the node ownership. 2) We are planning to setup a two tier node structure: Mini Nodes plus Master Nodes. Each Mini Node must choose a host Master Node in order to be able to receive its share of commissions from transactions thus forming a self-regulating community around a Master Node while optimizing the blockchain workload by taking computational tasks from the Master Nodes. 3) Number of slots at each Master Node will be limited thus dispersing the network and removing possible single points of failure.
+
+Page 26 of 41
+
+
+
+4) The minimum amount of IZG tokens required for a node to become activated should serve as a collateral for any case of fraud and/or misbehavior of the node owner.
+
+5) Also we will set the maximum amount of IZG tokens counted towards the Importance Rating of a node in order to discourage the hoarding of tokens. This should increase the number of nodes and provide extra liquidity for processing of transactions, thus making iZiing Blockchain more secure and more stable.
+
+6) We are planning to create the Community Development Fund (CDF) to provide constant liquidity of IZG tokens to run transactions on the iZiing Blockchain even at the times when the market would not provide them for some reason.
+
+7) 13% of transaction commissions would go to the CDF fund thus it should not dry out.
+
+9. Prospective partners for the iZiing Platform
+
+After creation of a BTF fund and its tokens they can be made available for purchase at any other market through API.
+
+We plan to partner with big banks, financial, telecom and airlines companies to provide services of our Robo-advisor to their customer base. Our Robo-advisor may start to recommend a portfolio composed of different BTFs. Later other asset classes and financial products may be included.
+
+We plan to partner with other FinTech service-providers to sell BTFs through their channels and their Robo-advisors, so that those Robo-advisors can recommend their clients to include a BTF to their portfolios.
+
+10.Competitive Landscape
+
+10.1. Fiat competitors
+
+Notable fiat competitors who are trading ETFs include companies such as iShares (subsidiary of the BlackRock), StateStreet, Vanguard and WisdomTree.
+
+They are mostly huge private asset management companies (WisdomTree being an exception) managing USD billions of assets and focused on providing services to the clients from the developed countries.
+
+Not all ETF trading firms have their own Robo-advisor solutions which gives the iZiingPlatform slight time advantage in using convenient online distribution channels for its product offering.
+
+Financial regulations of individual countries differ from those of developed world. Crypto currency has not been legally recognized in most countries. All this hinders expansion of huge financial companies, which are slow to innovate, sometimes inflexible and mostly trying to avoid possible damage to their brand and reputation in their main markets.
+
+Two tier legal structure of the iZiing Platform shall overcome that barrier. We are planning to have international umbrella legal structure based on Common Law and special regional legal structures to fully implement local regulatory requirements.
+
+We are going to be innovative and fast in using latest advances in blockchain technology and crypto currencies.
+
+Page 27 of 41
+
+
+
+11.Business model of the iZiing Platform
+
+11.1.Fees and commissions of the iZiing Platform
+
+Ongoing costs of the iZiing Platform are to be financed by management fees of 0.5% per annum built into BTF. Management fees of 0,5% is the standard fee size for an ETF fund. These fees shall be included in the BTF price and therefore affect the Net Asset Value of that BTF. Fees are going to be collected on a daily basis similar to fiat ETFs; in other words the value of the BTF will be reduced by 0.5%/365 each day. These fees will be used to finance the platform's operating activities including costs of the BTF funds market-makers1.
+
+Size of a commission for transactions is planned to be 0,15% of the BTF value. These commissions are planned to be split in the following way:
+
+Mini Nodes share of transaction commissions is planned to be 37%. Of them 20% is planned to be based on their Activity Rating, and another 17% are to be given for the execution of special tasks given by the Master Nodes. They are mainly tasks to produce calculations to improve the hash quality of the block of transactions. Other types of tasks may be added in the future. If Mini Nodes opt not to execute a task from a Master Node, then the dedicated 17% of commissions which could be theirs should go to the Community Development Fund (CDF).
+
+Master Nodes can get 33% of transaction commissions. Master Nodes are free to share any part of it with Mini Nodes in addition to commissions the Mini Nodes are allocated by default.
+
+Additionally during the first three years of iZiing Blockchain operation Master Nodes will receive a daily payment from the Network Development Fund (NDF). This payment shall promote the setup of Master Nodes at the start of the project, when there will be not much transactions in the system to support the running costs of the Master Nodes. The NDF fund will be created at ICO and should hold 10% of all generated IZG tokens. As soon as number of transactions stabilizes at the level sufficient to maintain the operations of the Master Nodes then all remaining tokens from NDF fund should go to the Community Development Fund.
+
+iZiing Technologies Inc. should get 20% of transaction commissions to improve the whole ecosystem and extend its operations by launching new BTFs and entering new countries.
+
+10% of transaction commissions shall go to the Community Development Fund (CDF). This fund will be created at ICO and in the beginning should hold 10% of all generated IZG tokens. The tokens from CDF will be used to pay for referrals made during ICO and to pay for the services of Advisors of the project. Later CDF should be replenished with 10% of gathered commissions from transactions in order to motivate the growth of the iZiing Community and to provide IZG tokens in case there would be a deficit of IZG tokens to run the transactions (deadlock) or to support sharp dips of the IZG exchange rate.
+
+
+
+1 Additionally during the first three years of BTF Blockchain operation market-makers may receive a daily payment from
+
+
+
+the Market-Makers' Fund (MMF). This payment shall promote the establishment of a market-maker for each BTF fund at the start of the project, when there may be not enough transactions in the system to support the running costs of a
+
+
+
+market-maker. The MMF fund will be created at ICO and should hold 8% of all generated IZG tokens. As soon as number of transactions stabilizes at the level sufficient to maintain the market-makers' operations then all remaining tokens from
+
+
+
+the MMF fund should go to the Community Development Fund.
+
+
+
+Page 28 of 41
+
+
+
+11.2.Volume of trading in BTFs on the iZiing Platform, estimate
+
+The volume of transactions traded on the iZiing Platform can be forecasted using the historical dynamics of ETF funds growth, especially dynamics of BlackRock iShares, which is now one of the leading ETF providers.
+
+AUM of ETFs were doubling each year in the first 3 years of operations
+
+Source: BlackRock iShares iZiing Platform is entering rapidly growing crypto market with the product offering tested in fiat world. In the 5th year of operations we project AUM of 30Bln.USD (~0,43% of total ETF market).
+
+
+
+! Source: iZiing Platform, estimate
+
+
+
+Year
+
+
+
+1
+
+
+
+2
+
+
+
+3
+
+
+
+4
+
+
+
+5
+
+
+
+Total AUM Bln.USD
+
+
+
+2
+
+
+
+8
+
+
+
+15
+
+
+
+25
+
+
+
+30
+
+
+
+(right scale)
+
+
+
+Total comissions,
+
+
+
+14
+
+
+
+54
+
+
+
+101
+
+
+
+169
+
+
+
+203
+
+
+
+Mln.USD (left scale)
+
+
+
+Page 29 of 41
+
+
+
+11.3.Income of a Mini Node of the iZiing Platform, estimate
+
+Source: iZiing Platform, estimate based on a scenario simulation
+
+11.4.Income of a Master Node of the iZiing Platform, estimate
+
+Source: iZiing Platform, estimate based on a scenario simulation Page 30 of 41
+
+
+
+12.Roadmap
+
+We can move very quickly, since we already possess the connections and knowledge which are necessary to setup an ETF-type fund, we have ready Robo-advisor software, we have the blueprint for the iZiing Blockchain . What is left to do is the actual development of the blockchains, and creation of the legal framework, and global marketing activities. So our plan is: 2018  Creation of an international based legal structure, pilot launch of the first BTFs and expansion of the product range to 15-20 trackers of major world indexes and assets 2019  Launch of the B2B2C Robo-advisor solutions in Asia, Middle East, and other emerging and developed markets. Detailed list of activities is presented below.
+
+12.1.Part I. Technical development
+
+1. Development of the private iZiing Blockchain - POI consensus protocol and Smart-Contracts development - Master Nodes and Mini Nodes software development and testing - Software roll-out among the node-holders 2. Development of the iZiing Wallet - Advanced user-ID storage on blockchain - Activity Bonus Fund capabilities, mechanics and ratings - Mining nodes GUI - Additional functions development - Third-party apps development and integration 3. Integration testing and roll-out of the iZiing Platform
+
+12.2.Part II. Business development
+
+1. Establishment of the regional hubs: - APAC: Singapore, Hong-Kong, Jakarta - EU: London, Amsterdam, Frankfurt - EMEA: Tel-Aviv - USA: San-Francisco, New-York - LATAM: Rio de Janeiro, Buenos-Aires 2. B2B marketing activities  supporting the partner network growth
+
+Page 31 of 41
+
+
+
+3. B2C marketing activities - growing and supporting of user base 4. Support and development of the Miners Community - Support and development of the Master Node holders' community - Support and development of the Mini Node holders' community
+
+Page 32 of 41
+
+
+
+12.3.Part III. List of main BTFs to be created
+
+Page 33 of 41
+
+
+
+1 Money market BTF Money Market BTF may invest in U.S. investment-grade short-term debt. These funds are among the least risky in the fixed income space but their yields will be lower than many longer duration products.
+
+2 Corporate bonds BTF (high yield, emergency markets) Emerging Markets Bonds BTF may invest in corporate debt issued in emerging market countries. Emerging markets bonds tend to have lower credit quality than those of developed nations, and thus generally offer much higher yields.
+
+3 China market BTF China BTF may invest in stocks of companies that are domiciled in China.
+
+4 Australia market BTF Australia BTF may invest in stocks of companies that are domiciled in Australia.
+
+5 Germany market BTF Germany BTF may invest in stocks of companies that are domiciled in Germany.
+
+6 Japan market BTF Japan BTF may invest in stocks of companies that are domiciled in Japan.
+
+7 United Kingdom BTF UK BTF may invest in stocks of companies that are domiciled in UK.
+
+8 USA Information Technology BTF This BTF invests in equities which comprise the NASDAQ index.
+
+9 USA market BTF This BTF may invest in equities which comprise the RUSSEL 2000 index.
+
+10 Gold commodity BTF other traditional commodities in BTFs Gold BTF may invest investors with exposure to gold by tracking the price changes of gold.
+
+11 Crypto currency basket BTF This BTF may invest in crypto currencies with top valuations. See: https://coinmarketcap.com/coins/
+
+12 ICO broad BTF (large caps) This BTF may invest in crypto assets with top valuations. See: https://coinmarketcap.com/tokens/
+
+13 ICO broad BTF (small caps) This BTF may invest in crypto assets with middle-market valuations.
+
+Page 34 of 41
+
+
+
+14 Technology blockchain BTF This BTF may invest in crypto assets which comprise various blockchain platform technology developers.
+
+15 Blockchain platform providers BTF This BTF may invest in crypto assets which comprise various blockchain platform providers.
+
+16 Other sectorial blokchain BTFs are targeted to reflect the future market trends in different areas of activities.
+
+12.4.
+
+Page 35 of 41
+
+
+
+13.Our team
+
+Our team has 20 years of experience in the financial industry. Our international project team consists of highly experienced investment professionals who have achieved success in various aspects of the financial markets including the wealth management sector, (launch of several ETFs and hedge funds) as well as FinTech (development and launch of the first Robo-advisor in Russia). We have experience in creation and management of European ETF funds which cover 85% of world stock capitalization. They include ETFs that cover market indices of USA, UK, Germany, China, etc., bonds and commodities (gold). As of October 2017 these funds are the only ETFs traded on the Moscow Exchange. Thanks to the work of our team, Russian investors now have the opportunity not only to invest into foreign assets using ETFs but to solve individual's investment requirements using the single Robo-advisor available in Russia (automatic wealth management platform created by the iZiing team). We have already created a blueprint of the GUI and the database for the private iZiing Blockchain specifically designed for the BTF environment.
+
+Page 36 of 41
+
+
+
+14. Terms of the iZiing crowdsale
+
+We plan to organize crowdsale in two stages: the Pre-ICO event and the main ICO event.
+
+Participation in iZiing crowdsale provides an opportunity to create deposits of IZG tokens which will be required for holding nodes in the private iZiing Blockchain
+
+14.1.Terms of iZiing Pre-ICO  40% discount, 500 000 USD hardcap
+
+We are planning to launch a Pre-ICO stage of crowdfunding from 12th to 26th of December 2017 to test our concept and systems required for the main ICO event. Pre-ICO start date is 12th of December 2017. Pre-ICO soft cap is 100 000 USD.. If we don't collect the soft cap, we shall return all contributions to the backers minus transaction fees of the Ethereum Network. Pre-ICO hard cap is 500 000 USD. Pre-ICO price is 0,66 USD for 1 IZG token.
+
+Participants of Pre-ICO effectively may get 40% discount to the ICO-end price of 1,10 USD for 1 IZG
+
+During Pre-ICO we accept Ethereum. If you want to contribute BTC  please let us know in advance.
+
+14.2.Referral campaign during Pre-ICO - 5% referral bonus
+
+To increase the project visibility we are going to organize the referral campaign during Pre-ICO. After the purchase of IZG tokens each baker shall receive a referral link which he/she can send to other people. If that link is used to purchase the IZG tokens, the referring party receives 5% of that amount (in form of additional IZG tokens) effectively increasing discount to 45%. The referral bonus will be paid at the completion of the Pre-ICO.
+
+Page 37 of 41
+
+
+
+14.3.Terms of iZiing ICO  hard cap is 30 mln USD
+
+ICO start date is to be announced after the Pre-ICO end date.
+
+ICO soft cap is 5 mln USD
+
+We are confident in our business model. If we don't collect the soft cap, we shall return all contributions to the backers minus transaction fees of the Ethereum Network. ICO hard cap is 30 000 000 USD. ICO start price shall be 0,77 USD for 1 IZG token. Early contributors of ICO effectively may get 30% discount to the ICO-end price of 1,10 USD for 1 IZG. The bonus scale of ICO is to be announced before the ICO start. The ICO end price shall be 1,10 USD for 1 IZG. ICO participants can get 5% referral bonus in IZG tokens under the same terms as during Pre-ICO. Maximum number of IZG tokens to be sold during Pre-ICO and ICO is 44% of total - 30 800 000 IZG. We accept Ethereum. If you want to contribute BTC  please let us know in advance. Possibility of making contributions in other crypto currencies will be announced before the ICO start date.
+
+Page 38 of 41
+
+
+
+15.Tokens distribution after ICO event
+
+
+
+Source: iZiing Platform
+
+
+
+#
+
+
+
+IZG tokens allocation
+
+
+
+1 Crowdsale (Pre-ICO and ICO)
+
+2 Bounty fund
+
+3 Community Development Fund(CDF)
+
+4 Market-Makers Fund (MMF)
+
+5 Network Development Fund (NDF)
+
+8 Reserve
+
+6 New Hires
+
+7 Founders
+
+Total:
+
+
+
+%
+
+44%
+
+2% 8%
+
+8%
+
+8%
+
+10% 10% 10% 100%
+
+
+
+Total tokens issued, IZG 30 800 000
+
+1 400 000 5 600 000
+
+5 600 000
+
+5 600 000
+
+7 000 000 7 000 000 7 000 000 70 000 000
+
+
+
+Source: iZiing Platform
+
+
+
+Page 39 of 41
+
+
+
+Page 40 of 41
+
+
+
+16.Use of funds collected at the crowdsale
+
+We envisage that our project has three stages each with their own financing requirements. Stage 1  The launch of iZiing Platform with private iZiing Blockchain as a basis and 10 BTFs  requires minimum 5 mln USD of funding. This amount we set as a soft cap of ICO. Stage 2  The launch of B2B2C Robo-advisor solution on top of working iZiing Platform for investors in Asian countries (notably China, Japan, Korea) and other developing markets  requires another 10 mln USD. Stage 3  To outrun our competitors we must be quick and expand operations to many countries. Extensive growth of partner network, user base and BTFs for wide spectrum of assets requires additional financial support that will accelerate the products roll-out. For this reason additional 15 mln USD are required. Thus the total funds required for the rapid success of the iZiing project globally is 30 mln USD. If we don't collect the soft cap of 5 mln USD required for the Stage 1 of the project, we shall return all contributions to the backers minus transaction fees of the Ethereum Network.
+
+Page 41 of 41
+
+
+
+

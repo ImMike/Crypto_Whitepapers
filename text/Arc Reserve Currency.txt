@@ -1,0 +1,765 @@
+ARC PRIMER AND OVERVIEW (NON-TECHNICAL1)
+
+A practical, intrinsic-value and financial-market approach for a stablecoin; established and operated by a ring-fenced Issuer.
+
+ARC Reserve Currency ("ARC") is an intrinsic-value stablecoin. It is an ERC20 compliant token, whose price is related to a pool of underlying assets held by a special purpose vehicle2 ("the Issuer").
+
+National currencies and digital currencies have limitations as stores of value and units of measure  two of the key elements of a desirable currency. National currencies are hamstrung by socio-economic factors. Digital currencies face challenges from speculation and volatility.
+
+ARC is a digital currency with the primary purpose of acting as an effective store of value and unit of measure: stable in real terms, appreciating in nominal terms.
+
+ARC uses currency diversification and exchange rate controls to enable it to price within a forecastable range and reduce volatility. Its exchange rate is supported by a base rate return arising from diversified lending and fixed income investments.
+
+ARC has wide ranging use cases and consequences, for example:  As a safe-haven currency: a default store of value for investors and savers;  As a benchmark currency: to enable pricing of other digital currencies and tokens.
+
+ARC is infinite, non-dilutive3 and Coin issue can be instantaneous4. Coin issuing events are structured to match demand and ensure that there is no dilution in value per Coin to existing holders. There are elements of ARC which are not fully decentralised from the outset, with the objective to further decentralise, as and when the broader ecosystem is able support this.
+
+Authors
+
+
+
+Stephen Findlay
+
+stephen@arccy.org
+
+
+
+Dr Garrick Hileman g.hileman@jbss.cam.ac.uk
+
+
+
+ARC is a work in progress. Please contact us at hello@arccy.org for comment and suggestions.
+
+1 Please see `Technical Whitepaper' for technical details, available at www.arccy.org. 2 ARC Fiduciary Ltd (the "Issuer") is a ring-fenced entity, set up to hold the underlying assets of ARC. 3 New issues of the ARC don't dilute the value per Coin of existing ARC Coin. 4 These are necessary requirements for a stablecoin, given possible (and unknowable) long-run demand scenarios.
+
+1
+
+
+
+ARC Series Papers...................................................................................................................................3 1 Introducing ARC..............................................................................................................................4
+
+1.1 Introducing the ARC Reserve Currency ("ARC")....................................................................4 1.2 Why ARC is Important: Analysis of Money and Currency ..................................................... 5 1.3 The ICO and Minting ............................................................................................................. 5 1.4 What is a stablecoin .............................................................................................................. 6 2 How ARC Works: Financial Features .............................................................................................. 7 2.1 Section Overview .................................................................................................................. 7 2.2 Currency Diversification ........................................................................................................ 7 2.3 Support from a Predictable Underlying Asset Class..............................................................9 2.4 Exchange rate controls........................................................................................................13 2.5 Section Summary ................................................................................................................ 16 3 Net Asset Value Calculation of the Issuer .................................................................................... 17 3.1 Corporate Structure ............................................................................................................ 17 3.2 Legal Status of Coin Holders ............................................................................................... 17 3.3 NAV Calculation .................................................................................................................. 17 3.4 Buffer Account .................................................................................................................... 18 3.5 Section Summary ................................................................................................................ 18 4 How it Works: Modelled Outcomes ............................................................................................. 19 4.1 Overview ............................................................................................................................. 19 4.2 Modelling ARC: Establishing the Inputs .............................................................................. 19
+
+4.2.1 Time Period.....................................................................................................................19 4.2.2 Target Return for ARC.....................................................................................................19 4.2.3 Asset Allocations and Currency weighting......................................................................20 4.3 Modelled Performance ....................................................................................................... 21 4.3.1 Store of Value (appreciation and return) ....................................................................... 21 4.3.2 Unit of Measure (relatively low volatility) ...................................................................... 22 4.4 Section Summary ................................................................................................................ 23 5 Achieving Adoption ...................................................................................................................... 24 5.1 Use Cases ............................................................................................................................ 24 5.1.1 Safe-Haven Currency ...................................................................................................... 24 5.1.2 Benchmark Currency ...................................................................................................... 24 5.2 Marketability.......................................................................................................................24 5.2.1 Transparency .................................................................................................................. 25
+
+2
+
+
+
+5.2.2 Integrity .......................................................................................................................... 25 5.3 Scalability ............................................................................................................................ 26 5.4 Broader Market Acceptance of Blockchain Technologies...................................................27 6 Research Road Map and Regulation ............................................................................................ 28 7 Summary ...................................................................................................................................... 29 8 Appendices ................................................................................................................................... 30 8.1 Definitions...........................................................................................................................30 8.2 References and Further Reading.........................................................................................30
+
+ARC Series Papers
+
+Please note: this is one of a series of draft discussion papers that describe the intended nature and purpose of the ARC Reserve Currency. Please see www.arccy.org for further details, including the rationale for ARC. Nothing contained in these papers should be construed as legal or financial advice. The discussion papers included in the ARC series are: ARC Primer and Overview: (this document) a non-technical introduction to ARC, including the financial features of ARC Coin. ARC ICO  Private Placement: a legal document setting out the ICO, and key features for purchasers of ARC Coin. Lending and Fixed Income as an Asset Class: a review of the underlying asset class used to deliver a return for the Issuer and enable ARC to operate as a stablecoin. Overview of Money and Currency: a review of the limitations of national currencies and digital currencies and introduces some of the potential benefits of ARC. Research Road Map: a review of research undertaken so far to facilitate the launch of ARC (which is not covered elsewhere) and explores further work including areas for improvements. Technical Whitepaper: the technical overview of ARC, including Proof-of-Funds; Proof-of-Reserves, Proof-of-Identity and introducing mintARC and burnFrom functions. Who Benefits if ARC is a Success: a review the ecosystem and its participants, and who could gain if ARC is a success.
+
+3
+
+
+
+1 Introducing ARC
+
+A successful private currency would prevail if it is essentially stable in value and prevent both excessive stimulation of investment and the consequent periods of
+
+contraction. - Hayek5
+
+1.1 Introducing the ARC Reserve Currency ("ARC")
+
+ARC Reserve Currency ("ARC") is a digital currency with the primary purpose of acting as an effective store of value and unit of measure: stable in real terms, appreciating in nominal terms. The stability of ARC is enabled by exchange rate controls and investment diversification. The value appreciation of ARC will be supported by a target return, arising from a pool of lending and fixed income assets, diversified across currencies. Together, these enable the price of ARC to fall within a narrow and forecastable range, which is stable in real terms. ARC can be used as a digital safe-haven currency for investors and savers, it may also serve as a helpful reference currency for other digital projects and currencies. Based on verifiable third-party data, the simulated price of ARC over a historical reference period is broadly stable in real terms, and appreciates slowly in nominal terms (slightly above the average rate of inflation). It is more stable than BTC since the start of BTC:
+
+Figure 1: ARC (simulated) and BTC from 2005 to 20176
+
+5 "The Denationalization of Money", Hayek. Source: http://nakamotoinstitute.org/static/docs/denationalisation.pdf 6 ARC data is simulated based on the constructs set out in this paper, its IRR relative to USD over the simulated period, from 2009, is 2.1% per annum. Bitcoin data source: https://blockchain.info/charts/market-price
+
+4
+
+
+
+1.2 Why ARC is Important: Analysis of Money and Currency
+
+Currency and money have three key features:
+
+1. To facilitate transactions  transferability (e.g. enable purchases of goods or services) 2. To act as a store of value 3. To serve as an effective unit of measure (e.g. the price of a burger)
+
+National (fiat) currencies and digital currencies generally satisfy transferability. However, they have limitations when considered as a store of value or unit of measure.
+
+National currencies are undermined by socio-economic factors and centralisation, and are poor stores of value over the long run. Governments tend to adopt inflation management approaches to setting base rates, leading to poor returns with relatively high volatility. From January 1999 until December 2016, the average foreign currency return has been about zero (-0.26%), but the volatility has been 6.50%7.
+
+Digital currencies such as Bitcoin and Ethereum are, as currencies, victims of their own speculation: their prices have risen significantly as their supply of their coins or tokens is through simple and deterministic coin (or token) growth8. Added to which, they have experienced a high degree of volatility, relative to national currencies of developed countries (e.g. G10). The corollary of rapid price appreciation and volatility is that they are increasingly weak as a stable store of value or unit of measure.
+
+There have been a few digital currencies which have sought to address certain limitations of existing currencies and create a `stablecoin' (see section 1.4 below for a definition): but each has limitations which we feel can be improved upon.
+
+Further details and analysis of currencies are set out in the ARC series paper: `Overview of Money and Currency' - available at www.arccy.org.
+
+1.3 The ICO and Minting
+
+ARC is an ERC20 token and will be implemented on the Ethereum blockchain.
+
+Technical details are set out in the ARC series paper  `Technical Whitepaper', available at www.arccy.org.
+
+The minimum raise from the ICO will be a relatively modest $5M, and with no upper bound. Almost all of the proceeds from the ICO will be used to invest and grow the NAV of the Issuer:
+
+ A minimum of 99.0% of the proceeds will be either used for investing or held in cash by the Issuer; and
+
+ Up to a maximum of 1.0% of the proceeds from the ICO (capped at $1M) will be set aside for operational costs.
+
+7 Foreign Currency Hedging: Passive, Active or Do Nothing, BNP Paribas, 11 April 2017 (http://institutional.bnpparibasam.com/foreign-currency-hedging-passive-active-nothing/#acceptLicense) 8"A Note on Cryptocurrency Stabilisation: Seigniorage Shares", Robert Sams 2014
+
+5
+
+
+
+After the ICO, further ARC will be available for purchase at a price equal to the NAV per Coin, in unlimited volumes and at any time from the www.arccy.org website. The enables scaling of the currency without any dilution of price per Coin for existing Coin holders. Further details relating to the ICO are set out in the ARC series paper `ARC ICO  Private Placement Memorandum' available at www.arccy.org.
+
+1.4 What is a stablecoin
+
+A stablecoin is a cryptocurrency which is intended to have a relatively low volatility (relative to national currencies of developed countries) and has constant buying power in real terms (track inflation, and therefore grow in nominal terms).
+
+6
+
+
+
+2 How ARC Works: Financial Features 2.1 Section Overview
+
+The proceeds from the issuance of ARC (and all subsequent issuances) will be placed into a ring-fenced special purpose vehicle ("Issuer")9. The Issuer will invest the proceeds (through third-parties) into fixed income and loan investments, with an allocation held in cash. To deliver a stable currency, ARC uses a combination of:
+
+1. Currency diversification (with a bias towards USD) 2. Support from an underlying asset class (to deliver a base rate return); and 3. Exchange rate controls (pricing controls) to enable pricing to fall within a narrow range relative
+
+to the Net Asset Value ("NAV") of the Issuer. This section introduces these three aspects.
+
+Figure 2: Targeted Stability of ARC
+
+ARC is a digital currency designed to act solely as a stable currency and constructed by a team of experienced financial and investment professionals. The features have been peer-reviewed by other traders, investment professionals and economists; as well as a technical review.
+
+2.2 Currency Diversification
+
+ARC will be priced relative to USD as its primary currency pair10, and although there will be currency diversification to improve price stability, the largest single currency exposure will be in USD (which facilitates a degree of correlation of ARC to USD). The IMF uses a combination of five currencies in constructing SDR (Special Drawing Right): USD, EUR, GBP, JPY, CNY  a benchmark used to provide stability in the global financial system. Whilst this does provide stability, it doesn't serve as a particularly good store of value  it has barely appreciated
+
+9 At the time of writing, the jurisdiction and form of the Issuer is being finalised. The white paper will be updated in due course with the final structuring details. 10 The value of a currency can only be defined relative to another currency, or basket of currencies. There isn't an agreed approach amongst economists, although pricing relative to USD is recognised an acceptable compromise.
+
+7
+
+
+
+(+0.04% p.a.) against USD since inception in 1981 (with the corollary that USD hasn't appreciated against SDR):
+
+Figure 3: SDR expressed in USD11
+
+The performance of a diversified basket of currencies can be improved by including currencies from developing regions.12 Yet, there is no commonly accepted basket of international currencies which includes G10 and non-G10 countries, used for investment management purposes. In practice, a defined basket of currencies appears less credible (less widely adopted) by investors and traders than individual currencies. This could be because:
+
+ the basket itself is not traded; making it difficult for market participants to infer the true value or credibility of the basket;13
+
+ increased diversification can introduce undesired complexity, which is likely to outweigh the commensurate increase in performance for the investor; and/or
+
+ investors prefer to construct their own currency allocation strategies (baskets) to provide a hedge to their pre-existing currency exposures held in other investments.
+
+We consider that a basket of currencies is preferable to a single currency exposure, and that the allocation should be transparent and predictable. The currency split allocation for the Issuer will be based on the trade-weighting of major national currencies. National currencies with a trade weighting of more than 5.0%, as published in the triannual report conducted by the Bank for International Settlements14, will be included in the ARC currency allocation:
+
+11 Source: https://www.imf.org/external/np/fin/data/rms_sdrv.aspx 12 Zuo, F. (2016). Passive and Active Currency Portfolio. Exeter: Exeter University 13 Currency Union and Exchange Rate Issues: Lessons for the Gulf States, Ronald MacDonald, Abdulrazak Al Faris, pp 114. 14 See Table 2 for Currency Distribution Percentage: http://www.bis.org/publ/rpfx16fx.pdf
+
+8
+
+
+
+Currency / country
+
+USD
+
+EUR JPY GBP AUD CAD CHF Total
+
+
+
+Currency traded measure Sep 2016 87.6%
+
+31.4% 21.6% 12.8% 6.9% 5.1% 4.8% 165.4%15 (excluding CHF as less than 5.0%)
+
+
+
+Weighting
+
+53.0% = 87.6 / 165.1
+
+19.0% 13.1% 7.7% 4.2% 3.1%
+
+100%
+
+
+
+It is worth noting:
+
+ the dominant national currencies utilised by cryptocurrency payment companies: USD, EUR and GBP16; all feature in the ARC allocation; and
+
+ Chinese Renminbi is not included based on the trade-weighting approach used here. This is a helpful result given the recent and continuing regulatory uncertainty in China. Regulatory uncertainty may impact the ability for the Issuer to adopt target currency allocations in the future. For example, it may be that a country bans cryptocurrency transactions, which would then limit the suitability of that country's national currency for use in the asset allocation of the Issuer. These will be addressed as they arise, and a method adopted prior to decentralisation.
+
+The actual proportion of NAV deployed in each currency may vary (compared to the target weighting) from day-to-day, arising from:
+
+ currency fluctuations in the market,  ARC buyback activity by the Issuer (which is in USD); and  new Coin issuance (subscription).
+
+The currency split will be rebalanced quarterly. The rebalancing will ensure that the total allocation for each currency is in accordance with the mechanism set out in the table above.
+
+2.3 Support from a Predictable Underlying Asset Class
+
+It is important for the long-term success of ARC that there is some value creation in nominal terms, akin to a central bank base rate, to enable stability in real terms (match inflation). The value creation can also be used to:
+
+
+
+15 The total trade weighting of all currencies sums to 200 (not 100) because each currency is traded as a pair. 16 Source: Global Cryptocurrency Benchmarking Study, p.74.
+
+9
+
+
+
+ enable ARC to be attractive relative to other currencies  the relative value of a currency is typically correlated to its base rate return, which in turn encourages longer-term investment in the currency; and
+
+ to cover the funding of any operating expenses, which may also include motivating miners to process transactions in ARC (if there is a surplus to the Target Return).
+
+2.3.1.1 Target Return The Target Return is the rate at which the investment portion of the NAV of the Issuer is expected to increase per ARC Coin per annum, assuming a 15:85 weighting of cash to investments17. The Target Return will be recalculated once a quarter, and this will be set out at www.arccy.org. 2.3.1.1.1 Target Return Calculation At the outset, the Target Return will be set at the higher of (rounded to the nearest 0.25%):
+
+ the average rate of inflation in G10 countries over the last 10 years18 plus a premium which is the higher of: o 3-times the average standard deviation  the `99.7 rule' - of the average inflation over the previous 10 years across the G10 countries19; and o 1.0% per annum.;
+
+ the average central bank rate in the US, Europe, Japan, and UK20, over a rolling 5-year period plus a premium of 1.0% per annum.
+
+The Target Return following the ICO21 is 1.50% per annum: Figure 4: ARC target return
+
+17 It is assumed the Issuer will be a `price-taker' on its cash balances  likely at a discount to what is offered by central banks, as offered in deposit accounts. 18 The average rate of inflation across the G10 countries over the last ten years has been 1.447%. Source: http://inflation.eu/ 19 This is intended to capture any increasing volatility in inflation over time, and to ensure the value of ARC appreciates in real terms. 20 Selected as each has a currency trade-weighted share in excess of 10%. 21 Assuming the ICO raises less than $100M.
+
+10
+
+
+
+2.3.1.1.2 Premium Reduction Calculation The Issuer will be unlikely to achieve an `alpha'22 return as it scales, and has more capital to invest. It will increasingly become a `price-taker'23 for returns when deploying funds at scale in mainstream opportunities.
+
+In the immediate period after launch it is anticipated that the Issuer can achieve an excess over the Target Return. This will benefit ARC, making it more attractive to early adopters.
+
+Over time, as ARC scales, the Target Return will reduce over time. If the Issuer can outperform the Target Return, then the balance will be held in the buffer account to provide further support for ARC.
+
+The premium as set out in the Target Return calculation in 2.3.1.1 above, will reduce as the Issuer scales:
+
+ While the Issuer has net assets $100M or less, the premium will be as set out above; and  The premium will then reduce to 0 as the Issuer has net assets of $1bn or more.
+
+The following co-efficient will be applied to reduce the premium (as used in 2.3.1.1.1 above) when the NAV of the Issuer is between $100M and $1bn:
+
+$1 -         $100,000,000    =
+
+$900,000,000
+
+When the Issuer has a NAV of $1bn or greater, the premium will be 0 (nil), as the premium reduction co-efficient will equal 0 (nil), and the Issuer will have a Target Return of, simply, the higher of the inflation target and the base rate target.
+
+2.3.1.2 Selecting an Underlying Asset Class When selecting the appropriate asset class to generate the underlying return, it is important that:
+
+ Return: the return is non-negligible (as noted above) but also not too significant as to undermine ARC as a longer-term unit of measure.
+
+ Volatile: the asset class isn't too volatile in the short-term or across economic cycles;  Liquidity: the asset class can provide some liquidity to support the exchange rate controls;
+
+and  Sufficiently large: the asset class can provide scope to support the growth of the currency.
+
+Diversified lending and fixed income investments provide the best combination of delivering relatively consistent returns in line with the target level required, with low volatility and relatively good levels of liquidity.24
+
+The asset allocation may vary from time to time over the short run, arising from:
+
+22 I.e. beating the average market return. 23 In this context `price-taker' means that the Issuer will achieve the average market return, not a premium to the average. 24 For further details on Lending as an Asset Class, please see the associated paper available at www.arccy.org
+
+11
+
+
+
+ ARC buyback activity by the Issuer (as cash is used, not investments); and  new Coin issuance (subscription). The asset allocations will be rebalanced quarterly:  If immediately following rebalancing there is an over-allocation in cash then more investments
+
+will be sought;  If there is an over-allocation in investments then investing activities will be paused until the
+
+cash balance increases. Immediately following the ICO (and any subsequent Coin issue) there will be a period of time until the cash proceeds have been fully deployed in underlying loans and fixed income investments, for each currency. Initially, the Issuer will allocate capital into Direct Lending opportunities, which may also enable a premium return. However, as the NAV increases the Issuer will invest in larger pools of lending and fixed income investments, such as corporate bonds and gilts:
+
+Figure 5: Relative market sizes of fixed income asset classes and their merits25
+
+2.3.1.2.1 Achieving the Target Return The return achievable on cash (and cash equivalents), is typically lower than the return achievable from lending and fixed income investments, and helps to define the actual return sought on the lending and fixed income investments to achieve the Target Return, and by reference to the proportion of cash to investments actually held (compared to the target of 15:85 assumed).
+
+25 Based on SIFMA market study (https://www.sifma.org/resources/submissions/2016-year-in-review/) and proprietary analysis. Please note, there will be some double counting in the chart as the credit funds invest in the debt issuances shown elsewhere on the chart, as well as proprietary private debt market opportunities.
+
+12
+
+
+
+For example, if the Target Return26 is 2.5%, and the cash-to-investments ratio is 25:75, and there is a small return on cash, then actual return on investments will need to be 2.75% to hit the Target Return:
+
+
+
+Cash Investment
+
+
+
+Proportion  assumed in Target Return definition
+
+15%
+
+85%
+
+
+
+Target Return
+
+0% 2.5%
+
+
+
+Proportion  actually held by
+
+Issuer (e.g.) (P) 25%
+
+75%
+
+
+
+Actual Return (R)
+
+0.25% 2.75%27
+
+
+
+Total
+
+
+
+Blended:
+
+
+
+2.125%
+
+
+
+Blended
+
+
+
+2.125%
+
+
+
+2.3.1.3 Governance and Controls Over Investing Activities and Allocations The Issuer investments and performance will be publicly displayed at www.arccy.org.
+
+Although ARC is a decentralised currency in terms of ownership, transfer and usage; the underlying use of funds in the Issuer will be determined by the directors of the Issuer (or other suitable governance committee) and/or outsourced to an appointed third party or parties. However, the value of the underlying assets held by the Issuer will be transparent and publicly disclosed.
+
+The governance of the Issuer will be the responsibility of the directors of the Issuer immediately following the ICO. Any variation from the proposed splits or strategies above, or governance, will be set out on www.arccy.org and stated as far in advance of any implementation to ensure the market has full transparency and warning.
+
+The cash holdings will be split across leading banking institutions, with balances protected by regulatory capital or protections (e.g. FSCS in the UK) where possible. The cash holdings will be reported centrally, on a daily basis at www.arccy.org.
+
+The ARC product road map seeks to enable a transition away from these centralised investment allocations and activities over time.
+
+
+
+2.4 Exchange rate controls
+
+ARC will benefit from transparent, predictable and easy to understand controls with a view to enabling it to maintain pricing within a narrow band relative to NAV of the Issuer. The price of ARC will be subject to supporting and defensive actions by the Issuer to keep a tight correlation between the price of ARC per Coin (or token) and the NAV per Coin (or token).
+
+When considering the commonly-adopted proposed approach of issuer-backed assets, as observed by Buterin, we consider that the volatility of the crypto-asset could be minimised more efficiently for the long term by creating a mechanism that merely correlates its price or exchange rate with the net asset value of a separate basket of assets; without granting the holders of the currency any rights to
+
+26 Please note: the Target Return is the rate of return on the Investment assuming a 85:15 ratio of investments:cash. 27 Calculated as [2.125% - (0.25% x 25%)] / 75% = 2.75%
+
+13
+
+
+
+those assets or the income derived from them or creating redemption rights in the crypto asset itself28, or requiring the creator of the currency to identify the holders at all times. Neither overvaluation nor undervaluation is favourable over the long-run for the success of a currency, and the same holds for ARC. Although persistent perceived under valuation could drive sustained growth in adoption, as appears to be happening with Bitcoin, but this is unlikely to satisfy the desired outcomes for a stablecoin. The NAV per ARC (the NAV of Issuer divided by the number of ARC Coin issued) will be compared to the price per ARC on a continuing basis. The price of the ARC will be subject to supporting and defensive actions to seek to keep a tight correlation between the price of ARC per Coin and the NAV per Coin:
+
+Figure 6: Price control actions
+
+2.4.1.1 Price Suppression Control (protection against overvaluation) As the Issuer can issue an infinite amount of coins it will always be able to protect against overvaluation arising from over speculation. The Issuer will maintain an infinite Offer (sell order) in the market equal to the NAV per Coin. Anyone can visit www.arccy.org and request to purchase new issue of currency at NAV at any time29. Users will then be able to provide liquidity across exchanges to ensure the upper bound of the price per Coin on the exchanges is equal to NAV per Coin (or sufficiently close). 2.4.1.2 Price Support Control (protection against undervaluation): The Issuer will purchase ARC Coin if the price falls below the NAV per Coin and an acceptable price range (which reflects the bid-offer spread on exchanges):
+
+28 It is important to note that the holders of ARC Coin don't have a direct holding the Issuer or right to the underlying assets of the Issuer. 29 This may be subject to minimum order quantities.
+
+14
+
+
+
+Figure 7: Price support actions
+
+The Issuer will have a minimum amount held in cash and liquid investments  which includes the Target Cash Amount. The cash held by the Issuer will be used to provide pricing support outside of an acceptable price range per Coin. The price support, ARC Coin purchasing behaviour of the Issuer, will be set by reference to:
+
+ The market spread of ARC (or other leading and liquid crypto-currencies) on leading bitcoin exchanges; and
+
+ The amount of cash held by the Issuer relative to the Target Cash Amount ("TCA"). Any ARC coins bought by the Issuer will be immediately burned, as this is effectively the opposite of issuing a new Coin. The demand created by the bid orders should enable the price to remain resilient and trend back towards NAV. Any coins the Issuer has repurchased will be held, and can only be sold by the Issuer at the NAV per Coin. This will reduce the available coins per sale and assist with increasing demand. As there is a finite amount of cash held by the Issuer and a limit to the speed at which the Issuer can replenish its cash reserves, it can be vulnerable on the downside to short term pressures. We refer to this as the liquidity problem30. The liquidity problem may occur when the value of sell orders placed by ARC holders is greater than the value of ARC sought by buyers of ARC (including the base level volume of bids placed by the Issuer). There are a few main ways ARC will mitigate this:
+
+ Natural buoyancy: the long-run trend of ARC per Coin will be toward the NAV per Coin (because of the price mechanisms set out above). This ensures that short speculators will lose out over the long-run, and patient holders of the currency will always win out. The further short-sellers depress the price of the Coin relative to NAV, the faster the currency buy-back by the Issuer will increase the NAV per Coin (as each trade is more and more profitable for the Issuer as the price per Coin drops relative to the NAV per Coin). This creates natural buoyancy of the currency.
+
+30 Please note: this is not the same as maturity transformation, which ARC avoids by virtue of the nature of the price controls.
+
+15
+
+
+
+ Appreciation: there is an inherent appreciation of NAV in real terms over time. Therefore, a significant proportion of ARC holders are likely to have a longer-term holding perspective; reducing the relative impact that short-sellers may have.
+
+ Capped upside: for short-term speculators, ARC is not appealing (compared to other currencies and listed assets) as the spread of pricing is constrained: the upside is capped through further Coin issuances; and a narrow pricing range negates the appeal of a financial instrument to short-term traders.
+
+ Target Cash Amount: the cash balances of the Issuer is set by reference to the liquidity of the underlying investments. Enabling the Issuer to respond to sustained sell orders in the market in a robust way.
+
+2.5 Section Summary
+
+The relationship between the Net Asset Value ("NAV") of the Issuer per Coin, and the price per ARC Coin is the primary construct for the ARC. The NAV of the Issuer should increase in line with the Target Return, and as the return from the underlying loans accumulates. This consistent and regular increase in NAV, and liquidity in the holdings, will be used to underpin the value of ARC per Coin.
+
+16
+
+
+
+3 Net Asset Value Calculation of the Issuer
+
+3.1 Corporate Structure
+
+ARC is facilitated by a ring-fenced company ("Issuer"). Supported by a governance structure and controls to ensure that there is no unnecessary leakage of value from the Issuer. Any surplus return over the target return will be held in a buffer account, to provide further comfort to the holders of ARC.31
+
+No leakage from the Issuer:
+
+ All coins must be paid for in full (at NAV per Coin)  no discounted coins are available for the team or related parties etc;
+
+ The Issuer is not able to pay out dividends;  The salaries of its employees will be aligned with market rates, and with highest paid
+
+employee or director's details publicly available at www.arccy.org; and  Supplier payments (including to any related parties) will be listed and available at
+
+www.arccy.org32.
+
+Any profits generated by the Issuer will be:
+
+ held in the buffer account (see later) to assist with smoothing investment performance;  reinvested into the development of ARC (this may also be directed toward funding or
+
+subsidising Ether or gas to enable holders of ARC to process transactions);  paid out to holders of ARC as a special dividend33; and/or  donated to charity.
+
+3.2 Legal Status of Coin Holders
+
+It is important to note that the holders of ARC Coin will not have a direct recourse to the NAV of the Issuer or its underlying holdings at any time. Instead, the exchange rate controls will provide a linkage between the price per Coin at any time and the NAV of the Issuer.
+
+3.3 NAV Calculation
+
+The Net Asset Value ("NAV") calculation of the Issuer per ARC Coin is a key element of the performance of ARC over time. It will be updated on a continuing basis and available at www.arccy.org. Anyone will be able to view the NAV of ARC Coin at any time, including underlying investment holdings, providing transparency.
+
+The NAV calculation is set out in the ARC series paper `Technical Whitepaper'  available at www.arccy.org.
+
+31 Any profits generated by Issuer will be reinvested in (1) the buffer account to assist with investment performance, (2) the further development of ARC, (3) issued as a special dividend to ARC currency holders  subject to regulatory constraints and/or (4) donated to charity. 32 Subject to de minimis. 33 Subject to any regulatory constraints.
+
+17
+
+
+
+3.4 Buffer Account
+
+The buffer account is an important tool in the construct of ARC Coin, it facilitates:
+
+ A further reduction in volatility by smoothing investment performance;  A smoothing of any operational expenses from day-to-day; and  Those following the currency closely will recognise that the buffer provides support to the
+
+upside, increasing demand for ARC. This in turn increases circulation and assists with greater adoption.
+
+If there is outperformance of the investments over the Target Return, then the premium performance will be set aside in a buffer account and excluded from the NAV calculation. This can be used if, for example, investment losses are incurred - if the investment performance of NAV drops below the Target Performance per ARC, then funds may be directed back from the buffer account into the cash reserves of the Issuer to smooth and support the underlying NAV performance.
+
+Expenses and operational costs for the Issuer will initially accrue at 0.5% p.a. The objective will be to reduce these costs over time. The funds set aside for expenses accrued but not yet paid for will be allocated into the buffer account. This ensures that NAV isn't impacted on a day-to-day basis for the payment of expenses.
+
+The Issuer will accrue for any tax that may be due on its investment performance at the prevailing rate each day. These funds will also be allocated to the buffer account until paid.
+
+The presence of cash in the buffer account provide holders of ARC with additional comfort over its long-term value.
+
+If the value in the buffer accounts exceeds 10% of NAV, then ARC may implement a one-time special distribution payment to all ARC holders (subject to any regulatory constraints). Any such distribution payment will reduce the buffer to no less than 2.5% of NAV. The existence of this possible dividend will act to encourage more adoption during the initial periods of ARC, during which period it is anticipated that a premium return is possible.
+
+However, to avoid over-speculation, before any such special payment is made, there may be a vote to determine whether to donate to a charity the surplus value in the buffer account. This may stop ARC currency holders from attributing too much short-term value to the cash held in the buffer account.
+
+3.5 Section Summary
+
+The relationship between the Net Asset Value of ARC and the price per ARC is the primary construct for ARC:
+
+ The corporate structure ensures that there is no leakage of value from the corporate vehicle.  The NAV calculation is transparent, updated on a continual basis and available publicly at all
+
+times.  The buffer account provides further comfort to the holders of ARC.
+
+18
+
+
+
+4 How it Works: Modelled Outcomes
+
+4.1 Overview
+
+The modelled performance of ARC, over a historical reference period, demonstrates its suitability as a stablecoin:
+
+ remaining broadly in-line with inflation, appreciates at a steady annualised rate in nominal terms; and
+
+ exhibiting similar volatility to USD, and lower than other currencies (EUR and GBP). Accordingly, it performed well as a store of value and as a unit of measure compared to national currencies and digital currencies.
+
+4.2 Modelling ARC: Establishing the Inputs
+
+4.2.1 Time Period When modelling the performance of ARC relative to USD we have selected a sufficiently long period, almost 12 years, and over which the USD has been relatively neutral in its performance relative to SDR34. The test period starts on 2 December 2005, when USD:SDR was 1.41908 and ends on 17 October 2017 when USD:SDR was 1.41065:
+
+Figure 8: USD:SDR since 2005
+
+4.2.2 Target Return for ARC We used the target return as set out at section 2.3.1.1 above, calculated in accordance with the principles for ARC. We've assumed that this target has been met as expected, although we have also assumed a nil premium (i.e. no outperformance):
+
+34 As noted in 2.2 above, there isn't long-run appreciation of USD relative to SDR (or vice versa). Therefore, selecting a test period where these two currencies have a similar rate of exchange at the start of the period and at the end of the period should remove any bias arising from the appreciation (or devaluation) of USD over the period.
+
+19
+
+
+
+Figure 9: ARC target return
+
+4.2.3 Asset Allocations and Currency weighting We used a currency weighting in accordance with the proposed split set out in 2.2 above. Each quarter the currencies are re-balanced, and takes into consideration the latest Bank of International Settlements trade-weighting data:
+
+Figure 10: Asset and Currency Allocation of ARC in modelled scenario
+
+20
+
+
+
+4.3 Modelled Performance
+
+4.3.1 Store of Value (appreciation and return) The modelled value of ARC increased from 100 in December 2005, to 127.5 in October 2017, an IRR of 2.07% p.a. Compared to the performance of USD (denominated in SDR, rebased to 100) the outperformance of ARC is evident35:
+
+Figure 11: ARC in USD36
+
+Compared to the performance of USD (denominated in SDR, and rebased to 100 on 2 December 2015) the outperformance of ARC can be seen37:
+
+Figure 12: ARC:USD and USD:SDR (index to 100)
+
+35 ARC would similarly outperform SDR  the orange line would be the mirror image about the index of 100. 36 Please note, at ICO, Arc will be priced at 1.00ARC = USD$1.00. 37 ARC would similarly outperform SDR. For SDR, the line would be a mirror image of the orange line about the index of 100.
+
+21
+
+
+
+Similarly, when compared to GBP, which lost 26% of buying power over the reference period, ARC performed better. ARC had a small annualised gain: ARC's total growth in nominal value was +27.5% over the reference period, whilst inflation grew at 16.6% in total. 4.3.2 Unit of Measure (relatively low volatility) The volatility in the performance is driven by the volatility of the underlying basket of currencies, rather than in the NAV of the Issuer. When compared to the volatility of the reference currencies over the observation period, ARC has a similar level of volatility to USD (which is to be expected given that it is priced in USD), and materially lower volatility than every other reference currency38:
+
+Figure 13: Coefficient of variation
+
+Combining the analysis of the return and the volatility, shows that ARC Coin has a superior Sharpe Ratio39. ARC had a positive return of 27.5% in total over the period. Only the CAD had a positive return (+7.8%) relative to its currency pair (the USD) over the period, and the USD itself lost some value compared to its reference pair the SDR. 4.3.2.1 Hypothetical Project If we consider a hypothetical project, which grows from 100 to 200 over the reference period, the same project priced relative to ARC better demonstrates the growth in intrinsic value, than when BTC is used as the reference currency:
+
+38 For details relating to the coefficient of variation methodology see: https://en.wikipedia.org/wiki/Coefficient_of_variation 39 An explanation of Sharpe Ratio is outside the scope of this white paper. For details, please see: http://www.investopedia.com/articles/07/sharpe_mpt.asp. We've used a 0% risk free rate, given the low expected return of fiat currencies over the long term.
+
+22
+
+
+
+Figure 14: A successful digital project priced in BTC and ARC (indexed to 100 as at 18 Aug 2010)
+
+4.3.2.2 Digital Currencies It is possible to recalculate any digital currency using the simulated ARC values as the base currency. Typically, whilst the digital currencies still exhibit a high degree of volatility, their longer-term trends, particularly in recent periods are more favourable than when these are priced in BTC (which has been on a highly volatile bull run over the recent months).
+
+4.4 Section Summary
+
+ARC Coin when modelled using actual historical data successfully demonstrated the characteristics as intended:
+
+ Relative stability: volatility in line with the USD and lower than other national currencies of developed countries; and
+
+ Appreciating: growing at a controlled rate in advance of the base rates of developed country currencies and in line with inflation.
+
+This makes ARC valuable as a store of value and unit of measure. ARC is able to demonstrate its suitability as a benchmark currency against a hypothetical digital project. An unintended consequence of the analysis here is that historical data can be simulated and calculated. This means that ARC can be adopted to back-calculate projects prior to its launch. It is proposed that an agreed data set is settled upon for historical values prior to the ICO, and stored on the Ethereum blockchain.
+
+23
+
+
+
+5 Achieving Adoption
+
+5.1 Use Cases
+
+We believe ARC can serve many use-cases, a safe-haven currency and benchmark currency are two of the most likely initial uses.
+
+5.1.1 Safe-Haven Currency ARC may be sought after by any individual or organisation looking for somewhere as a safe store of part of their financial capital. Savers and investors around the world should benefit from a currency which is reliable and absent of socio-economic factors:
+
+ Blockchain adopters: the first users of ARC Coin are likely to be existing using of digital currencies and managers of crypto projects: o blockchain investors rebalancing their portfolios: investors who've achieved gains arising from successful and direct speculation in blockchain, bitcoin and related opportunities, and may now be looking for a safe-haven to store some of their capital in a digital currency with predictability and low volatility; o blockchain entrepreneurs and exchange operators: looking to use a more stable benchmark currency for their projects.
+
+ Currency-exposed users: savers and investors looking to reduce exposure to their own domestic currency which may be hampered by high inflation and/or political exposure; and
+
+ Global investors and savers: there is $250 trillion held in cash savings globally, with savers simply looking for a better store of value, including as a safe haven investment.
+
+5.1.2 Benchmark Currency We illustrate using simulated data in section 4.3.2.1 above, how ARC can serve as an attractive benchmark for other digital currencies and token. We haven't repeated the analysis here.
+
+5.2 Marketability
+
+There are no restrictions on the nature of ARC holders. Although purchasing of ARC will be subject to Proof-of-identity - relevant AML (anti-money laundering) and KYC (know your customer) regulations; either conducted by the Issuer, or exchanges that are trading ARC.
+
+ARC is intended to be predictable, which will reduce volatility by providing the market with timely and clear information to inform purchase and sale orders; to facilitate this ARC will seek to have transparency and integrity.
+
+ARC is infinite in volume and over time, which is an important feature for any stablecoin to facilitate price consistency.
+
+24
+
+
+
+5.2.1 Transparency 5.2.1.1 Ease of Understanding The construct and control mechanisms underpinning the currency are relatively simple and easy to understand, to assist with pricing certainty.
+
+ARC's relative ease of understanding may also assist with its marketability.
+
+5.2.1.2 Public Disclosure The underlying value, position and performance supporting the currency is shared widely and freely.
+
+5.2.1.3 Actions Should be Formulaic, Predictable and/or Pre-Meditated Any centralised actions relating to ARC (or the Issuer) are formulaic, predictable and/or premeditated: users will be able to have a reasonable expectation of any actions relating to the currency before they occur.
+
+This includes the price of ARC relative to the NAV of the Issuer per Coin, and facilitates predictions relating to possible exchange rate mechanism actions.
+
+5.2.2 Integrity 5.2.2.1 Strong Governance with a Minimum (Absence) of Centralised Management Interference As the currency isn't fully decentralised in all areas (see section Error! Reference source not found. for details), the central governance must be kept to a minimum and actions should be clearly disclosed. Where governance is required, the team responsible are experienced, have high integrity and will disclose publicly the choices under consideration and the reason for selecting any particular action.
+
+5.2.2.2 Experienced Team and Advisors The Team behind ARC Coin has a strong combination of financial and technological expertise. This is complimented by a transparent governance structure.
+
+ARC is led by Stephen Findlay and Dr Garrick Hileman:
+
+ Stephen Findlay is the co-founder and CEO of BondMason, a financial technology platform that enables distribution and administration of capital into loans and other fixed income investments. He has 16 years financial services and investment management experience with firms including Fidelity, Deloitte and Andersen. He is a qualified chartered accountant (FCA  ICAEW) and became an approved person of the UK's Financial Conduct Authority in 2009.
+
+ Dr Garrick Hileman is a Research Fellow at the University of Cambridge Judge Business School, with over fifteen years of experience in the private sector with Bank of America, IDG and Allianz, Garrick has served on the boards of directors of both publicly traded and private companies and is known for his research on cryptocurrencies and distributed ledger technology40.
+
+Profiles of the broader team and founding advisers are set out on the website www.arccy.org. In summary, they have the following combined experience:
+
+40 Please see a biography and further details of Garrick's experience at http://www.garrickhileman.com/p/about.html
+
+25
+
+
+
+ Blue chip CVs: o they have held senior investment or trading roles at Blackstone, Fidelity, Goldman Sachs, JP Morgan, et al. o the have had experience at other leading blue-chip financial institutions: Deloitte, Andersen, Santander (Abbey), et al.
+
+ Investment and trading experience: the team has invested over 3bn41; and advisers to the project include experienced currency and fixed income traders
+
+ Legal and regulatory: leading regulatory lawyers across multiple jurisdictions.
+
+5.2.2.3 Incorporation and Legal Environment The Issuer is incorporated in Jersey and is subject to the laws of Jersey, chosen for its well-recognised legal framework and through engagement with its regulator.
+
+5.2.2.4 Regulatory Clarity The currency should be set up in full visibility of any relevant regulatory authorities and in a stable regulatory environment.
+
+5.2.2.5 Minimum Tax Leakage Efficient tax structuring: there is a trade-off between the choice of jurisdiction for the Issuer for regulatory purposes (above) and the implications for tax purposes.
+
+5.2.2.6 No Other Leakage from the Issuer The Issuer is set up so that it cannot pay out dividends. Costs are kept to a minimum with a continuing accrual of up to 0.5% p.a.
+
+Third-party investment partners will be chosen to assist with deployment, management and reporting of the lending and fixed-income investments. Material expenditures with each supplier will be set out at www.arccy.org.
+
+Please see the discussion paper "Who Benefits from ARC" for further details relating to value creation in the ecosystem arising from ARC.
+
+5.2.2.7 Decentralised Ownership of the Currency, Ledger and Trading Ownership of the currency is decentralised through the blockchain, enabling holders to benefit from all the positive aspects arising from blockchain technology and ecosystem.
+
+As ARC is an intrinsic-value Coin; the utility of ARC Coin for holders is correlated to the pool of assets held by the Issuer.
+
+5.2.2.8 Discourage Speculation The currency controls noted above make the currency trade within a narrow band, have infinite defensibility against over-speculation and negate under-speculation.
+
+5.3 Scalability
+
+Technical scalability of ARC will be linked to the scalability of Ethereum blockchain, given that ARC is an ERC20 token.
+
+41 Includes experience of BondMason team.
+
+26
+
+
+
+Lending and fixed income is one of the biggest asset classes globally, serving as a significantly large asset class that underpins the ability to scale the currency in economic terms.
+
+5.4 Broader Market Acceptance of Blockchain Technologies
+
+The future of blockchain and related applications, including ARC, lies in each's market acceptance. The more that the technology and use-cases become mainstream, the greater the likelihood of their survival in the long run. We are beginning to see large multi-nationals embrace blockchain technology (although not necessarily cryptocurrencies), a likely sign that the rate of adoption is increasing and longevity is becoming more assured. If there are weaknesses in the system, the reviews undertaken by these large corporates are likely to identify and improve the ecosystem for all users. The 'utility settlement coin' - used largely for clearing and settling financial transactions over blockchain - has been created by UBS and will be worked on by Barclays, Credit Suisse, Canadian Imperial Bank of Commerce, HSBC, MUFG and State Street, for launch in 2018; and follows on the heels of Daimler Chrysler's (the owner of Mercedes Benz) 100M bond issuance on Ethereum.42 The Bank of England is undertaking its own multi-year research programme, reviewing, in particular the implications of a central-bank issued currency.43 We expect to see further blue-chip organisations and governments looking to adopt blockchain and digital currencies over the coming months and years.
+
+42 https://www.coindesk.com/daimlers-e100-million-ethereum-bond-bigger-mercedes-benz/ 43 http:/www.bankofengland.co.uk/research/Pages/onebank/cbdc.aspx
+
+27
+
+
+
+6 Research Road Map and Regulation
+
+The initial implementation of ARC is predicated upon a minimum viable product strategy. As the NAV of the Issuer increases, the investment allocations and features of ARC will increase in scale and scope, to optimise ARC as a fully decentralised stablecoin. One of the primary benefits and attractions of blockchain and its related crypto-currency applications is it decentralised nature. Blockchains can be structured so that no single central authority controls them. We are exponents of this decentralised framework. We recognise that ARC has some centralised elements at the outset, and we consider this to be a limitation44. It is our goal to decentralise as much as possible over time, as soon as the broader ecosystem is able to support and supply sufficient tools and opportunities to demonstrate the stability that ARC requires in these areas. This includes, for example, fully automated investment allocations. Although, we recognise that the Issuer-led approach with ownership of an underlying pools of assets may not facilitate full decentralisation. The regulatory status of a stablecoin should be as certain as possible, to facilitate wide spread adoption. This impacts its ability to scale from a legal and practical perspective. For example, if a proposed stablecoin is deemed a security, then every subsequent issue should necessitate either an issuing prospectus, and/or a material limitation on the participants who can be involved with each issue. We have undertaken a detailed review of the regulatory landscape for cryptocurrencies, and created a construct which is understandable and acceptable to regulators; and yet enables the price of ARC to be supported by assets with intrinsic value, without encroaching upon security legislation in most major regulatory jurisdictions. Further details relating to the road map are set out in the ARC series paper `Research Road Map' available at www.arccy.org.
+
+44 Although, adopting Balaji Srinivasan's decentralisation framework, it can be seen that ARC can be as decentralised as Bitcoin or Ethereum (for example).
+
+28
+
+
+
+7 Summary
+
+ARC is the first alternative digital currency which can successfully act as a store of value and a consistent unit of measure enabling its holders to have a safe haven for their capital, and to provide a reliable benchmark. ARC has wide ranging applications and has the potential to become a reference currency for other digital currencies and blockchain projects.
+
+29
+
+
+
+8 Appendices
+
+
+
+8.1 Definitions
+
+ARC
+
+
+
+ARC Reserve Currency
+
+
+
+Buffer Account
+
+
+
+A store of value for surplus returns and to smooth expense payments.
+
+
+
+Arc Fiduciary Ltd
+
+
+
+A Jersey registered company, the issuer of the ARC Coin.
+
+
+
+ICO
+
+
+
+Initial Coin Offering
+
+
+
+Issuer
+
+
+
+Arc Fiduciary Ltd
+
+
+
+NAV
+
+
+
+Net asset value
+
+
+
+Target Return
+
+
+
+The Target NAV Return for the Issuer as set out at 2.3.1.1.
+
+
+
+8.2 References and Further Reading
+
+Campbell, J. Y., Serfaty-de-Medeiros, K., & Viceira, L. M. (2006). Global Currency Hedging. Cambridge, MA: Harvard Business School.
+
+Cenedese, G. (2012). Safe Haven Currencies: A Portfolio Perspective. London: Bank of England.
+
+International Monetary Fund. (2016, 09 30). IMF Launches New SDR Basket Including Chinese Renminbi, Determines New Currency Amounts. Retrieved 01 01, 2017, from http://www.imf.org/en/News/Articles/2016/09/30/AM16-PR16440-IMF-Launches-NewSDR-Basket-Including-Chinese-Renminbi
+
+International Monetary Fund. (2016). IMF Policy Paper: Review of the method of Valuation of the SDR - Amendment to Rule O-1. Washington D.C.: International Monetary Fund.
+
+Jen, S., & Yilmaz, F. (2012). The World Currency Basket (WCB). London: SLJ Macro Partners.
+
+Jurek, J. W. (2009). Crash-Neutral Currency Carry Trades. Princeton: Princeton University.
+
+Leibowitz, J. (2016). Bitcoin: A 21st Century Currency Explained By a Wall Street Veteran. Retrieved 01 2017, 01, from https://www.coindesk.com/bitcoin-explained-global-currency-wall-streetveteran/
+
+Momtchil, P. (2017). Foregin Currency Hedging: Passive, Active or Do Nothing? London: BNP Paribas.
+
+PricewaterhouseCoopers. (2014). Cash Savings - An International Comparison. London: Financial Conduct Authority.
+
+Securities Industry and Financial Markets Association. (2016). 2016 Year in Review. New York: Securities Industry and Financial Markets Association.
+
+Zuo, F. (2016). Passive and Active Currency Portfolio. Exeter: Exeter University.
+
+
+
+30
+
+
+
+

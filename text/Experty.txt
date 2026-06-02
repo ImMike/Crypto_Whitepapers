@@ -1,0 +1,1063 @@
+EXPERTY.IO
+
+Blockchain Based Human Knowledge Exchange www.experty.io
+
+LAST UPDATE:
+
+September 29th, 2017
+
+PEER REVIEW BY:
+
+Pawel Bylica
+
+Software Architect at Ethereum Foundation and Golem Factory
+
+CREATED BY:
+
+The Experty team
+
+i
+
+
+
+ABSTRACT
+
+
+
+INFORMATION is exchanged for money daily throughout the world, but the current tools to do so are cumbersome, costly, and inefficient.
+
+K NOWLEDGE SEEKERS AND KNOWLEDGE PROVIDERS DON'T have adequate incentives to share personal contact information with each other, because neither can be guaranteed that the other will follow through with the exchange. To solve this, a third party organizer is often brought in, but these services take a large cut of the profit, resulting in a knowledge seeker being charged more, or a knowledge provider walking away with less. To get around this, many knowledge providers will ask for payment in advance, but this demands trust from the knowledge seeker's end. There is currently no efficient application on the market to solve this problem.
+
+Blockchain technology has opened up the possibility for borderless peer to peer transactions. This means that the exchange of information for money can be made on a global scale without a costly intermediary. Experty, our cutting edge application, is designed to connect knowledge providers and knowledge seekers anywhere in the world using blockchain technology. Payments are automated through our operations contract (OC), allowing voice and video calls to be monetized without a lengthy setup or upfront payment. Knowledge providers can advertise their services through a direct call link or QR code, which can be placed on any social media platform. A knowledge provider simply sets their rate per minute, and when the call is complete, the OC settles the charges based on the predetermined rate. Knowledge seekers will only be charged for the length of the call.
+
+We believe Experty will save countless man hours due to its ability to increase efficiency and accessibility to the exchange of knowledge worldwide. Our solution will help level the playing field, especially for those without access to the traditional banking systems.
+
+
+
+EXPERTY.IO
+
+
+
+ii
+
+
+
+CONTENTS
+
+
+
+1 Value Proposition
+
+
+
+1
+
+
+
+1.1 Introduction........................................................................................................... 2 1.2 Motivation Behind The Experty Platform........................................... 2
+
+
+
+2 Project Description
+
+
+
+3
+
+
+
+2.1 Technical Overview........................................................................................... 4 2.2 Core Features........................................................................................................ 5 2.3 User Flow................................................................................................................. 6 2.4 Possible Use Cases............................................................................................ 7 2.5 Company Example............................................................................................ 9 2.6 Why Blockchain?................................................................................................ 9
+
+
+
+3 Smart Contract Architecture
+
+
+
+11
+
+
+
+3.1 On-Chain and Off-Chain Processes..................................................... 12 3.2 Potential Ethereum Bottleneck............................................................. 14
+
+
+
+4 Business Strategy
+
+
+
+15
+
+
+
+4.1 Market Definition............................................................................................. 16 4.2 Third Party Platform Integration........................................................... 16
+
+
+
+5 Software
+
+
+
+18
+
+
+
+5.1 Current Minimum Viable Product Showcase............................... 19 5.2 Mobile Application......................................................................................... 23 5.3 Web Application.............................................................................................. 23 5.4 Full Roadmap.................................................................................................... 24 5.5 Token Economics ........................................................................................... 25 5.6 Premium Memberships and Features............................................... 25 5.7 Token Generation Event (TGE) Distribution Summary........... 26
+
+
+
+6 Use of Proceeds Summary
+
+
+
+27
+
+
+
+6.1 The Allocation Summary........................................................................... 28 6.2 Software Development: 40%................................................................... 28 6.3 Legal and Administrative Costs: 5%................................................... 29 6.4 Marketing and Sales: 40%......................................................................... 29 6.5 Long Term Research Team: 15%.......................................................... 29
+
+
+
+7 The Experty Team
+
+
+
+31
+
+
+
+EXPERTY.IO
+
+
+
+iii
+
+
+
+1 VALUE PROPOSITION
+
+W E HAVE DEVELOPED A BLOCKCHAIN-BASED CALLING platform that allows two or more parties to connect via video or audio call. Within the application, a knowledge provider can set their rate per minute, which is paid by the knowledge seeker when they call. This exchange is settled seamlessly through the Blockchain using an Ethereum smart contract coupled with off-chain software. Experty adds value to the consulting industry through simplifying the exchange of knowledge for currency.
+
+Knowledge Provider. Can share his or her direct call link without fear of receiving fraud and/or marketing calls. They can also display their availability schedule. Knowledge Seeker. Saves time and money by contacting wanted person directly, and paying only for actual call time. Third Party Services. Gain another path to monetize their existing client base.
+
+
+
+EXPERTY.IO
+
+
+
+1
+
+
+
+Value Proposition
+
+
+
+1.1 INTRODUCTION
+
+As a consulting team, we have found a technological need for a payment service able to process ad hoc conversations and consultations. Currently, in order to provide or receive online consultations, there are three settlement possibilities. Each of them has their own associated problems:
+
+1. Charge and Cost Confusion. A user can pay a provider up front for a consultation, but the exact amount required is not known because the provider may be charging by the minute or by the hour. In addition, the user and provider may not know the total duration of the conversation at the time that payment is discussed.
+
+2. Trust. A provider can also use a postconsultation billing system, which requires the provider to trust that the knowledge seeker will pay for the service after finishing the call.
+
+3. Payment Friction. A provider can also rely on external services or third party intermediaries. In these cases, money transfers are highly regulated events that create a large barrier to entry, even for globally-recognized brands.
+
+We see an opportunity to connect our dedicated software with blockchain technology. Our goal is to make Experty fully decentralized, thus preventing DDoS attacks from taking the platform down entirely. Experty will have the ability to operate globally, without interruption, at any time
+
+
+
+of day. Instead of building a single consultation marketplace, we have created a protocol allowing users to share their paid call links or QR codes wherever they want, including but not limited to: websites, blogs, and social network profiles or portals.
+
+1.2 MOTIVATION BEHIND THE EXPERTY PLATFORM
+
+Thanks to the invention of Blockchain technology, it is now viable to make micro-transactions worldwide. Anyone, regardless of location, can send a small amount of value to anyone else in the world. We live in a knowledge-based economy. We should be able to exchange knowledge in the same way.
+
+Combining micro knowledge exchanges and blockchain micro payments makes this feasible on a worldwide scale. Currently, there are no available tools to easily handle this process. Experty offers the best tools to solve this problem for both "knowledge providers" and "knowledge seekers".
+
+
+
+EXPERTY.IO
+
+
+
+2
+
+
+
+2 PROJECT DESCRIPTION
+
+T HE MAIN PURPOSE OF THE PROJECT IS TO OFFER AN avenue to connect two or more people so that they may conduct a paid knowledge exchange via online voice or video call. In this document we identify the participants as knowledge seeker and knowledge provider. However, Experty's possible use cases are wider than just knowledge exchange. It can include calls with celebrities for charity actions or one-on-one private video chats. The Experty platform consists of applications available for mobile, web, and desktop. Users are also able to send free text messages between each other in order to discuss the terms further if needed. Text messaging can also be disabled by the provider if they so choose. Voice or video calls are always paid, charging by the providers predetermined rate.
+
+
+
+EXPERTY.IO
+
+
+
+3
+
+
+
+Project Description
+
+
+
+2.1 TECHNICAL OVERVIEW
+
+The current platform is being built using React and React-Native. This allows us to shorten the go-to-market process and implement additional features from the roadmap, while still keeping the native application experience and performance.
+
+All Ethereum smart contract interactions will be triggered by the recipient of the call, since it is in his or her interest to register for payment. The caller must first provide enough funds allowing for at least 30 seconds of the call in order to initiate the conversation.
+
+During initialization of the call, the recipient sends the exact conditions of the exchange to the caller, including the recipient's minute rate, call identification, and the Ethereum addresses of both parties. The on-chain transactions occur through our Ethereum smart contract, known as the operations contract (OC).
+
+After verifying that these conditions match as intended by the caller's application, the caller signs the action with his or her private key and sends back signed proof to the recipient. The recipient then uses the signed proof of initialization to trigger the start_call function on OC. In doing so, this makes the funds unusable elsewhere, thus preventing: double spends, withdraw of funds during the call, or trying to trigger another call.
+
+The process happens automatically in the background of the application after the call is answered. This occurs in a matter of milliseconds during an initiating `handshake,' so it's not noticeable for participants.
+
+During the first few seconds of the call, the recipient's application checks if the call was registered on the Blockchain and if the participants, provider and user, are matching. The application does not allow for triggering another
+
+
+
+call when one is in progress, however, if abuse does occur, the information is sent to our team and the abuser's funds get blocked until the situation is resolved.
+
+As long as the call is in progress, the recipient's application gets signed and confirms the call length from the caller at every second through an off-chain unidirectional payment channel. Such confirmation contains the information about both participants, call identification, call length, and timestamps. This information is used by the recipient to trigger the end_call function after finishing the call. Immediately after, funds are transferred from the caller's address to the recipient's address. This also unlocks the caller's ability to withdraw his or her remaining funds or trigger additional calls.
+
+Only one signed confirmation on the OC is needed at the end of every call action. Interaction between the OC and the off-chain unidirectional payment channel means that charges occur only during an active connection. This prevents charges from occurring due to a disconnected internet connection as well as preventing potential scam usage where the caller blocks signed confirmation at the end of the call.
+
+Withdrawal of funds from the OC will always be delayed, 10 blocks by default. This removes the possibility to withdraw these funds before the offchain processes are completed. The number of confirmations to delay payment stored within the contract vary, and can be modified in the future to follow platform changes.
+
+More description of the contract, with all functions, is provided in the Contract Architecture chapter of this document.
+
+
+
+EXPERTY.IO
+
+
+
+4
+
+
+
+Project Description
+
+2.2 CORE FEATURES
+
+The Experty platform is based on an Ethereum network contract which acts as the back-end for the service. The website and applications store the information about the usage history of all users.
+
+ WebRTC Protocol. Audio and video communication within the application uses the WebRTC protocol. This protocol is used in apps like Whatsapp or Google Hangouts to ensure peer to peer data encryption and provides robustness proven by millions of users using the technology already.
+
+ Fully Decentralized Call Links. Our goal is to allow experts to share their paid call link whenever and wherever they want. This avoids relying on Experty to create a marketplace for them. Knowledge providers can use networks where they are already known and considered trusted experts, such as message boards, social media, blogs, etc.
+
+ Instant Payments. The payments will occur on the Ethereum blockchain after the call based on a pay-per-minute rate. The OC will provide the security of a payment settlement system. A caller without sufficient funds to complete at least 30 seconds of a call will not be able to trigger a call. If a caller's funds are running low, they will be notified in advance and will be disconnected when funds fall below the per minute rate.
+
+ Cross Platform Calling Application. The first version of Experty will have dedicated calling applications for most platforms, including iOS, Android, and Windows. We also plan to integrate Experty with third party video calling applications so that potential users will be able to use the application of their choice.
+
+ Availability Schedule. Knowledge providers are able to set their availability time, so they can easily prevent all calls outside a given timeframe.
+
+ Ethereum Wallet. The provided applications will have a built-in Ethereum wallet for managing funds.
+
+
+
+EXPERTY.IO
+
+
+
+5
+
+
+
+Project Description
+
+
+
+2.3 USER FLOW
+
+1. A knowledge provide sets his/her rate in US dollars (for example, $5 per minute)
+
+2. An advice seeker is aware of the main pricing in USD before he/she decides to make a call
+
+3. The Experty app calculates the amount of EXY tokens required per minute based on the USD/EXY conversion rate on the secondary market
+
+4. The advice seeker tops off his/her account by using one of the available methods (USD, BTC etc.)
+
+5. The advice seeker starts the call
+
+
+
+6. The knowledge provide receives EXY tokens based on the conversion rate
+
+7. A value for knowledge exchange occurs
+
+8. ADDITIONAL STEP: If the knowledge provider doesn't want to keep EXY tokens, then he/she will be able to convert them to any other cryptocurrency on his/her own.
+
+
+
+EXPERTY.IO
+
+
+
+6
+
+
+
+Project Description
+
+
+
+Future versions of Experty will include more advanced payment types, such as a variable rate for longer calls, or different suggested rates for different types of knowledge providers. The available modifiable options a knowledge provider has will be updated based on continual user feedback.
+
+We believe this unlocks new opportunities for knowledge monetization because there are currently no incentives to share a direct phone number with strangers. Influencers, who would otherwise have many potential customers or callers, have no other way to quickly incentivize their time.
+
+2.4 POSSIBLE USE CASES
+
+The most likely use cases for Experty will occur for professionals who are well known or casual users with a niche following. Professional users may include lawyers, medical providers, programmers, professors, business advisors, etc.; and casual users may include bloggers or YouTubers, celebrities and influencers, webcam models, and charitable causes.
+
+1. Lawyers. Frequently, one needs quick ad-hoc knowledge from a lawyer. The most common method today is through an in-person consultation to avoid the payment settlement problem, even when it may be easier to complete this over the phone.
+
+2. Medical Consultants. Similar to lawyers, there are instances when phone conversations are perfectly suitable for provider and patient. With concierge medicine and telemedicine on the rise, doctors and patients are now regularly participating in everyday checkups or consultations through the
+
+
+
+Internet. These services are also crucial for those in rural and/or underserved areas, especially those who suffer from chronic illnesses requiring frequent doctor visits.
+
+3. Programmers. Most of the people from our team are programmers themselves. We are frequently called upon as consultants. When working in a large company, there are usually multiple colleagues available for feedback. This is not the case when doing freelance work. There are discussion boards and web chats to pose questions, but no financial incentive to provide an answer, leaving many waiting for a reply.
+
+4. Business Advisors. Short consultations with successful business professionals can become a critical pivot point for many companies on all levels.
+
+5. Professors. Massive open online courses (MOOCs) are becoming increasingly popular. Professors or distributors may have limited time and availability to answer questions that arise. Experty will help triage and prioritize their time.
+
+6. Language Learning. Listening to foreign languages when learning is as important as attempting to speak the language yourself. With Experty, you can call anyone in the world and have a live conservation in any language when native speakers are available.
+
+7. Webcam Chats. Paid one-on-one video-chats with camera models are popular services that currently require an intermediary for payment
+
+
+
+EXPERTY.IO
+
+
+
+7
+
+
+
+Project Description
+
+
+
+settlement. The user must also provide credit card information to a third party company. The models' network also takes a percentage of the profits. Experty would allow discreet, secure, and direct payment from user to provider.
+
+8. Bloggers & YouTubers. Both groups have large audiences wanting to contact them directly. Due to time restrictions, direct contact usually occurs through comment replies or live streams. Integrating with our platform will allow these individuals to provide additional monetization of their audience group by charging for private calls.
+
+
+
+9. Celebrities & Influencers. Similar to bloggers and YouTubers, celebrities and influencers often have time constraints preventing them from contacting their audience directly. Experty allows for monetization of this direct contact with their audience.
+
+10. Charity Donations. Celebrities or wellknown individuals frequently give their time for charity. Experty would allow for increased transparency of funds through the Blockchain and a decrease in costs or fees taken by intermediaries.
+
+
+
+EXPERTY.IO
+
+
+
+8
+
+
+
+Project Description
+
+2.5 COMPANY EXAMPLE
+
+1. Jack (a user) needs immediate support from a company he purchased a product from
+
+2. He navigates to the product support section of the company's website
+
+3. He finds a regular support and a premium support option
+
+4. He chooses to use the premium support
+
+5. This directs him to the company's Experty premium support profile
+
+6. He doesn't have any Experty tokens to use the application
+
+7. He pays for Experty tokens using his credit card (such as Visa)
+
+8. Experty tokens are delivered to his light wallet
+
+9. Jack calls the premium support line, sending Experty tokens to the company's support line every minute as dictated by the predefined rate.
+
+2.6 WHY BLOCKCHAIN?
+
+Blockchains, by nature, have several properties that make them attractive for our platform. These properties are essential to the success of this project. Thanks to Blockchain technology, we are able to achieve the following:
+
+ Payment Settlement. Thanks to smart contracts, we are able to alleviate a large problem: when and how the payment should be settled. With Experty, the payment is made during the calls. Participants can disconnect whenever they want and the payment is made only for the recorded time. The contract decides whether or not the caller has enough funds, and makes sure that the funds are transferred to the recipient when the call is completed.
+
+ Legal Simplification. Holding customers' money falls into the legal purview of several regulations and regulatory agencies. Using cryptocurrency simplifies this drastically since the funds are transferred directly between the parties involved. Any funds sent or received in the Experty platform can be withdrawn by users at any time through the Ethereum wallet.
+
+ Instant Payments. Ethereum payments are realized within seconds. Knowledge providers don't need to worry about these payments being locked in processing for weeks on end, or payments being denied through chargebacks.
+
+ Third Party Service Transparency. Our marketing strategy highly relies on external services
+
+
+
+EXPERTY.IO
+
+
+
+9
+
+
+
+Project Description
+
+which already have thousands of users in their database or network. Blockchain transparency allows for tracking calls triggered from their websites without worrying about a substantial usage and clearing cost or denial of payment by a service provider.
+
+
+
+EXPERTY.IO
+
+
+
+10
+
+
+
+3 SMART CONTRACT ARCHITECTURE
+
+B Y DESIGN, OUR OC AND OFF-CHAIN PROCESSES ARE perfectly able to cover any type of unit of money per time exchange. Although Experty is purely about information exchange, we see many more potential use cases of the contract itself. The OC architecture provides a way to utilize signed off-chain transactions done through Experty. Due to the possible inefficiency of registering calls directly on the Blockchain, the recipient uses a signed confirmation of the call to lock the caller's funds on the contract until the call finishes. During the call, the recipient receives additional confirmation from the caller each second. After finishing the call, he or she uses the most recent confirmation in order to transfer the funds to their balance and unlock the remaining caller's funds.
+
+
+
+EXPERTY.IO
+
+
+
+11
+
+
+
+Smart Contract Architecture
+
+3.1 ON-CHAIN AND OFF-CHAIN PROCESSES
+
+On-chain Operations Contract Processes:
+
+ Start call  Locks caller withdrawals  Locks caller calls
+
+ End call  Verifies signed confirmation  Settles payment  Unlocks caller
+
+ Deposit  Stores funds on the OC in order to be used for further calls or to be withdrawn later
+
+ Withdraw:  Delayed by 10 blocks  Allows for withdrawing funds from contract by address holder
+
+ Lock check:  After initializing a call, which is confirmed on-chain through the OC, the recipient needs to check if the called is locked on the current call to prevent abuse and misuse.
+
+Off-chain Processes:
+
+ Call_conditions:  Rate  Call identification  Start timestamp  Addresses
+
+ Confirmation:  Rate  Call identification  Start timestamp  Confirmation timestamp  Addresses
+
+ Signing  The caller signs both call_conditions and conformations with his or her private key. The OC and recipient verify if the data is valid. Once the signed confirmation is received, the recipient starts the call and the caller's funds are locked.
+
+
+
+EXPERTY.IO
+
+
+
+12
+
+
+
+Smart Contract Architecture
+
+
+
+EXPERTY.IO
+
+
+
+13
+
+
+
+Smart Contract Architecture
+
+3.2 POTENTIAL ETHEREUM BOTTLENECK
+
+The Ethereum network (EN), in its current state, is not able to process many frequent transactions and most likely would be bottlenecked using the current architecture at scale. The solution to this problem is implementing a type of Lightning Network (LN) or Raiden-like Network instead of directly messaging the EN. In this case, the LN can be used as a middle layer between recipient and the OC.
+
+Communication schema would change from:
+
+1. [ Caller ] < --- > [ Recipient ] < --- > [ EN ]
+
+Into:
+
+2. [ Caller ] < --- > [ Recipient ] < --- > [ OFF-CHAIN / LN / Raiden-like ] < --- > [ EN ]
+
+The Ethereum team is currently working on moving from proof of work to proof of stake, which may fix the efficiency issues far sooner than it would become a problem for our platform. The LN or Raiden-like Network itself is not a part of our project in its current state. However, the architecture by design is built to allow the possibility of LN-type architecture if needed.
+
+
+
+EXPERTY.IO
+
+
+
+14
+
+
+
+4 BUSINESS STRATEGY
+
+DECENTRALIZED PLATFORM VERSUS SINGLE MARKETPLACE
+
+T HE CLASSIC APPROACH IS TO CREATE AND BUILD A marketplace - a service for advisors to connect and provide information and knowledge seekers to search for those provides. Instead, in our approach, we are creating a totally decentralized solution. Users will be able to share their calling links on any existing platform. Knowledge providers can use the link where they are popular or a known influencer, such as question and answer discussion boards like Quora, or social media portals such as Twitter, Facebook, and Instagram.
+
+
+
+EXPERTY.IO
+
+
+
+15
+
+
+
+4.1 MARKET DEFINITION
+
+ Consulting industry market - $125 Billion
+
+ Digital consulting industry market - $23 Billion
+
+ Biggest markets - USA, UK, Germany
+
+ Biggest consultations sectors - Technology, Strategy, Human Resources
+
+
+
+Business Strategy
+
+
+
+4.2 THIRD PARTY PLATFORM INTEGRATION
+
+A decentralized solution means the possibility of integrating into a variety of third party services, already containing large user bases, which can allow creators or influencers to make additional profit using our platform. This strategy is a lean and efficient go-to-market strategy since we will not need to reach out to individuals one-by-one to create the desired network effect. Instead, we can rely on an existing established user base. Experty allows anyone to quickly and immediately monetize their time or content beyond what they were initially capable of. This is efficient for both the provider and the receiver.
+
+
+
+EXPERTY.IO
+
+
+
+16
+
+
+
+Business Strategy
+
+
+
+EXPERTY.IO
+
+
+
+17
+
+
+
+5 SOFTWARE
+
+I N ORDER TO EMPIRICALLY TEST THE USER EXPERIENCE AND gather feedback on the platform, we built a proof-of-concept, prototype version of the application. The current platform does not contain the full set of features that will be included in the production version of the mobile software. However, the prototype allows us to test the concept and be sure the smart contracts are working as intended.
+
+
+
+EXPERTY.IO
+
+
+
+18
+
+
+
+5.1 CURRENT MINIMUM VIABLE PRODUCT SHOWCASE
+
+
+
+S oft ware
+
+
+
+Splash Screen
+
+
+
+Contacts List
+
+
+
+Contact List - Scrolled
+
+
+
+Contact list - 3D touch options on contact
+
+
+
+Contacts Details
+
+EXPERTY.IO
+
+
+
+Contact Details (scrolled)
+
+19
+
+
+
+S oft ware
+
+
+
+Voice - calling knowledge provider - knowledge seeker perspective
+
+
+
+Voice - call with knowledge provider - knowledge seeker perspective
+
+
+
+Call Completion knowledge seeker perspective
+
+
+
+Video Calling
+
+
+
+Video Call View
+
+EXPERTY.IO
+
+
+
+Initial Call
+
+20
+
+
+
+S oft ware
+
+
+
+During Call - knowledge provider perspective
+
+
+
+Call completion knowledge provider perspective
+
+
+
+During Video Call
+
+
+
+Video Calling
+
+
+
+EXPERTY.IO
+
+
+
+21
+
+
+
+Profile Settings View
+
+
+
+Edit Profile View
+
+
+
+S oft ware
+
+
+
+EXPERTY.IO
+
+
+
+22
+
+
+
+S oft ware
+
+
+
+5.2 MOBILE APPLICATION
+
+The mobile application is the core of our platform. Anyone with a smartphone will be able to initiate or receive/accept incoming calls. The experience will be very similar to existing mobile VoIP applications.
+
+As the main pillar of the platform, the development of the mobile application has taken precedence. Currently, a functional prototype is able to make a call and settle the payment between participants based on the consultant's rate.
+
+The final version of the mobile application will have the following core features:
+
+ Knowledge Provider:  Ability to set your charge rate per minute  Ability to receive notification of consultation request  Ability to text message with a potential knowledge seeker for logistics such as scheduling and availability
+
+ Knowledge Seeker:  Ability to top off your Experty account balance with Ethereum  Ability to initiate a consultation call via username handle  Ability to initiate a consultation call via scanning a QR code from a web profile  Ability to text message a potential knowledge provider for logistics such as scheduling and availability
+
+ Both:  Change account settings  Register new account  Withdraw Ethereum balance
+
+
+
+5.3 WEB APPLICATION
+
+The initial version of the web application will be used mainly as a funds management platform, as well as a portal for users to update their account.
+
+ Knowledge Provider:  Ability to set rate per minute  Ability to message a potential knowledge seeker for logistics such as scheduling and availability
+
+ Knowledge Seeker:  Ability to top off your Experty account balance with Ethereum  Ability to initiate a consultation call directly via Experty web profile  Ability to message a potential knowledge provider for logistics such as scheduling and availability
+
+ Both:  Change account settings  Register new account  Withdraw Ethereum balance
+
+
+
+EXPERTY.IO
+
+
+
+23
+
+
+
+S oft ware
+
+
+
+EXPERTY.IO
+
+
+
+24
+
+
+
+S oft ware
+
+
+
+EXPERTY.IO
+
+
+
+25
+
+
+
+S oft ware
+
+
+
+5.4 FULL ROADMAP
+
+The roadmap below illustrates the implementation plans for the mentioned features. Initially, the main focus will be to create a stable and bug free release of the mobile version for making calls.
+
+5.5 TOKEN ECONOMICS
+
+The Experty Token (EXY) is a major constituent of the Experty platform. EXY is created only during the Token Generation Event.
+
+EXY is a utility token that will be used for the following:
+
+ EXY will be used for all payments from advice seekers to knowledge providers
+
+ EXY will be staked by users for access to premium features
+
+ EXY will be used by advice seekers as a deposit for advance scheduling with a knowledge provider
+
+EXY will be sold inside the application via different methods including:
+
+1. Credit Cards (VISA, MasterCard, etc.)
+
+2. Ethereum
+
+3. Bitcoin and other cryptocurrencies
+
+
+
+5.6 PREMIUM MEMBERSHIPS AND FEATURES
+
+Instead of paying for premium memberships, users who have a certain amount of EXY staked in their wallet will be able to use premium features without additional fees.
+
+Examples of premium features include:
+
+ Scheduling
+
+ Paid group calls (ie. webinars)
+
+ Conversation recording
+
+The final number of tokens needed to be staked for premium membership and exact features are going to be decided based on actual user demand and the token price.
+
+
+
+EXPERTY.IO
+
+
+
+26
+
+
+
+S oft ware
+
+5.7 TOKEN GENERATION EVENT (TGE) DISTRIBUTION SUMMARY
+
+
+
+Maximum cap on crowdsale
+
+Total token supply
+
+
+
+33,000 ETH
+
+100 Million (100,000,000) EXY, of which:
+
+ 33% Crowd Sale Tokens  33% Company Tokens (vested for 3 years*)  30% Partner Tokens (locked for 18 months)  1% to cover tokensale costs  3% Airdrops and bounties
+
+
+
+Ethereum ERC20
+
+
+
+Experty is using the ERC223 standard, an updated version of ERC20. ERC 223 requires
+
+less Gas than ERC20, prevents the risk of tokens being lost when they are sent to an incompatible contract, and is also fully compatible with ERC20 for the purpose of
+
+exchange listings.
+
+
+
+Purchase methods accepted directly
+
+
+
+ETH
+
+
+
+Purchase methods accepted via Bitcoin
+
+Suisse
+
+
+
+ETH, BTC, CHF, USD, EUR, JPY
+
+
+
+*Every month, beginning on February 2018, the contract will release 1/36 of the total EXY company tokens. All EXY company tokens will be released by February 2021.
+
+
+
+EXPERTY.IO
+
+
+
+27
+
+
+
+6 USE OF PROCEEDS SUMMARY
+
+
+
+O UR MAIN FOCUS WILL BE ON SOFTWARE DEVELOPMENT, research, and marketing to the blockchain community. We want to make sure that Experty will be used for blockchain companies, such as MME.ch and Bitcoin Suisse, who we are already working with for our test pilot programs.
+
+Initial funds allocation will include:
+
+ SOFTWARE DEVELOPMENT. Our team will build the first fully functional version of the app, which will use Experty tokens to process payments.
+
+ LEARNING. We will gather feedback from the users.
+
+ COMMUNITY. We will build a community around people who regularly use cryptocurrencies. Our first users will come from this community before the app is massmarket user friendly.
+
+ PREPARATION. To prepare for mass adoption, we will continue to improve the app's user experience based on feedback.
+
+ MARKETING. We will use funds to market the Experty mobile and desktop application directly to the blockchain community, and once we are ready, to a wider audience.
+
+
+
+EXPERTY.IO
+
+
+
+28
+
+
+
+Use of Proceeds Summary
+
+6.1 THE ALLOCATION SUMMARY
+
+The first round of funds allocation:  Legal and Administrative Costs - 5%  Software Development - 40%  Marketing and Community Building - 40%  Long Term Research Team - 15%
+
+6.2 SOFTWARE DEVELOPMENT: 40%
+
+The project is developed by the founder's existing development company - ReactPoland. Our team is already highly experienced at building custom software, so we can ensure that the development of the Experty application will be thorough and robust. We have years of experience building digital products and do not need to hire external consultants. The development will be spread across 4 internal teams - responsible for: 1. Mobile App 2. Web App 3. Desktop 4. Server / Smart contract integration. We are well connected in the Poland tech scene, including two Facebook groups.  https://web.facebook.com/groups/nodejsPL/ - Over 1800 members  https://web.facebook.com/groups/reactjs.co/ - Over 4800 members We are in close contact with many other top developers as well, should the need for additional tech talent arise.
+
+
+
+EXPERTY.IO
+
+
+
+29
+
+
+
+Use of Proceeds Summary
+
+
+
+6.3 LEGAL AND ADMINISTRATIVE COSTS: 5%
+
+Experty is partnering with www.MME.ch for legal work. We will also have compliance costs on a country by country basis. This includes legal and administrative costs regarding our product launch for European and US markets, as well as unbanked regions.
+
+
+
+6.4 MARKETING AND SALES: 40%
+
+
+
+ Working on cooperations with other projects that may bring synergy long term. Some example of cooperations are:
+
+ ProofSuite.com  MME.ch  BitcoinSuisse.ch
+
+
+
+order to measure the most effective approaches (learning)
+
+ Experty and Blockchain Week conferences in Europe
+
+ Testing and measuring what works for our marketing efforts (learning)
+
+
+
+ Digital marketing
+
+ Hiring community managers based on demand
+
+ Running different campaigns in
+
+
+
+ Mass market focus group, learning, and research
+
+ Direct sales team building integration partnerships with different portals, as mentioned below:
+
+
+
+6.5 LONG TERM RESEARCH TEAM: 15%
+
+We will build a dedicated team that will research how Experty can compete on the global digital consultations marketplace. This team won't produce immediate short term value like our product or marketing deliverables, but will work on different proof-of-concepts and research alternative methods for reaching our audience.
+
+
+
+EXPERTY.IO
+
+
+
+30
+
+
+
+Use of Proceeds Summary
+
+
+
+EXPERTY.IO
+
+
+
+31
+
+
+
+7 THE EXPERTY TEAM
+
+
+
+EXPERTY.IO
+
+
+
+32
+
+
+
+The Experty Team
+
+
+
+EXPERTY.IO
+
+
+
+33
+
+
+
+The Experty Team
+
+
+
+EXPERTY.IO
+
+
+
+34
+
+
+
+The Experty Team
+
+
+
+EXPERTY.IO
+
+
+
+35
+
+
+
+ReactPoland.com Team
+
+In addition to the core team members listed above, the Experty team has in disposition our existing team of 10 developers. This ensures prompt product delivery of our roadmap while assuring quality product development for the Experty platform.
+
+
+
+The Experty Team
+
+
+
+EXPERTY.IO
+
+
+
+36
+
+
+
+

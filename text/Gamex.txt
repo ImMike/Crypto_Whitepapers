@@ -1,0 +1,881 @@
+Forseti
+
+
+
+Forseti is a set of embedded modules designed to enhance decentralized solutions
+
+Disclaimer: Current edition of the document is being actively developed and may be subject to significant changes
+
+
+
+Forseti is a set of plug-ins for decentralized systems, such as :
+
+
+
+- escrow
+
+
+
+- reputation system
+
+
+
+- arbitration system
+
+
+
+- auction
+
+
+
+- identification system
+
+
+
+Table of contents
+
+
+
+1. Abstract
+
+
+
+3
+
+
+
+2. Problem definition
+
+
+
+3
+
+
+
+3. Market overview
+
+
+
+7
+
+
+
+4. Services/ Modules
+
+
+
+9
+
+
+
+4.1.Escrow
+
+
+
+9
+
+
+
+4.1.1 Safe deal
+
+
+
+9
+
+
+
+4.1.2 ICO(Dao) Escrow
+
+
+
+10
+
+
+
+4.2. Arbitrage
+
+
+
+10
+
+
+
+4.2.1 Standart arbitrator
+
+
+
+11
+
+
+
+4.2.2 Arbitrator's specialist
+
+
+
+11
+
+
+
+4.2.3 Legal Arbitration
+
+
+
+12
+
+
+
+4.3. Reputation
+
+
+
+13
+
+
+
+4.3.1 Arbitrator's reputation
+
+
+
+13
+
+
+
+4.3.2 Seller/buyer
+
+
+
+13
+
+
+
+4.3.3 Contestation of reputation
+
+
+
+14
+
+
+
+4.4. Auction
+
+
+
+14
+
+
+
+4.5. Identity
+
+
+
+15
+
+
+
+5. Our solution
+
+
+
+16
+
+
+
+5.1 Our services
+
+
+
+16
+
+
+
+5.1.1 Web-service for deals management
+
+
+
+16
+
+
+
+5.1.2 Telegram - bot for arbitrators
+
+
+
+17
+
+
+
+5.2 Verification of the arbitrator
+
+
+
+18
+
+
+
+5.3 Arbitration process
+
+
+
+18
+
+
+
+5.4 Reputation system
+
+
+
+19
+
+
+
+6. Competitors Analysis
+
+
+
+21
+
+
+
+7. Long term vision and RoadMap
+
+
+
+22
+
+
+
+8. Fors Token
+
+
+
+23
+
+
+
+9. Token distribution
+
+
+
+24
+
+
+
+References
+
+
+
+29
+
+
+
+1. Abstract
+
+"Decentralized economy requires decentralized services"
+
+Trust is the prime element of business. However, lasting procedures for signing and legal support of contracts are expensive and non-effective, especially in modern, quickly developing world. Blockchain technology can be a viable alternative to current procedures used in business. Thanks to low probability of hacks, decentralized storage system, smart contracts, which you don't have to trust etc., we consider the blockchain technology to be the future for all high technology trust-related projects.
+
+The Forseti platform consists of several decentralized services / modules that are quickly and conveniently built into the blockchain solution. Our solutions are needed for all projects that somehow interact with the real world. The initial set of modules.
+
+ Safe deal / Escrow  Arbitration  Reputation system  Auction
+
+More than half of all ICO projects successfully completed ICO in June 2017 announced the development of their internal services that solve these problems, and each project develops its solution from scratch!
+
+Forseti will allow implementing a proven, already developed solution, which will be used by recognizable projects. Reduce the amount of time and money needed to implement them, because instead of developing from scratch, you need to implement an existing solution
+
+
+
+2. Problem definition
+
+Image 1. Evolution of contract services
+
+No trust for third parties
+
+ While state control and corporate data sales practices keep expanding, Internet users require tools to warrant safety, without third-party trust.
+
+ The majority of most popular e-commerce enterprises (eBay,Amazon Marketplace, Uber, AirBnb, Yelp) operate as centralized marketplaces. Services of such type offer very weak warranty of privacy and data safety. Users are forced to place trust of reputation status correctness and confidentiality of sensitive information (such as transaction history) in the marketplace operator.
+
+ When striking deals on the market, trust issues arise, which can lead to conflicts. Such problems are handled by the company's specialist who you are forced to trust
+
+Thanks to smart contracts in blockchain being unbiased, the majority of trust-related issues disappear as all contract conditions are programmed and neither party can change them when completing the contract.
+
+
+
+But unfortunately not all conditions can be written as code and, therefore, disputes, in need of a settlement, will arise
+
+No unified reputation system
+
+ Reputation systems are used to save, maintain and show the seller's \ user's reputation who were rated by other users of the system as a result of their interaction. These ratings can be used as a base for initial trust between users.
+
+ Reputation systems are key to establish trust in online communities ans stimulate development of many modern on line-companies from online auctions to transportation companies.
+
+ Another important issue lies in non-unity of reputation systems. If I trade on eBay and I have a stellar reputation / excellent feedback and eBay closes and I want to transition to another service such as Amazon Marketplace, I will be forced to start from scratch.
+
+Storing reputation history from various services on blockchain can solve the unification issue.
+
+Data safety and history editing
+
+ The majority of most popular e-commerce enterprises (eBay,Amazon Marketplace, Uber, AirBnb, Yelp) operate as centralized marketplaces. Services of such type offer very weak warranty of privacy and data safety. Users are forced to place trust of reputation status correctness and confidentiality of sensitive information (such as transaction history) in the marketplace operator.
+
+Thanks to blockchain entries being impossible to edit or delete, the data safety and reputation correctness issues are solved. None can change these data
+
+Blockchain knows nothing about the real world
+
+ Bitcoin and Ethereum cryptocurrency brought a series of innovative solutions to the world - from p2p transboundary transactions to the ability of building trustless prediction markets.
+
+ Mass use of blockchain in interactions between people (buyer and seller) is hindered by absence of security mechanism for customer and supplier.
+
+
+
+Our secure deals and arbitration system module is a security mechanism for customer and supplier.
+
+Let's consider two examples:
+
+1. Investor invests in and organization and gets a right to vote. The founder of the organization commits fraud and transfers all the invested money to his personal account.
+
+2. Customer and supplier agree to develop a web-site for ICO under certain criteria. The customer can be dissatisfied with the quality of supplier's services or the supplier can complete the order but not in accordance with the specifications. Smart contract cannot check the quality of the web-site or its accordance with the specifications.
+
+In both cases we need a dispute settlement mechanism with participation from third-party experts.
+
+
+
+3. Market overview
+
+Safe deal / Escrow Solutions
+
+During marketing surveys we settled on Escrow-deals which are currently used on the freelance-market. Services using Escrow bring in an expert, who, in case of disputes, settles it. However this decision has following disadvantages.
+
+ You have to transfer your deposits to the freelance-exchange market / bank account  Experts are unmotivated to settle disputes justly (they are not personally involved in the
+
+issue)  Centralized system for settling the dispute can be compromised  The fee is too high
+
+Solutions available do not offer a simple way to implement the arbitration system in blockchain projects and this proves to be a very important issue. Indeed, the blockchain knows nothing about the real world.
+
+With dynamic growth of new arising blockchain projects and of the amount of ICO held that attract ever-bigger money. Our service becomes more relevant and popular. 34 companies gathered more than 550 million $ using ICO in June 2017 alone. Below we can see the statistics for the ICO market till May 2017. As well as biggest ICO campaigns held in June 2017. ICO brought $1.67 billion total, $1.38 of which in 2017. Our decentralized arbitration platform can be successfully used in projects such as: Aragon, Artex, Ethlance.
+
+
+
+Image 2 ICO Market till may 2017(Smith Crown) Image 3 Biggest ICO June 2017(Bloomberg)
+
+
+
+4. Services/ Modules
+
+When designing decentralized systems that interact with the real world, we identify several modules that are necessary for implementation, among them:
+
+ Escrow  Arbitrage  Reputation system  Auction  Identity
+
+Current ecosystems of smart contracts (e.g. Ethereum) do not have unified, ready-to-use solutions.
+
+4.1.Escrow
+
+Escrow (deposit) services are very useful in transactions with impressive amounts, in which, before transferring funds, one of the parties needs to fulfill a certain scope of obligations, for example in the case of a website order: The buyer wants confirmation of the quality of work, before making a full payment, and the seller does not want to deliver all the work not being confident that he will be paid by the buyer. While traditional escrow services are rather complicated and all transactions pass through banks and lawyers, smart contracts can significantly reduce costs.
+
+4.1.1 Safe deal
+
+Smart Escrow contract enables to reduce the risk of fraud by assuming the role of a trusted third party that collects stores and distributes funds only when the seller and the buyer are satisfited with the result. A simple scenario of the safe transaction service:
+
+1. The seller and the buyer agree on the terms of the transaction -either the seller or the buyer creates the transaction by filling in the necessary fields of the smart contract form.
+
+
+
+2. The buyer pays "arbitration fee", in this way, confirming the transaction. The funds and the fee are kept in a smart contract
+
+3. The Seller delivers the good to the Buyer 4. The buyer accepts the goods - the buyer now has the option to accept or reject the
+
+transaction. 5. If the buyer accepts the transaction, a smart contract is activated and the funds are
+
+transferred to the seller automatically. 6. In case of disputable situations, the buyer may open proceedings. In this case, the
+
+Arbitrage mechanism is activated.
+
+4.1.2 ICO(Dao) Escrow
+
+ICO Escrow service provides a specialized smart contract that controls the amount collected on Crowdsale \ ICO.
+
+ The monetary funds received during the ICO are unlocked upon the achievement of the milestones indicated in the road map of the project, by voting of the holders of the tokens.
+
+ When the voting function starts, the token holders begin to audit the work done for the previous reporting period, and have the opportunity to vote to unlock the next part of the funds.
+
+ If the voting is successfully completed, the requested funds are transferred in the air to the project team's digital wallet, and the milestones are considered to be successfully completed.
+
+Such a service allows start-ups entering the ICO to increase confidence in their project, and to ensure transparency in meeting the set goals, it also increases investors' protection, and gives the investors more control over the project.
+
+4.2. Arbitrage
+
+The arbitrage mechanism allows resolving disputes that arise in the process of commodity-money relations. At the moment we have a cross-border value transfer system,
+
+
+
+communication systems, etc. So why should we address our local courts, or arbitrators, to resolve controversial situations?
+
+Decentralized world and decentralized systems require a more sophisticated mechanism for resolving disputes.
+
+Such a mechanism will require the following characteristics:
+
+- provision in the contract code that causes delegation to the arbitrator, which will operate according to the rules prescribed in the smart contract: For example, both sides declare a problem and start an arbitration dispute;
+
+- the provision in the contract regulating the filing of disputes to the arbitrage : This assumes that there is a version of the contract in the usual language and that it corresponds to the delegation mechanism in the code of the smart contract;
+
+- a forum for arbitration that can be managed centrally or through an appropriate ledger1, or using one of the many existing forums. The forum will determine these main components:
+
+- set of rules for arbitration proceedings
+
+- a pool of possible arbitrators that can range from individuals capable of making an expert decision for a small fee to high-ranking arbitrators who are able to resolve complex disputes
+
+- an administration that is capable of managing cases as they are filed and of decision-making.
+
+4.2.1 Standart arbitrator
+
+ There are transactions, disputes over which could be resolved by any arbitrator. The arbitrator needs only to pass registration on our service.
+
+ Requirements for the arbitrators are raised by the projects independently
+
+4.2.2 Arbitrator's specialist
+
+ To deal with certain cases the arbitrators must have a corresponding specialization, i.e. a confirmed set of specific skills.
+
+1 Ledger is a security technology that is used by blockchain startups.
+
+
+
+ Specialization can be obtained from the project, within the framework of which they want to act as arbitrators.
+
+ Specialization is also maintained if the arbitrator decides to work for another similar project. Any project is entitled not to accept the specialization of an arbitrator, attributed to him/ her earlier by another project.
+
+4.2.3 Legal Arbitration
+
+Such a mechanism can also provide a partial solution to the complexities of interagency / international trade. Using a common set of rules, the parties can agree with a decision that is legally acceptable in both jurisdictions.
+
+ The Dispute Resolution Contract (DRC)2 is an independent smart contract used by two (or more) parties to resolve any disputes that may arise during a contract or transaction.
+
+ For example, if Alice (the buyer) wants to buy a TV set from Bob (the seller), then Alice and Bob can use the DRC to resolve any disputes arising from the sale. In this case, Alice and Bob would be the two parties involved in the DRC.
+
+ DRC allows to retain funds in escrow or be a part of a multi-stage contract. DRC includes an interface that allows either party to initiate a lawsuit regarding the claims and ADR 3 mechanisms to resolve a dispute - for example, formal arbitration, a voting pool or some other mechanism.
+
+ DRC will be financed by the contracting parties, for example. Alice and Bob, and their funds could be also used to pay for ADR services.
+
+ If no disputes arise during the term of validity of the contract, both parties can consent to the termination of the DRC. If this deadline ends and neither party initiates a dispute, the DRC will be terminated automatically.
+
+2 Dispute Resolution Contract (DRC) 3 ADR (Engl. American Depositary Receipt)
+
+
+
+4.3. Reputation
+
+A typical reputation system includes a pool of participants executing a protocol that allows users to leave feedback about their interactions with each other. References or feedback consists of numerical estimates (for example, 1-5 stars) and / or a short message. Feedback accumulates over time and can be requested by other users in the system.
+
+4.3.1 Arbitrator's reputation
+
+ The reputation of arbitrators is formed on the basis of their decisions.  The higher is the arbitrator's reputation, the greater deposit of the transaction he/ she
+
+gets, as a consequence, the arbitrator with a greater reputation earns more. The higher the reputation of an arbitrator is, the more weight he has when decision-making.  If the decision rendered by the arbitrator turns out to be incorrect, during the final vote count of the arbitrators' pool, his/ her reputation will decrease. If the arbitrator's decision coincides with the final one, the reputation of the arbitrator for consideration of this transaction will increase.  Reputation is universal and unified within the framework of specialization for all the projects using our system. You will retain your reputation as an arbitrator if you decide to work for a new project. Thus, you can act as an arbitrator, for example, on several freelancing exchanges simultaneously.
+
+4.3.2 Seller/buyer
+
+The purpose of such a system is to create a unified history of the relationship between the buyer and the seller; such a system must meet several requirements:
+
+ Anonymity: The system should provide pseudo-anonymity, both for the buyer (Information on the transaction does not allow you to match the buyer and feedback on the seller / product)
+
+ Transparency: Anyone can join this system, both in the role of the buyer, and in the role of the seller. The task of such a system is not to limit the creation of new, clean accounts, but to motivate users to save your account.
+
+
+
+ Commonality A unified decentralized reputation system will allow sellers to use various marketplaces while maintaining positive feedback and reputation. While changing the service (for example, if you want to switch from trading with eBay to Amazon), the seller will no longer have to prove his/ her integrity because his/ her transaction history, and all feedback about him/ her will be saved in the blockchain.
+
+4.3.3 Contestation of reputation
+
+If after some kind of operation, your reputation has been lowered, you can contest this decision.  Having decided to contest the assessment or the verdict, you will have to pay the arbitrators' work yourself.  Opportunity to contest reputation is very important, because the reputation obtained is universal and uniform for all services, no matter, if it is a decentralized freelance exchange or a decentralized marketplace.
+
+For example, if you were an arbitrator who made a decision that did not coincide with the opinion of the majority of the arbitrators and, as a consequence, was recognized as erroneous. You can try to contest this decision. Also, in case of a negative feedback from the customer, seller, buyer or contractor, you can always use this service and keep a reputation. At the same time, a user who has unreasonably levelled down his assessment will be penalized so that his / her reputation will be decreased.
+
+4.4. Auction
+
+Decentralized auction system, where the seller and the buyer are sure of integrity of results.
+
+In current auction systems, an unscrupulous system owner may abuse his authority, and give an unjustified advantage to some participants of the system. Due to that, ordinary system user can feel unprotected against dishonest users, and cannot verify the integrity of the system.
+
+Thanks to Smart contracts, we can ensure the integrity of the business logic performance, and the security of user data
+
+The logic of the simplest auction is the following:  User A (seller) announces an item for sale, its initial price, and the time limit for sales.
+
+
+
+ Interested buyers can place bets before the limit is reached  When one of the sellers wins, his money is deposited on the Escrow account before
+
+delivery
+
+In the future, we plan to implement  Texas auction  Reverse/ buyer's auction
+
+4.5. Identity
+
+We preserve the history of interactions within modules regarding all the projects our services are connected to.
+
+
+
+5. Our solution
+
+5.1 Our services
+
+5.1.1 Web-service for deals management
+
+The user can create new deals and monitor the status of existing deals in which he/ she has taken part.
+
+To create a deal, you will need to specify the amount of deposit from each of the parties participants, the public address of the second party, as well as to set the deadlines for the performance of the terms of the deal and the criteria for selecting arbitrators. After the creation of the deal, each of the parties can make their own adjustments relating to any parameters. When both parties accept the current parameters of the deal and provided there are enough funds on their accounts to cover the deposit for their part, the deposit amounts are remitted to smart contract of the deal. So the deal is open, now all the deal parameters are available only for review and can not be changed by either side. At the end of the work, each of the participants confirms that the other party has performed all the terms of the deal. In the event that both participants are satisfied with the result, the amounts of monetary funds from the deposit are distributed in accordance with
+
+
+
+the terms specified during the creation of the deal, now the deal is executed. Otherwise, a dispute opens and our arbitration service comes in. Participants in the dispute are given an opportunity to provide arguments in their favor .
+
+5.1.2 Telegram - bot for arbitrators
+
+Bot sends the arbitrators notices about a new dispute and information about the subject matter of the dispute in the telegram channel, after that the arbitrator can accept or reject this dispute.
+
+The chat bot sends judges all the materials necessary for making a decision regarding the deal, also by means of a bot, it can request additional arguments from the parties in case of difficulty. The decision of the arbitrator can be made either with the help of a chat-bot, or through a web interface. With the help of the bot chat, the arbitrator can find out his/ her current rating, request the history of his decisions on disputes, and the deals available to him/ her. He/ she is also able to establish
+
+
+
+the minimum amount of remuneration for which he/ she is ready to take up the consideration of cases.
+
+5.2 Verification of the arbitrator
+
+The arbitrator must undergo verification before being able to take cases and make a decision on them. To do this a request about the desire to become an arbitrator should be made. To obtain a certain specialization, the arbitrator will be offered various test assignments, after passing which the arbitrator will have an opportunity to take cases on this specialization.
+
+Having passed the verification, the arbitrator receives a rating (by default) and is ready to resolve the arising disputes according to his specification.
+
+In order to be qualified in several specializations, the arbitrator must pass tests in each of them.
+
+In addition to the standard procedure for verifying arbitrators, other methods can be used. For each specific project, depending on the features of the system in which our arbitration services will be applied.
+
+5.3 Arbitration process
+
+After the opening of the dispute by the parties, arbitrators are chosen randomly from among those that meet the established criteria.
+
+The selected judges are notified via telegram-bots, and receive information about the deal, they have certain time, in order to decide whether he/ she is ready to act as an arbitrator in this matter or not. Further, the arbitrator receives detailed information on the current dispute, the initial conditions and all the arguments of the parties. After receiving all the information, arbitrator must make a verdict within the assigned time-period. The verdict of the arbitrator may be also passed via a chat bot or using our web interface.
+
+
+
+After the verdict is passed, the arbitrators receive remuneration for their work. All judges receive a remuneration in the form of 7% of the total amount of the deposit, then this money is distributed among the judges in accordance with their ratings.
+
+If there are not enough judges who are ready to get down to case, then the dispute participants may increase part of the deposit allocated to arbitration, by mutual agreement, or one of the participants can independently increase the amount allocated to arbitration by contributing additional funds.
+
+5.4 Reputation system
+
+
+
+- Payments to arbitrators depend on their reputation Reputation changes depending on the decision taken - Each arbitrator can bet on his decision - Payments for bets are not dependent on reputation
+
+Let us consider an example:
+
+We have 7 arbitrators, each of them has its own reputation, and they consider the case between the customer and the contractor. The table below shows all the information. In the bet field, the amount of "money" put on a decision in favor of the customer / contractor is displayed.
+
+
+
+Arbitrator Reputation Bet Result
+
+
+
+Weight in decision making
+
+
+
+1
+
+
+
+1
+
+
+
+0,5 
+
+
+
+1/ (1+1,3+1,6+1,26)= 19,379 %
+
+
+
+2
+
+
+
+1,1
+
+
+
+1
+
+
+
+ 1,1/(1,1+1,21+1)=33,232 %
+
+
+
+3
+
+
+
+1,3
+
+
+
+1
+
+
+
+
+
+
+
+1,3/ (1+1,3+1,6+1,26)=25,193 %
+
+
+
+4
+
+
+
+1,21
+
+
+
+1
+
+
+
+ 1,21/(1,1+1,21+1)=36,56 %
+
+
+
+5
+
+
+
+1,6
+
+
+
+2
+
+
+
+
+
+
+
+1,6/ (1+1,3+1,6+1,26)=31 %
+
+
+
+6
+
+
+
+1
+
+
+
+1
+
+
+
+ 1/(1,1+1,21+1)= 30,21 %
+
+
+
+7
+
+
+
+1,26
+
+
+
+2
+
+
+
+
+
+
+
+1,26/ (1+1,3+1,6+1,26)=24,418%
+
+
+
+To begin with, we consider the total weight of the decisions for the Customer and for the Contractor. The total weight of the "Customer"`s reputation is 1 + 1.3 + 1.6 + 1.26 = 5.16or 60.93%. The total weight of the Contractor's reputation is - 1,1 + 1,21 + 1 = 3,31or 39,07%. The Customer has won.
+
+Suppose that 10 units were allocated for the resolution of the dispute, then.
+
+
+
+Arbitrators
+
+Recieved funds
+
+
+
+1
+
+
+
+2
+
+
+
+1,9379 0
+
+
+
+3
+
+
+
+4
+
+
+
+2,5193 0
+
+
+
+5
+
+
+
+6 7
+
+
+
+3,1
+
+
+
+0
+
+
+
+2,4418
+
+
+
+Aribrators have also made bets 5.5 were put on the customer's victory, 3on the contractor. Everyone who has put money on the customer will receive a prize that is commensurable with his/ her bet. Gain fund 3
+
+
+
+6. Competitors Analysis
+
+Aragon
+
+The roadmap of the Aragon project is aimed to create An Aragon Network Jurisdiction (ANJ), which will include an arbitration system that will resolve disputes between the two parties and adjudicate on the dispute being a holder of ANT tokens. The creation of the arbitration mechanism is scheduled on Q3 2018.
+
+We do not consider them as our competitors, on the contrary, they may well be the users of our system and embed our service in Aragon Network Jurisdiction.
+
+Bitrated
+
+Provides a service for reputation management, and multisig of smart contracts based on bitcoin's blockchain.
+
+Reputation system is based on "chain of trust" principle, which is vulnerable to a number of spam attacks.
+
+Service is currently inactive.
+
+
+
+7. Long term vision and RoadMap
+
+Our Strategic Vision
+
+1. Developing a set of simple dispute resolution agreements that can be easily and quickly included in other types of smart contracts.
+
+2. Co-integration of smart contracts and traditional commercial / contractual rights related to dispute resolution.
+
+3. Providing unique opportunities for smart contracts in ADR.
+
+4. To expand the scope of application of ADR-smart contracts to automate all functions of mediation, arbitration and dispute resolution.
+
+5. Develop decentralized decision-making options for dispute resolution
+
+6. Building an arbitration mechanism for a decentralized economy, which will be:
+
+- Easy to personalize - Trustworthy - Easily implemented in the current and future ecosystems of blockchain and decentralized applications
+
+
+
+8. Fors Token
+
+The Fors token will be issued on a crowdsale. 100 % Fors Token = 100% of the Fund. How does the fund raise?
+
+It's accumulated from 2 sources:  Fee for connecting to our services
+
+We charge a fee for the integration of our modules into other projects. It can be either fixed or a percentage of the project's tokens, with which the integration takes place.
+
+ Fees for using our services After integrating our solution, we charge commissions from transactions inside our modules.
+
+
+
+9. Token distribution
+
+Pre-ICO
+
+Pre-ICO is the preparotary stage of crowdsale:
+
+- Fors tokens (Forseti) are indicated in a smart contract, the number of them during the pre-ICO is limited to a maximum amount of 250,000 US dollars, at which point the issuing of tokens is stopped - Tokens are sold at the price set in US dollars, 1 US dollar = 13 Fors - Purchase is carried out by transaction of Etherium to the address of the smart contract - At this stage, the investor receives a bonus of 30% compared to the ICO stage
+
+All collected funds are transferred to the team and should be spent on:
+
+- Creation of MVP product - A more in-depth study of the reputation system - Marketing and promotion of the project, preparation for participation in ICO - Legal support
+
+ICO
+
+ICO is the main stage of crowdsale:
+
+- In the smart contract there is a primary issuance of Fors tokens, the number of which during the ICO is limited to a maximum amount of $8.200.000 (the issuance of tokens is limited to this amount) - Tokens are sold at the price set in US dollars, 1 US dollar = 10 Fors - Purchase is carried out by transaction of Etherium to the address of the smart contract - The rate of Etherium is fixed to the US dollar rate until the end of the crowdsale - After the completion of crowdsale, there is an additional issuance, which is 28% of the total number of tokens, 20% of which remain with the project team, 2% are meant for project consultants, 1% for AND 5% are given to the first investors
+
+
+
+- The time limit of crowdsale is 30 days from the moment of launch There is a system of discounts for the first investors:  11,5 Fors = 1 US dollar when buying during the first day of ICO  11 Fors = 1 US dollar when buying during the first week of ICO  10,5 Fors = 1 US dollar when buying during the second week of ICO Funds raised during the ICO are intended for: - Creation of Forseti infrastructure and maintenance of its functioning - Study of reputation system Issuance of tokens after ICO is not provided. The successful ICO - raising minimum of $ 2.000.000, not counting the funds collected during the pre-ICO. Otherwise, all raised funds are to be returned to investors, but in a smaller amount, due to transaction charges and "gas cost".
+
+10. Team
+
+Forseti Team was formed on the hackathon B lockchainHack 2017, where was developed the concept of F orsetiproject and the first prototypes of our services. Almost all team members met there. On this hackathon, our team took the 3rd prize place from one of the sponsors - Qtum.
+
+Nikolaev Alexander Business development Director of practical blockchain solutions at Financial University accelerator.
+
+
+
+In the sphere of the blockchain since 2015. Experienced Smart Contract Developer. Founder of the blockchain-startup Dolphin BI (Decentralized system for the analysis of ico projects ). Has won 2 of the hackathon blockchain "blockchainhack" 2016 and 2017 (1 and 3 place respectively).
+
+Ivanov Pavel Lead Front-end developer
+
+Graduated from the HSE on the profile web design in 2014 (Started learning in 2009). Since 2010 began career in IT. Fun fact that I wasn't even going to do 1 course taught a General course in HTML and I have 3 months could not find work as a web designer with no experience. And after 3 months received an invitation for a job interview as a Coder. There is a division: Coder PSD layouts (designer) and the Designer of HTML pages. And of course the error happened) Well I decided to test the HTML/CSS and I was invited to the job in a web design Studio. For 1 year I made more than 300 sites.
+
+Worked in Biglione, Mail Group (Search and Games). In 2014 he moved to the States, resigned from the Mail, went with a friend to do a startup MyFamily (mutuality of families with children). Startup was unsuccessful due to lack of experience. After half a year returned to Moscow got a job in a small company and met with patner from US and joined a startup HackPack.press in the role of Co-Founder and TeamLead. Startup enough fortunate and now has more than 10K journalists around the world. Currently working in the role of the front lead (subordinate 5 remote fronts). Extensive experience in 2-3 organizations at the same time. Write code by tons =)
+
+
+
+Manzyuk Vladimir System Analyst 8 years experience Graduated from the VSTU on the profile microcontroller developer in 2011 Since 2009 began carrier in IT. x Co-founder of multi media startup tvevt.com. Developed from scratch algorithm of the recommendation system on the python for Tvevt.com. 3rd winner of "Blockchainhack2017" by the Forseti team Blockchain analyst in Ico Lab
+
+Kaizer Denis Back-end developer, Master Degree in Math, HSE Engaged in IT in 2013. Developed Asset management platform and accrued yield of the crypto-invest Fund, and was its co-founder. In 2016, was fascinated by the Blockchain technology. The author of the Telegram-bot for various projects one of them Erachain. HSE 2016 medalist in the section of applied mathematics. 3rd winner of "Blockchainhack2017" by the Forseti team. Author of articles on coinnews.io
+
+
+
+Bulat Mingulov Marketing Officer After graduating from Higher School of Economics in 2012, Bulat spent 5 years in various research, journalism, digital and entrepreneurial spheres up to the managing partner-head of marketing in development company (vtzstroy.com). In 2014, he co-founded the IT-startup RSdigital (rsdigital.ru), in 2016 sold his share and left the project. Last year he was engaged in blockchain. Within the framework of his own digital studio, he formed a team of remote employees to produce landing pages, direct advertising, content marketing and web analytics.
+
+Advisers
+
+Alexander Noxon
+
+DAO casino Technical Officer
+
+Begin with Bitcoin in 2012 and in 2013 created the integrated circuit board prototypes at 55nm (bitfury) and 28 nm (coincraft), in 2015 developed own trading platform connectivity Thomson Reuters. Expirienced Ethereum smartcontract writer. Owner of
+
+
+
+@tdxbot. Ranked in the top 10 web developers by fl.ru, more than 100 projects done in scratch. An active participant in the open source community.
+
+References
+
+http://www.nortonrosefulbright.com/files/r3-and-norton-rose-fulbright-white-paper-full-report-1445 81.pdf https://forum.daohub.org/t/decentralized-arbitration-and-mediation-network/3062 https://dupress.deloitte.com/dup-us-en/focus/tech-trends/2016/blockchain-applications-and-trust-i n-a-global-economy.html
+
+
+
+

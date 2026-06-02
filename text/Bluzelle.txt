@@ -1,0 +1,759 @@
+A DECENTRALIZED DATABASE SERVICE FOR DAPPS
+
+Bluzelle fills a void in the decentralized internet ecosystem
+
+WHITEPAPER V 1.2
+
+October 10, 2017 Wri6en By Pavel Bains & Neeraj Murarka
+
+
+
+1. INTRODUCTION
+
+Our vision is to make the internet a safer and more secure place for the data of people and businesses.
+
+1.1. The Problem
+
+Blockchain technologies are propelling the next generaDon of the Internet. Protocols like Ethereum are a plaGorm for launching decentralized applicaDons (dApps) that will change the way products and services are consumed. These dApps will exchange massive amounts of data that need to be stored and managed. The problem is blockchains like Ethereum are not designed for data storage and management; doing so would take up too much space and take too much Dme.
+
+1.2. The Solution  Bluzelle
+
+Just like decentralized services like Filecoin and Storj are needed for file storage & management; there is a need for data storage & management. Bluzelle is a decentralized, on-demand, scalable database service for dApps. Bluzelle fills a need and is complementary to the other components to make the decentralized Internet complete. Without these decentralized components, the decentralized Internet would not be able to run efficiently and scale to massive use.
+
+2
+
+
+
+ECOSYSTEM COMPONENTS
+
+01
+
+APPLICATIONS
+
+02
+
+OPERATING SYSTEM
+
+03
+
+FILE STORAGE
+
+04
+
+DATA STORAGE & MANAGEMENT
+
+
+
+THE CURRENT INTERNET
+
+
+
+THE DECENTRALIZED INTERNET
+
+
+
+Bluzelle is the right fit because it provides enterprise-grade database services at a price for all Decentralized ApplicaGon (dApps) developers.
+
+
+
+3
+
+
+
+2. HISTORY OF BLUZELLE
+
+
+
+Seeing that blockchain can provide numerous benefits to the finance industry, Bluzelle was formed in July 2014. We created a technology stack that abstracts the complexiDes of managing blockchain applicaDons.
+
+
+
+2014 JULY
+
+Pavel Bains and Neeraj Murarka form Bluzelle in Vancouver, Canada
+
+
+
+APRIL
+
+2015
+
+Launches Canadian Ripple Gateway directly connected to Canadian Banking debit network
+
+
+
+FEBRUARY
+
+2016
+
+Sets up in Singapore
+
+MARCH
+
+
+
+Raises seed financing round from True Global Ventures
+
+
+
+MAY
+
+Builds Ripple-based cross border
+
+
+
+SEPTEMBER
+
+
+
+payments POC for global banking platform Temenos
+
+
+
+Builds Ethereum-based consumer
+
+
+
+mobile insurance application for
+
+
+
+DECEMBER
+
+
+
+global insurer AIA
+
+
+
+Named to the Global Fintech 100 by
+
+
+
+H2 Ventures
+
+
+
+APRIL
+
+2017
+
+Builds Ethereum-based KYC Ledger
+
+
+
+for international banks consortium
+
+
+
+JUNE
+
+
+
+consisting of OCBC, HSBC and MUFG
+
+
+
+Named Technology Pioneer 2017 by
+
+
+
+World Economic Forum
+
+
+
+JULY
+
+
+
+Builds Ethereum-based insurance platform for a large Asian insurer
+
+
+
+AUGUST
+
+Raises $1.5 M USD round from international VCs Global Brains (Japan), True Global Ventures (Europe) and LUN Partners (China)
+
+
+
+Working with enterprise customers revealed one criDcal challenge for widespread adopDon of blockchain applicaDons: the management of large amounts of data. This discovery led to the formaGon of the Bluzelle decentralized database service.
+
+
+
+
+
+4
+
+
+
+3. THE CURRENT STATE OF DATABASE SERVICES
+
+It's esDmated that in 5 years there will be over 20 Billion connected devices that require the generaDon, management, storage, and retrieval of enormous amounts of data.
+
+"Business leaders demand next-generation applications and new insights to drive more intelligent engagement and better decisions. To get there, enterprise architects need to design an agile technical architecture that can scale automatically with capabilities, such as databases, that are always available to support new initiatives. It takes enormous time, effort, and coordination to provision new databases today because of a lack of resources to meet the administration challenges of rolling out complex clustered systems." Forrester Research, 2017 Market Overview Database As A Service
+
+To address this problem, emerged the Cloud Database and Database-as-a-Service (DBaaS) market. According to Markets and Markets, this industry is expected to grow at a CAGR of 67.30% to $14.05 billion by 2019. There are four primary drivers of demand for DBaaS:
+
+ Consumer personalization apps - financial, dating, social media products  Internet-of-things (IoT) applications - everything is being connected  Mobile apps - amount of data consumed is growing exponentially  Line-of-business (LoB) collaboration - business units share more info
+
+With all these applicaDons producing more and more data, past and present database management services are under-equipped to meet the needs of businesses. There are problems centered around performance, reliability and scalability. These can lead to problems of data breaches resulDng in massive amounts of data thel.
+
+5
+
+
+
+The systems of the past and present will now evolve to the future: The Bluzelle decentralized, on-demand, database service.
+
+
+
+PAST: SINGLE SYSTEM DB Multiple sources of failure
+
+Expensive to scale
+
+No privacy
+
+No immutability
+
+Performance limitations
+
+
+
+PRESENT: CLOUD DB
+
+Single source of failure
+
+
+
+FUTURE: DECENTRALIZED DB
+
+No points of failure
+
+
+
+Expensive to scale
+
+
+
+Scales efficiently
+
+
+
+No Privacy
+
+
+
+Highest privacy
+
+
+
+No immutability
+
+
+
+Immutable
+
+
+
+Some performance limitations No performance limitations
+
+
+
+6
+
+
+
+4. BLUZELLE FEATURES
+
+Bluzelle is a decentralized database service for dApp developers. To ensure developers get the highest throughout in performance, reliability and scalability, Bluzelle implements swarming technologies. A swarm is a large group of nodes (computers) that work together to store and manage data. Nodes in these swarms can go down and new nodes can come up with minimal impact on the network. Overall Bluzelle is a meta-swarm comprised of mulDple swarms.
+
+4.1. Performance
+
+Bluzelle's unique and proprietary swarming techniques were designed for the highest performance. Bluzelle can reduce latency by retrieving data from the nearest nodes on the leaf swarm, and/or increase speed manyfold by retrieving data in parallel from the fastest nodes on the leaf swarm. This is like torrents and seeds. When data is requested, it is done in parallel where chunks (shards) are requested from all the different swarms that contain those shards, and these are all retrieved in parallel, resulDng in desirable performance metrics.
+
+4.2. Reliability
+
+Using the concept of fog or swarm compuDng, Bluzelle follows a model where every unit of data is 100% replicated in a single leaf swarm amongst a swarm of swarms. So while the data is only in one swarm, that swarm's nodes are aplenty and are geographically dispersed, immune to localized outages caused by either natural or human-related events.
+
+4.3. Scalability
+
+Scalability is possible both horizontally or verDcally. Bluzelle manages the various strategies and consideraDons around the use case of having to increase scale. Horizontal scaling is a cornerstone of the Bluzelle architecture, where every swarm is another "unit" of horizontal scaling at the metaswarm level. Within every leaf swarm, every node acts as yet another agent of horizontal scaling, at the leaf swarm level.
+
+7
+
+
+
+The following table outlines addiDonal features of Bluzelle.
+
+
+
+FEATURE
+
+Highest privacy High reliability Enterprise scalability Data immutability High performance speeds No intruders Low cost
+
+
+
+DESCRIPTION
+
+Bluzelle employs cryptography and sharding techniques to provide a privacy guarantee.
+
+Bluzelle redundantly stores tiny pieces of data on nodes across the globe, eliminating any single point of failure.
+
+Bluzelle algorithms store data in a unique, distributed and intelligent manner that will provide enterprise-level scalability.
+
+Bluzelle leverages blockchain technology so that once data is stored to such a network, it is impossible to change that data.
+
+Bluzelle dynamically adjusts the number and location of nodes sharding the consumer's data to meet performance metrics.
+
+Bluzelle's use of consensus is the only method by which updates to the network can be accepted as the "truth".
+
+Bluzelle operates few data centers and has little capital costs. Vast majority of computer resources are provided by participant producers.
+
+
+
+8
+
+
+
+5. HOW DOES BLUZELLE WORK?
+
+Bluzelle takes blockchain principles and sharding & parGGoning concepts to create an AirBnB like marketplace for data storage and management. This is a crypto-economic network of powerful producers and consumers.
+
+5.1. Consumer
+
+The consumer is the one who "consumes" the Bluzelle database services. These are the developers we target. Consumers are spending Bluzelle tokens so they can store and retrieve data. AddiDonally a user could get a credit of tokens if a producer failed to meet certain service levels.
+
+5.2. Producer
+
+The producer is the one who provides resources to the network in return for earning Bluzelle tokens (BLZ). Bluzelle producers will be required to put up a proporDonal stake of Bluzelle tokens, in order to provide a guarantee on the service levels Bluzelle will provide. Bluzelle will encourage compeDDon by producers to provide higher quality services, where those with higher service levels can charge more but also have to put up a higher stake. Every parDcipaDng consumer and producer of Bluzelle are iniDally required to independently create their own Ethereum account and take responsibility for securing and protecDng their private key. The private key is used to secure access to their ETH and Bluzelle tokens and encrypt their data before it gets sent out over the Bluzelle network.
+
+9
+
+
+
+6. DAPP USES CASES FOR BLUZELLE
+
+6.1. Predictions Markets
+
+Decentralized predicDons markets on Ethereum require the management and storage of massive amounts of data to work. These include: (1) the quesDons being asked, (2) the different possible outcomes, (3) the predicDons being made, and (4) the sourced informaDon for the actual events. A decentralized database can grow and scale as per the products needs. Having fast and reliable access to data is important for the success of the predicGons market to garner new customers and parGcipaGon. Historical data stored on Bluzelle will add a new category of predicDons that can reduce human speculaDon by using past events to make be6er predicDons.
+
+6.2. Currency Exchange Protocols
+
+A key part of a currency exchange protocol is the presence of relayers, who enable makers and takers to connect via off-chain order books. The underlying order-books must be fast, efficient, reliable, and easy to supply, by the relayers. A pain point is relayers are responsible to store these order-books each in their own way. By using a decentralized database like Bluzelle, currency exchange protocols can provide relayers with a standard, consistent, ubiquitous, database that would be available with no effort. This reducDon in fricDon maximizes the service level and quality as the network would now sDll be powered by relayers.
+
+6.3. Data Streaming Networks
+
+Data streaming networks match up consumers of data points with producers of data points. For example a car uses real-Dme traffic data from the data streaming network. The car collects realDme data while it moves. It is both paying for data it "buys" and "earning" from data it "sells" to the network. The data points need to be both readable and writable with high performance, availability, scalability, and reliability. Bluzelle is ideal to provide the precise infrastructure needed so that a data streaming network can store its data to meet these requirements. 
+
+10
+
+
+
+7. MARKETING STRATEGY
+
+7.1. Target Market
+
+Bluzelle has three groups that it targets to become a mainstream product like Oracle Systems. Bluzelle will start the first with the first group and then expand outwards.
+
+
+
+ Early Adopters - dApp developers. One of the fastest growing segments in the solware industry. It involves solware developers wriDng blockchain based applicaDons that take advantage of other decentralized technologies that are complementary to Bluzelle.
+
+ Early Majority - small-to-mid size developers. Refers to developers that are not in dApps but building common web, mobile, hardware applicaDons. These developers are wriDng games, producDvity solware, mobile applicaDons, uDlity solware, and many other solware products.
+
+
+
+LATE MAJORITY
+
+EARLY MAJORITY
+
+EARLY ADOPTERS DAPP DEVELOPERS
+
+SMALL-TO-MID SIZE DEVELOPERS
+
+ENTERPRISE SOFTWARE ARCHITECTS
+
+
+
+ Late Majority - enterprise soeware architects. The large enterprises who see how dApps and other developers use Bluzelle and then have the validaDon to also move their data storage needs to us.
+
+
+
+11
+
+
+
+7.2. Regional Focus
+
+With it's offices in both Singapore and Vancouver, Bluzelle is in a unique posiDon to grow in two of the biggest regions for dApps and the blockchain: US/Canada and Asia Pacific.
+
+From China to Korea to Japan to Southeast Asia, this region is home to a fast growing startup blockchain community. These startups require efficient and low-cost services. Many parts of Southeast Asia are rapidly developing as major ciDes and high-growth economies. They are leapfrogging legacy client-server architecture systems to innovaDve adapDve and scalable soluDons built for the future.
+
+"Asia Pacific is anticipated to aggressively adopt cloud database and DBaaS solutions in the near future. This is basically due to the increasing focus by small, medium, and large scale enterprises for the purpose of improving efficiency and productivity via investment in technology." - TMR Research Cloud Database and Database as a Service (DBaaS) Market, 2017-2025
+
+Bluzelle has an R&D center in Vancouver, Canada. Being in Western Canada/US gives Bluzelle a strategic posiDon to offer it's product to the growing blockchain and overall developer businesses in Sea6le, Portland, San Francisco and Silicon Valley. Bluzelle's founders, advisors, investors have a history of working in Silicon Valley and have strong connecDons to build support in the worlds biggest technology center.
+
+These regions are just to start. Bluzelle is a global product that meets the needs of developers everywhere.
+
+7.3. The Bluzelle Developer Community
+
+The first release of Bluzelle is planned for April 2018 and we have started building our developer community. Servicing solware developers has less fricDon as they can be engaged online and are passionate about technologies that help them make be6er products quickly and easily. Early on, we will get feedback on the product and build the ecosystem enabling both the producers and consumers of Bluzelle.
+
+12
+
+
+
+We will have an online community site, go to hackathons, host meetup events, and much more. As a tech company, Bluzelle's employees have an organic network of peers, friends and acquaintances who are the target market. As menDoned in the prior secDon, Bluzelle will be doing various developer reach outs to many of the biggest ciDes in Asia and US/Canada.
+
+THE BLUZELLE
+
+DEVELOPER COMMUNITY
+
+13
+
+
+
+8. BLUZELLE'S ECOSYSTEM
+
+The opportunity to get Bluzelle into the hands of consumers is tremendous. A key is to build a healthy ecosystem where Bluzelle is integrated to many technologies; making it easy for customers to find Bluzelle.
+
+8.1. Developer Marketplaces
+
+Bluzelle aims to partner with leading solware development ecosystems and establishing channel partnerships that share revenue. Notable examples would include Heroku, AWS ElasDc Beanstalk, Redhat OpenShil, Google App Engine, and Microsol Azure. With such integraDons, developers can quickly use Bluzelle's decentralized database, just as effortlessly as they can use tradiDonal cloud database offerings - simply point and click.
+
+8.2. Developer Environments
+
+Development environments such as Android Studio, Apple XCode, Microsol Xamarin and Visual Studio, Eclipse, IntelliJ, Unity3D, PhoneGap, and Ionic are targeted for plugins and integraDons so that dApp developers of both desktop and mobile apps can easily integrate Bluzelle whenever they have database needs for their games, enterprise applicaDons, etc.
+
+8.3. Blockchains
+
+Blockchains play a large role in the Bluzelle ecosystem. Smart contract classes and instances are planned to be deployed directly not just to Ethereum but other open blockchain protocols like Hyperledger to enable dApp smart contracts to use Bluzelle for storage needs.
+
+8.4. Operating Systems and Browser Tools
+
+OperaDng-system and browser tools further enhance the developer's ability to access data, whether it is from a GUI applicaDon running on their desktop or a browser plugin that enables them to quickly store and retrieve table data.
+
+14
+
+
+
+9. THE BLUZELLE TOKEN
+
+Bluzelle is powered by two tokens:
+
+ Ethereum ERC-20 external token: BLZ This externally-tradable token bridges the Bluzelle naDve token (BNT) with Ethereum's own naDve ETH token.
+
+ Bluzelle Network Token: BNT An internal token to Bluzelle alone that enables the Bluzelle crypto-economy, where consumers pay and producers earn.
+
+The need for an internal token is because ERC-20 tokens are too slow and expensive for realDme database accounDng. The BLZ ERC-20 external token exists to represent on exchanges for customers to easily obtain to use the Bluzelle service. The BNT internal naDve token exists to enable high-speed, zero-cost, and real-Dme database accounDng. The BLZ and BNT tokens can be interchanged via the Bluzelle token gateway. For the public sale, people will be purchasing BLZ tokens.
+
+When a new parDcipant to the network wishes to use its services as a consumer, they will need to acquire BNT tokens. The standard method of doing so is as follows:
+
+1. Buy BLZ tokens on a crypto-exchange using ETH, BTC or other forms the exchange allows.
+
+2. Send BLZ tokens to the Bluzelle Token Gateway's smart contract via Ethereum. The gateway will issue new BNT tokens to the user's Bluzelle network wallet.
+
+3. The user now has BNT tokens, and is free to parDcipate in the network as a consumer.
+
+15
+
+
+
+When a producer wishes to "withdraw" their BNT tokens, they use the following steps:
+
+1. Send the BNT tokens to the special Bluzelle gateway. 2. The gateway converts the BNT tokens at a 1:1 raDo to BLZ tokens, and sends these BLZ
+
+tokens to the producer's registered Ethereum wallet. 3. The producer now has the BLZ tokens, and is free to transact with them on the Ethereum
+
+network. 
+
+
+
+ETHEREUM
+
+BLZ
+
+ERC-20 TOKEN SMART CONTRACT
+
+
+
+BLZ BNT
+
+GATEWAY SMART CONTRACT
+
+
+
+SWARM
+
+
+
+SWARM
+
+
+
+BLUZELLE
+
+Bluzelle Metaswarm DB + decentralized consensusledger for BNT.
+
+
+
+SWARM
+
+
+
+SWARM
+
+
+
+SWARM
+
+
+
+SWARM
+
+
+
+ETHEREUM BLZ WALLET
+
+
+
+DCL BNT WALLET
+
+
+
+16
+
+
+
+10. REVENUE MODEL
+
+The BLZ <=> BNT gateway proposes a micro-transacDon fee for every conversion going through the gateway in either direcDon. The fee is charged in BLZ tokens and is sent to a special Ethereum wallet owned by Bluzelle. The model is setup so the enDre ecosystem remains completely decentralized while sDll providing a revenue for Bluzelle to improve and innovate the network and its associated services.
+
+Following are two typical scenarios:  A user needs BNT tokens to use the service. 1. The user sends 100 BLZ to the BLZ smart contract. 2. 0.1 BLZ is subtracted from the total of 100 BLZ and is sent to the Bluzelle Ethereum wallet as a non-refundable fee. 3. The remaining 99.9 BLZ is converted to BNT and credited to the user's BNT Bluzelle naDve wallet.  A user wishes to convert BNT to BLZ. 1. The user sends BNT tokens to the BNT gateway. 2. The BNT tokens are converted at a BLZ 1:1 rate, resulDng in a conversion amount of 100 BLZ. 0.1 BLZ are subtracted from the total of 100 BLZ and is sent to the Bluzelle Ethereum wallet as a non-refundable fee. 3. The remaining 99.9 BLZ is released out of custody by the Ethereum smart contract and sent to the correct parDcipant' s Ethereum wallet.
+
+Absolute prices are calculated dynamically and are not 100% determinisDc. Maximums are baked into Bluzelle, where the network adjusts the number of swarms and distribuDon of nodes as prices start to approach the maximums, geyng increasingly aggressive with network adjustments as the maximums draw nearer, unDl expected average prices start to trend again.
+
+17
+
+
+
+11. TECHNOLOGY OVERVIEW
+
+This sec=on provides an overview of Bluzelle's technology architecture. For a more in-depth reading with more details refer to the Technology Paper.
+
+11.1. Database 101 - CRUD API
+
+CRUD stands for "create, read, update, and delete" for the four basic funcDons pertaining to databases and permanent storage. CRUD covers the funcDonality of relaDonal databases, where each of create, read, update, and delete can be mapped to corresponding SQL and HTTP methods.
+
+A password of the user's own choosing is also required, and it is up to the user to protect this password and keep it available for later. All the data stored in key value pairs are encrypted, with the password being used as the iniDalizaDon vector in AES 256 symmetric key encrypDon. This password is only ever used locally and never travels on the network in any way, shape, or form.
+
+11.2. Sharding
+
+Shard stands for "System for Highly Available Replicated Data". Large databases olen are hard to work with due to the size and memory constraints they come with. By parDDoning the database along logical lines, the database becomes much easier to work with.
+
+A logical shard is the smallest unit in Bluzelle and contains individual units of data that all share the same parDDon key. A parDDon key is a unique idenDfier that allows the shard to be accessed for the retrieval of informaDon. In Bluzelle, parDDon keys allow the dApp to store and retrieve data from the correctly idenDfied leaf swarm efficiently. In Bluzelle, groups of logical shards are stored on leaf swarms, and it is the amalgamaDon of these leaf swarms that makes up the enDrety of the Bluzelle database.
+
+18
+
+
+
+11.3. Jump Consistent Hashing
+
+Jump consistent hashing (JCH) was first described in a white paper by John Lamping and Eric Veach at Google. It is an elegant algorithm that only takes about 5 lines of code in a language like C++. JCH does not have a state machine, and therefore requires no storage. It is an algorithm without lookups in memory and is therefore much faster.
+
+Bluzelle uses JCH to map from the key (in key value pairs in a NoSQL table) to the id of the swarm that the key is replicated in. Once that id is found, Bluzelle uses Kademlia hashing to find the means to reach that swarm even if that specific swarm is not running.
+
+11.4. Kademlia Hashing
+
+Kademlia is an advanced form of a typical peer-to-peer distributed hash table which has been structured in a way to make parDcular use of the special symmetric and geometric properDes of the bitwise XOR funcDon. Bluzelle uses Kademlia hashing to efficiently enable nodes to know about every other swarm on the network. Using Kademlia's own form of "finger tables", each node in the network only needs to know informaDon about how to reach O(log(n)) other leaf swarms, where n is the total number of leaf swarms on the network. This means that irrespecDve of how large the network ever becomes, every node can reach every other leaf swarm within O(log(n)) tries, by only storing O(log(n)) data. As a result, Bluzelle is able to handle exponenDal growth.
+
+11.5. Partial Replication
+
+ParDal replicaDon means that not every node in the network has a copy of the data -- only the nodes within the leaf swarm delegated to that data replicate it. This is one of the key differences between Bluzelle and a tradiDonal "blockchain". Blockchains are inherently slow and do not scale well, as every set of transacDons or blocks is 100% replicated everywhere, puyng severe verDcal scaling limitaDons on the network. Bluzelle by design only stores the data amongst a strategic subset of the nodes, staDsDcally providing an guarantee that the data is always available and sDll achieving the benefits of boundless horizontal scaling. ParDal replicaDon exists because only ONE
+
+19
+
+
+
+swarm amongst all the swarms in the network replicates a given piece of data. An interesDng incumbent technology that can be compared to this is the content delivery network (CDN).
+
+11.6. Load Balancing
+
+A benefit of having a logical shard stored on mulDple physical nodes is speed - by having the same data accessible through different hardware resources at various geographical locaDons, the system may load-balance queries to retrieve data from nearby nodes that are least taxed at any given moment in Dme. This permits Bluzelle to dynamically perform queries and retrieve data in the most efficient way possible, maximizing use of the shared resources spanning across mulDple nodes.
+
+11.7. Redundancy
+
+As replicated data is stored across different nodes with unique infrastructure, there is a severely reduced causaDon between single-node failure and loss of the shard. This method of mirroring serves to secure the availability of data in an efficient manner by ensuring any single point of failure is inconsequenDal.
+
+11.8. Consensus
+
+Bluzelle deals with consensus differently from blockchains, doing away with any concept of a network-wide universal state. There is no need for a single state for the whole network, so Bluzelle applies the consensus model on a swarming level, ensuring that leaf swarms of nodes storing data shards are each reaching localized consensus, using our customized forms of consensus and proof algorithms .
+
+A swarm with consensus appears to clients interacDng with that swarm (or other swarms interacDng with the swarm) as a single, atomic, indivisible unit that stores a set of data reliably. Any node in that leaf swarm can accurately service requests pertaining to that data.
+
+20
+
+
+
+11.9. Karma
+
+Every producer on Bluzelle is enDtled to run one or more nodes on the network as farming nodes. Each such producer will use their Ethereum address as the "key" that idenDfies them. This idenDfier is unique to that farmer and is Ded 1:1 with their Ethereum address. The producer also has a "Karma Index", which is a score that dictates how well-behaved the producer is. The karmic index can go up and down depending on the producer's acDviDes and decisions, intenDonal or not, autonomous or not, and spans all the nodes the producer operates. If one such node misbehaves, the karmic index typically drops and this applies to all the producer's nodes. Furthermore, the farmer is required to put up a stake (in BNT tokens) that is proporDonal to the number of nodes and inversely proporDonal to the karmic index.
+
+11.10. Sybil Attacks
+
+Some blockchain networks, like Bitcoin, allow anyone to add their node to the network. That brings the concern that a malicious organizaDon could potenDally add so many nodes that they disproporDonately control the network and leading to hijacking the network. This is referred to as a Sybil a6ack. Bitcoin and Ethereum obviate Sybil a6acks by making them prohibiDvely expensive via proof of work. I
+
+Bluzelle employs several methods to prevent Sybil a6acks so that when a bad actor is caught, they can be blacklisted, and economically penalized leading to complete removal from the network. These anD-Sybil a6ack methods are:
+
+ Producers are required to put up a BNT stake to parDcipate in the network. This stake serves as a requirement for parDcipaDon and as a strong economic deterrent from bad behaviour.
+
+ The Kademlia distributed hash table is used as it relies on message redundancy and the XOR distance funcDon. Neighbours are selected and messages are redundantly sent to mulDple neighbors of the intended node for anD-Sybil verificaDon purposes. Nodes that mislead the swarm locaDon effort will be systemaDcally tracked down and caught.
+
+ A request to a swarm for CRUD funcDonality is done with redundancy, where mulDple nodes in the same swarm all perform the request. Given the node->swarm membership rules for
+
+21
+
+
+
+Bluzelle, it is staDsDcally unlikely that mulDple such nodes chosen to perform a given transacDon are colluding bad actors that deliver bad yet consistent data.  Swarm membership is determined by the network and cannot be chosen by nodes. This means that a would-be Sybil a6acker who a6empts to join the network with n nodes or masquerading with the idenDty of n nodes will not be able to gain a criDcal mass of memberships into any single swarm.  Nodes can be posed a challenge request to parDcipate in a proof of storage test. This test is performed in cooperaDon with the consumer on either a random network-iniDated basis or by the consumer directly and forces the targeted node to prove they have the correct data.
+
+11.11. Byzantine General's Fault
+
+One way to protect against ByzanDne Faults is to have a default understanding of what to do if there is no informaDon. In Bluzelle, if misleading or corrupted or inconsistent informaDon is detected, the default is to do nothing. Thanks to the aforemenDoned redundancy in CRUD requests made to a swarm, inconsistency is caught, whether intenDonal or not. In any case, Bluzelle nodes are instructed to ignore the transacDon and do nothing. Only authenDcated transacDons with proper credenDals and checksums are accepted and transacted upon. By this way, Bluzelle is ByzanDne Fault Tolerant by design.
+
+22
+
+
+
+12. THE COMPANY  STRUCTURE, TEAM, INVESTORS, ADVISORS
+
+Bluzelle PlaGorm Pte. Ltd is a Singapore company. Singapore is chosen for its ecosystem of fostering blockchain innovaDons and regulaDons that support the growth of well-managed businesses.
+
+12.1. The Team
+
+Bluzelle is a team of 10 and growing with mainly top engineers with backgrounds in computer science, AI, cogniDve science, blockchain, security, networking and more. Some members are:
+
+
+
+Pavel Bains CEO
+
+
+
+Neeraj Murarka CTO
+
+
+
+Nitin Cunha Sr Developer
+
+
+
+Scott Burch Sr Developer
+
+
+
+Mehdi Kolahchi Sr Developer
+
+
+
+Yingyao Xie Product Assoc.
+
+
+
+Pavel Bains, CEO/Co-Founder  Pavel has over 15 years experience in operaDonal management, digital technology and finance. An NCAA honor roll student-athlete from UCLA, Pavel also was the co-founder of Storypanda, a digital book plaGorm that published criDcally acclaimed Dtles by DreamWorks, Warner Bros, Peanuts and more. Pavel was in GM and CFO roles for video game studios, including looking aler 7 Disney studios across four conDnents and 350 people and $150M budgets.
+
+Neeraj Murarka, CTO/Co-Founder  Neeraj is an engineer and computer systems architect with over 20 years experience. He has worked for Google, IBM, Hewle6 Packard, Lulhansa, Thales Avionics. Projects include: locking down of modified Android OS for retail markets; mulDcast UDP satellite-based systems, design and development of secure and FFA-approved systems for Airbus and Boeing. Neeraj was the fourth employee of acquired blockchain startup, Zero Block.
+
+
+
+23
+
+
+
+12.2. Early Investors
+
+Bluzelle raised a round of financing from venture capital firms to kick-start development of the database service, accelerate staffing and provide capital needed for the token sale.
+
+
+
+12.3. Advisors
+
+Bluzelle has put together a specialized unit of advisors to guide the growth of the business. Each person is a technology heavyweight contribuDng to companies like Facebook, PayPal, LinkedIn, and more.
+
+
+
+Gil Penchina Super-Angel Crypto-Advocate
+
+
+
+Brian Fox Creator of BASH Open-Source Expert
+
+
+
+Prashant Malik Creator of Cassandra
+
+Database Expert
+
+
+
+12.4. Corporate Governance , Compliance, Legal
+
+Bluzelle believes in maintaining high standards for operaDng a transparent business. We have created a group of top professional firms in legal & accounDng to ensure these standards are met.
+
+
+
+OrionW  legal counsel for Singapore Bryan Cave  legal counsel for Hong Kong and USA PriceWaterHouseCooper  corporate governance, corporate strategy, tax advisory
+
+
+
+24
+
+
+
+13. ROADMAP
+
+We break down the development of Bluzelle into two disDnct phases  the minimum viable product (MVP), and the post-MVP product releases (each named aler a physicist).
+
+
+
+DECEMBER  MVP (MINIMUM VIABLE UTILITY)
+
+Single-swarm NoSQL key-value pair RAFT consensus storage facility, driven by a minimum stake of BLZ ERC-20 tokens on the Ethereum blockchain.
+
+
+
+2017
+
+
+
+KEPLER  AUGUST PaaS integrations, IDE plugins and integrations, blockchain smart contracts, desktop and browser and mobile apps for interactive access, import/export from legacy databases, node scoring and health metrics
+
+LEIBNIZ  APRIL
+
+Proof of storage Merkel challenges and rewards, proof of stake requirement for farmers, variable CRUD request pricing, edge caching of data close to requests, request parallelism and hotspot support, Spartacus attack tolerance
+
+TURING  DECEMBER
+
+Column stores, S/Kademlia improvements, Honest Geppetto attack tolerance, 3rd party arbitration against Cheating Owner attacks, reverse http tunnelling, tunnel eclipse attack tolerance, multiparty encryption, complex binary blob storage support
+
+
+
+2018 2019
+
+
+
+APRIL  MVP (MINIMUM VIABLE
+
+NoSQL key-value pairs, Bluzelle Harvesting Agent, leaf swarms, consensus, horizontal partitioning, consistent hashing, CRUD API, Bluzelle tokenization, ERC-20 token gateway, versioning and backup/restore, dynasty keys
+
+DECEMBER  EINSTEIN
+
+NoSQL documents, NoSQL document collections, NoSQL document collection indices, NoSQL document collection partitions, global CRUD operations, batch CRUD operations
+
+AUGUST  ARCHIMEDES Vertical partitioning, 2D partitioning, variablecost data expiries, Sybil attack tolerance, deletion reversibility, proof of redundancy via erasure coding
+
+
+
+25
+
+
+
+

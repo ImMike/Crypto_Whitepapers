@@ -1,0 +1,357 @@
+Peer-to-peer, community-driven betting platform
+
+Last Revision: November 20th, 2017.  2017 ByteBet. All rights reserved.
+
+
+
+Table of Contents
+
+Table of Contents..................................................................................................................1
+
+Introduction ..........................................................................................................................2
+
+Market opportunity ..............................................................................................................1
+
+The problem with the current betting model .........................................................................3
+
+About ByteBet: The solution .................................................................................................3 Benefits for players and BBET holders............................................................................................4
+
+How ByteBet works...............................................................................................................5 ByteBet Token ..............................................................................................................................5 Platform .......................................................................................................................................5 Creating a bet.......................................................................................................................................6 Fee model ............................................................................................................................................ 8 Finding bets..........................................................................................................................................9 Joining a bet ......................................................................................................................................... 9 Bet resolution ...................................................................................................................................... 9 Prize distribution and fee calculation .................................................................................................. 9
+
+Roadmap ............................................................................................................................10
+
+Team ..................................................................................................................................11
+
+Pre-Sale ..............................................................................................................................12 Pre-sale ...................................................................................................................................... 12 Token sale (main round).............................................................................................................. 13 ByteBet token distribution .......................................................................................................... 14 Transparency and Updates .......................................................................................................... 15 How to take part in the token sale...............................................................................................15 1. Registration for token sale.............................................................................................................15 2. Contributing to the project ............................................................................................................ 15 3. Distributing tokens.........................................................................................................................16
+
+Token sale terms and conditions .........................................................................................16 Privacy policy..............................................................................................................................16 Limitation of liability ................................................................................................................... 17 Risks ........................................................................................................................................... 17
+
+Take part in disrupting the gambling industry! ....................................................................19
+
+
+
+Introduction
+
+Blockchain technology, and specifically the Ethereum platform, is opening up new possibilities in numerous industries. We as a society are at the beginning of a huge transformation that will shape our future.
+
+Twenty-five years ago, the next big thing was called "the internet". Many people mistakenly thought this would just be a fad, and indeed, the internet has infiltrated more aspects of our lives than anyone could have possibly imagined.
+
+We are now moving towards a t r u l y decentralized future with cryptocurrencies and blockchain-based applications penetrating everything from banks to shipping containers. Among the affected industries, online gambling will go through a radical transformation in the coming years.
+
+ByteBet is going to be at the forefront of this transformation. We are changing the way traditional online betting works by providing a fair peer- to-peer betting environment where the middleman and house edge is eliminated, leaving more money for the players
+
+
+
+Market opportunity
+
+Global online gaming is a dynamically growing market. By the end of 2016, it reached $45.86 billion, and it is expected to reach $96.89 billion by the end of 2024. This is a 10.81% compound annual growth rate (CAGR).
+
+Figure 1: Size of the online gaming market from 2009-2018.
+
+Source: Mobyaffiliates.com Online betting and online casinos, together, accounted for 70% of the revenue generated from the online gambling market. Online gambling is a huge success among the public because of the wide range of games it offers and the convenience of playing without any location constraints. China, the UK, Australia, the US, France, Germany, and Italy are some of the key revenue-generating countries in the market. Betting takes the biggest slice from the huge global gambling market.
+
+1
+
+
+
+Figure 2: Global gambling market breakdown from 2007 to 2021, by product category
+
+Source: Statista.com Gambling with cryptocurrencies is a growing niche within the online gaming market. Since 2014, gamblers wagered 4.5 billion dollars in Bitcoin. Over 24.5 billion bets have been placed with Bitcoins over the past two years. In 2017, the popularity of Bitcoin (and other cryptocurrency) gambling continues to grow. People are placing 337 bets per second and are wagering three BTC per minute. Bitcoin is the leading cryptocurrency when it comes to online cryptocurrency gambling. But Ethereum and other cryptocurrencies are gaining popularity, and in the coming years, we will see an increasing value of cryptocurrency bets.
+
+2
+
+
+
+The problem with the current betting model
+
+In the original gambling model, players bet against the house where a high house edge is applied on every single bet the players make. No matter if the player wins or loses, the house edge is always applied, making it much harder not to lose money in the long run. The middleman's only intention is to make sure players play as many times as possible and lose their funds in the long-term, providing a steady income for the gambling site owners.
+
+About ByteBet: The solution
+
+ByteBet is a peer-to-peer, community-driven betting platform based on Ethereum that allows players from anywhere in the world to create customized bets and play against each other. Bets are based on Ethereum smart contracts, providing a transparent betting environment without any manipulation and with fast execution. ByteBet is a decentralized platform where the middleman is eliminated, creating a fair betting platform. A portion of the fees are shared between the community members and they are not charged upfront.
+
+3
+
+
+
+Benefits for players and BBET holders
+
+ Low betting fees: By using blockchain technology, fees can be decreased, leaving more money for the players.
+
+ Reward system: 50% of the fees are shared between active community members and BBET token holders.
+
+ Peer-to-peer: Players bet against each other, not against the house.  Customizable bets: Players can create their own fully-customized bets from
+
+sports to political events and publish them on the platform.
+
+Since there is no middleman, in order to play a betting game, at least one player needs to join the opposite side. At the beginning, with a lower number of players, this could increase waiting time. ByteBet radically changes the old betting model by eliminating the middleman, helping people to play against each other using customized bets. It has the potential to get a significant slice from the growing cryptocurrency-based betting market due to its low fees, wide variety of events and community-focused reward system.
+
+4
+
+
+
+How ByteBet works
+
+ByteBet Token
+
+A ByteBet token (BBET) is used as a core element on ByteBet's decentralized platform. A BBET token is a standard ERC-20 token created on the Ethereum network. This means all the infrastructure is already provided to store and transfer BBET tokens. Creating and joining games is only possible by using BBET tokens. Winners receive their prize in BBET tokens and also rewards are paid in BBET tokens. Please note: BBET tokens aren't securities and holding them doesn't entitle token owners to get a share from ByteBet's profit.
+
+Platform
+
+ByteBet is a web application that will be accessible through ByteBet's official website (https://byte.bet/). For hosting the frontend application, AWS S3 and AWS CloudFront are used as a CDN with edge locations on multiple continents. The DApp is developed in React, and additional APIs will be created to improve the user experience and add custom functionality. These APIs will be hosted on AWS, using AWS lambda functions and API Gateway. APIs will be developed in Python 3.6. On ByteBet's platform, every event is created by the players. Here is a detailed description of the process:
+
+5
+
+
+
+Creating a bet
+
+A bet can be created by anyone registered on the platform. The bet creator is required to set all mandatory parameters of the bet. This includes setting the title first (which is the subject of the bet, such as "Floyd Mayweather vs. Conor McGregor") and also a short description.
+
+After that, the creator needs to select the appropriate bet type which can be:  A single result bet  A multiple-results bet
+
+6
+
+
+
+Single result bets can be simple bets like a football match or a baseball match and betting on only one outcome, such as the final result.
+
+However, using multi-result bets, users will be able to create complex bets, betting on more detailed results and combining them with different possible outcomes such as:
+
+ Team A wins on the match  Team B wins on the match  Team A scores at least 2  Team B never scores  Tie
+
+Let's take this example bet: Bayern Munich vs Dortmund. The bet creator creates a multiple-result bet with the following options:
+
+ Bayern Munich scores at least 2  Dortmund scores 0
+
+After choosing the right fit for their bets, users can choose who can take part in their bets.
+
+This is public by default, so once the event is published, anyone can join and validate the results after the bet has finished.
+
+Users can create bets in which only invited players can take part in the game and result validation. For security considerations, it is not possible to create bets where anyone can bet on the options but only a few people can validate the results.
+
+Then, the event creator has to choose a bet opening (by default: today), a bet closing, a vote opening and a vote closing date for the bet.
+
+Lastly, the user has to choose at least one option to bet on with at least 10 BBET all together.
+
+7
+
+
+
+Fee model
+
+Betting fees are kept low and maximum 1.5% fee levied on the winner's prize. 50% of this fee is shared with the community members. Here is an example: John creates a bet on the outcome of the Arsenal and Manchester City football match. John places his 100 ByteBet tokens bet on Arsenal as the winner. Matt joins the game and puts 100 ByteBet tokens on Manchester City. The match ends, and Manchester City is the winner. Matt's gross prize is 100 ByteBet tokens. After applying the fee (1.5%), he receives 98.5 ByteBet tokens (plus a really small portion that is shared between the ByteBet token holders). 1.5% of ByteBet tokens are shared according to the following:
+
+- 0.5% between the active members (event verifiers) - 0.25% shared between every ByteBet token holder - 0.75% will be spent on maintaining and running the ByteBet platform
+
+8
+
+
+
+Finding bets
+
+Public bets will be displayed for everyone. If it's a private bet, then only invited players will be able to see it. Users can see all the active bets based on their preferences, and these can be searched, filtered and sorted.
+
+Joining a bet
+
+Other players can join the game between the bet opening and closing time by using BBET tokens. Players place their bets in the game depending on their risk tolerance. The minimum required bet size is 10 BBET.
+
+Bet resolution
+
+Once the event results are available, the community conducts the review process, verifying the results of the bet.
+
+Any BBET token holder will be able to verify (vote) the result of the publicly available bets. Distributions of the votes won't be displayed until the verification is closed. In the case of private bets, only invited users can vote, which are determined by the event creator.
+
+We are going to use game theory techniques to minimize the number of "false votes" in the system, giving incentives for those who verified the real results and punishing those who tried to manipulate them. The event result is based on consensus. Players who try to manipulate or mislead the verification process will be blacklisted after 3 attempts and won't be able to take part in the event verification process. These players won't receive a reward for result validation.
+
+Prize distribution and fee calculation
+
+Prizes are going to be distributed automatically. There is an Ethereum smart contract behind every single bet created when the bet is submitted. The source code of the smart contract is going to be open source and will be published soon on GitHub.
+
+9
+
+
+
+Winners are selected based on the results; the prize is calculated and assigned to the players. Also, fees will be calculated and shared (see the fees model above).
+
+Roadmap
+
+Pre-sale: November 21tst - November 29th - around 6 pm GMT This is a critical milestone for the project; if we reach the minimum amount, we will proceed to the main round. Otherwise, every contribution will be refunded. Click here to subscribe for a reminder!
+
+Token sale (main round): 2018 January/February If we reach the minimum amount, then we will consider the token sale successful, and we will proceed with the project. Otherwise, every contribution will be refunded from the main round as well as the remaining funds from the pre-token sale. Click here to subscribe for a reminder!
+
+Talent acquisition/Team scale up: Q1 2018
+
+Exchange listing: Q2 2018
+
+ByteBet alpha release: Q1 2018 Releasing the first version of ByteBet and getting feedback from the community.
+
+ByteBet growth plan: Q1 2018
+
+ByteBet beta release: Q2 2018 Making ByteBet available for a broader user base. Collecting feedback and suggestions from the players.
+
+Growth and marketing campaign: Q3 2018
+
+A more detailed roadmap will be published after the successful main token sale round.
+
+10
+
+
+
+Team
+
+The core team members have been working together for more than three years. The ByteBet team also consists of freelancers who are helping us with design and development-related activities. The core team has experience building highly scalable applications used by the biggest publishing companies. Zoltan Molnar Mathematics and big data enthusiast possessing 5 years' experience with DevOps technologies. Zoltan was the CTO of an investor-backed startup for three years, and now works as a consultant developer. LinkedIn profile. Tamas Torok Tamas has been working in the tech sector for four years. He oversees the full marketing operation of startup companies and is responsible for driving growth. He successfully self-published two books on Amazon and has guest-written for leading online marketing blogs. LinkedIn Profile. Attila Varga Attila has 5 years of experience in web development and has worked in different layers of the stack using various programming languages and technologies. Although he designed and implemented scalable, real-time and Big Data backends, he is passionate about the latest frontend technologies and able to implement pixel-perfect designs and UX. Twitter.
+
+Future team plans In order to make the ByteBet project successful, having experienced team members and advisors on board is crucial. After the successful main round, we will have the necessary resources to build a team that's able to develop ByteBet's platform and put it on a growing track.
+
+11
+
+
+
+Pre-Sale
+
+During every phase of the token sale, only Ethereum (ETH) can be accepted with the minimum amount of 0.1 Ethereum.
+
+To make sure the token sale goes safely, we're using Tokenmarket's open-source contract based on Open Zeppelin.
+
+During the token sales maximum 5 million tokens can be generated, according to the amount of contributions we receive. The final supply will be determined by doubling the number of BBET tokens sold during the token sales. The total supply cannot be more than 10.000.00 (ten million) BBET tokens.
+
+This way we can make sure that BBET tokens are distributed according to token distribution plan and prevent that our contributors will be diluted.
+
+Here is an example: Let's say during the two token sale rounds we successfully sell 3 million BBET tokens. That means the total supply will be 3 million multiplied by 2, which is 6 million.
+
+No further BBET tokens will be created in the future.
+
+Pre-sale
+
+The first round launches at 6 pm GMT on November 21, 2017 and closes at 6 pm GMT November 29, 2017.
+
+Our minimum target is to collect 150 ETH worth of contributions (30,000 BBET tokens) but not more than 600 ETH (60,000 BBET tokens). During this stage, we will offer a 30% discount for our early supporters.
+
+A maximum 0.6% of the token supply will be offered during the pre-sale.
+
+12
+
+
+
+This stage is crucial for the project; if we don't hit our minimum goal then we won't proceed to the main round. In this case contributions collected during the pre-sale will be refunded.
+
+Funds will be used to start creating an early product version (MVP) and to run a successful main round.
+
+Token sale (main round)
+
+The main round launches around January/February in 2018. Exact dates will be announced after the pre-sale in January 2018.
+
+The main round will be divided into three stages:  Phase 1: Offering a 25% discount for supporters who contribute to the project on its first day.  Phase 2: Offering a 15% discount for supporters who contribute to the project after the first day but before the second week.  Phase 3: On the last phase of the token sale, we will offer a 10% discount to anyone who contributes.
+
+The soft cap for the main round is ~3000 ETH* (300,000 BBET tokens) and the hard cap is 50,000 ETH* (5,000,000 BBET tokens).
+
+*Soft and hard cap may slightly change, depending on the success of the pre-sale.
+
+Funds will be stored on a multi-signature escrow wallet, making sure no unauthorized person can get access. BBET tokens owned by team members (team bonus) will be frozen for six months from the end of the token sale.
+
+The funds will be used for building, launching and growing ByteBet's platform. Core activities such as product development and marketing won't be outsourced and will be kept in-house.
+
+13
+
+
+
+ByteBet token distribution
+
+ Team bonus: 5% (for current and future team members)  Development (future development and team expansion): 25%  Company (Affiliate programs, Bounty programs, Operation): 12.5%  Reserve: 7.5%  Contributors (token sale): 50%
+
+14
+
+
+
+Transparency and Updates
+
+We want to make sure that everyone who contributes to the project can see how the product evolves and funds are spent. Which is why we created our transparency manifesto:
+
+ GitHub repository will be publicly visible  Regular development updates will be published (bi-weekly or monthly)  Monthly spending report will show how funds are spent
+
+How to take part in the token sale
+
+Before registering and sending any contributions, MAKE SURE you're on the official ByteBet website. Our official website address is https://byte.bet/.
+
+1. Registration for token sale
+
+Everyone who would like to contribute to the project is required to register on ByteBet's website. For this registration, users need to provide a valid email address and accept the terms and conditions (see below).
+
+2. Contributing to the project
+
+Users can contribute by sending Ethereum to the official wallet address of ByteBet. Funds must be sent from a wallet, not from a stock exchange. Please use one of the following wallets:
+
+ MyEtherWallet  MetaMask  Mist  Parity  imToken (iPhone)  imToken (Android) Please note: US citizens are not allowed to take part in the token sale.
+
+15
+
+
+
+3. Distributing tokens
+
+If the minimum funding goal is reached, ByteBet tokens will be immediately allocated to the buyer, but will be locked from transfers until the the minimum goal has been reached.
+
+If the minimum funding goal of the main round isn't achieved, then every contribution will be refunded as well as a portion of the pre-sale funds.
+
+Token sale terms and conditions
+
+Any participant who contributes to the ByteBet project throughout the token sale period is required to provide their first name, last name, citizenship, and e-mail. The participant is required to confirm the authenticity of these details.
+
+United States citizens are not allowed to participate in the ByteBet crowdsale. Do not participate in the crowdsale if you are a resident of the United States.
+
+Rules regarding discounts for the pre- sale will not be changed after the pre-sale starts.
+
+The market price of BBET tokens will be determined after the token sale and will be calculated based on the total ETH collected divided by the total issued BBET tokens.
+
+During the token sale, the raised Ethereum is placed into a multi-signature escrow account. The key holders of the escrow account are two team members and external independent parties.
+
+Privacy policy
+
+ByteBet shall not use, process or transfer your personal data beyond the limits permitted by the statute. The information provided to ByteBet will not be visible to the public or to other community members.
+
+16
+
+
+
+Limitation of liability
+
+In no event shall ByteBet or members of ByteBet team be liable for:
+
+ Any lost profits, lost savings or incidental, indirect, special or consequential damages, arising out of your use or inability to use the services or products offered by ByteBet or the breach of any of these Terms by any third party.
+
+ Any security risk such as hacker attacks, unauthorized access, loss of passwords.
+
+ Any losses resulting from the extreme volatility in pricing of BBET tokens in any countries and cryptocurrency exchanges.
+
+Risks
+
+Participation in ByteBet's token sale and any acquisition of ByteBet tokens carries significant risks. Prior to participation, carefully consider the risks stated in this document.
+
+There is no guarantee or expectation that ByteBet tokens purchased will increase in value, provide a return, or have sufficient adoption and liquidity to enable exchange for other assets.
+
+Cryptocurrencies and project-financing through cryptocurrencies have been the subject of regulatory scrutiny by regulatory bodies around the world. In order to comply with regulations, ByteBet may need to change its operations. Gambling-related services are subject to licensing requirements, and ByteBet needs to obtain these licenses.
+
+ByteBet could be impacted by regulatory actions, which could limit or impede the ability to continue to develop ByteBet and its activities. This uncertainty significantly adds to the risks connected with the acquisition and use of ByteBet.
+
+ByteBet will make every effort to adopt its operation to meet regulatory needs and changes as they occur.
+
+17
+
+
+
+Even if the minimum sale threshold is reached, it's possible that the funds will be insufficient and will not feasibly develop ByteBet's platform, resulting in stakeholders not being able to use BBET tokens as the project intended. ByteBet is built on a third-party platform: Ethereum. Any changes on Ethereum blockchain could generate unexpected bugs and errors, possibly causing loss of ByteBet tokens and/or Ethereum. ByteBet reserves the right to change its third-party platform and use other blockchain providers whenever practical, feasible or necessary. The field of cryptocurrencies is very new and growing. There is a significant risk of unforeseen attacks in terms of cryptographic protocols and related security bugs. Also, every current and potential ByteBet stakeholder will be under an increasing number of scam and phishing attacks. While ByteBet will do everything possible to prevent these attacks, ByteBet won't take any responsibility and cannot be forced to indemnify that which is outside its authority. By holding ByteBet tokens, stakeholders acknowledge they understand that while every effort will be made to properly execute the ByteBet project, it is possible that it will never be realized due to unforeseeable reasons mentioned above.
+
+18
+
+
+
+Take part in disrupting the gambling industry!
+
+Click here to contribute to the project.
+
+19
+
+
+
+

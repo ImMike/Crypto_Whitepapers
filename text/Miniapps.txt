@@ -1,0 +1,2239 @@
+MiniApps.pro: A Platform for a New Generation
+
+of Chatbots
+
+Token Generation Event white paper October 1, 2017 (version 3.7.3)
+
+Please note that this may be not the latest version of the white paper. Find the latest update of this document at
+
+https://tokens.miniapps.pro/wp/WP_MAT_ENG.pdf TGE web site: http://tokens.miniapps.pro
+
+Main production web site: http://miniapps.pro
+
+1
+
+
+
+MiniApps.pro
+
+
+
+Table of Contents
+
+
+
+TABLE OF CONTENTS
+
+
+
+2
+
+
+
+LEGAL DISCLAIMER
+
+
+
+4
+
+
+
+RISK FACTORS
+
+
+
+4
+
+
+
+TOKEN GENERATION EVENT SUMMARY
+
+
+
+7
+
+
+
+TERMINOLOGY
+
+
+
+8
+
+
+
+OVERVIEW
+
+
+
+9
+
+
+
+PROBLEM: TECHNOLOGICAL DISPARITY BETWEEN SMALL BUSINESSES AND CORPORATE WORLD 9
+
+
+
+OPPORTUNITY: SME MARKET IS UNDERSERVED
+
+
+
+10
+
+
+
+THE SOLUTION: MULTI-SIDE MARKETPLACE/ECOSYSTEM FOR MINI-APPS
+
+
+
+10
+
+
+
+MARKET SCALING FACTORS
+
+
+
+11
+
+
+
+COMPARISON OF CUSTOMER CARE SOLUTIONS
+
+
+
+15
+
+
+
+GROWTH DRIVERS
+
+
+
+15
+
+
+
+REVENUE GENERATION MODEL
+
+
+
+17
+
+
+
+BUSINESS MODEL
+
+
+
+17
+
+
+
+MINIAPPS SERVICE COSTS FOR CLIENTS
+
+
+
+17
+
+
+
+A SIMPLE REVENUE GENERATION CASE
+
+
+
+17
+
+
+
+TOKEN GENERATION EVENT DETAILS
+
+
+
+20
+
+
+
+TGE OVERVIEW
+
+
+
+20
+
+
+
+GOALS OF THE TOKEN GENERATION EVENT
+
+
+
+20
+
+
+
+MINIAPPS TOKEN
+
+
+
+20
+
+
+
+MINIAPPS TOKENS DISTRIBUTION AND TGE PROCESS DETAILS
+
+
+
+21
+
+
+
+15% TOKENS RESERVED FOR MINIAPPS TEAM
+
+
+
+21
+
+
+
+MINIAPPS RESERVE FUND
+
+
+
+21
+
+
+
+MINIAPPS TOKEN (MAT) DEFINITION
+
+
+
+21
+
+
+
+WHERE DO I BUY AND SELL MAT?
+
+
+
+23
+
+
+
+USE-CASE FOR MINIAPPS TOKENS
+
+
+
+23
+
+
+
+HOW TO BUY TOKENS DURING TGE
+
+
+
+24
+
+
+
+TGE REFERRAL PROGRAMME
+
+
+
+24
+
+
+
+HOW WILL PROCEEDS FROM THE TOKEN SALE BE KEPT
+
+
+
+24
+
+
+
+TEAM
+
+
+
+24
+
+
+
+ADVISORY BOARD
+
+
+
+26
+
+
+
+PROJECT TIMELINE
+
+
+
+29
+
+
+
+MARKETING AND PROMOTION
+
+
+
+30
+
+
+
+STRUCTURE OF EXPENDITURE
+
+
+
+31
+
+
+
+OPTIMISTIC, PESSIMISTIC, AND REALISTIC SCENARIOS
+
+
+
+32
+
+
+
+RISKS
+
+
+
+34
+
+
+
+APPENDIX 1. SMART CONTRACT CODE
+
+
+
+35
+
+
+
+APPENDIX 2. REFERENCES
+
+
+
+35
+
+
+
+2
+
+
+
+MiniApps.pro
+
+
+
+APPENDIX 3. DEFINITIONS AND ABBREVIATIONS
+
+
+
+35
+
+
+
+APPENDIX 4. MINIAPPS DESCRIPTION AND ADVANTAGES
+
+
+
+36
+
+
+
+MOBILE SERVICES: CLIENTS' ISSUES
+
+
+
+36
+
+
+
+MOBILE SERVICES: RESOLVING THE ISSUES
+
+
+
+37
+
+
+
+WHAT WE HAVE NOW
+
+
+
+37
+
+
+
+DOCUMENTATION AND API
+
+
+
+37
+
+
+
+ACCOUNT MANAGEMENT AND MENU CONSTRUCTOR
+
+
+
+37
+
+
+
+TEMPLATES AND PLUGINS
+
+
+
+38
+
+
+
+EXAMPLES OF MINIAPPS CHATBOTS
+
+
+
+39
+
+
+
+APPENDIX 5. DETAILS ABOUT MINIAPPS SPACE
+
+
+
+40
+
+
+
+THE KEY FEATURES OF MINIAPPS SPACE:
+
+
+
+41
+
+
+
+MINI-APPS
+
+
+
+42
+
+
+
+PORTALS
+
+
+
+42
+
+
+
+MINIAPPS SPACE ENTRY POINTS
+
+
+
+43
+
+
+
+BLOCKCHAIN AND DECENTRALIZED HOSTING
+
+
+
+43
+
+
+
+ETHEREUM BLOCKCHAIN INTEGRATION ARCHITECTURE
+
+
+
+43
+
+
+
+APPENDIX 6. FAQ
+
+
+
+45
+
+
+
+WHAT ARE BENEFITS OF BEING MINIAPPS PARTNER?
+
+
+
+45
+
+
+
+WHAT ARE BENEFITS OF BEING MINIAPPS TOKEN HOLDER?
+
+
+
+45
+
+
+
+WHICH PARTS OF YOUR PRODUCT ARE CENTRALIZED, AND WHICH ARE DECENTRALIZED?
+
+
+
+45
+
+
+
+WHAT IS NETWORK EFFECT IN MINIAPPS SPACE?
+
+
+
+46
+
+
+
+HOW DOES YOUR PRODUCT DIFFER FROM OTHER DECENTRALIZED COMPETITORS?
+
+
+
+47
+
+
+
+WHAT DOES THE TOKEN DO? (WHY CAN'T YOU JUST USE BITCOIN OR ETHER?)
+
+
+
+47
+
+
+
+WHAT PROBLEM OR UNMET NEED IN THE MARKET DOES IT SOLVE?
+
+
+
+48
+
+
+
+WHY HAVE THESE PROBLEMS NOT BEEN SOLVED IN THE PAST?
+
+
+
+48
+
+
+
+HOW DOES THE PRODUCT WORK?
+
+
+
+48
+
+
+
+WILL MORE TOKENS BE ISSUED OVER THE TIME, AND HOW?
+
+
+
+48
+
+
+
+HOW CAN PEOPLE EARN ONE OF YOUR TOKENS?
+
+
+
+48
+
+
+
+WHAT WILL HAPPEN IF MINIAPPS TOKEN IS REMOVED FROM THE MINIAPPS PLATFORM?
+
+
+
+49
+
+
+
+WHAT WILL HAPPEN IF ETHEREUM PRICE WILL SKYROCKET?
+
+
+
+49
+
+
+
+WHAT MAY HAPPEN TO MINIAPPS TOKEN IN CASE OF ETHEREUM HARD-FORK?
+
+
+
+49
+
+
+
+3
+
+
+
+MiniApps.pro
+
+Legal Disclaimer
+
+The purpose of this White Paper is to present MiniApps Group and MiniApps Token to potential token holders in connection with the proposed Token Generation Event ("TGE"). The information set forth below may not be exhaustive and does not imply any elements of a contractual relationship. Its sole purpose is to provide relevant and reasonable information to potential token holders in order for them to determine whether to undertake a thorough analysis of the company with the intent of acquiring MiniApps Tokens.
+
+Nothing in this White Paper shall be deemed to constitute a prospectus of any sort or a solicitation for investment, nor does it in any way pertain to an offering or a solicitation of an offer to buy any securities in any jurisdiction. This document is not composed in accordance with, and is not subject to, laws or regulations of any jurisdiction, which are designed to protect investors.
+
+The product (utility) token is not a digital currency, security, commodity, or any other kind of financial instrument and has not been registered under the Securities Act, laws of any state of the United States or the securities laws of any other country, including the securities laws of any jurisdiction in which a potential token holder is a resident.
+
+MiniApps Token cannot be used for any purposes other than as provided in this White Paper, including but not limited to, any investment, speculative or other financial purposes.
+
+MiniApps Token confers no other rights in any form, including but not limited to any ownership, distribution (including, but not limited to, profit), redemption, liquidation, property (including all forms of intellectual property), or other financial or legal rights, other than those specifically set forth below.
+
+Certain statements, estimates and financial information contained herein constitute forwardlooking statements or information. Such forward-looking statements or information involve known and unknown risks and uncertainties, which may cause actual events or results to differ materially from the estimates or the results implied or expressed in such forwardlooking statements.
+
+This English language White Paper is the primary official source of information about the MiniApps Token. The information contained herein may from time to time be translated into other languages or used in the course of written or verbal communications with existing and prospective customers, partners etc. In the course of such translation or communication some of the information contained herein may be lost, corrupted, or misrepresented. The accuracy of such alternative communications cannot be guaranteed. In the event of any conflicts or inconsistencies between such translations and communications and this official English language White Paper, the provisions of this English language original document shall prevail.
+
+Risk Factors
+
+The purchase of tokens involves a high degree of risk, including but not limited to the risks described below. Before acquiring MiniApps tokens, it is recommended that each
+
+4
+
+
+
+MiniApps.pro
+
+participant carefully weighs all the information and risks detailed in this White Paper, and, specifically, the following risk factors.
+
+Dependence on computer infrastructure MiniApps Group's dependence on functioning software applications, computer hardware and the Internet implies that MiniApps Group can offer no assurances that a system failure would not adversely affect the use of the sale participants' MiniApps Tokens. Despite MiniApps Group's implementation of all reasonable network security measures, its processing center servers are vulnerable to computer viruses, physical or electronic breakins or other disruptions of a similar nature. Computer viruses, break-ins or other disruptions caused by third parties may result in interruption, delay or suspension of services, which would limit the use of the MiniApps Tokens.
+
+Smart contract limitations Smart contract technology is still in its early stages of development, and its application is of experimental nature. This may carry operational, technological, regulatory, reputational and financial risks. Consequently, although the audit conducted by independent third party increases the level of security, reliability, and accuracy, this audit cannot serve as any form of warranty, including any expressed or implied warranty that the MiniApps Smart Contract is fit for purpose or that it contains no flaws, vulnerabilities or issues which could cause technical problems or the complete loss of MiniApps Tokens.
+
+Regulatory risks Blockchain and other new technologies, including but not limited to the issue of tokens, may be a new concept in some jurisdictions, which may then apply existing laws or introduce new regulations regarding Blockchain technology-based applications, and such regulations may conflict with the current MiniApps smart contract setup and MiniApps Token concept. This may result in the need to make substantial modifications to the MiniApps smart contract, including but not limited to its termination, the loss of MiniApps Tokens, and the suspension or termination of all MiniApps Token functions.
+
+Taxes MiniApps token holders may be required to pay taxes associated with the transactions contemplated herein, whether in the United States or in their home countries. It will be a sole responsibility of MiniApps Token holders to comply with the tax laws of the United States and other jurisdictions applicable to them and pay all relevant taxes.
+
+Force Majeure MiniApps Group's performance may be interrupted, suspended or delayed due to force majeure circumstances. For the purposes of this White Paper, force majeure shall mean extraordinary events and circumstances which could not be prevented by MiniApps Group and shall include: acts of nature, wars, armed conflicts, mass civil disorders, industrial actions, epidemics, lockouts, slowdowns, prolonged shortage or other failures of energy supplies or communication service, acts of municipal, state or federal governmental agencies, other circumstances beyond MiniApps Group's control, which were not in existence at the time of White Paper release. If such circumstances occur prior to the issue of MiniApps Tokens and MiniApps Group is unable to issue MiniApps Tokens within one month from the projected date, the escrow agent may issue a refund at the request of the MiniApps Token purchasers. The refund will be issued in the original amount and form of payment to the same digital wallet or bank account where the funds were transferred from.
+
+Disclosure of information
+
+5
+
+
+
+MiniApps.pro
+
+Personal information received from MiniApps Token holders, the information about the number of tokens owned, the wallet addresses used, and any other relevant information may be disclosed to law enforcement, government officials, and other third parties when MiniApps Group is required to disclose such information by law, subpoena, or court order. MiniApps Group shall at no time be held responsible for such information disclosure.
+
+Value of MiniApps Token Once purchased, the value of MiniApps Token may significantly fluctuate due to various reasons. MiniApps Group does not guarantee any specific value of the MiniApps Token over any specific period of time. MiniApps Group shall not be held responsible for any change in the value of MiniApps Token. Risk of abandonment / lack of success. The MiniApps Token and the development of the MiniApps Token and/or MiniApps Group project may be abandoned for a number of reasons, including lack of interest from the public, lack of funding, lack of commercial success or prospects (e.g. caused by competing projects).
+
+Risk associated with other applications. MiniApps Software may give rise to other, alternative projects, promoted by unaffiliated third parties, under which the MiniApps Token will have no intrinsic value.
+
+Risk of loss of private key. MiniApps Tokens can only be accessed by using an Ethereum wallet with a combination of token holder's account information (address), private key and password. The private key is encrypted with a password. If token holder's private key file or password respectively gets lost or stolen, the obtained MiniApps Tokens associated with the Contributor's account (address) or password will be unrecoverable and will be permanently lost. Additionally, any third party that gains access to the token holder's private key, including by gaining access to the login credentials relating to the token holder's Ethereum wallet, may be able to misappropriate the MiniApps Tokens of token holder.
+
+Risk of theft. The MiniApps Smart Contract System concept, the underlying software application and software platform (i.e. the Ethereum blockchain) may be exposed to attacks by hackers or other individuals that could result in theft or loss of MiniApps Token or ETH, impacting the ability to develop the MiniApps Token and/or MiniApps Software.
+
+Risk of Ethereum mining attacks. The blockchain used for the MiniApps Smart Contract System is susceptible to mining attacks, including but not limited to double-spend attacks, majority mining power attacks, "selfish-mining" attacks, and race condition attacks. Any successful attacks present a risk to the Smart Contract System, expected proper execution and sequencing of MiniApps Token transactions, and expected proper execution and sequencing of contract computations.
+
+Risk of incompatible Wallet service. The wallet or wallet service provider used for the contribution, has to be technically compatible with the MiniApps Token. The failure to assure this may have the result that token holder will not gain access to his MiniApps Token.
+
+Please note that the MiniApps Group project may be subject to other risks not foreseen by its team at this time.
+
+6
+
+
+
+Token Generation Event Summary
+
+
+
+MiniApps.pro
+
+
+
+Token name What is it?
+
+
+
+MiniApps Token (MAT)
+
+Ethereum ERC223 compatible token. Each token grants the following rights to its holder: 1) Right to become a partner 2) Right for partner discounts 3) Right for extra commission from template sales 4) Right to run a referral program
+
+
+
+Token price during Token Generation Event Issuing volume and conditions
+
+Token availability
+
+
+
+1 MAT = 0.01 ETH
+
+1. During the Token Generation Event, no more than 20 million tokens will be issued on the Ethereum platform as standard ERC223 tokens
+
+2. No more tokens will be issued after the Token Generation Event
+
+3. Hard cap: 100,000 ETH 4. Soft cap: $2,000,000
+
+MiniApps tokens (MAT):
+
+ Become available immediately during the Token Generation Event via Ethereum smart-contract;
+
+ Purchase and transfer become gradually available over a 15-day period after the end of the Token Generation Event by means of smart contracts
+
+
+
+Token distribution
+
+Use of proceeds from the Token sale
+
+
+
+1. 50% of tokens will be available for the participants of Token Generation Event
+
+2. 35% of tokens will be reserved for partners, community grants, and the bounty campaign
+
+3. 15% of tokens will be reserved for the MiniApps team
+
+1. 68% Marketing and office 2. 25% Software development 3. 7% Technical support
+
+
+
+Security
+
+Platform Token sale start/end date and time
+
+
+
+Funds raised during the Token Generation Event will be
+
+kept in the multisig wallets, according to industry
+
+standards
+
+Ethereum Start - October 18th 2017, 00:00 UTC End - December 19th 2017, 00:00 UTC
+
+
+
+7
+
+
+
+MiniApps.pro
+
+Terminology
+
+MiniApps.pro
+
+The official name of the project of smart chatbot Omni channel platform located at www.miniapps.pro. The platform operates in the cloud since mid-2016. The B2B version is in operation and development for about 10 years already. The main advantages are:
+
+ All popular messengers are supported, plus SMS, plus USSD. A bot can work in multiple channels simultaneously;
+
+ Plugged in AI/NLP solutions, including a proprietary neural network based solution;  Template marketplace;  Web based visual constructor of bots.
+
+Miniapp
+
+Short for Mini Application. The name conveys the idea of simple interface, in contrast with bulky desktop applications, like web browsers, or text processors, with a lot of buttons, banners, and other distracting elements. In the narrow sense Miniapp can be understood as a chatbot, but in fact it is a wider concept. Besides messengers, where Miniapp equals chatbot, it can utilize SMS and USSD channels, work on smartphones as an Android or IOS application, and in web-chat systems. Miniapp is a thin application that communicates with the user using natural language (voice or text) and/or menu. Miniapp can work with messengers as a chatbot, on smartphones as a special application, be a part of other applications, like web-chat, or chat integrated into a smartphone application. Miniapp can run on a car computer, or be fused into Internet of Things.
+
+Template
+
+Template is a key concept in MiniApps.pro. Template is a Miniapp that can be provided to the user through another Miniapp. Imagine a robot that provides some service to another robot that in its turn provides a service to the human user. The main goal of Template is to spare resources (time and labor) when creating Miniapps. With ready-made templates, one can create a working business solution without any programming. MiniApps.pro already contains a basic set of Templates (NLP, phone authorization, CRM integration, chat based call-centre, mailer). Third party developers will augment the Template library adding their own Templates.
+
+Client
+
+Client is a Miniapp owner who benefits from it providing services to end users. Banks, corporations, small and medium businesses, even individuals can be MiniApps.pro Clients. For instance, an artist can use MiniApps.pro and create a bot for collectors to watch his or her masterpieces, make bargains, or get information about oncoming exhibitions.
+
+Partner
+
+The Partner is an important part of MiniApps.pro marketing strategy. MiniApps.pro is primarily designed for MSME segment  small and medium enterprises. That is why we want to make smart chatbots and mini applications affordable to everybody, not only large corporations. However, we understand that a hairdresser, or small caf owner is not able to create a chatbot by oneself, even though it is cheap and easy. Lack of time, skill, technical and marketing expertise makes it difficult, if not impossible. The Partner network should remove this barrier. Partners will help to create Miniapps. Some partners with enough technical resources will create complex custom solutions. But it is not
+
+8
+
+
+
+MiniApps.pro
+
+mandatory. Other partners will make simpler applications without even a bit of programming, taking help from ready-made Templates.
+
+Template Developer
+
+MiniApps.pro allows third-party developers to offer their Templates on the Template Marketplace. Should a Template be used by someone to create a Miniapp, the Template Developer gets paid for it. This system will galvanize development of Templates, quickly expand the Partner network, and benefit the whole MiniApps.pro community.
+
+MiniApps Space
+
+MiniApps Space is a perfect ecosystem that we will build during the token sale and then as a part of the project development. It should unite Partners, Clients, Template Developers, and users into a solid community. MiniApps Space main characteristics:
+
+- Openness and decentralization based on MiniApps Space internal blockchain; - Protection of rights of community members with the use of MiniApps Space smart
+
+contracts; - Usage of semantic modelling language when creating smart contracts. This
+
+language is understood by common people, not only by programmers; - Operation of MiniApps Space is independent of any central entity and messenger
+
+proprietors. This is achieved by decentralization of the MiniApps core.
+
+MiniApps Token (MAT)
+
+Ethereum ERC20 compatible token. Each token grants the following rights to its holder: - Right to become a Partner; - Right for Partner discounts; - Right for extra commission from Template sales; - Right to run a referral program.
+
+Overview
+
+MiniApps.pro is a new generation AI and blockchain powered chatbot platform. With MiniApps clients can easily construct chatbots/miniApps from the building blocks which we call templates. This allows users with little or no knowledge in programming to create chatbots/miniApps.
+
+Problem: technological disparity between small businesses and corporate world
+
+Now everybody is talking about high tech -- artificial intelligence, neural networks, mobile apps, chatbots, conversational UX, blockchain. Those technologies can be used either by high tech companies, or big corporations. But the problem is that there is a huge gap between those types of companies, and SME's (small and medium enterprises). Everybody heard about banks or airlines experimenting with AI chatbots for customer service. Can you imagine barbershop using AI on chatbots for customer care or online marketing?
+
+There is a huge gap between SME's and corporations or high-tech companies in terms of skills, resources, and knowledge. Small businesses simply cannot afford AI, chatbots, apps, blockchain etc. It is too expensive for them, they don't know how to manage it. On the other hand, cutting edge tech companies cannot justify building solutions for SME market because for them it's easier to catch big fish -- corporate clients.
+
+9
+
+
+
+MiniApps.pro
+
+Opportunity: SME market is underserved
+
+This lack of interest to SME market means that this market is generally underserved. IT and high-tech companies prefer to go to either B2C or corporate B2B.
+
+We decided to bridge this gap. We build a new technology and business model based on a blockchain which makes AI, neural nets, and other high-tech stuff available to a more than 300 mln SME's around the globe. We are developing MiniApps -- a new generation chatbot and marketplace where community of developers can create chatbot templates using our API, AI, neural nets, machine learning etc. And where sales partners use Visual Builder to stick together those templates like Lego bricks to create chatbots for SME clients. And high-tech companies can now focus on creating solutions for this huge market and enjoy cooperation with our partners' community around the world.
+
+MiniApps already has a community of more than 5000 developer teams from different countries like Russia, US, Europe, Ukraine, Pakistan, India, Philippines. Now we want to help them to reach huge SME market to scale their businesses. And on the other hand, we want to improve social and economic environment by helping SME's around the world.
+
+The Solution: multi-side marketplace/ecosystem for mini-apps
+
+By miniApps we mean not only chatbots but also mobile web apps, SMS/USSD (for feature phones). MiniApps.pro platform supports all major messengers -- WeChat, Viber, Telegram, Facebook, Vkontakte, Kik, Line etc. We also plan to add voice/IVR and smartphone apps.
+
+Our market strategy focuses on building a partner network for serving MSME (micro, small, and medium enterprises) market, which is estimated up to 300+ mln SME. Such huge numbers, even if you consider 10% of this market, may require having large number of partners globally. This brings many problems: how to have reliable billing for partners and template developers, how to implement payments collection and pay-outs, how to handle security. For example, we have partners in Nigeria. Now it is a headache for them to pay to us, and for us to receive their payment as well using regular bank transfers. Blockchain just removes this headache.
+
+So, it is natural for us to consider blockchain as a core technology to solve those problems.
+
+The market is big and it's constantly growing. Evidently, MiniApps or any other vendor will not be able to meet the demand due to natural lack of resources (even each country has region-specific requirements in terms of language, communication practices, business cases - can you imagine the number of Customers and their requirements in each of these countries?). That's why we need a space where developers from all over the world can add templates, modules, languages, etc. and get rewards. Here decentralization comes into the game.
+
+That's why we need token. The main applications are:  right to become a partner (access to templates existing in the marketplace, opportunity to put yours on the marketplace);  additional discounts and commissions for token-holders;  running referral program;  hosting of nodes;  many others.
+
+10
+
+
+
+MiniApps.pro
+
+All in all, the most important value of this project is space and community working in this space. And TGE is made not only/mainly for fund raising, but for creating MiniApps community that will be able to meet demand of customers using benefits of space all over the world.
+
+Our goal is to build multi-side market with partners, their clients, end-users, and template developers. This makes new technologies such as AI/NLP, fintech and chatbots available for small and medium enterprises through the efforts of MiniApps partners network.
+
+On the other hand, MiniApps.pro opens global market to template developers. Those chatbot developers who used to build just regular chatbots, can now convert them into templates and make globally available via MiniApps.pro. So, MiniApps.pro offers chatbot developers a highway for scaling their business globally.
+
+Besides that, MiniApps.pro with its templates' marketplace reduces costs of customer support for partners and their clients (SME's), and facilitates marketing through more effective communication channels.
+
+Currently we already have several partners in Russia and CIS, Eastern Europe, Africa and SEA regions.
+
+The platform is up and running. Client accounts, documentation, API, and demos are available at http://miniapps.pro
+
+WP and other details can be found at https://tokens.miniapps.pro
+
+Market scaling factors
+
+We see three important factors that will enable our platform to take at least 10% of the world's MSME chatbot market (micro-, small and medium enterprises):
+
+1. Integrated and innovative technologies, available through business app templates. 2. A business model oriented toward fast market intervention through regional
+
+partnerships. 3. Cultivation of the decentralized MiniApps Space community and ecosystem through
+
+the MiniApps platform and blockchain technology.
+
+MiniApps.pro Community and Network Effect The more templates there are the easier it is to create template-based mini-apps; this increases the number of the applications. The more apps and services there are the more users they attract; this increases the value of the network for both users and developers.
+
+ the more successful app implementations businesses see the easier it is for developers to sell their apps;
+
+ new users discover useful apps via their network buddies;  as predicted by network effect, increase of one group increases the value of the
+
+network for all groups that results in more people joining both groups.  as predicted by network effect, growth of number of network participants increases
+
+usage of app templates and their value. This attracts new developers to the platform which increases the number of new templates in a positive feedback loop.
+
+11
+
+
+
+More templates
+
+
+
+MiniApps.pro
+
+More miniapps
+
+
+
+More users
+
+MiniApps Space Ecosystem Overview Three major differences of MiniApps Space comparing to current MiniApps.pro is the following:
+
+1. Decentralized ecosystem and marketplace with decentralized billing supporting this marketplace.
+
+2. MiniApps Core run by 3rd party Core Providers 3. MiniApps Portals run by Portal operators
+
+Reasons to implement decentralized ecosystem vs. centralized are the following: 1. Decentralized ecosystems are more transparent to the members of the community; thus, they are more attractive. 2. Decentralized ecosystems are more flexible and open in terms of innovations thus they are more adaptable to changing environment. 3. Decentralized ecosystems have more options to incentivize members.
+
+MiniApps Space at its core is based on special technology, which we call semantic smartcontracts, for implementation of the decentralized billing. The rationale to use semantic smart-contracts for decentralized ecosystems is given here [TBD].
+
+The MiniApps Space will be independent, distributed, and self-developing community, which will facilitate the growth and adoption of chatbots/miniapps by end-users and SME's.
+
+See the details in Appendix 5.
+
+Project History / Traction MiniApps Project is a spin-off business of Eyeline.mobi, the company that provides platform solutions for telecoms, banks and fintech companies: USSD/SMS centers, Mobile Advertising, Service Delivery, Customer Self-care platforms etc. Eyeline's major clients are
+
+12
+
+
+
+MiniApps.pro
+
+Mobile TeleSystems, Tele2, Beeline, SMART Philippines, Alfa-Bank, Atos Origin, Panasonic, and YellowPages Philippines.
+
+MiniApps serves about 10 mln mobile users around the world, and sends about 1 billion messages monthly. More than 5000 development teams are registered with MiniApps. The platform is currently used mostly in the corporate sector  our existing partner network includes major Russian mobile operators and banks - Mobile TeleSystems, Alfa-Bank, Tele2, and others:
+
+ customer self-care portal *111# at Mobile TeleSystems (mobile carrier)  http://www.mts.ru/mob_connect/services/mts_service/;
+
+ customer mobile assistant (Telegram chatbot) at Mobile TeleSystems  http://www.mts.ru/mob_connect/help/selfservices/assistant/, @MyMTSBot;
+
+ mobile banking portal at Alfa-Bank  https://alfabank.ru/everyday/online/alfadialog/ ;  fintech services at Beeline and Tele2 (mobile carriers);  YellowPages Philippines Telegram chatbot  @DPCMessengerBot;  mobile money providers in Nigeria  USSD-aggregation.
+
+The Target Market Description There are currently more than 7 billion SIM-cards in the world. Cell phones are available to everyone almost for free; smartphones and the mobile Internet are also getting cheaper, and are now affordable even for people with low income. As a result, many enterprises, especially B2C, use mobile to communicate with their clients, partners and employees. This trend is called `business mobilization', and it involves the following means of communication between parties via mobile services:
+
+ voice services, e.g. call centers;  SMS/USSD;  mobile websites;  internet messengers;  mobile applications.
+
+The market for micro-, small and medium enterprises (MSMEs) is big and lucrative. There are between 365 and 445 million MSMEs in emerging markets (formal and informal) according to the World Bank1. Other research from IFC suggests that the number of formal MSMEs is more than 125 mln2. And all of them are potential clients.
+
+1 http://www.worldbank.org/en/topic/financialsector/brief/smes-finance 2http://www.ifc.org/wps/wcm/connect/industry_ext_content/ifc_external_corporate_site/industries/finan cial+markets/msme+finance/sme+banking/msme-countryindicators
+
+13
+
+
+
+MiniApps.pro
+
+14
+
+
+
+MiniApps.pro
+
+
+
+Comparison of customer care solutions
+
+Below is a comparison of implementation costs for customer care solution using different channels for the average audience of 1 mln end-users.
+
+
+
+INITIAL COSTS
+
+
+
+MINIAPPS CHATBOT (1 MLN END-USERS)
+
+OFF-PLATFORM CHATBOT (3 MESSENGERS)
+
+MOBILE WEBSITE
+
+CALL CENTER (30 HUMAN OPS)
+
+SMS/USSD (1 MLN USERS)
+
+MOBILE APPS
+
+
+
+$200 $15 000 $10 000 $100 000 $10 000 $100 000
+
+
+
+ANNUAL COSTS
+
+
+
+MINIAPPS CHATBOT (1 MLN END-USERS)
+
+OFF-PLATFORM CHATBOT (3 MESSENGERS)
+
+MOBILE WEBSITE
+
+
+
+$3 200 $15 000
+
+$5 000
+
+
+
+C A L L C E N T E R ( 3 0 H U M A N O P S ) $1 000 000
+
+
+
+S M S / U S S D ( 1 M L N U S E R S ) $300 000
+
+
+
+M O B I L E A P P S $20 000
+
+
+
+These diagrams demonstrate that miniapps are more cost effective comparing to other scenarios.
+
+For detailed overview of issues potential clients may face and possible solutions see Appendix 4.
+
+Growth Drivers
+
+The two main growth drivers for MiniApps will be accelerating chatbot penetration and the `mobilization' of MSMEs in developing countries.
+
+Growth driver 1: growing popularity of messengers
+
+
+
+15
+
+
+
+MiniApps.pro
+
+Chatbot popularity is growing among both young (aged 14-20) and mature (21-50) users  see the chart for India below. This is explained mostly by the low adoption threshold for chatbots  no need to download apps, no additional smartphone memory usage.
+
+Growth driver 2: growing penetration of mobile internet use by SME's in emerging markets Developing countries require accessible infrastructures for their MSMEs, and are usually ignored by new technological companies who either lack knowledge about them or face legal and financial difficulties in working there.
+
+MiniApps helps to build accessible infrastructures for communication between businesses and their clients, which will result in increased labor productivity and efficiency for local MSMEs, thus contributing to the well-being of local communities.
+
+16
+
+
+
+MiniApps.pro
+
+The chatbot market today is like social networks in the early 2000s. The ones who enter this market now will be the leaders in 5-10 years.
+
+Revenue Generation Model
+
+Business Model
+
+Chatbot technology helps small businesses integrate into the world of modern technologies, while medium-size enterprises benefit from it by expanding their market presence. This is why we have chosen partnership as the basic model. This is a triple-win situation  clients win by receiving convenient hi-tech service, partners win by making money reselling MiniApps.pro solutions, and Token Generation Event participants win by helping partner networks grow and by furthering the evolution of their products.
+
+MiniApps Service Costs for Clients
+
+The basic package monthly fee is $33, which includes: 1. minimal monthly fee for one MiniApps account  $5; 2. package of any two chatbot templates3, monthly  $15; 3. technical support  $13.
+
+A Simple Revenue Generation Case
+
+Let's consider a simple scenario for revenue generation:  a Partner signs a client to run a chatbot app based on some template. The Client pays
+
+the Partner in fiat or crypto (min package $33/month);  access to all the functionality of MiniApps platform and templates is activated by means
+
+of MiniApps tokens smart-contract. When a miniapp/chatbot is activated by the Partner (using MAT token), the Partner gets 50% (but no more than 500 USD per year) discount of all the license and technical support fees. So, the Partner will earn $16.5/month out of $33/month, or $198/year;  if the template is created by a third-party developer then 32% goes to that Template Developer using the MAT for this;  18% goes to MiniApps.
+
+This is illustrated by the picture below.
+
+3 Minimal package allows clients to use any of two templates out of basic set of templates: Chat Call Centre, Booking/Registration, IPS/Survey, Bitrix CRM Integration, etc. Each template's price is set by its owner/developer. So the cost of any additional template is shared with the partner 50/50 percent. Template prices may be a function of time, number of end users, traffic, etc. For example, price of voice verification template may depend on the number of verifications (i.e. number of transactions).
+
+17
+
+
+
+MiniApps.pro
+
+
+
+Goal
+
+
+
+Marketing tools
+
+
+
+Technological tools
+
+
+
+Entering MSME market Sales via partners, discounts for Referral system partners, referral system
+
+
+
+Cost reduction for MiniApps & partners
+
+
+
+Partner training, webinars
+
+
+
+Templates marketplace; Chatbot Constructor.
+
+
+
+Local market penetration
+
+
+
+Sales via partners; working with local integrators & template developers; local representatives work with communities and developers.
+
+
+
+Templates shop; Local languages support through best NLP/AI providers.
+
+
+
+Sales growth
+
+
+
+Providing incentives for partners (discounts, access to templates marketplace, referral system, user reviews); Partner training; Templates tailored for specific market segments; Incentives for template devs (partners reviews in the marketplace, other marketing tools to facilitate sales of templates).
+
+
+
+Templates shop; referral system Training materials.
+
+
+
+Innovative Technologies
+
+Up to now, MiniApps has implemented AI/NLP (Natural Language Processing) templates, which enable chatbots to maintain human conversations on various topics. It integrates with popular AI systems like api.ai, Microsoft QNA Maker, and similar platforms. The MiniApps approach of integration with those AI/NLP systems makes it possible to overcome their conceptual and technical limitations. What is very important, all existing AI/NLP engines have specific limitations in terms of languages support. For example, Google's API.ai does not support Bahasa Indonesia (240 mln speakers) and Philippines Tagalo (90 mln speakers).
+
+
+
+18
+
+
+
+MiniApps.pro
+
+On the other hand, MiniApps.pro easily allows integrate some other AI/NLP vendor for those languages so that template developers and partners can easily support custom languages on the same code base. Our further plans include introducing neural networks and Reinforced Learning, which will result in dramatic improvements in NLP quality. We will also adapt NLP for major regional languages, which is important for quick market expansion. Another innovation is a neural recommendation system, with corresponding business app templates based on the Tensor Product mechanism developed by the Institute of Mathematics of the Russian Academy of Sciences. It will enable MiniApps to construct a personalized experience for chatbot users, which, together with recommendation features, will force higher conversion rates and boost client loyalty. For MiniApps Space semantic smart-contracts are planned to be used as a foundation for decentralized billing. Semantic smart-contracts are based on a semantic modelling (also known as -programming)  part of Computer Science and Mathematical Logic developed in 80th-90th by Academicians Ershov Yu.L, Goncharov S.S., and Sviridenko D.I.4 We plan to collaborate with the Institute of Mathematics of the Siberian Branch of Russian Academy of Sciences, Novosibirsk and Irkutsk State Universities, and LibrettoLabs.com, which develops semantic modelling technologies.
+
+4 S.S. Goncharov, Yu.L. Ershov, D.I. Sviridenko. Semantic Programming. In IFIP'86, pages 1093-1100, Elsevier Science, 1986
+
+19
+
+
+
+MiniApps.pro
+
+Token Generation Event Details
+
+TGE Overview
+
+Goals of the Token Generation Event
+
+Since the MiniApps platform has been already developed, the attracted funding will primarily be used for fast business scaling, entering new markets by developing the partner network and marketing of the platform with a focus on MSME segments and emerging markets. The goal of the Token Generation Event is to obtain enough financial resources for MiniApps to reach the tipping point  10% of the market, followed by achieving leadership of the global market. The necessary and important parts of successful scaling will be the further development of the MiniApps.pro platform, the implementation of innovative technologies, and the building of the MiniApps Space network. The upscaling will be carried out using a partnership model. The partners will use the generated tokens to get access to MiniApps platform and its functions specific for partners. The Token Generation Event will allow enough funding to be gathered to take a 10% share of the targeted global MSME market (more than 300 mln businesses, according to The World Bank), reaching a tipping point and then achieving global market leadership. See the
+
+token
+
+MARKET GOALS
+
+10% of the total $3B market
+
+generation details below.
+
+MiniApps Token
+
+When we designed the concept of MAT token we set the following tasks to make it attractive for the crypto community:
+
+20
+
+
+
+MiniApps.pro
+
+1. After the TGE we must provide the participants with convenient mechanism of token acquiring and transfer, complying to the industry standards such as Ethereum ERC223.
+
+2. The token must be an integral part of MiniApps Space life circle. 3. The token must be useful for token holders within MiniApps community.
+
+
+
+MiniApps Tokens distribution and TGE process details
+
+
+
+Hard cap is Soft cap is
+
+
+
+100,000 ETH. 2,000,000 USD.
+
+
+
+Total volume of tokens which will be generated during TGE is 20 mln MAT. During TGE 10 mln MAT will be issued and available for buying by participants of TGE.
+
+
+
+Those tokens out of these 10 mln MAT which are not sold during TGE, will be burned.
+
+
+
+15% are reserved for MiniApps team.
+
+
+
+35% are reserved for partners and advisors, bounty campaign, hackathons, community grants, and MiniApps Reserve Fund.
+
+15% tokens reserved for MiniApps Team
+
+Tokens reserved for team will be kept in a multisig wallet. These tokens will be distributed gradually over 3 years (5% each year) to the team members in accordance with reaching project milestones.
+
+
+
+MiniApps Board of Directors will be responsible for taking a decision on tokens to be released for the Team.
+
+MiniApps Reserve Fund
+
+Tokens in this Fund are to be used for the purposes of promotion and marketing campaigns facilitating development of the partners' and developers' community. MiniApps Board of Directors will be responsible for releasing tokens out of this Reserve Fund.
+
+
+
+MiniApps Token (MAT) definition
+
+MiniApps utility Token is a ERC223 compatible Ethereum based smart-contract software. Each token grants its holder one of the following rights:
+
+Right to become a partner
+
+A token holder is eligible for the status of Partner in exchange for one token. The status is valid for one year and is automatically prolonged if the user's wallet balance is at least 1 MAT. Only whole MAT tokens grant this opportunity. The Partner status allows:
+
+ registering 10 (ten) mini-apps in MiniApps search system and their integration into MiniApps Space portals;
+
+ registering 2 (two) templates in MiniApps template shop;
+
+
+
+21
+
+
+
+MiniApps.pro
+
+ participating in referral program and earning revenue from attracted clients (see below).
+
+Right for partner discounts
+
+Any partner is eligible for one-year long 50% partner discount (but no more than 500 USD per year) in exchange for one MAT token per year. Only whole MAT token grants this opportunity. The discount is applicable to registered mini-apps only; annual aggregate payment is taken into account.
+
+Example: A partner registers several mini-apps based on MiniApps Shop templates. The annual aggregate payment for them is 2,300 USD. Then the discount is calculated in the following way:
+
+Discount (1 MAT) = min ( 50% * Annual_cost, $500 ) The partner reduces this payment by 500 USD in exchange for 1 MAT per year.
+
+ though 50% is $2,300 * 50% = $1,150  1  grants the maximum discount of $500.
+
+The partner reduces his payment by 1,150 USD in exchange for 3 MAT per year.
+
+ though 3  grants maximum discount of 1,500 USD  it cannot exceed 50%, that is $2,300 * 50% = $1,150. Right for extra commission from template sales
+
+Any partner is eligible for one-year long extra commission from registered template sales in exchange for tokens. Only whole MAT tokens grant this opportunity. The basic sales commission is 16%. The extra commission is another 16% but no more than $500 a year per 1 token. In total, a partner can get no more than 32% of total registered template sales.
+
+Example: A partner registers several templates in MiniApps Shop. Suppose, his total commission is $20,000 a year. By default, the partner gets 16% or $20,000 * 16% = $ 3,200 In exchange for 1 MAT per year he gets $3,700:
+
+ default commission is $20,000 * 16% = $ 3,200  plus additional min( $20,000* 16%, 500$) = $ 500  total $3,200 + $500 = $ 3,700
+
+In exchange for 7 MAT per year partner gets $ 6,400:
+
+ default commission is $20,000 * 16% = $ 3,200  plus additional min( $20,000 * 16%; 7 MAT *500$ ) = $ 3,200  total $3,200 + $3,200 = $ 6,400
+
+Note. It should be understood that the privilege of exchanging tokens for partner discount, or additional commission is granted only after acquiring the partner status, which costs 1 MAT a year.
+
+Right to run a referral program
+
+Any partner can run a referral program in exchange for 1 MAT per year. It is operated via Account Settings. The referral program enables a partner to attract new clients and get commission from their payments. Such clients may get discounts for their mini-
+
+22
+
+
+
+MiniApps.pro
+
+
+
+apps/chatbots in exchange for partner's MATs on the terms set by the partner, yet according to the discounts conditions they already have.
+
+For example, a partner may launch a referral program with the following terms: a client gets 30% discount for every partner's 1 MAT per year (but no more than $ 300 a year). Compared to $ 1000 (the total annual cost of mini-apps without discount), the cost for the client is now $1,000-$300 = $ 700, of which the partner gets $200 discount to pay for his other chatbots.
+
+Where do I buy and sell MAT?
+
+We expect that several months after TGE end MiniApps tokens will become available on major crypto-exchanges.
+
+
+
+For those who think that using an exchange is too complicated we will implement a MiniApps personal account feature to obtain MAT. This will not be an alternative to existing exchange platforms; it will work when MiniApps team informs token holders about token availability. Token holders may agree on the proposed rates or use crypto exchanges.
+
+
+
+Use-case for MiniApps tokens
+
+
+
+Participant
+
+
+
+Spends MAT
+
+
+
+Earns MAT
+
+
+
+User
+
+
+
+For mini-apps paid services
+
+For voting and rating
+
+
+
+Mini-app token holder/partner
+
+
+
+For registration of miniapplications in MiniApps Space
+
+For using templates from MiniApps Space shop
+
+
+
+From users for mini-apps paid services
+
+
+
+Developer of templates Portal operator
+
+
+
+For launching a referral program
+
+For registration of a discount for a mini-app
+
+
+
+Partial refund for using templates from the shop (if a discount is registered)
+
+
+
+For registration of templates in MiniApps Space shop
+
+For using other templates from MiniApps Space shop
+
+
+
+A Template Developer earns tokens when 3rd party applications use the template she created.
+
+
+
+Same as mini-app owner Same as mini-app owner
+
+
+
+23
+
+
+
+MiniApps.pro
+
+
+
+Distributed hosting network participant
+
+MiniApps Space team
+
+
+
+For registration of portal in
+
+
+
+MiniApps Space
+
+
+
+Commission from user
+
+
+
+payments for mini-app
+
+
+
+For linking every 3rd party services if they are
+
+
+
+mini-app to the portal
+
+
+
+accessed via the portal
+
+
+
+For registration of
+
+
+
+For hosting of MiniApps
+
+
+
+distributed hosting nodes Space cores.
+
+
+
+For distributed hosting of For template sales at
+
+
+
+the Core.
+
+
+
+MiniApps Space shop
+
+
+
+How to buy tokens during TGE
+
+To participate in TGE you need to register on TGE web site with your email and password: https://tokens.MiniApps.pro
+
+During TGE we will accept ETH contributions sent to the TGE smart contract. For participation, please login into your account on https://tokens.MiniApps.pro and get detailed instructions on how to participate, including the address of MiniApps TGE smart-contract.
+
+We also can manually accept TGE-contributions in currencies other than ETH with minimal amount equal to 50,000 USD.
+
+TGE Referral Programme
+
+We will announce TGE Referral Programme. Please follow our news resources for getting updates and announcements about this.
+
+How will proceeds from the Token sale be kept
+
+Proceeds from the Token sale will be kept in a multisig wallet during and right after TGE. To mitigate exchange rate risks, funds will be distributed in a portfolio including other key crypto-currencies and fiat currencies.
+
+MiniApps Board will be responsible for forming this portfolio policy.
+
+Team
+
+Our team consists of 18 high skilled professionals in the fields of software engineering, business development, marketing and sales. At the team's core are graduates of Novosibirsk State University, located in Akademgorodok - the home of Novosibirsk Scientific Center of the Russian Academy of Sciences. Our engineers and developers are experienced professionals in the creation of carrier-grade, high-performance solutions for mobile and Internet messaging.
+
+Programming languages: C/C++, Java, JavaScript, Python, HTML, XML. Competencies: system software, high-load systems, fintech, blockchain, machine learning, artificial intelligence, messaging, distributed transactions, computer science and math logic.
+
+24
+
+
+
+MiniApps.pro
+
+VITALY GUMIROV CEO The founder of MiniApps.pro, Vitaly graduated from Novosibirsk State University where he specialized in Mathematical Logic and Computer Science. He has 25 years of experience in the IT industry, and a track record of several successful businesses. His company Eyeline Communications is a leading vendor of SMS/USSD centers in Russia.
+
+YURI PESHKICHEV COO Yuri is a co-founder of Eyeline Communications and Vitaly's business partner for the last 20 years. All their business ideas are preliminarily examined by Yuri, and as a result, comprehensive business mechanisms appear, complete with legal frameworks, optimal financial flows and accurate reporting.
+
+PETER MATYUKOV VP Marketing Peter graduated from Novosibirsk State University, and has been working in IT since 1992. In Eyeline he was responsible for USSD/SMS and chatbot services (Telegram, Skype, VK, Facebook). Peter is the author of several patents related to telecommunications and information technologies.
+
+PAVEL KARAVANOV VP Business Development Pavel has an MBA from the State University of Management and MSc from Novosibirsk State University (Mathematics). He has held the positions of CTO and Deputy Product Director in Eyeline, focusing on the company's key telecom clients. Pavel has almost 20 years of experience in IT project management.
+
+SERGEY LUGOVOY CTO As Senior Architect of MiniApps, Sergey is a specialist in distributed transactions, databases, high-load systems, and GSM stack technologies. He is our most experienced programmer.
+
+VIKTOR RYZHKOV Victor is our leading specialist in blockchain technology. He is a guru in GSM stack technologies, and wrote (with Sergey Lugovoy) the core of the superfast 10,000 TPS Eyeline SMS/USSD Center, serving the Mobile TeleSystems network in Russia.
+
+25
+
+
+
+MiniApps.pro
+
+EVGENY CHUKANOV VP Dev Community Evgen is a key engineer of the MiniApps core. He graduated from Novosibirsk State and Novosibirsk State Tech universities. Key competencies: community management, server application development, databases, Machine Learning, blockchain.
+
+Advisory Board
+
+DMITRY KHAN Strategy Advisor Dmitry has more than 20 years of entrepreneurship experience in hitech, biotech, and space technologies. Co-founder of the first Russian privately-owned aerospace company Dauria Aerospace. Cofounder of capital investment fund Rostock Biotech One, focusing on biotechnological solutions for increasing people's active lifespan, medical problems of aging, and cancer treatment. Dmitry has experience in investment banking, successful M&A deals in telecom, IT and other domains. Dmitry graduated from Moscow State University with a degree in Economics. He has studied at the International Program on the Management of Sustainability, Sustainability Challenge Foundation, and has experience in building international cooperation and joint ventures. Dmitry is an ultramarathoner and a master of Eastern martial arts.
+
+SERGEY CHERNEV Partners Network Advisor Serge has degrees in Computer Science (Tomsk Polytechnic University), and Physics (Novosibirsk State University). He has more than 20 years of entrepreneurial and IT experience, building international IT teams, and business development. He has held top managerial positions in CyberPlat and other companies. Sergey is author of several international IT patents, his competence includes databases, telecommunications and payment systems.
+
+26
+
+
+
+MiniApps.pro
+
+BEN YU Business Development Advisor Ben has more than 25 years experience in IT, Technology, Marketing, Finance and Business Consultancy. He graduated from the National University of Singapore with a degree in Business Administration. After his career in IBM he worked as external consultant in the field of Business Strategic Planning, Marketing and Service Innovation. Ben's recent activities involve consulting on Business Planning & Development of Strategic Methods in the deployment of Blockchain technology in various industries, including but not limited to payment systems, cryptocurrency & products' authentication.
+
+ARIEL ISRAILOV Investment Advisor Ariel graduated from Finanz Akademie, Vienna and has trading and market making background with over 15 years of global entrepreneurship experience. As a venture capitalist, his investment focus is East-African, ASEAN and CIS countries. Ariel is the CEO and Founder of FRESHVALE LTD and several IT, finance and security technologies companies.
+
+ANAR BABAEV Marketing Advisor Anar Babayev is a blockchain enthusiast who specialises in ICO marketing. Among other successful campaigns he took part in Giga Watt ICO with proceeds amounted to $22 mln. Anar is also a coauthor of a number of books, such as "Marketing of Mobile Games and Applications", "Website Creation", "Promotion", "Button Money", and "Context Advertising". He participated in development of a bunch of services and tools - Setup.ru, SeoPult PPC, Adtoapp.com.
+
+SERGUEI POPOV Scientific Advisor Serguei Popov is one of the most respected and prominent mathematicians in crypto community and early stage crypto enthusiast. He is one of the founders of IOTA and WINGS projects. Serguei fully mathematically substantiated the algorithms of the tangle for IOTA (new approach in blockchain with low cost of transactions). Serguei is a research mathematician working in the field of Stochastic Processes and living in Brazil. He became interested in crypto at the end of 2013, and made a number of contributions to the theoretical aspects of the Nxt cryptocurrency and PoS in general.
+
+27
+
+
+
+MiniApps.pro
+
+ANDREY MANTSIVODA Andrey Valerievich Mantsivoda is a Professor of the Irkutsk State University (IrSU), Full Doctor of Mathematics and Physics, an acclaimed specialist in Applied Logic and Computer Science. He is the founder of Libretto Labs Inc. (2011), a resident of Skolkovo Foundation, Co-founder of Logus LLC. Andrey works with KU Leuven - Belgium's largest and highest-ranked university. In 2014 he was appointed as Vice-Rector for Strategic Development at IrSU. Andrey leads the team which develops a programming language Libretto (2010, together with A. Malykh) and works on applications of semantic modelling to business processes. JAN ROBERT SCHUTTE, CEO CryptoAcademy Jan has more than 25 years of trading experience in the derivatives and commodities markets. He was involved in creating the largest Dutch Brokerage, BinckBank. In 2011, he co-founded OptieAcademy that aims to increase the level of knowledge of investors. Jan Robert is a technical trader/coach who has already coached thousands of investors and especially in Options and Crypto Currency Trading. In 2015 Jan Robert won an investment competition among 1500 participants. In September 2016 Jan Robert was Cofounder of an online community which has now nearly 5000 members. In 2017 Jan Robert co-founded and is now a CEO of CryptoAcademy.nl which is the #1 Dutch Crypto Trading & Blockchain Community. Jan Robert is an experienced community builder and created several online Investing and Crypto Currency communities. Also has Jan Robert a broad network in the Crypto- and Blockchain world, encouraged by his huge sales skills.
+
+28
+
+
+
+Project Timeline
+
+
+
+MiniApps.pro
+
+
+
+4Q 2017
+
+
+
+1. Building MiniApps platform IT support system for partners. Right with the activation of the MiniApps tokens after the end of TGE core functions of MiniApps token will become available: partner registration and partner discount.
+
+2. Establishing a network of representatives in target regions that will start building the partner community.
+
+
+
+2018
+
+2019 2020
+
+
+
+1. MiniApps token will become available on some leading crypto-exchanges within 1-2 months after the end of TGE.
+
+2. Piloting and adaptation of business models on target markets (Russia, India, Philippines, Nigeria).
+
+3. Template Shop launch. 4. Start of scaling up on certain target markets (Russia, India,
+
+Philippines, Nigeria).
+
+1. Scaling in Africa, Asia Pacific, India, Russia and CIS. 2. Piloting and adaptation of business models in Arabic
+
+countries, Iran, Latin America, Brazil, USA, Canada, Korea, China, and Japan.
+
+Scaling worldwide.
+
+
+
+This plan can be adapted or changed depending on the amount of money raised via the Token Generation Event.
+
+
+
+29
+
+
+
+MiniApps.pro
+
+Marketing and Promotion
+
+MiniApps.pro marketing strategy consists of the following key components: 1. A franchise-like sales partner's network from one side, 2. and developers' community from the other side, 3. Both these communities form a MiniApps ecosystem
+
+a. On the first stage this ecosystem will be centralized where MiniApps team hosts and operates the central core;
+
+b. On the later decentralized stage of MiniApps Space the core can be operated by the independent 3rd parties.
+
+At the first stage, we plan to develop the partner network in India, Russia, and several Asian, Pacific and African countries. For this we are going to engage consultants with extensive practical knowledge of building franchise networks. On the other hand, we already have several key partners which work with MiniApps on commercial projects in some of these countries. Having said that we are not going to start from the scratch, MiniApps already has foundation for the partner's network. India is a very promising country as it is a very big market, and English is an official language. The team leaders have working contacts with potential partners in India. Russia & the CIS are quite promising because of the large number of MSMEs, the availability of NLP/AI with Russian language support, and good connections maintained by the team in the territory. In addition, we want to contribute to economic growth and wellbeing of our country. In Africa, we consider Nigeria as a starting point to enter other African markets. The team leaders have good connections with African entrepreneurs. African market is characterized by a young population, well-developed mobile networks, government support for mobile money providers, and about 7 mln MSMEs according to official statistics. NLP/AI can be in English too. Successful business cases in these countries will create good precedents, which will have a positive impact on the MiniApps growth in these and other markets.
+
+30
+
+
+
+Structure of Expenditure
+
+1. Marketing and office  68% 2. Development  25% 3. Technical Support  7%
+
+
+
+MiniApps.pro
+
+
+
+Use of proceeds from the Token sale
+
+
+
+Office 6%
+
+Support 7%
+
+Development 25%
+
+
+
+Marketing 62%
+
+
+
+Events 15%
+
+
+
+Partners' support 30%
+
+
+
+PR 6%
+
+
+
+Online marketing
+
+11%
+
+=
+
+
+
+31
+
+
+
+Optimistic, pessimistic, and realistic scenarios
+
+
+
+Current
+
+Engineering Continue development with
+
+current team
+
+
+
+If we raise during TGE...
+
+
+
+$2,000,000+
+
+
+
+$12,000,000+
+
+
+
+Push work on centralized marketplace
+
+
+
+Decentralized MiniApps Space with basic template-based decentralized billing
+
+
+
+$20,000,000+
+
+Decentralized MiniApps Space including semantic smart-contract engine for the flexible decentralized billing, R&D on semantic based AI and new gen conversational UX
+
+
+
+Marketing & Communication Continue our current
+
+communications strategy
+
+Target markets Russia, India
+
+
+
+Host annual events for partners in target markets, PR and communication
+
+Russia, India, Philippines
+
+
+
+Host semi-annual events for partners in target regions, participate in 2 specialized conferences, run ad campaigns Russia and CIS; India; SEA: Philippines, Indonesia, Malaysia; Africa: Nigeria, Tanzania, Kenya, South Africa
+
+
+
+Host events for partners in each country, participate in regional and global conferences, run ad campaigns Worldwide
+
+
+
+Business development Pavel Karavanov manages all BD Hire one strong BD consultant
+
+
+
+Partners network development Peter Matyukov manages all
+
+community efforts
+
+
+
+Hire one strong Community consultant specialized in developing franchise networks
+
+
+
+Developers' community Evgeny Chukanov manages all dev Hire team of 2 community
+
+
+
+community efforts
+
+
+
+managers
+
+
+
+Hire one BD lead for each of the target regions
+
+Host semi-annual meetups in selected regions with strong local development communities, online training programs for partners. Hire strong Dev Community specialist to lead building developers' community
+
+
+
+Build a team of junior and senior BD talents for worldwide expansion Host quarterly meetups (incl. online) for partners and developers, online training programs. Build an online community of developers and researchers, run educational programs on semantic based AI, and smart-contracts.
+
+
+
+32
+
+
+
+MiniApps.pro
+
+33
+
+
+
+Risks
+
+
+
+Risk
+
+
+
+Mitigation plan
+
+
+
+Contingency plan
+
+
+
+Clients leave MiniApps for competitors
+
+
+
+Analysis of competitive environment, identification of additional advantages, using other business models.
+
+
+
+Change of business model, finding new advantages, forming alliances.
+
+
+
+Platform overload caused Stress testing, cloud by a high number of clients architecture.
+
+
+
+Additional resources, cloud architecture.
+
+
+
+Unforeseen changes on local markets affect MiniApps products
+
+Business model doesn't work as expected, sales lower than planned
+
+
+
+Thorough market analysis, local presence, back-up markets and business models.
+
+Testing business models, back-up options, pilot projects.
+
+
+
+Change of business model, finding new advantages, moving into new markets.
+
+Adjustment/change of business model, elaboration and execution of new strategies.
+
+
+
+34
+
+
+
+MiniApps.pro
+
+
+
+Appendix 1. Smart Contract Code
+
+[TBD]
+
+
+
+Appendix 2. References
+
+1. MiniApps.pro platform main website http://www.miniapps.pro 2. Eyeline.mobi Group main website http://eyeline.mobi 3. MiniApps.pro Token Generation Event website http://tokens.miniapps.pro 4. MiniApps Medium https://medium.com/miniapps-pro-token 5. MiniApps.pro News Telegram Channel https://t.me/MiniApps 6. S.S. Goncharov, Yu.L. Ershov, D.I. Sviridenko. Semantic Programming. In IFIP'86,
+
+pages 1093-1100, Elsevier Science, 1986 7. Semantic Smart Contracts and Investment Management https://goo.gl/gdqkDU
+
+
+
+Appendix 3. Definitions and abbreviations
+
+
+
+AI
+
+
+
+Artificial Intelligence.
+
+
+
+https://en.wikipedia.org/wiki/Artificial_intelligence
+
+
+
+ERC223
+
+
+
+A standard for Ethereum-based smart-contract/token. See
+
+https://github.com/ethereum/EIPs/issues/223
+
+
+
+ETH
+
+
+
+Abbreviation for ether -- native crypto-currency in Ethereum network.
+
+
+
+Ethereum
+
+MAT MSME NLP
+
+SME SMS
+
+
+
+Ethereum is an open-source, public, blockchain-based distributed computing platform featuring smart contract (scripting) functionality. https://www.ethereum.org
+
+MiniApps Token, see more details in this white paper. Micro, Small and Medium Enterprises Natural Language Processing. https://en.wikipedia.org/wiki/Natural_language_processing
+
+Small and Medium Enterprises Short Message Service (SS7 based messaging standard protocol for mobile networks)
+
+
+
+SS7 USSD
+
+
+
+Signaling System No. 7 (SS7) is a set of telephony signaling protocols. https://en.wikipedia.org/wiki/Signalling_System_No._7
+
+Unstructured Supplementary Service Data (menu-like messaging protocol based on SS7 for mobile networks). More details are here https://en.wikipedia.org/wiki/Unstructured_Supplementary_Service _Data
+
+
+
+35
+
+
+
+MiniApps.pro
+
+Appendix 4. MiniApps Description and Advantages
+
+MiniApps is a cloud platform with a corresponding business model, a set of ready-made business functions/application templates, an omni-channel chatbot constructor, and Artificial Intelligence support. It allows businesses to reduce the costs of chatbot launch and support, and to improve the quality of customer service. The monthly cost of MiniAppsbased chatbot for an MSME starts at just $33.
+
+`Omnichannel' means integration of separate communication channels into a single system to ensure seamless interaction with all clients on all devices, OSes, and messaging software. As an omni-channel platform, MiniApps allows you to reach the widest possible audience without increasing development and technical support expenses. Once you've created a chatbot on MiniApps, it will be available to mobile users via all popular Internet messengers and other channels at once:
+
+ Internet messengers (Viber, Facebook, Telegram, VK, WeChat, Slack, Kik, WhatsApp5);
+
+ SMS/USSD6;  chat-enabled mobile websites;  voice call centers (planned);  mobile applications generator (planned);
+
+MiniApps bots are backed up by Artificial Intelligence technologies like Natural Language Processing to make the interface clear while improving the user experience. MiniApps does not depend on AI vendors, which allows us to choose the most suitable solutions for different markets.
+
+Thanks to the easy and convenient Menu Constructor and a set of pre-programmed templates, one doesn't have to be a professional programmer to create chatbots, landing pages or SMS services. At the same time, our advanced API provides developers with enough flexibility to create highly customized mobile services.
+
+Our Analytical tools help to create metrics, and to track and report chatbot traffic for increased business intelligence. This provides managers with useful insights about communication between businesses and clients, and helps to improve customer service.
+
+Automated, AI-powered mobile services and omni-channel communication with clients open up new possibilities for MSME in terms of competitiveness and business growth.
+
+Mobile Services: Clients' Issues
+
+Large organizations often use all of these communication channels. But this approach is too expensive for small and medium-sized businesses.
+
+ The cost of developing a mobile app starts at ~$100K; the annual support is at least $20K. - This is because companies need to develop and support software for all mobile OSes. System updates for Android and iOS are released annually, so the costs are quite substantial.
+
+5 As soon as Whatsapp opens its API. 6 We support both SMS/USSD connections to multiple aggregators and direct connections to mobile network operators via standard protocol SMPP 3.4 and/or via SS7 (GSM Signaling Network).
+
+36
+
+
+
+MiniApps.pro
+
+- Mobile apps promotion is complicated from both technical (multiple OSes) and marketing/organizational/financial perspectives (response tracking, paid downloads, etc.).
+
+- Mobile apps are not good for services that are rarely used (2-3 times per month); many people delete apps they don't use in order to free up device memory.
+
+ The cost of using SMS/USSD starts at $20K (ex. traffic costs); the service is totally dependent on mobile network operator terms; organizing the connection can be difficult.
+
+ The costs of call centers start at several thousand USD per year and vary widely: a human operator's salary is several thousand USD; voice traffic is another several thousand USD per year. - many people don't like telephoning a company, and they hate long IVR menus; - limited functionality.
+
+ Development of the simplest mobile site costs at least several thousand USD; annual support is another several thousand. It provides one-way communication: from client to organization only.
+
+ Off-platform chatbot development starts at $5,000; annual support is several thousand per year per messenger. Still it is a very promising channel - see below.
+
+Mobile Services: Resolving the Issues
+
+There are several means of dealing with those problems: 1. Hybrid mobile applications. They are developed with special tools that help cut development costs. The shortcomings here are limited features and high memory usage, which negatively affect the app user base. 2. Cloud call centers. They help cut costs at the start, but nevertheless require the hiring of human operators. 3. Social networks instead of mobile sites. This is a good decision but it cuts off those clients who don't use social networks for various reasons. 4. Using SMS/USSD channels requires integration and contracts with mobile carriers; an easier way is acting via an aggregator company, but having any middlemen in the value chain results in higher traffic costs. 5. Specialized chatbot platforms, which can be grouped in the following categories: a. APIbased platforms like Microsoft Bot Framework. Development on these platforms requires a professional (expensive) team; b. Constructors like Chatfuel or FlowXO are limited in features and supported channels (no support for SMS/USSD, voice, apps, mobile sites); c. NLP/AIbased like API.AI are complicated and expensive to develop, and have some functional limitations and issues with supported channels.
+
+What We Have Now
+
+Documentation and API
+
+ MiniApps Documentation and API are available at https://docs.miniapps.pro
+
+Account Management and Menu Constructor
+
+MiniApps.pro account management includes:  chatbot list;  configuration of bot connections to channels/messengers;
+
+37
+
+
+
+ connection to API.AI natural language processing platform  connection to Google Analytics  chatbot Menu Constructor  chatbot testing tools  template and plugin tools (see details below)  statistics  billing and payments
+
+Chatbot Menu Constructor
+
+
+
+MiniApps.pro
+
+
+
+Templates and plugins
+
+Chatbot owners can plug-in and run bot templates that were created by third party developers. This can be done both via MiniApps API and Chatbot Constructor.
+
+The following chatbot templates and plugins are currently available:  verification of users via mobile phone (SMS, USSD, voice call);  biometrical verification of users (by voice);  payment acceptance via chatbots using credit cards  text chat contact center  geolocation-aware local search  mobile surveys  customer feedback  appointment scheduling (via Google Calendar)
+
+38
+
+
+
+MiniApps.pro
+
+Examples of MiniApps Chatbots
+
+See MiniApps demo chatbots at http://www.miniapps.pro/demo-chatbots/ 1. Bank call center 2. Chatbot for a gas station 3. Taxi service 4. Airport chatbot 5. Fast food chatbot 6. Emergency service chatbot 7. Airlines chatbot
+
+39
+
+
+
+MiniApps.pro
+
+
+
+Appendix 5. Details About MiniApps Space
+
+MSME need channels and tools of communication with their current and potential clients that perform many business functions: e-commerce, customer care, marcom, etc. Clients need these tools too to get the services quickly and seamlessly.
+
+However what IT industry has to offer in that respect (call centers, cellular and Internet messaging, mobile websites, and mobile applications) is not quite what users and small or medium-sized companies want. Particularly, mobile apps - probably the trendiest tool of the last decade - are considered - relatively hard to find if you need a proper app, device memory consuming, too narrow in usage from users' perspective; - too costly for MSMEs in terms of overall ownership. We discuss this in greater detail in the Target Market Description section below.
+
+On the other hand, there are Instant Messengers and chatbots. The latter become increasingly popular as they're focused on quick access to services and they don't need to be downloaded. For quick, simple actions they are better than web or mobile apps. The main problem is how to find the right chatbot, and how to know which ones are trustworthy. Another issue is that there are very few B2C chatbots. Small and medium size enterprises do not have the proper tools to make chatbots quickly and cheaply, to integrate them with their businesses, or to deliver them to users through all messengers simultaneously.
+
+The MiniApps Space is designed to solve these problems. Not only does it enable the quick creation and launch of AI-powered omni-channel chatbots  MiniApps Space is also a platform for a decentralized network and community of miniapps, owners of miniapps, template developers and end-users. This opens up the mobile channel for the vast majority of MSMEs around the world, and makes new AI, mobile and chatbot technologies more affordable and accessible, which benefits both MSMEs and end-users.
+
+
+
+Chatbot owner in India
+
+
+
+Template Developer in
+
+Russia
+
+
+
+MiniApps cloud
+
+The Decentralized Space of Mini-applications
+
+We are going to build MiniApps Space  the decentralized space of mini-applications  based on the MiniApps.pro platform and blockchain technology. It will help people get the
+
+40
+
+
+
+MiniApps.pro
+
+services they need easier and faster, on a cell phone or any other device, even a car computer.
+
+As a decentralized space, it eliminates the shortcomings of current chatbots by using blockchain technology. Particularly, it solves the following problems:
+
+1. chatbot registration, hosting, and searching; 2. dependency on a particular messaging platform; 3. seamless switching from one bot to another; 4. freedom to choose between chatbots or auto-generated mobile apps; 5. trust and rating  transactions are saved in blockchain, all payments are made in
+
+cryptocurrency;
+
+MiniApps Space enables its community to fully manage their mini-applications. Registration, ratings, and distribution of benefits are operated through MiniApps smart contracts and corresponding ERC223 compatible tokens (see below for more details). App developers and users will be the beneficiaries of MiniApps Space. It does not depend on corporations or Internet Messaging platforms, which means reduced expenses and cheaper services for end users.
+
+The Key Features of MiniApps Space:
+
+1. MiniApps Space is organized as a peer-to-peer network with different kinds of nodes, each playing its own specific role: mini-apps, portals, and distributed hosting nodes. This kind of structure is independent of big corporations; it allows the creation of a proper trust/rating system, and stimulates quick, self-driven community development.
+
+2. Omni-channel approach. As all Internet messengers, web, SMS/USSD and mobile app generators are supported, miniapps will not depend on any particular IM or URL; users will be able to choose the form of entry that is most convenient for them.
+
+3. All essential transactions are recorded in the Ethereum blockchain. Management is carried out through MiniApps Ethereum smart-contracts, which implement the ERC223 compatible MiniApps Token, or MAT.
+
+4. MAT is a license key for obtaining the rights to use MiniApps platform.
+
+5. MAT gives the holder the following MiniApps functions:  access to the marketplace of templates for partners/miniapp owners;  registration of a miniapp by owners/partners to obtain discounts and user reviews;  publication of templates in the marketplace by template developers, which also makes it
+
+possible to get reviews on the template.
+
+Also, the holder can transfer MAT token to other parties (because it is ERC223 compatible Ethereum based token).
+
+41
+
+
+
+MiniApps.pro
+
+MiniApps
+
+The basic unit of MiniApps Space is the mini-application. It is like a planet in space. Chatbots are mini-applications that can accept user requests and send responses or notifications. They are web-services that interact with MiniApps Space via API. MiniApps Space is omni-channel, so users can access mini-applications from any Internet messenger, web-chat, or even mobile app. An example is mobile carrier's chatbot that can show your balance, top-up your account, and turn mobile services and options on or off. Unlike simple web-page or mobile apps, a mini-application contains an extended description of its functions, geo-data (location, address, telephone), and trust rating. These data are used by MiniApps Space AI to recommend relevant services to users. All miniapp transactions (payments, request histories) are stored in blockchain, which allows developers to organize verification and rating systems that are reliable and trustworthy. For example, a person can post a review of only those apps that she really used.
+
+Portals
+
+While mini-apps are like planets in the MiniApps Space, portals are like stars with planetary systems. A portal is a catalogue of miniapps. It can be subject-related, e.g. Health Resources, or location-based, e.g. a Town Portal. Technically, when a miniapp is registered it gets connected to one or more portals. Gradually these miniapps form a portal cloud. A portal and its miniapps may have various relationships, which are fixed by smart contracts. When a user starts searching for a mobile service, MiniApps Space translates the request to registered portals, and they respond, basing their replies on the connected miniapps.
+
+42
+
+
+
+MiniApps.pro
+
+If a portal owner wants to publish his portal in MiniApps Space he must pay 1 MAT for every miniapp connected to it.
+
+Portals are responsible for:  AI/NLP-models of specific domains  Semantic models of subject domains  Issuing reputational tokens for its app cloud  Support of continuing automatic and semi-automatic learning, and improvement of a domain's semantic model.  Particular business models inside its mini-apps cloud and smart contracts.  Marketing and promotion of its entire apps cloud.
+
+We identify the following basic classes of portal business models:  lead generation and selling to cloud members  an exchange for requests and demands
+
+The main economic driver of portal growth is that they make Machine Learning and Artificial Intelligence technologies accessible for small and medium business on a mass scale, which can improve their business efficiency.
+
+The use of blockchain in MiniApps Space will improve the quality of connected services through a more reliable recommendation system, and reduce the cost of transactions between users, portals and service providers (MSME/miniapps owners).
+
+MiniApps Space Entry Points
+
+Users can access MiniApps Space from any Internet messenger, web-chat, site or mobile app. Programmed access via API is also possible. A chatbot or mobile app owner may let their users in to MiniApps Space, their product thus becoming the entry point, while users may choose which entry point is better for them.
+
+Blockchain And Decentralized Hosting
+
+All essential transactions between the participants (transfers of MAT, reputation points, etc.) are recorded in blockchain to increase trust and reduce transaction costs. All such transactions are implemented through MiniApps Ethereum smart-contract(s) and a corresponding MAT token.
+
+The hosting of miniapps will be provided by one of the fog-hosting decentralized networks such as Golem or Sonm; in-house implementation of a similar system is also possible.
+
+Interaction between owners of mini-apps, portals and entry points will be regulated by common rules, not the dictates of a controlling organization.
+
+All this makes MiniApps Space a completely decentralized and independent co-operative community.
+
+Ethereum blockchain integration architecture
+
+Our business strategy for scaling is based on building a partnership network. This involves creating local points of presence (PoP) that will run local installations of the MiniApps core for regions/countries. These PoP's will be operated by separate legal entities. Also, one more entity will be introduced at the MiniApps Space phase  `miniapps' portal'. Its role will
+
+43
+
+
+
+MiniApps.pro
+
+be the audience's aggregation, AI-assisted consolidation of knowledge in the corresponding subject matter, and making this knowledge available to the MSME's in the respective domain/market. This strategy envisions the creation and deployment of a decentralized and distributed selfoperating messaging network, which players will include users, chatbot/miniapps owners, partners, template developers, MiniApps core PoP operators, and MiniApps portal operators. The major difficulties in implementing distributed messaging platforms such as MiniApps lay in the following areas:
+
+1. Distributed service discovery 2. Distributed transaction support for billing and service activation/de-activation 3. Distributed provisioning We have chosen the Ethereum platform for implementing the abovementioned core features of the MiniApps network. Specifically, Ethereum blockchain will store the following information: 1. Registry of partners, template developers, miniapps/chatbots, templates from
+
+templates marketplaces, core PoP operators, portal operators, and portals; 2. Current activation status of miniapps/chatbots and templates; 3. Billing information. This information is available to players through the method of MiniApps smart-contracts. This approach allows players on the network to operate independently in a decentralized manner, improving reliability and increasing the quality of service.
+
+44
+
+
+
+MiniApps.pro
+
+Appendix 6. FAQ
+
+What are benefits of being MiniApps partner?
+
+Partners can get discounts for the chatbots/miniapps they register by paying MiniApps token (MAT). The discounts are 50% from the regular price (but no more than 500 USD per year). Discounts are provided both for core MiniApps functions and for 3rd party templates which registered chatbots/miniapps use.
+
+Taking into account that price of the base package is $33 per month, the discount obtained by the partner can be at least $16.50 per month or $198 per annum.
+
+What are the benefits of being MiniApps token holder?
+
+Token holders not only can obtain partner discounts and access template market place, but also can transfer tokens on a secondary market to MiniApps partners, clients and template developers. Demand for tokens will be driven by the following factors:
+
+1. Access to template marketplace is provided exclusively through the functionality of MiniApps token smart-contract.
+
+2. Partners can obtain their status and register their chatbots/miniapps exclusively by means of MiniApps tokens.
+
+3. Some core functions of MiniApps like voting and referral system are activated exclusively by means of MiniApps tokens.
+
+4. MiniApps tokens supply in limited to 20 mln.
+
+Which parts of your product are centralized, and which are decentralized?
+
+Definition: MiniApps are not only chatbots, but also SMS/USSD services, IVR with ASR services, and smartphone apps, which are automatically generated from MiniApps.
+
+The core of MiniApps is currently centralized, while the hosting of MiniApps/chatbots and additional functionality (which we call `templates library') is decentralized. Templates can be developed by third parties (we call them `template developers'). Templates can provide various functions such as business-specific building blocks (e.g. Chat Contact Center, booking, or CRM integration), or infrastructure building blocks (e.g. AI/Natural Language Processing, user verification, payments gateway).
+
+The construction of MiniApps/chatbots for clients is handled by the decentralized network of partners. The partners' roles are sales, marketing, construction of MiniApps from the building blocks of templates (using the web-based MiniApps constructor), first-line tech support, and payment collection. Partners can also publish their MiniApps in the template library so that other partners may use them for the benefit of their clients.
+
+In the future, we plan to decentralize the hosting of the MiniApps core so that third parties may host instances of the core. This will increase the stability and reliability of the entire system, and reduce business risks for the community of partners, template developers and clients.
+
+We strongly believe that such a decentralized concept and its network effects will facilitate the growth of the entire community, and will help MSMEs around the world to improve their businesses.
+
+45
+
+
+
+MiniApps.pro
+
+What Is Network Effect in MiniApps Space?
+
+A network effect is well-known in marketing for the impact it has on explosive growth of the network. The classic example is the cellular telephone network, where a greater number of users increases the value to each. Over time, positive network effects can create a bandwagon effect as the network becomes more valuable and more people join, in a positive feedback loop.7
+
+There is also indirect network effect in more complicated networks comprised of different groups of users performing different roles: increases in usage of one product or network spawn increases in the value of a complementary product or network, which can in turn increase the value of the original.
+
+MiniApps.pro is designed to launch the network effect.
+
+Most multi-side (e.g. platform-mediated) markets8 are characterized by indirect network effects. MiniApps platform's sides are miniapp Users, Clients, Partners and Template Developers. The MiniApps network effect works like this:
+
+Firstly, MiniApps Team fills the Templates Shop with everything that other developers may need to quickly create and sell their mini-apps:
+
+1. AI/NLP-powered chat backed up by the option to re-direct dialogues to human operators.
+
+2. Bonuses, discounts, informing. 3. Integration with CRM. 4. Booking. 5. AI-based recommendation system. 6. User verification for security (using USSD/SMS and by voice based on machine
+
+learning) 7. Surveys
+
+The more templates there are the easier it is to create template-based miniapps; this increases the number of the applications. The more apps and services there are the more users they attract; this increases the value of the network for both users and developers.
+
+ the more successful app implementations businesses see the easier it is for developers to sell their apps;
+
+ new users discover useful apps via their network buddies;  as predicted by network effect, increase of one group increases the value of the
+
+network for all groups that results in more people joining both groups.  as predicted by network effect, growth of number of network participants increases
+
+usage of app templates and their value. This attracts new developers to the platform which increases the number of new templates in a positive feedback loop.
+
+7 There is Metcalfe's Law, which states that the value of a telecommunications network is proportional to the square of the number of connected users of the system (n2). 8 See https://en.wikipedia.org/wiki/Two-sided_market
+
+46
+
+
+
+More templates
+
+
+
+MiniApps.pro
+
+More miniapps
+
+
+
+More users
+
+How does your product differ from other decentralized competitors?
+
+MiniApps is a new generation chatbot platform built around the concept of a decentralized network of template developers, clients, hosting providers and partners. Most other chatbot platforms implement one of the following concepts:
+
+a) a centralized marketplace of chatbot templates with a strict differentiation between chatbot developers and template developers without explicit partner role;
+
+b) centralized solutions for building chatbots with only a Natural Language interface, without the convenient menu-based user experience provided by MiniApps.
+
+Unlike other software, MiniApps allows p2p cross links between multiple chatbots.
+
+What does the token do? (Why can't you just use bitcoin or ether?)
+
+The MiniApps Token (MAT) provides the following functionality based on the Ethereum smart-contract:
+
+1. Statistics and accounting of clients' MiniApps for the partners. 2. Usage stats and accounting for template developers. 3. Stats and accounting for MiniApps hosting providers (both those who host the core
+
+and clients' miniapps). 4. Authorization of partners and clients for accessing specific templates. 5. Authorization of partners and template developers for accessing core MiniApps
+
+functions like message channels (especially SMS/USSD), VPN, stats and analytics, testing tools, support, and monitoring tools. 6. FATCA and KYC compliance functionality. In short, MAT is more than merely a payment mechanism; it provides essential functionalities for the entire community.
+
+47
+
+
+
+MiniApps.pro
+
+What problem or unmet need in the market does it solve?
+
+The popularity of chatbots among businesses worldwide is increasing, especially in the field of Customer Support. Our company has been in the chatbot business since the very beginning, and we can clearly see that chatbots are still not affordable for the majority of small and medium enterprises. This is why:
+
+1. Building chatbots requires skills for developing high volume messaging systems. 2. Skills in conversational user experience, artificial intelligence, and machine learning
+
+are also required. 3. The centralized business models of most platforms do not provide a foundation for
+
+the network effect, which is essential for expansion in lower market segments. In short, chatbots are not affordable for most MSMEs because of (1) a lack of software development skills and (2) the high costs of implementation and support.
+
+Our concept allows the building of a decentralized network community, where different participants have different skill sets and play corresponding roles. This makes it possible to bring together the necessary competencies to deliver MiniApps/Chatbot solutions to clients (those whose businesses will benefit from them, and who are ready to pay the community for such solutions).
+
+Why have these problems not been solved in the past?
+
+The right concepts are tied to the right technologies. The concept of a decentralized MiniApps network could not have been born without the concept of a decentralized smart contract network. Also, more than a decade of experience in building mobile solutions for the corporate market has led us to the idea that without changing core technologies and concepts, only corporations can benefit from the growing popularity of mobile phones, smartphones, and messengers. In order to open up those benefits to a mass market of more than 100 mln MSMEs around the world, we need to bring forth new technical and business concepts based on the network effect, which can be achieved with fair decentralization.
+
+How does the product work?
+
+MiniApps has been commercially available for more than one year. The main web site is www.miniapps.pro
+
+Will more tokens be issued over the time, and how?
+
+No.
+
+How can people earn one of your tokens?
+
+1. Become a partner and obtain discounts 2. Become a template developer and earn your tokens through the use of your
+
+MiniApps templates by the community members. 3. Become a hosting provider and get tokens as a compensation for providing hosting
+
+services.
+
+4. Become a Miniapp owner and earn tokens from users for your Miniapps paid
+
+services, or get a partial refund for using templates from the shop.
+
+48
+
+
+
+MiniApps.pro
+
+What will happen if MiniApps token is removed from the MiniApps platform?
+
+MiniApps token is implemented as an Ethereum ERC223 compatible smart-contract with additional functions which are core to MiniApps platform (KYC/AML compliance, software licensing functionality, access to the templates marketplace, billing and settlements functionality). Any reasons for removal of the MiniApps token from the platform constitute significant risks for the core functionality and even for the viability of the MiniApps platform.
+
+What will happen if Ethereum price will skyrocket?
+
+Here are the points in MiniApps platform with the dependency on a transaction fees of the Ethereum network: 1. Payouts to template developers 2. Discounts settlements with partners 3. Partners' payments to MiniApps 4. miniApp registration by partners 5. template registration by template developer 6. Payouts to other players (e.g. chatbot or core hosters) 1, 2 and 6 -- Because payouts to template developers and discounts settlements with partners are made either on a regular basis (configured by developer/partners, e.g. daily, weekly, or monthly) or by request, the transaction fees of the Ethereum network will not play significant role in the entire business model. 3 -- Because partners' payments are made on a monthly basis in advance transaction fees of Ethereum network will not play significant role as well 4 and 5 -- registration procedure is irregular activity and is made only once in a lifecycle of template or miniApp/chatbot, this makes transaction fees of Ethereum insignificant in for the business model.
+
+What may happen to MiniApps token in case of Ethereum hardfork?
+
+In the case of Ethereum hard-fork we will arrange voting by token holders on a decision which fork to choose for tokens migration.
+
+49
+
+
+
+

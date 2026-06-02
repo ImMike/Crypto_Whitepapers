@@ -1,0 +1,1315 @@
+FLIP
+
+WHITE PAPER
+
+Version 5.3, November 2017
+
+Legal Disclaimer: The FLIP token sale is only available to purchasers who are: (i) not "U.S. Persons" (as defined in Regulation S under the U.S. Securities Act of 1933, as amended) and not purchasing for the account or benefit of any U.S. Persons and
+
+(ii) eligible to purchase FLIP tokens under the applicable laws of each such purchaser's jurisdiction.
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Crypto-token for buying and selling
+
+gaming digital goods
+
+Executive Summary
+
+This whitepaper describes a new decentralized ecosystem where digital goods on all gaming platforms  mobile, PC, console, and VR/AR  can be sold as liquid assets using trustless (i.e., fully secure) smart contracts executing on blockchain technology. The digital goods transactions will take place using a crypto-token called "FLIP".
+
+The new decentralized ecosystem is founded by Gameflip, a venture-backed technology company which operates a robust digital goods marketplace with millions of users. Gameflip is a corporation based in Silicon Valley, California, USA. The company is managed by gaming industry experts with decades of combined experience, and funded by top tier venture capital investors. Established in 2014, Gameflip has already been at the forefront addressing the largely unmet demand for liquidity for digital goods. Prior to the advent of blockchain technology, we have already built the most comprehensive centralized digital goods marketplace platform and have witnessed tremendous growth in the platform for the last two years. Now, with blockchain technology, our new decentralized ecosystem will enable ubiquitous liquidity for digital goods, unlocking exponentially more value for the gaming market and its participants.
+
+In decentralized networks, economic value and governance are distributed among the network participants, not concentrated in a single organization. Here, the participants are primarily game developers, publishers and gamers, plus digital goods marketplaces, transaction enablers, and other contributors. In this ecosystem, economic value is distributed among all participants, ensuring that they are compensated for the value they bring.
+
+1
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+The new decentralized ecosystem will create tremendous benefits for both gamers and game developers and publishers. (In this white paper, we sometimes refer to game developers and publishers together "game publishers".)
+
+ Gamers will have unprecedented flexibility to buy, sell and trade the digital goods at the peer-to-peer level (i.e, with other gamers), unlocking significant value for gamers from their hard-earned digital goods. Importantly, they will transact in a zero-fraud environment, one that never existed before the availability of blockchain technology.
+
+ Game developers and publishers will generate significantly more revenue for a number of reasons:  First, the new ecosystem encourages gamers to purchase substantially more digital goods, and at higher prices, than they do today, knowing that they can recoup their investments later by selling them freely and securely in a large liquid marketplace.  Second, game publishers will enjoy a brand new revenue stream  whenever gamers transact using blockchain smart contracts, game publishers will receive a commission.  Third, under our unique network growth model, game publishers that help drive adoption of FLIP will be rewarded handsomely  with tangible economic benefits  as described more fully later in this white paper. The importance of the point above  the tangible benefits for game publishers  cannot be underestimated. Game publishers will play a very key role in this ecosystem, and each game publisher will have to choose which crypto-token(s) to adopt. FLIP is the only crypto-token with an ecosystem with built-in, concrete, and generous benefits for game publishers. As such, we are confident that FLIP will be adopted quickly and will emerge as the dominant crypto-token for the gaming industry.
+
+Indeed, the new ecosystem will likely create a paradigm shift for the gaming industry. Demands for digital goods will increase, gamers will gain trust in the network and buy and trade more, multiplier effects will kick in, and the overall market will grow exponentially. Studies have estimated that gaming revenue will grow to $128.5 billion by 2020, but that number does not even include the trading of digital goods on the blockchain. We estimate that the value of digital goods transactions via the Gameflip decentralized ecosystem, using FLIP, will eventually top $20 billion.
+
+2
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+
+
+Table of Contents
+
+
+
+Executive Summary
+
+
+
+1
+
+
+
+Table of Contents
+
+
+
+3
+
+
+
+1. The Market
+
+
+
+5
+
+
+
+1.1. Overview
+
+
+
+5
+
+
+
+1.2. Direct-from-Publisher Digital Goods vs. Gamer-Earned Digital Goods
+
+
+
+6
+
+
+
+2. The Opportunity
+
+
+
+8
+
+
+
+2.1. Unmet Demand to Sell Digital Goods
+
+
+
+8
+
+
+
+2.2. Limited and Problematic Existing Marketplaces
+
+
+
+9
+
+
+
+3. Our Company  Gameflip
+
+
+
+12
+
+
+
+3.1. Company Background
+
+
+
+12
+
+
+
+3.2. Gameflip Team Overview
+
+
+
+12
+
+
+
+3.3. Gameflip Team Member Bios
+
+
+
+14
+
+
+
+3.4. FLIP Advisory Board Members
+
+
+
+18
+
+
+
+3.5. Investors in Gameflip | Investor Representatives
+
+
+
+21
+
+
+
+3.6. The Existing Gameflip Platform
+
+
+
+23
+
+
+
+4. The Solution  FLIP Token and Decentralized Ecosystem
+
+
+
+25
+
+
+
+4.1. Overview of FLIP
+
+
+
+25
+
+
+
+4.2. Implementation using Ethereum and ERC-20
+
+
+
+26
+
+
+
+4.3. Roadmap
+
+
+
+27
+
+
+
+4.4. Business Model
+
+
+
+27
+
+
+
+4.5. Economic Model
+
+
+
+28
+
+
+
+4.6. Network Growth Model
+
+
+
+28
+
+
+
+5. Technical Considerations
+
+
+
+30
+
+
+
+5.1. The "Trusted Providers"
+
+
+
+31
+
+
+
+5.2. Listing Game Items "For Sale" on Blockchain
+
+
+
+31
+
+
+
+5.3. Purchasing Items Using Smart Contract
+
+
+
+33
+
+
+
+5.4. Publishers Can Customize and Control
+
+
+
+34
+
+
+
+5.5. Game Integration
+
+
+
+34
+
+
+
+5.6. Smart Wallets and Decentralization
+
+
+
+35
+
+
+
+6. Benefits for Game Publishers and Gamers
+
+
+
+36
+
+
+
+6.1. Gamers
+
+
+
+36
+
+
+
+6.2. Game Publishers
+
+
+
+36
+
+
+
+3
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+
+
+7. Token Crowdsale and Distribution
+
+
+
+37
+
+
+
+7.1. Pricing
+
+
+
+37
+
+
+
+7.2. Distribution
+
+
+
+37
+
+
+
+7.3. Token Pre-Sale
+
+
+
+38
+
+
+
+7.4. Token Main Sale
+
+
+
+38
+
+
+
+7.5. Other Tokens
+
+
+
+39
+
+
+
+8. Use of Proceeds
+
+
+
+40
+
+
+
+4
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+1. The Market
+
+1.1. Overview
+
+The global gaming market is enormous. According to Newzoo's latest study, 2.2 billion gamers will generate $108.9 billion in game revenues in 2017. This represents an increase of $7.8 billion, or 7.8%, from the year before. The growth will continue, with 2020 revenues projected at $128.5 billion.1
+
+Within the global gaming market, digital game revenues account for about 87%, or $94.4 billion in 2017. The free-to-play model of gameplay, with revenue derived from the sale of digital goods, has emerged as the dominant framework. For example, Supercell, the maker of mobile games like Clash Royale and Clash of Clans, generated $2.3 billion in sales in 2016. Even though gamers can play Supercell's games for free, they purchased $2.3 billion of digital goods to level up and compete with each other.2
+
+1 https://newzoo.com/insights/articles/the-global-games-market-will-reach-108-9-billion-in-2017-with-mobile-taking-42/ 2 https://venturebeat.com/2017/02/15/clash-royale-clash-of-clans-push-supercell-to-2-3-billion-in-2016-revenue/
+
+5
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+1.2. Direct-from-Publisher Digital Goods vs. Gamer-Earned Digital Goods
+
+Figure 1.2(a)
+
+Direct-from-Publisher Digital Goods
+
+The estimated $94.4 billion of 2017 digital game revenues in Newzoo's study is comprised of only the digital goods sold by game publishers directly to gamers. Under the dominant free-to-play model, these direct-from-publisher digital goods typically take the form of "keys" or "consumables":
+
+ As an example (Figure 1.2(a) above) , a gamer purchases a "key", and then uses the key to unlock a "mystery box" that he acquired in the course of playing. Inside the mystery box, he would find digital goods like weapons, armors, or cosmetic skins.
+
+ As another example, instead of using a key to unlock the mystery box, the mystery box would simply unlock itself, except that it would take time and the gamer would need to wait many hours or even days. There, the gamer may purchase "consumables", like gold coins, and then he would pay the gold coins to accelerate the waiting time.
+
+These are most often mystery boxes in the sense that the digital goods to be released will be random, based on probability. This has proven to be the most successful monetization technique for free-to-play games.
+
+6
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Gamer-Earned Digital Goods
+
+As indicated in the example above, the gamer did not purchase the weapons, armors, or cosmetic skins directly from the game publisher. He purchased the key directly, but he had to earn the rest (i.e., acquire the mystery boxes by playing through the game, leveling up, and/or defeating other gamers or monster bosses). Further, because of the randomness built into the mystery boxes, chances are that he would need to invest a lot of time, efforts, and money in order to acquire and unlock many mystery boxes before he finally earns the desired and rare digital goods. For gamers, these earned digital goods carry significant intrinsic values. Depending on their rarity, some of them can become very expensive, and examples from PC games include the following:
+
+ In CS:GO, a StatTrak M9 Bayonet Doppler skin sold for $23,8503; and  In Dota 2: a Pink Ethereal Flame Wardog sold for $38,0004.
+
+As large as the dollar figures in Newzoo's study are, they do not fully reflect the potential of gamer-earned digital goods. This potential cannot be understated. Gamer-earned digital goods are significant because:
+
+(i) due to the need to balance free-to-play games, the volume of gamer-earned digital goods is much higher than direct-from-publisher digital goods;
+
+(ii) these gamer-earned digital goods aggregate within the game economy; (iii) trading gamer-earned digital goods within a single game is a core gameplay feature required to
+
+advance; and (iv) gamer-earned digital goods, on average, are worth a lot more than direct-from-publisher digital
+
+goods.
+
+At Gameflip, we have been witnessing first hand the rapid growth of this market, and we estimate that it will eventually eclipse the market for direct-from-publisher digital goods, especially with the adoption of the new decentralized ecosystem. The potential market for the trading of gamer-earned digital goods is a trillion dollar opportunity.
+
+3 http://read.navi-gaming.com/en/team_news/Rarest_and_expensive_knives 4 https://www.engadget.com/2013/11/06/dota-2-pink-war-dog-courier-sells-for-38-000/
+
+7
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+2. The Opportunity
+
+The digital goods market is large despite the fact that the current ecosystem is far from optimal. While healthy revenue is generated from the sale of direct-from-publisher digital goods, the huge potential from a liquid market for gamer-earned digital goods remains untapped (and the latter could also create more opportunities for direct-from-publisher digital goods). Gamer-earned digital goods aggregate over time, and they tend not to degrade. Yet, in most cases, gamers cannot cash them out for value at all, resulting in tremendous loss to them eventually.
+
+From gamers' perspective:  They have a huge demand for the ability to sell their digital goods for value (i.e., for liquidity), but this demand has been largely unmet to date.  To the extent a small subset of digital goods from a handful of games can currently be traded, most marketplaces are problematic and non-transparent, and fraud is prevalent.
+
+From game publishers' perspective, while this may not be a "problem" per se, the existing environment is obviously suboptimal for them:
+
+ Without readily available liquid markets for gamer-earned digital goods, game publishers are selling a much smaller amount of digital goods than they otherwise could, as we will explain further below.
+
+ With respect to some marketplaces that do exist today, game publishers do not receive any benefits at all from the transactions that take place there. To the contrary, the all-too-often fraudulent transactions cost the game publishers their gamers, as the defrauded gamers are likely to leave the game.
+
+2.1. Unmet Demand to Sell Digital Goods
+
+Currently, most digital goods are locked within a single game. Gamers may have spent hundreds or thousands of dollars on keys to unlock mystery boxes, plus countless hours of playing time to earn rare digital goods. However, when they eventually stop playing that game, the value of all of their investments will be zero, for they cannot sell any of these digital goods, nor can they transfer their
+
+8
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+investments to another game (except with very limited exceptions within a single platform). The demand to be able to sell digital goods is huge, but so far this demand has been largely unmet.
+
+Figure 2.1. Currently, most digital goods are locked within a single game, with no liquidity.
+
+2.2. Limited and Problematic Existing Marketplaces
+
+With respect to a small subset of digital goods (e.g., those from games like CS:GO, Dota 2, and H1Z1, etc.), certain markets do exist where gamers can sell them for cash. These markets include (a) forums, (b) Steam Community Market, and (c) third party trading sites. However, each of these markets present its own challenges, and gamers face significant friction when they transact there.
+
+Forums Market
+
+Some gamers buy and sell digital goods on forums (e.g., Reddit), which are unofficial marketplaces. A key drawback, however, is that gamers "trade at their own risk" there. These forums do not offer the buyers or sellers any protection. Fraud is prevalent. A seller may simply not deliver the item after
+
+9
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+receiving payment. Alternatively, a buyer may pay via Paypal, but then file for a chargeback after he has received the item, leaving the seller empty handed. Scamming Scenarios When Buying and Selling in Forums
+
+
+
+Seller sends the digital goods but Buyer does not send the funds or files a chargeback.
+
+
+
+Buyer sends the funds but Seller does not send the digital goods or sends the wrong digital goods
+
+
+
+Figure 2.2. Gamers buy or sell at their own risk in forums
+
+Steam Community Market
+
+Valve Corporation's multiplayer gaming platform, Steam, operates a Community Market trading platform where gamers can sell and buy digital goods for games like CS:GO, Dota 2, and Team Fortress 2. Steam is a robust gaming platform, and as a whole generated $3.6 billion in revenue in 2016.5 Although revenue for the Community Market by itself is not available, it appears to be a very active market with hundreds of thousands of postings at any given time. As this is an official marketplace where gamers transact using Steam Wallet, there are fewer problems with fraud than the unofficial forums above mentioned. Nonetheless, the Steam Community Market still has substantial shortcomings:
+
+ It does not offer sellers any real cash out at all. After a seller has received payment into his Steam Wallet, he can only use the Steam Wallet for other games on the Steam platform. He cannot convert anything to real cash.
+
+5 https://www.statista.com/statistics/547025/steam-game-sales-revenue/
+
+10
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+ Steam imposes a high transaction fee, as much as 15%.
+
+Third Party Trading Sites
+
+A number of third party trading sites have attempted to address some of the above issues. These sites connect to Steam and facilitate transactions for the same digital goods, except that gamers can sell them for actual cash. OPSkins, the largest and probably oldest marketplace in this category, performs well financially, reportedly processing as much as $120,000 worth of transactions a day.6 As a class, however, many of these third-party trading sites are problematic themselves:
+
+ Many of them operate with no transparency into their owners and managers. A number of them were allegedly associated with supporting illegal gambling, and many allegedly operate with questionable tactics.7
+
+ They only support Steam digital goods, leaving the problem with much of the gaming digital goods universe unsolved.
+
+6 https://motherboard.vice.com/en_us/article/wnj935/heres-how-you-make-12000-in-profit-a-day-selling-virtual-guns 7 https://www.polygon.com/2016/6/23/12020154/counter-strike-csgo-illegal-gambling-lawsuit-weapon-skins-valve
+
+11
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+3. Our Company  Gameflip
+
+3.1. Company Background
+
+Gameflip is at the forefront addressing the demand for liquidity for digital goods. Founded in 2014, our company is based in the Silicon Valley, California, USA, and funded by top tier venture capital investors, with more than $10 million raised. We have already built one of the largest digital goods marketplace platforms, with more than 2 million registered users and 500,000 monthly actives. The platform has grown significantly in the last two years. We intend to leverage our deep knowledge of the gaming industry, the understanding of digital goods marketplaces, and the technological expertise of the current platform to grow and scale the new decentralized ecosystem.
+
+3.2. Gameflip Team Overview
+
+Our team is comprised of top notch gaming industry veterans, technology innovators, and proven entrepreneurs. To highlight some of the team's qualifications and experience:
+
+Extensive Experience in Gaming
+
+Our team has been in gaming since 2006. Prior to founding Gameflip, we built a global games publishing and development business (Aeria Games) from scratch, with offices spanning the U.S., Germany, Brazil, Japan, and Korea. We published a multitude of PC and mobile games across 11 languages worldwide, serving over 40 million gamers on our platform. We achieved an annual revenue run rate of $110 million and eventually sold the business to ProSiebenSat.1, a German media conglomerate, in 2014. We have also built PC and mobile game development and publishing businesses in Japan and Korea and sold them to major companies like GMO and WanderPlanet.
+
+12
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Strong Industry Network
+
+With 10+ years in the gaming industry, our management team has a very strong network of partners. We have worked extensively with the following companies and/or individuals who now serve as senior executives at these companies: Electronic Arts, Disney, Ubisoft, Perfect World, Shanda, Nexon, Sony, NHN, Neowiz, GREE, DeNA, Square Enix, and Bigpoint, among others.
+
+Corporate Governance under the Highest U.S. Standards; Backed by Top Notch Investors
+
+Compared to other third party marketplaces, we operate with transparency. We are funded by, and we report to, top notch Silicon Valley venture capitalists and other leading investors, including:
+
+ GoAhead Ventures, with strong ties to Stanford University and principals from Forbes' "30 Under 30 List" for 2017;
+
+ Bullpen Capital, with deep experience in gaming (one of their partners is a co-founder of Electronic Arts); and
+
+ Lightbank, whose team is comprised of the founders of Groupon.
+
+13
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+3.3. Gameflip Team Member Bios
+
+JT Nguyen, CEO and Co-Founder of Gameflip, is a successful serial entrepreneur with a proven track record. He has over 15 years of experience building and managing complex businesses, including 10 years in the gaming industry. Prior to Gameflip, JT served as COO of Aeria Games, a global publisher and developer of free-to-play games, growing the company from 10 employees to over 300 worldwide, overseeing operations in the U.S., Germany, and Brazil. Under JT's leadership, Aeria Games' annual revenue run rate reached $110 million, and the company was ultimately sold to ProSiebenSat.1, a German media conglomerate.
+
+Prior to Aeria Games, JT's other experiences cut across multiple industries. Among other things, he has served as operations strategy consultant in the finance industry at HSBC, software engineer in the retail industry at an early stage eCommerce startup, and RF hardware engineer in the mobile industry at Motorola.
+
+JT obtained his MBA from the UCLA Anderson School of Management and his MS in Electrical Engineering from Stanford University. He obtained his BS in Electrical Engineering from the University Illinois at Urbana Champaign where he graduated first in his class.
+
+Terry Ngo, CTO and Co-Founder of Gameflip, has 19 years of experience building and leading engineering and product development, including 11 years in the gaming industry. Prior to Gameflip, Terry served as CTO and co-founder of Aeria Games, starting the company from scratch and growing it to 300 employees worldwide with offices in the U.S., Germany, and Brazil. Under Terry's leadership, Aeria Games built a leading online game publishing platform serving over 40 millions gamers globally,
+
+14
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+publishing a multitude of PC and mobile games in 11 languages, and delivering the highest monetization rate in the industry using a single common virtual currency.
+
+Prior to Aeria Games, Terry's other experience included engineering leadership in building highly scalable distributed applications in mobile and web platforms for consumers and enterprises.
+
+Terry obtained his MS in Electrical Engineering from Stanford University, his BS in Computer Engineering and BS in Mathematics from Southern Methodist University, where he graduated first in his engineering class. He also holds a U.S. patent in mobile wireless devices.
+
+Bryan Talbot, Head of Engineering at Gameflip, has over 20 years working at the forefront of Silicon Valley technologies. Prior to Gameflip, he was the platform architect at Aeria Games where he designed and oversaw the implementation of the global publishing platform serving over 40 million gamers from multiple data centers located in North America and Europe.
+
+Bryan's previous experience ranged from operating system device driver development, expert system (AI) design for a multi-national customs (import/export) clearance system, email security (for which he holds a patent), mobile network and terminal performance monitoring, and many years of server distributed systems design and operation.
+
+Bryan earned a BS in Computer Engineering from the University of California at San Diego (UCSD). While an undergraduate student at UCSD, he was a mission lead for a flight payload on Space Shuttle flight STS-81 for the KidSat project lead by Dr. Sally Ride.
+
+15
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Ed Kim, Head of Business Development at Gameflip, is a games industry veteran with 15 years of experience in free-to-play, digital goods, and virtual economies spanning across PC and mobile.
+
+Prior to joining Gameflip, he was CEO and co-founder of Vector Gfx, a developer of motion tracking and image recognition software for VR and AR platforms. Earlier in his career, Ed was Director of Business Development and employee #9 at RockYou, one of the early developers in the western world pioneering the free-to-play model, Head of Business Development at Bigpoint Games, one of the largest game portals in the world with over 300 million players, and Head of Business Development at KIXEYE, a leading social and mobile game developer of multiplayer real-time strategy games.
+
+Ed holds an MBA from the Marshall School of Business at the University of Southern California and a bachelor's degree from the University of Michigan - Ann Arbor.
+
+Udayan Sharma, Head of Marketing at Gameflip, is a leader with over 12 years of experience in gaming, e-commerce and tech. He has 8 years of experience building brands and owning the entire user acquisition funnel. Prior to Gameflip, he was in the digital free-to-play gaming space as Director of Marketing at Aeria Games where he led the launch of 10+ PC and mobile gaming titles including X-Men and Assassin's Creed, and managed all marketing functions like user acquisition, SEO and brand. His earlier experience has consisted of successful roles in both startups and Fortune 500 companies, such as Excelics Semiconductor and Cadence Design Systems.
+
+Udayan holds an MBA from Purdue University, Krannert School of Management and a BS in Electrical Engineering from Oregon State University where has was a Laurels Scholar.
+
+16
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Matheus Arnellas, Head of Live Operations at Gameflip, leads the departments of sales, customer support, fraud prevention and business intelligence. With 6 years of experience managing cross-functional teams in the digital free-to-play games space, he has successfully led the release and operations of 12 titles across the PC and mobile platforms, including those with multi-billion dollar IP such as X-Men, Assassin's Creed and EA Sports FIFA. As an avid gamer since the age of 5, Matheus have orbited around the gaming industry as a Counter-Strike Pro player during the early 2000's, but his major contributions would come later in the 2010's when taking production, marketing and operations roles at companies such as Electronic Arts, Aeria Games and PlayNext. Matheus has expertise in both the Latin and North American markets.
+
+Matheus holds an MBA from FIPE So Paulo and a bachelor's degree in Marketing & Advertising from PUC Campinas - Brazil.
+
+Tony Simonovsky, ICO Success Manager, is a serial entrepreneur with more than 14 years of experience in digital marketing. He started his first business at the age of 19, sold it 6 years later and started to live a life of a digital nomad. At the same time he started his second business, which he successfully manages while on the go.
+
+In 2017 Tony advised the KickICO team to help increase exposure for their upcoming ICO to global crypto-token purchasers by means of growth marketing which resulted in total amount raised of 85,000 ETH (~$23,000,000).
+
+17
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+3.4. FLIP Advisory Board Members
+
+Richard Melmom, Emeritus Partner at Bullpen Capital | Co-Founder of Electronic Arts (USA) Richard is a serial entrepreneur and investor. Most notably, he co-founded Electronic Arts ($37 billion market cap as of September 2017), and his work at Electronic Arts still has lasting influence on the entire gaming industry. Other companies that he founded or led investments in include, among others: Melmon Tawa & Partners (sold to Livingston and Co.), Objective Software (sold to Asymetrix), Broadware (sold to Cisco), and BigFix (sold to IBM).
+
+Kotaro Yamagishi, CEO of Keio Innovation Initiative, Inc. | Board Member and Co-Founder of GREE, Inc. (Japan) Kotaro Yamagishi serves as CEO of Keio Innovation Initiative, Inc. (KII) which is Keio University's venture capital since its establishment in December 2015. Prior to KII, he co-founded GREE, Inc. in December 2004, and still serves as the company's non-executive director (a member of the board). Earlier in his career, he was editor-in-chief of CNET Japan and editor at Nikkei Business Publications, Inc.
+
+Heiko Hubertz, CEO and Founder of WHOW Games GmbH | Founder of BIGPOINT GmbH (Germany) Heiko is a well-known serial entrepreneur in gaming. Prior to WHOW Games, he was the CEO and founder of BIGPOINT GmbH, a pioneering developer and publisher of web games, which he sold at a valuation of $600 million.
+
+18
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Yoon Im, SVP of Publishing & Platform of Perfect World (USA & Europe) Yoon is an expert in micro transactions and online game publishing. As a Co-Founder of Perfect World Entertainment, Yoon has been involved in every aspects of Perfect World's growth and success. He is currently in charge of all business operations in North America & Europe.
+
+Chris Akhavan, Chief Revenue Officer, Glu Mobile (USA) Chris Akhavan oversees Glu's worldwide business operations including user acquisition, marketing, advertising monetization, strategic partnerships, and international expansion. Prior to joining Glu, he served as Senior Vice President of Global Partnerships for Tapjoy where he was a key early member of the team that built a leading mobile advertising and monetization platform. Before joining Tapjoy, Chris held positions at RockYou!, VideoEgg and Yahoo!.
+
+Malte Barth, Head of esports at Modern Times Group (USA & Europe) Malte is a seasoned Professional in Gaming and esports. He oversees all esports investments at Modern Times Group (MTG) since 2014 which includes ESL (Electronic Sports League), DreamHack and Bitkraft Esports Ventures, which grew to be the globally leading esports organisation. He keeps actively supporting ESL, DreamHack and Bitkraft as an Executive Board Member.
+
+Billy Sungwoo Lee, COO of PayLetter, Inc. (Korea) Billy is a payment and billing business expert and works with many gaming companies. PayLetter, where he serves as COO, was established in 2001 with only 8 employees originally, and it has since grown to service more than 100 billing solution customers and 500 payment service customers all over the
+
+19
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+world, including Riot Games, the developer and publisher of League of Legends.
+
+Takayuki Nagashima, CEO of Aeria, Inc. (Japan) Takayuki Nagashima is a well-known entrepreneur in Japan and the CEO of Aeria Inc., a publicly listed company. Aeria has been at the forefront of the game development and publishing in Japan. It was an early adopter of the free-to-play model, launching one of the first successful free-to-play PC games in Japan, and is now a developer of successful mobile games like Klee, I Chu.
+
+Masahiro Yasu, CEO of ALIS (Japan) Masahiro Yasu is a pioneer in initial coin offerings in Japan and the CEO of ALIS, which recently completed a successful ICO as the first crypto-currency for a social media company in Japan. He is also a project leader for a joint project with Microsoft Japan. Prior to that, he was at Recruit, the second largest HR company in the world, and won the highest internal award for achievement.
+
+Xiang Wang, Blockchain Advisor Xiang Wang has over 15 years of experience with software design and development, specializing in authentication, data encryption and blockchain technologies. He founded and operated two startup companies in China and has extensive knowledge and business experience in the Chinese market. Currently he is providing assistance to engage cryptocurrency investor communities there.
+
+20
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Kevin Xu, Blockchain Advisor Kevin Xu is a senior software engineer with experiences building distributed systems, designing checkout flows, and handling security at Stripe and previously his own startup FanHero, YC S13. His interest in blockchain technology started with his first purchase of Bitcoin at $10 and currently is helping companies launch ICOs before starting his own blockchain startup.
+
+3.5. Investors in Gameflip | Investor Representatives
+
+For clarity, this section lists investors in Gameflip, the company, not purchasers of FLIP tokens.
+
+Bullpen Capital | Paul Martino, General Partner Paul's long list of successes include, among others: founding Ahpah Software (a computer security firm acquired by InterTrust), and investing in the first rounds of Zynga and uDemy. His early online gaming innovations in multi-player user experience from almost 20 years ago are the inspiration for several of the modern social gaming offerings.
+
+GoAhead Ventures | Phil Brady, Managing Partner Phil is on the Forbes' "30 Under 30 List" for 2017, and has led a number of investments with technology companies in the Silicon Valley. He has also been active in the crypto community since 2013, having spent some time at Xapo and at Andreessen Horowitz around the time of their investments into Coinbase and 21 Inc.
+
+21
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+PlayNext, Inc. | Lan Hoang, CEO Lan is an incubator of new businesses. He has invested in various startups in the U.S., Japan, Korea and Germany and have participated in multiple exits, with many coming from Japan, where he currently resides. Prior to PlayNext, he worked as CEO of Aeria Games and as an attorney with Orrick, Herrington & Sutcliffe.
+
+Lightbank | Bill Pescatello, Partner Bill has lead many successful investments throughout his career, including, among others, Locu (acquired by GoDaddy) and Greystripe (acquired by ValueClick). Prior to Lightbank, he has worked at NBCUniversal, Morgan Stanley, and Merrill Lynch.
+
+Forefront Venture Partners | Phil Nadel, Managing Partner and Co-Founder Phil is a well-respected serial entrepreneur, angel investor, and published author. He has started and sold several companies and has invested in more than 75 startups with many successful exits.
+
+22
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+3.6. The Existing Gameflip Platform
+
+We have built the Gameflip marketplace platform using the most advanced technology to deliver seamless, secure, and transparent peer-to-peer digital e-commerce, targeting the gaming demographic. Drawn from our years of experience in the gaming industry, Gameflip is uniquely positioned to deliver value and engagement to a wide range of gaming audience. Gamers can transact digital goods from a multitude of gaming platforms and from the broadest categories. The current Gameflip platform is the only one that offers the following features:
+
+ access to the marketplace anywhere from the laptop or through iOS or Android mobile app;  highly effective fraud detection and prevention, enabling the ability to conduct transactions
+
+safely;  escrow of digital items where applicable, and auto delivery for instant gratification;  visibility to the seller's reputation / ratings, and the ability to communicate with the seller
+
+directly for service or support;  advanced inventory management tools, including API access, for selling with ease; and  option to choose from a wide range of digital goods on PC, mobile and console games; and
+
+from the broadest categories  in-game items, in-game currency, and digital codes.
+
+23
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Since our initial launch, over 2 million global gamers have joined on our platform with over 500k monthly actives, resulting in monthly sales growth of over 1500% since 2016.
+
+24
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+4. The Solution  FLIP Token and Decentralized Ecosystem
+
+While the Gameflip platform is already succeeding and growing quickly, we have only begun to scratch the surface. The new FLIP token and decentralized ecosystem will further advance our vision for a fully transparent and frictionless infrastructure for transacting digital goods. Blockchain will provide the safest storage for virtual assets, and smart contracts will create a transparent public ledger.
+
+FLIP is a crypto-token of fixed supply. It is fractionally divisible, and units of FLIP are fungible and transferable.
+
+4.1. Overview of FLIP
+
+The Ethereum blockchain will serve as the backbone for FLIP. We have chosen Ethereum because of its flexibility and wide spread adoption. Gamers can easily send digital goods and FLIP to each other, as long as both the sender and the recipient have an Ethereum compatible wallet. Game publishers can incorporate this function  for gamers to securely transfer digital goods outside of the game  with minimal integration efforts. The blockchain will act as a multi-game database, securely storing all digital goods and FLIP and tracking who owns them.
+
+With the new FLIP token, we aim to shift the paradigm for the industry by unlocking digital goods from each individual game and creating liquidity for them via trading in the decentralized ecosystem. Blockchain technology allows such trading to take place not only on the Gameflip platform, but also universally across any and all marketplaces, safely and securely. In turn, this will advance the entire digital goods ecosystem.
+
+25
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+4.2. Implementation using Ethereum and ERC-20
+
+FLIP will leverage the Ethereum blockchain, the current industry standard for issuing custom digital assets and smart contracts. By conforming to the ERC-20 token interface, FLIP will be compatible with the existing Ethereum infrastructure, such as development tools, wallets, and exchanges. At the heart of the Ethereum blockchain, the Ethereum Virtual Machine (EVM) allows the deployment and execution of smart contracts, enabling complex issuance rules for crypto-currencies like FLIP and automating incentive structures. In short, the EVM eliminates any question of trust and protects the transacting parties against fraud. These powerful features and dynamic ecosystem make Ethereum a strong fit for FLIP, and we are confident that this will translate to quick adoption by game publishers and gamers.
+
+For game publishers, we will provide plug-ins and software development kits (SDKs), all open-sourced, so that their games can recognize the transfer of digital goods to and from the gamers' blockchain wallets. These could be digital currency within the game, or in-game items, which could be a weapon or armor. They could also be different cosmetic skins, additional content, special game edition, or even collectible badges, with the blockchain network tracking the ownership of all such digital goods.
+
+Gamers can simply use off-the-shelf Ethereum wallets to hold their FLIP and digital goods, and to freely trade them with each other anywhere. Gamers can send FLIP and digital goods using familiar mechanics like how users of Wechat Wallet, Paypal and Venmo send value to one another. All transfers and ownership data will be securely kept on the blockchain, with smart contracts safeguarding against fraud.
+
+Game publishers or third party tool developers can also provide their own branded wallets that allow gamers to more easily navigate and manage their inventory. With blockchain technology, the ecosystem is opened up for innovation.
+
+26
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+
+
+4.3. Roadmap
+
+As mentioned earlier, the current Gameflip platform is already the most comprehensive centralized digital goods marketplace platform. Now, as an active participant of the new decentralized ecosystem, the Gameflip platform will be transforming and transitioning in a measured and responsible process over time.
+
+
+
+Live Today
+
+
+
+Near Future (Q1 2018)
+
+
+
+Long Term (Q3 2018)
+
+
+
+Platform Evolution
+
+
+
+Global centralized marketplace for digital goods
+
+
+
+Payment Fiat and Bitcoin
+
+
+
+Global centralized marketplace for digital goods, with blockchain option using FLIP
+
+
+
+Bulk transaction volume decentralized
+
+Platform for connecting and servicing gamers
+
+
+
+Fiat, Bitcoin, Ethereum
+
+
+
+Fiat and multiple crypto- currencies
+
+
+
+Safety Trust
+
+
+
+Custom fraud detection and prevention
+
+No blockchain
+
+
+
+Custom fraud detection prevention for non-blockchain transactions
+
+Partial blockchain support
+
+
+
+Smart contracts and full blockchain support
+
+Anti-fraud solution for fiat transactions
+
+
+
+Reputation system, with Gameflip reviewing disputes between buyer and seller
+
+
+
+Partial support of trustless smart transactions on blockchain
+
+
+
+Smart contracts allow trustless and non-repudiation transactions on blockchain
+
+Reputation and dispute resolution applicable only to fiat based transactions
+
+
+
+Coverage Support selected eSport games, gift cards, and other digital goods
+
+
+
+Support all top games in eSports, MMO, and mobile
+
+
+
+Worldwide game publishers and other digital goods providers self onboard through the network
+
+
+
+4.4. Business Model
+
+The Gameflip decentralized ecosystem will have a scalable and straightforward business model to drive adoption. When any digital goods are traded among gamers using FLIP, the publisher of that game and any applicable marketplace / transaction enabler will take a small percentage of the FLIP.
+
+
+
+27
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+4.5. Economic Model
+
+The supply of FLIP will be capped at 100 million. After all 100 million tokens have been issued, new ones will not be created. Increases in demand will not be met by any additional supply, and the value of the FLIP will adjust accordingly.
+
+4.6. Network Growth Model
+
+The importance of the network growth model cannot be understated. While gamers will naturally be attracted to liquidity for their digital goods, game publishers will also play a very key role in this ecosystem. Arguably, game publishers are even more important than gamers in driving network growth. More than one crypto-token will be available for the gaming market, and each game publisher will decide which crypto-token(s) to implement for its games and digital goods.
+
+28
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+
+
+Leveraging the Gameflip team's in-depth insight from decades of experience in the gaming industry  previously as game developers and publishers with a platform serving 40 million gamers, and now as digital goods marketplace operators, we have designed a powerful network growth model to drive the adoption of FLIP:
+
+ Out of the 100 million total supply of FLIP, up to 40 million will be reserved to incentivize game publishers to promote network growth. After FLIP has become fully utilizable, these reserved FLIP will be gradually released over time, via sales that are facilitated by game publishers, as set forth in Table 4.6 below.
+
+ Game publishers participate in the network growth model by integrating FLIP and facilitating the sale of these reserved tokens to their gamer communities as the tokens are released over time.
+
+ Game publishers who are early participants will receive, as incentives, all proceeds from such sale. Later adopters will also be rewarded handsomely, but their percentage share of the proceeds will be reduced over time, as set forth in Table 4.6 below.
+
+
+
+Distribution Schedule
+
+Number of FLIPs Available for Distribution
+
+Portion of Proceeds to Game Publishers as Incentives
+
+Portion of Proceeds for Reinvestment in Additional Network Growth
+
+Table 4.6
+
+
+
+FLIPs Reserved for Network Growth
+
+
+
+Jul. 1, 2018
+
+
+
+Jan. 1, 2019
+
+
+
+10,000,000
+
+
+
+10,000,000
+
+
+
+Jul. 1, 2019 10,000,000
+
+
+
+Jan. 1, 2020 10,000,000
+
+
+
+100%
+
+
+
+80%
+
+
+
+60%
+
+
+
+40%
+
+
+
+-
+
+
+
+20%
+
+
+
+40%
+
+
+
+60%
+
+
+
+29
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Any portion of these proceeds that are not allocated to game publishers as their incentives will be reinvested towards additional network growth, which could be in the form of incentives for game publishers, third-party marketplaces and transaction enablers, gamers and gamer communities, third-party development, or marketing, among other things. These proceeds will not be retained by Gameflip.
+
+As far as we know, the design for FLIP is the only one with built-in, concrete, and generous benefits for game publishers. As such, we are confident that FLIP will be adopted swiftly and, importantly, FLIP will emerge as the dominant blockchain token for the gaming industry.
+
+5. Technical Considerations
+
+The Ethereum blockchain isn't without limitations. Currently, the Ethereum network operates on a proof-of-work consensus algorithm to confirm transactions, and this design places a hard limit on throughput and scalability. The current average confirmation time, or block time, is approximately 25 seconds8. Future version of Ethereum may enhance throughput by switching to a proof-of-stake consensus algorithm.
+
+Until these limitations are addressed by the Ethereum network, a purely-on-chain solution may not be optimal, for there are two issues. The first issue is the lengthy Ethereum transaction confirmation time, a significantly delayed responsiveness that gamers typically do not expect. The second issue is that the Ethereum blockchain requires fees to be paid in Ether for every transaction, creating an adoption barrier for the average gamer.
+
+Given these barriers, the initial implementation will most likely take the form of a semi-centralized hybrid on-chain and off-chain transaction service, or a partial blockchain implementation described on our road map. At the core, the transactions using FLIP will be settled on the Ethereum blockchain.
+
+8 https://etherscan.io/chart/blocktime
+
+30
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+However, prior to the settlement, the Gameflip platform may still provide the needed service to (1) improve user experience by reducing latency and (2) avoid network fees when transacting between users.
+
+5.1. The "Trusted Providers"
+
+The Ethereum blockchain solves a lot of the "trust" issues by making transactions secured, with smart contracts in a trustless environment. However, for practical and complex apps, such as video games, the Ethereum network still has many limitations. For example, smarts contracts must be created, certified by the game, and deployed to the Ethereum network. With block time often facing some delays, responsive experience can only be achieved by using off-chain notifications.
+
+Trusted Providers, such as the Gameflip platform, will be authorized to provide off-chain services such as notifications or creating and configuring smart contracts, on behalf of game publishers or gamers. In our example above, the Gameflip platform can facilitate the listing contract and send instant transaction notifications to the game service or the gamer's wallet for confirmation, similar to how the Gameflip platform functions today by sending notifications to its users on mobile apps when a transaction takes place.
+
+As the Ethereum network evolves and develops more capabilities, we expect the use of Trusted Providers to be diminished and eventually removed.
+
+5.2. Listing Game Items "For Sale" on Blockchain
+
+While blockchain can store data, it cannot function as the complete game database for a multitude of technical reasons, particularly the rapidly changing state and processing of data during gameplay. The natural use of blockchain is to store data that can certify the ownership, and transfer of ownership, of an item so that it can be sold and accepted by the game. We can think of the blockchain as an escrow service where gamers can use for changing ownership, and the smart contract will guarantee item delivery and payment.
+
+31
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+The subsequent diagram describes the flow for a gamer who wishes to list a game item for sale. In this use case, the game service simply allows a request from the gamer to place the item into a vault or bank, or a similar storage structure, for escrow when creating and deploying a smart contract for listing the item in the blockchain.
+
+Most games already have item trading or transfer, solely within that game, as part of its in-game economy. Utilizing a similar mechanism, placing the game item in a vault would take the item out of the gameplay, guaranteeing that the gamer will continue to possess the item until it's sold. The item can only be returned to the gameplay from the vault when either (1) its current owner cancels the
+
+32
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+listing smart contract or (2) the new owner claims the item after successful execution of the smart contract. Once in the blockchain, the seller will have the freedom to create and configure the smart contract as to how he wants his item to be sold, such as direct buy, bidding, or other means. Further, he can subsequently post and promote his listing on marketplaces such as Gameflip or directly to other potential buyers.
+
+5.3. Purchasing Items Using Smart Contract
+
+Once the listing smart contract is created on the blockchain, any gamer with FLIP can purchase the item using his wallet.
+
+After the purchase, the smart contract will automatically change the item ownership in the blockchain, distribute the FLIP tokens to the seller and commission to the game publisher, any trusted provider, and/or third party enablers such as listing service. When the new owner claims the item within the
+
+33
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+game, the item is then transferred back into the gameplay from the vault and its associated data is removed from the blockchain.
+
+Technically, gamers can use any ERC-20 compatible wallet client, but it would be difficult to use in the context of gaming application. Therefore, we will develop and provide a Gameflip wallet client that is gaming friendly, one that can enable gamers to view and manage their game item inventory. Not only will it be easy to use, but also it can directly connect to the Gameflip platform for other services, such as listing on the Gameflip marketplace, item store management, and sale promotion.
+
+5.4. Publishers Can Customize and Control
+
+Few, if any, game publishers would want all game items freely tradable or transferable. The desire to control what items can be traded or sold is more pronounced for games that rely on having a healthy and balanced in-game economy. Game publishers also need to constantly protect their games from bad actors, security exploits or financial frauds. Having the appropriate controls on items flowing in/out of the game is absolutely essential for game publishers to both protect their business and provide the entertainment for their gamers.
+
+Having developed and published many PC and mobile games before, this Gameflip team understands this need very thoroughly, and better than any other providers of gaming cryto-tokens. With our solution, game publishers can design and configure the criteria for listing game items on the blockchain. The criteria can include, but are not limited to, the type of items, the player level, outstanding number of listings, etc.
+
+5.5. Game Integration
+
+The smart contracts will be the core engine that conducts the transactions securely. However, game integration will also be necessary to ensure that the game can fulfill the contracts off-chain, interface with blockchain, and provide good user experience. Our approach toward game integration consists of two primary criteria:
+
+34
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+1. Least invasive and highly decoupled - As a former game publisher, we know that drastic changes to the game would be undesirable, especially if it can alter the user interface or the gaming experience.
+
+2. Trusted Provider is optional - The role of the trusted provider should be optional so that game publishers can work with any provider who can add value to their service or develop their own solution to avoid being "locked in".
+
+We will provide game publishers with access to our Gameflip platform API9, along with a set of SDKs in popular programming languages (e.g. C#, Java, NodeJS, etc.) to facilitate function calls to smart contracts, including monitoring and receiving notifications from the Ethereum Network. The SDKs will be open source and actively updated.
+
+Game publishers will have a wide range of choices to customize the user experience for their games. Sophisticated game publishers with their own platform can also choose to provide their own API and SDKs to independently service their gamers without working with Gameflip.
+
+5.6. Smart Wallets and Decentralization
+
+Gameflip will provide gamers a smart wallet client that can greatly enhance user experience for buying and selling in-game items on Gameflip marketplace. Gamers can still use any other ERC-20 compatible wallet to buy and sell on other marketplaces of their choice. Game publishers can also choose to develop their own smart wallet that directly integrate into their game.
+
+As the ecosystem matures, we anticipate that many developers will create more sophisticated wallets, tools, and apps to support gamers.
+
+9 Gameflip API on GitHub: https://gameflip.github.io/gfapi/
+
+35
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+6. Benefits for Game Publishers and Gamers
+
+FLIP will dramatically expand the overall size of the gaming digital goods market by creating significant benefits for both gamers and game publishers.
+
+6.1. Gamers
+
+Having the flexibility to sell, buy and trade their digital goods, of course, will be a key benefit to gamers. Importantly, the Gameflip decentralized ecosystem will also remove much of the friction in the limited existing marketplaces, as smart contracts will eliminate fraud.
+
+The ability to sell, buy and trade securely will create a multiplier effect: gamers will buy more and pay higher prices. Gamers will have much more of a sense of ownership over digital goods, and therefore they will be willing to pay more for them. Further, knowing that they can retain the value of their investments and sell them later, gamers will also acquire more digital goods than they do today  more skins, more powerful weapons, etc. In turn, this will have a viral effect, as gamers who have not yet adopted FLIP will need to keep pace  they will also need to acquire more digital goods in order to stay competitive or have unique skins that are as "cool" as their friends'. This will powerfully drive adoption of FLIP on gamers' end and, indeed, the overall growth of the digital goods market.
+
+6.2. Game Publishers
+
+Game publishers that adopt FLIP will benefit from:  being able to sell more digital goods at higher prices;  increased longevity of their games; and  significant brand new revenue streams.
+
+Given the benefits for gamers as described above, and how gamers will buy more digital goods at higher prices, this will translate directly to more revenue to game publishers. Game publishers will adopt FLIP to enjoy "a slice of this bigger pie."
+
+36
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Indirectly, when gamers buy more digital goods, they will also stay in the game longer. From game publishers' perspective, retention metrics will improve and gamers' lifetime value (LTV) will increase, boosting the longevity of their games.
+
+Importantly, these game publishers will also receive brand new revenue streams. As mentioned above, (i) in Section 4.4 (Business Model) above, whenever gamers buy and sell digital goods with FLIP, a small percentage of each transaction will be commission for the applicable game publisher, and (ii) in Section 4.6 (Network Growth Model), whenever game publishers facilitate the sale of those reserved tokens, a significant portion of the proceeds will be allocated to them as incentives. Even better yet, these revenues will basically be pure profits to game publishers, as their cost to generate these revenues will virtually be zero.
+
+7. Token Crowdsale and Distribution
+
+FLIP tokens are received immediately upon purchase.
+
+7.1. Pricing
+
+ Base rate  The price of each 1 FLIP will be 0.005 ETH.  In other words, 1 ETH will purchase 200 FLIPs.
+
+ Bonuses  Bonuses are offered based on the timing and amount of token purchased, up to 340 FLIPs per 1 ETH. Please see below sections for details.
+
+7.2. Distribution
+
+As mentioned in Section 4.5 (Economic Model) above, the supply of FLIP will be capped at 100 million. They will be distributed as follows:
+
+37
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+Distribution of FLIP Token Sale (Pre-Sale and Main Sale Total) Network Growth Gameflip Advisors and Partners Total
+
+
+
+43,200,000 40,000,000 14,000,000
+
+2,800,000 100,000,000
+
+
+
+7.3. Token Pre-Sale
+
+
+
+The token pre-sale will take place as follows:  Start: October 13, 2017, at 19:00 (7 p.m.) UTC  End: October 27, 2017, at 19:00 (7 p.m.) UTC  Currency accepted: ETH  Bonuses:
+
+
+
+Purchase Amount
+
+
+
+Bonus
+
+
+
+Final Rate - Number of FLIPs per ETH
+
+
+
+>= 5,000 ETH
+
+
+
+70%
+
+
+
+340
+
+
+
+>= 3,000 ETH
+
+
+
+60%
+
+
+
+320
+
+
+
+>= 1,000 ETH
+
+
+
+50%
+
+
+
+300
+
+
+
+>= 100 ETH
+
+
+
+40%
+
+
+
+280
+
+
+
+>= 1 ETH
+
+
+
+30%
+
+
+
+260
+
+
+
+ Minimum amount per purchaser: 1 ETH  Goal for the pre-sale: 3,000 ETH
+
+
+
+7.4. Token Main Sale
+
+The main sale will take place as follows:  Start: December 4th, 2017, at 19:00 (7 p.m.) UTC  End: January 29th, 2018, at 19:00 (7 p.m.) UTC  Currency accepted: ETH
+
+38
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+
+
+ Bonuses and minimum purchase amounts:
+
+
+
+Time Period
+
+
+
+Bonus
+
+
+
+Dec 4th, 2017 at 19:00 UTC to 25%
+
+Dec 18th, 2017 at 18:59:59 UTC Dec 18th, 2017 at 19:00 UTC to
+
+15% Jan 1st, 2018 at 18:59:59 UTC Jan 1st, 2018 at 19:00 UTC to
+
+10% Jan 15th, 2018 at 18:59:59 UTC Jan 15th, 2018 at 19:00 UTC to
+
+0% Jan 29th, 2018 at 19:00 UTC
+
+
+
+Final Rate Number of FLIPs per ETH
+
+250
+
+230
+
+220
+
+200
+
+
+
+ Minimum amount per purchaser: 0.1 ETH  Goal for the main sale (soft cap): 6,000 ETH  Maximum total number of tokens for the pre-sale and main sale (hard cap): 43,200,000.
+
+Unsold tokens at the end of the crowdsale will be discarded.  The main sale will end at the earliest of the following events: (i) 72 hours after 12,000 ETH is
+
+achieved or (ii) 43,200,000 FLIP tokens are purchased or (iii) the end date of January 29th, 2018 at 19:00 UTC is reached.
+
+
+
+7.5. Other Tokens
+
+(a) Network Growth  40,000,000 Tokens. As described in Section 4.6 (Network Growth Model) above, 40,000,000 tokens will be reserved and used to promote network growth, creating incentives for game publishers to adopt and facilitate the sale of FLIP to gamers.
+
+(b) Gameflip  14,000,000 Tokens. These tokens will be retained by Gameflip, and they may be used for marketing, partnerships, team expansion, future development, or any other purposes at Gameflip's discretion. These tokens will be unlocked as follows:
+
+ 2,000,000 will be available for distribution on July 1, 2018;  4,000,000 will be available for distribution on July 1, 2019; and  8,000,000 will be available for distribution on July 1, 2020.
+
+39
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+(c) Advisors and Partners  2,800,000 Tokens. These tokens will be reserved for advisors and partners of Gameflip. These tokens will be available for distribution within 30 days from the end of the token main sale.
+
+8. Use of Proceeds
+
+The proceeds from the token sale will be used for the development, promotion, and growth of the new decentralized ecosystem. The preliminary allocation is set forth below but is subject to change:
+
+ Product Development: 40%  This includes development and operations of FLIP-related technology, such as smart contracts, wallets, SDKs, plugins, and other updates. This will also include hiring of additional personnel.
+
+ Marketing: 30%  This will be used for advertising, promotional events, sponsorships, and other marketing activities to promote the adoption of FLIP.
+
+ Partnerships: 15%  This will be used to develop partnerships and attract participants in the FLIP decentralized ecosystem.
+
+ General and Administrative: 15%  This includes, among other things, costs associated with rent, utilities, insurance and administrative salaries.
+
+40
+
+
+
+Crypto-token for buying and selling gaming digital goods
+
+41
+
+
+
+

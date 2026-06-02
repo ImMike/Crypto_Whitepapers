@@ -1,0 +1,519 @@
+Next Generation Decentralized Blockchain Financial Infrastructure
+
+
+
+The Herdius
+
+
+
+Vision
+
+
+
+The future of the decentralized web is dependent on the next generation of decentralized financial infrastructure. In order to sustain future growth and facilitate the influx of new members to the space, it's important to create a financial base layer that is capable of handling such influx. Moreover, for the ecosystem to thrive, the use of cryptocurrencies and tokens must become more user-friendly by a considerable margin. The eventual success of dApps and decentralized services will depend on adoption by mainstream users. For distributed systems to have a tangible real-world impact, several challenges need to be overcome. Present day financial blockchain architectures still suffer from several shortcomings such as long transaction confirmation times, suboptimal scalability, a lack of decentralization and liquidity. Herdius vision is to considerably lower the barrier of entry to the token economy for service providers and end users alike by offering a superior experience. To that end, we aim to introduce an innovative and robust blockchain architecture that addresses the above issues. Our goal is to design a highly performant and scalable infrastructure which enables seamless interoperability between different blockchains. These are critical conditions for adoption by many service providers and present a significant user experience improvement. Our
+
+
+
+technical white paper also introduces the concept for DIVIWA, an architecture that would enable a distributed virtual wallets network. With DIVIWA, we aim to make using cryptocurrency wallets as simple and convenient as traditional bank accounts. The possibilities that arise from this are endless. We envision a world where you can instantly take a loan, sign up for an insurance, or access the entire dApp world services - all with just your identity on the Herdius chain. And since the Herdius core technology is intended as an opensource platform, we believe that many developers will consider building the next generation of decentralized apps on top of the Herdius chain. Disclaimer: This paper is released with the goal to provide insights on the architecture and background of the envisaged Herdius platform. For more technical details, we refer to the technical whitepaper published on our website. This paper is subject to change. It will be amended from time to time to include continuous feedback to questions received from the community and further findings. Any amended versions of this paper will be published on our website; only the most recent version of the whitepaper published on the website is the relevant whitepaper.
+
+
+
+Three Problems Solved
+
+
+
+The Herdius architecture, as described in our technical whitepaper, intends to solve three critical issues of the current cryptocurrency world.
+
+
+
+Confirmation times: The average confirmation times of popular legacy blockchains are one of the key issues that prevent cryptocurrencies from becoming a viable payment option. The issue is even more severe when you want to exchange assets across blockchains. Herdius strives to achieve a substantial reduction of confirmation times when performing transactions, regardless of the underlying root chain of the traded assets.
+
+Blockchain interoperability: Blockchain-based systems are still in an early stage. The space still undergoes a lot of innovation. Some of the early blockchains like Bitcoin or Ethereum are important parts of the ecosystem - though sometimes limited in their ability to adopt innovations - and other new projects emerge constantly. We don't expect that a single chain will serve all purposes but rather that we will see a heterogeneous landscape. Herdius wants to position itself as the missing link between those blockchains by facilitating simple cross-chain transactions and data exchange.
+
+
+
+Private Key Handling Today, cryptocurrency users have basically two options to store their private keys. Either they save them offline - on paper slips or hardware wallets - or trust an online wallet to handle them. As the latter repeatedly suffer from hacks or technical difficulties, it is fair to say: users are left with a choice between security and convenience. Herdius aims to introduce a third option with our DIVIWA wallets, which is to use distribution and cryptography to create a convenient and secure way to store private keys. We want to tackle these problems by utilizing a more efficient proofof-stake based blockchain that is capable of "stretching" itself and, thus, can scale to hundreds of transactions per second. Herdius aims at becoming more than a new blockchain though: we also envisage a truly decentralized cryptocurrency exchange that enables users to quickly and securely trade across different blockchains. On top of all this, we intend to introduce an augmented data layer and data exchange protocol that is capable of attaching additional pieces of information to every individual transaction.
+
+
+
+Herdius at a Glance
+
+The Herdius platform intends to be a state-of-the-art distributed system. The architecture we envisage leverages some of the most recent technical developments in the space and introduces several innovative elements. We specifically want to design Herdius with the following goals in mind:
+
+1. High scalability and low confirmation times 2. Cross-chain interoperability and transactions 3. Handling private keys in a secure and convenient manner
+
+
+
+As an overarching design premise, we set out to tackle these issues without compromising in the realm of decentralization. The outcome of our research and development efforts is the Herdius system as presented end envisaged in our technical whitepaper. At its core is a new proof-ofstake-based blockchain that can also function in the role of a sidechain to most other blockchains, including Bitcoin and Ethereum. Thanks to our blocks-of-blocks architecture, we envision the Herdius blockchain to allow for a much increased transaction throughput compared to current legacy chains. That is central to our goal of building a decentralized exchange that can handle all kinds of digital assets, regardless of their underlying chain. By building a highly scalable blockchain that connects to different blockchains,
+
+
+
+we hope to have a positive impact on the entire ecosystem: the current strain on the legacy root chains might be considerably decreased once Herdius is running. With DIVIWA, we aim at introducing a network of secure, virtual wallets. Our DIVIWA wallets shall present a user-friendly interface to the Herdius chain for regular users and handle private keys in an encrypted and distributed way. Our goal is to finally make handling private keys secure and convenient. The following pages will give you a top-level overview of the most important system components, features and their respective benefits as we currently envision those. For a more detailed description, we refer you to our technical whitepaper which we released alongside this document on our website.
+
+
+
+The Herdius Platform
+
+
+
+The Herdius Chain
+
+
+
+PoS blockchain
+
+Herdius aims at introducing a new type of blockchain that works as a more efficient sidechain perfectly aligning the incentives between validators and users of the network. Our proposed proof-of-stake-based architecture shall be built with the goal to retain all the security that a proof-of-work blockchain provides, yet to significantly cut down on the time needed to confirm a transaction.
+
+
+
+Scalability
+
+We want the Herdius blockchain to be highly scalable thanks to the new blocksof-blocks (BoB) architecture we strive to introduce. BoB is meant to enable the vertical stretching of each block: multiple blocks could be stacked on top of each other. By vertically stretching the blockchain, parallelized validation shall become possible so that individual blocks can be verified independently by staked validator groups.
+
+
+
+Constructor/Queue Mechanism
+
+The highest-level consensus mechanisms which we would like to employ within the Herdius chain is the constructor/queue mechanism. The constructor mechanism is meant to guide the Herdius chain by deciding upon the structure of each block. To this end, the constructor needs to closely collaborate with the queue. The queue mechanism is considered to monitor transaction volume within the network and instructs the constructor on what kind of block structure to lay out.
+
+
+
+Herdius works towards a truly decentralized exchange, built on top of the Herdius chain. Our envisaged decentralized exchange architecture is meant to enable the decentralized execution of orders off-chain. This would eliminate the need for a middleman or similar central authorities. Further, the network would cut down confirmation times to a minimum: once tokens would be deposited on a Herdius wallet, transacting from it would becoming seamless, regardless of the underlying blockchain. When exchanging one token for another, a Herdius user would get access to the new tokens after a single confirmed transaction. This would allow Herdius users to make full use of the decentralized service and app ecosystem in a fast and flexible manner. The decentralized exchange Herdius aims to develop shall allow different order books to link to it. This would provide better liquidity and a significantly better user experience. Orders would be first propagated through the network using a peer-to-peer protocol - but in order to provide faster settlement, a system-centered order book shall be introduced which is meant to automatically and anonymously match orders between independent users. The envisaged Herdius central order book stands out from traditional order books in the way that it would be simply an order matching mechanism between individual users. The central book shall enable a bi-directional, anonymous sender/receiver communication network that is concealed and inaccessible to anyone other than the two parties involved in an exchange. Rather than orders being aggregated and sorted in the database, this system would instruct users which other party to contact in order to execute the order.
+
+
+
+A Truly Decentralized
+
+Exchange
+
+
+
+Secure, Virtual Wallets (DIVIWA)
+
+The goal behind the Herdius architecture is to eliminate multi-chain confirmation time, letting users instantly access traded funds after a single Herdius transaction. Herdius wants to provide users with the possibility to trade all kinds of tokens straight out of their wallet. The key to enabling this in a decentralized fashion is our envisaged distributed virtual wallet network DIVIWA. Thanks to DIVIWA, we envision that private keys can be conveniently stored and are secured by the network. They would never be revealed to anyone and shielded by the security of public key cryptography. To achieve that, we plan to split private keys into many different encrypted parts which would be stored on different nodes across the network. We aim at using a mixed network to transmit private keys with only the wallet owner being able to identify the specific nodes in the network that possess parts of the key. The only information that would be revealed to the key holder node, other than part of the private key, would be the original owner of the wallet. Private keys would be required whenever a user wants to transmit tokens back to the original root chain. In that case, Herdius wants to utilize a multi-signatory threshold signature scheme to reassemble private keys. All network nodes that hold a part of the private keys would come together in a reassembly "ceremony" where they would combine their share of split keys. Not all nodes holding split keys must participate in the process; having at least three fourth of all split keys put together would be enough to devise the original private key. That process is meant to offer the utmost security while also hedging against node downtime.
+
+
+
+Augmented Information Layer
+
+
+
+With the introduction of the augmented information layer (AIL), Herdius envisions to enable cross-chain communication and information exchange. Also, it is meant to allow users and developers to expand the native capabilities of any token and build more sophisticated applications. With the augmented information layer, Herdius wants to enable every user to attach additional data to all transactions performed inside the Herdius chain. Herdius aims to make AIL compatible with different distributed data storage systems, thus providing endless possibilities for inter-linking. We envision the layer to also act as a bridge between different chains. It would maintain data in a side-chain that could be referred back to at all times. The possibilities that may emerge from this seem almost endless. For instance, insurance companies could use the AIL to store vital credit score data and E-commerce sites could store orders within the layer in a hashed format. Also, a secure, independent and valid identity on the blockchain could finally become a reality!
+
+
+
+Infrastructure for Developers
+
+Our goal is that anyone may make use of Herdius' infrastructure and easily build new applications utilizing the Herdius chain. New applications developed on the Herdius chain would benefit from the fast and secure transactions we intend to enable as well as from the Herdius user base. We want to release Herdius as an open-source protocol and to run it as a truly distributed system. In doing so, we aim to ensure reliability and stability to the developer community. We envision to create a developer ecosystem that caters to the needs of dApps and FinTech startups as well as to established financial services providers. We understand very well that for Herdius to realize its full potential, an active and engaged developer community will be essential. We understand outside developers as a core constituent of the network. Thus, we will put an emphasize on providing a great experience to them. This could include, for instance, top-notch documentation, responsiveness and extended participation.
+
+
+
+Legal and economic framework conditions
+
+Regulatory framework Herdius did not yet assess the legal requirements which need to be complied with in order to realise the proposed Herdius platform. It is expected that certain financial regulatory requirements will need to be met and Herdius truly aims to provide for a legally fully compliant platform. However, Herdius cannot exclude that the platform may not (all or part) be built as envisaged due to legal restrictions. The national and international regulatory framework of blockchain and distributed ledger technology in general and related applications is in the process of being clarified and might change. It is possible that the interpretation and application of existing laws and regulations may be amended or adapted and could also be subject to legislative initiatives at national and international level. Clarification of and changes to the regulatory framework could adversely affect the Herdius platform and HER tokens without us having influence on such developments. This includes in particular the risk that acquired HER tokens may not or no longer be usable as originally envisaged due to regulatory restrictions, may become unusable and/ or the Herdius platform may need to be adapted to the regulatory environment. Market dynamics Herdius will make true effort to ensure the successful implementation of the Herdius platform. However, there is a risk that the Herdius platform will not be implemented for various reasons, in particular due to a lack of sufficient funding or lack of success (e.g. support by sufficiently experienced coders and acceptance and use by the community) before and after implementation of the Herdius platform. If the Herdius platform is abandoned, this may also result in the dissolution of Herdius due to the discontinuation of the business purpose. The future business development of our business model requires that we can maintain a good position in the market and constantly expand our customer base. In this respect, there are risks from more intense competition and the appearance of competitors. In this context, we have also to consider the potential loss of acceptance of our offer by customers.
+
+
+
+The Herdius
+
+Ecosystem
+
+
+
+Financial services
+
+We strive to enable financial services of all sorts to use Herdius as their backend technology of choice. We aim at building protocol-level solutions that would allow them to easily plug their system into Herdius and leverage our infrastructure. By making use of the augmented information layer, we envision that attaching data to individual transactions or public key identities would finally become easy.
+
+
+
+dApp developers
+
+We want to enable dApp developers to use the Herdius chain by creating new applications on top of our architecture. Herdius wants to provide out-of-the-box, secure financial smart contracts that are simple to use.
+
+
+
+Cryptocurrency users
+
+Herdius wants to enable cryptocurrency users to enjoy all the perks of an all-around trading experience. Herdius aims at providing an easyto-use interface, a high level of security and excellent liquidity.
+
+
+
+Cryptocurrency exchanges
+
+Herdius wants to provide existing cryptocurrency exchanges with the possibility to link their order books to Herdius. This would allow them to use our envisaged performant technology to improve their users' experience. Also, this could create a bigger liquidity pool for the entire network, making it a win-win-win scenario. Herdius wants to democratize trading, not limit it!
+
+
+
+The HER Currency
+
+
+
+How it is going to work
+
+Function: We intend to make the HER token the staking currency on the Herdius blockchain. Within the proof-of-stake algorithm, HER holders are supposed to be able to bond their tokens, thereby becoming validators within the network. Through staking, token holders would become validators (similar to miners in Bitcoin). For their services, they would earn a share of the transaction fees and block rewards. Utility: We aim at giving the HER token different utilities: The primary utility of the HER token we envisage is to act as the internal staking currency of the intended decentralized exchange system. HER tokens would be locked-in by validators during block validation, and act as a collateral which can be claimed by supervisors if a validator misbehaves. The other intended utility of HER tokens within the Herdius system is that users who hold HER tokens would be able to pay transaction fees at a discounted rate when compared to paying fees in other cryptocurrencies. The envisaged Herdius exchange's design does not intend to limit users to paying fees in HER tokens, though. Instead, users would be able to pay fees in other cryptocurrencies as well. Network enablement: Furthermore, the HER token is meant to play a critical role in enabling and maintaining a healthy network. It is envisioned to act as the unified incentive mechanism within the Herdius platform. The HER token is intended to be the system's main instrument for aligning interests and rewarding good conduct of all actors. We want several nodes to be involved within Herdius whose role would be to keep the chain secure: Validators, supervisors, hallmark storage nodes and nodes holding a part of a user's private key. The HER token is meant to give a network participant access to the respective role. Newly created HER token would also be the reward that users would receive every time a block is created within the Herdius chain.
+
+
+
+Liquidity of HER tokens
+
+We expect HER to be fairly illiquid. As the primary use case of HER tokens we envisage is staking, we expect that a vast majority of existing HER tokens will be locked-in by validators at any point in time. While HER tokens can be sent just like any other cryptocurrency, we believe that HER tokens's main purpose will be to underpin the network.
+
+
+
+Token Value
+
+
+
+Receiving new HER tokens
+
+The HER token which will be sold during the ICO is an ERC-20 token. If and when the Herdius chain is operational and public, we envision that HER token holders will be able to claim their next generation, native HER tokens.
+
+
+
+Tradability of HER tokens
+
+The tradability of HER tokens requires, as long as Herdius is not able to operate the envisaged Herdius trading platform, that the HER token is listed on an online exchange for cryptocurrencies. This is not yet the case and we cannot give any opinion on if and when this might be the case.
+
+
+
+From the start, it was important for us to develop a token that directly correlates with network value and has substance behind it. As a result, the HER token's value is intended to be directly and proportionally linked to the network's size and activity: The higher the transaction volume is on the Herdius' platform, the higher the HER token's value.
+
+
+
+Representing transaction volume
+
+We want HER tokens to represent the transaction volume within the network. Regardless of the currency the users would transact in, HER tokens are meant to directly correlate to the total value of all transactions. The supply of HER tokens that would be created at every new block is supposed to be controlled by an algorithm that would adjust the block reward based on liquid supply and currently bonded HER tokens.
+
+
+
+Incentive Structure for nodes:
+
+
+
+Nodes
+
+Validators are expected to receive HER tokens indirectly as part of "the Pool" (described on the next page titled "The Pool") and to receive additional shares of the block reward from each block. The share of tokens received from blocks shall be proportional to the staked amount of HER tokens that each individual validator bonds before the beginning of block validation. We want other node participants of the Herdius chain  supervisors, hallmark storage, and DIVIWA nodes - to receive HER tokens as part of the block reward and not to take a direct cut from the fees earned by validators.
+
+
+
+Block reward
+
+Our current view is that 90% of the block reward would go to general node participants of the network (supervisors, participants in the queue/constructor mechanism and split key holders) with 10% going to staked validators. Because the newly created amount of HER tokens at each block would be kept at a minimum when compared to the total supply, block level rewards are somewhat insignificant. Block rewards inside Herdius are mainly meant to reward nodes that are suspending the Herdius chain in general.
+
+
+
+Inflation
+
+We aim at dynamically controlling inflation of the HER token supply by the algorithm we want to introduce inside the Herdius chain. This algorithm would adjust block reward in direct correlation with transaction volume since the last block. A surge in transactions would result in more HER tokens being generated, while a downturn results in a minimum or no new HER tokens dropping at all.
+
+
+
+The Pool
+
+We envision the Pool to be the collection of all the collected transaction fees that were not paid in HER tokens. If users pay their Herdius transaction fees in Bitcoin, the fee would not go directly to the validator subgroups that validated the block containing said transaction. Instead, the fee would go to the Pool. The Pool would collect all these fees on the chain and maintain ownership of these unclaimed funds through the blockchain.
+
+Receiving tokens from the pool
+
+Of course, we want validators to be entitled to their share of the Pool. There are two choices when designing the Pool 1) validators can claim their share of the pool using HER tokens or 2) the Pool distributes all the coins within the Pool to the validators at every 3 blocks. The share a validator would receive would be based on the stake the validator had in the validated blocks that currently make up the Pool. The validator would receive a share of the Pool that equals the percentage of total stakes. We want the payout's token distribution to equal the distribution of tokens in the Pool.
+
+
+
+Token Holder
+
+
+
+Benefi ts
+
+
+
+Network Governance: We imagine HER token holders to be involved in quarterly suggestion sessions where they can suggest proposals regarding the future development of the Herdius chain as well as suggest new chains to be made compatible within the Herdius ecosystem. As we believe smart contracts offer a safe and fair solution to all parties during the suggesting process, we want to set up smart contracts to which HER token holders could send their coins to vote on proposals. The smart contract we aim to use in this process will be published publicly in advance of the vote happening to provide transparency and fairness over the process. HER tokens sent to the smart contract are handled by the smart contract itself which at the end of the voting period sends HER tokens back to their respective owners.
+
+
+
+Staking: According to our current thinking, HER token holders would be able to use their tokens to stake transactions on the Herdius chain by becoming staked validators. HER tokens are meant to be locked up in a mechanism similar to a time locked smart contract. We believe that a mechanism such as smart contracts offer a great deal of transparency and code immutability, the latter of which is especially important in making sure that validators can under no circumstances avoid locking their stake in. A user's HER token would be locked up and inaccessible until she or he has finished validating the block. This way, validators could be held accountable for any kind of misbehavior (e.g. validating fraud transactions; for more details, please see the technical whitepaper) in the validation process.
+
+
+
+Inclusion: We want to include initial buyers of HER tokens in the process of designing future architecture that Herdius intends to develop. Actually implementing token holders' suggestions might be a challenge due to regulatory limitations though; nonetheless we will try anything within our power to include our token holders to as much of an extent as possible.
+
+
+
+Token Issuance
+
+
+
+ICO details:
+
+
+
+Cost analysis, funding goal breakdown The different funding goals and targets shall enable us to develop the Herdius chain to different aspects and scale the team to a bigger size starting February. It is important to note that the idea of Herdius is robust in itself, developing it will not be an easy task. Reaching the highest funding goal would enable us to not only develop the proposed features, but also bring the network to a whole new level with partnerships. Token distribution During the ICO, 100% of all the initially created HER tokens are intended to be allocate. 90% will be available for purchase by the different users with the remaining 10% going to the Herdius team. The following are the ICO targets:
+
+
+
+Pricing/Distribution: Pricing of individual HER tokens will be set to Ether (ETH) and communicated through our communication channels before the ICO. Distribution of HER tokens will happen instantly after the corresponding ETH amount is received and the purchase contract has been concluded.
+
+Blacklisting of certain countries: Buyers from certain countries will be prohibited from participating in the Herdius token sale due to regulatory restraints. We intend to publish the final list of prohibited countries at least two weeks in advance of the December 11th ICO date together with the General Terms and Conditions of the token sale itself.
+
+
+
+ICO details: The sale will begin December 11, 2017 and end on January 19, 2018 unless the hard cap goal is reached beforehand which would end the sale at once. The supply of HER tokens sold during the ICO will not change and there will not be any additional tokens of its kind generated in the future. However, please note that the Herdius platform will create next generation, native HER tokens based on a dynamically controlled inflation once the Herdius platform goes live. Instead of being an ERC20 token that is based on Ethereum, the next generation HER token shall be compatible with the Herdius chain.
+
+
+
+Funding goal
+
+#1: 5 Mio in ETH
+
+With reaching the 5 Mio in ETH goal, we expect to get the Herdius chain to a beta phase in three years. The beta release is supposed to include all the proposed functionalities in our technical paper. The following cost-breakdown would apply in this case: Development: 85% - 4.250.000 Security Testing: 10% - 500.000 Miscellaneous: 5% - 250.000
+
+
+
+Funding goal
+
+#2: 15 Mio in ETH
+
+
+
+Reaching this funding goal, we envisage being enabled to release the fully public version of the Herdius chain according to our planned roadmap (see below in this paper). This goal would also provide us with an additional two years cost runway following the initial release to further improve the network. It is important that even before the initial release the Herdius team creates partnerships that allow for future growth and sustainability for the team. The following cost-breakdown would apply in this case: Development: 65% - 9.750.000 Security Testing: 10% - 1.500.000 Developer Community: 2.5% - 375.000 Network Growth: 17.5% - 2.625.000 Miscellaneous: 5% - 750.000
+
+
+
+We expect that this target allows us to maintain a bigger team when compared to the first funding goal, and also allows an additional three years to maintain the public version of the Herdius chain. In addition, the longer runway time would allow more time for Herdius to develop income generating products and services on top of the chain. The income from these potential new offerings will help sustain the Herdius team after the chain is live. Network growth will also mean that we can aim for running multiple pilot programs with corporate clients utilizing the Herdius chain. It is important to us to create a growing ecosystem that generates value for the network. The whole Herdius network grows as corporates shift to utilize Herdius as their preferred blockchain platform. What we aim for here is custom tailoring Herdius to their needs as well as dedicate Herdius developers and project managers to make transition easier.
+
+
+
+Funding goal
+
+#3: 30 Mio in ETH
+
+
+
+Reaching this funding goal would enable us to develop the Herdius chain and in addition spend a more considerable amount on network growth and marketing. This goal makes it possible for us to do additional end user marketing and drive early growth to our platform. We believe that Herdius could, in the future, take significant market share of the overall cryptocurrency trading market, or at least provide an ecosystem to which other exchanges can link - making Herdius the biggest trade facilitator network. The following cost - breakdown would apply in this case: Development: 60% - 18.000.000 Security Testing: 5% - 1.500.000 Developer Community: 4% 1.200.000 Network Growth &amp; End User Marketing: 26% - 7.800.000 Miscellaneous: 5% - 1.500.000
+
+
+
+Provided that we reach this goal, we intend to start working on additional products and services from the start, working in parallel to make the Herdius chain a reality while also developing new products and services on the side that are capable of sustaining the team. Of course, in these new potential businesses, we want our HER token holders to be involved to the fullest extent possible.
+
+Our extended marketing budget is going to help us to advertise our network to the centralized exchange userbase, who have not considered decentralized exchanges before. Acquiring early users and making sure they have a positive trading experience right from the beginning will be crucial for the network and its perception.
+
+It is important to consider the volatility of ETH and that of additional cryptocurrencies. We do not want a potential market downturn to interfere with the development of our proposed network. Reaching our ultimate funding goal of 30.000.000 mitigates this risk.
+
+
+
+Supply and inflation/Use of funds
+
+Development: Development will cover all operational costs of Herdius, especially the expenses of the entire Herdius team, whose main focus is developing the Herdius chain. The extent to which the Herdius platform will be realized, is dependent on the ICO result. If the soft cap is reached, we aim at developing a protocol-level of Herdius. Its source code would be fully open-sourced, in order to allow the community and outside developers to adopt and build applications on top. It is important to note that this basic version would include all the protocol-level solutions we outlined in the technical whitepaper and, thus, enable the technical operation of the Herdius network. If the ICO proceeds should surpass the soft cap, additional funds would be allocated to the development. These would be used to: 1) expand and optimize the core functionality of the Herdius core protocols; 2) improve the user experience by building front-end applications on top of the Herdius protocols (which would also be open-sourced). This would, in particular, include the creation of desktop, mobile and web user interfaces for the DIVIWA wallets as well as optimized client applications for nodes on the Herdius network; 3) speed up the development process by hiring additional developers to the Herdius team. Also included in the development costs are future legal costs which Herdius GmbH will incur in the process of preparing the Herdius platform for its public launch.
+
+
+
+Security Testing: Security is crucial for us. We will do everything within our power to make sure that the Herdius architecture adheres to the highest security standards. We want our open source codebase to be regularly audited by experts. We intend to offer a bug bounty program in the future to reward the community for mak-
+
+ing the network more secure.
+
+Developer Community: We believe that an active developer community is a key asset for any blockchain project. As such, we want to invest into our commu-
+
+nity. Depending on the ICO's outcome, this might include: in-depth multimedia documentation, live events, local hubs in major cities across the globe, interactive training
+
+program (Herdius Academy), bespoke digital community infrastructure.
+
+Miscellaneous: Includes any unforeseen costs at this time.
+
+
+
+Network Growth & End User Marketing: Growing the Herdius network is critical. Therefore, we pursue a dedicated network growth strategy (see 8.). How we use funds to that end will depend on the ICO's result. The initial marketing is going to be focused on professional ecosystem participants. We intend to offer great infrastructure for professional services with established user bases, which renders them ideal partners. As the ICO reaches deeper stages, we want to progressively allocate more budget to end user marketing.
+
+Inflation: As stated in our technical paper, the new, next gerneration HER tokens directly corresponds to transaction volume within the Herdius chain. Due to this reason, the HER token's underlying value should, in theory, increase linearly with inflation therefore inflation will be mitigated on initial HER token buyers..
+
+
+
+Organizational Setup of Herdius
+
+
+
+Management setup In this section, we outline the envisaged organizational and management setup, including already established compliance processes, of the Herdius GmbH.
+
+Herdius GmbH Herdius GmbH will act as the main entity responsible for the development of the Herdius blockchain and the infrastructure outlined above. The main goal of Herdius GmbH is to develop an open-source, innovative technology for the community. After the envisaged release of the completed Herdius chain, the Herdius legal entity will strive for building further ventures on top of that architecture.
+
+
+
+Managing the HER token proceeds Rigorous fund handling is of the utmost importance to us. Legal limitations on accessing and spending funds have already been implemented inside Herdius GmbH. All proceeds from the ICO sale will be stored in a multi-signature wallet. Herdius wants to store part of the keys necessary to allow access to the wallet at a reputable auditing firm. This structure has been set up as a compliance measure which shall ensure that the ICO proceeds won't be used in any other way than suggested by management and approved by shareholders' resolution. The auditing firm should only sign outgoing transactions from the wallet if they receive an authorized and official request from Herdius GmbH including supporting shareholders' resolution on the moving of funds. Due to the nature of multi-signature cryptography, the key hold by the auditing firm is useless without having access to the other parts of the private key. Also important to note that no party within Herdius will know the details of the private key placed at the auditor, and during the sign-off on the release of funds this key will not be revealed to Herdius. The liquidation as well as any movement of funds will be done on a quarterly basis, based on projections by the Herdius financial team. We will put out a quarterly report outlining the use of funds to the greatest extent possible. Our cryptocurrency assets will be professionally managed as a portfolio. After the token sale ends, we will consult different professional cryptocurrency traders and analysts to submit anonymous proposals for independent third party advice on the diversification of our digital assets. At every single point in time, the majority of all funds that Herdius controls will be kept in various cryptocurrencies or tokens, following an  as far as possible - low-risk portfolio profile. This portfolio will be diversified based on outside expert counsel. The intended low-risk nature of this portfolio is relative as tokens and cryptocurrencies are highly volatile in their nature.
+
+
+
+Open-source architecture & Compliance
+
+
+
+Compliance and regulatory environment: Since starting Herdius, it has been a top priority for us to operate in accordance with German law. Operating in one of the world's most trustworthy and detail-oriented jurisdictions translates to high standards to which we adhere. With the recent rise of scandals across the ICO space, we feel like a stable legal backdrop has become one of the most important factors when considering ICOs. We choose the hard route instead of the easy one when setting up Herdius. Although it meant more work upfront, we stuck to Germany. We strongly felt that the other jurisdictions which have become standard for such projects are not transparent enough for our standards. While we acknowledge that the German jurisdiction is and will not be the only jurisdiction relevant to international token offerings, budget considerations restrain ensuring full compliance with all the jurisdictions across the globe right from the start. This is a commonly known risk in the token economy. However, we will black list any jurisdictions which we are aware of prohibiting the offer of the initial HER tokens. Nevertheless, the offering of HER tokens in jurisdictions not actively checked creates a risk for the successful implementation of the Herdius platform.
+
+
+
+Transparency: Transparency is a key value of the Herdius team. All of us at Herdius believe that it is the only way to efficiently run such a project. Next to the release of quarterly financial reports, we also want every HER token holder to feel included in daily operations as much as possible. We will livestream weekly meetings, share new developments and include token holders in the development to the highest possible degree. Open source: The Herdius core technology and protocols are intended to be fully open-sourced and, thus, be available to the public at large. We strongly believe that open-sourcing key distributed infrastructure is the best way forward for the blockchain ecosystem to flourish. Also, we think it makes a lot of business sense: By providing accessible and testable technology, we will have a big advantage when it comes to driving adoption of the Herdius network. Once the infrastructure layer of the Herdius system is running as envisioned, the Herdius GmbH aims at being a regular participant in the ecosystem and using the Herdius architecture to build commercial applications on top of it.
+
+
+
+Growing the Herdius Network
+
+
+
+It is critical for Herdius' success to establish and nurture a thriving ecosystem. While our platform's structure has all the ingredients to benefit from network effects - mostly centered around liquidity, low transaction fees and user experience - we are very mindful of the fact that it will take a focused, concerted effort to gain initial traction and reach a critical mass of ecosystem participants. Building an attractive, technologically advanced platform that fulfills infrastructural needs and offers significant improvements in user experience is integral to achieving this. Yet, it's not going to be enough. Therefore, we plan to take dedicated measures to fos-
+
+
+
+ter the establishment of an engaged Herdius community from early on - and grow it continuously over time. In section four, we outlined the Herdius ecosystem and its participants as we envision it going forward. Based on that, we can simplify and create two core clusters of network users we aim to reach: cryptocurrency end users and professional participants of the cryptocurrency ecosystem. The figure below contains a (non-conclusive) list of the actions we plan to take depending on the result of the HER token sale in order to reach these critical network constituents:
+
+
+
+Our Network-Growth Strategy
+
+N2C (Network-to-business)
+
+
+
+N2C (Network-to-user)
+
+
+
+Before alpha chain launch:  Creating a professional partnerships role
+
+and hiring someone with strong industry relations in Finance & FinTech  Hosting regular events with professional focus across the globe  Nurturing and growing an active developer community around the Herdius open source technology After alpha chain launch:  Setting up the Herdius Academy: a comprehensive digital library that offers an exclusive array of information and user guidelines with explanatory live demons.  Establishing an outreach team to focus on (strategic) business relations and building synergic partnerships.
+
+
+
+Before alpha chain launch:  Maintaining interest by continually communi-
+
+cating progress, releasing content on product features and addressing user queries  Establishing a product marketing team  Ongoing presence on relevent blockchain/ cryprocurrency community events
+
+After alpha chain launch:  Running marketing campaigns focused on
+
+end users  Leveraging the Herdius community by es-
+
+tabliching an attractive referral program  Offering the Herdius wallet technology to
+
+third-party security experts for critical review to build trust & credibility.
+
+
+
+Roadmap
+
+
+
+Technical and Legal
+
+work begins June, 2017
+
+
+
+In June, we set out to make Herdius a reality. This meant a lot of work on the technical and legal side, as there wasn't any precedent in Germany.
+
+
+
+The first major milestone is reached: We aimed to offer the first ICO fully compliant with German law. In order to ensure this, we initiated an inquiry with the German regulator which is still ongoing. We expect final clearance of certain aspects prior to the start of the ICO. However, we are told that other aspects will presumably not be finally be commented on as the German regulator still works on forming an opinion. In light of this, we took the business decision not to delay the project any further but to operate on the basis of best knowledge available to us and taking the risk on being determined retroactively to not having been in full compliance. We regret that it had not been possible to obtain full clearance and must ask everyone supporting us to consider the risks involved in the current still uncertain legal environment.
+
+
+
+ICO begins December, 2017
+
+
+
+Development begins January, 2018
+
+
+
+Once our ICO soft cap is reached, our development team will get to work and start building the Herdius infrastructure.
+
+
+
+As soon as the first releasable code is finished, we want to make it publicly available. On top, we then plan to begin to invest in building the developer community.
+
+
+
+Developer community building March , 2018
+
+
+
+Business community
+
+outreach is expected to begin September, 2018
+
+
+
+For the Herdius platform to reach its potential, adoption by the business ecosystem is critical. As soon as we approach the Alpha release, we want to begin with our business outreach activities.
+
+
+
+We plan to begin
+
+the security audits January, 2019
+
+
+
+The alpha version of the Herdius chain is supposed to be released. Most likely, it will have limited functionality and be released mainly for testing purposes.
+
+
+
+Alpha release of chain December, 2018
+
+
+
+Highest security standards are a critical success factor for Herdius. As soon as the alpha chain is released, we want to initiate third-party security audits.
+
+
+
+Once the network is running and initial performance is stable, we will start our marketing and network growth efforts addressing end users.
+
+
+
+End user marketing
+
+campaigns launch August, 2019
+
+
+
+Team
+
+
+
+Albert Callarisa Roca
+
+Senior Software Engineer Albert is Software Engineer with over a decade of experience in back-end development focusing most of his time on scalable distributed sytems. He is most confident in using Go, Node.js as well as PostgreSQL.
+
+Rokas Budrauskas
+
+Business analyst Rokas is a passionate young executive with remarkable work experience in the area of Marketing and Business Development. He brings great energy and talent to the team.
+
+Soja Subhagar
+
+Marketing analyst Soja is a marketing and branding specialist with great people skills and a flair in writing. She worked in statutory auditing and Greenpeace public engagement projects before moving to Germany to launch her career in Marketing.
+
+Jrgen Brandt
+
+Senior Software Engineer Jrgen is a PHD candidate from Humboldt University of Berlin focusing on large scale distributed dataflow systems. Having developed his own workflow specification language based on Hadoop YARN Jrgen will be a key team member developing Herdius&#39;s very own scripting lanugage.
+
+
+
+Balazs Deme
+
+Founder & CEO Balazs has been involved in the blockchain space since 2012. Before founding Herdius, he has launched and worked on different ventures across a wide range of industries, from eCommerce to the gaming market. Besides blockchain, he has also been heavily involved in A.I. development projects in recent years. Before moving to Berlin, he lived in Budapest and Houston, Texas.
+
+Thomas Euler
+
+Ecosystem & Strategy Thomas spent the past decade in digital business. In his last job before going independent, he CEOed a digital transformation consulting boutique. He helped numerous clients - from global brands to startups - to develop their digital strategies. He's also a decentralized systems geek and blockchain enthusiast. As an avid technology blogger, he covers these and other topics on his Medium.
+
+Carolin Beer
+
+Software Engineer Carolin is a full-stack developer with hand-on experience as a Blockchain Engineer. She has been a student research assistant at KIT working with Ethereum smart contracts as well as Hyperledger for energy market blockchain implementations.
+
+
+
+Technical feasibility
+
+By now all of our readers should be aware that the blockchain architecture we propose above, and further detailed in our technical paper, is complex in its nature. Herdius is pushing the boundaries of the blockchain space and since the system design elements we propose are new, and untested in nature. While we believe that everything outlined in our documents is technically feasible, the blockchain space is new in itself and we are entering uncharted territory. This also relates to legal implications. We truly strive for making Herdius a reality, but when it comes to our future user's security, we will always prioritize security over innovative, untested software design choices.
+
+
+
+version 1.0
+
+
+
+

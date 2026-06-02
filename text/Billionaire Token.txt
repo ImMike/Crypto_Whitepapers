@@ -1,0 +1,185 @@
+Billionaire Token: The first super-deflationary, gambling oriented coin
+
+Super-deflation achieved through the use of Smart Contracts Whitepaper v1.2 (02-Jan-2018) The Billionaire Token Team
+
+Because money really is everything
+
+We are the Billionaire Token team and we want to bring something new to the crypto-gaming and gambling industry. We have managed to develop a deflationary model for a coin with low supply on top
+
+of which there are games, fun games.
+
+
+
+Table of contents
+
+I. The project - Billionaire Token in brief
+
+II. The core of the deflationary mechanism - The decentralized Raffle - The decentralized Burner
+
+III. Decentralized games on the blockchain - Billionaire Cee-lo Dice  a decentralized Dice game. - Billionaire Hold'em  a decentralized Poker platform.
+
+IV. Detailed Issuance Description - Key dates and Information
+
+V. Roadmap - Beyond Ethereum: The move to EOS
+
+VI. Disclaimer
+
+
+
+I. The project
+
+Billionaire token in brief
+
+Welcome to the Billionaire's Club, reader! This is a non-elitist but exclusive club where you will be rewarded with the thrills and chills of gambling and the safety and assurance that blockchain crypto technology brings to the table: accountability, traceability and security.
+
+The Coin (Billionaire Token), at the moment based on the ERC-20 standard (improved by Billionaire Token technicians) is made available over the Ethereum blockchain and will offer its users the opportunity to enjoy gambling while assuring that the value - from an investment point of view - will always be growing. We plan on moving the whole platform over to the EOS network as soon as the main net is available (hopefully this will happen in Summer 2018). Running on EOS, the Billionaire Token games can become thousands of times faster and easier to use.
+
+The Whitepaper is intended to provide a thorough technical description of the qualities that make Billionaire Token different from other coins, the qualities that will make it stand out among the rest of the crowd.
+
+In order to differentiate itself from the competition, Billionaire Token has some clever tech tricks under its sleeve, which, we believe, are vital for success - as any good Vegas magician will attest:
+
+Games and gambling
+
+Billionaire Tokens are used for playing the Billionaire Token Games. They are the only allowable in-gamecurrency for each of our games. Other coins or tokens offer something similar, but Billionaire Token has this in its blood. The very essence of this token is gambling. From the distribution model to the deflationary algorithm, everything is a gamble, as is real life itself.
+
+ Deflationary Model (the constant burning of coins):
+
+Many coins and tokens in the crypto world try to attract users by supplying to them a near infinite amount of coins and thus creating an inflationary economic model. This inflation makes the value of each coin be diluted with time  unless demand is continually increasing.
+
+Billionaire Token breaks up with that mainstream way of thinking and incorporates an evershrinking supply model, where the amount of available coins is always diminishing. There are rewards for people that burn their own coins that are issued in the present by a decentralized Burner Smart Contract. Another Smart Contract, the weekly Become a Billionaire decentralized
+
+
+
+raffle will ultimately burn 30% of the tokens sent to it. Both of these games/tools are available right now, on our website, together with a custom-made graphical interface. Together with the other games that we have planned to release, we aim to continually increase demand for the coin. In short: we are decreasing the supply and increasing the demand  two key ingredients for maximizing the value of Billionaire Tokens.
+
+ Low Supply:
+
+This is not a coin with the number in the billions, even if it is called Billionaire Token. We have a very limited number of coins, so that we can ensure they will have a relatively high value against other coins. There will never be more than 3,315,310 tokens in circulation (the current supply at the time this paper was written) and this is bound to decrease as more and more tokens get burned.
+
+II. The core of the deflationary mechanism
+
+The Decentralized Raffle
+
+The weekly Become a Billionaire decentralized raffle will be the basis of the deflationary mechanism for Billionaire Token. Every week, users can send 10-50 XBL to an Ethereum Smart Contract address  this is the equivalent of buying one to five tickets, more tickets mean a better chance to win. Users are currently limited to registering a maximum of five tickets for any given round.
+
+The Raffle will reset whenever a user registers a ticket and one or both of the following two conditions are met:
+
+ 256 tickets have been registered.  At least a week has passed since the Raffle was last reset.
+
+IMPORTANT: The 5 tickets per user and 256 tickets for all users upper limits will be removed once we migrate to the EOS blockchain  a much more advanced and faster blockchain that will support decentralized applications with almost limitless speed  a huge advancement over the now old and outdated Ethereum Network.
+
+At the end of the week, the Raffle Smart Contract will choose three winners at random. First place will get 40% of the tokens that were raised during that week, second place gets 20% and third place gets 10%. From the remaining 30% of the tokens: 10% are burned instantly  as an offering to the market gods. The other 20% are sent to The Burner, another Smart Contract that works like a twisted faucet  rewarding people for burning their own coins.
+
+
+
+The Become a Billionaire Raffle Smart Contract will run forever, and will have an internal timer that will reset itself every seven days. The players are registered to the Raffle by creating an internal mapping, inside the Smart Contract, a mapping of every address that registers tokens to it and their associated number of tickets. Because everything is decentralized, this means we will have no control over the games  they will continue to work, if even, for example, the Billionaire Token Team goes out of business.
+
+How this works (behind the scenes)
+
+Users will first call the standard ERC-20 approve() function on the XBL Smart Contract address (0x49aec0752e68d0282db544c677f6ba407ba17ed7), giving permission to the raffle to spend tokens on their behalf. Afterwards, the users will call the registerTicket() function on the Become a Billionaire raffle Smart Contract in order to actually register their tickets and participate. The registerTicket() function will first check if the Smart Contract address is actually allowed to spend tokens on behalf of the user calling the function (this is done by calling the standard ERC-20 allowance() function and checking the return value against the argument supplied in the registerTicket function), if this condition is met, then the Smart Contract will send the tokens to itself and create or update the mapping of the user's address and their coresponding number of tickets
+
+At the end of each seven day window, the raffle Smart Contract will call a rand() function three times, on all of the tickets that were registered in that week. Once an address is chosen, their tickets are discarded from the array, so that a single address can't be both 1st place and 2nd place at the same time. This same process will repeat two more times, as 2nd and 3rd places are chosen.
+
+Immediately after this, the raffle Smart Contract will calculate the amount that represents 10% of the tokens raised during that week and will call the burn() function with this number as an argument  destroying 10% of the tokens and reducing the maximum supply.
+
+Users can always check the total supply by calling the standard ERC-20 function totalSupply() on the XBL token address (0x49aec0752e68d0282db544c677f6ba407ba17ed7). Users may also call the custom function totalBurned(), and they will be returned the total number of burned tokens, this number will always be equal to "3,333,333  totalSupply".
+
+After burning 10% of the tokens, the decentralized raffle will then reward the 1st, 2nd and 3rd place with their corresponding number of tokens.
+
+The 20% of the remaining tokens are sent to the decentralized Burner Smart Contract  a twisted faucet that will reward people for burning their own coins.
+
+
+
+The Decentralized Burner
+
+Another key ingredient to the deflationary mechanism that is embedded into Billionaire Token is the Decentralized Burner Smart Contract. The Burner receives 20% of the tokens that are sent to the weekly raffle. Only users that participated in the previous raffle round are able to register coins to be destroyed by the Burner. After registering, they will receive their coins back plus a little bonus  currently set at 5%  provided that the Burner has enough. Users will not be able to register more tokens than whatever they have previously sent to the Raffle. Behind the scenes, the process of burning coins and receiving rewards through the Burner is as follows: The interface will first call the approve() function on the XBL token address (0x49aec0752e68d0282db544c677f6ba407ba17ed7) with an added parameter  the Burner address  allowing the Burner to spend coins on the user's behalf. Afterwards, it will call the registerBurn() function on the Burner Smart Contract address, the parameter to this function being the amount of coins they have previously approved the Burner to spend on their behalf. Once the registerBurn() function is called, the Burner Smart Contract will check to see if it is actually allowed to spend coins on behalf of the user that called the function. This first check is done by calling the standard ERC-20 allowance() function on the XBL Smart Contract Address. Another check will be made by the Burner to confirm that it has enough coins to successfully give as the reward. If these two conditions are met, the Burner will then proceed to call the burnFrom() function on the XBL Smart Contract address, burning the coins of the user. Once this is done, the user will receive their coins back, plus a small bonus from the Burner. If however a user registers coins for burning, but the Burner does not have enough coins to give as reward, it will throw an exception and will not burn any coins from the user. The user is then free to call the registerBurn() function again (without the need to call approve() this time) at a later date.
+
+For more information about the ERC-20 token standard and its function, consult the following link https://theethereum.wiki/w/index.php/ERC20_Token_Standard
+
+
+
+III. More decentralized games on the blockchain
+
+Billionaire Cee-lo Dice
+
+Originated on the streets and played by millions worldwide, Cee-lo is one of the most entertaining and quickest of the dice games and we are bringing it to the blockchain. People will be able to play it from the comfort and safety of their own homes. The rules of the game are very simple - it is played with three dice and it's a winner takes it all type of game.
+
+ Rolling a 4-5-6 sequence will mean an instant WIN  Rolling a 1-2-3 sequence will mean an instant LOSS  Trips - Any three of a kind 3-3-3 or 5-5-5 the higher one WINS  Points - Single die point 2-2-6 or 5-5-1 the doubles do not count so the higher die WINS
+
+All other dice combinations do not matter.
+
+Everything will be handled by Smart Contracts, players can fully trust the system, every cee-lo match is fully auditable and Billionaire Tokens are the only allowable in-game currency. Together with a fast and easy to use interface that can be fired up by the click of a button  and we believe we have the perfect recipe for the most relaxing Friday-night game.
+
+Billionaire Hold'em
+
+If what you really want from life is to call your opponent's bluff at a poker game and go all in and win  then don't worry - we have your back covered. We can offer you all the perks of a great poker experience: many tables, high and low stakes, players from all over the world that will want to take their chances at winning the grand tournament. And best of all, it is the well-known and popular Texas Hold'em variant. As nowadays Online Poker is highly available worldwide, there are countless centralized platforms that invite players to join the tables and test their skills, but they lack one key aspect that is of high importance for both professional and casual players: Trust
+
+
+
+Blockchain technology is based on trust and will revolutionize the world of poker as it can offer advantages far superior to any centralized platform:
+
+ No cash deposits  hence no bank fees, players use Billionaire tokens from their wallets/accounts
+
+ Anonymity and stealth  no bank receipts, no written proof regarding the amount of money played by an individual
+
+ Hands-on winning - the tokens that you win are instantly withdrawn into the player's wallet no matter whether it is one Billionaire Token or 3,315,310.
+
+ Transparency  because the game is built on the blockchain, it is auditable and provably fair
+
+You will need to have some coins on your EOS account. Afterwards you can either download the Billionaire Token poker client, connect to the website, or use any of the different platforms that will offer the game for you. Once you are connected and properly registered with the game, you must send your tokens to the appropriate Contract for the game. All of this will be done automatically by the application, of course. An initial amount will be required in order to activate the virtual game table, and some other amount will be needed in order to join an active game.
+
+Once the players are gathered around the table, (this is shown in the game interface through their chosen names / aliases and avatars) the game starts. One random function of the game contract will be called by the organizer (the first player that opened the poker room) and the generator will create a virtual deck for you. The contract will play the dealer, and you will play using your coins.
+
+In order to make a fair poker game we have to provide proof that the randomness is indeed, random and not manipulated in any way. In order to do this, the Billionaire Hold'em open source poker game will ask an EOS Smart Contract to generate a number. This number will be available for everyone to see after the game ends and will be used to seed the random number generator from inside the Poker Game. Because this data can be sniffed via the network, the Billionaire Hold'em poker game application will generate another number, that will be joined with the first one generated by the Smart Contract with the help of an algorithm. This algorithm and second number will also be public knowledge. This is done in order to ensure that any Billionaire Token poker game can be auditable.
+
+
+
+IV. Detailed Issuance Description
+
+Key dates and Information
+
+The token, the premine and the distribution At the beginning there were 3,333,333 tokens created. At the time this paper was written, the current circulating supply is 3,315,310 as there have been 18,023 tokens burned already. The premine is 8.5% (283,333.305 XBL). This is a reserved amount that was divided in two halves for different purposes:
+
+ 50% of the amount went to the developers, those mysterious people that work in the shadows, illuminated only by the glare from their screens while they bang a keyboard with one hand, and eat chips with the other, as they spend the nights coding and testing the Billionaire Token software.
+
+ The other 50% can be found in the Bounty Account Address and is reserved for the bounty rewards and for paying the minions that work in our lair.
+
+The Bounty Campaign was available for a limited time and it ended on 27-August-2017. For more information, consult the now inactive Bounty Thread on bitcointalk.com:
+
+Bounty thread: https://bitcointalk.org/index.php?topic=2067236 Bounty account address: 0x23EA016b4EBA78dFC374E99b2F6793f8d2dB3ff1
+
+
+
+V. Roadmap
+
+1). Whitepaper Release The first part of the roadmap was officially achieved with the release of version 1.0 of the Whitepaper (we are currently at version 1.2) 2). Token Sale & Exchange Listing The Token Sale sold out three days before the scheduled end and we have been listed on Cryptopia and Coinexchange since then so far. Other planned exchanges are 0x, Crypto-Bridge, Bitshares. After we have all of our games running seamlessly on the EOS network and a well-established brand name, we can go further and push for bigger exchanges like Bitfinex and Bittrex.
+
+
+
+3). Raffle and Burner go on-line Shortly after the Token Sale we have deployed the Become a Billionaire decentralized raffle Smart Contract and the Burner on the Ethereum Network. The code has passed through a series of peerreviews and security audits before being deployed. It is now available to play at https://BillionaireToken.com/Raffle
+
+4). Cee-Lo Dice game goes on-line Billionaire Cee-Lo is currently under-development, the release date is planned for 2018.
+
+5). Billionaire Hold'em alpha version is released The release date for the Billionaire Hold'em poker platform is planned for 2018.
+
+Beyond Ethereum: The move to EOS
+
+Initially, and like most programmers, we were incredibly excited to start developing applications running on Ethereum. After deploying the Raffle and the Burner on the Main Ethereum Network we quickly started to realise that not everything was what we thought it would be. People were paying anywhere from $5 to $30 in Ethereum fees, just to register tickets, that most of the times were worth considerably less than the fees. We were also disappointed to find out that the Ethereum Network is extremely limited in terms of how many computations one Decentralized Application can make in a single transaction before running out of gas  in other words, Ethereum DAPPS are very, very slow. Costly and slow is not a very good combination when you're trying to make a high-performance, hightraffic, fully decentralized casino. Investigating further it appears that Ethereum won't scale any time soon and that, if we wanted to continue with our roadmap we would have to move to another blockchain. After careful consideration we have reached the conclusion that EOS has the only blockchain that will be able to support the needs of the massive intended user-base (and traffic) of the Billionaire Token games. EOS Decentralized Applications will be able to run thousands of times faster than Ethereum ones, and on top of this, there will be no fees.
+
+
+
+The EOS Token Distribution is set to end in June 2018. Afterwards, their Main Net should be launched shortly. Billionaire Token intends to move to their Blockchain very soon after that happens.
+
+Disclaimer
+
+Billionaire Tokens are not securities, they have no rights, uses, purpose, attributes, functionalities or features, express or implied, including, without limitation, any uses, purpose, attributes, functionalities or features outside of
+
+the proprietary software "Become a Billionaire" raffle and "Billionaire Hold'em" poker game. Even though Billionaire Tokens are intended to be used as in-game currency for the "Become a Billionaire raffle" and "Billionaire Hold'em" and other upcoming games of the Billionaire Token team, you should still be aware of your own countries laws regarding futures and securities, even though we clearly do not intend Billionaire Tokens
+
+(XBL) to be used/sold/marketed as securities or futures, bonds, stocks etc., we can not possibly know every countries internal regulation and as such, buyers are responsible for their own countries laws regarding futures and
+
+securities. The Billionaire Token team will not be held liable for misuse of our product.
+
+
+
+

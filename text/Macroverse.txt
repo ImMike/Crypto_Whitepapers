@@ -1,0 +1,229 @@
+Macroverse
+
+Adam Novak
+
+Novak Distributed macroverse@protonmail.com
+
+June 22, 2017
+
+Abstract The blockchain-based gaming sector is poised for growth, but developers of such games face significant challenges in getting their games to market, particularly with respect to creating and storing environmental and level data. Data storage on the Ethereum blockchain can cost tens of thousands of dollars per gigabyte, making level data prohibitively expensive and prompting game developers to simply do without, focusing instead on collectible-item games with no spatial component. Here we propose an alternative: Macroverse, a single shared, procedurallygenerated universe on the Ethereum blockchain in which developers can set their games. By using procedural generation, Macroverse allows an entire universe, from astronomical down to human scale, to be stored on the blockchain in a trivial amount of space. Developers will be able to use this procedural world generation middleware to provide their games with settings and environments, without having to store any data on-chain or needing to develop their own world-generation algorithms. Players will be able to claim and trade virtual real estate in this shared virtual universe, with in-game effects. The entire system is powered by the MRV token, which will be distributed in a crowdsale.
+
+1 Value Proposition
+
+We propose a procedurally-generated shared universe as a middleware platform for blockchainbased game development (Macroverse), enabled by a token (MRV). The Macroverse ecosystem addresses the needs of:
+
+ Game Developers, by providing affordable procedural world generation middleware to keep costs down and speed time-to-market.
+
+ Players, by providing a shared environment and a shared virtual real estate market across supported games.
+
+2 Introduction
+
+2.1 Blockchain Gaming
+
+Blockchain technology and online gaming have a long shared history. Since the founding of the first Bitcoin-based "dice" game, SatoshiDice, in 2012 [2], online gaming has been a powerful force in the blockchain space. With the projects like Spells of Genesis (2015) [7], Ownage [13], and even an entire Rare-Pepe-based trading card economy [8], it is clear that the blockchain-based gaming sector is poised for growth [16, 11].
+
+However, while the space of game item ownership management is relatively well-covered, a successful game needs more than just game items. Another critical component of a video game is the environmental and level design [4], and so far blockchain-based gaming has focused on games of chance or trading-card games and mostly neglected this facet of game design [2, 7]. Unfortunately, level design is expensive--a level designer with a bachelor's degree and one year of experience costs a median of $67,000 a year in San Francisco, CA [14], and level design services can cost as much as $60 an hour on a freelance basis [22]. Moreover, in a blockchain-based gaming context, where game rules may be implemented by a smart contract, storing this level data on-chain so that the
+
+1
+
+
+
+game contracts can act on it presents a major expense. On Ethereum, on-chain storage can cost tens of thousands of dollars per gigabyte [3], and is in fact intended to be prohibitively expensive for high-volume use cases. The combination of these costs explains why current blockchain-based games avoid relying on levels and environments as much as possible, even when this results in a lower-quality experience.
+
+2.2 Procedural Content Generation
+
+A potential solution to both the high cost of level design and the high cost of on-chain level data storage comes in the form of procedural content generation techniques. Procedural content generation, especially as applied to level and environmental design, has a long history in traditional video game development, ranging from Rogue (1980) to Minecraft (2009) [10]. It can allow small studios, like the developers of Sir, You Are Being Hunted (2014), to produce acres of British countryside on shoestring budgets, allowing for greater replay value, and allowing developers to make design decisions they otherwise might not be able to afford [23].
+
+Moreover, it is not just small "indie" studios or lone developers who use procedural content generation to reduce level design costs: large "AAA" productions like Bethedsa's The Elder Scrolls IV: Oblivion (2006) have used procedural generation to help create their game worlds [17]. In the MMO space, EVE Online (2003), which remains one of the most popular science fiction MMOs despite its 14-year-long history, is set in a procedurally-generated galaxy spanning thousands of star systems and tens of thousands of planets [6, 9]. It is this universe, "New Eden", to which much of the success of EVE 's developer, CCP Games, can be attributed. With the continuing success of EVE, as well as their more recent games Gunjack (2015), Gunjack 2 (2016), and Eve: Valkyrie (2016) also set in the procedurally-generated New Eden universe, the company set a revenue record of $86,135,976 in FY2016, up 30% from the previous year.
+
+In addition to reducing environmental and level design costs, procedural content generation is a natural fit for blockchain-based game worlds, because it allows developers to drastically reduce the required storage space for level and environment data. As evidenced by "demoscene" games such as .kkreiger (2004), it is possible to generate levels and art assets that might otherwise be megabytes or gigabytes in size using only a few kilobytes of code [1]. The original Elite (1984) generated eight galaxies of 256 planets each from its 200 kilobyte floppy disk [20, 5]. Even the muchmaligned No Man's Sky (2016), despite its failings on the gameplay front, impressively managed to cram multiple galaxies and quintillions of playable planets into a small, by today's standards, 2.6 GB download [18, 12]. While not every detail of a blockchain-based game's environment and level data needs to be stored on-chain, anything that has an effect on gameplay will need to be accessible to any on-chain game logic. Given the return, in terms of playable content, on storage space investment, and the storage constraints of blockchain-based game development, procedural content generation is likely to be the default approach.
+
+3 Macroverse: Blockchain Procedural Universe Middleware
+
+We propose to develop a ready-made procedurally-generated universe, called Macroverse, and to deploy it on the Ethereum blockchain. Macroverse will take the form of a set of smart contracts implementing the Macroverse Generator (or MG), which can be queried by smart-contractbased games written by developers. Game contracts will call the MG to request information on the state of the Macroverse world, and the MG will use procedural generation to synthesize the information and will then return it to the game. The MG will generate a massive, shared universe, from the galactic scale down to the human scale, making it possible for developers of many types of games to find suitable settings in the single, shared world.
+
+Access to Macroverse, and specifically the ability to interact with the MG smart contracts, will be controlled by a token: the Macroverse Token (MRV). The token which functions as a transferable, divisible software license. In the initial access control implementation, players will need to hold a configurable minimum MRV balance in order to use games or other applications that query the MG.
+
+Additionally, the MRV token will be used to claim ownership of land, or even entire planets or star systems, in the shared Macroverse world, conferring in-game benefits in supported games. This is accomplished through the Macroverse Registry, a smart contract system which tracks
+
+2
+
+
+
+ownership of virtual real estate, allowing it to be claimed, transfered, and released. In order to prevent excessive, speculative claiming of virtual real estate, the Macroverse Registry will implement a deposit system: a configurable minimum amount of MRV tokens must be deposited when a piece of real estate is first claimed, and the tokens are eventually released when the owner abdicates their claim.
+
+The MRV token will be distributed using a crowdsale, in order to get it into the hands of potential players of Macroverse-enabled games and explorers of the Macroverse universe.
+
+3.1 The Case for Middleware
+
+Modern game developers routinely use middleware, ranging from entire game engines to networking libraries to specialized occlusion-culling solutions, in order to reduce the high cost of game development [15]. For example, take the case of the highly popular, highly specialized SpeedTree middleware. Any game with an outdoor setting is going to need trees, but few games are about trees, and few developers want to spend the money to produce and animate large numbers of realistic tree models in-house, when those resources could be better spent on things that make their game unique. SpeedTree offers a solution to this problem, in the form of a procedural tree generator and pre-made tree models, textures, and animations, available at prices far lower than what it would cost individual developers to create equivalent content. Thus, SpeedTree has helped a variety of games, from Far Cry 4 (2014) to Shrek The Third: The Game (2007), reach players with a minimum of developer time spent on trees [19], and makes millions of dollars annually for its developer, IDV Inc. [21].
+
+A piece of middleware providing procedural world generation capabilities to smart-contractbased games could have a similar impact on game development on the Ethereum platform. Developers who delegate their game world generation to Macroverse would not need to write worldgeneration code, freeing them to work on other aspects of their games. Instead, developers would be able to explore the ready-made Macroverse world and select a location in which to set their game--a much cheaper process. Developers could even, for games of the appropriate scale, use the entire Macroverse universe for their game world, allowing them to get their games to market faster and more cheaply.
+
+3.2 Universe Generation Technology
+
+The Macroverse universe, and the MG system that will generate it, will have several distinctive features that will make them the best choice for Ethereum-based game worlds. Games do not need to use all features in order to use the Macroverse world; a game that takes place entirely on a single planet, for example, might never query any of the orbital mechanics functions.
+
+The following is a description of the overall vision for the Macroverse world. Note that some features may eventually be cut from the system; this list is a plan, not a promise.
+
+ Astronomical Size: The universe will consist of at least one full galaxy, with on the order of 200 billion star systems, with 400 billion or more planets spread across them. Each planet will be of realistic size, with tens or hundreds of millions of square kilometers of surface area.
+
+ Planetary surfaces: Each planet will have its surface terrain available, down to sub-meter resolution.
+
+ Weather and Climate: Atmospheric composition, pressure, and temperature will all be available. On planets with water or other suitable liquids, rain, storms, and other atmospheric phenomena will be possible. Available climates will range from barren and airless to potentially habitable to hostile and extreme.
+
+ Biomes: The planetary generation logic will be able to intelligently identify different biomes on generated planets.
+
+ Orbital Mechanics: Planets and moons will orbit their parent bodies in real-time. Planets that are not tidally locked will rotate in real-time, so locations on their surfaces will experience both day and night.
+
+3
+
+
+
+ Realistic Space Objects: Stars of all classes from O through M, gas giants, moons, planetary rings, asteroid belts, neutron stars, and even black holes will be available for games to make use of.
+
+ Expandability: Games requiring additional traits or features in the world (such as a distribution of resources for a strategy game) can stack additional generation layers on top of the base Macroverse world.
+
+3.3 Token Technology
+
+The Macroverse token, MRV, will be issued on the Ethereum blockchain, and will be compatible with the ERC20 token standard.
+
+The MRV token will power the Macroverse universe. In order to make use of the shared universe and the on-chain MG, players will need to hold a configurable minimum balance of MRV. This minimum balance requirement will start at 100 MRV, which translates to a maximum possible player base of about 1 million at the MRV token supply cap. The minimum balance requirement may be adjusted up or down later. This minimum balance requirement means that MRV tokens can be thought of as fractional, divisible, transferable software licenses. Access to the Macroverse Generator will be available to anyone who holds enough license fragments to constitute a complete license to the Macroverse Generator software.
+
+Additionally, MRV tokens will be usable as deposits for claiming virtual real estate, as detailed in Section 3.4.
+
+The minimum balance requirement and the deposit requirement are the only uses for the MRV token within the Macroverse system. In particular, the MRV token cannot be redeemed for anything of value from the Macroverse system. However, as an ERC20-compatible token, it is expected to have some nonzero resale value, due to its function as a license to use the Macroverse Generator.
+
+Depending on the number of players who wish to interact with Macroverse-enabled games, there is potential for fluctuations in the value of the MRV token. In addition to provisions allowing the minimum balance requirement and minimum real estate claim deposit to be adjusted, the MRV token contract will incorporate an innovative adjustable-decimal-point feature, allowing for simple 10-to-1 splits and merges, to keep the value of "1 MRV" in a range convenient for human use. This functionality is intended to be transparent to applications, controlling only the final balances displayed in user interfaces.
+
+3.4 Virtual Real Estate Technology
+
+Players will be able to explore the Macroverse world, and claim pieces of virtual real estate for themselves. Virtual real estate ownership will be tracked by the Macroverse Registry, a system of smart contracts. The Macroverse Registry will allow players to transfer ownership of virtual real estate to one another, or to smart contracts.
+
+In addition to the satisfaction of having one's name affixed to a particularly cool star, planet, or rocky outcropping, Macroverse-enabled games will be able to make use of this player ownership data in order to confer in-game benefits or other effects. A player might be able to heal at twice the normal rate, for example, when standing in their home. Since this ownership data will be shared across games, players will be able to establish cross-game homes and virtual real estate holdings, and particularly interesting or centrally-located pieces of virtual real estate will potentially become desirable in many game contexts. This creates an opportunity for enterprising explorers to find and secure the best pieces of virtual real estate in the Macroverse world.
+
+The ability of players to claim virtual real estate must be limited, or the first player to write the appropriate software would be able to claim the entire Macroverse world. This limiting is accomplished through a configurable minimum deposit requirement, denominated in MRV tokens. To claim a piece of virtual real estate, a player must deposit the minimum required number of MRV tokens into the Macroverse Registry system. These MRV tokens will be stored in the Macroverse Registry's account. The current owner of a piece of virtual real estate can retrieve the deposit that was submitted when it was claimed, by renouncing their claim to that piece of virtual real estate, allowing it to be claimed by others.
+
+The minimum deposit requirement will initially be set at 1000 MRV per star, meaning that, if all MRV tokens are sold, up to about 100,000 stars will be able to be claimed. The minimum
+
+4
+
+
+
+deposit limit may be adjusted later.
+
+3.5 Roadmap
+
+The Macroverse project has three phases. First, in the Cannon phase, a prototype of the Macroverse system will be deployed to the Ethereum blockchain. This prototype will include the MRV token/crowdsale contract, a version of the Macroverse Generator that generates a galaxy down to the level of individual stars, and a version of the Macroverse Registry which allows stars to be claimed, transferred, and unclaimed. During this phase, the MRV crowdsale will occur, and MRV tokens will be distributed to players. Players will be able to use and transfer their MRV tokens immediately, without needing to wait for the crowdsale to complete.
+
+Macroverse players should note that the Cannon phase software may be the only version of the Macroverse software that is ever released. While the intent is to proceed with the subsequent phases outlined here, software development is an inherently risky undertaking, and the Macroverse system is intended to be complete and usable at the Cannon phase, with no further developer intervention. No guarantees are made about the Macroverse development timeline.
+
+The next phase of Macroverse development is the Keppler phase. During this phase, the Macroverse Generator will be extended to generate planetary systems. Orbital mechanics simulation functionality will be added, allowing Macroverse games to determine the current positions of planets and moons in real time. With the completion of this phase, players will be able to claim and own individual planets and other star system bodies.
+
+Finally, the Ng phase will involve the development of Macroverse Generator features dealing with planetary surfaces, including terrain generation and weather phenomena. This phase will increase the utility of the Macroverse world for games set on planetary surfaces, which include most games outside of the science fiction genre.
+
+4 MRV Token Launch
+
+4.1 MRV Launch summary
+
+The MRV token crowdsale is scheduled to begin at approximately 10 AM PST on July 1st, 2017. The crowdsale is scheduled to continue for approximately 90 days. During the crowdsale, Macroverse tokens, with the suggested ticker symbol "MRV", will be sold by the crowdsale contract at a rate of 5,000 tokens per ETH. To improve the likelihood that the critical smart contract logic is bug-free, only purchases in Ether will be possible; Bitcoin and fiat payments will not be accepted.
+
+The crowdsale's relatively early launch and longer-than-ordinary sale period are intended to reduce the harmful effects of Ethereum token speculation, and to allow genuine players ample opportunity to purchase tokens.
+
+The token sale contract will create 5,000 MRV tokens initially; these will be reserved for Novak Distributed, the Macroverse developer. The token sale contract will additionally allow up to 100 million MRV tokens to be purchased by players.
+
+There is no minimum threshold for the Macroverse crowdsale. The intention is to continue the development of the Macroverse system regardless of how many MRV tokens are sold. There is no time lock or other restriction on the use or disposition of MRV tokens purchased during the crowdsale. Players may use their purchased MRV to query the Macroverse Generator and to claim ownership of stars immediately, and may immediately transfer stars or MRV to others.
+
+To control the value of the Macroverse token's base unit, the decimal point on the Macroverse token contract can be adjusted. For the duration of the crowdsale, the decimal point value will be fixed at 18, the same value as is used for Ether, meaning that one MRV token will be divisible into a billion billion parts.
+
+4.2 Disclaimers, Risks, and Challenges
+
+Please note that MRV tokens do not confer an ownership interest in the Macroverse project, any voting rights, or any entitlement to (or even probability of ) future revenues or returns. In particular, MRV is not a security, and MRV holders are not shareholders of the Macroverse project or any related corporation. It is likely that the minimum balance requirement and the minimum deposit requirement will be lowered, meaning that less MRV will be
+
+5
+
+
+
+needed per player, and thus lowering the value of MRV. Players are encouraged to participate in the crowdsale not because they might make money by re-selling their MRV, but because acquiring MRV early will allow them to get a head start in the race to explore the Macroverse world, even as the value of that MRV declines. (This prediction of a decline in MRV value is not to be taken as investment advice; those who choose to short MRV assume all risks of doing so.)
+
+Please note that MRV token purchasers and virtual real estate owners assume all of the risks involved in the Macroverse project. These include, without limitation:
+
+ There is a risk of mistakes, errors, and omissions, negligent or otherwise, in the construction and deployment of the MRV token/crowdsale smart contract, and in the construction and deployment of all Macroverse system smart contracts.
+
+ There is a risk that the Macroverse system will not work as expected. This includes a risk of loss, destruction, or theft of MRV tokens, and a risk of takeover of important Macroverse contracts by malicious parties.
+
+ There is a risk that planned changes to the Macroverse platform will not in fact be developed and deployed. In particular, there is a risk that Novak Distributed may choose to discontinue development or maintenance of the Macroverse system.
+
+ There is a risk that Novak Distributed will not use, or will misuse or abuse, its authority to control the operation of the Macroverse contracts, including its unlimited authority to set the terms under which the Macroverse Generator may be queried, and its authority to assign this authority to others. This includes a risk that access to the Macroverse Generator will be limited or revoked, essentially shutting down the Macroverse system. This includes the risk that access to the Macroverse Generator will be made free to all, or will be subject to some other set of terms not based around the MRV token. in In these events or any similar events, MRV token holders will not be compensated.
+
+ There is a risk that Macroverse will not be adopted by game developers.
+
+ There is a risk that MRV tokens or the Macroverse system will not be fit for any purpose, or for the purposes for which they are intended.
+
+ There is a risk that the Macroverse Generator, the MRV token, and/or the Macroverse Registry will be superseded by new smart contracts or other software, in such a way that ownership claims under the previous system are not recognized. This includes a risk that, in updates to the Macroverse Generator, pieces of virtual real estate are created, destroyed, or substantially altered in character.
+
+ There is a risk of failure of, obsolescence of, or attack on the underlying Ethereum system.
+
+ There is a risk of regulatory, legal, or judicial intervention in the Macroverse project, with inherently unpredictable results.
+
+The MRV token is intended to function more like a software license than an investment vehicle. Keep in mind that while buying a video game can be fun, buying many boxed copies of that video game is a poor financial decision. As always, never invest more than you can afford to lose.
+
+4.3 Budget Allocation
+
+The development of the Macroverse system and the success of the MRV crowdsale are intended to be decoupled. Time and money not sourced from the crowdsale have been invested in development, and, if the crowdsale does poorly, will likely continue to be invested in development. Proceeds from the crowdsale, conversely, will not necessarily be reinvested in the continued development of the Macroverse project. The crowdsale is the only point at which Novak Distributed plans to receive any revenue from its work on Macroverse. Some of the proceeds, for example, may be used by Novak Distributed to finance new projects, or to pay taxes on crowdsale revenue. However, of the resources that are dedicated to the Macroverse project, the anticipated allocation is as follows:
+
+ Basic Technology Development: 20% will be allocated to the development of re-usable library code, including a fixed-point Solidity math library and the Macroverse hierarchical RNG, necessary for the delivery of planned Macroverse features.
+
+6
+
+
+
+ Macroverse Generator (MG) Core Development: 40% will be allocated to the development of the core universe-generation logic, defining the Macroverse world and implementing the planned world generation features.
+
+ Macroverse Control Logic Development: 10% will be used to develop the Macroverse platform control logic, including the access control system and the Macroverse Registry's virtual real estate ownership system.
+
+ Developer Outreach and Marketing: 20% will be used to market the Macroverse middleware to developers, collaborate with developers on desirable characteristics for the Macroverse world, and promote the benefits of virtual real estate ownership to players.
+
+ Administration: 10% will be allocated to administrative costs, accounting services, and legal fees.
+
+Note that this allocation is only a projection. The actual allocation may be different.
+
+References
+
+[1] .kkrieger [beta] by .theprodukkt. https://www.pouet.net/prod.php?which=12036. (Accessed on 06/03/2017).
+
+[2] Satoshi Dice. https://en.bitcoin.it/wiki/Satoshi_Dice. (Accessed on 06/03/2017).
+
+[3] What is the cost to store 1KB, 10KB, 100KB worth of data into the ethereum blockchain? Ethereum Stack Exchange. https://ethereum.stackexchange.com/questions/872. (Accessed on 06/03/2017).
+
+[4] Mariah Beem. Level design in video games. https://www.gamnesia.com/articles/level-design-in-video-games, Oct 2013. (Accessed on 06/03/2017).
+
+[5] Ian Bell. Ian bell's bbc elite page. http://www.iancgbell.clara.net/elite/bbc/. (Accessed on 06/03/2017).
+
+[6] Brendan Drain. Eve evolved: Does eve online have the world's largest mmo map? https://www.engadget.com/2013/08/18/ eve-evolved-does-eve-online-have-the-worlds-largest-mmo-map/, Aug 2013. (Accessed on 06/03/2017).
+
+[7] EverdreamSoft. Spells of Genesis - Home. https://spellsofgenesis.com/. (Accessed on 06/03/2017).
+
+[8] Jay Hathaway. The rare Pepe economy is real--and it's suddenly booming. https://www.dailydot.com/unclick/rare-pepe-frog-meme-economy/, Feb 2017. (Accessed on 06/03/2017).
+
+[9] Mark Hendrikx, Sebastiaan Meijer, Joeri Van Der Velden, and Alexandru Iosup. Procedural content generation for games: A survey. ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 9(1):1, 2013.
+
+[10] Joel Lee. How procedural generation took over the gaming industry. http://www.makeuseof.com/tag/procedural-generation-took-gaming-industry/, Nov 2014. (Accessed on 06/03/2017).
+
+[11] Alicia Naumoff. MetaGold: Why Ethereum is a game changer for online gaming. https://cointelegraph.com/news/ metagold-why-ethereum-is-a-game-changer-for-online-gaming, Mar 2017. (Accessed on 06/03/2017).
+
+[12] Alex Newhouse. Making sense of no man's sky's massive universe. https://www.gamespot. com/articles/making-sense-of-no-mans-skys-massive-universe/1100-6441344/, Jul 2016. (Accessed on 06/03/2017).
+
+7
+
+
+
+[13] Ownage Limited. Ownage. http://ownage.io/. (Accessed on 06/03/2017). [14] PayScale. PayScale salary reports. https://www.payscale.com/mypayscale.aspx?pid=
+
+f93bd3b2-71fc-4b40-bb80-5bbd2022e624&wizardid=7&s=1&ft=0, Jun 2017. (Accessed on 06/03/2017). [15] Landyn Pethrus. Middleware in game development. https://software.intel.com/en-us/articles/middleware-in-game-development, Mar 2016. (Accessed on 06/03/2017). [16] Brianne Rivlin. An Ethereum-based gaming marketplace. https://www.ethnews.com/an-ethereum-based-gaming-marketplace, Nov 2016. (Accessed on 06/03/2017). [17] RPGamer . The Elder Scrolls IV: Oblivion interview. http://www.rpgamer.com/games/elderscrolls/elder4/elder4interview.html. (Accessed on 06/03/2017). [18] Ravi Sinha. No Man's Sky PC download size is 2.6 GB. http://gamingbolt.com/no-mans-sky-pc-download-size-is-2-6-gb, Aug 2016. (Accessed on 06/03/2017). [19] SpeedTree. Games - speedtree gallery. http://speedtree.22slides.com/games. (Accessed on 06/03/2017). [20] Francis Spufford. Masters of their universe. https://www.theguardian.com/books/2003/oct/18/features.weekend, Oct 2003. (Accessed on 06/03/2017). [21] THOMASNET.COM. Interactive data visualization, inc. lexington, south carolina, sc 29072. http: //www.thomasnet.com/profile/30236585/interactive-data-visualization-inc.html. (Accessed on 06/03/2017). [22] Upwork. 10 best level design specialists for hire in june 2017. https://www.upwork.com/hire/level-design-freelancers/, Jun 2017. (Accessed on 06/03/2017). [23] Alex Wawro. Sir, You Are Being Hunted, and the advantages of procedural generation. http://www.gamasutra.com/view/news/218371/Sir_You_Are_Being_Hunted_and_the_ advantages_of_procedural_generation.php, May 2014. (Accessed on 06/03/2017).
+
+8
+
+
+
+

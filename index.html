@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Crypto Whitepapers Archive — Search 880+ ICO-era whitepapers</title>
+<meta name="description" content="Searchable archive of 880+ cryptocurrency and blockchain whitepapers with extracted founders, wallet addresses, social links and publication dates." />
+<meta property="og:title" content="Crypto Whitepapers Archive" />
+<meta property="og:description" content="Search 880+ crypto whitepapers by name, team, wallet address, social link or year." />
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;--chip:#1f6feb33}
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+  header{padding:28px 20px 12px;text-align:center;border-bottom:1px solid var(--border)}
+  h1{margin:0 0 4px;font-size:26px}
+  header p{margin:0;color:var(--muted)}
+  .wrap{max-width:920px;margin:0 auto;padding:18px 16px 60px}
+  .searchbar{position:sticky;top:0;background:var(--bg);padding:14px 0;z-index:5}
+  #q{width:100%;padding:14px 16px;font-size:17px;color:var(--text);background:var(--panel);border:1px solid var(--border);border-radius:10px;outline:none}
+  #q:focus{border-color:var(--accent)}
+  .meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin:8px 2px 14px;flex-wrap:wrap;gap:8px}
+  .filters button{background:var(--panel);color:var(--muted);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:12px;cursor:pointer;margin-left:6px}
+  .filters button.on{color:var(--text);border-color:var(--accent);background:var(--chip)}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+  .card h2{margin:0 0 6px;font-size:18px}
+  .card h2 a{color:var(--accent);text-decoration:none}
+  .card h2 a:hover{text-decoration:underline}
+  .year{color:var(--muted);font-weight:400;font-size:14px}
+  .snippet{color:var(--muted);font-size:13.5px;margin:6px 0}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .chip{font-size:11.5px;padding:3px 9px;border-radius:20px;border:1px solid var(--border);background:#0d111733;color:var(--muted);text-decoration:none}
+  .chip.team{color:#7ee787;border-color:#2ea04333}
+  .chip.wallet{color:#ffa657;border-color:#bb800933;font-family:ui-monospace,Menlo,monospace}
+  .chip.social{color:var(--accent)}
+  mark{background:#bb8009;color:#0d1117;padding:0 2px;border-radius:2px}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:24px}
+  footer a{color:var(--accent)}
+  .empty{text-align:center;color:var(--muted);padding:40px}
+</style>
+</head>
+<body>
+<header>
+  <h1>📚 Crypto Whitepapers Archive</h1>
+  <p>Search <strong id="count">880+</strong> ICO-era whitepapers by name, team, wallet, social link or year</p>
+</header>
+<div class="wrap">
+  <div class="searchbar">
+    <input id="q" type="search" placeholder="Search…  try: Vitalik · 0x49aec0 · telegram · 2017 · DeFi" autofocus />
+  </div>
+  <div class="meta">
+    <span id="status">Loading index…</span>
+    <span class="filters">
+      filter:
+      <button data-f="all" class="on">all</button>
+      <button data-f="wallets">has wallet</button>
+      <button data-f="team">has team</button>
+      <button data-f="socials">has socials</button>
+    </span>
+  </div>
+  <div id="results"></div>
+</div>
+<footer>
+  Data &amp; code on <a href="https://github.com/ImMike/Crypto_Whitepapers">GitHub</a> ·
+  For full-text search inside papers, use <a href="https://github.com/search?q=repo%3AImMike%2FCrypto_Whitepapers&type=code">GitHub code search</a> or <code>tools/search.py</code>.
+  <br/>Wallet addresses are auto-extracted and may be examples — verify on-chain. Not financial advice.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+<script>
+const SOCIAL_URL = {
+  twitter:h=>`https://twitter.com/${h}`, telegram:h=>`https://t.me/${h}`,
+  discord:h=>`https://discord.gg/${h}`, github:h=>`https://github.com/${h}`,
+  linkedin:h=>`https://linkedin.com/in/${h}`, reddit:h=>`https://reddit.com/r/${h}`,
+  medium:h=>`https://medium.com/@${h}`, facebook:h=>`https://facebook.com/${h}`,
+};
+let DATA=[], fuse=null, filter='all';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function hl(text, q){
+  if(!q) return esc(text);
+  const terms=q.split(/\s+/).filter(t=>t.length>1).map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+  let out=esc(text);
+  for(const t of terms) out=out.replace(new RegExp('('+t+')','ig'),'<mark>$1</mark>');
+  return out;
+}
+
+function passesFilter(r){
+  if(filter==='wallets') return r.wallets.length>0;
+  if(filter==='team') return r.team.length>0;
+  if(filter==='socials') return Object.keys(r.socials||{}).length>0;
+  return true;
+}
+
+function card(r, q){
+  const pdf='./'+encodeURIComponent(r.file);
+  const txt='./text/'+encodeURIComponent(r.name+'.txt');
+  let chips='';
+  for(const t of r.team) chips+=`<span class="chip team">🧑 ${esc(t)}</span>`;
+  for(const [p,hs] of Object.entries(r.socials||{})){
+    const h=hs[0], u=(SOCIAL_URL[p]?SOCIAL_URL[p](h):'#');
+    chips+=`<a class="chip social" href="${u}" target="_blank" rel="noopener">🔗 ${p}</a>`;
+  }
+  for(const w of r.wallets) chips+=`<span class="chip wallet">💰 ${esc(w.slice(0,10))}…</span>`;
+  return `<div class="card">
+    <h2><a href="${pdf}">${hl(r.name,q)}</a> <span class="year">${r.year||''}</span></h2>
+    ${r.snippet?`<div class="snippet">${hl(r.snippet,q)}</div>`:''}
+    <div class="chips">${chips}<a class="chip" href="${txt}" target="_blank">📄 text</a></div>
+  </div>`;
+}
+
+function render(q){
+  let rows;
+  if(q && fuse){ rows=fuse.search(q).map(x=>x.item); }
+  else { rows=DATA.slice().sort((a,b)=>a.name.localeCompare(b.name)); }
+  rows=rows.filter(passesFilter);
+  $('#status').textContent=`${rows.length} result${rows.length===1?'':'s'}`;
+  $('#results').innerHTML = rows.length
+    ? rows.slice(0,300).map(r=>card(r,q)).join('')
+    : `<div class="empty">No matches. Try a name, a 0x address, a year, or a platform.</div>`;
+}
+
+fetch('search-index.json').then(r=>r.json()).then(d=>{
+  DATA=d;
+  $('#count').textContent=d.length;
+  fuse=new Fuse(d,{
+    keys:[{name:'name',weight:3},{name:'team',weight:2},{name:'wallets',weight:2},
+          {name:'social_text',weight:1.5},{name:'snippet',weight:1},{name:'year',weight:1}],
+    threshold:0.34, ignoreLocation:true, minMatchCharLength:2,
+  });
+  let t; $('#q').addEventListener('input',e=>{clearTimeout(t);t=setTimeout(()=>render(e.target.value.trim()),120);});
+  document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); filter=b.dataset.f; render($('#q').value.trim());
+  }));
+  render('');
+}).catch(e=>{$('#status').textContent='Failed to load index: '+e;});
+</script>
+</body>
+</html>

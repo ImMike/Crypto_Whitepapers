@@ -1,0 +1,1299 @@
+The first blockchain 3.0 ecosystem built on a Turing-complete public chain with decentralized storage, a sharing community and a trustworthy internet for everyone
+
+WHITEPAPER Draft v3.1
+
+
+
+DISCLAIMER
+
+This draft white paper is not the final version and information is subject to change, please always go to the Genaro official website for the latest version. The information is for community discussion only and not legally binding. Please do NOT distribute any part of this white paper without including this disclaimer.
+
+1
+
+
+
+TABLE OF CONTENTS
+
+ABSTRACT.................................................................................................................................... 4
+
+1. INTRODUCTION TO THE GENARO NETWORK................................................................. 1
+
+2. GENARO PUBLIC CHAIN ...................................................................................................... 2 2.1 GENARO CHAIN INTRODUCTION ................................................................................. 2 2.2 GENARO CHAIN TECHNICAL ABSTRACT ................................................................... 4 2.2.1 Receipt Maker ................................................................................................................ 5 2.2.2 Receipt Prover ................................................................................................................ 5 2.2.3 Sybil Attack .................................................................................................................... 6 2.2.4 Nothing at Stake Problem............................................................................................... 7 2.3 GENARO TOKEN................................................................................................................ 8 2.4 GENARO DEVELOPMENT MILESTONES...................................................................... 9
+
+3. GENARO DECENTRALIZED STORAGE NETWORK........................................................ 10 3.1 GENARO STORAGE INTRODUCTION.......................................................................... 10 3.2 GENARO STORAGE TECHNICAL ABSTRACT ........................................................... 13 3.2.1 "Get" and "Set" on the Genaro Network...................................................................... 13 3.2.2 Using Challenge Function in SPoR for Motivation ..................................................... 13 3.2.3 Encode and Extract Files Using SPoR Method ............................................................ 14 3.2.4 Erasure Codes ............................................................................................................... 17
+
+4. THE GENARO ECOSYSTEM ................................................................................................ 18 4.1 GENARO HUB AND LOFT ....................................................................................................... 18 4.2 GENARO ACCELERATOR ....................................................................................................... 23 4.3 GENARO EDEN  THE FIRST GENARO APPLICATION............................................................. 25 4.4 GENARO FUTURE APPLICATIONS ........................................................................................... 29
+
+5. GENARO BUSINESS ANALYSIS ......................................................................................... 33 5.1 CLOUD MARKET ANALYSIS.................................................................................................. 33 5.2 PUBLIC CHAIN MARKET ANALYSIS ........................................................................................ 35 5.3 GENARO BUSINESS ADVANTAGES ......................................................................................... 37 5.4 GENARO NETWORK STRATEGIC MILESTONES ........................................................................ 45
+
+2
+
+
+
+6. GENARO COMMUNITY........................................................................................................ 46 7. LEGAL AFFAIRS AND RISK STATEMENT ....................................................................... 51
+
+7.1 DISCLAIMER ......................................................................................................................... 51 7.1.1 Genaro Project .............................................................................................................. 51 7.1.2 Legal Structure of Genaro Network Project ................................................................. 52
+
+REFERENCE................................................................................................................................ 58
+
+3
+
+
+
+ABSTRACT
+
+Genaro Network is a global blockchain ecosystem development project based in Singapore. Genaro has pioneered the concept of Blockchain 3.0, a platform built around the first Turingcomplete public chain with an integrated decentralized storage network. Blockchain developers will have a one-stop solution to deploy advanced smart contracts and store data simultaneously. The technological ecosystem will contribute to blockchain infrastructure development by establishing common standards for decentralized applications. To support the growth of the ecosystem, Genaro Network will open and operate a series of realworld hubs, with an internal token-based economic model including an in-house accelerator program, in places such as Singapore, Shanghai, and the Greater Bay Area. This combination of blockchain storage infrastructure, decentralized application standards, and a global network of hubs and accelerators will enable the incubation of hundreds, and then thousands, of decentralized applications built on the Genaro Network, becoming the first app store of the blockchain. Genaro is part of the revolution to move from "Cloud" to "Blockchain!" Genaro believes that only when a blockchain can access and analyze big data in the real world can decentralized applications be as useful as Internet applications.
+
+4
+
+
+
+1. INTRODUCTION TO THE GENARO NETWORK
+
+The initial purpose of the Genaro Network is to build a reliable Turing-complete public chain with decentralized storage network. This network will then become the backbone of a new ecosystem of advanced decentralized applications that need better access to big data via blockchain, including the Internet of Things, artificial intelligence, and other technologies.
+
+To support the creation of the storage blockchain and the development of the decentralized application ecosystem, we are implementing the Genaro Hub and Accelerator project, an industryfirst combination of new sharing economy concepts of coliving, coworking, and cocreating. The Genaro Hub and Accelerator provide a place for the Genaro community to form and flourish, through education, cooperation, and empowerment of individuals and teams supporting the Genaro project.
+
+The Hub's coworking areas provide an environment conducive to prototyping and building blockchain projects. The coliving facility allows better team dynamics and is a place to test new blockchain-based concepts. The Genaro Accelerator will enable the development of storage blockchain applications more quickly and with greater synergies between projects. One location will become many. Eventually, the best ideas and applications will scale to the cities and world around them, achieving a society-wide impact.
+
+In aggregate, this is Genaro's master plan.
+
+This white paper, therefore, is divided into the three concurrent sub-projects: The Genaro public chain, the Genaro storage network, and the Genaro Hub and Accelerator.
+
+1
+
+
+
+2. GENARO PUBLIC CHAIN
+
+2.1 GENARO CHAIN INTRODUCTION Genaro Network is the first Turing-complete Public Chain with Decentralized Storage Network, a one-stop solution to deploy smart contracts and store data simultaneously. Genaro provides critical blockchain infrastructure for other blockchain-based solution providers as a replacement for cloudbased storage. We also provide secure storage for individuals. This section explains the basis for how that storage is provided to both providers and individuals.
+
+Picture 2.1 At a basic functional level, the blockchain allows for the safety and security of immutable transaction records, creating transparency and accountability for all who are using the system.
+
+2
+
+
+
+There are many blockchains in existence, public and private, that provide this functionality. Genaro may make use of such chains during the development phase of the Genaro Network. However, we believe that blockchains should be custom-built to purpose. So at a more complex strategic level, part of our plan has always been to create a new public chain as a critical part of the infrastructure of the Genaro Network. The foundation overseeing the development of the network will have the ability to influence the future development of the chain. The chain will also have a unique development community to build new functionality. The following section explains some of the key technical concepts of the Genaro public chain.
+
+3
+
+
+
+2.2 GENARO CHAIN TECHNICAL ABSTRACT The first step of Genaro Network includes two parts: the storage system with SPoR method and the "receipt" system with Ethereum as the provider. Genaro is created for public storage, and the goal of Genaro is to build a public chain which provides decentralized applications (hereinafter DAPPs) and other applications with a decentralized storage space. Technically, the Genaro network public chain is comprised of two major parts: receipt maker and receipt prover, which are explained in detail below.
+
+Picture 2.2
+
+4
+
+
+
+2.2.1 Receipt Maker In the Genaro network public chain, each block is generated by storage activities, and the system uses PoS as the consensus method. The block-forger in PoW, namely the miner in PoW, is dubbed as the "receipt maker" in Genaro network system. Those receipt makers continue to be chosen from the nodes during the operation of the whole blockchain and generate the corresponding receipts for storage activities. The Receipt maker is pseudo-randomly chosen during each time slot. In runtime, Genaro network chooses a receipt maker according to different conditions. Therefore, we have designed a Genaro middleware to regulate those conditions. Each condition has its corresponding initialization, which has already been pre-set in the condition diagram, in case that once a condition appears, the Genaro middleware could accordingly adjust the initialization settings chosen by the receipt maker. 2.2.2 Receipt Prover
+
+Picture 2.3
+
+5
+
+
+
+The "receipt prover" in the Genaro network public chain, is the participator who mainly contributes their calculation power to the "challenge" function in Genaro network. The "receipt prover" needs to prove the storage activities and earn corresponding awards through calculation, such as to ensure the Sentinel in Genaro network is located at the right position or to examine whether the storage smart contract is performed in accordance with the definition of the receipt. Since there are multiple encryptors, every two consecutive challenges received by the prover should be different. Meanwhile, the selection mode of the Genaro receipt prover is set under the Genaro middleware, and the whole selection procedure is controlled by a preset condition diagram and the middleware.
+
+In the development of public chain, there are some possible problems that need to be solved. The major two problems: the Sybil attack problem and the `nothing at stake' problem, which are explained and addressed below.
+
+2.2.3 Sybil Attack
+
+As for this multiple identity issue, the "receipt maker" could be randomly chosen out through a condition diagram and the receipt maker needs to leave its token as a pledge for participating in the selection procedure. If any fake or bad makers want to attack, they will lose a large number of assets for leaving more tokens as a pledge. In this case, Genaro adopts an economical consensus system in the "receipt maker" part to address this issue. About the "receipt prover" part, since it could prove itself, fake provers would not be distributed to the right decryptor in the challenge process. Under this condition, due to the redundant storage method of Genaro, it would require at least half of the connect provers to be fake provers. After certain verification procedures, the middleware would screen out the fake "prover."
+
+6
+
+
+
+2.2.4 Nothing at Stake Problem In Genaro's network, the solution for this problem is to penalize the incorrect acts. Validators in the PoS system all have an initial value of zero as the contribution value in every new block. When a validator creates a block on the wrong chains or votes for blocks on both right and wrong chains, it would be deemed as an attack and the penalization would be triggered to reduce the contribution value of the validator to be a negative one. At the end of each block, all contribution value would be considered and calculated, and Genaro middleware would exclude the bad receipt maker. Thus the right block could continue to keep on running. Genaro implements a storage network and transaction ledger, in which storage is the functional part, and the ledger is used to record transactions. Clients may check the status of storage transactions through the browser.
+
+7
+
+
+
+2.3 GENARO TOKEN The Genaro token's ticker is "GNX." The GNX token is the oxygen that powers the brain and heart of the Genaro Network. It is of course used by the storage platform as a way to compensate and pay for leasing space, but GNX is going to be scalable across all of the DAPPs on the Genaro Network, allowing people and organizations to use them in multiple places and creating a parallel economy. Of course, some DAPPs will use their own tokens, and that is fine as well, but we will create convertibility mechanisms to allow GNX to be exchanged for other tokens and vice-versa. Moreover, of course, there will be a way to get GNX to or from fiat currency, but the primary use of GNX should be within the Genaro ecosystem. The GNX token is not a securities token. Therefore it does not offer any dividends or profits, nor voting rights. We do not want the token used for speculative purposes. The main purpose of the GNX token is a medium of exchange within the Genaro Network. As such, we define it as a utility token.
+
+8
+
+
+
+2.4 GENARO DEVELOPMENT MILESTONES
+
+Picture 2.4 The Genaro idea was first proposed by co-founders Larry Liu and Waylon Wu in March 2016. During the past eighteen months, the Genaro Vulcan and Epsilon plans have been accomplished successfully. The Genaro team is now working on what is known as its Romulus plan and Eden plan--building the decentralized storage network for DAPPs and user-friendly applications for users to share their unused storage space. Finally, the Genaro Altair plan will see the creation of the whole blockchain 3.0 ecosystem, where DAPPs can be easily deployed via the Genaro public chain and storage network.
+
+9
+
+
+
+3. GENARO DECENTRALIZED STORAGE NETWORK
+
+3.1 GENARO STORAGE INTRODUCTION
+
+The Genaro Network has the following three key features:
+
+Genaro is a Decentralized and Secure Storage System
+
+Genaro's network stores important data for DAPPs and, for individuals, stores files including photos, videos, documents and all other kinds of data, through decentralized networks instead of centralized services. Since data stored on Genaro's network is both encrypted and separated into pieces that are randomly distributed to nodes managed by the Genaro blockchain, no one can read or rewrite your data without your private key. Moreover, you can set precise security configurations according to your desired data security level.
+
+Genaro is a Permanent and Efficient Server
+
+The Genaro Network stores your data on multiple nodes of a blockchain instead of on a single node. This procedure ensures all your data is retrievable at any time without the possibility of data loss. Also, Genaro always tries to find the nodes nearest to you to store your data. Thus, you can access your data much more efficiently than from a remote central processing unit.
+
+Genaro is a More Affordable Storage Solution
+
+For the usage price, Genaro will be cheaper than centralized storage service companies like Google Drive, Dropbox or Ali Yun. This is because Genaro network opens a fully competitive market for storage and frees unused storage space across the entire domain of Genaro network personal users and the excess storage and bandwidth of a variety of commercial providers. Centralized storage companies have to host a large number of centralized processors and storage units at both a high
+
+10
+
+
+
+fixed cost for hardware and high variable cost for service, electricity and network bandwidth. Genaro takes advantage of unused storage (and distributes costs for electricity and bandwidth), across the community's devices as well as excess capacity from commercial service providers.
+
+The Genaro Public Chain uses PoS (Proof of Stake) as consensus, and creatively uses the SPoR (Sentinel Proof of Retrievability) algorithm as its storage consensus, which could increase both public chain scalability and file transferring speed. Moreover, Genaro applies game theory to a sharing economy business model, thereby establishing a fairer rewards system for nodes and provides end users with a private, efficient, economic, secure and permanent storage space and sharing community.
+
+Genaro Network is also a secure storage and sharing community for individuals. The mission of the Genaro Project is to return the power of data to the people. The Genaro community of users may utilize the Genaro network as their private and permanent cloud storage platform more efficiently and affordably than existing centralized approaches.
+
+To classify Genaro Network design logic and target users briefly:
+
+Storage Sharer: all individuals can become a storage sharer and share their unused storage to earn GNX in reward.
+
+Challenger: Challengers can share their computing power to earn GNX as reward, the computing power is used for both SPoR (Sentinel Proof of Retrievability) and PoS (Proof of Stake). A Genaro challenger is like a Bitcoin or Ethereum miner. The SPoR process also helps to choose the "stake node" for PoS process.
+
+Storage User: all individuals can use Genaro Network as personal storage, by doing so, they need to pay both the Challenger and Storage Sharer GNX as fees.
+
+11
+
+
+
+Developer: A developer could build applications on Genaro Network by deploying smart contract on Genaro Public chain and store user data on Genaro decentralized storage, by doing so, developer needs to pay both Challenger and Storage Sharer fees. The four parties above make Genaro Network a sharing community and a trustworthy internet that everyone can benefit from. Also, they make Genaro Network an ecosystem that blockchain applications could be built on and everyone will have access to the DAPPs.
+
+12
+
+
+
+3.2 GENARO STORAGE TECHNICAL ABSTRACT Genaro decentralized storage network implements a storage network and a transaction ledger, in which storage is the functional part, and the ledger is used to record transactions. Clients may check the status of storage transactions through the browser. 3.2.1 "Get" and "Set" on the Genaro Network There are two basic transactions on the network, Get and Set. Set transactions add files to network storage and Get transactions retrieve files previously stored on the network. Both basic transactions will generate new transcripts on the transaction ledger. 3.2.2 Using Challenge Function in SPoR for Motivation In a decentralized storage network, the traditional verifiers and provers turn into users and hosts, respectively. The hosts are not as credible and stable as they should be. With such hosts, Genaro tends to store the data on the network securely. So, we do have encryption for files, redundancy for storage and, most important, the motivation for Challengers.
+
+Picture 3.1
+
+13
+
+
+
+In Genaro, unlike other traditional methods in which the verifiers provide challenges, the challenge function is outsourced to nodes in Genaro for motivation. These nodes in Genaro are dubbed as "challengers" who must prove that they have stored the set of "challenge" pieces. For example, if one user wants to extract a file from a host in the Genaro network, it has to pass the challenge function. The challenger has input state variable  which is initially set to 1 and randomly picks the challengers repeatedly for N times and then there will be N different sentinels. After that, the host needs to respond to a single challenge consisting of N positions, then determine the N sentinels and return the value, and the process could be done in parallel. For the verifying function, it is simple to use the challenging pair to verify whether the host has returned the correct values of corresponding sentinels. 3.2.3 Encode and Extract Files Using SPoR Method Encoding and permuting methods are used for file encryption. In the first step of encoding, the original File F is first carved into k blocks, then error correcting code (n,k,d) is applied to these blocks, then these blocks will add up to a total of n/k blocks. After that, Genaro uses a tweakable block cipher for encryption and then permutes the bunch of blocks to finish encoding and, also, generates sentinels and appends these sentinels to the designated positions. Since it uses the error correcting code and a block cipher, the file can be corrected later.
+
+14
+
+
+
+Picture 3.2
+
+The permutation step in our protocol serves two purposes. First, it randomizes the placement of sentinels so that they can be located in constant time complexity and store the sentinel generation key dynamically.
+
+Although PoR construction requires just one single permutation, it is still possible to batch file accesses to some extent. In other words, to precompute a sequence of accesses and partition them into localized groups similar to batch sorting.
+
+The second purpose is related to error correction. In principle, we can treat our entire file as a single message in an error-correcting code with a large minimum distance, e.g., a Reed-Solomon code. In practice, however, such coding may be challenged--even for erasure-coding. The
+
+~
+
+Extracting step requires the multiple , which is already redundantly stored in the network. Then, reverse the encoding step.
+
+The bandwidth could be modified in this step. The approach is for the host to compute an XoR value,
+
+15
+
+
+
+ = 
+
+
+
+ =1
+
+
+
+
+
+
+
+It is helpful for the host to transmit a second value, 0, and an XoR over a random subset of {1, . . . , }which can be designated by the user. For the sake of efficiency, the user can specify this subset by means of a pseudorandom seed . The function extract can thereby recover each data block by rewinding the host and challenging it repeatedly with different values of  in each set of block locations.
+
+
+
+Picture 3.3 An interesting feature of XoR is that it can be employed for compression in a hierarchical PoR
+
+~
+
+setting. Suppose that a host breaks  into pieces and distributes the pieces among a collection of subordinate hosts, once receiving a set of challenges, the primary host can parcel them out appropriately to the subordinates. Each subordinate can return an XoR of its respective responses, which the primary host itself can then collect XoR together as its response to the user. This process is transparent to all the users and can be operated recursively over a tree of hosts.
+
+16
+
+
+
+3.2.4 Erasure Codes Erasure code should be resilient against adversarial erasure. Reed-Solomonstyle erasure codes can be constructed for arbitrary rates allowing recovery of the original file from any fraction of the encoded file blocks. The code matrix used can be made public, and any user can apply the decoding procedure, which shows its public retrievability. The downside of Reed-Solomon codes is the time required for encoding and decoding. For an n-block file, both of these procedures will take O (n^2 ) time. Although one would like to decode to have linear performance in n, no codes are known that provide linear decoding time in the presence of adversarial erasure. To make use of these codes, we scramble the encoded file blocks so that the server can only choose randomly erasing blocks. It is crucial that the server not know the secret used for this scrambling step, which unfortunately makes public retrievability impossible. So, we are using the scrambling operation: First, encode the file using the linear-time code. Second, permute the blocks of the file using a pseudorandom permutation over the domain [1, n], where n is the number of blocks in the encoded file. Third, encrypt each block independently using a tweakable block cipher like XEX or EX, with the block index as the tweak; store the blocks output by this procedure on the server.
+
+17
+
+
+
+4. THE GENARO ECOSYSTEM
+
+The Genaro Network, as a digital medium, has a real-world equivalent, the Genaro Hub, around which a variety of interactions take place. This includes coworking, where teams do the work in a stimulating environment; coliving, where members of the Genaro community can reside, support, and interact with each other; and cocreating, which refers to the idea of a synergistic collection of people, organizations, and technologies that complement each other to create a much bigger outcome. In this case, the bigger outcome is redesigning and rebuilding the world around us to better suit the needs of a modern, socially conscious urban environment and society, all to realize the future made possible by blockchain and the Genaro Network.
+
+4.1 GENARO HUB AND LOFT
+
+The Genaro Network is represented in the real world by the Genaro Hub. As a not-for-profit foundation, Genaro will operate the Hub in the structure of a social enterprise. The Hub is a separate revenue-generating entity that is, on the one hand, a for-profit business operation tasked with delivery of services to its customers--the Genaro community and external individuals and organizations--while, on the other hand, being focused long-term on achieving the mandate of social change set out in the overall Genaro vision of returning data to the people. It will achieve the latter by channeling a portion of its profits from operations and other resources into supporting the Genaro community.
+
+The Genaro Hub is the world's first coworking space built around an ecosystem that utilizes the ERC-20 tokens. The organizations and individuals in the Genaro Hub will be able to transact most types of typical interactions utilizing one or more features of the Genaro Network. Therefore,
+
+18
+
+
+
+internally, it will operate somewhat on the basis of a token-based economy with GNX as the medium of exchange.
+
+Externally, the GNX tokens will utilize protocols for price discovery and liquidity against a basket of other related tokens to provide cross-platform convertibility, as well as exchange-based trading of tokens for other tokens valued in fiat currency. These options will be available for both incoming and outgoing transactions, allowing external organizations and individuals to utilize services inside the Hub by acquiring tokens on the market, while organizations and individuals within the Hub may do the opposite to interact with others outside the Hub.
+
+In practical respects, it will operate as coworking spaces do today, with hot desks, private offices, meeting rooms, shared common areas and event space, health and wellness amenities, and shared services for companies in the hub.
+
+Health and wellness amenities include:
+
+ Variety of healthy snacks, drinks, and foods available
+
+ Rest areas for taking a break, including sleep pods
+
+ Recreational facilities for enjoyment and reducing stress, including: ping pong, yoga, and exercise equipment.
+
+Shared services include:
+
+ FabLab (3D printers/scanner, laser cutter, CNC router, prototyping materials)
+
+ Legal, HR, and Finance Team
+
+ In-house graphic design / UX creation
+
+19
+
+
+
+ Corporate partners
+
+ Public Relations / Events Team
+
+All work together to foster a positive environment designed for efficiency and interaction and this is now a proven and acceptable model of modern work practices, as evidenced by the success of such companies such as WeWork. The difference is that all the above amenities and services will be provided under the token-based economy that Genaro is pioneering.
+
+Where will the Hub be located?
+
+The Genaro team is currently looking at multiple sites as the potential location, with several possibilities, including China, Singapore, Japan, and the United States, in cities such as Shenzhen, Shanghai, Suzhou, Changsha, Hangzhou, Singapore, Tokyo, San Francisco, and London. Also, locales that are especially forward-thinking in regards to embracing blockchain-based economic systems (e.g., Estonia) will be approached for partnerships and collaboration.
+
+Who will operate the Genaro Hub?
+
+Initially, a team of local managers selected by the Genaro foundation will run the first Hub. At appropriate times and according to business needs, other foundation-run locations will be created, to foster a truly global community.
+
+Additional hubs will be created with cooperative agreements, community involvement, and other models similar to how today's Impact Hub operates globally. Any community that wants to embrace the values and operations of Genaro will be welcome to join the open source project and participate in the Genaro-based economy.
+
+What kind of organizations will be found in the Hub?
+
+20
+
+
+
+Any individual, organization, business, government or other entity which requires fast, easy, safe access to data  in other words, just about everyone on some level  could potentially be part of the Hub. This would include individual community members, startup teams, corporate and government project-based teams, and others utilizing the Genaro Network in some way.
+
+How does the Hub's internal economy work?
+
+The Genaro Network is a robust storage blockchain utilizing ERC-20 standard tokens called GNX. Using GNX tokens, individuals will be able to utilize services, both those of the blockchain, (such as storing their data or accessing applications), as well as to utilize the Hub's internal services which will include: food and beverages, lodging, and other forms of sharing economy interactions with other Hub members.
+
+This system follows best practices from the proven models of community currencies, used in neighborhoods and small towns throughout the world. Genaro will take this concept a step further, enabled by recently established protocols and decentralized applications that allow price discovery and liquidity across different tokens, to make the Genaro economy scale not only throughout its hub network but also across platforms. No longer will a community currency be limited to a small physical area or a single provider.
+
+How will people get GNX tokens?
+
+There will be several ways of acquiring GNX. First, members of the community at large (which includes both individuals and organizations), can work individually or together with others to earn tokens in exchange for volunteering to take on work that needs doing. This can include both technical work, such as contributing to the Genaro Network development (e.g., "bug hunting" and other rewards), as well as operational work (e.g., helping to run the various aspects of the Hub).
+
+21
+
+
+
+Other methods of gaining tokens will include trading for them with other useful tokens, trading real-world durable objects needed by the Hub and its community (e.g., equipment), and nondurable goods (e.g., a farmer trading their produce or a t-shirt maker trading clothing). Also, GNX will be granted to individuals and organizations as "seeding" to foster the development of the community.
+
+As part of its revenue-generating social-enterprise structure, the Hub will also operate two major services, the Loft and the Accelerator.
+
+Genaro Loft
+
+A new trend of the social economy is the concept of coliving. Different from having roommates, coliving embraces the idea that people who are working together can also live together, enabling better communication, camaraderie, and work effectiveness.
+
+Long a part of Silicon Valley-style startups where founders work and live side-by-side, more and more people are starting to embrace flexible living arrangements. These trends include long-termstay hotels such as Zoku in Amsterdam, which caters to an eclectic, creative crowd of travelers and resident entrepreneurs, as well as non-resident community members who come to the space to work and interact, along with people just using the hospitality services. Alternatively, sharingeconomy collectives, like the Embassy Network, a group of houses and apartments throughout the world that are available for members to share and use when they travel, are another similar model. Moreover, this even includes more consumer-oriented, but still disruptive, accommodations, such as Airbnb.
+
+Genaro will implement a coliving service using the best practices of all of the above. This service will provide members of the Genaro community a place to stay, short-term or long-term. Initially, this service will look something like shared apartments in the same block, close to the Hub. Later,
+
+22
+
+
+
+the Loft will be an integrated part of the Hub, located in the same building, and, like coworking, featuring flexible-use bunks in dormitory style rooms, private rooms for individuals, shared rooms for couples and teams, and other formats. Shared facilities can include communal living, dining, entertainment, and exercise areas. Shared services at the Loft will include the group sourcing of needed items, food, and amenities.
+
+As with the Hub, the economy of the Loft will be based on the Genaro token. The token will act as a medium of exchange for the use of the Loft services, and be a part of the dynamic interactions between the community to experience a new sharing-economy lifestyle.
+
+4.2 GENARO ACCELERATOR
+
+One of the key differences between the Genaro Hub and other coworking/coliving spaces will be the Accelerator. The Hub exists to support the growth of the Network, acting as a place to work and collaborate, for individuals, teams, and organizations connected to the Genaro storage blockchain network. That alone is already a powerful tool for collaboration, but Genaro is also going to create the Accelerator, an incubator specifically designed to foster the development of blockchain enterprises that use the Genaro storage blockchain and token in the following ways:
+
+- Genaro smart contract, storage network integration, and other technical help
+
+- Amending and advising on tokenomics, including whitepapers, token purchase agreements, business plans, or other documentation
+
+- Advising on legal and financial issues, including token distribution and development strategy
+
+23
+
+
+
+- Marketing and media resources and strategic partnerships The Accelerator will run in the form of batches of entrants, 4-6 teams or individuals per threemonth Acceleration cycle. During the cycle, the entrants will receive shared services including business training and mentorship, blockchain programming and development support, crossmarketing and public relations guidance, government and legal consultation, and other assistance--including seed Genaro tokens for them to utilize the shared services in the Hub and Loft, as well as to support external growth through interaction with the traditional economy. The focus of the Accelerator will be on applications (DAPPs) that are created specifically to work with the Genaro Network, but the variety of such companies is not limited to storage alone and could be extensible to any application that needs to store and use data. Therefore, Genaro Accelerator will also focus on some big data applications in the consumer space, as well as those in industries such as:
+
+ Energy efficiency and management  Urban mobility and smart city technologies  Smart Building technologies and automation In conclusion, the combined physical ecosystem--the Hubs, Lofts, and Accelerators--enables the Genaro Network to realize the future of Blockchain 3.0.
+
+24
+
+
+
+4.3 GENARO EDEN  THE FIRST GENARO APPLICATION Genaro Eden is the first Genaro Application developed by the Genaro development team. Genaro Eden aims to provide everyone a trustworthy internet with a user-friendly interface while developing the Genaro Network sharing community. Through Genaro Eden, the storage nodes of Genaro Network are acquired. Therefore, Genaro Eden is not only an application but also the infrastructure of the Genaro Network. The Genaro Eden frontend uses the Electron framework to build cross-platform desktop applications. Genaro caters to users' existing habits of centralized cloud storage formats by providing them with similar upload, download and online file editing functions and interfaces. Users can use Genaro at any time via smart phone, PC or Mac. Users could regard Genaro as: . A permanent file system which can also store all user history that users could access anywhere in the world via a smart device. . A secure file transfer tool by means of which users can encrypt and share their files with others in a way that no one can hack. File transferring costs are much lower than file storing costs because file transferring only uses MD5 to verify data integrity while file storing requires verifiers to run the SPoR algorithm to reach consensus.
+
+25
+
+
+
+Picture 4.1 Technical Design Features The idle hard disk is based on the blockchain technology, and it is managed by cloud-based configuration, with excellent transmission speed, simple interface, and good interactivity. The Main Functions 1. basic management, including hard disk management and hard disk points management; a detailed view of the information about the management of the hard disk; and how to modify it. 2. capacity statistics; count the capacity of the remaining hard disk. 3. system management; manage related rental hard disk space points, income, and other settings.
+
+26
+
+
+
+Picture 4.2 File Storage Is Easy to Understand
+
+Drag Word, PPTX, PDF, PSD, MP4 and other formats of the file to the "+" icon to upload them to the Genaro personal space. The uploaded files can be deleted, renamed, shared, and storage address can be changed.
+
+
+
+Picture 4.3
+
+
+
+Picture 4.4
+
+
+
+27
+
+
+
+File Upload Can Be Traced Back Click the "History" button on the left side of the management bar to view the historical operations of any file, including the basic information of the file (upload time, size, type, and name. Customize the File Security Level Click the "Upload" button on the left side of the basic management bar; you can also upload files in different formats, and customize the storage folder and file security levels. There are three file security levels; you can customize the security level according to your personal need.
+
+Picture 4.5 Share Space to Win Rewards Click the "Share My Storage" button on the left side of the basic management bar to access a detailed chart depicting your use of shared space over time. Here, you can visualize your usage rates on Genaro as well as in your personal hard disks, and get a quick look at your GNX income and balance.
+
+28
+
+
+
+On the right side of the page is the user column, where you can view your points income, space sharing conditions, and other information. From this column, you can quickly share personal storage space, and customize the expected points income.
+
+Picture 4.6
+
+4.4 GENARO FUTURE APPLICATIONS Genaro's storage capability is managed by the Genaro public blockchain and therefore can be labeled as a "Storage Blockchain." Data itself is only stored in limited quantities directly on-chain. Rather, the vast majority of the data is stored on decentralized nodes as encrypted slices that are distributed and redundantly stored, so they are safe, secure, and fully recoverable even in the case of nodes going offline. Based on Genaro's API and open standards, participants in the Genaro development community may create their own storage-related applications, and Genaro itself may provide more powerful applications. For example:
+
+29
+
+
+
+A decentralized computing machine on blockchain
+
+Genaro may be used as a virtual machine base, upon which users may install and run any application. This will be a bold revolution for cloud computing as well. In this way users can use secure decentralized computing power anywhere via any smart device.
+
+A secure market for data and the right to use data
+
+As the Genaro community can share storage with each other, they can also share their content in storage to earn rewards. The content could be any file or data that users are willing to share. Thanks to blockchain-based encryption, users can also share the right to use their data.
+
+For example, if User A wants to run certain algorithms to get certain results through using User B's data, A does not need to own B's data itself. All A has to do is to send his algorithms and requirements to the market, then the market will run the algorithms based on B's data and return to A the results.
+
+In this way A shall get results without accessing B's data, and B protects their data's confidentiality and security and earn rewards at the same time. This application will ensure everyone benefits from the Big Data era without fear of loss of data value through unauthorized trading.
+
+A decentralized wallet or exchange
+
+The most significant problem for any wallet or exchange is security, and there have been too many cases of keys being stolen. Nowadays there are more and more decentralized wallets and exchanges on the market, like Etherdelta. Genaro Network is a perfect place to increase the security level of exchanges as it stores private keys in a decentralized way.
+
+A decentralized content sharing application
+
+30
+
+
+
+Lots of internet content sharing applications in our life, like Facebook and Twitter, encourage the content sharer and protect copyright. There are certain blockchain applications like SingularTV that allow for content sharing. However, they still need to store data on a centralized server like Amazon. Recording transactions on the blockchain are enough for paying a fee but not enough to protect the content itself. The applications could instead use decentralized servers such as IPFS but this will increase a developer's workload compared with using Genaro Network, which integrates a Turing-complete public chain and decentralized storage capabilities together. Most inopportunely, the Ethereum plus IPFS solution has a scalability problem and slow file transferring speeds.
+
+Any decentralized applications that require data storage could be built on Genaro Network for the best performance, but note that Genaro is the infrastructure technology for those applications, not the provider of data itself. This network is not intended for use as any sort of BitTorrent replacement or to support the illegal sharing of copyrighted works. Genaro will follow any regulators' requirements for KYC and other policies to detect and remove non-compliant applications.
+
+The Genaro Network beta version will be released in early December, after which blockchain applications could start to be built on it.
+
+The first Genaro Hub will be ready for move-in by early December as well. We will provide a coworking space, blockchain community events and meet-ups, technology tutorials and education and instruction on how to build applications on Genaro, and more. We currently plan to start in Singapore, followed by Shanghai, Seoul, Moscow and then Silicon Valley, but more locations will be planned later in 2018.
+
+31
+
+
+
+The Genaro Network Business version will be released in the summer of 2018 and all previous DAPPs on Genaro will be transferred to the Business version. This will be handled by the Genaro development team. In conclusion, Genaro is committed to build a blockchain ecosystem upon which numerous applications can be built, analogous to how the contemporary Internet ecosystem has been built upon by different kinds of applications. Genaro is the next generation platform which is reliable and decentralized.
+
+32
+
+
+
+5. GENARO BUSINESS ANALYSIS
+
+This part covers the business case for the Genaro Network, an overview of the market size and dynamics, along with a competitive analysis and list of Genaro's strengths versus other currently in-use solutions. Genaro Network is the revolution to move from "Cloud" to "Blockchain," so the following analysis will focus on both the cloud and blockchain industries.
+
+5.1 CLOUD MARKET ANALYSIS
+
+A network that provides resources is commonly called a "cloud." With the development of Internet technology and the explosive growth of global data in recent years, cloud computing technology has emerged. Cloud storage then is a way of storing data based on cloud computing technology.
+
+Cloud storage technology has been fully developed and used in many fields in recent years due to its advantages, such as security, affordability, and convenience. Cloud storage which gathers various low-cost storage devices to work together through the Internet, a distributed file system, and so on, provides a system of data storage and services access.
+
+The development of cloud storage experienced three stages. The first stage was to accumulate primitive techniques from 1945 to 1969. During this period, the invention of binary, the computer and other concepts promoted the development of telecommunications by packet switching technology. These laid the foundation for the development of cloud storage. In the second stage, cloud computing has witnessed evolvement and development since 1961. This continued to evolve through various formats and improvements all the way up to modern day Internet-based services and distributed computing.
+
+The third and present stage developed as a result of the availability of cloud computing technology in the late 1990s, and platforms such as Amazon Web Services in 2005. Soon after that, Amazon
+
+33
+
+
+
+launched Amazon Simple Storage Service a new class of cloud storage products was officially available. Cloud computing services developed rapidly in the global market with North America accounting for the biggest market share. The top three operators are Amazon S3, Microsoft Azure, and Google Drive. Since 2016, Amazon has ranked the number one in the global market, and its AWS revenue reached $12.2 billion.
+
+Chart 5.1 Global Cloud Computing Market Forecast (2015-2020)
+
+In 2016, Internet industries used cloud service with the highest frequency. The top five industries which used cloud services were gaming, e-commerce, finance, online video, and mobile phones. With the demand for security of Big Data storage, cloud storage providers begin to integrate various searching, application and cloud storage techniques. Cloud storage technology will improve itself in data access, security and convenience.
+
+34
+
+
+
+Cloud storage is not just a simple mass storage, but a storage revolution in the era of cloud computing. With the improvement of cloud storage's security, reliability and stability, it will bring more opportunities and challenges to people's lifestyles.
+
+5.2 PUBLIC CHAIN MARKET ANALYSIS
+
+Among all blockchain products, a public chain always has much higher usability and utility than a blockchain application alone, because a public chain means the potential for a scalable ecosystem that multiple DAPPs could be built on.
+
+[NB: Below are some summarized data based on "ICO Market Research: The Leading Blockchain Platforms Of ..." ICO Watchllist, N.p., n.d. Web. 26 Oct. 2017 https://icowatchlist.com/blog/icomarket-research-leading-blockchain-platforms-2]
+
+Also since almost all ICOs require the processes of token creation and allocation, there comes the need to make use of a blockchain to power the initial token offering (i.e., token sale or initial token offerings, also sometimes referred to as an ICO, initial coin offering) and its tokens. Here are some examples:
+
+The Ethereum Blockchain has so far been quite popular with the majority of token sale projects. Approximately 56.83% of the 400+ token sales made use of this Blockchain.
+
+The Waves Blockchain came in a distant third, as only 2.20% of digital projects have made use of it thus far. Waves was specifically designed to assist projects to run their own token sales with comprehensive features such as cost-effective value transfer and an effective decentralized exchange for tokens being a few of its many attributes.
+
+35
+
+
+
+Bitshares (0.88%) which is a blockchain mainly focused on the real financial sector Rootstock (0.88%)  the first open source blockchain platform equipped with a 2-way smart contract which is pegged to Bitcoin and also rewards bitcoin miners.
+
+As is known, the larger user base a network has, the more utility value there is. Moreover, a public chain normally does not have direct end users, but the applications built on it will bring many users, normally much more than a single application. The most valuable blockchain projects are public chains as well, and all top ten blockchain projects are public chains, supporting the case for a Genaro public chain to add value and be a source of growth for the community.
+
+Table 5.2
+
+
+
+# Name
+
+
+
+Market Cap
+
+
+
+Price
+
+
+
+Volume (24h)
+
+
+
+1 Bitcoin
+
+
+
+$88,629,653,764 $5329.30 $2,015,570,000
+
+
+
+2 Ethereum
+
+
+
+$28,636,129,657
+
+
+
+$300.90
+
+
+
+$579,066,000
+
+
+
+3 Ripple
+
+
+
+$8,784,651,433 $0.227986
+
+
+
+$449,243,000
+
+
+
+4 Bitcoin Cash
+
+
+
+$5,599,664,106
+
+
+
+$335.25
+
+
+
+$858,613,000
+
+
+
+5 Litecoin
+
+
+
+$3,006,884,676
+
+
+
+$56.28
+
+
+
+$229,981,000
+
+
+
+6 Dash
+
+
+
+$2,175,505,484
+
+
+
+$285.18
+
+
+
+$41,465,100
+
+
+
+36
+
+
+
+# Name 7 NEM 8 NEO 9 Monero 10 BitConnect
+
+
+
+Market Cap
+
+
+
+Price
+
+
+
+Volume (24h)
+
+
+
+$1,869,363,000 $0.207707
+
+
+
+$3,044,910
+
+
+
+$1,520,700,000
+
+
+
+$30.41
+
+
+
+$82,502,900
+
+
+
+$1,355,084,383
+
+
+
+$88.95
+
+
+
+$45,761,700
+
+
+
+$1,331,167,431
+
+
+
+$184.71
+
+
+
+$12,319,600
+
+
+
+5.3 GENARO BUSINESS ADVANTAGES Genaro Advantages over Cloud Compared with the centralized server model used by providers such as AWS, Aliyun, and others, Genaro Network is a more private, more efficient and more affordable permanent storage solution. First, Genaro uses a sharing economy business model to ensure the market price is as low as possible. Second, Genaro is decentralized, which means no single company can access your data, and no one knows where your data is stored. In short, your data is absolutely private and secure compared with that in centralized storage. Third, Genaro uses artificial intelligence optimization algorithms to pick up most recent nodes for users to make sure the highest efficiency.
+
+37
+
+
+
+Lastly, Genaro is a marketplace, and everyone can earn rewards by sharing unused storage space, whereas users have no chance to make money from centralized cloud companies. In fact cloud storage users have to pay increasing costs as cloud storage providers realize that users will pay a monthly fee to prevent the deletion of his or her data, using psychosocial fear as a purchase motivation. Instead, Genaro offers a collective of devices provided by the community, which takes advantage of excess capacity at several points in the distribution of global network services to offer a better solution at a much cheaper cost.
+
+Chart 5.3 Genaro Business Advantages
+
+Genaro Advantages over other Decentralized Solution Solutions Regarding storage solutions, Genaro's competitors are Storj, Sia, Madesafe and IPFS. However, all of them only solve storage, and they either do not have their own public chain or their public chain is not Turing-complete. This means users can only use them for storage space but cannot deploy a smart contract, or build applications, on them directly. Developers need to write smart contracts on other chains like Ethereum and write the storage part separately, using a traditional
+
+38
+
+
+
+cloud provider or something like IPFS, but this is unwieldy. Genaro provides a one-stop solution to save developers a lot of time, but more importantly, our unique consensus mechanism makes the public chain more scalable and the storage network more efficient at the same time.
+
+Besides offering decentralized storage, Genaro has many advantages regarding efficiency and more:
+
+Table 5.4
+
+Storage Ecology
+
+
+
+Genaro Network Sia
+
+
+
+Maidsafe
+
+
+
+Storj
+
+
+
+IPFS
+
+
+
+Construct a
+
+
+
+Currently have
+
+
+
+Have no worldwide Have independent Have established
+
+
+
+decentralized
+
+
+
+independent storage upload and
+
+
+
+storage community API and community
+
+
+
+storage network
+
+
+
+community
+
+
+
+download tools
+
+
+
+ecology where the
+
+
+
+developer can create
+
+
+
+DAPP and combine
+
+
+
+the big data storage
+
+
+
+with the blockchain
+
+
+
+smart contract
+
+
+
+technology
+
+
+
+Table 5.5
+
+39
+
+
+
+Core Technology
+
+
+
+Genaro Network
+
+
+
+Sia
+
+
+
+Maidsafe
+
+
+
+Storj
+
+
+
+IPFS
+
+
+
+Smart Contact+P2P+SpoR+ Challenge Mechanism+Public Chain Development
+
+
+
+Proof of Storage+File Contracts
+
+
+
+XOR Close Group Proof of Storage, PoReg+PoSt
+
+
+
+Consensus (not a blockchain one)
+
+
+
+Withou contract
+
+
+
+zksnark as permutation
+
+
+
+Table 5.6
+
+Reading Efficiency
+
+
+
+Genaro Network Sia
+
+
+
+Maidsafe
+
+
+
+Storj
+
+
+
+IPFS
+
+
+
+Extremely high (user-defined); prioritize to select the nearest node
+
+
+
+1Gb/day by
+
+
+
+Focusing on
+
+
+
+No rewarding
+
+
+
+No idle cost,
+
+
+
+excluding upload efficiency and using bandwidth, therefore upload/download
+
+
+
+and download,
+
+
+
+non blockchain
+
+
+
+can not achieve
+
+
+
+speed reaches 5Mb/s
+
+
+
+which is relatively
+
+
+
+efficiency
+
+
+
+high
+
+
+
+Table 5.7
+
+40
+
+
+
+Security Level
+
+
+
+Genaro Network Sia
+
+
+
+Maidsafe
+
+
+
+Storj
+
+
+
+IPFS
+
+
+
+Extremely high
+
+
+
+No user define
+
+
+
+(user-defined);
+
+
+
+based on the 10/30
+
+
+
+Principle; the user
+
+
+
+defines the security
+
+
+
+level according to
+
+
+
+the file type
+
+
+
+No test
+
+
+
+Encryption at both Retatively safe;
+
+
+
+ends
+
+
+
+storage content is
+
+
+
+localized in local
+
+
+
+storage; no IP
+
+
+
+attacks
+
+
+
+41
+
+
+
+Table 5.8
+
+Cost Performance
+
+
+
+Genaro Network Sia
+
+
+
+Maidsafe
+
+
+
+Storj
+
+
+
+IPFS
+
+
+
+Very affordable; as More price options No pricing Genaro is a free and compared with open trading market traditional Cloud for storage space, its storage price is fully adjusted by market competition
+
+
+
+USD 0.015/GB for As IPFS is more like
+
+
+
+storage; USD
+
+
+
+HTTP, its price is
+
+
+
+0.05/GB for
+
+
+
+very low
+
+
+
+downloading; price
+
+
+
+is high when
+
+
+
+downloading your
+
+
+
+own files
+
+
+
+Genaro Network Sia
+
+
+
+Table 5.9
+
+Ideas and Vision
+
+
+
+Maidsafe
+
+
+
+Storj
+
+
+
+IPFS
+
+
+
+42
+
+
+
+Genaro Network is Decentralized the first blockchain storage software 3.0 ecosystem built on a Turingcomplete public chain with decentralized storage.
+
+
+
+Decentralized
+
+
+
+Decentralized
+
+
+
+storage software and storage software
+
+
+
+trading market for
+
+
+
+idle storage space
+
+
+
+Replace HTTP, build a new agreement, localizing the storage content, eliminate resource redundancy of the whole network and provide a new network ecology for permanent storage of single resources
+
+
+
+Some may also compare Genaro to Ethereum's Swarm approach. In terms of differences, the Genaro public chain and decentralized storage is the equivalent of an SSD hard drive, while Ethereum's Swarm can be compared with a low-capacity memory with the slow speed of a disc drive. In other words, the Genaro solution provides more storage capacity at faster speeds.
+
+Genaro Drives the Blockchain 3.0 Revolution
+
+In 2009, the blockchain 1.0 era, Bitcoin became the first decentralized digital currency. Bitcoin is a worldwide cryptocurrency and digital payment system. The system works without a central repository or single administrator and is peer-to-peer, where transactions take place between users directly, without an intermediary.
+
+43
+
+
+
+Bitcoins are created as a reward for a process known as mining. They can be exchanged for other currencies, products, and services. With 2015 came the blockchain 2.0 era. Ethereum is an open-source, public, blockchainbased distributed computing platform featuring smart contract (scripting) functionality. It provides a decentralized Turing-complete virtual machine, the Ethereum Virtual Machine (EVM), which can execute scripts using an international network of public nodes. Ethereum also provides a cryptocurrency token called "ether," which can be transferred between accounts and used to compensate participant nodes for computations performed.[3] "Gas," an internal transaction pricing mechanism, is used to mitigate spam and allocate resources on the network.[2][4] There are certain public chains created in 2016 and 2017, but there is not a Turing-complete public chain that could provide developers with a solution for data storage. Moreover, the decentralized storage projects, on the other hand, provide a non-Turing-complete public chain. This situation drove developers to solve the problem of storing data outside the chain. In 2016Genaro proposes the first blockchain 3.0 concept: blockchain, plus storage. We believe that only when a blockchain can store and analyze big data in the real world can DAPPs be as useful as Internet APPs. Genaro aims to foster hundreds and thousands of DAPPs built on Genaro in its next stage.
+
+44
+
+
+
+5.4 GENARO NETWORK STRATEGIC MILESTONES Genaro's conceptual blockchain 3.0 model made its public debut in November of 2016, at the China Business Event's Shanghai Fintech forum, where co-founder Larry Liu shared the basic framework. Then Genaro received seed funding from two of the top global blockchain supporters, BlockAsset and ChainBase, and has attracted thousands of supporters from all over the world so far. To both develop its community and product faster, Genaro has decided to launch the Genaro Support Program in October 2017, where contributors can donate ETH/BTC and get GNX in return. For its future strategy, Genaro is building a "Genaro Hub" and "Genaro Accelerator" to incubate and support over 100 Decentralized Applications built on the Genaro Network.
+
+Picture 5.10
+
+45
+
+
+
+6. GENARO COMMUNITY
+
+Genaro Network is developed and operated by a worldwide team of passionate and experienced developers and entrepreneurs for Genaro Ltd, a nonprofit foundation based in Singapore. In March of 2016, Genaro was founded by serial entrepreneurs and passionate developers in the blockchain industry. The Genaro Community is an open and free group and has supporters from over sixty countries spanning the globe. The Genaro community members aim to drive the blockchain 3.0 revolution, the next generation of blockchain applications platform, to make DAPP as useful as Internet APP.
+
+Larry Liu: Genaro Project Lead As the project lead of Genaro, Larry is a serial entrepreneur with engineering background. He was once the security engineer in HP, Silicon Valley, and developed a Ruby compiler there, after he graduated from Northwestern University, U.S.A. He independently developed a digital cross-border transfer wallet based on the blockchain in 2015 and has rich development and research experience in fields of blockchain and Artificial Intelligence. Larry has successfully launched several businesses during the past years, including online education platform Growing Harbor, technical consultant community SV YOLO Club and etc. and he is also a social media KOL.
+
+46
+
+
+
+Jason Inch: Genaro Strategic Lead As a key contributor to the Genaro, Jason brings a depth of knowledge and experience from more than 20 years in the technology industry as an executive and entrepreneur. He has an MBA from the Richard Ivey School of Business and also studied at CEIBS, plus is fluent in Mandarin and Japanese. In addition to his work experience, Jason is an accomplished writer with several books about China's economy, and he regularly speaks at government and private events on the subject of China's future development. His most recent book is called China 4.0 and he is also founder of the China Business Events meetup community.
+
+Waylon Wu: Genaro Tech Lead As the chief technology officer of Genaro, Waylon has a strong technical background. He was once the core technical member of Maxim Integrated, Silicon Valley. In 2015, He cofounded Rum Tech, a technology company in the trading industry. He started Ethereum DAPP development early in 2015. His past Ethereum project obtained investment from Xiaoshan Government in 2016 and he had attended Consensus 2017 on behalf of Genaro.
+
+47
+
+
+
+Andrea Liu: Genaro Operation Lead As Genaro's chief operating officer, Andrea is a serial entrepreneur who successfully cofounded social enterprise LOHAUS, business consulting company ICT Learning and China Business Events, a community organization. She was an early devotee and impeller of the blockchain and is also skilled in marketing public relation, branding, organization & operation management and strategy making.
+
+Amber Yuan, Genaro East Asia Community Evangelist Amber is a professional community builder and manager with 4 years of experience in the field. She was community manager of LOHAUS (one of the first co-working spaces in Asia), and has worked for several business as forums builder.
+
+Amirsan Roberto, Genaro CIS Community Evangelist Amirsan is a serial entrepreneur, digital geek and curiosity/innovation driven individual. In the past 5 years Amir cofounded three companies--Roberto&Co, Wonder.Wiki, and Wiredin Branding--and all got funding and went on to be acquired successfully.
+
+48
+
+
+
+Alex Yang Alex was once the Google data scientist and co-founder of Aile Entertainment LLC., in Silicon Valley. He obtained a bachelor's degree from Nanjing University and a master's degree in Computing from Washington State University. He is an expert in machine learning and distributed system design and joined Genaro in 2016.
+
+Yuchen Liu Yuchen, former Google and Mentor Graphics Senior Engineer in Silicon Valley. obtained a bachelor's degree from the University of Science and Technology of China and a master's degree of computing from Northwestern University. He is an expert in cloud storage and Artificial Intelligence systems and joined Genaro in 2017. Genaro core members all have many years industry experience and professional competence.
+
+Iris Hu Genaro Product Designer. Iris graduated from designing school and had 3 years of experience in product design, UI/UX design and social media operations.
+
+49
+
+
+
+Sophie Lei Genaro Business Development. Sophie graduated from business school and has over 3 years of business development in different countries.
+
+50
+
+
+
+7. LEGAL AFFAIRS AND RISK STATEMENT
+
+7.1 DISCLAIMER
+
+7.1.1 Genaro Project
+
+Genaro Project fully complies with any relevant laws and regulations within the jurisdictions it is operating. The material changes in relevant laws and regulations in such jurisdictions shall constitute a Force Majeure and Genaro will not be responsible for any result of such material changes in relevant laws and regulations. Genaro strongly suggests every participant to carefully read the disclaimer herein and fully understand all of the potential risks.
+
+This white paper is solely for the purposes of conveying information and introducing the Genaro Project, and DOES NOT constitute any relevant suggestion or proposal towards purchases or sales of the GNXs. Any similar proposal or pricing shall be conducted under a credible clause and the relevant applicable laws or regulations.
+
+This white paper shall not constitute or be interpreted as any forms of behaviors of purchase and sale, any forms of behaviors involving invitation to purchase and sale, or any forms of behaviors to establish contracts or make promises.
+
+The examples of revenue and profits in this white paper are solely for the purpose of demonstrating or representing the industrial average value, which shall not be regarded as or interpreted as, under any circumstances, a guarantee for the profitable results of participants.
+
+Except for the specified items in this white paper, Genaro Foundation gives no representative and warranty (in particular for its merchantability and given functions) about Genaro Network or GNXs. Behaviors of anyone participating in the GNX sale or purchasing GNXs are all based on their personal knowledge of Genaro Network and GNXs and the information in this white paper.
+
+51
+
+
+
+Without prejudice to the generality of the foregoing, all participants shall accept the status quo of GNX upon the launch of Genaro Network Project, regardless of its technical specifications, parameters, properties or functions etc. Genaro understands that relevant interested participants have clearly realized the risks of Genaro Network project. Once the participants have participated in the project, they automatically accepted the risk of this project and are willing to bear the potential losses of their purchases.
+
+7.1.2 Legal Structure of Genaro Network Project
+
+Genaro Network Project is already established a non-profit foundation, Genaro LIMITED. ("Genaro Foundation"). As a separate legal entity, Genaro Foundation will be solely responsible for organizing teams to develop this decentralized cloud storage platform. However, the operation and utilization of Genaro totally rely on community autonomy. Genaro Foundation will only be an ordinary member of the community and will only be responsible for offering proposals and plans for the governance of Genaro, but will not have any right or authority superior to other members.
+
+Genaro Foundation, via targeted sales, sells Genaro Network Tokens (GNXs) to certain participants which could only be operated and used in Genaro Network. Genaro understands that the typical participants are the experts who are familiar with encrypted tokens and the blockchain system. GNXs are the payment method and the calculation unit for users in utilizing the service of Genaro Network. The sales of GNX are irrevocable and non-refundable, the Genaro Foundation will not redeem or repurchase the sold GNXs. As a virtual product with practical purpose, GNXs are not a speculative investment tool. Genaro Foundation gives no warranty in relation to the internal value of or any returns from the GNXs.
+
+Any US citizens, permanent residents or green card holders are not allowed to participate in GNX sale, therefore, Genaro Foundation will not sell the GNX to the foregoing persons.
+
+52
+
+
+
+Revenue achieved through selling GNX shall be at the disposal of Genaro Foundation, mainly used to technical development, marketing, legal compliance, financial audit, business cooperation etc.
+
+7.2 Risk Statement
+
+As a new technology mode, there are various risks in purchasing GNXs. Potential participants need to prudently evaluate the risks and their own risk-bearing capacity.
+
+Market risk in token sale
+
+The market environment of token sale greatly relies on the overall market situation , for example, if the overall market situation is sluggish or there are other uncontrollable factors, it will result in a long-term undervalued price of the tokens though it may have a bright prospect. Besides, traded in the public market, tokens will usually experience price fluctuations which reflect the changes in the balance between demand and supply and may be caused by the market power (including speculation), changes in regulatory policies, technical innovation, availability of the exchange and other objective factors. Whether or not there is a secondary market of GNXs, the project initiator shall not assume any responsibility for GNXs transaction in such market. Therefore, the risks involving the GNXs price shall be borne by the participants themselves.
+
+Regulatory risk
+
+Since blockchain is still in the early stage of development, globally including China, a mature and comprehensive mechanism of relevant laws and regulations have not been established concerning the precondition requirement, trading requirement, information disclosure requirement and locking requirement during token sale. Moreover, the detailed implementations and further
+
+53
+
+
+
+policies inclination are still not clear and all these uncertain factors may have negative effects on the Genaro project. As the blockchain technology is growing to become a major regulatory area of the world's main jurisdictions, the further development of Genaro shall be subject to such regulations. Under extreme conditions, Genaro may be terminated due to policy changes.
+
+Competitive risk
+
+The basic protocol of Genaro Network is based on open-source computer software. Nobody claims the copyright or other intellectual property rights of the source code. Therefore, anyone can copy, duplicate, remake, design, modify, improve, recode, reprogram or utilize the source code or basic protocol of Genaro Network in other ways, so as to develop competitive agreements, software, systems, virtual platforms or virtual machines, thus competing with, overtaking or even replacing Genaro Network. Genaro Foundation will not forbid anyone to use the open source code. In addition, there have been and will be many competitive platforms based on blockchain which will compete with Genaro Network.
+
+Risk of losing private key
+
+After the participants extract GNXs to its own digital wallet address, the relevant secret keys (namely private key or wallet password) will become the only way to operate the GNXs at that address. The users are personally responsible for the protection of relevant secret keys to sign and prove the transaction of GNXs' ownership. Users shall understand and accept that the loss or damage of the private key necessary for GNXs' storage may be irreversible. Every participant should keep his/her GNX wallet private key properly. If such private keys were lost, revealed, damaged or jeopardized, Genaro or any other person cannot help the participant to use or retrieve relevant GNXs.
+
+Risk of token circulation
+
+54
+
+
+
+Depending on the specific basic protocol when Genaro Network is released, total quantity of GNXs may vary slightly over time and may further change due to adoption of GNXs source code patches or updates. The total quantity of GNXs may lead to market price changes. Genaro is not responsible for such price changes and will not compensate participants' losses due to such price changes.
+
+Risk of financing source's legitimacy
+
+Genaro reserves the right to execute "Know your clients" operation and conduct due diligence on any other type of clients (including the period after the sale). If the project party discovers that any purchase is in violation of this agreement or any regulatory requirements on anti-money laundering, anti-terrorist financing, etc., such purchase of GNXs will be deemed invalid and the invalidity is retroactive. Therefore, Genaro has the right to terminate such purchase agreement immediately, deprive such purchaser's qualification from participating in GNXs' sale, refuse to deliver any GNX and request such purchaser to return any delivered GNXs.
+
+Systematic risk
+
+No one can guarantee that Genaro Network source code is flawless. The source code may have some flaws, errors, defects and loopholes, which may cause negative influence to specific functions. If there were such flaws, availability, stability and safety of Genaro Network may be damaged and therefore the GNX value will be impacted negatively. The open source code is transparent and Genaro will make effort with the community to solve such problem heretofore.
+
+Risk of accelerated developing cryptology
+
+Cryptology is constantly evolving and cannot guarantee absolute security at any time. The progress of cryptology (such as password cracking) or technical process (such as invention and improvement of quantum computing) may bring danger to systems based on cryptology (including
+
+55
+
+
+
+Genaro Network). This may lead GNXs to be stolen, disappeared, damaged or devalued. Within a reasonable range, the project initiator will prepare itself with preventive or remedial measures, upgrade basic protocol of Genaro Network to deal with any progress of cryptology and introduce new reasonable security measures under the right circumstances.
+
+Popularity
+
+The value of GNXs is largely determined by the popularity of Genaro Network. Genaro Network cannot predict its popularity after its release. In the worst case, Genaro Network may even be marginalized for a long time and only attract a small group of users. By contrast, a big part of the GNXs demand may be of speculative feature. Lack of users is more likely to lead to price fluctuation of GNXs market, thus impacting the long-term development of Genaro Network. When the price fluctuates, Genaro Foundation will not (and has no responsibility to) stabilize or influence the market price of GNXs.
+
+Risk of project failure
+
+Genaro Network is still in the development stage but not a finished product. Because of the technological complexity of Genaro Network, the project initiator may face unpredictable or unsolvable difficulties from time to time. Therefore, the development of Genaro Network may fail or terminate at any time for any reason (for example, lack of funds). Failure or termination of Genaro Project may lead to the situation that GNX cannot be delivered to any participant of this public sale.
+
+Vulnerability risk
+
+The accelerated development of cryptology, or the development of science and technology may bring risk of cracking to the Genaro Network platform, which might cause loss of GNXs.
+
+56
+
+
+
+Other unpredictable risks Based on cryptography, Token is a brand new and untested technology. In addition to risks mentioned in the white paper, there are some other risks unmentioned or unanticipated by the founding team. Besides, there are other risks that could crop up or appear in forms of combination of multiple mentioned risks.
+
+57
+
+
+
+REFERENCE
+
+[1] G. Ateniese, R. Burns, R. Curtmola, J. Herring, L. Kissner, Z. Peterson, and D. Song. Provable data possession at untrusted stores. In Proc. ACM CCS, pages 598609, 2007. [2] K. D. Bowers, A. Juels, and A. Oprea. Proofs of retrievability: theory and implementation. In CCSW, pages 4354, 2009 [3] G. Ateniese, R. Burns, R. Curtmola, J. Herring, O. Khan, L. Kissner, Z. Peterson, and D. Song. Remote data checking using provable data possession. ACM Trans. Info. & System Security, 14(1), May 2011. [4] M. T. Goodrich, M. Mitzenmacher, O. Ohrimenko, and R. Tamassia. Privacy-preserving group data access via stateless oblivious RAM simulation. In SODA, 2012. [5] V. Buterin. Ethereum , Apr. 2014. [6] H. Shacham and B. Waters. Compact proofs of retrievability. Proc. Asiacrypt 2008. [7] C. Huang, H. Simitci, Y. Xu, A. Ogus, B. Calder, P. Gopalan, J. Li, , and S. Yekhanin. Erasure coding in Windows Azure storage. In G. Heiser and W. Hsieh, editors, Proceedings of USENIX ATC 2012. USENIX, June 2012. [8] L. Rizzo. Effective erasure codes for reliable computer communication protocols. ACM SIGCOMM Computer Communication Rev., 27(2):2436, Apr. 1997. [9] M. Liskov, R. Rivest, and D. Wagner. Tweakable block ciphers. J. Cryptology, 24(3):588613, July 2011.
+
+58
+
+
+
+[10] V. T. Hoang, B. Morris, and P. Rogaway. An enciphering scheme based on a card shuffle. In R. Safavi-Naini, editor, Proceedings of Crypto 2012, LNCS. Springer-Verlag, Aug. 2012. To appear. [11] Jerry Brito & Andrea Castillo (2013). "Bitcoin: A Primer for Policymakers" Mercatus Center. George Mason University. Archived from the original on 21 September 2013. Retrieved 22 October 2013. [12] Sagona-Stophel, Katherine. "Bitcoin 101 white paper" (PDF). Thomson Reuters. Retrieved 20 November 2015 [13] Understanding Ethereum (Report). CoinDesk. 24 June 2016. [14] Cryptocurrencies: A Brief Thematic Review. Social Science Research Network. Date accessed 28 august 2017. [15] ConsenSys (2016-06-23). "Ethereum, Gas, Fuel, & Fees". ConsenSys Media. Retrieved 2017-01-15. [16] "ICO Market Research: The Leading Blockchain Platforms Of 2017 - ICO Watch List Blog". ICO Watch List Blog. 2017-08-17. Retrieved 2017-08-20.
+
+59
+
+
+
+

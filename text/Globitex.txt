@@ -1,0 +1,1747 @@
+Scaling Bitcoin Economy
+
+Linking Digital Currency to Global Trade
+
+White Paper by Jon Matonis, Liza Aizupiete, Arvis Ermins, Maris Kaneps, Andris Kaneps
+
+
+
+10 November 2017
+
+
+
+Disclaimer
+
+
+
+Scaling Bitcoin Economy
+
+
+
+This document and any other documents published in association with this white paper relate to a token offering (GBX token) to persons (contributors) in respect of the intended development and use of the platform by various participants. This document does not constitute an offer of securities or a promotion, invitation or solicitation for investment purposes. The terms of the contribution are not intended to be a financial services offering document or a prospectus. The token offering involves and relates to the development and use of experimental platform (software) and technologies that may not come to fruition or achieve the objectives specified in the white paper. The purchase of tokens represents a high risk to any contributor. The tokens do not represent equity, shares, units, royalties or rights to capital, profit or income in the platform or software or in the entity that issues tokens or any other company or intellectual property associated with the platform or any other public or private enterprise, corporation, foundation or other entity in any jurisdiction. The tokens are not therefore intended to represent a security or similar legal interest.
+
+
+
+www.globitexico.com
+
+
+
+Page 2 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Contents
+
+01 INTRODUCTION ......................................................................................................4 02 GBX TOKEN .............................................................................................................6 Application ______________________________________________________________________6 Token Details ____________________________________________________________________7 Early Participation Discounts During Public Token Sales ________________________________7 Additional Company Success-related Rewards________________________________________7 Token Distribution and Lock up Periods ______________________________________________8 Token Sales _____________________________________________________________________8 AML & Due Diligence _____________________________________________________________8 Privacy _________________________________________________________________________8 Future Provisions _________________________________________________________________8 03 PROJECT BACKGROUND ......................................................................................9 04 BUSINESS DEVELOPMENT STAGES ...................................................................10 Stage I: Spot FX and REPO _______________________________________________________10 Stage II: BIBOR, Money Markets and Commodity Derivatives __________________________11 Stage III: GCOM Commodity Index and Physical Commodities _________________________12 05 MONEY MARKETS & CURRENCIES.....................................................................13 The Yield Curve _________________________________________________________________13 Components of the Interest Rate Curve _____________________________________________14 Importance of LIBOR ____________________________________________________________14 Bitcoin Borrowing Reference Rate (BIBOR) __________________________________________14 Token/Cryptocurrency Index Futures _______________________________________________15 06 COMMODITIES FOR BITCOIN ..............................................................................16 Demand _______________________________________________________________________16 Imports and Exports _____________________________________________________________16 US Dollar Dominance ____________________________________________________________17 07 LEGAL SETUP .......................................................................................................19 Cryptocurrency Spot Trading _____________________________________________________19 Derivatives Denominated in Cryptocurrencies _______________________________________20 Licensing Requirements for Derivatives Trading ______________________________________21 Client protection ________________________________________________________________21 Transparency Requirements ______________________________________________________22 Passporting Rights in the EU ______________________________________________________22 08 TECHNICAL IMPLEMENTATION ...........................................................................23 Working Prototype ______________________________________________________________23 The Exchange Interfaces _________________________________________________________24 The Core System ________________________________________________________________25 New developments ______________________________________________________________26 09 GLOBITEX TEAM ...................................................................................................29 EXECUTIVE TEAM ______________________________________________________________29 SUPERVISORY TEAM ___________________________________________________________31 ADVISORY TEAM _______________________________________________________________32 10 CONCLUSION .......................................................................................................34 11 ANNEX ...................................................................................................................35 COMMODITIES _________________________________________________________________35 BITCOIN ECONOMY ____________________________________________________________40 SUCCESS PATH ________________________________________________________________45 12 REFERENCES ........................................................................................................46
+
+
+
+www.globitexico.com
+
+
+
+Page 3 of 46
+
+
+
+Scaling Bitcoin Economy
+
+01 INTRODUCTION
+
+Bitcoin and cryptocurrencies based on the Bitcoin protocol are here to stay. At its core, the Bitcoin protocol has the right formulae for it to become the leading universally accepted currency. Bitcoin already functions as a store of value and medium of exchange. But, in order for it to gain significance as a unit of account in global trade, it needs to scale both technically and economically.
+
+This paper does not cover Bitcoin's technical scaling issues. Instead, this paper aims to deal with the economic scaling challenges that Bitcoin must overcome. Bitcoin has displayed impressive growth, starting as an obscure open source project in 2009, and achieving a multi-billion market capitalisation, it is now receiving mainstream financial media attention. In order for Bitcoin to be even more widely adopted as a currency, and for the Bitcoin economy to play a leading role as a medium of exchange in global financial markets, it needs to expand in scale by orders of magnitude. At the appropriate scale, Bitcoin could be used to settle global trade in raw materials, such as precious metals, base metals used in manufacturing and various industries, consumables, like coffee, wheat, corn and energy products, like oil. At this scale, Bitcoin could gain significance as a unit of account by way of settling global high volume trades for regional and international imports and exports for production and consumption goods, with cash settled and physically deliverable instruments available for producers and speculators alike.
+
+The three functions of money are (1) store of value, (2) medium of exchange, and (3) unit of account and they operate in a hierarchy, especially when bootstrapping a new money such as Bitcoin. If any two people are prepared to treat the asset as a store of value in the course of a transaction, then it is possible for the asset to serve as a medium of exchange. This relationship is sequential. Similarly, when the asset is used substantially as a medium of exchange across society, then it may be considered a unit of account. Some economists consider unit of account to be the final and most important characteristic of money, because it means that goods and services are priced in the numraire, or basic standard by which value is computed. Central banks' control of the unit of account is typically argued to be a defining feature of monetary policy. Along the hierarchy from store of value to medium of exchange and finally to unit of account, Globitex targets the medium of exchange function, which will undoubtedly establish the foundation for Bitcoin as the world's numraire. [1]
+
+In order for the Bitcoin economy to achieve the necessary scale, it will require a substantial increase of liquidity which will likely result in greater price stability. Increased liquidity and relative price stability are a necessary step in the development of Bitcoin and cryptocurrencies as a global medium of exchange. The formation of stable capital markets, along with their corresponding interest rates will establish a natural market-based reference rates and thus increase liquidity and price stability.
+
+
+
+www.globitexico.com
+
+
+
+Page 4 of 46
+
+
+
+Scaling Bitcoin Economy
+
+In order to facilitate the use of Bitcoin as an industrial scale medium of exchange, we propose taking the existing Globitex exchange infrastructure and scaling it up into an exchange that has global spot and derivatives exchange capabilities, where standardised instruments in money markets and major commodities are listed with cash settlement and later physical delivery, and where Bitcoin is used as the underlying currency - a unit of account.
+
+To realise this goal, Globitex is issuing the GBX utility Token. The Token will be issued as an EIP-20 (previously known as ERC-20) compliant Ethereum smart contract. [2] The GBX Token will primarily be used for the settlement of trades on the Globitex exchange, serving as a commission payment token. The GBX Token will also function within loyalty programs planned for Globitex clients and contributors, whereby the contributors will be participating in the company's overall success. The GBX Token can be acquired during the Globitex token sale (www.globitexico.com) using Ether (ETH), Bitcoin (XBT) and Bitcoin Cash (BCH). The project development will be conducted in stages, each representing the team's commitment to specific business milestones as laid out in this White Paper.
+
+The full details on the GBX Token are included in the first chapter of this paper.
+
+In the following chapters of this White Paper, we examine the importance of money markets and commodity trading and why such assets should be linked to Bitcoin. We present the legal setup for achieving these goals, and enumerate the roadmap and the required stages of business development for this undertaking. We include a technical description of Globitex product, and the expected system development plan. In the annex, we attach information on commodities markets and statistics that are relevant to the Bitcoin economy, which enforce the case for why Bitcoin is potentially the most appropriate medium of exchange for global trade. Finally, we extrapolate an estimated path of success in terms of volumes traded for Globitex as a global spot and derivatives exchange in Bitcoin. 
+
+
+
+www.globitexico.com
+
+
+
+Page 5 of 46
+
+
+
+GLOBA L
+
+OM
+
+
+
+CHANGE
+
+WW
+
+
+
+Scaling Bitcoin Economy
+
+02 GBX TOKEN
+
+
+
+BITCOIN EX
+
+W.GLOBITEX.C
+
+
+
+To realise the business goals set forth in this paper, an Ethereum EIP-20 (previously known as ERC-20) smart contract protocol based token (the GBX Token)  will be issued by Globitex Limited, private limited company (the Company) incorporated in Gibraltar fully owned by AS Globitex Holding (Latvia). The Company will use the proceeds from the token sale to obtain various rights to use, exploit and licence the existing Globitex IT infrastructure and trading platform. The Company will also use the token sale proceeds to further develop the eco-system, infrastructure and trading platform according to the aims described in this White Paper in order to develop the services that the Token can be exchanged for.
+
+Application
+
+The GBX token will serve the primary purpose of a means of settlement of trades on the Globitex exchange, serving as a commission payment token, as well as used within loyalty programs. Redeemed GBX Tokens are intended to be burned and therefore permanently removed from circulation.
+
+GBX Tokens will be usable to cover commission payments for the trades made on the Globitex platform. All registered clients of the Globitex exchange will be able to redeem GBX tokens as payment for commissions. Initially the tokens will be subject to a significant premium of no less than 20%. For example, at a price of GBX 1 = EUR 0.10, the client opting to use GBX as payment for trades will be able to enjoy the following bonus: GBX 1 = EUR 0.10 + 20%. Over time, depending on overall Company's success, the bonus will largely increase in order to stimulate widespread utilisation of GBX tokens for trade settlement.
+
+Furthermore, Globitex will offer other Company success-related member loyalty programs to reward its clients and token holders during the GBX Token lifetime.
+
+Overall, GBX Token is expected to have a 10 year lifetime, during which time, tokens can be redeemed, loyalty programs and other success-related benefits enacted. After 10 years will have elapsed, the Company will review the GBX Token program and make the necessary adjustments on continuation of the program.
+
+
+
+www.globitexico.com
+
+
+
+Page 6 of 46
+
+
+
+Token Details
+
+
+
+Scaling Bitcoin Economy
+
+
+
+Token name: Globitex Token Token symbol: GBX Token lifetime: 10 years (subject to extension) Token execution environment: Ethereum platform Token standard: Ethereum EIP-20 (previously known as ERC-20) compliant smart contract Token decimal units: 8 Token sales currencies: Ether (ETH), Bitcoin (XBT), Bitcoin Cash (BCH) Token emission standard price: GBX 1 = EUR 0.10 Minimum sales target incl. pre sale: equivalent of EUR 1,000,000 Sales cap: equivalent of EUR 10,000,000 Minimum purchase amount: equivalent of EUR 10 Maximum purchase amount per buyer: equivalent of EUR 3,000,000 Sales start date: before February 2018. To be announced on www.globitexico.com Sales end date: To be announced on www.globitexico.com
+
+
+
+Early Participation Discounts During Public Token Sales
+
+10% discount for the first 5,000,000 GBX Tokens sold 5% discount for the next 10,000,000 GBX Tokens sold
+
+
+
+Additional Company Success-related Rewards
+
+10% success rewards for the lifetime of GBX Token
+
+
+
+www.globitexico.com
+
+
+
+Page 7 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Token Distribution and Lock up Periods
+
+65% of GBX token pool are sold to contributors, whereas 35% are allocated to the Company for future use, including: 5% for bounty and referral programs; 10% for business development (e.g. team expansion, marketing, security rewards, conferences etc.); and two tranches of 10% released every consecutive year, following the end of the Token Sale for further business promotion.
+
+Token Sales
+
+The GBX Token will be sold during the token sale in exchange for Ether (ETH), Bitcoin (XBT) and Bitcoin cash (BCH). Token distribution will be done after the end of token sales.
+
+AML & Due Diligence
+
+The Globitex platform meets high standards of European anti-money laundering requirements in respect of client due diligence, suspicious transaction monitoring and reporting and the avoidance of crime and terrorist financing. Token holders will therefore be subject to Globitex exchange KYC to be able to redeem Tokens as commission payment.
+
+Privacy
+
+Contributors may be asked to provide certain personal information in order to participate in the Token Sale and some contributor personal data may need to be verified, according to Globitex Token Sale Terms and Privacy Policy.
+
+Future Provisions
+
+The Company may partner up with other regulated and unregulated entities in order to attain the business goals described in this paper, such as provision of payment or investment services for example.
+
+
+
+www.globitexico.com
+
+
+
+Page 8 of 46
+
+
+
+Scaling Bitcoin Economy
+
+03 PROJECT BACKGROUND
+
+Globitex is an institutional grade Bitcoin exchange, with a fully functional FIX API connectivity, offering direct market access for algorithmic traders. Launched in the summer of 2017 as a working prototype, it is being tested in a limited Beta mode and is expected to begin open public operations by the beginning of the year 2018.
+
+Having built the exchange to meet sophisticated institutional client needs, we now operate Globitex from the starting point of allowing the exchange of the Bitcoin and Euro trading pair on a secure and well-established platform. Building Globitex with a view to the future, however, requires tackling one of the major issues that Bitcoin faces: liquidity, or the current lack thereof.
+
+Therefore, one of the first goals for Globitex is to launch other major currency pairs; to expand the Bitcoin-FX order books, thus covering instant trading, deposits, and withdrawals in major currencies around the globe. The next step is to develop cryptocurrency money markets, where eligible market participants are able to lend out their assets at specific maturities by setting market-based interest rates. The development of a money market in Bitcoin will be the major catalyst in increasing liquidity and equalising supply and demand for Bitcoin in the spot market, as well as for various time future time frames, potentially transforming it into the most liquid currency.
+
+As Bitcoin liquidity increases, and as large money orders can be easily accommodated, Globitex will then enable standardised listing of various commodities futures and options on an open order book basis. The derivative contracts will be physically deliverable and exchanged in Bitcoin as the underlying currency. For example, the counterparties in a derivatives contract could exchange physical commodities (crude oil, jet fuel, gold, silver, copper, corn, etc.) for a fixed amount of bitcoins at the maturity of the contract, or opt out of the physical delivery and settle in bitcoin instead.
+
+Scaling Globitex into a global spot and derivatives trading venue will allow producers to purchase exchange listed products for Bitcoin. Trading firms and speculators will also be able to hedge their risks in Bitcoin with derivatives contracts. Thus, scaling the Globitex exchange will benefit Bitcoin and foster its development as a medium of exchange that is suitable for facilitating global trade, overcoming geographic, political or monetary restrictions.
+
+
+
+www.globitexico.com
+
+
+
+Page 9 of 46
+
+
+
+Scaling Bitcoin Economy
+
+04 BUSINESS DEVELOPMENT STAGES
+
+In order to be able to achieve the goals set out in this White Paper, Globitex put forward a roadmap detailing the business development stages. Proposed Token Sale, which includes the issuance and distribution of the GBX Token, will fund the initial project development.
+
+Stage I: Spot FX and REPO
+
+Scale spot FX, where Bitcoin can be traded vs. major fiat and other cryptocurrencies This will involve business development efforts for establishing additional banking relationships with bank partners around the globe and across the currency spectrum. This will also involve the undertaking of a thorough security and business evaluation, including development of extensions for the payment system based on the highest security standards before adding other cryptocurrencies as trading instruments on Globitex.
+
+Implement FX margin trading ability - REPO By allowing Globitex clients to lend to each other with REPO, or standardised maturities repurchase agreement based instruments, Globitex clients will be able to use the borrowed funds for leveraging their trading; the loans will be made available as collateralised debt instruments, which can also be used for purposes outside of the exchange. This, in turn, will create a money market for Bitcoin and other cryptocurrencies, and thereby establish market based interest rates. Globitex will expand its core system level functionality to implement FX margin trading based on the peer-to-peer lending principle. Furthermore, to allow currency REPO instruments, a new risk module will also need to be implemented.
+
+List precious metals spot contracts Globitex will introduce commodities trading in bitcoin, starting with deliverable spot gold. Gold is an obvious choice to begin with, as Bitcoin itself is dubbed "digital gold". Globitex will develop order book and distribution channels for gold bought on Globitex against bitcoin.
+
+
+
+www.globitexico.com
+
+
+
+Page 10 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Stage II: BIBOR, Money Markets and Commodity Derivatives
+
+Develop Bitcoin money markets - BIBOR Aggregate the leading interest rate markets for Bitcoin margin lending, including the one developed by Globitex at stage I, in order to form a tradable interest rate product. Name it "BIBOR" (Bitcoin Inter-Broker Offered Rate) and offer BIBOR futures trading, thereby setting the standard reference rate for the Bitcoin economy capital markets. Furthermore, expanding to money markets in other cryptocurrencies based on market appetite.
+
+List cash settled commodity futures and options At this stage, business development and various partnerships will have positioned Globitex to reference the existing USD based markets. By using traditional futures markets pricing in commodities, we shall begin using Bitcoin at the scale needed for global trade by synthetically forming derivative instruments in commodities, paired with FX market developed in Stage I. These instruments will be listed in standardised maturities and settled in Bitcoin. We will begin by implementing precious metals cash settled futures trading and follow up with other commodities. By further developing IT infrastructure and risk management, the Globitex exchange will be able to accommodate options listings in commodities, FX and money markets thereby linking Bitcoin to global trade at all levels of derivatives.
+
+List cryptocurrency futures, swaps and options Create cryptocurrency-to-fiat and cryptocurrency-to-cryptocurrency based futures, swaps and options to be used as financial instruments for hedging, investing and speculating purposes.
+
+
+
+www.globitexico.com
+
+
+
+Page 11 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Stage III: GCOM Commodity Index and Physical Commodities
+
+List Bitcoin priced Globitex commodity index - GCOM Aggregate various groups of commodities, listed in the previous stage, as cash settled futures, such as energy, grains, industrial metals, precious metals, softs, livestock, into a Bitcoin priced index. Such index would reflect Globitex and other exchange listed commodities value in Bitcoin. The index would have a specific weight for each commodity group. The index would first serve the purpose of a reference price, and may later form the bases for a tradable index futures product. Name the index Globitex Commodity index "GCOM" and prepare to offer GCOM futures trading.
+
+Enable precious metals futures contracts to be physically deliverable The previously established Bitcoin settled derivatives need to be made deliverable physically in kind. Futures will become available for physical delivery. Starting with a precious metals spot market and integrating in existing precious metals distribution channels, we shall allow a standard commodity kind to be delivered and deliverable in exchange as a collateral in some pre-agreed form. Globitex will work on specific form for certificates of ownership - warehouse receipts in the form of tokens, which may be tracked and verified on a public blockchain.
+
+Further develop warehousing infrastructure and expand spot commodities For commodities such as non-perishable energy products or industrial metals, which can be stored in warehouses for long time periods, we shall rely on the existing warehouse infrastructure, be it the established warehouses used by existing exchanges or other private warehouses complying with the common delivery standards, to allow other liquid derivative instruments to be physically deliverable. Similarly for consumables, we shall partner with existing wholesalers offering FOB (free on board) or CIF (cost insurance freight) commodities for purchase with Bitcoin and delivery in kind at designated ports and warehouses.
+
+
+
+www.globitexico.com
+
+
+
+Page 12 of 46
+
+
+
+Scaling Bitcoin Economy
+
+05 MONEY MARKETS & CURRENCIES
+
+The need for global benchmark rates for cryptocurrencies One of the cornerstones of a market-based economy is the establishment a mature borrowing and lending market. Bitcoin's transition from a tradable novelty token, to a parallel economy where global trade takes place, requires a functioning interest rate market for the currency. Prudent borrowing and lending powers an economy and establishes the infrastructure for proper allocation of capital. This chapter will examine the basics of money markets, and why these are relevant for Bitcoin's liquidity and how Globitex will position itself to capture this market.
+
+The Yield Curve
+
+
+
+Yield
+
+
+
+Maturity
+
+In traditional finance, a yield curve is a line that plots the interest rates of fixed-income securities that display an equal credit quality but differing maturity dates. The typical yield curve is formed from the three-month, two-year, five-year, ten-year and 30-year government debt. This type of yield curve is used to benchmark against other debt in the market, such as bank lending rates, consumer loans, business loans, and mortgage rates. The shape of the yield curve can be useful for determining expected inflation rates as well as future economic conditions.
+
+
+
+www.globitexico.com
+
+
+
+Page 13 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Components of the Interest Rate Curve
+
+With the young Bitcoin economy, maturities are much shorter and the data is intermittent and often less reliable. Therefore, as a starting point, the development of a true Bitcoin economy requires the formation of capital markets with corresponding interest rate duration curves across 1-day, 30-day, 90-day, 180-day and 1-year borrowing rates. Globitex will make a market in fiat-to-cryptocurrency swaps for the purposes of margin trading as well as creating a real repurchase agreement (REPO) market with ability to borrow crypto or fiat currency using other crypto or fiat currency as a collateral for the loan. Similar to other exchanges, these will start out as overnight borrowing rates for purposes of leveraged margin trading where the exchange matches the interest rate swaps for both sides of the trade. As the market matures, longer durations can be added or imputed.
+
+Importance of LIBOR
+
+LIBOR is referenced as the most globally significant benchmark rate in finance. LIBOR stands for the London Interbank Offered Rate. It is a set of daily average rates at which banks offer to borrow money from one another. Global financial institutions utilise these benchmark rates as a base for interest rate calculations throughout their portfolios.
+
+LIBOR offers daily average interest rates for five currencies (the U.S. dollar, euro, British pound, Japanese yen, and Swiss franc) and seven lending periods (ranging from overnight to 12 months). In total, there are 35 different daily LIBOR rates. LIBOR is governed by the Intercontinental Exchange (ICE) Benchmark Administration. The Administration calculates the LIBOR rates every day by surveying participating banks.
+
+There are currently outstanding contracts worth trillions of dollars spread across different maturities from overnight to 30 years that all reference the benchmark LIBOR. According to the UK Treasury, the value of financial contracts tied to LIBOR touches $300 trillion. However, this does not include consumer loans or adjustable rate home mortgages. According to the ICE Benchmark Administration, "In total, hundreds of trillions of
+
+dollars' worth of interest rate exposure is tied to ICE LIBOR." [3]
+
+Bitcoin Borrowing Reference Rate (BIBOR)
+
+Globitex will aggregate the leading interest rate markets across the Bitcoin ecosystem to form a consolidated and published reference interest rate. Short-term and long-term rate sources will be taken from a variety of applications, such as margin trading rates, P2P lending rates, and fixed deposit facilities. The initial quotations will be in Bitcoin (XBT) for 1-day and 7-day durations, expanding into 14-day and 30-day durations going forward.
+
+
+
+www.globitexico.com
+
+
+
+Page 14 of 46
+
+
+
+Scaling Bitcoin Economy
+
+The aggregated reference rate will be referred to as BIBOR (Bitcoin Inter-Broker Offered Rate), a term first coined by Jon Matonis. [4]
+
+Token/Cryptocurrency Index Futures
+
+
+
+Likewise, as the overall market for tokens and cryptocurrencies develops and becomes more sophisticated, Globitex will be in a position to standardise a relevant selection of tokens and cryptocurrencies into indices. Such indices will function much like traditional equity indices, for which there will also be a standardised futures market, provided by Globitex.
+
+
+
+Futures & Options - Exchange Traded Volumes in 2016
+
+
+
+DESCRIPTION Equity Index
+
+Individual Equity Interest Rates Currency Agriculture Energy
+
+
+
+2016 7,117,487,070 4,557,878,357 3,514,907,620 3,077,836,847 2,214,163,491 1,931,906,582
+
+
+
+Non-Precious Metals
+
+
+
+1,877,347,155
+
+
+
+Other
+
+
+
+616,262,160
+
+
+
+Precious Metals
+
+
+
+312,137,035
+
+
+
+0
+
+
+
+2,000,000,000 4,000,000,000
+
+
+
+Source: FIA, 2016 VOLUME SURVEY
+
+
+
+6,000,000,000
+
+
+
+Equity Index Individual Equity Interest Rates Currency Agriculture Energy Non-Precious Metals Other Precious Metals
+
+8,000,000,000
+
+
+
+In traditional futures and options exchanges, equity indices make up the bulk of exchange trading volumes, followed by individual equity and commodities markets, see the table and chart representation of contracts traded on global spot and derivatives exchanges around the globe. [5]
+
+It is therefore essential for Bitcoin to acquire a standardised exchange platform, where the listing of highly demanded investment products can be accessed by the global investing community.
+
+
+
+www.globitexico.com
+
+
+
+Page 15 of 46
+
+
+
+Scaling Bitcoin Economy
+
+06 COMMODITIES FOR BITCOIN
+
+
+
+The need for Bitcoin linked commodity spot and derivatives marketplace
+
+Despite the growth of the Bitcoin ecosystem in recent years, there are no commodity futures, swaps or options listed in Bitcoin, whereas these markets offer an unrivalled opportunity for price discovery as much for the commodity in question as well as for the underlying currency used in the trade. Today, the most used and therefore relevant currency in global trade reveals to be the US Dollar due to several factors discussed in this chapter.
+
+
+
+Demand
+
+If one were to effectively purchase a shipload of coffee in Bitcoin, one would need first convert one's Bitcoin to US Dollars, and then enter a forward or futures trade with physical settlement. This transaction would favour the USD fiat currency by demand directed towards conversion and then settlement for the trade and delivery. If however, commodities had a direct pricing mechanism for Bitcoin on an organised exchange, it would diminish demand for fiat currency and therefore increase demand and subsequently liquidity for Bitcoin as a currency and unit of account.
+
+By allowing Bitcoin to be used as a medium of exchange on Globitex for global trade scale consumption and production of goods, such as commodities, it will strengthen Bitcoin's relevance as a currency or unit of account globally.
+
+
+
+Imports and Exports
+
+One of the most important factors that determines the relevance of any currency is how it is represented in global trade, where nations and large institutions exchange production and consumption goods: both physical and intangible goods and services. Global trade is the ultimate exchange arena for a currency to gain relevance, because the currency that is in most demand for such trades will establish the liquidity to be considered a medium of exchange.
+
+By virtue of sheer demand for the exchange of goods, currencies, and services, global trade feeds the most liquid market on the planet - the foreign exchange market, estimated to have daily trading volumes of USD 5.067 trillion per day in 2016. [6]
+
+Being used as a medium of exchange for global trade is the ultimate destination in terms of relevancy for a currency. All humans benefit from trade and our modern material reality
+
+
+
+www.globitexico.com
+
+
+
+Page 16 of 46
+
+
+
+Scaling Bitcoin Economy
+
+is made up of global trade, so much so that we are now completely dependant on it. In 2016, the annual value of all imports and exports is estimated at USD 15.83 trillion globally. [7]
+
+
+
+US Dollar Dominance
+
+According to the Bank for International Settlements 2017 data, we can observe a clear dominance by a few currencies in global trade. Indeed, trades are largely denominated in US Dollars. These findings are based on data, which exclude Euro payments used inside of Europe amongst the member states, and which is best described by data provided by SWIFT 1 organisation. [8] The data is based on international trade and shows that very few countries are able to invoice their trades in their own national currency.
+
+These facts point to a world where a disproportionate share of trade is invoiced in
+
+very few currencies, and the dollar has an outsized role. [9]
+
+
+
+These conclusions were originally evidenced by a professor at the economics department of Harvard University Gita Gopinath in her research paper [10], where she concludes that the reason why import and export trades are invoiced in US dollar is largely due to price stability as an endogenous choice. There are no clearly distinguishable political pressures or other factors influencing the choice of invoicing currency but for the price stability factor alone.
+
+
+
+Currency Distribution in Global Trade
+
+
+
+Curreny US Dollar Euro Colombian Peso Venezuelan Bolivar Sterling Pound Mexican Peso Other currencies
+
+
+
+All Exports 98.28% 0.72% 0.67% 0.27% 0.02% 0.01% 0.03%
+
+
+
+Source: Gopinath, G. (2015). The international price system.
+
+
+
+1 SWIFT data also describes USD dominance in inter-regional currency usage, where USD share constitutes 79.5%, and where EUR comes second with 5.9% share followed by the British Pound and Japanese Yen.
+
+
+
+www.globitexico.com
+
+
+
+Page 17 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Bitcoin, as it is used today, is not a stable currency in terms of valuation in other currencies, it is also not used in international trade, because it is not present on global spot and derivatives exchanges. Indeed, we cannot speak of a Bitcoin economy per se, as Bitcoin's acceptance and its use cases are few and far in between.
+
+However, Bitcoin's digital nature and its underlying protocol spell a potential for use on a global scale, as is the potential for gaining both the liquidity and the relevance needed for use as a global currency.
+
+The importance of any currency is defined by its use cases, such as being used for global trade, which largely marks any currency relevance and liquidity. Bitcoin potentially stands as the most suitable currency for use in global trade - cheap, quick, irreversible and bound by sound monetary policy at its protocol core.
+
+Please refer to the annex for further supporting data and analysis about Bitcoin economy. 
+
+
+
+www.globitexico.com
+
+
+
+Page 18 of 46
+
+
+
+Scaling Bitcoin Economy
+
+07 LEGAL SETUP
+
+
+
+This chapter evaluates the legal regulation and necessary licenses in order to implement the objectives of this white paper. The Globitex team will start operations from Europe and accept clients globally. Further development stages will involve representation outside Europe and investigation of country-specific regulations and licensing for physical presence. After having assessed regulatory environments in different regions and jurisdictions, the Globitex team has decided to base the project in the European Union. Therefore, the following section of this white paper will provide a short analysis of the legal framework in EU for Bitcoin, and for Bitcoin derivatives trading.
+
+Cryptocurrency Spot Trading
+
+The financial sector in the EU is regulated on two main levels  by EU legislative acts (regulations and directives), as well as the national laws of each member state. National legislation is mostly harmonised among member states by implementing EU directives. However, where there is a need for very limited discretion in national implementation regulations are introduced that have direct effect across the EU without the requirement for national transposition to achieve the aims of the European law. At the highest level European law is ultimately governed by principles of law contained in the relevant EU Treaties (and that deal with foundational matters such as four basic freedoms of the EU single market: free movement of goods, capital, services and workers).
+
+Most of the member states and their financial regulators have taken the position that Bitcoin and other cryptocurrencies are not regulated payment services or financial instruments, and therefore it follows that exchange service businesses are excluded from regulatory and supervisory scope. For a very limited scope i.e. prevention of money-laundering and terrorism financing, European Parliament is currently reviewing amendments to 4th AML directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No 648/2012 of the European Parliament and of the Council, and repealing Directive 2005/60/EC of the European Parliament and of the Council and Commission Directive 2006/70/EC) which would add virtual currency exchange platforms and custodian wallet providers to the list of obliged entities within the scope of the directive. In addition, we are beginning to see a demand for a higher level of regulatory oversight (and support) for the crypto-economy. For example, Gibraltar is currently consulting on a new regime to provide a regulatory framework for financial services authorisation of such crypto-exchanges and custodians. [11]
+
+
+
+www.globitexico.com
+
+
+
+Page 19 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Based on the prevailing legal and regulatory environment, Globitex will seek to provide the best regulatory protection to its customers in cryptocurrency activities, and will seek to obtain the necessary permissions or agency relationships in order to facilitate fiat currency transactions.
+
+Derivatives Denominated in Cryptocurrencies
+
+As noted in this white paper, Globitex intends to create a trading infrastructure for cash settled and physically delivered cryptocurrency futures, options, and swaps. Such instruments, contrary to the unclear legal status of cryptocurrencies themselves, fall under the existing EU legal framework. According to Directive 2014/65/EU of the European Parliament, and of the Council of 15 May 2014 on markets in financial instruments and amending Directive 2002/92/EC and Directive 2011/61/EU (MIFID II) Annex I Section C, financial instruments are:
+
+(4) Options, futures, swaps, forward rate agreements and any other derivative contracts relating to securities, currencies, interest rates or yields, emission allowances or other derivatives instruments, financial indices or financial measures which may be settled physically or in cash;
+
+(5) Options, futures, swaps, forwards and any other derivative contracts relating to commodities that must be settled in cash or may be settled in cash at the option of one of the parties other than by reason of default or other termination event;
+
+(6) Options, futures, swaps, and any other derivative contract relating to commodities that can be physically settled provided that they are traded on a regulated market, a MTF (multilateral trading facility), or an OTF (organised trading facility), except for wholesale energy products traded on an OTF that must be physically settled;
+
+(7) Options, futures, swaps, forwards and any other derivative contracts relating to commodities, that can be physically settled not otherwise mentioned in point 6 of this Section and not being for commercial purposes, which have the characteristics of other derivative financial instruments;
+
+(8) Derivative instruments for the transfer of credit risk;
+
+(9) Financial contracts for differences.
+
+Based on this definition, the derivative instruments Globitex is planning to trade on its platform are financial instruments as defined by EU legislation and as implemented in national laws.
+
+
+
+www.globitexico.com
+
+
+
+Page 20 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Licensing Requirements for Derivatives Trading
+
+The MIFID II directive states that all multilateral trading systems in financial instruments shall operate either in accordance with the provisions concerning multilateral trading facilities (MTFs) or organised trading facilities (OTFs) or the provisions concerning regulated markets. MTF in the directive is defined as a multilateral system, operated by an investment firm or a market operator, which brings together multiple third-party buying and selling interests in financial instruments  in the system and in accordance with non-discretionary rules while OTF is defined as multilateral system which is not a regulated market or an MTF and in which multiple third-party buying and selling interests in bonds, structured finance products, emission allowances or derivatives are able to interact in the system.
+
+The term 'non-discretionary rules' means that the investment firm operating an MTF has no discretion as to how interests may interact. Interests are brought together by forming a contract and the execution takes place under the system's rules or by means of the system's protocols or internal operating procedures. The MTF can be operated by a market operator or an investment firm whereas the operation of a regulated market is not considered an investment service and is carried out exclusively by market operators that are authorised to do so.
+
+After conducting a review and comparative analysis of the pros and cons of the three potential licenses  regulated market, MTF and OTF  the Globitex team has assessed that the OTF license is the most appropriate legal framework for the Globitex derivatives trading platform. While trading on regulated markets and MTFs is mostly done through regulated broker members (as intermediaries between the trading venue and retail client) one of the key benefits of the OTFs is that they can deal with the end clients directly.
+
+Client protection
+
+According to the MIFID II, OTFs must put in place arrangements, policies, procedures and/ or rules governing the following:
+
+ access to the OTF, with a focus on suitability/appropriateness for a prospective client;  which instruments can be traded on the OTF;  fair and orderly trading, with objective criteria for efficient execution;  the efficient settlement of transactions;  sound management of technical operations associated with the OTF, including contingency planning;  the monitoring of transactions for rule breaches, disorderly conditions and suspicious activities (par-
+
+ticularly in relation to market abuse);  setting and monitoring position limits in certain commodities;  the retention of relevant records;  appropriate management oversight of the above.
+
+
+
+www.globitexico.com
+
+
+
+Page 21 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Transparency Requirements
+
+Pre-trade and post-trade transparency both apply to any order or transaction executed through the system or under the rules of an OTF. According to the directive, OTF operators have to publish the details of current bids and offers and the depth of trading interests of those prices. To comply with post-trade transparency rules, OTF operators have to make public the details of transactions as close to real time as is technically possible.
+
+Passporting Rights in the EU
+
+According to MIFID II, Member States shall ensure that any investment firm authorised and supervised by the competent authorities of another Member may freely provide investment services (which includes operating OTF) within their territories, provided that such services and activities are covered by its authorisation. Thus, OTF licensed in one member state can operate freely across all EU countries.
+
+
+
+www.globitexico.com
+
+
+
+Page 22 of 46
+
+
+
+Scaling Bitcoin Economy
+
+08 TECHNICAL IMPLEMENTATION
+
+Presently launched in a limited Beta test phase, Globitex is operational, thoroughly tested and validated by our Beta Testers and Globitex software development team, and is planned for an open public launch by beginning of the year 2018. As the Token Sale project outlines substantial business commitments, the team will develop the required enhancements, with a view of adding them to the current trading platform, in order to adapt the system for the new products and services laid out in this paper.
+
+Working Prototype
+
+Currently, the Globitex platform is implemented as an advanced, high-performance Bitcoin spot trading venue utilising industry best-practices with various well-designed API types, customisable web interface, sophisticated reporting tools  overall intended for use by professional traders as well as retail clients. High-security standards are used across the system. The technological base for the exchange system can be divided into 3 layers:
+
+ Frontline modules layer, including networking and connectivity interfaces,  Core system layer,  Backend management system and support channels layer.
+
+
+
+Web platform
+
+
+
+Frontline modules
+
+
+
+FIX API
+
+
+
+REST API
+
+
+
+WebSocket API
+
+
+
+AML/KYC
+
+Clearing and Settlement
+
+
+
+Core system
+
+Risk management
+
+Deposits and WIthdrawals
+
+
+
+Order matching Reporting
+
+
+
+Backend management system
+
+
+
+www.globitexico.com
+
+
+
+Page 23 of 46
+
+
+
+Scaling Bitcoin Economy
+
+The Exchange Interfaces
+
+Frontline modules are used by customers and partners for communication. These modules exhibit all the functionality provided by the system Core. They support protocols and industry standards that are widely used in the largest trading venues across the world. Each of these modules supports horizontal scaling to accommodate for growing system loads on the Globitex exchange.
+
+The standard protocol used by a wide range of well-established exchanges, banks, and brokerage systems, to accept and process the bulk of client order flows is the FIX protocol (Financial Information eXchange). The FIX protocol is the preferred trading interface for automated trading systems and algorithmic traders. It is supported by the Globitex exchange and can be used by clients and match the highest performance, latency, and throughput expectations. It also allows integration of existing trading applications that
+
+
+
+Point-and-click traders
+
+
+
+Automated trading applications
+
+
+
+Website widgets, Price aggregators, etc.
+
+
+
+Web trading platform
+
+
+
+FIX API
+
+
+
+REST / WebSockets API
+
+
+
+Risk management system
+
+
+
+Order matching engine
+
+
+
+Data feeders
+
+
+
+www.globitexico.com
+
+
+
+Clearing and Settlement module
+
+
+
+Page 24 of 46
+
+
+
+Scaling Bitcoin Economy
+
+support the FIX protocol as an out-of-the-box solution with minimal customisation required.
+
+In addition to the FIX protocol, the Globitex exchange supports the REST API (REpresentational State Transfer Application Programming Interface) and the WebSocket API. These protocols display the same functionality as FIX and add even more options that are relevant to payment services and accounts management systems and offer easier development similar to existing cryptocurrency exchange APIs. The REST and WebSocket APIs are typically used by the large community of web developers and individual algorithmic traders who prefer simplicity over low-latencies, who integrate exchange services in their applications and web pages.
+
+For retail clients, the main interface to access the exchange services is the point-and-click trading platform. The Globitex exchange provides a web trading platform for hand-traders. It features a modular design where each of the modules can be customised and relocated to match each user's individual needs, trading skills and preferences.
+
+The Core System
+
+The Core System consists of a set of services that ensure the operation of the exchange. The central components of the Core System are the Risk Management System, the Order Matching Engine, the Clearing and Settlement System, and the Data Feed Services. To handle high system loads and ensure fault tolerance, the Core System is designed to be modular, redundant, and CPU cycle and cache efficient. The system relies on advanced queuing and messaging techniques to achieve the highest throughputs with the lowest
+
+
+
+
+
+External payment systems
+
+
+
+Cryptocurrency networks
+
+
+
+Fiat currency processing module
+
+
+
+Cryptocurrency processing module
+
+
+
+Transaction check module
+
+
+
+Payment Workflow engine Accounting module
+
+
+
+Risk management system
+
+Clearing and Settlement system
+
+
+
+Trading system
+
+
+
+www.globitexico.com
+
+
+
+Page 25 of 46
+
+
+
+Scaling Bitcoin Economy
+
+latency requirements. Ultra-low-latency communication protocols are used to connect the trading interfaces with the core modules.
+
+The Payments component is the most security sensitive part of the exchange platform. It consists of the Fiat Payment Processing Module, a Cryptocurrency Payment Processing Subsystem, an Accounting Module and Payment Workflow Engine. It is tightly linked with the other Core system modules, like the Risk Management System for balance checking, the Clearing and Settlement system for trade booking and AML (Anti Money Laundering) system for transaction checking. The Fiat and cryptocurrency payment processing system consists of micro services providing the interfaces to be integrated with several thirdparty payment systems and cryptocurrency networks.
+
+
+
+New developments
+
+In order to support new commodities and money market products and services, and to enhance user experience, the following modules are to be added to the system:
+
+ Cryptocurrency REPO (Repurchase Agreement) system  Futures instrument trading module  Options instrument trading module  Swap instrument trading module  Risk control module for leveraged position margin control  Clearing and settlement system for futures, options, swaps and physically settled instruments  Cross-linkable instrument liquidity derivation services  Iceberg and hidden orders  Dark pool trading services  Responsive web platform for mobile devices  FAST protocol (FIX Adapted for STreaming) for low latency price streaming  Integration with SEPA euro payment system
+
+
+
+The Globitex platform will organise a REPO as a peer-to-peer lending facility. The system will support options to create collateral-secured loans for clients. A real-time risk-control module will allow clients to withdraw a part of the borrowed funds that does not exceed the specified haircut.
+
+Introduction of the Futures, Swaps and Options trading modules requires an implementation of specific processing logic in the Risk Control Module and the Clearing and Settlement system, which involves:
+
+ position opening and closing for the contract,  initial and maintenance margin calculation,  a mechanism for margin call processing and position liquidation in case of breach of margin require-
+
+ments. 
+
+A specific execution process for Options instruments will also be implemented.
+
+
+
+www.globitexico.com
+
+
+
+Page 26 of 46
+
+
+
+Scaling Bitcoin Economy
+
+For some of the cash settled futures instruments, settlement price is calculated based on the price indices and the settlement process can be automated. Whereas physically deliverable products have different processing requirements in the system that involve stock inventory holding commission processing in client accounts, stock inventory management, processing of inventory replenishment and redemption.
+
+
+
+Interfaces
+
+
+
+Responsive web
+
+
+
+FAST protocol
+
+
+
+Core services
+
+
+
+Dark pool trading Liquidity derivation
+
+
+
+Exchange System
+
+
+
+External payment systems
+
+
+
+
+
+Payments
+
+
+
+Futures
+
+
+
+Swaps
+
+
+
+Options
+
+Products
+
+
+
+REPO
+
+
+
+To support large-volume traders in parallel with a public order-book market, the system will allow for the introduction of dark pool trading services. Globitex is planning to create different options for order matching in dark pools, for example, by allowing order matching events to occur at specified time intervals, this way achieving better protection for market participants from undesirable order price discovery and price movement fluctuations. Furthermore, iceberg orders will be added to support tools that allow for adding larger liquidity in the public orderbook.
+
+Another important feature supported by Core Services is `liquidity derivation services' based on the cross-linkable order-books. As the Globitex exchange is supposed to support multiple cryptocurrency-to-fiat instrument pairs, this will allow for synthetically populating order-books with sparse liquidity by reallocating liquidity from other linkable trading pairs.
+
+By adapting the web platform for mobile devices, Globitex will bring exchange services to the fingertips of the users "on the road". This will expand serviceable reach and will allow for targeting of wider client base.
+
+Globitex will also be adding the FAST protocol (FIX Adapted for STreaming) in addition to the already supported FIX protocol. The FAST protocol is designed as a data compression protocol and used to transport a high volume of market data to meet the needs for ultra-
+
+
+
+www.globitexico.com
+
+
+
+Page 27 of 46
+
+
+
+Scaling Bitcoin Economy
+
+low-latency applications. Appreciated by High-Frequency traders, the inclusion of the FAST protocol can define a new client base for cryptocurrency exchanges.
+
+Globitex will continuously develop and maintain the system in order to be able to add new protocols and interfaces to the exchange's Core system so as to support new client demands and application types in the future. 
+
+
+
+www.globitexico.com
+
+
+
+Page 28 of 46
+
+
+
+Scaling Bitcoin Economy
+
+09 GLOBITEX TEAM
+
+
+
+Globitex was founded by a team of traders to bring their expertise and vision to the Bitcoin industry. The founding team has previously worked together for many years in asset management, primarily trading spot commodities and derivatives on global futures and derivatives exchanges, including jurisdictions such as China, Japan, USA and Europe. Globitex Chairman Jon Matonis joined the team in 2015, bringing to the table his extensive track record as an executive of technology companies, Bitcoin visionary as well as his own trading experience in commodities markets.
+
+In the wake of the demise of the notorious Mt. Gox [12], the Globitex team found validation on their belief that a more robust system was required in order for Bitcoin to gain worldwide acceptance. Already previously close as colleagues, and having backgrounds in asset management businesses, they all shared an enthusiasm for the nascent cryptocurrency - Bitcoin. Indeed, the failure of the largest Bitcoin exchange, and its impact on the Bitcoin ecosystem at that time served as the major impetus for the Globitex team to pinpoint the direction in which to move forward with fostering the growth of Bitcoin.
+
+Building on our significant experience in derivatives instruments and markets, especially commodities spot and futures trading, we decided to build our own exchange and thus better the industry overall. Based on our trading expertise and thinking from the perspective of the traders that would be using our platform, we wanted to bring our experience to Bitcoin by building an exchange that reflects our vision of how an exchange should work in terms of connectivity, matching, settlement, reporting, and business integrity.
+
+
+
+EXECUTIVE TEAM
+
+Mr Jon Matonis, Chairman
+
+Jon is the Chairman of the management board at Globitex. Previously Jon served as Executive Director and a Founding Board Member for the Bitcoin Foundation; held a position of the Managing Director for the Lydia Group; and worked as the CEO and Board Director of Network Inference, and before with Hush Communications. Jon is also a columnist at Forbes Magazine, American Banker, PaymentsSource, CoinDesk, and Editor of The Monetary Future, a leading economics blog at the intersection of free banking, cryptography, and digital currency. Jon currently is a Board Advisor to startups in bitcoin, gaming, mobile, and prepaid companies. Jon holds a BA degree in Economics from George Washington University (USA). His early work on digital cash systems and financial cryptography has been published by Dow Jones and the London School of Economics, as well as by the European Central Bank.
+
+
+
+www.globitexico.com
+
+
+
+Page 29 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Ms Liza Aizupiete, Managing Director Liza is a co-founder and the Managing Director at Globitex. Liza's previous roles include various executive roles in Asset Management with MTG Capital Group. She was a Portfolio Manager, trading commodity spot and derivatives markets globally, specialising in mainland China markets. Liza worked in business development, marketing and client acquisition, while managing overseas business operations in Shanghai. Previously she worked in research and fund management with one of the leading Swiss microfinance institutions  Symbiotics. Liza is a BA major in Philosophy from the Swiss Universit de Genve and passionate about the Austrian school of economics.
+
+Mr Arvis Ermins, Director and Head of Compliance Arvis is is one of the co-founders and the head of Compliance at Globitex. Arvis began his career with Deloitte & Touche Latvia and the Constitutional Court of Latvia. He was a founding partner of MTG group where he acted as the head of legal and compliance team responsible for corporate structuring, tax planning, documentation and due diligence. His extensive experience in trading spot and derivatives markets in China and globally led to a deep understanding of the global markets from legal perspective. Arvis graduated from University of Latvia with a Master's degree in law.
+
+Mr Maris Kaneps, Director and Head of IT Maris is one of the co-founders and the head IT architect of Globitex system. Maris graduated from Riga Technical University with a Master's degree in computer science. He worked for Traffic Bureau of Latvia and Motor Insurers Bureau of Latvia. Maris took a leading role in development of information system for Third Party Liability Insurance for inland motor vehicle owners in Latvia. He is one of the developers of Bonus-Malus system for insurance of inland motor vehicles in Latvia. Maris also was responsible for development of automated trading systems at MTG Capital. He has extensive experience in financial markets and was implementing automated trading strategies for futures and spot markets since 2008 and in cryptocurrency trading in various exchanges since 2012.
+
+
+
+www.globitexico.com
+
+
+
+Page 30 of 46
+
+
+
+SUPERVISORY TEAM
+
+
+
+Scaling Bitcoin Economy
+
+
+
+Mr Uldis Teraudkalns, Chairman of the Supervisory Board
+
+Uldis is a supervisory board member at Globitex Holding. Uldis has a Master's degree in Finance from the Stockholm School of Economics in Stockholm. His background includes managing a VC fund for several years while also managing investments for private individuals acting as the board member and investment manager at Eko Investors. Uldis also has experience from the banking industry where he held different positions within SEB corporate banking. Currently Uldis manages assets for high net worth individuals and works as a business consultant while also serving on various company boards.
+
+
+
+Mr Viesturs Tamuzs
+
+Viesturs is an early venture capital investor in the Globitex project. Viesturs graduated from the University of Latvia with a Master's degree in chemistry. He is an active venture capitalist and founding partner and chairman of the supervisory Board at Eko Investors as well as founder and previous chairman of the Latvian Private Equity and Venture Capital Association. Currently Viesturs also serves as the chairman of the supervisory board of vertically integrated waste management group AS Eco Baltia, and previously worked as the CEO of SIA Stora Enso Packaging Latvia, head of Lithuanian and Estonian branches.
+
+
+
+Mr Andris Kaneps
+
+Andris is one of the co-founders at Globitex as well as a seed investor of the Globitex project. Andris graduated from University of Latvia with a Master's degree in law and worked as a lawyer with law firm Liepa, Skopina/Borenius in Latvia. He is a founding partner of MTG group  Cayman based fund and asset management company. Andris has extensive trading experience in financial markets, and he is also one of the early cryptocurrency traders since 2012. He is an avid investor and entrepreneur, focusing on early fintech startups. His current position includes an Africa invested microfinance institution Watu Credit in Kenya, innovating local asset financing industry, while promoting financial inclusion cause.
+
+
+
+www.globitexico.com
+
+
+
+Page 31 of 46
+
+
+
+ADVISORY TEAM
+
+
+
+Scaling Bitcoin Economy
+
+
+
+Mark O'Byrne, Bullion Dealer and Gold Market Analyst
+
+Mark O'Byrne serves as advisor to Globitex in areas concerning physical gold trading and delivery. Mark is the research director of GoldCore which he founded in 2003. He is a leading international gold expert and a respected speaker on precious metals, investments, markets, geo-politics, finance, fintech and money.
+
+Mark has a BA in History and Greek and Roman Civilisation when he took a keen interest in financial history and the history of money. A historical perspective is very valuable in understanding today's financial markets and monetary system and the emerging technologies involving crypto-currencies and the blockchain. He has an international media profile and appears on CNBC and Bloomberg frequently and has been interviewed and quoted by the Financial Times, Reuters, Wall Street Journal, Bloomberg, Dow Jones, Associated Press, BBC etc. He takes part in the Reuters Precious Metals Poll and the Bloomberg Gold Survey. Mark has spoken at investment conferences throughout the world and is passionate about financial and monetary reform. Mark won the Moneymate Financial Analyst of the Year Award in 2006 when he correctly warned about property bubbles and the looming global financial crisis.
+
+From the humble beginnings, GoldCore have become a leading international gold broker and have over 15,000 clients in over 140 countries, sales of over $1 billion and over $130 million in bullion assets under management & storage. The group completed the sale of their wealth management division in 2015.
+
+
+
+Mr Carlos Blanco, Risk Analyst and Financial Modelling Expert
+
+Dr. Blanco is managing director of Analytic Solutions at Ascend Analytics, where he provides expertise in the areas of analytic modeling, forecasting, optimization and simulation. He is the former co-founder and managing director of Black Swan Risk Advisors where he worked with leading organizations worldwide on a wide range of advisory and education projects. Dr. Blanco is also a faculty member of the Oxford Princeton Programme since 2004, where he teaches several courses on energy and commodity derivatives pricing, hedging and risk management. He has published over 150 articles on a wide range of financial and commodity risk management topics. Carlos was also a lecturer at the Finance department at the University of California, Berkeley. He is a former VP, Risk Solutions at Financial Engineering Associates (a BARRA/MSCI company), where he was a member of the Executive Management Committee as well as an essential contributor in the development and client support of the financial and energy derivatives pricing and market risk management models.
+
+Dr. Blanco holds a Ph.D. in Finance from Universidad Complutense, Madrid, where he was awarded "Magna Cum Laude". He also has a Masters degree in Investments and International Economics from the University of Nebraska, Lincoln.
+
+
+
+www.globitexico.com
+
+
+
+Page 32 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Mr Pierre Roberge, IT Security Expert
+
+Pierre is an 11-year veteran of the Communication Security Establishment Canada (CSEC), Pierre led advanced technical teams tasked with protecting Canada's national interests in cyberspace. While the majority of Pierre's projects remain classified, Pierre established a strong reputation among `5-Eyes' nations as a leading expert and innovator in cyber intelligence operations. His declassified awards include the CSEC Excellency Award and the Chief of the Defence Staff Commendation. While working alongside British and American counterparts, Pierre lead teams of 100+ members to combat the most advanced cyber threats originating from both state and non-state actors. Pierre is experienced in working within a complex, enterprise-level networking environment using the most advanced technologies. His technical experience ranges from securing low-level infrastructure and endpoint systems to interfacing with dynamic and cross-functional networks.
+
+Mr Mikko Ohtamaa, Technology Advisor
+
+Mikko has pioneered the development of cryptocurrency, blockchain and smart contract technologies since 2013. He is the cofounder and CTO of TokenMarket Ltd, a global leading token sale platform. Mikko advises several blockchain startups. He is the former cofounder and CTO of LocalBitcoins, a P2P cryptocurrency exchange. Earlier Mikko did a career in mobile software development in Nokia and iobox.
+
+Mikko holds MSc. in industrial engineering and management from University of Oulu. Mikko actively engages in open source communities and speaks in conferences. He is a cofounder of Pycon Finland, a Python programming conference. Mikko is also a member of Plone Foundation, one of the oldest open source non-profits.
+
+Mr Ransu Salovaara, Token Sales Strategist
+
+Ransu is a co-founder and CEO at TokenMarket, an exchange and research company specialising in launching blockchain technology projects. He is also the CEO of Revolutra, which specialises in creating and marketing publicly traded, EU passported disruptive technology and investment products. Previously, Ransu headed European trading desk at Urram Investment firm, specialising in fixed-income trading of European investment grade, high-yield and convertible bonds. He has co-founded Zenigo company, connecting businesses with local customers through directories, social networks, site reviews and mobile apps. Ransu excels at company sales and content strategy development, where his experience was first honed by heading the EpicTV Adventure studio, licensing adventure sports films and documentaries from independent moviemakers.
+
+
+
+www.globitexico.com
+
+
+
+Page 33 of 46
+
+
+
+Scaling Bitcoin Economy
+
+10 CONCLUSION
+
+In this White Paper we have laid out a plan for how Globitex, by means of issuing the GBX Token intends to tackle Bitcoin's economy scaling issues. We have, along the way, examined the importance of money markets and commodity trading, and why such assets should be linked to Bitcoin. We have presented the legal setup for achieving the goals of the project, and enumerated the roadmap for stages of business development. The technical description of Globitex product demonstrates the soundness of Globitex as a technically robust system, capable of scaling to the necessary industrial trading level, with a capacity to accommodate standardised money markets and commodities listings.
+
+We have presented our Readers with, the idea of linking Bitcoin and thus digital currencies to a significant use case  global trade in spot and advanced derivatives for money markets and commodities. In other words, we have sketched out a natural path of development for an independent, decentralised, digital asset to effectively become relevant on a global scale as a medium of exchange and a stable unit of account.
+
+Globitex can be instrumental in the fulfilment of this vision with the currently available toolset: technically robust system in place, solid team members, driven by ideals and unhindered by political or legal influences.
+
+As traders ourselves, we understand what is at stake and are prepared to weather the storms that will inevitably present themselves on the way of achieving the goals set out in this White Paper.
+
+Indeed, we ask you, the Reader, and our esteemed Contributor, to help us achieve this goal, and participate in subsequent success.
+
+
+
+www.globitexico.com
+
+
+
+Page 34 of 46
+
+
+
+11 ANNEX
+
+
+
+Scaling Bitcoin Economy
+
+
+
+COMMODITIES
+
+Commodities trading plays an essential role in the global economy. Commodities markets are a venue, where producers, intermediaries and end-users come together to set or discover prices for basic raw materials used in production and consumption of goods at the wholesale and retail levels. Although some of production and consumption goods can be traded for bitcoin, there is no commodities trading venue where basic raw material commodity contracts are priced, margined and settled with Bitcoin.
+
+To enable global trade in Bitcoin, there needs to be a standardised offering of commodity derivatives on exchanges linked to Bitcoin as a currency. For global trade to begin taking shape in Bitcoin, exchange traded commodity contracts must also become available for physical delivery. For example, a farmer in Kenya could sell their coffee crop to a European coffee wholesaler through the bitcoin ecosystem. Buying and selling real-world goods and commodities is of the essence for a currency to become truly demanded and relevant in our everyday lives. This chapter will provide information on what commodities markets are and how they function in global trade.
+
+Types of Commodities Commodity markets trade in primary goods that are used as the `raw materials' in manufactured products. Commodities have three main features, they are:
+
+1. usually produced by many different producers; 2. uniform in quality between producers; 3. traded at a price resulting from the balance demand and supply. 
+
+Commodities can be perishable or non-perishable. Non-perishable commodities such as metals are called `hard' commodities. Perishable commodities such as agricultural commodities are called `soft' commodities. Hard commodities are typically natural resources that must be mined or extracted (gold, rubber, oil, etc.), whereas soft commodities are agricultural products or livestock (corn, wheat, coffee, sugar, soybeans, pork, etc.)
+
+The World Bank's global commodity price index accounts for 40 main commodities, which can be further divided into regional or qualitative varieties (e.g. different types of oil like WTI and Brent). [19]
+
+
+
+www.globitexico.com
+
+
+
+Page 35 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Commodities Trading Organisation
+
+The majority of commodities are traded on the Over-the-Counter (OTC) market, however, a substantial percentage of commodity trading flows through the global commodities exchanges. These exchanges are important as their pricing information is crucial for price discovery and is therefore used as a reference pricing benchmark in the OTC market. The purpose of a commodity exchange is to provide an organised marketplace in which members can freely buy and sell various commodities in which they have an interest.
+
+The trading of commodities in commodity markets consists of direct physical trading (spot trading) and derivatives trading (forwards, futures, swaps and options). A market in which goods are sold for cash and delivered immediately is called the physical market. In the physical markets, participation is restricted to parties who are directly involved with that commodity, e.g., producers, farmers, refineries, wholesalers, marketers, physical traders, etc.
+
+The spot price of a commodity is the price that is quoted in the physical market for immediate or spot settlement (payment and delivery). Spot settlement typically occurs one or two business days from trade date. This contrasts with the forward price established in a forward contract or futures contract, where contract terms (price) are set `now', but delivery and payment will occur at a `future date'.
+
+The spot market is different from the futures market in that the value in the futures market is affected by the price of storage and future price movements. In the spot market, prices are affected by the existing supply and demand, which tends to make the prices more volatile. Another aspect that affects spot market prices is whether the commodity is perishable or non-perishable.
+
+Contracts traded on the commodity exchanges are no longer limited to traditional commodities, and standardised contracts are introduced on a wide range of products and indices like electricity, freight rates, and carbon emissions, besides the conventional base metals, soft commodities, oil, gas etc. The concept of "commodity" has been stretched beyond the traditional tangible physical products to contracts that are based on an increasing range of physical commodities, market instruments and indices (whether settled by physical delivery or in cash).
+
+A forward contract is an agreement to buy or sell an asset on a specified date for a specified price. Other contract details like delivery date, price and quantity are negotiated bilaterally by the parties to the contract. The forward contracts for physical delivery are normally traded outside the exchanges. Forward markets for most commodities are afflicted by several problems, such as lack of centralisation of trading, illiquidity, and counterparty risk.
+
+
+
+Futures
+
+Futures markets were designed to solve the problems that exist in bilateral forward markets. A futures contract is an agreement between two parties to buy or sell an asset at a
+
+
+
+www.globitexico.com
+
+
+
+Page 36 of 46
+
+
+
+Scaling Bitcoin Economy
+
+certain time in the future at a certain price. But unlike forward contracts, the futures contracts are standardised and exchange traded. To facilitate liquidity in the futures contracts, the exchange specifies certain standard features of the contract. It is a standardised contract with a standard underlying instrument, a standard quantity and quality of the underlying instrument that can be delivered, (or which can be used for reference purposes in settlement) and a standard timing of such settlement. A futures contract may be offset prior to maturity by entering into an equal and opposite transaction. The main standardised items in a futures contract are: quantity of the underlying asset; quality of the underlying asset; the date and the month of delivery; units of price quotation and minimum price change and place of delivery.
+
+The primary distinction between a futures market and a market in which actual commodities are bought and sold, either for immediate or later delivery, is that in the futures market one deals in standardised contractual agreements only. These agreements (more formally called futures contracts) provide for delivery of a specified amount of a particular commodity during a specified future month but involve no immediate transfer of ownership of the commodity.
+
+Commodity exchanges provide platforms to suit the varied needs of their users. First, by bringing multiple buyers and sellers in a common platform, they provide a key role in the commodity price discovery process. Second, exchanges enable actual users to hedge their price risk independently from their bilateral physical purchase and sale contracts; hedging is the most common method of price risk management. Third, commodity exchanges provide liquidity by involving the physical buyers, sellers as well as investors and speculators. Lastly, they allows arbitrageurs trading on different platforms to generate opposing demand and supply forces which ultimately narrows down any price inefficiencies amongst traded contracts. Broadly main participants in commodity market can be classified as hedgers, arbitrageurs and speculators. In other words, manufacturers, traders, farmers, exporters and investors are all participating in this market.
+
+Most of the Commodity exchanges, which exist today, have their origin in the late 19th and earlier 20th century. The first central exchange was established in 1848 in Chicago under the name Chicago Board of Trade. The emergence of the derivatives markets as the effective risk management tools in 1970s and 1980s has resulted in the rapid creation of new Commodity Exchanges and expansion of the existing ones. Some of the world's largest commodities exchanges currently are: Chicago Mercantile Exchange (CME), New York Mercantile Exchange (NYMEX, now part of CME Group), London Metal Exchange (LME) and the Intercontinental Exchange (ICE).
+
+
+
+Options
+
+Options are fundamentally different from forward and futures contracts. An option gives the holder of the option, the right to buy or sell a contract at an agreed price known as the strike price. In contrast to forward or futures contract, where the two parties have a firm commitment to exchange the commodity (or the associated cashflows according to a
+
+
+
+www.globitexico.com
+
+
+
+Page 37 of 46
+
+
+
+Scaling Bitcoin Economy
+
+formula in financially settled contracts), the option holder can decide not to exercise this right. Commodity options are option contracts with a commodity as the underlying. For instance, a gold options contract would give the holder the right to buy or sell a specified quantity of gold at the agreed strike price.
+
+There are two basic types of options: calls and puts. A call option gives the holder the right but not the obligation to buy an asset by a certain date for a certain price. A put option gives the holder the right but not the obligation to sell an asset by a certain date for a certain price.
+
+In terms of the flexibility in the timing of the exercise, there are two main types of options. American options are options that can be exercised at any time up to the expiration date. European options are options that can be exercised only on the expiration date itself.
+
+Clearing and Settlement
+
+Even though most futures contracts allow for physical delivery of the underlying commodity at maturity, most futures market participants do not use the futures markets to cover their physical needs. Usually, only a small percentage of the total futures contracts that are entered into are ever settled through actual delivery of the physical commodity. Most futures market participants close their open positions before the expiration of the contract and settle their obligations with the exchange by receiving or paying a given amount of currency depending on the profit and loss from the trade. The margining and settlement functions in the exchange are taken care of by an entity called clearing house.
+
+Futures contracts that are physically delivered require the holders to either make or take delivery to third-parties assigned by the exchange. Futures contracts that are cash settled are not deliverable and a simple debit or credit is issued when the contract expires.
+
+Clearing of trades that take place on an exchange happens through the exchange clearing house. A clearing house is a system by which exchanges guarantee the faithful compliance of all trade commitments undertaken on the exchange trading systems. The main task of the clearing house is to keep track of all the transactions that take place during a day so that the net position of each of its members can be calculated. The clearing house also guarantees the performance to the parties to each transaction.
+
+Because all members are required to clear their trades through the clearing house and must maintain sufficient funds with it to cover their debit balances, the clearing house is placed in a position of being responsible to all members for the fulfilment of contracts. The clearing house becomes the "other party" for all futures trades between exchange members.
+
+Physical settlement of commodities involves accredited warehouses, which can be assisted by registrar and transfer agents and assayers. Commodity exchange specifies accredited warehouses through which delivery of a specific commodity can be effected and which will facilitate for storage of commodities. In exchange for the services provided,
+
+
+
+www.globitexico.com
+
+
+
+Page 38 of 46
+
+
+
+Scaling Bitcoin Economy
+
+warehouses charge a fee that constitutes storage and other charges such as insurance, assaying and handling charges or any other incidental charges.
+
+The Exchange may specify approved registrar and transfer agents through whom commodities can be dematerialised and who facilitate for dematerialisation/rematerialisation of commodities in the manner prescribed by the exchange. Exchange specified assayers ensure quality and grading of commodities (received at approved warehouses for delivery against deals made on the exchange).
+
+
+
+www.globitexico.com
+
+
+
+Page 39 of 46
+
+
+
+BITCOIN ECONOMY
+
+
+
+Scaling Bitcoin Economy
+
+
+
+The Bitcoin economy is still on the runway. This section examines Bitcoin in terms of usage and the potential for it to become a universally accepted currency; the statistical data on payments, and arguments on the nature of payments that constitute the relevancy of any currency.
+
+
+
+Usage
+
+Perpetual human action is the very foundation of any economy. Humans are economic agents in constant pursuit of their individual goals. If individual agents are free, their business interactions result in the exchange of consumption and production of goods and services. The medium of exchange that facilitates these transactions between various agents swapping goods and services is money - the most liquid of all assets - which creates a market equilibrium between production and consumption. Now, what it is, exactly, that constitutes a medium of exchange  money  cannot be ascertained by anything other than its usage. The more widely an asset is used, the more likely it is to become a universally accepted medium of exchange. As stated by Ludvig von Mises:
+
+
+
+Business usage alone can transform a commodity into a common medium of exchange. It is not the state, but the common practice of all those who have dealings in the market, that creates money. [13]
+
+
+
+To date, Bitcoin is increasingly being used for retail. A comprehensive collection of vendors and merchants that accept Bitcoin as a payment is maintained by coinmap.org. There are close to 100 thousand venues that accept Bitcoin as a payment for goods and services, with new venues being added daily.
+
+Equally telling is the number of transactions on the Bitcoin blockchain, now nearing 400 thousand blockchain based transactions per day. This, however, statistically is still insignificant compared to global payments traffic. Let us, therefore, examine Bitcoin market usage in terms of global payment statistics.
+
+
+
+www.globitexico.com
+
+
+
+Page 40 of 46
+
+
+
+Payments
+
+
+
+Scaling Bitcoin Economy
+
+
+
+Consider all non-cash payments, such as cards, bank payments, checks and e-money transfers, and compare them with Bitcoin transactions on the blockchain over the following timeframe :
+
+
+
+Year 2011 2012 2013 2014 2015 2016*
+
+
+
+Fiat vs. Bitcoin payment value in USD
+
+
+
+Bitcoin (blockchain)
+
+
+
+Fiat (non-banks)
+
+
+
+Multiplier (fiat/bitcoin)
+
+
+
+178,641,147 589,250,000,000,000
+
+
+
+3,298,512
+
+
+
+257,573,839 781,426,000,000,000
+
+
+
+3,033,794
+
+
+
+6,210,926,935 846,849,000,000,000
+
+
+
+136,348
+
+
+
+9,926,173,670 875,564,000,000,000
+
+
+
+88,208
+
+
+
+11,374,646,874 972,701,000,000,000
+
+
+
+85,515
+
+
+
+24,708,127,475 1,069,971,100,000,000
+
+
+
+43,304
+
+
+
+Source: Bank for International Settlements and blockchain.info
+
+
+
+Albeit improving every year, the data shows the scale by which the Bitcoin economy lags behind fiat in terms of usage. The multiplier value shows the total `non-bank' USD transaction value, divided by the total Bitcoin blockchain USD value.
+
+Furthermore, by purely looking at the number of transactions per period, the same `lag' can be observed. The multiplier below shows the total number of fiat transactions of `nonbank' institutions, over the total number of Bitcoin transactions recorded on the blockchain for the year under review [14], [15], which shows Bitcoin transactions growing at a steady pace. 2
+
+
+
+Fiat vs. Bitcoin number of payments
+
+
+
+Year 2011 2012 2013
+
+
+
+Bitcoin 946,623
+
+4,179,097 9,723,096
+
+
+
+Fiat
+
+
+
+Multiplier (fiat/bitcoin)
+
+
+
+279,957,000,000
+
+
+
+295,743
+
+
+
+298,703,000,000
+
+
+
+71,475
+
+
+
+311,952,000,000
+
+
+
+32,084
+
+
+
+2014
+
+
+
+12,594,074
+
+
+
+337,499,000,000
+
+
+
+2015
+
+
+
+22,819,112
+
+
+
+374,680,000,000
+
+
+
+2016
+
+
+
+41,351,384
+
+
+
+412,148,000,000
+
+
+
+Source: Bank for International Settlements and blockchain.info
+
+
+
+26,798 16,420
+
+9,967
+
+
+
+The data does not include inter-bank money transfers, which are significantly higher in volumes and value. Nor does it includes cash transactions, which cannot be fully accoun-
+
+
+
+2 the source data does not include the year 2016. Instead the number of transactions and USD value in fiat for the year 2016 has been estimated to grow by 10%. The data for Bitcoin however is accurate as reflected in the source.
+
+
+
+www.globitexico.com
+
+
+
+Page 41 of 46
+
+
+
+Scaling Bitcoin Economy
+
+ted for, due to their untraceable nature, which cannot be traced and made statistically significant or relevant on the fiat side.
+
+From the perspective of `payment volumes' and `amounts exchanged' each day which constitutes economic activity, it is fair to conclude that the Bitcoin economy is small, and Bitcoin usage has a way to go.
+
+The Bitcoin Protocol
+
+It is our belief that the Bitcoin protocol has at its core the right formulae for it to establish itself as the leading globally accepted currency. This assumption stems from the bases on which Bitcoin was originally conceived by its creator. [16]
+
+The original idea for Bitcoin was to create a digital cash equivalent, largely for small nonreversible payments to enable a cheap, digital medium of exchange. However, given the properties of the Bitcoin protocol, it is fit to replace the dominant currencies presently used in global trade.
+
+As global trade is carried out predominantly in US Dollars. The USD monetary system dominates world trade in physical goods and derivatives trading alike. By virtue of being the dominant currency, it also influences all other national fiat currencies. The most notable feature of the USD is called  monetary credit expansion. The USD monetary system is governed by The Federal Reserve System of the United States of America.
+
+Monetary credit expansion is a characteristic of all fiat currencies that are no longer linked to commodity money, such as gold - a fixed asset. There used to be a time when gold was used as a unit of account and a medium of exchange for trade on markets globally. Before the ascent of central banking and fiat currency, gold was used for international trade. While debasement has historically been present, due to monopoly rights for coin minting, it occurred rarely, usually only when a new king came to power, or a kingdom needed to finance a war. The most ruinous effects today, however, constitute the ever expanding monetary base of centrally governed monetary systems, synonymous with constant price inflation.
+
+Money is a medium of exchange for goods, not a good in itself. While a nation's wealth increases when more goods are produced, the same cannot be said about the amount of money printed. Unlike gold and silver that are favoured for their intrinsic appeal, lustre, ornamental or industrial value, the initial and sustained demand for Bitcoin stems from a deep seated dissatisfaction with the current monetary system. The supply of money is a non-issue, as long as it is not meddled with. [17]
+
+
+
+www.globitexico.com
+
+
+
+Page 42 of 46
+
+
+
+Scaling Bitcoin Economy
+
+Bitcoin satisfies all the money and currency prerequisites and thus is bound to replace -or at least strongly compete with -- inflationary monetary systems. Furthermore, by virtue of allowing everyone to be their own bank, it eliminates the very ability to expand credit and thus does not offer any room for fractional reserve credit.
+
+Bitcoin can give anyone the ability to trade freely and protect themselves financially against corrupt and incompetent governments. [18]
+
+
+
+Bitcoin, as defined at the core of its protocol, is a non-interventionist, decentralised, fixed asset currency; one of the most appropriate medium of exchange ever devised by a human mind. Indeed, Bitcoin even outsmarts the centuries trusted asset - gold as the supreme medium of exchange.
+
+A government can coerce society into using a specific type of money, usually paper bills, or electronic equivalents, that are managed by a central bank with the assigned monopoly rights to issuance. Bitcoin, however, constitutes a divergence away from such coercive notions, going back to historically universally accepted units of exchange, such as gold. Thus, let us conclude by examining the basic properties of gold money versus Bitcoin:
+
+
+
+Properties Divisible Portable
+
+Scarce
+
+Durable Widespread Source: Authors
+
+
+
+Bitcoin vs. Gold Comparison
+
+
+
+Gold
+
+
+
+Bitcoin
+
+
+
+small coins, or large bars
+
+
+
+eight (8) decimal point divisibility
+
+
+
+relatively heavy, but passably portable
+
+
+
+travels at speed of network capacity, no physical weight proper
+
+
+
+geologically limited resource
+
+
+
+mathematically limited at the level of base protocol, exactly 21 million units to ever exist
+
+
+
+physically durable and nonperishable
+
+
+
+electronically durable at the protocol level, non-perishable
+
+
+
+universally accepted and available
+
+
+
+universally accepted and available
+
+
+
+These five properties largely define the nature of money, observed by the use of gold throughout history - divisibility, portability, scarcity, durability and widespread adoption. Bitcoin concurs with these historical properties and has the added benefits of being extremely portable and instantaneously divisible due to its digital nature. These properties, including  scarcity  most importantly, are the underlying features of Bitcoin. Furthermore, the portability of Bitcoin is defined by the network capacity, and not a central governing body, which allows for the low cost of transactions. These properties are hardcoded into the Bitcoin protocol and are maintained by the community. The Bitcoin com-
+
+
+
+www.globitexico.com
+
+
+
+Page 43 of 46
+
+
+
+Scaling Bitcoin Economy
+
+munity that operates and maintains its computational power, act as gatekeepers and ensure it remains a healthy monetary system. Bitcoin therefore ticks all the boxes in terms of it developing into a stable, non-inflationary currency; a medium of exchange eternally sought by peoples since the beginning of trade between individuals and groups.
+
+Although Bitcoin's digital nature reveals to be the main advantage, it on the other hand may prove to be the main disadvantage: if all electronic devices are compromised, or cease to exists e.g. due to rare but potentially powerful electromagnetic surge from a solar storm, it is clear that humanity will have no other recourse for stable medium of exchange but gold or its equivalents.
+
+
+
+www.globitexico.com
+
+
+
+Page 44 of 46
+
+
+
+SUCCESS PATH
+
+
+
+Scaling Bitcoin Economy
+
+
+
+Let us first consider Bitcoin's path of success, by performing a relatively simple set of calculations. Then look at the derivatives volumes globally to estimate a successful outcome for the Globitex exchange as a global spot and derivatives trading venue in the making.
+
+
+
+Supposing that the total of world's monetary unit value, according to the CIA data [20], is USD83,558,133,640,0003, of which then Bitcoin usage in terms of market capitalisation constitutes 0.0794%.4
+
+
+
+2016
+
+Total value of world's money (monetary units) M2
+
+
+
+5% usage of total money value Estimated Bitcoin price today @16.6m units mined
+
+
+
+Estimated Bitcoin price @ total 21m units mined
+
+
+
+USD 83,558,133,640,000
+
+
+
+USD 4,177,906,682,000
+
+
+
+USD 251,850
+
+
+
+USD 198,948
+
+
+
+If, as a result of increased turnover of Bitcoin due to wider usability in exchange traded products and global trade, Bitcoin usage increases to at least 5% of total world's monetary value, then Bitcoin would be priced at over USD 250,000 at today's mined 16.5m+ units, and close to USD 200,000, if all 21 million units were mined. In other words, increasing the usability of Bitcoin and cryptocurrencies at large, spells an exponential price appreciation prospects and eventually a price stability, when market demand meets supply and price discovery is enabled on multiple venues linked to various real-life values.
+
+
+
+2016
+
+
+
+Total value of world's money (monetary units) M2
+
+
+
+Bitcoin Market Capitalisation @16.6m units mined & USD 4,000 price
+
+
+
+The total USD value of trading volume on major bitcoin exchanges
+
+
+
+USD 83,558,133,640,000
+
+
+
+USD 66,355,400,000
+
+
+
+USD 5,050,266,413
+
+
+
+Indeed, according to the blockchain.info the total USD value of trading volume on major Bitcoin exchanges constitutes about 7.6% of total Bitcoin market capitalisation. [15]
+
+
+
+Now, if we suppose that all Bitcoin-related derivatives could constitute at least 1% of total currently observed fiat global futures and options market volume, then for a successful albeit conservative case in point Globitex, as the first or one of the first derivatives exchanges globally, could attain at least 20% of total market share in Bitcoin and cryptocurrency spot and derivatives trading, thus attain profitability and therefore attain relative success thereto.
+
+
+
+Onwards Total global fiat futures and options volume (round-turn contracts) in 2016 Estimated global Bitcoin-priced derivative volume (round-turn contracts) Estimated Globitex derivatives volume (round-turn contracts)
+
+
+
+25,219,926,317 252,199,263 50,439,853
+
+
+
+100% 1%
+
+20%
+
+
+
+3 The CIA numbers for each country include EU region as well as individual EU countries; therefore for precision purposes, the EU number has been subtracted to arrive at a realistic estimate.
+
+4 Bitcoin constitutes about 50% of total cryptocurrency market capitalisation. Other major cryptocurrencies: Ethereum, Ripple, Bitcoin Cash, Litecoin, Dash, etc.
+
+
+
+www.globitexico.com
+
+
+
+Page 45 of 46
+
+
+
+Scaling Bitcoin Economy
+
+12 REFERENCES
+
+[1] Bank of England. The Economics of Digital Currencies. Quarterly Bulletin, Q3, 2014. http:// www.bankofengland.co.uk/publications/Documents/quarterlybulletin/2014/qb14q3digitalcurrenciesbitcoin2.pdf [2] Vogelsteller, Fabian & Buterin, Vitalik. ERC-20 Token Standard. https://github.com/ethereum/EIPs/blob/ master/EIPS/eip-20-token-standard.md [last visited 21.09.2017] [3] Investopedia. Interest Rates. http://www.investopedia.com/terms/i/interestrate.asp?ad=dirN&qo=investopediaSiteSearch&qsrc=0&o=40186 [last visited 22.08.2017] [4] Matonis, Jon. Bitcoin Needs Its Own Version of LIBOR. CoinTelegraph, 2014. https://cointelegraph.com/ news/jon-matonis-the-bitcoin-ecosystem-will-soon-need-a-reference-interest-rate-similar-to-libor [last visited 22.08.2017] [5] FIA (Futures Industry Association) 2016 VOLUME SURVEY. http://marketvoicemag.org/sites/default/ files/MARCH_2017_VOLUME_SURVEY.pdf] [last visited 22.08.2017] [6] BIS (Bank for International Settlements). Turnover of OTC foreign exchange instruments - Figures for 2016, http://www.bis.org/publ/rpfx16.htm. [last visited 22.08.2017] [7] World Bank. Commodity Markets Outlook. http://pubdocs.worldbank.org/en/174381493046968144/ CMO-April-2017-Full-Report.pdf [8] SWIFT (Society for Worldwide Interbank Financial Telecommunications). Worldwide Currency Usage and Trends. 2015. https://www.swift.com/node/19186. [last visited 22.08.2017] [9] BIS (Bank for International Settlements). Working Papers No 653 . Dollar pricing redux . Monetary and Economic Department August 2017. https://www.bis.org/publ/work653.pdf [last visited 22.08.2017] [10] Gopinath, Gita. (2015). The international price system. In Jackson Hole Symposium, volume 27. Kansas City Federal Reserve. https://www.bls.gov/mxp/internationalpricesystem.pdf [last visited 22.08.2017] [11] HM Government of Gibraltar. Proposals for a DLT Regulatory Framework. http://www.gibraltarfinance.gi/downloads/20170508-dlt-consultation-published-version.pdf [12] Cutler, Kim-Mai. Mt. Gox's Demise Marks The End of Bitcoin's First Wave Of Entrepreneurs. 2014. https://techcrunch.com/2014/02/25/mt-gox-demise/ [last visited 22.08.2017] [13] Mises, Ludvid von. The Theory of Money & Credit. Yale University Press. New Haven, USA, 1953. https:// mises.org/library/theory-money-and-credit [last visited 22.08.2017] [14] BIS (Bank for International Settlements). Statistics on payment, clearing and settlement systems in the CPMI countries - Figures for 2015. http://www.bis.org/cpmi/publ/d155.htm [last visited 22.08.2017] [15] blockchain.info Bitcoin transaction statistics. blockchain.info/stats [last visited 22.08.2017] [16] Nakamoto, Satoshi. Bitcoin: A Peer-to-Peer Electronic Cash System. https://Bitcoin.org/Bitcoin.pdf. 2008. [last visited 22.08.2017] [17] Rothbard, Murray N. The Mystery of Banking. Ludvig von Miss Institute. Alabama USA, 2008. https:// mises.org/library/mystery-banking [last visited 22.08.2017] [18] Anonymous Redditor 858graphics. https://www.reddit.com/r/Bitcoin/comments/6d2w1b/Bitcoin_is_saving_my_family_from_starvation/ and reprinted https://fee.org/articles/Bitcoin-is-all-that-standsbetween-my-family-and-starvation/ [last visited 22.08.2017] [19] World Bank. Commodity Markets Outlook. http://pubdocs.worldbank.org/en/174381493046968144/ CMO-April-2017-Full-Report.pdf [last visited 22.08.2017] [20] CIA. The World Fact Book. COUNTRY COMPARISON :: STOCK OF BROAD MONEY. https://www.cia.gov/ library/publications/resources/the-world-factbook/rankorder/2215rank.html [last visited 02.09.2017]
+
+
+
+www.globitexico.com
+
+
+
+Page 46 of 46
+
+
+
+
