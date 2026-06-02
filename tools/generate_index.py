@@ -72,7 +72,8 @@ def main() -> None:
                       "| # | Whitepaper | Year | Team | Socials | Wallet |",
                       "|---|------------|------|------|---------|--------|"]
         name = md_escape(r["name"])
-        link = r["file"].replace(" ", "%20")
+        # INDEX.md lives in data/, PDFs live in pdfs/ → hop up then into pdfs/
+        link = "../pdfs/" + r["file"].replace(" ", "%20")
         year = (r.get("dates") or {}).get("likely_year") or ""
         team = md_escape(", ".join(r["people"]["team"][:3]))
         socials = social_cell(r["socials"])
